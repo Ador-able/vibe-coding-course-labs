@@ -23,10 +23,9 @@ if(!preflight.isolated||!preflight.skillsIsolated||!preflight.memoryIsolated||!s
 const binding=JSON.parse(await readFile('plugins/novel-workbench-course/binding.json','utf8'));
 if(resolve(binding.database)!==database)throw new Error('实际绑定数据库与本次观察对象不一致。');
 const id=workId.parse(values.work),number=chapterNumber.parse(Number(values.chapter));
-const taskStore=binding.taskId?new Store(database):null;
+const taskStore=!values.resume&&binding.taskId?new Store(database):null;
 let taskBefore=null;
 if(taskStore){taskBefore=taskStore.getTask(binding.taskId);if(taskBefore.workId!==id||taskBefore.chapterNumber!==number)throw new Error('任务绑定与本次目标不一致。');}
-if(values.resume&&binding.taskId)throw new Error('只读接续不改写原运行Task。');
 const snapshot=()=>{const db=new DatabaseSync(database,{readOnly:true});try{return JSON.parse(JSON.stringify(Object.fromEntries(['works','work_versions','chapters','chapter_versions','tasks'].map(table=>[table,db.prepare(`SELECT * FROM ${table} ORDER BY 1,2`).all()]))));}finally{db.close();}};
 const saveBackup=async name=>{const db=new DatabaseSync(database,{readOnly:true});try{await backup(db,resolve(out,name));}finally{db.close();}};
 const prompt=await readFile(values.prompt,'utf8'),before=snapshot();

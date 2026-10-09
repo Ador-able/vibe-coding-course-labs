@@ -89,7 +89,7 @@ try{
   const resolved=await request('config/read',{cwd:root,includeLayers:false});configuration=configSummary(resolved.config);
   requireTrue(configuration.nativeProjectTrust==='trusted'&&configuration.features.hooks===false&&configuration.features.plugins===true,'本进程原生信任或功能覆盖不符。');
   requireTrue(configuration.memories.use_memories===false&&configuration.memories.generate_memories===false&&configuration.features.memories===false&&configuration.project_doc_max_bytes===0&&!configuration.hasDeveloperInstructions&&configuration.skills.bundled?.enabled===false&&configuration.web_search==='disabled','规则/记忆/搜索的本次覆盖不符；全局用户规则仍不据此排除。');
-  plugins=await request('plugin/list',{cwds:[root],marketplaceKinds:['local'],forceRefetch:false});
+  plugins=await request('plugin/list',{cwds:[root],marketplaceKinds:['local'],forceRefetch:definition.cache.forceRefetch});
   requireTrue(!(plugins.marketplaceLoadErrors??[]).length,'本地 marketplace 有真实读取错误。');
   const ownMarketplace=plugins.marketplaces?.find(item=>item.name===definition.settings.marketplaceName);
   const ownPlugin=ownMarketplace?.plugins?.find(item=>item.id===definition.settings.pluginId);
