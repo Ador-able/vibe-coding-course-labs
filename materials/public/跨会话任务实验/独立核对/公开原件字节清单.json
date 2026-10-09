@@ -1,0 +1,50 @@
+[
+  {
+    "mode": "A",
+    "name": "input.json",
+    "bytes": 3181,
+    "sha256": "b317509d4c837c663dcb4a52f55b7e7de4b56954164d28d0666b4b20a6c76449"
+  },
+  {
+    "mode": "B",
+    "name": "input.json",
+    "bytes": 3500,
+    "sha256": "e05d23dffc33d34e4c1551d87cdf64900ec87f729e595c143b611bb5986eeeab"
+  },
+  {
+    "mode": "A",
+    "name": "events.jsonl",
+    "bytes": 75112,
+    "sha256": "91c79baaff4be543048174607b0382c91b11bc99073572a793f3be8b5e87a4fa"
+  },
+  {
+    "mode": "B",
+    "name": "events.jsonl",
+    "bytes": 115934,
+    "sha256": "0dc6c15c0ad750802f3e8eaf7040cee1db9c437248efae5d2ffd5dc18689d2b9"
+  },
+  {
+    "mode": "A",
+    "name": "report.json",
+    "bytes": 3388,
+    "sha256": "60d6a6851186071d3ddb44e365b6bdff01442468f292db7b4dc5c4260d0adfe8"
+  },
+  {
+    "mode": "B",
+    "name": "report.json",
+    "bytes": 3239,
+    "sha256": "d598689e08a1224586b04365bb5245bd2bff25085434a4940acb19980ba95fbc"
+  },
+  {
+    "mode": "A",
+    "name": "final-response.txt",
+    "bytes": 412,
+    "sha256": "856c7fa9ad4e3dfc15fbe71e54d3dfec0b5449494beab7b01232b10d7a575cec"
+  },
+  {
+    "mode": "B",
+    "name": "final-response.txt",
+    "bytes": 2539,
+    "sha256": "bdd80f710268aeacd095746e287cc378228565cc1ac6f50a0eb192c32e410a90"
+  }
+]

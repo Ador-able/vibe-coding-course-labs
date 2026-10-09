@@ -1,0 +1,25 @@
+{
+  "rawOriginalPath": "lab/runs/cross-session-A-3d7c89da-9ec7-4f4c-a11f-29ae733c41f8/events.jsonl",
+  "rawOriginalBytes": 75112,
+  "rawOriginalSHA256": "91c79baaff4be543048174607b0382c91b11bc99073572a793f3be8b5e87a4fa",
+  "projectedFile": "公开实验记录/会话A-events-公开投影.jsonl",
+  "projectedBytes": 71922,
+  "projectedSHA256": "9f86e06a64554dfad201049437f85c8aba5e0cabe0e13ab23c9728b20809fe36",
+  "eventCount": 26,
+  "sameEventCount": true,
+  "onlyKnownPrivateFieldChanged": true,
+  "records": [
+    {
+      "eventIndex": 6,
+      "eventType": "item.completed",
+      "itemId": "item_2",
+      "field": "item.aggregated_output",
+      "originalUTF16Length": 3678,
+      "originalUTF8Bytes": 3770,
+      "originalSHA256": "71a38f0c250b3b42a9cee00290ce04c50d2efd2a608bc3f01fb8989521da69d8",
+      "omitted": true,
+      "reason": "实际宿主记忆索引返回包含私有记忆正文和无关项目线索，课程公开交付不复制；事件、命令、状态与其他字段原样保留。"
+    }
+  ],
+  "scope": "完整原始 A 及完整本机阅读记录未修改；公开包与网站来源只使用明确投影。B 未取得 A 聊天，但并非纯提示上下文。"
+}

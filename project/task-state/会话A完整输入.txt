@@ -1,0 +1,5 @@
+请完成本轮 P4 的三章待审交付整理。先完整读取 task-state/PRD-人工示范.md、阶段计划-人工示范.md、任务说明.md、最新进度.md 和 task.json，再用已有 CLI show 与 chapter 1、2、3 读取当前对象与完整正文。
+
+当前作品 4673fae9-27af-45ec-be46-c9fa3675d0e7；数据库 data/stage-4673fae9-27af-45ec-be46-c9fa3675d0e7.sqlite。这是本轮人工导入的现有三章，没有新写小说的任务。只整理已有稿件，不改代码、数据库或正文，不采用、不发布。先按整体目标与依赖判断本阶段可以做什么。若 deliverables/4673fae9-27af-45ec-be46-c9fa3675d0e7-三章待审.md 尚不存在，用一个单独的命令执行 node dist/cli.js export deliverables/4673fae9-27af-45ec-be46-c9fa3675d0e7-三章待审.md --db data/stage-4673fae9-27af-45ec-be46-c9fa3675d0e7.sqlite --work 4673fae9-27af-45ec-be46-c9fa3675d0e7；不要在这个命令中同时更新进度。export 成功后，再另行打开完整文件、用固定 Store exportWork 的完整结果核对逐字一致，然后保存 task-state/完整材料核对.md 和 task-state/最新进度.md。
+
+核对不能只看计数、名字、basisCurrent 或模型自评。C2/C3 要给完整三章中的相应原句、它们体现的具体关系与还不能判断的部分。材料仍待人阅读选择；不要把教学计划 P1–P3 写成此前真实执行过。CLI show 只列章节元信息，需要 chapter 命令取得完整正文。读文件与命令输出请保证全文可见，不用头几行或摘要代替。最后根据实际保存结果汇报交付材料、当前阶段、未决项和下一步。
