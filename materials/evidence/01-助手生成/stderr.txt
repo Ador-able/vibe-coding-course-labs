@@ -1,0 +1,3 @@
+{"timestamp":"2026-10-03T13:12:04.294196Z","level":"WARN","fields":{"message":"Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell"},"target":"codex_core::shell_snapshot"}
+{"timestamp":"2026-10-03T13:12:09.084989Z","level":"ERROR","fields":{"message":"failed to refresh available models: request timed out"},"target":"codex_models_manager::manager"}
+{"timestamp":"2026-10-03T13:25:52.159391Z","level":"ERROR","fields":{"message":"failed to refresh available models: request timed out"},"target":"codex_models_manager::manager"}

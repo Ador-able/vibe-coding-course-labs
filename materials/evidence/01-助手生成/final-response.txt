@@ -1,0 +1,13 @@
+已生成 A 的五个交付文件，仅做静态核对：
+
+- [检查脚本](D:/Projects/Knowledge/.coursebook-work/h09-05-lab/project/scripts/check-saving-delivery.mjs)
+- [package.json](D:/Projects/Knowledge/.coursebook-work/h09-05-lab/project/package.json)：仅新增两个 scripts
+- [pre-commit](D:/Projects/Knowledge/.coursebook-work/h09-05-lab/project/.githooks/pre-commit)：LF、直接传播退出码
+- [PR 工作流](D:/Projects/Knowledge/.coursebook-work/h09-05-lab/project/.github/workflows/delivery.yml)
+- [中文说明](D:/Projects/Knowledge/.coursebook-work/h09-05-lab/project/docs/delivery-check.md)
+
+调用链为 `check:delivery → build → node:test → seedPrototype/Store → prototypeServer → 原版页面真实 POST/GET → 刷新及五表历史核对`。A 从 fixture 与固定补记独立构造，完成观察后统一断言；异常先释放两门，再逐项清理资源、记录分类错误并落盘，最终非零退出阻断提交或 CI。
+
+教师原件哈希保持 c2ce7ae…，既有未跟踪文件保留。未安装、构建、测试、启动服务或浏览器，也未暂存、提交、推送或运行 CI；没有通过结果。
+
+后续由教师和主编审读并执行旧/新检查。钩子启用、可执行模式、完整暂存对应、远端必需检查及证据保留周期由人确认。B 未领取，三种界面方向保留；审美和小说采用仍由人决定。

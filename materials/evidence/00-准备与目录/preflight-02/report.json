@@ -1,0 +1,44 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\preflight-02",
+  "version": "0.160.0",
+  "nodeVersion": "v24.12.0",
+  "threadId": "01a101b5-1f49-7c03-80fd-5abb96005e22",
+  "error": null,
+  "directoryCheck": {
+    "checks": {
+      "model": true,
+      "emptyThread": true,
+      "permission": true,
+      "runtimeWorkspace": true,
+      "sources": true,
+      "switches": true,
+      "configurationClosed": true,
+      "skillClosed": true,
+      "hookClosed": true,
+      "mcpClosed": true
+    },
+    "passed": true,
+    "expectedSources": [
+      "C:/Users/32686/.codex/AGENTS.md",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\AGENTS.md"
+    ],
+    "boundary": "没有追加写入根；cwd仍可写。目录关闭不证明严格读取隔离，来源路径不证明约定逐条采用。"
+  },
+  "threadStarts": 1,
+  "reviewStarts": 0,
+  "turnStarts": 0,
+  "commandItems": 0,
+  "hookExecutions": 0,
+  "archived": true,
+  "processExit": {
+    "code": 0,
+    "signal": null
+  },
+  "projectAndInputsUnchanged": true,
+  "globalConfigBytesBefore": 8825,
+  "globalConfigHashBefore": "70f0bee7243cfa1ff88189d5ad0fbc963e2d1913b7fa0e30523f66da84030dd7",
+  "globalConfigHashAfter": "70f0bee7243cfa1ff88189d5ad0fbc963e2d1913b7fa0e30523f66da84030dd7",
+  "globalConfigUnchanged": true,
+  "passed": true,
+  "limits": "固定官方入口静态 package 版本与原字节已核，并保留 initialize 实际返回。只取空会话/非秘密目录与来源路径，没有模型、应用检查、业务或提交。显式全局读取仅 SHA/长度，子进程正常继承环境。"
+}

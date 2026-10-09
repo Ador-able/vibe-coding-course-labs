@@ -1,0 +1,19 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\restore-03",
+  "error": null,
+  "passed": true,
+  "nodeVersion": "v24.12.0",
+  "restores": 2,
+  "hostStarts": 0,
+  "threadStarts": 0,
+  "turnStarts": 0,
+  "installs": 0,
+  "builds": 0,
+  "tests": 0,
+  "businessCalls": 0,
+  "gitAdds": 0,
+  "gitCommits": 0,
+  "sharedConfigReads": 0,
+  "sharedConfigWrites": 0,
+  "boundary": "只恢复两个自主应用 Git 根与完整教师原件。没有运行旧行为、创建数据库或提交；164 项应用仅原 app.js 有已知差异。"
+}

@@ -1,0 +1,19 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\install-01",
+  "error": null,
+  "passed": true,
+  "nodeVersion": "v24.12.0",
+  "sourceUnchanged": true,
+  "installs": 2,
+  "hostStarts": 0,
+  "threadStarts": 0,
+  "turnStarts": 0,
+  "builds": 0,
+  "tests": 0,
+  "businessCalls": 0,
+  "gitAdds": 0,
+  "gitCommits": 0,
+  "sharedConfigReads": 0,
+  "sharedConfigWrites": 0,
+  "boundary": "各副本只使用原工作区与原锁文件冻结安装一次。未改年龄策略、锁文件或全局配置；依赖就绪不证明构建或用户行为通过。"
+}

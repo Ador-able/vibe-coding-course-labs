@@ -1,0 +1,58 @@
+[
+  {
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+      "--version"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab",
+    "environment": {
+      "inherited": true,
+      "overrides": {},
+      "policyOverrides": false
+    },
+    "stdout": "11.20.0\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null,
+    "error": null
+  },
+  {
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project",
+    "environment": {
+      "inherited": true,
+      "overrides": {},
+      "policyOverrides": false
+    },
+    "stdout": "✓ Lockfile passes supply-chain policies (verified 13h ago)\nLockfile is up to date, resolution step is skipped\nProgress: resolved 1, reused 0, downloaded 0, added 0\nPackages: +106\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nPackages are hard linked from the content-addressable store to the virtual store.\n  Content-addressable store is at: D:\\Dev\\PackageData\\pnpm\\store\\v11\n  Virtual store is at:             node_modules/.pnpm\nProgress: resolved 106, reused 106, downloaded 0, added 106, done\n\ndependencies:\n+ @modelcontextprotocol/sdk 1.31.0\n+ @openai/codex-sdk 0.160.0\n+ zod 4.6.5\n\ndevDependencies:\n+ @playwright/test 1.63.0\n+ @types/node 24.19.1\n+ typescript 7.0.2\n\nDone in 1.3s using pnpm v11.20.0\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null,
+    "error": null
+  },
+  {
+    "command": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project",
+    "environment": {
+      "inherited": true,
+      "overrides": {},
+      "policyOverrides": false
+    },
+    "stdout": "✓ Lockfile passes supply-chain policies (verified 13h ago)\nLockfile is up to date, resolution step is skipped\nProgress: resolved 1, reused 0, downloaded 0, added 0\nPackages: +106\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\nPackages are hard linked from the content-addressable store to the virtual store.\n  Content-addressable store is at: D:\\Dev\\PackageData\\pnpm\\store\\v11\n  Virtual store is at:             node_modules/.pnpm\nProgress: resolved 106, reused 106, downloaded 0, added 105\nProgress: resolved 106, reused 106, downloaded 0, added 106, done\n\ndependencies:\n+ @modelcontextprotocol/sdk 1.31.0\n+ @openai/codex-sdk 0.160.0\n+ zod 4.6.5\n\ndevDependencies:\n+ @playwright/test 1.63.0\n+ @types/node 24.19.1\n+ typescript 7.0.2\n\nDone in 1.3s using pnpm v11.20.0\n",
+    "stderr": "",
+    "status": 0,
+    "signal": null,
+    "error": null
+  }
+]

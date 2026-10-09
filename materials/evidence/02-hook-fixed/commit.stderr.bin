@@ -1,0 +1,34 @@
+$ pnpm run build && pnpm run test:delivery
+$ tsc -p tsconfig.json
+$ node --test scripts/check-saving-delivery.mjs
+本次完整证据：D:\Projects\Knowledge\.coursebook-work\h09-05-lab\project\runs\delivery-saving-02b6a7a6-dc24-43e8-bc3a-dbfc9a81771d
+(node:53648) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+实际浏览器：{"browser":"chromium","version":"154.0.4258.48","channel":"msedge"}
+环境 通过：无环境错误
+观察 通过：无观察错误
+页面运行 通过：无页面运行错误
+记录 通过：无记录错误
+清理 通过：无清理错误
+观察 通过：完整观察结束
+清理 通过：全部门已释放并收尾
+业务 通过：完整作品与三章独立初始化为 r1/human/draft
+业务 通过：正常键盘准确输入 A，先核对后重新读取，对照不覆盖本地 A
+业务 通过：POST 门截到完整 A 和已读版本，尚未写入服务
+业务 通过：postWaiting 每次正常键盘尝试均不能改变完整 A
+业务 通过：postWaiting 暂停章名、正文及可见覆盖入口
+业务 通过：getWaiting 每次正常键盘尝试均不能改变完整 A
+业务 通过：getWaiting 暂停章名、正文及可见覆盖入口
+业务 通过：POST 真实返回完整 human/draft r2，GET 门中服务已有完整 A/历史
+业务 通过：真实 GET 读回与页面完整 A 一致
+业务 通过：读回完成后恢复章名/正文编辑，补记只留本地
+业务 通过：刷新真实 GET、页面、五表与全部历史只保留 A，其他对象原样
+✔ 交付：原版正常保存的等待期、读回、恢复编辑和持久化 (2287.2793ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2350.6244

@@ -1,0 +1,43 @@
+{
+  "name": "agent-practice-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "使用成熟 Codex Harness 的 AI 任务教学实验",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lab": "node dist/cli.js",
+    "agent": "node dist/agent.js",
+    "mcp": "node dist/mcp.js",
+    "mcp:two": "node dist/mcp-two-tools.js",
+    "mcp:exercise": "node scripts/exercise-two-tools.mjs",
+    "mcp:inspect": "node scripts/inspect-mcp.mjs",
+    "plugin:prepare": "node scripts/prepare-plugin.mjs",
+    "plugin:catalog": "node scripts/plugin-catalog.mjs",
+    "plugin:add": "node scripts/plugin-manage.mjs add",
+    "plugin:remove": "node scripts/plugin-manage.mjs remove",
+    "plugin:check": "node dist/plugin-check.js",
+    "test": "node --test dist/test/*.test.js",
+    "prototype": "node scripts/start-prototype.mjs",
+    "prototype:seed": "node scripts/prototype-seed.mjs",
+    "prototype:ui": "node scripts/capture-prototype.mjs",
+    "prototype:mcp": "node scripts/read-prototype-mcp.mjs",
+    "prototype:time": "node scripts/observe-reminder.mjs",
+    "test:delivery": "node --test scripts/check-saving-delivery.mjs",
+    "check:delivery": "pnpm run build && pnpm run test:delivery"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "@openai/codex-sdk": "0.160.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  }
+}

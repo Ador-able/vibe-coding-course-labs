@@ -1,0 +1,44 @@
+{
+  "beforeFull": "?? scripts/test-saving.mjs\n!! node_modules/",
+  "afterFull": "M package.json\n?? .githooks/\n?? .github/\n?? docs/delivery-check.md\n?? scripts/check-saving-delivery.mjs\n?? scripts/test-saving.mjs\n!! node_modules/",
+  "beforeOnlyIgnored": [
+    "!! node_modules/"
+  ],
+  "afterOnlyIgnored": [
+    "!! node_modules/"
+  ],
+  "beforeStatus": "?? scripts/test-saving.mjs",
+  "afterStatus": "M package.json\n?? .githooks/\n?? .github/\n?? docs/delivery-check.md\n?? scripts/check-saving-delivery.mjs\n?? scripts/test-saving.mjs",
+  "allFiveAllowed": [
+    {
+      "path": "scripts/check-saving-delivery.mjs",
+      "bytes": 28477,
+      "sha256": "8c53980edd36a8aa194978ff1e1beac73ff280860f2697e04d91f28dc2a3af2d"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1549,
+      "sha256": "f8a4bba56bd2c6709192af1d8f86841ca4462174351c3ffb38e7eaf309983ad7"
+    },
+    {
+      "path": ".githooks/pre-commit",
+      "bytes": 39,
+      "sha256": "37ec983c553372c1f321a95492a96addca115912476cff4aa229ef67b66000bd"
+    },
+    {
+      "path": ".github/workflows/delivery.yml",
+      "bytes": 1149,
+      "sha256": "610c99c1c97f74c1cf0cd9d8c4043cceb6cb7e3bd783f1292a26605199b802a0"
+    },
+    {
+      "path": "docs/delivery-check.md",
+      "bytes": 11408,
+      "sha256": "5a5270d239796f215eec78f914404f7d3895bf2762b999f92b1c708b684448e1"
+    }
+  ],
+  "teacherUntracked": {
+    "path": "scripts/test-saving.mjs",
+    "bytes": 23625,
+    "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92"
+  }
+}

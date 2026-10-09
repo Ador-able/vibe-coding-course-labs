@@ -1,7 +1,0 @@
-[
-  {
-    "name": "行为记录完成且无环境、记录或清理错误",
-    "passed": false,
-    "message": "locator.isEnabled: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: '读取当前稿', exact: true })\u001b[22m\n\n    at state (D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\scripts\\test-saving.mjs:101:81)\n    at async checkpoint (D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\scripts\\test-saving.mjs:131:17)\n    at async observe (D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\scripts\\test-saving.mjs:198:5)\n    at async TestContext.<anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\scripts\\test-saving.mjs:422:20)\n+ actual - expected\n\n+ undefined\n- true\n"
-  }
-]

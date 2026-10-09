@@ -1,0 +1,320 @@
+{
+  "version": "0.160.0",
+  "nodeVersion": "v24.12.0",
+  "project": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project",
+  "params": {
+    "threadId": "01a101e4-a563-7761-8170-bafa246d719f",
+    "input": [
+      {
+        "type": "text",
+        "text": "你正在一个已经核查过保存行为的小说工作台练习仓库里。课程学习的是怎样更好地组织 AI 的工作和交付，小说只是练习载体。\n\n现在有两项任务：\n\nA｜ready：把已经验证的重要保存行为接到可复用的提交检查与 CI 入口。当前应用 c3805c360551c10fedfd9b5473e569cfd7666dc0 已修复等待期丢字。旧 2c1 与既有 19f 修复的红绿、完整三章、人工初始化说明和原始测试都在教师材料中。请先看实际文件与调用链，再实现一个最小、有意义且可审的交付 Diff。\n\nB｜blocked：选择原版、集中工作的台面、连续笔记页中哪种整页口吻更合适。功能、信息辨认与审美须分开判断，最终审美仍等待真实用户选择。请保留三种方向，本次不领取 B、不修改界面、不据业务数据一致宣布原版胜出。\n\n你只处理 A。请读取 package.json、pnpm-workspace.yaml、现有公开 AGENTS.md、prototype/app.js、src/prototype-http.ts、src/store.ts、scripts/prototype-seed.mjs、完整 fixtures/three-chapter-archive.json，以及 ../inputs/完整教师派生测试.mjs、../inputs/旧新行为和既有评审说明.md、../inputs/独立业务预期.json。这三份教师文件会在执行前固定；教师原派生测试还以原字节保留在 scripts/test-saving.mjs。保留本仓库已有文件和用户原有改动；遇到范围不明先报告真实文件和影响，不顺手修复。\n\n允许新增或修改的文件只有：\n\n- scripts/check-saving-delivery.mjs\n- package.json（仅新增两个相关 scripts）\n- .githooks/pre-commit\n- .github/workflows/delivery.yml\n- docs/delivery-check.md（中文）\n\n不要改 prototype/app.js、任何页面/CSS、HTTP、Store、fixture、seed、现有 tests 或教师 c2ce 原件；不要新增依赖或改锁文件。教师 scripts/test-saving.mjs 原件里有一条门记录字段恒为 undefined 的弱断言；保留该原件，新检查不复制这条断言，不用检查数量或总绿灯代替独立预期。\n\n新脚本只运行原版一个正常保存实例，复用现有 Store、prototypeServer、seedPrototype、fixture 和 Playwright，不手写业务服务器或伪响应。使用新的独立 runs/delivery-saving-UUID 目录和 SQLite，不读写用户库、历史实验库或第三方服务。教师初始化会通过 Store 写入完整既有作品与三章 r1/draft；要记录完整初始化对象及其真实来源，不能说是本轮模型新写的小说。\n\n业务输入和预期如下，请原样保留：\n\n1. 用正常键盘编辑第 2 章。章名在原值后追加“ · 保存前补记”；正文在原值后追加两个换行及“保存前补记：林澈把观察时间写在页边。”。完整预期 A 从教师 fixture 第 2 章原值与这些明确补记拼接，不能取页面现值或 POST 返回反过来定义正确答案；键盘输入后先与 A 核对。正常重新读取一次，把既有对照/覆盖入口显示出来，本地 A 仍在。\n2. 初次读页、选章和对照都结束后，再用 page.route 设置 POST /api/draft 与保存后的 GET /api/work 两个门，门只延迟真实请求，不 fulfill 假响应。点击保存，等待 POST 门确实进入，记录完整 POST 参数、当前全值和初始五表。\n3. POST 等待时，分别以正常键盘尝试给章名追加“【POST等待输入】”，给正文追加一个换行及“POST等待输入：周伯仍站在窗边。”。记录能否获得真实焦点、键盘动作和完整值。不能 fill 或 DOM 赋值绕过 disabled，也不能 force 点击。\n4. 释放 POST，先拿到它真实完整返回，再等待 GET 读回门进入；记录此时服务已经保存的完整对象/历史与页面全值。GET 等待时，正常键盘尝试章名“【读回等待输入】”、正文一个换行及“读回等待输入：林澈又核对了一次记号。”，完整记录。\n5. 释放 GET，拿到真实响应，完成读回后检查当前全文。随后正常键盘尝试章名“【恢复编辑】”、正文一个换行及“恢复编辑：这段暂留本地。”，记录编辑已恢复；最后刷新，拿到真实 GET、当前全文和完整数据库当前/历史。\n6. 独立业务要求：POST 提交 A；POST 和 GET 两个等待期章名、正文及覆盖编辑动作暂停，键盘尝试不能改变 A；只有第 2 章新增一次 human/draft r2，POST 返回、GET 读回、刷新和持久化均为完整 A，作品与第 1、3 章原样；完成后可以继续编辑。不要只检查按钮 disabled 或对象数量。\n7. 先完成观察、请求释放、保存/读回/刷新与存储核对，再统一输出业务断言。旧实现的第一个 disabled 失败不能遮住它实际接纳后又丢失的输入。环境、记录和清理错误独立报告，不可冒充业务红或略去。\n8. 每条请求、响应全文、状态、焦点/全值、数据库全文/历史、测试错误与资源清理都写入本次 evidence/结果文件。任意异常都先释放两门、收尾路由，关闭上下文/浏览器、HTTP 服务和 Store，最终落盘。复用已有合理等待上限，不自动重试或改预期。\n9. 新检查默认使用 Playwright 的 Chromium；允许以本次进程环境变量 DELIVERY_BROWSER_CHANNEL=msedge 明确选择 Windows 既有 Edge，没有自动回退。输出实际 browser/version/channel；隐藏按钮的状态记录可 includeHidden:true，实际动作仍遵守可见/可操作条件。\n\npackage.json 增加 test:delivery：“node --test scripts/check-saving-delivery.mjs”，及 check:delivery：“pnpm run build && pnpm run test:delivery”。不要把现有整套 unit/browser/UI capture 都挂进来。build 是这个检查调用真实 dist 的前置与类型检查，不替代真实保存验证。\n\n.githooks/pre-commit 用 Git 自带钩子，运行 pnpm run check:delivery，并让其非零退出直接终止 Git commit；不要吞掉错误、后台运行或 --no-verify。用 LF 文件，说明 Git 可执行模式和显式 core.hooksPath 启用。不要在本轮改任何仓库配置或执行 Git add/commit。要写清楚检查用的是工作区，本次完整暂存且与 index 相同；不能声称这个普通钩子验证任意部分暂存的快照。\n\n.github/workflows/delivery.yml 只定义 pull_request 的同一必要检查，不做云端编码调度或自动发评论。使用已核当前官方 actions/checkout@v7、pnpm/setup@v3（Node 24.12.0，pnpm 11.20.0，从既有 packageManager/明确版本取得，install:false）、pnpm install --frozen-lockfile、pnpm exec playwright install --with-deps chromium，然后 pnpm run check:delivery。工作流记录 event、PR head、真实 git rev-parse HEAD；默认 PR checkout 的模拟合并点与 head 分开。以 actions/upload-artifact@v7 在成功/失败后保存本次 runs/delivery-saving-* 实际记录。只用当前必要的 contents:read 权限，不建立仓库、token、外部 PR 或合并。\n\n中文 docs/delivery-check.md 写清运行入口、Windows 明确 browser channel、人工初始化来源、检查行为/限制、钩子不是克隆自动启用、本地可被跳过而远端策略另外配置、暂存区对应、CI 运行日志/提交核查方法和真实代价。功能、辨认、审美及小说采用继续分开，远端 YAML 尚未运行就不能称成功。\n\n本轮只允许阅读和生成上述五文件。不要安装依赖、启动服务、运行 build/test/浏览器、提交或推送、联网调用外部平台、读受保护全局规则/Memory/凭据，或修改第三方库。本轮产物完成后由教师和主编静态审读，才分别执行同一检查的旧/新提交。\n\n请在最终回答里给出实际修改文件、主要调用链、失败传播/清理、未运行项目以及必须由人决定的取舍。不编造通过日志、提交、PR、CI 或合并结果；如果无法按范围完成，保留实际产物并说明准确缺口。\n"
+      }
+    ],
+    "sandboxPolicy": {
+      "type": "workspaceWrite",
+      "writableRoots": [],
+      "networkAccess": false,
+      "excludeTmpdirEnvVar": false,
+      "excludeSlashTmp": false
+    },
+    "approvalPolicy": "never"
+  },
+  "promptBytes": 7977,
+  "promptSha256": "8f9fecc49dbc3e11ba6afdd12cff86a4f66b65523e0a9318e070a645ef6539de",
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "model_provider": "openai",
+    "model_reasoning_effort": "high",
+    "model_reasoning_summary": null,
+    "model_verbosity": null,
+    "service_tier": "default",
+    "features": {
+      "context_management": {
+        "experimental_mode": true
+      },
+      "network_proxy": null,
+      "hooks": false,
+      "js_repl": false,
+      "memories": false,
+      "shell_tool": true,
+      "api_key_model_discovery": false,
+      "auth_elicitation": true,
+      "background_paginated_rollout_migration": false,
+      "codex_apps_mcp_2026_07_28": false,
+      "mcp_2026_07_28": false,
+      "mentions_v2": true,
+      "remote_control": false,
+      "remote_plugin": true,
+      "tool_suggest": true,
+      "windows_sandbox_service": false
+    },
+    "memories": {
+      "version": null,
+      "dual_write": null,
+      "disable_on_external_context": null,
+      "generate_memories": false,
+      "use_memories": false,
+      "dedicated_tools": null,
+      "max_raw_memories_for_consolidation": null,
+      "max_unused_days": null,
+      "max_rollout_age_days": null,
+      "max_rollouts_per_startup": null,
+      "min_rollout_idle_hours": null,
+      "min_rate_limit_remaining_percent": null,
+      "extract_model": null,
+      "consolidation_model": null
+    },
+    "web_search": "disabled",
+    "sandbox_mode": "workspace-write",
+    "sandbox_workspace_write": {
+      "writable_roots": [],
+      "network_access": false,
+      "exclude_tmpdir_env_var": false,
+      "exclude_slash_tmp": false
+    },
+    "approval_policy": "never",
+    "project_doc_max_bytes": 32768,
+    "developerInstructionsPresent": false,
+    "mcpEntries": [
+      {
+        "name": "anki_mcp",
+        "enabled": false
+      },
+      {
+        "name": "blender",
+        "enabled": false
+      },
+      {
+        "name": "codex_apps",
+        "enabled": false
+      },
+      {
+        "name": "comfy_mcp",
+        "enabled": false
+      },
+      {
+        "name": "node_repl",
+        "enabled": false
+      }
+    ],
+    "pluginEntries": [
+      {
+        "name": "browser@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "chrome@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "code-review@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "codex-app-tools@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "coursebook@personal",
+        "enabled": false
+      },
+      {
+        "name": "documents@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "frameflow@frameflow",
+        "enabled": false
+      },
+      {
+        "name": "frameflow@personal",
+        "enabled": false
+      },
+      {
+        "name": "novel-practice@novel-agent-lab",
+        "enabled": false
+      },
+      {
+        "name": "novel-workbench-course@novel-workbench-course-lab",
+        "enabled": false
+      },
+      {
+        "name": "pdf@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "presentations@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "scene-production@personal",
+        "enabled": false
+      },
+      {
+        "name": "spreadsheets@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "template-creator@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "tripo-studio-mcp@tripo-studio",
+        "enabled": false
+      },
+      {
+        "name": "unified-computer-use@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "visualize@openai-bundled",
+        "enabled": false
+      }
+    ],
+    "skills": {
+      "bundled": {
+        "enabled": false
+      },
+      "config": [
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\change-aware-validation\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\codebase-simplification\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "D:\\Projects\\theitzy\\course-automation\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.930.11008\\skills\\documents\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\note-to-anki-rich\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\pdf\\26.930.11008\\skills\\pdf\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.930.11008\\skills\\presentations\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\record-ui-evidence\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\remove-authoring-residue\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-breakdown\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-models\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\basics\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\concept-art\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\delivery\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\project-vision\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-assembly\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-layout\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\visual-review\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\semantic-code-review\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\spreadsheets\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\excel-live-control\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\technical-prose-standard\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\template-creator\\26.930.11008\\skills\\template-creator\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-bundled\\visualize\\1.0.46\\skills\\visualize\\SKILL.md",
+          "enabled": false
+        }
+      ]
+    }
+  },
+  "configOverrides": [
+    "model=\"gpt-6.1-sol\"",
+    "projects={ \"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\h09-05-lab\\\\project\" = { trust_level = \"trusted\" } }",
+    "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+    "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "plugins.code-review@openai-bundled.enabled=false",
+    "plugins.codex-app-tools@openai-bundled.enabled=false",
+    "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "plugins.coursebook@personal.enabled=false",
+    "plugins.unified-computer-use@openai-bundled.enabled=false",
+    "plugins.frameflow@frameflow.enabled=false",
+    "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "plugins.novel-practice@novel-agent-lab.enabled=false",
+    "plugins.presentations@openai-primary-runtime.enabled=false",
+    "plugins.documents@openai-primary-runtime.enabled=false",
+    "plugins.pdf@openai-primary-runtime.enabled=false",
+    "plugins.visualize@openai-bundled.enabled=false",
+    "plugins.frameflow@personal.enabled=false",
+    "plugins.spreadsheets@openai-primary-runtime.enabled=false",
+    "plugins.tripo-studio-mcp@tripo-studio.enabled=false",
+    "plugins.chrome@openai-bundled.enabled=false",
+    "plugins.template-creator@openai-primary-runtime.enabled=false",
+    "plugins.scene-production@personal.enabled=false",
+    "plugins.browser@openai-bundled.enabled=false",
+    "memories.use_memories=false",
+    "memories.generate_memories=false",
+    "features.memories=false",
+    "project_doc_max_bytes=32768",
+    "developer_instructions=\"\"",
+    "skills.bundled.enabled=false",
+    "skills.config=[{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\change-aware-validation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\codebase-simplification\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\theitzy\\\\course-automation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\documents\\\\26.930.11008\\\\skills\\\\documents\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\note-to-anki-rich\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\pdf\\\\26.930.11008\\\\skills\\\\pdf\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\presentations\\\\26.930.11008\\\\skills\\\\presentations\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\record-ui-evidence\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\remove-authoring-residue\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-breakdown\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-models\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\basics\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\concept-art\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\delivery\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\project-vision\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-assembly\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-layout\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\visual-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\semantic-code-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\spreadsheets\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\excel-live-control\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\technical-prose-standard\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\template-creator\\\\26.930.11008\\\\skills\\\\template-creator\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-bundled\\\\visualize\\\\1.0.46\\\\skills\\\\visualize\\\\SKILL.md\",enabled=false}]",
+    "features.shell_tool=true",
+    "features.hooks=false",
+    "web_search=\"disabled\"",
+    "sandbox_mode=\"workspace-write\"",
+    "approval_policy=\"never\"",
+    "sandbox_workspace_write.writable_roots=[]",
+    "sandbox_workspace_write.network_access=false"
+  ],
+  "scope": "完整教师自然输入；只读资料与生成五文件，不运行应用或 Git 提交。"
+}

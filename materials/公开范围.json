@@ -1,1005 +1,2004 @@
 {
-  "unit": "vcm-09-03",
-  "applicationHead": "c3805c360551c10fedfd9b5473e569cfd7666dc0",
-  "applicationTrackedFiles": 164,
-  "teacherTestSha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
+  "unit": "vcm-09-05",
+  "appHeads": {
+    "start": "c3805c360551c10fedfd9b5473e569cfd7666dc0",
+    "fixed": "877c9d61dc98c33a36e813060a2c4331867f4624",
+    "old": "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720"
+  },
+  "included": "自主应用Git历史、完整教师材料、原模型生成文件、实际命令与业务/提交原件、公共协议投影、来源定位和编者采用判断",
+  "excluded": "第三方原课全文/网页/源码快照、私有宿主配置与账号、system/developer/推理正文、内部主编证明及待批review",
+  "projection": "JSON公共记录重新序列化并排除受保护正文/身份字段；全命令内容和实际aggregatedOutput保留，不拆成原API没有的stdout/stderr",
+  "privateFieldsRemoved": 116,
   "preservedOriginals": [
     {
-      "path": "README.md",
-      "bytes": 6503,
-      "sha256": "b6c4b2db5ba7653b8ccaa4035732d9817d5b8c9903747c5e48c03b9240bced53",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-03\\公开README.md",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\package.json",
+      "target": "delivery-files/package.json",
+      "originalBytes": 1549,
+      "originalSHA256": "f8a4bba56bd2c6709192af1d8f86841ca4462174351c3ffb38e7eaf309983ad7",
+      "bytes": 1549,
+      "sha256": "f8a4bba56bd2c6709192af1d8f86841ca4462174351c3ffb38e7eaf309983ad7"
     },
     {
-      "path": "tools/恢复评审材料.mjs",
-      "bytes": 4226,
-      "sha256": "3864d0485c6d5947b446c061a3d0d6baee3342749146f052084fd3daee70f6d1",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-03\\恢复评审材料.mjs",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\.githooks\\pre-commit",
+      "target": "delivery-files/.githooks/pre-commit",
+      "originalBytes": 39,
+      "originalSHA256": "37ec983c553372c1f321a95492a96addca115912476cff4aa229ef67b66000bd",
+      "bytes": 39,
+      "sha256": "37ec983c553372c1f321a95492a96addca115912476cff4aa229ef67b66000bd"
     },
     {
-      "path": "人工核查/实际评审意见逐项核实.md",
-      "bytes": 5852,
-      "sha256": "475dfee35158a34e41deab63b60354d4646889f4ea1827a02f6992a8f2e54167",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-03\\实际评审意见逐项核实.md",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\.github\\workflows\\delivery.yml",
+      "target": "delivery-files/.github/workflows/delivery.yml",
+      "originalBytes": 1149,
+      "originalSHA256": "610c99c1c97f74c1cf0cd9d8c4043cceb6cb7e3bd783f1292a26605199b802a0",
+      "bytes": 1149,
+      "sha256": "610c99c1c97f74c1cf0cd9d8c4043cceb6cb7e3bd783f1292a26605199b802a0"
     },
     {
-      "path": "fixtures/应用固定存档.bundle",
-      "bytes": 187792,
-      "sha256": "e620fb4bc0de3a97c56c7ef41f355e77c88426c539f1ae46919655898dc29a40",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\fixtures\\应用固定存档.bundle",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\docs\\delivery-check.md",
+      "target": "delivery-files/docs/delivery-check.md",
+      "originalBytes": 11408,
+      "originalSHA256": "5a5270d239796f215eec78f914404f7d3895bf2762b999f92b1c708b684448e1",
+      "bytes": 11408,
+      "sha256": "5a5270d239796f215eec78f914404f7d3895bf2762b999f92b1c708b684448e1"
     },
     {
-      "path": "fixtures/应用固定树.json",
-      "bytes": 61269,
-      "sha256": "1f73bb662d6836612d6e9ecd120c4258026f7e31d82f5e1ca4d0dcba72d3198c",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\fixtures\\应用固定树.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\scripts\\check-saving-delivery.mjs",
+      "target": "delivery-files/scripts/check-saving-delivery.mjs",
+      "originalBytes": 28477,
+      "originalSHA256": "8c53980edd36a8aa194978ff1e1beac73ff280860f2697e04d91f28dc2a3af2d",
+      "bytes": 28477,
+      "sha256": "8c53980edd36a8aa194978ff1e1beac73ff280860f2697e04d91f28dc2a3af2d"
     },
     {
-      "path": "inputs/review-start-完整参数模板.json",
-      "bytes": 4217,
-      "sha256": "ac1ed69f5b3d87f2c48b15bbe1b23f18bd32ee4c77f47ae84088d951309af19e",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\review-start-完整参数模板.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-original-hxwwJe/assertions.json",
-      "bytes": 706,
-      "sha256": "d99703a9ef1e467fb16c6f52b384d1b210c08012d1663284b7315928432b2463",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\failure-original-hxwwJe\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-original-hxwwJe/evidence.json",
-      "bytes": 328035,
-      "sha256": "dc6057717518c37e6a482db6beea559807fd5c0fb732e0c036522ea81b0f6abe",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\failure-original-hxwwJe\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-result.json",
-      "bytes": 173,
-      "sha256": "c188425c7521c127dc657188ee072d0a377dd02e973e2f63cb646c08d51f77fe",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\failure-result.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-desk-K92HAt/assertions.json",
-      "bytes": 2496,
-      "sha256": "ef5c97c5a2e6b203fbb03eeae2f182eaef176c848e2e97a4efe31f9815c276f3",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-desk-K92HAt\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-desk-K92HAt/evidence.json",
-      "bytes": 461582,
-      "sha256": "649eb83767054e19508fccfeeb90ce94c562fe13d6faf8e4e46420e6c9404345",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-desk-K92HAt\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-notes-z0mJY5/assertions.json",
-      "bytes": 2496,
-      "sha256": "ef5c97c5a2e6b203fbb03eeae2f182eaef176c848e2e97a4efe31f9815c276f3",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-notes-z0mJY5\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-notes-z0mJY5/evidence.json",
-      "bytes": 461590,
-      "sha256": "1a37730e86b99bae3b37dabbe006db09cc2288b58f9a80f97b9f7a5358d9ad0a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-notes-z0mJY5\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-original-RGafPI/assertions.json",
-      "bytes": 2496,
-      "sha256": "ef5c97c5a2e6b203fbb03eeae2f182eaef176c848e2e97a4efe31f9815c276f3",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-original-RGafPI\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-original-RGafPI/evidence.json",
-      "bytes": 461614,
-      "sha256": "dd15140871bcf78428aeeff4d4089b2f4d58687f802b8db602f0c4d1f4042ca8",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-original-RGafPI\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-result.json",
-      "bytes": 1220,
-      "sha256": "f814d351760cb45fba73913dedaa8424dc089f93223d756bc90019a7eeb74486",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-result.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-original-VBGyPg/assertions.json",
-      "bytes": 812,
-      "sha256": "2ad6e76aaaf48a56c12dbecca4e9d49df257e16c2b0cf875c0e94f5c9f6ae6fa",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\failure-original-VBGyPg\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-original-VBGyPg/evidence.json",
-      "bytes": 79477,
-      "sha256": "4c7445eb1c4b8ab6d75f093f5eda0d80b46fc370c5d0ffa2294052e5eb031c82",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\failure-original-VBGyPg\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-result.json",
-      "bytes": 248,
-      "sha256": "dfd66f93769d35328a32892324252ed2c02dea50aa3124910292019bff07ad70",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\failure-result.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-desk-eGdKjY/assertions.json",
-      "bytes": 812,
-      "sha256": "1e6917f349af1e428264df2c487a7a7781865118595467ee703c351a22a9e095",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\normal-desk-eGdKjY\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-desk-eGdKjY/evidence.json",
-      "bytes": 79464,
-      "sha256": "457da2ff2b7d98be51ebfbdb433124ea2a36297ca3ba753aeba7f832cd962298",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\normal-desk-eGdKjY\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-notes-ldFSSY/assertions.json",
-      "bytes": 812,
-      "sha256": "1e6917f349af1e428264df2c487a7a7781865118595467ee703c351a22a9e095",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\normal-notes-ldFSSY\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-notes-ldFSSY/evidence.json",
-      "bytes": 79469,
-      "sha256": "a4f5403771fc1bff9a077c3b7d3c39438aa8efcedfef9fbb0bfbf0216bcabb38",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\normal-notes-ldFSSY\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-original-s1Ysq0/assertions.json",
-      "bytes": 812,
-      "sha256": "1e6917f349af1e428264df2c487a7a7781865118595467ee703c351a22a9e095",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\normal-original-s1Ysq0\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-original-s1Ysq0/evidence.json",
-      "bytes": 79484,
-      "sha256": "42bb481ea1e34554b09a1ab86e743e943225ded9c4d6f4b7d30097e8cdba4ba1",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\normal-original-s1Ysq0\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-result.json",
-      "bytes": 680,
-      "sha256": "4de11f550a8c5a268cb49fdd035a4f0174eeb2f0d0a7809c766adbb5394a4bfd",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535\\normal-result.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-original-aEH0Vf/assertions.json",
-      "bytes": 706,
-      "sha256": "d99703a9ef1e467fb16c6f52b384d1b210c08012d1663284b7315928432b2463",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\failure-original-aEH0Vf\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-original-aEH0Vf/evidence.json",
-      "bytes": 328023,
-      "sha256": "bd74c033adfe310bb78115fc5d530c63143f942290f25cbf033ef81b9daa9a48",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\failure-original-aEH0Vf\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-result.json",
-      "bytes": 173,
-      "sha256": "a795ab1b81a8436b5658ac83b14e07493ff10472cdfea52fc149d80c69d1bad3",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\failure-result.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-desk-93hDGx/assertions.json",
-      "bytes": 999,
-      "sha256": "eb5469732524b5bc8692cdf3dc8d61470ec0d090a56472aeeaac8eaa83c2c18b",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\normal-desk-93hDGx\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-desk-93hDGx/evidence.json",
-      "bytes": 461338,
-      "sha256": "58426fe7f4de7059287c10413cd699e6145de3de71f61967e179e21aea524abd",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\normal-desk-93hDGx\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-notes-hSd0H6/assertions.json",
-      "bytes": 999,
-      "sha256": "eb5469732524b5bc8692cdf3dc8d61470ec0d090a56472aeeaac8eaa83c2c18b",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\normal-notes-hSd0H6\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-notes-hSd0H6/evidence.json",
-      "bytes": 461325,
-      "sha256": "275c3ee8f7732418997400628a705986971a27b7c62d59159f24e7400cf63b7d",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\normal-notes-hSd0H6\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-original-yfigBC/assertions.json",
-      "bytes": 999,
-      "sha256": "eb5469732524b5bc8692cdf3dc8d61470ec0d090a56472aeeaac8eaa83c2c18b",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\normal-original-yfigBC\\assertions.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-original-yfigBC/evidence.json",
-      "bytes": 461349,
-      "sha256": "085e31d5a238c25c121e57fa16095627a49f2f09dc814d1484636f3b6e8881dc",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\normal-original-yfigBC\\evidence.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-result.json",
-      "bytes": 466,
-      "sha256": "d7428393877da7b40cb97bf6ec4c26446715a3ddf41bc7df4beb13e989030390",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\cases\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\\normal-result.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/examples/test-saving-original.mjs",
-      "bytes": 23583,
-      "sha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\examples\\test-saving-original.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/examples/test-saving.mjs",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\inputs\\完整教师派生测试.mjs",
+      "target": "inputs/完整教师派生测试.mjs",
+      "originalBytes": 23625,
+      "originalSHA256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
       "bytes": 23625,
-      "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\examples\\test-saving.mjs",
-      "originalBytesPreserved": true
+      "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92"
     },
     {
-      "path": "inputs/历史/examples/两处隐藏按钮定位差异.json",
-      "bytes": 973,
-      "sha256": "9cc857f3f1014ea6bc1651f559797d8648af53c87398037bfb3221f92ab8b748",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\examples\\两处隐藏按钮定位差异.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\inputs\\教师任务全文.md",
+      "target": "inputs/教师任务全文.md",
+      "originalBytes": 7977,
+      "originalSHA256": "8f9fecc49dbc3e11ba6afdd12cff86a4f66b65523e0a9318e070a645ef6539de",
+      "bytes": 7977,
+      "sha256": "8f9fecc49dbc3e11ba6afdd12cff86a4f66b65523e0a9318e070a645ef6539de"
     },
     {
-      "path": "inputs/历史/examples/人工采用记录.json",
-      "bytes": 807,
-      "sha256": "da448182545579ff3331592e7e5b99a3faa3fa44e0d94108a2d37a4598464294",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\examples\\人工采用记录.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\inputs\\旧新行为和既有评审说明.md",
+      "target": "inputs/旧新行为和既有评审说明.md",
+      "originalBytes": 3942,
+      "originalSHA256": "af3f6f11e7896be70586d89e3ded8f2ee44222605d0d52f51f5da451bf02a634",
+      "bytes": 3942,
+      "sha256": "af3f6f11e7896be70586d89e3ded8f2ee44222605d0d52f51f5da451bf02a634"
     },
     {
-      "path": "inputs/历史/examples/原等待期app.js",
-      "bytes": 7442,
-      "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\examples\\原等待期app.js",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\inputs\\独立业务预期.json",
+      "target": "inputs/独立业务预期.json",
+      "originalBytes": 2607,
+      "originalSHA256": "e686a2dce712ee507e7faf9f83029e88480aeb8e686c45fe0fdfe420eac35760",
+      "bytes": 2607,
+      "sha256": "e686a2dce712ee507e7faf9f83029e88480aeb8e686c45fe0fdfe420eac35760"
     },
     {
-      "path": "inputs/历史/examples/完整应用差异.diff",
-      "bytes": 6670,
-      "sha256": "a39b3fbee5a87d207e1bed1c627a922c0f0486769eaa28b6f0a016772d0150a1",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\examples\\完整应用差异.diff",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\原课实际采用范围与取舍.md",
+      "target": "research/原课实际采用范围与取舍.md",
+      "originalBytes": 8032,
+      "originalSHA256": "1d231772f815cc53fd406431724e0043c0b66046a8d101895aa3b1a55dab906c",
+      "bytes": 8032,
+      "sha256": "1d231772f815cc53fd406431724e0043c0b66046a8d101895aa3b1a55dab906c"
     },
     {
-      "path": "inputs/历史/examples/采用既有修复app.js",
-      "bytes": 7557,
-      "sha256": "9468234bc8decf413e8053ff645d2cbe7a5ed881765c2ee2cd31cacd814b1780",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\examples\\采用既有修复app.js",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\一手研究采用与边界.md",
+      "target": "research/一手研究采用与边界.md",
+      "originalBytes": 7090,
+      "originalSHA256": "6b06c9e4340b46cabbbfa79b4a9428bc3c13b7687df8e97dc55861887606d43f",
+      "bytes": 7090,
+      "sha256": "6b06c9e4340b46cabbbfa79b4a9428bc3c13b7687df8e97dc55861887606d43f"
     },
     {
-      "path": "inputs/历史/records/green/actual-input.md",
-      "bytes": 3751,
-      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\actual-input.md",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\Hook 与暂存当前一手采用.md",
+      "target": "research/Hook 与暂存当前一手采用.md",
+      "originalBytes": 2309,
+      "originalSHA256": "bb0467f16208545b43bcc75a379de465e95cf2da458aa33e6707c7dc6db160c1",
+      "bytes": 2309,
+      "sha256": "bb0467f16208545b43bcc75a379de465e95cf2da458aa33e6707c7dc6db160c1"
     },
     {
-      "path": "inputs/历史/records/green/actual-test-source.mjs",
-      "bytes": 23625,
-      "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\actual-test-source.mjs",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\内部研究\\十份原课全文阅读范围.json",
+      "target": "research/原课定位与完整文字阅读范围.json",
+      "originalBytes": 8696,
+      "originalSHA256": "f57065e2e6cf4a35f01cf6512b8f4d98961cdc8e55e78921b999ec910d1924ca",
+      "bytes": 8696,
+      "sha256": "f57065e2e6cf4a35f01cf6512b8f4d98961cdc8e55e78921b999ec910d1924ca"
     },
     {
-      "path": "inputs/历史/records/green/after.json",
-      "bytes": 31169,
-      "sha256": "1712c616ed4b18149f52307b3a2ed0a63a048e45f35429f51c2ba2ac8872be0c",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\after.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\配图生成完整提示.md",
+      "target": "assets/配图生成完整提示.md",
+      "originalBytes": 3314,
+      "originalSHA256": "86e7e1b41953d2b893e0ddcf0ddbedb0341d385a0df5d1b5e6148351c67cbf57",
+      "bytes": 3314,
+      "sha256": "86e7e1b41953d2b893e0ddcf0ddbedb0341d385a0df5d1b5e6148351c67cbf57"
     },
     {
-      "path": "inputs/历史/records/green/before.json",
-      "bytes": 31169,
-      "sha256": "1712c616ed4b18149f52307b3a2ed0a63a048e45f35429f51c2ba2ac8872be0c",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\before.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\assets\\提交前检查关系.png",
+      "target": "assets/提交前检查关系.png",
+      "originalBytes": 1320436,
+      "originalSHA256": "53ec817dcad04c27121d2de9388ab24eaef0f61bbc70f15e7e1077325ee3a1bb",
+      "bytes": 1320436,
+      "sha256": "53ec817dcad04c27121d2de9388ab24eaef0f61bbc70f15e7e1077325ee3a1bb"
     },
     {
-      "path": "inputs/历史/records/green/behavior-stdout.txt",
-      "bytes": 620,
-      "sha256": "5363a30052b516f13271360045dd2a8639be7847259ff1b060a540e629eb311e",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\behavior-stdout.txt",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\交付制作\\恢复练习.mjs",
+      "target": "tools/恢复练习.mjs",
+      "originalBytes": 4127,
+      "originalSHA256": "743440388c0c53ccc9e2693676a0f706c53b8c662d51ee2c441eca54711f5c5c",
+      "bytes": 4127,
+      "sha256": "743440388c0c53ccc9e2693676a0f706c53b8c662d51ee2c441eca54711f5c5c"
     },
     {
-      "path": "inputs/历史/records/green/complete-commands.json",
-      "bytes": 1440,
-      "sha256": "6c90b383c3b6f927113aa414d568bf2eed5961b359d19803b27444e2c5407756",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\complete-commands.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-05\\交付制作\\README.md",
+      "target": "README.md",
+      "originalBytes": 6465,
+      "originalSHA256": "1ea6d3cf29406893675df91c2c084ea2586b2e68d76feb3008f00800ae1a7feb",
+      "bytes": 6465,
+      "sha256": "1ea6d3cf29406893675df91c2c084ea2586b2e68d76feb3008f00800ae1a7feb"
     },
     {
-      "path": "inputs/历史/records/green/complete-test-databases.json",
-      "bytes": 341601,
-      "sha256": "7f430fdc7bf78982108c91f500a43a0a16f6f6a700108931569369a419c9ce64",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\complete-test-databases.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\input.json",
+      "target": "evidence/01-助手生成/input.json",
+      "originalBytes": 22564,
+      "originalSHA256": "8501ff9013528febb82d74fd3bbce737d9431e21dc53e596cc0ae9ae3e26f525",
+      "bytes": 22564,
+      "sha256": "8501ff9013528febb82d74fd3bbce737d9431e21dc53e596cc0ae9ae3e26f525"
     },
     {
-      "path": "inputs/历史/records/green/report.json",
-      "bytes": 875,
-      "sha256": "089d65340f45f6f9511e60cc94d0a69b396aea4325661cd97e97c47ceac81eeb",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\green\\report.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/actual-test-source.mjs",
-      "bytes": 23583,
-      "sha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\actual-test-source.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/after.json",
-      "bytes": 31169,
-      "sha256": "774b31537e3a66b2bb2d10e034cd916792cbbc9491170c32d7a253998ca895ed",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\after.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/before.json",
-      "bytes": 30982,
-      "sha256": "f4c96eef9f3ff37c5126b5b65ed99a447885766f00a08f4bf1db0ef1fdee5657",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\before.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/complete-commands.json",
-      "bytes": 91991,
-      "sha256": "eb5806d43f54118a1c6b5579ff0bf5f7952b6270f2c325788e2e35ca490fcc2d",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\complete-commands.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/complete-file-changes.json",
-      "bytes": 24364,
-      "sha256": "869f345b63d2d759d454b65baa9773b4758fe375bb2475c388f2181e7c4a4bd4",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\complete-file-changes.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/complete-test-databases.json",
-      "bytes": 3,
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\complete-test-databases.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/configuration.json",
-      "bytes": 7471,
-      "sha256": "3f08c1098c34ecf7d1c877858ac3b98561aa8252e92b2e219f4eec163bfa3c58",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\configuration.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/final-response.txt",
-      "bytes": 317,
-      "sha256": "cc922ecc791dd9d1cfef34d0cc7916ee6374492f956c4c32eb05215557aae502",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\final-response.txt",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/hooks.json",
-      "bytes": 171,
-      "sha256": "f18bcebfc880dcc22b14daef35c19b7278ff932cb250f3c2d43fc5048e32e022",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\hooks.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/input.json",
-      "bytes": 13038,
-      "sha256": "a2c2e7cd873f8d0130f60eead57d6d656188e5dfce6ebdacee7a8ee3b597697c",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\input.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/mcp-status.json",
-      "bytes": 1646,
-      "sha256": "0be76d317fe3b9bb94652ad176240a6027894d2fad0cd2881f9b03810e32cf8e",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\mcp-status.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/notifications-public.json",
-      "bytes": 947640,
-      "sha256": "4562a9908b3fcaf759f5473dff7d896ec82f2ffef4e2d9486dbf3a3d27a2e178",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\notifications-public.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/protocol-public.jsonl",
-      "bytes": 1037755,
-      "sha256": "cc297a439b6090bf41a84d57378b34c26dab837e4b8f728fce697b87c2e39daf",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\protocol-public.jsonl",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/report.json",
-      "bytes": 2350,
-      "sha256": "878cff02492e02a2165f0badca75e55545305facb29cf4fa87fd42133f189a3f",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\report.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/skills.json",
-      "bytes": 9321,
-      "sha256": "26b497f50b473630383ce3a7b56a58b8bf52f127dba15208893a91b258408206",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\skills.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/started.json",
-      "bytes": 2121,
-      "sha256": "c2b7f0f1aa166c7a8f6ef5e4f84139abead651ea2bbc1e85166e0013d98d0928",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\started.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/stderr.txt",
-      "bytes": 216,
-      "sha256": "4b409d7ee2e56061630159667b14546ef285b9b87d9362a342300723b507ae66",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\stderr.txt",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/model-task/thread-public.json",
-      "bytes": 129121,
-      "sha256": "f909123a2c9950a3f6c47831b46db3ce050401125121523d8b3b79b9b9091f7a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\model-task\\thread-public.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/actual-input.md",
-      "bytes": 3751,
-      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\actual-input.md",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/actual-test-source.mjs",
-      "bytes": 23625,
-      "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\actual-test-source.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/after.json",
-      "bytes": 31169,
-      "sha256": "b25d10be30ae5cdab75e8cfb6197214c5b6e2d1a5fe08761c0b7197752c0b80c",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\after.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/before.json",
-      "bytes": 31169,
-      "sha256": "b25d10be30ae5cdab75e8cfb6197214c5b6e2d1a5fe08761c0b7197752c0b80c",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\before.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/behavior-stdout.txt",
-      "bytes": 20227,
-      "sha256": "0a29afa85370935ec5823aaa4409192f762f2020fa01e3284c00430dcad78d9e",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\behavior-stdout.txt",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/complete-commands.json",
-      "bytes": 21385,
-      "sha256": "0ab5796e3ff3aedacb915af4949e9ae48b782df96f43e1f3fbc1e3f8f7957ea8",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\complete-commands.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/complete-test-databases.json",
-      "bytes": 223757,
-      "sha256": "518078004d025882c0abd0ccdd5c41fa08117b3b4e8bceeda4894d5abf0327fd",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\complete-test-databases.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/old-red/report.json",
-      "bytes": 876,
-      "sha256": "3ad083bfbe7572eb2da49212e2beb08d8df98cb6c6070b6a4e27f19c18a7fbe4",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\old-red\\report.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/actual-input.md",
-      "bytes": 3751,
-      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\actual-input.md",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/actual-test-source.mjs",
-      "bytes": 23583,
-      "sha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\actual-test-source.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/after.json",
-      "bytes": 31169,
-      "sha256": "774b31537e3a66b2bb2d10e034cd916792cbbc9491170c32d7a253998ca895ed",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\after.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/before.json",
-      "bytes": 31169,
-      "sha256": "774b31537e3a66b2bb2d10e034cd916792cbbc9491170c32d7a253998ca895ed",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\before.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/behavior-stdout.txt",
-      "bytes": 9520,
-      "sha256": "cbbe5a389170674e806ddb429f564799c666c75b5bc148a7aa8a93ebf9cb2543",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\behavior-stdout.txt",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/complete-commands.json",
-      "bytes": 10630,
-      "sha256": "f13a2864c62d049bc3e74d902363e0c0bb56605f851d771346e3aede36cf9f03",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\complete-commands.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/complete-test-databases.json",
-      "bytes": 105913,
-      "sha256": "d77af15b4378c017e31822027bcc83985dcfb1c76cc8dc2e1133aceb532b20fc",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\complete-test-databases.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/records/original-locator-failure/report.json",
-      "bytes": 851,
-      "sha256": "3b0f4c705c02057c552c6d52b31afc9f8c88445a8cff7a59ffc3afc7a220fbe7",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\records\\original-locator-failure\\report.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/历史/教师测试任务全文.md",
-      "bytes": 3751,
-      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\历史\\教师测试任务全文.md",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/教师评审任务全文.md",
-      "bytes": 4047,
-      "sha256": "f9fd8da252d3e23e9ed05da25a628c2452ed349668f70f503a227364f7cc766a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\教师评审任务全文.md",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/材料原字节来源.json",
-      "bytes": 34000,
-      "sha256": "779adfd8edde969dfa177028cf72fd3e2504b66a9630b66c1bd851cfd28fef78",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\材料原字节来源.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "inputs/评审材料索引.json",
-      "bytes": 6162,
-      "sha256": "c14470fa160fe592df8b2e6d3c91a181ea5f829d4a8d6b64d2f3d05af4c3d290",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\inputs\\评审材料索引.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/freeze-review-definitions.mjs",
-      "bytes": 3641,
-      "sha256": "92c95b2bea39704140a0ca33fbec7a8c10e54ad057a21e9c4929dd487b798d6f",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\freeze-review-definitions.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/observe-review-preflight.mjs",
-      "bytes": 4697,
-      "sha256": "69e9929d8f0928f3586f479ddb4a25f30dfac8add3f936e84b19660114d3e123",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\observe-review-preflight.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/observe-review-task.mjs",
-      "bytes": 13947,
-      "sha256": "2919b8dab99fab66ea01ae5003283bd747f78837bfda87918e891ac983a247fd",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\observe-review-task.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/restore-review-project.mjs",
-      "bytes": 4031,
-      "sha256": "c034a11b247ef7f952f19143908d92316bcfac8aa7ad2dbc7a696cdc359794ee",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\restore-review-project.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/review-checks.mjs",
-      "bytes": 3845,
-      "sha256": "6133b4a015d0c64a2934612f42a3b1aebad6e9a6e87a37ba4914c86daf9f56e7",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\review-checks.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/review-public.mjs",
-      "bytes": 2318,
-      "sha256": "7b8b2bd6501ce1de598ee8bb7d179c786f9e64084b59498d7f51bdec18c719ae",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\review-public.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/review-rpc.mjs",
-      "bytes": 3032,
-      "sha256": "e943d59189773890ab08878891e64dbb20e060cab2a2b07353a5a79cc34c2c11",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\review-rpc.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/review-runtime.mjs",
-      "bytes": 2501,
-      "sha256": "70587b9cbdc6a025e878411164db527228bac091d977a28748d69504be6ab50e",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\review-runtime.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/scripts/review-state.mjs",
-      "bytes": 2387,
-      "sha256": "1669fb34edd725a8380a1d54ae04a44eec2a23142c420e0d5dfc3a4cb3dae49f",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\scripts\\review-state.mjs",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/config/disabled-catalog.json",
-      "bytes": 5552,
-      "sha256": "7779f503e2162a1a75be9fb6cb87ecc45c81599dc279162cdfd893002f97afb5",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\config\\disabled-catalog.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "actual-definition/config/review.json",
-      "bytes": 3151,
-      "sha256": "9b80294e894df96d6f8583f05115a708f56447483c1ebeaa0aee1f9e2cbd1201",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\config\\review.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/restore/after.json",
-      "bytes": 78411,
-      "sha256": "43568d513fd80b27abd00170370355c152c13ffa1ee41a856d883f9f32b5b6d0",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\restore-01\\after.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/restore/commands.json",
-      "bytes": 1123,
-      "sha256": "0e56740c3284ec983d39e4f8e77011cd9f6b6ed38e3fb414ddec3dfce0517037",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\restore-01\\commands.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/restore/report.json",
-      "bytes": 609,
-      "sha256": "ed1d04ae08bcc3a8839eeabc9150991fe53857d4e5759da6a73aa78211a0ead5",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\restore-01\\report.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/preflight/after.json",
-      "bytes": 78411,
-      "sha256": "43568d513fd80b27abd00170370355c152c13ffa1ee41a856d883f9f32b5b6d0",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\preflight-01\\after.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/preflight/before.json",
-      "bytes": 78411,
-      "sha256": "43568d513fd80b27abd00170370355c152c13ffa1ee41a856d883f9f32b5b6d0",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\preflight-01\\before.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/preflight/full-directory.json",
-      "bytes": 31101,
-      "sha256": "4b7b262a9f363c392def32b631188d2428f9c3dd5278f38b03dd7f16d001efa8",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\preflight-01\\full-directory.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/preflight/protocol-observed.jsonl",
-      "bytes": 19791,
-      "sha256": "f48ae874ac8839406d1db8941355ccb9fdff48f5fd7955df8022c9d728a7b342",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\preflight-01\\protocol-observed.jsonl",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/preflight/report.json",
-      "bytes": 1559,
-      "sha256": "b4388a0679cec9c797b0a24c35ceab77acdebd0b63f3c04f6182a2c8796f75c5",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\preflight-01\\report.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/preflight/stderr.txt",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\final-response.txt",
+      "target": "evidence/01-助手生成/final-response.txt",
+      "originalBytes": 1408,
+      "originalSHA256": "597db9b5a2973e8f73bfcccdf842ba8cfe2456507fb5c8bdb18c1fa1e14ceef2",
+      "bytes": 1408,
+      "sha256": "597db9b5a2973e8f73bfcccdf842ba8cfe2456507fb5c8bdb18c1fa1e14ceef2"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\report.json",
+      "target": "evidence/01-助手生成/report.json",
+      "originalBytes": 4955,
+      "originalSHA256": "9106dc0edad38d8166d229687e56dfc935106afeb4f49445fbf1080b4eec28ff",
+      "bytes": 4955,
+      "sha256": "9106dc0edad38d8166d229687e56dfc935106afeb4f49445fbf1080b4eec28ff"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\complete-commands.json",
+      "target": "evidence/01-助手生成/complete-commands.json",
+      "originalBytes": 249349,
+      "originalSHA256": "824d1b371026dfd9b5d7ffd5d09c01f4744f3791080b34ddfb4bf32d6a9ac704",
+      "bytes": 249349,
+      "sha256": "824d1b371026dfd9b5d7ffd5d09c01f4744f3791080b34ddfb4bf32d6a9ac704"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\complete-file-changes.json",
+      "target": "evidence/01-助手生成/complete-file-changes.json",
+      "originalBytes": 51260,
+      "originalSHA256": "c046eebf80c0f4da2cd5f18df47999f390049cad420ea5ce2768e1e833a2dd7a",
+      "bytes": 51260,
+      "sha256": "c046eebf80c0f4da2cd5f18df47999f390049cad420ea5ce2768e1e833a2dd7a"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\allowed-files-fulltext.json",
+      "target": "evidence/01-助手生成/allowed-files-fulltext.json",
+      "originalBytes": 44330,
+      "originalSHA256": "21875e57de90e529d4c7c65e616034de5395d24225b00f570b7c31992acbca74",
+      "bytes": 44330,
+      "sha256": "21875e57de90e529d4c7c65e616034de5395d24225b00f570b7c31992acbca74"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\stderr.txt",
+      "target": "evidence/01-助手生成/stderr.txt",
+      "originalBytes": 572,
+      "originalSHA256": "66d2bacedeae4475141f397b34d869e9d9edb82facd07f8414ead85598406415",
+      "bytes": 572,
+      "sha256": "66d2bacedeae4475141f397b34d869e9d9edb82facd07f8414ead85598406415"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\progress.jsonl",
+      "target": "evidence/01-助手生成/progress.jsonl",
+      "originalBytes": 8723,
+      "originalSHA256": "b609c2fc06b544d9e8895eb669eddbb0ed1df76e2fefcfe6e25b549c745d146b",
+      "bytes": 8723,
+      "sha256": "b609c2fc06b544d9e8895eb669eddbb0ed1df76e2fefcfe6e25b549c745d146b"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\before.json",
+      "target": "evidence/01-助手生成/before.json",
+      "originalBytes": 120032,
+      "originalSHA256": "564ac9682a54bb024d598df9a126ef48d40d8bf6fa4dd14c1be91ac1d3f65edd",
+      "bytes": 120032,
+      "sha256": "564ac9682a54bb024d598df9a126ef48d40d8bf6fa4dd14c1be91ac1d3f65edd"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\after.json",
+      "target": "evidence/01-助手生成/after.json",
+      "originalBytes": 121655,
+      "originalSHA256": "1bdc8aa12d03a17e3b974c49130698c3085466975abc4cdc64b69597aadb7a82",
+      "bytes": 121655,
+      "sha256": "1bdc8aa12d03a17e3b974c49130698c3085466975abc4cdc64b69597aadb7a82"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\作者静态交接\\原状态与真实忽略项完整对照.json",
+      "target": "evidence/01-助手生成/原状态与真实忽略项完整对照.json",
+      "originalBytes": 1535,
+      "originalSHA256": "eca14b010ddc33f691745172c36162b4b4c29827515b4ea09a5b6561b8111ec5",
+      "bytes": 1535,
+      "sha256": "eca14b010ddc33f691745172c36162b4b4c29827515b4ea09a5b6561b8111ec5"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\作者静态交接\\五文件完整Diff命令与结果.json",
+      "target": "evidence/01-助手生成/五文件完整Diff命令与结果.json",
+      "originalBytes": 47241,
+      "originalSHA256": "2689ef16598b4f5fafc7ee3ff9c794b2234a2594e7bd545749911cdefbf07b7a",
+      "bytes": 47241,
+      "sha256": "2689ef16598b4f5fafc7ee3ff9c794b2234a2594e7bd545749911cdefbf07b7a"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\作者静态交接\\十五命令完整索引.json",
+      "target": "evidence/01-助手生成/十五命令完整索引.json",
+      "originalBytes": 14333,
+      "originalSHA256": "8df1a40b5d7f73df563d17be8a3bb736661f9fd89358ed6a41c30d58cb8dc0f5",
+      "bytes": 14333,
+      "sha256": "8df1a40b5d7f73df563d17be8a3bb736661f9fd89358ed6a41c30d58cb8dc0f5"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\preflight-01\\report.json",
+      "target": "evidence/00-准备与目录/preflight-01/report.json",
+      "originalBytes": 1618,
+      "originalSHA256": "81bb58a70d68a1f0466b73df5d380fb897cb502d9b7e438d9229e6663763f636",
+      "bytes": 1618,
+      "sha256": "81bb58a70d68a1f0466b73df5d380fb897cb502d9b7e438d9229e6663763f636"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\preflight-01\\stderr.txt",
+      "target": "evidence/00-准备与目录/preflight-01/stderr.txt",
+      "originalBytes": 1129,
+      "originalSHA256": "cc359a0b8673d236f3b94d024cbe29e82f6b82b9bc5b15d6900b68e94fef6275",
+      "bytes": 1129,
+      "sha256": "cc359a0b8673d236f3b94d024cbe29e82f6b82b9bc5b15d6900b68e94fef6275"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\preflight-02\\report.json",
+      "target": "evidence/00-准备与目录/preflight-02/report.json",
+      "originalBytes": 1616,
+      "originalSHA256": "17e46f0b67e68c2d248f91ea2256678939c999f6b9008e5ff2a0228086f420a5",
+      "bytes": 1616,
+      "sha256": "17e46f0b67e68c2d248f91ea2256678939c999f6b9008e5ff2a0228086f420a5"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\preflight-02\\stderr.txt",
+      "target": "evidence/00-准备与目录/preflight-02/stderr.txt",
+      "originalBytes": 605,
+      "originalSHA256": "6f28c69b071001050a05255fdf819a3b8d87e23f7219e4374a6451e8ade55736",
       "bytes": 605,
-      "sha256": "fa2aceb437bb349f948939663b5374084da20ed63c1338993592073a1f0b57a8",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\preflight-01\\stderr.txt",
-      "originalBytesPreserved": true
+      "sha256": "6f28c69b071001050a05255fdf819a3b8d87e23f7219e4374a6451e8ade55736"
     },
     {
-      "path": "records/review-task/after.json",
-      "bytes": 78411,
-      "sha256": "43568d513fd80b27abd00170370355c152c13ffa1ee41a856d883f9f32b5b6d0",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\after.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\restore-01\\report.json",
+      "target": "evidence/00-准备与目录/restore-01/report.json",
+      "originalBytes": 2825,
+      "originalSHA256": "3b3fba90b64029c1cdb050436f4099b3a3f468e77c42158af291d87b1debebcd",
+      "bytes": 2825,
+      "sha256": "3b3fba90b64029c1cdb050436f4099b3a3f468e77c42158af291d87b1debebcd"
     },
     {
-      "path": "records/review-task/before.json",
-      "bytes": 78411,
-      "sha256": "43568d513fd80b27abd00170370355c152c13ffa1ee41a856d883f9f32b5b6d0",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\before.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\restore-01\\commands.json",
+      "target": "evidence/00-准备与目录/restore-01/commands.json",
+      "originalBytes": 2322,
+      "originalSHA256": "2061b95d3e1bfa6724dbecb37c3b1a62171cc4274d3d29e83b29f43eb828477c",
+      "bytes": 2322,
+      "sha256": "2061b95d3e1bfa6724dbecb37c3b1a62171cc4274d3d29e83b29f43eb828477c"
     },
     {
-      "path": "records/review-task/complete-commands.json",
-      "bytes": 599292,
-      "sha256": "855b7663b46772f9634e093fa991a62a0c0cac28c8e03663eafa29f63c8e3da9",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\complete-commands.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\restore-02\\report.json",
+      "target": "evidence/00-准备与目录/restore-02/report.json",
+      "originalBytes": 1751,
+      "originalSHA256": "7286fded515283daa33f3bd60dbe32d9e395483c95ddcb152dd8932f965d1b24",
+      "bytes": 1751,
+      "sha256": "7286fded515283daa33f3bd60dbe32d9e395483c95ddcb152dd8932f965d1b24"
     },
     {
-      "path": "records/review-task/configuration.json",
-      "bytes": 7468,
-      "sha256": "7b7e257d77d70ae45d10d797a5f5c57dbfe4990f3f531bedd364485b50870a1b",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\configuration.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\restore-02\\commands.json",
+      "target": "evidence/00-准备与目录/restore-02/commands.json",
+      "originalBytes": 1328,
+      "originalSHA256": "f50bde56196d3d8ee735d69d8579191223da4038139f14a9f431db31525d7cda",
+      "bytes": 1328,
+      "sha256": "f50bde56196d3d8ee735d69d8579191223da4038139f14a9f431db31525d7cda"
     },
     {
-      "path": "records/review-task/entered-review.json",
-      "bytes": 4457,
-      "sha256": "eaabfdc053b9a9d34e9b87ab2dd3ccddce4ec04983f1b17af64802cfc4842c51",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\entered-review.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\restore-03\\report.json",
+      "target": "evidence/00-准备与目录/restore-03/report.json",
+      "originalBytes": 556,
+      "originalSHA256": "9523451383161037ab1c1035b5c065ca23264d4c054545ad9a5e06e89a77f2d3",
+      "bytes": 556,
+      "sha256": "9523451383161037ab1c1035b5c065ca23264d4c054545ad9a5e06e89a77f2d3"
     },
     {
-      "path": "records/review-task/exited-review.json",
-      "bytes": 3384,
-      "sha256": "b76ac9e49eaea56d11c2c46edc8280b35e2a42e0a6470e3e0be675c65ffcf17b",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\exited-review.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\restore-03\\commands.json",
+      "target": "evidence/00-准备与目录/restore-03/commands.json",
+      "originalBytes": 3167,
+      "originalSHA256": "02a0946196e93ebcc4a6e2e8b787234324173ef85bc22e57f967301450886a2a",
+      "bytes": 3167,
+      "sha256": "02a0946196e93ebcc4a6e2e8b787234324173ef85bc22e57f967301450886a2a"
     },
     {
-      "path": "records/review-task/hooks.json",
-      "bytes": 171,
-      "sha256": "a583d164ef375660dc4a83ece24ff41773ae55d6c76b1ddb40f1cdad5aaea713",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\hooks.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\install-01\\report.json",
+      "target": "evidence/00-准备与目录/install-01/report.json",
+      "originalBytes": 576,
+      "originalSHA256": "2ed1e757dacfbe62ac73f676458e45b8232e3743a7f8682fa063e4a5efad27eb",
+      "bytes": 576,
+      "sha256": "2ed1e757dacfbe62ac73f676458e45b8232e3743a7f8682fa063e4a5efad27eb"
     },
     {
-      "path": "records/review-task/input.json",
-      "bytes": 18315,
-      "sha256": "e9a77d705a3f44330e83c76f364f3e57108ac60234836aaa9b4e427a88249154",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\input.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/review-task/manual-controls.json",
-      "bytes": 3,
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\manual-controls.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/review-task/mcp-status.json",
-      "bytes": 1646,
-      "sha256": "0be76d317fe3b9bb94652ad176240a6027894d2fad0cd2881f9b03810e32cf8e",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\mcp-status.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/review-task/native-legacy-structured-review.json",
-      "bytes": 3,
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\native-legacy-structured-review.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/review-task/native-start.json",
-      "bytes": 4635,
-      "sha256": "7b3c210217cece740c04a5b10d4719abc928f75dd7f6098e7651d052c10162dc",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\native-start.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/review-task/notifications-observed.json",
-      "bytes": 2242349,
-      "sha256": "688b300be04650a5c360fb27b82c7963571a723c97438882cfd0ac4433e34925",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\notifications-observed.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/review-task/parent-agent-messages.json",
-      "bytes": 3198,
-      "sha256": "f2f7129ab3db7ddf7b2c757730ccc22fab9400caf8eaac69348508ccbac1e4a8",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\parent-agent-messages.json",
-      "originalBytesPreserved": true
-    },
-    {
-      "path": "records/review-task/parent-final-response.txt",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\install-01\\commands.json",
+      "target": "evidence/00-准备与目录/install-01/commands.json",
+      "originalBytes": 2995,
+      "originalSHA256": "b776cc205bf4d0245573a941f984a649530e0145d9f79b6a3be33efc1d473a1f",
       "bytes": 2995,
-      "sha256": "3cf344697806cd776e14879f8bb1c3df45f9ed0228b4db5ab61f42ee598876ca",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\parent-final-response.txt",
-      "originalBytesPreserved": true
+      "sha256": "b776cc205bf4d0245573a941f984a649530e0145d9f79b6a3be33efc1d473a1f"
     },
     {
-      "path": "records/review-task/parent-thread-observed.json",
-      "bytes": 622214,
-      "sha256": "7cfe7ec251344d0f17c4f14035d42984b1b91ee1ca1b56565752003359459264",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\parent-thread-observed.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\after-copy.json",
+      "target": "evidence/02-behavior-old/after-copy.json",
+      "originalBytes": 121920,
+      "originalSHA256": "285255a9a8c8796c04495a1d7a3f4f253ff547472d54a9dd218370f517688fbe",
+      "bytes": 121920,
+      "sha256": "285255a9a8c8796c04495a1d7a3f4f253ff547472d54a9dd218370f517688fbe"
     },
     {
-      "path": "records/review-task/progress.jsonl",
-      "bytes": 2345,
-      "sha256": "1b6d6e11641d9ce78a9cfc9247d0cdc9986f491ec436c86046eca06155a204dd",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\progress.jsonl",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\after.json",
+      "target": "evidence/02-behavior-old/after.json",
+      "originalBytes": 121940,
+      "originalSHA256": "5cf027a1f7d37e86a403d206b655806f4fef111a3b6ed454b8a23df9d909db9d",
+      "bytes": 121940,
+      "sha256": "5cf027a1f7d37e86a403d206b655806f4fef111a3b6ed454b8a23df9d909db9d"
     },
     {
-      "path": "records/review-task/protocol-observed.jsonl",
-      "bytes": 2796541,
-      "sha256": "8dbe7a670bfc4f2de0ca432b4b9dec9cc7a15667e2e9847ab2f95fbc8ce59f2d",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\protocol-observed.jsonl",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\before.json",
+      "target": "evidence/02-behavior-old/before.json",
+      "originalBytes": 121655,
+      "originalSHA256": "1bdc8aa12d03a17e3b974c49130698c3085466975abc4cdc64b69597aadb7a82",
+      "bytes": 121655,
+      "sha256": "1bdc8aa12d03a17e3b974c49130698c3085466975abc4cdc64b69597aadb7a82"
     },
     {
-      "path": "records/review-task/related-review-threads.json",
-      "bytes": 3,
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\related-review-threads.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\build.stderr.txt",
+      "target": "evidence/02-behavior-old/build.stderr.txt",
+      "originalBytes": 23,
+      "originalSHA256": "29c5ee0f6b0b20dbb259b99d01276198c3d28190090706394608d4deda6d2c0b",
+      "bytes": 23,
+      "sha256": "29c5ee0f6b0b20dbb259b99d01276198c3d28190090706394608d4deda6d2c0b"
     },
     {
-      "path": "records/review-task/related-thread-archives.json",
-      "bytes": 3,
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\related-thread-archives.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\build.stdout.txt",
+      "target": "evidence/02-behavior-old/build.stdout.txt",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "records/review-task/related-thread-lists.json",
-      "bytes": 806,
-      "sha256": "8f6753f89e29826400a0161e9c80563330d2989fbfb11b3d56d2912f5000e9c4",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\related-thread-lists.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\independent-persistence-expectation.json",
+      "target": "evidence/02-behavior-old/independent-persistence-expectation.json",
+      "originalBytes": 7650,
+      "originalSHA256": "07065fb91d6a0ed9147bff7bb056a6ccb7b53721f261624b29de911e70f2bdba",
+      "bytes": 7650,
+      "sha256": "07065fb91d6a0ed9147bff7bb056a6ccb7b53721f261624b29de911e70f2bdba"
     },
     {
-      "path": "records/review-task/report.json",
-      "bytes": 10039,
-      "sha256": "1c9e6263ff625f603fe10c21f07e74c930cffb9e0e69b25f1f754990aa9af84a",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\report.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\normal-case.stderr.txt",
+      "target": "evidence/02-behavior-old/normal-case.stderr.txt",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
-      "path": "records/review-task/reviewer-original-agent-messages.json",
-      "bytes": 3,
-      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\reviewer-original-agent-messages.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\normal-case.stdout.txt",
+      "target": "evidence/02-behavior-old/normal-case.stdout.txt",
+      "originalBytes": 11790,
+      "originalSHA256": "02316bc9142cce95525b86eb4628e4a8e3754f453aa00e98b5b1d34cb7162370",
+      "bytes": 11790,
+      "sha256": "02316bc9142cce95525b86eb4628e4a8e3754f453aa00e98b5b1d34cb7162370"
     },
     {
-      "path": "records/review-task/skills.json",
-      "bytes": 9321,
-      "sha256": "990f550eac85b69fd19fbd07e7f45b43f889171068864a38e239d1395f64b0bd",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\skills.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\report.json",
+      "target": "evidence/02-behavior-old/report.json",
+      "originalBytes": 417012,
+      "originalSHA256": "53df7886cdba96eb141462398dc9ed6e534b82143aac08e32b67dbc6d00749de",
+      "bytes": 417012,
+      "sha256": "53df7886cdba96eb141462398dc9ed6e534b82143aac08e32b67dbc6d00749de"
     },
     {
-      "path": "records/review-task/started.json",
-      "bytes": 2027,
-      "sha256": "2dcf7e502260c6919349e4b43cd0e234190ceae12c9215c332b673b5b1bf6248",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\started.json",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-old-01\\sqlite-five-tables.json",
+      "target": "evidence/02-behavior-old/sqlite-five-tables.json",
+      "originalBytes": 60698,
+      "originalSHA256": "c76d497332b69d238e17a96ff74eb0d049799bd4420f193a47010b2205441f3c",
+      "bytes": 60698,
+      "sha256": "c76d497332b69d238e17a96ff74eb0d049799bd4420f193a47010b2205441f3c"
     },
     {
-      "path": "records/review-task/stderr.txt",
-      "bytes": 3780,
-      "sha256": "f9a2d59860704b1b44149169924fca27b3d9c684592ed7f52c1d9002f5469ad6",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\review-task-ffd45da9-bb0a-45b8-8917-0bf3fe88cbd8\\stderr.txt",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-496a84f7-1a5d-4ca8-a9ff-534e66803acf\\result.json",
+      "target": "evidence/03-behavior-old-业务原件/result.json",
+      "originalBytes": 970185,
+      "originalSHA256": "51f0e166bac65aa23fdb8576c0d6d319637fa4fd2b57cfcfc728e4ef01ad6df9",
+      "bytes": 970185,
+      "sha256": "51f0e166bac65aa23fdb8576c0d6d319637fa4fd2b57cfcfc728e4ef01ad6df9"
     },
     {
-      "path": "assets/评审意见先核实再决定.png",
-      "bytes": 1656295,
-      "sha256": "23941225ac86dd1c00a6744b47a002bd0410c0601a49e1e36704bd2feec057ac",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-03\\评审意见先核实再决定.png",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-496a84f7-1a5d-4ca8-a9ff-534e66803acf\\evidence.json",
+      "target": "evidence/03-behavior-old-业务原件/evidence.json",
+      "originalBytes": 970185,
+      "originalSHA256": "51f0e166bac65aa23fdb8576c0d6d319637fa4fd2b57cfcfc728e4ef01ad6df9",
+      "bytes": 970185,
+      "sha256": "51f0e166bac65aa23fdb8576c0d6d319637fa4fd2b57cfcfc728e4ef01ad6df9"
     },
     {
-      "path": "assets/配图实际审读与提示全文.md",
-      "bytes": 2773,
-      "sha256": "0e3f783c82bcddb4bfd724c061023504d6ec8c26110e2b5e9cc26ec842c72948",
-      "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-03\\配图实际审读与提示全文.md",
-      "originalBytesPreserved": true
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-496a84f7-1a5d-4ca8-a9ff-534e66803acf\\fixture.sqlite",
+      "target": "evidence/03-behavior-old-业务原件/fixture.sqlite",
+      "originalBytes": 73728,
+      "originalSHA256": "87e0f1215ec6cc54ede6292c4491a183c573eaa6032fb6a277f6f6b48fc0d048",
+      "bytes": 73728,
+      "sha256": "87e0f1215ec6cc54ede6292c4491a183c573eaa6032fb6a277f6f6b48fc0d048"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-496a84f7-1a5d-4ca8-a9ff-534e66803acf\\fixture.sqlite-wal",
+      "target": "evidence/03-behavior-old-业务原件/fixture.sqlite-wal",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-496a84f7-1a5d-4ca8-a9ff-534e66803acf\\fixture.sqlite-shm",
+      "target": "evidence/03-behavior-old-业务原件/fixture.sqlite-shm",
+      "originalBytes": 32768,
+      "originalSHA256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-cached-diff.stderr.bin",
+      "target": "evidence/02-hook-old/after-cached-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-cached-diff.stdout.bin",
+      "target": "evidence/02-hook-old/after-cached-diff.stdout.bin",
+      "originalBytes": 30045,
+      "originalSHA256": "a018cd0c0ea9f7cc9859daf42e71b0dfefca328547c7d023da05cd1ff820b784",
+      "bytes": 30045,
+      "sha256": "a018cd0c0ea9f7cc9859daf42e71b0dfefca328547c7d023da05cd1ff820b784"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-cached-names.stderr.bin",
+      "target": "evidence/02-hook-old/after-cached-names.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-cached-names.stdout.bin",
+      "target": "evidence/02-hook-old/after-cached-names.stdout.bin",
+      "originalBytes": 68,
+      "originalSHA256": "8a83448c74f87cdf0a31d497b93ac478b09c3f04eccc7519235dedd68bd16a8f",
+      "bytes": 68,
+      "sha256": "8a83448c74f87cdf0a31d497b93ac478b09c3f04eccc7519235dedd68bd16a8f"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-ignored-status.stderr.bin",
+      "target": "evidence/02-hook-old/after-ignored-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-ignored-status.stdout.bin",
+      "target": "evidence/02-hook-old/after-ignored-status.stdout.bin",
+      "originalBytes": 139,
+      "originalSHA256": "79b9fbc7a613b145406d4a52420be8ab826bc3b9b5e675a0b23e96af177faa2b",
+      "bytes": 139,
+      "sha256": "79b9fbc7a613b145406d4a52420be8ab826bc3b9b5e675a0b23e96af177faa2b"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-index-blobs.stderr.bin",
+      "target": "evidence/02-hook-old/after-index-blobs.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-index-blobs.stdin.bin",
+      "target": "evidence/02-hook-old/after-index-blobs.stdin.bin",
+      "originalBytes": 5822,
+      "originalSHA256": "39aaeb0bcd5ed1a2cbfd6b8e936165d0ef478020aab9e20b3ce4dd133896fb84",
+      "bytes": 5822,
+      "sha256": "39aaeb0bcd5ed1a2cbfd6b8e936165d0ef478020aab9e20b3ce4dd133896fb84"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-index-blobs.stdout.bin",
+      "target": "evidence/02-hook-old/after-index-blobs.stdout.bin",
+      "originalBytes": 851755,
+      "originalSHA256": "b28ecf620cd609e276e230989d7bdfed9b5220088002d43db91bbede937c15a1",
+      "bytes": 851755,
+      "sha256": "b28ecf620cd609e276e230989d7bdfed9b5220088002d43db91bbede937c15a1"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-index.stderr.bin",
+      "target": "evidence/02-hook-old/after-index.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-index.stdout.bin",
+      "target": "evidence/02-hook-old/after-index.stdout.bin",
+      "originalBytes": 17016,
+      "originalSHA256": "6936126db54cae4edf288821fe0d3d80115a431874e041751d61265f752a474d",
+      "bytes": 17016,
+      "sha256": "6936126db54cae4edf288821fe0d3d80115a431874e041751d61265f752a474d"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-status.stderr.bin",
+      "target": "evidence/02-hook-old/after-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-status.stdout.bin",
+      "target": "evidence/02-hook-old/after-status.stdout.bin",
+      "originalBytes": 104,
+      "originalSHA256": "79e8dbedbb1603da9fdb8befb5d8eeda78e5bd499ac41233f9a7c3a0a41cc989",
+      "bytes": 104,
+      "sha256": "79e8dbedbb1603da9fdb8befb5d8eeda78e5bd499ac41233f9a7c3a0a41cc989"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-worktree-diff.stderr.bin",
+      "target": "evidence/02-hook-old/after-worktree-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\after-worktree-diff.stdout.bin",
+      "target": "evidence/02-hook-old/after-worktree-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-cached-diff.stderr.bin",
+      "target": "evidence/02-hook-old/before-cached-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-cached-diff.stdout.bin",
+      "target": "evidence/02-hook-old/before-cached-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-cached-names.stderr.bin",
+      "target": "evidence/02-hook-old/before-cached-names.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-cached-names.stdout.bin",
+      "target": "evidence/02-hook-old/before-cached-names.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-ignored-status.stderr.bin",
+      "target": "evidence/02-hook-old/before-ignored-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-ignored-status.stdout.bin",
+      "target": "evidence/02-hook-old/before-ignored-status.stdout.bin",
+      "originalBytes": 99,
+      "originalSHA256": "3228b69abba635d401b954dad84a80f867e839322c2ff9ccb751f92fef0e1477",
+      "bytes": 99,
+      "sha256": "3228b69abba635d401b954dad84a80f867e839322c2ff9ccb751f92fef0e1477"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-index-blobs.stderr.bin",
+      "target": "evidence/02-hook-old/before-index-blobs.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-index-blobs.stdin.bin",
+      "target": "evidence/02-hook-old/before-index-blobs.stdin.bin",
+      "originalBytes": 5740,
+      "originalSHA256": "6b16b6908899ad4c5540d6b6aa68b33483c2926d375d9e015507ae93cf3b0fbd",
+      "bytes": 5740,
+      "sha256": "6b16b6908899ad4c5540d6b6aa68b33483c2926d375d9e015507ae93cf3b0fbd"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-index-blobs.stdout.bin",
+      "target": "evidence/02-hook-old/before-index-blobs.stdout.bin",
+      "originalBytes": 823000,
+      "originalSHA256": "7c5562a5b59ef2494614610fd26da4de47b4fd3b120603a735212b5bb4ea3aa6",
+      "bytes": 823000,
+      "sha256": "7c5562a5b59ef2494614610fd26da4de47b4fd3b120603a735212b5bb4ea3aa6"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-index.stderr.bin",
+      "target": "evidence/02-hook-old/before-index.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-index.stdout.bin",
+      "target": "evidence/02-hook-old/before-index.stdout.bin",
+      "originalBytes": 16861,
+      "originalSHA256": "2fee73c92cca410637e86c53d6460f313c91772e597b0a36fa4912c543b9774e",
+      "bytes": 16861,
+      "sha256": "2fee73c92cca410637e86c53d6460f313c91772e597b0a36fa4912c543b9774e"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-status.stderr.bin",
+      "target": "evidence/02-hook-old/before-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-status.stdout.bin",
+      "target": "evidence/02-hook-old/before-status.stdout.bin",
+      "originalBytes": 64,
+      "originalSHA256": "133cb0aa205632ec4e6f40c8e49e6e22a028cbb16680cb59d2bf51fdfaf05745",
+      "bytes": 64,
+      "sha256": "133cb0aa205632ec4e6f40c8e49e6e22a028cbb16680cb59d2bf51fdfaf05745"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-worktree-diff.stderr.bin",
+      "target": "evidence/02-hook-old/before-worktree-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\before-worktree-diff.stdout.bin",
+      "target": "evidence/02-hook-old/before-worktree-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-cached-diff.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-cached-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-cached-diff.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-cached-diff.stdout.bin",
+      "originalBytes": 30045,
+      "originalSHA256": "a018cd0c0ea9f7cc9859daf42e71b0dfefca328547c7d023da05cd1ff820b784",
+      "bytes": 30045,
+      "sha256": "a018cd0c0ea9f7cc9859daf42e71b0dfefca328547c7d023da05cd1ff820b784"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-cached-names.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-cached-names.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-cached-names.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-cached-names.stdout.bin",
+      "originalBytes": 68,
+      "originalSHA256": "8a83448c74f87cdf0a31d497b93ac478b09c3f04eccc7519235dedd68bd16a8f",
+      "bytes": 68,
+      "sha256": "8a83448c74f87cdf0a31d497b93ac478b09c3f04eccc7519235dedd68bd16a8f"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-ignored-status.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-ignored-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-ignored-status.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-ignored-status.stdout.bin",
+      "originalBytes": 139,
+      "originalSHA256": "79b9fbc7a613b145406d4a52420be8ab826bc3b9b5e675a0b23e96af177faa2b",
+      "bytes": 139,
+      "sha256": "79b9fbc7a613b145406d4a52420be8ab826bc3b9b5e675a0b23e96af177faa2b"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-index-blobs.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-index-blobs.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-index-blobs.stdin.bin",
+      "target": "evidence/02-hook-old/candidate-index-blobs.stdin.bin",
+      "originalBytes": 5822,
+      "originalSHA256": "39aaeb0bcd5ed1a2cbfd6b8e936165d0ef478020aab9e20b3ce4dd133896fb84",
+      "bytes": 5822,
+      "sha256": "39aaeb0bcd5ed1a2cbfd6b8e936165d0ef478020aab9e20b3ce4dd133896fb84"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-index-blobs.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-index-blobs.stdout.bin",
+      "originalBytes": 851755,
+      "originalSHA256": "b28ecf620cd609e276e230989d7bdfed9b5220088002d43db91bbede937c15a1",
+      "bytes": 851755,
+      "sha256": "b28ecf620cd609e276e230989d7bdfed9b5220088002d43db91bbede937c15a1"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-index.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-index.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-index.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-index.stdout.bin",
+      "originalBytes": 17016,
+      "originalSHA256": "6936126db54cae4edf288821fe0d3d80115a431874e041751d61265f752a474d",
+      "bytes": 17016,
+      "sha256": "6936126db54cae4edf288821fe0d3d80115a431874e041751d61265f752a474d"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-status.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-status.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-status.stdout.bin",
+      "originalBytes": 104,
+      "originalSHA256": "79e8dbedbb1603da9fdb8befb5d8eeda78e5bd499ac41233f9a7c3a0a41cc989",
+      "bytes": 104,
+      "sha256": "79e8dbedbb1603da9fdb8befb5d8eeda78e5bd499ac41233f9a7c3a0a41cc989"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-tree.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-tree.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-tree.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-tree.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "99a24ea15bd0839532fbf5e3c4dd8d1074c513bdb2221e2a0af03bef11c6bc7a",
+      "bytes": 41,
+      "sha256": "99a24ea15bd0839532fbf5e3c4dd8d1074c513bdb2221e2a0af03bef11c6bc7a"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-worktree-diff.stderr.bin",
+      "target": "evidence/02-hook-old/candidate-worktree-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate-worktree-diff.stdout.bin",
+      "target": "evidence/02-hook-old/candidate-worktree-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\candidate.json",
+      "target": "evidence/02-hook-old/candidate.json",
+      "originalBytes": 99187,
+      "originalSHA256": "9b2a1a74a6fc437926718b9e96eb371490093004c3ae3cfabea7e4480c9adad5",
+      "bytes": 99187,
+      "sha256": "9b2a1a74a6fc437926718b9e96eb371490093004c3ae3cfabea7e4480c9adad5"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\commit.stderr.bin",
+      "target": "evidence/02-hook-old/commit.stderr.bin",
+      "originalBytes": 11996,
+      "originalSHA256": "0204ba18bd286532f9b3c2b9c35a1d5ddf12350e44425fe88b9eaafe1e8774dd",
+      "bytes": 11996,
+      "sha256": "0204ba18bd286532f9b3c2b9c35a1d5ddf12350e44425fe88b9eaafe1e8774dd"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\commit.stdout.bin",
+      "target": "evidence/02-hook-old/commit.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\enable-local-hook.stderr.bin",
+      "target": "evidence/02-hook-old/enable-local-hook.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\enable-local-hook.stdout.bin",
+      "target": "evidence/02-hook-old/enable-local-hook.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\final-head.stderr.bin",
+      "target": "evidence/02-hook-old/final-head.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\final-head.stdout.bin",
+      "target": "evidence/02-hook-old/final-head.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "272cb99717d7039fbf8c11a104e070f75496562ab071c78fbc66c95c46bc80c7",
+      "bytes": 41,
+      "sha256": "272cb99717d7039fbf8c11a104e070f75496562ab071c78fbc66c95c46bc80c7"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-branch.stderr.bin",
+      "target": "evidence/02-hook-old/git-branch.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-branch.stdout.bin",
+      "target": "evidence/02-hook-old/git-branch.stdout.bin",
+      "originalBytes": 24,
+      "originalSHA256": "29a7abe3a9a7295bdf90c0c2c821e22df2d7c621c63c2113c1a42ca6b7d23e1a",
+      "bytes": 24,
+      "sha256": "29a7abe3a9a7295bdf90c0c2c821e22df2d7c621c63c2113c1a42ca6b7d23e1a"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-commit-trace2-full.json",
+      "target": "evidence/02-hook-old/git-commit-trace2-full.json",
+      "originalBytes": 10096,
+      "originalSHA256": "a755977ce874800d50ac5b6cab3b6de23836f608e470b4a35f058aa78a3127eb",
+      "bytes": 10096,
+      "sha256": "a755977ce874800d50ac5b6cab3b6de23836f608e470b4a35f058aa78a3127eb"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-commit-trace2.jsonl",
+      "target": "evidence/02-hook-old/git-commit-trace2.jsonl",
+      "originalBytes": 7769,
+      "originalSHA256": "dc493fab7f1ae5067de05b375608890737dea30057303491bef5bf64b86b326e",
+      "bytes": 7769,
+      "sha256": "dc493fab7f1ae5067de05b375608890737dea30057303491bef5bf64b86b326e"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-root.stderr.bin",
+      "target": "evidence/02-hook-old/git-root.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-root.stdout.bin",
+      "target": "evidence/02-hook-old/git-root.stdout.bin",
+      "originalBytes": 62,
+      "originalSHA256": "cbb473ae2f4506eb186ecc561e2c96b12f045ee6232fba9e88b521c0b2ca84a7",
+      "bytes": 62,
+      "sha256": "cbb473ae2f4506eb186ecc561e2c96b12f045ee6232fba9e88b521c0b2ca84a7"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-version.stderr.bin",
+      "target": "evidence/02-hook-old/git-version.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\git-version.stdout.bin",
+      "target": "evidence/02-hook-old/git-version.stdout.bin",
+      "originalBytes": 29,
+      "originalSHA256": "9d9d8a49f3de42d6e7b569bf28bd8db3ea3384c44386d6f2de4655e4ca41ff26",
+      "bytes": 29,
+      "sha256": "9d9d8a49f3de42d6e7b569bf28bd8db3ea3384c44386d6f2de4655e4ca41ff26"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\independent-expectation.json",
+      "target": "evidence/02-hook-old/independent-expectation.json",
+      "originalBytes": 4065,
+      "originalSHA256": "4440679ff68b17fb6b5192837871a8ddc8cf7ccb0bcfd32e5761d3598a5a5ac1",
+      "bytes": 4065,
+      "sha256": "4440679ff68b17fb6b5192837871a8ddc8cf7ccb0bcfd32e5761d3598a5a5ac1"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\local-config-after.txt",
+      "target": "evidence/02-hook-old/local-config-after.txt",
+      "originalBytes": 372,
+      "originalSHA256": "9a1573d4796db1d01781ceaf9b6a2e7b3321b86187371b0a3ae709c14ecfa09c",
+      "bytes": 372,
+      "sha256": "9a1573d4796db1d01781ceaf9b6a2e7b3321b86187371b0a3ae709c14ecfa09c"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\local-config-before.txt",
+      "target": "evidence/02-hook-old/local-config-before.txt",
+      "originalBytes": 349,
+      "originalSHA256": "9896294bddd457f0bf3b9e7b2c13623fc9f45dad41f005dc6d0deff3c7f5af97",
+      "bytes": 349,
+      "sha256": "9896294bddd457f0bf3b9e7b2c13623fc9f45dad41f005dc6d0deff3c7f5af97"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\local-hook-path-after.stderr.bin",
+      "target": "evidence/02-hook-old/local-hook-path-after.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\local-hook-path-after.stdout.bin",
+      "target": "evidence/02-hook-old/local-hook-path-after.stdout.bin",
+      "originalBytes": 10,
+      "originalSHA256": "239b057f9b05bafd589c56bedb8337bbd4f8be338092c5acee42c243ef407811",
+      "bytes": 10,
+      "sha256": "239b057f9b05bafd589c56bedb8337bbd4f8be338092c5acee42c243ef407811"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\local-hook-path-before.stderr.bin",
+      "target": "evidence/02-hook-old/local-hook-path-before.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\local-hook-path-before.stdout.bin",
+      "target": "evidence/02-hook-old/local-hook-path-before.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\old-package-before.json",
+      "target": "evidence/02-hook-old/old-package-before.json",
+      "originalBytes": 1413,
+      "originalSHA256": "f183db2a06b2990d90f6967edc48358e844df191399116ae07380654e6cc3ce0",
+      "bytes": 1413,
+      "sha256": "f183db2a06b2990d90f6967edc48358e844df191399116ae07380654e6cc3ce0"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\original-head.stderr.bin",
+      "target": "evidence/02-hook-old/original-head.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\original-head.stdout.bin",
+      "target": "evidence/02-hook-old/original-head.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "272cb99717d7039fbf8c11a104e070f75496562ab071c78fbc66c95c46bc80c7",
+      "bytes": 41,
+      "sha256": "272cb99717d7039fbf8c11a104e070f75496562ab071c78fbc66c95c46bc80c7"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\report.json",
+      "target": "evidence/02-hook-old/report.json",
+      "originalBytes": 3118749,
+      "originalSHA256": "6498813ee44468779758272d0109ca75191a646a38189889a74a7f61774de4a1",
+      "bytes": 3118749,
+      "sha256": "6498813ee44468779758272d0109ca75191a646a38189889a74a7f61774de4a1"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\sqlite-five-tables.json",
+      "target": "evidence/02-hook-old/sqlite-five-tables.json",
+      "originalBytes": 60702,
+      "originalSHA256": "f5b2fcf0d6000556f347603dbccff119bbeb9db3829c808f3a3874300a3841b4",
+      "bytes": 60702,
+      "sha256": "f5b2fcf0d6000556f347603dbccff119bbeb9db3829c808f3a3874300a3841b4"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\stage-executable-hook.stderr.bin",
+      "target": "evidence/02-hook-old/stage-executable-hook.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\stage-executable-hook.stdout.bin",
+      "target": "evidence/02-hook-old/stage-executable-hook.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\stage-files.stderr.bin",
+      "target": "evidence/02-hook-old/stage-files.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-old-01\\stage-files.stdout.bin",
+      "target": "evidence/02-hook-old/stage-files.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-20dd9e58-568d-4970-8d73-9518ac039331\\result.json",
+      "target": "evidence/03-hook-old-业务原件/result.json",
+      "originalBytes": 970278,
+      "originalSHA256": "a9dcbf983568f2f16f057d18661cd86c01dce8c0c2dc5ed337350c25b8510519",
+      "bytes": 970278,
+      "sha256": "a9dcbf983568f2f16f057d18661cd86c01dce8c0c2dc5ed337350c25b8510519"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-20dd9e58-568d-4970-8d73-9518ac039331\\evidence.json",
+      "target": "evidence/03-hook-old-业务原件/evidence.json",
+      "originalBytes": 970278,
+      "originalSHA256": "a9dcbf983568f2f16f057d18661cd86c01dce8c0c2dc5ed337350c25b8510519",
+      "bytes": 970278,
+      "sha256": "a9dcbf983568f2f16f057d18661cd86c01dce8c0c2dc5ed337350c25b8510519"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-20dd9e58-568d-4970-8d73-9518ac039331\\fixture.sqlite",
+      "target": "evidence/03-hook-old-业务原件/fixture.sqlite",
+      "originalBytes": 73728,
+      "originalSHA256": "2d0b45fd1599881ac5171493afc715c85a564865e708af7fd3e7fca32c799f97",
+      "bytes": 73728,
+      "sha256": "2d0b45fd1599881ac5171493afc715c85a564865e708af7fd3e7fca32c799f97"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-20dd9e58-568d-4970-8d73-9518ac039331\\fixture.sqlite-wal",
+      "target": "evidence/03-hook-old-业务原件/fixture.sqlite-wal",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\old-project\\runs\\delivery-saving-20dd9e58-568d-4970-8d73-9518ac039331\\fixture.sqlite-shm",
+      "target": "evidence/03-hook-old-业务原件/fixture.sqlite-shm",
+      "originalBytes": 32768,
+      "originalSHA256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\after-copy.json",
+      "target": "evidence/02-behavior-fixed/after-copy.json",
+      "originalBytes": 121940,
+      "originalSHA256": "5cf027a1f7d37e86a403d206b655806f4fef111a3b6ed454b8a23df9d909db9d",
+      "bytes": 121940,
+      "sha256": "5cf027a1f7d37e86a403d206b655806f4fef111a3b6ed454b8a23df9d909db9d"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\after.json",
+      "target": "evidence/02-behavior-fixed/after.json",
+      "originalBytes": 121960,
+      "originalSHA256": "8f4f9e22fd9d1ece8457318c57763b4ad1ca2b81fd60932f195511c34463f7f2",
+      "bytes": 121960,
+      "sha256": "8f4f9e22fd9d1ece8457318c57763b4ad1ca2b81fd60932f195511c34463f7f2"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\before.json",
+      "target": "evidence/02-behavior-fixed/before.json",
+      "originalBytes": 121940,
+      "originalSHA256": "5cf027a1f7d37e86a403d206b655806f4fef111a3b6ed454b8a23df9d909db9d",
+      "bytes": 121940,
+      "sha256": "5cf027a1f7d37e86a403d206b655806f4fef111a3b6ed454b8a23df9d909db9d"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\build.stderr.txt",
+      "target": "evidence/02-behavior-fixed/build.stderr.txt",
+      "originalBytes": 23,
+      "originalSHA256": "29c5ee0f6b0b20dbb259b99d01276198c3d28190090706394608d4deda6d2c0b",
+      "bytes": 23,
+      "sha256": "29c5ee0f6b0b20dbb259b99d01276198c3d28190090706394608d4deda6d2c0b"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\build.stdout.txt",
+      "target": "evidence/02-behavior-fixed/build.stdout.txt",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\independent-persistence-expectation.json",
+      "target": "evidence/02-behavior-fixed/independent-persistence-expectation.json",
+      "originalBytes": 7650,
+      "originalSHA256": "7462c01e9d72990a5731e783d2276e0d4c0819c18317097696d47028bd8becdf",
+      "bytes": 7650,
+      "sha256": "7462c01e9d72990a5731e783d2276e0d4c0819c18317097696d47028bd8becdf"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\normal-case.stderr.txt",
+      "target": "evidence/02-behavior-fixed/normal-case.stderr.txt",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\normal-case.stdout.txt",
+      "target": "evidence/02-behavior-fixed/normal-case.stdout.txt",
+      "originalBytes": 1715,
+      "originalSHA256": "c5a6d6c71a2ce27ac900033b40c2f5700b037e9b664371c8bceeed8a8204d786",
+      "bytes": 1715,
+      "sha256": "c5a6d6c71a2ce27ac900033b40c2f5700b037e9b664371c8bceeed8a8204d786"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\report.json",
+      "target": "evidence/02-behavior-fixed/report.json",
+      "originalBytes": 398172,
+      "originalSHA256": "38af790c19d38ef0139bde0d001a759288a19e388ae1fd64558fe8500088d134",
+      "bytes": 398172,
+      "sha256": "38af790c19d38ef0139bde0d001a759288a19e388ae1fd64558fe8500088d134"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-behavior-fixed-01\\sqlite-five-tables.json",
+      "target": "evidence/02-behavior-fixed/sqlite-five-tables.json",
+      "originalBytes": 60698,
+      "originalSHA256": "563f0e13dd985142e81890768a41d4013453fe5117d1a7dcce7d6394003e14fa",
+      "bytes": 60698,
+      "sha256": "563f0e13dd985142e81890768a41d4013453fe5117d1a7dcce7d6394003e14fa"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-f063612b-f8be-42e1-bfa0-f4b6d0a39c6f\\result.json",
+      "target": "evidence/03-behavior-fixed-业务原件/result.json",
+      "originalBytes": 947807,
+      "originalSHA256": "3accefd85ea871e134d0a768ebca1d53329d53b2f556864f1c32c2c39e1fadf4",
+      "bytes": 947807,
+      "sha256": "3accefd85ea871e134d0a768ebca1d53329d53b2f556864f1c32c2c39e1fadf4"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-f063612b-f8be-42e1-bfa0-f4b6d0a39c6f\\evidence.json",
+      "target": "evidence/03-behavior-fixed-业务原件/evidence.json",
+      "originalBytes": 947807,
+      "originalSHA256": "3accefd85ea871e134d0a768ebca1d53329d53b2f556864f1c32c2c39e1fadf4",
+      "bytes": 947807,
+      "sha256": "3accefd85ea871e134d0a768ebca1d53329d53b2f556864f1c32c2c39e1fadf4"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-f063612b-f8be-42e1-bfa0-f4b6d0a39c6f\\fixture.sqlite",
+      "target": "evidence/03-behavior-fixed-业务原件/fixture.sqlite",
+      "originalBytes": 73728,
+      "originalSHA256": "6c669bdf712a0215768140b571e77e77b258afb40f825abe63e23725b2768dd1",
+      "bytes": 73728,
+      "sha256": "6c669bdf712a0215768140b571e77e77b258afb40f825abe63e23725b2768dd1"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-f063612b-f8be-42e1-bfa0-f4b6d0a39c6f\\fixture.sqlite-wal",
+      "target": "evidence/03-behavior-fixed-业务原件/fixture.sqlite-wal",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-f063612b-f8be-42e1-bfa0-f4b6d0a39c6f\\fixture.sqlite-shm",
+      "target": "evidence/03-behavior-fixed-业务原件/fixture.sqlite-shm",
+      "originalBytes": 32768,
+      "originalSHA256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-cached-diff.stderr.bin",
+      "target": "evidence/02-hook-fixed/after-cached-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-cached-diff.stdout.bin",
+      "target": "evidence/02-hook-fixed/after-cached-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-cached-names.stderr.bin",
+      "target": "evidence/02-hook-fixed/after-cached-names.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-cached-names.stdout.bin",
+      "target": "evidence/02-hook-fixed/after-cached-names.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-ignored-status.stderr.bin",
+      "target": "evidence/02-hook-fixed/after-ignored-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-ignored-status.stdout.bin",
+      "target": "evidence/02-hook-fixed/after-ignored-status.stdout.bin",
+      "originalBytes": 62,
+      "originalSHA256": "8ffb23a19df3a740f479e638cf787d8114e6c502eaa6dae17dfbcf86842a3162",
+      "bytes": 62,
+      "sha256": "8ffb23a19df3a740f479e638cf787d8114e6c502eaa6dae17dfbcf86842a3162"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-index-blobs.stderr.bin",
+      "target": "evidence/02-hook-fixed/after-index-blobs.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-index-blobs.stdin.bin",
+      "target": "evidence/02-hook-fixed/after-index-blobs.stdin.bin",
+      "originalBytes": 5904,
+      "originalSHA256": "03c94a12243d6363a1c764e8dcb218b59c5453b0abda60cd3fc250421616113a",
+      "bytes": 5904,
+      "sha256": "03c94a12243d6363a1c764e8dcb218b59c5453b0abda60cd3fc250421616113a"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-index-blobs.stdout.bin",
+      "target": "evidence/02-hook-fixed/after-index-blobs.stdout.bin",
+      "originalBytes": 864532,
+      "originalSHA256": "ac0303aeed73d390f5bdecb2fb3e7441bea9754e90ba844f98189e79244c1599",
+      "bytes": 864532,
+      "sha256": "ac0303aeed73d390f5bdecb2fb3e7441bea9754e90ba844f98189e79244c1599"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-index.stderr.bin",
+      "target": "evidence/02-hook-fixed/after-index.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-index.stdout.bin",
+      "target": "evidence/02-hook-fixed/after-index.stdout.bin",
+      "originalBytes": 17170,
+      "originalSHA256": "2b76472c265d187226f6d13c7acb8ddf3ad66047bcef9b0cabd0b3b91aec85a5",
+      "bytes": 17170,
+      "sha256": "2b76472c265d187226f6d13c7acb8ddf3ad66047bcef9b0cabd0b3b91aec85a5"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-status.stderr.bin",
+      "target": "evidence/02-hook-fixed/after-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-status.stdout.bin",
+      "target": "evidence/02-hook-fixed/after-status.stdout.bin",
+      "originalBytes": 27,
+      "originalSHA256": "3d7dfaf68543a7d5eff747f6fb7aecd63fee0e03217b2e10ad40499c2315033e",
+      "bytes": 27,
+      "sha256": "3d7dfaf68543a7d5eff747f6fb7aecd63fee0e03217b2e10ad40499c2315033e"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-worktree-diff.stderr.bin",
+      "target": "evidence/02-hook-fixed/after-worktree-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\after-worktree-diff.stdout.bin",
+      "target": "evidence/02-hook-fixed/after-worktree-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-cached-diff.stderr.bin",
+      "target": "evidence/02-hook-fixed/before-cached-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-cached-diff.stdout.bin",
+      "target": "evidence/02-hook-fixed/before-cached-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-cached-names.stderr.bin",
+      "target": "evidence/02-hook-fixed/before-cached-names.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-cached-names.stdout.bin",
+      "target": "evidence/02-hook-fixed/before-cached-names.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-ignored-status.stderr.bin",
+      "target": "evidence/02-hook-fixed/before-ignored-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-ignored-status.stdout.bin",
+      "target": "evidence/02-hook-fixed/before-ignored-status.stdout.bin",
+      "originalBytes": 199,
+      "originalSHA256": "59e392031b2675fe8e9d9312585d069a48d051261d42f91261faa86aaa5199ba",
+      "bytes": 199,
+      "sha256": "59e392031b2675fe8e9d9312585d069a48d051261d42f91261faa86aaa5199ba"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-index-blobs.stderr.bin",
+      "target": "evidence/02-hook-fixed/before-index-blobs.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-index-blobs.stdin.bin",
+      "target": "evidence/02-hook-fixed/before-index-blobs.stdin.bin",
+      "originalBytes": 5740,
+      "originalSHA256": "1f280033b90d355e1edc4e4d939c96fc88c209f389b889dcbcdec92966fa7364",
+      "bytes": 5740,
+      "sha256": "1f280033b90d355e1edc4e4d939c96fc88c209f389b889dcbcdec92966fa7364"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-index-blobs.stdout.bin",
+      "target": "evidence/02-hook-fixed/before-index-blobs.stdout.bin",
+      "originalBytes": 823115,
+      "originalSHA256": "cbf373ac31b81b6baf9cb99fa483d4d15f4f01393fc8c3c5e3674a31fd613f1e",
+      "bytes": 823115,
+      "sha256": "cbf373ac31b81b6baf9cb99fa483d4d15f4f01393fc8c3c5e3674a31fd613f1e"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-index.stderr.bin",
+      "target": "evidence/02-hook-fixed/before-index.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-index.stdout.bin",
+      "target": "evidence/02-hook-fixed/before-index.stdout.bin",
+      "originalBytes": 16861,
+      "originalSHA256": "e5b5d710fa200cfbcdadbc57f7b6c6a5cd39f9db3080273949db9543f6041f24",
+      "bytes": 16861,
+      "sha256": "e5b5d710fa200cfbcdadbc57f7b6c6a5cd39f9db3080273949db9543f6041f24"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-status.stderr.bin",
+      "target": "evidence/02-hook-fixed/before-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-status.stdout.bin",
+      "target": "evidence/02-hook-fixed/before-status.stdout.bin",
+      "originalBytes": 164,
+      "originalSHA256": "0da299b9fb62370dd2983a94ac4da006f76333085120f1df693677951e214ebb",
+      "bytes": 164,
+      "sha256": "0da299b9fb62370dd2983a94ac4da006f76333085120f1df693677951e214ebb"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-worktree-diff.stderr.bin",
+      "target": "evidence/02-hook-fixed/before-worktree-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\before-worktree-diff.stdout.bin",
+      "target": "evidence/02-hook-fixed/before-worktree-diff.stdout.bin",
+      "originalBytes": 632,
+      "originalSHA256": "83e6c51bc7c87bae3e0c1eb05040dca5cb097765b22dc514973af47f4e36373b",
+      "bytes": 632,
+      "sha256": "83e6c51bc7c87bae3e0c1eb05040dca5cb097765b22dc514973af47f4e36373b"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-cached-diff.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-cached-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-cached-diff.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-cached-diff.stdout.bin",
+      "originalBytes": 43088,
+      "originalSHA256": "ce22d857505502d9cf2321be478153f56a36a55b7a74e6131e79701142c34ebe",
+      "bytes": 43088,
+      "sha256": "ce22d857505502d9cf2321be478153f56a36a55b7a74e6131e79701142c34ebe"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-cached-names.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-cached-names.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-cached-names.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-cached-names.stdout.bin",
+      "originalBytes": 122,
+      "originalSHA256": "ec334fed3add39723e86d6b3ab093b1525e5a45ed44bdede7fa9a6dcaf0ab1b6",
+      "bytes": 122,
+      "sha256": "ec334fed3add39723e86d6b3ab093b1525e5a45ed44bdede7fa9a6dcaf0ab1b6"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-ignored-status.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-ignored-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-ignored-status.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-ignored-status.stdout.bin",
+      "originalBytes": 199,
+      "originalSHA256": "1c6e14369cb18dd18f1a25221238b9742c85eaa4367f7c7079b30978486295bf",
+      "bytes": 199,
+      "sha256": "1c6e14369cb18dd18f1a25221238b9742c85eaa4367f7c7079b30978486295bf"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-index-blobs.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-index-blobs.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-index-blobs.stdin.bin",
+      "target": "evidence/02-hook-fixed/candidate-index-blobs.stdin.bin",
+      "originalBytes": 5904,
+      "originalSHA256": "03c94a12243d6363a1c764e8dcb218b59c5453b0abda60cd3fc250421616113a",
+      "bytes": 5904,
+      "sha256": "03c94a12243d6363a1c764e8dcb218b59c5453b0abda60cd3fc250421616113a"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-index-blobs.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-index-blobs.stdout.bin",
+      "originalBytes": 864532,
+      "originalSHA256": "ac0303aeed73d390f5bdecb2fb3e7441bea9754e90ba844f98189e79244c1599",
+      "bytes": 864532,
+      "sha256": "ac0303aeed73d390f5bdecb2fb3e7441bea9754e90ba844f98189e79244c1599"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-index.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-index.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-index.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-index.stdout.bin",
+      "originalBytes": 17170,
+      "originalSHA256": "2b76472c265d187226f6d13c7acb8ddf3ad66047bcef9b0cabd0b3b91aec85a5",
+      "bytes": 17170,
+      "sha256": "2b76472c265d187226f6d13c7acb8ddf3ad66047bcef9b0cabd0b3b91aec85a5"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-status.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-status.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-status.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-status.stdout.bin",
+      "originalBytes": 164,
+      "originalSHA256": "d6e3a0097698cb3038926e9eb634d98bb2bee23718260a6395619b3cc6bc7179",
+      "bytes": 164,
+      "sha256": "d6e3a0097698cb3038926e9eb634d98bb2bee23718260a6395619b3cc6bc7179"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-tree.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-tree.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-tree.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-tree.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "336d10cfe7df75fff5f5d0e7277bf0650d500a28fc5c68fc39e3fc379b46fa55",
+      "bytes": 41,
+      "sha256": "336d10cfe7df75fff5f5d0e7277bf0650d500a28fc5c68fc39e3fc379b46fa55"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-worktree-diff.stderr.bin",
+      "target": "evidence/02-hook-fixed/candidate-worktree-diff.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate-worktree-diff.stdout.bin",
+      "target": "evidence/02-hook-fixed/candidate-worktree-diff.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\candidate.json",
+      "target": "evidence/02-hook-fixed/candidate.json",
+      "originalBytes": 113354,
+      "originalSHA256": "51f8a455c8866831a13111d78a6c8d9052c21f4f6cdda789a88efcd1959a514c",
+      "bytes": 113354,
+      "sha256": "51f8a455c8866831a13111d78a6c8d9052c21f4f6cdda789a88efcd1959a514c"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\commit.stderr.bin",
+      "target": "evidence/02-hook-fixed/commit.stderr.bin",
+      "originalBytes": 1829,
+      "originalSHA256": "e9ddf6e5858eaa76d73a2fd4b6c32008c556069873fe060d7ae5e64ad709edb8",
+      "bytes": 1829,
+      "sha256": "e9ddf6e5858eaa76d73a2fd4b6c32008c556069873fe060d7ae5e64ad709edb8"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\commit.stdout.bin",
+      "target": "evidence/02-hook-fixed/commit.stdout.bin",
+      "originalBytes": 311,
+      "originalSHA256": "d6345600a892e390c5ef52bf63e5ea1eb6633e9933c58a0b032ed77741f4cacf",
+      "bytes": 311,
+      "sha256": "d6345600a892e390c5ef52bf63e5ea1eb6633e9933c58a0b032ed77741f4cacf"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\enable-local-hook.stderr.bin",
+      "target": "evidence/02-hook-fixed/enable-local-hook.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\enable-local-hook.stdout.bin",
+      "target": "evidence/02-hook-fixed/enable-local-hook.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-commit-object.stderr.bin",
+      "target": "evidence/02-hook-fixed/final-commit-object.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-commit-object.stdout.bin",
+      "target": "evidence/02-hook-fixed/final-commit-object.stdout.bin",
+      "originalBytes": 271,
+      "originalSHA256": "401ce8ed8f6a53ed67d70970a809ae30e16d5b8558b877c85ffcbaa3a738508e",
+      "bytes": 271,
+      "sha256": "401ce8ed8f6a53ed67d70970a809ae30e16d5b8558b877c85ffcbaa3a738508e"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-commit-tree.stderr.bin",
+      "target": "evidence/02-hook-fixed/final-commit-tree.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-commit-tree.stdout.bin",
+      "target": "evidence/02-hook-fixed/final-commit-tree.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "336d10cfe7df75fff5f5d0e7277bf0650d500a28fc5c68fc39e3fc379b46fa55",
+      "bytes": 41,
+      "sha256": "336d10cfe7df75fff5f5d0e7277bf0650d500a28fc5c68fc39e3fc379b46fa55"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-committed-names.stderr.bin",
+      "target": "evidence/02-hook-fixed/final-committed-names.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-committed-names.stdout.bin",
+      "target": "evidence/02-hook-fixed/final-committed-names.stdout.bin",
+      "originalBytes": 122,
+      "originalSHA256": "ec334fed3add39723e86d6b3ab093b1525e5a45ed44bdede7fa9a6dcaf0ab1b6",
+      "bytes": 122,
+      "sha256": "ec334fed3add39723e86d6b3ab093b1525e5a45ed44bdede7fa9a6dcaf0ab1b6"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-head.stderr.bin",
+      "target": "evidence/02-hook-fixed/final-head.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-head.stdout.bin",
+      "target": "evidence/02-hook-fixed/final-head.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "110adc91f48def2a34564c381220a8b2bb219ce763091e49e5fee5753dac3c9c",
+      "bytes": 41,
+      "sha256": "110adc91f48def2a34564c381220a8b2bb219ce763091e49e5fee5753dac3c9c"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-parent.stderr.bin",
+      "target": "evidence/02-hook-fixed/final-parent.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\final-parent.stdout.bin",
+      "target": "evidence/02-hook-fixed/final-parent.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "82db2edbe396ed293462404629e836754de3e13f4b604b1d39b741bb59af136d",
+      "bytes": 41,
+      "sha256": "82db2edbe396ed293462404629e836754de3e13f4b604b1d39b741bb59af136d"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-branch.stderr.bin",
+      "target": "evidence/02-hook-fixed/git-branch.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-branch.stdout.bin",
+      "target": "evidence/02-hook-fixed/git-branch.stdout.bin",
+      "originalBytes": 30,
+      "originalSHA256": "721c8945bbdbd4a4b8bc9bb1f6703f350b1150059b8422ae1a143ccda3777d35",
+      "bytes": 30,
+      "sha256": "721c8945bbdbd4a4b8bc9bb1f6703f350b1150059b8422ae1a143ccda3777d35"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-commit-trace2-full.json",
+      "target": "evidence/02-hook-fixed/git-commit-trace2-full.json",
+      "originalBytes": 21492,
+      "originalSHA256": "821abb82b2f14fd59feeccb17a2851c9f831848f29fb225ac7a86ebe58c19b6b",
+      "bytes": 21492,
+      "sha256": "821abb82b2f14fd59feeccb17a2851c9f831848f29fb225ac7a86ebe58c19b6b"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-commit-trace2.jsonl",
+      "target": "evidence/02-hook-fixed/git-commit-trace2.jsonl",
+      "originalBytes": 16613,
+      "originalSHA256": "7528cbbd82e8e915d5622d9f43c6196f01d995aded06cfa5a7362ee6549f1cdf",
+      "bytes": 16613,
+      "sha256": "7528cbbd82e8e915d5622d9f43c6196f01d995aded06cfa5a7362ee6549f1cdf"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-root.stderr.bin",
+      "target": "evidence/02-hook-fixed/git-root.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-root.stdout.bin",
+      "target": "evidence/02-hook-fixed/git-root.stdout.bin",
+      "originalBytes": 58,
+      "originalSHA256": "33cc74cf93b5b48d772d95a8a6265d8e9f069f275c35d776da179406d2ecf408",
+      "bytes": 58,
+      "sha256": "33cc74cf93b5b48d772d95a8a6265d8e9f069f275c35d776da179406d2ecf408"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-version.stderr.bin",
+      "target": "evidence/02-hook-fixed/git-version.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\git-version.stdout.bin",
+      "target": "evidence/02-hook-fixed/git-version.stdout.bin",
+      "originalBytes": 29,
+      "originalSHA256": "9d9d8a49f3de42d6e7b569bf28bd8db3ea3384c44386d6f2de4655e4ca41ff26",
+      "bytes": 29,
+      "sha256": "9d9d8a49f3de42d6e7b569bf28bd8db3ea3384c44386d6f2de4655e4ca41ff26"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\independent-expectation.json",
+      "target": "evidence/02-hook-fixed/independent-expectation.json",
+      "originalBytes": 4065,
+      "originalSHA256": "4440679ff68b17fb6b5192837871a8ddc8cf7ccb0bcfd32e5761d3598a5a5ac1",
+      "bytes": 4065,
+      "sha256": "4440679ff68b17fb6b5192837871a8ddc8cf7ccb0bcfd32e5761d3598a5a5ac1"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\local-config-after.txt",
+      "target": "evidence/02-hook-fixed/local-config-after.txt",
+      "originalBytes": 372,
+      "originalSHA256": "9a1573d4796db1d01781ceaf9b6a2e7b3321b86187371b0a3ae709c14ecfa09c",
+      "bytes": 372,
+      "sha256": "9a1573d4796db1d01781ceaf9b6a2e7b3321b86187371b0a3ae709c14ecfa09c"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\local-config-before.txt",
+      "target": "evidence/02-hook-fixed/local-config-before.txt",
+      "originalBytes": 349,
+      "originalSHA256": "9896294bddd457f0bf3b9e7b2c13623fc9f45dad41f005dc6d0deff3c7f5af97",
+      "bytes": 349,
+      "sha256": "9896294bddd457f0bf3b9e7b2c13623fc9f45dad41f005dc6d0deff3c7f5af97"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\local-hook-path-after.stderr.bin",
+      "target": "evidence/02-hook-fixed/local-hook-path-after.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\local-hook-path-after.stdout.bin",
+      "target": "evidence/02-hook-fixed/local-hook-path-after.stdout.bin",
+      "originalBytes": 10,
+      "originalSHA256": "239b057f9b05bafd589c56bedb8337bbd4f8be338092c5acee42c243ef407811",
+      "bytes": 10,
+      "sha256": "239b057f9b05bafd589c56bedb8337bbd4f8be338092c5acee42c243ef407811"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\local-hook-path-before.stderr.bin",
+      "target": "evidence/02-hook-fixed/local-hook-path-before.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\local-hook-path-before.stdout.bin",
+      "target": "evidence/02-hook-fixed/local-hook-path-before.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\original-head.stderr.bin",
+      "target": "evidence/02-hook-fixed/original-head.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\original-head.stdout.bin",
+      "target": "evidence/02-hook-fixed/original-head.stdout.bin",
+      "originalBytes": 41,
+      "originalSHA256": "82db2edbe396ed293462404629e836754de3e13f4b604b1d39b741bb59af136d",
+      "bytes": 41,
+      "sha256": "82db2edbe396ed293462404629e836754de3e13f4b604b1d39b741bb59af136d"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\report.json",
+      "target": "evidence/02-hook-fixed/report.json",
+      "originalBytes": 3098847,
+      "originalSHA256": "8137e95d20d0e693ae0c6e2e180d35657936ad15b288ab0e82c7f8ded1892be0",
+      "bytes": 3098847,
+      "sha256": "8137e95d20d0e693ae0c6e2e180d35657936ad15b288ab0e82c7f8ded1892be0"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\sqlite-five-tables.json",
+      "target": "evidence/02-hook-fixed/sqlite-five-tables.json",
+      "originalBytes": 60702,
+      "originalSHA256": "2bcbd5a7bd8d7a49674cfe76e72a7b4b564ffc8046f94ad7e59487d46e680455",
+      "bytes": 60702,
+      "sha256": "2bcbd5a7bd8d7a49674cfe76e72a7b4b564ffc8046f94ad7e59487d46e680455"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\stage-executable-hook.stderr.bin",
+      "target": "evidence/02-hook-fixed/stage-executable-hook.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\stage-executable-hook.stdout.bin",
+      "target": "evidence/02-hook-fixed/stage-executable-hook.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\stage-files.stderr.bin",
+      "target": "evidence/02-hook-fixed/stage-files.stderr.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-hook-fixed-01\\stage-files.stdout.bin",
+      "target": "evidence/02-hook-fixed/stage-files.stdout.bin",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-02b6a7a6-dc24-43e8-bc3a-dbfc9a81771d\\result.json",
+      "target": "evidence/03-hook-fixed-业务原件/result.json",
+      "originalBytes": 947807,
+      "originalSHA256": "f1dc7ec0faa8ddf4eb98f7e537005e05e4a8a5db6175d3328fd8b25e1409994e",
+      "bytes": 947807,
+      "sha256": "f1dc7ec0faa8ddf4eb98f7e537005e05e4a8a5db6175d3328fd8b25e1409994e"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-02b6a7a6-dc24-43e8-bc3a-dbfc9a81771d\\evidence.json",
+      "target": "evidence/03-hook-fixed-业务原件/evidence.json",
+      "originalBytes": 947807,
+      "originalSHA256": "f1dc7ec0faa8ddf4eb98f7e537005e05e4a8a5db6175d3328fd8b25e1409994e",
+      "bytes": 947807,
+      "sha256": "f1dc7ec0faa8ddf4eb98f7e537005e05e4a8a5db6175d3328fd8b25e1409994e"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-02b6a7a6-dc24-43e8-bc3a-dbfc9a81771d\\fixture.sqlite",
+      "target": "evidence/03-hook-fixed-业务原件/fixture.sqlite",
+      "originalBytes": 73728,
+      "originalSHA256": "5cde179d6af128229dba3c9541c36bb0bfe13b7d40d715066de197474427b8fa",
+      "bytes": 73728,
+      "sha256": "5cde179d6af128229dba3c9541c36bb0bfe13b7d40d715066de197474427b8fa"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-02b6a7a6-dc24-43e8-bc3a-dbfc9a81771d\\fixture.sqlite-wal",
+      "target": "evidence/03-hook-fixed-业务原件/fixture.sqlite-wal",
+      "originalBytes": 0,
+      "originalSHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\project\\runs\\delivery-saving-02b6a7a6-dc24-43e8-bc3a-dbfc9a81771d\\fixture.sqlite-shm",
+      "target": "evidence/03-hook-fixed-业务原件/fixture.sqlite-shm",
+      "originalBytes": 32768,
+      "originalSHA256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
     }
   ],
-  "publicProjection": {
-    "reasoningBodies": 0,
-    "reasoningPlaceholders": 9,
-    "parentTurns": [
-      {
-        "id": "01a10098-c5cc-7573-9ff4-84e41631e9e4",
-        "status": "interrupted"
-      },
-      {
-        "id": "01a10098-c503-7eb0-9b91-36ee7061d865",
-        "status": "completed"
-      }
-    ],
-    "originalInternalReviewJsonObtained": false,
-    "internalReviewThreadObtained": false,
-    "commandOutputField": "aggregatedOutput",
-    "boundary": "协议、通知与 parent 回读为公共字段投影，排除受保护推理/宿主指令/身份/凭据/私有记忆；不声称全部内部原字节公开。"
-  },
-  "excluded": [
-    "整份原课 SRT/HTML",
-    "整份第三方官方网页与源码快照",
-    "受保护宿主和 reasoning 正文",
-    "用户全局配置正文",
-    "身份和凭据",
-    "私有记忆",
-    "其他项目材料",
-    "node_modules",
-    "应用数据库",
-    "父项目 Git 历史"
+  "publicProjections": [
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\protocol-observed.jsonl",
+      "target": "evidence/01-助手生成/protocol-observed.jsonl",
+      "originalBytes": 1961184,
+      "originalSHA256": "dc179c797f4f0d4da83628a7674d61f0ff66cd2e2e4ed3c42124362f5969a6b4",
+      "bytes": 1960164,
+      "sha256": "4ea6dc091c47848b8e4ec8dc8daee6cffee35c098051990ed6a8131bf4c41493"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\notifications-observed.json",
+      "target": "evidence/01-助手生成/notifications-observed.json",
+      "originalBytes": 1671340,
+      "originalSHA256": "cde826028b8bcb836f724bba5a540f0e7a91f48a3f5a827de559c0f4678f5af8",
+      "bytes": 1670679,
+      "sha256": "8b48a351216f61407d8baa79927917c7053c5adb746880d36480eab022c30f0f"
+    },
+    {
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-05-lab\\runs\\delivery-task-02-2e6a5c82-3141-4709-a299-d8f013acf84f\\thread-observed.json",
+      "target": "evidence/01-助手生成/thread-observed.json",
+      "originalBytes": 326266,
+      "originalSHA256": "34f55272520da56f3745ea5a50fd45e20f2ffa830d08a775efe68f0703f620d2",
+      "bytes": 325924,
+      "sha256": "bac7d141806bc46f374c8c5e7c50e021890c21b7b022c1e70d95cfa4b140b119"
+    }
   ],
-  "operations": {
-    "newModel": 0,
-    "newHost": 0,
-    "newAppTest": 0,
-    "newBusiness": 0,
-    "globalCodexConfigWrite": 0
-  },
-  "scope": "从空公共 Git 根另建单提交；固定应用、完整教师材料、真实公共记录、人工核查和来源定位。"
+  "experimentsRerun": 0,
+  "modelCalls": 0,
+  "hookExecutions": 0,
+  "remoteOperations": 0
 }
