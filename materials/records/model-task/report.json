@@ -1,0 +1,65 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\runs\\tests-task-a28003f1-91e8-49b7-a240-4740043799e5",
+  "version": "codex-cli 0.160.0",
+  "project": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project",
+  "threadId": "01a0ffab-1594-7972-aac9-df9f5548c141",
+  "turnId": "01a0ffab-1e8e-7c00-94e3-9fdeffd957f3",
+  "turn": {
+    "id": "01a0ffab-1e8e-7c00-94e3-9fdeffd957f3",
+    "items": [],
+    "itemsView": "notLoaded",
+    "status": "interrupted",
+    "error": null,
+    "startedAt": 1790995799,
+    "completedAt": 1790996099,
+    "durationMs": 300015
+  },
+  "archived": true,
+  "processExit": {
+    "code": 0,
+    "signal": null
+  },
+  "turnStarts": 1,
+  "interruptRequested": true,
+  "error": null,
+  "usage": {
+    "total": {
+      "totalTokens": 127020,
+      "inputTokens": 118253,
+      "cachedInputTokens": 78336,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 8767,
+      "reasoningOutputTokens": 1633
+    },
+    "last": {
+      "totalTokens": 47087,
+      "inputTokens": 39412,
+      "cachedInputTokens": 36608,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 7675,
+      "reasoningOutputTokens": 1034
+    },
+    "modelContextWindow": 258400
+  },
+  "model": "gpt-6.1-sol",
+  "modelProvider": "openai",
+  "instructionSources": [
+    "C:\\Users\\32686\\.codex\\AGENTS.md",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\AGENTS.md"
+  ],
+  "commandItems": 5,
+  "fileChangeItems": 1,
+  "mcpItems": 0,
+  "hookExecutions": 0,
+  "originalFilesUnchanged": true,
+  "unexpectedNewFiles": [],
+  "testWritten": true,
+  "testSourceBytes": 23583,
+  "testSourceSha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
+  "globalConfigHashBefore": "734abbce0ae2d9116475f23c626b55d69fd5502e648b90faf25f6ee3efc44120",
+  "globalConfigHashAfter": "734abbce0ae2d9116475f23c626b55d69fd5502e648b90faf25f6ee3efc44120",
+  "globalConfigUnchanged": true,
+  "databaseCount": 0,
+  "publicationStatus": "尚未上传。实际命令、全文回答和测试须由作者及主编核读；含受保护或无关内容时只留本地，不自动公开。",
+  "limits": "宿主完成和生成测试不证明测试有效；实际红需核测试预期、完整键盘/请求/保存/刷新/库对象。未在本次模型任务修应用或检查既有修复，没有文学与审美结论。"
+}

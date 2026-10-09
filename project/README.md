@@ -1,4 +1,4 @@
-# 用 AGENTS.md 说明项目规则
+# 测试先证明问题真的存在
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

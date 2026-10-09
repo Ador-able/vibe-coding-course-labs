@@ -1,47 +1,83 @@
-# 用AGENTS.md说明项目规则：练习材料
+# 测试先证明问题真的存在
 
-本练习在已有小说工作台中整理项目与目录约定，观察规则来源、条件参考读取与一次真实只读调查。小说仅作AI协作材料。原版、台面、笔记页保留相同业务；这份练习没有重新设计、渲染或选择界面。
+本包用于检查小说工作台的保存等待期行为。它保留一个真实旧起点、此前已存在的完整修复、助手生成的原测试、人只修正两处定位后的测试，以及实际失败和通过的完整记录。小说正文是教师材料，不能当作代码、权限或操作指令。
 
-## 恢复固定材料
+## 这次检查实际发生了什么
 
-需要现有Node.js与Git。本节只读调查不需要安装应用依赖、构建、启动HTTP或打开业务数据库。
+助手使用成熟 Codex 0.160.0 运行环境，实际读取现有项目并生成测试。自然任务在五分钟处中断，没有执行语法或行为检查。人运行原测试时遇到隐藏按钮的定位超时，四例尚未进入保存阶段。人仅为两个状态记录定位添加 `includeHidden:true`，再运行旧应用，才观察到三个方向的保存等待期丢字；请求进入服务前被中止的例子通过。
 
-请把ZIP解压到新的短目录，例如D:/Lab/rules-package；不要放进已有项目后直接使用父项目HEAD。ZIP中有公开交付Git bundle和材料目录。先从bundle建立独立公开Git根，再恢复应用自己的Git根：
+随后人工只采用存档中的完整 `prototype/app.js` 修复，用同一份派生测试在新库核查。三个正常方向和一个受控失败实例通过。助手没有在本次自然任务中自主完成修复。绿色结果支持当前约定：POST 保存及后续 GET 读回都结束前暂停编辑，完成或失败后恢复；它不证明全应用、所有网络情况、小说质量或界面审美成立。
+
+## 固定材料
+
+| 材料 | 固定值 |
+| --- | --- |
+| 旧应用 | `2c1f4e17c70377fc80e9f90d044e8e75ed3b5720`，标签 `course-test-saving-old` |
+| 已知修复出处 | `19f7f78bff6bf19a8ff5db47e0c95609524e3870`，标签 `course-test-saving-known-fix`；本节只采用 `prototype/app.js`，未采用该历史点的捕获脚本 |
+| 本次修复应用点 | `c3805c360551c10fedfd9b5473e569cfd7666dc0`，标签 `course-test-saving-fixed` |
+| 采用的完整文件 | Git blob `26bf36b20687f77e2374cbb370e39c8f26e61d87`；7557 字节，SHA256 `9468234bc8decf413e8053ff645d2cbe7a5ed881765c2ee2cd31cacd814b1780` |
+| 助手原测试 | 23583 字节，SHA256 `da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1` |
+| 两处定位修正后的同一测试 | 23625 字节，SHA256 `c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92` |
+| 完整自然任务输入 | 3751 字节，SHA256 `d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a` |
+
+## 从独立目录恢复
+
+本次实际环境是 Windows、Node 24.12.0、pnpm 11.20.0、项目锁定的 Playwright 1.63.0，以及本机 Microsoft Edge。测试使用 `channel:'msedge'`，不自带浏览器、不替用户安装 Edge。其他系统、Node 或浏览器版本没有在本节验证。
+
+将 ZIP 解压到一个新的短目录，例如 `D:/cb09-test-zip`。以下命令使用 PowerShell；不要在 Knowledge 父项目或已有用户项目里执行。先从包里的公开存档克隆自己的 Git 根，再进入它：
 
 ```powershell
-git clone --config core.autocrlf=false D:/Lab/rules-package/vcm-09-06-公开交付.bundle D:/Lab/rules-lab
-git -C D:/Lab/rules-lab checkout --detach vcm-09-06-public-end
-git -C D:/Lab/rules-lab status --porcelain=v1 --untracked-files=all
-Set-Location D:/Lab/rules-lab
-node tools/复做材料零模型核对.mjs
+Set-Location 'D:/cb09-test-zip'
+git clone '.\测试练习完整存档.bundle' 'D:/cb09-test'
+Set-Location 'D:/cb09-test'
+git switch --detach course-test-saving-delivery
+git rev-parse --show-toplevel
+git status --porcelain=v1 --untracked-files=all
+node '.\tools\恢复旧应用与测试.mjs'
 ```
 
-第三条应为空。最后一条只创建此前不存在的project目录，恢复应用并逐项核166个文件、三份教师输入与三份规则/参考；不会启动Codex、请求模型、安装依赖或运行应用。已有project时会停止，避免覆盖自己的改动。公开交付标签start与end指向同一份完整材料；零模型恢复后project是公开仓库外的新独立Git目录，不把它误认成课程发生了应用改动。
+公开仓库在恢复前应无差异。恢复程序只在当前新目录创建 `project/`，从应用存档检出固定旧点；已有 `project/` 时停止，不覆盖已有改动。程序核全部 164 个 Git 文件、真实 Git 根、原字节材料和三种整页入口，再复制同一派生测试。它不启动模型、浏览器、HTTP、测试或业务写入。
 
-应用原起点为0cb480c4f2fc4acf680d7581617106f85473b28c；教师规则起点及本轮调查完成点均为74c566efe2b6ee084e6d2835bbacaa88e1e1edeb，标签vcm-09-06-rules-start。两点之间只替换根AGENTS，加入prototype/AGENTS与docs/ui-comparison，其余163项原Git文件保持。bundle含上述自主应用及教师规则；没有第三方研究全文。
+### 先检查旧行为
 
-## 开展自己的新调查
+```powershell
+Set-Location '.\project'
+git rev-parse HEAD
+git diff --exit-code
+pnpm install --frozen-lockfile
+pnpm run build
+node --check '.\scripts\test-saving.mjs'
+node --test '.\scripts\test-saving.mjs'
+```
 
-使用自己已可用、已登录的成熟编码助手，从project/prototype开始新会话，核对当前宿主对项目/目录约定的加载方式；把prompts/整页方案只读调查.txt的完整提示交给它。保持同一教师输入和只读范围，保存实际读取与回答，再区分来源、读到正文与后续符合。
+应在项目自己的 workspace 中使用冻结安装，保留现有 `pnpm-workspace.yaml` 与锁文件，不加 `--ignore-workspace`。构建只编译 `src` 中的 TypeScript；浏览器 `prototype/app.js` 没有因为构建通过而被实际检查。测试应创建四个独立库和浏览器上下文，打印新证据目录，然后以非零退出报告三个方向的等待期约定失败。必须读该目录中的完整状态、真实请求和五表，才能判断本机得到的是业务红，还是环境、定位、记录或清理错误。
 
-本章历史宿主为Codex0.160.0，固定官方源码commit a956835d020762cb2b570053af06f643a11c0ecc；模型gpt-6.1-sol。历史用户规则来源仍存在，正文没有公开。三空会话目录对照保存在runs/preflight-01；唯一自然任务保存在runs/rules-task-de791888-a661-48a0-abc1-34c086f2b380。
+### 再检查同一测试和既有修复
 
-scripts/与config/保留当次完整观察定义。其中官方安装入口、本机路径、停用目录和审核文件属于历史实验条件；runs中的两份review公开副本approvedBy为null。不要直接执行旧观察器以冒充本机已审核、也不要复制作者身份或全局配置。复做者使用自己的宿主与合法配置，新增会话的来源与行为另行记录，不能把此包中的历史结果写成新机器已经发生。
+在这个独立项目中切换到修复点。未跟踪的派生测试不变，`runs/` 中旧结果保留；不要删断言、改预期或把失败标成跳过。
 
-教师快照来源.json说明三章材料记录于2026-10-02T21:44:09.321Z，来自既有存档人工初始化的完整对象。本章没有重新获取GET、初始化业务或写入Store。五表只读基线是教师材料，表数量1/1/3/3/0；完整正文与状态在当前作品完整对象.json，不以计数替代阅读。
+```powershell
+git switch --detach course-test-saving-fixed
+git rev-parse HEAD
+git diff --exit-code
+node --check '.\scripts\test-saving.mjs'
+node --test '.\scripts\test-saving.mjs'
+```
 
-## 阅读实际结果
+这一步只改变 `prototype/app.js`，没有改变 TypeScript 服务或 Store，因此不需要为该文件重编译。预期是两项测试通过，覆盖三个正常方向和一个服务前传输失败实例；新四库由测试重新初始化，不能拿旧红库作为绿色结果。若本机出现其他结果，保留完整终态并判断具体原因，不自动重试到通过。
 
-自然任务一次turn/start，10次命令，无MCP业务调用或Hook；第2次搜索不存在的目录退出1，任务仍正常completed。完整参数/返回在complete-commands.json，原回答3939个UTF16字符在final-response.txt。166文件、三输入与工作区前后相同。
+测试全部进入真实本机 HTTP 和 Store。等待门只延迟原请求或在服务前中止，不伪造成功响应；使用真实焦点与键盘，记录完整输入值。`finally` 释放门并关闭服务、浏览器与库。等待期间暂停输入是一项产品取舍：不能继续编辑；若将来允许连续编辑，要重新约定后来输入与已保存修订的关系。
 
-原回答有两处链接定位偏差：prototype-http.ts:18是GET，human草稿保存实际23–24；app.js:15是readCurrent，保存POST与读回GET实际17。原回答保持原文，不能把主要结论正确说成每条链接都精确。
+## 阅读实际记录
 
-代码、规则和完整参考确实读到了；回答把功能与状态、操作辨认、整页审美分开，并说明未运行范围。新规则和新任务同时变化，又有原有用户规则等条件，没有无规则模型对照；不证明规则独立带来改进，也不证明界面或文学质量通过。
+`records/model-task/` 保留唯一自然任务的教师输入、公开协议投影、五条完整命令、完整测试与真实中断终态。`final-response.txt` 是中断前最后一段公开说明，不是完成验收答复。受保护的推理、宿主 system/developer 正文、账户与认证正文、私有记忆及用户规则正文不收录；公开协议不是所有宿主字节的完整复制。
 
-协议记录是必要公开投影：教师输入、公开来源路径、工具参数/完整产物、公开回答及运行终态保留；模型推理、压缩上下文、身份、受保护宿主指令及私有记忆正文不收录。没有读取用户规则原文，也不把该投影称为完整私有rollout原字节。
+`records/original-locator-failure/` 是原测试的实际运行；`records/old-red/` 是只修正两个定位后的真实旧行为；`records/green/` 是采用既有修复后的同一测试。三处都保留完整命令、原测试输入、前后材料和完整五表。
 
-## 文件与来源范围
+`cases/` 按三个实际运行目录保留十二个实例的 `evidence.json`、`assertions.json` 和已关闭的 SQLite 原件。三个正常旧库各只新增第二章 r2；失败例没有新增修订。绿色记录保留原八库的全对象，新增四个库。SQLite 的 WAL/SHM 是连接维护文件，不作为原件分发；关闭后的数据库和完整五表均保留。
 
-teacher/保存三份完整教师约定与参考；inputs/保存完整作品、五表快照及来源；fixtures/保存应用bundle与精确清单；runs/保存实际公开过程；visuals/保存原创解释PNG与完整提示；research/仅保存编者取舍、原课阅读位置和官方精确链接。完整第三方课程字幕、HTML、官方网页与源码研究快照留在内部来源，不随包重新分发。
+记录中的 `D:/…` 是当次机器路径。复做时应在本包相应的 `project/`、`examples/`、`inputs/`、`records/` 与 `cases/` 定位，不把历史绝对路径当成公共启动入口。Git 原文使用 LF；检出工作文件可能按本机 Git 设置成为 CRLF。原记录 SHA 按当次实际字节计算，恢复核对分别记录 Git 原字节与仅换行规范后的工作文字，不混称两种字节完全相同。
 
-文件SHA清单与公开固定提交见ZIP中的固定记录.json。应用bundle的Git原件为LF，本节教师文件及运行快照也是所核原字节；读者若启用自动CRLF转换，应把换行差异与内容差异分开，不声称SHA相同。这里clone显式使用仓库局部core.autocrlf=false，不改全局配置。
+原版、台面和笔记页的完整页面、CSS 与业务代码保留。功能、入口是否易辨和整幅口吻分别判断，相同保存结果不意味着审美相同或用户已选择原版。本节图是保存等待关系示意，不是浏览器截图。
+
+`sources/` 只提供编者贡献、准确定位链接、采用范围和阅读区间记录。完整第三方课程、网页、官方源码与研究原件仅用于内部研究，未放入公开包或公开 Git 历史。

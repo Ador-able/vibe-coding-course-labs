@@ -1,0 +1,1976 @@
+{
+  "oldHead": "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720",
+  "fixedHead": "c3805c360551c10fedfd9b5473e569cfd7666dc0",
+  "files": [
+    {
+      "path": ".agents/plugins/marketplace.json",
+      "old": {
+        "bytes": 335,
+        "sha256": "8c1440e9fdf9fb89e678d69369894184062cded0e579d23cc5706ea3739ad1a2"
+      },
+      "fixed": {
+        "bytes": 335,
+        "sha256": "8c1440e9fdf9fb89e678d69369894184062cded0e579d23cc5706ea3739ad1a2"
+      },
+      "unchanged": true
+    },
+    {
+      "path": ".codex/config.toml",
+      "old": {
+        "bytes": 165,
+        "sha256": "a68cc7a2997be7238fa2e42f67c9483d8682b5f8d2cea22979205e5e638d6f97"
+      },
+      "fixed": {
+        "bytes": 165,
+        "sha256": "a68cc7a2997be7238fa2e42f67c9483d8682b5f8d2cea22979205e5e638d6f97"
+      },
+      "unchanged": true
+    },
+    {
+      "path": ".gitattributes",
+      "old": {
+        "bytes": 100,
+        "sha256": "3f6e3af8f8c661e5d1788d13912a039f67fe829f5d723d0d548bbd311721a1eb"
+      },
+      "fixed": {
+        "bytes": 100,
+        "sha256": "3f6e3af8f8c661e5d1788d13912a039f67fe829f5d723d0d548bbd311721a1eb"
+      },
+      "unchanged": true
+    },
+    {
+      "path": ".gitignore",
+      "old": {
+        "bytes": 94,
+        "sha256": "2122425d21431e562f64f04b1d080cac5c5ee6959ebe012a861ee4de8e6ce768"
+      },
+      "fixed": {
+        "bytes": 94,
+        "sha256": "2122425d21431e562f64f04b1d080cac5c5ee6959ebe012a861ee4de8e6ce768"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "AGENTS.md",
+      "old": {
+        "bytes": 611,
+        "sha256": "e593e3040403a9d9a0d2e8441f2ed41f72ce9518273a1081733b78bce5ce8b58"
+      },
+      "fixed": {
+        "bytes": 611,
+        "sha256": "e593e3040403a9d9a0d2e8441f2ed41f72ce9518273a1081733b78bce5ce8b58"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "PROTOTYPE.md",
+      "old": {
+        "bytes": 2043,
+        "sha256": "d268c56478f4d1d25b8dc2751297e3bb8a51a71b9ce0f65784a703af609ba3c6"
+      },
+      "fixed": {
+        "bytes": 2043,
+        "sha256": "d268c56478f4d1d25b8dc2751297e3bb8a51a71b9ce0f65784a703af609ba3c6"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "old": {
+        "bytes": 3608,
+        "sha256": "9973391d7c3dd0733ae93aecf9f73e01076de4f4117eb2d62d23cf3662e29dcb"
+      },
+      "fixed": {
+        "bytes": 3608,
+        "sha256": "9973391d7c3dd0733ae93aecf9f73e01076de4f4117eb2d62d23cf3662e29dcb"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "docs/MCP双工具实验.md",
+      "old": {
+        "bytes": 6285,
+        "sha256": "90abc4fb81e06a55433e80505f7c04ea9bfeb21e56566f38e7f9ee3f662c9fb8"
+      },
+      "fixed": {
+        "bytes": 6285,
+        "sha256": "90abc4fb81e06a55433e80505f7c04ea9bfeb21e56566f38e7f9ee3f662c9fb8"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "docs/三章接续实验.md",
+      "old": {
+        "bytes": 4297,
+        "sha256": "79eee7a863f5b5fe0dd2fc65808c5bbacbeb46e051c108e4d17b1aff0ca4112a"
+      },
+      "fixed": {
+        "bytes": 4297,
+        "sha256": "79eee7a863f5b5fe0dd2fc65808c5bbacbeb46e051c108e4d17b1aff0ca4112a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "docs/实现依据.md",
+      "old": {
+        "bytes": 2575,
+        "sha256": "42568d4a88801029437b5730a026e7577c9d1c2d27d3ce9df171868d3769c30c"
+      },
+      "fixed": {
+        "bytes": 2575,
+        "sha256": "42568d4a88801029437b5730a026e7577c9d1c2d27d3ce9df171868d3769c30c"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "docs/资源与插件实验.md",
+      "old": {
+        "bytes": 6378,
+        "sha256": "fc27db5c353d96a706625d1344f8fb83c3fb12b73c9a74965e8cc022fb04c45c"
+      },
+      "fixed": {
+        "bytes": 6378,
+        "sha256": "fc27db5c353d96a706625d1344f8fb83c3fb12b73c9a74965e8cc022fb04c45c"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/完整运行-chapter.json",
+      "old": {
+        "bytes": 3522,
+        "sha256": "563454d869e33231d9c1c01aa65dcfca07abc4a1533810f46769836fc2ba9088"
+      },
+      "fixed": {
+        "bytes": 3522,
+        "sha256": "563454d869e33231d9c1c01aa65dcfca07abc4a1533810f46769836fc2ba9088"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/完整运行-events.jsonl",
+      "old": {
+        "bytes": 26505,
+        "sha256": "346ab799e3202e57627c1efad92c6449f70128d16438b40217d9c3a7c001590d"
+      },
+      "fixed": {
+        "bytes": 26505,
+        "sha256": "346ab799e3202e57627c1efad92c6449f70128d16438b40217d9c3a7c001590d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/完整运行-final-response.txt",
+      "old": {
+        "bytes": 393,
+        "sha256": "fe1d4275931b22fd575748f3d5f707611904f4fe549aca6f451abb19cf1b77fa"
+      },
+      "fixed": {
+        "bytes": 393,
+        "sha256": "fe1d4275931b22fd575748f3d5f707611904f4fe549aca6f451abb19cf1b77fa"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/完整运行-input.json",
+      "old": {
+        "bytes": 1071,
+        "sha256": "30f5e30d4d2d8bb7ff93d3dd1cbb32f2c61642afc1e82c97b51f716e8b944d19"
+      },
+      "fixed": {
+        "bytes": 1071,
+        "sha256": "30f5e30d4d2d8bb7ff93d3dd1cbb32f2c61642afc1e82c97b51f716e8b944d19"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/完整运行-report.json",
+      "old": {
+        "bytes": 24142,
+        "sha256": "49ab1a042746ddcf81f64b193b9f28159657a17a826a8dab578ad0c97f1093c4"
+      },
+      "fixed": {
+        "bytes": 24142,
+        "sha256": "49ab1a042746ddcf81f64b193b9f28159657a17a826a8dab578ad0c97f1093c4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/实际取消-chapter.json",
+      "old": {
+        "bytes": 3522,
+        "sha256": "563454d869e33231d9c1c01aa65dcfca07abc4a1533810f46769836fc2ba9088"
+      },
+      "fixed": {
+        "bytes": 3522,
+        "sha256": "563454d869e33231d9c1c01aa65dcfca07abc4a1533810f46769836fc2ba9088"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/实际取消-events.jsonl",
+      "old": {
+        "bytes": 101,
+        "sha256": "9685914e6f0d453d164d00817db49116c7cd93f4b2c13151185c73a4f28c18b5"
+      },
+      "fixed": {
+        "bytes": 101,
+        "sha256": "9685914e6f0d453d164d00817db49116c7cd93f4b2c13151185c73a4f28c18b5"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/实际取消-final-response.txt",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/实际取消-input.json",
+      "old": {
+        "bytes": 1071,
+        "sha256": "34b76ebac584dfcb8f10ec2bae1ec2e68fe8335c830adf9b530d0c4a1def50f5"
+      },
+      "fixed": {
+        "bytes": 1071,
+        "sha256": "34b76ebac584dfcb8f10ec2bae1ec2e68fe8335c830adf9b530d0c4a1def50f5"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/实际取消-report.json",
+      "old": {
+        "bytes": 858,
+        "sha256": "97a9b2b32d41e356c9b2ff1a3da1f659641a9d44fdee87e15b8da6e8176651d3"
+      },
+      "fixed": {
+        "bytes": 858,
+        "sha256": "97a9b2b32d41e356c9b2ff1a3da1f659641a9d44fdee87e15b8da6e8176651d3"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/实际观察.md",
+      "old": {
+        "bytes": 2554,
+        "sha256": "6c149a879fb0fe1c5f31eac138d503ae0ff7e2e3b155aefbed065407135d0686"
+      },
+      "fixed": {
+        "bytes": 2554,
+        "sha256": "6c149a879fb0fe1c5f31eac138d503ae0ff7e2e3b155aefbed065407135d0686"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/01-单章真实运行/归档时真实状态.json",
+      "old": {
+        "bytes": 6071,
+        "sha256": "c3dcfe06e3a2a05b2d023d924783215a5623ac02042fcd15cd2740db4bf0b3d1"
+      },
+      "fixed": {
+        "bytes": 6071,
+        "sha256": "c3dcfe06e3a2a05b2d023d924783215a5623ac02042fcd15cd2740db4bf0b3d1"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/三章草稿.md",
+      "old": {
+        "bytes": 10258,
+        "sha256": "902606baacd060c91f2d7219e193c7db0e4c6b6eba8d8008fa66a53df5a7d4bb"
+      },
+      "fixed": {
+        "bytes": 10258,
+        "sha256": "902606baacd060c91f2d7219e193c7db0e4c6b6eba8d8008fa66a53df5a7d4bb"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/人工改稿保存回执.json",
+      "old": {
+        "bytes": 3676,
+        "sha256": "0e1f2d54dd87f9d6b13a4fe99a17079c0b3a74e167ee55d6c4695a2c5e1220f3"
+      },
+      "fixed": {
+        "bytes": 3676,
+        "sha256": "0e1f2d54dd87f9d6b13a4fe99a17079c0b3a74e167ee55d6c4695a2c5e1220f3"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/人工采用回执.json",
+      "old": {
+        "bytes": 3790,
+        "sha256": "3e5a2cd5c2a96d702d2630767e5c7ce3fb1a35838be24a3079ccdfc095de5ce9"
+      },
+      "fixed": {
+        "bytes": 3790,
+        "sha256": "3e5a2cd5c2a96d702d2630767e5c7ce3fb1a35838be24a3079ccdfc095de5ce9"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/导出回执.json",
+      "old": {
+        "bytes": 1178,
+        "sha256": "42c0dfc7994e16e7b44f0e8ea2ede8e6392dbd933fb348599821a9a4f37173e2"
+      },
+      "fixed": {
+        "bytes": 1178,
+        "sha256": "42c0dfc7994e16e7b44f0e8ea2ede8e6392dbd933fb348599821a9a4f37173e2"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/归档时真实状态.json",
+      "old": {
+        "bytes": 18198,
+        "sha256": "89cb3570118a0d6bc52d5c6ee37047c4df4d93ecb9d4c6019453c5c98183ed11"
+      },
+      "fixed": {
+        "bytes": 18198,
+        "sha256": "89cb3570118a0d6bc52d5c6ee37047c4df4d93ecb9d4c6019453c5c98183ed11"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/改稿前实际正文.json",
+      "old": {
+        "bytes": 3522,
+        "sha256": "563454d869e33231d9c1c01aa65dcfca07abc4a1533810f46769836fc2ba9088"
+      },
+      "fixed": {
+        "bytes": 3522,
+        "sha256": "563454d869e33231d9c1c01aa65dcfca07abc4a1533810f46769836fc2ba9088"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/真实过期改稿被拒绝.json",
+      "old": {
+        "bytes": 7674,
+        "sha256": "d5d5020fa7765e835a6309103333de343d8faed3ead73eef6396618163ccdaf8"
+      },
+      "fixed": {
+        "bytes": 7674,
+        "sha256": "d5d5020fa7765e835a6309103333de343d8faed3ead73eef6396618163ccdaf8"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第2章-chapter.json",
+      "old": {
+        "bytes": 3682,
+        "sha256": "6765a1a7a004eef7cd87a36fa520997859d4c6865817134387515a44a7794ecf"
+      },
+      "fixed": {
+        "bytes": 3682,
+        "sha256": "6765a1a7a004eef7cd87a36fa520997859d4c6865817134387515a44a7794ecf"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第2章-events.jsonl",
+      "old": {
+        "bytes": 38684,
+        "sha256": "d75aa38ced25c620a6548247b7039a38050b1a0d77d2f13826c907b34163b889"
+      },
+      "fixed": {
+        "bytes": 38684,
+        "sha256": "d75aa38ced25c620a6548247b7039a38050b1a0d77d2f13826c907b34163b889"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第2章-final-response.txt",
+      "old": {
+        "bytes": 407,
+        "sha256": "7ac12bb2116fdb0c8235371ebb65f0fea8e0b9572f57890c98ae844c5439f40a"
+      },
+      "fixed": {
+        "bytes": 407,
+        "sha256": "7ac12bb2116fdb0c8235371ebb65f0fea8e0b9572f57890c98ae844c5439f40a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第2章-input.json",
+      "old": {
+        "bytes": 1545,
+        "sha256": "37926d2fce5e7c3024879c1e1121abb207fe42fbe4e2786908875ac53e0991f6"
+      },
+      "fixed": {
+        "bytes": 1545,
+        "sha256": "37926d2fce5e7c3024879c1e1121abb207fe42fbe4e2786908875ac53e0991f6"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第2章-report.json",
+      "old": {
+        "bytes": 37347,
+        "sha256": "5fea754f9f0a61add89aa60d9c7e98d92710e3c29525c6a2c41b936d8c04c39b"
+      },
+      "fixed": {
+        "bytes": 37347,
+        "sha256": "5fea754f9f0a61add89aa60d9c7e98d92710e3c29525c6a2c41b936d8c04c39b"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第3章-chapter.json",
+      "old": {
+        "bytes": 3609,
+        "sha256": "2f437958430def3c1df6e6a2e9494768d5c423c5d8300e5bb14773d007157e3e"
+      },
+      "fixed": {
+        "bytes": 3609,
+        "sha256": "2f437958430def3c1df6e6a2e9494768d5c423c5d8300e5bb14773d007157e3e"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第3章-events.jsonl",
+      "old": {
+        "bytes": 47347,
+        "sha256": "2502ef17bfcca8f112bd824f7e71b971004fe5d4ec940d451f7c7c934fa45d9a"
+      },
+      "fixed": {
+        "bytes": 47347,
+        "sha256": "2502ef17bfcca8f112bd824f7e71b971004fe5d4ec940d451f7c7c934fa45d9a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第3章-final-response.txt",
+      "old": {
+        "bytes": 445,
+        "sha256": "e37cb7837870d1cf5b2288778b99c6429e7cf7d5b1670ba7b7498be38d272d36"
+      },
+      "fixed": {
+        "bytes": 445,
+        "sha256": "e37cb7837870d1cf5b2288778b99c6429e7cf7d5b1670ba7b7498be38d272d36"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第3章-input.json",
+      "old": {
+        "bytes": 1545,
+        "sha256": "a813453336eb6f40bbfd0bbb354ccdbd6f5d6a37bcbd0f57dd2bed185df8349c"
+      },
+      "fixed": {
+        "bytes": 1545,
+        "sha256": "a813453336eb6f40bbfd0bbb354ccdbd6f5d6a37bcbd0f57dd2bed185df8349c"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第3章-report.json",
+      "old": {
+        "bytes": 47340,
+        "sha256": "9c5fb325c4376e48ea038f42ca21e9e7e46c88273878d36d6ede928e98027786"
+      },
+      "fixed": {
+        "bytes": 47340,
+        "sha256": "9c5fb325c4376e48ea038f42ca21e9e7e46c88273878d36d6ede928e98027786"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第三章独立读回.json",
+      "old": {
+        "bytes": 3610,
+        "sha256": "aaa3a662605574ac033c8803a76958e05dd24f62222d7ca0eeb05fcc6b2f297d"
+      },
+      "fixed": {
+        "bytes": 3610,
+        "sha256": "aaa3a662605574ac033c8803a76958e05dd24f62222d7ca0eeb05fcc6b2f297d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/第二章独立读回.json",
+      "old": {
+        "bytes": 3683,
+        "sha256": "d476b993e593dea878d80d5a11b1aa912f449c79ba5708609bc2e724eb37f88b"
+      },
+      "fixed": {
+        "bytes": 3683,
+        "sha256": "d476b993e593dea878d80d5a11b1aa912f449c79ba5708609bc2e724eb37f88b"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/编者人工改稿示范.json",
+      "old": {
+        "bytes": 3568,
+        "sha256": "b71906f0263ba9c91d6ad9006aded40fb3346ae5f1182ab5c46fb3aca275ee66"
+      },
+      "fixed": {
+        "bytes": 3568,
+        "sha256": "b71906f0263ba9c91d6ad9006aded40fb3346ae5f1182ab5c46fb3aca275ee66"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/要求更新回执.json",
+      "old": {
+        "bytes": 1491,
+        "sha256": "030fd22e5d31d32819033ae6a636a4a6f4184b4adba5929478c965d9c0d08468"
+      },
+      "fixed": {
+        "bytes": 1491,
+        "sha256": "030fd22e5d31d32819033ae6a636a4a6f4184b4adba5929478c965d9c0d08468"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/02-三章接续真实运行/过期提议服务stderr.txt",
+      "old": {
+        "bytes": 259,
+        "sha256": "c87de895293a69b23c3ffa819ff4407d1f2fe7929322018b5b41513c31783f47"
+      },
+      "fixed": {
+        "bytes": 259,
+        "sha256": "c87de895293a69b23c3ffa819ff4407d1f2fe7929322018b5b41513c31783f47"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装前基线.json",
+      "old": {
+        "bytes": 595,
+        "sha256": "224351a43d0079fffdbe3e576336c0189e834fcac4efadd4e1ad5b2d6f9744af"
+      },
+      "fixed": {
+        "bytes": 595,
+        "sha256": "224351a43d0079fffdbe3e576336c0189e834fcac4efadd4e1ad5b2d6f9744af"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装后.json",
+      "old": {
+        "bytes": 615,
+        "sha256": "800b8bf2cec187d8aa9528e16895cdfff7add08adb2796ab4bb00540a0c9d803"
+      },
+      "fixed": {
+        "bytes": 615,
+        "sha256": "800b8bf2cec187d8aa9528e16895cdfff7add08adb2796ab4bb00540a0c9d803"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装命令.json",
+      "old": {
+        "bytes": 274,
+        "sha256": "23cfecd0942029536bdc631809ac59e14c38274fa8c3660ac5ad24680bd299d4"
+      },
+      "fixed": {
+        "bytes": 274,
+        "sha256": "23cfecd0942029536bdc631809ac59e14c38274fa8c3660ac5ad24680bd299d4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装命令.json.stderr.txt",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/最终移除后验证.json",
+      "old": {
+        "bytes": 483,
+        "sha256": "77d993e6f8a69b903ed1f84d19ab1dbe30fcea9cf9226c0b8fcbdf0aec8faed6"
+      },
+      "fixed": {
+        "bytes": 483,
+        "sha256": "77d993e6f8a69b903ed1f84d19ab1dbe30fcea9cf9226c0b8fcbdf0aec8faed6"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/本轮启用目录.json",
+      "old": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "fixed": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/本轮启用目录.json.stderr.txt",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/检查与撤销结果.json",
+      "old": {
+        "bytes": 439,
+        "sha256": "0a0febe6fff0c9d7bfb470c71bae8409100f0923af897d10360c496ab4100f25"
+      },
+      "fixed": {
+        "bytes": 439,
+        "sha256": "0a0febe6fff0c9d7bfb470c71bae8409100f0923af897d10360c496ab4100f25"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除后.json",
+      "old": {
+        "bytes": 615,
+        "sha256": "800b8bf2cec187d8aa9528e16895cdfff7add08adb2796ab4bb00540a0c9d803"
+      },
+      "fixed": {
+        "bytes": 615,
+        "sha256": "800b8bf2cec187d8aa9528e16895cdfff7add08adb2796ab4bb00540a0c9d803"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-1.json",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-1.stderr.txt",
+      "old": {
+        "bytes": 2754,
+        "sha256": "6f643b5a875e1bacb88a6d77aacba650196daf896fb8d176da65472a857f15ce"
+      },
+      "fixed": {
+        "bytes": 2754,
+        "sha256": "6f643b5a875e1bacb88a6d77aacba650196daf896fb8d176da65472a857f15ce"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-2.json",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-2.stderr.txt",
+      "old": {
+        "bytes": 2754,
+        "sha256": "3adb445f6c697665893d59399422e448e4aa2e590bbfb412379b16a0c6925b3a"
+      },
+      "fixed": {
+        "bytes": 2754,
+        "sha256": "3adb445f6c697665893d59399422e448e4aa2e590bbfb412379b16a0c6925b3a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-3.json",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-3.stderr.txt",
+      "old": {
+        "bytes": 2754,
+        "sha256": "46dbdebd6745ef74bb8baf49f3c7c258f0d4c76e7a41b94378de7b4b0c21ef77"
+      },
+      "fixed": {
+        "bytes": 2754,
+        "sha256": "46dbdebd6745ef74bb8baf49f3c7c258f0d4c76e7a41b94378de7b4b0c21ef77"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-4.json",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-4.stderr.txt",
+      "old": {
+        "bytes": 2754,
+        "sha256": "346e430a9dc585fc48e740b2c33641f43b3b6c24fcfed00f25c17a1c8594d0ee"
+      },
+      "fixed": {
+        "bytes": 2754,
+        "sha256": "346e430a9dc585fc48e740b2c33641f43b3b6c24fcfed00f25c17a1c8594d0ee"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/项目默认目录.json",
+      "old": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "fixed": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/项目默认目录.json.stderr.txt",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-实际通过/events.jsonl",
+      "old": {
+        "bytes": 37927,
+        "sha256": "d80b3e4abe3697c5f57966692c20c0e5ec399bfa7a86aef786d0ee9266a3dc90"
+      },
+      "fixed": {
+        "bytes": 37927,
+        "sha256": "d80b3e4abe3697c5f57966692c20c0e5ec399bfa7a86aef786d0ee9266a3dc90"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-实际通过/final-response.txt",
+      "old": {
+        "bytes": 3559,
+        "sha256": "b117153baf2a88423343d106ca2eac612c0369e2346ac51b4843fb3f3f046d7e"
+      },
+      "fixed": {
+        "bytes": 3559,
+        "sha256": "b117153baf2a88423343d106ca2eac612c0369e2346ac51b4843fb3f3f046d7e"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-实际通过/input.json",
+      "old": {
+        "bytes": 1997,
+        "sha256": "6729d3b4cecdda3e27a98e779d142ccd3ef6071b56a7e578175bb02bd570adc8"
+      },
+      "fixed": {
+        "bytes": 1997,
+        "sha256": "6729d3b4cecdda3e27a98e779d142ccd3ef6071b56a7e578175bb02bd570adc8"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-实际通过/report.json",
+      "old": {
+        "bytes": 36108,
+        "sha256": "627e014126e42439bc252207704dba88a805fb56ea3f1049d3b10a4b5d8f7ffa"
+      },
+      "fixed": {
+        "bytes": 36108,
+        "sha256": "627e014126e42439bc252207704dba88a805fb56ea3f1049d3b10a4b5d8f7ffa"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/events.jsonl",
+      "old": {
+        "bytes": 37470,
+        "sha256": "66526542e8591cff6dbddec7ff194907ab0f7d7e5f96bc892c770147d44626f8"
+      },
+      "fixed": {
+        "bytes": 37470,
+        "sha256": "66526542e8591cff6dbddec7ff194907ab0f7d7e5f96bc892c770147d44626f8"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/final-response.txt",
+      "old": {
+        "bytes": 3092,
+        "sha256": "abc00de28d75f782ab4417a8cc922df055a68921bdde482f6e4a19051869e00f"
+      },
+      "fixed": {
+        "bytes": 3092,
+        "sha256": "abc00de28d75f782ab4417a8cc922df055a68921bdde482f6e4a19051869e00f"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/input.json",
+      "old": {
+        "bytes": 1979,
+        "sha256": "1ed0660d1b838e3c812280549dc741c0a88e0516e83a49d87c7b98be91141596"
+      },
+      "fixed": {
+        "bytes": 1979,
+        "sha256": "1ed0660d1b838e3c812280549dc741c0a88e0516e83a49d87c7b98be91141596"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/report.json",
+      "old": {
+        "bytes": 35641,
+        "sha256": "c5660fb53808f8bf004ad52215e96e5c908e7db5946ca5601b200dd4af68c50c"
+      },
+      "fixed": {
+        "bytes": 35641,
+        "sha256": "c5660fb53808f8bf004ad52215e96e5c908e7db5946ca5601b200dd4af68c50c"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装前基线.json",
+      "old": {
+        "bytes": 596,
+        "sha256": "387b727ee0ff2d3fc001956e25bf966fc27f4a40116363d7346c4788df737dba"
+      },
+      "fixed": {
+        "bytes": 596,
+        "sha256": "387b727ee0ff2d3fc001956e25bf966fc27f4a40116363d7346c4788df737dba"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装后.json",
+      "old": {
+        "bytes": 616,
+        "sha256": "8073ece85c3c6d2213886444218afb67bd3c67a32b476c4782f37595ebe90616"
+      },
+      "fixed": {
+        "bytes": 616,
+        "sha256": "8073ece85c3c6d2213886444218afb67bd3c67a32b476c4782f37595ebe90616"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装命令.json",
+      "old": {
+        "bytes": 274,
+        "sha256": "23cfecd0942029536bdc631809ac59e14c38274fa8c3660ac5ad24680bd299d4"
+      },
+      "fixed": {
+        "bytes": 274,
+        "sha256": "23cfecd0942029536bdc631809ac59e14c38274fa8c3660ac5ad24680bd299d4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装命令.json.stderr.txt",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/本轮启用目录.json",
+      "old": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "fixed": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/本轮启用目录.json.stderr.txt",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/检查与撤销结果.json",
+      "old": {
+        "bytes": 439,
+        "sha256": "9376b9eea5ec9a8474ada447aeebdc7803aa22b7fa6a19cb88490ba79895eb7e"
+      },
+      "fixed": {
+        "bytes": 439,
+        "sha256": "9376b9eea5ec9a8474ada447aeebdc7803aa22b7fa6a19cb88490ba79895eb7e"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除后.json",
+      "old": {
+        "bytes": 615,
+        "sha256": "800b8bf2cec187d8aa9528e16895cdfff7add08adb2796ab4bb00540a0c9d803"
+      },
+      "fixed": {
+        "bytes": 615,
+        "sha256": "800b8bf2cec187d8aa9528e16895cdfff7add08adb2796ab4bb00540a0c9d803"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除命令.json",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除命令.stderr.txt",
+      "old": {
+        "bytes": 2754,
+        "sha256": "172972cd9669147ea810d338a71a568ecc3b42d5e4968d3c87f8105d9c112cc4"
+      },
+      "fixed": {
+        "bytes": 2754,
+        "sha256": "172972cd9669147ea810d338a71a568ecc3b42d5e4968d3c87f8105d9c112cc4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除重试后验证.json",
+      "old": {
+        "bytes": 382,
+        "sha256": "9ce85986efaaec0cef13ffbda9cf4bb9b7076e68fb663ee5db92c631240db5d1"
+      },
+      "fixed": {
+        "bytes": 382,
+        "sha256": "9ce85986efaaec0cef13ffbda9cf4bb9b7076e68fb663ee5db92c631240db5d1"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/项目默认目录.json",
+      "old": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "fixed": {
+        "bytes": 711,
+        "sha256": "2e9a433d6b58e5acd665cbe9d8d7ec6dac78f422d3e475261f8c9023f955d3e4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/安装后只读-旧核查/项目默认目录.json.stderr.txt",
+      "old": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "fixed": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/插件安装回执.json",
+      "old": {
+        "bytes": 274,
+        "sha256": "23cfecd0942029536bdc631809ac59e14c38274fa8c3660ac5ad24680bd299d4"
+      },
+      "fixed": {
+        "bytes": 274,
+        "sha256": "23cfecd0942029536bdc631809ac59e14c38274fa8c3660ac5ad24680bd299d4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/插件最终移除回执.json",
+      "old": {
+        "bytes": 119,
+        "sha256": "017c02d626a01a413b97ca48de76658197ecd438f16c0d6d95740dad100b54ef"
+      },
+      "fixed": {
+        "bytes": 119,
+        "sha256": "017c02d626a01a413b97ca48de76658197ecd438f16c0d6d95740dad100b54ef"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/插件配置实际加载-default.json",
+      "old": {
+        "bytes": 819,
+        "sha256": "c77b1fa04e187ac715df40c9bccecf4e46b2e2c475499bdc93a43e66aa06e1fc"
+      },
+      "fixed": {
+        "bytes": 819,
+        "sha256": "c77b1fa04e187ac715df40c9bccecf4e46b2e2c475499bdc93a43e66aa06e1fc"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/插件配置实际加载-false.json",
+      "old": {
+        "bytes": 1208,
+        "sha256": "eea53dcdf0da51887a95767f8904ff0331dd346f7341a5d7887ae9a98af2b959"
+      },
+      "fixed": {
+        "bytes": 1208,
+        "sha256": "eea53dcdf0da51887a95767f8904ff0331dd346f7341a5d7887ae9a98af2b959"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/插件配置实际加载-true.json",
+      "old": {
+        "bytes": 1205,
+        "sha256": "25322aee95921a7f4d13fece683aad067d4d6abc8484f5832d391760eba5d5f6"
+      },
+      "fixed": {
+        "bytes": 1205,
+        "sha256": "25322aee95921a7f4d13fece683aad067d4d6abc8484f5832d391760eba5d5f6"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/未安装宿主检查/events.jsonl",
+      "old": {
+        "bytes": 22411,
+        "sha256": "6bf9a5ff14f4ec3b12de62d67b26c9cafe0792e281ad225837a85a73a473670f"
+      },
+      "fixed": {
+        "bytes": 22411,
+        "sha256": "6bf9a5ff14f4ec3b12de62d67b26c9cafe0792e281ad225837a85a73a473670f"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/未安装宿主检查/final-response.txt",
+      "old": {
+        "bytes": 1244,
+        "sha256": "b4b623642fe6a1380ac919826b01150acdccc4be9058c05d5b49827ad93a93b6"
+      },
+      "fixed": {
+        "bytes": 1244,
+        "sha256": "b4b623642fe6a1380ac919826b01150acdccc4be9058c05d5b49827ad93a93b6"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/未安装宿主检查/input.json",
+      "old": {
+        "bytes": 1613,
+        "sha256": "417df7d4d6569530af834235af4b398c0d5183a9188e4e555ed53d496bafae2d"
+      },
+      "fixed": {
+        "bytes": 1613,
+        "sha256": "417df7d4d6569530af834235af4b398c0d5183a9188e4e555ed53d496bafae2d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/未安装宿主检查/report.json",
+      "old": {
+        "bytes": 2450,
+        "sha256": "16545914fca8aa30505e6bca5deff66d102e6f86d65a5e882951fa0408c5defd"
+      },
+      "fixed": {
+        "bytes": 2450,
+        "sha256": "16545914fca8aa30505e6bca5deff66d102e6f86d65a5e882951fa0408c5defd"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/核查摘要.json",
+      "old": {
+        "bytes": 1843,
+        "sha256": "f977f3a6ef8a5e0515e3844863d9c3f3de08c259a8f1a17a2efa3a541fbc8a62"
+      },
+      "fixed": {
+        "bytes": 1843,
+        "sha256": "f977f3a6ef8a5e0515e3844863d9c3f3de08c259a8f1a17a2efa3a541fbc8a62"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/移除重试回执.json",
+      "old": {
+        "bytes": 119,
+        "sha256": "017c02d626a01a413b97ca48de76658197ecd438f16c0d6d95740dad100b54ef"
+      },
+      "fixed": {
+        "bytes": 119,
+        "sha256": "017c02d626a01a413b97ca48de76658197ecd438f16c0d6d95740dad100b54ef"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/03-资源提示与插件/资源与提示实际读取.json",
+      "old": {
+        "bytes": 41284,
+        "sha256": "9a6b1a23803e2a7450437e96492379b28d53fa8311945d4c21997220edfbe04b"
+      },
+      "fixed": {
+        "bytes": 41284,
+        "sha256": "9a6b1a23803e2a7450437e96492379b28d53fa8311945d4c21997220edfbe04b"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/CLI完整读回.json",
+      "old": {
+        "bytes": 378,
+        "sha256": "213a541984d4572dbcedd0f4671d68132bf34f0aa08b6aa9cbf987f0677fa3f7"
+      },
+      "fixed": {
+        "bytes": 378,
+        "sha256": "213a541984d4572dbcedd0f4671d68132bf34f0aa08b6aa9cbf987f0677fa3f7"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/MCP运行前业务.json",
+      "old": {
+        "bytes": 2931,
+        "sha256": "446d667168c94e696229621881c1b726b7e0aacd05f520899825e0db2016028f"
+      },
+      "fixed": {
+        "bytes": 2931,
+        "sha256": "446d667168c94e696229621881c1b726b7e0aacd05f520899825e0db2016028f"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/业务独立起点.json",
+      "old": {
+        "bytes": 1452,
+        "sha256": "9cdc06d6886aa1ed3975bd33837c15aac3b08f6a585f3a7fa9f4cd0f9601d1cb"
+      },
+      "fixed": {
+        "bytes": 1452,
+        "sha256": "9cdc06d6886aa1ed3975bd33837c15aac3b08f6a585f3a7fa9f4cd0f9601d1cb"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/人工改稿.json",
+      "old": {
+        "bytes": 365,
+        "sha256": "323d0e3a43df067b018760f7ce8401609fd409dceaffed0fc825d9f080b0b9a3"
+      },
+      "fixed": {
+        "bytes": 365,
+        "sha256": "323d0e3a43df067b018760f7ce8401609fd409dceaffed0fc825d9f080b0b9a3"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/作者独立协议与只读业务核对.json",
+      "old": {
+        "bytes": 5946,
+        "sha256": "482d3e95f7b593e5eb825a49a5a906bc5d1284504be1f8d4988969c3b7445a6e"
+      },
+      "fixed": {
+        "bytes": 5946,
+        "sha256": "482d3e95f7b593e5eb825a49a5a906bc5d1284504be1f8d4988969c3b7445a6e"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/全部连接结束后业务.json",
+      "old": {
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      "fixed": {
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/工具发现.json",
+      "old": {
+        "bytes": 8620,
+        "sha256": "e1712e728cc9f542a69100c8ffe783db2c8ea0ccbbfef14912ed175ec59cb13a"
+      },
+      "fixed": {
+        "bytes": 8620,
+        "sha256": "e1712e728cc9f542a69100c8ffe783db2c8ea0ccbbfef14912ed175ec59cb13a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/摘要.json",
+      "old": {
+        "bytes": 1144,
+        "sha256": "8fa2cf862eb8a02e576e98b930ddd1313dcffaaaa08dc72805601db08b36f7b5"
+      },
+      "fixed": {
+        "bytes": 1144,
+        "sha256": "8fa2cf862eb8a02e576e98b930ddd1313dcffaaaa08dc72805601db08b36f7b5"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/文件字节清单.json",
+      "old": {
+        "bytes": 3279,
+        "sha256": "b7e704ce38500f367837895e935dfa94828ca6e0917a0d0991f180a5cdac602d"
+      },
+      "fixed": {
+        "bytes": 3279,
+        "sha256": "b7e704ce38500f367837895e935dfa94828ca6e0917a0d0991f180a5cdac602d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/断连-stderr.txt",
+      "old": {
+        "bytes": 169,
+        "sha256": "a15ec43cd25a952151c47918365031c27ad00c332369b306baa43bdba4af4a58"
+      },
+      "fixed": {
+        "bytes": 169,
+        "sha256": "a15ec43cd25a952151c47918365031c27ad00c332369b306baa43bdba4af4a58"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/断连-协议.json",
+      "old": {
+        "bytes": 3883,
+        "sha256": "36e12cbc8d30711f90e0a2a6511a548d3a9ff86bf4b980f96c1c89c668093ba2"
+      },
+      "fixed": {
+        "bytes": 3883,
+        "sha256": "36e12cbc8d30711f90e0a2a6511a548d3a9ff86bf4b980f96c1c89c668093ba2"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/断连-调用.json",
+      "old": {
+        "bytes": 1854,
+        "sha256": "243bb98f1f97cd99d05fd673b6c26f06afdde94ac374d82c7463b7506d18a04d"
+      },
+      "fixed": {
+        "bytes": 1854,
+        "sha256": "243bb98f1f97cd99d05fd673b6c26f06afdde94ac374d82c7463b7506d18a04d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/断连后业务.json",
+      "old": {
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      "fixed": {
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/既有真实模型调用逐字核对.json",
+      "old": {
+        "bytes": 877,
+        "sha256": "fc670329ae4570bcc127cf42cb6fa7240a94bd46f1632c76e3d5186dd01a70fa"
+      },
+      "fixed": {
+        "bytes": 877,
+        "sha256": "fc670329ae4570bcc127cf42cb6fa7240a94bd46f1632c76e3d5186dd01a70fa"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/正常连接-stderr.txt",
+      "old": {
+        "bytes": 447,
+        "sha256": "871d1af4bd13f6e855a26c999fb73410fb3cd46935decbd9e178199251932767"
+      },
+      "fixed": {
+        "bytes": 447,
+        "sha256": "871d1af4bd13f6e855a26c999fb73410fb3cd46935decbd9e178199251932767"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/正常连接-协议.json",
+      "old": {
+        "bytes": 19782,
+        "sha256": "5318370f4ef9f0eb1990b832ce57826c7632c2ff5a23d8870c46a85d93ae4b53"
+      },
+      "fixed": {
+        "bytes": 19782,
+        "sha256": "5318370f4ef9f0eb1990b832ce57826c7632c2ff5a23d8870c46a85d93ae4b53"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/正常连接-调用.json",
+      "old": {
+        "bytes": 5098,
+        "sha256": "581c695429acc1d1d4861b5c12ecd057a3c4d6d968c8cf4b0de0548f49cbdbf4"
+      },
+      "fixed": {
+        "bytes": 5098,
+        "sha256": "581c695429acc1d1d4861b5c12ecd057a3c4d6d968c8cf4b0de0548f49cbdbf4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/正常连接关闭后业务.json",
+      "old": {
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      "fixed": {
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/独立核对协议与业务.py",
+      "old": {
+        "bytes": 5173,
+        "sha256": "6a9139580450ad4359d4551fe435938517d6ff8b402f87208afa9ec32d7b3853"
+      },
+      "fixed": {
+        "bytes": 5173,
+        "sha256": "6a9139580450ad4359d4551fe435938517d6ff8b402f87208afa9ec32d7b3853"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/调用者异常-stderr.txt",
+      "old": {
+        "bytes": 169,
+        "sha256": "5dcef612a22326a26d4dabc97d17f97a7c83caa26ae02d9520298250ac8d95ab"
+      },
+      "fixed": {
+        "bytes": 169,
+        "sha256": "5dcef612a22326a26d4dabc97d17f97a7c83caa26ae02d9520298250ac8d95ab"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/调用者异常-协议.json",
+      "old": {
+        "bytes": 3738,
+        "sha256": "f4bba89dbdd646028ed620558b37f882e02134d2423c4652168c600760e32818"
+      },
+      "fixed": {
+        "bytes": 3738,
+        "sha256": "f4bba89dbdd646028ed620558b37f882e02134d2423c4652168c600760e32818"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/调用者异常-调用.json",
+      "old": {
+        "bytes": 1663,
+        "sha256": "6ffa4e155fce3b9dbc9b33090cbc3cbf8261b35e36bea21ea2767ce97e673c95"
+      },
+      "fixed": {
+        "bytes": 1663,
+        "sha256": "6ffa4e155fce3b9dbc9b33090cbc3cbf8261b35e36bea21ea2767ce97e673c95"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "evidence/08-双工具MCP/运行输入.json",
+      "old": {
+        "bytes": 1582,
+        "sha256": "a8a10acf953e68b142c3e94c8acd940f51277a06cfd855fe5103439d85ebbf2f"
+      },
+      "fixed": {
+        "bytes": 1582,
+        "sha256": "a8a10acf953e68b142c3e94c8acd940f51277a06cfd855fe5103439d85ebbf2f"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "fixtures/three-chapter-archive.json",
+      "old": {
+        "bytes": 18198,
+        "sha256": "89cb3570118a0d6bc52d5c6ee37047c4df4d93ecb9d4c6019453c5c98183ed11"
+      },
+      "fixed": {
+        "bytes": 18198,
+        "sha256": "89cb3570118a0d6bc52d5c6ee37047c4df4d93ecb9d4c6019453c5c98183ed11"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "lab.config.example.json",
+      "old": {
+        "bytes": 3,
+        "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+      },
+      "fixed": {
+        "bytes": 3,
+        "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "package.json",
+      "old": {
+        "bytes": 1413,
+        "sha256": "f183db2a06b2990d90f6967edc48358e844df191399116ae07380654e6cc3ce0"
+      },
+      "fixed": {
+        "bytes": 1413,
+        "sha256": "f183db2a06b2990d90f6967edc48358e844df191399116ae07380654e6cc3ce0"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "plugins/novel-practice/mcp.json",
+      "old": {
+        "bytes": 245,
+        "sha256": "12a38ff216eee0db455a5627850a573f5240b2c5ad69432f3d8da924f01122ba"
+      },
+      "fixed": {
+        "bytes": 245,
+        "sha256": "12a38ff216eee0db455a5627850a573f5240b2c5ad69432f3d8da924f01122ba"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "plugins/novel-practice/plugin.json",
+      "old": {
+        "bytes": 666,
+        "sha256": "02adcd76f5c7131f8e38da669cb7b48c42a1bcec9765cfd8cc90c29e82d123ad"
+      },
+      "fixed": {
+        "bytes": 666,
+        "sha256": "02adcd76f5c7131f8e38da669cb7b48c42a1bcec9765cfd8cc90c29e82d123ad"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "plugins/novel-practice/serve.mjs",
+      "old": {
+        "bytes": 389,
+        "sha256": "6cf3535b4bb49c07a51c23a142e0e2f830eefaa7d3ff4e6eff25308ae228a48c"
+      },
+      "fixed": {
+        "bytes": 389,
+        "sha256": "6cf3535b4bb49c07a51c23a142e0e2f830eefaa7d3ff4e6eff25308ae228a48c"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "plugins/novel-practice/skills/novel-chapter-task/SKILL.md",
+      "old": {
+        "bytes": 1300,
+        "sha256": "1ee4d623930226473fd447cabe4d8c20d804aea83ea509bc35c0b7cd815ba468"
+      },
+      "fixed": {
+        "bytes": 1300,
+        "sha256": "1ee4d623930226473fd447cabe4d8c20d804aea83ea509bc35c0b7cd815ba468"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "plugins/novel-practice/skills/novel-chapter-task/references/state-and-review.md",
+      "old": {
+        "bytes": 1801,
+        "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
+      },
+      "fixed": {
+        "bytes": 1801,
+        "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "old": {
+        "bytes": 36227,
+        "sha256": "0d859dc27633aa2f9371e2b85f6ee3869bd88b9b357700ed60e7cd2ac323c398"
+      },
+      "fixed": {
+        "bytes": 36227,
+        "sha256": "0d859dc27633aa2f9371e2b85f6ee3869bd88b9b357700ed60e7cd2ac323c398"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "old": {
+        "bytes": 264,
+        "sha256": "732e79fbdb62a29cc325539fe4c257f2f448b6a149f68f96cbe818fc07296c0f"
+      },
+      "fixed": {
+        "bytes": 264,
+        "sha256": "732e79fbdb62a29cc325539fe4c257f2f448b6a149f68f96cbe818fc07296c0f"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "prototype/app.css",
+      "old": {
+        "bytes": 10609,
+        "sha256": "7255b38a1d858875f8c8965f40506fbff7806c246468bea95b0ee71124bba5a5"
+      },
+      "fixed": {
+        "bytes": 10609,
+        "sha256": "7255b38a1d858875f8c8965f40506fbff7806c246468bea95b0ee71124bba5a5"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "prototype/app.js",
+      "old": {
+        "bytes": 7442,
+        "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d"
+      },
+      "fixed": {
+        "bytes": 7557,
+        "sha256": "9468234bc8decf413e8053ff645d2cbe7a5ed881765c2ee2cd31cacd814b1780"
+      },
+      "unchanged": false
+    },
+    {
+      "path": "prototype/index.html",
+      "old": {
+        "bytes": 2397,
+        "sha256": "d03b27f5608d427978b0b9d9536f4ec3c0ee7ac1cb705199c52ce732a7186be5"
+      },
+      "fixed": {
+        "bytes": 2397,
+        "sha256": "d03b27f5608d427978b0b9d9536f4ec3c0ee7ac1cb705199c52ce732a7186be5"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/archive-first-run.mjs",
+      "old": {
+        "bytes": 1615,
+        "sha256": "f0cf1bd090805bbe298b1120ccbdb340891886ce4ab5e336da124ed3241c574a"
+      },
+      "fixed": {
+        "bytes": 1615,
+        "sha256": "f0cf1bd090805bbe298b1120ccbdb340891886ce4ab5e336da124ed3241c574a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/archive-second-run.mjs",
+      "old": {
+        "bytes": 4049,
+        "sha256": "37d6a0ab9bb2d80a5658b215db798a9c8cc7856f54a7ca72d2e37402ac2d4a4a"
+      },
+      "fixed": {
+        "bytes": 4049,
+        "sha256": "37d6a0ab9bb2d80a5658b215db798a9c8cc7856f54a7ca72d2e37402ac2d4a4a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/archive-third-run.mjs",
+      "old": {
+        "bytes": 3235,
+        "sha256": "eb1e0b0404f6612313cdfc777640bc578c1202b2f6c760a3ad413f7ae843ab14"
+      },
+      "fixed": {
+        "bytes": 3235,
+        "sha256": "eb1e0b0404f6612313cdfc777640bc578c1202b2f6c760a3ad413f7ae843ab14"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/capture-prototype.mjs",
+      "old": {
+        "bytes": 9035,
+        "sha256": "34245e20a55d4cbd36e03b004abae0fafc379cfee8972f0ac9c20f1862b423fc"
+      },
+      "fixed": {
+        "bytes": 9035,
+        "sha256": "34245e20a55d4cbd36e03b004abae0fafc379cfee8972f0ac9c20f1862b423fc"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/codex-local.mjs",
+      "old": {
+        "bytes": 549,
+        "sha256": "fbaf65b59d66348ee090733ba90f1b17acd45aaf8ed33e04da590a0a820d2743"
+      },
+      "fixed": {
+        "bytes": 549,
+        "sha256": "fbaf65b59d66348ee090733ba90f1b17acd45aaf8ed33e04da590a0a820d2743"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/exercise-two-tools.mjs",
+      "old": {
+        "bytes": 9469,
+        "sha256": "0d08e7b5dd35038809006c10fcf72e784378aa9b38e0f79b9a97d054023e420d"
+      },
+      "fixed": {
+        "bytes": 9469,
+        "sha256": "0d08e7b5dd35038809006c10fcf72e784378aa9b38e0f79b9a97d054023e420d"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/inspect-mcp.mjs",
+      "old": {
+        "bytes": 2089,
+        "sha256": "b2fb5da649eb02c8801e1a77fec3aa0ea8650d0d47e3e33d806aefc7da91f00b"
+      },
+      "fixed": {
+        "bytes": 2089,
+        "sha256": "b2fb5da649eb02c8801e1a77fec3aa0ea8650d0d47e3e33d806aefc7da91f00b"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/observe-reminder.mjs",
+      "old": {
+        "bytes": 1067,
+        "sha256": "9d64ea25801147cd3c632dfba76f45eda429c2bc1738bedba8b69cf01564b73a"
+      },
+      "fixed": {
+        "bytes": 1067,
+        "sha256": "9d64ea25801147cd3c632dfba76f45eda429c2bc1738bedba8b69cf01564b73a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/plugin-catalog.mjs",
+      "old": {
+        "bytes": 838,
+        "sha256": "5d83ffbfda049b3ba7f35201a4728136ae6e1b6251891fd2997b1b439af90e7b"
+      },
+      "fixed": {
+        "bytes": 838,
+        "sha256": "5d83ffbfda049b3ba7f35201a4728136ae6e1b6251891fd2997b1b439af90e7b"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/plugin-manage.mjs",
+      "old": {
+        "bytes": 1016,
+        "sha256": "ad73b32b3d84973d02e628263eac5232a80e5a4763b6f543036ce28a3210ef58"
+      },
+      "fixed": {
+        "bytes": 1016,
+        "sha256": "ad73b32b3d84973d02e628263eac5232a80e5a4763b6f543036ce28a3210ef58"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/prepare-manual-example.mjs",
+      "old": {
+        "bytes": 1597,
+        "sha256": "39d033520f09da34bcbd8f67e90503f43d896951985a529e88c0cc0294ff1bac"
+      },
+      "fixed": {
+        "bytes": 1597,
+        "sha256": "39d033520f09da34bcbd8f67e90503f43d896951985a529e88c0cc0294ff1bac"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/prepare-plugin.mjs",
+      "old": {
+        "bytes": 793,
+        "sha256": "931819479b985282f6006a7aa2ac0f6e7747e857de842881f861f3964df0821e"
+      },
+      "fixed": {
+        "bytes": 793,
+        "sha256": "931819479b985282f6006a7aa2ac0f6e7747e857de842881f861f3964df0821e"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/prototype-seed.mjs",
+      "old": {
+        "bytes": 1422,
+        "sha256": "198e2ec1209aa8225a42c2257bdf41f47b7c5889db2944d084c98725ded3020a"
+      },
+      "fixed": {
+        "bytes": 1422,
+        "sha256": "198e2ec1209aa8225a42c2257bdf41f47b7c5889db2944d084c98725ded3020a"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/read-prototype-mcp.mjs",
+      "old": {
+        "bytes": 3056,
+        "sha256": "bdb5eac7be5e2d4169bf094dda049a595b1c14d845817284cb8b7b1ae2c9939b"
+      },
+      "fixed": {
+        "bytes": 3056,
+        "sha256": "bdb5eac7be5e2d4169bf094dda049a595b1c14d845817284cb8b7b1ae2c9939b"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "scripts/start-prototype.mjs",
+      "old": {
+        "bytes": 570,
+        "sha256": "7cf77f23f40d52aea0e45997358fd55f0a7bc8d0415c9b59c03a8fc4da6eac13"
+      },
+      "fixed": {
+        "bytes": 570,
+        "sha256": "7cf77f23f40d52aea0e45997358fd55f0a7bc8d0415c9b59c03a8fc4da6eac13"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "seed/钟楼.json",
+      "old": {
+        "bytes": 842,
+        "sha256": "e82fe3fefee1b315c74eb245fee2cff14a69a3d4fc9c6d3796e6e738919dfc86"
+      },
+      "fixed": {
+        "bytes": 842,
+        "sha256": "e82fe3fefee1b315c74eb245fee2cff14a69a3d4fc9c6d3796e6e738919dfc86"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "seed/钟楼三章.json",
+      "old": {
+        "bytes": 1387,
+        "sha256": "47d44e5f698b50d055b95654efee5c9ce3d5ab5d6d333ffbd6d36c49f8aadfdf"
+      },
+      "fixed": {
+        "bytes": 1387,
+        "sha256": "47d44e5f698b50d055b95654efee5c9ce3d5ab5d6d333ffbd6d36c49f8aadfdf"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/agent.ts",
+      "old": {
+        "bytes": 6487,
+        "sha256": "fe909d62134c560eaaa29e520bce4b51a65adabd94d20e64aa96c66dc9dd5ffb"
+      },
+      "fixed": {
+        "bytes": 6487,
+        "sha256": "fe909d62134c560eaaa29e520bce4b51a65adabd94d20e64aa96c66dc9dd5ffb"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/cli.ts",
+      "old": {
+        "bytes": 2955,
+        "sha256": "3bd881879873d69961f0fd7d909e2139dc7834ff272c4c35d5859502da75b3f0"
+      },
+      "fixed": {
+        "bytes": 2955,
+        "sha256": "3bd881879873d69961f0fd7d909e2139dc7834ff272c4c35d5859502da75b3f0"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/mcp-two-tools.ts",
+      "old": {
+        "bytes": 2566,
+        "sha256": "7ff02be17041cefe5612d11624a866ba6818558d0a7f4fb2d3fa58c423636945"
+      },
+      "fixed": {
+        "bytes": 2566,
+        "sha256": "7ff02be17041cefe5612d11624a866ba6818558d0a7f4fb2d3fa58c423636945"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/mcp.ts",
+      "old": {
+        "bytes": 6711,
+        "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
+      },
+      "fixed": {
+        "bytes": 6711,
+        "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/plugin-check.ts",
+      "old": {
+        "bytes": 7441,
+        "sha256": "9b1bbb51ed61ccf8171098f75eab9adb3187bbbfa1dab33535d8848c918a6b55"
+      },
+      "fixed": {
+        "bytes": 7441,
+        "sha256": "9b1bbb51ed61ccf8171098f75eab9adb3187bbbfa1dab33535d8848c918a6b55"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/prototype-http.ts",
+      "old": {
+        "bytes": 2879,
+        "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7"
+      },
+      "fixed": {
+        "bytes": 2879,
+        "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/prototype-server.ts",
+      "old": {
+        "bytes": 820,
+        "sha256": "ccab39aa20334444cd3c7495e8cd98ec7f0070507efed26263d67a51ca57297b"
+      },
+      "fixed": {
+        "bytes": 820,
+        "sha256": "ccab39aa20334444cd3c7495e8cd98ec7f0070507efed26263d67a51ca57297b"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/schemas.ts",
+      "old": {
+        "bytes": 1671,
+        "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
+      },
+      "fixed": {
+        "bytes": 1671,
+        "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/store.ts",
+      "old": {
+        "bytes": 11179,
+        "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
+      },
+      "fixed": {
+        "bytes": 11179,
+        "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/test/mcp.test.ts",
+      "old": {
+        "bytes": 4245,
+        "sha256": "ea8ca42994f616cd4f55950f7190a2698c2099024ee03576427229e015923c32"
+      },
+      "fixed": {
+        "bytes": 4245,
+        "sha256": "ea8ca42994f616cd4f55950f7190a2698c2099024ee03576427229e015923c32"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/test/progression.test.ts",
+      "old": {
+        "bytes": 3128,
+        "sha256": "1b731615ac98608f2363bfef8693ca042d1413162bf33a4c7f7429d9f9902f78"
+      },
+      "fixed": {
+        "bytes": 3128,
+        "sha256": "1b731615ac98608f2363bfef8693ca042d1413162bf33a4c7f7429d9f9902f78"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/test/prototype.test.ts",
+      "old": {
+        "bytes": 2827,
+        "sha256": "1c50cf4a456757c806c8b83554cc5f6bd288b8d230c884c797abfdbca5a92b62"
+      },
+      "fixed": {
+        "bytes": 2827,
+        "sha256": "1c50cf4a456757c806c8b83554cc5f6bd288b8d230c884c797abfdbca5a92b62"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "src/test/state.test.ts",
+      "old": {
+        "bytes": 1584,
+        "sha256": "adee8dedcd0129eb5f802ee7674ad01e7acec9e138081bb710ccb1916703d06e"
+      },
+      "fixed": {
+        "bytes": 1584,
+        "sha256": "adee8dedcd0129eb5f802ee7674ad01e7acec9e138081bb710ccb1916703d06e"
+      },
+      "unchanged": true
+    },
+    {
+      "path": "tsconfig.json",
+      "old": {
+        "bytes": 286,
+        "sha256": "fbc452b9b5e2b481e0da3768692bdfd9cf813ac2beb7b9f828b4f696d15926b4"
+      },
+      "fixed": {
+        "bytes": 286,
+        "sha256": "fbc452b9b5e2b481e0da3768692bdfd9cf813ac2beb7b9f828b4f696d15926b4"
+      },
+      "unchanged": true
+    }
+  ],
+  "knownFixCommit": "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+  "knownFixAppBlob": "26bf36b20687f77e2374cbb370e39c8f26e61d87"
+}

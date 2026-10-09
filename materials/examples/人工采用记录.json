@@ -1,0 +1,24 @@
+{
+  "operator": "编者人工采用此前已存在的修复文件，模型只生成原测试",
+  "oldHead": "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720",
+  "knownFixCommit": "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+  "adoptedPath": "prototype/app.js",
+  "knownGitBlob": "26bf36b20687f77e2374cbb370e39c8f26e61d87",
+  "newHead": "c3805c360551c10fedfd9b5473e569cfd7666dc0",
+  "original": {
+    "bytes": 7442,
+    "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d"
+  },
+  "adopted": {
+    "bytes": 7557,
+    "sha256": "9468234bc8decf413e8053ff645d2cbe7a5ed881765c2ee2cd31cacd814b1780"
+  },
+  "changedPaths": [
+    "prototype/app.js"
+  ],
+  "teacherInputUnchanged": true,
+  "testSourceUnchanged": true,
+  "other163ApplicationFilesUnchanged": true,
+  "modelTurns": 0,
+  "testRuns": 0
+}

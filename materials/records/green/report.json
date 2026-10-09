@@ -1,0 +1,20 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\runs\\tests-green-01",
+  "operator": "编者用同一派生测试检查人工采用的已知修复；原失败和实际RED保留",
+  "node": "v24.12.0",
+  "modelTurns": 0,
+  "syntaxRuns": 1,
+  "behaviorRuns": 1,
+  "syntaxExitCode": 0,
+  "behaviorExitCode": 0,
+  "behaviorSignal": null,
+  "error": null,
+  "originalFilesUnchanged": true,
+  "teacherInputUnchanged": true,
+  "testSourceUnchanged": true,
+  "globalConfigHashBefore": "734abbce0ae2d9116475f23c626b55d69fd5502e648b90faf25f6ee3efc44120",
+  "globalConfigHashAfter": "734abbce0ae2d9116475f23c626b55d69fd5502e648b90faf25f6ee3efc44120",
+  "globalConfigUnchanged": true,
+  "databaseCount": 12,
+  "limits": "同一测试检查人工采用的既有修复；退出非零仍需区分环境/记录/清理与业务失败，不代表文学或审美通过。"
+}

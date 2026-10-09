@@ -1,0 +1,42 @@
+[
+  {
+    "name": "行为记录完成且无环境、记录或清理错误",
+    "passed": true
+  },
+  {
+    "name": "完整三章原样初始化，保存前输入准确",
+    "passed": true
+  },
+  {
+    "name": "门截到实际提交对象，POST 尚未进入服务",
+    "passed": true
+  },
+  {
+    "name": "postWaiting 不接纳等待期间输入",
+    "passed": true
+  },
+  {
+    "name": "postWaiting 暂停章名、正文和覆盖编辑动作",
+    "passed": true
+  },
+  {
+    "name": "getWaiting 不接纳等待期间输入",
+    "passed": true
+  },
+  {
+    "name": "getWaiting 暂停章名、正文和覆盖编辑动作",
+    "passed": true
+  },
+  {
+    "name": "POST 真实返回后 GET 仍等待，服务已保存完整新修订",
+    "passed": true
+  },
+  {
+    "name": "真实保存、读回、刷新和数据库一致，且仅新增一个修订",
+    "passed": true
+  },
+  {
+    "name": "结束后恢复章名、正文和覆盖入口，能用键盘继续编辑",
+    "passed": true
+  }
+]

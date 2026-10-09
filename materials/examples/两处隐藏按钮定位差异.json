@@ -1,0 +1,20 @@
+{
+  "operator": "编者修正隐藏按钮的观察定位",
+  "originalBytes": 23583,
+  "originalSha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
+  "correctedBytes": 23625,
+  "correctedSha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
+  "changes": [
+    {
+      "line": 93,
+      "before": "page.getByRole('button', {name: '读取当前稿', exact: true})",
+      "after": "page.getByRole('button', {name: '读取当前稿', exact: true, includeHidden: true})"
+    },
+    {
+      "line": 94,
+      "before": "page.getByRole('button', {name: '以当前稿重新编辑', exact: true})",
+      "after": "page.getByRole('button', {name: '以当前稿重新编辑', exact: true, includeHidden: true})"
+    }
+  ],
+  "limits": "仅两个角色定位包含隐藏元素；不强制点击、不改可见性或disabled、不修改业务预期、键盘、门、应用、超时。原自然任务与首次运行原字节保留。"
+}

@@ -1,0 +1,304 @@
+(node:44052) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+完整证据目录：D:\Projects\Knowledge\.coursebook-work\h09-02-lab\project\runs\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89
+✖ 正常保存：原版、台面、笔记页在 POST 和读回等待期间暂停编辑 (4698.0232ms)
+✔ 原版受控传输失败：请求未进服务，保留本地修改并先读取当前稿 (1193.5906ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 6158.0059
+
+✖ failing tests:
+
+test at scripts\test-saving.mjs:412:1
+✖ 正常保存：原版、台面、笔记页在 POST 和读回等待期间暂停编辑 (4698.0232ms)
+  Error [AggregateError]: 正常保存违反等待期约定；完整证据见 D:\Projects\Knowledge\.coursebook-work\h09-02-lab\project\runs\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89
+      at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:418:28)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+    [errors]: [
+      Error: original：postWaiting 不接纳等待期间输入
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+        + actual - expected
+        ... Skipped lines
+        
+          {
+            body: '周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n' +
+              '\n' +
+              '“听见了。像轮齿碰了一下。”\n' +
+              '\n' +
+        ...
+              '\n' +
+        +     '保存前补记：林澈把观察时间写在页边。\n' +
+        +     'POST等待输入：周伯仍站在窗边。',
+        +   title: '墙后的声音 · 保存前补记【POST等待输入】'
+        -     '保存前补记：林澈把观察时间写在页边。',
+        -   title: '墙后的声音 · 保存前补记'
+          }
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:50
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: original：postWaiting 暂停章名、正文和覆盖编辑动作
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+        
+        true !== false
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:369:18
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: original：getWaiting 不接纳等待期间输入
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+        + actual - expected
+        ... Skipped lines
+        
+          {
+            body: '周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n' +
+              '\n' +
+              '“听见了。像轮齿碰了一下。”\n' +
+              '\n' +
+        ...
+              '\n' +
+        +     '保存前补记：林澈把观察时间写在页边。\n' +
+        +     'POST等待输入：周伯仍站在窗边。\n' +
+        +     '读回等待输入：林澈又核对了一次记号。',
+        +   title: '墙后的声音 · 保存前补记【POST等待输入】【读回等待输入】'
+        -     '保存前补记：林澈把观察时间写在页边。',
+        -   title: '墙后的声音 · 保存前补记'
+          }
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:50
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: original：getWaiting 暂停章名、正文和覆盖编辑动作
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+        
+        true !== false
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:369:18
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: desk：postWaiting 不接纳等待期间输入
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+        + actual - expected
+        ... Skipped lines
+        
+          {
+            body: '周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n' +
+              '\n' +
+              '“听见了。像轮齿碰了一下。”\n' +
+              '\n' +
+        ...
+              '\n' +
+        +     '保存前补记：林澈把观察时间写在页边。\n' +
+        +     'POST等待输入：周伯仍站在窗边。',
+        +   title: '墙后的声音 · 保存前补记【POST等待输入】'
+        -     '保存前补记：林澈把观察时间写在页边。',
+        -   title: '墙后的声音 · 保存前补记'
+          }
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:50
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: desk：postWaiting 暂停章名、正文和覆盖编辑动作
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+        
+        true !== false
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:369:18
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: desk：getWaiting 不接纳等待期间输入
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+        + actual - expected
+        ... Skipped lines
+        
+          {
+            body: '周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n' +
+              '\n' +
+              '“听见了。像轮齿碰了一下。”\n' +
+              '\n' +
+        ...
+              '\n' +
+        +     '保存前补记：林澈把观察时间写在页边。\n' +
+        +     'POST等待输入：周伯仍站在窗边。\n' +
+        +     '读回等待输入：林澈又核对了一次记号。',
+        +   title: '墙后的声音 · 保存前补记【POST等待输入】【读回等待输入】'
+        -     '保存前补记：林澈把观察时间写在页边。',
+        -   title: '墙后的声音 · 保存前补记'
+          }
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:50
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: desk：getWaiting 暂停章名、正文和覆盖编辑动作
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+        
+        true !== false
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:369:18
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: notes：postWaiting 不接纳等待期间输入
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+        + actual - expected
+        ... Skipped lines
+        
+          {
+            body: '周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n' +
+              '\n' +
+              '“听见了。像轮齿碰了一下。”\n' +
+              '\n' +
+        ...
+              '\n' +
+        +     '保存前补记：林澈把观察时间写在页边。\n' +
+        +     'POST等待输入：周伯仍站在窗边。',
+        +   title: '墙后的声音 · 保存前补记【POST等待输入】'
+        -     '保存前补记：林澈把观察时间写在页边。',
+        -   title: '墙后的声音 · 保存前补记'
+          }
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:50
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: notes：postWaiting 暂停章名、正文和覆盖编辑动作
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+        
+        true !== false
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:369:18
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: notes：getWaiting 不接纳等待期间输入
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+        + actual - expected
+        ... Skipped lines
+        
+          {
+            body: '周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n' +
+              '\n' +
+              '“听见了。像轮齿碰了一下。”\n' +
+              '\n' +
+        ...
+              '\n' +
+        +     '保存前补记：林澈把观察时间写在页边。\n' +
+        +     'POST等待输入：周伯仍站在窗边。\n' +
+        +     '读回等待输入：林澈又核对了一次记号。',
+        +   title: '墙后的声音 · 保存前补记【POST等待输入】【读回等待输入】'
+        -     '保存前补记：林澈把观察时间写在页边。',
+        -   title: '墙后的声音 · 保存前补记'
+          }
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:50
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:367:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      },
+      Error: notes：getWaiting 暂停章名、正文和覆盖编辑动作
+          at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:309:93)
+          at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+          ... 2 lines matching cause stack trace ...
+          at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3) {
+        [cause]: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+        
+        true !== false
+        
+            at file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:369:18
+            at check (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:308:11)
+            at verify (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:368:9)
+            at TestContext.<anonymous> (file:///D:/Projects/Knowledge/.coursebook-work/h09-02-lab/project/scripts/test-saving.mjs:416:61)
+            at async Test.run (node:internal/test_runner/test:1113:7)
+            at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      }
+    ]
+  }

@@ -1,0 +1,21 @@
+{
+  "cases": [
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\runs\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-original-RGafPI",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\runs\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-desk-K92HAt",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\runs\\saving-5600e271-e0ca-4c34-93b5-6d9da5edef89\\normal-notes-z0mJY5"
+  ],
+  "failures": [
+    "original：postWaiting 不接纳等待期间输入",
+    "original：postWaiting 暂停章名、正文和覆盖编辑动作",
+    "original：getWaiting 不接纳等待期间输入",
+    "original：getWaiting 暂停章名、正文和覆盖编辑动作",
+    "desk：postWaiting 不接纳等待期间输入",
+    "desk：postWaiting 暂停章名、正文和覆盖编辑动作",
+    "desk：getWaiting 不接纳等待期间输入",
+    "desk：getWaiting 暂停章名、正文和覆盖编辑动作",
+    "notes：postWaiting 不接纳等待期间输入",
+    "notes：postWaiting 暂停章名、正文和覆盖编辑动作",
+    "notes：getWaiting 不接纳等待期间输入",
+    "notes：getWaiting 暂停章名、正文和覆盖编辑动作"
+  ]
+}

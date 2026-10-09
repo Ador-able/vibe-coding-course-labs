@@ -1,0 +1,20 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\runs\\tests-old-corrected-01",
+  "operator": "编者仅修正隐藏按钮定位后执行派生测试；原模型及首次执行失败保留",
+  "node": "v24.12.0",
+  "modelTurns": 0,
+  "syntaxRuns": 1,
+  "behaviorRuns": 1,
+  "syntaxExitCode": 0,
+  "behaviorExitCode": 1,
+  "behaviorSignal": null,
+  "error": null,
+  "originalFilesUnchanged": true,
+  "teacherInputUnchanged": true,
+  "testSourceUnchanged": true,
+  "globalConfigHashBefore": "734abbce0ae2d9116475f23c626b55d69fd5502e648b90faf25f6ee3efc44120",
+  "globalConfigHashAfter": "734abbce0ae2d9116475f23c626b55d69fd5502e648b90faf25f6ee3efc44120",
+  "globalConfigUnchanged": true,
+  "databaseCount": 8,
+  "limits": "退出非零仍需逐项区分观察/环境/清理失败与业务断言；尚未检查已知修复，不代表文学或审美通过。"
+}

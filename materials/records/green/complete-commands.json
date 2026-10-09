@@ -1,0 +1,32 @@
+[
+  {
+    "label": "syntax",
+    "program": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--check",
+      "scripts/test-saving.mjs"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project",
+    "startedAt": "2026-10-03T03:44:12.291Z",
+    "stdout": "",
+    "stderr": "",
+    "exitCode": 0,
+    "signal": null,
+    "finishedAt": "2026-10-03T03:44:12.329Z"
+  },
+  {
+    "label": "behavior",
+    "program": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "--test",
+      "scripts/test-saving.mjs"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project",
+    "startedAt": "2026-10-03T03:44:12.330Z",
+    "stdout": "(node:53920) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n完整证据目录：D:\\Projects\\Knowledge\\.coursebook-work\\h09-02-lab\\project\\runs\\saving-ea326d24-9c72-4328-9a63-c4576e133d86\n✔ 正常保存：原版、台面、笔记页在 POST 和读回等待期间暂停编辑 (5018.3438ms)\n✔ 原版受控传输失败：请求未进服务，保留本地修改并先读取当前稿 (1253.2244ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 6542.4187\n",
+    "stderr": "",
+    "exitCode": 0,
+    "signal": null,
+    "finishedAt": "2026-10-03T03:44:18.913Z"
+  }
+]
