@@ -1,0 +1,799 @@
+{
+  "version": 1,
+  "deliveryHead": "e35d02102264529747376941b24aaee4e161b062",
+  "tags": {
+    "start": "d339d8b0ea4c8da3cf6dcbdb4cd004933644a240",
+    "code": "13578ec7abb33889bc375d92e5e8c0c0b44cd59e",
+    "ui": "a0a8627c78d287d4586174723676aabe01e128da",
+    "end": "e35d02102264529747376941b24aaee4e161b062"
+  },
+  "gitFiles": [
+    {
+      "path": ".env.example",
+      "worktreeBytes": 123,
+      "worktreeSha256": "b7906c038fce3425f449384b7bcdeb41cb8db13bc3b98145da7afc00862a1ae7",
+      "gitBlobBytes": 123,
+      "gitBlobSha256": "b7906c038fce3425f449384b7bcdeb41cb8db13bc3b98145da7afc00862a1ae7",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": ".gitattributes",
+      "worktreeBytes": 8,
+      "worktreeSha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "gitBlobBytes": 8,
+      "gitBlobSha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": ".gitignore",
+      "worktreeBytes": 90,
+      "worktreeSha256": "030b2b574dbf980be7ef963133dd76bd6744c0e3f39edb454737e4d79c721dbf",
+      "gitBlobBytes": 90,
+      "gitBlobSha256": "030b2b574dbf980be7ef963133dd76bd6744c0e3f39edb454737e4d79c721dbf",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "README.md",
+      "worktreeBytes": 4491,
+      "worktreeSha256": "cd01c188edd4055b88f0a2b5b722ce5d050df53065fa8ee380eae3ad477cd453",
+      "gitBlobBytes": 4491,
+      "gitBlobSha256": "cd01c188edd4055b88f0a2b5b722ce5d050df53065fa8ee380eae3ad477cd453",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "inputs/05-01-完整解析原记录.json",
+      "worktreeBytes": 153453,
+      "worktreeSha256": "170e9c80b0d61c33c21e64a66487097f35fef6f47ebb3993ceec2b0793e86396",
+      "gitBlobBytes": 153453,
+      "gitBlobSha256": "170e9c80b0d61c33c21e64a66487097f35fef6f47ebb3993ceec2b0793e86396",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "inputs/完整分页内容与教师便签.json",
+      "worktreeBytes": 5773,
+      "worktreeSha256": "93dbbe405dc8600d3f44825836d8710c2ad6271d6e09309c10d11a250001b362",
+      "gitBlobBytes": 5773,
+      "gitBlobSha256": "93dbbe405dc8600d3f44825836d8710c2ad6271d6e09309c10d11a250001b362",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "inputs/实际问答问题.txt",
+      "worktreeBytes": 100,
+      "worktreeSha256": "15863fc7f765231287b62369602d455fd3daf621e84ea352fd21ab7c60b3d64d",
+      "gitBlobBytes": 100,
+      "gitBlobSha256": "15863fc7f765231287b62369602d455fd3daf621e84ea352fd21ab7c60b3d64d",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "inputs/小说第三章完整原文.txt",
+      "worktreeBytes": 3093,
+      "worktreeSha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "gitBlobBytes": 3093,
+      "gitBlobSha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "inputs/第三章页正文与位置.json",
+      "worktreeBytes": 17301,
+      "worktreeSha256": "f0e2904819741bfeb480b0ed1670aaa98dbc390f8f2fcb6a7e1fa4768a0e7ddd",
+      "gitBlobBytes": 17301,
+      "gitBlobSha256": "f0e2904819741bfeb480b0ed1670aaa98dbc390f8f2fcb6a7e1fa4768a0e7ddd",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "inputs/问答规则.txt",
+      "worktreeBytes": 327,
+      "worktreeSha256": "07da8228cf1038206ffc549a5b1b566df23da8e5b35e807b9db1ec21d0d24751",
+      "gitBlobBytes": 327,
+      "gitBlobSha256": "07da8228cf1038206ffc549a5b1b566df23da8e5b35e807b9db1ec21d0d24751",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "package.json",
+      "worktreeBytes": 558,
+      "worktreeSha256": "b796d89367ae4619cce3d31874af5ab482d09e69149cd7cb21c3f93fe4ae16aa",
+      "gitBlobBytes": 558,
+      "gitBlobSha256": "b796d89367ae4619cce3d31874af5ab482d09e69149cd7cb21c3f93fe4ae16aa",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "worktreeBytes": 7071,
+      "worktreeSha256": "a664f88936f017ef276c5e7d401cd508853fdc0eddafabb5f12b650f8eda85f4",
+      "gitBlobBytes": 7071,
+      "gitBlobSha256": "a664f88936f017ef276c5e7d401cd508853fdc0eddafabb5f12b650f8eda85f4",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "worktreeBytes": 16,
+      "worktreeSha256": "44b627aa58902d12f2b7469e46784fd611bac456409c630d7636c0e7059c14aa",
+      "gitBlobBytes": 16,
+      "gitBlobSha256": "44b627aa58902d12f2b7469e46784fd611bac456409c630d7636c0e7059c14aa",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "public/files/native-v1/第三章资料.pdf",
+      "worktreeBytes": 5226,
+      "worktreeSha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97",
+      "gitBlobBytes": 5226,
+      "gitBlobSha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "public/index.html",
+      "worktreeBytes": 2972,
+      "worktreeSha256": "56e727dd5c0682dcb69e8dc472d8bbe8c97aec82df9cb142e6c96c0ff1f10860",
+      "gitBlobBytes": 2972,
+      "gitBlobSha256": "56e727dd5c0682dcb69e8dc472d8bbe8c97aec82df9cb142e6c96c0ff1f10860",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "public/main.js",
+      "worktreeBytes": 6901,
+      "worktreeSha256": "49c39f625d3c2bde7f8dbe6ca2d752ddc466d4ca6ec14e5f547c2af2b9e7b0ad",
+      "gitBlobBytes": 6901,
+      "gitBlobSha256": "49c39f625d3c2bde7f8dbe6ca2d752ddc466d4ca6ec14e5f547c2af2b9e7b0ad",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "public/original-body.txt",
+      "worktreeBytes": 3093,
+      "worktreeSha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "gitBlobBytes": 3093,
+      "gitBlobSha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "public/parent-pages.json",
+      "worktreeBytes": 17301,
+      "worktreeSha256": "f0e2904819741bfeb480b0ed1670aaa98dbc390f8f2fcb6a7e1fa4768a0e7ddd",
+      "gitBlobBytes": 17301,
+      "gitBlobSha256": "f0e2904819741bfeb480b0ed1670aaa98dbc390f8f2fcb6a7e1fa4768a0e7ddd",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "public/source-document.json",
+      "worktreeBytes": 51490,
+      "worktreeSha256": "ee38df59f1daeef45a0fdb1df8b7469db1860ae65bfc2ca94f312764d7610573",
+      "gitBlobBytes": 51490,
+      "gitBlobSha256": "ee38df59f1daeef45a0fdb1df8b7469db1860ae65bfc2ca94f312764d7610573",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "public/style.css",
+      "worktreeBytes": 6318,
+      "worktreeSha256": "47eac57419ea90c502ea950181cab708f41b9149a3bd37237c560bc4ef053f59",
+      "gitBlobBytes": 6318,
+      "gitBlobSha256": "47eac57419ea90c502ea950181cab708f41b9149a3bd37237c560bc4ef053f59",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "requirements.txt",
+      "worktreeBytes": 18,
+      "worktreeSha256": "370a023f5374595edf76f25e9a5c46b70735b36b3d76e3d020bb1a3613439dd5",
+      "gitBlobBytes": 18,
+      "gitBlobSha256": "370a023f5374595edf76f25e9a5c46b70735b36b3d76e3d020bb1a3613439dd5",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "scripts/build_inputs.py",
+      "worktreeBytes": 4752,
+      "worktreeSha256": "df16678e4bc465333e5cb1b766767a058f5b46d75059fc835c07866385b7b2ee",
+      "gitBlobBytes": 4752,
+      "gitBlobSha256": "df16678e4bc465333e5cb1b766767a058f5b46d75059fc835c07866385b7b2ee",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "scripts/observe-answers.mjs",
+      "worktreeBytes": 3731,
+      "worktreeSha256": "6bdb0ce480d9bf218625fc1d1c2e78c5f4c61a6138e3ff78e3961f3dbb905e75",
+      "gitBlobBytes": 3731,
+      "gitBlobSha256": "6bdb0ce480d9bf218625fc1d1c2e78c5f4c61a6138e3ff78e3961f3dbb905e75",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "scripts/observe-chunks.mjs",
+      "worktreeBytes": 1921,
+      "worktreeSha256": "e1a1152154cbaf2670db9126f4bc4782dfc7c7632b3ca072a2f57da09db5dd41",
+      "gitBlobBytes": 1921,
+      "gitBlobSha256": "e1a1152154cbaf2670db9126f4bc4782dfc7c7632b3ca072a2f57da09db5dd41",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "scripts/read_material.py",
+      "worktreeBytes": 6854,
+      "worktreeSha256": "364c1bb3d12867117b91872969ea94a57c80e922d47d164021d5473683ab44fc",
+      "gitBlobBytes": 6854,
+      "gitBlobSha256": "364c1bb3d12867117b91872969ea94a57c80e922d47d164021d5473683ab44fc",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "src/chunks.mjs",
+      "worktreeBytes": 2763,
+      "worktreeSha256": "134805d8801974df27d033383808f3864b3ceceeca09f5e147a0ada06851ca7d",
+      "gitBlobBytes": 2763,
+      "gitBlobSha256": "134805d8801974df27d033383808f3864b3ceceeca09f5e147a0ada06851ca7d",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "教师回查提示.md",
+      "worktreeBytes": 2889,
+      "worktreeSha256": "8a7395263c24dd37b44786f8439b50c57c99ea732a3302174d8aa2ea27b7928d",
+      "gitBlobBytes": 2889,
+      "gitBlobSha256": "8a7395263c24dd37b44786f8439b50c57c99ea732a3302174d8aa2ea27b7928d",
+      "exact": true,
+      "normalizedTextEqual": true
+    },
+    {
+      "path": "输入说明.md",
+      "worktreeBytes": 1383,
+      "worktreeSha256": "31139d5a771d32e3d63014bfde5e4aac25d57062574dbd3de0e5a0a32e4ff4dd",
+      "gitBlobBytes": 1383,
+      "gitBlobSha256": "31139d5a771d32e3d63014bfde5e4aac25d57062574dbd3de0e5a0a32e4ff4dd",
+      "exact": true,
+      "normalizedTextEqual": true
+    }
+  ],
+  "publishedMembersExceptThisManifest": [
+    {
+      "path": "lab/.env.example",
+      "bytes": 123,
+      "sha256": "b7906c038fce3425f449384b7bcdeb41cb8db13bc3b98145da7afc00862a1ae7",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/.gitignore",
+      "bytes": 90,
+      "sha256": "030b2b574dbf980be7ef963133dd76bd6744c0e3f39edb454737e4d79c721dbf",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/README.md",
+      "bytes": 4491,
+      "sha256": "cd01c188edd4055b88f0a2b5b722ce5d050df53065fa8ee380eae3ad477cd453",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/inputs/05-01-完整解析原记录.json",
+      "bytes": 153453,
+      "sha256": "170e9c80b0d61c33c21e64a66487097f35fef6f47ebb3993ceec2b0793e86396",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/inputs/完整分页内容与教师便签.json",
+      "bytes": 5773,
+      "sha256": "93dbbe405dc8600d3f44825836d8710c2ad6271d6e09309c10d11a250001b362",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/inputs/实际问答问题.txt",
+      "bytes": 100,
+      "sha256": "15863fc7f765231287b62369602d455fd3daf621e84ea352fd21ab7c60b3d64d",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/inputs/小说第三章完整原文.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/inputs/第三章页正文与位置.json",
+      "bytes": 17301,
+      "sha256": "f0e2904819741bfeb480b0ed1670aaa98dbc390f8f2fcb6a7e1fa4768a0e7ddd",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/inputs/问答规则.txt",
+      "bytes": 327,
+      "sha256": "07da8228cf1038206ffc549a5b1b566df23da8e5b35e807b9db1ec21d0d24751",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/package.json",
+      "bytes": 558,
+      "sha256": "b796d89367ae4619cce3d31874af5ab482d09e69149cd7cb21c3f93fe4ae16aa",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/pnpm-lock.yaml",
+      "bytes": 7071,
+      "sha256": "a664f88936f017ef276c5e7d401cd508853fdc0eddafabb5f12b650f8eda85f4",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/pnpm-workspace.yaml",
+      "bytes": 16,
+      "sha256": "44b627aa58902d12f2b7469e46784fd611bac456409c630d7636c0e7059c14aa",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/files/native-v1/第三章资料.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/index.html",
+      "bytes": 2972,
+      "sha256": "56e727dd5c0682dcb69e8dc472d8bbe8c97aec82df9cb142e6c96c0ff1f10860",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/main.js",
+      "bytes": 6901,
+      "sha256": "49c39f625d3c2bde7f8dbe6ca2d752ddc466d4ca6ec14e5f547c2af2b9e7b0ad",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/original-body.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/parent-pages.json",
+      "bytes": 17301,
+      "sha256": "f0e2904819741bfeb480b0ed1670aaa98dbc390f8f2fcb6a7e1fa4768a0e7ddd",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/source-document.json",
+      "bytes": 51490,
+      "sha256": "ee38df59f1daeef45a0fdb1df8b7469db1860ae65bfc2ca94f312764d7610573",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/style.css",
+      "bytes": 6318,
+      "sha256": "47eac57419ea90c502ea950181cab708f41b9149a3bd37237c560bc4ef053f59",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/requirements.txt",
+      "bytes": 18,
+      "sha256": "370a023f5374595edf76f25e9a5c46b70735b36b3d76e3d020bb1a3613439dd5",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/scripts/build_inputs.py",
+      "bytes": 4752,
+      "sha256": "df16678e4bc465333e5cb1b766767a058f5b46d75059fc835c07866385b7b2ee",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/scripts/observe-answers.mjs",
+      "bytes": 3731,
+      "sha256": "6bdb0ce480d9bf218625fc1d1c2e78c5f4c61a6138e3ff78e3961f3dbb905e75",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/scripts/observe-chunks.mjs",
+      "bytes": 1921,
+      "sha256": "e1a1152154cbaf2670db9126f4bc4782dfc7c7632b3ca072a2f57da09db5dd41",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/scripts/read_material.py",
+      "bytes": 6854,
+      "sha256": "364c1bb3d12867117b91872969ea94a57c80e922d47d164021d5473683ab44fc",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/src/chunks.mjs",
+      "bytes": 2763,
+      "sha256": "134805d8801974df27d033383808f3864b3ceceeca09f5e147a0ada06851ca7d",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/教师回查提示.md",
+      "bytes": 2889,
+      "sha256": "8a7395263c24dd37b44786f8439b50c57c99ea732a3302174d8aa2ea27b7928d",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/输入说明.md",
+      "bytes": 1383,
+      "sha256": "31139d5a771d32e3d63014bfde5e4aac25d57062574dbd3de0e5a0a32e4ff4dd",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/chunks.json",
+      "bytes": 79834,
+      "sha256": "b2d4485d7ba1c210b6ce65515fa37ba9c5a4f8931a43b26ea620e385235833c4",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/answers.json",
+      "bytes": 38464,
+      "sha256": "d7b275b084421004b25bfdfc3e9706bd7d0aea3a887105b1d38a8551e002c5ae",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-1.png",
+      "bytes": 111253,
+      "sha256": "c1290fb7a9e3600684aa8700669a44ad59839732158ee0de7a1e8cdef309270c",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-2.png",
+      "bytes": 139877,
+      "sha256": "e2affaa34c6a4ccb94a38eeee7a5bc96d87bd0933bda9690a3461e6c6ac00566",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "lab/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-3.png",
+      "bytes": 108714,
+      "sha256": "82a9a919b13600752058914a010228176890b6a9ee7965760ff449e2efc6397b",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "实际记录/3eb20636-04bb-44a8-9826-a74b0f07ec55/完整切分与检索结果.json",
+      "bytes": 79834,
+      "sha256": "b2d4485d7ba1c210b6ce65515fa37ba9c5a4f8931a43b26ea620e385235833c4",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "实际记录/07d1445b-d0de-4cee-afe1-a72655569fd5/fixed80-完整请求与返回.json",
+      "bytes": 8016,
+      "sha256": "5c1c733a175aa0745589446b4fcc7a6c8cf0ef7117c665972451119ba7a1bd92",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "实际记录/07d1445b-d0de-4cee-afe1-a72655569fd5/overlap80x40-完整请求与返回.json",
+      "bytes": 8021,
+      "sha256": "a286e41baa26d7a6d53478e54e7edd20cf1693877c9472acc96f0233f896c3cf",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "实际记录/07d1445b-d0de-4cee-afe1-a72655569fd5/parent80-完整请求与返回.json",
+      "bytes": 13716,
+      "sha256": "e5b162d69e308202a33b965a155c8a5637d3ac0d57fb2339db6651bf6c3e4ddf",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "实际记录/07d1445b-d0de-4cee-afe1-a72655569fd5/structure80-完整请求与返回.json",
+      "bytes": 7343,
+      "sha256": "e8043f9316d39f14712e6b8789aea5d9f52e57e4c23423418abc9d36ca64b631",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "实际记录/07d1445b-d0de-4cee-afe1-a72655569fd5/完整四次问答.json",
+      "bytes": 38464,
+      "sha256": "d7b275b084421004b25bfdfc3e9706bd7d0aea3a887105b1d38a8551e002c5ae",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/完整拟问答输入.txt",
+      "bytes": 1994,
+      "sha256": "834d87366a0274a7679f7ed1247cd4140555203b54aef235689ebace2c9bc635",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/四次真实完整回答.txt",
+      "bytes": 5706,
+      "sha256": "2752eacfe4e1b761654a8da5c641bed6d75778bbee3e0d356d783fe91fbe1069",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/完整教师回查提示.txt",
+      "bytes": 2641,
+      "sha256": "8aa11baa71ab3be1ebc95f5cc0632206229abd7d93af27e8f2defb8ef3edd0e1",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/三题完整问题提示与答案.md",
+      "bytes": 5796,
+      "sha256": "cc6404df8490348860b84e10d16c174e5e992c6656de3044d5a8b107e8f03106",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/实际页面观察与采用判断.md",
+      "bytes": 2551,
+      "sha256": "8e4614d99e1913bb1dfaf1297a8b27a2dd8210f5861a4ca4f4137a985d0d1326",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/配图完整提示.md",
+      "bytes": 2174,
+      "sha256": "b5f915771396a3a2452e4cfdb59cb176905640fae4fdcea9b7e8aed6a4d24e14",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/配图完整实际编辑提示.md",
+      "bytes": 851,
+      "sha256": "d5c43510ab11ff5e13ec22e0c67a4397ed5c87da002ec47ef716e9b3c22fd9be",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "教学材料/切块与完整意思.png",
+      "bytes": 1211938,
+      "sha256": "e5a07993ffb96f9949e95870cda302a42708d80f79a3680bda0731bf50b2d844",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/02-固定80-台面-桌面.jpg",
+      "bytes": 102565,
+      "sha256": "a3df50d2a72cfc6ca3ed9de3369b7308aec5eee6490ed7ffb6e0935a412f150e",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/02-固定80-台面-桌面.json",
+      "bytes": 22584,
+      "sha256": "746ea8bbfa568e78f9aeb8e45e7b4d5cb6d3fc4ecc3a709992a3a41a86027caa",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/03-固定80-笔记-桌面.jpg",
+      "bytes": 63465,
+      "sha256": "ae94f8c360fe9ddb3b636173b27c3a0a1ed6b2296cc72503cda6655b6475f966",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/03-固定80-笔记-桌面.json",
+      "bytes": 22612,
+      "sha256": "93468dd127622f8aac855c5c5be854ee9531cb3fbc9adaff113e9fa2a9aae683",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/04-固定80-原版-桌面.jpg",
+      "bytes": 98944,
+      "sha256": "5b105af2dd3af597ecac1fe69f60ee321f11926418152b4f6d31ee4e26c4b51d",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/04-固定80-原版-桌面.json",
+      "bytes": 22615,
+      "sha256": "5c47af7336a2c3fb0478f2308b021b15fe2a741be569f2fff1087420de34864a",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/05-递归70-原版-桌面.jpg",
+      "bytes": 98067,
+      "sha256": "eb0e4dc8a18d106d0976347ce1701aeffd2cc8aed975c860f26605829fd678d0",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/05-递归70-原版-桌面.json",
+      "bytes": 21522,
+      "sha256": "298e735995a3ee48ca3de96fcbd77325284ac9cad7c8a7799aece900d5c7f639",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/07-父页437-原版-桌面.jpg",
+      "bytes": 98959,
+      "sha256": "694bfef907cbe5f620913686b9103a5eca5f5b21f0472536cc4b8be5f33ec3c6",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/07-父页437-原版-桌面.json",
+      "bytes": 49213,
+      "sha256": "f9ebee8047ae8112aa3355be4fd46c3b8e7b4517dc9f21d792b24a1b674c70d6",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/08-父页437-台面-桌面.jpg",
+      "bytes": 105181,
+      "sha256": "4ec122ac6229f3275563d872adececb9c13ecc9d3984cc3133096a20c8eb6e48",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/08-父页437-台面-桌面.json",
+      "bytes": 49209,
+      "sha256": "3e1ae58959d4ff6204178c35c377d843997ad96ecc8cd7435c47124ddd4e7ee4",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/09-父页437-笔记-桌面.jpg",
+      "bytes": 71880,
+      "sha256": "125f0653586dd2ee46dd532d3cf2dd14b6958b2f6106db7c0a8934c24ea110d0",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/09-父页437-笔记-桌面.json",
+      "bytes": 49210,
+      "sha256": "4be1a527079ba35e48641fc5546130dce70d9e3f9d37b15ddb409cea27a801f0",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/10-父页437-原版-窄屏.jpg",
+      "bytes": 38139,
+      "sha256": "c36b8f73f6f21e84cc603b98f62c4961da52ad18a742567f5fd7aa005ead2c69",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/10-父页437-原版-窄屏.json",
+      "bytes": 49210,
+      "sha256": "a0d52825ca15818c191e1f8e934c2125b6dd3c81e8bf0892760d417634fc2eb5",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/11-父页437-台面-窄屏.jpg",
+      "bytes": 38916,
+      "sha256": "1be0996e7f2669932338eb66e02d3ef0e78ee5b685849bbdcd3d5c1badb9fbba",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/11-父页437-台面-窄屏.json",
+      "bytes": 49206,
+      "sha256": "ac16a79b2fb8c7cd0814fbefcc5ab93745c314cc9a223dd9c4ea73207f7ccfa6",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/12-父页437-笔记-窄屏.jpg",
+      "bytes": 37693,
+      "sha256": "ae326d30e78e5647be176572834b2f8b13954635f1c613ba98ee4ead0cc61c01",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/12-父页437-笔记-窄屏.json",
+      "bytes": 49207,
+      "sha256": "4b9274b885222b03ee3951415ca784beb38f7d49500bdafd8b6572086d418ff9",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/16-真实未命中输入保留-笔记-窄屏.jpg",
+      "bytes": 36753,
+      "sha256": "096c6b0c044c350dce91af8fe7e22d788d4bb2486c8ae83f2af67909483d04a8",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/16-真实未命中输入保留-笔记-窄屏.json",
+      "bytes": 9461,
+      "sha256": "38364769535e9fae498763cd9c689adf7340563c8e409f56ce29a753ca3e570f",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/06-重叠首匹配-实际DOM.json",
+      "bytes": 2636,
+      "sha256": "9e200079630c6e1cfe0ea75193c12ba10453d238b108cdc2dfd42908888afd98",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/17-保留安排最终全文DOM.json",
+      "bytes": 30470,
+      "sha256": "ebf1c57019d518b0abe28e4815d51615978a2f0aac0b2b908f7ea966d842b3e1",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/下载-chunks.json",
+      "bytes": 79834,
+      "sha256": "b2d4485d7ba1c210b6ce65515fa37ba9c5a4f8931a43b26ea620e385235833c4",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/HTTP下载-answers.json",
+      "bytes": 38464,
+      "sha256": "d7b275b084421004b25bfdfc3e9706bd7d0aea3a887105b1d38a8551e002c5ae",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/HTTP下载-original-body.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "页面证据/HTTP下载-第三章资料.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97",
+      "sourceBytesPreserved": true
+    },
+    {
+      "path": "资料代码.bundle",
+      "bytes": 76444,
+      "sha256": "d6308ea0d1c9d66e0269895bd96d4e7ee1803d3a96a30fe465dcf39b696b90d0",
+      "sourceBytesPreserved": false,
+      "generatedFromTags": true
+    },
+    {
+      "path": "启动与公开范围.md",
+      "bytes": 1927,
+      "sha256": "8a437d32f05ad5d7a0113fb3e6757b461076c3e54178386dcab0e1c935513bba",
+      "sourceBytesPreserved": false,
+      "authorWritten": true
+    }
+  ],
+  "localOnlyUiRecords": [
+    {
+      "name": "01-固定80-原版-桌面-主区.jpg",
+      "bytes": 63979,
+      "sha256": "b6e303686232a9037c22685ec6eeb5e9b2e255a32355577f759215e3d7d490f2",
+      "published": false
+    },
+    {
+      "name": "01-固定80-原版-桌面-主区.json",
+      "bytes": 22740,
+      "sha256": "b0aa0f764f75016477e738fe21167e3c3ff6ac1ddaf0b37f12087bac10c62e53",
+      "published": false
+    },
+    {
+      "name": "01-固定80-原版-桌面.json",
+      "bytes": 22740,
+      "sha256": "4331827aff2e9847fdd0c9074a79585dcdeb90bf9c782e1e8c665a8d543badce",
+      "published": false
+    },
+    {
+      "name": "13-实际中段-非末段.jpg",
+      "bytes": 44733,
+      "sha256": "51351d9d8a4a9332f15c386e80c2f653b8699ebb6fd2e97b7a78ffd4ca073997",
+      "published": false
+    },
+    {
+      "name": "13-父页437-笔记-窄屏-末段.json",
+      "bytes": 49223,
+      "sha256": "2101e3f92e50ba62bac4c2ec670bcbfecedd5734a2b413e27e93b35012087e5a",
+      "published": false
+    },
+    {
+      "name": "14-保留-父页与未执行问答.json",
+      "bytes": 9451,
+      "sha256": "a87663983a12c81c40d3c7a284889e5cd0c8f3f25bbdbdbf70b609bb5f724367",
+      "published": false
+    },
+    {
+      "name": "15-输入已改-尚未提交.jpg",
+      "bytes": 35875,
+      "sha256": "7c73f38be659126334d12bbb57f91362f1beb66946856ee61fc01f9b592e98dd",
+      "published": false
+    },
+    {
+      "name": "15-未命中保留输入-笔记-窄屏.json",
+      "bytes": 9461,
+      "sha256": "76fc4c69ebf81c4bf80ccfee94bdde9a17285f78f42477419117e914fe39428e",
+      "published": false
+    },
+    {
+      "name": "整页截图接口实际失败.json",
+      "bytes": 215,
+      "sha256": "8ec1d4d88cca94007424012c7f3eb29f932a485c4089e527f912fa9e60279db8",
+      "published": false
+    },
+    {
+      "name": "原尺寸CDP截图实际失败.json",
+      "bytes": 178,
+      "sha256": "a811d032fcd2f7f7e9e8cffce1be547ee6b02532cdf62e36ba633307b1a6e07b",
+      "published": false
+    }
+  ],
+  "privateLaunchScriptPublished": false,
+  "thirdPartyFullResearchPublished": false,
+  "modelCalls": 4,
+  "repeatedModelCalls": 0,
+  "newPdfReads": 0,
+  "allFourRequestProviderAndSdkRecordsPublished": true,
+  "allBrowserToolRecordsPublished": false
+}
