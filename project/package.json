@@ -1,18 +1,23 @@
 {
-  "name": "chunk-source-lab",
+  "name": "retrieval-comparison-lab",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.20.0",
-  "engines": { "node": ">=24.12.0 <25" },
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
   "scripts": {
-    "chunks:observe": "node scripts/observe-chunks.mjs",
-    "answers:observe": "node scripts/observe-answers.mjs",
-    "dev": "python -X utf8 -m http.server 4345 --bind 127.0.0.1 --directory public"
+    "embeddings:observe": "node scripts/observe-embeddings.mjs",
+    "retrieval:rank": "node scripts/rank-retrieval.mjs",
+    "materials:check": "node scripts/check-materials.mjs",
+    "dev": "python -X utf8 -m http.server 4346 --bind 127.0.0.1 --directory public"
   },
   "dependencies": {
-    "@langchain/textsplitters": "1.0.2",
+    "@ai-sdk/openai-compatible": "3.0.59",
     "@langchain/core": "1.2.14",
-    "ai": "7.0.122",
-    "@ai-sdk/openai-compatible": "3.0.59"
+    "@langchain/textsplitters": "1.0.2",
+    "@orama/orama": "3.1.18",
+    "@orama/tokenizers": "3.1.18",
+    "ai": "7.0.122"
   }
 }

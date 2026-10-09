@@ -3,12 +3,12 @@
  <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>资料切块回查</title>
+  <title>检索候选回查</title>
   <link rel="stylesheet" href="style.css" />
  </head>
  <body data-direction="original">
   <header class="toolbar">
-   <span class="brand">资料切块回查</span>
+   <span class="brand">检索候选回查</span>
    <details class="direction-tools"><summary>页面方向</summary>
     <div role="group" aria-label="同一份数据的页面方向">
      <button type="button" data-direction="original" aria-pressed="true">原版</button>
@@ -18,34 +18,35 @@
    </details>
   </header>
   <main>
-   <header class="page-heading"><h1>命中了词，也带回了条件吗？</h1><p>看完整返回材料，再回到对应原页判断。</p></header>
+   <header class="page-heading"><h1>同一问题，两路找资料</h1><p>选中候选，回查完整原文能支持什么。</p></header>
    <form id="locate-form" class="query-form">
-    <label>切分方式<select id="method" disabled></select></label>
-    <label class="query-label">字面查询<input id="query" value="卡住" required /></label>
-    <button id="locate" type="submit" disabled>查看返回材料</button>
+    <label class="query-label">问题<select id="query" disabled></select></label>
+    <label>资料范围<select id="condition" disabled><option value="base">原始范围</option><option value="filtered">精确编号</option></select></label>
+    <button id="locate" type="submit" disabled>回查原文</button>
    </form>
-   <p id="status" role="status">正在读取固定观察。</p>
+   <p id="status" role="status">正在读取固定观察。</p><button id="retry" type="button" hidden>重新载入记录</button>
    <div class="workspace">
-    <section class="reading" aria-label="返回材料与真实回答">
+    <section class="reading" aria-label="检索候选与完整材料">
+     <p id="question" class="question-text"></p><p id="range" class="document-label"></p>
+     <div id="rank-lists" class="rank-lists"></div>
      <div id="document-heading"></div>
-     <div id="hits"></div>
-     <section class="text-page"><h3>交给回答的完整材料</h3><div id="context" class="extracted-text"></div></section>
-     <section class="text-page"><h3>这次真实问答</h3><p id="question" class="question-text"></p><div id="answer" class="extracted-text"></div></section>
+     <section class="text-page"><h3>选中块的完整文字</h3><div id="context" class="extracted-text"></div><p id="locator" class="locator-caption"></p></section>
     </section>
     <section class="source" aria-label="原文件页面">
      <div class="source-title"><h2 id="page-title">原页</h2><a id="image-link" target="_blank" rel="noopener" hidden>放大原页</a></div>
+     <p id="source-status" class="document-label">回查原文后显示来源。</p>
      <div id="page-buttons" class="page-buttons"></div>
      <div id="source-page"></div>
-     <details class="original-text"><summary>完整25段文字</summary><div id="full-body" class="extracted-text"></div></details>
+     <details class="original-text"><summary>来源完整文字</summary><div id="full-body" class="extracted-text"></div></details>
     </section>
    </div>
-   <details class="technical"><summary>全部小块、命中与来源位置</summary><div id="all-chunks"></div><pre id="selection-record"></pre></details>
-   <details class="technical"><summary>完整观察与下载</summary>
-    <a href="chunks.json" download>下载完整切分记录</a><a href="answers.json" download>下载完整问答记录</a>
-    <a id="file-download" download>下载对应PDF</a><a href="original-body.txt" download>下载完整文字</a>
+   <details class="technical"><summary>分词、分数、融合与来源位置</summary><pre id="selection-record"></pre></details>
+   <details id="record-details" class="technical"><summary>完整观察与下载</summary>
+    <a href="observation.json" download>下载完整检索记录</a>
+    <a id="file-download" download hidden>下载对应原文件</a><a href="original-body.txt" download>下载完整第三章文字</a>
     <pre id="raw-record"></pre>
    </details>
-   <p class="scope">本页读取固定真实观察。改变切法或页面方向不会再次调用模型。字面命中不是语义排名；回答仍需回查原文。</p>
+   <p class="scope">本页只读取实际检索记录，不生成回答或保存章节。小说资料是历史草稿；四份便签是课堂构造。切换方向不会改变候选或再次调用模型。</p>
   </main>
   <script type="module" src="main.js"></script>
  </body>

@@ -17,6 +17,12 @@ importers:
       '@langchain/textsplitters':
         specifier: 1.0.2
         version: 1.0.2(@langchain/core@1.2.14)
+      '@orama/orama':
+        specifier: 3.1.18
+        version: 3.1.18
+      '@orama/tokenizers':
+        specifier: 3.1.18
+        version: 3.1.18
       ai:
         specifier: 7.0.122
         version: 7.0.122(zod@4.6.5)
@@ -57,6 +63,14 @@ packages:
     engines: {node: '>=20'}
     peerDependencies:
       '@langchain/core': ^1.0.0
+
+  '@orama/orama@3.1.18':
+    resolution: {integrity: sha512-a61ljmRVVyG5MC/698C8/FfFDw5a8LOIvyOLW5fztgUXqUpc1jOfQzOitSCbge657OgXXThmY3Tk8fpiDb4UcA==}
+    engines: {node: '>= 20.0.0'}
+
+  '@orama/tokenizers@3.1.18':
+    resolution: {integrity: sha512-Ra4dFddWZ7hCGPAehnd/6QZjlzQvczYSt1y1Fq4HteJqRu2yvfR6fXvxiUnKi+HIgJYPxKhebJEjvJdF8LYQWg==}
+    engines: {node: '>= 20.0.0'}
 
   '@standard-schema/spec@1.1.0':
     resolution: {integrity: sha512-l2aFy5jALhniG5HgqrD6jXLi/rUWrKvqN/qJx6yoJsgKhblVd+iqqU4RCXavm/jPityDo5TCvKMnpjKnOriy0w==}
@@ -183,6 +197,12 @@ snapshots:
     dependencies:
       '@langchain/core': 1.2.14
       js-tiktoken: 1.0.21
+
+  '@orama/orama@3.1.18': {}
+
+  '@orama/tokenizers@3.1.18':
+    dependencies:
+      '@orama/orama': 3.1.18
 
   '@standard-schema/spec@1.1.0': {}
 

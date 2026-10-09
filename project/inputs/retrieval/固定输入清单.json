@@ -1,0 +1,124 @@
+{
+  "at": "2026-10-04T18:01:47.529Z",
+  "sourceChunkRunId": "3eb20636-04bb-44a8-9826-a74b0f07ec55",
+  "sourceChunkGitHead": "13578ec7abb33889bc375d92e5e8c0c0b44cd59e",
+  "settings": {
+    "lexical": {
+      "engine": "@orama/orama@3.1.18",
+      "tokenizer": "@orama/tokenizers@3.1.18/mandarin",
+      "tokenizerStatus": "官方README将中文分词标为experimental；须保存实际tokens，分词命中不等于完整编号相同",
+      "properties": [
+        "text"
+      ],
+      "exact": false,
+      "threshold": 1,
+      "relevance": {
+        "k": 1.2,
+        "b": 0.75,
+        "d": 0
+      },
+      "limit": 3,
+      "tolerance": 0
+    },
+    "semantic": {
+      "sdk": "ai@7.0.122",
+      "provider": "@ai-sdk/openai-compatible@3.0.59",
+      "model": "text-embedding-v4",
+      "dimensions": 1024,
+      "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "batchSize": 10,
+      "maxRetries": 0,
+      "maxParallelCalls": 1,
+      "timeoutMs": 60000,
+      "measure": "AI SDK cosineSimilarity",
+      "limit": 3,
+      "queriesAre": "教师固定的语义查询，不是模型改写结果"
+    },
+    "fusion": {
+      "algorithm": "RRF",
+      "k": 60,
+      "rankStartsAt": 1,
+      "uniqueKey": "corpus.id",
+      "onlyInputs": "各路满足同一where后的top3；未进入候选的原文不被融合补出",
+      "tieBreak": "id字典序",
+      "keepAllUnion": true
+    },
+    "rerank": {
+      "actualModelCalls": 0,
+      "method": "人工对完整候选及原页作相关性/支持关系回查；可复制rerank迁移卡未运行，不填造模型输出"
+    },
+    "scope": {
+      "existingChunks": 18,
+      "teacherWholeMemoChunks": 4,
+      "corpusTexts": 22,
+      "semanticQueries": 3,
+      "embeddingValues": 25,
+      "maximumNaturalEmbeddingRequests": 3,
+      "newAnswerGenerationCalls": 0,
+      "newPdfParsingCalls": 0,
+      "chapterSaveCalls": 0
+    }
+  },
+  "files": [
+    {
+      "name": "01-完整第三章原文.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "name": "02-已有完整分页与位置.json",
+      "bytes": 5773,
+      "sha256": "93dbbe405dc8600d3f44825836d8710c2ad6271d6e09309c10d11a250001b362"
+    },
+    {
+      "name": "03-四份完整教师便签.json",
+      "bytes": 1547,
+      "sha256": "d9a0fea578a4edf3edbad4e6aaf0b6fbb83e72c87412d591615227524a13b973"
+    },
+    {
+      "name": "04-完整22块资料与定位.json",
+      "bytes": 37649,
+      "sha256": "d7b8bb80c4e074eb060a1bc6e9a40810ee2b91c95aebb4c45dcf528c8118aa74"
+    },
+    {
+      "name": "05-三个完整问题与两路查询.json",
+      "bytes": 1903,
+      "sha256": "4cc3b614f68d50b3c531d577877156061833395a4f4692baa6ec0fb51686d30c"
+    },
+    {
+      "name": "06-固定条件与执行范围.json",
+      "bytes": 1623,
+      "sha256": "0098e92a18d2116d22d7b39a76c0b08daf21c5809b79290ad6ae0a5fc5d991c1"
+    },
+    {
+      "name": "07-25条完整向量输入.json",
+      "bytes": 9309,
+      "sha256": "cd099e3de2f5c3d1b79b6c4b537b7964e034c3f545c5a3c9ad82c926aad419f8"
+    },
+    {
+      "name": "08-完整素材与查询可读全文.txt",
+      "bytes": 7455,
+      "sha256": "27a73d9d551583fe9f87614f9b0b0e9c7ea532d1a52d5b4197dbf8f941e7b99c"
+    },
+    {
+      "name": "AX-17日期与费用便签.txt",
+      "bytes": 289,
+      "sha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2"
+    },
+    {
+      "name": "AX-17检查委托便签.txt",
+      "bytes": 226,
+      "sha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183"
+    },
+    {
+      "name": "AX-71日期与费用便签.txt",
+      "bytes": 291,
+      "sha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5"
+    },
+    {
+      "name": "AX-71检查委托便签.txt",
+      "bytes": 216,
+      "sha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402"
+    }
+  ]
+}
