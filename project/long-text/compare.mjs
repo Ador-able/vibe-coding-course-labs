@@ -7,8 +7,8 @@ import { fileURLToPath } from 'node:url';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const runDir = resolve(root, process.argv[2] ?? 'runs/my-comparison-01');
-const {API_KEY:apiKey,MODEL:modelId,API_BASE_URL:baseURL}=process.env;
-if(!apiKey||!modelId||!baseURL)throw new Error('请通过仓库根 scripts/run-lab.mjs 启动，沿用请求观察室的模型设置。');
+const { API_KEY: apiKey, MODEL: modelId, API_BASE_URL: baseURL } = process.env;
+if (!apiKey || !modelId || !baseURL) throw new Error('请通过共用 scripts/run-lab.mjs 启动，先在请求观察室保存模型设置。');
 const settings = { modelId, baseURL, temperature: 0, maxOutputTokens: 2048, maxRetries: 0, };
 const sha = value => createHash('sha256').update(value).digest('hex');
 const texts = {};
