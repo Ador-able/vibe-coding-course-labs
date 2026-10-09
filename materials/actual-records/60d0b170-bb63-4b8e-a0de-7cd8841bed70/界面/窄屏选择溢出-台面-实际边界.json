@@ -1,0 +1,36 @@
+{
+  "clientWidth": 375,
+  "direction": "studio",
+  "label": {
+    "box": {
+      "bottom": 711.4000396728516,
+      "height": 100.8000030517578,
+      "left": 38,
+      "right": 337.20001220703125,
+      "top": 610.6000366210938,
+      "width": 299.20001220703125,
+      "x": 38,
+      "y": 610.6000366210938
+    },
+    "display": "flex"
+  },
+  "scrollWidth": 421,
+  "select": {
+    "box": {
+      "bottom": 682,
+      "height": 36,
+      "left": 61,
+      "right": 421,
+      "top": 646,
+      "width": 360,
+      "x": 61,
+      "y": 646
+    },
+    "maxWidth": "360px"
+  },
+  "url": "http://127.0.0.1:4335/message-history.html?conversation=6a2a71ec-678e-4ede-b7a1-8ebc92aca77c",
+  "viewport": {
+    "height": 844,
+    "width": 390
+  }
+}

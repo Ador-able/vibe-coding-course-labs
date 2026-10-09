@@ -1,0 +1,835 @@
+{
+  "checkedAt": "2026-10-03T07:07:03.864Z",
+  "scope": "离线原件逐对象核对；没有新 SDK 转换、HTTP、SQLite连接或模型请求。",
+  "executionHead": "4d5da9f6a9c2976e94b4dba25aad8ed81b5a5548",
+  "uiCorrectionHead": "a811082165ed84dce479a747a111e8cbbfb0d80e",
+  "sourceRecords": [
+    "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+    "f7f927eb-9faa-49d4-af68-fe3429ed2e67"
+  ],
+  "conversationIds": [
+    "920d85d3-66a6-4b36-8bb3-368ecfed78a6",
+    "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c"
+  ],
+  "httpFiles": [
+    "http-84a15c5c-2f61-43cb-a2c0-5a46165cd99e.jsonl",
+    "http-b28986b2-28f8-4f17-acf5-9ddb8c190859.jsonl",
+    "http-dd3b091a-8f7a-4c60-9f2d-41597fc81f31.jsonl"
+  ],
+  "rawSqlFiles": [
+    "正常-用户材料-独立SQL.json",
+    "正常-第4-独立SQL.json",
+    "正常-第57-独立SQL.json",
+    "正常-完整-独立SQL.json",
+    "停止-用户材料-独立SQL.json",
+    "停止-完整-独立SQL.json",
+    "重启后-独立SQL.json",
+    "锁失败期间-独立SQL.json",
+    "停止-人工再保存校正-独立SQL.json",
+    "正常-校正保存-独立SQL.json"
+  ],
+  "totalChecks": 198,
+  "checks": [
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e 未调用模型",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e SDK",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/01-历史完整结束.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/02-历史中途停止.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/03-实际完整纪要.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/04-四个实际请求与完整正文.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/05-完整拟用UI数组.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/06-同一消息的完整快照.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/07-两个人工校正UI.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/08-下一轮完整规则.prompt.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e/09-迁移到小说工作台.prompt.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859 未调用模型",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859 SDK",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/01-历史完整结束.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/02-历史中途停止.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/03-实际完整纪要.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/04-四个实际请求与完整正文.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/05-完整拟用UI数组.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/06-同一消息的完整快照.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/07-两个人工校正UI.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/08-下一轮完整规则.prompt.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "b28986b2-28f8-4f17-acf5-9ddb8c190859/09-迁移到小说工作台.prompt.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31 未调用模型",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31 SDK",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/01-历史完整结束.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/02-历史中途停止.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/03-实际完整纪要.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/04-四个实际请求与完整正文.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/05-完整拟用UI数组.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/06-同一消息的完整快照.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/07-两个人工校正UI.json 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/08-下一轮完整规则.prompt.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31/09-迁移到小说工作台.prompt.txt 完整字节",
+      "passed": true
+    },
+    {
+      "label": "正常-用户材料-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "正常-用户材料-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-用户材料-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "重启后-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "锁失败期间-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-review-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-review-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/920d85d3-66a6-4b36-8bb3-368ecfed78a6 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-review-1153e17e-e0b4-4870-978f-bf0eca94b0fb parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-review-1153e17e-e0b4-4870-978f-bf0eca94b0fb metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 有一份逐对象相同的完整独立 GET",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-review-f7f927eb-9faa-49d4-af68-fe3429ed2e67 parts 原顺序读回",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-review-f7f927eb-9faa-49d4-af68-fe3429ed2e67 metadata 缺字段与解析值",
+      "passed": true
+    },
+    {
+      "label": "正常-用户材料-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb 完整对象",
+      "passed": true
+    },
+    {
+      "label": "正常-用户材料-独立SQL.json/teaching-material-1153e17e-e0b4-4870-978f-bf0eca94b0fb 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb 完整对象",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb 完整对象",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb 完整对象",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json/1153e17e-e0b4-4870-978f-bf0eca94b0fb 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 完整对象",
+      "passed": true
+    },
+    {
+      "label": "停止-用户材料-独立SQL.json/teaching-material-f7f927eb-9faa-49d4-af68-fe3429ed2e67 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 完整对象",
+      "passed": true
+    },
+    {
+      "label": "停止-完整-独立SQL.json/f7f927eb-9faa-49d4-af68-fe3429ed2e67 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-review-f7f927eb-9faa-49d4-af68-fe3429ed2e67 完整对象",
+      "passed": true
+    },
+    {
+      "label": "停止-人工再保存校正-独立SQL.json/teaching-review-f7f927eb-9faa-49d4-af68-fe3429ed2e67 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-review-1153e17e-e0b4-4870-978f-bf0eca94b0fb 完整对象",
+      "passed": true
+    },
+    {
+      "label": "正常-校正保存-独立SQL.json/teaching-review-1153e17e-e0b4-4870-978f-bf0eca94b0fb 顺序和应用状态",
+      "passed": true
+    },
+    {
+      "label": "正常-第4-独立SQL.json 同 ID 更新后仍只有用户和一条助手消息",
+      "passed": true
+    },
+    {
+      "label": "正常-第57-独立SQL.json 同 ID 更新后仍只有用户和一条助手消息",
+      "passed": true
+    },
+    {
+      "label": "正常-完整-独立SQL.json 同 ID 更新后仍只有用户和一条助手消息",
+      "passed": true
+    },
+    {
+      "label": "同库重启全对象不变",
+      "passed": true
+    },
+    {
+      "label": "写锁失败期间全对象不变",
+      "passed": true
+    },
+    {
+      "label": "独立连接真实持锁和释放",
+      "passed": true
+    },
+    {
+      "label": "反馈请求仅失败一次、人工再存一次、另一记录存一次",
+      "passed": true
+    },
+    {
+      "label": "真实写锁失败代码",
+      "passed": true
+    },
+    {
+      "label": "失败发生于真锁内，下一次保存发生于释放后",
+      "passed": true
+    },
+    {
+      "label": "失败输入与人工再保存完整输入相同",
+      "passed": true
+    },
+    {
+      "label": "失败后完整校正草稿保留",
+      "passed": true
+    },
+    {
+      "label": "失败后的页面对象也未变",
+      "passed": true
+    },
+    {
+      "label": "两个历史条件各只准备一次",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 转换来源是完整数据库读回",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 完整保存状态供选择",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 只准备不调用",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 完整下一轮规则",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c 下一轮采用完整 P2",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c P0 完整来源",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c P1/P2 使用同一明确选择",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c P0 和 P1 都没有完整自定义校正",
+      "passed": true
+    },
+    {
+      "label": "6a2a71ec-678e-4ede-b7a1-8ebc92aca77c P2 有完整人工校正",
+      "passed": true
+    },
+    {
+      "label": "P0 原样包含停止半句",
+      "passed": true
+    },
+    {
+      "label": "P1/P2 不含停止助手角色，校正中的引文仍可保留",
+      "passed": true
+    },
+    {
+      "label": "停止助手 ID 明确从 P1/P2 排除",
+      "passed": true
+    },
+    {
+      "label": "停止 P2 只有原用户材料与校正用户消息",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 转换来源是完整数据库读回",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 完整保存状态供选择",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 只准备不调用",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 完整下一轮规则",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 下一轮采用完整 P2",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 P0 完整来源",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 P1/P2 使用同一明确选择",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 P0 和 P1 都没有完整自定义校正",
+      "passed": true
+    },
+    {
+      "label": "920d85d3-66a6-4b36-8bb3-368ecfed78a6 P2 有完整人工校正",
+      "passed": true
+    },
+    {
+      "label": "正常完整消息没有被应用排除",
+      "passed": true
+    },
+    {
+      "label": "正常 UI 三条转为四条模型消息，两个 step 保留成两个助手内容",
+      "passed": true
+    },
+    {
+      "label": "真实下载完整停止对象与最终 SQL 相同",
+      "passed": true
+    },
+    {
+      "label": "真实下载完整三投影与 HTTP 返回相同",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-原版.json 同一完整停止对象",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-原版.json 根无横向溢出",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-原版.json 标签按块布局",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-原版.json 选择框在根内部",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-台面.json 同一完整停止对象",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-台面.json 根无横向溢出",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-台面.json 标签按块布局",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-台面.json 选择框在根内部",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-笔记页.json 同一完整停止对象",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-笔记页.json 根无横向溢出",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-笔记页.json 标签按块布局",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-1280-笔记页.json 选择框在根内部",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-原版.json 同一完整停止对象",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-原版.json 根无横向溢出",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-原版.json 标签按块布局",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-原版.json 选择框在根内部",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-台面.json 同一完整停止对象",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-台面.json 根无横向溢出",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-台面.json 标签按块布局",
+      "passed": true
+    },
+    {
+      "label": "15-两条CSS修正-展开同一停止记录-390-台面.json 选择框在根内部",
+      "passed": true
+    },
+    {
+      "label": "15b-两条CSS修正-390-笔记页重新读取.json 同一完整停止对象",
+      "passed": true
+    },
+    {
+      "label": "15b-两条CSS修正-390-笔记页重新读取.json 根无横向溢出",
+      "passed": true
+    },
+    {
+      "label": "15b-两条CSS修正-390-笔记页重新读取.json 标签按块布局",
+      "passed": true
+    },
+    {
+      "label": "15b-两条CSS修正-390-笔记页重新读取.json 选择框在根内部",
+      "passed": true
+    },
+    {
+      "label": "选择不立即替换当前停止记录",
+      "passed": true
+    },
+    {
+      "label": "明确选择完整记录",
+      "passed": true
+    },
+    {
+      "label": "手动读取完整记录全部字段",
+      "passed": true
+    },
+    {
+      "label": "CSS 新点没有重演任何写入和 prepare",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "boundaries": [
+    "重启读回不是模型运行恢复。",
+    "两条 CSS 修正的新服务只验证原保存对象的读回与界面，不重新验证写入/锁/转换。",
+    "停止半句在 P2 的用户校正引文中仍存在，不作为成功助手历史。",
+    "57 的 text.done 与 metadata.running 并存原样保存。",
+    "默认转换行为按这两份实际材料判断，不推测下一轮模型行为。",
+    "新建记录 POST 身份未收到的网络歧义未实测，任意 metadata:null 输入未测试。"
+  ]
+}

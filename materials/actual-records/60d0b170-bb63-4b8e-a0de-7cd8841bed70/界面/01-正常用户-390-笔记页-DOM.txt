@@ -1,0 +1,41 @@
+- main:
+  - generic: 消息记录练习
+  - text: 整页方向
+  - combobox "整页方向":
+    - option "原版"
+    - option "台面"
+    - option "笔记页" [selected]
+  - heading "保存消息，再准备输入" [level=1]
+  - paragraph: 历史原件导入 · 仅准备输入，未调用模型
+  - region "已保存的用户材料":
+    - heading "已保存的用户材料" [level=2]
+    - paragraph: 只依据下面纪要写一段简明摘要，再列出2至3个待负责人确认的问题；分清已确定安排和未决事项，不补造事实。 工作纪要： 青禾社区共享书架筹备纪要（教学虚构） 计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。 图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。 书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。 借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。
+    - text: 下次装入
+    - combobox "下次装入":
+      - option "完整结束的历史记录" [selected]
+      - option "中途停止的历史记录"
+    - text: 保存哪一步
+    - combobox "保存哪一步":
+      - option "用户材料"
+      - option "第4快照" [selected]
+      - option "第57快照"
+      - option "完整历史消息"
+    - button "装入并保存"
+  - region "当前记录":
+    - heading "当前记录" [level=2]
+    - generic: 用户材料已保存
+    - paragraph
+    - paragraph: 先保存用户材料，再导入同一助手消息的快照或完整原件。
+    - generic: 1条已保存消息 · 会话 920d85d3
+    - button "重新读取"
+  - region "人的校正":
+    - heading "人的校正" [level=2]
+    - generic: 未保存
+    - generic: 核对原纪要后，说明要改变什么
+    - textbox "核对原纪要后，说明要改变什么" [disabled]: 原纪要说每次开放预计接待20人，不是限20人；10月10日前落实只是先前问题中的新建议，原纪要没有这个期限。
+    - button "保存校正" [disabled]
+    - button "准备下一轮输入" [disabled]
+  - status: 消息已保存，并由独立 GET 读回。
+  - generic "查看身份、完整对象与转换比较"
+  - option "选择记录" [selected]
+  - option "完整记录 · 920d85d3-66a6-4b36-8bb3-368ecfed78a6"

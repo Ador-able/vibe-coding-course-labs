@@ -1,0 +1,80 @@
+{
+  "sourcePath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-02\\零模型记录\\a8f5c50a-71ee-4dd9-93b6-ba853dbafb83\\1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+  "sourceBytes": 121831,
+  "sourceSha256": "22d3c75c20c1f6a4068b696b94dfe27e69ca7243ac031116b8cb0a1c503c3d87",
+  "replayId": "a8f5c50a-71ee-4dd9-93b6-ba853dbafb83",
+  "sdkVersion": "7.0.122",
+  "snapshots": [
+    {
+      "originalOneBasedIndex": 4,
+      "inputCompletionState": "incomplete",
+      "message": {
+        "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "metadata": {
+          "model": "qwen-flash",
+          "state": "running",
+          "stages": []
+        },
+        "role": "assistant",
+        "parts": [
+          {
+            "type": "data-progress",
+            "id": "workflow-progress",
+            "data": {
+              "stage": "summary",
+              "label": "应用正在生成摘要"
+            }
+          },
+          {
+            "type": "step-start"
+          },
+          {
+            "type": "text",
+            "text": "共享",
+            "state": "streaming"
+          }
+        ]
+      }
+    },
+    {
+      "originalOneBasedIndex": 57,
+      "inputCompletionState": "incomplete",
+      "message": {
+        "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "metadata": {
+          "model": "qwen-flash",
+          "state": "running",
+          "stages": []
+        },
+        "role": "assistant",
+        "parts": [
+          {
+            "type": "data-progress",
+            "id": "workflow-progress",
+            "data": {
+              "stage": "completed",
+              "label": "摘要和待确认问题均已完整结束"
+            }
+          },
+          {
+            "type": "step-start"
+          },
+          {
+            "type": "text",
+            "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+            "state": "done"
+          },
+          {
+            "type": "step-start"
+          },
+          {
+            "type": "text",
+            "text": "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？",
+            "state": "done"
+          }
+        ]
+      }
+    }
+  ],
+  "boundary": "复用既有零模型 SDK 读取的第 4、57 个完整快照；本次不重新消费原事件。57 的进度已完成，但消息 metadata 仍 running，不能据标签认定整条完成。"
+}

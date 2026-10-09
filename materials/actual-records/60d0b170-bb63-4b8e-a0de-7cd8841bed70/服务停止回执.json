@@ -1,0 +1,32 @@
+{
+  "source": "终端实际输出及执行回执的完整字段转录",
+  "services": [
+    {
+      "serviceId": "dd3b091a-8f7a-4c60-9f2d-41597fc81f31",
+      "processId": 77312,
+      "ttySession": 57015,
+      "closed": true,
+      "endedAt": "2026-10-03T06:38:40.377Z",
+      "exitCode": 1,
+      "action": "本人服务 Ctrl+C"
+    },
+    {
+      "serviceId": "84a15c5c-2f61-43cb-a2c0-5a46165cd99e",
+      "processId": 77492,
+      "ttySession": 28717,
+      "closed": true,
+      "endedAt": "2026-10-03T06:55:22.831Z",
+      "exitCode": 1,
+      "action": "本人服务 Ctrl+C"
+    },
+    {
+      "serviceId": "b28986b2-28f8-4f17-acf5-9ddb8c190859",
+      "processId": 69516,
+      "ttySession": 65424,
+      "closed": true,
+      "endedAt": "2026-10-03T07:04:44.120Z",
+      "exitCode": 1,
+      "action": "本人服务 Ctrl+C"
+    }
+  ]
+}
