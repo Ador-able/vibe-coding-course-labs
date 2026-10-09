@@ -1,0 +1,25 @@
+{
+  "control": "Only this tab Network.setBlockedURLs http://127.0.0.1:4346/materials/*; not physical disconnection",
+  "events": [
+    {
+      "method": "Network.requestWillBeSent",
+      "sequence": 64,
+      "requestId": "62776.23",
+      "url": "http://127.0.0.1:4346/materials/AX-17%E6%97%A5%E6%9C%9F%E4%B8%8E%E8%B4%B9%E7%94%A8%E4%BE%BF%E7%AD%BE.txt",
+      "type": "Fetch",
+      "timestamp": 236055.912747
+    },
+    {
+      "method": "Network.loadingFailed",
+      "sequence": 65,
+      "requestId": "62776.23",
+      "url": null,
+      "errorText": "",
+      "blockedReason": "inspector",
+      "type": "Fetch",
+      "timestamp": 236055.912806
+    }
+  ],
+  "truncated": false,
+  "hasMore": false
+}

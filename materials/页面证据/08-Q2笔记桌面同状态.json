@@ -1,0 +1,1146 @@
+{
+  "actual": {
+    "runId": "b711f94a-929c-4223-a1fa-27149c7fc2c6",
+    "queryId": "Q2",
+    "condition": "base",
+    "selectedId": "teacher-AX-17-fee:v1:page-1",
+    "selectedText": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+    "where": {
+      "collection": "memo",
+      "version": "v1"
+    },
+    "selectedCase": {
+      "id": "Q2-base",
+      "queryId": "Q2",
+      "condition": "base",
+      "question": "AX-17什么时候检查，要付多少钱？80元是否需要另外相加？",
+      "keywords": "AX-17 日期 费用",
+      "semanticQuery": "AX-17约好哪天检查，检查总费用多少，预付部分和总费用是什么关系？",
+      "judge": "回查AX-17费用便签完整四行：预约10月12日，记录10月10日；总费用240元含预付80元。不是320元，不是AX-71的420元，未说明实际付款。",
+      "where": {
+        "collection": "memo",
+        "version": "v1"
+      },
+      "eligibleIds": [
+        "teacher-AX-17-task:v1:page-1",
+        "teacher-AX-71-task:v1:page-1",
+        "teacher-AX-17-fee:v1:page-1",
+        "teacher-AX-71-fee:v1:page-1"
+      ],
+      "eligibleDocuments": [
+        {
+          "id": "teacher-AX-17-task:v1:page-1",
+          "collection": "memo",
+          "version": "v1",
+          "projectCode": "AX-17",
+          "docId": "teacher-AX-17-task",
+          "title": "AX-17检查委托便签",
+          "text": "课堂便签｜委托编号：AX-17。\n任务是检查钟架与墙内细轴怎样连接，不是维修窗户。检查人：梁宁。\n委托检查并不表示故障原因已经确定；不得据此把细轴写成停钟原因。",
+          "textSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+          "source": {
+            "kind": "teacher-constructed",
+            "fileName": "AX-17检查委托便签.txt",
+            "fileSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+            "physicalPages": [
+              1
+            ],
+            "bodyRange": {
+              "start": 0,
+              "end": 80,
+              "positionUnit": "utf16"
+            },
+            "lineRange": [
+              1,
+              3
+            ]
+          },
+          "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+        },
+        {
+          "id": "teacher-AX-71-task:v1:page-1",
+          "collection": "memo",
+          "version": "v1",
+          "projectCode": "AX-71",
+          "docId": "teacher-AX-71-task",
+          "title": "AX-71检查委托便签",
+          "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+          "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+          "source": {
+            "kind": "teacher-constructed",
+            "fileName": "AX-71检查委托便签.txt",
+            "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+            "physicalPages": [
+              1
+            ],
+            "bodyRange": {
+              "start": 0,
+              "end": 80,
+              "positionUnit": "utf16"
+            },
+            "lineRange": [
+              1,
+              3
+            ]
+          },
+          "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+        },
+        {
+          "id": "teacher-AX-17-fee:v1:page-1",
+          "collection": "memo",
+          "version": "v1",
+          "projectCode": "AX-17",
+          "docId": "teacher-AX-17-fee",
+          "title": "AX-17日期与费用便签",
+          "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+          "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+          "source": {
+            "kind": "teacher-constructed",
+            "fileName": "AX-17日期与费用便签.txt",
+            "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+            "physicalPages": [
+              1
+            ],
+            "bodyRange": {
+              "start": 0,
+              "end": 117,
+              "positionUnit": "utf16"
+            },
+            "lineRange": [
+              1,
+              4
+            ]
+          },
+          "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+        },
+        {
+          "id": "teacher-AX-71-fee:v1:page-1",
+          "collection": "memo",
+          "version": "v1",
+          "projectCode": "AX-71",
+          "docId": "teacher-AX-71-fee",
+          "title": "AX-71日期与费用便签",
+          "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+          "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+          "source": {
+            "kind": "teacher-constructed",
+            "fileName": "AX-71日期与费用便签.txt",
+            "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+            "physicalPages": [
+              1
+            ],
+            "bodyRange": {
+              "start": 0,
+              "end": 119,
+              "positionUnit": "utf16"
+            },
+            "lineRange": [
+              1,
+              4
+            ]
+          },
+          "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+        }
+      ],
+      "lexical": {
+        "tokens": [
+          "AX",
+          "17",
+          "日期",
+          "费用"
+        ],
+        "params": {
+          "term": "AX-17 日期 费用",
+          "properties": [
+            "text"
+          ],
+          "exact": false,
+          "tolerance": 0,
+          "threshold": 1,
+          "relevance": {
+            "k": 1.2,
+            "b": 0.75,
+            "d": 0
+          },
+          "where": {
+            "collection": {
+              "eq": "memo"
+            },
+            "version": {
+              "eq": "v1"
+            }
+          },
+          "limit": 3
+        },
+        "count": 4,
+        "apiTopResult": {
+          "elapsed": {
+            "raw": 62100,
+            "formatted": "62μs"
+          },
+          "hits": [
+            {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "score": 0.3055041452573888,
+              "document": {
+                "id": "teacher-AX-17-fee:v1:page-1",
+                "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+                "collection": "memo",
+                "version": "v1",
+                "projectCode": "AX-17"
+              }
+            },
+            {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "score": 0.22353268591024747,
+              "document": {
+                "id": "teacher-AX-71-fee:v1:page-1",
+                "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+                "collection": "memo",
+                "version": "v1",
+                "projectCode": "AX-71"
+              }
+            },
+            {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "score": 0.1775598728809763,
+              "document": {
+                "id": "teacher-AX-71-task:v1:page-1",
+                "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+                "collection": "memo",
+                "version": "v1",
+                "projectCode": "AX-71"
+              }
+            }
+          ],
+          "count": 4
+        },
+        "apiFullResult": {
+          "elapsed": {
+            "raw": 40400,
+            "formatted": "40μs"
+          },
+          "hits": [
+            {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "score": 0.3055041452573888,
+              "document": {
+                "id": "teacher-AX-17-fee:v1:page-1",
+                "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+                "collection": "memo",
+                "version": "v1",
+                "projectCode": "AX-17"
+              }
+            },
+            {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "score": 0.22353268591024747,
+              "document": {
+                "id": "teacher-AX-71-fee:v1:page-1",
+                "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+                "collection": "memo",
+                "version": "v1",
+                "projectCode": "AX-71"
+              }
+            },
+            {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "score": 0.1775598728809763,
+              "document": {
+                "id": "teacher-AX-71-task:v1:page-1",
+                "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+                "collection": "memo",
+                "version": "v1",
+                "projectCode": "AX-71"
+              }
+            },
+            {
+              "id": "teacher-AX-17-task:v1:page-1",
+              "score": 0.16917857713012943,
+              "document": {
+                "id": "teacher-AX-17-task:v1:page-1",
+                "text": "课堂便签｜委托编号：AX-17。\n任务是检查钟架与墙内细轴怎样连接，不是维修窗户。检查人：梁宁。\n委托检查并不表示故障原因已经确定；不得据此把细轴写成停钟原因。",
+                "collection": "memo",
+                "version": "v1",
+                "projectCode": "AX-17"
+              }
+            }
+          ],
+          "count": 4
+        },
+        "allHits": [
+          {
+            "id": "teacher-AX-17-fee:v1:page-1",
+            "score": 0.3055041452573888,
+            "document": {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-fee",
+              "title": "AX-17日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+              "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17日期与费用便签.txt",
+                "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 117,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-71-fee:v1:page-1",
+            "score": 0.22353268591024747,
+            "document": {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-fee",
+              "title": "AX-71日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+              "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71日期与费用便签.txt",
+                "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 119,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-71-task:v1:page-1",
+            "score": 0.1775598728809763,
+            "document": {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-task",
+              "title": "AX-71检查委托便签",
+              "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+              "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71检查委托便签.txt",
+                "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-17-task:v1:page-1",
+            "score": 0.16917857713012943,
+            "document": {
+              "id": "teacher-AX-17-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-task",
+              "title": "AX-17检查委托便签",
+              "text": "课堂便签｜委托编号：AX-17。\n任务是检查钟架与墙内细轴怎样连接，不是维修窗户。检查人：梁宁。\n委托检查并不表示故障原因已经确定；不得据此把细轴写成停钟原因。",
+              "textSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17检查委托便签.txt",
+                "fileSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          }
+        ],
+        "allEligibleScores": [
+          {
+            "id": "teacher-AX-17-task:v1:page-1",
+            "score": 0.16917857713012943,
+            "document": {
+              "id": "teacher-AX-17-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-task",
+              "title": "AX-17检查委托便签",
+              "text": "课堂便签｜委托编号：AX-17。\n任务是检查钟架与墙内细轴怎样连接，不是维修窗户。检查人：梁宁。\n委托检查并不表示故障原因已经确定；不得据此把细轴写成停钟原因。",
+              "textSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17检查委托便签.txt",
+                "fileSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-71-task:v1:page-1",
+            "score": 0.1775598728809763,
+            "document": {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-task",
+              "title": "AX-71检查委托便签",
+              "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+              "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71检查委托便签.txt",
+                "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-17-fee:v1:page-1",
+            "score": 0.3055041452573888,
+            "document": {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-fee",
+              "title": "AX-17日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+              "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17日期与费用便签.txt",
+                "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 117,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-71-fee:v1:page-1",
+            "score": 0.22353268591024747,
+            "document": {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-fee",
+              "title": "AX-71日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+              "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71日期与费用便签.txt",
+                "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 119,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          }
+        ],
+        "top": [
+          {
+            "id": "teacher-AX-17-fee:v1:page-1",
+            "score": 0.3055041452573888,
+            "document": {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-fee",
+              "title": "AX-17日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+              "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17日期与费用便签.txt",
+                "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 117,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-71-fee:v1:page-1",
+            "score": 0.22353268591024747,
+            "document": {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-fee",
+              "title": "AX-71日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+              "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71日期与费用便签.txt",
+                "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 119,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          },
+          {
+            "id": "teacher-AX-71-task:v1:page-1",
+            "score": 0.1775598728809763,
+            "document": {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-task",
+              "title": "AX-71检查委托便签",
+              "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+              "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71检查委托便签.txt",
+                "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            }
+          }
+        ]
+      },
+      "semantic": {
+        "measure": "AI SDK cosineSimilarity",
+        "queryVectorId": "Q2",
+        "allScores": [
+          {
+            "id": "teacher-AX-17-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-fee",
+              "title": "AX-17日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+              "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17日期与费用便签.txt",
+                "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 117,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.7418428599124278
+          },
+          {
+            "id": "teacher-AX-71-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-fee",
+              "title": "AX-71日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+              "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71日期与费用便签.txt",
+                "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 119,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.6737274546366729
+          },
+          {
+            "id": "teacher-AX-71-task:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-task",
+              "title": "AX-71检查委托便签",
+              "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+              "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71检查委托便签.txt",
+                "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.5274709416588182
+          },
+          {
+            "id": "teacher-AX-17-task:v1:page-1",
+            "document": {
+              "id": "teacher-AX-17-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-task",
+              "title": "AX-17检查委托便签",
+              "text": "课堂便签｜委托编号：AX-17。\n任务是检查钟架与墙内细轴怎样连接，不是维修窗户。检查人：梁宁。\n委托检查并不表示故障原因已经确定；不得据此把细轴写成停钟原因。",
+              "textSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17检查委托便签.txt",
+                "fileSha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.4876297439145541
+          }
+        ],
+        "top": [
+          {
+            "id": "teacher-AX-17-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-fee",
+              "title": "AX-17日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+              "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17日期与费用便签.txt",
+                "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 117,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.7418428599124278
+          },
+          {
+            "id": "teacher-AX-71-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-fee",
+              "title": "AX-71日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+              "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71日期与费用便签.txt",
+                "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 119,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.6737274546366729
+          },
+          {
+            "id": "teacher-AX-71-task:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-task",
+              "title": "AX-71检查委托便签",
+              "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+              "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71检查委托便签.txt",
+                "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.5274709416588182
+          }
+        ]
+      },
+      "fusion": {
+        "algorithm": "RRF",
+        "k": 60,
+        "rankStartsAt": 1,
+        "all": [
+          {
+            "id": "teacher-AX-17-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-fee",
+              "title": "AX-17日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+              "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17日期与费用便签.txt",
+                "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 117,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.03278688524590164,
+            "contributions": {
+              "lexical": {
+                "rank": 1,
+                "contribution": 0.01639344262295082
+              },
+              "semantic": {
+                "rank": 1,
+                "contribution": 0.01639344262295082
+              }
+            }
+          },
+          {
+            "id": "teacher-AX-71-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-fee",
+              "title": "AX-71日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+              "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71日期与费用便签.txt",
+                "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 119,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.03225806451612903,
+            "contributions": {
+              "lexical": {
+                "rank": 2,
+                "contribution": 0.016129032258064516
+              },
+              "semantic": {
+                "rank": 2,
+                "contribution": 0.016129032258064516
+              }
+            }
+          },
+          {
+            "id": "teacher-AX-71-task:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-task",
+              "title": "AX-71检查委托便签",
+              "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+              "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71检查委托便签.txt",
+                "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.031746031746031744,
+            "contributions": {
+              "lexical": {
+                "rank": 3,
+                "contribution": 0.015873015873015872
+              },
+              "semantic": {
+                "rank": 3,
+                "contribution": 0.015873015873015872
+              }
+            }
+          }
+        ],
+        "top": [
+          {
+            "id": "teacher-AX-17-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-17-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-17",
+              "docId": "teacher-AX-17-fee",
+              "title": "AX-17日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+              "textSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-17日期与费用便签.txt",
+                "fileSha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 117,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.03278688524590164,
+            "contributions": {
+              "lexical": {
+                "rank": 1,
+                "contribution": 0.01639344262295082
+              },
+              "semantic": {
+                "rank": 1,
+                "contribution": 0.01639344262295082
+              }
+            }
+          },
+          {
+            "id": "teacher-AX-71-fee:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-fee:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-fee",
+              "title": "AX-71日期与费用便签",
+              "text": "课堂便签｜委托编号：AX-71。\n便签记录日期：2026年10月11日。检查预约日期：2026年10月13日。\n检查费用：420元，其中140元是预付部分，不是另加140元。\n这只是课堂构造的安排，不代表已经付款、到场检查或完成窗户维修。",
+              "textSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71日期与费用便签.txt",
+                "fileSha256": "2475ec1748b6b32859fb36c7d8e6d7d75a9a8e9a841c67b9cb85be33d44577d5",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 119,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  4
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.03225806451612903,
+            "contributions": {
+              "lexical": {
+                "rank": 2,
+                "contribution": 0.016129032258064516
+              },
+              "semantic": {
+                "rank": 2,
+                "contribution": 0.016129032258064516
+              }
+            }
+          },
+          {
+            "id": "teacher-AX-71-task:v1:page-1",
+            "document": {
+              "id": "teacher-AX-71-task:v1:page-1",
+              "collection": "memo",
+              "version": "v1",
+              "projectCode": "AX-71",
+              "docId": "teacher-AX-71-task",
+              "title": "AX-71检查委托便签",
+              "text": "课堂便签｜委托编号：AX-71。\n任务是检查窗户插销与窗框怎样连接，不是检查钟架。检查人：周岚。\n这份便签不能作为AX-17的检查安排；两个编号的数字顺序不同。",
+              "textSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+              "source": {
+                "kind": "teacher-constructed",
+                "fileName": "AX-71检查委托便签.txt",
+                "fileSha256": "7722d084213f49282cc771afcb910c12487f97b490f17bdbd8a19a9d30f19402",
+                "physicalPages": [
+                  1
+                ],
+                "bodyRange": {
+                  "start": 0,
+                  "end": 80,
+                  "positionUnit": "utf16"
+                },
+                "lineRange": [
+                  1,
+                  3
+                ]
+              },
+              "adoption": "课堂构造便签；不是小说新设定、真人委托、付款或模型生成"
+            },
+            "score": 0.031746031746031744,
+            "contributions": {
+              "lexical": {
+                "rank": 3,
+                "contribution": 0.015873015873015872
+              },
+              "semantic": {
+                "rank": 3,
+                "contribution": 0.015873015873015872
+              }
+            }
+          }
+        ]
+      }
+    },
+    "sourceId": "teacher-AX-17-fee:v1:page-1",
+    "sourceBody": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+    "sourcePage": null,
+    "direction": "notes",
+    "error": null,
+    "loading": false
+  },
+  "bodyText": "检索候选回查\n页面方向\n原版\n台面\n笔记页\n同一问题，两路找资料\n\n选中候选，回查完整原文能支持什么。\n\n问题\nQ1 · AX-17委托的是什么检查，由谁检查？\nQ2 · AX-17什么时候检查，要付多少钱？80元是否需要另外相加？\nQ3 · 墙里还有东西在动，能据此断定时钟停止的原因了吗？\n资料范围\n原始范围\n精确编号 AX-17\n回查原文\n\n两路候选来自同一资料范围；选中完整文字后回查原文。\n\nAX-17什么时候检查，要付多少钱？80元是否需要另外相加？\n\n教师便签 · 版本v1 · 4条资料在范围内\n\n关键词\n1 · AX-17日期与费用便签\n课堂便签｜委托编号：AX-17。 便签记录日期：2026年10月10日。检查预约日期…\n2 · AX-71日期与费用便签\n课堂便签｜委托编号：AX-71。 便签记录日期：2026年10月11日。检查预约日期…\n3 · AX-71检查委托便签\n课堂便签｜委托编号：AX-71。 任务是检查窗户插销与窗框怎样连接，不是检查钟架。检…\n语义\n1 · AX-17日期与费用便签\n课堂便签｜委托编号：AX-17。 便签记录日期：2026年10月10日。检查预约日期…\n2 · AX-71日期与费用便签\n课堂便签｜委托编号：AX-71。 便签记录日期：2026年10月11日。检查预约日期…\n3 · AX-71检查委托便签\n课堂便签｜委托编号：AX-71。 任务是检查窗户插销与窗框怎样连接，不是检查钟架。检…\n融合\n1 · AX-17日期与费用便签\n课堂便签｜委托编号：AX-17。 便签记录日期：2026年10月10日。检查预约日期…\n2 · AX-71日期与费用便签\n课堂便签｜委托编号：AX-71。 便签记录日期：2026年10月11日。检查预约日期…\n3 · AX-71检查委托便签\n课堂便签｜委托编号：AX-71。 任务是检查窗户插销与窗框怎样连接，不是检查钟架。检…\n选中：AX-17日期与费用便签\n\n课堂构造便签；不是小说新设定、真人委托、付款或模型生成\n\n选中块的完整文字\n课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。\n\nteacher-AX-17-fee · v1 · 完整便签 · 第1—4行 · 正文范围[0, 117)\n\nAX-17日期与费用便签 · 完整便签\n\n已回查：AX-17日期与费用便签 · v1 · 课堂构造便签；不是小说新设定、真人委托、付款或模型生成\n\n课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。\n来源完整文字\n分词、分数、融合与来源位置\n完整观察与下载\n\n本页只读取实际检索记录，不生成回答或保存章节。小说资料是历史草稿；四份便签是课堂构造。切换方向不会改变候选或再次调用模型。",
+  "geometry": {
+    "innerWidth": 1280,
+    "innerHeight": 900,
+    "devicePixelRatio": 1.0000000447034836,
+    "scrollX": 0,
+    "scrollY": 0,
+    "clientWidth": 1280,
+    "scrollWidth": 1280,
+    "scrollHeight": 1661
+  },
+  "selectionText": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+  "sourceText": "课堂便签｜委托编号：AX-17。\n便签记录日期：2026年10月10日。检查预约日期：2026年10月12日。\n检查费用：240元，其中80元是预付部分，不是另加80元。\n这只是课堂构造的安排，不代表已经付款、到场检查或确定故障原因。",
+  "status": "两路候选来自同一资料范围；选中完整文字后回查原文。",
+  "sourceStatus": "已回查：AX-17日期与费用便签 · v1 · 课堂构造便签；不是小说新设定、真人委托、付款或模型生成",
+  "locateDisabled": false
+}
