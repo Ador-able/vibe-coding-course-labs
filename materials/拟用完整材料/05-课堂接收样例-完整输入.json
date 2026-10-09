@@ -1,0 +1,124 @@
+{
+  "kind": "教师构造，不是模型服务返回；尚未运行；expected为核对前的预期",
+  "checker": "31209/src/structured/inspect.ts",
+  "cases": [
+    {
+      "id": "T1",
+      "label": "未知值保留为null",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "stop",
+      "message": {
+        "content": "{\"items\":[{\"task\":\"整理一份活动物料清单\",\"owner\":null,\"dueText\":null,\"evidence\":\"会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。\"}]}"
+      },
+      "expected": {
+        "firstFailure": null,
+        "data": "保留一项；语义另对照原文"
+      }
+    },
+    {
+      "id": "T2",
+      "label": "owner和dueText字段缺失",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "stop",
+      "message": {
+        "content": "{\"items\":[{\"task\":\"整理一份活动物料清单\",\"evidence\":\"会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。\"}]}"
+      },
+      "expected": {
+        "firstFailure": "字段结构",
+        "data": null
+      }
+    },
+    {
+      "id": "T3",
+      "label": "合法空数组，有待办却未列出",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "stop",
+      "message": {
+        "content": "{\"items\":[]}"
+      },
+      "expected": {
+        "firstFailure": null,
+        "data": "合法空数组，但漏提；原句定位skip不是通过语义"
+      }
+    },
+    {
+      "id": "T4",
+      "label": "没有正文",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "stop",
+      "message": {
+        "content": ""
+      },
+      "expected": {
+        "firstFailure": "完整结束",
+        "data": null
+      }
+    },
+    {
+      "id": "T5",
+      "label": "截断标记，外形恰为完整JSON",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "length",
+      "message": {
+        "content": "{\"items\":[]}"
+      },
+      "expected": {
+        "firstFailure": "完整结束",
+        "data": null
+      }
+    },
+    {
+      "id": "T6",
+      "label": "JSON被截断，结束标记也未完成",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "length",
+      "message": {
+        "content": "{\"items\":[{\"task\":\"整理物料"
+      },
+      "expected": {
+        "firstFailure": "完整结束",
+        "data": null
+      }
+    },
+    {
+      "id": "T7",
+      "label": "拒绝附带合法JSON外形",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "stop",
+      "message": {
+        "content": "{\"items\":[]}",
+        "refusal": "课堂构造的拒绝标记"
+      },
+      "expected": {
+        "firstFailure": "完整结束",
+        "data": null
+      }
+    },
+    {
+      "id": "T8",
+      "label": "仅有Markdown围栏，不能直接JSON.parse",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "stop",
+      "message": {
+        "content": "```json\n{\"items\":[]}\n```"
+      },
+      "expected": {
+        "firstFailure": "JSON解析",
+        "data": null
+      }
+    },
+    {
+      "id": "T9",
+      "label": "owner类型为数字",
+      "material": "会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。现有场地资料已上传，供大家参考。",
+      "finishReason": "stop",
+      "message": {
+        "content": "{\"items\":[{\"task\":\"整理一份活动物料清单\",\"owner\":12,\"dueText\":null,\"evidence\":\"会议决定整理一份活动物料清单，但没有指定负责人，也没有确定完成日期。\"}]}"
+      },
+      "expected": {
+        "firstFailure": "字段结构",
+        "data": null
+      }
+    }
+  ]
+}

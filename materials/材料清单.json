@@ -1,86 +1,122 @@
-[
-  {
-    "file": "完整材料/01-完整第一章.txt",
-    "bytes": 3345,
-    "SHA256": "34ad4c4d250c7c1dd886f555a1e97a2fb4ee63f2ac49fb4a102b6a9bca0fa9a7",
-    "kind": "既有原件逐字节复制",
-    "scope": "十一点、提灯、影子与齿轮故事的完整正文；当前只是练习材料，不由本章认定文学采用"
-  },
-  {
-    "file": "完整材料/09-历史上下文实验完整原记录.json",
-    "bytes": 11099,
-    "SHA256": "63da5ca05928dda1ec36d9b9c980e1e6207cb5365786f60df9b23df5c1fa5a8a",
-    "kind": "既有原件逐字节复制",
-    "scope": "保存当时五次请求的全部记录字段；本节只观察 firstRound 两次请求和同一工具结果，后三种追问仍原样保留"
-  },
-  {
-    "file": "完整材料/02-首轮完整提示.prompt.txt",
-    "bytes": 3822,
-    "SHA256": "9cb19f99da199f1a89f33df8f7ac494d44ab01a4f740c26c45369db72171d223",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "可复制的完整任务与正文；未调用模型"
-  },
-  {
-    "file": "完整材料/03-三段教学梗概.txt",
-    "bytes": 716,
-    "SHA256": "bd5e6ec3ed1ca693f24963e06a55f1f5c36c0f25aae7b1c1f71f8a58e7df947d",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "供接口表达对照的教师草稿，明确不是模型的新回答或已采用版本"
-  },
-  {
-    "file": "完整材料/04-完整追问.prompt.txt",
-    "bytes": 283,
-    "SHA256": "722bad11faacfdcba19a68ac9d27c0a3757841f1867078bf54795bf5d59705e9",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "用于比较历史材料放在哪里；单独这一句不是整份完整上下文"
-  },
-  {
-    "file": "完整材料/05-Completions表达示意.json",
-    "bytes": 4972,
-    "SHA256": "c7572c36ac3bc152171d8382307abc7343372023b4cb8f700f3186161c1f9cfd",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "完整语义材料串成 prompt；角色称呼只是字符串内容，不具有结构化角色；没有模型和连接配置，不是可直接发送的完整API请求"
-  },
-  {
-    "file": "完整材料/06-Chat表达示意.json",
-    "bytes": 5119,
-    "SHA256": "f6626c160bedcf53351f6fa7e99fe7bf3069e18d1dbe4dff93b7ccee74f3f29c",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "按当前OpenAI的developer角色示意；其他兼容服务的角色支持须另核。没有模型和连接配置；未向Chat接口发送"
-  },
-  {
-    "file": "完整材料/07-Responses手动历史示意.json",
-    "bytes": 5078,
-    "SHA256": "5409593cdb5637d5b8760b8eca412af5e24a8cccb0f4555e09bd4d7f7b70608c",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "使用本节纯文字材料表达Responses手动历史。没有模型和连接配置；不据此把真实含工具/推理返回全部压成role/content"
-  },
-  {
-    "file": "完整材料/08-历史选择教学卡.json",
-    "bytes": 3592,
-    "SHA256": "4510bb1b89e10becf2a84ea2afba4d1e29521c97e5488115cb63623aec41297b",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "比较应用手动带入和服务端历史关联的职责，不重复M3的全文/摘要/选读实验，也不展开恢复实现"
-  },
-  {
-    "file": "完整材料/10-Responses工具项表达示意.json",
-    "bytes": 1319,
-    "SHA256": "10afc7109b1d2766d2dcb5d46f12de1faf5e017454c30e612bf8117e0e442638",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "只观察工具请求和应用结果是不同记录并由call_id对应；不实现模型循环、不让output_text便利属性充当所有返回"
-  },
-  {
-    "file": "完整材料/11-Embeddings资料选择练习.json",
-    "bytes": 1528,
-    "SHA256": "65e01adb59f71849d89218f4e9a1ef6f53b411b95f8384f960dd58a7498a5367",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "区分向量生成、资料选择和基于原文的回答；没有伪造向量、距离、相似度、排名或检索成功"
-  },
-  {
-    "file": "完整材料/12-完整迁移提示.prompt.txt",
-    "bytes": 1610,
-    "SHA256": "2562e66beaba272054c649fdc7969c80c3ea93398f5d08fee74ac11fc2f9ceb2",
-    "kind": "教师为本节构造，未执行模型调用",
-    "scope": "保留121活动任务的迁移价值；全部业务事实为教师构造，未运行模型或业务动作"
-  }
-]
+{
+  "sourceCommit": "31209d553e6b95af2f1ac1055fc6de5d08e22a36",
+  "modelCallsAdded": 0,
+  "businessWritesAdded": 0,
+  "materialFileCount": 19,
+  "observationInputCount": 18,
+  "originalOfficialOrPaidCourseFullTextIncluded": false,
+  "protectedHostContentIncluded": false,
+  "sourceRestoration": "包不含.git或完整客户端；按README克隆公开固定lab再运行已有检查器。",
+  "files": [
+    {
+      "file": "拟用完整材料/01-历史六次完整请求与返回.json",
+      "bytes": 32914,
+      "sha256": "072513266655011507e54396c5bb9faeba77970591e123a3de3345db49e291a4"
+    },
+    {
+      "file": "拟用完整材料/02-历史六次输入与模式差别.txt",
+      "bytes": 16440,
+      "sha256": "8a1ac905a78a2e03144c09f4dcc6a515c381a6f7d8cda77e16c61854380bdb13"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/ai-provider.ts",
+      "bytes": 3036,
+      "sha256": "9bdec56e82b71fe95d571613af2b7b40e5e6a6e185030e6e35e02316eea67912"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/recorded-model.ts",
+      "bytes": 3031,
+      "sha256": "98a5b3ca45346284bd545af6e86844e5713db6f3ec2adff1a6b0c7db0bc30e84"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/structured/contract.ts",
+      "bytes": 830,
+      "sha256": "44a32f9e0f5a878c470f1178d42f3230c6b4fbeb3c9f2bbd81551ad4df969110"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/structured/counterexample.ts",
+      "bytes": 542,
+      "sha256": "4e5de942cdc44832f600ed6fdc1ed8c444fb9c6eb773e21ef0f42d5cb218805e"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/structured/inspect.ts",
+      "bytes": 2951,
+      "sha256": "e0ec8a29bcebc23575ef2819d2f3958e9da37864c4e67011b88a3da4ffeb0016"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/structured/materials.ts",
+      "bytes": 905,
+      "sha256": "5dc825369e74b0473a4b6ec532bd0e27f70b7a195cfa2fe77ddb9080204e7bdc"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/structured/request.ts",
+      "bytes": 2584,
+      "sha256": "8f969cf8ac2014e7c0f12f297aaf79d96f9dc64b3e5569d1e29236db7e9b5b56"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/src/structured/schema.ts",
+      "bytes": 697,
+      "sha256": "a5404025d1ae7ffb12c51d3c3ad747cf9915148cc1b240f13042aac27c915314"
+    },
+    {
+      "file": "拟用完整材料/03-固定源码/test/structured.test.ts",
+      "bytes": 8303,
+      "sha256": "0ea23cc19a5a664f31bbb8b2c6603e219d12767d9d68bd7b1cf433203129c188"
+    },
+    {
+      "file": "拟用完整材料/04-既有SDK严格模式完整页面记录.json",
+      "bytes": 5700,
+      "sha256": "01ca32ba6b896962e045129cfeb7e02646b05547a04c38b77d900c97f97e985c"
+    },
+    {
+      "file": "拟用完整材料/05-课堂接收样例-完整输入.json",
+      "bytes": 4790,
+      "sha256": "d137067abce4890efb682c1a8c670f9a11cf755bcb2c670189e65c2220fba00b"
+    },
+    {
+      "file": "拟用完整材料/06-小说第三章完整原文.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "file": "拟用完整材料/07-小说迁移-完整教学任务与两个返回.json",
+      "bytes": 5072,
+      "sha256": "31c198c94a019ba1db95ade0a863fb2b56ec1874db6ab1670c660e290c52232e"
+    },
+    {
+      "file": "拟用完整材料/08-工作台历史保存与拒绝-四个完整事件.json",
+      "bytes": 40018,
+      "sha256": "5e1025ec58831048c9ae2f042d8bd32a4333ec659bd953b0efbe97131868d14b"
+    },
+    {
+      "file": "拟用完整材料/09-工作台接收边界.ts",
+      "bytes": 2879,
+      "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7"
+    },
+    {
+      "file": "拟用完整材料/10-工作台字段契约.ts",
+      "bytes": 1714,
+      "sha256": "ffaa5ef72ac127b7189e2f9aafe52cf5a684935113f8fea8bca1eaed9584338c"
+    },
+    {
+      "file": "拟用完整材料/11-工作台真实Store.ts",
+      "bytes": 11326,
+      "sha256": "38685e9871494f7bfdd91f7a3dfed2330501e55d97cc6e0e0974bab1d58a28c7"
+    },
+    {
+      "file": "零模型观察记录器.mts",
+      "bytes": 5989,
+      "sha256": "c9a8cf41faf6376ff5c3ca164b09b1ed8cbc77802936fc13c46659f9a008ed55"
+    },
+    {
+      "file": "README.md",
+      "bytes": 4501,
+      "sha256": "1eef73598eb2accccda6313c193840a1b59d5d65869e539b006747688fa03fa3"
+    },
+    {
+      "file": "完整观察/8d55b79d-5b7c-4882-a5f7-72f796f93b1d/完整输入与程序返回.json",
+      "bytes": 92590,
+      "sha256": "ef921befbdb50de22fed993b79d9389bba2637793731fe078a1c185af775b038"
+    }
+  ]
+}
