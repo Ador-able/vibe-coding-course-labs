@@ -1,0 +1,31 @@
+{
+  "uiRunId": "d6ddfe1f-219c-4029-9517-72bf6d7b436c",
+  "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-05-01\\实际页面\\d6ddfe1f-219c-4029-9517-72bf6d7b436c",
+  "pid": 34708,
+  "executable": "D:/Software/Conda/python.exe",
+  "argv": [
+    "-X",
+    "utf8",
+    "-u",
+    "-m",
+    "http.server",
+    "4344",
+    "--bind",
+    "127.0.0.1",
+    "--directory",
+    "public"
+  ],
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-05-01\\lab",
+  "startUtc": "2026-10-04T12:04:47.1821757Z",
+  "fixedHead": "edd22cef42a0d900b0e75a31080530e784fca584",
+  "boundary": "只读静态服务；不执行生成器/读取器/OCR/模型/业务",
+  "originalReadRecord": "作者-完整原件正文与定位只读核对.json",
+  "originalPixelsViewed": [
+    "native-v1/page-1.png",
+    "native-v1/page-2.png",
+    "native-v1/page-3.png",
+    "native-v2/page-3.png"
+  ],
+  "identicalPixelsFromOtherPaths": "其余五路径PNG原字节SHA相同；并非另一次解析",
+  "viewedAtUtc": "2026-10-04T12:04:47.2055750Z"
+}

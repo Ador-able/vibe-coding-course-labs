@@ -1,0 +1,12 @@
+{
+  "at": "2026-10-04T12:08:32.964Z",
+  "state": "01-完整三页-original-1280x900",
+  "savedBeforeFailure": [
+    "01-完整三页-original-1280x900.json",
+    "01-完整三页-original-1280x900.dom.txt",
+    "01-完整三页-original-1280x900-viewport.jpg"
+  ],
+  "fullPageScreenshotError": "Timed out after 5000ms waiting for CDP command Page.captureScreenshot",
+  "parsedAgain": false,
+  "pageReloaded": false
+}

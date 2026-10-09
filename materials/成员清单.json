@@ -1,0 +1,1366 @@
+{
+  "executionHead": "edd22cef42a0d900b0e75a31080530e784fca584",
+  "deliveryHead": "d339d8b0ea4c8da3cf6dcbdb4cd004933644a240",
+  "fixedCodeFiles": 13,
+  "runtimeFiles": [
+    "public/files/broken/无法读取.pdf",
+    "public/files/native-v1/第三章资料.pdf",
+    "public/files/native-v2/第三章资料.pdf",
+    "public/files/scan-v1/第三章资料.pdf",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-1.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-2.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-3.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v2/page-1.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v2/page-2.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v2/page-3.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/observation.json",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/scan-v1/page-1.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/scan-v1/page-2.png",
+    "public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/scan-v1/page-3.png",
+    "public/fixtures.json",
+    "public/observation.json"
+  ],
+  "members": [
+    {
+      "path": "公开与原件范围映射.json",
+      "bytes": 287610,
+      "sha256": "26baed5340e6004aa2d180e11618d69d59d16065c5b7d41dafb3793e348414ff"
+    },
+    {
+      "path": "启动与交付范围.md",
+      "bytes": 806,
+      "sha256": "f81b83fa5bc857bdf44774684f71d05a565d9c220dbf9a230564af4228413d9f"
+    },
+    {
+      "path": "教学材料/三道完整题答.md",
+      "bytes": 6026,
+      "sha256": "037f56a369dd7cb40330c633f9cb4a647b1a90016db16852cdfbd0db424bf7ef"
+    },
+    {
+      "path": "教学材料/实际配图采用.json",
+      "bytes": 581,
+      "sha256": "863b62118163877eb49234c1a338139a47f5465f0837403b5d36bb385a1a5ffb"
+    },
+    {
+      "path": "教学材料/实际页面观察与采用判断.md",
+      "bytes": 1332,
+      "sha256": "c3dc3d4c5ca76ba39f758187dbf826742a0751d558fd48e7f706037a5483e8b1"
+    },
+    {
+      "path": "教学材料/资料读取与原页回查.png",
+      "bytes": 1084859,
+      "sha256": "a32d97e849324ac481e4fd257a0d3a6358089c3359bde845163d46edd97f9578"
+    },
+    {
+      "path": "练习/.gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "练习/.gitignore",
+      "bytes": 26,
+      "sha256": "472f568478bff9056ec56b5c5e8a7ca3d280c651d527321e1eb80892801164be"
+    },
+    {
+      "path": "练习/inputs/完整分页内容与教师便签.json",
+      "bytes": 5773,
+      "sha256": "93dbbe405dc8600d3f44825836d8710c2ad6271d6e09309c10d11a250001b362"
+    },
+    {
+      "path": "练习/inputs/小说第三章完整原文.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "path": "练习/public/files/broken/无法读取.pdf",
+      "bytes": 40,
+      "sha256": "6508275182d1f6c8b3db3b5644622e29241ed00030c53b461c5ea22924daa40a"
+    },
+    {
+      "path": "练习/public/files/native-v1/第三章资料.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97"
+    },
+    {
+      "path": "练习/public/files/native-v2/第三章资料.pdf",
+      "bytes": 5247,
+      "sha256": "38fdcd25043aa2752a29b4592ba9f1e1d2b90177acd017611667269f3aa8ee16"
+    },
+    {
+      "path": "练习/public/files/scan-v1/第三章资料.pdf",
+      "bytes": 141952,
+      "sha256": "02f870076bf49f10f799bf89abfcf4e95490ace786921fa88d18b72dc8579403"
+    },
+    {
+      "path": "练习/public/fixtures.json",
+      "bytes": 2331,
+      "sha256": "d6ce19bec42ee1bb25f41326b13d7d7d61fb8f79a7feb605d47b77d80fc0a362"
+    },
+    {
+      "path": "练习/public/index.html",
+      "bytes": 2362,
+      "sha256": "cf7bd6979a088b10272085153e1b28c864b687cf7c053608d2da79c536935829"
+    },
+    {
+      "path": "练习/public/main.js",
+      "bytes": 8019,
+      "sha256": "f01af4b3e8d514f5a91e4f91bb568efed4cc9fe8320cf5ec30ae50ee2d5ef8f4"
+    },
+    {
+      "path": "练习/public/observation.json",
+      "bytes": 153453,
+      "sha256": "170e9c80b0d61c33c21e64a66487097f35fef6f47ebb3993ceec2b0793e86396"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-1.png",
+      "bytes": 111253,
+      "sha256": "c1290fb7a9e3600684aa8700669a44ad59839732158ee0de7a1e8cdef309270c"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-2.png",
+      "bytes": 139877,
+      "sha256": "e2affaa34c6a4ccb94a38eeee7a5bc96d87bd0933bda9690a3461e6c6ac00566"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v1/page-3.png",
+      "bytes": 108714,
+      "sha256": "82a9a919b13600752058914a010228176890b6a9ee7965760ff449e2efc6397b"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v2/page-1.png",
+      "bytes": 111253,
+      "sha256": "c1290fb7a9e3600684aa8700669a44ad59839732158ee0de7a1e8cdef309270c"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v2/page-2.png",
+      "bytes": 139877,
+      "sha256": "e2affaa34c6a4ccb94a38eeee7a5bc96d87bd0933bda9690a3461e6c6ac00566"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/native-v2/page-3.png",
+      "bytes": 111117,
+      "sha256": "0631b2a5ac6af333e332e2ecacdd9d8c28c615cc9e5cbdc4125b74973fee74bd"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/observation.json",
+      "bytes": 153453,
+      "sha256": "170e9c80b0d61c33c21e64a66487097f35fef6f47ebb3993ceec2b0793e86396"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/scan-v1/page-1.png",
+      "bytes": 111253,
+      "sha256": "c1290fb7a9e3600684aa8700669a44ad59839732158ee0de7a1e8cdef309270c"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/scan-v1/page-2.png",
+      "bytes": 139877,
+      "sha256": "e2affaa34c6a4ccb94a38eeee7a5bc96d87bd0933bda9690a3461e6c6ac00566"
+    },
+    {
+      "path": "练习/public/runs/bf29c1f7-44aa-43ac-a81e-263899ece86d/scan-v1/page-3.png",
+      "bytes": 108714,
+      "sha256": "82a9a919b13600752058914a010228176890b6a9ee7965760ff449e2efc6397b"
+    },
+    {
+      "path": "练习/public/style.css",
+      "bytes": 6000,
+      "sha256": "2077e6144c7d00d31e2e9cadc2b6944ada511bee72d53b77ad8a132422912c41"
+    },
+    {
+      "path": "练习/README.md",
+      "bytes": 4647,
+      "sha256": "1fc6dfe8cda274b9f2bab318711ce6fd44cfb84a1ea862b771e8b8b81ce740a0"
+    },
+    {
+      "path": "练习/requirements.txt",
+      "bytes": 18,
+      "sha256": "370a023f5374595edf76f25e9a5c46b70735b36b3d76e3d020bb1a3613439dd5"
+    },
+    {
+      "path": "练习/scripts/build_inputs.py",
+      "bytes": 4752,
+      "sha256": "df16678e4bc465333e5cb1b766767a058f5b46d75059fc835c07866385b7b2ee"
+    },
+    {
+      "path": "练习/scripts/read_material.py",
+      "bytes": 6854,
+      "sha256": "364c1bb3d12867117b91872969ea94a57c80e922d47d164021d5473683ab44fc"
+    },
+    {
+      "path": "练习/教师回查提示.md",
+      "bytes": 2318,
+      "sha256": "ac094f7d7c19dec1c94d48812040d31ba03694765adb041e0227dfe6361f3fc5"
+    },
+    {
+      "path": "练习/输入说明.md",
+      "bytes": 1203,
+      "sha256": "ba6778f6ba3cc5dc4f04f9cb9fd77efa2cb84bb40348b69218122239bff73b50"
+    },
+    {
+      "path": "资料代码.bundle",
+      "bytes": 23839,
+      "sha256": "770399f7b465c6cb6a5bdf577ff11882d5699a045b85117be4324dce84373fc3"
+    },
+    {
+      "path": "页面观察/01-完整三页-desk-1280x900-末尾字段.json",
+      "bytes": 194514,
+      "sha256": "8728e70d190365362e83fe9b94a8f90d96641fb4d4cfe2c5d175ad0663bd251b"
+    },
+    {
+      "path": "页面观察/01-完整三页-desk-1280x900.dom.txt",
+      "bytes": 4792,
+      "sha256": "de5dd5cc5cede94fcf8eb3e64efbcecc7e7c661c70ce8ee6fd22fe149b064bc6"
+    },
+    {
+      "path": "页面观察/01-完整三页-desk-1280x900.json",
+      "bytes": 194483,
+      "sha256": "ab8ac7881f68c3d93853194777a913dde42a9ed830e3efb8f5784f745b1c1de1"
+    },
+    {
+      "path": "页面观察/01-完整三页-desk-390x844-末尾字段.json",
+      "bytes": 194431,
+      "sha256": "8fc842f6f85a8ee670c35ee7877bc8e8ba94b41967b7b20cf05932b0ab12bf43"
+    },
+    {
+      "path": "页面观察/01-完整三页-desk-390x844.dom.txt",
+      "bytes": 4792,
+      "sha256": "de5dd5cc5cede94fcf8eb3e64efbcecc7e7c661c70ce8ee6fd22fe149b064bc6"
+    },
+    {
+      "path": "页面观察/01-完整三页-desk-390x844.json",
+      "bytes": 194400,
+      "sha256": "37c4ff9278699afd579f25dbdd34e5f886a0efc7f77b8ff3f70834eeb6ea386c"
+    },
+    {
+      "path": "页面观察/01-完整三页-notes-1280x900-末尾字段.json",
+      "bytes": 194427,
+      "sha256": "163ff29160fd260ab7146b5fd24c1cae13fd1d6a8e8b2c934b8c897788a6e270"
+    },
+    {
+      "path": "页面观察/01-完整三页-notes-1280x900.dom.txt",
+      "bytes": 4792,
+      "sha256": "ab88e09456333d15326e3fbda25b78bbf9c57d7c6313f6106721d8b2592f7a4a"
+    },
+    {
+      "path": "页面观察/01-完整三页-notes-1280x900.json",
+      "bytes": 194513,
+      "sha256": "b9478dee3c6d113526a63120a217cf519ca876711eb302bc822b0f9fe6dbbf57"
+    },
+    {
+      "path": "页面观察/01-完整三页-notes-390x844-末尾字段.json",
+      "bytes": 194403,
+      "sha256": "c70187441eab6fe1f686da18126911d93c6a8bc0ef7248726fc46db29d853413"
+    },
+    {
+      "path": "页面观察/01-完整三页-notes-390x844.dom.txt",
+      "bytes": 4792,
+      "sha256": "ab88e09456333d15326e3fbda25b78bbf9c57d7c6313f6106721d8b2592f7a4a"
+    },
+    {
+      "path": "页面观察/01-完整三页-notes-390x844.json",
+      "bytes": 194472,
+      "sha256": "258cdcbeb1836e5753539d381c5c6ff0ba38b34553a4a933160041eee26f5d1b"
+    },
+    {
+      "path": "页面观察/01-完整三页-original-1280x900-末尾字段.json",
+      "bytes": 194311,
+      "sha256": "c163a18f11c1afe84fb033c9316b4b44b1e9508cfaa465f42034bbf3b97f0845"
+    },
+    {
+      "path": "页面观察/01-完整三页-original-1280x900.dom.txt",
+      "bytes": 4792,
+      "sha256": "40a3c9e91fad325d3cdfa67ea70dadc544a32bee56f06e902fed7183a7a348e8"
+    },
+    {
+      "path": "页面观察/01-完整三页-original-1280x900.json",
+      "bytes": 194171,
+      "sha256": "acb64d3adf038ee35494f5dfffa5e129752af82f0cf8d32a83cb9f1497943c63"
+    },
+    {
+      "path": "页面观察/01-完整三页-original-390x844-末尾字段.json",
+      "bytes": 194472,
+      "sha256": "60c30173139fed0c849962bea66669580aa50974ba929efb80d33cf94a38ba88"
+    },
+    {
+      "path": "页面观察/01-完整三页-original-390x844.dom.txt",
+      "bytes": 4792,
+      "sha256": "40a3c9e91fad325d3cdfa67ea70dadc544a32bee56f06e902fed7183a7a348e8"
+    },
+    {
+      "path": "页面观察/01-完整三页-original-390x844.json",
+      "bytes": 194405,
+      "sha256": "0e4d28072e40d9d20497fd9f931152cec033d9e1afc8fc104b8ccefbfe6c51ae"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-desk-1280x900-末尾字段.json",
+      "bytes": 195960,
+      "sha256": "0b3ce5fa629c719639725866bb55f6fef212c8d58c5cb0f58ee2e6ef91ae41a4"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-desk-1280x900.dom.txt",
+      "bytes": 5076,
+      "sha256": "1b9251bcdab1fe5451e932ce0765db07204db9735b92e8b5048959803189d2cc"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-desk-1280x900.json",
+      "bytes": 195872,
+      "sha256": "6fbfae8096d4811d8dbade37bcce8f6eb83c085e87d0924151d3fe241f00a78f"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-desk-390x844-末尾字段.json",
+      "bytes": 195925,
+      "sha256": "f24cf297670feeb0283099bda240818e2544f70b5b01c4b1a5ef05156a60f036"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-desk-390x844.dom.txt",
+      "bytes": 5076,
+      "sha256": "1b9251bcdab1fe5451e932ce0765db07204db9735b92e8b5048959803189d2cc"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-desk-390x844.json",
+      "bytes": 195922,
+      "sha256": "9c9ec3594b953be2ec579d3196fc2f7e02a9b75acb480ddb3c783873e50b210f"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-notes-1280x900-末尾字段.json",
+      "bytes": 195955,
+      "sha256": "48428934da51a8152659cc28f6794562f53ab39fb4ac7720f43485c2bd8250e8"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-notes-1280x900.dom.txt",
+      "bytes": 5076,
+      "sha256": "7da542a2af10baf7edcbfad6e2d4685447e76718ddfdc5a9b3242a6cdbb54219"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-notes-1280x900.json",
+      "bytes": 195840,
+      "sha256": "af048a99088114026c18838d259d57357bf12e9cff20e7c591d25ec661742c70"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-notes-390x844-末尾字段.json",
+      "bytes": 195917,
+      "sha256": "8197d610a3006396c79f459d7c1d6b50354883a352e10fb0e65b64988dc56855"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-notes-390x844.dom.txt",
+      "bytes": 5076,
+      "sha256": "7da542a2af10baf7edcbfad6e2d4685447e76718ddfdc5a9b3242a6cdbb54219"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-notes-390x844.json",
+      "bytes": 195814,
+      "sha256": "78ab9aa56cd5a2b392edd8fb5322357fecc2417a29d7d5fa7f95b12c85445fce"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-original-1280x900-末尾字段.json",
+      "bytes": 195990,
+      "sha256": "e2fc54b93f34599887a73c4c036157b6dea986ea462abc5e8cf494ba8d47aaf2"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-original-1280x900.dom.txt",
+      "bytes": 5076,
+      "sha256": "373eec91f5ed98ba45ff07711cad05fcb961137c500062a68c6fbcf72c3f4857"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-original-1280x900.json",
+      "bytes": 195842,
+      "sha256": "e688d873dda731fb0291c02bed961088aa54efe8f9002e0498db76c7e8672d53"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-original-390x844-末尾字段.json",
+      "bytes": 195919,
+      "sha256": "af79ebd1d47a273cade58c609e65832a91207a5aa4110e1b4a7ce356b2602b96"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-original-390x844.dom.txt",
+      "bytes": 5076,
+      "sha256": "373eec91f5ed98ba45ff07711cad05fcb961137c500062a68c6fbcf72c3f4857"
+    },
+    {
+      "path": "页面观察/02-否定句命中原页-original-390x844.json",
+      "bytes": 195898,
+      "sha256": "60b6a38839b92bed0775ea018137fa5765935faa53bb12b2b483e64db69cfdde"
+    },
+    {
+      "path": "页面观察/02-实际回查动作后.json",
+      "bytes": 195967,
+      "sha256": "9abab4e38f2e410bf07354626cf92f8c38b02ae3efabd1d423890d7f47a8f56d"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-desk-1280x900-末尾字段.json",
+      "bytes": 251146,
+      "sha256": "bf66a572205aeec9207169a59e4d9d3dfa83be1ab4a55793090afa2edb9857b3"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-desk-1280x900.dom.txt",
+      "bytes": 46647,
+      "sha256": "ed454c2538e2943ef92cc2c88d59025ad0ce2be2b24e259d44c1a74a85a8a34b"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-desk-1280x900.json",
+      "bytes": 251050,
+      "sha256": "35ae2d0ad222c8f70c1e3c1f142a0a3a459d6c3754f126867459560e1a667dbb"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-desk-390x844-末尾字段.json",
+      "bytes": 251122,
+      "sha256": "be03132198ce819264bc82f4105f241b3f4dfa189a9e1f12eb3fe0c52b93b191"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-desk-390x844.dom.txt",
+      "bytes": 46647,
+      "sha256": "ed454c2538e2943ef92cc2c88d59025ad0ce2be2b24e259d44c1a74a85a8a34b"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-desk-390x844.json",
+      "bytes": 251060,
+      "sha256": "9da478a52b0bf1de4e2a339c8b2669006745e8d31dbaa686cbfb819c2acbb948"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-notes-1280x900-末尾字段.json",
+      "bytes": 251188,
+      "sha256": "c6e2658214a2aadc6317b2c26ee039b237d854345ce48cd9ce31e12517d1319e"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-notes-1280x900.dom.txt",
+      "bytes": 46647,
+      "sha256": "319304636ca504d060803647bc3cef96d88b683d2bad9a06035fdeec60bcdf5e"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-notes-1280x900.json",
+      "bytes": 251083,
+      "sha256": "399ae82b4382c968b25db69ed635904414c9764cc589c2b63a9ef0cd2e6ff6ab"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-notes-390x844-末尾字段.json",
+      "bytes": 251126,
+      "sha256": "bed83f1d65cbcd3c78fe940c21da6c683ba6ee617b54929d452a3d385e933bcd"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-notes-390x844.dom.txt",
+      "bytes": 46647,
+      "sha256": "319304636ca504d060803647bc3cef96d88b683d2bad9a06035fdeec60bcdf5e"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-notes-390x844.json",
+      "bytes": 251055,
+      "sha256": "5840b4442ba2da4f7cbf2c691c650c2cc7380746e04869ee24aa9d9fbf845af1"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-original-1280x900-末尾字段.json",
+      "bytes": 251200,
+      "sha256": "15fe728287bbe0e2167b5327017c9272cc83f887ee1199f06af4b0aa2ca20ebd"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-original-1280x900.dom.txt",
+      "bytes": 46647,
+      "sha256": "8fcf18a383cffb70d9c463336aa38406fab19605ec90d89f88a4483c468729f3"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-original-1280x900.json",
+      "bytes": 251085,
+      "sha256": "3f0b585d812193723408c1a5a80e4d81bd248d22a5f7e64669902a207defe5ea"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-original-390x844-末尾字段.json",
+      "bytes": 251145,
+      "sha256": "8d399d6efdb44dacf1f9f666815ca0c9fb53610dd43c255ada72a67f5e57299c"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-original-390x844.dom.txt",
+      "bytes": 46647,
+      "sha256": "8fcf18a383cffb70d9c463336aa38406fab19605ec90d89f88a4483c468729f3"
+    },
+    {
+      "path": "页面观察/03-完整记录展开-original-390x844.json",
+      "bytes": 251083,
+      "sha256": "90ae826d6700099105d9570a5d2c065dbbf42b7ae0796753611bd3c797922626"
+    },
+    {
+      "path": "页面观察/04-实际查看扫描第2页后.json",
+      "bytes": 127417,
+      "sha256": "f8931f39df3a1d65617c93cf7432f2a00ba8007a50109858dd561cd460e6a3cd"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-desk-1280x900-末尾字段.json",
+      "bytes": 127551,
+      "sha256": "a9c021f5773376a0c31c444c98566f458ef66371e934b3ca0ffa4eb147392c5d"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-desk-1280x900.dom.txt",
+      "bytes": 3729,
+      "sha256": "f18bbaead66dc94ae6e863c8305ff296974543e702e13df45f72179301bee056"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-desk-1280x900.json",
+      "bytes": 127542,
+      "sha256": "f722037f7940365291694f47d46b0839216a25e28fee66b8bcb6ce6f04d3a797"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-desk-390x844-末尾字段.json",
+      "bytes": 127499,
+      "sha256": "8e4250feb2e99bf30e32e7ff512819529229d560504eb2edf51f51a66573341a"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-desk-390x844.dom.txt",
+      "bytes": 3738,
+      "sha256": "b1d98ad21cf82ac54f9997479cf5e7be9a66083bc3c1057f649a90182f5fdf54"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-desk-390x844.json",
+      "bytes": 127488,
+      "sha256": "b81494e6441aa5cbf83e835029a139a5e4072dfb16c7dfda86ef4397a3461090"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-notes-1280x900-末尾字段.json",
+      "bytes": 127545,
+      "sha256": "f04b39e9c598987c71e043d4ae0380a64b42d118deb99b9a769a5b661f70bc4b"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-notes-1280x900.dom.txt",
+      "bytes": 3738,
+      "sha256": "da49bc55613e1dfc3649f60db79ccb9880cbd1205decec46dfe6554199b1822a"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-notes-1280x900.json",
+      "bytes": 127400,
+      "sha256": "8002124094a3d4629032316515ef847ea27fdde0e2074c64eb52b2882b1081f5"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-notes-390x844-末尾字段.json",
+      "bytes": 127501,
+      "sha256": "ccb2ea17e9b8688a14ba2efee3847da304af405a47700014521761aa02da54cc"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-notes-390x844.dom.txt",
+      "bytes": 3738,
+      "sha256": "da49bc55613e1dfc3649f60db79ccb9880cbd1205decec46dfe6554199b1822a"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-notes-390x844.json",
+      "bytes": 127377,
+      "sha256": "fb9e27919c200f9128a695d2c7ed7eab9be7eb2fc69f92c0b6d83f6d9ea313c7"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-original-1280x900-末尾字段.json",
+      "bytes": 127551,
+      "sha256": "b761539f1b73fd4c1838660828ea88026a6b153f9db55f22f0330fd2bb4af66b"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-original-1280x900.dom.txt",
+      "bytes": 3738,
+      "sha256": "95bc9cacd39cbe69b20a380d2a9a1875fc711ba5de9258d8b71e3cc4215fae84"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-original-1280x900.json",
+      "bytes": 127413,
+      "sha256": "6bcc36c131b74d776d1c3559c43932b25b46f99d1a77bb7bb8ebff97610f17a6"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-original-390x844-末尾字段.json",
+      "bytes": 127407,
+      "sha256": "41a446b4ce32510434cb1e01982bb2ba3fc68c99c93e9643c821089607e0b68f"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-original-390x844-滚动未推进.json",
+      "bytes": 241,
+      "sha256": "56892f0e41b1142ec4a48574ea91a9713010a3465b9355a24d59ee6b6da7261f"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-original-390x844.dom.txt",
+      "bytes": 3738,
+      "sha256": "95bc9cacd39cbe69b20a380d2a9a1875fc711ba5de9258d8b71e3cc4215fae84"
+    },
+    {
+      "path": "页面观察/04-扫描缺页与原页-original-390x844.json",
+      "bytes": 127459,
+      "sha256": "5017dd0ba60b8f776c2798ac12cb7c62acdb97e1676ee12bc98315c142706af7"
+    },
+    {
+      "path": "页面观察/04-换扫描版后-旧命中清除.json",
+      "bytes": 127024,
+      "sha256": "8db49b74084184b3a1327118c0c744eb9415e5b2beeaf8cc9937a2cbd35de88f"
+    },
+    {
+      "path": "页面观察/05-实际回查改便签第3页后.json",
+      "bytes": 196544,
+      "sha256": "76fc120e6d9329ac3b6e82281303c5260ec3ea481c9049d1090afd42b8252689"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-desk-1280x900-末尾字段.json",
+      "bytes": 196587,
+      "sha256": "77cd2ec2574d6dcdc3299fd32f10d58b2341f054db4e8aa32729d05e6e2c682b"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-desk-1280x900.dom.txt",
+      "bytes": 5154,
+      "sha256": "139a60dd355ad2d0cc3fc5c60d76b92d12ee9fe6586e93748895d6e82bae7625"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-desk-1280x900.json",
+      "bytes": 196560,
+      "sha256": "b528bae62cf27b0e51f774070fe0795472b955b6426394cec3ffab1a4881ec5e"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-desk-390x844-末尾字段.json",
+      "bytes": 196552,
+      "sha256": "d85fcc186bfc51a92714d814703eb1538e6e47a3bba348505dbc62d135047764"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-desk-390x844.dom.txt",
+      "bytes": 5154,
+      "sha256": "139a60dd355ad2d0cc3fc5c60d76b92d12ee9fe6586e93748895d6e82bae7625"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-desk-390x844.json",
+      "bytes": 196444,
+      "sha256": "643bb450d3011358258b033f18742d7c7320027f893fbeee2dfdd7c753d406d0"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-notes-1280x900-末尾字段.json",
+      "bytes": 196582,
+      "sha256": "3f2ca1edc90baa7676f04065809dbd42bcc8eee38396e90c5e53e9c383bc612a"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-notes-1280x900.dom.txt",
+      "bytes": 5154,
+      "sha256": "517881846c532e9d3876fe60f6d7cca8ff00bb779758885dadb3052f8608e462"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-notes-1280x900.json",
+      "bytes": 196467,
+      "sha256": "3717bd82325e9bce54fd158a1940a76132d659d40c2e3388b0983c500a7a2665"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-notes-390x844-末尾字段.json",
+      "bytes": 196544,
+      "sha256": "8ac99171dc17874ec5264327071e64abeb7b3d161c2609f500e0865bd860dc99"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-notes-390x844.dom.txt",
+      "bytes": 5154,
+      "sha256": "517881846c532e9d3876fe60f6d7cca8ff00bb779758885dadb3052f8608e462"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-notes-390x844.json",
+      "bytes": 196439,
+      "sha256": "75355b3284dd8cbdbe6825622680af902d50e53e1df37c5d57a803eebe4db7f8"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-original-1280x900-末尾字段.json",
+      "bytes": 196617,
+      "sha256": "f8c07c9f1473d4eab9825f8bfb946ab8c8be830e41abb9007d03828f2d3e21e1"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-original-1280x900.dom.txt",
+      "bytes": 5154,
+      "sha256": "649f13f00ace23fccb710bc0c07e742db64183467bc05cb3ea817d61a7f6d6bd"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-original-1280x900.json",
+      "bytes": 196469,
+      "sha256": "0675a5fc18d08e87daa6762a880e4f457a02d1810b0b85f41b4121ecc8641b1b"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-original-390x844-末尾字段.json",
+      "bytes": 196546,
+      "sha256": "9623ccb6ab1b51d75841ede79583af62a885afe9578b0941f2278f4b10eb0fed"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-original-390x844.dom.txt",
+      "bytes": 5154,
+      "sha256": "649f13f00ace23fccb710bc0c07e742db64183467bc05cb3ea817d61a7f6d6bd"
+    },
+    {
+      "path": "页面观察/05-新版本便签与原页-original-390x844.json",
+      "bytes": 196566,
+      "sha256": "cd07055bd6802f517ea34246c9274dd350cff55d9dd0c2c2b8232fe9b28498fd"
+    },
+    {
+      "path": "页面观察/06-换错误文件后-旧命中清除输入保留.json",
+      "bytes": 13091,
+      "sha256": "9486fabec53528bba235ca262e28dc63524abde353ac4c6c0b64bed360541be7"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-1280x900-末尾字段.json",
+      "bytes": 15002,
+      "sha256": "3b36a28c475c220ccd0e4d6b831c90673bba69f4f16ee3f32da74c8998e951c9"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-1280x900.dom.txt",
+      "bytes": 2802,
+      "sha256": "c57c76595c55452bd01d703d90e2ee5103b1cde30a6fb340837ed659663b1bc0"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-1280x900.json",
+      "bytes": 14891,
+      "sha256": "570d3409a8bd3a035d875e920b8278ecec667960d9a6d38cba8d38f4e5f8f36c"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-390x844-末尾字段.json",
+      "bytes": 14894,
+      "sha256": "a60043fd4535200f4dbda482c3b821116562edad1192bb330b2f13e03e4c2116"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-390x844-滚动未推进.json",
+      "bytes": 241,
+      "sha256": "a5898f8d84492af11f692a5ecc5847ab3140375940f20aa68e4eefd803baa185"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-390x844-继续覆盖.dom.txt",
+      "bytes": 2802,
+      "sha256": "c57c76595c55452bd01d703d90e2ee5103b1cde30a6fb340837ed659663b1bc0"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-390x844-继续覆盖.json",
+      "bytes": 14894,
+      "sha256": "d0fcf906a2b4e9de56289dfccc48838e0487ae55dd67ebb3200836230a1331ac"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-390x844.dom.txt",
+      "bytes": 2802,
+      "sha256": "c57c76595c55452bd01d703d90e2ee5103b1cde30a6fb340837ed659663b1bc0"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-desk-390x844.json",
+      "bytes": 14942,
+      "sha256": "27d1957b1e01f7a642f0eb2a81d363af9069fbec884b87b56bde6c1dac93bda5"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-1280x900-末尾字段.json",
+      "bytes": 14891,
+      "sha256": "18d8a47ba16d24cf19719986bc237aaf92a4f728ecdea148098d0680931d2d73"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-1280x900-滚动未推进.json",
+      "bytes": 243,
+      "sha256": "08a46048b597255ecb4f7f247433e8edc9b02e106d88df638330c68ce8a23252"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-1280x900-继续覆盖.dom.txt",
+      "bytes": 2802,
+      "sha256": "24659527b5baf8c3ebc9023a4013d8c48da2263ef5a1931a1da79f87ce0587bf"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-1280x900-继续覆盖.json",
+      "bytes": 14928,
+      "sha256": "807f3fdbeacab45987119b92fa0f50a742502e47bfbe0f81457a3281aee16787"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-1280x900.dom.txt",
+      "bytes": 2793,
+      "sha256": "208603f2275998864676db22254161165144be853cac97c02ba7449cb647b522"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-1280x900.json",
+      "bytes": 15026,
+      "sha256": "2db28393fb0308b72ab6772de88afda6eb2e7a29ce8e2d970e1b16bffe16b3f5"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-390x844-末尾字段.json",
+      "bytes": 14894,
+      "sha256": "811e87ec6cd2a0d2fa18c83775ded6c0ad8f5e458f59a26a713b7b49002a4a6d"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-390x844-滚动未推进.json",
+      "bytes": 240,
+      "sha256": "c4087be747fecac466eb0c798e2194f416813b0744b67c5d117f2ac86094c83a"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-390x844-继续覆盖.dom.txt",
+      "bytes": 2802,
+      "sha256": "24659527b5baf8c3ebc9023a4013d8c48da2263ef5a1931a1da79f87ce0587bf"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-390x844-继续覆盖.json",
+      "bytes": 14942,
+      "sha256": "8426d109c269411c9e8805016ce5173646fc5fec4627466c2b4b6dd089167a21"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-390x844.dom.txt",
+      "bytes": 2793,
+      "sha256": "208603f2275998864676db22254161165144be853cac97c02ba7449cb647b522"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-notes-390x844.json",
+      "bytes": 14982,
+      "sha256": "81ae9b3ff1ca46f28fbee87b402324e2e0aa7e8b50fdc46b605d3298a387e163"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-original-1280x900-末尾字段.json",
+      "bytes": 14931,
+      "sha256": "3a5d1ea41c2ce1839030fc6cf3280bb26114d74838c4f4dd37ce1c93ef3df296"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-original-1280x900.dom.txt",
+      "bytes": 2802,
+      "sha256": "e2b098bd7eb5ec53788aa1e7a675ff9431c28947e6cbebb711c205845955e654"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-original-1280x900.json",
+      "bytes": 14908,
+      "sha256": "b846233e3ca9807667f8e1f36f75c5c955685c7a5f0f724a376997b13c43875c"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-original-390x844-末尾字段.json",
+      "bytes": 14990,
+      "sha256": "39bfdb616e688d93f1f9e93e664472f64f0646bb7b4a973bf93baa2529edfca7"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-original-390x844.dom.txt",
+      "bytes": 2802,
+      "sha256": "e2b098bd7eb5ec53788aa1e7a675ff9431c28947e6cbebb711c205845955e654"
+    },
+    {
+      "path": "页面观察/06-读取错误与输入保留-original-390x844.json",
+      "bytes": 14971,
+      "sha256": "dfe2b23f70047a7205214038e8be716bbc16b9b94de3b403b6b2502e8fc8a002"
+    },
+    {
+      "path": "页面观察/40幅采用视口索引.json",
+      "bytes": 21763,
+      "sha256": "1a5cf82f67895290dcb29c24451a1429be50f9e7934c73688b9e34eb1417054e"
+    },
+    {
+      "path": "页面观察/download-native-v1.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97"
+    },
+    {
+      "path": "页面观察/GET-broken.pdf",
+      "bytes": 40,
+      "sha256": "6508275182d1f6c8b3db3b5644622e29241ed00030c53b461c5ea22924daa40a"
+    },
+    {
+      "path": "页面观察/GET-native-v2.pdf",
+      "bytes": 5247,
+      "sha256": "38fdcd25043aa2752a29b4592ba9f1e1d2b90177acd017611667269f3aa8ee16"
+    },
+    {
+      "path": "页面观察/GET-observation-完整回执.json",
+      "bytes": 766,
+      "sha256": "ced3979f549d004c5d03729805ccb0cd3b10cf2afbed7315f01bcd264096002c"
+    },
+    {
+      "path": "页面观察/GET-observation.json",
+      "bytes": 153453,
+      "sha256": "170e9c80b0d61c33c21e64a66487097f35fef6f47ebb3993ceec2b0793e86396"
+    },
+    {
+      "path": "页面观察/GET-scan-v1.pdf",
+      "bytes": 141952,
+      "sha256": "02f870076bf49f10f799bf89abfcf4e95490ace786921fa88d18b72dc8579403"
+    },
+    {
+      "path": "页面观察/GET-三个原件-完整回执.json",
+      "bytes": 2377,
+      "sha256": "1e42ef637736d9659c4ff379d1d739f1bc8d5e7a675c38f48c97ff4ca5678370"
+    },
+    {
+      "path": "页面观察/Home-失败笔记窄屏-实际.json",
+      "bytes": 30588,
+      "sha256": "be55b58a85acd7f70bdba7b9096e8741b6c26a0a5aa5d745f553d348e77ad9cb"
+    },
+    {
+      "path": "页面观察/Home工具边界.json",
+      "bytes": 516,
+      "sha256": "14b2c7425f0d03b4181e86776854556cab340647322e0a440a12e0b5961f193b"
+    },
+    {
+      "path": "页面观察/JSON下载工具等待超时.json",
+      "bytes": 333,
+      "sha256": "ead1d6ad504d43d93574bcd5c92059f5543b2656a2a7458d00d87c248248d08e"
+    },
+    {
+      "path": "页面观察/service.stderr.txt",
+      "bytes": 2454,
+      "sha256": "c7b7d945f05ce5926fe0caf38ef82a30fa1724b4f15f40176028a09be9a9be1f"
+    },
+    {
+      "path": "页面观察/service.stdout.txt",
+      "bytes": 66,
+      "sha256": "e2f46a5938709272dc916dc588844ac6166833b14f5c15361e59c459b3dc1b35"
+    },
+    {
+      "path": "页面观察/实际下载索引.json",
+      "bytes": 383,
+      "sha256": "27d8aadfd8ec884a59285d98c467b21b1cdbfc11cc34636a6eba34a4897bf38a"
+    },
+    {
+      "path": "页面观察/截图与状态索引.json",
+      "bytes": 230932,
+      "sha256": "7d923fe038ef4304f39076683004fbc2d2cd486967c3d934fbd5123745af0320"
+    },
+    {
+      "path": "页面观察/截图第二完整页超时.json",
+      "bytes": 305,
+      "sha256": "90ece4679471f8c30871b2fb2febe67983c1bccfbc5a45d921de9c61ed324b7c"
+    },
+    {
+      "path": "页面观察/截图记录函数全文.js",
+      "bytes": 9603,
+      "sha256": "4d4cd412be89bc1b85dfdb37ffc92f5aa69d7135d13542cc568470934a2ec210"
+    },
+    {
+      "path": "页面观察/截图首次完整页超时.json",
+      "bytes": 416,
+      "sha256": "9b469b9d0a1996de7194f894a8c9f8d1cb273866b2ae7e6d7302c7174ab62617"
+    },
+    {
+      "path": "页面观察/扫描PDF下载工具等待超时.json",
+      "bytes": 297,
+      "sha256": "6bce384e7493022fe493fc167950d83898f8f6a1553f8c5fa0017fa5ec0a3d6a"
+    },
+    {
+      "path": "页面观察/服务与原页像素.json",
+      "bytes": 1161,
+      "sha256": "f119d41780d28dd29373b5fba63312f76f3eda2b637112f780c9e15dd271213b"
+    },
+    {
+      "path": "页面观察/服务完整退出与HTTP边界.json",
+      "bytes": 661,
+      "sha256": "1dad901714f10b38349f2fa465e709d4507cd3ab5517932d1db67681addcd6b7"
+    },
+    {
+      "path": "页面观察/未完四组末段-04-扫描缺页与原页-original-390x844.jpg",
+      "bytes": 25824,
+      "sha256": "27a04be8be06e11918c25521960ab94b57b4a903d20defde0951a53787876af6"
+    },
+    {
+      "path": "页面观察/未完四组末段-04-扫描缺页与原页-original-390x844.json",
+      "bytes": 255943,
+      "sha256": "4ed2894936ee8e9463809f2549ad9f3a7072cb01757c95b805b228c132391d10"
+    },
+    {
+      "path": "页面观察/未完四组末段-06-读取错误与输入保留-desk-390x844.jpg",
+      "bytes": 42307,
+      "sha256": "4ac4efed7703bf5413b03dd54ae26ef43ae7114a93c9882842d3bcdc0b7bb321"
+    },
+    {
+      "path": "页面观察/未完四组末段-06-读取错误与输入保留-desk-390x844.json",
+      "bytes": 30765,
+      "sha256": "c2e933b0c15452946c0dd40721e43769ffed67663069a7b932897c389a3c6894"
+    },
+    {
+      "path": "页面观察/未完四组末段-06-读取错误与输入保留-notes-1280x900.jpg",
+      "bytes": 66377,
+      "sha256": "e895789278f9d05cfce6bef248d9acae60345b0765adc91d931db514d88d7d8e"
+    },
+    {
+      "path": "页面观察/未完四组末段-06-读取错误与输入保留-notes-1280x900.json",
+      "bytes": 30853,
+      "sha256": "fe3352f70a7d3601dffb0ae74e16a918060e607fed6886e21cb3e93c1050157f"
+    },
+    {
+      "path": "页面观察/未完四组末段-06-读取错误与输入保留-notes-390x844.jpg",
+      "bytes": 41842,
+      "sha256": "8a7388ffb9e9be8444ba42e3513c85ed37f2ede87a61829411da8ba99a2b751e"
+    },
+    {
+      "path": "页面观察/未完四组末段-06-读取错误与输入保留-notes-390x844.json",
+      "bytes": 30769,
+      "sha256": "4194ebf6a33187e361dbde6d26174dd58d2923508cecec9febc2edf6a7d7ccf4"
+    },
+    {
+      "path": "页面观察/本标签实际控制台.json",
+      "bytes": 220,
+      "sha256": "ae7a8e869e572b11325d213e05383ab3faaba83aa08119b4748c698a2b1d6a75"
+    },
+    {
+      "path": "页面观察/浏览器入口.json",
+      "bytes": 292,
+      "sha256": "f7ddb247004d41bbea5b294172ae81b1860484f0b7140b03c486bb238e164870"
+    },
+    {
+      "path": "页面观察/浏览器结束前完整字段.json",
+      "bytes": 14991,
+      "sha256": "116cfbfaf98a68dae907a2cbfb6899a3a5719f0340162257e5f9989be370b398"
+    },
+    {
+      "path": "页面观察/滚动未推进后直接UI滚动观察.json",
+      "bytes": 301,
+      "sha256": "b5c7a2470ded5ce185e5138beabdb2ed85d41529c7decdea1076046c337e1045"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-desk-1280x900.jpg",
+      "bytes": 81554,
+      "sha256": "1c3e70a552d682b060ba25db59fd5f1ceaa76b5a36b1e11b19688a8db2f73d57"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-desk-1280x900.json",
+      "bytes": 389717,
+      "sha256": "6026d1c9285a15ad7666eeac411d717d69cc77d0be8ad9eead755ae15742877e"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-desk-390x844.jpg",
+      "bytes": 32855,
+      "sha256": "5813ec99c8a28088808b9550ff80083fe6d998c859409adcd6b8717245b3ebce"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-desk-390x844.json",
+      "bytes": 389763,
+      "sha256": "da07c726fb2339a778703432a0b6b61e3323875c55a3a604f4066f4952b9a0bc"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-notes-1280x900.jpg",
+      "bytes": 57146,
+      "sha256": "a6593a85dbca9f089ba506dc525ca6b2c2a8bece404d2c870b34c199ad9874f8"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-notes-1280x900.json",
+      "bytes": 389753,
+      "sha256": "e1575e419cf82f37f46f92bcf80b78323acae4e10ea8aca122ed5fdb315de689"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-notes-390x844.jpg",
+      "bytes": 30156,
+      "sha256": "746b1e1a274f2585408dae8697735c8f4e79472c7a338023460e4d68528775e4"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-notes-390x844.json",
+      "bytes": 389713,
+      "sha256": "dd3dbfa7e9705b466d61826991e3913f574918c3f61e7bc84c72e6f054aa6f31"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-original-1280x900.json",
+      "bytes": 389787,
+      "sha256": "f1c6bb265a8019dc00c782bbfbcfcd605b0fc1959c67848a6d9ad271e7fe0d7b"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-original-390x844.jpg",
+      "bytes": 32932,
+      "sha256": "e68fdee4557a080b3e5e534e677b0e151bd287edf77fb93648248626447999ac"
+    },
+    {
+      "path": "页面观察/稳定主工作区-01-完整三页-original-390x844.json",
+      "bytes": 389779,
+      "sha256": "c71f0b80304e9ae01f0d737415db6309d7612aa8ed3d9f72e5774e82bac2eb5c"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-desk-1280x900.jpg",
+      "bytes": 84794,
+      "sha256": "74fc4c03462efe24dc4c149af50edb5a4a937efc7b955ca46fee5ffeceeaa509"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-desk-1280x900.json",
+      "bytes": 392639,
+      "sha256": "8dc4af5cad602e4fc7a7c7d024d0460c5d51c7045772486b430d3144a1df7a0c"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-desk-390x844.jpg",
+      "bytes": 31995,
+      "sha256": "ba6ebe5fca385ad1a08d0b25645302156cc8cf017c9e840f9750f56927f96186"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-desk-390x844.json",
+      "bytes": 392659,
+      "sha256": "eea08acae9569d510a1cfb4081007c253c234f1addd63c018289402d1db4ab24"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-notes-1280x900.jpg",
+      "bytes": 50502,
+      "sha256": "9905342d78e2466874175f566a2d0a904f37a98b656099ba402251ad6a3b9798"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-notes-1280x900.json",
+      "bytes": 392705,
+      "sha256": "6d94bf1e37a4fdc6c615ef9013e9b6f20e35b1a2fe447ae3fa7dc86d33a82916"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-notes-390x844.jpg",
+      "bytes": 31087,
+      "sha256": "a3fa077b2de4c56d9fa623af50b04ba15e0632047b0eddd1be1e19de51f2ee9a"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-notes-390x844.json",
+      "bytes": 392649,
+      "sha256": "4ae6aac9905952f386f44b831aae1e235983770a21a1bbe3688fd88c84d9c693"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-original-1280x900.jpg",
+      "bytes": 84886,
+      "sha256": "ac40caa028a541998f85288653222a05d9f2af2b5d3bce7f872504d774866725"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-original-1280x900.json",
+      "bytes": 392709,
+      "sha256": "1dd1ffd2d205d081b8d8d82fe73a60b585a692e5d477e54456862c4d05cef2da"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-original-390x844.jpg",
+      "bytes": 32011,
+      "sha256": "cd086b31e5a58ec7e4bb24510830a14d22e71dc17ca3b95bfebd8d333b89930f"
+    },
+    {
+      "path": "页面观察/稳定主工作区-02-否定句命中原页-original-390x844.json",
+      "bytes": 392705,
+      "sha256": "d8c3eb38a4cd2e0022b818f16ac17c2e9f633e2abde5a3f0f3f96e71b7d11065"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-desk-1280x900.jpg",
+      "bytes": 84600,
+      "sha256": "45fc5d2b52d13545f62ed7e7c5731ff5ce7b7f1e0e2639818f92b88b78a331d7"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-desk-1280x900.json",
+      "bytes": 503125,
+      "sha256": "a2671aff71f15dc03870ac0d9a373127a8a4cd8c62fe2851f4b737a42faf9539"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-desk-390x844.jpg",
+      "bytes": 31877,
+      "sha256": "9eff2ccba89f7f501f25e12d051fdbdb369b6f8fbf79e50ca0f49da25349053a"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-desk-390x844.json",
+      "bytes": 503145,
+      "sha256": "2df0a7766287638982914407cb6f491452a718c0d675cf6ce85d8aa3de8e213f"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-notes-1280x900.jpg",
+      "bytes": 50206,
+      "sha256": "6285480ac859923ebab195d36dc799ea0933a7b99329104a11ba6354d31b5156"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-notes-1280x900.json",
+      "bytes": 503191,
+      "sha256": "af52c9c3350be0d9984ec146aee3641777c6ceffe5ed2c323bba8f43efc2e229"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-notes-390x844.jpg",
+      "bytes": 30950,
+      "sha256": "15abd5b64ab9e9663da00416e9c3078de3d81df372a3d60b278d2d893fe41067"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-notes-390x844.json",
+      "bytes": 503135,
+      "sha256": "da35e1deb0b1558f1034771aa27f75faca7f19f917def2e74b56a4f5b6c8ab56"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-original-1280x900.jpg",
+      "bytes": 84585,
+      "sha256": "08ee289d78ba4671531d65ecb04a96275634dabef527edf4d91a358faa0dfebb"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-original-1280x900.json",
+      "bytes": 503195,
+      "sha256": "7bde058442f2cdd8cf806eb4e985d00b24b2586d3b694205a6f1f53584718674"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-original-390x844.jpg",
+      "bytes": 31798,
+      "sha256": "a099acc6fdc0e9430b18a9bf6e284a8d7c29f1b489ea3ada72594e3787b6e394"
+    },
+    {
+      "path": "页面观察/稳定主工作区-03-完整记录展开-original-390x844.json",
+      "bytes": 503191,
+      "sha256": "e1eccfd465b3018b93dc3eada235d6e5ae390bbbe1073f49d71e646da19b73a4"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-desk-1280x900.jpg",
+      "bytes": 92471,
+      "sha256": "77c28871c81b4d90422b8b4a2c5d31a979d751ed829b4be461ef29b758e49521"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-desk-1280x900.json",
+      "bytes": 255725,
+      "sha256": "ffef2e4326bff5ae5b55c356d268a4b80c3dbd4daa52341a2d7ba66a2c9bb5c9"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-desk-390x844.jpg",
+      "bytes": 32550,
+      "sha256": "4c61b9ef01712997391c396451e6d177a070357582b100223ecaefd6881113ed"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-desk-390x844.json",
+      "bytes": 255767,
+      "sha256": "dae9388fc1e5d064a76d1863aad9e3ad632afa6aab63e096cd1632610f59ebcb"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-notes-1280x900.jpg",
+      "bytes": 59128,
+      "sha256": "df4c39c8ee1b7af85ab294e168df5383c1fb9bf3e191ebb21084a17998b0ef9a"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-notes-1280x900.json",
+      "bytes": 255767,
+      "sha256": "26195b0ffb61ba117a0d5c8990088a9426aed5ee063d65015be08ffea5f98853"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-notes-390x844.jpg",
+      "bytes": 32513,
+      "sha256": "9148eb97e7d57a1f85d8200bb0f8d608689c0d79fff8fb5f86e93ff143896266"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-notes-390x844.json",
+      "bytes": 255717,
+      "sha256": "7c71cfc0030b7edd0e60983161b2df52cd81f6cba114b3e91102a872ef293b6c"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-original-1280x900.jpg",
+      "bytes": 96777,
+      "sha256": "f5d34f60af833d898f3f1973e972147611465e86e70ba70272126e089139b537"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-original-1280x900.json",
+      "bytes": 255795,
+      "sha256": "ce34509024577ba0fde7e053f5e815f6175c84b2b861d169e27c21429f007383"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-original-390x844.jpg",
+      "bytes": 32582,
+      "sha256": "9df74eb6b6e99d8619aa2ecc17e8fe9a8985038da8b2da817e0a278b380ade6d"
+    },
+    {
+      "path": "页面观察/稳定主工作区-04-扫描缺页与原页-original-390x844.json",
+      "bytes": 255783,
+      "sha256": "0d3343b1fe68ff1f8520958adaa7861cdae01b806935639f008bb043bbd16098"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-desk-1280x900.jpg",
+      "bytes": 78354,
+      "sha256": "056c3a983ae8ef12aa675abc516895b8f2cc69fa54316e0a6c8f08c9a1362372"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-desk-1280x900.json",
+      "bytes": 393893,
+      "sha256": "151849f796a8cfc9f80570c1810f4a15a694a1264729c509a922049ab3210292"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-desk-390x844.jpg",
+      "bytes": 34331,
+      "sha256": "4f33f18088f55dfdd6d631d65a0437c83cd9a251a86f806c096542ec0eebddf0"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-desk-390x844.json",
+      "bytes": 393913,
+      "sha256": "47dc29d937294cfc7c073d1ca4a67723167286825447be5a8ac4e7552fabff2f"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-notes-1280x900.jpg",
+      "bytes": 52665,
+      "sha256": "792b72b63b6b975b8ebcb3dbdff950a3bbf8e566c6414c160e67ed24b9136bdb"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-notes-1280x900.json",
+      "bytes": 393959,
+      "sha256": "4648f810590ba94bcb7f18997254ab4d9662f5ae4ea2f3a1984170207b1caa90"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-notes-390x844.jpg",
+      "bytes": 33759,
+      "sha256": "d19fbc6cdc1cf6d87928d6007e41fc4bb736c4d668f5d6fe77551ea4d5a52707"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-notes-390x844.json",
+      "bytes": 393903,
+      "sha256": "47273c5c0231a0e2c17c0478433bafb13534682ce40ea74a298fa253757d7120"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-original-1280x900.jpg",
+      "bytes": 78703,
+      "sha256": "a43797b093689a32b829e5d274be00bd309e0cbcbe11517368bb194a0699a3c9"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-original-1280x900.json",
+      "bytes": 393963,
+      "sha256": "b70b4962230b40bf72c1454241cb97f32724b93f178d12bd133154efe096bedb"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-original-390x844.jpg",
+      "bytes": 34368,
+      "sha256": "c66740d39b211d0b4806cd290de367ebde080362a6b8ae5cc88bfdb67e0588aa"
+    },
+    {
+      "path": "页面观察/稳定主工作区-05-新版本便签与原页-original-390x844.json",
+      "bytes": 393959,
+      "sha256": "08faad90558e1f2fdf70dcc47e46c7a903b9e1216fb645f9e646a3b70b46d890"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-desk-1280x900.jpg",
+      "bytes": 66631,
+      "sha256": "b69bcdd3e3d91e1126e0c9fbd01390ae187dedc9a2c6394a44158420243fcae4"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-desk-1280x900.json",
+      "bytes": 30495,
+      "sha256": "d583979fb43ad20b895633d0d5bebdbe454b5c09447ce35c18ba89df8f06d580"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-desk-390x844.jpg",
+      "bytes": 33798,
+      "sha256": "f00605c10c12b4a7fa55c498c493588512d7762a4a1b233e19a829678b166d5e"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-desk-390x844.json",
+      "bytes": 30501,
+      "sha256": "ab81cfc3891d888651043671252fbba7b29310b8614a9c028bca5d067e6bb284"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-notes-1280x900.jpg",
+      "bytes": 54065,
+      "sha256": "c1650bb35f3d4550274dd060752545310d3ce445f1847998c83c0c38e4ffdb65"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-notes-1280x900.json",
+      "bytes": 30569,
+      "sha256": "214fdb5e2f59915152bd147d705cb4c275aa940670889c699fb6cf812ed8e97f"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-notes-390x844.jpg",
+      "bytes": 33830,
+      "sha256": "8ee2bffa6e284e8fa58ffbfd2f4283a1ab1de12eb1ca1b9d761a2a066838ea51"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-notes-390x844.json",
+      "bytes": 30507,
+      "sha256": "226ceb730043477c6842dbd7b2bcada74a8b46dc0e8783c4b27253b4b30507e9"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-original-1280x900.jpg",
+      "bytes": 67596,
+      "sha256": "1f921468184ac9b6081beac581be446b2e6547d1bbff385f5c3aa0396d7d113c"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-original-1280x900.json",
+      "bytes": 30529,
+      "sha256": "59284ffca80856bd6325631f955af6eaef013f54ce3e00bbd458e8ef6bca0029"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-original-390x844.jpg",
+      "bytes": 33849,
+      "sha256": "f5ca07406b6ec65c783efe7c322bb7f56f43347e13af93088ff65d78b5434897"
+    },
+    {
+      "path": "页面观察/稳定主工作区-06-读取错误与输入保留-original-390x844.json",
+      "bytes": 30479,
+      "sha256": "ab9db9c68b19497c870a053b3448d90639f0df1f1e8ce45d8bc9d5cdfd8146df"
+    },
+    {
+      "path": "页面观察/稳定主工作区索引.json",
+      "bytes": 22694,
+      "sha256": "2beec020248467d32699f5f248a87f29dbbf6b799e264356b5ebd727dfc79988"
+    },
+    {
+      "path": "页面观察/稳定补正-01-完整三页-original-1280x900.jpg",
+      "bytes": 85261,
+      "sha256": "33cf9bb6279080bbb56a6a6f483c3b3a05c9fe4e44c6ad79b73532ac1fd177b7"
+    },
+    {
+      "path": "页面观察/稳定补正-01-完整三页-original-1280x900.json",
+      "bytes": 194409,
+      "sha256": "1ee1a5df53ef3b5de488ba4d5bd7affc9ce242f3d3b0ca9c54d98ca8116a739d"
+    },
+    {
+      "path": "页面观察/稳定首幅方向不符-保留.json",
+      "bytes": 429,
+      "sha256": "91933d26b576a5a872edebcb51b94c121dadc34f7388536e52b7aa5db32be065"
+    },
+    {
+      "path": "页面观察/资料选择器精确标签匹配失败.json",
+      "bytes": 267,
+      "sha256": "2be2036fb86802041ad7b62d5b296101ebdea7afdc83de75ae7aa0f898459917"
+    }
+  ],
+  "manifestExcludesItself": true
+}

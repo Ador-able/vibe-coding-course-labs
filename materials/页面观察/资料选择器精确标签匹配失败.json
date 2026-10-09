@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-04T12:19:09.032Z",
+  "action": "getByLabel(\"资料版本\",exact:true).selectOption(\"scan-v1\")",
+  "result": "no_matches",
+  "scope": "自动化定位器未匹配；实际#fixture仍存在，未改变资料选择",
+  "actualFixture": "fixture"
+}

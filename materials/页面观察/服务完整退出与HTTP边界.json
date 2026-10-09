@@ -1,0 +1,26 @@
+{
+  "beforeStop": {
+    "pid": 34708,
+    "path": "D:\\Software\\Conda\\python.exe",
+    "startTimeUtc": "2026-10-04T12:04:47.1990571Z",
+    "tcpOwner": 34708,
+    "workingSet64": 22249472,
+    "threads": 1
+  },
+  "endedAt": "2026-10-04T12:39:07.7153366Z",
+  "method": "Stop-Process，仅本章Start-Process启动的无TTY只读静态进程；非CtrlC",
+  "actualExitCode": null,
+  "ownProcessExited": true,
+  "remaining4344Listeners": 0,
+  "methodCounts": [
+    {
+      "Name": "GET",
+      "Count": 22
+    }
+  ],
+  "sdkOrModelCalls": 0,
+  "PDFReadCalls": 0,
+  "OCRCalls": 0,
+  "businessWrites": 0,
+  "sharedConfigurationWrites": 0
+}

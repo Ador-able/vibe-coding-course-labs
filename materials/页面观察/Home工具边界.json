@@ -1,0 +1,11 @@
+{
+  "at": "2026-10-04T12:33:01.254Z",
+  "nativeKey": "ctrl+Home",
+  "result": "后续只读位置到0，但紧接截屏仍是旧底部画面",
+  "bodyPress": {
+    "command": "locator(body).press(Control+Home)",
+    "error": "Playwright selector deadline exceeded",
+    "scope": "自动化控件键盘入口失败；不当页面保存/解析错误"
+  },
+  "stabilization": "只在普通滚动后等待500ms结束已观察的回弹；不模拟PDF/模型时间；每组合补一张主工作区，不复拍全长JSON"
+}
