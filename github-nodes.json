@@ -1,0 +1,789 @@
+[
+  {
+    "order": 11,
+    "unitKey": "vcm-03-05",
+    "title": "渐进式信息披露",
+    "start": "vcm-03-05-start",
+    "end": "vcm-03-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 18,
+    "unitKey": "vcm-06-01",
+    "title": "让 AI 通过工具获取信息和执行操作",
+    "start": "vcm-06-01-start",
+    "end": "vcm-06-01-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 19,
+    "unitKey": "vcm-06-02",
+    "title": "工具结果怎样让 Agent 继续行动",
+    "start": "vcm-06-02-start",
+    "end": "vcm-06-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 20,
+    "unitKey": "vcm-06-03",
+    "title": "按任务选择工作流、Agent 或混合方式",
+    "start": "vcm-06-03-start",
+    "end": "vcm-06-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 21,
+    "unitKey": "vcm-06-04",
+    "title": "人的决定怎样改变 Agent 下一步",
+    "start": "vcm-06-04-start",
+    "end": "vcm-06-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [
+      "project/approval-lab"
+    ],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 22,
+    "unitKey": "vcm-06-05",
+    "title": "Agent 何时继续、求助或停下",
+    "start": "vcm-06-05-start",
+    "end": "vcm-06-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 24,
+    "unitKey": "vcm-12-02",
+    "title": "AI 何时查资料，何时问我们",
+    "start": "vcm-12-02-start",
+    "end": "vcm-12-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 25,
+    "unitKey": "vcm-12-03",
+    "title": "让人看得懂，才能作出决定",
+    "start": "vcm-12-03-materials",
+    "end": "vcm-12-03-materials",
+    "sourceDirectory": null,
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课提供完整课堂材料，不需要安装或运行项目。"
+  },
+  {
+    "order": 26,
+    "unitKey": "vcm-12-04",
+    "title": "人纠正以后，AI 要沿新方向继续",
+    "start": "vcm-12-04-start",
+    "end": "vcm-12-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 27,
+    "unitKey": "vcm-12-05",
+    "title": "人的反馈怎样改进 AI 的工作",
+    "start": "vcm-12-05-materials",
+    "end": "vcm-12-05-materials",
+    "sourceDirectory": null,
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课提供完整课堂材料，不需要安装或运行项目。"
+  },
+  {
+    "order": 28,
+    "unitKey": "vcm-08-07",
+    "title": "从 ChatCut 看插件驱动的软件范式",
+    "start": "vcm-08-07-start",
+    "end": "vcm-08-07-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 29,
+    "unitKey": "vcm-08-08",
+    "title": "使用现成插件，让 AI 接入已有工作系统",
+    "start": "vcm-08-08-start",
+    "end": "vcm-08-08-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 30,
+    "unitKey": "vcm-08-01",
+    "title": "MCP 怎样把宿主接到能力服务",
+    "start": "vcm-08-01-start",
+    "end": "vcm-08-01-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 31,
+    "unitKey": "vcm-08-03",
+    "title": "按需要使用工具、资源和提示模板",
+    "start": "vcm-08-03-start",
+    "end": "vcm-08-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 32,
+    "unitKey": "vcm-08-02",
+    "title": "做一个能真实调用的简单 MCP 服务",
+    "start": "vcm-08-02-start",
+    "end": "vcm-08-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 33,
+    "unitKey": "vcm-08-04",
+    "title": "用 Skill 复用方法、资料和脚本",
+    "start": "vcm-08-04-start",
+    "end": "vcm-08-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 34,
+    "unitKey": "vcm-08-05",
+    "title": "把简单服务与 Skill 组成一个可用插件",
+    "start": "vcm-08-05-start",
+    "end": "vcm-08-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课共用请求观察室保存的模型设置。"
+  },
+  {
+    "order": 35,
+    "unitKey": "vcm-08-06",
+    "title": "用 Hook 接通自动检查",
+    "start": "vcm-08-06-start",
+    "end": "vcm-08-06-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 36,
+    "unitKey": "vcm-09-09",
+    "title": "把有效的反馈流程复用起来",
+    "start": "vcm-09-09-start",
+    "end": "vcm-09-09-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-09-09-ready"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 39,
+    "unitKey": "vcm-15-05",
+    "title": "用原型验证真正未知的事",
+    "start": "vcm-15-05-start",
+    "end": "vcm-15-05-waiting-verified",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-15-05-end"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 40,
+    "unitKey": "vcm-15-02",
+    "title": "把大任务拆成可验收的阶段",
+    "start": "vcm-15-02-materials",
+    "end": "vcm-15-02-materials",
+    "sourceDirectory": null,
+    "materialsDirectory": "materials",
+    "sourceSnapshotsDirectory": "source-snapshots",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课提供完整课堂材料，不需要安装或运行项目。"
+  },
+  {
+    "order": 41,
+    "unitKey": "vcm-15-03",
+    "title": "跨会话推进同一个任务",
+    "start": "vcm-15-03-start",
+    "end": "vcm-15-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 42,
+    "unitKey": "vcm-15-04",
+    "title": "根据结果调整计划",
+    "start": "vcm-15-04-start",
+    "end": "vcm-15-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 43,
+    "unitKey": "vcm-14-01",
+    "title": "何时使用子代理",
+    "start": "vcm-14-01-start",
+    "end": "vcm-14-01-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 44,
+    "unitKey": "vcm-14-02",
+    "title": "把任务交给子代理",
+    "start": "vcm-14-02-start",
+    "end": "vcm-14-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 45,
+    "unitKey": "vcm-14-03",
+    "title": "并行工作如何汇总",
+    "start": "vcm-14-03-start",
+    "end": "vcm-14-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 46,
+    "unitKey": "vcm-07-01",
+    "title": "接上成熟 Harness，跑通 Agent 的最小版本",
+    "start": "vcm-07-01-start",
+    "end": "vcm-07-01-complete",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-07-01-end"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 47,
+    "unitKey": "vcm-07-02",
+    "title": "为 Agent 接好规则、资料与任务上下文",
+    "start": "vcm-07-02-start",
+    "end": "vcm-07-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 48,
+    "unitKey": "vcm-07-07",
+    "title": "让 Agent 组合使用工具与 Skill 完成任务",
+    "start": "vcm-07-07-start",
+    "end": "vcm-07-07-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 49,
+    "unitKey": "vcm-07-03",
+    "title": "让 Agent 用工具产生真实改动",
+    "start": "vcm-07-03-start",
+    "end": "vcm-07-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-07-03-B-start",
+      "vcm-07-03-C-start"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 50,
+    "unitKey": "vcm-07-06",
+    "title": "接住命令的运行、等待和停止状态",
+    "start": "vcm-07-06-start",
+    "end": "vcm-07-06-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-07-06-command-base"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 51,
+    "unitKey": "vcm-07-04",
+    "title": "让 Agent 根据检查结果修正并完成任务",
+    "start": "vcm-07-04-start",
+    "end": "vcm-07-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-07-04-zero-model-prepared"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 52,
+    "unitKey": "vcm-07-05",
+    "title": "接续 Agent 会话并核对真实业务状态",
+    "start": "vcm-07-05-start",
+    "end": "vcm-07-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 53,
+    "unitKey": "vcm-07-08",
+    "title": "把人的参与与完整交付接进 Agent",
+    "start": "vcm-07-08-start",
+    "end": "vcm-07-08-delivered",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-07-08-review-start",
+      "vcm-07-08-end"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 54,
+    "unitKey": "vcm-04-00",
+    "title": "模型接口：从文本补全到 Responses",
+    "start": "vcm-04-00-materials",
+    "end": "vcm-04-00-materials",
+    "sourceDirectory": null,
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课提供完整课堂材料，不需要安装或运行项目。"
+  },
+  {
+    "order": 55,
+    "unitKey": "vcm-04-01",
+    "title": "结构化输出还需要程序检查",
+    "start": "vcm-04-01-materials",
+    "end": "vcm-04-01-materials",
+    "sourceDirectory": null,
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课提供完整课堂材料，不需要安装或运行项目。"
+  },
+  {
+    "order": 56,
+    "unitKey": "vcm-04-02",
+    "title": "流式输出是一串有顺序的事件",
+    "start": "vcm-04-02-materials",
+    "end": "vcm-04-02-materials",
+    "sourceDirectory": null,
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课提供完整课堂材料，不需要安装或运行项目。"
+  },
+  {
+    "order": 57,
+    "unitKey": "vcm-04-03",
+    "title": "页面消息、模型消息和数据库记录不同",
+    "start": "vcm-04-03-start",
+    "end": "vcm-04-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 58,
+    "unitKey": "vcm-04-04",
+    "title": "取消、超时和失败需要不同处理",
+    "start": "vcm-04-04-start",
+    "end": "vcm-04-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 59,
+    "unitKey": "vcm-05-01",
+    "title": "文件内容先变成可追溯的资料",
+    "start": "vcm-05-01-start",
+    "end": "vcm-05-01-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 60,
+    "unitKey": "vcm-05-02",
+    "title": "切块要保留一段话的完整意思",
+    "start": "vcm-05-02-start",
+    "end": "vcm-05-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 61,
+    "unitKey": "vcm-05-03",
+    "title": "关键词和向量检索可以一起用",
+    "start": "vcm-05-03-start",
+    "end": "vcm-05-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 62,
+    "unitKey": "vcm-05-04",
+    "title": "答案要对应资料，更新要替换旧内容",
+    "start": "vcm-05-04-start",
+    "end": "vcm-05-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 63,
+    "unitKey": "vcm-05-05",
+    "title": "分别检查资料、检索和回答",
+    "start": "vcm-05-05-start",
+    "end": "vcm-05-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 64,
+    "unitKey": "vcm-10-02",
+    "title": "长文分段后怎样保留整体关系",
+    "start": "vcm-10-02-start",
+    "end": "vcm-10-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [
+      "project/long-text",
+      "project/scripts"
+    ],
+    "extraNodes": [],
+    "note": "本课共用请求观察室保存的模型设置。"
+  },
+  {
+    "order": 65,
+    "unitKey": "vcm-10-03",
+    "title": "批量分类先统一标签口径",
+    "start": "vcm-10-03-start",
+    "end": "vcm-10-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [
+      "project/batch-labels",
+      "project/scripts"
+    ],
+    "extraNodes": [],
+    "note": "本课共用请求观察室保存的模型设置。"
+  },
+  {
+    "order": 66,
+    "unitKey": "vcm-10-04",
+    "title": "抽取数据要核对字段和统计分母",
+    "start": "vcm-10-04-start",
+    "end": "vcm-10-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [
+      "project/extract-fields",
+      "project/scripts"
+    ],
+    "extraNodes": [],
+    "note": "本课共用请求观察室保存的模型设置。"
+  },
+  {
+    "order": 67,
+    "unitKey": "vcm-10-05",
+    "title": "批量执行要保存每一项的状态",
+    "start": "vcm-10-05-start",
+    "end": "vcm-10-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [
+      "project/item-feedback",
+      "project/scripts"
+    ],
+    "extraNodes": [
+      "course-item-feedback-configured-05"
+    ],
+    "note": "本课共用请求观察室保存的模型设置。"
+  },
+  {
+    "order": 68,
+    "unitKey": "vcm-10-06",
+    "title": "提示模板变化后怎样验证整个任务",
+    "start": "vcm-10-06-start",
+    "end": "vcm-10-06-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [
+      "project/template-comparison",
+      "project/scripts"
+    ],
+    "extraNodes": [],
+    "note": "本课共用请求观察室保存的模型设置。"
+  },
+  {
+    "order": 69,
+    "unitKey": "vcm-11-01",
+    "title": "先画清一条业务流程的数据去向",
+    "start": "vcm-11-01-start",
+    "end": "vcm-11-01-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 70,
+    "unitKey": "vcm-11-02",
+    "title": "账号授权和回调地址怎样配合",
+    "start": "vcm-11-02-start",
+    "end": "vcm-11-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 71,
+    "unitKey": "vcm-11-03",
+    "title": "文件编号、文件内容和提取文字不同",
+    "start": "vcm-11-03-start",
+    "end": "vcm-11-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 72,
+    "unitKey": "vcm-11-04",
+    "title": "创建业务记录要接好前一步的 ID",
+    "start": "vcm-11-04-start",
+    "end": "vcm-11-04-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 73,
+    "unitKey": "vcm-11-05",
+    "title": "Webhook 的收到、完成和通知分开",
+    "start": "vcm-11-05-start",
+    "end": "vcm-11-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 75,
+    "unitKey": "vcm-11-07",
+    "title": "分支和子流程怎样保留完整任务信息",
+    "start": "vcm-11-07-start",
+    "end": "vcm-11-07-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 76,
+    "unitKey": "vcm-11-08",
+    "title": "把业务流程交给真实使用者验收",
+    "start": "vcm-11-08-start",
+    "end": "vcm-11-08-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 77,
+    "unitKey": "vcm-09-07",
+    "title": "先调查已有项目，再交给 AI 修改",
+    "start": "vcm-09-07-start",
+    "end": "vcm-09-07-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 78,
+    "unitKey": "vcm-09-06",
+    "title": "用 AGENTS.md 说明项目规则",
+    "start": "vcm-09-06-start",
+    "end": "vcm-09-06-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 79,
+    "unitKey": "vcm-09-02",
+    "title": "测试先证明问题真的存在",
+    "start": "vcm-09-02-start",
+    "end": "vcm-09-02-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "course-test-saving-known-fix"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 80,
+    "unitKey": "vcm-09-03",
+    "title": "核实代码评审指出的真实问题",
+    "start": "vcm-09-03-start",
+    "end": "vcm-09-03-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "vcm-09-03-known-fix",
+      "vcm-09-03-old"
+    ],
+    "note": "本课沿用同一份源码，运行结果另存。"
+  },
+  {
+    "order": 81,
+    "unitKey": "vcm-09-05",
+    "title": "把经过验证的改动交付出去",
+    "start": "vcm-09-05-start",
+    "end": "vcm-09-05-end",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [
+      "course-vcm-09-05-old"
+    ],
+    "note": "从起点练习，完成点用于对照。"
+  },
+  {
+    "order": 82,
+    "unitKey": "vcm-13-01",
+    "title": "验收自己的 Agent，迁移到新的任务",
+    "start": "vcm-13-01-start",
+    "end": "vcm-13-01-prepared",
+    "sourceDirectory": "project",
+    "materialsDirectory": "materials",
+    "additionalSources": [],
+    "extraNodes": [],
+    "note": "完成节点只提供代码与材料准备，故事需要自己运行并验收。"
+  }
+]
