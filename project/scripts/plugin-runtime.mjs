@@ -10,6 +10,8 @@ export async function pluginRuntime(root){
   try{skills=JSON.parse(await readFile(resolve(root,'runs/skill-isolation.json'),'utf8')).entries;}
   catch(error){if(error.code!=='ENOENT')throw error;}
   const quote=value=>JSON.stringify(value);
+  // Windows 信任键保留原生反斜杠；覆盖只属于本次进程。
+  const trustKey=resolve(root).replace(/[A-Z]/g,value=>value.toLowerCase());
   const overrides=[
     `marketplaces.${settings.marketplaceName}.source=${quote(root)}`,
     `marketplaces.${settings.marketplaceName}.source_type="local"`,
@@ -24,6 +26,10 @@ export async function pluginRuntime(root){
     'developer_instructions=""',
     'skills.bundled.enabled=false',
     `skills.config=[${skills.map(item=>`{path=${quote(item.path)},enabled=false}`).join(',')}]`,
+    `projects={${quote(trustKey)}={trust_level="trusted"}}`,
+    'features.hooks=false',
+    'features.plugins=true',
+    'web_search="disabled"',
   ];
   return {settings,runtime:{configOverrides:overrides},threadOptions:{workingDirectory:root,sandboxMode:settings.sandboxMode,approvalPolicy:settings.approvalPolicy,webSearchMode:settings.webSearchMode}};
 }
