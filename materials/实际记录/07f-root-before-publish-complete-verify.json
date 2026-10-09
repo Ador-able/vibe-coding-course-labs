@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "workflowId": "EjDipUeuPFyNhN4s",
+  "testVersionId": "ad633902-a88e-4019-a8e3-f7346fe01340",
+  "checksum": "e936b87ab1576bf82944297506eac6f9fc1348b9ead878a517e1f4ee5586e5ae",
+  "allProvidedBoundWorkflowFieldsExact": true,
+  "serverAssignedFields": [
+    {
+      "node": "保留五秒观察窗口",
+      "key": "webhookId",
+      "value": "2cb56d26-9a43-44c7-857f-021e7d03a181"
+    }
+  ],
+  "testExecutionId": "1",
+  "testImmediate": {
+    "taskStatus": "received",
+    "feedbackRows": 0
+  },
+  "testFinal": {
+    "taskStatus": "completed",
+    "taskRowId": 1,
+    "feedbackRowId": 1,
+    "notificationStatus": "not_sent"
+  },
+  "allInputFieldsExact": true,
+  "formalBothTablesActuallyEmpty": true,
+  "scope": "核真实REST/HTTP解析对象及完整业务字段，测试对象保留；服务端补充字段另列，不宣称整个节点JSON与输入原字节相同。不是公开页面、外部通知、持久等待或模型判断。"
+}

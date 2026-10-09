@@ -1,0 +1,118 @@
+{
+  "action": "read-table",
+  "startedAt": "2026-10-04T19:35:50.343Z",
+  "finished": true,
+  "error": null,
+  "finishedAt": "2026-10-04T19:35:50.667Z",
+  "projection": "实际请求正文与公开业务返回字段；不含认证/响应头、用户账户、工作流作者、底层编码执行数据。",
+  "records": [
+    {
+      "endpoint": "/projects/gXQZ4ApJJUo90ztC/data-tables/CLVf1nXA7BXatyFI/columns",
+      "method": "GET",
+      "body": null,
+      "startedAt": "2026-10-04T19:35:50.344Z",
+      "error": null,
+      "finishedAt": "2026-10-04T19:35:50.643Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": [
+            {
+              "updatedAt": "2026-10-04T19:28:35.421Z",
+              "createdAt": "2026-10-04T19:28:35.421Z",
+              "id": "WqxTmZdy2mX5jrRe",
+              "dataTableId": "CLVf1nXA7BXatyFI",
+              "name": "eventId",
+              "type": "string",
+              "index": 0
+            },
+            {
+              "updatedAt": "2026-10-04T19:28:35.421Z",
+              "createdAt": "2026-10-04T19:28:35.421Z",
+              "id": "XbpMCUGgsNhySMub",
+              "dataTableId": "CLVf1nXA7BXatyFI",
+              "name": "feedbackId",
+              "type": "string",
+              "index": 1
+            },
+            {
+              "updatedAt": "2026-10-04T19:28:35.421Z",
+              "createdAt": "2026-10-04T19:28:35.421Z",
+              "id": "hNKDVTb6ksjskx6Y",
+              "dataTableId": "CLVf1nXA7BXatyFI",
+              "name": "workId",
+              "type": "string",
+              "index": 2
+            },
+            {
+              "updatedAt": "2026-10-04T19:28:35.421Z",
+              "createdAt": "2026-10-04T19:28:35.421Z",
+              "id": "MG90LBiBAlmG2ipH",
+              "dataTableId": "CLVf1nXA7BXatyFI",
+              "name": "chapterNumber",
+              "type": "number",
+              "index": 3
+            },
+            {
+              "updatedAt": "2026-10-04T19:28:35.421Z",
+              "createdAt": "2026-10-04T19:28:35.421Z",
+              "id": "WTNk2KtmPoodgAQH",
+              "dataTableId": "CLVf1nXA7BXatyFI",
+              "name": "readerId",
+              "type": "string",
+              "index": 4
+            },
+            {
+              "updatedAt": "2026-10-04T19:28:35.421Z",
+              "createdAt": "2026-10-04T19:28:35.421Z",
+              "id": "nZjGmuqTWmAaHSjO",
+              "dataTableId": "CLVf1nXA7BXatyFI",
+              "name": "feedback",
+              "type": "string",
+              "index": 5
+            },
+            {
+              "updatedAt": "2026-10-04T19:28:35.421Z",
+              "createdAt": "2026-10-04T19:28:35.421Z",
+              "id": "2xF8WDXEZcFkc5bb",
+              "dataTableId": "CLVf1nXA7BXatyFI",
+              "name": "taskRowId",
+              "type": "number",
+              "index": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "endpoint": "/projects/gXQZ4ApJJUo90ztC/data-tables/CLVf1nXA7BXatyFI/rows?take=100&skip=0",
+      "method": "GET",
+      "body": null,
+      "startedAt": "2026-10-04T19:35:50.643Z",
+      "error": null,
+      "finishedAt": "2026-10-04T19:35:50.667Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": {
+            "count": 1,
+            "data": [
+              {
+                "eventId": "course-feedback-E01",
+                "feedbackId": "FB01",
+                "workId": "clocktower",
+                "chapterNumber": 1,
+                "readerId": "classroom-reader-01",
+                "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                "taskRowId": 1,
+                "id": 1,
+                "createdAt": "2026-10-04T19:35:01.057Z",
+                "updatedAt": "2026-10-04T19:35:01.057Z"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

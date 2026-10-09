@@ -1,0 +1,141 @@
+{
+  "action": "read-table",
+  "startedAt": "2026-10-04T19:30:30.927Z",
+  "finished": true,
+  "error": null,
+  "finishedAt": "2026-10-04T19:30:31.256Z",
+  "projection": "实际请求正文与公开业务返回字段；不含认证/响应头、用户账户、工作流作者、底层编码执行数据。",
+  "records": [
+    {
+      "endpoint": "/projects/gXQZ4ApJJUo90ztC/data-tables/hEVtgm6TxtdKTxfX/columns",
+      "method": "GET",
+      "body": null,
+      "startedAt": "2026-10-04T19:30:30.929Z",
+      "error": null,
+      "finishedAt": "2026-10-04T19:30:31.232Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": [
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "hCB6BnyzsRviXI0f",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "eventId",
+              "type": "string",
+              "index": 0
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "bSj33N5A6bDpe1u3",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "feedbackId",
+              "type": "string",
+              "index": 1
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "0F3IjhZZY85D4apy",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "workId",
+              "type": "string",
+              "index": 2
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "ddBfSdZFNibnY9Mf",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "chapterNumber",
+              "type": "number",
+              "index": 3
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "c9XUXHt9HeKJHXes",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "readerId",
+              "type": "string",
+              "index": 4
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "EG1bC4TE3tw07jeW",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "feedback",
+              "type": "string",
+              "index": 5
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "2NsMFnPG213Ei31m",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "failTask",
+              "type": "boolean",
+              "index": 6
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "UIzbZE4QiSooBvy9",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "status",
+              "type": "string",
+              "index": 7
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "lI7L7Dvhd2swDlmf",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "notificationStatus",
+              "type": "string",
+              "index": 8
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "d5HwjhNl4IBcLeRp",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "executionId",
+              "type": "string",
+              "index": 9
+            },
+            {
+              "updatedAt": "2026-10-04T19:27:59.663Z",
+              "createdAt": "2026-10-04T19:27:59.663Z",
+              "id": "tNfI7BLVOTekpnaV",
+              "dataTableId": "hEVtgm6TxtdKTxfX",
+              "name": "feedbackRowId",
+              "type": "number",
+              "index": 10
+            }
+          ]
+        }
+      }
+    },
+    {
+      "endpoint": "/projects/gXQZ4ApJJUo90ztC/data-tables/hEVtgm6TxtdKTxfX/rows?take=100&skip=0",
+      "method": "GET",
+      "body": null,
+      "startedAt": "2026-10-04T19:30:31.232Z",
+      "error": null,
+      "finishedAt": "2026-10-04T19:30:31.256Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": {
+            "count": 0,
+            "data": []
+          }
+        }
+      }
+    }
+  ]
+}

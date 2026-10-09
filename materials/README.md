@@ -1,51 +1,47 @@
-# 提示模板完整任务比较
+# 业务反馈从收到到完成
 
-十份资料均为教师练习日报，无真实投放。两版各一次请求、无重试；字段值同口径，V1五处非连续引文与七项汇总不符，V2连续性成立却仍四项汇总不符；两版各四处预计数字证据不足。整项均needs_correction、未采用，六个标题待人。完整内容判断另附，计数不代替含义。
+这个练习用成熟 n8n 工作流接收完整教师反馈、登记任务、写入反馈表并记录完成或失败。没有模型调用，也没有真人通知、日历事件或文学采用。它练习 AI 接入业务以后如何核对对象、输入、当前版本和真实结果。
 
-## 在自己的独立目录恢复
+## 先查看已有完整结果
 
-```plaintext
-git clone --config core.autocrlf=false 课堂代码.bundle project
-git -C project checkout --detach 618a3c09699a4a5aa106101be1f6e37149669f0e
-node 复做材料零模型核对.mjs
-```
+`实际全过程与最终业务状态.json`给出当前固定源码、Docker 镜像摘要、发布版本、四张测试/正式表身份及完整最终两张正式表。`实际记录`内保留未发布入口错误、测试监听、正式发布、原请求正文、立即响应、后续表记录、重复请求和失败执行。四份“完整节点业务执行”来自 n8n 原生执行记录，包含本次所有节点的业务输入/输出、源位置、状态与耗时。
 
-代码原起点bfc0a4b，完成点618a3c09699a4a5aa106101be1f6e37149669f0e。课堂代码bundle含原起点与实际实现历史；请建立自己的练习分支，并确认恢复后的 project 本身是独立 Git 根。64工作原件也保留在“当前代码”，Git原blob与工作CRLF分别列在固定记录，不能把换行差异说成业务改动。冻结材料的原字节与七个新增程序LF由.gitattributes保护。
+节点记录是公开字段投影：省略 Webhook 请求头、顶层恢复令牌、执行内部接续对象和用户账户信息；API 回执省略认证头、工作流作者与内部编码执行数据。完整教师输入、完整反馈正文、字段值、业务身份、版本和结果没有缩写。原件与投影文件逐个对应；不能把公开包称为整个私有底层协议的原字节。
 
-实际Node24.19.0、Python3.12.14，依赖已锁SDK7.0.122/provider3.0.59。需要运行只读页面时，在project按现有workspace正常安装一次：
+## 实际发生的有限流程
 
-```plaintext
-pnpm install --frozen-lockfile
-```
+1. 未发布时调用生产入口，实际返回404，没有进入工作流。
+2. 启动一次测试监听，再提交完整 E01。返回202时任务是 `received`，测试反馈表仍为空；五秒观察窗口后，任务 `completed`，反馈表保存完整 E01。
+3. 另建两张空的正式表，绑定后保存并发布版本 `60f8d008-4109-4a5d-9f09-b8c14f278cc8`。这与测试表分开。
+4. 正式 E01 返回202，随后正式任务 `completed`、正式反馈表新增一行。
+5. 相同 E01 再次提交，返回200 `duplicate` 和既有任务。请求本身形成新的执行3，但没有再次登记或写入；任务和反馈连同更新时间保持原字节字段相同。
+6. E02 返回202后进入课堂失败分支，任务 `failed`、执行4 `error`，正式反馈表没有 E02。`finished:false`配合非空`stoppedAt`和`error`不是仍在运行。
 
-不需模型密钥，不重做旧八项和两条局部反馈。包内已保存全部新结果，复制到自己的项目：
+三次正式 HTTP 请求，加一次测试请求，共四次工作流执行；两份教师输入是假定练习材料，不是真人反馈。所有任务 `notificationStatus`均为`not_sent`。五秒窗口没有验证长期等待或崩溃接续；串行事件检查没有验证并发 exactly-once；列表里的`concurrentExecutionsCount:-1`未解释为运行数。
 
-```plaintext
-Copy-Item -LiteralPath './实际结果/comparison-runs' -Destination './project/comparison-runs' -Recurse
-Get-ChildItem -LiteralPath './实际结果/public' -File | Copy-Item -Destination './project/public'
-python -m http.server 4358 --bind 127.0.0.1 --directory project/public
-```
+## 固定代码与恢复
 
-打开http://127.0.0.1:4358/comparison.html。依次V1R06/R09，再V2同两项及汇总/CSV。页面只读取现有comparison-state，不请求模型；停止自己的静态服务。已有十二份同流程JPEG与完整DOM对象在界面对照，实际1280×720/DPR1.25，未测窄屏。内容与各版口吻分别判断，原版可胜出。
-
-## 阅读完整输入与当前保存结果
-
-comparison-inputs中16份完整输入：原八项和旧输出/反馈属于历史；07为当前十项、08为不发送的独立参考、09为共同规则、10/11为两完整任务、13为唯一增加段。真正发送request-body/原HTTPresponse-body/SDK公开投影/原输出都在实际结果/comparison-runs/comparison-01各版目录。响应headers省略，没有Authorization。CSV只含11列，证据和汇总在原JSON，null字面按既定列解释，不数物理行。已在独立的无密钥进程完成完整读回。
-
-## 自己重新比较时的入口
-
-另恢复一份只有代码的新project（不要复制实际结果），仅在该进程引用自己合法DASHSCOPE_API_KEY。固定入口各一次：
+`配置`内11个文件逐字节等于 Git 提交`e9910bdf8e9f9816f27f6ccfb47d7d263ebc5e3f`。`工作流配置.bundle`保留该独立课堂 Git 历史。模板有12个节点；字段表给出11项任务业务字段和7项反馈业务字段，系统生成 id 与时间字段另列。配置中 m13 是例子的固定名称，课程中的位置以第14模块“把 AI 接进业务流程”为准。
 
 ```plaintext
-node compare-templates.mjs
-node inspect-comparison.mjs
-python comparison-csv.py export
-python comparison-csv.py read-export
-node prepare-comparison-page.mjs
+git clone 工作流配置.bundle course-feedback-lab
+cd course-feedback-lab
+git checkout e9910bdf8e9f9816f27f6ccfb47d7d263ebc5e3f
+git status --porcelain=v1 --untracked-files=all
 ```
 
-运行compare时两版串行各一次、maxRetries0；其后各入口不提供密钥。每阶段只创建新记录，已有结果目录会拒绝覆盖。供应商模型输出可能变化，本地请求失败也不证明供应商未运行。保留原失败，不自动补齐/纠正/追跑。重新比较是新的模型使用；这不是为复现课堂原答案而必须执行的步骤。本节已有运行的准确argv与完整终态在实际命令公共字段。
+查看静态结果不需要恢复运行环境、账户或凭据。要自己复现实验，应在自己的 n8n 实例新建空的课堂表，按`tables`两份定义建立字段；不要向真实业务表反复投递这些样例。成熟运行时使用固定 n8n 2.41.6，镜像完整摘要在`runtime.json`。数据表与工作流由自己的实例提供身份，包中的实际身份用于阅读记录，不能跨实例直接充当新对象。
 
-## 保留范围
+使用成熟 Node 运行已有绑定脚本，填自己的两张表 ID、工作流名称与新入口路径。脚本只写本地工作流 JSON，不发 HTTP、不创建表、不授权，也不发布。
 
-真实业务原文字节不改；命令字段仅投影作者机器位置和pid。完整公开投影范围及原字节SHA见公共字段范围。原课与完整官方网页、内部审核、账户凭据不在包中；研究采用仅保留来源定位与编者取舍。图为关系说明，实际输出未用图中标签替换。
+```plaintext
+node bind.mjs --task-table YOUR_TASK_TABLE_ID --feedback-table YOUR_FEEDBACK_TABLE_ID --output bound/workflow.json --workflow-name "课堂读者反馈" --webhook-path "your-course-feedback"
+```
+
+然后在 n8n 导入生成的 JSON。先用测试监听和一份完整输入，读取返回、执行记录及两张表；测试通过后若要检查生产入口，再绑定自己新建的空正式表，保存并发布需要的版本，逐项核已发布版本和入口。当前教程不要求给实际读者发消息。若增加日历或通知，先指定自己的目标账户、对象、时间与许可，再从目标系统核查创建、发送或失败；本包没有这些执行结果。
+
+## 输入与字段的回查
+
+`inputs/course-feedback-E01.json`和 E02 保留完整事件、反馈、作品、章节、读者身份和反馈正文；E02 的`failTask:true`是教师固定失败条件。Webhook 输入在`body`里，工作流用明确表达式读`$json.body.eventId`等字段，不能沿用聊天触发器的`chatInput`。任务登记和反馈保存依赖当前节点的返回 id，不把同名对象、旧表 id 或漂亮回复当成已保存的业务结果。
+
+`实际发布工作流.json`是本次已发布对象的公开业务字段，包含服务器补入的 Wait webhookId；模板与实际运行绑定对象各自保留。`原件与公开投影对应.json`说明来源 SHA，`完整文件清单.json`说明本包全部成员 SHA。解压后核完整文件内容，再按自己的入口复现；没有要求重新运行全部课程前置实验。

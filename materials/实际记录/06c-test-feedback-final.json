@@ -1,0 +1,9 @@
+{
+  "action": "read-table",
+  "startedAt": "2026-10-04T19:27:10.979Z",
+  "finished": false,
+  "error": "Error [ERR_MODULE_NOT_FOUND]: Cannot find module 'D:\\Projects\\32686\\Knowledge\\business-runtime\\n8n-client.mjs' imported from D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\business-runtime\\实现贷款\\webhook-received-completed\\主编操作.mjs",
+  "finishedAt": "2026-10-04T19:27:10.979Z",
+  "projection": "实际请求正文与公开业务返回字段；不含认证/响应头、用户账户、工作流作者、底层编码执行数据。",
+  "records": []
+}
