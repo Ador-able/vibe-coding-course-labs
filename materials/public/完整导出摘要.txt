@@ -1,0 +1,52 @@
+材料 R：同一归档的完整 exportSummary 对象。只摘取这个完整对象，不声称它是整个归档文件。归档另存完整正文和任务记录。
+
+{
+  "workId": "clocktower",
+  "workRevision": 2,
+  "expectedChapters": 3,
+  "savedChapters": 3,
+  "allOutlineChaptersSaved": true,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 3,
+      "status": "adopted",
+      "workRevision": 2,
+      "previousRevisions": [],
+      "reviewNote": "编者演示人工采用入口；此状态用于验证接续机制，不表示真实用户的文学质量认可。",
+      "basisCurrent": true
+    },
+    {
+      "number": 2,
+      "revision": 1,
+      "status": "draft",
+      "workRevision": 2,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        }
+      ],
+      "reviewNote": null,
+      "basisCurrent": true
+    },
+    {
+      "number": 3,
+      "revision": 1,
+      "status": "draft",
+      "workRevision": 2,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        },
+        {
+          "number": 2,
+          "revision": 1
+        }
+      ],
+      "reviewNote": null,
+      "basisCurrent": true
+    }
+  ]
+}
