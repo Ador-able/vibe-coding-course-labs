@@ -1,0 +1,54 @@
+{
+  "workId": "heldout-01252847-2f31-4ada-a646-9c0e3d17a327",
+  "databaseRelative": "data/heldout.sqlite",
+  "scope": "预留身份与本章有限工具组合；B/C正式输入须等实际前置结果，不含模型输出或已执行结论。",
+  "phases": {
+    "A": {
+      "taskId": "7550c45f-0268-483f-8513-9f8a6b2c6be0",
+      "chapterNumber": 1,
+      "pluginVersion": "0.13.1",
+      "enabledTools": [
+        "read_work",
+        "list_chapters",
+        "read_chapter",
+        "export_work",
+        "save_draft"
+      ],
+      "resume": false,
+      "stopAfterSave": true,
+      "archiveFinal": false,
+      "promptRelative": "inputs/heldout/A.txt"
+    },
+    "B": {
+      "taskId": "7dc9bbf4-75d9-442c-b2e5-e20ab3fb9b38",
+      "chapterNumber": 1,
+      "pluginVersion": "0.13.2",
+      "enabledTools": [
+        "read_work",
+        "list_chapters",
+        "read_chapter",
+        "export_work"
+      ],
+      "resume": true,
+      "stopAfterSave": false,
+      "archiveFinal": false,
+      "promptRelative": null
+    },
+    "C": {
+      "taskId": "43669b1b-fbab-4924-bec6-d7e718c438e4",
+      "chapterNumber": 2,
+      "pluginVersion": "0.13.3",
+      "enabledTools": [
+        "read_work",
+        "list_chapters",
+        "read_chapter",
+        "export_work",
+        "save_draft"
+      ],
+      "resume": true,
+      "stopAfterSave": false,
+      "archiveFinal": true,
+      "promptRelative": null
+    }
+  }
+}
