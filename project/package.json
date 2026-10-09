@@ -17,6 +17,8 @@
     "plugin:add": "node scripts/plugin-manage.mjs add",
     "plugin:remove": "node scripts/plugin-manage.mjs remove",
     "plugin:check": "node dist/plugin-check.js",
+    "skill:catalog": "node scripts/skill-catalog.mjs",
+    "skill:observe": "node scripts/observe-skill.mjs",
     "test": "node --test dist/test/*.test.js"
   },
   "dependencies": {
