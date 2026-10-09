@@ -1,0 +1,112 @@
+[
+  {
+    "name": "CLI完整读回.json",
+    "bytes": 378,
+    "sha256": "213a541984d4572dbcedd0f4671d68132bf34f0aa08b6aa9cbf987f0677fa3f7"
+  },
+  {
+    "name": "MCP运行前业务.json",
+    "bytes": 2931,
+    "sha256": "446d667168c94e696229621881c1b726b7e0aacd05f520899825e0db2016028f"
+  },
+  {
+    "name": "业务独立起点.json",
+    "bytes": 1452,
+    "sha256": "9cdc06d6886aa1ed3975bd33837c15aac3b08f6a585f3a7fa9f4cd0f9601d1cb"
+  },
+  {
+    "name": "人工改稿.json",
+    "bytes": 365,
+    "sha256": "323d0e3a43df067b018760f7ce8401609fd409dceaffed0fc825d9f080b0b9a3"
+  },
+  {
+    "name": "作者独立协议与只读业务核对.json",
+    "bytes": 5946,
+    "sha256": "482d3e95f7b593e5eb825a49a5a906bc5d1284504be1f8d4988969c3b7445a6e"
+  },
+  {
+    "name": "全部连接结束后业务.json",
+    "bytes": 4031,
+    "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+  },
+  {
+    "name": "工具发现.json",
+    "bytes": 8620,
+    "sha256": "e1712e728cc9f542a69100c8ffe783db2c8ea0ccbbfef14912ed175ec59cb13a"
+  },
+  {
+    "name": "摘要.json",
+    "bytes": 1144,
+    "sha256": "8fa2cf862eb8a02e576e98b930ddd1313dcffaaaa08dc72805601db08b36f7b5"
+  },
+  {
+    "name": "断连-stderr.txt",
+    "bytes": 169,
+    "sha256": "a15ec43cd25a952151c47918365031c27ad00c332369b306baa43bdba4af4a58"
+  },
+  {
+    "name": "断连-协议.json",
+    "bytes": 3883,
+    "sha256": "36e12cbc8d30711f90e0a2a6511a548d3a9ff86bf4b980f96c1c89c668093ba2"
+  },
+  {
+    "name": "断连-调用.json",
+    "bytes": 1854,
+    "sha256": "243bb98f1f97cd99d05fd673b6c26f06afdde94ac374d82c7463b7506d18a04d"
+  },
+  {
+    "name": "断连后业务.json",
+    "bytes": 4031,
+    "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+  },
+  {
+    "name": "既有真实模型调用逐字核对.json",
+    "bytes": 877,
+    "sha256": "fc670329ae4570bcc127cf42cb6fa7240a94bd46f1632c76e3d5186dd01a70fa"
+  },
+  {
+    "name": "正常连接-stderr.txt",
+    "bytes": 447,
+    "sha256": "871d1af4bd13f6e855a26c999fb73410fb3cd46935decbd9e178199251932767"
+  },
+  {
+    "name": "正常连接-协议.json",
+    "bytes": 19782,
+    "sha256": "5318370f4ef9f0eb1990b832ce57826c7632c2ff5a23d8870c46a85d93ae4b53"
+  },
+  {
+    "name": "正常连接-调用.json",
+    "bytes": 5098,
+    "sha256": "581c695429acc1d1d4861b5c12ecd057a3c4d6d968c8cf4b0de0548f49cbdbf4"
+  },
+  {
+    "name": "正常连接关闭后业务.json",
+    "bytes": 4031,
+    "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+  },
+  {
+    "name": "独立核对协议与业务.py",
+    "bytes": 5173,
+    "sha256": "6a9139580450ad4359d4551fe435938517d6ff8b402f87208afa9ec32d7b3853"
+  },
+  {
+    "name": "调用者异常-stderr.txt",
+    "bytes": 169,
+    "sha256": "5dcef612a22326a26d4dabc97d17f97a7c83caa26ae02d9520298250ac8d95ab"
+  },
+  {
+    "name": "调用者异常-协议.json",
+    "bytes": 3738,
+    "sha256": "f4bba89dbdd646028ed620558b37f882e02134d2423c4652168c600760e32818"
+  },
+  {
+    "name": "调用者异常-调用.json",
+    "bytes": 1663,
+    "sha256": "6ffa4e155fce3b9dbc9b33090cbc3cbf8261b35e36bea21ea2767ce97e673c95"
+  },
+  {
+    "name": "运行输入.json",
+    "bytes": 1582,
+    "sha256": "a8a10acf953e68b142c3e94c8acd940f51277a06cfd855fe5103439d85ebbf2f"
+  }
+]

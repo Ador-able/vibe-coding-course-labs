@@ -10,5 +10,5 @@ await access(database);
 const store=new Store(database);
 try{if(!store.listWorks().length)throw new Error('数据库还没有初始化作品。');}finally{store.close();}
 const binding={entry,database};
-await writeFile('plugins/novel-workbench-course/binding.json',JSON.stringify(binding,null,2),'utf8');
+await writeFile('plugins/novel-practice/binding.json',JSON.stringify(binding,null,2),'utf8');
 console.log(JSON.stringify({binding,limits:'仅绑定当前本地构建与数据库；安装缓存刷新、宿主加载和实际调用仍需分别检查。'}));

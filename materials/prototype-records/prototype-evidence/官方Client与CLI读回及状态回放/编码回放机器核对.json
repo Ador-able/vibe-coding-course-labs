@@ -1,0 +1,59 @@
+[
+  {
+    "name": "原版",
+    "bytes": 406200,
+    "sha256": "a6ed3f01062c50c420a60d0988903a54a57fc29c1dda52581e727242088a860b",
+    "encodedFrames": 150,
+    "sourceStates": 6,
+    "width": 1200,
+    "height": 1000,
+    "durationMilliseconds": 15000,
+    "frameOrder": [
+      "current",
+      "edit",
+      "saved",
+      "conflict",
+      "compare",
+      "network-unconfirmed"
+    ],
+    "scope": "同一次19f7/bd569运行的真实关键状态截图回放，不是连续录屏；等待状态另有完整截图，最终0cb文案另有独立回归。"
+  },
+  {
+    "name": "台面",
+    "bytes": 540407,
+    "sha256": "f06b1c05d8338ead29476f86519518f50f3d24bd9378051dc6bb85529de4ae47",
+    "encodedFrames": 150,
+    "sourceStates": 6,
+    "width": 1200,
+    "height": 1000,
+    "durationMilliseconds": 15000,
+    "frameOrder": [
+      "current",
+      "edit",
+      "saved",
+      "conflict",
+      "compare",
+      "network-unconfirmed"
+    ],
+    "scope": "同一次19f7/bd569运行的真实关键状态截图回放，不是连续录屏；等待状态另有完整截图，最终0cb文案另有独立回归。"
+  },
+  {
+    "name": "笔记页",
+    "bytes": 445794,
+    "sha256": "282486b57a0d8d114212595a9624a7e93b49109d282153deb64da4eebfc66ffd",
+    "encodedFrames": 150,
+    "sourceStates": 6,
+    "width": 1200,
+    "height": 1000,
+    "durationMilliseconds": 15000,
+    "frameOrder": [
+      "current",
+      "edit",
+      "saved",
+      "conflict",
+      "compare",
+      "network-unconfirmed"
+    ],
+    "scope": "同一次19f7/bd569运行的真实关键状态截图回放，不是连续录屏；等待状态另有完整截图，最终0cb文案另有独立回归。"
+  }
+]

@@ -1,8 +1,0 @@
-{"timestamp":"2026-10-02T20:17:20.998678Z","level":"WARN","fields":{"message":"ignoring interface.defaultPrompt: maximum of 3 prompts is supported","path":"file:///C:/Users/32686/.codex/plugins/cache/frameflow/frameflow/0.9.1+codex.20261002141143/.codex-plugin/plugin.json"},"target":"codex_core_plugins::manifest"}
-{"timestamp":"2026-10-02T20:17:21.022425Z","level":"WARN","fields":{"message":"ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
-{"timestamp":"2026-10-02T20:17:21.022455Z","level":"WARN","fields":{"message":"ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
-{"timestamp":"2026-10-02T20:17:23.053747Z","level":"WARN","fields":{"message":"ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
-{"timestamp":"2026-10-02T20:17:23.053786Z","level":"WARN","fields":{"message":"ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
-{"timestamp":"2026-10-02T20:17:23.064821Z","level":"WARN","fields":{"message":"Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell"},"target":"codex_core::shell_snapshot"}
-{"timestamp":"2026-10-02T20:17:30.801809Z","level":"WARN","fields":{"message":"state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back"},"target":"codex_rollout::list"}
-{"timestamp":"2026-10-02T20:17:30.801897Z","level":"WARN","fields":{"message":"state db discrepancy during read_repair_rollout_path: upsert_needed (slow path)"},"target":"codex_rollout::state_db"}

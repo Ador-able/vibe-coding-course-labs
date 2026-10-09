@@ -1,0 +1,10 @@
+import {parseArgs} from 'node:util';
+import {resolve} from 'node:path';
+import {Store} from './store.js';
+import {prototypeServer} from './prototype-http.js';
+const {values}=parseArgs({options:{db:{type:'string',default:'data/prototype.sqlite'},port:{type:'string',default:'4326'},work:{type:'string'}}});
+const store=new Store(resolve(values.db!));const id=values.work??store.listWorks()[0]?.id??'';
+const server=prototypeServer(store,id);
+server.listen(Number(values.port),'127.0.0.1',()=>console.log(JSON.stringify({url:'http://127.0.0.1:'+values.port,db:resolve(values.db!),workId:id,mode:'真实 Store；课堂人工初始化稿件；未调用模型'})));
+process.once('SIGINT',()=>server.close(()=>{store.close();process.exit(0);}));
+process.once('SIGTERM',()=>server.close(()=>{store.close();process.exit(0);}));

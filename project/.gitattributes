@@ -1,14 +1,2 @@
-.codex/hooks.json text eol=lf
-.agents/skills/novel-feedback-task/** text eol=lf
-config/feedback-check.json text eol=lf
-feedback/*.md text eol=lf
-seed/新作品.json text eol=lf
-seed/人工草稿-r1.json text eol=lf
-seed/人工草稿-r2.json text eol=lf
-prompts/反馈任务.txt text eol=lf
-scripts/check-draft-placeholder.mjs text eol=lf
-scripts/feedback-runtime.mjs text eol=lf
-scripts/feedback-preflight.mjs text eol=lf
-scripts/prepare-feedback.mjs text eol=lf
-scripts/observe-feedback.mjs text eol=lf
-docs/反馈方法实验.md text eol=lf
+# 实际运行证据保留原始字节，不进行换行转换。
+evidence/08-双工具MCP/** -text

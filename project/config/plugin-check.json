@@ -1,9 +1,0 @@
-{
-  "pluginId": "novel-workbench-course@novel-workbench-course-lab",
-  "marketplaceName": "novel-workbench-course-lab",
-  "serverName": "novel_lab",
-  "enabledTools": ["read_work", "list_chapters", "read_chapter", "save_draft"],
-  "sandboxMode": "read-only",
-  "approvalPolicy": "never",
-  "webSearchMode": "disabled"
-}

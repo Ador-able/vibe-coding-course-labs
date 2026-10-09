@@ -1,0 +1,111 @@
+{
+  "runId": "bd569d65-2fed-4eb5-b948-015a6ad3cd63",
+  "codeVersion": "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+  "results": [
+    {
+      "variant": "original",
+      "workId": "prototype-f801bcc3-7de5-4173-bbb1-2f8e85b9565c",
+      "stdout": "{\"output\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-15-05\\\\实际证据\\\\等待修复-bd569d65-2fed-4eb5-b948-015a6ad3cd63\\\\官方Client-original-完整读回.json\",\"chapterRevision\":2,\"origin\":\"human\",\"toolCalls\":3,\"modelCalled\":false,\"pidAfterClose\":null}",
+      "protocolEvents": 11,
+      "protocolVersion": "2025-11-25",
+      "tables": {
+        "works": 1,
+        "work_versions": 1,
+        "chapters": 3,
+        "chapter_versions": 4,
+        "tasks": 0
+      },
+      "revision": 2,
+      "origin": "human",
+      "status": "draft",
+      "pidAfterClose": null,
+      "CLIEqualsMCP": true,
+      "beforeAfterLogicalEqual": true,
+      "modelCalled": false
+    },
+    {
+      "variant": "desk",
+      "workId": "prototype-51cdf6f8-afbf-41b2-bea5-01ef1660d66f",
+      "stdout": "{\"output\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-15-05\\\\实际证据\\\\等待修复-bd569d65-2fed-4eb5-b948-015a6ad3cd63\\\\官方Client-desk-完整读回.json\",\"chapterRevision\":2,\"origin\":\"human\",\"toolCalls\":3,\"modelCalled\":false,\"pidAfterClose\":null}",
+      "protocolEvents": 11,
+      "protocolVersion": "2025-11-25",
+      "tables": {
+        "works": 1,
+        "work_versions": 1,
+        "chapters": 3,
+        "chapter_versions": 4,
+        "tasks": 0
+      },
+      "revision": 2,
+      "origin": "human",
+      "status": "draft",
+      "pidAfterClose": null,
+      "CLIEqualsMCP": true,
+      "beforeAfterLogicalEqual": true,
+      "modelCalled": false
+    },
+    {
+      "variant": "notes",
+      "workId": "prototype-ac4464fb-2d2b-4907-9e06-1340af20c658",
+      "stdout": "{\"output\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-15-05\\\\实际证据\\\\等待修复-bd569d65-2fed-4eb5-b948-015a6ad3cd63\\\\官方Client-notes-完整读回.json\",\"chapterRevision\":2,\"origin\":\"human\",\"toolCalls\":3,\"modelCalled\":false,\"pidAfterClose\":null}",
+      "protocolEvents": 11,
+      "protocolVersion": "2025-11-25",
+      "tables": {
+        "works": 1,
+        "work_versions": 1,
+        "chapters": 3,
+        "chapter_versions": 4,
+        "tasks": 0
+      },
+      "revision": 2,
+      "origin": "human",
+      "status": "draft",
+      "pidAfterClose": null,
+      "CLIEqualsMCP": true,
+      "beforeAfterLogicalEqual": true,
+      "modelCalled": false
+    }
+  ],
+  "time": {
+    "scope": "教师构造规则及确定时间输入；真实执行纯函数。没有实际发送提醒，也没有增加工作台计时功能。",
+    "rule": "收到反馈后满 24 小时，且未暂停时提示人工处理；新反馈从它的时间重新计时。",
+    "outputs": [
+      {
+        "name": "不足 24 小时",
+        "feedbackAt": 1790816400000,
+        "now": 1790902799999,
+        "paused": false,
+        "shouldRemind": false
+      },
+      {
+        "name": "恰满 24 小时",
+        "feedbackAt": 1790816400000,
+        "now": 1790902800000,
+        "paused": false,
+        "shouldRemind": true
+      },
+      {
+        "name": "满时但暂停",
+        "feedbackAt": 1790816400000,
+        "now": 1790902800000,
+        "paused": true,
+        "shouldRemind": false
+      },
+      {
+        "name": "过时且恢复",
+        "feedbackAt": 1790816400000,
+        "now": 1790902800001,
+        "paused": false,
+        "shouldRemind": true
+      },
+      {
+        "name": "新反馈重新计时",
+        "feedbackAt": 1790902800000,
+        "now": 1790902800001,
+        "paused": false,
+        "shouldRemind": false
+      }
+    ]
+  },
+  "limits": "HTTP/UI本轮由人工初始化与人工改稿。官方Client与CLI仅直接读回同一库；五表逻辑不变不代表整个数据库文件字节不变；时间实验是教师构造规则，未实际发送提醒。"
+}

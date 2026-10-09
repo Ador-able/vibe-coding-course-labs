@@ -1,0 +1,33 @@
+{
+  "inspectionId": "260af8b6-fd66-44fa-9f95-709f18713dee",
+  "codeVersion": "ad984053e5199e570859f03049dc215f00de7eca",
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab\\data\\novel.sqlite"
+  },
+  "installReceipt": {
+    "pluginId": "novel-practice@novel-agent-lab",
+    "name": "novel-practice",
+    "marketplaceName": "novel-agent-lab",
+    "version": "0.1.0",
+    "installedPath": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-agent-lab\\novel-practice\\0.1.0",
+    "authPolicy": "ON_INSTALL"
+  },
+  "workId": "clocktower",
+  "chapterNumber": 3,
+  "runtimeConfig": {
+    "marketplaces": {
+      "novel-agent-lab": {
+        "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab",
+        "source_type": "local"
+      }
+    }
+  },
+  "configOverrides": [
+    "plugins.\"novel-practice@novel-agent-lab\".enabled=true",
+    "plugins.\"novel-practice@novel-agent-lab\".mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+    "plugins.\"novel-practice@novel-agent-lab\".mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\"]"
+  ],
+  "configuredModel": null,
+  "prompt": "请使用 $novel-practice:novel-chapter-task 处理一次只读检查，阅读它引用的状态与检查参考。通过该插件的小说教学 MCP 读取作品 clocktower 的当前要求、章节目录、第 3 章及相关前文，说明实际保存状态与资料基线。文件读取仅用于宿主已装载并列出的 Skill 与其参考，不在仓库搜索替代 Skill；业务材料通过 MCP 取得。本次不生成或保存正文、不采用，也不调用其他插件。给出具体读取结果；对设定或文学表现的判断需要说明实际依据与未能确定的部分。"
+}

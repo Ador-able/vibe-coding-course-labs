@@ -1,0 +1,28 @@
+{
+  "taskId": "01c3ac84-3f42-4853-b153-5f896625cfff",
+  "threadId": "01a0fbde-cf97-7792-97b0-3618469f1835",
+  "codeVersion": "bb6b4b344f8dddc215e76baf74eff7e5ce9f42ea",
+  "server": "novel_lab",
+  "toolTypes": [
+    "read_work",
+    "read_chapter",
+    "list_chapters",
+    "save_draft"
+  ],
+  "completeCalls": 7,
+  "fullSavedObjectMatchesMcpReread": true,
+  "fullSavedObjectMatchesIndependentCli": true,
+  "submittedBodyMatchesSavedBody": true,
+  "bodyCharacters": 1103,
+  "bodySha256": "d032a9830e379fa787c49dff05d02e1d87a78b8c5bb90aad7b544eeea819ceca",
+  "actualWorkRevision": 2,
+  "actualPreviousRevisions": [
+    {
+      "number": 1,
+      "revision": 3
+    }
+  ],
+  "revision": 1,
+  "status": "draft",
+  "limits": "既有四工具成熟 Harness 的真实模型调用。本章未将双工具入口接给模型，不把这份轨迹视为双工具入口的模型运行。"
+}

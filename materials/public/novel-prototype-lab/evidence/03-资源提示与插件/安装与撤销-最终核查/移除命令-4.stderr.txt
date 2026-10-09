@@ -1,0 +1,45 @@
+Error: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)
+
+Caused by:
+    0: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)
+    1: 另一个程序正在使用此文件，进程无法访问。 (os error 32)
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: C:\Program Files\nodejs\node.exe D:\Projects\Knowledge\.coursebook-work\localhost-9dfdb2d9c020\2\projects\agent-practice-lab\node_modules\.pnpm\@openai+codex@0.160.0\node_modules\@openai\codex\bin\codex.js -c marketplaces.novel-agent-lab.source="D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab" -c marketplaces.novel-agent-lab.source_type="local" plugin remove novel-practice@novel-agent-lab --json
+Error: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)
+
+Caused by:
+    0: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)
+    1: 另一个程序正在使用此文件，进程无法访问。 (os error 32)
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execFileSync (node:child_process:961:15)
+    at file:///D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/projects/agent-practice-lab/scripts/plugin-manage.mjs:13:12
+    at ModuleJob.run (node:internal/modules/esm/module_job:413:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:660:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '',
+    'Error: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)\n' +
+      '\n' +
+      'Caused by:\n' +
+      '    0: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)\n' +
+      '    1: 另一个程序正在使用此文件，进程无法访问。 (os error 32)\n'
+  ],
+  pid: 36968,
+  stdout: '',
+  stderr: 'Error: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)\n' +
+    '\n' +
+    'Caused by:\n' +
+    '    0: failed to remove existing plugin cache entry: 另一个程序正在使用此文件，进程无法访问。 (os error 32)\n' +
+    '    1: 另一个程序正在使用此文件，进程无法访问。 (os error 32)\n'
+}
+
+Node.js v24.12.0

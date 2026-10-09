@@ -1,5 +1,0 @@
-{"timestamp":"2026-10-02T20:18:13.708960Z","level":"WARN","fields":{"message":"ignoring interface.defaultPrompt: maximum of 3 prompts is supported","path":"file:///C:/Users/32686/.codex/plugins/cache/frameflow/frameflow/0.9.1+codex.20261002141143/.codex-plugin/plugin.json"},"target":"codex_core_plugins::manifest"}
-{"timestamp":"2026-10-02T20:18:13.731172Z","level":"WARN","fields":{"message":"ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
-{"timestamp":"2026-10-02T20:18:13.731207Z","level":"WARN","fields":{"message":"ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
-{"timestamp":"2026-10-02T20:18:13.772392Z","level":"WARN","fields":{"message":"ignoring interface.icon_small: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
-{"timestamp":"2026-10-02T20:18:13.772427Z","level":"WARN","fields":{"message":"ignoring interface.icon_large: icon path with '..' must resolve under plugin assets/"},"target":"codex_skills::interface"}
