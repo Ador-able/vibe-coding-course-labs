@@ -7,14 +7,15 @@ import { spawnSync } from 'node:child_process';
 import { Codex } from '@openai/codex-sdk';
 
 const base = new URL('./', import.meta.url);
-const pkgRequire = createRequire(new URL('node_modules/@openai/codex/package.json', base));
+const packagePath = createRequire(import.meta.url).resolve('@openai/codex/package.json');
+const pkgRequire = createRequire(packagePath);
 const targets = { 'win32-x64': ['@openai/codex-win32-x64', 'x86_64-pc-windows-msvc', 'codex.exe'], 'win32-arm64': ['@openai/codex-win32-arm64', 'aarch64-pc-windows-msvc', 'codex.exe'], 'linux-x64': ['@openai/codex-linux-x64', 'x86_64-unknown-linux-musl', 'codex'], 'linux-arm64': ['@openai/codex-linux-arm64', 'aarch64-unknown-linux-musl', 'codex'], 'darwin-x64': ['@openai/codex-darwin-x64', 'x86_64-apple-darwin', 'codex'], 'darwin-arm64': ['@openai/codex-darwin-arm64', 'aarch64-apple-darwin', 'codex'] };
 const target = targets[`${process.platform}-${process.arch}`];
 if (!target) throw new Error('此练习尚未记录当前平台的CLI解析入口');
 const platformPkg = pkgRequire.resolve(`${target[0]}/package.json`);
-const executable = path.join(path.dirname(platformPkg), 'vendor', target[1], 'codex', target[2]);
+const executable = path.join(path.dirname(platformPkg), 'vendor', target[1], 'bin', target[2]);
 const version = spawnSync(executable, ['--version'], { encoding: 'utf8', windowsHide: true });
-if (version.status !== 0 || !version.stdout.includes('0.160.0')) throw new Error('实际CLI版本不符合练习固定条件');
+if (version.status !== 0 || !version.stdout.includes('0.160.0')) throw new Error(`实际CLI版本不符合练习固定条件：${version.error ? String(version.error) : version.stderr}`);
 const frozen = JSON.parse(await fs.readFile(new URL('frozen-inputs.json', base), 'utf8'));
 const rootOutput = new URL(`runs/${new Date().toISOString().replaceAll(':', '-').replaceAll('.', '-')}/`, base);
 await fs.mkdir(rootOutput, { recursive: true });
