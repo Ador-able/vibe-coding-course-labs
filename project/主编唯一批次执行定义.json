@@ -1,0 +1,93 @@
+{
+  "approvedBy": null,
+  "unitKey": "vcm-11-03",
+  "runtime": {
+    "n8nVersion": "2.41.6",
+    "nodeVersion": "26.7.0",
+    "n8nNodesBaseVersion": "2.41.4",
+    "n8nCoreVersion": "2.41.4",
+    "n8nWorkflowVersion": "2.41.2",
+    "apiTypesVersion": "1.41.3",
+    "baseUrl": "http://localhost:5688",
+    "container": "course-ai-business-20261005-n8n-1",
+    "sameExistingClassroomInstance": true
+  },
+  "workflowFile": "workflow.json",
+  "fullBatchFile": "inputs/完整两项目录输入.json",
+  "promptTemplateFile": "inputs/完整提示模板.txt",
+  "sourceFiles": [
+    {
+      "sourceId": "clock-chapter-three-pdf",
+      "relativePath": "files/chapter-three.pdf",
+      "fileName": "第三章资料.pdf",
+      "downloadUrl": "http://host.docker.internal:4359/chapter-three.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97"
+    },
+    {
+      "sourceId": "clock-chapter-three-txt",
+      "relativePath": "files/chapter-three.txt",
+      "fileName": "小说第三章完整原文.txt",
+      "downloadUrl": "http://host.docker.internal:4359/chapter-three.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    }
+  ],
+  "fileService": {
+    "owner": "root",
+    "port": 4359,
+    "directoryContents": ["chapter-three.pdf", "chapter-three.txt"],
+    "startAfterCompleteConfigurationApproval": true,
+    "authorHasNotStartedServiceOrRequestedFiles": true
+  },
+  "nativeWorkflowCreate": {
+    "owner": "root",
+    "method": "POST",
+    "endpoint": "/rest/workflows",
+    "body": "workflow.json 完整原生对象；不预填 workflowId 或 versionId",
+    "saveReadback": "保存实际返回的工作流 ID、版本 ID 与完整节点、参数、连接和 settings"
+  },
+  "batchExecution": {
+    "owner": "root",
+    "maximumWebhookPosts": 1,
+    "method": "POST",
+    "contentType": "application/json",
+    "bodyBytesFrom": "inputs/完整两项目录输入.json",
+    "nativeWebhookPath": "vcm-11-03-file-material",
+    "entry": "测试监听或正式发布选择一个；按真实版本与实际返回入口冻结后，只发送这批一次",
+    "testUrlIfChosen": "http://localhost:5688/webhook-test/vcm-11-03-file-material",
+    "productionUrlIfChosen": "http://localhost:5688/webhook/vcm-11-03-file-material",
+    "maximumExpectedDownloadItems": 2,
+    "maximumExpectedPdfItems": 1,
+    "maximumExpectedTextItems": 1,
+    "modelRequests": 0,
+    "notifications": 0,
+    "automaticNodeRetries": false,
+    "automaticAdditionalBatch": false
+  },
+  "readback": {
+    "execution": "实际 executionId、完整终态与每个节点的完整业务输入输出、pairedItem、错误",
+    "bytes": "从下载节点每个实际项的 sourceFile 获取真实字节，分别核两个完整原件 SHA 和长度",
+    "withStoredBinaryId": {
+      "method": "GET",
+      "endpoint": "/rest/binary-data",
+      "query": "id=实际本项 binary.sourceFile.id&action=download",
+      "queryEncoding": "按 URLSearchParams 编码实际 ID，不拼接未编码路径",
+      "access": "root 的既有课堂账户必须对该实际 workflow/execution 有读权限；响应作为文件流，不按 JSON 解析",
+      "maximumExpectedDownloads": 2
+    },
+    "embeddedWithoutId": "只有实际记录无 id 时，按固定 BinaryDataService.getAsBuffer 与 BINARY_ENCODING 契约取得内嵌字节；不把存储方式字符串当 base64",
+    "pdf": "保留实际三页 rawParsedText 数组和全部元数据，逐页回查旧 PDF；numrender 不代替实际 text 核对",
+    "text": "保留真实 UTF-8 解码全文，逐字与原 TXT 核对",
+    "identity": "两份 sourceId/中文 fileName/ASCII 实际 binary fileName/实际 MIME/完整正文各自对应",
+    "prompts": "读回两份实际 preparedPrompt，逐字确认各自使用 preparedText 全文，没有发送模型",
+    "otherObjects": "本章不写 Data Table，已有工作流及479业务对象不变；不读取账户或凭据正文"
+  },
+  "failure": {
+    "downloadOrParse": "保留真实失败节点与执行终态，不补出文字或成功材料",
+    "unsupportedMime": "原生 Stop and Error 结束，sourceId 与实际 MIME 保留",
+    "emptyText": "保留原始空值、materialStatus=text_empty、material_incomplete 和空 preparedPrompt",
+    "scope": "固定文字型三页 PDF/TXT；没有扫描 OCR、复杂版式、语音、外部账号、模型或通知实测",
+    "recovery": "如真实条件失败，停止并交 root 判断；不自行重发批次或改变参数"
+  }
+}
