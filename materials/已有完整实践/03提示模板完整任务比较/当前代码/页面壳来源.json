@@ -1,0 +1,22 @@
+{
+  "sourceCommit": "e35d02102264529747376941b24aaee4e161b062",
+  "files": [
+    {
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-05-02\\lab\\public\\index.html",
+      "bytes": 2972,
+      "sha256": "56e727dd5c0682dcb69e8dc472d8bbe8c97aec82df9cb142e6c96c0ff1f10860"
+    },
+    {
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-05-02\\lab\\public\\main.js",
+      "bytes": 6901,
+      "sha256": "49c39f625d3c2bde7f8dbe6ca2d752ddc466d4ca6ec14e5f547c2af2b9e7b0ad"
+    },
+    {
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-05-02\\lab\\public\\style.css",
+      "bytes": 6318,
+      "sha256": "47eac57419ea90c502ea950181cab708f41b9149a3bd37237c560bc4ef053f59"
+    }
+  ],
+  "use": "只沿用三方向页面壳、色域、字体和空间关系，按本节八项保存状态替换DOM与读取数据；没有复制PDF或模型操作。",
+  "scope": "10-04没有此页面，本节原版是逐项状态页面的基准设计；三方向实际体验待运行。"
+}

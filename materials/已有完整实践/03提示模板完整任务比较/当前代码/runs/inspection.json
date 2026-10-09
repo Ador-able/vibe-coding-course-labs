@@ -1,0 +1,1888 @@
+{
+  "scope": "只检查既有模型原件；CSV和正确统计使用请求前教师参考，不修改或采用模型失败结果",
+  "jsonValid": true,
+  "modelAccepted": false,
+  "actualRecordIds": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08"
+  ],
+  "allSourceIdsOnce": true,
+  "valueComparisons": [
+    {
+      "sourceId": "R01",
+      "field": "sourceId",
+      "expected": "R01",
+      "actual": "R01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "campaignId",
+      "expected": "C01",
+      "actual": "C01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "date",
+      "expected": "2026-09-30",
+      "actual": "2026-09-30",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "title",
+      "expected": "钟楼更新, \"第一章\"\n试读",
+      "actual": "钟楼更新, \"第一章\"\n试读",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "status",
+      "expected": "observed",
+      "actual": "observed",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "impressions",
+      "expected": 1000,
+      "actual": 1000,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "clicks",
+      "expected": 50,
+      "actual": 50,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "subscriptions",
+      "expected": 3,
+      "actual": 3,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "spendCNY",
+      "expected": 6,
+      "actual": 6,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "budgetCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R01",
+      "field": "duplicateOf",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "sourceId",
+      "expected": "R02",
+      "actual": "R02",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "campaignId",
+      "expected": "C01",
+      "actual": "C01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "date",
+      "expected": "2026-09-30",
+      "actual": "2026-09-30",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "title",
+      "expected": "钟楼更新, \"第一章\"\n试读",
+      "actual": "钟楼更新, \"第一章\"\n试读",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "status",
+      "expected": "observed",
+      "actual": "observed",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "impressions",
+      "expected": 1000,
+      "actual": 1000,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "clicks",
+      "expected": 50,
+      "actual": 50,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "subscriptions",
+      "expected": 3,
+      "actual": 3,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "spendCNY",
+      "expected": 6,
+      "actual": 6,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "budgetCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R02",
+      "field": "duplicateOf",
+      "expected": "R01",
+      "actual": "R01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "sourceId",
+      "expected": "R03",
+      "actual": "R03",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "campaignId",
+      "expected": "C02",
+      "actual": "C02",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "date",
+      "expected": "2026-10-01",
+      "actual": "2026-10-01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "title",
+      "expected": "守塔人的来信",
+      "actual": "守塔人的来信。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R03",
+      "field": "status",
+      "expected": "observed",
+      "actual": "observed",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "impressions",
+      "expected": 2000,
+      "actual": 2000,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "clicks",
+      "expected": 80,
+      "actual": 80,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "subscriptions",
+      "expected": 4,
+      "actual": 4,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "spendCNY",
+      "expected": 12,
+      "actual": 12,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "budgetCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R03",
+      "field": "duplicateOf",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "sourceId",
+      "expected": "R04",
+      "actual": "R04",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "campaignId",
+      "expected": "C03",
+      "actual": "C03",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "date",
+      "expected": "2026-10-01",
+      "actual": "2026-10-01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "title",
+      "expected": "夜行学徒",
+      "actual": "夜行学徒。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R04",
+      "field": "status",
+      "expected": "observed",
+      "actual": "observed",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "impressions",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "clicks",
+      "expected": 20,
+      "actual": 20,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "subscriptions",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "spendCNY",
+      "expected": 8,
+      "actual": 8,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "budgetCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R04",
+      "field": "duplicateOf",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "sourceId",
+      "expected": "R05",
+      "actual": "R05",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "campaignId",
+      "expected": "C04",
+      "actual": "C04",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "date",
+      "expected": "2026-10-01",
+      "actual": "2026-10-01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "title",
+      "expected": "旧城的钥匙",
+      "actual": "旧城的钥匙。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R05",
+      "field": "status",
+      "expected": "observed",
+      "actual": "observed",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "impressions",
+      "expected": 0,
+      "actual": 0,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "clicks",
+      "expected": 0,
+      "actual": 0,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "subscriptions",
+      "expected": 0,
+      "actual": 0,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "spendCNY",
+      "expected": 0,
+      "actual": 0,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "budgetCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R05",
+      "field": "duplicateOf",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "sourceId",
+      "expected": "R06",
+      "actual": "R06",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "campaignId",
+      "expected": "C05",
+      "actual": "C05",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "date",
+      "expected": "2026-10-02",
+      "actual": "2026-10-02",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "title",
+      "expected": "下一段钟声",
+      "actual": "下一段钟声。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R06",
+      "field": "status",
+      "expected": "planned",
+      "actual": "planned",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "impressions",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "clicks",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "subscriptions",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "spendCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "budgetCNY",
+      "expected": 10,
+      "actual": 10,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R06",
+      "field": "duplicateOf",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "sourceId",
+      "expected": "R07",
+      "actual": "R07",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "campaignId",
+      "expected": "C06",
+      "actual": "C06",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "date",
+      "expected": "2026-10-01",
+      "actual": "2026-10-01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "title",
+      "expected": "钟楼的回声",
+      "actual": "钟楼的回声。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R07",
+      "field": "status",
+      "expected": "observed",
+      "actual": "observed",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "impressions",
+      "expected": 500,
+      "actual": 500,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "clicks",
+      "expected": 25,
+      "actual": 25,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "subscriptions",
+      "expected": 2,
+      "actual": 2,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "spendCNY",
+      "expected": 4,
+      "actual": 4,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "budgetCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R07",
+      "field": "duplicateOf",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "sourceId",
+      "expected": "R08",
+      "actual": "R08",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "campaignId",
+      "expected": "C01",
+      "actual": "C01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "date",
+      "expected": "2026-10-01",
+      "actual": "2026-10-01",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "title",
+      "expected": "第二天的试读",
+      "actual": "第二天的试读。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R08",
+      "field": "status",
+      "expected": "observed",
+      "actual": "observed",
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "impressions",
+      "expected": 800,
+      "actual": 800,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "clicks",
+      "expected": 40,
+      "actual": 40,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "subscriptions",
+      "expected": 1,
+      "actual": 1,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "spendCNY",
+      "expected": 5,
+      "actual": 5,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "budgetCNY",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    },
+    {
+      "sourceId": "R08",
+      "field": "duplicateOf",
+      "expected": null,
+      "actual": null,
+      "equal": true,
+      "judgment": "与请求前参考逐字段比较"
+    }
+  ],
+  "evidenceChecks": [
+    {
+      "sourceId": "R01",
+      "field": "campaignId",
+      "quote": "活动 C01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "date",
+      "quote": "日期 2026-09-30",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "title",
+      "quote": "标题正文为下面两行：\n钟楼更新, \"第一章\"\n试读",
+      "exactSubstring": false,
+      "allowedNull": false,
+      "passed": false
+    },
+    {
+      "sourceId": "R01",
+      "field": "status",
+      "quote": "已经投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "impressions",
+      "quote": "展示1千次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "clicks",
+      "quote": "点击50次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "subscriptions",
+      "quote": "新增订阅3次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "spendCNY",
+      "quote": "实际花费6元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "budgetCNY",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R01",
+      "field": "duplicateOf",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "campaignId",
+      "quote": "活动 C01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "date",
+      "quote": "日期 2026-09-30",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "title",
+      "quote": "标题正文为下面两行：\n钟楼更新, \"第一章\"\n试读",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "status",
+      "quote": "已经投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "impressions",
+      "quote": "展示1千次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "clicks",
+      "quote": "点击50次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "subscriptions",
+      "quote": "新增订阅3次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "spendCNY",
+      "quote": "实际花费6元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "budgetCNY",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R02",
+      "field": "duplicateOf",
+      "quote": "这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "campaignId",
+      "quote": "活动 C02",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "date",
+      "quote": "日期 2026-10-01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "title",
+      "quote": "标题为：守塔人的来信。",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "status",
+      "quote": "已经投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "impressions",
+      "quote": "展示2,000次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "clicks",
+      "quote": "点击80次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "subscriptions",
+      "quote": "新增订阅4次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "spendCNY",
+      "quote": "实际花费12元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "budgetCNY",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R03",
+      "field": "duplicateOf",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "campaignId",
+      "quote": "活动 C03",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "date",
+      "quote": "日期 2026-10-01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "title",
+      "quote": "标题为：夜行学徒。",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "status",
+      "quote": "已经投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "impressions",
+      "quote": "展示次数未提供",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "clicks",
+      "quote": "点击20次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "subscriptions",
+      "quote": "新增订阅没有统计",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "spendCNY",
+      "quote": "实际花费8元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "budgetCNY",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R04",
+      "field": "duplicateOf",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "campaignId",
+      "quote": "活动 C04",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "date",
+      "quote": "日期 2026-10-01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "title",
+      "quote": "标题为：旧城的钥匙。",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "status",
+      "quote": "已经投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "impressions",
+      "quote": "展示0次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "clicks",
+      "quote": "点击0次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "subscriptions",
+      "quote": "新增订阅0次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "spendCNY",
+      "quote": "实际花费0元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "budgetCNY",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R05",
+      "field": "duplicateOf",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "campaignId",
+      "quote": "活动 C05",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "date",
+      "quote": "计划日期 2026-10-02",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "title",
+      "quote": "拟定标题为：下一段钟声。",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "status",
+      "quote": "尚未投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "impressions",
+      "quote": "预计展示1.5千次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "clicks",
+      "quote": "预计点击75次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "subscriptions",
+      "quote": "没有实际...新增订阅...数据",
+      "exactSubstring": false,
+      "allowedNull": false,
+      "passed": false
+    },
+    {
+      "sourceId": "R06",
+      "field": "spendCNY",
+      "quote": "没有实际...花费数据",
+      "exactSubstring": false,
+      "allowedNull": false,
+      "passed": false
+    },
+    {
+      "sourceId": "R06",
+      "field": "budgetCNY",
+      "quote": "预算10元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R06",
+      "field": "duplicateOf",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "campaignId",
+      "quote": "活动 C06",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "date",
+      "quote": "日期 2026-10-01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "title",
+      "quote": "标题为：钟楼的回声。",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "status",
+      "quote": "已经投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "impressions",
+      "quote": "展示500次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "clicks",
+      "quote": "点击25次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "subscriptions",
+      "quote": "新增订阅2次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "spendCNY",
+      "quote": "实际花费4元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "budgetCNY",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R07",
+      "field": "duplicateOf",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "campaignId",
+      "quote": "活动 C01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "date",
+      "quote": "日期 2026-10-01",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "title",
+      "quote": "标题为：第二天的试读。",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "status",
+      "quote": "已经投放",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "impressions",
+      "quote": "展示800次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "clicks",
+      "quote": "点击40次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "subscriptions",
+      "quote": "新增订阅1次",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "spendCNY",
+      "quote": "实际花费5元人民币",
+      "exactSubstring": true,
+      "allowedNull": false,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "budgetCNY",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    },
+    {
+      "sourceId": "R08",
+      "field": "duplicateOf",
+      "quote": null,
+      "exactSubstring": false,
+      "allowedNull": true,
+      "passed": true
+    }
+  ],
+  "shapeChecks": [
+    {
+      "sourceId": "R01",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    },
+    {
+      "sourceId": "R02",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    },
+    {
+      "sourceId": "R03",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    },
+    {
+      "sourceId": "R04",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    },
+    {
+      "sourceId": "R05",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    },
+    {
+      "sourceId": "R06",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    },
+    {
+      "sourceId": "R07",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    },
+    {
+      "sourceId": "R08",
+      "keysMatch": true,
+      "evidenceKeysMatch": true
+    }
+  ],
+  "summaryComparisons": [
+    {
+      "field": "uniqueObservedSourceIds",
+      "expected": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "actual": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "equal": false
+    },
+    {
+      "field": "ctrSourceIds",
+      "expected": [
+        "R01",
+        "R03",
+        "R07",
+        "R08"
+      ],
+      "actual": [
+        "R01",
+        "R03",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "equal": false
+    },
+    {
+      "field": "ctrClicks",
+      "expected": 195,
+      "actual": 200,
+      "equal": false
+    },
+    {
+      "field": "ctrImpressions",
+      "expected": 4300,
+      "actual": 4300,
+      "equal": true
+    },
+    {
+      "field": "ctr",
+      "expected": 0.04534883720930233,
+      "actual": 0.046511627906976744,
+      "equal": false
+    },
+    {
+      "field": "knownActualSpendCNY",
+      "expected": 35,
+      "actual": 35,
+      "equal": true
+    },
+    {
+      "field": "knownSubscriptionEvents",
+      "expected": 10,
+      "actual": 10,
+      "equal": true
+    },
+    {
+      "field": "knownSubscriptionSourceIds",
+      "expected": [
+        "R01",
+        "R03",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "actual": [
+        "R01",
+        "R03",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "equal": true
+    }
+  ],
+  "modelSummary": {
+    "uniqueObservedSourceIds": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "ctrSourceIds": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "ctrClicks": 200,
+    "ctrImpressions": 4300,
+    "ctr": 0.046511627906976744,
+    "knownActualSpendCNY": 35,
+    "knownSubscriptionEvents": 10,
+    "knownSubscriptionSourceIds": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "limits": [
+      "不能推出全部活动的总体效果（因 R04 缺失 impressions、R06 为 planned、R02 为 duplicate）",
+      "不能推出独立订阅人数（因 subscriptions 是日报内事件次数，无去重标识）",
+      "不能推出标题与效果间的因果关系（因无对照组、无变量控制、多日/多活动混杂）"
+    ]
+  },
+  "valueDifferences": [
+    {
+      "sourceId": "R03",
+      "field": "title",
+      "expected": "守塔人的来信",
+      "actual": "守塔人的来信。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R04",
+      "field": "title",
+      "expected": "夜行学徒",
+      "actual": "夜行学徒。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R05",
+      "field": "title",
+      "expected": "旧城的钥匙",
+      "actual": "旧城的钥匙。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R06",
+      "field": "title",
+      "expected": "下一段钟声",
+      "actual": "下一段钟声。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R07",
+      "field": "title",
+      "expected": "钟楼的回声",
+      "actual": "钟楼的回声。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    },
+    {
+      "sourceId": "R08",
+      "field": "title",
+      "expected": "第二天的试读",
+      "actual": "第二天的试读。",
+      "equal": false,
+      "judgment": "标题句号边界在原输入中不明确，差异须人确认；不自动判作事实错误"
+    }
+  ],
+  "quoteFailures": [
+    {
+      "sourceId": "R01",
+      "field": "title",
+      "quote": "标题正文为下面两行：\n钟楼更新, \"第一章\"\n试读",
+      "exactSubstring": false,
+      "allowedNull": false,
+      "passed": false
+    },
+    {
+      "sourceId": "R06",
+      "field": "subscriptions",
+      "quote": "没有实际...新增订阅...数据",
+      "exactSubstring": false,
+      "allowedNull": false,
+      "passed": false
+    },
+    {
+      "sourceId": "R06",
+      "field": "spendCNY",
+      "quote": "没有实际...花费数据",
+      "exactSubstring": false,
+      "allowedNull": false,
+      "passed": false
+    }
+  ],
+  "summaryFailures": [
+    {
+      "field": "uniqueObservedSourceIds",
+      "expected": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "actual": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "equal": false
+    },
+    {
+      "field": "ctrSourceIds",
+      "expected": [
+        "R01",
+        "R03",
+        "R07",
+        "R08"
+      ],
+      "actual": [
+        "R01",
+        "R03",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "equal": false
+    },
+    {
+      "field": "ctrClicks",
+      "expected": 195,
+      "actual": 200,
+      "equal": false
+    },
+    {
+      "field": "ctr",
+      "expected": 0.04534883720930233,
+      "actual": 0.046511627906976744,
+      "equal": false
+    }
+  ],
+  "teacherCSV": {
+    "path": "runs/teacher-csv-01/teacher-reference.csv",
+    "bytes": 606,
+    "sha256": "48f1605647dac18bcc291f45fa56ca74862b8ad6c82cedcfc0e02793a620dcee",
+    "columns": [
+      "sourceId",
+      "campaignId",
+      "date",
+      "title",
+      "status",
+      "impressions",
+      "clicks",
+      "subscriptions",
+      "spendCNY",
+      "budgetCNY",
+      "duplicateOf"
+    ],
+    "headerEqual": true,
+    "dataRows": 8,
+    "fieldCounts": [
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11,
+      11
+    ],
+    "physicalLines": 11,
+    "fullValuesEqual": true,
+    "nullConvention": "数值列、duplicateOf空单元格按本练习契约读回null；0保持数值0；标题非空。CSV本身不附带这些类型。",
+    "restoredFullRows": [
+      {
+        "sourceId": "R01",
+        "campaignId": "C01",
+        "date": "2026-09-30",
+        "title": "钟楼更新, \"第一章\"\n试读",
+        "status": "observed",
+        "impressions": 1000,
+        "clicks": 50,
+        "subscriptions": 3,
+        "spendCNY": 6,
+        "budgetCNY": null,
+        "duplicateOf": null
+      },
+      {
+        "sourceId": "R02",
+        "campaignId": "C01",
+        "date": "2026-09-30",
+        "title": "钟楼更新, \"第一章\"\n试读",
+        "status": "observed",
+        "impressions": 1000,
+        "clicks": 50,
+        "subscriptions": 3,
+        "spendCNY": 6,
+        "budgetCNY": null,
+        "duplicateOf": "R01"
+      },
+      {
+        "sourceId": "R03",
+        "campaignId": "C02",
+        "date": "2026-10-01",
+        "title": "守塔人的来信",
+        "status": "observed",
+        "impressions": 2000,
+        "clicks": 80,
+        "subscriptions": 4,
+        "spendCNY": 12,
+        "budgetCNY": null,
+        "duplicateOf": null
+      },
+      {
+        "sourceId": "R04",
+        "campaignId": "C03",
+        "date": "2026-10-01",
+        "title": "夜行学徒",
+        "status": "observed",
+        "impressions": null,
+        "clicks": 20,
+        "subscriptions": null,
+        "spendCNY": 8,
+        "budgetCNY": null,
+        "duplicateOf": null
+      },
+      {
+        "sourceId": "R05",
+        "campaignId": "C04",
+        "date": "2026-10-01",
+        "title": "旧城的钥匙",
+        "status": "observed",
+        "impressions": 0,
+        "clicks": 0,
+        "subscriptions": 0,
+        "spendCNY": 0,
+        "budgetCNY": null,
+        "duplicateOf": null
+      },
+      {
+        "sourceId": "R06",
+        "campaignId": "C05",
+        "date": "2026-10-02",
+        "title": "下一段钟声",
+        "status": "planned",
+        "impressions": null,
+        "clicks": null,
+        "subscriptions": null,
+        "spendCNY": null,
+        "budgetCNY": 10,
+        "duplicateOf": null
+      },
+      {
+        "sourceId": "R07",
+        "campaignId": "C06",
+        "date": "2026-10-01",
+        "title": "钟楼的回声",
+        "status": "observed",
+        "impressions": 500,
+        "clicks": 25,
+        "subscriptions": 2,
+        "spendCNY": 4,
+        "budgetCNY": null,
+        "duplicateOf": null
+      },
+      {
+        "sourceId": "R08",
+        "campaignId": "C01",
+        "date": "2026-10-01",
+        "title": "第二天的试读",
+        "status": "observed",
+        "impressions": 800,
+        "clicks": 40,
+        "subscriptions": 1,
+        "spendCNY": 5,
+        "budgetCNY": null,
+        "duplicateOf": null
+      }
+    ]
+  },
+  "teacherCalculation": {
+    "dataOrigin": "请求前冻结教师参考，非采用模型失败汇总",
+    "rawSources": 8,
+    "uniqueCampaignDays": 7,
+    "uniqueObservedSourceIds": [
+      "R01",
+      "R03",
+      "R04",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "ctrSourceIds": [
+      "R01",
+      "R03",
+      "R07",
+      "R08"
+    ],
+    "ctrClicks": 195,
+    "ctrImpressions": 4300,
+    "ctrFraction": "195/4300",
+    "ctr": 0.04534883720930233,
+    "ctrPercent": 4.534883720930233,
+    "rowCtrs": [
+      {
+        "sourceId": "R01",
+        "clicks": 50,
+        "impressions": 1000,
+        "ctr": 0.05
+      },
+      {
+        "sourceId": "R03",
+        "clicks": 80,
+        "impressions": 2000,
+        "ctr": 0.04
+      },
+      {
+        "sourceId": "R07",
+        "clicks": 25,
+        "impressions": 500,
+        "ctr": 0.05
+      },
+      {
+        "sourceId": "R08",
+        "clicks": 40,
+        "impressions": 800,
+        "ctr": 0.05
+      }
+    ],
+    "meanRowCtr": 0.0475,
+    "knownObservedClicksSourceIds": [
+      "R01",
+      "R03",
+      "R04",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "knownObservedClicks": 215,
+    "knownActualSpendCNY": 35,
+    "knownSubscriptionEvents": 10,
+    "knownSubscriptionSourceIds": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "excludedForCTR": [
+      {
+        "sourceId": "R02",
+        "reason": "同一日报重复转存，仅保留来源，不重复计入"
+      },
+      {
+        "sourceId": "R04",
+        "reason": "展示次数未知，20次点击不加入该CTR分子"
+      },
+      {
+        "sourceId": "R05",
+        "reason": "明确0展示，单行0/0未定义，不符合展示>0口径"
+      },
+      {
+        "sourceId": "R06",
+        "reason": "尚未投放，预计量和预算不是实际量"
+      }
+    ],
+    "limits": [
+      "仅这四条完整日报的总体点击/展示比例，不代表全部六条实际日报的整体CTR",
+      "订阅只统计五条已知日报的事件次数，不是六条的完整合计或独立人数",
+      "教师材料无真实投放、总体抽样或因果实验，不能推出标题效果"
+    ]
+  }
+}

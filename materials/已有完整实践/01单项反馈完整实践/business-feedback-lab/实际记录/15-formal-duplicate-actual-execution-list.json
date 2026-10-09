@@ -1,0 +1,147 @@
+{
+  "startedAt": "2026-10-04T19:37:37.794Z",
+  "method": "GET",
+  "response": {
+    "status": 200,
+    "data": {
+      "data": {
+        "results": [
+          {
+            "id": "3",
+            "workflowId": "EjDipUeuPFyNhN4s",
+            "workflowVersionId": "60f8d008-4109-4a5d-9f09-b8c14f278cc8",
+            "jsonSizeBytes": 14200,
+            "binaryDataSizeBytes": 0,
+            "mode": "webhook",
+            "retryOf": null,
+            "status": "success",
+            "createdAt": "2026-10-04T19:36:35.863Z",
+            "startedAt": "2026-10-04T19:36:35.872Z",
+            "stoppedAt": "2026-10-04T19:36:35.899Z",
+            "usedPrivateCredentials": false,
+            "waitTill": null,
+            "retrySuccessId": null,
+            "workflowName": "course-m13-反馈收到与完成",
+            "annotation": {
+              "vote": null,
+              "tags": []
+            },
+            "scopes": [
+              "execution:delete",
+              "execution:list",
+              "execution:read",
+              "execution:reveal",
+              "workflow:create",
+              "workflow:delete",
+              "workflow:disableRedaction",
+              "workflow:enableRedaction",
+              "workflow:execute",
+              "workflow:execute-chat",
+              "workflow:export",
+              "workflow:import",
+              "workflow:list",
+              "workflow:move",
+              "workflow:publish",
+              "workflow:read",
+              "workflow:share",
+              "workflow:unpublish",
+              "workflow:unshare",
+              "workflow:update"
+            ]
+          },
+          {
+            "id": "2",
+            "workflowId": "EjDipUeuPFyNhN4s",
+            "workflowVersionId": "60f8d008-4109-4a5d-9f09-b8c14f278cc8",
+            "jsonSizeBytes": 16366,
+            "binaryDataSizeBytes": 0,
+            "mode": "webhook",
+            "retryOf": null,
+            "status": "success",
+            "createdAt": "2026-10-04T19:34:55.991Z",
+            "startedAt": "2026-10-04T19:34:55.999Z",
+            "stoppedAt": "2026-10-04T19:35:01.091Z",
+            "usedPrivateCredentials": false,
+            "waitTill": null,
+            "retrySuccessId": null,
+            "workflowName": "course-m13-反馈收到与完成",
+            "annotation": {
+              "vote": null,
+              "tags": []
+            },
+            "scopes": [
+              "execution:delete",
+              "execution:list",
+              "execution:read",
+              "execution:reveal",
+              "workflow:create",
+              "workflow:delete",
+              "workflow:disableRedaction",
+              "workflow:enableRedaction",
+              "workflow:execute",
+              "workflow:execute-chat",
+              "workflow:export",
+              "workflow:import",
+              "workflow:list",
+              "workflow:move",
+              "workflow:publish",
+              "workflow:read",
+              "workflow:share",
+              "workflow:unpublish",
+              "workflow:unshare",
+              "workflow:update"
+            ]
+          },
+          {
+            "id": "1",
+            "workflowId": "EjDipUeuPFyNhN4s",
+            "workflowVersionId": "ad633902-a88e-4019-a8e3-f7346fe01340",
+            "jsonSizeBytes": 16458,
+            "binaryDataSizeBytes": 0,
+            "mode": "manual",
+            "retryOf": null,
+            "status": "success",
+            "createdAt": "2026-10-04T19:26:18.847Z",
+            "startedAt": "2026-10-04T19:26:18.860Z",
+            "stoppedAt": "2026-10-04T19:26:24.042Z",
+            "usedPrivateCredentials": false,
+            "waitTill": null,
+            "retrySuccessId": null,
+            "workflowName": "course-m13-反馈收到与完成",
+            "annotation": {
+              "vote": null,
+              "tags": []
+            },
+            "scopes": [
+              "execution:delete",
+              "execution:list",
+              "execution:read",
+              "execution:reveal",
+              "workflow:create",
+              "workflow:delete",
+              "workflow:disableRedaction",
+              "workflow:enableRedaction",
+              "workflow:execute",
+              "workflow:execute-chat",
+              "workflow:export",
+              "workflow:import",
+              "workflow:list",
+              "workflow:move",
+              "workflow:publish",
+              "workflow:read",
+              "workflow:share",
+              "workflow:unpublish",
+              "workflow:unshare",
+              "workflow:update"
+            ]
+          }
+        ],
+        "nextCursor": null,
+        "count": 3,
+        "estimated": false,
+        "concurrentExecutionsCount": -1
+      }
+    }
+  },
+  "finishedAt": "2026-10-04T19:37:38.094Z"
+}

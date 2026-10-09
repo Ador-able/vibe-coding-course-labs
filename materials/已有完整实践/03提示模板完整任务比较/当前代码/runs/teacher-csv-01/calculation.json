@@ -1,0 +1,92 @@
+{
+  "dataOrigin": "请求前冻结教师参考，非采用模型失败汇总",
+  "rawSources": 8,
+  "uniqueCampaignDays": 7,
+  "uniqueObservedSourceIds": [
+    "R01",
+    "R03",
+    "R04",
+    "R05",
+    "R07",
+    "R08"
+  ],
+  "ctrSourceIds": [
+    "R01",
+    "R03",
+    "R07",
+    "R08"
+  ],
+  "ctrClicks": 195,
+  "ctrImpressions": 4300,
+  "ctrFraction": "195/4300",
+  "ctr": 0.04534883720930233,
+  "ctrPercent": 4.534883720930233,
+  "rowCtrs": [
+    {
+      "sourceId": "R01",
+      "clicks": 50,
+      "impressions": 1000,
+      "ctr": 0.05
+    },
+    {
+      "sourceId": "R03",
+      "clicks": 80,
+      "impressions": 2000,
+      "ctr": 0.04
+    },
+    {
+      "sourceId": "R07",
+      "clicks": 25,
+      "impressions": 500,
+      "ctr": 0.05
+    },
+    {
+      "sourceId": "R08",
+      "clicks": 40,
+      "impressions": 800,
+      "ctr": 0.05
+    }
+  ],
+  "meanRowCtr": 0.0475,
+  "knownObservedClicksSourceIds": [
+    "R01",
+    "R03",
+    "R04",
+    "R05",
+    "R07",
+    "R08"
+  ],
+  "knownObservedClicks": 215,
+  "knownActualSpendCNY": 35,
+  "knownSubscriptionEvents": 10,
+  "knownSubscriptionSourceIds": [
+    "R01",
+    "R03",
+    "R05",
+    "R07",
+    "R08"
+  ],
+  "excludedForCTR": [
+    {
+      "sourceId": "R02",
+      "reason": "同一日报重复转存，仅保留来源，不重复计入"
+    },
+    {
+      "sourceId": "R04",
+      "reason": "展示次数未知，20次点击不加入该CTR分子"
+    },
+    {
+      "sourceId": "R05",
+      "reason": "明确0展示，单行0/0未定义，不符合展示>0口径"
+    },
+    {
+      "sourceId": "R06",
+      "reason": "尚未投放，预计量和预算不是实际量"
+    }
+  ],
+  "limits": [
+    "仅这四条完整日报的总体点击/展示比例，不代表全部六条实际日报的整体CTR",
+    "订阅只统计五条已知日报的事件次数，不是六条的完整合计或独立人数",
+    "教师材料无真实投放、总体抽样或因果实验，不能推出标题效果"
+  ]
+}

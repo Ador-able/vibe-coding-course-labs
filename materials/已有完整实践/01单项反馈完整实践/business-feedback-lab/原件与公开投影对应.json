@@ -1,0 +1,237 @@
+[
+  {
+    "path": "配置/.gitattributes",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "1caba26bc276e83bc15e65ccd333fdc5662f1f2736799d6d15df2ede4d7ed690"
+  },
+  {
+    "path": "配置/.gitignore",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "b6fa65b0a2691b99845da51422d0087082da94a6f6cae45f84129b1ccc1031fb"
+  },
+  {
+    "path": "配置/README.md",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "d5396d2eeeed6fdf1ee083a9d4d8a0de8016426812ad4c26216c7c4f1f5b6bdc"
+  },
+  {
+    "path": "配置/bind.mjs",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "7005939f5d917686bc11b8b077ed5f2d5c1a7b141fce259af28246b1c744a3ba"
+  },
+  {
+    "path": "配置/inputs/course-feedback-E01.json",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "166d50c697fdd25edfbcd32079ae5971bbf85c5802d5a024d7da473f441b6c66"
+  },
+  {
+    "path": "配置/inputs/course-feedback-E02.json",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "95e41320b5a58611c8470b75f3726e26125fe00633a7fe4ecda9637d43084b2a"
+  },
+  {
+    "path": "配置/runtime.json",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "40ddf9c78f5a299a3dfdefc37ddac4d9c893aeeab9274f03ad289d4e0dfc3b59"
+  },
+  {
+    "path": "配置/tables/feedback-table.json",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "f3367194ab347c00fe90100f87668d4142fca9c6271530dae35520d73b2ea0b0"
+  },
+  {
+    "path": "配置/tables/task-table.json",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "e480fe5f562bc0dd58a6510bf02aa6ccd4169453ec334fb875366bbc0054b1c9"
+  },
+  {
+    "path": "配置/workflow.template.json",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "c164dbaf95c6b4ba08e50b032a04794dfe88b2ee1e0b8de69b7ff4c70cca61d0"
+  },
+  {
+    "path": "配置/源码与文档定位.md",
+    "sourceType": "固定课堂源码原字节",
+    "sourceSHA256": "82ee9f9fcb709c72ae2f7267cd8f9bde90e7a0ef827911f991e169ae8f28b243"
+  },
+  {
+    "path": "工作流配置.bundle",
+    "sourceType": "固定Git bundle原字节",
+    "sourceSHA256": "0eace11acb1bb4e59e5cee31bc7a053d61ea59ed966fd0f8d9751a4907306b06"
+  },
+  {
+    "path": "实际记录/02-test-task-table.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "bee51a83357e5dc3dd429c763c1bfb68fc1352fb33bb186d6744f50532e5c082"
+  },
+  {
+    "path": "实际记录/03-test-feedback-table.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "8fc50adf4ada73303102d318bb64100304abbc57552826808b1419a19d2d0eb2"
+  },
+  {
+    "path": "实际记录/04-created-workflow.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "9f459c3654ad79be98c2d577e9bb914c7bcb04bce4fbbf8872cfa3b9a7bc22d7"
+  },
+  {
+    "path": "实际记录/04a-unpublished-production-probe.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "b6c93f15eaf0334577cf6d1c41b72ed2007d541e42678a726ca1ec3a39a52b31"
+  },
+  {
+    "path": "实际记录/04b-current-unpublished-workflow.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "e9cb4d74baaa661763915a9ff2d51739695360d40cba86e39c410b479786bdf1"
+  },
+  {
+    "path": "实际记录/05-test-listener.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "ee487fc322680632949dd9efcf0aba0ca72f967285a5d22da1b0c6c8a9c060b7"
+  },
+  {
+    "path": "实际记录/06-test-e01.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "0044411be26574e486f91794b22f13c9fc115f01965bb092830a6737abff8bb7"
+  },
+  {
+    "path": "实际记录/06b-test-task-final.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "9fdfaf81b1107490b65acfe53670c82b875fa9313ce69f174f09ab355c47fdf4"
+  },
+  {
+    "path": "实际记录/06c-test-feedback-final.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "18308cb3d79f1701e047c678ec2d8a74649ea7c4fd0cd1037859cb04f66efd7e"
+  },
+  {
+    "path": "实际记录/06c2-test-feedback-final.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "9f1fe3dccbfcb44ec46c093c7c60a9fd47331eabf3d0ba40163e27ad0f1e8cdb"
+  },
+  {
+    "path": "实际记录/06d-test-e01-execution.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "f084caedc630507823deb7eae6cdfaddd7f5940b39a0064b549d53d314787e92"
+  },
+  {
+    "path": "实际记录/07a-formal-task-table.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "702bee7b931cd1b50dbd239c800e20e20eebddb9fbd3a2f211bf485b78d49baa"
+  },
+  {
+    "path": "实际记录/07b-formal-feedback-table.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "8dbb0c71c68b6765f96b4644158c1c3bf0e3acdf110dd285a1bf3aad1e6be62b"
+  },
+  {
+    "path": "实际记录/07c-formal-task-empty.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "2d5955fec9dd3c3289793c64eeba0e4ddbc9e45159b0e038d2335a79a5257bc8"
+  },
+  {
+    "path": "实际记录/07d-formal-feedback-empty.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "adc22f3265680fb6dfb99efc691fb34c85c47d5923694a30414f37c5d55b6a91"
+  },
+  {
+    "path": "实际记录/07f-root-before-publish-complete-verify.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "ce7ac623d642275121a45c88903a3a2ab3535c9e05515671b20289d2ab2852be"
+  },
+  {
+    "path": "实际记录/07g-formal-save.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "ab3984448aa76ca40e3e69ff7b0ecc97561516e696bb220db9b8e77aa7617249"
+  },
+  {
+    "path": "实际记录/08-publish.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "3e493e520ae8af80f59ad32a8c6acdb8d25ee610adf636cf22bd094c2ff7e2a7"
+  },
+  {
+    "path": "实际记录/09-publication-status.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "2f6ab7555379cbed078620991fb5ca2f4954c0dc19cdf58d1e5398f843eed5e4"
+  },
+  {
+    "path": "实际记录/10-formal-e01.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "8e7a0db545a4fce257b3b35d89c142d367372d1d60984feb7810b27dbd0f2beb"
+  },
+  {
+    "path": "实际记录/11-formal-task-after-e01.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "3289a3874553ac3896bcb9eb1eecd7f6f969b2e2866a28d7e690394334921d21"
+  },
+  {
+    "path": "实际记录/12-formal-feedback-after-e01.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "730df1d71028e72b0cc935d270e6a7b33ac3ba4b6c3c08398c849b4f298bfcbd"
+  },
+  {
+    "path": "实际记录/13-formal-e01-execution.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "21f798d673f65f763e767a056c36b8277f7d573493c46a33ce017203da2c2e3b"
+  },
+  {
+    "path": "实际记录/14-formal-e01-duplicate.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "9d209573e14607dd54c70a6a4fcaaa4544a4d7258c964fbef00e58d945ae63cd"
+  },
+  {
+    "path": "实际记录/15-formal-duplicate-actual-execution-list.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "3f52016ec49619bb76368843aa9ceffcc137aa578247301c6d7266f74353ab79"
+  },
+  {
+    "path": "实际记录/15b-formal-duplicate-execution.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "30a9efb217b1424e1b2a9fb4aed251eab8e9e744d595f8fd189bc1e451d03365"
+  },
+  {
+    "path": "实际记录/16-formal-e02.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "0c3e50e39f9aa6dfe697ceba3dcb2e65f99651c2f193e32b7e2155a3d268366c"
+  },
+  {
+    "path": "实际记录/17-formal-task-final.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "d04030588355521be6d5d5e5b2ac21dacbfdf428365aa1df7cb16847fc13ff61"
+  },
+  {
+    "path": "实际记录/18-formal-feedback-final.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "834c188842af8d1a54df598bfa8a4332c3b8fc8b207e27a6049307396b82056b"
+  },
+  {
+    "path": "实际记录/19-formal-e02-execution.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "b8a1c64094303f87adc20c6ad7d8aa22c135245bfe897f9c7756759f29e97d9b"
+  },
+  {
+    "path": "实际记录/20-formal-final-actual-execution-list.json",
+    "sourceType": "实际原件公开字段投影",
+    "sourceSHA256": "07e22259398cd10e86cb9bbac4224dd0fb17ab926821fc95f52dd6368d38b94e"
+  },
+  {
+    "path": "实际记录/test-完整节点业务执行.json",
+    "sourceType": "实际原生解码业务投影",
+    "sourceSHA256": "5ba8b6b25ebb6a3fc5797df8dbfe6e5290d6a7bf3cab16f2f2e4fc45bec62be3"
+  },
+  {
+    "path": "实际记录/formal-E01-完整节点业务执行.json",
+    "sourceType": "实际原生解码业务投影",
+    "sourceSHA256": "ec7f0da81f150533f704a00ba1163757a9a655ed8c126fb067e35424765d8dab"
+  },
+  {
+    "path": "实际记录/formal-duplicate-完整节点业务执行.json",
+    "sourceType": "实际原生解码业务投影",
+    "sourceSHA256": "6d9908f5ad8984d8cfe188858979facda99394977046c590a5cd6fd25bd7ef35"
+  },
+  {
+    "path": "实际记录/formal-E02-failed-完整节点业务执行.json",
+    "sourceType": "实际原生解码业务投影",
+    "sourceSHA256": "9757dcb68d22973a9c5c1e0a88f3dd32c948b1cca4f50fd185b349faba6a0040"
+  }
+]

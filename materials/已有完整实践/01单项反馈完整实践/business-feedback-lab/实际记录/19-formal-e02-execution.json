@@ -1,0 +1,39 @@
+{
+  "action": "execution",
+  "startedAt": "2026-10-04T19:38:38.009Z",
+  "finished": true,
+  "error": null,
+  "finishedAt": "2026-10-04T19:38:38.309Z",
+  "projection": "实际请求正文与公开业务返回字段；不含认证/响应头、用户账户、工作流作者、底层编码执行数据。",
+  "records": [
+    {
+      "endpoint": "/executions/4",
+      "method": "GET",
+      "body": null,
+      "startedAt": "2026-10-04T19:38:38.010Z",
+      "error": null,
+      "finishedAt": "2026-10-04T19:38:38.309Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": {
+            "id": "4",
+            "finished": false,
+            "mode": "webhook",
+            "retryOf": null,
+            "retrySuccessId": null,
+            "status": "error",
+            "createdAt": "2026-10-04T19:37:42.860Z",
+            "startedAt": "2026-10-04T19:37:42.868Z",
+            "stoppedAt": "2026-10-04T19:37:47.953Z",
+            "deletedAt": null,
+            "workflowId": "EjDipUeuPFyNhN4s",
+            "waitTill": null,
+            "storedAt": "db",
+            "workflowVersionId": "60f8d008-4109-4a5d-9f09-b8c14f278cc8"
+          }
+        }
+      }
+    }
+  ]
+}
