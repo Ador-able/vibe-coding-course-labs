@@ -1,4 +1,0 @@
-Warning: Cannot load "@napi-rs/canvas" package: "Error: Failed to load native binding".
-Warning: Cannot polyfill `ImageData`, rendering may be broken.
-Warning: Cannot polyfill `Path2D`, rendering may be broken.
-Warning: loadFont - translateFont failed: "UnknownErrorException: Ensure that the `cMapUrl` and `cMapPacked` API parameters are provided.".

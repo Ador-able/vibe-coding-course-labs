@@ -1,0 +1,370 @@
+{
+  "version": 1,
+  "resultData": {
+    "lastNodeExecuted": "登记completed",
+    "runData": {
+      "接收完整反馈": [
+        {
+          "startTime": 1791141978886,
+          "executionIndex": 0,
+          "source": [],
+          "hints": [],
+          "executionTime": 1,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [
+                {
+                  "json": {
+                    "params": {},
+                    "query": {},
+                    "body": {
+                      "eventId": "course-feedback-E01",
+                      "feedbackId": "FB01",
+                      "workId": "clocktower",
+                      "chapterNumber": 1,
+                      "readerId": "classroom-reader-01",
+                      "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                      "failTask": false
+                    },
+                    "webhookUrl": "http://localhost:5688/webhook-test/course-m13-feedback-evidence",
+                    "executionMode": "test"
+                  },
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "按事件读取已有任务": [
+        {
+          "startTime": 1791141978888,
+          "executionIndex": 1,
+          "source": [
+            {
+              "previousNode": "接收完整反馈",
+              "previousNodeOutput": 0,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 47,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [
+                {
+                  "json": {},
+                  "pairedItem": [
+                    {
+                      "item": 0,
+                      "input": 0
+                    }
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "已有任务吗": [
+        {
+          "startTime": 1791141978935,
+          "executionIndex": 2,
+          "source": [
+            {
+              "previousNode": "按事件读取已有任务",
+              "previousNodeOutput": 0,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 8,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [],
+              [
+                {
+                  "json": {},
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "登记收到": [
+        {
+          "startTime": 1791141978943,
+          "executionIndex": 3,
+          "source": [
+            {
+              "previousNode": "已有任务吗",
+              "previousNodeOutput": 1,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 46,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [
+                {
+                  "json": {
+                    "eventId": "course-feedback-E01",
+                    "feedbackId": "FB01",
+                    "workId": "clocktower",
+                    "chapterNumber": 1,
+                    "readerId": "classroom-reader-01",
+                    "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                    "failTask": false,
+                    "status": "received",
+                    "notificationStatus": "not_sent",
+                    "executionId": "1",
+                    "feedbackRowId": null,
+                    "id": 1,
+                    "createdAt": "2026-10-04T19:26:18.977Z",
+                    "updatedAt": "2026-10-04T19:26:18.977Z"
+                  },
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "返回202收到": [
+        {
+          "startTime": 1791141978989,
+          "executionIndex": 4,
+          "source": [
+            {
+              "previousNode": "登记收到",
+              "previousNodeOutput": 0,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 8,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [
+                {
+                  "json": {
+                    "eventId": "course-feedback-E01",
+                    "feedbackId": "FB01",
+                    "workId": "clocktower",
+                    "chapterNumber": 1,
+                    "readerId": "classroom-reader-01",
+                    "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                    "failTask": false,
+                    "status": "received",
+                    "notificationStatus": "not_sent",
+                    "executionId": "1",
+                    "feedbackRowId": null,
+                    "id": 1,
+                    "createdAt": "2026-10-04T19:26:18.977Z",
+                    "updatedAt": "2026-10-04T19:26:18.977Z"
+                  },
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "保留五秒观察窗口": [
+        {
+          "startTime": 1791141978997,
+          "executionIndex": 5,
+          "source": [
+            {
+              "previousNode": "返回202收到",
+              "previousNodeOutput": 0,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 5001,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [
+                {
+                  "json": {
+                    "eventId": "course-feedback-E01",
+                    "feedbackId": "FB01",
+                    "workId": "clocktower",
+                    "chapterNumber": 1,
+                    "readerId": "classroom-reader-01",
+                    "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                    "failTask": false,
+                    "status": "received",
+                    "notificationStatus": "not_sent",
+                    "executionId": "1",
+                    "feedbackRowId": null,
+                    "id": 1,
+                    "createdAt": "2026-10-04T19:26:18.977Z",
+                    "updatedAt": "2026-10-04T19:26:18.977Z"
+                  },
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "课堂失败条件吗": [
+        {
+          "startTime": 1791141983999,
+          "executionIndex": 6,
+          "source": [
+            {
+              "previousNode": "保留五秒观察窗口",
+              "previousNodeOutput": 0,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 1,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [],
+              [
+                {
+                  "json": {
+                    "eventId": "course-feedback-E01",
+                    "feedbackId": "FB01",
+                    "workId": "clocktower",
+                    "chapterNumber": 1,
+                    "readerId": "classroom-reader-01",
+                    "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                    "failTask": false,
+                    "status": "received",
+                    "notificationStatus": "not_sent",
+                    "executionId": "1",
+                    "feedbackRowId": null,
+                    "id": 1,
+                    "createdAt": "2026-10-04T19:26:18.977Z",
+                    "updatedAt": "2026-10-04T19:26:18.977Z"
+                  },
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "写入完整读者反馈": [
+        {
+          "startTime": 1791141984000,
+          "executionIndex": 7,
+          "source": [
+            {
+              "previousNode": "课堂失败条件吗",
+              "previousNodeOutput": 1,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 21,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [
+                {
+                  "json": {
+                    "eventId": "course-feedback-E01",
+                    "feedbackId": "FB01",
+                    "workId": "clocktower",
+                    "chapterNumber": 1,
+                    "readerId": "classroom-reader-01",
+                    "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                    "taskRowId": 1,
+                    "id": 1,
+                    "createdAt": "2026-10-04T19:26:24.010Z",
+                    "updatedAt": "2026-10-04T19:26:24.010Z"
+                  },
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ],
+      "登记completed": [
+        {
+          "startTime": 1791141984021,
+          "executionIndex": 8,
+          "source": [
+            {
+              "previousNode": "写入完整读者反馈",
+              "previousNodeOutput": 0,
+              "previousNodeRun": 0
+            }
+          ],
+          "hints": [],
+          "executionTime": 20,
+          "executionStatus": "success",
+          "data": {
+            "main": [
+              [
+                {
+                  "json": {
+                    "eventId": "course-feedback-E01",
+                    "feedbackId": "FB01",
+                    "workId": "clocktower",
+                    "chapterNumber": 1,
+                    "readerId": "classroom-reader-01",
+                    "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+                    "failTask": false,
+                    "status": "completed",
+                    "notificationStatus": "not_sent",
+                    "executionId": "1",
+                    "feedbackRowId": 1,
+                    "id": 1,
+                    "createdAt": "2026-10-04T19:26:18.977Z",
+                    "updatedAt": "2026-10-04T19:26:24.030Z"
+                  },
+                  "pairedItem": {
+                    "item": 0
+                  }
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "projection": {
+    "source": "固定 n8n 实际执行 data，经容器内成熟 flatted 原生解码；没有另运行工作流。",
+    "omitted": [
+      "顶层resumeToken",
+      "startData",
+      "executionData",
+      "Webhook输入headers"
+    ],
+    "webhookHeaderItemsOmitted": 1,
+    "scope": "所有节点的完整业务输入/输出项、状态、源位置、索引与耗时保留；不是完整私有执行协议。"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "action": "listen",
+  "startedAt": "2026-10-04T19:25:56.619Z",
+  "finished": true,
+  "error": null,
+  "finishedAt": "2026-10-04T19:25:56.932Z",
+  "projection": "实际请求正文与公开业务返回字段；不含认证/响应头、用户账户、工作流作者、底层编码执行数据。",
+  "records": [
+    {
+      "endpoint": "/workflows/EjDipUeuPFyNhN4s/run",
+      "method": "POST",
+      "body": {
+        "triggerToStartFrom": {
+          "name": "接收完整反馈"
+        }
+      },
+      "startedAt": "2026-10-04T19:25:56.620Z",
+      "error": null,
+      "finishedAt": "2026-10-04T19:25:56.932Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": {
+            "waitingForWebhook": true
+          }
+        }
+      }
+    }
+  ]
+}
