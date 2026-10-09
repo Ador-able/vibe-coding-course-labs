@@ -1,0 +1,15 @@
+已完成 Skill 与参考阅读，但**未能读取 `clocktower` 的业务材料**：当前没有小说教学 MCP 的业务工具，查询 `novel_lab` 的资源与资源模板均返回 `unknown MCP server 'novel_lab'`。
+
+实际读取结果：
+
+| 项目 | 结果 |
+|---|---|
+| [novel-chapter-task Skill](plugins/novel-practice/skills/novel-chapter-task/SKILL.md) | 已读取 |
+| [状态与检查参考](plugins/novel-practice/skills/novel-chapter-task/references/state-and-review.md) | 已读取 |
+| `clocktower` 当前要求、章节目录 | 未取得 |
+| 第 3 章及第 1、2 章完整正文 | 未取得 |
+| 实际保存状态、人工采用状态、资料修订 | 无法确认 |
+
+参考明确规定，资料基线应来自 `read_work.revision`、第 3 章 `read_chapter.revision`，以及第 1、2 章各自的 `number` 与 `revision`。本次未取得这些返回值，因此不能列出实际基线，也不能将“读取失败”解释为“尚未保存”。
+
+没有正文和当前设定作为依据，本次不作设定一致性或文学表现判断。未生成、保存或采用正文，未读取本地业务材料，未调用其他插件。需先让该插件的小说教学 MCP 在当前会话中可用，才能完成业务检查。

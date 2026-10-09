@@ -1,0 +1,23 @@
+{
+  "installed": [
+    {
+      "pluginId": "novel-practice@novel-agent-lab",
+      "name": "novel-practice",
+      "marketplaceName": "novel-agent-lab",
+      "version": "0.1.0",
+      "installed": true,
+      "enabled": true,
+      "source": {
+        "source": "local",
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab\\plugins\\novel-practice"
+      },
+      "marketplaceSource": {
+        "sourceType": "local",
+        "source": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab"
+      },
+      "installPolicy": "AVAILABLE",
+      "authPolicy": "ON_INSTALL"
+    }
+  ],
+  "available": []
+}
