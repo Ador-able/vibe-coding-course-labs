@@ -1,0 +1,7 @@
+{
+  "at": "2026-10-03T10:20:23.396Z",
+  "observed": "waitForEvent(download) timed out after 10000ms",
+  "actualFile": "C:/Users/32686/Downloads/受控请求页面-0872f16c-f3c9-429b-b70b-e4141268fc60.json",
+  "savedEvidence": "本标签八任务完整下载.json",
+  "interpretation": "下载事件观察超时；实际文件已由本次点击写入，保留原字节，不把工具事件超时当页面下载失败。没有再次点击或运行请求。"
+}

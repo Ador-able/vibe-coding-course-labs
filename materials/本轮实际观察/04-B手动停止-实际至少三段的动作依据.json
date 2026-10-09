@@ -1,0 +1,236 @@
+{
+  "at": "2026-10-03T10:13:07.926Z",
+  "deltaCount": 3,
+  "client": {
+    "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+    "fixtureKey": "B",
+    "scenario": "normal",
+    "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+    "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+    "beganAt": "2026-10-03T10:13:07.393Z",
+    "endedAt": null,
+    "clientState": "streaming",
+    "stopRequestedAt": null,
+    "message": {
+      "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+      "metadata": {
+        "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+        "fixtureKey": "B",
+        "state": "running",
+        "cause": null,
+        "origin": "controlled-exercise"
+      },
+      "role": "assistant",
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "type": "text",
+          "text": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+          "state": "streaming"
+        }
+      ]
+    },
+    "actions": [
+      {
+        "at": "2026-10-03T10:13:07.393Z",
+        "elapsedMs": 0,
+        "value": {
+          "kind": "user-submit"
+        }
+      }
+    ],
+    "httpInput": {
+      "url": "/api/requests",
+      "method": "POST",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "body": "{\"fixtureKey\":\"B\",\"scenario\":\"normal\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0\",\"messages\":[{\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:user\",\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"text\":\"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"}]}],\"trigger\":\"submit-message\"}"
+    },
+    "httpResponse": {
+      "status": 200,
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-type": "text/event-stream",
+        "date": "Sat, 03 Oct 2026 10:13:07 GMT",
+        "transfer-encoding": "chunked",
+        "x-accel-buffering": "no",
+        "x-powered-by": "Express",
+        "x-vercel-ai-ui-message-stream": "v1"
+      }
+    },
+    "frames": [
+      {
+        "at": "2026-10-03T10:13:07.411Z",
+        "elapsedMs": 18.1,
+        "value": {
+          "type": "start",
+          "messageId": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+          "messageMetadata": {
+            "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+            "fixtureKey": "B",
+            "state": "running",
+            "cause": null,
+            "origin": "controlled-exercise"
+          }
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.412Z",
+        "elapsedMs": 18.4,
+        "value": {
+          "type": "start-step"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.412Z",
+        "elapsedMs": 18.5,
+        "value": {
+          "type": "text-start",
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.579Z",
+        "elapsedMs": 186.1,
+        "value": {
+          "type": "text-delta",
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+          "delta": "无障碍地图资料拟"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.750Z",
+        "elapsedMs": 356.7,
+        "value": {
+          "type": "text-delta",
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+          "delta": "于11月8日上午"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.920Z",
+        "elapsedMs": 527.1,
+        "value": {
+          "type": "text-delta",
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+          "delta": "在二层活动室整理"
+        }
+      }
+    ],
+    "snapshots": [
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "fixtureKey": "B",
+          "state": "running",
+          "cause": null,
+          "origin": "controlled-exercise"
+        },
+        "role": "assistant",
+        "parts": []
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "fixtureKey": "B",
+          "state": "running",
+          "cause": null,
+          "origin": "controlled-exercise"
+        },
+        "role": "assistant",
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "type": "text",
+            "text": "",
+            "state": "streaming"
+          }
+        ]
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "fixtureKey": "B",
+          "state": "running",
+          "cause": null,
+          "origin": "controlled-exercise"
+        },
+        "role": "assistant",
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "type": "text",
+            "text": "无障碍地图资料拟",
+            "state": "streaming"
+          }
+        ]
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "fixtureKey": "B",
+          "state": "running",
+          "cause": null,
+          "origin": "controlled-exercise"
+        },
+        "role": "assistant",
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "type": "text",
+            "text": "无障碍地图资料拟于11月8日上午",
+            "state": "streaming"
+          }
+        ]
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "fixtureKey": "B",
+          "state": "running",
+          "cause": null,
+          "origin": "controlled-exercise"
+        },
+        "role": "assistant",
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "type": "text",
+            "text": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+            "state": "streaming"
+          }
+        ]
+      }
+    ],
+    "sdkErrors": [],
+    "transportError": null,
+    "cancelReceipt": null,
+    "readReceipts": [],
+    "serverRecord": null,
+    "rejectedBeforeModel": false,
+    "localSignal": {
+      "kind": "AbortSignal",
+      "aborted": false,
+      "reason": {
+        "kind": "undefined"
+      }
+    }
+  }
+}

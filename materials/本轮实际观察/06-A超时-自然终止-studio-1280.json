@@ -1,0 +1,501 @@
+{
+  "answer": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室",
+  "at": "2026-10-03T10:14:23.828Z",
+  "bodyText": "AI 请求观察 · 受控演练\n\n看到一半，接下来怎么办？\n\n固定纪要与回答，用真实 SDK 检查状态；不调用付费模型。\n\n页面方向\n原版\n台面\n笔记页\n准备这次工作\n完整输入\n选择下次演练\n下次材料\nA · 共享书架\nB · 无障碍地图整理\n下次条件\n正常慢流（可手动停止）\n开始前模拟401\n开始前模拟503，再由SDK有限重试\n总等待预算1200毫秒\n已有片段后模拟503\n真实中断本机HTTP连接\n\n本页只使用两份固定全文。模拟文字不理解自行改动。\n\n再次演练\n核查本次记录\n\n等待预算耗尽，输入和收到的片段保留；没有自动再提交。\n\n当前任务\n\nA · 青禾社区共享书架筹备纪要（教学虚构）\n\n总等待预算1200毫秒\n\n共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室\n\n编号 705b3985 · 只显示本次实际收到的文字\n\n上次完整结果\n\nA · 青禾社区共享书架筹备纪要（教学虚构）\n\n编号 947097e8 · 完成于 2026-10-03T10:13:40.865Z\n\n共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。\n\n这是上次任务的技术完整结果，含义仍需回原文核对。\n\n查看完整输入、事件与两端记录",
+  "currentBoundary": "编号 705b3985 · 只显示本次实际收到的文字",
+  "currentClient": {
+    "actions": [
+      {
+        "at": "2026-10-03T10:14:22.473Z",
+        "elapsedMs": 0,
+        "value": {
+          "kind": "user-submit"
+        }
+      }
+    ],
+    "beganAt": "2026-10-03T10:14:22.473Z",
+    "cancelReceipt": null,
+    "clientState": "ended",
+    "endedAt": "2026-10-03T10:14:23.696Z",
+    "fixtureKey": "A",
+    "frames": [
+      {
+        "at": "2026-10-03T10:14:22.492Z",
+        "elapsedMs": 19.4,
+        "value": {
+          "messageId": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+          "messageMetadata": {
+            "cause": null,
+            "fixtureKey": "A",
+            "origin": "controlled-exercise",
+            "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+            "state": "running"
+          },
+          "type": "start"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:22.493Z",
+        "elapsedMs": 19.7,
+        "value": {
+          "type": "start-step"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:22.493Z",
+        "elapsedMs": 19.7,
+        "value": {
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-start"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:22.648Z",
+        "elapsedMs": 175.4,
+        "value": {
+          "delta": "共享书架计划于1",
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:22.819Z",
+        "elapsedMs": 346.4,
+        "value": {
+          "delta": "0月12日下午开",
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:22.990Z",
+        "elapsedMs": 517.2,
+        "value": {
+          "delta": "放，林晓负责图书",
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:23.161Z",
+        "elapsedMs": 688.3,
+        "value": {
+          "delta": "整理，许宁负责借",
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:23.333Z",
+        "elapsedMs": 860,
+        "value": {
+          "delta": "阅说明制作。书架",
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:23.504Z",
+        "elapsedMs": 1031,
+        "value": {
+          "delta": "与阅读桌已到位，",
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:23.675Z",
+        "elapsedMs": 1202.7,
+        "value": {
+          "delta": "图书仅限在活动室",
+          "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:23.694Z",
+        "elapsedMs": 1220.7,
+        "value": {
+          "reason": "TimeoutError: The operation was aborted due to timeout",
+          "type": "abort"
+        }
+      },
+      {
+        "at": "2026-10-03T10:14:23.694Z",
+        "elapsedMs": 1220.9,
+        "value": {
+          "messageMetadata": {
+            "cause": "timeout",
+            "fixtureKey": "A",
+            "origin": "controlled-exercise",
+            "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+            "state": "timed-out"
+          },
+          "type": "message-metadata"
+        }
+      }
+    ],
+    "httpInput": {
+      "body": "{\"fixtureKey\":\"A\",\"scenario\":\"timeout\",\"id\":\"705b3985-9b00-461c-a3c0-6f66d2f5498d\",\"messages\":[{\"id\":\"705b3985-9b00-461c-a3c0-6f66d2f5498d:user\",\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"text\":\"青禾社区共享书架筹备纪要（教学虚构）\\n计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。\\n图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。\\n书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。\\n借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。\"}]}],\"trigger\":\"submit-message\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "POST",
+      "url": "/api/requests"
+    },
+    "httpResponse": {
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-type": "text/event-stream",
+        "date": "Sat, 03 Oct 2026 10:14:22 GMT",
+        "transfer-encoding": "chunked",
+        "x-accel-buffering": "no",
+        "x-powered-by": "Express",
+        "x-vercel-ai-ui-message-stream": "v1"
+      },
+      "status": 200
+    },
+    "input": "青禾社区共享书架筹备纪要（教学虚构）\n计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。\n图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。\n书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。\n借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。",
+    "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+    "localSignal": {
+      "aborted": false,
+      "kind": "AbortSignal",
+      "reason": {
+        "kind": "undefined"
+      }
+    },
+    "message": {
+      "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+      "metadata": {
+        "cause": "timeout",
+        "fixtureKey": "A",
+        "origin": "controlled-exercise",
+        "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+        "state": "timed-out"
+      },
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "state": "streaming",
+          "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室",
+          "type": "text"
+        }
+      ],
+      "role": "assistant"
+    },
+    "readReceipts": [],
+    "rejectedBeforeModel": false,
+    "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+    "scenario": "timeout",
+    "sdkErrors": [],
+    "serverRecord": null,
+    "snapshots": [
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于1",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于10月12日下午开",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于10月12日下午开放，林晓负责图书",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "705b3985-9b00-461c-a3c0-6f66d2f5498d:assistant",
+        "metadata": {
+          "cause": "timeout",
+          "fixtureKey": "A",
+          "origin": "controlled-exercise",
+          "requestId": "705b3985-9b00-461c-a3c0-6f66d2f5498d",
+          "state": "timed-out"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "stopRequestedAt": null,
+    "transportError": null
+  },
+  "currentContext": "总等待预算1200毫秒",
+  "currentTitle": "A · 青禾社区共享书架筹备纪要（教学虚构）",
+  "direction": "studio",
+  "evidenceOpen": false,
+  "fixture": "A",
+  "geometry": {
+    "answer": {
+      "disabled": false,
+      "height": 66.28572082519531,
+      "hidden": false,
+      "width": 804.0000610351562,
+      "x": 396.5714416503906,
+      "y": 194.36607360839844
+    },
+    "direction": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 100.00000762939452,
+      "x": 1132.571533203125,
+      "y": -74.85714721679688
+    },
+    "fixture": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 264,
+      "x": 55.57143020629883,
+      "y": 489.669677734375
+    },
+    "inspect": {
+      "disabled": false,
+      "height": 38.28571701049805,
+      "hidden": false,
+      "width": 116.00000762939452,
+      "x": 153.57144165039062,
+      "y": 684.0178833007812
+    },
+    "material": {
+      "disabled": false,
+      "height": 251.1428680419922,
+      "hidden": false,
+      "width": 264,
+      "x": 55.57143020629883,
+      "y": 153.71429443359375
+    },
+    "previous-panel": {
+      "disabled": false,
+      "height": 396.33929443359375,
+      "hidden": false,
+      "width": 868.0000610351562,
+      "x": 364.5714416503906,
+      "y": 416.3571472167969
+    },
+    "run": {
+      "disabled": false,
+      "height": 38.28571701049805,
+      "hidden": false,
+      "width": 88.00000762939453,
+      "x": 55.57143020629883,
+      "y": 684.0178833007812
+    },
+    "scenario": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 264,
+      "x": 55.57143020629883,
+      "y": 570.1964721679688
+    },
+    "stop": {
+      "disabled": false,
+      "height": 0,
+      "hidden": true,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "input": "青禾社区共享书架筹备纪要（教学虚构）\n计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。\n图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。\n书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。\n借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。",
+  "previousAnswer": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+  "previousContext": "编号 947097e8 · 完成于 2026-10-03T10:13:40.865Z",
+  "previousHidden": false,
+  "previousTitle": "A · 青禾社区共享书架筹备纪要（教学虚构）",
+  "root": {
+    "clientWidth": 1265,
+    "scrollHeight": 1054,
+    "scrollWidth": 1265,
+    "scrollY": 110.85713958740234
+  },
+  "scenario": "timeout",
+  "serverText": "尚未人工读取本次服务端记录。",
+  "status": "等待预算耗尽，输入和收到的片段保留；没有自动再提交。",
+  "url": "http://127.0.0.1:4340/requests.html",
+  "viewport": {
+    "devicePixelRatio": 1.0000000447034836,
+    "height": 900,
+    "scale": 1,
+    "width": 1280
+  }
+}

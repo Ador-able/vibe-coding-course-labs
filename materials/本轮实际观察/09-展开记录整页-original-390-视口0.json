@@ -1,0 +1,1804 @@
+{
+  "answer": "无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实",
+  "at": "2026-10-03T10:23:08.510Z",
+  "bodyText": "AI 请求观察 · 受控演练\n\n看到一半，接下来怎么办？\n\n固定纪要与回答，用真实 SDK 检查状态；不调用付费模型。\n\n页面方向\n原版\n台面\n笔记页\n准备这次工作\n完整输入\n选择下次演练\n下次材料\nA · 共享书架\nB · 无障碍地图整理\n下次条件\n正常慢流（可手动停止）\n开始前模拟401\n开始前模拟503，再由SDK有限重试\n总等待预算1200毫秒\n已有片段后模拟503\n真实中断本机HTTP连接\n\n本页只使用两份固定全文。模拟文字不理解自行改动。\n\n再次演练\n核查本次记录\n\n记录确认连接提前关闭后停止；输入和片段保留。\n\n当前任务\n\nB · 临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n\n真实中断本机HTTP连接\n\n无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\n\n编号 0872f16c · 只显示本次实际收到的文字\n\n上次完整结果\n\nA · 青禾社区共享书架筹备纪要（教学虚构）\n\n编号 947097e8 · 完成于 2026-10-03T10:13:40.865Z\n\n共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。\n\n这是上次任务的技术完整结果，含义仍需回原文核对。\n\n查看完整输入、事件与两端记录\n\n原始客户端异常与模拟服务原因保留在记录中；没有自动再次提交。\n\n页面收到的消息与动作\n{\n  \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n  \"fixtureKey\": \"B\",\n  \"scenario\": \"disconnect\",\n  \"input\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\",\n  \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n  \"beganAt\": \"2026-10-03T10:15:11.896Z\",\n  \"endedAt\": \"2026-10-03T10:15:12.684Z\",\n  \"clientState\": \"failed\",\n  \"stopRequestedAt\": null,\n  \"message\": {\n    \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n    \"metadata\": {\n      \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n      \"fixtureKey\": \"B\",\n      \"state\": \"running\",\n      \"cause\": null,\n      \"origin\": \"controlled-exercise\"\n    },\n    \"role\": \"assistant\",\n    \"parts\": [\n      {\n        \"type\": \"step-start\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n        \"state\": \"streaming\"\n      }\n    ]\n  },\n  \"actions\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.896Z\",\n      \"elapsedMs\": 0,\n      \"value\": {\n        \"kind\": \"user-submit\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:16:21.387Z\",\n      \"elapsedMs\": 69490.9,\n      \"value\": {\n        \"kind\": \"user-read-same-request\"\n      }\n    }\n  ],\n  \"httpInput\": {\n    \"url\": \"/api/requests\",\n    \"method\": \"POST\",\n    \"headers\": {\n      \"content-type\": \"application/json\"\n    },\n    \"body\": \"{\\\"fixtureKey\\\":\\\"B\\\",\\\"scenario\\\":\\\"disconnect\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"messages\\\":[{\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:user\\\",\\\"role\\\":\\\"user\\\",\\\"parts\\\":[{\\\"type\\\":\\\"text\\\",\\\"text\\\":\\\"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\\\"}]}],\\\"trigger\\\":\\\"submit-message\\\"}\"\n  },\n  \"httpResponse\": {\n    \"status\": 200,\n    \"headers\": {\n      \"cache-control\": \"no-cache\",\n      \"connection\": \"keep-alive\",\n      \"content-type\": \"text/event-stream\",\n      \"date\": \"Sat, 03 Oct 2026 10:15:11 GMT\",\n      \"transfer-encoding\": \"chunked\",\n      \"x-accel-buffering\": \"no\",\n      \"x-powered-by\": \"Express\",\n      \"x-vercel-ai-ui-message-stream\": \"v1\"\n    }\n  },\n  \"frames\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.914Z\",\n      \"elapsedMs\": 17.8,\n      \"value\": {\n        \"type\": \"start\",\n        \"messageId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n        \"messageMetadata\": {\n          \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n          \"fixtureKey\": \"B\",\n          \"state\": \"running\",\n          \"cause\": null,\n          \"origin\": \"controlled-exercise\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.914Z\",\n      \"elapsedMs\": 18.1,\n      \"value\": {\n        \"type\": \"start-step\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.914Z\",\n      \"elapsedMs\": 18.1,\n      \"value\": {\n        \"type\": \"text-start\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.077Z\",\n      \"elapsedMs\": 181.5,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"无障碍地图资料拟\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.248Z\",\n      \"elapsedMs\": 352.2,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"于11月8日上午\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.419Z\",\n      \"elapsedMs\": 523.1,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"在二层活动室整理\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.589Z\",\n      \"elapsedMs\": 693.3,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"，周青汇总已核实\"\n      }\n    }\n  ],\n  \"snapshots\": [\n    {\n      \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n      \"metadata\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"fixtureKey\": \"B\",\n        \"state\": \"running\",\n        \"cause\": null,\n        \"origin\": \"controlled-exercise\"\n      },\n      \"role\": \"assistant\",\n      \"parts\": []\n    },\n    {\n      \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n      \"metadata\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"fixtureKey\": \"B\",\n        \"state\": \"running\",\n        \"cause\": null,\n        \"origin\": \"controlled-exercise\"\n      },\n      \"role\": \"assistant\",\n      \"parts\": [\n        {\n          \"type\": \"step-start\"\n        },\n        {\n          \"type\": \"text\",\n          \"text\": \"\",\n          \"state\": \"streaming\"\n        }\n      ]\n    },\n    {\n      \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n      \"metadata\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"fixtureKey\": \"B\",\n        \"state\": \"running\",\n        \"cause\": null,\n        \"origin\": \"controlled-exercise\"\n      },\n      \"role\": \"assistant\",\n      \"parts\": [\n        {\n          \"type\": \"step-start\"\n        },\n        {\n          \"type\": \"text\",\n          \"text\": \"无障碍地图资料拟\",\n          \"state\": \"streaming\"\n        }\n      ]\n    },\n    {\n      \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n      \"metadata\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"fixtureKey\": \"B\",\n        \"state\": \"running\",\n        \"cause\": null,\n        \"origin\": \"controlled-exercise\"\n      },\n      \"role\": \"assistant\",\n      \"parts\": [\n        {\n          \"type\": \"step-start\"\n        },\n        {\n          \"type\": \"text\",\n          \"text\": \"无障碍地图资料拟于11月8日上午\",\n          \"state\": \"streaming\"\n        }\n      ]\n    },\n    {\n      \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n      \"metadata\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"fixtureKey\": \"B\",\n        \"state\": \"running\",\n        \"cause\": null,\n        \"origin\": \"controlled-exercise\"\n      },\n      \"role\": \"assistant\",\n      \"parts\": [\n        {\n          \"type\": \"step-start\"\n        },\n        {\n          \"type\": \"text\",\n          \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理\",\n          \"state\": \"streaming\"\n        }\n      ]\n    },\n    {\n      \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n      \"metadata\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"fixtureKey\": \"B\",\n        \"state\": \"running\",\n        \"cause\": null,\n        \"origin\": \"controlled-exercise\"\n      },\n      \"role\": \"assistant\",\n      \"parts\": [\n        {\n          \"type\": \"step-start\"\n        },\n        {\n          \"type\": \"text\",\n          \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n          \"state\": \"streaming\"\n        }\n      ]\n    }\n  ],\n  \"sdkErrors\": [\n    {\n      \"kind\": \"Error\",\n      \"name\": \"TypeError\",\n      \"message\": \"network error\",\n      \"stack\": \"TypeError: network error\"\n    }\n  ],\n  \"transportError\": null,\n  \"cancelReceipt\": null,\n  \"readReceipts\": [\n    {\n      \"at\": \"2026-10-03T10:16:21.410Z\",\n      \"status\": 200,\n      \"headers\": {\n        \"connection\": \"keep-alive\",\n        \"content-length\": \"21576\",\n        \"content-type\": \"application/json; charset=utf-8\",\n        \"date\": \"Sat, 03 Oct 2026 10:16:21 GMT\",\n        \"etag\": \"W/\\\"5448-0ziYL/9b/6Rr5bYuJ2w8m9U7obU\\\"\",\n        \"keep-alive\": \"timeout=5\",\n        \"x-powered-by\": \"Express\"\n      },\n      \"body\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"serviceId\": \"8c712f61-51f4-442b-9368-59c03a82b167\",\n        \"fixtureKey\": \"B\",\n        \"scenario\": \"disconnect\",\n        \"input\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\",\n        \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n        \"answerOrigin\": \"教师构造的摘要文字，未由模型生成，未由使用者采用\",\n        \"source\": {\n          \"kind\": \"teacher-authored\"\n        },\n        \"sdkOptions\": {\n          \"maxRetries\": 1,\n          \"streamRetries\": \"omitted\",\n          \"totalTimeoutMs\": 15000\n        },\n        \"startedAt\": \"2026-10-03T10:15:11.901Z\",\n        \"state\": \"cancelled\",\n        \"cause\": \"connection-closed\",\n        \"finishedAt\": \"2026-10-03T10:15:12.687Z\",\n        \"manualStopRequestedAt\": null,\n        \"connectionClosedAt\": \"2026-10-03T10:15:12.682Z\",\n        \"providerCalls\": [\n          {\n            \"index\": 1,\n            \"beganAt\": \"2026-10-03T10:15:11.904Z\",\n            \"elapsedMs\": 3.5,\n            \"input\": {\n              \"maxOutputTokens\": {\n                \"kind\": \"undefined\"\n              },\n              \"temperature\": {\n                \"kind\": \"undefined\"\n              },\n              \"topP\": {\n                \"kind\": \"undefined\"\n              },\n              \"topK\": {\n                \"kind\": \"undefined\"\n              },\n              \"presencePenalty\": {\n                \"kind\": \"undefined\"\n              },\n              \"frequencyPenalty\": {\n                \"kind\": \"undefined\"\n              },\n              \"stopSequences\": {\n                \"kind\": \"undefined\"\n              },\n              \"seed\": {\n                \"kind\": \"undefined\"\n              },\n              \"reasoning\": {\n                \"kind\": \"undefined\"\n              },\n              \"tools\": {\n                \"kind\": \"undefined\"\n              },\n              \"toolChoice\": {\n                \"type\": \"auto\"\n              },\n              \"responseFormat\": {\n                \"kind\": \"undefined\"\n              },\n              \"prompt\": [\n                {\n                  \"role\": \"system\",\n                  \"content\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\"\n                },\n                {\n                  \"role\": \"user\",\n                  \"content\": [\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n                    }\n                  ],\n                  \"providerOptions\": {\n                    \"kind\": \"undefined\"\n                  }\n                }\n              ],\n              \"providerOptions\": {\n                \"kind\": \"undefined\"\n              },\n              \"abortSignal\": {\n                \"kind\": \"AbortSignal\",\n                \"aborted\": false,\n                \"reason\": {\n                  \"kind\": \"undefined\"\n                }\n              },\n              \"headers\": {\n                \"kind\": \"undefined\"\n              },\n              \"includeRawChunks\": false\n            },\n            \"result\": \"stream\",\n            \"assignedParts\": [\n              {\n                \"type\": \"stream-start\",\n                \"warnings\": []\n              },\n              {\n                \"type\": \"response-metadata\",\n                \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n                \"modelId\": \"controlled-summary\"\n              },\n              {\n                \"type\": \"text-start\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"无障碍地图资料拟\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"于11月8日上午\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"在二层活动室整理\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"，周青汇总已核实\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"坡道，陈禾整理待\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"复查路段；预计1\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"2位志愿者参加。\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"资料先供内部讨论\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"。四条坡道已有位\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"置与测量日期，施\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"工、物业电梯开放\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"情况及两条来源不\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"明标注仍需核查。\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"签到、分组、复查\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"人员和发布条件尚\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"未决定，不承诺路\"\n              },\n              {\n                \"type\": \"text-delta\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                \"delta\": \"线一定可通行。\"\n              },\n              {\n                \"type\": \"text-end\",\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n              },\n              {\n                \"type\": \"finish\",\n                \"finishReason\": {\n                  \"unified\": \"stop\",\n                  \"raw\": \"controlled-stop\"\n                },\n                \"usage\": {\n                  \"inputTokens\": {\n                    \"total\": {\n                      \"kind\": \"undefined\"\n                    },\n                    \"noCache\": {\n                      \"kind\": \"undefined\"\n                    },\n                    \"cacheRead\": {\n                      \"kind\": \"undefined\"\n                    },\n                    \"cacheWrite\": {\n                      \"kind\": \"undefined\"\n                    }\n                  },\n                  \"outputTokens\": {\n                    \"total\": {\n                      \"kind\": \"undefined\"\n                    },\n                    \"text\": {\n                      \"kind\": \"undefined\"\n                    },\n                    \"reasoning\": {\n                      \"kind\": \"undefined\"\n                    }\n                  }\n                }\n              }\n            ],\n            \"emittedParts\": [\n              {\n                \"at\": \"2026-10-03T10:15:11.905Z\",\n                \"elapsedMs\": 4.1,\n                \"value\": {\n                  \"type\": \"stream-start\",\n                  \"warnings\": []\n                }\n              },\n              {\n                \"at\": \"2026-10-03T10:15:11.905Z\",\n                \"elapsedMs\": 4.5,\n                \"value\": {\n                  \"type\": \"response-metadata\",\n                  \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n                  \"modelId\": \"controlled-summary\"\n                }\n              },\n              {\n                \"at\": \"2026-10-03T10:15:11.906Z\",\n                \"elapsedMs\": 4.8,\n                \"value\": {\n                  \"type\": \"text-start\",\n                  \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n                }\n              },\n              {\n                \"at\": \"2026-10-03T10:15:12.075Z\",\n                \"elapsedMs\": 174.1,\n                \"value\": {\n                  \"type\": \"text-delta\",\n                  \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                  \"delta\": \"无障碍地图资料拟\"\n                }\n              },\n              {\n                \"at\": \"2026-10-03T10:15:12.245Z\",\n                \"elapsedMs\": 344.5,\n                \"value\": {\n                  \"type\": \"text-delta\",\n                  \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                  \"delta\": \"于11月8日上午\"\n                }\n              },\n              {\n                \"at\": \"2026-10-03T10:15:12.416Z\",\n                \"elapsedMs\": 515.1,\n                \"value\": {\n                  \"type\": \"text-delta\",\n                  \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                  \"delta\": \"在二层活动室整理\"\n                }\n              },\n              {\n                \"at\": \"2026-10-03T10:15:12.587Z\",\n                \"elapsedMs\": 685.9,\n                \"value\": {\n                  \"type\": \"text-delta\",\n                  \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n                  \"delta\": \"，周青汇总已核实\"\n                }\n              }\n            ],\n            \"signalChanges\": [\n              {\n                \"at\": \"2026-10-03T10:15:12.682Z\",\n                \"elapsedMs\": 781,\n                \"value\": {\n                  \"kind\": \"AbortSignal\",\n                  \"aborted\": true,\n                  \"reason\": {\n                    \"kind\": \"Error\",\n                    \"name\": \"AbortError\",\n                    \"message\": \"本次HTTP连接提前关闭\",\n                    \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n                  }\n                }\n              }\n            ],\n            \"error\": {\n              \"kind\": \"Error\",\n              \"name\": \"AbortError\",\n              \"message\": \"The operation was aborted\",\n              \"cause\": {\n                \"kind\": \"Error\",\n                \"name\": \"AbortError\",\n                \"message\": \"本次HTTP连接提前关闭\",\n                \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n              },\n              \"code\": \"ABORT_ERR\",\n              \"stack\": \"AbortError: The operation was aborted\\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\\n    at runAbort (node:internal/abort_controller:488:10)\\n    at abortSignal (node:internal/abort_controller:465:5)\\n    at AbortController.abort (node:internal/abort_controller:507:5)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:50)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\"\n            }\n          }\n        ],\n        \"sdkParts\": [\n          {\n            \"at\": \"2026-10-03T10:15:11.903Z\",\n            \"elapsedMs\": 1.7,\n            \"value\": {\n              \"type\": \"start\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.906Z\",\n            \"elapsedMs\": 5.3,\n            \"value\": {\n              \"type\": \"start-step\",\n              \"request\": {\n                \"body\": {\n                  \"kind\": \"undefined\"\n                },\n                \"messages\": {\n                  \"kind\": \"undefined\"\n                }\n              },\n              \"warnings\": []\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.908Z\",\n            \"elapsedMs\": 7.1,\n            \"value\": {\n              \"type\": \"text-start\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.075Z\",\n            \"elapsedMs\": 174.6,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"text\": \"无障碍地图资料拟\",\n              \"providerMetadata\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.246Z\",\n            \"elapsedMs\": 345.4,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"text\": \"于11月8日上午\",\n              \"providerMetadata\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.417Z\",\n            \"elapsedMs\": 516.3,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"text\": \"在二层活动室整理\",\n              \"providerMetadata\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.587Z\",\n            \"elapsedMs\": 686.4,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"text\": \"，周青汇总已核实\",\n              \"providerMetadata\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.685Z\",\n            \"elapsedMs\": 783.8,\n            \"value\": {\n              \"type\": \"abort\",\n              \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n            }\n          }\n        ],\n        \"callbacks\": [\n          {\n            \"at\": \"2026-10-03T10:15:11.902Z\",\n            \"elapsedMs\": 1.5,\n            \"value\": {\n              \"kind\": \"core.onStart\",\n              \"event\": {\n                \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n                \"operationId\": \"ai.streamText\",\n                \"provider\": \"official-mock\",\n                \"modelId\": \"controlled-summary\",\n                \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n                \"messages\": [\n                  {\n                    \"role\": \"user\",\n                    \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n                  }\n                ],\n                \"tools\": {\n                  \"kind\": \"undefined\"\n                },\n                \"toolChoice\": {\n                  \"kind\": \"undefined\"\n                },\n                \"activeTools\": {\n                  \"kind\": \"undefined\"\n                },\n                \"toolOrder\": {\n                  \"kind\": \"undefined\"\n                },\n                \"maxOutputTokens\": {\n                  \"kind\": \"undefined\"\n                },\n                \"temperature\": {\n                  \"kind\": \"undefined\"\n                },\n                \"topP\": {\n                  \"kind\": \"undefined\"\n                },\n                \"topK\": {\n                  \"kind\": \"undefined\"\n                },\n                \"presencePenalty\": {\n                  \"kind\": \"undefined\"\n                },\n                \"frequencyPenalty\": {\n                  \"kind\": \"undefined\"\n                },\n                \"stopSequences\": {\n                  \"kind\": \"undefined\"\n                },\n                \"seed\": {\n                  \"kind\": \"undefined\"\n                },\n                \"reasoning\": {\n                  \"kind\": \"undefined\"\n                },\n                \"maxRetries\": 1,\n                \"timeout\": {\n                  \"totalMs\": 15000\n                },\n                \"headers\": {\n                  \"kind\": \"undefined\"\n                },\n                \"providerOptions\": {\n                  \"kind\": \"undefined\"\n                },\n                \"output\": {\n                  \"kind\": \"undefined\"\n                },\n                \"runtimeContext\": {},\n                \"toolsContext\": {}\n              }\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.904Z\",\n            \"elapsedMs\": 3.2,\n            \"value\": {\n              \"kind\": \"core.onLanguageModelCallStart\",\n              \"event\": {\n                \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n                \"provider\": \"official-mock\",\n                \"modelId\": \"controlled-summary\",\n                \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n                \"messages\": [\n                  {\n                    \"role\": \"user\",\n                    \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n                  }\n                ],\n                \"tools\": {\n                  \"kind\": \"undefined\"\n                },\n                \"maxOutputTokens\": {\n                  \"kind\": \"undefined\"\n                },\n                \"temperature\": {\n                  \"kind\": \"undefined\"\n                },\n                \"topP\": {\n                  \"kind\": \"undefined\"\n                },\n                \"topK\": {\n                  \"kind\": \"undefined\"\n                },\n                \"presencePenalty\": {\n                  \"kind\": \"undefined\"\n                },\n                \"frequencyPenalty\": {\n                  \"kind\": \"undefined\"\n                },\n                \"stopSequences\": {\n                  \"kind\": \"undefined\"\n                },\n                \"seed\": {\n                  \"kind\": \"undefined\"\n                },\n                \"reasoning\": {\n                  \"kind\": \"undefined\"\n                }\n              }\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.684Z\",\n            \"elapsedMs\": 783.3,\n            \"value\": {\n              \"kind\": \"core.onAbort\",\n              \"event\": {\n                \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n                \"steps\": [],\n                \"reason\": {\n                  \"kind\": \"Error\",\n                  \"name\": \"AbortError\",\n                  \"message\": \"本次HTTP连接提前关闭\",\n                  \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n                }\n              }\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.687Z\",\n            \"elapsedMs\": 786.2,\n            \"value\": {\n              \"kind\": \"ui.onEnd\",\n              \"event\": {\n                \"isAborted\": true,\n                \"isContinuation\": false,\n                \"outcome\": {\n                  \"status\": \"aborted\"\n                },\n                \"responseMessage\": {\n                  \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n                  \"metadata\": {\n                    \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                    \"fixtureKey\": \"B\",\n                    \"state\": \"cancelled\",\n                    \"cause\": \"connection-closed\",\n                    \"origin\": \"controlled-exercise\"\n                  },\n                  \"role\": \"assistant\",\n                  \"parts\": [\n                    {\n                      \"type\": \"step-start\"\n                    },\n                    {\n                      \"type\": \"text\",\n                      \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                      \"providerMetadata\": {\n                        \"kind\": \"undefined\"\n                      },\n                      \"state\": \"streaming\"\n                    }\n                  ]\n                },\n                \"messages\": [\n                  {\n                    \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n                    \"metadata\": {\n                      \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                      \"fixtureKey\": \"B\",\n                      \"state\": \"cancelled\",\n                      \"cause\": \"connection-closed\",\n                      \"origin\": \"controlled-exercise\"\n                    },\n                    \"role\": \"assistant\",\n                    \"parts\": [\n                      {\n                        \"type\": \"step-start\"\n                      },\n                      {\n                        \"type\": \"text\",\n                        \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                        \"providerMetadata\": {\n                          \"kind\": \"undefined\"\n                        },\n                        \"state\": \"streaming\"\n                      }\n                    ]\n                  }\n                ],\n                \"finishReason\": {\n                  \"kind\": \"undefined\"\n                }\n              }\n            }\n          }\n        ],\n        \"uiEvents\": [\n          {\n            \"at\": \"2026-10-03T10:15:11.903Z\",\n            \"elapsedMs\": 2.4,\n            \"value\": {\n              \"type\": \"start\",\n              \"messageMetadata\": {\n                \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                \"fixtureKey\": \"B\",\n                \"state\": \"running\",\n                \"cause\": null,\n                \"origin\": \"controlled-exercise\"\n              },\n              \"messageId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.907Z\",\n            \"elapsedMs\": 5.8,\n            \"value\": {\n              \"type\": \"start-step\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.908Z\",\n            \"elapsedMs\": 7.4,\n            \"value\": {\n              \"type\": \"text-start\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.076Z\",\n            \"elapsedMs\": 174.9,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"无障碍地图资料拟\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.247Z\",\n            \"elapsedMs\": 345.8,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"于11月8日上午\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.417Z\",\n            \"elapsedMs\": 516.6,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"在二层活动室整理\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.588Z\",\n            \"elapsedMs\": 686.9,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"，周青汇总已核实\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.685Z\",\n            \"elapsedMs\": 784.4,\n            \"value\": {\n              \"type\": \"abort\",\n              \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.686Z\",\n            \"elapsedMs\": 785.4,\n            \"value\": {\n              \"type\": \"message-metadata\",\n              \"messageMetadata\": {\n                \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                \"fixtureKey\": \"B\",\n                \"state\": \"cancelled\",\n                \"cause\": \"connection-closed\",\n                \"origin\": \"controlled-exercise\"\n              }\n            }\n          }\n        ],\n        \"transport\": [\n          {\n            \"at\": \"2026-10-03T10:15:12.417Z\",\n            \"elapsedMs\": 515.7,\n            \"value\": {\n              \"kind\": \"exercise-disconnect-scheduled\",\n              \"delayMs\": 250\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.680Z\",\n            \"elapsedMs\": 779.6,\n            \"value\": {\n              \"kind\": \"exercise-destroy-http-response\",\n              \"writableEnded\": false,\n              \"state\": \"running\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.682Z\",\n            \"elapsedMs\": 780.7,\n            \"value\": {\n              \"kind\": \"response-close\",\n              \"writableEnded\": false,\n              \"state\": \"running\"\n            }\n          }\n        ],\n        \"serverSseProduced\": [\n          {\n            \"at\": \"2026-10-03T10:15:11.903Z\",\n            \"elapsedMs\": 2.6,\n            \"value\": \"data: {\\\"type\\\":\\\"start\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"running\\\",\\\"cause\\\":null,\\\"origin\\\":\\\"controlled-exercise\\\"},\\\"messageId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.907Z\",\n            \"elapsedMs\": 6.6,\n            \"value\": \"data: {\\\"type\\\":\\\"start-step\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.909Z\",\n            \"elapsedMs\": 7.7,\n            \"value\": \"data: {\\\"type\\\":\\\"text-start\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.076Z\",\n            \"elapsedMs\": 175.4,\n            \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"无障碍地图资料拟\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.247Z\",\n            \"elapsedMs\": 346.1,\n            \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"于11月8日上午\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.418Z\",\n            \"elapsedMs\": 517,\n            \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"在二层活动室整理\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.588Z\",\n            \"elapsedMs\": 687.3,\n            \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"，周青汇总已核实\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.686Z\",\n            \"elapsedMs\": 784.8,\n            \"value\": \"data: {\\\"type\\\":\\\"abort\\\",\\\"reason\\\":\\\"AbortError: 本次HTTP连接提前关闭\\\"}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.687Z\",\n            \"elapsedMs\": 785.7,\n            \"value\": \"data: {\\\"type\\\":\\\"message-metadata\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"cancelled\\\",\\\"cause\\\":\\\"connection-closed\\\",\\\"origin\\\":\\\"controlled-exercise\\\"}}\\n\\n\"\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.687Z\",\n            \"elapsedMs\": 786.6,\n            \"value\": \"data: [DONE]\\n\\n\"\n          }\n        ],\n        \"uiMessage\": {\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n          \"metadata\": {\n            \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n            \"fixtureKey\": \"B\",\n            \"state\": \"cancelled\",\n            \"cause\": \"connection-closed\",\n            \"origin\": \"controlled-exercise\"\n          },\n          \"role\": \"assistant\",\n          \"parts\": [\n            {\n              \"type\": \"step-start\"\n            },\n            {\n              \"type\": \"text\",\n              \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n              \"state\": \"streaming\"\n            }\n          ]\n        },\n        \"uiOutcome\": {\n          \"status\": \"aborted\"\n        },\n        \"error\": {\n          \"kind\": \"Error\",\n          \"name\": \"AbortError\",\n          \"message\": \"本次HTTP连接提前关闭\",\n          \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n        }\n      }\n    }\n  ],\n  \"serverRecord\": {\n    \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n    \"serviceId\": \"8c712f61-51f4-442b-9368-59c03a82b167\",\n    \"fixtureKey\": \"B\",\n    \"scenario\": \"disconnect\",\n    \"input\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\",\n    \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n    \"answerOrigin\": \"教师构造的摘要文字，未由模型生成，未由使用者采用\",\n    \"source\": {\n      \"kind\": \"teacher-authored\"\n    },\n    \"sdkOptions\": {\n      \"maxRetries\": 1,\n      \"streamRetries\": \"omitted\",\n      \"totalTimeoutMs\": 15000\n    },\n    \"startedAt\": \"2026-10-03T10:15:11.901Z\",\n    \"state\": \"cancelled\",\n    \"cause\": \"connection-closed\",\n    \"finishedAt\": \"2026-10-03T10:15:12.687Z\",\n    \"manualStopRequestedAt\": null,\n    \"connectionClosedAt\": \"2026-10-03T10:15:12.682Z\",\n    \"providerCalls\": [\n      {\n        \"index\": 1,\n        \"beganAt\": \"2026-10-03T10:15:11.904Z\",\n        \"elapsedMs\": 3.5,\n        \"input\": {\n          \"maxOutputTokens\": {\n            \"kind\": \"undefined\"\n          },\n          \"temperature\": {\n            \"kind\": \"undefined\"\n          },\n          \"topP\": {\n            \"kind\": \"undefined\"\n          },\n          \"topK\": {\n            \"kind\": \"undefined\"\n          },\n          \"presencePenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"frequencyPenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"stopSequences\": {\n            \"kind\": \"undefined\"\n          },\n          \"seed\": {\n            \"kind\": \"undefined\"\n          },\n          \"reasoning\": {\n            \"kind\": \"undefined\"\n          },\n          \"tools\": {\n            \"kind\": \"undefined\"\n          },\n          \"toolChoice\": {\n            \"type\": \"auto\"\n          },\n          \"responseFormat\": {\n            \"kind\": \"undefined\"\n          },\n          \"prompt\": [\n            {\n              \"role\": \"system\",\n              \"content\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\"\n            },\n            {\n              \"role\": \"user\",\n              \"content\": [\n                {\n                  \"type\": \"text\",\n                  \"text\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n                }\n              ],\n              \"providerOptions\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          ],\n          \"providerOptions\": {\n            \"kind\": \"undefined\"\n          },\n          \"abortSignal\": {\n            \"kind\": \"AbortSignal\",\n            \"aborted\": false,\n            \"reason\": {\n              \"kind\": \"undefined\"\n            }\n          },\n          \"headers\": {\n            \"kind\": \"undefined\"\n          },\n          \"includeRawChunks\": false\n        },\n        \"result\": \"stream\",\n        \"assignedParts\": [\n          {\n            \"type\": \"stream-start\",\n            \"warnings\": []\n          },\n          {\n            \"type\": \"response-metadata\",\n            \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n            \"modelId\": \"controlled-summary\"\n          },\n          {\n            \"type\": \"text-start\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"无障碍地图资料拟\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"于11月8日上午\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"在二层活动室整理\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"，周青汇总已核实\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"坡道，陈禾整理待\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"复查路段；预计1\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"2位志愿者参加。\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"资料先供内部讨论\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"。四条坡道已有位\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"置与测量日期，施\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"工、物业电梯开放\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"情况及两条来源不\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"明标注仍需核查。\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"签到、分组、复查\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"人员和发布条件尚\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"未决定，不承诺路\"\n          },\n          {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"线一定可通行。\"\n          },\n          {\n            \"type\": \"text-end\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n          },\n          {\n            \"type\": \"finish\",\n            \"finishReason\": {\n              \"unified\": \"stop\",\n              \"raw\": \"controlled-stop\"\n            },\n            \"usage\": {\n              \"inputTokens\": {\n                \"total\": {\n                  \"kind\": \"undefined\"\n                },\n                \"noCache\": {\n                  \"kind\": \"undefined\"\n                },\n                \"cacheRead\": {\n                  \"kind\": \"undefined\"\n                },\n                \"cacheWrite\": {\n                  \"kind\": \"undefined\"\n                }\n              },\n              \"outputTokens\": {\n                \"total\": {\n                  \"kind\": \"undefined\"\n                },\n                \"text\": {\n                  \"kind\": \"undefined\"\n                },\n                \"reasoning\": {\n                  \"kind\": \"undefined\"\n                }\n              }\n            }\n          }\n        ],\n        \"emittedParts\": [\n          {\n            \"at\": \"2026-10-03T10:15:11.905Z\",\n            \"elapsedMs\": 4.1,\n            \"value\": {\n              \"type\": \"stream-start\",\n              \"warnings\": []\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.905Z\",\n            \"elapsedMs\": 4.5,\n            \"value\": {\n              \"type\": \"response-metadata\",\n              \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n              \"modelId\": \"controlled-summary\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:11.906Z\",\n            \"elapsedMs\": 4.8,\n            \"value\": {\n              \"type\": \"text-start\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.075Z\",\n            \"elapsedMs\": 174.1,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"无障碍地图资料拟\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.245Z\",\n            \"elapsedMs\": 344.5,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"于11月8日上午\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.416Z\",\n            \"elapsedMs\": 515.1,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"在二层活动室整理\"\n            }\n          },\n          {\n            \"at\": \"2026-10-03T10:15:12.587Z\",\n            \"elapsedMs\": 685.9,\n            \"value\": {\n              \"type\": \"text-delta\",\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n              \"delta\": \"，周青汇总已核实\"\n            }\n          }\n        ],\n        \"signalChanges\": [\n          {\n            \"at\": \"2026-10-03T10:15:12.682Z\",\n            \"elapsedMs\": 781,\n            \"value\": {\n              \"kind\": \"AbortSignal\",\n              \"aborted\": true,\n              \"reason\": {\n                \"kind\": \"Error\",\n                \"name\": \"AbortError\",\n                \"message\": \"本次HTTP连接提前关闭\",\n                \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n              }\n            }\n          }\n        ],\n        \"error\": {\n          \"kind\": \"Error\",\n          \"name\": \"AbortError\",\n          \"message\": \"The operation was aborted\",\n          \"cause\": {\n            \"kind\": \"Error\",\n            \"name\": \"AbortError\",\n            \"message\": \"本次HTTP连接提前关闭\",\n            \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n          },\n          \"code\": \"ABORT_ERR\",\n          \"stack\": \"AbortError: The operation was aborted\\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\\n    at runAbort (node:internal/abort_controller:488:10)\\n    at abortSignal (node:internal/abort_controller:465:5)\\n    at AbortController.abort (node:internal/abort_controller:507:5)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:50)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\"\n        }\n      }\n    ],\n    \"sdkParts\": [\n      {\n        \"at\": \"2026-10-03T10:15:11.903Z\",\n        \"elapsedMs\": 1.7,\n        \"value\": {\n          \"type\": \"start\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:11.906Z\",\n        \"elapsedMs\": 5.3,\n        \"value\": {\n          \"type\": \"start-step\",\n          \"request\": {\n            \"body\": {\n              \"kind\": \"undefined\"\n            },\n            \"messages\": {\n              \"kind\": \"undefined\"\n            }\n          },\n          \"warnings\": []\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:11.908Z\",\n        \"elapsedMs\": 7.1,\n        \"value\": {\n          \"type\": \"text-start\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.075Z\",\n        \"elapsedMs\": 174.6,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"text\": \"无障碍地图资料拟\",\n          \"providerMetadata\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.246Z\",\n        \"elapsedMs\": 345.4,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"text\": \"于11月8日上午\",\n          \"providerMetadata\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.417Z\",\n        \"elapsedMs\": 516.3,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"text\": \"在二层活动室整理\",\n          \"providerMetadata\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.587Z\",\n        \"elapsedMs\": 686.4,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"text\": \"，周青汇总已核实\",\n          \"providerMetadata\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.685Z\",\n        \"elapsedMs\": 783.8,\n        \"value\": {\n          \"type\": \"abort\",\n          \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n        }\n      }\n    ],\n    \"callbacks\": [\n      {\n        \"at\": \"2026-10-03T10:15:11.902Z\",\n        \"elapsedMs\": 1.5,\n        \"value\": {\n          \"kind\": \"core.onStart\",\n          \"event\": {\n            \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n            \"operationId\": \"ai.streamText\",\n            \"provider\": \"official-mock\",\n            \"modelId\": \"controlled-summary\",\n            \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n            \"messages\": [\n              {\n                \"role\": \"user\",\n                \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n              }\n            ],\n            \"tools\": {\n              \"kind\": \"undefined\"\n            },\n            \"toolChoice\": {\n              \"kind\": \"undefined\"\n            },\n            \"activeTools\": {\n              \"kind\": \"undefined\"\n            },\n            \"toolOrder\": {\n              \"kind\": \"undefined\"\n            },\n            \"maxOutputTokens\": {\n              \"kind\": \"undefined\"\n            },\n            \"temperature\": {\n              \"kind\": \"undefined\"\n            },\n            \"topP\": {\n              \"kind\": \"undefined\"\n            },\n            \"topK\": {\n              \"kind\": \"undefined\"\n            },\n            \"presencePenalty\": {\n              \"kind\": \"undefined\"\n            },\n            \"frequencyPenalty\": {\n              \"kind\": \"undefined\"\n            },\n            \"stopSequences\": {\n              \"kind\": \"undefined\"\n            },\n            \"seed\": {\n              \"kind\": \"undefined\"\n            },\n            \"reasoning\": {\n              \"kind\": \"undefined\"\n            },\n            \"maxRetries\": 1,\n            \"timeout\": {\n              \"totalMs\": 15000\n            },\n            \"headers\": {\n              \"kind\": \"undefined\"\n            },\n            \"providerOptions\": {\n              \"kind\": \"undefined\"\n            },\n            \"output\": {\n              \"kind\": \"undefined\"\n            },\n            \"runtimeContext\": {},\n            \"toolsContext\": {}\n          }\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:11.904Z\",\n        \"elapsedMs\": 3.2,\n        \"value\": {\n          \"kind\": \"core.onLanguageModelCallStart\",\n          \"event\": {\n            \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n            \"provider\": \"official-mock\",\n            \"modelId\": \"controlled-summary\",\n            \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n            \"messages\": [\n              {\n                \"role\": \"user\",\n                \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n              }\n            ],\n            \"tools\": {\n              \"kind\": \"undefined\"\n            },\n            \"maxOutputTokens\": {\n              \"kind\": \"undefined\"\n            },\n            \"temperature\": {\n              \"kind\": \"undefined\"\n            },\n            \"topP\": {\n              \"kind\": \"undefined\"\n            },\n            \"topK\": {\n              \"kind\": \"undefined\"\n            },\n            \"presencePenalty\": {\n              \"kind\": \"undefined\"\n            },\n            \"frequencyPenalty\": {\n              \"kind\": \"undefined\"\n            },\n            \"stopSequences\": {\n              \"kind\": \"undefined\"\n            },\n            \"seed\": {\n              \"kind\": \"undefined\"\n            },\n            \"reasoning\": {\n              \"kind\": \"undefined\"\n            }\n          }\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.684Z\",\n        \"elapsedMs\": 783.3,\n        \"value\": {\n          \"kind\": \"core.onAbort\",\n          \"event\": {\n            \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n            \"steps\": [],\n            \"reason\": {\n              \"kind\": \"Error\",\n              \"name\": \"AbortError\",\n              \"message\": \"本次HTTP连接提前关闭\",\n              \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n            }\n          }\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.687Z\",\n        \"elapsedMs\": 786.2,\n        \"value\": {\n          \"kind\": \"ui.onEnd\",\n          \"event\": {\n            \"isAborted\": true,\n            \"isContinuation\": false,\n            \"outcome\": {\n              \"status\": \"aborted\"\n            },\n            \"responseMessage\": {\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n              \"metadata\": {\n                \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                \"fixtureKey\": \"B\",\n                \"state\": \"cancelled\",\n                \"cause\": \"connection-closed\",\n                \"origin\": \"controlled-exercise\"\n              },\n              \"role\": \"assistant\",\n              \"parts\": [\n                {\n                  \"type\": \"step-start\"\n                },\n                {\n                  \"type\": \"text\",\n                  \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                  \"providerMetadata\": {\n                    \"kind\": \"undefined\"\n                  },\n                  \"state\": \"streaming\"\n                }\n              ]\n            },\n            \"messages\": [\n              {\n                \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n                \"metadata\": {\n                  \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                  \"fixtureKey\": \"B\",\n                  \"state\": \"cancelled\",\n                  \"cause\": \"connection-closed\",\n                  \"origin\": \"controlled-exercise\"\n                },\n                \"role\": \"assistant\",\n                \"parts\": [\n                  {\n                    \"type\": \"step-start\"\n                  },\n                  {\n                    \"type\": \"text\",\n                    \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                    \"providerMetadata\": {\n                      \"kind\": \"undefined\"\n                    },\n                    \"state\": \"streaming\"\n                  }\n                ]\n              }\n            ],\n            \"finishReason\": {\n              \"kind\": \"undefined\"\n            }\n          }\n        }\n      }\n    ],\n    \"uiEvents\": [\n      {\n        \"at\": \"2026-10-03T10:15:11.903Z\",\n        \"elapsedMs\": 2.4,\n        \"value\": {\n          \"type\": \"start\",\n          \"messageMetadata\": {\n            \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n            \"fixtureKey\": \"B\",\n            \"state\": \"running\",\n            \"cause\": null,\n            \"origin\": \"controlled-exercise\"\n          },\n          \"messageId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:11.907Z\",\n        \"elapsedMs\": 5.8,\n        \"value\": {\n          \"type\": \"start-step\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:11.908Z\",\n        \"elapsedMs\": 7.4,\n        \"value\": {\n          \"type\": \"text-start\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.076Z\",\n        \"elapsedMs\": 174.9,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"无障碍地图资料拟\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.247Z\",\n        \"elapsedMs\": 345.8,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"于11月8日上午\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.417Z\",\n        \"elapsedMs\": 516.6,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"在二层活动室整理\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.588Z\",\n        \"elapsedMs\": 686.9,\n        \"value\": {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"，周青汇总已核实\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.685Z\",\n        \"elapsedMs\": 784.4,\n        \"value\": {\n          \"type\": \"abort\",\n          \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.686Z\",\n        \"elapsedMs\": 785.4,\n        \"value\": {\n          \"type\": \"message-metadata\",\n          \"messageMetadata\": {\n            \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n            \"fixtureKey\": \"B\",\n            \"state\": \"cancelled\",\n            \"cause\": \"connection-closed\",\n            \"origin\": \"controlled-exercise\"\n          }\n        }\n      }\n    ],\n    \"transport\": [\n      {\n        \"at\": \"2026-10-03T10:15:12.417Z\",\n        \"elapsedMs\": 515.7,\n        \"value\": {\n          \"kind\": \"exercise-disconnect-scheduled\",\n          \"delayMs\": 250\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.680Z\",\n        \"elapsedMs\": 779.6,\n        \"value\": {\n          \"kind\": \"exercise-destroy-http-response\",\n          \"writableEnded\": false,\n          \"state\": \"running\"\n        }\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.682Z\",\n        \"elapsedMs\": 780.7,\n        \"value\": {\n          \"kind\": \"response-close\",\n          \"writableEnded\": false,\n          \"state\": \"running\"\n        }\n      }\n    ],\n    \"serverSseProduced\": [\n      {\n        \"at\": \"2026-10-03T10:15:11.903Z\",\n        \"elapsedMs\": 2.6,\n        \"value\": \"data: {\\\"type\\\":\\\"start\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"running\\\",\\\"cause\\\":null,\\\"origin\\\":\\\"controlled-exercise\\\"},\\\"messageId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:11.907Z\",\n        \"elapsedMs\": 6.6,\n        \"value\": \"data: {\\\"type\\\":\\\"start-step\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:11.909Z\",\n        \"elapsedMs\": 7.7,\n        \"value\": \"data: {\\\"type\\\":\\\"text-start\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.076Z\",\n        \"elapsedMs\": 175.4,\n        \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"无障碍地图资料拟\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.247Z\",\n        \"elapsedMs\": 346.1,\n        \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"于11月8日上午\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.418Z\",\n        \"elapsedMs\": 517,\n        \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"在二层活动室整理\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.588Z\",\n        \"elapsedMs\": 687.3,\n        \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"，周青汇总已核实\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.686Z\",\n        \"elapsedMs\": 784.8,\n        \"value\": \"data: {\\\"type\\\":\\\"abort\\\",\\\"reason\\\":\\\"AbortError: 本次HTTP连接提前关闭\\\"}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.687Z\",\n        \"elapsedMs\": 785.7,\n        \"value\": \"data: {\\\"type\\\":\\\"message-metadata\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"cancelled\\\",\\\"cause\\\":\\\"connection-closed\\\",\\\"origin\\\":\\\"controlled-exercise\\\"}}\\n\\n\"\n      },\n      {\n        \"at\": \"2026-10-03T10:15:12.687Z\",\n        \"elapsedMs\": 786.6,\n        \"value\": \"data: [DONE]\\n\\n\"\n      }\n    ],\n    \"uiMessage\": {\n      \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n      \"metadata\": {\n        \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n        \"fixtureKey\": \"B\",\n        \"state\": \"cancelled\",\n        \"cause\": \"connection-closed\",\n        \"origin\": \"controlled-exercise\"\n      },\n      \"role\": \"assistant\",\n      \"parts\": [\n        {\n          \"type\": \"step-start\"\n        },\n        {\n          \"type\": \"text\",\n          \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n          \"state\": \"streaming\"\n        }\n      ]\n    },\n    \"uiOutcome\": {\n      \"status\": \"aborted\"\n    },\n    \"error\": {\n      \"kind\": \"Error\",\n      \"name\": \"AbortError\",\n      \"message\": \"本次HTTP连接提前关闭\",\n      \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n    }\n  },\n  \"rejectedBeforeModel\": false,\n  \"localSignal\": {\n    \"kind\": \"AbortSignal\",\n    \"aborted\": false,\n    \"reason\": {\n      \"kind\": \"undefined\"\n    }\n  }\n}\n人工核查的服务端对象\n{\n  \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n  \"serviceId\": \"8c712f61-51f4-442b-9368-59c03a82b167\",\n  \"fixtureKey\": \"B\",\n  \"scenario\": \"disconnect\",\n  \"input\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\",\n  \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n  \"answerOrigin\": \"教师构造的摘要文字，未由模型生成，未由使用者采用\",\n  \"source\": {\n    \"kind\": \"teacher-authored\"\n  },\n  \"sdkOptions\": {\n    \"maxRetries\": 1,\n    \"streamRetries\": \"omitted\",\n    \"totalTimeoutMs\": 15000\n  },\n  \"startedAt\": \"2026-10-03T10:15:11.901Z\",\n  \"state\": \"cancelled\",\n  \"cause\": \"connection-closed\",\n  \"finishedAt\": \"2026-10-03T10:15:12.687Z\",\n  \"manualStopRequestedAt\": null,\n  \"connectionClosedAt\": \"2026-10-03T10:15:12.682Z\",\n  \"providerCalls\": [\n    {\n      \"index\": 1,\n      \"beganAt\": \"2026-10-03T10:15:11.904Z\",\n      \"elapsedMs\": 3.5,\n      \"input\": {\n        \"maxOutputTokens\": {\n          \"kind\": \"undefined\"\n        },\n        \"temperature\": {\n          \"kind\": \"undefined\"\n        },\n        \"topP\": {\n          \"kind\": \"undefined\"\n        },\n        \"topK\": {\n          \"kind\": \"undefined\"\n        },\n        \"presencePenalty\": {\n          \"kind\": \"undefined\"\n        },\n        \"frequencyPenalty\": {\n          \"kind\": \"undefined\"\n        },\n        \"stopSequences\": {\n          \"kind\": \"undefined\"\n        },\n        \"seed\": {\n          \"kind\": \"undefined\"\n        },\n        \"reasoning\": {\n          \"kind\": \"undefined\"\n        },\n        \"tools\": {\n          \"kind\": \"undefined\"\n        },\n        \"toolChoice\": {\n          \"type\": \"auto\"\n        },\n        \"responseFormat\": {\n          \"kind\": \"undefined\"\n        },\n        \"prompt\": [\n          {\n            \"role\": \"system\",\n            \"content\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\"\n          },\n          {\n            \"role\": \"user\",\n            \"content\": [\n              {\n                \"type\": \"text\",\n                \"text\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n              }\n            ],\n            \"providerOptions\": {\n              \"kind\": \"undefined\"\n            }\n          }\n        ],\n        \"providerOptions\": {\n          \"kind\": \"undefined\"\n        },\n        \"abortSignal\": {\n          \"kind\": \"AbortSignal\",\n          \"aborted\": false,\n          \"reason\": {\n            \"kind\": \"undefined\"\n          }\n        },\n        \"headers\": {\n          \"kind\": \"undefined\"\n        },\n        \"includeRawChunks\": false\n      },\n      \"result\": \"stream\",\n      \"assignedParts\": [\n        {\n          \"type\": \"stream-start\",\n          \"warnings\": []\n        },\n        {\n          \"type\": \"response-metadata\",\n          \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n          \"modelId\": \"controlled-summary\"\n        },\n        {\n          \"type\": \"text-start\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"无障碍地图资料拟\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"于11月8日上午\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"在二层活动室整理\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"，周青汇总已核实\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"坡道，陈禾整理待\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"复查路段；预计1\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"2位志愿者参加。\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"资料先供内部讨论\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"。四条坡道已有位\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"置与测量日期，施\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"工、物业电梯开放\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"情况及两条来源不\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"明标注仍需核查。\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"签到、分组、复查\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"人员和发布条件尚\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"未决定，不承诺路\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"线一定可通行。\"\n        },\n        {\n          \"type\": \"text-end\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n        },\n        {\n          \"type\": \"finish\",\n          \"finishReason\": {\n            \"unified\": \"stop\",\n            \"raw\": \"controlled-stop\"\n          },\n          \"usage\": {\n            \"inputTokens\": {\n              \"total\": {\n                \"kind\": \"undefined\"\n              },\n              \"noCache\": {\n                \"kind\": \"undefined\"\n              },\n              \"cacheRead\": {\n                \"kind\": \"undefined\"\n              },\n              \"cacheWrite\": {\n                \"kind\": \"undefined\"\n              }\n            },\n            \"outputTokens\": {\n              \"total\": {\n                \"kind\": \"undefined\"\n              },\n              \"text\": {\n                \"kind\": \"undefined\"\n              },\n              \"reasoning\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          }\n        }\n      ],\n      \"emittedParts\": [\n        {\n          \"at\": \"2026-10-03T10:15:11.905Z\",\n          \"elapsedMs\": 4.1,\n          \"value\": {\n            \"type\": \"stream-start\",\n            \"warnings\": []\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:11.905Z\",\n          \"elapsedMs\": 4.5,\n          \"value\": {\n            \"type\": \"response-metadata\",\n            \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n            \"modelId\": \"controlled-summary\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:11.906Z\",\n          \"elapsedMs\": 4.8,\n          \"value\": {\n            \"type\": \"text-start\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.075Z\",\n          \"elapsedMs\": 174.1,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"无障碍地图资料拟\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.245Z\",\n          \"elapsedMs\": 344.5,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"于11月8日上午\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.416Z\",\n          \"elapsedMs\": 515.1,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"在二层活动室整理\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.587Z\",\n          \"elapsedMs\": 685.9,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"，周青汇总已核实\"\n          }\n        }\n      ],\n      \"signalChanges\": [\n        {\n          \"at\": \"2026-10-03T10:15:12.682Z\",\n          \"elapsedMs\": 781,\n          \"value\": {\n            \"kind\": \"AbortSignal\",\n            \"aborted\": true,\n            \"reason\": {\n              \"kind\": \"Error\",\n              \"name\": \"AbortError\",\n              \"message\": \"本次HTTP连接提前关闭\",\n              \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n            }\n          }\n        }\n      ],\n      \"error\": {\n        \"kind\": \"Error\",\n        \"name\": \"AbortError\",\n        \"message\": \"The operation was aborted\",\n        \"cause\": {\n          \"kind\": \"Error\",\n          \"name\": \"AbortError\",\n          \"message\": \"本次HTTP连接提前关闭\",\n          \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n        },\n        \"code\": \"ABORT_ERR\",\n        \"stack\": \"AbortError: The operation was aborted\\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\\n    at runAbort (node:internal/abort_controller:488:10)\\n    at abortSignal (node:internal/abort_controller:465:5)\\n    at AbortController.abort (node:internal/abort_controller:507:5)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:50)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\"\n      }\n    }\n  ],\n  \"sdkParts\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.903Z\",\n      \"elapsedMs\": 1.7,\n      \"value\": {\n        \"type\": \"start\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.906Z\",\n      \"elapsedMs\": 5.3,\n      \"value\": {\n        \"type\": \"start-step\",\n        \"request\": {\n          \"body\": {\n            \"kind\": \"undefined\"\n          },\n          \"messages\": {\n            \"kind\": \"undefined\"\n          }\n        },\n        \"warnings\": []\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.908Z\",\n      \"elapsedMs\": 7.1,\n      \"value\": {\n        \"type\": \"text-start\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.075Z\",\n      \"elapsedMs\": 174.6,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"无障碍地图资料拟\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.246Z\",\n      \"elapsedMs\": 345.4,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"于11月8日上午\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.417Z\",\n      \"elapsedMs\": 516.3,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"在二层活动室整理\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.587Z\",\n      \"elapsedMs\": 686.4,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"，周青汇总已核实\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.685Z\",\n      \"elapsedMs\": 783.8,\n      \"value\": {\n        \"type\": \"abort\",\n        \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n      }\n    }\n  ],\n  \"callbacks\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.902Z\",\n      \"elapsedMs\": 1.5,\n      \"value\": {\n        \"kind\": \"core.onStart\",\n        \"event\": {\n          \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n          \"operationId\": \"ai.streamText\",\n          \"provider\": \"official-mock\",\n          \"modelId\": \"controlled-summary\",\n          \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n          \"messages\": [\n            {\n              \"role\": \"user\",\n              \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n            }\n          ],\n          \"tools\": {\n            \"kind\": \"undefined\"\n          },\n          \"toolChoice\": {\n            \"kind\": \"undefined\"\n          },\n          \"activeTools\": {\n            \"kind\": \"undefined\"\n          },\n          \"toolOrder\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxOutputTokens\": {\n            \"kind\": \"undefined\"\n          },\n          \"temperature\": {\n            \"kind\": \"undefined\"\n          },\n          \"topP\": {\n            \"kind\": \"undefined\"\n          },\n          \"topK\": {\n            \"kind\": \"undefined\"\n          },\n          \"presencePenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"frequencyPenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"stopSequences\": {\n            \"kind\": \"undefined\"\n          },\n          \"seed\": {\n            \"kind\": \"undefined\"\n          },\n          \"reasoning\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxRetries\": 1,\n          \"timeout\": {\n            \"totalMs\": 15000\n          },\n          \"headers\": {\n            \"kind\": \"undefined\"\n          },\n          \"providerOptions\": {\n            \"kind\": \"undefined\"\n          },\n          \"output\": {\n            \"kind\": \"undefined\"\n          },\n          \"runtimeContext\": {},\n          \"toolsContext\": {}\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.904Z\",\n      \"elapsedMs\": 3.2,\n      \"value\": {\n        \"kind\": \"core.onLanguageModelCallStart\",\n        \"event\": {\n          \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n          \"provider\": \"official-mock\",\n          \"modelId\": \"controlled-summary\",\n          \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n          \"messages\": [\n            {\n              \"role\": \"user\",\n              \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n            }\n          ],\n          \"tools\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxOutputTokens\": {\n            \"kind\": \"undefined\"\n          },\n          \"temperature\": {\n            \"kind\": \"undefined\"\n          },\n          \"topP\": {\n            \"kind\": \"undefined\"\n          },\n          \"topK\": {\n            \"kind\": \"undefined\"\n          },\n          \"presencePenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"frequencyPenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"stopSequences\": {\n            \"kind\": \"undefined\"\n          },\n          \"seed\": {\n            \"kind\": \"undefined\"\n          },\n          \"reasoning\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.684Z\",\n      \"elapsedMs\": 783.3,\n      \"value\": {\n        \"kind\": \"core.onAbort\",\n        \"event\": {\n          \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n          \"steps\": [],\n          \"reason\": {\n            \"kind\": \"Error\",\n            \"name\": \"AbortError\",\n            \"message\": \"本次HTTP连接提前关闭\",\n            \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n          }\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.687Z\",\n      \"elapsedMs\": 786.2,\n      \"value\": {\n        \"kind\": \"ui.onEnd\",\n        \"event\": {\n          \"isAborted\": true,\n          \"isContinuation\": false,\n          \"outcome\": {\n            \"status\": \"aborted\"\n          },\n          \"responseMessage\": {\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n            \"metadata\": {\n              \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n              \"fixtureKey\": \"B\",\n              \"state\": \"cancelled\",\n              \"cause\": \"connection-closed\",\n              \"origin\": \"controlled-exercise\"\n            },\n            \"role\": \"assistant\",\n            \"parts\": [\n              {\n                \"type\": \"step-start\"\n              },\n              {\n                \"type\": \"text\",\n                \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                \"providerMetadata\": {\n                  \"kind\": \"undefined\"\n                },\n                \"state\": \"streaming\"\n              }\n            ]\n          },\n          \"messages\": [\n            {\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n              \"metadata\": {\n                \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                \"fixtureKey\": \"B\",\n                \"state\": \"cancelled\",\n                \"cause\": \"connection-closed\",\n                \"origin\": \"controlled-exercise\"\n              },\n              \"role\": \"assistant\",\n              \"parts\": [\n                {\n                  \"type\": \"step-start\"\n                },\n                {\n                  \"type\": \"text\",\n                  \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                  \"providerMetadata\": {\n                    \"kind\": \"undefined\"\n                  },\n                  \"state\": \"streaming\"\n                }\n              ]\n            }\n          ],\n          \"finishReason\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      }\n    }\n  ],\n  \"uiEvents\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.903Z\",\n      \"elapsedMs\": 2.4,\n      \"value\": {\n        \"type\": \"start\",\n        \"messageMetadata\": {\n          \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n          \"fixtureKey\": \"B\",\n          \"state\": \"running\",\n          \"cause\": null,\n          \"origin\": \"controlled-exercise\"\n        },\n        \"messageId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.907Z\",\n      \"elapsedMs\": 5.8,\n      \"value\": {\n        \"type\": \"start-step\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.908Z\",\n      \"elapsedMs\": 7.4,\n      \"value\": {\n        \"type\": \"text-start\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.076Z\",\n      \"elapsedMs\": 174.9,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"无障碍地图资料拟\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.247Z\",\n      \"elapsedMs\": 345.8,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"于11月8日上午\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.417Z\",\n      \"elapsedMs\": 516.6,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"在二层活动室整理\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.588Z\",\n      \"elapsedMs\": 686.9,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"，周青汇总已核实\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.685Z\",\n      \"elapsedMs\": 784.4,\n      \"value\": {\n        \"type\": \"abort\",\n        \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.686Z\",\n      \"elapsedMs\": 785.4,\n      \"value\": {\n        \"type\": \"message-metadata\",\n        \"messageMetadata\": {\n          \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n          \"fixtureKey\": \"B\",\n          \"state\": \"cancelled\",\n          \"cause\": \"connection-closed\",\n          \"origin\": \"controlled-exercise\"\n        }\n      }\n    }\n  ],\n  \"transport\": [\n    {\n      \"at\": \"2026-10-03T10:15:12.417Z\",\n      \"elapsedMs\": 515.7,\n      \"value\": {\n        \"kind\": \"exercise-disconnect-scheduled\",\n        \"delayMs\": 250\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.680Z\",\n      \"elapsedMs\": 779.6,\n      \"value\": {\n        \"kind\": \"exercise-destroy-http-response\",\n        \"writableEnded\": false,\n        \"state\": \"running\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.682Z\",\n      \"elapsedMs\": 780.7,\n      \"value\": {\n        \"kind\": \"response-close\",\n        \"writableEnded\": false,\n        \"state\": \"running\"\n      }\n    }\n  ],\n  \"serverSseProduced\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.903Z\",\n      \"elapsedMs\": 2.6,\n      \"value\": \"data: {\\\"type\\\":\\\"start\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"running\\\",\\\"cause\\\":null,\\\"origin\\\":\\\"controlled-exercise\\\"},\\\"messageId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.907Z\",\n      \"elapsedMs\": 6.6,\n      \"value\": \"data: {\\\"type\\\":\\\"start-step\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.909Z\",\n      \"elapsedMs\": 7.7,\n      \"value\": \"data: {\\\"type\\\":\\\"text-start\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.076Z\",\n      \"elapsedMs\": 175.4,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"无障碍地图资料拟\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.247Z\",\n      \"elapsedMs\": 346.1,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"于11月8日上午\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.418Z\",\n      \"elapsedMs\": 517,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"在二层活动室整理\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.588Z\",\n      \"elapsedMs\": 687.3,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"，周青汇总已核实\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.686Z\",\n      \"elapsedMs\": 784.8,\n      \"value\": \"data: {\\\"type\\\":\\\"abort\\\",\\\"reason\\\":\\\"AbortError: 本次HTTP连接提前关闭\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.687Z\",\n      \"elapsedMs\": 785.7,\n      \"value\": \"data: {\\\"type\\\":\\\"message-metadata\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"cancelled\\\",\\\"cause\\\":\\\"connection-closed\\\",\\\"origin\\\":\\\"controlled-exercise\\\"}}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.687Z\",\n      \"elapsedMs\": 786.6,\n      \"value\": \"data: [DONE]\\n\\n\"\n    }\n  ],\n  \"uiMessage\": {\n    \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n    \"metadata\": {\n      \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n      \"fixtureKey\": \"B\",\n      \"state\": \"cancelled\",\n      \"cause\": \"connection-closed\",\n      \"origin\": \"controlled-exercise\"\n    },\n    \"role\": \"assistant\",\n    \"parts\": [\n      {\n        \"type\": \"step-start\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n        \"state\": \"streaming\"\n      }\n    ]\n  },\n  \"uiOutcome\": {\n    \"status\": \"aborted\"\n  },\n  \"error\": {\n    \"kind\": \"Error\",\n    \"name\": \"AbortError\",\n    \"message\": \"本次HTTP连接提前关闭\",\n    \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n  }\n}\n下载本页完整记录",
+  "currentBoundary": "编号 0872f16c · 只显示本次实际收到的文字",
+  "currentClient": {
+    "actions": [
+      {
+        "at": "2026-10-03T10:15:11.896Z",
+        "elapsedMs": 0,
+        "value": {
+          "kind": "user-submit"
+        }
+      },
+      {
+        "at": "2026-10-03T10:16:21.387Z",
+        "elapsedMs": 69490.9,
+        "value": {
+          "kind": "user-read-same-request"
+        }
+      }
+    ],
+    "beganAt": "2026-10-03T10:15:11.896Z",
+    "cancelReceipt": null,
+    "clientState": "failed",
+    "endedAt": "2026-10-03T10:15:12.684Z",
+    "fixtureKey": "B",
+    "frames": [
+      {
+        "at": "2026-10-03T10:15:11.914Z",
+        "elapsedMs": 17.8,
+        "value": {
+          "messageId": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+          "messageMetadata": {
+            "cause": null,
+            "fixtureKey": "B",
+            "origin": "controlled-exercise",
+            "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+            "state": "running"
+          },
+          "type": "start"
+        }
+      },
+      {
+        "at": "2026-10-03T10:15:11.914Z",
+        "elapsedMs": 18.1,
+        "value": {
+          "type": "start-step"
+        }
+      },
+      {
+        "at": "2026-10-03T10:15:11.914Z",
+        "elapsedMs": 18.1,
+        "value": {
+          "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+          "type": "text-start"
+        }
+      },
+      {
+        "at": "2026-10-03T10:15:12.077Z",
+        "elapsedMs": 181.5,
+        "value": {
+          "delta": "无障碍地图资料拟",
+          "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:15:12.248Z",
+        "elapsedMs": 352.2,
+        "value": {
+          "delta": "于11月8日上午",
+          "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:15:12.419Z",
+        "elapsedMs": 523.1,
+        "value": {
+          "delta": "在二层活动室整理",
+          "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:15:12.589Z",
+        "elapsedMs": 693.3,
+        "value": {
+          "delta": "，周青汇总已核实",
+          "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+          "type": "text-delta"
+        }
+      }
+    ],
+    "httpInput": {
+      "body": "{\"fixtureKey\":\"B\",\"scenario\":\"disconnect\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60\",\"messages\":[{\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:user\",\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"text\":\"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"}]}],\"trigger\":\"submit-message\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "POST",
+      "url": "/api/requests"
+    },
+    "httpResponse": {
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-type": "text/event-stream",
+        "date": "Sat, 03 Oct 2026 10:15:11 GMT",
+        "transfer-encoding": "chunked",
+        "x-accel-buffering": "no",
+        "x-powered-by": "Express",
+        "x-vercel-ai-ui-message-stream": "v1"
+      },
+      "status": 200
+    },
+    "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+    "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+    "localSignal": {
+      "aborted": false,
+      "kind": "AbortSignal",
+      "reason": {
+        "kind": "undefined"
+      }
+    },
+    "message": {
+      "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+      "metadata": {
+        "cause": null,
+        "fixtureKey": "B",
+        "origin": "controlled-exercise",
+        "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+        "state": "running"
+      },
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "state": "streaming",
+          "text": "无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实",
+          "type": "text"
+        }
+      ],
+      "role": "assistant"
+    },
+    "readReceipts": [
+      {
+        "at": "2026-10-03T10:16:21.410Z",
+        "body": {
+          "answerOrigin": "教师构造的摘要文字，未由模型生成，未由使用者采用",
+          "callbacks": [
+            {
+              "at": "2026-10-03T10:15:11.902Z",
+              "elapsedMs": 1.5,
+              "value": {
+                "event": {
+                  "activeTools": "[MaxDepth]",
+                  "callId": "call-8SA9P7jZ6tfWLsVVPUuHT3B4",
+                  "frequencyPenalty": "[MaxDepth]",
+                  "headers": "[MaxDepth]",
+                  "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+                  "maxOutputTokens": "[MaxDepth]",
+                  "maxRetries": 1,
+                  "messages": "[MaxDepth]",
+                  "modelId": "controlled-summary",
+                  "operationId": "ai.streamText",
+                  "output": "[MaxDepth]",
+                  "presencePenalty": "[MaxDepth]",
+                  "provider": "official-mock",
+                  "providerOptions": "[MaxDepth]",
+                  "reasoning": "[MaxDepth]",
+                  "runtimeContext": "[MaxDepth]",
+                  "seed": "[MaxDepth]",
+                  "stopSequences": "[MaxDepth]",
+                  "temperature": "[MaxDepth]",
+                  "timeout": "[MaxDepth]",
+                  "toolChoice": "[MaxDepth]",
+                  "toolOrder": "[MaxDepth]",
+                  "tools": "[MaxDepth]",
+                  "toolsContext": "[MaxDepth]",
+                  "topK": "[MaxDepth]",
+                  "topP": "[MaxDepth]"
+                },
+                "kind": "core.onStart"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:11.904Z",
+              "elapsedMs": 3.2,
+              "value": {
+                "event": {
+                  "callId": "call-8SA9P7jZ6tfWLsVVPUuHT3B4",
+                  "frequencyPenalty": "[MaxDepth]",
+                  "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+                  "maxOutputTokens": "[MaxDepth]",
+                  "messages": "[MaxDepth]",
+                  "modelId": "controlled-summary",
+                  "presencePenalty": "[MaxDepth]",
+                  "provider": "official-mock",
+                  "reasoning": "[MaxDepth]",
+                  "seed": "[MaxDepth]",
+                  "stopSequences": "[MaxDepth]",
+                  "temperature": "[MaxDepth]",
+                  "tools": "[MaxDepth]",
+                  "topK": "[MaxDepth]",
+                  "topP": "[MaxDepth]"
+                },
+                "kind": "core.onLanguageModelCallStart"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.684Z",
+              "elapsedMs": 783.3,
+              "value": {
+                "event": {
+                  "callId": "call-8SA9P7jZ6tfWLsVVPUuHT3B4",
+                  "reason": "[MaxDepth]",
+                  "steps": "[MaxDepth]"
+                },
+                "kind": "core.onAbort"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.687Z",
+              "elapsedMs": 786.2,
+              "value": {
+                "event": {
+                  "finishReason": "[MaxDepth]",
+                  "isAborted": true,
+                  "isContinuation": false,
+                  "messages": "[MaxDepth]",
+                  "outcome": "[MaxDepth]",
+                  "responseMessage": "[MaxDepth]"
+                },
+                "kind": "ui.onEnd"
+              }
+            }
+          ],
+          "cause": "connection-closed",
+          "connectionClosedAt": "2026-10-03T10:15:12.682Z",
+          "error": {
+            "kind": "Error",
+            "message": "本次HTTP连接提前关闭",
+            "name": "AbortError",
+            "stack": "AbortError: 本次HTTP连接提前关闭\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:56)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)\n    at Socket.onServerResponseClose (node:_http_server:287:5)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+          },
+          "finishedAt": "2026-10-03T10:15:12.687Z",
+          "fixtureKey": "B",
+          "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+          "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+          "manualStopRequestedAt": null,
+          "providerCalls": [
+            {
+              "assignedParts": [
+                {
+                  "type": "stream-start",
+                  "warnings": "[MaxDepth]"
+                },
+                {
+                  "id": "mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1",
+                  "modelId": "controlled-summary",
+                  "type": "response-metadata"
+                },
+                {
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-start"
+                },
+                {
+                  "delta": "无障碍地图资料拟",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "于11月8日上午",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "在二层活动室整理",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "，周青汇总已核实",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "坡道，陈禾整理待",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "复查路段；预计1",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "2位志愿者参加。",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "资料先供内部讨论",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "。四条坡道已有位",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "置与测量日期，施",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "工、物业电梯开放",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "情况及两条来源不",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "明标注仍需核查。",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "签到、分组、复查",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "人员和发布条件尚",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "未决定，不承诺路",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "线一定可通行。",
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                  "type": "text-end"
+                },
+                {
+                  "finishReason": "[MaxDepth]",
+                  "type": "finish",
+                  "usage": "[MaxDepth]"
+                }
+              ],
+              "beganAt": "2026-10-03T10:15:11.904Z",
+              "elapsedMs": 3.5,
+              "emittedParts": [
+                {
+                  "at": "2026-10-03T10:15:11.905Z",
+                  "elapsedMs": 4.1,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:15:11.905Z",
+                  "elapsedMs": 4.5,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:15:11.906Z",
+                  "elapsedMs": 4.8,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:15:12.075Z",
+                  "elapsedMs": 174.1,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:15:12.245Z",
+                  "elapsedMs": 344.5,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:15:12.416Z",
+                  "elapsedMs": 515.1,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:15:12.587Z",
+                  "elapsedMs": 685.9,
+                  "value": "[MaxDepth]"
+                }
+              ],
+              "error": {
+                "cause": {
+                  "kind": "Error",
+                  "message": "本次HTTP连接提前关闭",
+                  "name": "AbortError",
+                  "stack": "AbortError: 本次HTTP连接提前关闭\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:56)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)\n    at Socket.onServerResponseClose (node:_http_server:287:5)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+                },
+                "code": "ABORT_ERR",
+                "kind": "Error",
+                "message": "The operation was aborted",
+                "name": "AbortError",
+                "stack": "AbortError: The operation was aborted\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\n    at runAbort (node:internal/abort_controller:488:10)\n    at abortSignal (node:internal/abort_controller:465:5)\n    at AbortController.abort (node:internal/abort_controller:507:5)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:50)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)"
+              },
+              "index": 1,
+              "input": {
+                "abortSignal": {
+                  "aborted": false,
+                  "kind": "AbortSignal",
+                  "reason": "[MaxDepth]"
+                },
+                "frequencyPenalty": {
+                  "kind": "undefined"
+                },
+                "headers": {
+                  "kind": "undefined"
+                },
+                "includeRawChunks": false,
+                "maxOutputTokens": {
+                  "kind": "undefined"
+                },
+                "presencePenalty": {
+                  "kind": "undefined"
+                },
+                "prompt": [
+                  "[MaxDepth]",
+                  "[MaxDepth]"
+                ],
+                "providerOptions": {
+                  "kind": "undefined"
+                },
+                "reasoning": {
+                  "kind": "undefined"
+                },
+                "responseFormat": {
+                  "kind": "undefined"
+                },
+                "seed": {
+                  "kind": "undefined"
+                },
+                "stopSequences": {
+                  "kind": "undefined"
+                },
+                "temperature": {
+                  "kind": "undefined"
+                },
+                "toolChoice": {
+                  "type": "auto"
+                },
+                "tools": {
+                  "kind": "undefined"
+                },
+                "topK": {
+                  "kind": "undefined"
+                },
+                "topP": {
+                  "kind": "undefined"
+                }
+              },
+              "result": "stream",
+              "signalChanges": [
+                {
+                  "at": "2026-10-03T10:15:12.682Z",
+                  "elapsedMs": 781,
+                  "value": "[MaxDepth]"
+                }
+              ]
+            }
+          ],
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "scenario": "disconnect",
+          "sdkOptions": {
+            "maxRetries": 1,
+            "streamRetries": "omitted",
+            "totalTimeoutMs": 15000
+          },
+          "sdkParts": [
+            {
+              "at": "2026-10-03T10:15:11.903Z",
+              "elapsedMs": 1.7,
+              "value": {
+                "type": "start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:11.906Z",
+              "elapsedMs": 5.3,
+              "value": {
+                "request": {
+                  "body": "[MaxDepth]",
+                  "messages": "[MaxDepth]"
+                },
+                "type": "start-step",
+                "warnings": []
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:11.908Z",
+              "elapsedMs": 7.1,
+              "value": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.075Z",
+              "elapsedMs": 174.6,
+              "value": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "text": "无障碍地图资料拟",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.246Z",
+              "elapsedMs": 345.4,
+              "value": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "text": "于11月8日上午",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.417Z",
+              "elapsedMs": 516.3,
+              "value": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "text": "在二层活动室整理",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.587Z",
+              "elapsedMs": 686.4,
+              "value": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "text": "，周青汇总已核实",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.685Z",
+              "elapsedMs": 783.8,
+              "value": {
+                "reason": "AbortError: 本次HTTP连接提前关闭",
+                "type": "abort"
+              }
+            }
+          ],
+          "serverSseProduced": [
+            {
+              "at": "2026-10-03T10:15:11.903Z",
+              "elapsedMs": 2.6,
+              "value": "data: {\"type\":\"start\",\"messageMetadata\":{\"requestId\":\"0872f16c-f3c9-429b-b70b-e4141268fc60\",\"fixtureKey\":\"B\",\"state\":\"running\",\"cause\":null,\"origin\":\"controlled-exercise\"},\"messageId\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:11.907Z",
+              "elapsedMs": 6.6,
+              "value": "data: {\"type\":\"start-step\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:11.909Z",
+              "elapsedMs": 7.7,
+              "value": "data: {\"type\":\"text-start\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:12.076Z",
+              "elapsedMs": 175.4,
+              "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"无障碍地图资料拟\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:12.247Z",
+              "elapsedMs": 346.1,
+              "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"于11月8日上午\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:12.418Z",
+              "elapsedMs": 517,
+              "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"在二层活动室整理\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:12.588Z",
+              "elapsedMs": 687.3,
+              "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"，周青汇总已核实\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:12.686Z",
+              "elapsedMs": 784.8,
+              "value": "data: {\"type\":\"abort\",\"reason\":\"AbortError: 本次HTTP连接提前关闭\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:12.687Z",
+              "elapsedMs": 785.7,
+              "value": "data: {\"type\":\"message-metadata\",\"messageMetadata\":{\"requestId\":\"0872f16c-f3c9-429b-b70b-e4141268fc60\",\"fixtureKey\":\"B\",\"state\":\"cancelled\",\"cause\":\"connection-closed\",\"origin\":\"controlled-exercise\"}}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:15:12.687Z",
+              "elapsedMs": 786.6,
+              "value": "data: [DONE]\n\n"
+            }
+          ],
+          "serviceId": "8c712f61-51f4-442b-9368-59c03a82b167",
+          "source": {
+            "kind": "teacher-authored"
+          },
+          "startedAt": "2026-10-03T10:15:11.901Z",
+          "state": "cancelled",
+          "transport": [
+            {
+              "at": "2026-10-03T10:15:12.417Z",
+              "elapsedMs": 515.7,
+              "value": {
+                "delayMs": 250,
+                "kind": "exercise-disconnect-scheduled"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.680Z",
+              "elapsedMs": 779.6,
+              "value": {
+                "kind": "exercise-destroy-http-response",
+                "state": "running",
+                "writableEnded": false
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.682Z",
+              "elapsedMs": 780.7,
+              "value": {
+                "kind": "response-close",
+                "state": "running",
+                "writableEnded": false
+              }
+            }
+          ],
+          "uiEvents": [
+            {
+              "at": "2026-10-03T10:15:11.903Z",
+              "elapsedMs": 2.4,
+              "value": {
+                "messageId": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+                "messageMetadata": {
+                  "cause": null,
+                  "fixtureKey": "B",
+                  "origin": "controlled-exercise",
+                  "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+                  "state": "running"
+                },
+                "type": "start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:11.907Z",
+              "elapsedMs": 5.8,
+              "value": {
+                "type": "start-step"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:11.908Z",
+              "elapsedMs": 7.4,
+              "value": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.076Z",
+              "elapsedMs": 174.9,
+              "value": {
+                "delta": "无障碍地图资料拟",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.247Z",
+              "elapsedMs": 345.8,
+              "value": {
+                "delta": "于11月8日上午",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.417Z",
+              "elapsedMs": 516.6,
+              "value": {
+                "delta": "在二层活动室整理",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.588Z",
+              "elapsedMs": 686.9,
+              "value": {
+                "delta": "，周青汇总已核实",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.685Z",
+              "elapsedMs": 784.4,
+              "value": {
+                "reason": "AbortError: 本次HTTP连接提前关闭",
+                "type": "abort"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.686Z",
+              "elapsedMs": 785.4,
+              "value": {
+                "messageMetadata": {
+                  "cause": "connection-closed",
+                  "fixtureKey": "B",
+                  "origin": "controlled-exercise",
+                  "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+                  "state": "cancelled"
+                },
+                "type": "message-metadata"
+              }
+            }
+          ],
+          "uiMessage": {
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+            "metadata": {
+              "cause": "connection-closed",
+              "fixtureKey": "B",
+              "origin": "controlled-exercise",
+              "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+              "state": "cancelled"
+            },
+            "parts": [
+              {
+                "type": "step-start"
+              },
+              {
+                "state": "streaming",
+                "text": "无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实",
+                "type": "text"
+              }
+            ],
+            "role": "assistant"
+          },
+          "uiOutcome": {
+            "status": "aborted"
+          }
+        },
+        "headers": {
+          "connection": "keep-alive",
+          "content-length": "21576",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Sat, 03 Oct 2026 10:16:21 GMT",
+          "etag": "W/\"5448-0ziYL/9b/6Rr5bYuJ2w8m9U7obU\"",
+          "keep-alive": "timeout=5",
+          "x-powered-by": "Express"
+        },
+        "status": 200
+      }
+    ],
+    "rejectedBeforeModel": false,
+    "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+    "scenario": "disconnect",
+    "sdkErrors": [
+      {
+        "kind": "Error",
+        "message": "network error",
+        "name": "TypeError",
+        "stack": "TypeError: network error"
+      }
+    ],
+    "serverRecord": {
+      "answerOrigin": "教师构造的摘要文字，未由模型生成，未由使用者采用",
+      "callbacks": [
+        {
+          "at": "2026-10-03T10:15:11.902Z",
+          "elapsedMs": 1.5,
+          "value": {
+            "event": {
+              "activeTools": {
+                "kind": "undefined"
+              },
+              "callId": "call-8SA9P7jZ6tfWLsVVPUuHT3B4",
+              "frequencyPenalty": {
+                "kind": "undefined"
+              },
+              "headers": {
+                "kind": "undefined"
+              },
+              "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+              "maxOutputTokens": {
+                "kind": "undefined"
+              },
+              "maxRetries": 1,
+              "messages": [
+                {
+                  "content": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+                  "role": "user"
+                }
+              ],
+              "modelId": "controlled-summary",
+              "operationId": "ai.streamText",
+              "output": {
+                "kind": "undefined"
+              },
+              "presencePenalty": {
+                "kind": "undefined"
+              },
+              "provider": "official-mock",
+              "providerOptions": {
+                "kind": "undefined"
+              },
+              "reasoning": {
+                "kind": "undefined"
+              },
+              "runtimeContext": {},
+              "seed": {
+                "kind": "undefined"
+              },
+              "stopSequences": {
+                "kind": "undefined"
+              },
+              "temperature": {
+                "kind": "undefined"
+              },
+              "timeout": {
+                "totalMs": 15000
+              },
+              "toolChoice": {
+                "kind": "undefined"
+              },
+              "toolOrder": {
+                "kind": "undefined"
+              },
+              "tools": {
+                "kind": "undefined"
+              },
+              "toolsContext": {},
+              "topK": {
+                "kind": "undefined"
+              },
+              "topP": {
+                "kind": "undefined"
+              }
+            },
+            "kind": "core.onStart"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:11.904Z",
+          "elapsedMs": 3.2,
+          "value": {
+            "event": {
+              "callId": "call-8SA9P7jZ6tfWLsVVPUuHT3B4",
+              "frequencyPenalty": {
+                "kind": "undefined"
+              },
+              "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+              "maxOutputTokens": {
+                "kind": "undefined"
+              },
+              "messages": [
+                {
+                  "content": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+                  "role": "user"
+                }
+              ],
+              "modelId": "controlled-summary",
+              "presencePenalty": {
+                "kind": "undefined"
+              },
+              "provider": "official-mock",
+              "reasoning": {
+                "kind": "undefined"
+              },
+              "seed": {
+                "kind": "undefined"
+              },
+              "stopSequences": {
+                "kind": "undefined"
+              },
+              "temperature": {
+                "kind": "undefined"
+              },
+              "tools": {
+                "kind": "undefined"
+              },
+              "topK": {
+                "kind": "undefined"
+              },
+              "topP": {
+                "kind": "undefined"
+              }
+            },
+            "kind": "core.onLanguageModelCallStart"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.684Z",
+          "elapsedMs": 783.3,
+          "value": {
+            "event": {
+              "callId": "call-8SA9P7jZ6tfWLsVVPUuHT3B4",
+              "reason": {
+                "kind": "Error",
+                "message": "本次HTTP连接提前关闭",
+                "name": "AbortError",
+                "stack": "AbortError: 本次HTTP连接提前关闭\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:56)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)\n    at Socket.onServerResponseClose (node:_http_server:287:5)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+              },
+              "steps": []
+            },
+            "kind": "core.onAbort"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.687Z",
+          "elapsedMs": 786.2,
+          "value": {
+            "event": {
+              "finishReason": {
+                "kind": "undefined"
+              },
+              "isAborted": true,
+              "isContinuation": false,
+              "messages": [
+                {
+                  "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+                  "metadata": "[MaxDepth]",
+                  "parts": "[MaxDepth]",
+                  "role": "assistant"
+                }
+              ],
+              "outcome": {
+                "status": "aborted"
+              },
+              "responseMessage": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+                "metadata": {
+                  "cause": "connection-closed",
+                  "fixtureKey": "B",
+                  "origin": "controlled-exercise",
+                  "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+                  "state": "cancelled"
+                },
+                "parts": [
+                  "[MaxDepth]",
+                  "[MaxDepth]"
+                ],
+                "role": "assistant"
+              }
+            },
+            "kind": "ui.onEnd"
+          }
+        }
+      ],
+      "cause": "connection-closed",
+      "connectionClosedAt": "2026-10-03T10:15:12.682Z",
+      "error": {
+        "kind": "Error",
+        "message": "本次HTTP连接提前关闭",
+        "name": "AbortError",
+        "stack": "AbortError: 本次HTTP连接提前关闭\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:56)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)\n    at Socket.onServerResponseClose (node:_http_server:287:5)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+      },
+      "finishedAt": "2026-10-03T10:15:12.687Z",
+      "fixtureKey": "B",
+      "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+      "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+      "manualStopRequestedAt": null,
+      "providerCalls": [
+        {
+          "assignedParts": [
+            {
+              "type": "stream-start",
+              "warnings": []
+            },
+            {
+              "id": "mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1",
+              "modelId": "controlled-summary",
+              "type": "response-metadata"
+            },
+            {
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-start"
+            },
+            {
+              "delta": "无障碍地图资料拟",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "于11月8日上午",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "在二层活动室整理",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "，周青汇总已核实",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "坡道，陈禾整理待",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "复查路段；预计1",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "2位志愿者参加。",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "资料先供内部讨论",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "。四条坡道已有位",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "置与测量日期，施",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "工、物业电梯开放",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "情况及两条来源不",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "明标注仍需核查。",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "签到、分组、复查",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "人员和发布条件尚",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "未决定，不承诺路",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "线一定可通行。",
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-delta"
+            },
+            {
+              "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+              "type": "text-end"
+            },
+            {
+              "finishReason": {
+                "raw": "controlled-stop",
+                "unified": "stop"
+              },
+              "type": "finish",
+              "usage": {
+                "inputTokens": {
+                  "cacheRead": "[MaxDepth]",
+                  "cacheWrite": "[MaxDepth]",
+                  "noCache": "[MaxDepth]",
+                  "total": "[MaxDepth]"
+                },
+                "outputTokens": {
+                  "reasoning": "[MaxDepth]",
+                  "text": "[MaxDepth]",
+                  "total": "[MaxDepth]"
+                }
+              }
+            }
+          ],
+          "beganAt": "2026-10-03T10:15:11.904Z",
+          "elapsedMs": 3.5,
+          "emittedParts": [
+            {
+              "at": "2026-10-03T10:15:11.905Z",
+              "elapsedMs": 4.1,
+              "value": {
+                "type": "stream-start",
+                "warnings": []
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:11.905Z",
+              "elapsedMs": 4.5,
+              "value": {
+                "id": "mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1",
+                "modelId": "controlled-summary",
+                "type": "response-metadata"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:11.906Z",
+              "elapsedMs": 4.8,
+              "value": {
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.075Z",
+              "elapsedMs": 174.1,
+              "value": {
+                "delta": "无障碍地图资料拟",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.245Z",
+              "elapsedMs": 344.5,
+              "value": {
+                "delta": "于11月8日上午",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.416Z",
+              "elapsedMs": 515.1,
+              "value": {
+                "delta": "在二层活动室整理",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:15:12.587Z",
+              "elapsedMs": 685.9,
+              "value": {
+                "delta": "，周青汇总已核实",
+                "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+                "type": "text-delta"
+              }
+            }
+          ],
+          "error": {
+            "cause": {
+              "kind": "Error",
+              "message": "本次HTTP连接提前关闭",
+              "name": "AbortError",
+              "stack": "AbortError: 本次HTTP连接提前关闭\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:56)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)\n    at Socket.onServerResponseClose (node:_http_server:287:5)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+            },
+            "code": "ABORT_ERR",
+            "kind": "Error",
+            "message": "The operation was aborted",
+            "name": "AbortError",
+            "stack": "AbortError: The operation was aborted\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\n    at runAbort (node:internal/abort_controller:488:10)\n    at abortSignal (node:internal/abort_controller:465:5)\n    at AbortController.abort (node:internal/abort_controller:507:5)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:50)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)"
+          },
+          "index": 1,
+          "input": {
+            "abortSignal": {
+              "aborted": false,
+              "kind": "AbortSignal",
+              "reason": {
+                "kind": "undefined"
+              }
+            },
+            "frequencyPenalty": {
+              "kind": "undefined"
+            },
+            "headers": {
+              "kind": "undefined"
+            },
+            "includeRawChunks": false,
+            "maxOutputTokens": {
+              "kind": "undefined"
+            },
+            "presencePenalty": {
+              "kind": "undefined"
+            },
+            "prompt": [
+              {
+                "content": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+                "role": "system"
+              },
+              {
+                "content": [
+                  "[MaxDepth]"
+                ],
+                "providerOptions": {
+                  "kind": "undefined"
+                },
+                "role": "user"
+              }
+            ],
+            "providerOptions": {
+              "kind": "undefined"
+            },
+            "reasoning": {
+              "kind": "undefined"
+            },
+            "responseFormat": {
+              "kind": "undefined"
+            },
+            "seed": {
+              "kind": "undefined"
+            },
+            "stopSequences": {
+              "kind": "undefined"
+            },
+            "temperature": {
+              "kind": "undefined"
+            },
+            "toolChoice": {
+              "type": "auto"
+            },
+            "tools": {
+              "kind": "undefined"
+            },
+            "topK": {
+              "kind": "undefined"
+            },
+            "topP": {
+              "kind": "undefined"
+            }
+          },
+          "result": "stream",
+          "signalChanges": [
+            {
+              "at": "2026-10-03T10:15:12.682Z",
+              "elapsedMs": 781,
+              "value": {
+                "aborted": true,
+                "kind": "AbortSignal",
+                "reason": {
+                  "kind": "Error",
+                  "message": "本次HTTP连接提前关闭",
+                  "name": "AbortError",
+                  "stack": "AbortError: 本次HTTP连接提前关闭\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at ServerResponse.close (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:123:56)\n    at Object.onceWrapper (node:events:622:28)\n    at ServerResponse.emit (node:events:520:35)\n    at emitCloseNT (node:_http_server:1073:10)\n    at Socket.onServerResponseClose (node:_http_server:287:5)\n    at Socket.emit (node:events:520:35)\n    at TCP.<anonymous> (node:net:346:12)"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+      "scenario": "disconnect",
+      "sdkOptions": {
+        "maxRetries": 1,
+        "streamRetries": "omitted",
+        "totalTimeoutMs": 15000
+      },
+      "sdkParts": [
+        {
+          "at": "2026-10-03T10:15:11.903Z",
+          "elapsedMs": 1.7,
+          "value": {
+            "type": "start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:11.906Z",
+          "elapsedMs": 5.3,
+          "value": {
+            "request": {
+              "body": {
+                "kind": "undefined"
+              },
+              "messages": {
+                "kind": "undefined"
+              }
+            },
+            "type": "start-step",
+            "warnings": []
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:11.908Z",
+          "elapsedMs": 7.1,
+          "value": {
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "type": "text-start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.075Z",
+          "elapsedMs": 174.6,
+          "value": {
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "providerMetadata": {
+              "kind": "undefined"
+            },
+            "text": "无障碍地图资料拟",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.246Z",
+          "elapsedMs": 345.4,
+          "value": {
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "providerMetadata": {
+              "kind": "undefined"
+            },
+            "text": "于11月8日上午",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.417Z",
+          "elapsedMs": 516.3,
+          "value": {
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "providerMetadata": {
+              "kind": "undefined"
+            },
+            "text": "在二层活动室整理",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.587Z",
+          "elapsedMs": 686.4,
+          "value": {
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "providerMetadata": {
+              "kind": "undefined"
+            },
+            "text": "，周青汇总已核实",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.685Z",
+          "elapsedMs": 783.8,
+          "value": {
+            "reason": "AbortError: 本次HTTP连接提前关闭",
+            "type": "abort"
+          }
+        }
+      ],
+      "serverSseProduced": [
+        {
+          "at": "2026-10-03T10:15:11.903Z",
+          "elapsedMs": 2.6,
+          "value": "data: {\"type\":\"start\",\"messageMetadata\":{\"requestId\":\"0872f16c-f3c9-429b-b70b-e4141268fc60\",\"fixtureKey\":\"B\",\"state\":\"running\",\"cause\":null,\"origin\":\"controlled-exercise\"},\"messageId\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:11.907Z",
+          "elapsedMs": 6.6,
+          "value": "data: {\"type\":\"start-step\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:11.909Z",
+          "elapsedMs": 7.7,
+          "value": "data: {\"type\":\"text-start\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:12.076Z",
+          "elapsedMs": 175.4,
+          "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"无障碍地图资料拟\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:12.247Z",
+          "elapsedMs": 346.1,
+          "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"于11月8日上午\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:12.418Z",
+          "elapsedMs": 517,
+          "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"在二层活动室整理\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:12.588Z",
+          "elapsedMs": 687.3,
+          "value": "data: {\"type\":\"text-delta\",\"id\":\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\"delta\":\"，周青汇总已核实\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:12.686Z",
+          "elapsedMs": 784.8,
+          "value": "data: {\"type\":\"abort\",\"reason\":\"AbortError: 本次HTTP连接提前关闭\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:12.687Z",
+          "elapsedMs": 785.7,
+          "value": "data: {\"type\":\"message-metadata\",\"messageMetadata\":{\"requestId\":\"0872f16c-f3c9-429b-b70b-e4141268fc60\",\"fixtureKey\":\"B\",\"state\":\"cancelled\",\"cause\":\"connection-closed\",\"origin\":\"controlled-exercise\"}}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:15:12.687Z",
+          "elapsedMs": 786.6,
+          "value": "data: [DONE]\n\n"
+        }
+      ],
+      "serviceId": "8c712f61-51f4-442b-9368-59c03a82b167",
+      "source": {
+        "kind": "teacher-authored"
+      },
+      "startedAt": "2026-10-03T10:15:11.901Z",
+      "state": "cancelled",
+      "transport": [
+        {
+          "at": "2026-10-03T10:15:12.417Z",
+          "elapsedMs": 515.7,
+          "value": {
+            "delayMs": 250,
+            "kind": "exercise-disconnect-scheduled"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.680Z",
+          "elapsedMs": 779.6,
+          "value": {
+            "kind": "exercise-destroy-http-response",
+            "state": "running",
+            "writableEnded": false
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.682Z",
+          "elapsedMs": 780.7,
+          "value": {
+            "kind": "response-close",
+            "state": "running",
+            "writableEnded": false
+          }
+        }
+      ],
+      "uiEvents": [
+        {
+          "at": "2026-10-03T10:15:11.903Z",
+          "elapsedMs": 2.4,
+          "value": {
+            "messageId": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+            "messageMetadata": {
+              "cause": null,
+              "fixtureKey": "B",
+              "origin": "controlled-exercise",
+              "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+              "state": "running"
+            },
+            "type": "start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:11.907Z",
+          "elapsedMs": 5.8,
+          "value": {
+            "type": "start-step"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:11.908Z",
+          "elapsedMs": 7.4,
+          "value": {
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "type": "text-start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.076Z",
+          "elapsedMs": 174.9,
+          "value": {
+            "delta": "无障碍地图资料拟",
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.247Z",
+          "elapsedMs": 345.8,
+          "value": {
+            "delta": "于11月8日上午",
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.417Z",
+          "elapsedMs": 516.6,
+          "value": {
+            "delta": "在二层活动室整理",
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.588Z",
+          "elapsedMs": 686.9,
+          "value": {
+            "delta": "，周青汇总已核实",
+            "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:text:1",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.685Z",
+          "elapsedMs": 784.4,
+          "value": {
+            "reason": "AbortError: 本次HTTP连接提前关闭",
+            "type": "abort"
+          }
+        },
+        {
+          "at": "2026-10-03T10:15:12.686Z",
+          "elapsedMs": 785.4,
+          "value": {
+            "messageMetadata": {
+              "cause": "connection-closed",
+              "fixtureKey": "B",
+              "origin": "controlled-exercise",
+              "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+              "state": "cancelled"
+            },
+            "type": "message-metadata"
+          }
+        }
+      ],
+      "uiMessage": {
+        "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+        "metadata": {
+          "cause": "connection-closed",
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "state": "cancelled"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      "uiOutcome": {
+        "status": "aborted"
+      }
+    },
+    "snapshots": [
+      {
+        "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "state": "running"
+        },
+        "parts": [],
+        "role": "assistant"
+      },
+      {
+        "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟于11月8日上午",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "0872f16c-f3c9-429b-b70b-e4141268fc60:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "0872f16c-f3c9-429b-b70b-e4141268fc60",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "stopRequestedAt": null,
+    "transportError": null
+  },
+  "currentContext": "真实中断本机HTTP连接",
+  "currentTitle": "B · 临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）",
+  "direction": "original",
+  "evidenceOpen": true,
+  "fixture": "B",
+  "geometry": {
+    "answer": {
+      "disabled": false,
+      "height": 62.392860412597656,
+      "hidden": false,
+      "width": 302.2857360839844,
+      "x": 36.57143020629883,
+      "y": 1134.4554443359375
+    },
+    "direction": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 100.00000762939452,
+      "x": 78,
+      "y": 170.5803680419922
+    },
+    "fixture": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 302.2857360839844,
+      "x": 36.57143020629883,
+      "y": 670.375
+    },
+    "inspect": {
+      "disabled": false,
+      "height": 38.28571701049805,
+      "hidden": false,
+      "width": 116.00000762939452,
+      "x": 134.57144165039062,
+      "y": 842.5267944335938
+    },
+    "material": {
+      "disabled": false,
+      "height": 251.1428680419922,
+      "hidden": false,
+      "width": 302.2857360839844,
+      "x": 36.57143020629883,
+      "y": 334.4196472167969
+    },
+    "previous-panel": {
+      "disabled": false,
+      "height": 479.0178833007813,
+      "hidden": false,
+      "width": 342.2857360839844,
+      "x": 16.571430206298828,
+      "y": 1262.044677734375
+    },
+    "run": {
+      "disabled": false,
+      "height": 38.28571701049805,
+      "hidden": false,
+      "width": 88.00000762939453,
+      "x": 36.57143020629883,
+      "y": 842.5267944335938
+    },
+    "scenario": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 302.2857360839844,
+      "x": 36.57143020629883,
+      "y": 750.9017944335938
+    },
+    "stop": {
+      "disabled": false,
+      "height": 0,
+      "hidden": true,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+  "previousAnswer": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+  "previousContext": "编号 947097e8 · 完成于 2026-10-03T10:13:40.865Z",
+  "previousHidden": false,
+  "previousTitle": "A · 青禾社区共享书架筹备纪要（教学虚构）",
+  "root": {
+    "clientWidth": 375,
+    "scrollHeight": 3267,
+    "scrollWidth": 375,
+    "scrollY": 0
+  },
+  "scenario": "disconnect",
+  "serverText": "{\n  \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n  \"serviceId\": \"8c712f61-51f4-442b-9368-59c03a82b167\",\n  \"fixtureKey\": \"B\",\n  \"scenario\": \"disconnect\",\n  \"input\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\",\n  \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n  \"answerOrigin\": \"教师构造的摘要文字，未由模型生成，未由使用者采用\",\n  \"source\": {\n    \"kind\": \"teacher-authored\"\n  },\n  \"sdkOptions\": {\n    \"maxRetries\": 1,\n    \"streamRetries\": \"omitted\",\n    \"totalTimeoutMs\": 15000\n  },\n  \"startedAt\": \"2026-10-03T10:15:11.901Z\",\n  \"state\": \"cancelled\",\n  \"cause\": \"connection-closed\",\n  \"finishedAt\": \"2026-10-03T10:15:12.687Z\",\n  \"manualStopRequestedAt\": null,\n  \"connectionClosedAt\": \"2026-10-03T10:15:12.682Z\",\n  \"providerCalls\": [\n    {\n      \"index\": 1,\n      \"beganAt\": \"2026-10-03T10:15:11.904Z\",\n      \"elapsedMs\": 3.5,\n      \"input\": {\n        \"maxOutputTokens\": {\n          \"kind\": \"undefined\"\n        },\n        \"temperature\": {\n          \"kind\": \"undefined\"\n        },\n        \"topP\": {\n          \"kind\": \"undefined\"\n        },\n        \"topK\": {\n          \"kind\": \"undefined\"\n        },\n        \"presencePenalty\": {\n          \"kind\": \"undefined\"\n        },\n        \"frequencyPenalty\": {\n          \"kind\": \"undefined\"\n        },\n        \"stopSequences\": {\n          \"kind\": \"undefined\"\n        },\n        \"seed\": {\n          \"kind\": \"undefined\"\n        },\n        \"reasoning\": {\n          \"kind\": \"undefined\"\n        },\n        \"tools\": {\n          \"kind\": \"undefined\"\n        },\n        \"toolChoice\": {\n          \"type\": \"auto\"\n        },\n        \"responseFormat\": {\n          \"kind\": \"undefined\"\n        },\n        \"prompt\": [\n          {\n            \"role\": \"system\",\n            \"content\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\"\n          },\n          {\n            \"role\": \"user\",\n            \"content\": [\n              {\n                \"type\": \"text\",\n                \"text\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n              }\n            ],\n            \"providerOptions\": {\n              \"kind\": \"undefined\"\n            }\n          }\n        ],\n        \"providerOptions\": {\n          \"kind\": \"undefined\"\n        },\n        \"abortSignal\": {\n          \"kind\": \"AbortSignal\",\n          \"aborted\": false,\n          \"reason\": {\n            \"kind\": \"undefined\"\n          }\n        },\n        \"headers\": {\n          \"kind\": \"undefined\"\n        },\n        \"includeRawChunks\": false\n      },\n      \"result\": \"stream\",\n      \"assignedParts\": [\n        {\n          \"type\": \"stream-start\",\n          \"warnings\": []\n        },\n        {\n          \"type\": \"response-metadata\",\n          \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n          \"modelId\": \"controlled-summary\"\n        },\n        {\n          \"type\": \"text-start\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"无障碍地图资料拟\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"于11月8日上午\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"在二层活动室整理\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"，周青汇总已核实\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"坡道，陈禾整理待\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"复查路段；预计1\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"2位志愿者参加。\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"资料先供内部讨论\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"。四条坡道已有位\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"置与测量日期，施\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"工、物业电梯开放\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"情况及两条来源不\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"明标注仍需核查。\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"签到、分组、复查\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"人员和发布条件尚\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"未决定，不承诺路\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n          \"delta\": \"线一定可通行。\"\n        },\n        {\n          \"type\": \"text-end\",\n          \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n        },\n        {\n          \"type\": \"finish\",\n          \"finishReason\": {\n            \"unified\": \"stop\",\n            \"raw\": \"controlled-stop\"\n          },\n          \"usage\": {\n            \"inputTokens\": {\n              \"total\": {\n                \"kind\": \"undefined\"\n              },\n              \"noCache\": {\n                \"kind\": \"undefined\"\n              },\n              \"cacheRead\": {\n                \"kind\": \"undefined\"\n              },\n              \"cacheWrite\": {\n                \"kind\": \"undefined\"\n              }\n            },\n            \"outputTokens\": {\n              \"total\": {\n                \"kind\": \"undefined\"\n              },\n              \"text\": {\n                \"kind\": \"undefined\"\n              },\n              \"reasoning\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          }\n        }\n      ],\n      \"emittedParts\": [\n        {\n          \"at\": \"2026-10-03T10:15:11.905Z\",\n          \"elapsedMs\": 4.1,\n          \"value\": {\n            \"type\": \"stream-start\",\n            \"warnings\": []\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:11.905Z\",\n          \"elapsedMs\": 4.5,\n          \"value\": {\n            \"type\": \"response-metadata\",\n            \"id\": \"mock-0872f16c-f3c9-429b-b70b-e4141268fc60-1\",\n            \"modelId\": \"controlled-summary\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:11.906Z\",\n          \"elapsedMs\": 4.8,\n          \"value\": {\n            \"type\": \"text-start\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.075Z\",\n          \"elapsedMs\": 174.1,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"无障碍地图资料拟\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.245Z\",\n          \"elapsedMs\": 344.5,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"于11月8日上午\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.416Z\",\n          \"elapsedMs\": 515.1,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"在二层活动室整理\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:15:12.587Z\",\n          \"elapsedMs\": 685.9,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n            \"delta\": \"，周青汇总已核实\"\n          }\n        }\n      ],\n      \"signalChanges\": [\n        {\n          \"at\": \"2026-10-03T10:15:12.682Z\",\n          \"elapsedMs\": 781,\n          \"value\": {\n            \"kind\": \"AbortSignal\",\n            \"aborted\": true,\n            \"reason\": {\n              \"kind\": \"Error\",\n              \"name\": \"AbortError\",\n              \"message\": \"本次HTTP连接提前关闭\",\n              \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n            }\n          }\n        }\n      ],\n      \"error\": {\n        \"kind\": \"Error\",\n        \"name\": \"AbortError\",\n        \"message\": \"The operation was aborted\",\n        \"cause\": {\n          \"kind\": \"Error\",\n          \"name\": \"AbortError\",\n          \"message\": \"本次HTTP连接提前关闭\",\n          \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n        },\n        \"code\": \"ABORT_ERR\",\n        \"stack\": \"AbortError: The operation was aborted\\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\\n    at runAbort (node:internal/abort_controller:488:10)\\n    at abortSignal (node:internal/abort_controller:465:5)\\n    at AbortController.abort (node:internal/abort_controller:507:5)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:50)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\"\n      }\n    }\n  ],\n  \"sdkParts\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.903Z\",\n      \"elapsedMs\": 1.7,\n      \"value\": {\n        \"type\": \"start\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.906Z\",\n      \"elapsedMs\": 5.3,\n      \"value\": {\n        \"type\": \"start-step\",\n        \"request\": {\n          \"body\": {\n            \"kind\": \"undefined\"\n          },\n          \"messages\": {\n            \"kind\": \"undefined\"\n          }\n        },\n        \"warnings\": []\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.908Z\",\n      \"elapsedMs\": 7.1,\n      \"value\": {\n        \"type\": \"text-start\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.075Z\",\n      \"elapsedMs\": 174.6,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"无障碍地图资料拟\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.246Z\",\n      \"elapsedMs\": 345.4,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"于11月8日上午\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.417Z\",\n      \"elapsedMs\": 516.3,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"在二层活动室整理\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.587Z\",\n      \"elapsedMs\": 686.4,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"text\": \"，周青汇总已核实\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.685Z\",\n      \"elapsedMs\": 783.8,\n      \"value\": {\n        \"type\": \"abort\",\n        \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n      }\n    }\n  ],\n  \"callbacks\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.902Z\",\n      \"elapsedMs\": 1.5,\n      \"value\": {\n        \"kind\": \"core.onStart\",\n        \"event\": {\n          \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n          \"operationId\": \"ai.streamText\",\n          \"provider\": \"official-mock\",\n          \"modelId\": \"controlled-summary\",\n          \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n          \"messages\": [\n            {\n              \"role\": \"user\",\n              \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n            }\n          ],\n          \"tools\": {\n            \"kind\": \"undefined\"\n          },\n          \"toolChoice\": {\n            \"kind\": \"undefined\"\n          },\n          \"activeTools\": {\n            \"kind\": \"undefined\"\n          },\n          \"toolOrder\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxOutputTokens\": {\n            \"kind\": \"undefined\"\n          },\n          \"temperature\": {\n            \"kind\": \"undefined\"\n          },\n          \"topP\": {\n            \"kind\": \"undefined\"\n          },\n          \"topK\": {\n            \"kind\": \"undefined\"\n          },\n          \"presencePenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"frequencyPenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"stopSequences\": {\n            \"kind\": \"undefined\"\n          },\n          \"seed\": {\n            \"kind\": \"undefined\"\n          },\n          \"reasoning\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxRetries\": 1,\n          \"timeout\": {\n            \"totalMs\": 15000\n          },\n          \"headers\": {\n            \"kind\": \"undefined\"\n          },\n          \"providerOptions\": {\n            \"kind\": \"undefined\"\n          },\n          \"output\": {\n            \"kind\": \"undefined\"\n          },\n          \"runtimeContext\": {},\n          \"toolsContext\": {}\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.904Z\",\n      \"elapsedMs\": 3.2,\n      \"value\": {\n        \"kind\": \"core.onLanguageModelCallStart\",\n        \"event\": {\n          \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n          \"provider\": \"official-mock\",\n          \"modelId\": \"controlled-summary\",\n          \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n          \"messages\": [\n            {\n              \"role\": \"user\",\n              \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n            }\n          ],\n          \"tools\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxOutputTokens\": {\n            \"kind\": \"undefined\"\n          },\n          \"temperature\": {\n            \"kind\": \"undefined\"\n          },\n          \"topP\": {\n            \"kind\": \"undefined\"\n          },\n          \"topK\": {\n            \"kind\": \"undefined\"\n          },\n          \"presencePenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"frequencyPenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"stopSequences\": {\n            \"kind\": \"undefined\"\n          },\n          \"seed\": {\n            \"kind\": \"undefined\"\n          },\n          \"reasoning\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.684Z\",\n      \"elapsedMs\": 783.3,\n      \"value\": {\n        \"kind\": \"core.onAbort\",\n        \"event\": {\n          \"callId\": \"call-8SA9P7jZ6tfWLsVVPUuHT3B4\",\n          \"steps\": [],\n          \"reason\": {\n            \"kind\": \"Error\",\n            \"name\": \"AbortError\",\n            \"message\": \"本次HTTP连接提前关闭\",\n            \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n          }\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.687Z\",\n      \"elapsedMs\": 786.2,\n      \"value\": {\n        \"kind\": \"ui.onEnd\",\n        \"event\": {\n          \"isAborted\": true,\n          \"isContinuation\": false,\n          \"outcome\": {\n            \"status\": \"aborted\"\n          },\n          \"responseMessage\": {\n            \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n            \"metadata\": {\n              \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n              \"fixtureKey\": \"B\",\n              \"state\": \"cancelled\",\n              \"cause\": \"connection-closed\",\n              \"origin\": \"controlled-exercise\"\n            },\n            \"role\": \"assistant\",\n            \"parts\": [\n              {\n                \"type\": \"step-start\"\n              },\n              {\n                \"type\": \"text\",\n                \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                \"providerMetadata\": {\n                  \"kind\": \"undefined\"\n                },\n                \"state\": \"streaming\"\n              }\n            ]\n          },\n          \"messages\": [\n            {\n              \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n              \"metadata\": {\n                \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n                \"fixtureKey\": \"B\",\n                \"state\": \"cancelled\",\n                \"cause\": \"connection-closed\",\n                \"origin\": \"controlled-exercise\"\n              },\n              \"role\": \"assistant\",\n              \"parts\": [\n                {\n                  \"type\": \"step-start\"\n                },\n                {\n                  \"type\": \"text\",\n                  \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n                  \"providerMetadata\": {\n                    \"kind\": \"undefined\"\n                  },\n                  \"state\": \"streaming\"\n                }\n              ]\n            }\n          ],\n          \"finishReason\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      }\n    }\n  ],\n  \"uiEvents\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.903Z\",\n      \"elapsedMs\": 2.4,\n      \"value\": {\n        \"type\": \"start\",\n        \"messageMetadata\": {\n          \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n          \"fixtureKey\": \"B\",\n          \"state\": \"running\",\n          \"cause\": null,\n          \"origin\": \"controlled-exercise\"\n        },\n        \"messageId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.907Z\",\n      \"elapsedMs\": 5.8,\n      \"value\": {\n        \"type\": \"start-step\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.908Z\",\n      \"elapsedMs\": 7.4,\n      \"value\": {\n        \"type\": \"text-start\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.076Z\",\n      \"elapsedMs\": 174.9,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"无障碍地图资料拟\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.247Z\",\n      \"elapsedMs\": 345.8,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"于11月8日上午\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.417Z\",\n      \"elapsedMs\": 516.6,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"在二层活动室整理\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.588Z\",\n      \"elapsedMs\": 686.9,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\",\n        \"delta\": \"，周青汇总已核实\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.685Z\",\n      \"elapsedMs\": 784.4,\n      \"value\": {\n        \"type\": \"abort\",\n        \"reason\": \"AbortError: 本次HTTP连接提前关闭\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.686Z\",\n      \"elapsedMs\": 785.4,\n      \"value\": {\n        \"type\": \"message-metadata\",\n        \"messageMetadata\": {\n          \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n          \"fixtureKey\": \"B\",\n          \"state\": \"cancelled\",\n          \"cause\": \"connection-closed\",\n          \"origin\": \"controlled-exercise\"\n        }\n      }\n    }\n  ],\n  \"transport\": [\n    {\n      \"at\": \"2026-10-03T10:15:12.417Z\",\n      \"elapsedMs\": 515.7,\n      \"value\": {\n        \"kind\": \"exercise-disconnect-scheduled\",\n        \"delayMs\": 250\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.680Z\",\n      \"elapsedMs\": 779.6,\n      \"value\": {\n        \"kind\": \"exercise-destroy-http-response\",\n        \"writableEnded\": false,\n        \"state\": \"running\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.682Z\",\n      \"elapsedMs\": 780.7,\n      \"value\": {\n        \"kind\": \"response-close\",\n        \"writableEnded\": false,\n        \"state\": \"running\"\n      }\n    }\n  ],\n  \"serverSseProduced\": [\n    {\n      \"at\": \"2026-10-03T10:15:11.903Z\",\n      \"elapsedMs\": 2.6,\n      \"value\": \"data: {\\\"type\\\":\\\"start\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"running\\\",\\\"cause\\\":null,\\\"origin\\\":\\\"controlled-exercise\\\"},\\\"messageId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.907Z\",\n      \"elapsedMs\": 6.6,\n      \"value\": \"data: {\\\"type\\\":\\\"start-step\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:11.909Z\",\n      \"elapsedMs\": 7.7,\n      \"value\": \"data: {\\\"type\\\":\\\"text-start\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.076Z\",\n      \"elapsedMs\": 175.4,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"无障碍地图资料拟\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.247Z\",\n      \"elapsedMs\": 346.1,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"于11月8日上午\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.418Z\",\n      \"elapsedMs\": 517,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"在二层活动室整理\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.588Z\",\n      \"elapsedMs\": 687.3,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60:text:1\\\",\\\"delta\\\":\\\"，周青汇总已核实\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.686Z\",\n      \"elapsedMs\": 784.8,\n      \"value\": \"data: {\\\"type\\\":\\\"abort\\\",\\\"reason\\\":\\\"AbortError: 本次HTTP连接提前关闭\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.687Z\",\n      \"elapsedMs\": 785.7,\n      \"value\": \"data: {\\\"type\\\":\\\"message-metadata\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"0872f16c-f3c9-429b-b70b-e4141268fc60\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"cancelled\\\",\\\"cause\\\":\\\"connection-closed\\\",\\\"origin\\\":\\\"controlled-exercise\\\"}}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:15:12.687Z\",\n      \"elapsedMs\": 786.6,\n      \"value\": \"data: [DONE]\\n\\n\"\n    }\n  ],\n  \"uiMessage\": {\n    \"id\": \"0872f16c-f3c9-429b-b70b-e4141268fc60:assistant\",\n    \"metadata\": {\n      \"requestId\": \"0872f16c-f3c9-429b-b70b-e4141268fc60\",\n      \"fixtureKey\": \"B\",\n      \"state\": \"cancelled\",\n      \"cause\": \"connection-closed\",\n      \"origin\": \"controlled-exercise\"\n    },\n    \"role\": \"assistant\",\n    \"parts\": [\n      {\n        \"type\": \"step-start\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实\",\n        \"state\": \"streaming\"\n      }\n    ]\n  },\n  \"uiOutcome\": {\n    \"status\": \"aborted\"\n  },\n  \"error\": {\n    \"kind\": \"Error\",\n    \"name\": \"AbortError\",\n    \"message\": \"本次HTTP连接提前关闭\",\n    \"stack\": \"AbortError: 本次HTTP连接提前关闭\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at ServerResponse.close (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:123:56)\\n    at Object.onceWrapper (node:events:622:28)\\n    at ServerResponse.emit (node:events:520:35)\\n    at emitCloseNT (node:_http_server:1073:10)\\n    at Socket.onServerResponseClose (node:_http_server:287:5)\\n    at Socket.emit (node:events:520:35)\\n    at TCP.<anonymous> (node:net:346:12)\"\n  }\n}",
+  "status": "记录确认连接提前关闭后停止；输入和片段保留。",
+  "url": "http://127.0.0.1:4340/requests.html",
+  "viewport": {
+    "devicePixelRatio": 1.0000000447034836,
+    "height": 844,
+    "scale": 1,
+    "width": 390
+  }
+}

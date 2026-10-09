@@ -1,0 +1,1739 @@
+{
+  "answer": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+  "at": "2026-10-03T10:13:36.226Z",
+  "bodyText": "AI 请求观察 · 受控演练\n\n看到一半，接下来怎么办？\n\n固定纪要与回答，用真实 SDK 检查状态；不调用付费模型。\n\n页面方向\n原版\n台面\n笔记页\n准备这次工作\n完整输入\n选择下次演练\n下次材料\nA · 共享书架\nB · 无障碍地图整理\n下次条件\n正常慢流（可手动停止）\n开始前模拟401\n开始前模拟503，再由SDK有限重试\n总等待预算1200毫秒\n已有片段后模拟503\n真实中断本机HTTP连接\n\n本页只使用两份固定全文。模拟文字不理解自行改动。\n\n再次演练\n核查本次记录\n\n记录确认本次已停止；输入和片段保留。\n\n当前任务\n\nB · 临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n\n正常慢流（可手动停止）\n\n无障碍地图资料拟于11月8日上午在二层活动室整理\n\n编号 596443e9 · 只显示本次实际收到的文字\n\n上次完整结果\n\nB · 临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n\n编号 9111d206 · 完成于 2026-10-03T10:12:05.930Z\n\n无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实坡道，陈禾整理待复查路段；预计12位志愿者参加。资料先供内部讨论。四条坡道已有位置与测量日期，施工、物业电梯开放情况及两条来源不明标注仍需核查。签到、分组、复查人员和发布条件尚未决定，不承诺路线一定可通行。\n\n这是上次任务的技术完整结果，含义仍需回原文核对。\n\n查看完整输入、事件与两端记录",
+  "currentBoundary": "编号 596443e9 · 只显示本次实际收到的文字",
+  "currentClient": {
+    "actions": [
+      {
+        "at": "2026-10-03T10:13:07.393Z",
+        "elapsedMs": 0,
+        "value": {
+          "kind": "user-submit"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:08.023Z",
+        "elapsedMs": 630.1,
+        "value": {
+          "kind": "user-stop"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:08.065Z",
+        "elapsedMs": 671.7,
+        "value": {
+          "kind": "local-consumption-abort",
+          "signal": {
+            "aborted": true,
+            "kind": "AbortSignal",
+            "reason": {
+              "kind": "Error",
+              "message": "用户停止本地HTTP消费",
+              "name": "AbortError",
+              "stack": {
+                "kind": "undefined"
+              }
+            }
+          }
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:35.926Z",
+        "elapsedMs": 28532.4,
+        "value": {
+          "kind": "user-read-same-request"
+        }
+      }
+    ],
+    "beganAt": "2026-10-03T10:13:07.393Z",
+    "cancelReceipt": {
+      "body": {
+        "acceptedForCancellation": true,
+        "message": "这是停止请求的反馈；请按本次编号核查实际终态。",
+        "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+        "requestedAt": "2026-10-03T10:13:08.031Z",
+        "stateAtReply": "running"
+      },
+      "headers": {
+        "connection": "keep-alive",
+        "content-length": "231",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Sat, 03 Oct 2026 10:13:08 GMT",
+        "etag": "W/\"e7-TdnXBL27Cv+vFk21z/asewNtl8E\"",
+        "keep-alive": "timeout=5",
+        "x-powered-by": "Express"
+      },
+      "status": 200
+    },
+    "clientState": "local-stopped",
+    "endedAt": "2026-10-03T10:13:08.065Z",
+    "fixtureKey": "B",
+    "frames": [
+      {
+        "at": "2026-10-03T10:13:07.411Z",
+        "elapsedMs": 18.1,
+        "value": {
+          "messageId": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+          "messageMetadata": {
+            "cause": null,
+            "fixtureKey": "B",
+            "origin": "controlled-exercise",
+            "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+            "state": "running"
+          },
+          "type": "start"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.412Z",
+        "elapsedMs": 18.4,
+        "value": {
+          "type": "start-step"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.412Z",
+        "elapsedMs": 18.5,
+        "value": {
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+          "type": "text-start"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.579Z",
+        "elapsedMs": 186.1,
+        "value": {
+          "delta": "无障碍地图资料拟",
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.750Z",
+        "elapsedMs": 356.7,
+        "value": {
+          "delta": "于11月8日上午",
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+          "type": "text-delta"
+        }
+      },
+      {
+        "at": "2026-10-03T10:13:07.920Z",
+        "elapsedMs": 527.1,
+        "value": {
+          "delta": "在二层活动室整理",
+          "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+          "type": "text-delta"
+        }
+      }
+    ],
+    "httpInput": {
+      "body": "{\"fixtureKey\":\"B\",\"scenario\":\"normal\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0\",\"messages\":[{\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:user\",\"role\":\"user\",\"parts\":[{\"type\":\"text\",\"text\":\"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"}]}],\"trigger\":\"submit-message\"}",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "method": "POST",
+      "url": "/api/requests"
+    },
+    "httpResponse": {
+      "headers": {
+        "cache-control": "no-cache",
+        "connection": "keep-alive",
+        "content-type": "text/event-stream",
+        "date": "Sat, 03 Oct 2026 10:13:07 GMT",
+        "transfer-encoding": "chunked",
+        "x-accel-buffering": "no",
+        "x-powered-by": "Express",
+        "x-vercel-ai-ui-message-stream": "v1"
+      },
+      "status": 200
+    },
+    "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+    "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+    "localSignal": {
+      "aborted": true,
+      "kind": "AbortSignal",
+      "reason": {
+        "kind": "Error",
+        "message": "用户停止本地HTTP消费",
+        "name": "AbortError",
+        "stack": {
+          "kind": "undefined"
+        }
+      }
+    },
+    "message": {
+      "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+      "metadata": {
+        "cause": null,
+        "fixtureKey": "B",
+        "origin": "controlled-exercise",
+        "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+        "state": "running"
+      },
+      "parts": [
+        {
+          "type": "step-start"
+        },
+        {
+          "state": "streaming",
+          "text": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+          "type": "text"
+        }
+      ],
+      "role": "assistant"
+    },
+    "readReceipts": [
+      {
+        "at": "2026-10-03T10:13:35.938Z",
+        "body": {
+          "answerOrigin": "教师构造的摘要文字，未由模型生成，未由使用者采用",
+          "callbacks": [
+            {
+              "at": "2026-10-03T10:13:07.400Z",
+              "elapsedMs": 1.8,
+              "value": {
+                "event": {
+                  "activeTools": "[MaxDepth]",
+                  "callId": "call-xFBZyHPJZAeqXXuNY4mYe7qZ",
+                  "frequencyPenalty": "[MaxDepth]",
+                  "headers": "[MaxDepth]",
+                  "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+                  "maxOutputTokens": "[MaxDepth]",
+                  "maxRetries": 1,
+                  "messages": "[MaxDepth]",
+                  "modelId": "controlled-summary",
+                  "operationId": "ai.streamText",
+                  "output": "[MaxDepth]",
+                  "presencePenalty": "[MaxDepth]",
+                  "provider": "official-mock",
+                  "providerOptions": "[MaxDepth]",
+                  "reasoning": "[MaxDepth]",
+                  "runtimeContext": "[MaxDepth]",
+                  "seed": "[MaxDepth]",
+                  "stopSequences": "[MaxDepth]",
+                  "temperature": "[MaxDepth]",
+                  "timeout": "[MaxDepth]",
+                  "toolChoice": "[MaxDepth]",
+                  "toolOrder": "[MaxDepth]",
+                  "tools": "[MaxDepth]",
+                  "toolsContext": "[MaxDepth]",
+                  "topK": "[MaxDepth]",
+                  "topP": "[MaxDepth]"
+                },
+                "kind": "core.onStart"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.402Z",
+              "elapsedMs": 3.8,
+              "value": {
+                "event": {
+                  "callId": "call-xFBZyHPJZAeqXXuNY4mYe7qZ",
+                  "frequencyPenalty": "[MaxDepth]",
+                  "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+                  "maxOutputTokens": "[MaxDepth]",
+                  "messages": "[MaxDepth]",
+                  "modelId": "controlled-summary",
+                  "presencePenalty": "[MaxDepth]",
+                  "provider": "official-mock",
+                  "reasoning": "[MaxDepth]",
+                  "seed": "[MaxDepth]",
+                  "stopSequences": "[MaxDepth]",
+                  "temperature": "[MaxDepth]",
+                  "tools": "[MaxDepth]",
+                  "topK": "[MaxDepth]",
+                  "topP": "[MaxDepth]"
+                },
+                "kind": "core.onLanguageModelCallStart"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:08.063Z",
+              "elapsedMs": 664.6,
+              "value": {
+                "event": {
+                  "callId": "call-xFBZyHPJZAeqXXuNY4mYe7qZ",
+                  "reason": "[MaxDepth]",
+                  "steps": "[MaxDepth]"
+                },
+                "kind": "core.onAbort"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:08.066Z",
+              "elapsedMs": 668,
+              "value": {
+                "event": {
+                  "finishReason": "[MaxDepth]",
+                  "isAborted": true,
+                  "isContinuation": false,
+                  "messages": "[MaxDepth]",
+                  "outcome": "[MaxDepth]",
+                  "responseMessage": "[MaxDepth]"
+                },
+                "kind": "ui.onEnd"
+              }
+            }
+          ],
+          "cause": "manual-stop",
+          "connectionClosedAt": null,
+          "error": {
+            "kind": "Error",
+            "message": "用户要求停止本次请求",
+            "name": "AbortError",
+            "stack": "AbortError: 用户要求停止本次请求\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:26)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:295:15\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:600:14)\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:610:14)"
+          },
+          "finishedAt": "2026-10-03T10:13:08.066Z",
+          "fixtureKey": "B",
+          "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+          "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+          "manualStopRequestedAt": "2026-10-03T10:13:08.031Z",
+          "providerCalls": [
+            {
+              "assignedParts": [
+                {
+                  "type": "stream-start",
+                  "warnings": "[MaxDepth]"
+                },
+                {
+                  "id": "mock-596443e9-4306-45b4-87c5-ed43504f95b0-1",
+                  "modelId": "controlled-summary",
+                  "type": "response-metadata"
+                },
+                {
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-start"
+                },
+                {
+                  "delta": "无障碍地图资料拟",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "于11月8日上午",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "在二层活动室整理",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "，周青汇总已核实",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "坡道，陈禾整理待",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "复查路段；预计1",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "2位志愿者参加。",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "资料先供内部讨论",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "。四条坡道已有位",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "置与测量日期，施",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "工、物业电梯开放",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "情况及两条来源不",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "明标注仍需核查。",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "签到、分组、复查",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "人员和发布条件尚",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "未决定，不承诺路",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "delta": "线一定可通行。",
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-delta"
+                },
+                {
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                  "type": "text-end"
+                },
+                {
+                  "finishReason": "[MaxDepth]",
+                  "type": "finish",
+                  "usage": "[MaxDepth]"
+                }
+              ],
+              "beganAt": "2026-10-03T10:13:07.402Z",
+              "elapsedMs": 4,
+              "emittedParts": [
+                {
+                  "at": "2026-10-03T10:13:07.403Z",
+                  "elapsedMs": 4.6,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:13:07.403Z",
+                  "elapsedMs": 4.9,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:13:07.404Z",
+                  "elapsedMs": 6,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:13:07.576Z",
+                  "elapsedMs": 178.1,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:13:07.747Z",
+                  "elapsedMs": 349.1,
+                  "value": "[MaxDepth]"
+                },
+                {
+                  "at": "2026-10-03T10:13:07.918Z",
+                  "elapsedMs": 519.4,
+                  "value": "[MaxDepth]"
+                }
+              ],
+              "error": {
+                "cause": {
+                  "kind": "Error",
+                  "message": "用户要求停止本次请求",
+                  "name": "AbortError",
+                  "stack": "AbortError: 用户要求停止本次请求\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:26)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:295:15\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:600:14)\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:610:14)"
+                },
+                "code": "ABORT_ERR",
+                "kind": "Error",
+                "message": "The operation was aborted",
+                "name": "AbortError",
+                "stack": "AbortError: The operation was aborted\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\n    at runAbort (node:internal/abort_controller:488:10)\n    at abortSignal (node:internal/abort_controller:465:5)\n    at AbortController.abort (node:internal/abort_controller:507:5)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:20)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)"
+              },
+              "index": 1,
+              "input": {
+                "abortSignal": {
+                  "aborted": false,
+                  "kind": "AbortSignal",
+                  "reason": "[MaxDepth]"
+                },
+                "frequencyPenalty": {
+                  "kind": "undefined"
+                },
+                "headers": {
+                  "kind": "undefined"
+                },
+                "includeRawChunks": false,
+                "maxOutputTokens": {
+                  "kind": "undefined"
+                },
+                "presencePenalty": {
+                  "kind": "undefined"
+                },
+                "prompt": [
+                  "[MaxDepth]",
+                  "[MaxDepth]"
+                ],
+                "providerOptions": {
+                  "kind": "undefined"
+                },
+                "reasoning": {
+                  "kind": "undefined"
+                },
+                "responseFormat": {
+                  "kind": "undefined"
+                },
+                "seed": {
+                  "kind": "undefined"
+                },
+                "stopSequences": {
+                  "kind": "undefined"
+                },
+                "temperature": {
+                  "kind": "undefined"
+                },
+                "toolChoice": {
+                  "type": "auto"
+                },
+                "tools": {
+                  "kind": "undefined"
+                },
+                "topK": {
+                  "kind": "undefined"
+                },
+                "topP": {
+                  "kind": "undefined"
+                }
+              },
+              "result": "stream",
+              "signalChanges": [
+                {
+                  "at": "2026-10-03T10:13:08.032Z",
+                  "elapsedMs": 634,
+                  "value": "[MaxDepth]"
+                }
+              ]
+            }
+          ],
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "scenario": "normal",
+          "sdkOptions": {
+            "maxRetries": 1,
+            "streamRetries": "omitted",
+            "totalTimeoutMs": 15000
+          },
+          "sdkParts": [
+            {
+              "at": "2026-10-03T10:13:07.401Z",
+              "elapsedMs": 2.2,
+              "value": {
+                "type": "start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.405Z",
+              "elapsedMs": 6.7,
+              "value": {
+                "request": {
+                  "body": "[MaxDepth]",
+                  "messages": "[MaxDepth]"
+                },
+                "type": "start-step",
+                "warnings": []
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.406Z",
+              "elapsedMs": 7.9,
+              "value": {
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.577Z",
+              "elapsedMs": 179,
+              "value": {
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "text": "无障碍地图资料拟",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.748Z",
+              "elapsedMs": 349.9,
+              "value": {
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "text": "于11月8日上午",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.918Z",
+              "elapsedMs": 520,
+              "value": {
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "text": "在二层活动室整理",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:08.064Z",
+              "elapsedMs": 665.2,
+              "value": {
+                "reason": "AbortError: 用户要求停止本次请求",
+                "type": "abort"
+              }
+            }
+          ],
+          "serverSseProduced": [
+            {
+              "at": "2026-10-03T10:13:07.401Z",
+              "elapsedMs": 2.9,
+              "value": "data: {\"type\":\"start\",\"messageMetadata\":{\"requestId\":\"596443e9-4306-45b4-87c5-ed43504f95b0\",\"fixtureKey\":\"B\",\"state\":\"running\",\"cause\":null,\"origin\":\"controlled-exercise\"},\"messageId\":\"596443e9-4306-45b4-87c5-ed43504f95b0:assistant\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:07.406Z",
+              "elapsedMs": 7.4,
+              "value": "data: {\"type\":\"start-step\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:07.407Z",
+              "elapsedMs": 8.6,
+              "value": "data: {\"type\":\"text-start\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:07.578Z",
+              "elapsedMs": 180,
+              "value": "data: {\"type\":\"text-delta\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\"delta\":\"无障碍地图资料拟\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:07.749Z",
+              "elapsedMs": 350.6,
+              "value": "data: {\"type\":\"text-delta\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\"delta\":\"于11月8日上午\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:07.919Z",
+              "elapsedMs": 521,
+              "value": "data: {\"type\":\"text-delta\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\"delta\":\"在二层活动室整理\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:08.064Z",
+              "elapsedMs": 666.1,
+              "value": "data: {\"type\":\"abort\",\"reason\":\"AbortError: 用户要求停止本次请求\"}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:08.066Z",
+              "elapsedMs": 667.2,
+              "value": "data: {\"type\":\"message-metadata\",\"messageMetadata\":{\"requestId\":\"596443e9-4306-45b4-87c5-ed43504f95b0\",\"fixtureKey\":\"B\",\"state\":\"cancelled\",\"cause\":\"manual-stop\",\"origin\":\"controlled-exercise\"}}\n\n"
+            },
+            {
+              "at": "2026-10-03T10:13:08.067Z",
+              "elapsedMs": 668.7,
+              "value": "data: [DONE]\n\n"
+            }
+          ],
+          "serviceId": "8c712f61-51f4-442b-9368-59c03a82b167",
+          "source": {
+            "kind": "teacher-authored"
+          },
+          "startedAt": "2026-10-03T10:13:07.398Z",
+          "state": "cancelled",
+          "transport": [
+            {
+              "at": "2026-10-03T10:13:08.031Z",
+              "elapsedMs": 633,
+              "value": {
+                "kind": "manual-cancel-received"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:08.069Z",
+              "elapsedMs": 670.5,
+              "value": {
+                "kind": "response-close",
+                "state": "cancelled",
+                "writableEnded": true
+              }
+            }
+          ],
+          "uiEvents": [
+            {
+              "at": "2026-10-03T10:13:07.401Z",
+              "elapsedMs": 2.6,
+              "value": {
+                "messageId": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+                "messageMetadata": {
+                  "cause": null,
+                  "fixtureKey": "B",
+                  "origin": "controlled-exercise",
+                  "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+                  "state": "running"
+                },
+                "type": "start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.405Z",
+              "elapsedMs": 7,
+              "value": {
+                "type": "start-step"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.407Z",
+              "elapsedMs": 8.2,
+              "value": {
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.578Z",
+              "elapsedMs": 179.4,
+              "value": {
+                "delta": "无障碍地图资料拟",
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.749Z",
+              "elapsedMs": 350.2,
+              "value": {
+                "delta": "于11月8日上午",
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.919Z",
+              "elapsedMs": 520.5,
+              "value": {
+                "delta": "在二层活动室整理",
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:08.064Z",
+              "elapsedMs": 665.6,
+              "value": {
+                "reason": "AbortError: 用户要求停止本次请求",
+                "type": "abort"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:08.065Z",
+              "elapsedMs": 666.7,
+              "value": {
+                "messageMetadata": {
+                  "cause": "manual-stop",
+                  "fixtureKey": "B",
+                  "origin": "controlled-exercise",
+                  "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+                  "state": "cancelled"
+                },
+                "type": "message-metadata"
+              }
+            }
+          ],
+          "uiMessage": {
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+            "metadata": {
+              "cause": "manual-stop",
+              "fixtureKey": "B",
+              "origin": "controlled-exercise",
+              "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+              "state": "cancelled"
+            },
+            "parts": [
+              {
+                "type": "step-start"
+              },
+              {
+                "state": "streaming",
+                "text": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+                "type": "text"
+              }
+            ],
+            "role": "assistant"
+          },
+          "uiOutcome": {
+            "status": "aborted"
+          }
+        },
+        "headers": {
+          "connection": "keep-alive",
+          "content-length": "26477",
+          "content-type": "application/json; charset=utf-8",
+          "date": "Sat, 03 Oct 2026 10:13:35 GMT",
+          "etag": "W/\"676d-0uS4/vfSHKLpF4Sh5E5IC4yeCJA\"",
+          "keep-alive": "timeout=5",
+          "x-powered-by": "Express"
+        },
+        "status": 200
+      }
+    ],
+    "rejectedBeforeModel": false,
+    "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+    "scenario": "normal",
+    "sdkErrors": [
+      {
+        "kind": "Error",
+        "message": "用户停止本地HTTP消费",
+        "name": "AbortError",
+        "stack": {
+          "kind": "undefined"
+        }
+      }
+    ],
+    "serverRecord": {
+      "answerOrigin": "教师构造的摘要文字，未由模型生成，未由使用者采用",
+      "callbacks": [
+        {
+          "at": "2026-10-03T10:13:07.400Z",
+          "elapsedMs": 1.8,
+          "value": {
+            "event": {
+              "activeTools": {
+                "kind": "undefined"
+              },
+              "callId": "call-xFBZyHPJZAeqXXuNY4mYe7qZ",
+              "frequencyPenalty": {
+                "kind": "undefined"
+              },
+              "headers": {
+                "kind": "undefined"
+              },
+              "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+              "maxOutputTokens": {
+                "kind": "undefined"
+              },
+              "maxRetries": 1,
+              "messages": [
+                {
+                  "content": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+                  "role": "user"
+                }
+              ],
+              "modelId": "controlled-summary",
+              "operationId": "ai.streamText",
+              "output": {
+                "kind": "undefined"
+              },
+              "presencePenalty": {
+                "kind": "undefined"
+              },
+              "provider": "official-mock",
+              "providerOptions": {
+                "kind": "undefined"
+              },
+              "reasoning": {
+                "kind": "undefined"
+              },
+              "runtimeContext": {},
+              "seed": {
+                "kind": "undefined"
+              },
+              "stopSequences": {
+                "kind": "undefined"
+              },
+              "temperature": {
+                "kind": "undefined"
+              },
+              "timeout": {
+                "totalMs": 15000
+              },
+              "toolChoice": {
+                "kind": "undefined"
+              },
+              "toolOrder": {
+                "kind": "undefined"
+              },
+              "tools": {
+                "kind": "undefined"
+              },
+              "toolsContext": {},
+              "topK": {
+                "kind": "undefined"
+              },
+              "topP": {
+                "kind": "undefined"
+              }
+            },
+            "kind": "core.onStart"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.402Z",
+          "elapsedMs": 3.8,
+          "value": {
+            "event": {
+              "callId": "call-xFBZyHPJZAeqXXuNY4mYe7qZ",
+              "frequencyPenalty": {
+                "kind": "undefined"
+              },
+              "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+              "maxOutputTokens": {
+                "kind": "undefined"
+              },
+              "messages": [
+                {
+                  "content": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+                  "role": "user"
+                }
+              ],
+              "modelId": "controlled-summary",
+              "presencePenalty": {
+                "kind": "undefined"
+              },
+              "provider": "official-mock",
+              "reasoning": {
+                "kind": "undefined"
+              },
+              "seed": {
+                "kind": "undefined"
+              },
+              "stopSequences": {
+                "kind": "undefined"
+              },
+              "temperature": {
+                "kind": "undefined"
+              },
+              "tools": {
+                "kind": "undefined"
+              },
+              "topK": {
+                "kind": "undefined"
+              },
+              "topP": {
+                "kind": "undefined"
+              }
+            },
+            "kind": "core.onLanguageModelCallStart"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:08.063Z",
+          "elapsedMs": 664.6,
+          "value": {
+            "event": {
+              "callId": "call-xFBZyHPJZAeqXXuNY4mYe7qZ",
+              "reason": {
+                "kind": "Error",
+                "message": "用户要求停止本次请求",
+                "name": "AbortError",
+                "stack": "AbortError: 用户要求停止本次请求\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:26)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:295:15\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:600:14)\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:610:14)"
+              },
+              "steps": []
+            },
+            "kind": "core.onAbort"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:08.066Z",
+          "elapsedMs": 668,
+          "value": {
+            "event": {
+              "finishReason": {
+                "kind": "undefined"
+              },
+              "isAborted": true,
+              "isContinuation": false,
+              "messages": [
+                {
+                  "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+                  "metadata": "[MaxDepth]",
+                  "parts": "[MaxDepth]",
+                  "role": "assistant"
+                }
+              ],
+              "outcome": {
+                "status": "aborted"
+              },
+              "responseMessage": {
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+                "metadata": {
+                  "cause": "manual-stop",
+                  "fixtureKey": "B",
+                  "origin": "controlled-exercise",
+                  "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+                  "state": "cancelled"
+                },
+                "parts": [
+                  "[MaxDepth]",
+                  "[MaxDepth]"
+                ],
+                "role": "assistant"
+              }
+            },
+            "kind": "ui.onEnd"
+          }
+        }
+      ],
+      "cause": "manual-stop",
+      "connectionClosedAt": null,
+      "error": {
+        "kind": "Error",
+        "message": "用户要求停止本次请求",
+        "name": "AbortError",
+        "stack": "AbortError: 用户要求停止本次请求\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:26)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:295:15\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:600:14)\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:610:14)"
+      },
+      "finishedAt": "2026-10-03T10:13:08.066Z",
+      "fixtureKey": "B",
+      "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+      "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+      "manualStopRequestedAt": "2026-10-03T10:13:08.031Z",
+      "providerCalls": [
+        {
+          "assignedParts": [
+            {
+              "type": "stream-start",
+              "warnings": []
+            },
+            {
+              "id": "mock-596443e9-4306-45b4-87c5-ed43504f95b0-1",
+              "modelId": "controlled-summary",
+              "type": "response-metadata"
+            },
+            {
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-start"
+            },
+            {
+              "delta": "无障碍地图资料拟",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "于11月8日上午",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "在二层活动室整理",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "，周青汇总已核实",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "坡道，陈禾整理待",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "复查路段；预计1",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "2位志愿者参加。",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "资料先供内部讨论",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "。四条坡道已有位",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "置与测量日期，施",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "工、物业电梯开放",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "情况及两条来源不",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "明标注仍需核查。",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "签到、分组、复查",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "人员和发布条件尚",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "未决定，不承诺路",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "delta": "线一定可通行。",
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-delta"
+            },
+            {
+              "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+              "type": "text-end"
+            },
+            {
+              "finishReason": {
+                "raw": "controlled-stop",
+                "unified": "stop"
+              },
+              "type": "finish",
+              "usage": {
+                "inputTokens": {
+                  "cacheRead": "[MaxDepth]",
+                  "cacheWrite": "[MaxDepth]",
+                  "noCache": "[MaxDepth]",
+                  "total": "[MaxDepth]"
+                },
+                "outputTokens": {
+                  "reasoning": "[MaxDepth]",
+                  "text": "[MaxDepth]",
+                  "total": "[MaxDepth]"
+                }
+              }
+            }
+          ],
+          "beganAt": "2026-10-03T10:13:07.402Z",
+          "elapsedMs": 4,
+          "emittedParts": [
+            {
+              "at": "2026-10-03T10:13:07.403Z",
+              "elapsedMs": 4.6,
+              "value": {
+                "type": "stream-start",
+                "warnings": []
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.403Z",
+              "elapsedMs": 4.9,
+              "value": {
+                "id": "mock-596443e9-4306-45b4-87c5-ed43504f95b0-1",
+                "modelId": "controlled-summary",
+                "type": "response-metadata"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.404Z",
+              "elapsedMs": 6,
+              "value": {
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-start"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.576Z",
+              "elapsedMs": 178.1,
+              "value": {
+                "delta": "无障碍地图资料拟",
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.747Z",
+              "elapsedMs": 349.1,
+              "value": {
+                "delta": "于11月8日上午",
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-delta"
+              }
+            },
+            {
+              "at": "2026-10-03T10:13:07.918Z",
+              "elapsedMs": 519.4,
+              "value": {
+                "delta": "在二层活动室整理",
+                "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+                "type": "text-delta"
+              }
+            }
+          ],
+          "error": {
+            "cause": {
+              "kind": "Error",
+              "message": "用户要求停止本次请求",
+              "name": "AbortError",
+              "stack": "AbortError: 用户要求停止本次请求\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:26)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:295:15\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:600:14)\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:610:14)"
+            },
+            "code": "ABORT_ERR",
+            "kind": "Error",
+            "message": "The operation was aborted",
+            "name": "AbortError",
+            "stack": "AbortError: The operation was aborted\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\n    at runAbort (node:internal/abort_controller:488:10)\n    at abortSignal (node:internal/abort_controller:465:5)\n    at AbortController.abort (node:internal/abort_controller:507:5)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:20)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)"
+          },
+          "index": 1,
+          "input": {
+            "abortSignal": {
+              "aborted": false,
+              "kind": "AbortSignal",
+              "reason": {
+                "kind": "undefined"
+              }
+            },
+            "frequencyPenalty": {
+              "kind": "undefined"
+            },
+            "headers": {
+              "kind": "undefined"
+            },
+            "includeRawChunks": false,
+            "maxOutputTokens": {
+              "kind": "undefined"
+            },
+            "presencePenalty": {
+              "kind": "undefined"
+            },
+            "prompt": [
+              {
+                "content": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+                "role": "system"
+              },
+              {
+                "content": [
+                  "[MaxDepth]"
+                ],
+                "providerOptions": {
+                  "kind": "undefined"
+                },
+                "role": "user"
+              }
+            ],
+            "providerOptions": {
+              "kind": "undefined"
+            },
+            "reasoning": {
+              "kind": "undefined"
+            },
+            "responseFormat": {
+              "kind": "undefined"
+            },
+            "seed": {
+              "kind": "undefined"
+            },
+            "stopSequences": {
+              "kind": "undefined"
+            },
+            "temperature": {
+              "kind": "undefined"
+            },
+            "toolChoice": {
+              "type": "auto"
+            },
+            "tools": {
+              "kind": "undefined"
+            },
+            "topK": {
+              "kind": "undefined"
+            },
+            "topP": {
+              "kind": "undefined"
+            }
+          },
+          "result": "stream",
+          "signalChanges": [
+            {
+              "at": "2026-10-03T10:13:08.032Z",
+              "elapsedMs": 634,
+              "value": {
+                "aborted": true,
+                "kind": "AbortSignal",
+                "reason": {
+                  "kind": "Error",
+                  "message": "用户要求停止本次请求",
+                  "name": "AbortError",
+                  "stack": "AbortError: 用户要求停止本次请求\n    at new DOMException (node:internal/per_context/domexception:76:18)\n    at <anonymous> (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\src\\requests\\server.ts:80:26)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at next (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:157:13)\n    at Route.dispatch (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\route.js:117:3)\n    at handle (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:435:11)\n    at Layer.handleRequest (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\lib\\layer.js:152:17)\n    at D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:295:15\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:600:14)\n    at param (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-04\\lab\\node_modules\\.pnpm\\router@2.2.0\\node_modules\\router\\index.js:610:14)"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+      "scenario": "normal",
+      "sdkOptions": {
+        "maxRetries": 1,
+        "streamRetries": "omitted",
+        "totalTimeoutMs": 15000
+      },
+      "sdkParts": [
+        {
+          "at": "2026-10-03T10:13:07.401Z",
+          "elapsedMs": 2.2,
+          "value": {
+            "type": "start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.405Z",
+          "elapsedMs": 6.7,
+          "value": {
+            "request": {
+              "body": {
+                "kind": "undefined"
+              },
+              "messages": {
+                "kind": "undefined"
+              }
+            },
+            "type": "start-step",
+            "warnings": []
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.406Z",
+          "elapsedMs": 7.9,
+          "value": {
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "type": "text-start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.577Z",
+          "elapsedMs": 179,
+          "value": {
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "providerMetadata": {
+              "kind": "undefined"
+            },
+            "text": "无障碍地图资料拟",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.748Z",
+          "elapsedMs": 349.9,
+          "value": {
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "providerMetadata": {
+              "kind": "undefined"
+            },
+            "text": "于11月8日上午",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.918Z",
+          "elapsedMs": 520,
+          "value": {
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "providerMetadata": {
+              "kind": "undefined"
+            },
+            "text": "在二层活动室整理",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:08.064Z",
+          "elapsedMs": 665.2,
+          "value": {
+            "reason": "AbortError: 用户要求停止本次请求",
+            "type": "abort"
+          }
+        }
+      ],
+      "serverSseProduced": [
+        {
+          "at": "2026-10-03T10:13:07.401Z",
+          "elapsedMs": 2.9,
+          "value": "data: {\"type\":\"start\",\"messageMetadata\":{\"requestId\":\"596443e9-4306-45b4-87c5-ed43504f95b0\",\"fixtureKey\":\"B\",\"state\":\"running\",\"cause\":null,\"origin\":\"controlled-exercise\"},\"messageId\":\"596443e9-4306-45b4-87c5-ed43504f95b0:assistant\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:07.406Z",
+          "elapsedMs": 7.4,
+          "value": "data: {\"type\":\"start-step\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:07.407Z",
+          "elapsedMs": 8.6,
+          "value": "data: {\"type\":\"text-start\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:07.578Z",
+          "elapsedMs": 180,
+          "value": "data: {\"type\":\"text-delta\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\"delta\":\"无障碍地图资料拟\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:07.749Z",
+          "elapsedMs": 350.6,
+          "value": "data: {\"type\":\"text-delta\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\"delta\":\"于11月8日上午\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:07.919Z",
+          "elapsedMs": 521,
+          "value": "data: {\"type\":\"text-delta\",\"id\":\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\"delta\":\"在二层活动室整理\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:08.064Z",
+          "elapsedMs": 666.1,
+          "value": "data: {\"type\":\"abort\",\"reason\":\"AbortError: 用户要求停止本次请求\"}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:08.066Z",
+          "elapsedMs": 667.2,
+          "value": "data: {\"type\":\"message-metadata\",\"messageMetadata\":{\"requestId\":\"596443e9-4306-45b4-87c5-ed43504f95b0\",\"fixtureKey\":\"B\",\"state\":\"cancelled\",\"cause\":\"manual-stop\",\"origin\":\"controlled-exercise\"}}\n\n"
+        },
+        {
+          "at": "2026-10-03T10:13:08.067Z",
+          "elapsedMs": 668.7,
+          "value": "data: [DONE]\n\n"
+        }
+      ],
+      "serviceId": "8c712f61-51f4-442b-9368-59c03a82b167",
+      "source": {
+        "kind": "teacher-authored"
+      },
+      "startedAt": "2026-10-03T10:13:07.398Z",
+      "state": "cancelled",
+      "transport": [
+        {
+          "at": "2026-10-03T10:13:08.031Z",
+          "elapsedMs": 633,
+          "value": {
+            "kind": "manual-cancel-received"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:08.069Z",
+          "elapsedMs": 670.5,
+          "value": {
+            "kind": "response-close",
+            "state": "cancelled",
+            "writableEnded": true
+          }
+        }
+      ],
+      "uiEvents": [
+        {
+          "at": "2026-10-03T10:13:07.401Z",
+          "elapsedMs": 2.6,
+          "value": {
+            "messageId": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+            "messageMetadata": {
+              "cause": null,
+              "fixtureKey": "B",
+              "origin": "controlled-exercise",
+              "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+              "state": "running"
+            },
+            "type": "start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.405Z",
+          "elapsedMs": 7,
+          "value": {
+            "type": "start-step"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.407Z",
+          "elapsedMs": 8.2,
+          "value": {
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "type": "text-start"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.578Z",
+          "elapsedMs": 179.4,
+          "value": {
+            "delta": "无障碍地图资料拟",
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.749Z",
+          "elapsedMs": 350.2,
+          "value": {
+            "delta": "于11月8日上午",
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:07.919Z",
+          "elapsedMs": 520.5,
+          "value": {
+            "delta": "在二层活动室整理",
+            "id": "596443e9-4306-45b4-87c5-ed43504f95b0:text:1",
+            "type": "text-delta"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:08.064Z",
+          "elapsedMs": 665.6,
+          "value": {
+            "reason": "AbortError: 用户要求停止本次请求",
+            "type": "abort"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:08.065Z",
+          "elapsedMs": 666.7,
+          "value": {
+            "messageMetadata": {
+              "cause": "manual-stop",
+              "fixtureKey": "B",
+              "origin": "controlled-exercise",
+              "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+              "state": "cancelled"
+            },
+            "type": "message-metadata"
+          }
+        }
+      ],
+      "uiMessage": {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "cause": "manual-stop",
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "state": "cancelled"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      "uiOutcome": {
+        "status": "aborted"
+      }
+    },
+    "snapshots": [
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "state": "running"
+        },
+        "parts": [],
+        "role": "assistant"
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟于11月8日上午",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      },
+      {
+        "id": "596443e9-4306-45b4-87c5-ed43504f95b0:assistant",
+        "metadata": {
+          "cause": null,
+          "fixtureKey": "B",
+          "origin": "controlled-exercise",
+          "requestId": "596443e9-4306-45b4-87c5-ed43504f95b0",
+          "state": "running"
+        },
+        "parts": [
+          {
+            "type": "step-start"
+          },
+          {
+            "state": "streaming",
+            "text": "无障碍地图资料拟于11月8日上午在二层活动室整理",
+            "type": "text"
+          }
+        ],
+        "role": "assistant"
+      }
+    ],
+    "stopRequestedAt": "2026-10-03T10:13:08.023Z",
+    "transportError": null
+  },
+  "currentContext": "正常慢流（可手动停止）",
+  "currentTitle": "B · 临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）",
+  "direction": "original",
+  "evidenceOpen": false,
+  "fixture": "B",
+  "geometry": {
+    "answer": {
+      "disabled": false,
+      "height": 62.392860412597656,
+      "hidden": false,
+      "width": 357.9285888671875,
+      "x": 433.5625305175781,
+      "y": 217.12501525878903
+    },
+    "direction": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 100.00000762939452,
+      "x": 1122.571533203125,
+      "y": -74.85714721679688
+    },
+    "fixture": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 317.8482360839844,
+      "x": 67.14286041259766,
+      "y": 491.2410888671875
+    },
+    "inspect": {
+      "disabled": false,
+      "height": 38.28571701049805,
+      "hidden": false,
+      "width": 116.00000762939452,
+      "x": 165.1428680419922,
+      "y": 663.3928833007812
+    },
+    "material": {
+      "disabled": false,
+      "height": 251.1428680419922,
+      "hidden": false,
+      "width": 317.8482360839844,
+      "x": 67.14286041259766,
+      "y": 155.2857208251953
+    },
+    "previous-panel": {
+      "disabled": false,
+      "height": 716.4285888671875,
+      "hidden": false,
+      "width": 406.5000305175781,
+      "x": 815.4910888671875,
+      "y": 51.44643020629883
+    },
+    "run": {
+      "disabled": false,
+      "height": 38.28571701049805,
+      "hidden": false,
+      "width": 88.00000762939453,
+      "x": 67.14286041259766,
+      "y": 663.3928833007812
+    },
+    "scenario": {
+      "disabled": false,
+      "height": 35.42857360839844,
+      "hidden": false,
+      "width": 317.8482360839844,
+      "x": 67.14286041259766,
+      "y": 571.7678833007812
+    },
+    "stop": {
+      "disabled": true,
+      "height": 0,
+      "hidden": true,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    }
+  },
+  "input": "临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。",
+  "previousAnswer": "无障碍地图资料拟于11月8日上午在二层活动室整理，周青汇总已核实坡道，陈禾整理待复查路段；预计12位志愿者参加。资料先供内部讨论。四条坡道已有位置与测量日期，施工、物业电梯开放情况及两条来源不明标注仍需核查。签到、分组、复查人员和发布条件尚未决定，不承诺路线一定可通行。",
+  "previousContext": "编号 9111d206 · 完成于 2026-10-03T10:12:05.930Z",
+  "previousHidden": false,
+  "previousTitle": "B · 临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）",
+  "root": {
+    "clientWidth": 1265,
+    "scrollHeight": 1011,
+    "scrollWidth": 1265,
+    "scrollY": 110.85713958740234
+  },
+  "scenario": "normal",
+  "serverText": "{\n  \"requestId\": \"596443e9-4306-45b4-87c5-ed43504f95b0\",\n  \"serviceId\": \"8c712f61-51f4-442b-9368-59c03a82b167\",\n  \"fixtureKey\": \"B\",\n  \"scenario\": \"normal\",\n  \"input\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\",\n  \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n  \"answerOrigin\": \"教师构造的摘要文字，未由模型生成，未由使用者采用\",\n  \"source\": {\n    \"kind\": \"teacher-authored\"\n  },\n  \"sdkOptions\": {\n    \"maxRetries\": 1,\n    \"streamRetries\": \"omitted\",\n    \"totalTimeoutMs\": 15000\n  },\n  \"startedAt\": \"2026-10-03T10:13:07.398Z\",\n  \"state\": \"cancelled\",\n  \"cause\": \"manual-stop\",\n  \"finishedAt\": \"2026-10-03T10:13:08.066Z\",\n  \"manualStopRequestedAt\": \"2026-10-03T10:13:08.031Z\",\n  \"connectionClosedAt\": null,\n  \"providerCalls\": [\n    {\n      \"index\": 1,\n      \"beganAt\": \"2026-10-03T10:13:07.402Z\",\n      \"elapsedMs\": 4,\n      \"input\": {\n        \"maxOutputTokens\": {\n          \"kind\": \"undefined\"\n        },\n        \"temperature\": {\n          \"kind\": \"undefined\"\n        },\n        \"topP\": {\n          \"kind\": \"undefined\"\n        },\n        \"topK\": {\n          \"kind\": \"undefined\"\n        },\n        \"presencePenalty\": {\n          \"kind\": \"undefined\"\n        },\n        \"frequencyPenalty\": {\n          \"kind\": \"undefined\"\n        },\n        \"stopSequences\": {\n          \"kind\": \"undefined\"\n        },\n        \"seed\": {\n          \"kind\": \"undefined\"\n        },\n        \"reasoning\": {\n          \"kind\": \"undefined\"\n        },\n        \"tools\": {\n          \"kind\": \"undefined\"\n        },\n        \"toolChoice\": {\n          \"type\": \"auto\"\n        },\n        \"responseFormat\": {\n          \"kind\": \"undefined\"\n        },\n        \"prompt\": [\n          {\n            \"role\": \"system\",\n            \"content\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\"\n          },\n          {\n            \"role\": \"user\",\n            \"content\": [\n              {\n                \"type\": \"text\",\n                \"text\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n              }\n            ],\n            \"providerOptions\": {\n              \"kind\": \"undefined\"\n            }\n          }\n        ],\n        \"providerOptions\": {\n          \"kind\": \"undefined\"\n        },\n        \"abortSignal\": {\n          \"kind\": \"AbortSignal\",\n          \"aborted\": false,\n          \"reason\": {\n            \"kind\": \"undefined\"\n          }\n        },\n        \"headers\": {\n          \"kind\": \"undefined\"\n        },\n        \"includeRawChunks\": false\n      },\n      \"result\": \"stream\",\n      \"assignedParts\": [\n        {\n          \"type\": \"stream-start\",\n          \"warnings\": []\n        },\n        {\n          \"type\": \"response-metadata\",\n          \"id\": \"mock-596443e9-4306-45b4-87c5-ed43504f95b0-1\",\n          \"modelId\": \"controlled-summary\"\n        },\n        {\n          \"type\": \"text-start\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"无障碍地图资料拟\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"于11月8日上午\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"在二层活动室整理\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"，周青汇总已核实\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"坡道，陈禾整理待\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"复查路段；预计1\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"2位志愿者参加。\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"资料先供内部讨论\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"。四条坡道已有位\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"置与测量日期，施\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"工、物业电梯开放\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"情况及两条来源不\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"明标注仍需核查。\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"签到、分组、复查\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"人员和发布条件尚\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"未决定，不承诺路\"\n        },\n        {\n          \"type\": \"text-delta\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n          \"delta\": \"线一定可通行。\"\n        },\n        {\n          \"type\": \"text-end\",\n          \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\"\n        },\n        {\n          \"type\": \"finish\",\n          \"finishReason\": {\n            \"unified\": \"stop\",\n            \"raw\": \"controlled-stop\"\n          },\n          \"usage\": {\n            \"inputTokens\": {\n              \"total\": {\n                \"kind\": \"undefined\"\n              },\n              \"noCache\": {\n                \"kind\": \"undefined\"\n              },\n              \"cacheRead\": {\n                \"kind\": \"undefined\"\n              },\n              \"cacheWrite\": {\n                \"kind\": \"undefined\"\n              }\n            },\n            \"outputTokens\": {\n              \"total\": {\n                \"kind\": \"undefined\"\n              },\n              \"text\": {\n                \"kind\": \"undefined\"\n              },\n              \"reasoning\": {\n                \"kind\": \"undefined\"\n              }\n            }\n          }\n        }\n      ],\n      \"emittedParts\": [\n        {\n          \"at\": \"2026-10-03T10:13:07.403Z\",\n          \"elapsedMs\": 4.6,\n          \"value\": {\n            \"type\": \"stream-start\",\n            \"warnings\": []\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:13:07.403Z\",\n          \"elapsedMs\": 4.9,\n          \"value\": {\n            \"type\": \"response-metadata\",\n            \"id\": \"mock-596443e9-4306-45b4-87c5-ed43504f95b0-1\",\n            \"modelId\": \"controlled-summary\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:13:07.404Z\",\n          \"elapsedMs\": 6,\n          \"value\": {\n            \"type\": \"text-start\",\n            \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:13:07.576Z\",\n          \"elapsedMs\": 178.1,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n            \"delta\": \"无障碍地图资料拟\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:13:07.747Z\",\n          \"elapsedMs\": 349.1,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n            \"delta\": \"于11月8日上午\"\n          }\n        },\n        {\n          \"at\": \"2026-10-03T10:13:07.918Z\",\n          \"elapsedMs\": 519.4,\n          \"value\": {\n            \"type\": \"text-delta\",\n            \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n            \"delta\": \"在二层活动室整理\"\n          }\n        }\n      ],\n      \"signalChanges\": [\n        {\n          \"at\": \"2026-10-03T10:13:08.032Z\",\n          \"elapsedMs\": 634,\n          \"value\": {\n            \"kind\": \"AbortSignal\",\n            \"aborted\": true,\n            \"reason\": {\n              \"kind\": \"Error\",\n              \"name\": \"AbortError\",\n              \"message\": \"用户要求停止本次请求\",\n              \"stack\": \"AbortError: 用户要求停止本次请求\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at <anonymous> (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:80:26)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:295:15\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:600:14)\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:610:14)\"\n            }\n          }\n        }\n      ],\n      \"error\": {\n        \"kind\": \"Error\",\n        \"name\": \"AbortError\",\n        \"message\": \"The operation was aborted\",\n        \"cause\": {\n          \"kind\": \"Error\",\n          \"name\": \"AbortError\",\n          \"message\": \"用户要求停止本次请求\",\n          \"stack\": \"AbortError: 用户要求停止本次请求\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at <anonymous> (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:80:26)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:295:15\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:600:14)\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:610:14)\"\n        },\n        \"code\": \"ABORT_ERR\",\n        \"stack\": \"AbortError: The operation was aborted\\n    at Timeout.cancelListenerHandler (node:timers/promises:49:12)\\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:845:20)\\n    at AbortSignal.dispatchEvent (node:internal/event_target:778:26)\\n    at runAbort (node:internal/abort_controller:488:10)\\n    at abortSignal (node:internal/abort_controller:465:5)\\n    at AbortController.abort (node:internal/abort_controller:507:5)\\n    at <anonymous> (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:80:20)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\"\n      }\n    }\n  ],\n  \"sdkParts\": [\n    {\n      \"at\": \"2026-10-03T10:13:07.401Z\",\n      \"elapsedMs\": 2.2,\n      \"value\": {\n        \"type\": \"start\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.405Z\",\n      \"elapsedMs\": 6.7,\n      \"value\": {\n        \"type\": \"start-step\",\n        \"request\": {\n          \"body\": {\n            \"kind\": \"undefined\"\n          },\n          \"messages\": {\n            \"kind\": \"undefined\"\n          }\n        },\n        \"warnings\": []\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.406Z\",\n      \"elapsedMs\": 7.9,\n      \"value\": {\n        \"type\": \"text-start\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.577Z\",\n      \"elapsedMs\": 179,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n        \"text\": \"无障碍地图资料拟\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.748Z\",\n      \"elapsedMs\": 349.9,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n        \"text\": \"于11月8日上午\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.918Z\",\n      \"elapsedMs\": 520,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n        \"text\": \"在二层活动室整理\",\n        \"providerMetadata\": {\n          \"kind\": \"undefined\"\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.064Z\",\n      \"elapsedMs\": 665.2,\n      \"value\": {\n        \"type\": \"abort\",\n        \"reason\": \"AbortError: 用户要求停止本次请求\"\n      }\n    }\n  ],\n  \"callbacks\": [\n    {\n      \"at\": \"2026-10-03T10:13:07.400Z\",\n      \"elapsedMs\": 1.8,\n      \"value\": {\n        \"kind\": \"core.onStart\",\n        \"event\": {\n          \"callId\": \"call-xFBZyHPJZAeqXXuNY4mYe7qZ\",\n          \"operationId\": \"ai.streamText\",\n          \"provider\": \"official-mock\",\n          \"modelId\": \"controlled-summary\",\n          \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n          \"messages\": [\n            {\n              \"role\": \"user\",\n              \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n            }\n          ],\n          \"tools\": {\n            \"kind\": \"undefined\"\n          },\n          \"toolChoice\": {\n            \"kind\": \"undefined\"\n          },\n          \"activeTools\": {\n            \"kind\": \"undefined\"\n          },\n          \"toolOrder\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxOutputTokens\": {\n            \"kind\": \"undefined\"\n          },\n          \"temperature\": {\n            \"kind\": \"undefined\"\n          },\n          \"topP\": {\n            \"kind\": \"undefined\"\n          },\n          \"topK\": {\n            \"kind\": \"undefined\"\n          },\n          \"presencePenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"frequencyPenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"stopSequences\": {\n            \"kind\": \"undefined\"\n          },\n          \"seed\": {\n            \"kind\": \"undefined\"\n          },\n          \"reasoning\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxRetries\": 1,\n          \"timeout\": {\n            \"totalMs\": 15000\n          },\n          \"headers\": {\n            \"kind\": \"undefined\"\n          },\n          \"providerOptions\": {\n            \"kind\": \"undefined\"\n          },\n          \"output\": {\n            \"kind\": \"undefined\"\n          },\n          \"runtimeContext\": {},\n          \"toolsContext\": {}\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.402Z\",\n      \"elapsedMs\": 3.8,\n      \"value\": {\n        \"kind\": \"core.onLanguageModelCallStart\",\n        \"event\": {\n          \"callId\": \"call-xFBZyHPJZAeqXXuNY4mYe7qZ\",\n          \"provider\": \"official-mock\",\n          \"modelId\": \"controlled-summary\",\n          \"instructions\": \"只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。\",\n          \"messages\": [\n            {\n              \"role\": \"user\",\n              \"content\": \"临江街道无障碍地图志愿整理会纪要（教学构造，不是实际会议）\\n计划于11月8日上午在二层活动室整理社区无障碍地图。周青负责汇总已核实的坡道位置，陈禾负责整理需要复查的路段。\\n地图先用于街道内部讨论，不公开发布。预计有12位志愿者参加，这只是筹备估计，既不是报名上限，也不是已经确定的到场人数。\\n目前已确认的资料是四条坡道的位置和测量日期；道路施工可能影响通行，现场情况须在讨论前重新核实。电梯是否全天开放尚未向物业确认。\\n记录里有两条来源不明的“畅通”标注，应单独列为待核查，不得合并进已核实清单。具体签到时间、志愿者分组、复查人员和对外发布条件都尚未决定。\\n会议只讨论资料整理，不提前承诺某条路线一定可通行；整理人员应保留来源、时间和未知项，等现场复查后再决定下一步。\"\n            }\n          ],\n          \"tools\": {\n            \"kind\": \"undefined\"\n          },\n          \"maxOutputTokens\": {\n            \"kind\": \"undefined\"\n          },\n          \"temperature\": {\n            \"kind\": \"undefined\"\n          },\n          \"topP\": {\n            \"kind\": \"undefined\"\n          },\n          \"topK\": {\n            \"kind\": \"undefined\"\n          },\n          \"presencePenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"frequencyPenalty\": {\n            \"kind\": \"undefined\"\n          },\n          \"stopSequences\": {\n            \"kind\": \"undefined\"\n          },\n          \"seed\": {\n            \"kind\": \"undefined\"\n          },\n          \"reasoning\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.063Z\",\n      \"elapsedMs\": 664.6,\n      \"value\": {\n        \"kind\": \"core.onAbort\",\n        \"event\": {\n          \"callId\": \"call-xFBZyHPJZAeqXXuNY4mYe7qZ\",\n          \"steps\": [],\n          \"reason\": {\n            \"kind\": \"Error\",\n            \"name\": \"AbortError\",\n            \"message\": \"用户要求停止本次请求\",\n            \"stack\": \"AbortError: 用户要求停止本次请求\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at <anonymous> (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:80:26)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:295:15\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:600:14)\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:610:14)\"\n          }\n        }\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.066Z\",\n      \"elapsedMs\": 668,\n      \"value\": {\n        \"kind\": \"ui.onEnd\",\n        \"event\": {\n          \"isAborted\": true,\n          \"isContinuation\": false,\n          \"outcome\": {\n            \"status\": \"aborted\"\n          },\n          \"responseMessage\": {\n            \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:assistant\",\n            \"metadata\": {\n              \"requestId\": \"596443e9-4306-45b4-87c5-ed43504f95b0\",\n              \"fixtureKey\": \"B\",\n              \"state\": \"cancelled\",\n              \"cause\": \"manual-stop\",\n              \"origin\": \"controlled-exercise\"\n            },\n            \"role\": \"assistant\",\n            \"parts\": [\n              {\n                \"type\": \"step-start\"\n              },\n              {\n                \"type\": \"text\",\n                \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理\",\n                \"providerMetadata\": {\n                  \"kind\": \"undefined\"\n                },\n                \"state\": \"streaming\"\n              }\n            ]\n          },\n          \"messages\": [\n            {\n              \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:assistant\",\n              \"metadata\": {\n                \"requestId\": \"596443e9-4306-45b4-87c5-ed43504f95b0\",\n                \"fixtureKey\": \"B\",\n                \"state\": \"cancelled\",\n                \"cause\": \"manual-stop\",\n                \"origin\": \"controlled-exercise\"\n              },\n              \"role\": \"assistant\",\n              \"parts\": [\n                {\n                  \"type\": \"step-start\"\n                },\n                {\n                  \"type\": \"text\",\n                  \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理\",\n                  \"providerMetadata\": {\n                    \"kind\": \"undefined\"\n                  },\n                  \"state\": \"streaming\"\n                }\n              ]\n            }\n          ],\n          \"finishReason\": {\n            \"kind\": \"undefined\"\n          }\n        }\n      }\n    }\n  ],\n  \"uiEvents\": [\n    {\n      \"at\": \"2026-10-03T10:13:07.401Z\",\n      \"elapsedMs\": 2.6,\n      \"value\": {\n        \"type\": \"start\",\n        \"messageMetadata\": {\n          \"requestId\": \"596443e9-4306-45b4-87c5-ed43504f95b0\",\n          \"fixtureKey\": \"B\",\n          \"state\": \"running\",\n          \"cause\": null,\n          \"origin\": \"controlled-exercise\"\n        },\n        \"messageId\": \"596443e9-4306-45b4-87c5-ed43504f95b0:assistant\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.405Z\",\n      \"elapsedMs\": 7,\n      \"value\": {\n        \"type\": \"start-step\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.407Z\",\n      \"elapsedMs\": 8.2,\n      \"value\": {\n        \"type\": \"text-start\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.578Z\",\n      \"elapsedMs\": 179.4,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n        \"delta\": \"无障碍地图资料拟\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.749Z\",\n      \"elapsedMs\": 350.2,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n        \"delta\": \"于11月8日上午\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.919Z\",\n      \"elapsedMs\": 520.5,\n      \"value\": {\n        \"type\": \"text-delta\",\n        \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\",\n        \"delta\": \"在二层活动室整理\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.064Z\",\n      \"elapsedMs\": 665.6,\n      \"value\": {\n        \"type\": \"abort\",\n        \"reason\": \"AbortError: 用户要求停止本次请求\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.065Z\",\n      \"elapsedMs\": 666.7,\n      \"value\": {\n        \"type\": \"message-metadata\",\n        \"messageMetadata\": {\n          \"requestId\": \"596443e9-4306-45b4-87c5-ed43504f95b0\",\n          \"fixtureKey\": \"B\",\n          \"state\": \"cancelled\",\n          \"cause\": \"manual-stop\",\n          \"origin\": \"controlled-exercise\"\n        }\n      }\n    }\n  ],\n  \"transport\": [\n    {\n      \"at\": \"2026-10-03T10:13:08.031Z\",\n      \"elapsedMs\": 633,\n      \"value\": {\n        \"kind\": \"manual-cancel-received\"\n      }\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.069Z\",\n      \"elapsedMs\": 670.5,\n      \"value\": {\n        \"kind\": \"response-close\",\n        \"writableEnded\": true,\n        \"state\": \"cancelled\"\n      }\n    }\n  ],\n  \"serverSseProduced\": [\n    {\n      \"at\": \"2026-10-03T10:13:07.401Z\",\n      \"elapsedMs\": 2.9,\n      \"value\": \"data: {\\\"type\\\":\\\"start\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"596443e9-4306-45b4-87c5-ed43504f95b0\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"running\\\",\\\"cause\\\":null,\\\"origin\\\":\\\"controlled-exercise\\\"},\\\"messageId\\\":\\\"596443e9-4306-45b4-87c5-ed43504f95b0:assistant\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.406Z\",\n      \"elapsedMs\": 7.4,\n      \"value\": \"data: {\\\"type\\\":\\\"start-step\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.407Z\",\n      \"elapsedMs\": 8.6,\n      \"value\": \"data: {\\\"type\\\":\\\"text-start\\\",\\\"id\\\":\\\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.578Z\",\n      \"elapsedMs\": 180,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\\\",\\\"delta\\\":\\\"无障碍地图资料拟\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.749Z\",\n      \"elapsedMs\": 350.6,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\\\",\\\"delta\\\":\\\"于11月8日上午\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:07.919Z\",\n      \"elapsedMs\": 521,\n      \"value\": \"data: {\\\"type\\\":\\\"text-delta\\\",\\\"id\\\":\\\"596443e9-4306-45b4-87c5-ed43504f95b0:text:1\\\",\\\"delta\\\":\\\"在二层活动室整理\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.064Z\",\n      \"elapsedMs\": 666.1,\n      \"value\": \"data: {\\\"type\\\":\\\"abort\\\",\\\"reason\\\":\\\"AbortError: 用户要求停止本次请求\\\"}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.066Z\",\n      \"elapsedMs\": 667.2,\n      \"value\": \"data: {\\\"type\\\":\\\"message-metadata\\\",\\\"messageMetadata\\\":{\\\"requestId\\\":\\\"596443e9-4306-45b4-87c5-ed43504f95b0\\\",\\\"fixtureKey\\\":\\\"B\\\",\\\"state\\\":\\\"cancelled\\\",\\\"cause\\\":\\\"manual-stop\\\",\\\"origin\\\":\\\"controlled-exercise\\\"}}\\n\\n\"\n    },\n    {\n      \"at\": \"2026-10-03T10:13:08.067Z\",\n      \"elapsedMs\": 668.7,\n      \"value\": \"data: [DONE]\\n\\n\"\n    }\n  ],\n  \"uiMessage\": {\n    \"id\": \"596443e9-4306-45b4-87c5-ed43504f95b0:assistant\",\n    \"metadata\": {\n      \"requestId\": \"596443e9-4306-45b4-87c5-ed43504f95b0\",\n      \"fixtureKey\": \"B\",\n      \"state\": \"cancelled\",\n      \"cause\": \"manual-stop\",\n      \"origin\": \"controlled-exercise\"\n    },\n    \"role\": \"assistant\",\n    \"parts\": [\n      {\n        \"type\": \"step-start\"\n      },\n      {\n        \"type\": \"text\",\n        \"text\": \"无障碍地图资料拟于11月8日上午在二层活动室整理\",\n        \"state\": \"streaming\"\n      }\n    ]\n  },\n  \"uiOutcome\": {\n    \"status\": \"aborted\"\n  },\n  \"error\": {\n    \"kind\": \"Error\",\n    \"name\": \"AbortError\",\n    \"message\": \"用户要求停止本次请求\",\n    \"stack\": \"AbortError: 用户要求停止本次请求\\n    at new DOMException (node:internal/per_context/domexception:76:18)\\n    at <anonymous> (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\src\\\\requests\\\\server.ts:80:26)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at next (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:157:13)\\n    at Route.dispatch (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\route.js:117:3)\\n    at handle (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:435:11)\\n    at Layer.handleRequest (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\lib\\\\layer.js:152:17)\\n    at D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:295:15\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:600:14)\\n    at param (D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-04-04\\\\lab\\\\node_modules\\\\.pnpm\\\\router@2.2.0\\\\node_modules\\\\router\\\\index.js:610:14)\"\n  }\n}",
+  "status": "记录确认本次已停止；输入和片段保留。",
+  "url": "http://127.0.0.1:4340/requests.html",
+  "viewport": {
+    "devicePixelRatio": 1.0000000447034836,
+    "height": 900,
+    "scale": 1,
+    "width": 1280
+  }
+}

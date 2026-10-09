@@ -1,0 +1,1874 @@
+{
+  "requestId": "947097e8-dcff-4b5a-b52a-f3a0f6604d74",
+  "serviceId": "8c712f61-51f4-442b-9368-59c03a82b167",
+  "fixtureKey": "A",
+  "scenario": "normal",
+  "input": "青禾社区共享书架筹备纪要（教学虚构）\n计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。\n图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。\n书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。\n借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。",
+  "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+  "answerOrigin": "历史1153e17e摘要阶段的answer原值",
+  "source": {
+    "historicalRunId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+    "historicalState": "completed",
+    "sourceFile": "public/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+    "sourceBytes": 27209,
+    "sourceSha256": "ba1c2ad1f410c978b598eb8948d73240d1a46f6015a3f1c44b27ae6602c33638",
+    "field": "stages[0].answer",
+    "originalInstructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。"
+  },
+  "sdkOptions": {
+    "maxRetries": 1,
+    "streamRetries": "omitted",
+    "totalTimeoutMs": 15000
+  },
+  "startedAt": "2026-10-03T10:13:37.772Z",
+  "state": "completed",
+  "cause": null,
+  "finishedAt": "2026-10-03T10:13:40.861Z",
+  "manualStopRequestedAt": null,
+  "connectionClosedAt": null,
+  "providerCalls": [
+    {
+      "index": 1,
+      "beganAt": "2026-10-03T10:13:37.775Z",
+      "elapsedMs": 3.3,
+      "input": {
+        "maxOutputTokens": {
+          "kind": "undefined"
+        },
+        "temperature": {
+          "kind": "undefined"
+        },
+        "topP": {
+          "kind": "undefined"
+        },
+        "topK": {
+          "kind": "undefined"
+        },
+        "presencePenalty": {
+          "kind": "undefined"
+        },
+        "frequencyPenalty": {
+          "kind": "undefined"
+        },
+        "stopSequences": {
+          "kind": "undefined"
+        },
+        "seed": {
+          "kind": "undefined"
+        },
+        "reasoning": {
+          "kind": "undefined"
+        },
+        "tools": {
+          "kind": "undefined"
+        },
+        "toolChoice": {
+          "type": "auto"
+        },
+        "responseFormat": {
+          "kind": "undefined"
+        },
+        "prompt": [
+          {
+            "role": "system",
+            "content": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。"
+          },
+          {
+            "role": "user",
+            "content": [
+              {
+                "type": "text",
+                "text": "青禾社区共享书架筹备纪要（教学虚构）\n计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。\n图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。\n书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。\n借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。"
+              }
+            ],
+            "providerOptions": {
+              "kind": "undefined"
+            }
+          }
+        ],
+        "providerOptions": {
+          "kind": "undefined"
+        },
+        "abortSignal": {
+          "kind": "AbortSignal",
+          "aborted": false,
+          "reason": {
+            "kind": "undefined"
+          }
+        },
+        "headers": {
+          "kind": "undefined"
+        },
+        "includeRawChunks": false
+      },
+      "result": "stream",
+      "assignedParts": [
+        {
+          "type": "stream-start",
+          "warnings": []
+        },
+        {
+          "type": "response-metadata",
+          "id": "mock-947097e8-dcff-4b5a-b52a-f3a0f6604d74-1",
+          "modelId": "controlled-summary"
+        },
+        {
+          "type": "text-start",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "共享书架计划于1"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "0月12日下午开"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "放，林晓负责图书"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "整理，许宁负责借"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "阅说明制作。书架"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "与阅读桌已到位，"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "图书仅限在活动室"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "内阅读，不外借，"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "每次限20人，使"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "用后需归位。志愿"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "者值班名单及开放"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "具体时间待与场地"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "管理员确认。借阅"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "说明中损坏处理方"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "式未定。材料整理"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "完成后将评估是否"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "如期开放，暂不对"
+        },
+        {
+          "type": "text-delta",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+          "delta": "外承诺。"
+        },
+        {
+          "type": "text-end",
+          "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+        },
+        {
+          "type": "finish",
+          "finishReason": {
+            "unified": "stop",
+            "raw": "controlled-stop"
+          },
+          "usage": {
+            "inputTokens": {
+              "total": {
+                "kind": "undefined"
+              },
+              "noCache": {
+                "kind": "undefined"
+              },
+              "cacheRead": {
+                "kind": "undefined"
+              },
+              "cacheWrite": {
+                "kind": "undefined"
+              }
+            },
+            "outputTokens": {
+              "total": {
+                "kind": "undefined"
+              },
+              "text": {
+                "kind": "undefined"
+              },
+              "reasoning": {
+                "kind": "undefined"
+              }
+            }
+          }
+        }
+      ],
+      "emittedParts": [
+        {
+          "at": "2026-10-03T10:13:37.775Z",
+          "elapsedMs": 3.9,
+          "value": {
+            "type": "stream-start",
+            "warnings": []
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:37.776Z",
+          "elapsedMs": 4.5,
+          "value": {
+            "type": "response-metadata",
+            "id": "mock-947097e8-dcff-4b5a-b52a-f3a0f6604d74-1",
+            "modelId": "controlled-summary"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:37.777Z",
+          "elapsedMs": 5.1,
+          "value": {
+            "type": "text-start",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:37.945Z",
+          "elapsedMs": 173.3,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "共享书架计划于1"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:38.116Z",
+          "elapsedMs": 344.1,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "0月12日下午开"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:38.287Z",
+          "elapsedMs": 515.3,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "放，林晓负责图书"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:38.458Z",
+          "elapsedMs": 686.6,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "整理，许宁负责借"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:38.629Z",
+          "elapsedMs": 857.3,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "阅说明制作。书架"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:38.800Z",
+          "elapsedMs": 1028.6,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "与阅读桌已到位，"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:38.971Z",
+          "elapsedMs": 1199.8,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "图书仅限在活动室"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:39.143Z",
+          "elapsedMs": 1371.1,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "内阅读，不外借，"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:39.314Z",
+          "elapsedMs": 1542.3,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "每次限20人，使"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:39.485Z",
+          "elapsedMs": 1712.9,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "用后需归位。志愿"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:39.655Z",
+          "elapsedMs": 1883.8,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "者值班名单及开放"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:39.827Z",
+          "elapsedMs": 2055.3,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "具体时间待与场地"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:39.998Z",
+          "elapsedMs": 2226.6,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "管理员确认。借阅"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:40.169Z",
+          "elapsedMs": 2397.4,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "说明中损坏处理方"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:40.340Z",
+          "elapsedMs": 2568.2,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "式未定。材料整理"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:40.511Z",
+          "elapsedMs": 2739.6,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "完成后将评估是否"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:40.682Z",
+          "elapsedMs": 2910.2,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "如期开放，暂不对"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:40.852Z",
+          "elapsedMs": 3080.7,
+          "value": {
+            "type": "text-delta",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+            "delta": "外承诺。"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:40.853Z",
+          "elapsedMs": 3081.2,
+          "value": {
+            "type": "text-end",
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+          }
+        },
+        {
+          "at": "2026-10-03T10:13:40.853Z",
+          "elapsedMs": 3081.7,
+          "value": {
+            "type": "finish",
+            "finishReason": {
+              "unified": "stop",
+              "raw": "controlled-stop"
+            },
+            "usage": {
+              "inputTokens": {
+                "total": {
+                  "kind": "undefined"
+                },
+                "noCache": {
+                  "kind": "undefined"
+                },
+                "cacheRead": {
+                  "kind": "undefined"
+                },
+                "cacheWrite": {
+                  "kind": "undefined"
+                }
+              },
+              "outputTokens": {
+                "total": {
+                  "kind": "undefined"
+                },
+                "text": {
+                  "kind": "undefined"
+                },
+                "reasoning": {
+                  "kind": "undefined"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "signalChanges": []
+    }
+  ],
+  "sdkParts": [
+    {
+      "at": "2026-10-03T10:13:37.773Z",
+      "elapsedMs": 1.9,
+      "value": {
+        "type": "start"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:37.777Z",
+      "elapsedMs": 5.5,
+      "value": {
+        "type": "start-step",
+        "request": {
+          "body": {
+            "kind": "undefined"
+          },
+          "messages": {
+            "kind": "undefined"
+          }
+        },
+        "warnings": []
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:37.778Z",
+      "elapsedMs": 6.6,
+      "value": {
+        "type": "text-start",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:37.946Z",
+      "elapsedMs": 174,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "共享书架计划于1",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.117Z",
+      "elapsedMs": 345.1,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "0月12日下午开",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.287Z",
+      "elapsedMs": 515.9,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "放，林晓负责图书",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.459Z",
+      "elapsedMs": 687.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "整理，许宁负责借",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.630Z",
+      "elapsedMs": 858.1,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "阅说明制作。书架",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.801Z",
+      "elapsedMs": 1029.3,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "与阅读桌已到位，",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.972Z",
+      "elapsedMs": 1200.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "图书仅限在活动室",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.144Z",
+      "elapsedMs": 1372.2,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "内阅读，不外借，",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.315Z",
+      "elapsedMs": 1543.2,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "每次限20人，使",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.485Z",
+      "elapsedMs": 1713.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "用后需归位。志愿",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.656Z",
+      "elapsedMs": 1884.6,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "者值班名单及开放",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.828Z",
+      "elapsedMs": 2056,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "具体时间待与场地",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.999Z",
+      "elapsedMs": 2227.6,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "管理员确认。借阅",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.170Z",
+      "elapsedMs": 2398.2,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "说明中损坏处理方",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.341Z",
+      "elapsedMs": 2569,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "式未定。材料整理",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.512Z",
+      "elapsedMs": 2740.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "完成后将评估是否",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.682Z",
+      "elapsedMs": 2910.9,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "如期开放，暂不对",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.854Z",
+      "elapsedMs": 3082.2,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "text": "外承诺。",
+        "providerMetadata": {
+          "kind": "undefined"
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.855Z",
+      "elapsedMs": 3083.8,
+      "value": {
+        "type": "text-end",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.857Z",
+      "elapsedMs": 3085.3,
+      "value": {
+        "type": "finish-step",
+        "finishReason": "stop",
+        "rawFinishReason": "controlled-stop",
+        "usage": {
+          "inputTokens": {
+            "kind": "undefined"
+          },
+          "inputTokenDetails": {
+            "noCacheTokens": {
+              "kind": "undefined"
+            },
+            "cacheReadTokens": {
+              "kind": "undefined"
+            },
+            "cacheWriteTokens": {
+              "kind": "undefined"
+            }
+          },
+          "outputTokens": {
+            "kind": "undefined"
+          },
+          "outputTokenDetails": {
+            "textTokens": {
+              "kind": "undefined"
+            },
+            "reasoningTokens": {
+              "kind": "undefined"
+            }
+          },
+          "totalTokens": {
+            "kind": "undefined"
+          },
+          "raw": {
+            "kind": "undefined"
+          }
+        },
+        "performance": {
+          "stepTimeMs": 3082.513500000001,
+          "toolExecutionMs": {},
+          "responseTimeMs": 3080.018700000015,
+          "effectiveOutputTokensPerSecond": 0,
+          "outputTokensPerSecond": 0,
+          "inputTokensPerSecond": 0,
+          "effectiveTotalTokensPerSecond": 0,
+          "timeToFirstOutputMs": 170.56670000002487,
+          "timeBetweenOutputChunksMs": {
+            "min": 170.39100000000326,
+            "p10": 170.4269000000204,
+            "median": 170.9930999999633,
+            "avg": 171.01613529411705,
+            "p90": 171.53690000000643,
+            "max": 171.66240000003017
+          }
+        },
+        "providerMetadata": {
+          "kind": "undefined"
+        },
+        "response": {
+          "id": "mock-947097e8-dcff-4b5a-b52a-f3a0f6604d74-1",
+          "timestamp": {
+            "kind": "Date",
+            "value": "2026-10-03T10:13:37.777Z"
+          },
+          "modelId": "controlled-summary",
+          "headers": {
+            "kind": "undefined"
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.859Z",
+      "elapsedMs": 3087,
+      "value": {
+        "type": "finish",
+        "finishReason": "stop",
+        "rawFinishReason": "controlled-stop",
+        "totalUsage": {
+          "inputTokens": {
+            "kind": "undefined"
+          },
+          "inputTokenDetails": {
+            "noCacheTokens": {
+              "kind": "undefined"
+            },
+            "cacheReadTokens": {
+              "kind": "undefined"
+            },
+            "cacheWriteTokens": {
+              "kind": "undefined"
+            }
+          },
+          "outputTokens": {
+            "kind": "undefined"
+          },
+          "outputTokenDetails": {
+            "textTokens": {
+              "kind": "undefined"
+            },
+            "reasoningTokens": {
+              "kind": "undefined"
+            }
+          },
+          "totalTokens": {
+            "kind": "undefined"
+          }
+        }
+      }
+    }
+  ],
+  "callbacks": [
+    {
+      "at": "2026-10-03T10:13:37.773Z",
+      "elapsedMs": 1.5,
+      "value": {
+        "kind": "core.onStart",
+        "event": {
+          "callId": "call-Gb6evR8KvUuIh8EKcOfuxOe0",
+          "operationId": "ai.streamText",
+          "provider": "official-mock",
+          "modelId": "controlled-summary",
+          "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+          "messages": [
+            {
+              "role": "user",
+              "content": "青禾社区共享书架筹备纪要（教学虚构）\n计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。\n图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。\n书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。\n借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。"
+            }
+          ],
+          "tools": {
+            "kind": "undefined"
+          },
+          "toolChoice": {
+            "kind": "undefined"
+          },
+          "activeTools": {
+            "kind": "undefined"
+          },
+          "toolOrder": {
+            "kind": "undefined"
+          },
+          "maxOutputTokens": {
+            "kind": "undefined"
+          },
+          "temperature": {
+            "kind": "undefined"
+          },
+          "topP": {
+            "kind": "undefined"
+          },
+          "topK": {
+            "kind": "undefined"
+          },
+          "presencePenalty": {
+            "kind": "undefined"
+          },
+          "frequencyPenalty": {
+            "kind": "undefined"
+          },
+          "stopSequences": {
+            "kind": "undefined"
+          },
+          "seed": {
+            "kind": "undefined"
+          },
+          "reasoning": {
+            "kind": "undefined"
+          },
+          "maxRetries": 1,
+          "timeout": {
+            "totalMs": 15000
+          },
+          "headers": {
+            "kind": "undefined"
+          },
+          "providerOptions": {
+            "kind": "undefined"
+          },
+          "output": {
+            "kind": "undefined"
+          },
+          "runtimeContext": {},
+          "toolsContext": {}
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:37.775Z",
+      "elapsedMs": 3,
+      "value": {
+        "kind": "core.onLanguageModelCallStart",
+        "event": {
+          "callId": "call-Gb6evR8KvUuIh8EKcOfuxOe0",
+          "provider": "official-mock",
+          "modelId": "controlled-summary",
+          "instructions": "只依据工作纪要写一段约120字的简明摘要，区分已确定安排和未决事项。不补造事实，不提出问题，不加标题。",
+          "messages": [
+            {
+              "role": "user",
+              "content": "青禾社区共享书架筹备纪要（教学虚构）\n计划于10月12日下午开放一层共享书架，由林晓负责整理捐赠图书，许宁负责制作借阅说明。\n图书仅在社区活动室内阅读，暂不外借；每次开放预计接待20人，使用后请把图书放回原处。\n书架和阅读桌已经到位，志愿者值班名单尚未确定，现场开放的具体起止时间还需与场地管理员确认。\n借阅说明中的损坏处理方式也尚未讨论。先完成材料整理，再决定是否如期开放，不提前对外承诺。"
+            }
+          ],
+          "tools": {
+            "kind": "undefined"
+          },
+          "maxOutputTokens": {
+            "kind": "undefined"
+          },
+          "temperature": {
+            "kind": "undefined"
+          },
+          "topP": {
+            "kind": "undefined"
+          },
+          "topK": {
+            "kind": "undefined"
+          },
+          "presencePenalty": {
+            "kind": "undefined"
+          },
+          "frequencyPenalty": {
+            "kind": "undefined"
+          },
+          "stopSequences": {
+            "kind": "undefined"
+          },
+          "seed": {
+            "kind": "undefined"
+          },
+          "reasoning": {
+            "kind": "undefined"
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.855Z",
+      "elapsedMs": 3083.3,
+      "value": {
+        "kind": "core.onLanguageModelCallEnd",
+        "event": {
+          "callId": "call-Gb6evR8KvUuIh8EKcOfuxOe0",
+          "provider": "official-mock",
+          "modelId": "controlled-summary",
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": {
+              "kind": "undefined"
+            },
+            "inputTokenDetails": {
+              "noCacheTokens": {
+                "kind": "undefined"
+              },
+              "cacheReadTokens": {
+                "kind": "undefined"
+              },
+              "cacheWriteTokens": {
+                "kind": "undefined"
+              }
+            },
+            "outputTokens": {
+              "kind": "undefined"
+            },
+            "outputTokenDetails": {
+              "textTokens": {
+                "kind": "undefined"
+              },
+              "reasoningTokens": {
+                "kind": "undefined"
+              }
+            },
+            "totalTokens": {
+              "kind": "undefined"
+            },
+            "raw": {
+              "kind": "undefined"
+            }
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。"
+            }
+          ],
+          "responseId": "mock-947097e8-dcff-4b5a-b52a-f3a0f6604d74-1",
+          "performance": {
+            "responseTimeMs": 3080.018700000015,
+            "effectiveOutputTokensPerSecond": 0,
+            "outputTokensPerSecond": 0,
+            "inputTokensPerSecond": 0,
+            "effectiveTotalTokensPerSecond": 0,
+            "timeToFirstOutputMs": 170.56670000002487,
+            "timeBetweenOutputChunksMs": {
+              "min": 170.39100000000326,
+              "p10": 170.4269000000204,
+              "median": 170.9930999999633,
+              "avg": 171.01613529411705,
+              "p90": 171.53690000000643,
+              "max": 171.66240000003017
+            }
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.860Z",
+      "elapsedMs": 3088.7,
+      "value": {
+        "kind": "core.onEnd",
+        "event": {
+          "callId": "call-Gb6evR8KvUuIh8EKcOfuxOe0",
+          "toolsContext": {},
+          "stepNumber": 0,
+          "model": {
+            "provider": "official-mock",
+            "modelId": "controlled-summary"
+          },
+          "runtimeContext": {},
+          "finishReason": "stop",
+          "rawFinishReason": "controlled-stop",
+          "usage": {
+            "inputTokens": {
+              "kind": "undefined"
+            },
+            "inputTokenDetails": {
+              "noCacheTokens": {
+                "kind": "undefined"
+              },
+              "cacheReadTokens": {
+                "kind": "undefined"
+              },
+              "cacheWriteTokens": {
+                "kind": "undefined"
+              }
+            },
+            "outputTokens": {
+              "kind": "undefined"
+            },
+            "outputTokenDetails": {
+              "textTokens": {
+                "kind": "undefined"
+              },
+              "reasoningTokens": {
+                "kind": "undefined"
+              }
+            },
+            "totalTokens": {
+              "kind": "undefined"
+            }
+          },
+          "totalUsage": {
+            "inputTokens": {
+              "kind": "undefined"
+            },
+            "inputTokenDetails": {
+              "noCacheTokens": {
+                "kind": "undefined"
+              },
+              "cacheReadTokens": {
+                "kind": "undefined"
+              },
+              "cacheWriteTokens": {
+                "kind": "undefined"
+              }
+            },
+            "outputTokens": {
+              "kind": "undefined"
+            },
+            "outputTokenDetails": {
+              "textTokens": {
+                "kind": "undefined"
+              },
+              "reasoningTokens": {
+                "kind": "undefined"
+              }
+            },
+            "totalTokens": {
+              "kind": "undefined"
+            }
+          },
+          "content": [
+            {
+              "type": "text",
+              "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+              "providerMetadata": {
+                "kind": "undefined"
+              }
+            }
+          ],
+          "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+          "reasoning": [],
+          "reasoningText": {
+            "kind": "undefined"
+          },
+          "files": [],
+          "sources": [],
+          "toolCalls": [],
+          "staticToolCalls": [],
+          "dynamicToolCalls": [],
+          "toolResults": [],
+          "staticToolResults": [],
+          "dynamicToolResults": [],
+          "responseMessages": [
+            {
+              "role": "assistant",
+              "content": [
+                {
+                  "type": "text",
+                  "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                  "providerOptions": {
+                    "kind": "undefined"
+                  }
+                }
+              ]
+            }
+          ],
+          "warnings": [],
+          "request": {
+            "body": {
+              "kind": "undefined"
+            },
+            "messages": {
+              "kind": "undefined"
+            }
+          },
+          "response": {
+            "id": "mock-947097e8-dcff-4b5a-b52a-f3a0f6604d74-1",
+            "timestamp": {
+              "kind": "Date",
+              "value": "2026-10-03T10:13:37.777Z"
+            },
+            "modelId": "controlled-summary",
+            "headers": {
+              "kind": "undefined"
+            },
+            "messages": [
+              {
+                "role": "assistant",
+                "content": [
+                  {
+                    "type": "text",
+                    "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                    "providerOptions": {
+                      "kind": "undefined"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          "providerMetadata": {
+            "kind": "undefined"
+          },
+          "steps": [
+            {
+              "callId": "call-Gb6evR8KvUuIh8EKcOfuxOe0",
+              "stepNumber": 0,
+              "model": {
+                "provider": "official-mock",
+                "modelId": "controlled-summary"
+              },
+              "runtimeContext": {},
+              "toolsContext": {},
+              "content": [
+                {
+                  "type": "text",
+                  "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                  "providerMetadata": {
+                    "kind": "undefined"
+                  }
+                }
+              ],
+              "finishReason": "stop",
+              "rawFinishReason": "controlled-stop",
+              "usage": {
+                "inputTokens": {
+                  "kind": "undefined"
+                },
+                "inputTokenDetails": {
+                  "noCacheTokens": {
+                    "kind": "undefined"
+                  },
+                  "cacheReadTokens": {
+                    "kind": "undefined"
+                  },
+                  "cacheWriteTokens": {
+                    "kind": "undefined"
+                  }
+                },
+                "outputTokens": {
+                  "kind": "undefined"
+                },
+                "outputTokenDetails": {
+                  "textTokens": {
+                    "kind": "undefined"
+                  },
+                  "reasoningTokens": {
+                    "kind": "undefined"
+                  }
+                },
+                "totalTokens": {
+                  "kind": "undefined"
+                },
+                "raw": {
+                  "kind": "undefined"
+                }
+              },
+              "performance": {
+                "stepTimeMs": 3082.513500000001,
+                "toolExecutionMs": {},
+                "responseTimeMs": 3080.018700000015,
+                "effectiveOutputTokensPerSecond": 0,
+                "outputTokensPerSecond": 0,
+                "inputTokensPerSecond": 0,
+                "effectiveTotalTokensPerSecond": 0,
+                "timeToFirstOutputMs": 170.56670000002487,
+                "timeBetweenOutputChunksMs": {
+                  "min": 170.39100000000326,
+                  "p10": 170.4269000000204,
+                  "median": 170.9930999999633,
+                  "avg": 171.01613529411705,
+                  "p90": 171.53690000000643,
+                  "max": 171.66240000003017
+                }
+              },
+              "warnings": [],
+              "request": {
+                "body": {
+                  "kind": "undefined"
+                },
+                "messages": {
+                  "kind": "undefined"
+                }
+              },
+              "response": {
+                "id": "mock-947097e8-dcff-4b5a-b52a-f3a0f6604d74-1",
+                "timestamp": {
+                  "kind": "Date",
+                  "value": "2026-10-03T10:13:37.777Z"
+                },
+                "modelId": "controlled-summary",
+                "headers": {
+                  "kind": "undefined"
+                },
+                "messages": [
+                  {
+                    "role": "assistant",
+                    "content": [
+                      {
+                        "type": "text",
+                        "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                        "providerOptions": {
+                          "kind": "undefined"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              "providerMetadata": {
+                "kind": "undefined"
+              }
+            }
+          ],
+          "finalStep": {
+            "callId": "call-Gb6evR8KvUuIh8EKcOfuxOe0",
+            "stepNumber": 0,
+            "model": {
+              "provider": "official-mock",
+              "modelId": "controlled-summary"
+            },
+            "runtimeContext": {},
+            "toolsContext": {},
+            "content": [
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "providerMetadata": {
+                  "kind": "undefined"
+                }
+              }
+            ],
+            "finishReason": "stop",
+            "rawFinishReason": "controlled-stop",
+            "usage": {
+              "inputTokens": {
+                "kind": "undefined"
+              },
+              "inputTokenDetails": {
+                "noCacheTokens": {
+                  "kind": "undefined"
+                },
+                "cacheReadTokens": {
+                  "kind": "undefined"
+                },
+                "cacheWriteTokens": {
+                  "kind": "undefined"
+                }
+              },
+              "outputTokens": {
+                "kind": "undefined"
+              },
+              "outputTokenDetails": {
+                "textTokens": {
+                  "kind": "undefined"
+                },
+                "reasoningTokens": {
+                  "kind": "undefined"
+                }
+              },
+              "totalTokens": {
+                "kind": "undefined"
+              },
+              "raw": {
+                "kind": "undefined"
+              }
+            },
+            "performance": {
+              "stepTimeMs": 3082.513500000001,
+              "toolExecutionMs": {},
+              "responseTimeMs": 3080.018700000015,
+              "effectiveOutputTokensPerSecond": 0,
+              "outputTokensPerSecond": 0,
+              "inputTokensPerSecond": 0,
+              "effectiveTotalTokensPerSecond": 0,
+              "timeToFirstOutputMs": 170.56670000002487,
+              "timeBetweenOutputChunksMs": {
+                "min": 170.39100000000326,
+                "p10": 170.4269000000204,
+                "median": 170.9930999999633,
+                "avg": 171.01613529411705,
+                "p90": 171.53690000000643,
+                "max": 171.66240000003017
+              }
+            },
+            "warnings": [],
+            "request": {
+              "body": {
+                "kind": "undefined"
+              },
+              "messages": {
+                "kind": "undefined"
+              }
+            },
+            "response": {
+              "id": "mock-947097e8-dcff-4b5a-b52a-f3a0f6604d74-1",
+              "timestamp": {
+                "kind": "Date",
+                "value": "2026-10-03T10:13:37.777Z"
+              },
+              "modelId": "controlled-summary",
+              "headers": {
+                "kind": "undefined"
+              },
+              "messages": [
+                {
+                  "role": "assistant",
+                  "content": [
+                    {
+                      "type": "text",
+                      "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                      "providerOptions": {
+                        "kind": "undefined"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            "providerMetadata": {
+              "kind": "undefined"
+            }
+          }
+        }
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.861Z",
+      "elapsedMs": 3089.5,
+      "value": {
+        "kind": "ui.onEnd",
+        "event": {
+          "isAborted": false,
+          "isContinuation": false,
+          "outcome": {
+            "status": "completed"
+          },
+          "responseMessage": {
+            "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:assistant",
+            "metadata": {
+              "requestId": "947097e8-dcff-4b5a-b52a-f3a0f6604d74",
+              "fixtureKey": "A",
+              "state": "completed",
+              "cause": null,
+              "origin": "controlled-exercise"
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "providerMetadata": {
+                  "kind": "undefined"
+                },
+                "state": "done"
+              }
+            ]
+          },
+          "messages": [
+            {
+              "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:assistant",
+              "metadata": {
+                "requestId": "947097e8-dcff-4b5a-b52a-f3a0f6604d74",
+                "fixtureKey": "A",
+                "state": "completed",
+                "cause": null,
+                "origin": "controlled-exercise"
+              },
+              "role": "assistant",
+              "parts": [
+                {
+                  "type": "step-start"
+                },
+                {
+                  "type": "text",
+                  "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                  "providerMetadata": {
+                    "kind": "undefined"
+                  },
+                  "state": "done"
+                }
+              ]
+            }
+          ],
+          "finishReason": "stop"
+        }
+      }
+    }
+  ],
+  "uiEvents": [
+    {
+      "at": "2026-10-03T10:13:37.774Z",
+      "elapsedMs": 2.1,
+      "value": {
+        "type": "start",
+        "messageMetadata": {
+          "requestId": "947097e8-dcff-4b5a-b52a-f3a0f6604d74",
+          "fixtureKey": "A",
+          "state": "running",
+          "cause": null,
+          "origin": "controlled-exercise"
+        },
+        "messageId": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:assistant"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:37.777Z",
+      "elapsedMs": 5.8,
+      "value": {
+        "type": "start-step"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:37.779Z",
+      "elapsedMs": 7.4,
+      "value": {
+        "type": "text-start",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:37.946Z",
+      "elapsedMs": 174.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "共享书架计划于1"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.117Z",
+      "elapsedMs": 345.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "0月12日下午开"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.288Z",
+      "elapsedMs": 516.3,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "放，林晓负责图书"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.459Z",
+      "elapsedMs": 687.9,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "整理，许宁负责借"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.630Z",
+      "elapsedMs": 858.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "阅说明制作。书架"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.801Z",
+      "elapsedMs": 1029.7,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "与阅读桌已到位，"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:38.972Z",
+      "elapsedMs": 1200.9,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "图书仅限在活动室"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.144Z",
+      "elapsedMs": 1372.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "内阅读，不外借，"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.315Z",
+      "elapsedMs": 1543.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "每次限20人，使"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.485Z",
+      "elapsedMs": 1713.8,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "用后需归位。志愿"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.657Z",
+      "elapsedMs": 1885,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "者值班名单及开放"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:39.828Z",
+      "elapsedMs": 2056.4,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "具体时间待与场地"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.000Z",
+      "elapsedMs": 2228,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "管理员确认。借阅"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.170Z",
+      "elapsedMs": 2398.7,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "说明中损坏处理方"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.341Z",
+      "elapsedMs": 2569.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "式未定。材料整理"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.513Z",
+      "elapsedMs": 2740.9,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "完成后将评估是否"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.683Z",
+      "elapsedMs": 2911.4,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "如期开放，暂不对"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.854Z",
+      "elapsedMs": 3082.5,
+      "value": {
+        "type": "text-delta",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1",
+        "delta": "外承诺。"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.856Z",
+      "elapsedMs": 3084.2,
+      "value": {
+        "type": "text-end",
+        "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.857Z",
+      "elapsedMs": 3085.8,
+      "value": {
+        "type": "finish-step"
+      }
+    },
+    {
+      "at": "2026-10-03T10:13:40.859Z",
+      "elapsedMs": 3087.4,
+      "value": {
+        "type": "finish",
+        "finishReason": "stop",
+        "messageMetadata": {
+          "requestId": "947097e8-dcff-4b5a-b52a-f3a0f6604d74",
+          "fixtureKey": "A",
+          "state": "completed",
+          "cause": null,
+          "origin": "controlled-exercise"
+        }
+      }
+    }
+  ],
+  "transport": [
+    {
+      "at": "2026-10-03T10:13:40.863Z",
+      "elapsedMs": 3091.8,
+      "value": {
+        "kind": "response-close",
+        "writableEnded": true,
+        "state": "completed"
+      }
+    }
+  ],
+  "serverSseProduced": [
+    {
+      "at": "2026-10-03T10:13:37.774Z",
+      "elapsedMs": 2.4,
+      "value": "data: {\"type\":\"start\",\"messageMetadata\":{\"requestId\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74\",\"fixtureKey\":\"A\",\"state\":\"running\",\"cause\":null,\"origin\":\"controlled-exercise\"},\"messageId\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:assistant\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:37.778Z",
+      "elapsedMs": 6.2,
+      "value": "data: {\"type\":\"start-step\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:37.779Z",
+      "elapsedMs": 7.8,
+      "value": "data: {\"type\":\"text-start\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:37.946Z",
+      "elapsedMs": 174.9,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"共享书架计划于1\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:38.117Z",
+      "elapsedMs": 345.9,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"0月12日下午开\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:38.288Z",
+      "elapsedMs": 516.6,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"放，林晓负责图书\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:38.460Z",
+      "elapsedMs": 688.3,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"整理，许宁负责借\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:38.630Z",
+      "elapsedMs": 858.8,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"阅说明制作。书架\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:38.802Z",
+      "elapsedMs": 1030.1,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"与阅读桌已到位，\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:38.973Z",
+      "elapsedMs": 1201.2,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"图书仅限在活动室\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:39.145Z",
+      "elapsedMs": 1373,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"内阅读，不外借，\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:39.315Z",
+      "elapsedMs": 1543.9,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"每次限20人，使\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:39.486Z",
+      "elapsedMs": 1714.2,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"用后需归位。志愿\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:39.657Z",
+      "elapsedMs": 1885.5,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"者值班名单及开放\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:39.829Z",
+      "elapsedMs": 2057,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"具体时间待与场地\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.000Z",
+      "elapsedMs": 2228.4,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"管理员确认。借阅\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.171Z",
+      "elapsedMs": 2399.1,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"说明中损坏处理方\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.341Z",
+      "elapsedMs": 2569.9,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"式未定。材料整理\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.513Z",
+      "elapsedMs": 2741.3,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"完成后将评估是否\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.684Z",
+      "elapsedMs": 2911.9,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"如期开放，暂不对\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.854Z",
+      "elapsedMs": 3082.9,
+      "value": "data: {\"type\":\"text-delta\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\",\"delta\":\"外承诺。\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.856Z",
+      "elapsedMs": 3084.7,
+      "value": "data: {\"type\":\"text-end\",\"id\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74:text:1\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.858Z",
+      "elapsedMs": 3086.3,
+      "value": "data: {\"type\":\"finish-step\"}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.860Z",
+      "elapsedMs": 3088.1,
+      "value": "data: {\"type\":\"finish\",\"finishReason\":\"stop\",\"messageMetadata\":{\"requestId\":\"947097e8-dcff-4b5a-b52a-f3a0f6604d74\",\"fixtureKey\":\"A\",\"state\":\"completed\",\"cause\":null,\"origin\":\"controlled-exercise\"}}\n\n"
+    },
+    {
+      "at": "2026-10-03T10:13:40.862Z",
+      "elapsedMs": 3090.2,
+      "value": "data: [DONE]\n\n"
+    }
+  ],
+  "uiMessage": {
+    "id": "947097e8-dcff-4b5a-b52a-f3a0f6604d74:assistant",
+    "metadata": {
+      "requestId": "947097e8-dcff-4b5a-b52a-f3a0f6604d74",
+      "fixtureKey": "A",
+      "state": "completed",
+      "cause": null,
+      "origin": "controlled-exercise"
+    },
+    "role": "assistant",
+    "parts": [
+      {
+        "type": "step-start"
+      },
+      {
+        "type": "text",
+        "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+        "state": "done"
+      }
+    ]
+  },
+  "uiOutcome": {
+    "status": "completed"
+  },
+  "error": null
+}
