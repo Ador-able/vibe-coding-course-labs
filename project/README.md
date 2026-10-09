@@ -1,4 +1,4 @@
-# 为 Agent 接好规则、资料与任务上下文
+# 让 Agent 组合使用工具与 Skill 完成任务
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

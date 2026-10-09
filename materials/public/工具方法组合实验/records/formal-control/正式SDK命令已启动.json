@@ -1,0 +1,19 @@
+{
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-07-lab",
+  "command": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+    "plugin:observe",
+    "--db",
+    "data/tools-c06805a1-2b35-496a-8d9f-b1cea046c62c.sqlite",
+    "--work",
+    "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "--chapter",
+    "2",
+    "--prompt",
+    "inputs/tools-readonly-task.txt"
+  ],
+  "prerequisites": "主编第二审及唯一自然任务授权后才安装自有插件；检查缓存/必要官方目录，继承配置如被真实目录修改须再次核读，不能直接发任务。",
+  "notExecuted": false,
+  "startedAtUtc": "2026-10-03T00:13:16.4965098+00:00"
+}

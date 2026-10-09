@@ -1,8 +1,0 @@
-{
-  "chunk_id": "4610c0",
-  "wall_time_seconds": 2.0669444,
-  "exit_code": 0,
-  "original_token_count": 212,
-  "output": "{\"events\":28,\"eventSha256\":\"d486a42f6c23b6b9bdb71f5250a7b89921118f3eebfe358ae5a1a4dbef6a1b27\",\"shells\":4,\"mcpCalls\":7,\"methods\":2,\"materials\":[{\"path\":\"materials/来稿/课堂整理/简述.md\",\"bytes\":973,\"sha256\":\"41295b600f6e3817ebec3fd8c52f82e8af784a88f6dea3848a753388efb2ab08\",\"lineCount\":15,\"allLinesActuallyReturned\":true,\"teachingConstruction\":true},{\"path\":\"materials/来稿/临时想法/机芯.md\",\"bytes\":719,\"sha256\":\"a4d1906358422b159cd6dfd5bcd82bde500e8d7ab0bb88086832196789c0ceb8\",\"lineCount\":15,\"allLinesActuallyReturned\":true,\"teachingConstruction\":true}],\"firstChapterActuallyHumanR2\":true,\"saveReadBackMatches\":true,\"pathSerialization\":[{\"field\":\"runtime.configOverrides[0]\",\"sameString\":false,\"sameResolvedPath\":true},{\"field\":\"threadOptions.workingDirectory\",\"sameString\":false,\"sameResolvedPath\":true}],\"modelCallsAdded\":0}\n"
-}
-

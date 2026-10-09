@@ -1,0 +1,9 @@
+{
+  "tool": "image_gen__imagegen",
+  "mode": "built-in",
+  "args": {
+    "prompt": "Use case: scientific-educational\nAsset type: 中文AI使用课程的教学插图，宽幅16:9。\nPrimary request: 画出一个有限的只读目标怎样通过Agent选择现成核对方法、读取真实业务资料和取得业务导出，最后把完整待审材料交给人阅读。要让方法、动作、返回和人的判断在图中承担不同作用，避免用长句框复述正文。\nScene/backdrop: 明亮、简洁的虚拟工作台，平滑浅底，整幅视线从左向右推进；用具体小物件和清楚的箭头组织关系，有轻微立体感但没有逼真材质噪点。\nSubject: 左侧是一枚简短目标标签“只读核对”；中部是代表Agent的一枚清楚的小圆形指针/思考标记，旁边一本打开的手册“核对方法”；手册箭头指向Agent，目标也指向Agent。Agent指向两个功能物件：放大镜查看当前业务记录，记录上只写“第1章 r2”“第2章 r1”，放大镜旁写“读取”；另一件是把相同记录组合成连续阅读内容的简洁虚拟书页，旁写“业务导出”。功能物件把返回内容送到右侧同一块数字阅读面，标题“完整待审正文”，在数字阅读面上保留小标签“draft”。数字阅读面右侧以一副眼镜与小小的人物侧影表示人的阅读，标签“待人阅读”。用一条细而清楚的回线从业务返回指回Agent，体现返回支持核对说明。各处短标签不要混成一个流程审批表。\nStyle/medium: 细致但平滑的编辑插画，清楚的形态和少量温和色块，轻微立体数字对象，整幅关系优先；字体清晰，所有中文准确。\nLighting/mood: 干净均匀的光，少量柔和接触阴影，不用阴影遮挡文字或关系；安静、可理解、适合学习。\nMaterials/textures: clean smooth texture, no grain, no noise, no tiling artifacts, no dirty texture, high clarity, clean lighting。虚拟书页不做纸纤维、脏边、颗粒或斑驳；没有真实皮肤，无需皮肤纹理。\nText (verbatim): “只读核对”“核对方法”“读取”“业务导出”“第1章 r2”“第2章 r1”“完整待审正文”“draft”“待人阅读”。只使用这些短标签，不写小说正文和大段说明，不写广告标题。\nConstraints: 必须保持只读。数字阅读面表示返回内容，不能画文件保存图标、下载按钮、发布按钮、采用印章、绿色通过勾或胜利庆祝；draft是草稿，人的阅读在图中尚未变成采用。两章书页必须来自同一业务记录，不画两套数据库。不要把手册画成会自己执行的机器，不画安装教程、代码框或SDK日志。图是关系示意，不冒充真实界面截图。\nAvoid: 纸纹、木纹噪点、胶片颗粒、发黄污渍、纹理平铺、磨砂颗粒、复杂控制台、卡片堆叠、长句、过小的字、装饰性箭头、审批勾、文学已合格的暗示、外部品牌Logo、水印。",
+    "transparent_background": false
+  },
+  "output_hint": "Generated images are saved to C:\\Users\\32686\\.codex\\generated_images\\01a0fd08-c5d9-7b50-8894-2ac86485c66d as C:\\Users\\32686\\.codex\\generated_images\\01a0fd08-c5d9-7b50-8894-2ac86485c66d\\exec-b82fcaa3-a4e8-4c45-abad-0aab61a86dae.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link."
+}

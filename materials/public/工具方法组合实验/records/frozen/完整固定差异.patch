@@ -1,0 +1,72 @@
+diff --git a/config/plugin-check.json b/config/plugin-check.json
+index 51bba78..8fad2f4 100644
+--- a/config/plugin-check.json
++++ b/config/plugin-check.json
+@@ -2,7 +2,7 @@
+   "pluginId": "novel-workbench-course@novel-workbench-course-lab",
+   "marketplaceName": "novel-workbench-course-lab",
+   "serverName": "novel_lab",
+-  "enabledTools": ["read_work", "list_chapters", "read_chapter", "save_draft"],
++  "enabledTools": ["read_work", "list_chapters", "read_chapter", "save_draft", "export_work"],
+   "sandboxMode": "read-only",
+   "approvalPolicy": "never",
+   "webSearchMode": "disabled"
+diff --git a/inputs/tools-readonly-task.txt b/inputs/tools-readonly-task.txt
+new file mode 100644
+index 0000000..a8347bd
+--- /dev/null
++++ b/inputs/tools-readonly-task.txt
+@@ -0,0 +1,9 @@
++请为作品 harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea 的第2章做一次只读核对，取得前两章当前版本的完整待审材料，供我们随后阅读讨论。
++
++先按本次目标选择当前已有、适合这项只读任务的工作方法，读到需要的方法正文和参考。通过工作台取得当前完整作品资料、真实目录、第二章和全部前文；以实际返回确定当前版本，不用旧对话、摘要或样例代替。这里只核对第二章是否已保存、是否已由人采用，以及保存时使用的作品资料和前文修订是否对应当前对象；资料版本相同或不同分别支持什么结论，要说清楚。
++
++取得工作台提供的前两章完整 Markdown 内容，保持业务导出中的章名、正文、顺序、修订和状态原样。请原样返回该 Markdown，另外给出简短核对说明，便于我们把结论与实际字段对上。只取得返回内容时，不报告已写入一个文件；拿到目录、文件名或调用成功通知，也不能代替全文。
++
++本次不改正文、作品资料或文件，不采用、发布章节，也不作文学合格结论。可供读取的工具不必全部调用；方法要求取得的有关原文不能仅用目录代替。遇到必要材料缺失、工具无结果、参数不符或连接失败，按真实反馈指出已经取得什么、还有哪部分未完成，不编造材料或成功。若没有适合的业务导出入口，就明确这一入口限制及已完成的读取，不临时修改代码或用另一种写入绕过只读范围。
++
++交付时说明实际核对的作品、章节、标题、修订、状态和依据，完整待审内容来自哪次业务返回，还有什么需要人的阅读和决定。草稿已保存、导出内容已取得与人已认可，是分别需要证据的事情。
+diff --git a/scripts/observe-plugin.mjs b/scripts/observe-plugin.mjs
+index dfefcf1..56aec2b 100644
+--- a/scripts/observe-plugin.mjs
++++ b/scripts/observe-plugin.mjs
+@@ -12,7 +12,7 @@ const {values}=parseArgs({options:{db:{type:'string',default:'data/plugin.sqlite
+ if(!values.prompt)throw new Error('需要保存了完整请求的提示文件。');
+ const root=process.cwd(),database=resolve(values.db),out=resolve('runs',randomUUID());
+ const preflight=JSON.parse(await readFile('runs/plugin-preflight.json','utf8'));
+-if(!preflight.isolated||!preflight.skillsIsolated||!preflight.memoryIsolated||preflight.skills.length!==2)throw new Error('插件 Skill、四工具与记忆配置尚未通过本机隔离检查。');
++if(!preflight.isolated||!preflight.skillsIsolated||!preflight.memoryIsolated||preflight.skills.length!==2)throw new Error('插件 Skill、配置的工具与记忆配置尚未通过本机隔离检查。');
+ const {runtime,threadOptions}=await pluginRuntime(root);
+ const binding=JSON.parse(await readFile('plugins/novel-workbench-course/binding.json','utf8'));
+ if(resolve(binding.database)!==database)throw new Error('观察数据库与插件实际绑定不一致；请重新准备本次绑定。');
+diff --git a/src/mcp.ts b/src/mcp.ts
+index e27fa83..f70d265 100644
+--- a/src/mcp.ts
++++ b/src/mcp.ts
+@@ -24,6 +24,26 @@ server.registerTool('list_chapters',{title:'查询已保存章节',description:'
+ server.registerTool('read_chapter',{title:'读回完整章节',description:'取得一章的当前正文和修订；不存在时 result 为 null。保存后用它核对实际内容。',inputSchema:{workId,chapterNumber},outputSchema:{result:chapterOutput.nullable()},annotations:readAnnotations},({workId,chapterNumber})=>result(()=>store.getChapter(workId,chapterNumber)));
+ server.registerTool('save_draft',{title:'保存章节草稿',description:'按当前要求、正文和前文基线保存草稿。expectedPreviousRevisions 逐项列出第1章至上一章的修订，写第1章时为 []。没有旧正文时 expectedChapterRevision=0。状态始终 draft；冲突时重读，不重试旧基线。',inputSchema:draftInput.shape,outputSchema:{result:chapterOutput},annotations:{readOnlyHint:false,destructiveHint:false,idempotentHint:false,openWorldHint:false}},input=>result(()=>store.saveDraft(input,'agent',taskId)));
+ 
++const exportOutput=z.object({
++  workId,
++  workRevision:z.number().int().positive(),
++  expectedChapters:z.number().int().nonnegative(),
++  savedChapters:z.number().int().nonnegative(),
++  allOutlineChaptersSaved:z.boolean(),
++  chapters:z.array(z.object({
++    number:chapterNumber,
++    revision:z.number().int().positive(),
++    status:chapterOutput.shape.status,
++    workRevision:z.number().int().positive(),
++    previousRevisions:draftInput.shape.expectedPreviousRevisions,
++    reviewNote:z.string().nullable(),
++    basisCurrent:z.boolean(),
++  })),
++  text:z.string(),
++});
++// 返回同一业务导出的规范全文，不在 MCP 入口另写文件或维护状态。
++server.registerTool('export_work',{title:'取得完整待审 Markdown',description:'取得指定作品当前已保存章节的完整 Markdown、修订和采用状态，按章号返回全部已保存正文。不写文件、不修改正文、不采用或发布。没有已保存章节时返回空目录和仅含作品信息的文本。allOutlineChaptersSaved 只表示大纲中的章节已有保存对象，不表示稿件被人认可。',inputSchema:{workId},outputSchema:{result:exportOutput},annotations:readAnnotations},({workId})=>result(()=>store.exportWork(workId)));
++
+ const workUri=(id:string)=>`novel://works/${id}/requirements`;
+ const chapterUri=(id:string,number:number)=>`novel://works/${id}/chapters/${number}`;
+ const resourceResult=(uri:URL,action:()=>unknown):ReadResourceResult=>{
