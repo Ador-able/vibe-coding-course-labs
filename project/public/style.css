@@ -53,6 +53,8 @@ p { margin: .5rem 0 1rem; }
 .original-text { margin-top: 22px; }
 .original-text summary { cursor: pointer; }
 .question-text { font-weight: 600; }
+.answer-text { min-height: 144px; margin: 18px 0; }
+#source-page { margin-top: 18px; }
 
 /* 原版保持两栏并列；两个候选只调整同一内容面的观看关系。 */
 body[data-direction="desk"] { background: #e7edf1; color: #202e3b; }

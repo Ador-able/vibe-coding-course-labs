@@ -1,0 +1,86 @@
+{
+  "authoredAt": "2026-10-04T20:10:51.329Z",
+  "scope": "只读已有原件与生成教师设计材料；0新嵌入/0回答/0检索/0HTTP/0浏览器/0业务保存",
+  "files": [
+    {
+      "name": "01-费用便签-v1完整原文.txt",
+      "bytes": 289,
+      "sha256": "9c66ce3b56e757f0ddf9577f5278a0a36c081d61c7b0bd60439341ead5cad4e2"
+    },
+    {
+      "name": "02-费用便签-v2完整原文.txt",
+      "bytes": 291,
+      "sha256": "14b086f003cb9a47595a3ca52e46ac77b4c9eba5f70bee6d643338d6dc126852"
+    },
+    {
+      "name": "03-检查委托-v1完整原文.txt",
+      "bytes": 226,
+      "sha256": "1428a231facfcb039004541efb5ed69fefeef43569c25722eeb2bbb436a36183"
+    },
+    {
+      "name": "04-更新前完整22块.json",
+      "bytes": 37649,
+      "sha256": "d7b8bb80c4e074eb060a1bc6e9a40810ee2b91c95aebb4c45dcf528c8118aa74"
+    },
+    {
+      "name": "05-更新后拟用完整22块.json",
+      "bytes": 37664,
+      "sha256": "8163f392ddcb3280e09ed9ef535fd44c40c7420c3f844006521c4d67035934ed"
+    },
+    {
+      "name": "06-更新动作与当前版本范围.json",
+      "bytes": 4774,
+      "sha256": "48bad6482341a4bb3337174045621f831d736a4a36fa1ca23d0962645af179fe"
+    },
+    {
+      "name": "07-原问题必要历史追问与独立查询.json",
+      "bytes": 1248,
+      "sha256": "4ff66c902b66f53492b5ac6cb465801b808205d4ce6dcc093294d117a037ac50"
+    },
+    {
+      "name": "08-两轮完整提示与实际历史装配定义.json",
+      "bytes": 12132,
+      "sha256": "b10e53388483964e1f358ed707bcc57a199fe32825b339ccbc622960dd4bc578"
+    },
+    {
+      "name": "09-两项新增向量的完整输入.json",
+      "bytes": 737,
+      "sha256": "a9c0f8ea3c17a5024073e8ed7cffe23a408d0e4c9235e54bebab7791076cad5f"
+    },
+    {
+      "name": "10-前轮实际候选全文与引用映射.json",
+      "bytes": 30845,
+      "sha256": "f6037c63a94108e52464887f5c693e955297db816c4b03a1b3cc77831faae1d5"
+    },
+    {
+      "name": "11-新增有限调用与复用契约.json",
+      "bytes": 4288,
+      "sha256": "dc0f5a897cb6b7c3138d851996b8bc50b942e51e62eb75b13cec46525e4f019e"
+    },
+    {
+      "name": "12-拟用两轮完整提示可读全文.txt",
+      "bytes": 3772,
+      "sha256": "a580b180c45bda2acd08cf7de3dc965e6980784b51b3d3d839cd9ec345fd38ff"
+    },
+    {
+      "name": "13-完整第三章原文-未改.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "name": "14-既有25项真实向量与完整返回.json",
+      "bytes": 3326924,
+      "sha256": "8e5e9448f88e7fada20d97ce022f10429a421b9e5b48c1dcb7f23359d8979304"
+    },
+    {
+      "name": "15-当前索引完整版本与旧引用回查.json",
+      "bytes": 8005,
+      "sha256": "324e6332c3cdc82fe38086db7958b12b5b7f162fa810fd69c5472fdf732605b2"
+    },
+    {
+      "name": "16-人工分层判断与旧Q3完整结果.json",
+      "bytes": 178395,
+      "sha256": "1dcb639b466393f7bebed21b5c069938910d618a4221f0818255ffd6110c643f"
+    }
+  ]
+}

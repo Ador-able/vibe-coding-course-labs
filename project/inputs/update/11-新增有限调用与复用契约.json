@@ -1,0 +1,113 @@
+{
+  "state": "未实施、未运行",
+  "fixedBaseHead": "bb5f2838157f13807e1be2fa83ba7439366c4401",
+  "existingEmbeddingRun": "e273a2bf-4aed-4c2e-bb5d-21a6fb3da732",
+  "existingRetrievalRun": "b711f94a-929c-4223-a1fa-27149c7fc2c6",
+  "sdk": "ai@7.0.122",
+  "provider": "@ai-sdk/openai-compatible@3.0.59",
+  "orama": "@orama/orama@3.1.18",
+  "mandarin": "@orama/tokenizers@3.1.18",
+  "providerName": "bailian",
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "embedding": {
+    "model": "text-embedding-v4",
+    "dimensions": 1024,
+    "valuesFile": "09-两项新增向量的完整输入.json",
+    "maximumValues": 2,
+    "maximumBatches": 1,
+    "maxParallelCalls": 1,
+    "maxRetries": 0,
+    "timeoutMs": 60000
+  },
+  "answer": {
+    "model": "qwen-plus-2025-12-01",
+    "method": "AI SDK generateText",
+    "maximumCalls": 2,
+    "maxRetries": 0,
+    "timeoutMs": 60000,
+    "maxOutputTokens": 1200,
+    "providerOptions": {
+      "bailian": {
+        "enable_thinking": false
+      }
+    },
+    "tools": [],
+    "outputSchema": null
+  },
+  "sequence": [
+    "核完整原件、历史25项及模型/1024维/实际textSHA映射",
+    "以05-03已存Q2-filtered实际候选请求A一次",
+    "A自然完整返回后，一批嵌入费用v2和独立追问查询",
+    "新向量准备成功后，成熟Orama移除旧费用块/插入新费用块，记录实际当前22块并只读重新载入JSON核同",
+    "在混合当前版本索引做这一次更新后两路检索与RRF",
+    "用实际A历史、原追问、独立问题及实际当前候选请求B一次",
+    "保存完整原答及引用快照，人工逐陈述回查支持与缺口"
+  ],
+  "reuseIdentity": [
+    "provider/baseURL",
+    "embedding model",
+    "1024维",
+    "实际嵌入textSHA256"
+  ],
+  "oldVectors": "保留25项旧原件；当前材料只复用未变21块的原向量，旧费用向量只归档。A的旧查询/候选来自已存真实记录；B用新增查询向量。",
+  "retrievalAfter": {
+    "where": {
+      "collection": "memo",
+      "projectCode": "AX-17"
+    },
+    "globalVersionFilter": null,
+    "scope": "当前资料映射内22块，不含归档旧费用v1；其中18小说+3未改便签v1，1费用便签v2",
+    "lexical": {
+      "properties": [
+        "text"
+      ],
+      "exact": false,
+      "tolerance": 0,
+      "threshold": 1,
+      "relevance": {
+        "k": 1.2,
+        "b": 0.75,
+        "d": 0
+      },
+      "limit": 3
+    },
+    "semantic": {
+      "measure": "AI SDK cosineSimilarity",
+      "limit": 3
+    },
+    "fusion": {
+      "k": 60,
+      "rankStartsAt": 1,
+      "uniqueKey": "blockId",
+      "tieBreak": "id字典序",
+      "keepAllUnion": true
+    },
+    "rerankCalls": 0
+  },
+  "counts": {
+    "newEmbeddingValues": 2,
+    "maximumNewEmbeddingHttp": 1,
+    "maximumAnswerHttp": 2,
+    "maximumAllHttp": 3,
+    "newPdfParsing": 0,
+    "old05_02QuestionCalls": 0,
+    "old05_03EmbeddingCalls": 0,
+    "newRerank": 0,
+    "chapterSave": 0
+  },
+  "failure": "任何自然失败保存成功部分、原异常和准确调用计数，先报告；不补第三次问答、重排、重新解析、参数横扫、重试或替换理想回答。",
+  "effects": "直接SDK请求；人工提供追问历史。不是Harness会话恢复、真实小说章稿采用、生产资料系统或真人付款。",
+  "comparison": "展示资料更换与后续回答所用依据，B同时新增追问与历史。不是单变量模型质量/速度实验，不能据两答宣称模型改善。",
+  "evidence": [
+    "准确argv/cwd/版本/Git起止/锁/UUID/时间",
+    "A/B调用前完整system/messages与实际候选标签全文映射",
+    "新嵌入2文本与原HTTP正文/SDK向量/usage/warnings",
+    "wrapper计数与真正进入fetch尝试分别保存",
+    "更新前后完整当前对象/旧归档/全部块与向量身份",
+    "Oramaremove/insert返回、getByID旧块与所有当前块完整对象",
+    "更新后完整tokens/两路排序/RRF/候选全文",
+    "A/B原HTTP正文/result.text/content/finalStep/responseMessages/usage/finishReason/warnings/providerMetadata",
+    "逐陈述引用回查与未知，不能用编号存在证明支持",
+    "新公共记录不含请求响应头、密钥、私有启动器或受保护宿主字段"
+  ]
+}

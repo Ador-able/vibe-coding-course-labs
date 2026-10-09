@@ -1,5 +1,5 @@
 {
-  "name": "retrieval-comparison-lab",
+  "name": "answer-source-update-lab",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.20.0",
@@ -7,10 +7,11 @@
     "node": ">=24.12.0 <25"
   },
   "scripts": {
-    "embeddings:observe": "node scripts/observe-embeddings.mjs",
-    "retrieval:rank": "node scripts/rank-retrieval.mjs",
-    "materials:check": "node scripts/check-materials.mjs",
-    "dev": "python -X utf8 -m http.server 4346 --bind 127.0.0.1 --directory public"
+    "inputs:check": "node scripts/check-update-inputs.mjs",
+    "answers:observe": "node scripts/observe-current-answers.mjs",
+    "answers:check": "node scripts/check-current-answers.mjs",
+    "page:prepare": "node scripts/prepare-answer-page.mjs",
+    "dev": "python -X utf8 -m http.server 4347 --bind 127.0.0.1 --directory public"
   },
   "dependencies": {
     "@ai-sdk/openai-compatible": "3.0.59",
