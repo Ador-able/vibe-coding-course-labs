@@ -1,0 +1,13 @@
+{
+  "name": "course-extract-denominators",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "run:extract": "node run-extract.mjs",
+    "check:request": "node check-request.mjs"
+  },
+  "dependencies": {
+    "ai": "7.0.122",
+    "@ai-sdk/openai-compatible": "3.0.59"
+  }
+}

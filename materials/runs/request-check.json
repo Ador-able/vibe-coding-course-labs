@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "checks": "一次真实发送/原返回/SDK用量/全文与固定输入逐项相同；不是内容通过",
+  "requestCount": 1,
+  "status": 200,
+  "finishReason": "stop",
+  "rawUsage": {
+    "completion_tokens": 2184,
+    "prompt_tokens": 1342,
+    "total_tokens": 3526
+  },
+  "scope": "仅读既有请求，无新模型调用"
+}

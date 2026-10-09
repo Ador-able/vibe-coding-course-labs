@@ -1,0 +1,11 @@
+sourceId,campaignId,date,title,status,impressions,clicks,subscriptions,spendCNY,budgetCNY,duplicateOf
+R01,C01,2026-09-30,"钟楼更新, ""第一章""
+试读",observed,1000,50,3,6,,
+R02,C01,2026-09-30,"钟楼更新, ""第一章""
+试读",observed,1000,50,3,6,,R01
+R03,C02,2026-10-01,守塔人的来信,observed,2000,80,4,12,,
+R04,C03,2026-10-01,夜行学徒,observed,,20,,8,,
+R05,C04,2026-10-01,旧城的钥匙,observed,0,0,0,0,,
+R06,C05,2026-10-02,下一段钟声,planned,,,,,10,
+R07,C06,2026-10-01,钟楼的回声,observed,500,25,2,4,,
+R08,C01,2026-10-01,第二天的试读,observed,800,40,1,5,,
