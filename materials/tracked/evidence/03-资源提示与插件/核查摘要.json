@@ -1,0 +1,71 @@
+{
+  "inspectionId": "b8f183d8-a8eb-4380-a287-f0a3c4b618ce",
+  "threadId": "01a0fc1b-c223-75b0-a984-11c3aa336741",
+  "codeVersion": "94479460832f5ed1d04d5ae10f6942e5aef51862",
+  "actualReads": [
+    {
+      "server": "novel_lab",
+      "tool": "read_work",
+      "arguments": {
+        "workId": "clocktower"
+      }
+    },
+    {
+      "server": "novel_lab",
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "clocktower",
+        "chapterNumber": 3
+      }
+    },
+    {
+      "server": "novel_lab",
+      "tool": "list_chapters",
+      "arguments": {
+        "workId": "clocktower"
+      }
+    },
+    {
+      "server": "novel_lab",
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "clocktower",
+        "chapterNumber": 1
+      }
+    },
+    {
+      "server": "novel_lab",
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "clocktower",
+        "chapterNumber": 2
+      }
+    }
+  ],
+  "skillAndReferenceContentMatched": true,
+  "businessUnchanged": true,
+  "restoration": {
+    "pluginId": "novel-practice@novel-agent-lab",
+    "ownEntry": null,
+    "semanticRestored": true,
+    "rawHashRestored": true,
+    "cacheExists": false,
+    "platformDataPath": "C:\\Users\\32686\\.codex\\plugins\\data\\agent-plugins\\b8e6cc680d82427484923f728aeadd30d525dd139202bb1b301c34749a60b71d",
+    "platformDataExists": true,
+    "archivedInspectionThread": "01a0fc1b-c223-75b0-a984-11c3aa336741",
+    "archiveCommandExitCode": 0,
+    "removeReceipt": "data/插件最终移除回执.json"
+  },
+  "resourceReportFields": [
+    "capabilities",
+    "tools",
+    "resources",
+    "templates",
+    "prompts",
+    "work",
+    "chapter",
+    "prompt",
+    "limits"
+  ],
+  "limits": "资源和提示由独立 MCP 客户端读取，不证明宿主自动采用；插件仅实测读取，没有插件写入。"
+}
