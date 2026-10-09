@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "novel-practice",
+  "name": "novel-workbench-course",
   "version": "0.1.0",
   "description": "通过同一 MCP 业务状态练习材料读取、草稿保存和结果检查。",
   "extensions": {
