@@ -1,0 +1,101 @@
+{
+  "message": "无法连接服务，本次请求结果未确认。 本地修改仍保留。恢复连接后先读取当前稿。（NETWORK_UNCONFIRMED）",
+  "titleEditable": true,
+  "bodyEditable": true,
+  "saveDisabled": true
+}
+{
+  "remoteHeading": "当前已保存稿 · r1"
+}
+{
+  "method": "GET",
+  "path": "/api/config",
+  "status": 200,
+  "failure": null,
+  "input": null,
+  "outputKeys": "workId",
+  "outputWorkId": null,
+  "outputChapterRevisions": []
+}
+{
+  "method": "GET",
+  "path": "/api/work",
+  "status": 200,
+  "failure": null,
+  "input": null,
+  "outputKeys": "work,chapters",
+  "outputWorkId": "prototype-d2572912-4c6b-480f-a681-934954ec3d0a",
+  "outputChapterRevisions": [
+    {
+      "number": 1,
+      "revision": 1
+    },
+    {
+      "number": 2,
+      "revision": 1
+    },
+    {
+      "number": 3,
+      "revision": 1
+    }
+  ]
+}
+{
+  "method": "POST",
+  "path": "/api/draft",
+  "status": null,
+  "failure": {
+    "errorText": "net::ERR_INTERNET_DISCONNECTED"
+  },
+  "input": {
+    "workId": "prototype-d2572912-4c6b-480f-a681-934954ec3d0a",
+    "chapterNumber": 2,
+    "expectedWorkRevision": 1,
+    "expectedChapterRevision": 1,
+    "expectedPreviousRevisions": [
+      {
+        "number": 1,
+        "revision": 1
+      }
+    ],
+    "title": "墙后的声音"
+  },
+  "outputKeys": "",
+  "outputWorkId": null,
+  "outputChapterRevisions": []
+}
+{
+  "method": "GET",
+  "path": "/api/work",
+  "status": 200,
+  "failure": null,
+  "input": null,
+  "outputKeys": "work,chapters",
+  "outputWorkId": "prototype-d2572912-4c6b-480f-a681-934954ec3d0a",
+  "outputChapterRevisions": [
+    {
+      "number": 1,
+      "revision": 1
+    },
+    {
+      "number": 2,
+      "revision": 1
+    },
+    {
+      "number": 3,
+      "revision": 1
+    }
+  ]
+}
+{
+  "initialRevision": 1,
+  "submittedEqualsInitial": false,
+  "submittedTitleEqualsInitial": true,
+  "submittedSuffix": "\n\n尚未确认的本地修改：林澈收起了铅笔。",
+  "failureStoredRevision": 1,
+  "recoveryStoredRevision": 1,
+  "recoveryStoredMatchesFullInitial": true,
+  "failureLocalMatchesSubmitted": false,
+  "recoveryLocalMatchesSubmitted": false,
+  "remoteMatchesInitial": true
+}

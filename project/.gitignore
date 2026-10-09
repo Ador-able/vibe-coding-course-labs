@@ -1,2 +1,7 @@
-bound/
+node_modules/
+dist/
+data/
 runs/
+lab.config.json
+plugins/novel-practice/binding.json
+*.sqlite*

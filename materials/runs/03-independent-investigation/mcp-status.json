@@ -1,0 +1,70 @@
+{
+  "data": [
+    {
+      "name": "anki_mcp",
+      "runtimeStatus": "disabled",
+      "pluginId": null,
+      "httpOrigin": null,
+      "serverInfo": null,
+      "serverCapabilities": null,
+      "tools": {},
+      "toolsError": null,
+      "resources": [],
+      "resourceTemplates": [],
+      "authStatus": "unsupported"
+    },
+    {
+      "name": "blender",
+      "runtimeStatus": "disabled",
+      "pluginId": null,
+      "httpOrigin": null,
+      "serverInfo": null,
+      "serverCapabilities": null,
+      "tools": {},
+      "toolsError": null,
+      "resources": [],
+      "resourceTemplates": [],
+      "authStatus": "unsupported"
+    },
+    {
+      "name": "codex_apps",
+      "runtimeStatus": "disabled",
+      "pluginId": null,
+      "httpOrigin": "https://chatgpt.com",
+      "serverInfo": null,
+      "serverCapabilities": null,
+      "tools": {},
+      "toolsError": null,
+      "resources": [],
+      "resourceTemplates": [],
+      "authStatus": "unsupported"
+    },
+    {
+      "name": "comfy_mcp",
+      "runtimeStatus": "disabled",
+      "pluginId": null,
+      "httpOrigin": null,
+      "serverInfo": null,
+      "serverCapabilities": null,
+      "tools": {},
+      "toolsError": null,
+      "resources": [],
+      "resourceTemplates": [],
+      "authStatus": "unsupported"
+    },
+    {
+      "name": "node_repl",
+      "runtimeStatus": "disabled",
+      "pluginId": null,
+      "httpOrigin": null,
+      "serverInfo": null,
+      "serverCapabilities": null,
+      "tools": {},
+      "toolsError": null,
+      "resources": [],
+      "resourceTemplates": [],
+      "authStatus": "unsupported"
+    }
+  ],
+  "nextCursor": null
+}

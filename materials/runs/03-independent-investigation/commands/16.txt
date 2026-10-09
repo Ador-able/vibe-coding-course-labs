@@ -1,0 +1,55 @@
+failure
+
+Name          Type
+----          ----
+message       String
+titleEditable Boolean
+bodyEditable  Boolean
+saveDisabled  Boolean
+body          String
+currentStored PSCustomObject
+
+recovery
+
+Name          Type
+----          ----
+localBody     String
+remoteBody    String
+remoteHeading String
+currentStored PSCustomObject
+
+
+Name   Type
+----   ----
+method String
+path   String
+status Int64
+input  
+output PSCustomObject
+
+
+Name   Type
+----   ----
+method String
+path   String
+status Int64
+input  
+output PSCustomObject
+
+
+Name    Type
+----    ----
+method  String
+path    String
+input   PSCustomObject
+failure PSCustomObject
+
+
+Name   Type
+----   ----
+method String
+path   String
+status Int64
+input  
+output PSCustomObject
+

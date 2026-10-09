@@ -1,0 +1,82 @@
+
+Name             Type     Count
+----             ----     -----
+works            Object[]     1
+work_versions    Object[]     1
+chapters         Object[]     3
+chapter_versions Object[]     3
+tasks            Object[]     0
+
+
+src\cli.ts:1:import {readFile,writeFile} from 'node:fs/promises';
+src\cli.ts:2:import {parseArgs} from 'node:util';
+src\cli.ts:3:import {resolve} from 'node:path';
+src\cli.ts:4:import {Store} from './store.js';
+src\cli.ts:5:import {workInput,workId,chapterNumber,draftInput,LabError} from './schemas.js';
+src\cli.ts:6:import {z} from 'zod';
+src\cli.ts:9:const store=new Store(resolve(values.db!));
+src\agent.ts:1:import {Codex,type ThreadEvent,type Usage} from '@openai/codex-sdk';
+src\agent.ts:2:import {randomUUID} from 'node:crypto';
+src\agent.ts:3:import {appendFile,mkdir,readFile,writeFile} from 'node:fs/promises';
+src\agent.ts:4:import {parseArgs} from 'node:util';
+src\agent.ts:5:import {resolve} from 'node:path';
+src\agent.ts:6:import {execFileSync} from 'node:child_process';
+src\agent.ts:7:import {Store} from './store.js';
+src\agent.ts:8:import {workId,chapterNumber} from './schemas.js';
+src\agent.ts:12:const store=new Store(db);
+src\agent.ts:25:await writeFile(resolve(runDir,'input.json'),JSON.stringify({taskId,workId:id,chapterNumber:number,db,codeVersion,baselineRevision:baseline?.revision??0,previousTaskId:previousTask?.id??null,requestedThreadId:previousTask?.threadId??null,configuredModel:config.model??null,runtime:'项目锁定 Codex SDK 及其 CLI',prompt},null,2));
+src\agent.ts:40:  const codex=new Codex({codexPathOverride:config.codexPathOverride,config:{plugins:{'novel-practice@novel-agent-lab':{enabled:false}},mcp_servers:{novel_lab:{command:process.execPath,args:[resolve('dist/mcp.js'),db,taskId],cwd:root,required:true,enabled:true,default_tools_approval_mode:'approve'}}}});
+name                      version
+----                      -------
+zod                       4.6.5
+@modelcontextprotocol/sdk 1.31.0
+@openai/codex-sdk         0.160.0
+@playwright/test          1.63.0
+@types/node               24.19.1
+typescript                7.0.2
+1: import {createServer,type IncomingMessage,type ServerResponse} from 'node:http';
+2: import {readFile} from 'node:fs/promises';
+3: import {z} from 'zod';
+4: import {Store} from './store.js';
+5: import {draftInput,workId,LabError} from './schemas.js';
+6: 
+7: const assets=new Map([['/','index.html'],['/app.js','app.js'],['/app.css','app.css']]);
+8: const mime=new Map([['index.html','text/html'],['app.js','text/javascript'],['app.css','text/css']]);
+9: function json(response:ServerResponse,status:number,value:unknown){response.writeHead(status,{'content-type':'application/json; charset=utf-8','cache-control':'no-store'});response.end(JSON.stringify(value));}
+10: async function input(request:IncomingMessage){const chunks:Buffer[]=[];for await(const chunk of request)chunks.push(Buffer.from(chunk));try{return JSON.parse(Buffer.concat(chunks).toString('utf8'));}catch{throw new LabError('INVALID_JSON','请求正文不是有效 JSON。');}}
+11: 
+12: // HTTP、CLI 与 MCP 使用同一个 Store，页面只保存尚未提交的编辑缓冲。
+13: export function prototypeServer(store:Store,defaultWorkId:string){
+14:   return createServer(async(request,response)=>{
+15:     try{
+16:       const url=new URL(request.url??'/', 'http://127.0.0.1');
+17:       if(request.method==='GET'&&url.pathname==='/api/config'){json(response,200,{workId:defaultWorkId});return;}
+18:       if(request.method==='GET'&&url.pathname==='/api/work'){
+19:         const id=workId.parse(url.searchParams.get('work'));const work=store.getWork(id);
+20:         const summary=store.exportWork(id);const chapters=store.listChapters(id).map(c=>({...store.getChapter(id,c.number)!,basisCurrent:summary.chapters.find(s=>s.number===c.number)!.basisCurrent}));
+21:         json(response,200,{work,chapters});return;
+22:       }
+23:       if(request.method==='POST'&&url.pathname==='/api/draft'){
+24:         const submitted=draftInput.parse(await input(request));const saved=store.saveDraft(submitted,'human');json(response,200,saved);return;
+25:       }
+26:       const asset=assets.get(url.pathname);
+27:       if(request.method==='GET'&&asset){const bytes=await readFile(new URL('../prototype/'+asset,import.meta.url));response.writeHead(200,{'content-type':mime.get(asset)+'; charset=utf-8','cache-control':'no-store'});response.end(bytes);return;}
+28:       json(response,404,{error:{code:'NOT_FOUND',message:'没有这个入口。'}});
+29:     }catch(error){
+30:       if(error instanceof z.ZodError){json(response,400,{error:{code:'INVALID_INPUT',message:'请填写完整标题、正文和有效的保存依据。'}});return;}
+31:       if(error instanceof LabError){const status=error.code.endsWith('NOT_FOUND')?404:error.code.startsWith('STALE_')?409:400;json(response,status,{error:{code:error.code,message:error.message}});return;}
+32:       console.error(error);json(response,500,{error:{code:'INTERNAL_ERROR',message:'本次请求未确认。请先重新读取当前稿，核对后继续。'}});
+33:     }
+34:   });
+35: }
+36: import {parseArgs} from 'node:util';
+37: import {resolve} from 'node:path';
+38: import {Store} from './store.js';
+39: import {prototypeServer} from './prototype-http.js';
+40: const {values}=parseArgs({options:{db:{type:'string',default:'data/prototype.sqlite'},port:{type:'string',default:'4326'},work:{type:'string'}}});
+41: const store=new Store(resolve(values.db!));const id=values.work??store.listWorks()[0]?.id??'';
+42: const server=prototypeServer(store,id);
+43: server.listen(Number(values.port),'127.0.0.1',()=>console.log(JSON.stringify({url:'http://127.0.0.1:'+values.port,db:resolve(values.db!),workId:id,mode:'真实 Store；课堂人工初始化稿件；未调用模型'})));
+44: process.once('SIGINT',()=>server.close(()=>{store.close();process.exit(0);}));
+45: process.once('SIGTERM',()=>server.close(()=>{store.close();process.exit(0);}));
+

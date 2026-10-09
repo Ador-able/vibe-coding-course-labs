@@ -1,41 +1,46 @@
-# 本轮批次进入子流程
+# 小说工作台原型实验
 
-这组原生n8n配置处理一批三条完整教师反馈。父流程传入同一批次的三项，子流程按原值分支、保存完整回执，再把最后节点的全部结果交还父流程。没有模型、章稿修改、聊天记忆或通知发送。
+用三章完整草稿练习如何让 AI 把未知变成可观察的实验。真实 HTTP 页面读取现有 Store；人修改后保存，CLI 与 MCP 都能从同一 Store 读回。这里没有另写模型循环。
 
-运行条件是课程既有n8n2.41.6课堂底座；镜像摘要在runtime.json。模板中的占位身份必须换成自己实例中的真实对象，不能把别人的表或子流程ID当作可跨实例复用的材料。
+## 运行
 
-## 材料和预期
+固定课堂环境为 Node.js 24.12.0、pnpm 11.20.0。解压下载包后，在仓库目录执行：
 
-inputs/current-batch.json是一次业务POST的完整正文，顺序E02、E01、E03。inputs/catalog.json另有一个归档项，只用于检查“本轮”与“目录全部”的差别，不是线上全库，也不进入当前请求。
-
-原值严格等于布尔false时为recorded，严格等于布尔true时为classroom_failed，其余为needs_review。字符串“false”原样保留，不自动按false处理。recorded只表示本节完整回执登记，classroom_failed是课堂业务条件，needs_review供人核对。没有抛出运行时工具异常的条件，不据此证明任意异常都继续。
-
-## 绑定和导入
-
-1. 在自己的课堂n8n项目新建空表，按receipt-table.json建立14列。保留真实表身份。
-2. 用成熟Node运行以下本地绑定命令，将TABLE_ID替换成该表真实ID。此脚本只写本地JSON，不调用服务。
-
-```plaintext
-node bind-branch.mjs --receipt-table TABLE_ID --child-output bound/child.json
+```shell
+pnpm install --frozen-lockfile
+pnpm build
+pnpm prototype
 ```
 
-3. 导入bound/child.json，保存独立子流程，保留真实工作流ID及版本。普通Execute Sub-workflow与AI的Workflow Tool发布要求不是同一接口；当前实例实际保存、发布和执行版本分别记录。
-4. 将CHILD_ID替换成刚保存的子流程ID，生成父流程配置：
+打开终端给出的 `http://127.0.0.1:4326`。首次运行用完整归档经 Store 人工初始化本轮 UUID 作品和三章草稿；已有 `data/prototype.sqlite` 时读取它，不重置或覆盖。另做实验可以指定新路径：`pnpm prototype --db data/another-prototype.sqlite --port 4327`。
 
-```plaintext
-node bind-branch.mjs --child-workflow CHILD_ID --parent-output bound/parent.json
+当前稿默认第 2 章。查看章名、完整正文和读取修订；修改后点“保存草稿”。打开另一窗口，先保留同一旧修订，再让第一窗口保存；旧窗口保存会收到修订冲突。它保留本地修改，“读取当前稿”会提供已保存稿供对照。“以当前稿重新编辑”明确改用已保存正文；不会自动合并。未保存文本只在本页缓冲，离开或刷新需自己保存。
+
+页面下方可切换原版、台面和笔记页。三个方案共享字段、文案、数据与业务操作；可以用 `?variant=original`、`?variant=desk`、`?variant=notes` 保留选择。`vcm-15-05-start` 提供原版，`vcm-15-05-end` 提供三个方案。比较结论由使用者选择，固定完成点不表示哪一版胜出。
+
+## 实验与读回
+
+```shell
+pnpm test
+pnpm prototype:ui
+pnpm prototype:time
 ```
 
-5. 导入bound/parent.json，核其正式入口course-vcm-11-07-batch、一次全部项mode=once、等待开启、五项当前值映射和额外默认分支。只有在自己的隔离练习里保存/发布对应版本后才提交inputs/current-batch.json。
+浏览器证据脚本使用项目锁定的 Playwright 1.63.0 和本机已安装的 Edge，不安装系统浏览器。它为每个方案生成独立 UUID 库，保持相同完整作品资料、三章正文、必要操作和 1440×1200 视口；另记录 390×844 窄屏。完整 HTTP 输入返回、初始化与最终业务状态、整页和关键状态图片在 `runs/prototype-ui-运行标识`。失败轮次全部帧不计为通过证据。起点只跑 `pnpm prototype:ui --variants original`。
 
-子流程由一次调用接收三个完整项，不是为每项创建一个子执行。ordinary Set/Split Out/Execute/Switch是普通节点的当前项映射；本例没有AI附属工具子节点，不能用本例保证附属子节点也逐项解析表达式。
+使用终端中的实际作品 ID 查看保存结果：
 
-## 按身份核对结果
+```shell
+pnpm lab chapter 2 --db data/prototype.sqlite --work 实际作品ID
+pnpm prototype:mcp --db data/prototype.sqlite --work 实际作品ID --output runs/mcp-readback.json
+```
 
-打开完整POST、父拆分/调用输入、子触发器输入、每条分支、Append、完整表行、子最后输出、父接回与HTTP完整返回。先按eventId对应，再比较batchId、sourceVersion、selectedEventIds、完整feedback及作品/章/读者/反馈身份。parentExecutionId和childExecutionId来自两次真正执行，不是业务eventId。
+官方 MCP Client 只调用三项读取工具，保存完整协议、实际返回和只读五表核对；它不运行模型。固定 MCP SDK 为 1.31.0，这个实验使用其 2025-11-25 初始化协议；它不是当前 2026 MCP 初始化方式的教程。CLI 和 MCP 的业务代码沿用同一 Store；成熟 Codex Harness 入口保留在 `src/agent.ts`，调用模型需要该入口自己的可用账户和配置，本节不要求运行。
 
-originalInputJson是完整五项子输入的JSON值序列化，解析后核对，不冒充原请求字节。Append可能改变排列，结果数量相同也不证明身份和内容相同。默认分支要保留原值，不因类型待核而消失。
+`prototype:time` 是教师构造的独立时间规则，不是小说功能。明确时间输入用于检查不足 24 小时、恰满、暂停、恢复和新反馈重新计时；没有实际发送提醒。
 
-最后Data Table返回完整保存行；开启等待的父流程接回这些行。HTTP200、节点绿色、模型口头说明都不能将未完成项改为业务成功，notificationStatus=not_sent不等于送达。新表是回执表，不是文学采用记录，也不是旧E01成功反馈表。
+## 范围
 
-此例只定义三个分支各一项的有限批次。未覆盖任意缺字段、空分支、并发、幂等重发、节点异常隔离、持久恢复或真实外部通知。如果发生实际失败，先保留完整输出、已写入材料和具体位置，不通过自动重复提交去凑预期结果。
+本地 HTTP、人工修改、修订拒绝、读回与网络未确认状态可以实际观察。三章输入性质、通过条件和未验证范围见 [PROTOTYPE.md](PROTOTYPE.md)。保存草稿不代表已获文学认可；工具读回不代表模型理解并使用了改稿。这里只提供本机教学入口，不包含多人身份、线上发布或自动撤回未知写入。
+
+比较时分别记录功能、位置辨认、整幅口吻和结构代价。实际截图与操作仍需人看；脚本通过不替代审美判断。原型给出问题的证据，是否采用页面或代码另作决定。

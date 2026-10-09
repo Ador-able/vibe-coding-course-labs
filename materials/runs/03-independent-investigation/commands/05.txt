@@ -1,0 +1,1041 @@
+
+Name                  Type           Length
+----                  ----           ------
+project               String              1
+git                   PSCustomObject      1
+node                  String              1
+pnpm                  String              1
+sourceAsset           Int64               1
+sourceArchiveSha256   String              1
+server                PSCustomObject      1
+teacherPreparation    PSCustomObject      1
+currentTableFile      String              1
+tableCounts           PSCustomObject      1
+ui                    Object[]            3
+rawGetResponses       Object[]            2
+readOnlyRunScope      String              1
+dependencyPreparation PSCustomObject      1
+
+警告: 生成的 JSON 已截断，因为序列化已超过设置的深度 3。
+{
+  "project": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-07\\lab\\novel-prototype-lab",
+  "git": {
+    "root": "D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/vcm-09-07/lab/novel-prototype-lab",
+    "head": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+    "status": "",
+    "worktreeDiff": "",
+    "indexDiff": "",
+    "trackedFiles": [
+      {
+        "path": ".agents/plugins/marketplace.json",
+        "bytes": 347,
+        "sha256": "2eca2cb34d521af8d4a1c2bf5ac3988eb67e282b5b3c2fff69be1de291f13572"
+      },
+      {
+        "path": ".codex/config.toml",
+        "bytes": 170,
+        "sha256": "c5b7936250bdce56f86898401dc096368d6d73440741f94703026ad99f20e99f"
+      },
+      {
+        "path": ".gitattributes",
+        "bytes": 102,
+        "sha256": "e76a8eba389634fb8ed3276af489bea0c3442de50ac2c66d9714568168a4bd51"
+      },
+      {
+        "path": ".gitignore",
+        "bytes": 101,
+        "sha256": "ec5a45ca159c6aace953517fb293151263535171c211904429ce89a9a9766e9c"
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 618,
+        "sha256": "8d2397d655288e6e979b18f65c2a2cef84baf782bf693b8e19afe81e30db8634"
+      },
+      {
+        "path": "PROTOTYPE.md",
+        "bytes": 2056,
+        "sha256": "3f55c0612da7c42ecd903e32061422dcada7c0a04b943189fc1819b46686179d"
+      },
+      {
+        "path": "README.md",
+        "bytes": 3654,
+        "sha256": "77d2c470975007455669c147c09f36a2837e2b2049797b56ffdfffdd7898cd0d"
+      },
+      {
+        "path": "docs/MCP双工具实验.md",
+        "bytes": 6356,
+        "sha256": "efb8035379f5bdda0a47001b78a3ccd17c55d11487fe062c57d3a4620fcbb9a5"
+      },
+      {
+        "path": "docs/三章接续实验.md",
+        "bytes": 4339,
+        "sha256": "9543f4147a3dfe91ff92cd10099c924b07bd279d1952b62c47a294dded41c276"
+      },
+      {
+        "path": "docs/实现依据.md",
+        "bytes": 2592,
+        "sha256": "7aef1d119a05dcb8006834336d05a93389258f809a084f852649e734c58502ee"
+      },
+      {
+        "path": "docs/资源与插件实验.md",
+        "bytes": 6448,
+        "sha256": "11f16a5c89a7f20011e9d4f9d4486c0af7c131df67b827aef71e96b351984f18"
+      },
+      {
+        "path": "evidence/01-单章真实运行/完整运行-chapter.json",
+        "bytes": 3534,
+        "sha256": "5ea833cb75042fb09829daeedb4c74a652f832bbd059e790471598dce959edc0"
+      },
+      {
+        "path": "evidence/01-单章真实运行/完整运行-events.jsonl",
+        "bytes": 26521,
+        "sha256": "250807e19721b8a760fc8d376384a8d381ab6a720be48d3420ce7bd382faf2a1"
+      },
+      {
+        "path": "evidence/01-单章真实运行/完整运行-final-response.txt",
+        "bytes": 397,
+        "sha256": "b23980eb11d256816d56d0e35e91ebd27f80811a2ef94b72e332de9d7e0ec5ae"
+      },
+      {
+        "path": "evidence/01-单章真实运行/完整运行-input.json",
+        "bytes": 1081,
+        "sha256": "efbef382f0541abb4f1b52951e2a640dfdc26fab6646fa85283c751628558860"
+      },
+      {
+        "path": "evidence/01-单章真实运行/完整运行-report.json",
+        "bytes": 24354,
+        "sha256": "87f920269ac8fcf34589c07ea37c6e8f82f1fb5134ee4586daa01403e37536c2"
+      },
+      {
+        "path": "evidence/01-单章真实运行/实际取消-chapter.json",
+        "bytes": 3534,
+        "sha256": "5ea833cb75042fb09829daeedb4c74a652f832bbd059e790471598dce959edc0"
+      },
+      {
+        "path": "evidence/01-单章真实运行/实际取消-events.jsonl",
+        "bytes": 103,
+        "sha256": "7cd87c34f40dd4e89723ba54aa3c977c14691987b1eb2f8b854ac63e0f0a2e58"
+      },
+      {
+        "path": "evidence/01-单章真实运行/实际取消-final-response.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/01-单章真实运行/实际取消-input.json",
+        "bytes": 1081,
+        "sha256": "ae0a84abc7881c51ca46c3e7386d3a58e3867c2b3837869379353c4bd4567ae1"
+      },
+      {
+        "path": "evidence/01-单章真实运行/实际取消-report.json",
+        "bytes": 885,
+        "sha256": "db7660b488308617aba0e7e743be2963da1006dd7598f55f99f2ed0c81c0e864"
+      },
+      {
+        "path": "evidence/01-单章真实运行/实际观察.md",
+        "bytes": 2569,
+        "sha256": "e262b12f372668b027af3a0fdb0df4a10423ee4aa89ece94591f2badcf1e197d"
+      },
+      {
+        "path": "evidence/01-单章真实运行/归档时真实状态.json",
+        "bytes": 6154,
+        "sha256": "cfb12a5c8567f56c2269e58bb8d1b4f552f6f15ac72580852851e411f819b4dc"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/三章草稿.md",
+        "bytes": 10417,
+        "sha256": "c50b61dac366cd675ddbdceda349bfc266cb2b621dea140cbbe866c85a5337cb"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/人工改稿保存回执.json",
+        "bytes": 3691,
+        "sha256": "5150804cc59f4bf77f318dac06a53120d434e2d266edbaa52b484617c3d5c26b"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/人工采用回执.json",
+        "bytes": 3805,
+        "sha256": "46868d05aeae73650cddf3b98ff2544ce646c2dc1304ca3320af77977a84b17f"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/导出回执.json",
+        "bytes": 1229,
+        "sha256": "92d42a8263c0f204f8090a1266809d723ed7a0f374e2a307701af32fee6ab2ff"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/归档时真实状态.json",
+        "bytes": 18444,
+        "sha256": "ac2e2445b461b265511aa8cd1fb493dc5328b4815b04d5e8a103791feee922b5"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/改稿前实际正文.json",
+        "bytes": 3534,
+        "sha256": "5ea833cb75042fb09829daeedb4c74a652f832bbd059e790471598dce959edc0"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/真实过期改稿被拒绝.json",
+        "bytes": 7709,
+        "sha256": "cfca0a3bbf75f4e51cb67612cb883a12fd4b3519d04a21a9ac1b53a7a69313ac"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第2章-chapter.json",
+        "bytes": 3701,
+        "sha256": "270ba981452f6ac6e120d7e4ab2b58c7ee2e4ddfe42336cc26c1276657a11ff4"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第2章-events.jsonl",
+        "bytes": 38704,
+        "sha256": "35087c372bf965298b251905cf2cbdb9e4f787fadd0bf2f78d030d33d5548c8b"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第2章-final-response.txt",
+        "bytes": 411,
+        "sha256": "09e35cd68e2c82065f68d97fd8493f237e15808e4246b914ff60943ec60ededf"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第2章-input.json",
+        "bytes": 1557,
+        "sha256": "914d4749368741af55d96c415735b1a3a6bdf15823bf058f35a6aff3844e5a76"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第2章-report.json",
+        "bytes": 37687,
+        "sha256": "4eeb872e794d5e3c16262b1a39a491998b8cd7bcf62d71e160e35b6327b4bec4"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第3章-chapter.json",
+        "bytes": 3632,
+        "sha256": "3791d665c9ee80d775868db0a71f3577969e52045300f1d84602d6e02860f26f"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第3章-events.jsonl",
+        "bytes": 47369,
+        "sha256": "dad8c2e77cd1c54048e0670f7ec35e81fe192cbc6852f2f2b19d130c5052e176"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第3章-final-response.txt",
+        "bytes": 449,
+        "sha256": "6e9edd12843b5bc5b0421384ffa58c8bba41fcd403c97faf65055750ee03b971"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第3章-input.json",
+        "bytes": 1557,
+        "sha256": "69004619d0ba010db167150d4b682933be90fa883ccb145f7d41a2e0b4135f14"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第3章-report.json",
+        "bytes": 47776,
+        "sha256": "8a642ba73417c645e547cedc78744393b1dec826e7cfa169332b773b1fbf47a5"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第三章独立读回.json",
+        "bytes": 3634,
+        "sha256": "89ddc0885a1e193604c3aa0bc3edbbed635fc0fe9f2ad3a089f5141d26ca34cb"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/第二章独立读回.json",
+        "bytes": 3703,
+        "sha256": "d0fa3269763ae281d91cc9586b7036fa0efdde3580d0821fe25c9abc9442081d"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/编者人工改稿示范.json",
+        "bytes": 3576,
+        "sha256": "bd5449e95dc5b99ed42e886ebb8bdc0646ce995595bd05e89fcf584f91a6a92a"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/要求更新回执.json",
+        "bytes": 1525,
+        "sha256": "83e8eb66d26323620449af3be288e6bd0ad5dab68a6f859d781db998cd1cccb1"
+      },
+      {
+        "path": "evidence/02-三章接续真实运行/过期提议服务stderr.txt",
+        "bytes": 262,
+        "sha256": "ca6a780748807940cb0fb53183f330f38e49874fe4569b23c6a2a7fdd59dbf65"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装前基线.json",
+        "bytes": 605,
+        "sha256": "1d7595e6e9c553d18580c15c975a7d02961e11cdb97a4227c136f5df3085311c"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装后.json",
+        "bytes": 627,
+        "sha256": "a34f9d142f32c655553c2a490e65301e925dc5c1409948cad4e0416631bb90d6"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装命令.json",
+        "bytes": 282,
+        "sha256": "0f0085ebf8ea604fb0c39f35fa8e48c319127582292f95e5e336424011f7b023"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/安装命令.json.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/最终移除后验证.json",
+        "bytes": 494,
+        "sha256": "5c42983dcad70d6b4ae4f3516e528ca7a29af107aff22197d0ae6367072468d5"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/本轮启用目录.json",
+        "bytes": 734,
+        "sha256": "092123d1a98f818bd56a9ab88749c8d3100d28d72fab55473a329469249ea269"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/本轮启用目录.json.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/检查与撤销结果.json",
+        "bytes": 447,
+        "sha256": "351107c6d00d431ab89e230e2ccfe8fe4f0efd936cf823c8b92357159c2ff962"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除后.json",
+        "bytes": 627,
+        "sha256": "a34f9d142f32c655553c2a490e65301e925dc5c1409948cad4e0416631bb90d6"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-1.json",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-1.stderr.txt",
+        "bytes": 2799,
+        "sha256": "59e80d965629788f5f6fc003c2578a3564d4eff7ca8cf0cc4a562ac6cd7bc8ac"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-2.json",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-2.stderr.txt",
+        "bytes": 2799,
+        "sha256": "6cd4809ed691fd9d9f8d62006e03506b2eef0959f62d2b7ce047b72c08aa9c29"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-3.json",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-3.stderr.txt",
+        "bytes": 2799,
+        "sha256": "78ebd8490956534b73439ee3e1299f07de16cdccac600992c5466157c337c6aa"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-4.json",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/移除命令-4.stderr.txt",
+        "bytes": 2799,
+        "sha256": "fe6790ff0d43d275e5c83102f5900e3481b93e453f82674fcae9853e66ae459c"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/项目默认目录.json",
+        "bytes": 734,
+        "sha256": "092123d1a98f818bd56a9ab88749c8d3100d28d72fab55473a329469249ea269"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装与撤销-最终核查/项目默认目录.json.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-实际通过/events.jsonl",
+        "bytes": 37944,
+        "sha256": "683668307d1028919bbf58665ecd308695332b2675bcec2bc1dda59097acbcdd"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-实际通过/final-response.txt",
+        "bytes": 3593,
+        "sha256": "bd86daa789b607f17cee32d53084808e00925c142f9dd52c4790c5d42631cfcb"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-实际通过/input.json",
+        "bytes": 2039,
+        "sha256": "13058e827415022add35136073089854fca9489347f6cefed56ab33f5e259816"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-实际通过/report.json",
+        "bytes": 36386,
+        "sha256": "7c80b4f818a7caece335159faeed232f0980cad35c09e546a01a47b13960ba77"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/events.jsonl",
+        "bytes": 37487,
+        "sha256": "571de53f8c64045f4fc569e508c88b73231e16fc7d3845646da1939cd69f23ef"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/final-response.txt",
+        "bytes": 3124,
+        "sha256": "1c6dfd0b2136bd6f137cba7921c5b9099ff831ce6089362207f2f9bed0dec6b8"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/input.json",
+        "bytes": 2011,
+        "sha256": "adceee5bf7751212e4d57a9b34d90bef2eb0e0a9e8939c8dbc51d9ae032c7395"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/report.json",
+        "bytes": 35919,
+        "sha256": "3532aa2b4222c53c255826e5fd0f03ffd96fd911aeeff0591a871d327459a206"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装前基线.json",
+        "bytes": 606,
+        "sha256": "c8d6e6d7665955319c3b908404bdc6dba74780da7a7fca46009ef7aec596240b"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装后.json",
+        "bytes": 628,
+        "sha256": "e59bb67dc7fbe993648403c037aa0a45fe8f101df2a6c7b47227005713d685d7"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装命令.json",
+        "bytes": 282,
+        "sha256": "0f0085ebf8ea604fb0c39f35fa8e48c319127582292f95e5e336424011f7b023"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/安装命令.json.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/本轮启用目录.json",
+        "bytes": 734,
+        "sha256": "092123d1a98f818bd56a9ab88749c8d3100d28d72fab55473a329469249ea269"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/本轮启用目录.json.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/检查与撤销结果.json",
+        "bytes": 447,
+        "sha256": "207b059fb7b6467d347015a36a15910404df0664802b002a8c5b062e268c7acf"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除后.json",
+        "bytes": 627,
+        "sha256": "a34f9d142f32c655553c2a490e65301e925dc5c1409948cad4e0416631bb90d6"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除命令.json",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除命令.stderr.txt",
+        "bytes": 2799,
+        "sha256": "aa48f9acb41d9291f933e54a8099103ab6798721b2c4b8afac1c0854ce1fcc95"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/移除重试后验证.json",
+        "bytes": 391,
+        "sha256": "6ea2ab639e3eb89c22adda88ec2b866ab4c0a90f27f17e022061129e313ad6a9"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/项目默认目录.json",
+        "bytes": 734,
+        "sha256": "092123d1a98f818bd56a9ab88749c8d3100d28d72fab55473a329469249ea269"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/安装后只读-旧核查/项目默认目录.json.stderr.txt",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/插件安装回执.json",
+        "bytes": 282,
+        "sha256": "0f0085ebf8ea604fb0c39f35fa8e48c319127582292f95e5e336424011f7b023"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/插件最终移除回执.json",
+        "bytes": 124,
+        "sha256": "f61e9396c5feef4f6b7522e8e2287262df155805b8fcf48c33bf5c59336b4af0"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/插件配置实际加载-default.json",
+        "bytes": 841,
+        "sha256": "7e2454a7b9a2b0635252d5a857e4e1b45473d0c159668155f41ec0d34e0eb7ef"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/插件配置实际加载-false.json",
+        "bytes": 1248,
+        "sha256": "e18aad0117fdf444362f4e2ddd50a4227e4e63f18daa389da5762ce4343f5a53"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/插件配置实际加载-true.json",
+        "bytes": 1245,
+        "sha256": "0e5a1c20f314a52323a9c2c5bb2178d6af8fac58bc4deb1b436bf8e325b4119e"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/未安装宿主检查/events.jsonl",
+        "bytes": 22431,
+        "sha256": "7522bb08d62a33dfbdcdbb41df08c4df382fb4ef98252fa6aefd981df060f272"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/未安装宿主检查/final-response.txt",
+        "bytes": 1258,
+        "sha256": "a319ccae2d2725fa3b918beb72dc5cde188a0371aecffdd91381c19324176a81"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/未安装宿主检查/input.json",
+        "bytes": 1647,
+        "sha256": "d86236ca49686f2ff5e7cf01e2a905e50fd526017dcd3ead47cac50822f3015c"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/未安装宿主检查/report.json",
+        "bytes": 2491,
+        "sha256": "3cb990e516df19843fe1cc75b37831bd53d70a11a2c658b9b95c88c5cb011464"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/核查摘要.json",
+        "bytes": 1913,
+        "sha256": "93817df6676c70a534a65403b3679e3f2bd0434cff9d33c81ed27e0f101ec55f"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/移除重试回执.json",
+        "bytes": 124,
+        "sha256": "f61e9396c5feef4f6b7522e8e2287262df155805b8fcf48c33bf5c59336b4af0"
+      },
+      {
+        "path": "evidence/03-资源提示与插件/资源与提示实际读取.json",
+        "bytes": 42046,
+        "sha256": "bf761a4115ea136fd8b8ff7a5d66426a4d5175a61adcad3c740cb51d1cc877e3"
+      },
+      {
+        "path": "evidence/08-双工具MCP/CLI完整读回.json",
+        "bytes": 378,
+        "sha256": "213a541984d4572dbcedd0f4671d68132bf34f0aa08b6aa9cbf987f0677fa3f7"
+      },
+      {
+        "path": "evidence/08-双工具MCP/MCP运行前业务.json",
+        "bytes": 2931,
+        "sha256": "446d667168c94e696229621881c1b726b7e0aacd05f520899825e0db2016028f"
+      },
+      {
+        "path": "evidence/08-双工具MCP/业务独立起点.json",
+        "bytes": 1452,
+        "sha256": "9cdc06d6886aa1ed3975bd33837c15aac3b08f6a585f3a7fa9f4cd0f9601d1cb"
+      },
+      {
+        "path": "evidence/08-双工具MCP/人工改稿.json",
+        "bytes": 365,
+        "sha256": "323d0e3a43df067b018760f7ce8401609fd409dceaffed0fc825d9f080b0b9a3"
+      },
+      {
+        "path": "evidence/08-双工具MCP/作者独立协议与只读业务核对.json",
+        "bytes": 5946,
+        "sha256": "482d3e95f7b593e5eb825a49a5a906bc5d1284504be1f8d4988969c3b7445a6e"
+      },
+      {
+        "path": "evidence/08-双工具MCP/全部连接结束后业务.json",
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      {
+        "path": "evidence/08-双工具MCP/工具发现.json",
+        "bytes": 8620,
+        "sha256": "e1712e728cc9f542a69100c8ffe783db2c8ea0ccbbfef14912ed175ec59cb13a"
+      },
+      {
+        "path": "evidence/08-双工具MCP/摘要.json",
+        "bytes": 1144,
+        "sha256": "8fa2cf862eb8a02e576e98b930ddd1313dcffaaaa08dc72805601db08b36f7b5"
+      },
+      {
+        "path": "evidence/08-双工具MCP/文件字节清单.json",
+        "bytes": 3279,
+        "sha256": "b7e704ce38500f367837895e935dfa94828ca6e0917a0d0991f180a5cdac602d"
+      },
+      {
+        "path": "evidence/08-双工具MCP/断连-stderr.txt",
+        "bytes": 169,
+        "sha256": "a15ec43cd25a952151c47918365031c27ad00c332369b306baa43bdba4af4a58"
+      },
+      {
+        "path": "evidence/08-双工具MCP/断连-协议.json",
+        "bytes": 3883,
+        "sha256": "36e12cbc8d30711f90e0a2a6511a548d3a9ff86bf4b980f96c1c89c668093ba2"
+      },
+      {
+        "path": "evidence/08-双工具MCP/断连-调用.json",
+        "bytes": 1854,
+        "sha256": "243bb98f1f97cd99d05fd673b6c26f06afdde94ac374d82c7463b7506d18a04d"
+      },
+      {
+        "path": "evidence/08-双工具MCP/断连后业务.json",
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      {
+        "path": "evidence/08-双工具MCP/既有真实模型调用逐字核对.json",
+        "bytes": 877,
+        "sha256": "fc670329ae4570bcc127cf42cb6fa7240a94bd46f1632c76e3d5186dd01a70fa"
+      },
+      {
+        "path": "evidence/08-双工具MCP/正常连接-stderr.txt",
+        "bytes": 447,
+        "sha256": "871d1af4bd13f6e855a26c999fb73410fb3cd46935decbd9e178199251932767"
+      },
+      {
+        "path": "evidence/08-双工具MCP/正常连接-协议.json",
+        "bytes": 19782,
+        "sha256": "5318370f4ef9f0eb1990b832ce57826c7632c2ff5a23d8870c46a85d93ae4b53"
+      },
+      {
+        "path": "evidence/08-双工具MCP/正常连接-调用.json",
+        "bytes": 5098,
+        "sha256": "581c695429acc1d1d4861b5c12ecd057a3c4d6d968c8cf4b0de0548f49cbdbf4"
+      },
+      {
+        "path": "evidence/08-双工具MCP/正常连接关闭后业务.json",
+        "bytes": 4031,
+        "sha256": "6c1daecee09b4054ac08ef43f9f11a4bde56f7a0c3f6f4637bfd34d90361af2d"
+      },
+      {
+        "path": "evidence/08-双工具MCP/独立核对协议与业务.py",
+        "bytes": 5173,
+        "sha256": "6a9139580450ad4359d4551fe435938517d6ff8b402f87208afa9ec32d7b3853"
+      },
+      {
+        "path": "evidence/08-双工具MCP/调用者异常-stderr.txt",
+        "bytes": 169,
+        "sha256": "5dcef612a22326a26d4dabc97d17f97a7c83caa26ae02d9520298250ac8d95ab"
+      },
+      {
+        "path": "evidence/08-双工具MCP/调用者异常-协议.json",
+        "bytes": 3738,
+        "sha256": "f4bba89dbdd646028ed620558b37f882e02134d2423c4652168c600760e32818"
+      },
+      {
+        "path": "evidence/08-双工具MCP/调用者异常-调用.json",
+        "bytes": 1663,
+        "sha256": "6ffa4e155fce3b9dbc9b33090cbc3cbf8261b35e36bea21ea2767ce97e673c95"
+      },
+      {
+        "path": "evidence/08-双工具MCP/运行输入.json",
+        "bytes": 1582,
+        "sha256": "a8a10acf953e68b142c3e94c8acd940f51277a06cfd855fe5103439d85ebbf2f"
+      },
+      {
+        "path": "fixtures/three-chapter-archive.json",
+        "bytes": 18444,
+        "sha256": "ac2e2445b461b265511aa8cd1fb493dc5328b4815b04d5e8a103791feee922b5"
+      },
+      {
+        "path": "lab.config.example.json",
+        "bytes": 4,
+        "sha256": "e3566b3a06430868d71e9287dfd6c6c520a3da027aabea01951d407ee131dc2f"
+      },
+      {
+        "path": "package.json",
+        "bytes": 1454,
+        "sha256": "ab207854d93fa23582520abe8081a65806dd7794915c4edf1af252dd2e14ee2a"
+      },
+      {
+        "path": "plugins/novel-practice/mcp.json",
+        "bytes": 256,
+        "sha256": "972b43c3b645fff5e3427e5beaad07a564aadc29843f6d1e446c734b3e1549d7"
+      },
+      {
+        "path": "plugins/novel-practice/plugin.json",
+        "bytes": 683,
+        "sha256": "0feb7c812c84adf8645037192bf6a114bf1400068127b3b06f18f61caf38e514"
+      },
+      {
+        "path": "plugins/novel-practice/serve.mjs",
+        "bytes": 396,
+        "sha256": "f8b163ecab93595d414164ddc017a38809ba14d7364edb331e0844bc0a9da551"
+      },
+      {
+        "path": "plugins/novel-practice/skills/novel-chapter-task/SKILL.md",
+        "bytes": 1314,
+        "sha256": "c5430e18938fbbcf4556487f698de10466a090a390e78edf3fd54e457c233e0b"
+      },
+      {
+        "path": "plugins/novel-practice/skills/novel-chapter-task/references/state-and-review.md",
+        "bytes": 1826,
+        "sha256": "90e4d2affe700e1d23f3d246cb3b821ee8f441846682dabdc012c73e25804996"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "bytes": 37387,
+        "sha256": "f39c68d829b12e0fc7cb023ee203382f9ba39ca4b2ea0e261fc889d9a5271fdf"
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "bytes": 270,
+        "sha256": "e46a5631d39ba20f807391f170f2f586148af38c96d29e61671a5b73c3105ad7"
+      },
+      {
+        "path": "prototype/app.css",
+        "bytes": 10619,
+        "sha256": "2e436724509ed55a09b9c460d7899e52eb46cfc4fb4f37605864ef15187008fd"
+      },
+      {
+        "path": "prototype/app.js",
+        "bytes": 7575,
+        "sha256": "bc505bb6cade7ba61a4c5b54843ae35509f5140af4f022b7fb335a7f17f269d9"
+      },
+      {
+        "path": "prototype/index.html",
+        "bytes": 2418,
+        "sha256": "8b96b62676240e411719a7cceb2be44bcb354a795aefce4911a61f464bec0844"
+      },
+      {
+        "path": "scripts/archive-first-run.mjs",
+        "bytes": 1637,
+        "sha256": "30d908b83724021f1107c624d6789827aa7c4bca22c473bc520b392695b6cc69"
+      },
+      {
+        "path": "scripts/archive-second-run.mjs",
+        "bytes": 4106,
+        "sha256": "0dc43f884917a9132c1338c598ec2ed41b5c30d5263d96013602afbf1bc65bcb"
+      },
+      {
+        "path": "scripts/archive-third-run.mjs",
+        "bytes": 3261,
+        "sha256": "444dd25508eec64afc13f4d642422827b5448b026a8f34574b3e36043b9cd567"
+      },
+      {
+        "path": "scripts/capture-prototype.mjs",
+        "bytes": 11200,
+        "sha256": "73341b2ac0a23378922ee5254fb82b1d2a5f8c12fbbb29f5b4396e417f3f2981"
+      },
+      {
+        "path": "scripts/codex-local.mjs",
+        "bytes": 558,
+        "sha256": "b4441ea96b9bebfd3169af7af7ea46b672704191191ec1d97d6c90cf4ddee64e"
+      },
+      {
+        "path": "scripts/exercise-two-tools.mjs",
+        "bytes": 9637,
+        "sha256": "4e4d0b5bb70de068551b8a1ecc6ff832951b09d40f4000c8ccbe00cf86f86ee6"
+      },
+      {
+        "path": "scripts/inspect-mcp.mjs",
+        "bytes": 2113,
+        "sha256": "e9fefcfd908db7f58c3e44f55de6c750af3aa7f535e3d868f43ff0ea25e5476c"
+      },
+      {
+        "path": "scripts/observe-reminder.mjs",
+        "bytes": 1073,
+        "sha256": "e5f775025675f8b3a538561227025ded068b09f63f5228a8e78cd585c7f4df88"
+      },
+      {
+        "path": "scripts/plugin-catalog.mjs",
+        "bytes": 851,
+        "sha256": "194b6d3c859c00db4d3bc1fa559aa2d257c2eff1e5486ef226b953be3d7fd3c9"
+      },
+      {
+        "path": "scripts/plugin-manage.mjs",
+        "bytes": 1032,
+        "sha256": "a47a79377c6ae19e7c0a3e83f0b41f40b514810f8d44464a968d1583028ec4c3"
+      },
+      {
+        "path": "scripts/prepare-manual-example.mjs",
+        "bytes": 1615,
+        "sha256": "2bf7ebfcb40c33333ab76429bb00432d699357c801da92f526595311dadde8bc"
+      },
+      {
+        "path": "scripts/prepare-plugin.mjs",
+        "bytes": 807,
+        "sha256": "f3b872bd6116bf98f6dfbc36f54d4a95ffaa581ad1a921f2b53fce6ca388bfd8"
+      },
+      {
+        "path": "scripts/prototype-seed.mjs",
+        "bytes": 1440,
+        "sha256": "612cccb344e9ce1dc65dd60465abc90e613b493364cee771b93567b17da49175"
+      },
+      {
+        "path": "scripts/read-prototype-mcp.mjs",
+        "bytes": 3078,
+        "sha256": "587c7a3f1715d4c754bb00a8ba1912d896e193cf6b5c9e77cdd4c1a8228839a0"
+      },
+      {
+        "path": "scripts/start-prototype.mjs",
+        "bytes": 580,
+        "sha256": "480cec694a9832c02f6cd97ef6ee501ab5397a50988e4e40236c5b82b21b04b3"
+      },
+      {
+        "path": "seed/钟楼.json",
+        "bytes": 864,
+        "sha256": "d29a914c7bf94c5aa738a07b5726c65bd672604064622f25e819f58a1afd1af9"
+      },
+      {
+        "path": "seed/钟楼三章.json",
+        "bytes": 1408,
+        "sha256": "8f2d1d2db7387f69b1a4c07bb3c2f7afd8cc6149af8c2993e026d57681302456"
+      },
+      {
+        "path": "src/agent.ts",
+        "bytes": 6559,
+        "sha256": "0729e972fd114dc208478740b94ae69d362df1e5f77aa84615fe4bd950babd13"
+      },
+      {
+        "path": "src/cli.ts",
+        "bytes": 2998,
+        "sha256": "a1a29756f41469e9e4750be19bbc10bf32568e999d34a460194d817d159e2d77"
+      },
+      {
+        "path": "src/mcp-two-tools.ts",
+        "bytes": 2615,
+        "sha256": "82bd27714c1b78d3efec6cc3e985a08c34b668e789d50b359685d58cb1dbc8a0"
+      },
+      {
+        "path": "src/mcp.ts",
+        "bytes": 6767,
+        "sha256": "44a6e1fe96e6ff0f81f4eff014282e21c8918c6d6398c69c5943f2bc8bd4a109"
+      },
+      {
+        "path": "src/plugin-check.ts",
+        "bytes": 7519,
+        "sha256": "a93438118b19ad40ea71e5926c77a63ac3ed3b4d7b0890e1f5cb5d74751403b4"
+      },
+      {
+        "path": "src/prototype-http.ts",
+        "bytes": 2914,
+        "sha256": "8731b5142030c7dbc5023f51c8a8f90aa77e3aab5a0f83c479a539c9528307c0"
+      },
+      {
+        "path": "src/prototype-server.ts",
+        "bytes": 830,
+        "sha256": "fff0b6e052034ca3a0c0e1d12619187a159f5e7957b7977979e54611a9cfe6b2"
+      },
+      {
+        "path": "src/schemas.ts",
+        "bytes": 1714,
+        "sha256": "ffaa5ef72ac127b7189e2f9aafe52cf5a684935113f8fea8bca1eaed9584338c"
+      },
+      {
+        "path": "src/store.ts",
+        "bytes": 11326,
+        "sha256": "38685e9871494f7bfdd91f7a3dfed2330501e55d97cc6e0e0974bab1d58a28c7"
+      },
+      {
+        "path": "src/test/mcp.test.ts",
+        "bytes": 4300,
+        "sha256": "7a8522799a0adff430ae75384594aa5db02b314e36e4dd9ea1ce3b690c0cd25e"
+      },
+      {
+        "path": "src/test/progression.test.ts",
+        "bytes": 3169,
+        "sha256": "a3f78b10c8d78dbd17e3dda117fa58d9a9ee7eedb30d00e229fca24692f7eb30"
+      },
+      {
+        "path": "src/test/prototype.test.ts",
+        "bytes": 2853,
+        "sha256": "e9a693fa85d919ff5e20ba12f19de572ef3b0eebdc107546bf8f9d8ffd2903cc"
+      },
+      {
+        "path": "src/test/state.test.ts",
+        "bytes": 1611,
+        "sha256": "2d0381258e7390e7d3b552ae8965fca063a96b56d8bf6a48afcde5ac67ca9c32"
+      },
+      {
+        "path": "tsconfig.json",
+        "bytes": 300,
+        "sha256": "a982ac00fcd3d0a538dd14f6080cf0544be074cf6253c801b85cbed3102e6b85"
+      }
+    ]
+  },
+  "node": "v24.12.0",
+  "pnpm": "11.20.0",
+  "sourceAsset": 334,
+  "sourceArchiveSha256": "3713abdf35ada0ffb7ecb871375d305ecad8ccf1294a963a342f615cff010f26",
+  "server": {
+    "base": "http://127.0.0.1:4397",
+    "workId": "investigation-394a891c-e22d-49f1-ba57-ce08803dfe93",
+    "startCommand": [
+      "node",
+      "dist/prototype-server.js",
+      "--db",
+      "../data/investigation.sqlite",
+      "--port",
+      "4397",
+      "--work",
+      "investigation-394a891c-e22d-49f1-ba57-ce08803dfe93"
+    ],
+    "readEvidenceTime": "2026-10-02T21:44:09.321Z",
+    "currentState": "读取完成后已停止；本次宿主任务只调查已有文件和完整读取材料，不重启服务。",
+    "shutdown": {
+      "action": "向已有 PTY 会话发送 Ctrl+C",
+      "ptySession": 21118,
+      "processId": 65068,
+      "reportedPtyExitCode": 1,
+      "processFoundAfterStop": false,
+      "port4397ListeningAfterStop": false,
+      "checkTime": "2026-10-02T22:05:33.3290439Z",
+      "limit": "PTY 回执为退出1；只按实际进程/监听已消失说明关闭，不写成正常退出0。"
+    }
+  },
+  "teacherPreparation": {
+    "seedCommand": [
+      "node",
+      "scripts/prototype-seed.mjs",
+      "--db",
+      "../data/investigation.sqlite",
+      "--id",
+      "investigation-394a891c-e22d-49f1-ba57-ce08803dfe93"
+    ],
+    "source": "fixtures/three-chapter-archive.json",
+    "meaning": "三个完整正文由既有存档人工初始化为新作品draft r1；不复制存档历史，不代表模型新生成。"
+  },
+  "currentTableFile": "五表只读基线.json",
+  "tableCounts": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 3,
+    "chapter_versions": 3,
+    "tasks": 0
+  },
+  "ui": [
+    {
+      "url": "http://127.0.0.1:4397/?chapter=2&variant=original",
+      "variant": "original",
+      "workTitle": "乌桐镇的停钟",
+      "chapter": "第 2 章 · 当前草稿",
+      "revision": "读取 r1 · 草稿 · 依据当前",
+      "title": "墙后的声音",
+      "body": "周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n\n“听见了。像轮齿碰了一下。”\n\n林澈慢慢松开铜摆。摆锤仍垂在地板那颗钉子上方，墙上的影子却照旧往返。他擦掉掌心的汗，翻开笔记，把刚才看见、听见的事分成两行写下。写到声音的位置时，笔尖停住了。隔着砖墙，他还不能断定里面是什么。\n\n他来这里是查看停钟的，师父还等着他带回故障的消息。眼前的齿轮没有坏处可认，墙后却有东西在响。林澈合上笔记，请周伯留在窗边，替他看着影子，自己绕过木架，贴近那面墙。\n\n下一记轻响来时，他正把耳朵抵在砖缝旁。声音从左下方传来，短得像指甲擦过梳齿。他蹲低了一些，避开横梁，听完两个来回，才伸手摸向梁后的墙面。\n\n指腹碰到一块冰凉的铁片。\n\n那里积着厚灰，铁片又被横梁遮住，从钟室中央几乎看不见。林澈用袖口擦出它的边缘：巴掌宽的一块盖板，四角各有一颗螺丝。底边一道窄缝里，露着半截干枯的蛛丝。\n\n“这里以前打开过吗？”\n\n周伯弯腰看了看。“我没动过。平常上来，只在外面照看钟。”\n\n林澈把螺丝刀拿出来，先在掌心转了转，没有立即落到螺丝上。他向周伯说明，自己只想看看盖板后面是否有传动杆，若碰见认不出的东西，就停手。老人挪到横梁另一侧，给他让出蹲身的位置。\n\n第一颗螺丝很紧。林澈压住刀柄，肩膀抵着木架，稍稍加力，终于把它转松。铁盖随之一震，墙里那声轻响恰好传来。他立刻停下，抬头看周伯。\n\n“影子刚过去。”周伯说。\n\n林澈等了一会儿。手上的螺丝刀没有再动，声音仍按原来的间隔响起。他这才继续，逐颗取下螺丝，放进工具箱的浅格里。最后一颗退出时，他托住铁盖，免得它落下。\n\n墙里露出一个浅洞。洞口上沿有一道旧油痕，里面横着一截细轴，比钟架上的轴细得多。一根褪色的红线绕在轴上，末端垂下来，离洞底只有一指宽。\n\n轻响再来，红线颤了一下。\n\n林澈凑近，想看清它怎样动，额头却碰到了横梁。他往后缩，重新蹲稳。周伯扶着梁，也俯下身。两人都没有说话，只看见红线在下一次轻响时又抖动了一下。\n\n“是这儿响？”周伯问。\n\n“至少这里也有东西在动。”\n\n林澈沿着细轴往里看，轴的两端都埋进砖里，洞口太窄，看不到轮齿。他再转头望向停住的钟架。露在外面的杆件，没有一根伸向这个洞；可藏在墙里的部分怎样连接，他不知道。\n\n他把铁盖放到地上，在笔记里画出洞口和细轴，又用铅笔在洞壁上点了一处记号，正对红线垂下的位置。刚才那两下太轻，他还没看清细轴是转过一点，还是只在震动。\n\n“还拆吗？”周伯问。\n\n林澈收起螺丝刀，将灯留在原处。\n\n“先看清它下一次怎么动。”\n\n周伯重新望向墙面。影子的尖端正缓缓接近那道砖缝，林澈蹲在洞口前，等着红线和石壁上的小点再次相遇。",
+      "editState": "与已读取稿一致",
+      "message": "已重新读取当前稿件。",
+      "saveDisabled": true,
+      "selectedChapter": "2",
+      "selectedVariant": "original"
+    },
+    {
+      "url": "http://127.0.0.1:4397/?chapter=2&variant=desk",
+      "variant": "desk",
+      "workTitle": "乌桐镇的停钟",
+      "chapter": "第 2 章 · 当前草稿",
+      "revision": "读取 r1 · 草稿 · 依据当前",
+      "title": "墙后的声音",
+      "body": "周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n\n“听见了。像轮齿碰了一下。”\n\n林澈慢慢松开铜摆。摆锤仍垂在地板那颗钉子上方，墙上的影子却照旧往返。他擦掉掌心的汗，翻开笔记，把刚才看见、听见的事分成两行写下。写到声音的位置时，笔尖停住了。隔着砖墙，他还不能断定里面是什么。\n\n他来这里是查看停钟的，师父还等着他带回故障的消息。眼前的齿轮没有坏处可认，墙后却有东西在响。林澈合上笔记，请周伯留在窗边，替他看着影子，自己绕过木架，贴近那面墙。\n\n下一记轻响来时，他正把耳朵抵在砖缝旁。声音从左下方传来，短得像指甲擦过梳齿。他蹲低了一些，避开横梁，听完两个来回，才伸手摸向梁后的墙面。\n\n指腹碰到一块冰凉的铁片。\n\n那里积着厚灰，铁片又被横梁遮住，从钟室中央几乎看不见。林澈用袖口擦出它的边缘：巴掌宽的一块盖板，四角各有一颗螺丝。底边一道窄缝里，露着半截干枯的蛛丝。\n\n“这里以前打开过吗？”\n\n周伯弯腰看了看。“我没动过。平常上来，只在外面照看钟。”\n\n林澈把螺丝刀拿出来，先在掌心转了转，没有立即落到螺丝上。他向周伯说明，自己只想看看盖板后面是否有传动杆，若碰见认不出的东西，就停手。老人挪到横梁另一侧，给他让出蹲身的位置。\n\n第一颗螺丝很紧。林澈压住刀柄，肩膀抵着木架，稍稍加力，终于把它转松。铁盖随之一震，墙里那声轻响恰好传来。他立刻停下，抬头看周伯。\n\n“影子刚过去。”周伯说。\n\n林澈等了一会儿。手上的螺丝刀没有再动，声音仍按原来的间隔响起。他这才继续，逐颗取下螺丝，放进工具箱的浅格里。最后一颗退出时，他托住铁盖，免得它落下。\n\n墙里露出一个浅洞。洞口上沿有一道旧油痕，里面横着一截细轴，比钟架上的轴细得多。一根褪色的红线绕在轴上，末端垂下来，离洞底只有一指宽。\n\n轻响再来，红线颤了一下。\n\n林澈凑近，想看清它怎样动，额头却碰到了横梁。他往后缩，重新蹲稳。周伯扶着梁，也俯下身。两人都没有说话，只看见红线在下一次轻响时又抖动了一下。\n\n“是这儿响？”周伯问。\n\n“至少这里也有东西在动。”\n\n林澈沿着细轴往里看，轴的两端都埋进砖里，洞口太窄，看不到轮齿。他再转头望向停住的钟架。露在外面的杆件，没有一根伸向这个洞；可藏在墙里的部分怎样连接，他不知道。\n\n他把铁盖放到地上，在笔记里画出洞口和细轴，又用铅笔在洞壁上点了一处记号，正对红线垂下的位置。刚才那两下太轻，他还没看清细轴是转过一点，还是只在震动。\n\n“还拆吗？”周伯问。\n\n林澈收起螺丝刀，将灯留在原处。\n\n“先看清它下一次怎么动。”\n\n周伯重新望向墙面。影子的尖端正缓缓接近那道砖缝，林澈蹲在洞口前，等着红线和石壁上的小点再次相遇。",
+      "editState": "与已读取稿一致",
+      "message": "已重新读取当前稿件。",
+      "saveDisabled": true,
+      "selectedChapter": "2",
+      "selectedVariant": "desk"
+    },
+    {
+      "url": "http://127.0.0.1:4397/?chapter=2&variant=notes",
+      "variant": "notes",
+      "workTitle": "乌桐镇的停钟",
+      "chapter": "第 2 章 · 当前草稿",
+      "revision": "读取 r1 · 草稿 · 依据当前",
+      "title": "墙后的声音",
+      "body": "周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\n\n“听见了。像轮齿碰了一下。”\n\n林澈慢慢松开铜摆。摆锤仍垂在地板那颗钉子上方，墙上的影子却照旧往返。他擦掉掌心的汗，翻开笔记，把刚才看见、听见的事分成两行写下。写到声音的位置时，笔尖停住了。隔着砖墙，他还不能断定里面是什么。\n\n他来这里是查看停钟的，师父还等着他带回故障的消息。眼前的齿轮没有坏处可认，墙后却有东西在响。林澈合上笔记，请周伯留在窗边，替他看着影子，自己绕过木架，贴近那面墙。\n\n下一记轻响来时，他正把耳朵抵在砖缝旁。声音从左下方传来，短得像指甲擦过梳齿。他蹲低了一些，避开横梁，听完两个来回，才伸手摸向梁后的墙面。\n\n指腹碰到一块冰凉的铁片。\n\n那里积着厚灰，铁片又被横梁遮住，从钟室中央几乎看不见。林澈用袖口擦出它的边缘：巴掌宽的一块盖板，四角各有一颗螺丝。底边一道窄缝里，露着半截干枯的蛛丝。\n\n“这里以前打开过吗？”\n\n周伯弯腰看了看。“我没动过。平常上来，只在外面照看钟。”\n\n林澈把螺丝刀拿出来，先在掌心转了转，没有立即落到螺丝上。他向周伯说明，自己只想看看盖板后面是否有传动杆，若碰见认不出的东西，就停手。老人挪到横梁另一侧，给他让出蹲身的位置。\n\n第一颗螺丝很紧。林澈压住刀柄，肩膀抵着木架，稍稍加力，终于把它转松。铁盖随之一震，墙里那声轻响恰好传来。他立刻停下，抬头看周伯。\n\n“影子刚过去。”周伯说。\n\n林澈等了一会儿。手上的螺丝刀没有再动，声音仍按原来的间隔响起。他这才继续，逐颗取下螺丝，放进工具箱的浅格里。最后一颗退出时，他托住铁盖，免得它落下。\n\n墙里露出一个浅洞。洞口上沿有一道旧油痕，里面横着一截细轴，比钟架上的轴细得多。一根褪色的红线绕在轴上，末端垂下来，离洞底只有一指宽。\n\n轻响再来，红线颤了一下。\n\n林澈凑近，想看清它怎样动，额头却碰到了横梁。他往后缩，重新蹲稳。周伯扶着梁，也俯下身。两人都没有说话，只看见红线在下一次轻响时又抖动了一下。\n\n“是这儿响？”周伯问。\n\n“至少这里也有东西在动。”\n\n林澈沿着细轴往里看，轴的两端都埋进砖里，洞口太窄，看不到轮齿。他再转头望向停住的钟架。露在外面的杆件，没有一根伸向这个洞；可藏在墙里的部分怎样连接，他不知道。\n\n他把铁盖放到地上，在笔记里画出洞口和细轴，又用铅笔在洞壁上点了一处记号，正对红线垂下的位置。刚才那两下太轻，他还没看清细轴是转过一点，还是只在震动。\n\n“还拆吗？”周伯问。\n\n林澈收起螺丝刀，将灯留在原处。\n\n“先看清它下一次怎么动。”\n\n周伯重新望向墙面。影子的尖端正缓缓接近那道砖缝，林澈蹲在洞口前，等着红线和石壁上的小点再次相遇。",
+      "editState": "与已读取稿一致",
+      "message": "已重新读取当前稿件。",
+      "saveDisabled": true,
+      "selectedChapter": "2",
+      "selectedVariant": "notes"
+    }
+  ],
+  "rawGetResponses": [
+    {
+      "time": "2026-10-02T21:44:07.126Z",
+      "method": "GET",
+      "url": "http://127.0.0.1:4397/api/config",
+      "status": 200,
+      "bodyText": "{\"workId\":\"investigation-394a891c-e22d-49f1-ba57-ce08803dfe93\"}",
+      "body": {
+        "workId": "investigation-394a891c-e22d-49f1-ba57-ce08803dfe93"
+      }
+    },
+    {
+      "time": "2026-10-02T21:44:07.129Z",
+      "method": "GET",
+      "url": "http://127.0.0.1:4397/api/work?work=investigation-394a891c-e22d-49f1-ba57-ce08803dfe93",
+      "status": 200,
+      "bodyText": "{\"work\":{\"id\":\"investigation-394a891c-e22d-49f1-ba57-ce08803dfe93\",\"title\":\"乌桐镇的停钟\",\"purpose\":\"以三个连续章节练习资料组织、人工改稿、会话接续和实际结果检查；稿件仍待真实读者判断。\",\"requirements\":[\"读者未读设定表，应能从正文理解林澈的目的、阻碍和后续行动。\",\"每章正文约 800 至 1200 个中文字符，本次只写指定章节。\",\"续写依据当前资料与前章正文；未获知的细节可以相容补充，关键冲突由人取舍。\"],\"facts\":[\"林澈是修钟师学徒，这是他第一次来到乌桐镇。\",\"林澈没有钟楼钥匙，进入钟楼需要守塔人开门。\",\"钟楼的钟在昨夜停了。\",\"守塔人名叫周伯。第一章的人工改稿决定：每次影子的尖端擦过砖缝，墙后便传来一次细微齿轮声。\"],\"outline\":[{\"number\":1,\"titleHint\":\"停钟\",\"goal\":\"林澈受托查看停钟，在门外遇到阻碍，由守塔人开门；钟楼内出现一个具体异常。\"},{\"number\":2,\"titleHint\":\"墙后的声音\",\"goal\":\"周伯在场，林澈依据影子与细微齿轮声寻找线索，采取可理解的行动，不立即解释全部异常。\"},{\"number\":3,\"titleHint\":\"一次验证\",\"goal\":\"依据前两章做一次可观察的验证，交代这段探索取得的具体发现；未解释的问题可以保留。\"}],\"revision\":1},\"chapters\":[{\"workId\":\"investigation-394a891c-e22d-49f1-ba57-ce08803dfe93\",\"number\":1,\"revision\":1,\"title\":\"停钟\",\"body\":\"林澈走到钟楼门前时，乌桐镇的早市已经开了。卖鱼的人用刀背敲着木盆，蒸笼掀起一片白雾，唯独街尾那座高塔没有声音。他仰头看了看钟面，两根针叠在十一点的位置，像被谁用手按住了。\\n\\n这是他第一次来乌桐镇。师父清早把镇上送来的信交给他，说钟在昨夜停了，要他先去查看，认清故障再回来取零件。他还只是个修钟师学徒，工具箱里除了油壶、钳子和几把螺丝刀，另有一本被翻软了的笔记。他把信夹在笔记里，一路走来，已默背了三遍检查的顺序。\\n\\n塔门上挂着一把铁锁。林澈推了一下，门缝里落出灰来，锁却纹丝不动。他没有钥匙，只能敲门。三声过后，里面没有回应。他绕到侧面，发现窄窗都钉着铁条，也看不见守塔人的住处。\\n\\n隔壁铺子的女人正在扫地，见他提着工具箱，指了指门旁一根磨黑的绳子。林澈拉了绳，门后终于响起脚步。守塔人周伯穿着旧棉袄，打开门上的小木窗，先看箱子，再看他的脸。\\n\\n“修钟的？”\\n\\n“师父让我先来看看。”林澈递过信。\\n\\n老人把信展开，却没有立即开门。“以前都是他自己来。”\\n\\n“他让我把坏在哪里查清楚。”林澈顿了顿，“要是查不出来，我也照实告诉他。”\\n\\n老人盯了他一会儿，将信折好，从腰间摸出钥匙。锁舌退出时发出一声脆响。林澈以为门就要开了，老人却隔着门又问：“带灯没有？”\\n\\n林澈摇头。来之前，他只想到钟塔里有窗。\\n\\n木窗合上了。他站在门外，听见里面柜门开合，担心老人改了主意。片刻后，铁锁被取下，塔门向内打开。守塔人提着一盏灯让出路，等林澈跨过门槛，才把钥匙收回腰间。\\n\\n楼梯狭窄，木板中央踩出了浅槽。林澈跟在灯后面，将工具箱贴紧腿，免得碰上墙。走到半途，老人停下来喘气，他便也停住。这一路没有钟摆的响声，只有灯罩轻轻碰着提柄。\\n\\n钟室里比外面冷。粗大的齿轮嵌在木架之间，钢索垂进楼板的孔洞。林澈放下箱子，先沿着传动杆查看，又蹲下检查摆锤。铜摆停在正中，伸手轻触，它只晃了一下便静下来。\\n\\n“什么时候发现的？”\\n\\n“昨夜。该敲十二下的时候，一下也没敲。”\\n\\n林澈记下这句话，借灯检查齿轮边缘。没有断齿，也没有夹住的杂物。他暂时不敢下结论，便请守塔人把灯举高，自己绕到木架后面，看被齿轮遮住的轴承。\\n\\n老人抬起手。墙上的铜摆影子随灯光拉长，扫过林澈打开的笔记。他正要翻页，忽然停住了。\\n\\n那影子又扫了回来。\\n\\n林澈看向铜摆。铜摆垂在原处，下面的尖端正对着地板上一颗钉子。他伸手握住摆杆，再请老人把灯放在窗台上。\\n\\n灯不动了，摆杆也被他握紧。墙上的影子却仍在左右摆动，每次经过中间，影子的尖端都会擦过同一道砖缝。\\n\\n林澈的手心慢慢出了汗。他没有松开铜摆，眼睛随着墙上那道影子，等它又往返了一次。\\n\\n影子的尖端再次擦过那道砖缝时，墙后响起一记极轻的齿轮声。林澈听完一个来回，才转过头问周伯：“您也听见了吗？”\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-02T21:42:10.936Z\",\"previousRevisions\":[],\"reviewNote\":null,\"basisCurrent\":true},{\"workId\":\"investigation-394a891c-e22d-49f1-ba57-ce08803dfe93\",\"number\":2,\"revision\":1,\"title\":\"墙后的声音\",\"body\":\"周伯侧过脸，等影子的尖端又擦过砖缝，才点了一下头。\\n\\n“听见了。像轮齿碰了一下。”\\n\\n林澈慢慢松开铜摆。摆锤仍垂在地板那颗钉子上方，墙上的影子却照旧往返。他擦掉掌心的汗，翻开笔记，把刚才看见、听见的事分成两行写下。写到声音的位置时，笔尖停住了。隔着砖墙，他还不能断定里面是什么。\\n\\n他来这里是查看停钟的，师父还等着他带回故障的消息。眼前的齿轮没有坏处可认，墙后却有东西在响。林澈合上笔记，请周伯留在窗边，替他看着影子，自己绕过木架，贴近那面墙。\\n\\n下一记轻响来时，他正把耳朵抵在砖缝旁。声音从左下方传来，短得像指甲擦过梳齿。他蹲低了一些，避开横梁，听完两个来回，才伸手摸向梁后的墙面。\\n\\n指腹碰到一块冰凉的铁片。\\n\\n那里积着厚灰，铁片又被横梁遮住，从钟室中央几乎看不见。林澈用袖口擦出它的边缘：巴掌宽的一块盖板，四角各有一颗螺丝。底边一道窄缝里，露着半截干枯的蛛丝。\\n\\n“这里以前打开过吗？”\\n\\n周伯弯腰看了看。“我没动过。平常上来，只在外面照看钟。”\\n\\n林澈把螺丝刀拿出来，先在掌心转了转，没有立即落到螺丝上。他向周伯说明，自己只想看看盖板后面是否有传动杆，若碰见认不出的东西，就停手。老人挪到横梁另一侧，给他让出蹲身的位置。\\n\\n第一颗螺丝很紧。林澈压住刀柄，肩膀抵着木架，稍稍加力，终于把它转松。铁盖随之一震，墙里那声轻响恰好传来。他立刻停下，抬头看周伯。\\n\\n“影子刚过去。”周伯说。\\n\\n林澈等了一会儿。手上的螺丝刀没有再动，声音仍按原来的间隔响起。他这才继续，逐颗取下螺丝，放进工具箱的浅格里。最后一颗退出时，他托住铁盖，免得它落下。\\n\\n墙里露出一个浅洞。洞口上沿有一道旧油痕，里面横着一截细轴，比钟架上的轴细得多。一根褪色的红线绕在轴上，末端垂下来，离洞底只有一指宽。\\n\\n轻响再来，红线颤了一下。\\n\\n林澈凑近，想看清它怎样动，额头却碰到了横梁。他往后缩，重新蹲稳。周伯扶着梁，也俯下身。两人都没有说话，只看见红线在下一次轻响时又抖动了一下。\\n\\n“是这儿响？”周伯问。\\n\\n“至少这里也有东西在动。”\\n\\n林澈沿着细轴往里看，轴的两端都埋进砖里，洞口太窄，看不到轮齿。他再转头望向停住的钟架。露在外面的杆件，没有一根伸向这个洞；可藏在墙里的部分怎样连接，他不知道。\\n\\n他把铁盖放到地上，在笔记里画出洞口和细轴，又用铅笔在洞壁上点了一处记号，正对红线垂下的位置。刚才那两下太轻，他还没看清细轴是转过一点，还是只在震动。\\n\\n“还拆吗？”周伯问。\\n\\n林澈收起螺丝刀，将灯留在原处。\\n\\n“先看清它下一次怎么动。”\\n\\n周伯重新望向墙面。影子的尖端正缓缓接近那道砖缝，林澈蹲在洞口前，等着红线和石壁上的小点再次相遇。\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-02T21:42:10.939Z\",\"previousRevisions\":[{\"number\":1,\"revision\":1}],\"reviewNote\":null,\"basisCurrent\":true},{\"workId\":\"investigation-394a891c-e22d-49f1-ba57-ce08803dfe93\",\"number\":3,\"revision\":1,\"title\":\"一次验证\",\"body\":\"墙里轻响了一下，红线的末端向旁边颤动，又垂回石壁上的小点前。\\n\\n林澈屏着气，等到下一声。红线仍是这样。他伸直僵硬的膝盖，揉了揉眼睛。只看这根软线，无论细轴在转，还是整面墙轻轻震动，末端都可能晃起来。他得在轴本身留个记号。\\n\\n周伯看着他重新拿出铅笔。\\n\\n“没看清？”\\n\\n“看清线动了。轴还没看清。”\\n\\n林澈用袖口擦净细轴朝外的一小块表面，在上面画了一道短线。他把洞壁上的小点补深，低下头，让短线的下端正对着小点。铅笔收回后，他没有再碰细轴，也没去拨那根红线。\\n\\n他请周伯站到能看清影子的位置，尖端擦过砖缝就说一声。自己坐在工具箱上，扶住膝盖，眼睛对着洞口。灯仍留在窗台上，细轴的一面泛着暗光，新画的短线清楚地横在上面。\\n\\n“过了。”周伯说。\\n\\n齿轮声轻轻一响，短线向上挪了一点。\\n\\n林澈等着它回来。红线的末端已经垂稳，轴上的短线却留在新的位置，和石壁的小点错开了。\\n\\n第二声来了。短线又向上移，停住。\\n\\n林澈的膝盖渐渐发麻，他却不敢换位置。周伯每说一次“过了”，洞里就响一下，短线就再挪一点。到第六次，它已经靠近细轴的上沿，最初朝外的那块轴面慢慢转了过去。\\n\\n“您过来看。”林澈说。\\n\\n他起身让出工具箱。周伯坐下来，照着他的样子，对准洞壁的小点。等齿轮声再次响起，老人伸出手，指尖停在洞口外，没有碰进去。\\n\\n“又往上走了。”\\n\\n林澈点头。他们看见的是同一件事：细轴每次转过一点，停在新位置，下一声再接着转。红线落回原处，轴上的记号却没有回去。\\n\\n林澈回到钟架前，从最下面的齿轮看到传动杆。那些他来时检查过的部件仍然静止，铜摆也垂在原处。他原以为钟停了，里面的东西便该一同停住；现在至少知道，墙里的这截细轴还在转。\\n\\n“那就是它把钟卡住了？”周伯问。\\n\\n林澈望着窄洞。轴两端都藏在砖里，怎样接到钟架上，眼下还看不见。\\n\\n“还不知道。得请师父来看它往哪里接。”\\n\\n周伯没说话，手掌在膝上搓了搓，起身给他让路。\\n\\n林澈翻开笔记，在洞口的图旁画出短线先后停过的位置，又记下周伯报出的次数。他把影子经过砖缝时的轻响也写在旁边。纸页上还空着故障原因那一栏，他没有急着填。\\n\\n师父早上让他查清坏在哪里，他还不能交出答案。不过回去时，他能说清墙里还有一截转动的轴，也能带师父找到这块被横梁挡住的盖板。\\n\\n他把铁盖装回去，逐颗拧好螺丝，请周伯保留洞壁上的记号，等师父来时再打开。老人收起灯，带他下楼。经过那段窄梯，林澈又听见头顶传来一声轻响。\\n\\n塔门在身后锁上。街上的人仍朝无声的钟面望了一眼，林澈则把笔记夹回工具箱，沿来路快步往师父的铺子走去。\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-02T21:42:10.941Z\",\"previousRevisions\":[{\"number\":1,\"revision\":1},{\"number\":2,\"revision\":1}],\"reviewNote\":null,\"basisCurrent\":true}]}",
+      "body": {
+        "work": "@{id=investigation-394a891c-e22d-49f1-ba57-ce08803dfe93; title=乌桐镇的停钟; purpose=以三个连续章节练习资料组织、人工改稿、会话接续和实际结果检查；稿件仍待真实读者判断。; requirements=System.Object[]; facts=System.Object[]; outline=System.Object[]; revision=1}",
+        "chapters": "  "
+      }
+    }
+  ],
+  "readOnlyRunScope": "教师已通过原有种子写入自有库；本脚本只用GET、页面选择/读回和只读SQLite读取。主库字节不代表WAL期间的完整业务状态。没有复演旧保存故障，也没有新应用补丁。 服务已停止；上面的HTTP和页面状态属于停机前的实际读取，不表示现在仍在监听。宿主空会话、归档和观察记录有宿主/观察器写入；read-only只说明当前模型shell权限，不代表整个准备过程没有写入。",
+  "dependencyPreparation": {
+    "packageManager": "pnpm@11.20.0",
+    "originalWorkspace": {
+      "path": "pnpm-workspace.yaml",
+      "content": "packages:\r\n  - '.'\r\nminimumReleaseAgeExclude:\r\n  - '@openai/codex-sdk@0.160.0'\r\n  - '@openai/codex@0.160.0-darwin-arm64 || 0.160.0-darwin-x64 || 0.160.0-linux-arm64 || 0.160.0-linux-x64 || 0.160.0-win32-arm64 || 0.160.0-win32-x64 || 0.160.0'\r\n  - '@types/node@24.19.1'\r\n",
+      "meaning": "原包已有固定版本排除；本次额外ignore-workspace跳过这些设置。"
+    },
+    "initial": {
+      "command": [
+        "pnpm",
+        "install",
+        "--ignore-workspace",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 1,
+      "fullOutput": "? Verifying lockfile against supply-chain policies (130 entries)...\r\nLockfile is up to date, resolution step is skipped\r\nProgress: resolved 1, reused 0, downloaded 0, added 0\r\nPackages: +106\r\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\r\nPackages are hard linked from the content-addressable store to the virtual store.\r\n  Content-addressable store is at: D:\\Dev\\PackageData\\pnpm\\store\\v11\r\n  Virtual store is at:             node_modules/.pnpm\r\nProgress: resolved 106, reused 106, downloaded 0, added 24\r\n✗ Lockfile failed supply-chain policy check (130 entries in 1.1s)\r\nProgress: resolved 106, reused 106, downloaded 0, added 106, done\r\n[ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION] 1 lockfile entries failed verification:\r\n  @types/node@24.19.1 was published at 2026-10-01T22:38:02.894Z, within the minimumReleaseAge cutoff (2026-10-01T21:37:59.623Z)\r\n\r\nThe lockfile contains entries that the active policies reject. This can mean the lockfile is stale, or that someone committed a lockfile that bypassed the policy locally — inspect recent changes to pnpm-lock.yaml before trusting it. If the changes look expected, run \"pnpm clean --lockfile\" and then \"pnpm install\" to rebuild from a fresh resolution. Alternatively, relax the policy that flagged them.\r\n"
+    },
+    "acceptedOverride": {
+      "command": [
+        "pnpm",
+        "--config.minimumReleaseAge=0",
+        "install",
+        "--ignore-workspace",
+        "--frozen-lockfile"
+      ],
+      "exitCode": 0,
+      "fullOutput": "? Verifying lockfile against supply-chain policies (130 entries)...\r\nLockfile is up to date, resolution step is skipped\r\nProgress: resolved 1, reused 0, downloaded 0, added 0\r\nPackages: +106\r\n++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\r\nPackages are hard linked from the content-addressable store to the virtual store.\r\n  Content-addressable store is at: D:\\Dev\\PackageData\\pnpm\\store\\v11\r\n  Virtual store is at:             node_modules/.pnpm\r\n✓ Lockfile passes supply-chain policies (130 entries in 409ms)\r\nProgress: resolved 106, reused 106, downloaded 0, added 33\r\nProgress: resolved 106, reused 106, downloaded 0, added 106, done\r\n\r\ndependencies:\r\n+ @modelcontextprotocol/sdk 1.31.0\r\n+ @openai/codex-sdk 0.160.0\r\n+ zod 4.6.5\r\n\r\ndevDependencies:\r\n+ @playwright/test 1.63.0\r\n+ @types/node 24.19.1\r\n+ typescript 7.0.2\r\n\r\nDone in 2.2s using pnpm v11.20.0\r\n",
+      "scope": "主编批准的本命令数值覆盖；未改全局配置、源码、package.json或锁文件。"
+    },
+    "build": {
+      "command": [
+        "pnpm",
+        "--ignore-workspace",
+        "run",
+        "build"
+      ],
+      "exitCode": 0,
+      "fullOutput": "? Verifying lockfile against supply-chain policies (130 entries)...\r\nLockfile is up to date, resolution step is skipped\r\nAlready up to date\r\n✓ Lockfile passes supply-chain policies (130 entries in 433ms)\r\n\r\nDone in 720ms using pnpm v11.20.0\r\n$ tsc -p tsconfig.json\r\n"
+    },
+    "selectedConfigProbe": {
+      "normalCommand": [
+        "pnpm",
+        "config",
+        "get",
+        "minimumReleaseAgeExclude",
+        "--json"
+      ],
+      "normalResult": [
+        "@openai/codex-sdk@0.160.0",
+        "@openai/codex@0.160.0-darwin-arm64 || 0.160.0-darwin-x64 || 0.160.0-linux-arm64 || 0.160.0-linux-x64 || 0.160.0-win32-arm64 || 0.160.0-win32-x64 || 0.160.0",
+        "@types/node@24.19.1"
+      ],
+      "ignoreCommand": [
+        "pnpm",
+        "--ignore-workspace",
+        "config",
+        "get",
+        "minimumReleaseAgeExclude",
+        "--json"
+      ],
+      "ignoreOutput": "",
+      "scope": "只读取选定属性；不读取认证等无关设置，没有config set。"
+    },
+    "readerRestoration": {
+      "command": [
+        "pnpm",
+        "install",
+        "--frozen-lockfile"
+      ],
+      "scope": "读者恢复应保留原项目workspace；此为恢复入口说明，不冒充本次重新执行。没有重复安装。"
+    }
+  }
+}

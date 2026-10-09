@@ -1,0 +1,14 @@
+fatal: cannot use NUL as an exclude file
+
+path                    matchesRecordedSha256
+----                    ---------------------
+prototype/app.js                         True
+prototype/index.html                     True
+prototype/app.css                        True
+src/store.ts                             True
+src/prototype-http.ts                    True
+src/prototype-server.ts                  True
+src/schemas.ts                           True
+package.json                             True
+pnpm-lock.yaml                           True
+

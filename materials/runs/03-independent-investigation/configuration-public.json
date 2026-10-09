@@ -1,0 +1,122 @@
+{
+  "model": "gpt-6.1-sol",
+  "features": {
+    "hooks": false,
+    "shell_tool": true,
+    "memories": false,
+    "remote_control": false
+  },
+  "memories": {
+    "use_memories": false,
+    "generate_memories": false
+  },
+  "web_search": "disabled",
+  "sandbox_mode": "read-only",
+  "approval_policy": "never",
+  "project_doc_max_bytes": 0,
+  "developerInstructionsPresent": false,
+  "mcpEntries": [
+    {
+      "name": "blender",
+      "enabled": false
+    },
+    {
+      "name": "anki_mcp",
+      "enabled": false
+    },
+    {
+      "name": "node_repl",
+      "enabled": false
+    },
+    {
+      "name": "codex_apps",
+      "enabled": false
+    },
+    {
+      "name": "comfy_mcp",
+      "enabled": false
+    }
+  ],
+  "pluginEntries": [
+    {
+      "name": "code-review@openai-bundled",
+      "enabled": false
+    },
+    {
+      "name": "scene-production@personal",
+      "enabled": false
+    },
+    {
+      "name": "novel-practice@novel-agent-lab",
+      "enabled": false
+    },
+    {
+      "name": "presentations@openai-primary-runtime",
+      "enabled": false
+    },
+    {
+      "name": "chrome@openai-bundled",
+      "enabled": false
+    },
+    {
+      "name": "codex-app-tools@openai-bundled",
+      "enabled": false
+    },
+    {
+      "name": "novel-workbench-course@novel-workbench-course-lab",
+      "enabled": false
+    },
+    {
+      "name": "browser@openai-bundled",
+      "enabled": false
+    },
+    {
+      "name": "pdf@openai-primary-runtime",
+      "enabled": false
+    },
+    {
+      "name": "spreadsheets@openai-primary-runtime",
+      "enabled": false
+    },
+    {
+      "name": "frameflow@frameflow",
+      "enabled": false
+    },
+    {
+      "name": "documents@openai-primary-runtime",
+      "enabled": false
+    },
+    {
+      "name": "tripo-studio-mcp@tripo-studio",
+      "enabled": false
+    },
+    {
+      "name": "visualize@openai-bundled",
+      "enabled": false
+    },
+    {
+      "name": "template-creator@openai-primary-runtime",
+      "enabled": false
+    },
+    {
+      "name": "frameflow@personal",
+      "enabled": false
+    },
+    {
+      "name": "coursebook@personal",
+      "enabled": false
+    },
+    {
+      "name": "unified-computer-use@openai-bundled",
+      "enabled": false
+    }
+  ],
+  "skills": {
+    "bundled": {
+      "enabled": false
+    },
+    "configuredCount": 24,
+    "enabledConfiguredCount": 0
+  },
+  "explanation": "只保留能力开关与实际目录状态；无关Skill的描述/正文、账户或身份字段不公开。全局用户规则仅记录来源路径，不读取正文。"
+}
