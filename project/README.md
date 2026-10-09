@@ -1,4 +1,4 @@
-# 从 ChatCut 看插件驱动的软件范式
+# 使用现成插件，让 AI 接入已有工作系统
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 
