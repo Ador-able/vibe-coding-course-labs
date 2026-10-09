@@ -2,7 +2,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {mkdirSync} from 'node:fs';
 import {dirname} from 'node:path';
 import assert from 'node:assert/strict';
-import {LabError,type WorkInput,type DraftInput} from './schemas.js';
+import {LabError,type WorkInput,type DraftInput,type ApprovedExcerpt} from './schemas.js';
 
 export type Work=WorkInput & {revision:number};
 export type Chapter={workId:string;number:number;revision:number;title:string;body:string;status:'draft'|'adopted';workRevision:number;origin:'human'|'agent';taskId:string|null;threadId:string|null;updatedAt:string;previousRevisions?:{number:number;revision:number}[];reviewNote?:string|null};
@@ -107,6 +107,14 @@ export class Store {
       const chapter:Chapter={workId:work.id,number:input.chapterNumber,revision:(current?.revision??0)+1,title:input.title,body:input.body,status:'draft',workRevision:work.revision,origin,taskId,threadId:task?.threadId??null,updatedAt:new Date().toISOString(),previousRevisions:bases,reviewNote:null};
       return this.persistChapter(chapter);
     });
+  }
+  reviseExcerpt(scope:ApprovedExcerpt,replacement:string,origin:'human'|'agent',taskId:string|null=null):Chapter{
+    const current=this.getChapter(scope.workId,scope.chapterNumber);
+    if(!current)throw new LabError('CHAPTER_NOT_FOUND','还没有该章正文，不能局部修改。');
+    if(current.revision!==scope.expectedChapterRevision)throw new LabError('STALE_CHAPTER',`正文已是 r${current.revision}，请重读后重新选定范围。`);
+    if(scope.end>current.body.length||current.body.slice(scope.start,scope.end)!==scope.originalText)throw new LabError('EXCERPT_MISMATCH','当前正文与人工选区不一致，请重读后重新选定范围。');
+    // UTF-16 选区外沿用当前原文，事务内的修订检查仍由同一保存函数承担。
+    return this.saveDraft({...scope,title:current.title,body:current.body.slice(0,scope.start)+replacement+current.body.slice(scope.end)},origin,taskId);
   }
   adopt(workId:string,number:number,expectedRevision:number,note:string):Chapter{
     return this.transaction(()=>{

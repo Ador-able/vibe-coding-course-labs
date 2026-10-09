@@ -28,7 +28,7 @@ function render(){
   }
   if(!edits.has(selected))edits.set(selected,{base:structuredClone(chapter),workRevision:snapshot.work.revision,previous:snapshot.chapters.filter(c=>c.number<selected).map(c=>({number:c.number,revision:c.revision})),title:chapter.title,body:chapter.body});
   const current=edit();
-  $('chapter-label').textContent='第 '+selected+' 章 · 当前草稿';
+  $('chapter-label').textContent='第 '+selected+' 章 · 当前稿件';
   $('chapter-heading').textContent=current.base.title;
   $('revision').textContent='读取 r'+current.base.revision+' · '+(current.base.status==='draft'?'草稿':'已采用')+' · '+(current.base.basisCurrent?'依据当前':'依据有变动');
   $('draft-title').disabled=busy;$('draft-body').disabled=busy;
