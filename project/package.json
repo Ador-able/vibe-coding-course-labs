@@ -23,6 +23,8 @@
     "plugin:observe": "node scripts/observe-plugin.mjs",
     "host:opencode": "node scripts/opencode-local.mjs",
     "host:observe": "node scripts/observe-opencode.mjs"
+    ,"hook:preflight": "node scripts/hook-preflight.mjs"
+    ,"hook:observe": "node scripts/observe-hooks.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.31.0",
