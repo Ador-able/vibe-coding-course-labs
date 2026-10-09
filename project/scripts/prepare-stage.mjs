@@ -12,7 +12,7 @@ for(const target of [folder,db]){
 }
 await mkdir(folder,{recursive:true});
 await mkdir(resolve('deliverables'),{recursive:true});
-const sources=resolve(root,'../../vcm-15-02/阶段练习材料');
+const sources=resolve(root,'fixtures/task-planning');
 const copied=[];
 for(const name of ['PRD-人工示范.md','阶段计划-人工示范.md']){
   const from=resolve(sources,name),to=resolve(folder,name);await copyFile(from,to);
