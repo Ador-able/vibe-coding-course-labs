@@ -1,0 +1,20 @@
+{
+  "projection": "省略内部审核字段与本机调用器路径；cwd以project表示，argv首项pnpm安装位置以pnpm表示；只替换stdout/stderr中上述机器位置，不改业务文字。",
+  "action": "history",
+  "workingDirectory": "project",
+  "executable": "node",
+  "argv": [
+    "pnpm",
+    "run",
+    "history",
+    "state/history-01"
+  ],
+  "head": "32c23dca76078e134021fbc860c05ceb570966d8",
+  "startedAt": "2026-10-05T01:11:02.271Z",
+  "finishedAt": "2026-10-05T01:11:02.921Z",
+  "status": 1,
+  "signal": null,
+  "scope": "非模型本地动作；环境不提供DASHSCOPE_API_KEY。",
+  "stdout": "[ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY] Aborted removal of modules directory due to no TTY\n\nIf you are running pnpm in CI, set the CI environment variable to \"true\", or set \"confirmModulesPurge\" to \"false\".\n[ERROR] Command failed with exit code 1: \"C:\\Program Files\\nodejs\\node.exe\" \"<本机pnpm安装路径>\\bin\\pnpm.mjs\" install\n\npnpm: Command failed with exit code 1: \"C:\\Program Files\\nodejs\\node.exe\" \"<本机pnpm安装路径>\\bin\\pnpm.mjs\" install\n    at getFinalError (file:///<本机pnpm安装路径>/dist/pnpm.mjs:89001:14)\n    at makeError (file:///<本机pnpm安装路径>/dist/pnpm.mjs:91308:21)\n    at getSyncResult (file:///<本机pnpm安装路径>/dist/pnpm.mjs:93152:10)\n    at spawnSubprocessSync (file:///<本机pnpm安装路径>/dist/pnpm.mjs:93112:14)\n    at execaCoreSync (file:///<本机pnpm安装路径>/dist/pnpm.mjs:93042:23)\n    at callBoundExeca (file:///<本机pnpm安装路径>/dist/pnpm.mjs:95570:23)\n    at boundExeca (file:///<本机pnpm安装路径>/dist/pnpm.mjs:95547:49)\n    at sync2 (file:///<本机pnpm安装路径>/dist/pnpm.mjs:95706:10)\n    at runPnpmCli (file:///<本机pnpm安装路径>/dist/pnpm.mjs:252536:5)\n    at runDepsStatusCheck (file:///<本机pnpm安装路径>/dist/pnpm.mjs:254302:7)\n",
+  "stderr": ""
+}

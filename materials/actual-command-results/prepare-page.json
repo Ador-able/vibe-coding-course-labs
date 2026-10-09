@@ -1,0 +1,21 @@
+{
+  "projection": "省略内部审核字段与本机调用器路径；cwd以project表示，argv首项pnpm安装位置以pnpm表示；只替换stdout/stderr中上述机器位置，不改业务文字。",
+  "action": "prepare-page",
+  "workingDirectory": "project",
+  "executable": "node",
+  "argv": [
+    "pnpm",
+    "run",
+    "prepare:page",
+    "runs/read-01.json",
+    "public/state.json"
+  ],
+  "head": "bfc0a4ba8e40e5023f3fedd1b84303c5c9fc0096",
+  "startedAt": "2026-10-05T01:27:36.475Z",
+  "finishedAt": "2026-10-05T01:27:36.778Z",
+  "status": 0,
+  "signal": null,
+  "scope": "非模型本地动作；环境不提供DASHSCOPE_API_KEY。",
+  "stdout": "{\n  \"output\": \"project\\\\public\\\\state.json\",\n  \"sourceIds\": [\n    \"R01\",\n    \"R02\",\n    \"R03\",\n    \"R04\",\n    \"R05\",\n    \"R06\",\n    \"R07\",\n    \"R08\"\n  ],\n  \"modelRequests\": 0,\n  \"scope\": \"由完整纯读取回执制作静态浏览数据；未打开浏览器。\"\n}\n\n",
+  "stderr": "$ node prepare-page.mjs \"runs/read-01.json\" \"public/state.json\"\n"
+}

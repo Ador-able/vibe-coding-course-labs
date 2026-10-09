@@ -1,0 +1,688 @@
+{
+  "sourceId": "R06",
+  "input": {
+    "path": "inputs/reports.json",
+    "bytes": 2359,
+    "sha256": "0c7109884a5cd1c2ed1c084a6a34edf75874dd8b00ba3776540740c7e1b3f39d",
+    "record": {
+      "id": "R06",
+      "text": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。"
+    }
+  },
+  "generationState": "returned",
+  "checkState": "passed",
+  "contentDecision": "needs_human",
+  "currentAttempt": "repair-01",
+  "attempts": [
+    {
+      "id": "187-extract-01",
+      "origin": "187-single-request",
+      "representation": "格式化派生对象；完整原八项回答及单次HTTP原件保留。",
+      "requestPath": "runs/extract-01/request-body.json",
+      "responsePath": "runs/extract-01/response-body.txt",
+      "requestSHA256": "12975894844c5b58fcf14ac97ad2c592abd660fa27c30ccf8259db6d67717525",
+      "responseSHA256": "82b453bd62ba84ce8cb307e7b8bca53a6f488cc31c3263d73d5d96697516df9c",
+      "resultPath": "history-records/R06.json",
+      "resultSHA256": "8b68656975354f0864949dfa779e48f9f974e33926d903ba53037de8d4632c61",
+      "recipe": {
+        "origin": "187-single-request",
+        "model": {
+          "modelId": "qwen-plus-2025-12-01",
+          "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "temperature": 0,
+          "maxOutputTokens": 6144,
+          "maxRetries": 0,
+          "enable_thinking": false
+        },
+        "inputCollectionSHA256": "0c7109884a5cd1c2ed1c084a6a34edf75874dd8b00ba3776540740c7e1b3f39d",
+        "instructionsSHA256": "a044f2fafd4695188a4b4546ebc31bed7dbf553452c204c617f7bab5080fd878",
+        "promptSHA256": "b1b4c6d1d86b8e626b10810f5753319ac357fcac9b9e1237c27e5ba18e6e23c3",
+        "checkVersion": "course-record-check-v1"
+      },
+      "recipeSHA256": "557ae8533417c036ba5f003b32357fef051ef93e40d4c83570e15b4d9848944c",
+      "generationState": "returned",
+      "checkOrigin": "本节零模型历史登记",
+      "check": {
+        "version": "course-record-check-v1",
+        "checkState": "failed",
+        "issues": [
+          {
+            "kind": "evidence",
+            "field": "subscriptions",
+            "quote": "没有实际...新增订阅...数据",
+            "message": "不是本项连续原文，且不属于允许的 null 证据。"
+          },
+          {
+            "kind": "evidence",
+            "field": "spendCNY",
+            "quote": "没有实际...花费数据",
+            "message": "不是本项连续原文，且不属于允许的 null 证据。"
+          },
+          {
+            "kind": "context",
+            "field": "impressions",
+            "message": "实际 null 的引用未带约定的未投放／无实际数据上下文。"
+          },
+          {
+            "kind": "context",
+            "field": "clicks",
+            "message": "实际 null 的引用未带约定的未投放／无实际数据上下文。"
+          },
+          {
+            "kind": "context",
+            "field": "subscriptions",
+            "message": "实际 null 的引用未带约定的未投放／无实际数据上下文。"
+          },
+          {
+            "kind": "context",
+            "field": "spendCNY",
+            "message": "实际 null 的引用未带约定的未投放／无实际数据上下文。"
+          }
+        ],
+        "result": {
+          "sourceId": "R06",
+          "campaignId": "C05",
+          "date": "2026-10-02",
+          "title": "下一段钟声。",
+          "status": "planned",
+          "impressions": null,
+          "clicks": null,
+          "subscriptions": null,
+          "spendCNY": null,
+          "budgetCNY": 10,
+          "duplicateOf": null,
+          "evidence": {
+            "campaignId": "活动 C05",
+            "date": "计划日期 2026-10-02",
+            "title": "拟定标题为：下一段钟声。",
+            "status": "尚未投放",
+            "impressions": "预计展示1.5千次",
+            "clicks": "预计点击75次",
+            "subscriptions": "没有实际...新增订阅...数据",
+            "spendCNY": "没有实际...花费数据",
+            "budgetCNY": "预算10元人民币",
+            "duplicateOf": null
+          }
+        },
+        "evidenceChecks": [
+          {
+            "field": "campaignId",
+            "quote": "活动 C05",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "date",
+            "quote": "计划日期 2026-10-02",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "title",
+            "quote": "拟定标题为：下一段钟声。",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "status",
+            "quote": "尚未投放",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "impressions",
+            "quote": "预计展示1.5千次",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "clicks",
+            "quote": "预计点击75次",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "subscriptions",
+            "quote": "没有实际...新增订阅...数据",
+            "exactSubstring": false,
+            "allowedNull": false,
+            "passed": false
+          },
+          {
+            "field": "spendCNY",
+            "quote": "没有实际...花费数据",
+            "exactSubstring": false,
+            "allowedNull": false,
+            "passed": false
+          },
+          {
+            "field": "budgetCNY",
+            "quote": "预算10元人民币",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "duplicateOf",
+            "quote": null,
+            "exactSubstring": false,
+            "allowedNull": true,
+            "passed": true
+          }
+        ],
+        "valueChecks": [
+          {
+            "field": "sourceId",
+            "expected": "R06",
+            "actual": "R06",
+            "passed": true
+          },
+          {
+            "field": "campaignId",
+            "expected": "C05",
+            "actual": "C05",
+            "passed": true
+          },
+          {
+            "field": "date",
+            "expected": "2026-10-02",
+            "actual": "2026-10-02",
+            "passed": true
+          },
+          {
+            "field": "title",
+            "expected": "下一段钟声。",
+            "actual": "下一段钟声。",
+            "passed": true
+          },
+          {
+            "field": "status",
+            "expected": "planned",
+            "actual": "planned",
+            "passed": true
+          },
+          {
+            "field": "impressions",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "clicks",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "subscriptions",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "spendCNY",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "budgetCNY",
+            "expected": 10,
+            "actual": 10,
+            "passed": true
+          },
+          {
+            "field": "duplicateOf",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          }
+        ],
+        "contextChecks": [
+          {
+            "field": "impressions",
+            "hasRequiredStatusContext": false,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          },
+          {
+            "field": "clicks",
+            "hasRequiredStatusContext": false,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          },
+          {
+            "field": "subscriptions",
+            "hasRequiredStatusContext": false,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          },
+          {
+            "field": "spendCNY",
+            "hasRequiredStatusContext": false,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          }
+        ],
+        "contentLimit": "这是结构、固定业务值与连续引用检查；标题归属和语义采用仍待人，整批原汇总仍拒绝采用。"
+      }
+    },
+    {
+      "id": "repair-01",
+      "origin": "teacher-feedback-repair",
+      "path": "attempts/R06/repair-01",
+      "recipe": {
+        "sourceId": "R06",
+        "inputCollectionSHA256": "0c7109884a5cd1c2ed1c084a6a34edf75874dd8b00ba3776540740c7e1b3f39d",
+        "settings": {
+          "modelId": "qwen-plus-2025-12-01",
+          "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "temperature": 0,
+          "maxOutputTokens": 3072,
+          "maxRetries": 0,
+          "enable_thinking": false,
+          "timeout": {
+            "totalMs": 60000
+          },
+          "maxConcurrency": 2
+        },
+        "promptSHA256": "e2296edf20ae8ec5cc74298eb48f7c591c4c2ac21046ac3d1f50b0c8cf75a5e9",
+        "feedbackSHA256": "63869bd46f6b2d2f28aa20ad0795346ad2d1e416f9cc147d0c61987c687cb19a",
+        "instructionsSHA256": "a044f2fafd4695188a4b4546ebc31bed7dbf553452c204c617f7bab5080fd878",
+        "checkVersion": "course-record-check-v1"
+      },
+      "recipeSHA256": "f4129045d4b07798a41251ccc9e4fe54ac857a6f0f24f4423cfeedf6ced2ba9e",
+      "generationState": "returned",
+      "check": {
+        "version": "course-record-check-v1",
+        "checkState": "passed",
+        "issues": [],
+        "result": {
+          "sourceId": "R06",
+          "campaignId": "C05",
+          "date": "2026-10-02",
+          "title": "下一段钟声。",
+          "status": "planned",
+          "impressions": null,
+          "clicks": null,
+          "subscriptions": null,
+          "spendCNY": null,
+          "budgetCNY": 10,
+          "duplicateOf": null,
+          "evidence": {
+            "campaignId": "活动 C05",
+            "date": "计划日期 2026-10-02",
+            "title": "拟定标题为：下一段钟声。",
+            "status": "尚未投放",
+            "impressions": "没有实际展示、点击、新增订阅或花费数据",
+            "clicks": "没有实际展示、点击、新增订阅或花费数据",
+            "subscriptions": "没有实际展示、点击、新增订阅或花费数据",
+            "spendCNY": "没有实际展示、点击、新增订阅或花费数据",
+            "budgetCNY": "预算10元人民币",
+            "duplicateOf": null
+          }
+        },
+        "evidenceChecks": [
+          {
+            "field": "campaignId",
+            "quote": "活动 C05",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "date",
+            "quote": "计划日期 2026-10-02",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "title",
+            "quote": "拟定标题为：下一段钟声。",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "status",
+            "quote": "尚未投放",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "impressions",
+            "quote": "没有实际展示、点击、新增订阅或花费数据",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "clicks",
+            "quote": "没有实际展示、点击、新增订阅或花费数据",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "subscriptions",
+            "quote": "没有实际展示、点击、新增订阅或花费数据",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "spendCNY",
+            "quote": "没有实际展示、点击、新增订阅或花费数据",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "budgetCNY",
+            "quote": "预算10元人民币",
+            "exactSubstring": true,
+            "allowedNull": false,
+            "passed": true
+          },
+          {
+            "field": "duplicateOf",
+            "quote": null,
+            "exactSubstring": false,
+            "allowedNull": true,
+            "passed": true
+          }
+        ],
+        "valueChecks": [
+          {
+            "field": "sourceId",
+            "expected": "R06",
+            "actual": "R06",
+            "passed": true
+          },
+          {
+            "field": "campaignId",
+            "expected": "C05",
+            "actual": "C05",
+            "passed": true
+          },
+          {
+            "field": "date",
+            "expected": "2026-10-02",
+            "actual": "2026-10-02",
+            "passed": true
+          },
+          {
+            "field": "title",
+            "expected": "下一段钟声。",
+            "actual": "下一段钟声。",
+            "passed": true
+          },
+          {
+            "field": "status",
+            "expected": "planned",
+            "actual": "planned",
+            "passed": true
+          },
+          {
+            "field": "impressions",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "clicks",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "subscriptions",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "spendCNY",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          },
+          {
+            "field": "budgetCNY",
+            "expected": 10,
+            "actual": 10,
+            "passed": true
+          },
+          {
+            "field": "duplicateOf",
+            "expected": null,
+            "actual": null,
+            "passed": true
+          }
+        ],
+        "contextChecks": [
+          {
+            "field": "impressions",
+            "hasRequiredStatusContext": true,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          },
+          {
+            "field": "clicks",
+            "hasRequiredStatusContext": true,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          },
+          {
+            "field": "subscriptions",
+            "hasRequiredStatusContext": true,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          },
+          {
+            "field": "spendCNY",
+            "hasRequiredStatusContext": true,
+            "semanticDecision": "仍需人阅读全文核对支持关系"
+          }
+        ],
+        "contentLimit": "这是结构、固定业务值与连续引用检查；标题归属和语义采用仍待人，整批原汇总仍拒绝采用。"
+      },
+      "resultPath": "attempts/R06/repair-01/output.txt",
+      "resultSHA256": "347935d0b4f20025a4bad4db58d844cfa9a07dd8526fd7aa8ae392fcdca90d0f"
+    }
+  ],
+  "check": {
+    "version": "course-record-check-v1",
+    "checkState": "passed",
+    "issues": [],
+    "result": {
+      "sourceId": "R06",
+      "campaignId": "C05",
+      "date": "2026-10-02",
+      "title": "下一段钟声。",
+      "status": "planned",
+      "impressions": null,
+      "clicks": null,
+      "subscriptions": null,
+      "spendCNY": null,
+      "budgetCNY": 10,
+      "duplicateOf": null,
+      "evidence": {
+        "campaignId": "活动 C05",
+        "date": "计划日期 2026-10-02",
+        "title": "拟定标题为：下一段钟声。",
+        "status": "尚未投放",
+        "impressions": "没有实际展示、点击、新增订阅或花费数据",
+        "clicks": "没有实际展示、点击、新增订阅或花费数据",
+        "subscriptions": "没有实际展示、点击、新增订阅或花费数据",
+        "spendCNY": "没有实际展示、点击、新增订阅或花费数据",
+        "budgetCNY": "预算10元人民币",
+        "duplicateOf": null
+      }
+    },
+    "evidenceChecks": [
+      {
+        "field": "campaignId",
+        "quote": "活动 C05",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "date",
+        "quote": "计划日期 2026-10-02",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "title",
+        "quote": "拟定标题为：下一段钟声。",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "status",
+        "quote": "尚未投放",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "impressions",
+        "quote": "没有实际展示、点击、新增订阅或花费数据",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "clicks",
+        "quote": "没有实际展示、点击、新增订阅或花费数据",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "subscriptions",
+        "quote": "没有实际展示、点击、新增订阅或花费数据",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "spendCNY",
+        "quote": "没有实际展示、点击、新增订阅或花费数据",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "budgetCNY",
+        "quote": "预算10元人民币",
+        "exactSubstring": true,
+        "allowedNull": false,
+        "passed": true
+      },
+      {
+        "field": "duplicateOf",
+        "quote": null,
+        "exactSubstring": false,
+        "allowedNull": true,
+        "passed": true
+      }
+    ],
+    "valueChecks": [
+      {
+        "field": "sourceId",
+        "expected": "R06",
+        "actual": "R06",
+        "passed": true
+      },
+      {
+        "field": "campaignId",
+        "expected": "C05",
+        "actual": "C05",
+        "passed": true
+      },
+      {
+        "field": "date",
+        "expected": "2026-10-02",
+        "actual": "2026-10-02",
+        "passed": true
+      },
+      {
+        "field": "title",
+        "expected": "下一段钟声。",
+        "actual": "下一段钟声。",
+        "passed": true
+      },
+      {
+        "field": "status",
+        "expected": "planned",
+        "actual": "planned",
+        "passed": true
+      },
+      {
+        "field": "impressions",
+        "expected": null,
+        "actual": null,
+        "passed": true
+      },
+      {
+        "field": "clicks",
+        "expected": null,
+        "actual": null,
+        "passed": true
+      },
+      {
+        "field": "subscriptions",
+        "expected": null,
+        "actual": null,
+        "passed": true
+      },
+      {
+        "field": "spendCNY",
+        "expected": null,
+        "actual": null,
+        "passed": true
+      },
+      {
+        "field": "budgetCNY",
+        "expected": 10,
+        "actual": 10,
+        "passed": true
+      },
+      {
+        "field": "duplicateOf",
+        "expected": null,
+        "actual": null,
+        "passed": true
+      }
+    ],
+    "contextChecks": [
+      {
+        "field": "impressions",
+        "hasRequiredStatusContext": true,
+        "semanticDecision": "仍需人阅读全文核对支持关系"
+      },
+      {
+        "field": "clicks",
+        "hasRequiredStatusContext": true,
+        "semanticDecision": "仍需人阅读全文核对支持关系"
+      },
+      {
+        "field": "subscriptions",
+        "hasRequiredStatusContext": true,
+        "semanticDecision": "仍需人阅读全文核对支持关系"
+      },
+      {
+        "field": "spendCNY",
+        "hasRequiredStatusContext": true,
+        "semanticDecision": "仍需人阅读全文核对支持关系"
+      }
+    ],
+    "contentLimit": "这是结构、固定业务值与连续引用检查；标题归属和语义采用仍待人，整批原汇总仍拒绝采用。"
+  }
+}

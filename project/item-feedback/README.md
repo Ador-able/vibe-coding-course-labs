@@ -1,6 +1,6 @@
-# 抽取数据要核对字段和统计分母
+# 批量执行要保存每一项的状态
 
-当前源码位于 `project/extract-fields/`。本课节点见仓库根的 `github-nodes.json`。
+当前源码位于 `project/item-feedback/`。本课节点见仓库根的 `github-nodes.json`。
 
 在 `project/` 中准备本节点共用的依赖：
 

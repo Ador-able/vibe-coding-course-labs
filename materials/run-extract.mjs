@@ -6,10 +6,10 @@ import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = dirname(fileURLToPath(import.meta.url));
-const runDir = resolve(root, process.argv[2] ?? 'runs/my-extract-01');
-const { API_KEY: apiKey, MODEL: modelId, API_BASE_URL: baseURL } = process.env;
-if (!apiKey || !modelId || !baseURL) throw new Error('请通过共用 scripts/run-lab.mjs 启动，先在请求观察室保存模型设置。');
-const settings = { modelId, baseURL, temperature: 0, maxOutputTokens: 6144, maxRetries: 0, enable_thinking: false };
+const runDir = resolve(root, process.argv[2] ?? 'runs/extract-01');
+const apiKey = process.env.DASHSCOPE_API_KEY;
+if (!apiKey) throw new Error('请仅在当前进程提供 DASHSCOPE_API_KEY。');
+const settings = { modelId: 'qwen-plus-2025-12-01', baseURL: 'https://dashscope.aliyuncs.com/compatible-mode/v1', temperature: 0, maxOutputTokens: 6144, maxRetries: 0, enable_thinking: false };
 const sha = text => createHash('sha256').update(text).digest('hex');
 const source = await readFile(join(root, 'inputs/reports.json'), 'utf8');
 const reference = await readFile(join(root, 'inputs/teacher-reference.json'), 'utf8');

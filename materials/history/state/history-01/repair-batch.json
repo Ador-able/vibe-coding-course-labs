@@ -1,0 +1,50 @@
+{
+  "startedAt": "2026-10-05T01:26:41.317Z",
+  "endedAt": "2026-10-05T01:26:47.569Z",
+  "elapsedMs": 6251.6465,
+  "sourceIds": [
+    "R01",
+    "R06"
+  ],
+  "settings": {
+    "modelId": "qwen-plus-2025-12-01",
+    "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "temperature": 0,
+    "maxOutputTokens": 3072,
+    "maxRetries": 0,
+    "enable_thinking": false,
+    "timeout": {
+      "totalMs": 60000
+    },
+    "maxConcurrency": 2
+  },
+  "state": "ended",
+  "actualFetchAttempts": 2,
+  "fetchCounts": [
+    {
+      "sourceId": "R01",
+      "actualFetchAttempts": 1
+    },
+    {
+      "sourceId": "R06",
+      "actualFetchAttempts": 1
+    }
+  ],
+  "outcomes": [
+    {
+      "sourceId": "R01",
+      "generationState": "returned",
+      "checkState": "passed",
+      "actualFetchAttempts": 1,
+      "error": null
+    },
+    {
+      "sourceId": "R06",
+      "generationState": "returned",
+      "checkState": "passed",
+      "actualFetchAttempts": 1,
+      "error": null
+    }
+  ],
+  "scope": "固定两项各最多一次，任一失败不丢另一项已保存结果；不重算汇总、不自动采用。"
+}

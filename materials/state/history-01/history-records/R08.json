@@ -1,0 +1,25 @@
+{
+  "sourceId": "R08",
+  "campaignId": "C01",
+  "date": "2026-10-01",
+  "title": "第二天的试读。",
+  "status": "observed",
+  "impressions": 800,
+  "clicks": 40,
+  "subscriptions": 1,
+  "spendCNY": 5,
+  "budgetCNY": null,
+  "duplicateOf": null,
+  "evidence": {
+    "campaignId": "活动 C01",
+    "date": "日期 2026-10-01",
+    "title": "标题为：第二天的试读。",
+    "status": "已经投放",
+    "impressions": "展示800次",
+    "clicks": "点击40次",
+    "subscriptions": "新增订阅1次",
+    "spendCNY": "实际花费5元人民币",
+    "budgetCNY": null,
+    "duplicateOf": null
+  }
+}

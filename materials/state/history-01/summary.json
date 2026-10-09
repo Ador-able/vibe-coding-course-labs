@@ -1,0 +1,97 @@
+{
+  "decision": "rejected",
+  "modelAccepted": false,
+  "original": {
+    "uniqueObservedSourceIds": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "ctrSourceIds": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "ctrClicks": 200,
+    "ctrImpressions": 4300,
+    "ctr": 0.046511627906976744,
+    "knownActualSpendCNY": 35,
+    "knownSubscriptionEvents": 10,
+    "knownSubscriptionSourceIds": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "limits": [
+      "不能推出全部活动的总体效果（因 R04 缺失 impressions、R06 为 planned、R02 为 duplicate）",
+      "不能推出独立订阅人数（因 subscriptions 是日报内事件次数，无去重标识）",
+      "不能推出标题与效果间的因果关系（因无对照组、无变量控制、多日/多活动混杂）"
+    ]
+  },
+  "originalOutput": {
+    "path": "runs/extract-01/output.txt",
+    "bytes": 6741,
+    "sha256": "43b93b2d5528f8309859e008649a7ca2101f59ea83aaa7817cfa3fb88eec21a5"
+  },
+  "problems": [
+    {
+      "field": "uniqueObservedSourceIds",
+      "expected": [
+        "R01",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "actual": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "equal": false
+    },
+    {
+      "field": "ctrSourceIds",
+      "expected": [
+        "R01",
+        "R03",
+        "R07",
+        "R08"
+      ],
+      "actual": [
+        "R01",
+        "R03",
+        "R05",
+        "R07",
+        "R08"
+      ],
+      "equal": false
+    },
+    {
+      "field": "ctrClicks",
+      "expected": 195,
+      "actual": 200,
+      "equal": false
+    },
+    {
+      "field": "ctr",
+      "expected": 0.04534883720930233,
+      "actual": 0.046511627906976744,
+      "equal": false
+    }
+  ],
+  "scope": "保持原汇总全文；本节局部重做不重算或采用统计。"
+}
