@@ -5,28 +5,27 @@
   "planId": 21,
   "pathId": 2,
   "pathRevision": 16,
-  "sourceHead": "2b55a39a7f9bc1e9a1758cc4ec1e2c1949e19557",
+  "sourceHead": "bf66705f275002eb2b7e11ce7db098e83f11e71c",
   "plannedIndependentLab": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
-  "sourceBackupSha256": "d277dcadf0f25fd11c1fcae47a67a4aae22f52ad5fa253f66c5e81ac2fe0404d",
+  "sourceBackupSha256": "5b3c2c011ef7f616b577dee10aedee4a42189d3f26e5f137e1fbc263b029dbba",
   "ids": {
     "database": "fe028f0c-7dff-46b5-91bd-f5775193ef7b",
-    "A": "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1",
-    "B": "4c5da535-dc9f-41e7-8b5b-00ad877ec638",
-    "C": "d0f4b7a9-848a-4d38-84c7-67e2256fc599",
-    "failure": "d15c6b93-3bd6-4a35-9006-3c3a63bb75ee"
+    "A": "f03472d3-de5d-4343-a102-9dbb9ca9d24b",
+    "B": "3cf07059-218a-4244-84bd-ed4e16dfa6f5",
+    "failure": "129bb7bd-2b9f-4df4-adf8-c1dbb461db85"
   },
   "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
   "targetChapter": 3,
   "database": "data/runtime-fe028f0c-7dff-46b5-91bd-f5775193ef7b.sqlite",
-  "exportPath": "deliverables/runtime-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1-三章待审.md",
+  "exportPath": "deliverables/runtime-f03472d3-de5d-4343-a102-9dbb9ca9d24b-三章待审.md",
   "expectedInitialCounts": {
     "works": 1,
     "work_versions": 3,
     "chapters": 3,
     "chapter_versions": 7,
-    "tasks": 2
+    "tasks": 4
   },
-  "expectedTaskAdditionsMaximum": 4,
+  "expectedTaskAdditionsMaximum": 3,
   "expectedPreservedTables": [
     "works",
     "work_versions",
@@ -34,8 +33,10 @@
     "chapter_versions"
   ],
   "existingTasksPreserved": [
+    "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1",
     "744cfda0-0eb8-4e9c-b834-b8c0bc90a00e",
-    "ca965925-bd81-445a-871f-59eb53b4c6f0"
+    "ca965925-bd81-445a-871f-59eb53b4c6f0",
+    "d0f4b7a9-848a-4d38-84c7-67e2256fc599"
   ],
   "newTaskInputContract": {
     "creator": "教师命令观察入口调用既有 Store.createTask；不是模型产物",
@@ -75,12 +76,12 @@
         ],
         "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
         "env": {
-          "LESSON_RUN_ID": "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1"
+          "LESSON_RUN_ID": "f03472d3-de5d-4343-a102-9dbb9ca9d24b"
         },
         "sandboxPolicy": {
           "type": "dangerFullAccess"
         },
-        "processId": "lesson-07-06-A-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1-pipe",
+        "processId": "lesson-07-06-A-f03472d3-de5d-4343-a102-9dbb9ca9d24b-pipe",
         "tty": false,
         "streamStdoutStderr": true,
         "timeoutMs": 15000
@@ -96,74 +97,15 @@
         ],
         "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
         "env": {
-          "LESSON_RUN_ID": "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1"
+          "LESSON_RUN_ID": "f03472d3-de5d-4343-a102-9dbb9ca9d24b"
         },
         "sandboxPolicy": {
           "type": "dangerFullAccess"
         },
-        "processId": "lesson-07-06-A-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1-tty",
+        "processId": "lesson-07-06-A-f03472d3-de5d-4343-a102-9dbb9ca9d24b-tty",
         "tty": true,
         "streamStdoutStderr": true,
         "timeoutMs": 15000
-      }
-    },
-    {
-      "name": "C等待输入且未启动服务",
-      "method": "command/exec",
-      "params": {
-        "command": [
-          "C:/Program Files/nodejs/node.exe",
-          "scripts/wait-before-service.mjs",
-          "--db",
-          "data/runtime-fe028f0c-7dff-46b5-91bd-f5775193ef7b.sqlite",
-          "--work",
-          "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
-          "--port",
-          "53473"
-        ],
-        "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
-        "env": {
-          "LESSON_RUN_ID": "d0f4b7a9-848a-4d38-84c7-67e2256fc599"
-        },
-        "sandboxPolicy": {
-          "type": "dangerFullAccess"
-        },
-        "processId": "lesson-07-06-C-d0f4b7a9-848a-4d38-84c7-67e2256fc599",
-        "tty": false,
-        "streamStdoutStderr": true,
-        "timeoutMs": 180000,
-        "streamStdin": true
-      }
-    },
-    {
-      "name": "停止C",
-      "method": "command/exec/terminate",
-      "params": {
-        "processId": "lesson-07-06-C-d0f4b7a9-848a-4d38-84c7-67e2256fc599"
-      }
-    },
-    {
-      "name": "A项目构建检查",
-      "method": "command/exec",
-      "params": {
-        "command": [
-          "C:/Program Files/PowerShell/7/pwsh.exe",
-          "-NoLogo",
-          "-NoProfile",
-          "-Command",
-          "pnpm build"
-        ],
-        "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
-        "env": {
-          "LESSON_RUN_ID": "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1"
-        },
-        "sandboxPolicy": {
-          "type": "dangerFullAccess"
-        },
-        "processId": "lesson-07-06-A-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1-build",
-        "tty": false,
-        "streamStdoutStderr": true,
-        "timeoutMs": 120000
       }
     },
     {
@@ -174,7 +116,7 @@
           "C:/Program Files/nodejs/node.exe",
           "dist/cli.js",
           "export",
-          "deliverables/runtime-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1-三章待审.md",
+          "deliverables/runtime-f03472d3-de5d-4343-a102-9dbb9ca9d24b-三章待审.md",
           "--db",
           "data/runtime-fe028f0c-7dff-46b5-91bd-f5775193ef7b.sqlite",
           "--work",
@@ -182,12 +124,12 @@
         ],
         "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
         "env": {
-          "LESSON_RUN_ID": "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1"
+          "LESSON_RUN_ID": "f03472d3-de5d-4343-a102-9dbb9ca9d24b"
         },
         "sandboxPolicy": {
           "type": "dangerFullAccess"
         },
-        "processId": "lesson-07-06-A-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1-export",
+        "processId": "lesson-07-06-A-f03472d3-de5d-4343-a102-9dbb9ca9d24b-export",
         "tty": false,
         "streamStdoutStderr": true,
         "timeoutMs": 15000
@@ -209,12 +151,12 @@
         ],
         "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
         "env": {
-          "LESSON_RUN_ID": "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1"
+          "LESSON_RUN_ID": "f03472d3-de5d-4343-a102-9dbb9ca9d24b"
         },
         "sandboxPolicy": {
           "type": "dangerFullAccess"
         },
-        "processId": "lesson-07-06-A-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1",
+        "processId": "lesson-07-06-A-f03472d3-de5d-4343-a102-9dbb9ca9d24b",
         "tty": false,
         "streamStdoutStderr": true,
         "timeoutMs": 180000
@@ -236,12 +178,12 @@
         ],
         "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
         "env": {
-          "LESSON_RUN_ID": "4c5da535-dc9f-41e7-8b5b-00ad877ec638"
+          "LESSON_RUN_ID": "3cf07059-218a-4244-84bd-ed4e16dfa6f5"
         },
         "sandboxPolicy": {
           "type": "dangerFullAccess"
         },
-        "processId": "lesson-07-06-B-4c5da535-dc9f-41e7-8b5b-00ad877ec638",
+        "processId": "lesson-07-06-B-3cf07059-218a-4244-84bd-ed4e16dfa6f5",
         "tty": false,
         "streamStdoutStderr": true,
         "timeoutMs": 180000
@@ -263,12 +205,12 @@
         ],
         "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-06-lab",
         "env": {
-          "LESSON_RUN_ID": "d15c6b93-3bd6-4a35-9006-3c3a63bb75ee"
+          "LESSON_RUN_ID": "129bb7bd-2b9f-4df4-adf8-c1dbb461db85"
         },
         "sandboxPolicy": {
           "type": "dangerFullAccess"
         },
-        "processId": "lesson-07-06-failure-d15c6b93-3bd6-4a35-9006-3c3a63bb75ee",
+        "processId": "lesson-07-06-failure-129bb7bd-2b9f-4df4-adf8-c1dbb461db85",
         "tty": false,
         "streamStdoutStderr": true,
         "timeoutMs": 15000
@@ -278,14 +220,14 @@
       "name": "停止A",
       "method": "command/exec/terminate",
       "params": {
-        "processId": "lesson-07-06-A-17c7d0d9-fc32-48ad-aac3-1443dcb3aea1"
+        "processId": "lesson-07-06-A-f03472d3-de5d-4343-a102-9dbb9ca9d24b"
       }
     },
     {
       "name": "最后停止本轮B",
       "method": "command/exec/terminate",
       "params": {
-        "processId": "lesson-07-06-B-4c5da535-dc9f-41e7-8b5b-00ad877ec638"
+        "processId": "lesson-07-06-B-3cf07059-218a-4244-84bd-ed4e16dfa6f5"
       }
     }
   ],
@@ -297,7 +239,7 @@
     "实际导出全文与Store.exportWork原字节一致，停止后文件再次读回",
     "本轮全局SHA若外部改变只报告，不覆盖新外部配置"
   ],
-  "limitations": "Windows流式/PTY可用性尚未实测；本次是人工指定命令，不证明模型自然选择命令、发起审批或在工具调用中被取消。",
+  "limitations": "已有真实 pipe / PTY 前检与首轮启动前停止、构建、导出失败；本接续尚未运行。教师指定命令不证明模型自然选择、审批等待或文学采用。",
   "hostOverrides": [
     "approval_policy=\"never\"",
     "features.hooks=false",
@@ -313,8 +255,8 @@
     "scripts/observe-command-states.mjs"
   ],
   "modes": {
-    "preflight": "只执行两条既定短命令；不创建 Task，不启动服务",
-    "lesson": "前置真实短命令通过后才执行九条既定课堂动作"
+    "preflight": "两条短程序执行入口保留；本接续沿用已有成功原件，不再次执行。",
+    "lesson": "从真实失败后的完整起点只执行导出、两服务、同端口反例和两次停止；四 exec、两 terminate。"
   },
   "ui": {
     "channel": "msedge",
@@ -337,5 +279,18 @@
     ],
     "scope": "沿现有页面只读取，不提交正文；整页与完整 textarea value 分开记录"
   },
-  "sharedConfiguration": "只取当下 SHA 和必要的运行时非秘密投影，不复制或写回外部配置"
+  "sharedConfiguration": "只取当下 SHA 和必要的运行时非秘密投影，不复制或写回外部配置",
+  "completedPreflight": {
+    "implementationHead": "bf66705f275002eb2b7e11ce7db098e83f11e71c",
+    "reportSha256": "846e8d8e602ebe1cb57a62964dda497fd207418f4e25db5b9130035f38cb46cd",
+    "programSha256": "b8ccecf48002555fd06df6a5aa7f835d411618d6108121682d194e792079f136",
+    "scope": "沿用已经实际通过的同一短程序、pipe / PTY 执行方式、官方入口和依赖；当前接续不重跑，不称该回执属于新 HEAD。"
+  },
+  "completedFirstLesson": {
+    "implementationHead": "bf66705f275002eb2b7e11ce7db098e83f11e71c",
+    "run": "runs/command-lesson-6f9c7b2d-7bbd-4801-a034-7760a5ce786d",
+    "reportSha256": "a741278e0230a4688cbd625b0167236c610162f2abd078a86afae789007018a7",
+    "finalFiveTablesSha256": "3f8046938beb0996e6a713a189e1cc145c837d86a41c042af3107a4b79891507",
+    "scope": "实际 C 已停止，A 构建完成、导出失败；保留 C cancelled / A failed，接续不重复 C 与构建。"
+  }
 }

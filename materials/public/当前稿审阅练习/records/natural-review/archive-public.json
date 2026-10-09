@@ -1,0 +1,74 @@
+{
+  "threadId": "01a106bc-e1d3-7882-9321-45e280bfde74",
+  "archived": true,
+  "error": null,
+  "transcript": [
+    {
+      "direction": "sent",
+      "message": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "plugin_course_archive",
+            "version": "1.0.0"
+          }
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "id": 1,
+        "result": {
+          "userAgent": "Codex Desktop/0.160.0 (Windows 10.0.26300; x86_64) dumb (plugin_course_archive; 1.0.0)",
+          "codexHome": "C:\\Users\\32686\\.codex",
+          "platformFamily": "windows",
+          "platformOs": "windows"
+        }
+      }
+    },
+    {
+      "direction": "sent",
+      "message": {
+        "method": "initialized",
+        "params": {}
+      }
+    },
+    {
+      "direction": "sent",
+      "message": {
+        "id": 2,
+        "method": "thread/archive",
+        "params": {
+          "threadId": "01a106bc-e1d3-7882-9321-45e280bfde74"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "method": "remoteControl/status/changed",
+        "publicProjection": "本通知值已省略；原实际协议内部保持原字节。"
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "id": 2,
+        "result": {}
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "method": "thread/archived",
+        "params": {
+          "threadId": "01a106bc-e1d3-7882-9321-45e280bfde74"
+        },
+        "emittedAtMs": 1791114604092
+      }
+    }
+  ],
+  "stderr": ""
+}

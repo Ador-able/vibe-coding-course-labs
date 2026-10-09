@@ -89,12 +89,20 @@
   ],
   "tasks": [
     {
+      "id": "17c7d0d9-fc32-48ad-aac3-1443dcb3aea1",
+      "content": "{\"id\":\"17c7d0d9-fc32-48ad-aac3-1443dcb3aea1\",\"workId\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"chapterNumber\":3,\"codeVersion\":\"bf66705f275002eb2b7e11ce7db098e83f11e71c\",\"threadId\":null,\"state\":\"failed\",\"createdAt\":\"2026-10-03T09:28:09.586Z\",\"updatedAt\":\"2026-10-03T09:28:10.784Z\",\"error\":\"实际导出命令失败。\",\"usage\":null}"
+    },
+    {
       "id": "744cfda0-0eb8-4e9c-b834-b8c0bc90a00e",
       "content": "{\"id\":\"744cfda0-0eb8-4e9c-b834-b8c0bc90a00e\",\"workId\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"chapterNumber\":3,\"codeVersion\":\"50b785a9815de3e041076dda7a15400180c7690f\",\"threadId\":\"01a1001e-cc96-7cf2-a29e-9e2355f2beff\",\"state\":\"completed\",\"createdAt\":\"2026-10-03T04:36:35.987Z\",\"updatedAt\":\"2026-10-03T04:59:05.652Z\",\"error\":null,\"usage\":{\"input_tokens\":158222,\"cached_input_tokens\":135296,\"cache_write_input_tokens\":0,\"output_tokens\":3948,\"reasoning_output_tokens\":501}}"
     },
     {
       "id": "ca965925-bd81-445a-871f-59eb53b4c6f0",
       "content": "{\"id\":\"ca965925-bd81-445a-871f-59eb53b4c6f0\",\"workId\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"chapterNumber\":3,\"codeVersion\":\"2b55a39a7f9bc1e9a1758cc4ec1e2c1949e19557\",\"threadId\":\"01a1006f-0f24-7f42-a864-2e6885735e6b\",\"state\":\"completed\",\"createdAt\":\"2026-10-03T05:58:35.082Z\",\"updatedAt\":\"2026-10-03T06:26:22.746Z\",\"error\":null,\"usage\":{\"input_tokens\":210037,\"cached_input_tokens\":176256,\"cache_write_input_tokens\":0,\"output_tokens\":3791,\"reasoning_output_tokens\":710}}"
+    },
+    {
+      "id": "d0f4b7a9-848a-4d38-84c7-67e2256fc599",
+      "content": "{\"id\":\"d0f4b7a9-848a-4d38-84c7-67e2256fc599\",\"workId\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"chapterNumber\":3,\"codeVersion\":\"bf66705f275002eb2b7e11ce7db098e83f11e71c\",\"threadId\":null,\"state\":\"cancelled\",\"createdAt\":\"2026-10-03T09:28:04.133Z\",\"updatedAt\":\"2026-10-03T09:28:09.544Z\",\"error\":null,\"usage\":null}"
     }
   ]
 }

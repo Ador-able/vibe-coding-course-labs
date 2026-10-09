@@ -1,0 +1,13 @@
+{
+  "rawPath": "D:/Projects/Knowledge/.coursebook-work/h07-04-lab/runs/be9a69c3-473d-478a-8ffa-7c9aa117e95e/archive.json",
+  "rawBytes": 1783,
+  "rawSha256": "1c709ec0b1d05b5c10a6e6405a5149892dfb46842ca0ea3abc2da61415be0b3b",
+  "omissions": [
+    {
+      "location": "$.transcript[4].message",
+      "method": "remoteControl/status/changed",
+      "rule": "通知的值全部省略，不读取展示或登记该值"
+    }
+  ],
+  "scope": "这里只保留公开协议关系，原值内部存留；不将投影称原协议原字节。"
+}
