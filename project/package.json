@@ -23,7 +23,9 @@
     "plugin:preflight": "node scripts/plugin-preflight.mjs",
     "plugin:observe": "node scripts/observe-plugin.mjs",
     "host:opencode": "node scripts/opencode-local.mjs",
-    "host:observe": "node scripts/observe-opencode.mjs"
+    "host:observe": "node scripts/observe-opencode.mjs",
+    "command:preflight": "node scripts/observe-command-states.mjs --mode preflight",
+    "command:lesson": "node scripts/observe-command-states.mjs --mode lesson"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.31.0",
