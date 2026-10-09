@@ -1,0 +1,13 @@
+{
+  "name": "vibe-coding-later-model-labs",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
+  "dependencies": {
+    "ai": "7.0.122",
+    "@ai-sdk/openai-compatible": "3.0.59"
+  }
+}

@@ -1,0 +1,13 @@
+{goal}
+
+这是逐块修订的第 {chapter} 步。你收到上一份实际摘要和新增这一章的完整正文，没有此前各章的完整正文。请更新一份覆盖已处理各章的交接摘要。用新增材料修订旧判断，保留仍影响接续的旧信息与来源编号；不要把新增观察升级为材料没有确认的因果结论。若旧摘要有缺项，新材料也没有补足，不能凭空恢复。
+
+<metadata>
+{metadata}
+</metadata>
+<previous_summary>
+{previous}
+</previous_summary>
+<new_material>
+{materials}
+</new_material>

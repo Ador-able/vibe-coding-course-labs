@@ -1,0 +1,248 @@
+{
+  "requestCount": 8,
+  "counts": [
+    {
+      "id": "01-whole",
+      "parseError": null,
+      "han": 260,
+      "range": [
+        300,
+        450
+      ],
+      "lengthMeetsRequest": false,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 3573,
+        "inputTokenDetails": {
+          "noCacheTokens": 3573,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 647,
+        "outputTokenDetails": {
+          "textTokens": 647,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 4220
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    },
+    {
+      "id": "02-map-1",
+      "parseError": null,
+      "han": 200,
+      "range": [
+        200,
+        320
+      ],
+      "lengthMeetsRequest": true,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 1542,
+        "inputTokenDetails": {
+          "noCacheTokens": 1542,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 519,
+        "outputTokenDetails": {
+          "textTokens": 519,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 2061
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    },
+    {
+      "id": "02-map-2",
+      "parseError": null,
+      "han": 175,
+      "range": [
+        200,
+        320
+      ],
+      "lengthMeetsRequest": false,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 1507,
+        "inputTokenDetails": {
+          "noCacheTokens": 1507,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 451,
+        "outputTokenDetails": {
+          "textTokens": 451,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 1958
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    },
+    {
+      "id": "02-map-3",
+      "parseError": null,
+      "han": 189,
+      "range": [
+        200,
+        320
+      ],
+      "lengthMeetsRequest": false,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 1469,
+        "inputTokenDetails": {
+          "noCacheTokens": 1469,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 442,
+        "outputTokenDetails": {
+          "textTokens": 442,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 1911
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    },
+    {
+      "id": "03-reduce",
+      "parseError": null,
+      "han": 257,
+      "range": [
+        300,
+        450
+      ],
+      "lengthMeetsRequest": false,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 2035,
+        "inputTokenDetails": {
+          "noCacheTokens": 2035,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 801,
+        "outputTokenDetails": {
+          "textTokens": 801,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 2836
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    },
+    {
+      "id": "04-refine-1",
+      "parseError": null,
+      "han": 239,
+      "range": [
+        300,
+        450
+      ],
+      "lengthMeetsRequest": false,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 1619,
+        "inputTokenDetails": {
+          "noCacheTokens": 1619,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 560,
+        "outputTokenDetails": {
+          "textTokens": 560,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 2179
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    },
+    {
+      "id": "04-refine-2",
+      "parseError": null,
+      "han": 283,
+      "range": [
+        300,
+        450
+      ],
+      "lengthMeetsRequest": false,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 2197,
+        "inputTokenDetails": {
+          "noCacheTokens": 2197,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 571,
+        "outputTokenDetails": {
+          "textTokens": 571,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 2768
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    },
+    {
+      "id": "04-refine-3",
+      "parseError": null,
+      "han": 265,
+      "range": [
+        300,
+        450
+      ],
+      "lengthMeetsRequest": false,
+      "unresolvedCount": 4,
+      "invalidSourceIds": [],
+      "finishReason": "stop",
+      "usage": {
+        "inputTokens": 2169,
+        "inputTokenDetails": {
+          "noCacheTokens": 2169,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 603,
+        "outputTokenDetails": {
+          "textTokens": 603,
+          "reasoningTokens": 0
+        },
+        "totalTokens": 2772
+      },
+      "observation": "仅格式、数量与编号存在性；内容关系另由人回查原段"
+    }
+  ],
+  "sums": {
+    "whole": {
+      "calls": 1,
+      "elapsedMs": 14767.7251,
+      "inputTokens": 3573,
+      "outputTokens": 647,
+      "priceEstimateCny": 0.0041524,
+      "priceScope": "北京 qwen-plus-2025-12-01 输入不超过128K的非思考公开原价估算；未核账户账单，不证明实付或免费"
+    },
+    "map-reduce": {
+      "calls": 4,
+      "elapsedMs": 30004.7128,
+      "inputTokens": 6553,
+      "outputTokens": 2213,
+      "priceEstimateCny": 0.0096684,
+      "priceScope": "北京 qwen-plus-2025-12-01 输入不超过128K的非思考公开原价估算；未核账户账单，不证明实付或免费"
+    },
+    "refine": {
+      "calls": 3,
+      "elapsedMs": 39131.22779999999,
+      "inputTokens": 5985,
+      "outputTokens": 1734,
+      "priceEstimateCny": 0.008256,
+      "priceScope": "北京 qwen-plus-2025-12-01 输入不超过128K的非思考公开原价估算；未核账户账单，不证明实付或免费"
+    }
+  },
+  "contentPassed": null
+}

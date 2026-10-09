@@ -1,0 +1,104 @@
+{
+  "passed": true,
+  "scope": "完整已有八次实际发送体/返回体/提示/结果和串联关系；不代表内容合格",
+  "calls": [
+    {
+      "id": "01-whole",
+      "requestSha256": "9932e44b7e77e07a6f9bf5bc94bf900f085bb28fe5a82d84615f26bba564c71a",
+      "responseSha256": "2e780ca6fa9990c6d4bde4afba47ab15c38af685fa287f8e3f98e26fd3ba26f8",
+      "promptSha256": "e1d5823240760178564fb3f54a8d1ecbe1c9d6a66bb5a53a01247d7a20ade46e",
+      "outputSha256": "7b680046402ba75981da5410072b5e26f764c5ff66ff895cb9fad246cdbfd967",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 3573,
+      "outputTokens": 647
+    },
+    {
+      "id": "02-map-1",
+      "requestSha256": "be938de800c8eacdfe7608787ba12a0ff0bdd311b28f2b413793511b40a6dac6",
+      "responseSha256": "f3e202c87c8441ced54b815418955fc2f0e0686856d7d2d9a3c3ef801f843c12",
+      "promptSha256": "5ec49b119cb1f173a78d1b998ffb739a291ddcd57c07875348315dba7a267903",
+      "outputSha256": "af83b201a310b6d43f5fda21e08eb03782b12759e56945c543d3af46592c283a",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 1542,
+      "outputTokens": 519
+    },
+    {
+      "id": "02-map-2",
+      "requestSha256": "380ba3e8ec5a1a1d07f66d0111dd0c0f703dee48b9c5a36878b260f245e64036",
+      "responseSha256": "0e60b8e3ca392d349d964997eb0053c7abf6279ea4315322f851ef7cfd23ebfa",
+      "promptSha256": "4083d41551a1f3924afe6092768e3f6883024b6e85228a0c3018f3831b336261",
+      "outputSha256": "e44506d143267f3719bcf82c6e19c2ff30478e2e154c0f2f2781aec8a883f6e1",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 1507,
+      "outputTokens": 451
+    },
+    {
+      "id": "02-map-3",
+      "requestSha256": "b91298907f32c6ba67133b465503cc8f8f2db8b2ffd1d9fe040085e2a25faa3c",
+      "responseSha256": "3f4a17310e2ff8753ca3843bbd9dae54612e84a5b8459095730c86a4572ff1bd",
+      "promptSha256": "87f3c99cab03290d2faf237067d2fb85fde7eefdaa0fe2b3db3a88eb95c2e26a",
+      "outputSha256": "da0103ced0f6a37ece0be0018718c70876f95a9b38c2c3aff970f223978d3cae",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 1469,
+      "outputTokens": 442
+    },
+    {
+      "id": "03-reduce",
+      "requestSha256": "4c5f4b671cec3cde3cac65c5a213242c528758d77837938a7d4c18a09b0f6df8",
+      "responseSha256": "11813675a8fa9d8763c0717b65bf0aeac49199728bed0650f8728debb378c2ec",
+      "promptSha256": "a3063fc348f7db92b22eccad410943e949f722bc3289b043804052092e6802db",
+      "outputSha256": "16f6be1279c9e1ab202214f02fc818c736106c8c32d50f0384165d787bed993b",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 2035,
+      "outputTokens": 801
+    },
+    {
+      "id": "04-refine-1",
+      "requestSha256": "76015ca485b26d4617002d0d5aa65d2fe514538c3d1985402e21805aafa39532",
+      "responseSha256": "f479426304563d08f89034eced2d61ae796f0d5e0a0dc6f483b9960867a41af0",
+      "promptSha256": "bfa8a95e5bd7ae297a8d4ee789c5de78fb18abcb73ee04e015cda51e6bc8a21b",
+      "outputSha256": "9f0e949f7c8126eebbbb31e78d9691bc57958289e238dbb3a8978645d9df58de",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 1619,
+      "outputTokens": 560
+    },
+    {
+      "id": "04-refine-2",
+      "requestSha256": "00563d80004a3d5504bad1dd9179e9c7686875305b2b0496995d9e0d410baf45",
+      "responseSha256": "442fe6acd1422bbcc8908bc98ab2f6df0bf5e8afb5602a8258153e16c822d9fb",
+      "promptSha256": "2e8535eea31fa7c39a7534aaeb67c96c413122ae0a70af19eb8328a696c05052",
+      "outputSha256": "aceca596523419b441695026619bd11839d803198c3c40235b53cb08297c44f1",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 2197,
+      "outputTokens": 571
+    },
+    {
+      "id": "04-refine-3",
+      "requestSha256": "84878bc7feb776ce4eaceebbed1c9d44ecbdaf6b230a51f8e5cf8c79ccb41d24",
+      "responseSha256": "4f93d81ee1d45078d0b05a5c66f3d2f8c78be989d24dad9851b8cbb15437a3e1",
+      "promptSha256": "f91e4c8533c3cfc7884b519bf124d87c2c1621566d4d52212ef799b492c2fd9d",
+      "outputSha256": "6b1a0e31317ef0f30bafccd832deab03fe2bbc1476e860e298193488f5f9fcb7",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "responseModel": "qwen-plus-2025-12-01",
+      "inputTokens": 2169,
+      "outputTokens": 603
+    }
+  ],
+  "paragraphs": 71,
+  "modelCalls": 0
+}
