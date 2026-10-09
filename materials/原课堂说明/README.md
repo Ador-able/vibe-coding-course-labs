@@ -1,65 +1,104 @@
-# 逐项反馈与有限重做
+# 批量处理模型实验
 
-这是八份教师日报的独立课堂副本。完整来源、教师参考、一次旧请求及其八项原答都保留。旧的 R01、R06 引用失败和错误汇总不会被修成历史成功；本节只准备两项各一次的反馈请求。生成、技术检查和内容采用分别记录。
+这个包包含五节实验的完整输入、课堂原答、提示和可选实跑程序。已有记录可以直接阅读。新的运行不会覆盖课堂结果。
 
-## 固定依赖
-
-AI SDK 7.0.122、OpenAI compatible provider 3.0.59，按现有 pnpm 锁安装：
+先在请求观察室的“模型设置”保存连接。这个包的共用入口读取同一份已保存设置，不需要另填密钥。在包根目录安装一次：
 
 ```powershell
-pnpm install --frozen-lockfile --offline --package-import-method copy --virtual-store-dir .pnpm
+pnpm install --frozen-lockfile
 ```
 
-离线安装需要本机已有对应包；其他机器按同一锁正常安装，不改版本。实际 Node 和 pnpm 版本见固定回执。`node_modules`、本地虚拟存储和新状态不入 Git。源起点为 `9415697030adf3921890b2ee4e9112dc83d6d3e3`；业务状态由下面的明确入口产生，不能从 Git 提交推断已经请求模型。
+把这个包交给编码助手时可以直接说：
 
-## 原材料与状态
+> 按 README 准备本节实验，复用请求观察室已保存的模型设置。先读取课堂材料，只有我要求新的实际结果时才运行模型。使用共用入口和新的结果目录，保留真实失败，不自动重试、不覆盖原答、不把课堂答案当作新模型结果。
 
-`inputs/reports.json` 是八份完整教师材料，`inputs/teacher-reference.json` 是旧请求前的参考。`runs/extract-01` 保留单次旧发送与返回，`runs/inspection.json` 和 `content-review.md` 保留原核对与拒绝采用的理由。
+下面所有命令从这个包的根目录运行。结果目录若已存在会拒绝覆盖，再做一次时选新的目录名。真实运行产生模型费用。
 
-先登记历史，创建新的状态目录：
+| 实验 | 项目目录 | 运行内容 |
+| --- | --- | --- |
+| 长文本 | `long-text` | 三种方法，共八次请求 |
+| 批量分类 | `batch-labels` | 每阶段两批；读者确认口径后再进入下一阶段 |
+| 字段与分母 | `extract-fields` | 八份材料，一次请求 |
+| 逐项反馈 | `item-feedback` | 登记旧历史，只重做 R01、R06，各最多一次 |
+| 两模板比较 | `template-comparison` | 同一输入，两版串行各一次 |
+
+## 长文本
 
 ```powershell
-pnpm run history state/history-01
+node scripts/run-lab.mjs long-text compare.mjs runs/my-comparison-01
 ```
 
-这一步不进入 SDK、供应商或 HTTP。八项各有来源、完整派生对象和处理配方；八条历史 attempt 都指向同一个旧请求，历史 HTTP 总数仍是1。登记的结构、业务值与连续引用检查是本节本地检查，原187检查也另有完整原件。六项历史结果保持原配方和原对象，没有被叫作新反馈模板缓存命中。原汇总单独保存为 rejected。
+新报告、各次实际发送与返回、中间笔记和最后摘要在 `long-text/runs/my-comparison-01`。保留完整材料，人工回查摘要。
 
-## 一次有限的两项重做
-
-下面是模型入口。执行进程需有已授权的 `DASHSCOPE_API_KEY`；不在文件里放密钥，不输出或保存含 Authorization 的请求头。
+## 批量分类
 
 ```powershell
-pnpm run repair state/history-01
+node scripts/run-lab.mjs batch-labels run-stage.mjs discovery runs/my-discovery-01
 ```
 
-固定 R01／R06，以两个 Promise 同时执行，每项最多一次 fetch 尝试，没有第三次请求或自动重试。完整教师任务和人工反馈在 `prompts/repair`，原指令在 `prompts/instructions.txt`。使用 qwen-plus-2025-12-01、temperature 0、maxOutputTokens 3072、maxRetries 0、enable_thinking false，以及 SDK 的总生成超时60秒。超时是 SDK 取消边界，不是磁盘写入的硬实时保证。
-
-每个新 attempt 有独立目录，保留完整 prompt、instructions、feedback、发送体、响应体、原输出和错误；wrapper 进入与真正 fetch 尝试分开计数。供应商没有响应或 SDK 失败，不代表供应商没处理请求。操作者 Ctrl+C 会发出取消信号，不自动重发；本节不据保存后读回推断测试了中途崩溃恢复。
-
-`generationState=returned` 表示取得了生成结果；`checkState=passed` 只表示当前固定结构、值、连续引用与上下文标记检查通过；`contentDecision=needs_human` 仍需人阅读全文。R06 的引用还要由人判断是否真正支持实际 null；标题句号归属也没有自动确认。原汇总仍为未采用，不重新计算统计。
-
-若模型、JSON、引用或内容值失败，本项原件保留，repair 以非零退出；另一项已经保存的结果也保留。不要重复 repair。继续读完整记录，根据本次事实判断失败，不凑成功重跑。
-
-## 保存后的检查和新进程读取
+先看发现结果，再由你确认 `inputs/codebook-v1.json` 的口径。确认后才运行 v1：
 
 ```powershell
-pnpm run check:state state/history-01 runs/check-01.json
-pnpm run read:state state/history-01 runs/read-01.json
+node scripts/run-lab.mjs batch-labels run-stage.mjs v1 runs/my-v1-01
 ```
 
-这两个入口只导入 Node 内置模块和 `records.mjs`，不加载 AI SDK、不读 API_KEY、不请求 HTTP。第一步核来源与完整发送／返回的对应，六项历史文件原字节、两个新 attempt 和拒绝采用的汇总；第二步在新的进程读取完整状态、全部 attempt 与完整输入。各自把回执保存到状态目录之外，并比较状态前后原字节。
-
-技术核对器正常退出不表示内容采用；技术检查失败可以保留在状态内，读取入口仍可显示已有结果。本地记录不等于供应商前缀缓存，也不证明异步 Batch 服务已提交或计费。
-
-## 三方向只读页面
+需要修改口径时明确更新 `inputs/codebook-v2.json`，再用同一口径重处理两批，不自动从 v1 推进到 v2：
 
 ```powershell
-pnpm run prepare:page runs/read-01.json public/state.json
-python -m http.server 4357 --bind 127.0.0.1 --directory public
+node scripts/run-lab.mjs batch-labels run-stage.mjs v2 runs/my-v2-01
 ```
 
-打开 `http://127.0.0.1:4357/`，查看 R06 的原材料、历史失败、人工反馈和当前结果／待确认，再查看 R01；未采用的原汇总可展开。页面只有保存数据的查看动作，没有模型或重做按钮。静态 `state.json` 来自完整纯读取回执，后续状态变化须另生成明确的新数据文件，不能假装自动刷新。
+每阶段的新报告记录实际设置、完整两批输入及原答；程序退出不代表标签已经采用。
 
-原版、台面和笔记页采用同一 DOM、内容和操作。本节原版是这个状态页面的基准设计；10-04 没有这张页面。三方向壳与色域来自已有资料回查练习，具体来源与原字节在 `页面壳来源.json`。实际渲染后分别检查功能状态、位置辨认和整体口吻，记录密度、列宽和页长的代价；没有指定哪一版胜出。
+## 字段与分母
 
-停止静态服务时只结束自己启动的准确进程。不修改全局配置、账号、旧187项目或其他课程服务。
+```powershell
+node scripts/run-lab.mjs extract-fields run-extract.mjs runs/my-extract-01
+```
+
+新记录在 `extract-fields/runs/my-extract-01`。回查原文、空值、重复项、统计分母和单位，保持原答。课堂的 `check-request.mjs`、`inspect.py` 针对已保存课堂记录；自己的新材料不能照用固定参考判作通过。
+
+## 逐项反馈
+
+先创建自己的新状态，登记过程不调用模型：
+
+```powershell
+node item-feedback/register-history.mjs state/my-history-01
+node scripts/run-lab.mjs item-feedback repair-two.mjs state/my-history-01
+node item-feedback/check-state.mjs state/my-history-01 runs/check-my-history-01.json
+node item-feedback/read-state.mjs state/my-history-01 runs/read-my-history-01.json
+```
+
+历史六项、原错误汇总和课堂原件保留。每个新尝试的 recipe、请求正文及检查都按本次实际设置核对；结构、固定值和引用检查通过仍需人工判断支持关系。某项失败时保留另一项的结果，勿再次 repair 同一状态。
+
+已有只读页可直接启动，无需安装或模型设置：
+
+```powershell
+python -m http.server 4357 --bind 127.0.0.1 --directory item-feedback/public
+```
+
+打开 http://127.0.0.1:4357/ 阅读课堂历史与两次反馈结果。页面不会自动调用模型或采用结果。
+
+## 两模板比较
+
+```powershell
+node scripts/run-lab.mjs template-comparison compare-templates.mjs comparison-runs/my-comparison-01
+node template-comparison/inspect-comparison.mjs comparison-runs/my-comparison-01
+python template-comparison/comparison-csv.py export comparison-runs/my-comparison-01
+python template-comparison/comparison-csv.py read-export comparison-runs/my-comparison-01
+```
+
+完整冻结输入先按原字节核对；连接设置单独进入新报告。后续检查核实际请求的模型、地址和输入，再检查结构、覆盖、值、连续引用与汇总。CSV 导出不修正内容，另一个进程读回逐行比较；失败会保留具体原因。检查通过也不表示整项采用。
+
+需要查看新比较页时：
+
+```powershell
+node template-comparison/prepare-comparison-page.mjs comparison-runs/my-comparison-01 public-my-comparison
+python -m http.server 4358 --bind 127.0.0.1 --directory template-comparison/public-my-comparison
+```
+
+打开 http://127.0.0.1:4358/comparison.html。新页面目录不存在时才创建，课堂 `public` 不覆盖。只看课堂比较时直接把静态服务的目录改为 `template-comparison/public`。
+
+## 失败处理
+
+没保存共享设置时，共用入口会提示先打开请求观察室。连接失败、超时、模型拒绝或非法结果都保留在本次记录，没有自动重试；请求失败不能证明供应商未处理。认证头不写入请求记录。停止页面只结束自己启动的服务。

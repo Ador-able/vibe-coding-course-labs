@@ -1,0 +1,194 @@
+[
+  {
+    "name": "original-V1-R06",
+    "direction": "original",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V1 · R06 · 下一段钟声。",
+    "original": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。",
+    "record": "{\n  \"sourceId\": \"R06\",\n  \"campaignId\": \"C05\",\n  \"date\": \"2026-10-02\",\n  \"title\": \"下一段钟声。\",\n  \"status\": \"planned\",\n  \"impressions\": null,\n  \"clicks\": null,\n  \"subscriptions\": null,\n  \"spendCNY\": null,\n  \"budgetCNY\": 10,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"C05\",\n    \"date\": \"2026-10-02\",\n    \"title\": \"拟定标题为：下一段钟声。\",\n    \"status\": \"尚未投放\",\n    \"impressions\": \"预计展示1.5千次\",\n    \"clicks\": \"预计点击75次\",\n    \"subscriptions\": \"没有实际...新增订阅...数据\",\n    \"spendCNY\": \"没有实际...花费数据\",\n    \"budgetCNY\": \"预算10元人民币\",\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"uniqueObservedSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ]\n    },\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 222,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctrImpressions\",\n      \"actual\": 5300,\n      \"expected\": 4300\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04188679245283019,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 39,\n      \"expected\": 35\n    },\n    {\n      \"field\": \"knownSubscriptionSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ]\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "original-V1-R06.jpg"
+  },
+  {
+    "name": "original-V1-R09",
+    "direction": "original",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V1 · R09 · 风中的\"旧信\", 与尾声\n再读",
+    "original": "本条仍是教师编写的练习日报。\n活动 C07，日期 2026-10-03，已经投放。标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读\n标题到上一行结束。当天实际点击7次，实际花费0元人民币。展示次数未提供，新增订阅没有统计，也没有其他资料可以补齐。",
+    "record": "{\n  \"sourceId\": \"R09\",\n  \"campaignId\": \"C07\",\n  \"date\": \"2026-10-03\",\n  \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n  \"status\": \"observed\",\n  \"impressions\": null,\n  \"clicks\": 7,\n  \"subscriptions\": null,\n  \"spendCNY\": 0,\n  \"budgetCNY\": null,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"C07\",\n    \"date\": \"2026-10-03\",\n    \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n    \"status\": \"已经投放\",\n    \"impressions\": \"展示次数未提供\",\n    \"clicks\": \"实际点击7次\",\n    \"subscriptions\": \"新增订阅没有统计\",\n    \"spendCNY\": \"实际花费0元人民币。\",\n    \"budgetCNY\": null,\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"uniqueObservedSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ]\n    },\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 222,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctrImpressions\",\n      \"actual\": 5300,\n      \"expected\": 4300\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04188679245283019,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 39,\n      \"expected\": 35\n    },\n    {\n      \"field\": \"knownSubscriptionSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ]\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "original-V1-R09.jpg"
+  },
+  {
+    "name": "original-V2-R06",
+    "direction": "original",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V2 · R06 · 下一段钟声。",
+    "original": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。",
+    "record": "{\n  \"sourceId\": \"R06\",\n  \"campaignId\": \"C05\",\n  \"date\": \"2026-10-02\",\n  \"title\": \"下一段钟声。\",\n  \"status\": \"planned\",\n  \"impressions\": null,\n  \"clicks\": null,\n  \"subscriptions\": null,\n  \"spendCNY\": null,\n  \"budgetCNY\": 10,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"活动 C05\",\n    \"date\": \"计划日期 2026-10-02\",\n    \"title\": \"拟定标题为：下一段钟声。\",\n    \"status\": \"尚未投放\",\n    \"impressions\": \"预计展示1.5千次\",\n    \"clicks\": \"预计点击75次\",\n    \"subscriptions\": \"没有实际展示、点击、新增订阅或花费数据\",\n    \"spendCNY\": \"没有实际展示、点击、新增订阅或花费数据\",\n    \"budgetCNY\": \"预算10元人民币\",\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 202,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04697674418604651,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 31,\n      \"expected\": 35\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "original-V2-R06.jpg"
+  },
+  {
+    "name": "original-V2-R09-summary",
+    "direction": "original",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V2 · R09 · 风中的\"旧信\", 与尾声\n再读",
+    "original": "本条仍是教师编写的练习日报。\n活动 C07，日期 2026-10-03，已经投放。标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读\n标题到上一行结束。当天实际点击7次，实际花费0元人民币。展示次数未提供，新增订阅没有统计，也没有其他资料可以补齐。",
+    "record": "{\n  \"sourceId\": \"R09\",\n  \"campaignId\": \"C07\",\n  \"date\": \"2026-10-03\",\n  \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n  \"status\": \"observed\",\n  \"impressions\": null,\n  \"clicks\": 7,\n  \"subscriptions\": null,\n  \"spendCNY\": 0,\n  \"budgetCNY\": null,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"活动 C07\",\n    \"date\": \"日期 2026-10-03\",\n    \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n    \"status\": \"已经投放\",\n    \"impressions\": \"展示次数未提供\",\n    \"clicks\": \"实际点击7次\",\n    \"subscriptions\": \"新增订阅没有统计\",\n    \"spendCNY\": \"实际花费0元人民币\",\n    \"budgetCNY\": null,\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 202,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04697674418604651,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 31,\n      \"expected\": 35\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": true,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "original-V2-R09-summary.jpg"
+  },
+  {
+    "name": "desk-V1-R06",
+    "direction": "desk",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V1 · R06 · 下一段钟声。",
+    "original": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。",
+    "record": "{\n  \"sourceId\": \"R06\",\n  \"campaignId\": \"C05\",\n  \"date\": \"2026-10-02\",\n  \"title\": \"下一段钟声。\",\n  \"status\": \"planned\",\n  \"impressions\": null,\n  \"clicks\": null,\n  \"subscriptions\": null,\n  \"spendCNY\": null,\n  \"budgetCNY\": 10,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"C05\",\n    \"date\": \"2026-10-02\",\n    \"title\": \"拟定标题为：下一段钟声。\",\n    \"status\": \"尚未投放\",\n    \"impressions\": \"预计展示1.5千次\",\n    \"clicks\": \"预计点击75次\",\n    \"subscriptions\": \"没有实际...新增订阅...数据\",\n    \"spendCNY\": \"没有实际...花费数据\",\n    \"budgetCNY\": \"预算10元人民币\",\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"uniqueObservedSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ]\n    },\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 222,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctrImpressions\",\n      \"actual\": 5300,\n      \"expected\": 4300\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04188679245283019,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 39,\n      \"expected\": 35\n    },\n    {\n      \"field\": \"knownSubscriptionSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ]\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "desk-V1-R06.jpg"
+  },
+  {
+    "name": "desk-V1-R09",
+    "direction": "desk",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V1 · R09 · 风中的\"旧信\", 与尾声\n再读",
+    "original": "本条仍是教师编写的练习日报。\n活动 C07，日期 2026-10-03，已经投放。标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读\n标题到上一行结束。当天实际点击7次，实际花费0元人民币。展示次数未提供，新增订阅没有统计，也没有其他资料可以补齐。",
+    "record": "{\n  \"sourceId\": \"R09\",\n  \"campaignId\": \"C07\",\n  \"date\": \"2026-10-03\",\n  \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n  \"status\": \"observed\",\n  \"impressions\": null,\n  \"clicks\": 7,\n  \"subscriptions\": null,\n  \"spendCNY\": 0,\n  \"budgetCNY\": null,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"C07\",\n    \"date\": \"2026-10-03\",\n    \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n    \"status\": \"已经投放\",\n    \"impressions\": \"展示次数未提供\",\n    \"clicks\": \"实际点击7次\",\n    \"subscriptions\": \"新增订阅没有统计\",\n    \"spendCNY\": \"实际花费0元人民币。\",\n    \"budgetCNY\": null,\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"uniqueObservedSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ]\n    },\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 222,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctrImpressions\",\n      \"actual\": 5300,\n      \"expected\": 4300\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04188679245283019,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 39,\n      \"expected\": 35\n    },\n    {\n      \"field\": \"knownSubscriptionSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ]\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "desk-V1-R09.jpg"
+  },
+  {
+    "name": "desk-V2-R06",
+    "direction": "desk",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V2 · R06 · 下一段钟声。",
+    "original": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。",
+    "record": "{\n  \"sourceId\": \"R06\",\n  \"campaignId\": \"C05\",\n  \"date\": \"2026-10-02\",\n  \"title\": \"下一段钟声。\",\n  \"status\": \"planned\",\n  \"impressions\": null,\n  \"clicks\": null,\n  \"subscriptions\": null,\n  \"spendCNY\": null,\n  \"budgetCNY\": 10,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"活动 C05\",\n    \"date\": \"计划日期 2026-10-02\",\n    \"title\": \"拟定标题为：下一段钟声。\",\n    \"status\": \"尚未投放\",\n    \"impressions\": \"预计展示1.5千次\",\n    \"clicks\": \"预计点击75次\",\n    \"subscriptions\": \"没有实际展示、点击、新增订阅或花费数据\",\n    \"spendCNY\": \"没有实际展示、点击、新增订阅或花费数据\",\n    \"budgetCNY\": \"预算10元人民币\",\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 202,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04697674418604651,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 31,\n      \"expected\": 35\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "desk-V2-R06.jpg"
+  },
+  {
+    "name": "desk-V2-R09-summary",
+    "direction": "desk",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V2 · R09 · 风中的\"旧信\", 与尾声\n再读",
+    "original": "本条仍是教师编写的练习日报。\n活动 C07，日期 2026-10-03，已经投放。标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读\n标题到上一行结束。当天实际点击7次，实际花费0元人民币。展示次数未提供，新增订阅没有统计，也没有其他资料可以补齐。",
+    "record": "{\n  \"sourceId\": \"R09\",\n  \"campaignId\": \"C07\",\n  \"date\": \"2026-10-03\",\n  \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n  \"status\": \"observed\",\n  \"impressions\": null,\n  \"clicks\": 7,\n  \"subscriptions\": null,\n  \"spendCNY\": 0,\n  \"budgetCNY\": null,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"活动 C07\",\n    \"date\": \"日期 2026-10-03\",\n    \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n    \"status\": \"已经投放\",\n    \"impressions\": \"展示次数未提供\",\n    \"clicks\": \"实际点击7次\",\n    \"subscriptions\": \"新增订阅没有统计\",\n    \"spendCNY\": \"实际花费0元人民币\",\n    \"budgetCNY\": null,\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 202,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04697674418604651,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 31,\n      \"expected\": 35\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": true,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "desk-V2-R09-summary.jpg"
+  },
+  {
+    "name": "notes-V1-R06",
+    "direction": "notes",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V1 · R06 · 下一段钟声。",
+    "original": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。",
+    "record": "{\n  \"sourceId\": \"R06\",\n  \"campaignId\": \"C05\",\n  \"date\": \"2026-10-02\",\n  \"title\": \"下一段钟声。\",\n  \"status\": \"planned\",\n  \"impressions\": null,\n  \"clicks\": null,\n  \"subscriptions\": null,\n  \"spendCNY\": null,\n  \"budgetCNY\": 10,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"C05\",\n    \"date\": \"2026-10-02\",\n    \"title\": \"拟定标题为：下一段钟声。\",\n    \"status\": \"尚未投放\",\n    \"impressions\": \"预计展示1.5千次\",\n    \"clicks\": \"预计点击75次\",\n    \"subscriptions\": \"没有实际...新增订阅...数据\",\n    \"spendCNY\": \"没有实际...花费数据\",\n    \"budgetCNY\": \"预算10元人民币\",\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"uniqueObservedSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ]\n    },\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 222,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctrImpressions\",\n      \"actual\": 5300,\n      \"expected\": 4300\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04188679245283019,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 39,\n      \"expected\": 35\n    },\n    {\n      \"field\": \"knownSubscriptionSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ]\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "notes-V1-R06.jpg"
+  },
+  {
+    "name": "notes-V1-R09",
+    "direction": "notes",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V1 · R09 · 风中的\"旧信\", 与尾声\n再读",
+    "original": "本条仍是教师编写的练习日报。\n活动 C07，日期 2026-10-03，已经投放。标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读\n标题到上一行结束。当天实际点击7次，实际花费0元人民币。展示次数未提供，新增订阅没有统计，也没有其他资料可以补齐。",
+    "record": "{\n  \"sourceId\": \"R09\",\n  \"campaignId\": \"C07\",\n  \"date\": \"2026-10-03\",\n  \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n  \"status\": \"observed\",\n  \"impressions\": null,\n  \"clicks\": 7,\n  \"subscriptions\": null,\n  \"spendCNY\": 0,\n  \"budgetCNY\": null,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"C07\",\n    \"date\": \"2026-10-03\",\n    \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n    \"status\": \"已经投放\",\n    \"impressions\": \"展示次数未提供\",\n    \"clicks\": \"实际点击7次\",\n    \"subscriptions\": \"新增订阅没有统计\",\n    \"spendCNY\": \"实际花费0元人民币。\",\n    \"budgetCNY\": null,\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R02\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"uniqueObservedSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R04\",\n        \"R05\",\n        \"R07\",\n        \"R08\",\n        \"R09\"\n      ]\n    },\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 222,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctrImpressions\",\n      \"actual\": 5300,\n      \"expected\": 4300\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04188679245283019,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 39,\n      \"expected\": 35\n    },\n    {\n      \"field\": \"knownSubscriptionSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R02\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ]\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "notes-V1-R09.jpg"
+  },
+  {
+    "name": "notes-V2-R06",
+    "direction": "notes",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V2 · R06 · 下一段钟声。",
+    "original": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。",
+    "record": "{\n  \"sourceId\": \"R06\",\n  \"campaignId\": \"C05\",\n  \"date\": \"2026-10-02\",\n  \"title\": \"下一段钟声。\",\n  \"status\": \"planned\",\n  \"impressions\": null,\n  \"clicks\": null,\n  \"subscriptions\": null,\n  \"spendCNY\": null,\n  \"budgetCNY\": 10,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"活动 C05\",\n    \"date\": \"计划日期 2026-10-02\",\n    \"title\": \"拟定标题为：下一段钟声。\",\n    \"status\": \"尚未投放\",\n    \"impressions\": \"预计展示1.5千次\",\n    \"clicks\": \"预计点击75次\",\n    \"subscriptions\": \"没有实际展示、点击、新增订阅或花费数据\",\n    \"spendCNY\": \"没有实际展示、点击、新增订阅或花费数据\",\n    \"budgetCNY\": \"预算10元人民币\",\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 202,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04697674418604651,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 31,\n      \"expected\": 35\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": false,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "notes-V2-R06.jpg"
+  },
+  {
+    "name": "notes-V2-R09-summary",
+    "direction": "notes",
+    "exportStatus": "实际候选 CSV：已生成；新进程读回：逐行相同。这不证明原抽取内容正确。",
+    "heading": "V2 · R09 · 风中的\"旧信\", 与尾声\n再读",
+    "original": "本条仍是教师编写的练习日报。\n活动 C07，日期 2026-10-03，已经投放。标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读\n标题到上一行结束。当天实际点击7次，实际花费0元人民币。展示次数未提供，新增订阅没有统计，也没有其他资料可以补齐。",
+    "record": "{\n  \"sourceId\": \"R09\",\n  \"campaignId\": \"C07\",\n  \"date\": \"2026-10-03\",\n  \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n  \"status\": \"observed\",\n  \"impressions\": null,\n  \"clicks\": 7,\n  \"subscriptions\": null,\n  \"spendCNY\": 0,\n  \"budgetCNY\": null,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"活动 C07\",\n    \"date\": \"日期 2026-10-03\",\n    \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n    \"status\": \"已经投放\",\n    \"impressions\": \"展示次数未提供\",\n    \"clicks\": \"实际点击7次\",\n    \"subscriptions\": \"新增订阅没有统计\",\n    \"spendCNY\": \"实际花费0元人民币\",\n    \"budgetCNY\": null,\n    \"duplicateOf\": null\n  }\n}",
+    "summary": "{\n  \"actualSummary\": {\n    \"uniqueObservedSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R04\",\n      \"R05\",\n      \"R07\",\n      \"R08\",\n      \"R09\"\n    ],\n    \"ctrSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\n      \"R01\",\n      \"R03\",\n      \"R05\",\n      \"R07\",\n      \"R08\"\n    ],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  },\n  \"summaryIssues\": [\n    {\n      \"field\": \"ctrSourceIds\",\n      \"actual\": [\n        \"R01\",\n        \"R03\",\n        \"R05\",\n        \"R07\",\n        \"R08\"\n      ],\n      \"expected\": [\n        \"R01\",\n        \"R03\",\n        \"R07\",\n        \"R08\"\n      ]\n    },\n    {\n      \"field\": \"ctrClicks\",\n      \"actual\": 202,\n      \"expected\": 195\n    },\n    {\n      \"field\": \"ctr\",\n      \"actual\": 0.04697674418604651,\n      \"expected\": 0.04534883720930233\n    },\n    {\n      \"field\": \"knownActualSpendCNY\",\n      \"actual\": 31,\n      \"expected\": 35\n    }\n  ],\n  \"wholeTaskAdopted\": false\n}",
+    "summaryOpen": true,
+    "viewport": {
+      "dpr": 1.25,
+      "height": 720,
+      "width": 1280
+    },
+    "screenshot": "notes-V2-R09-summary.jpg"
+  }
+]

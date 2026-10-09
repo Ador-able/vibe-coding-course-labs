@@ -1,0 +1,1438 @@
+{
+  "input": [
+    {
+      "id": "R01",
+      "text": "本轮所有记录均为教师编写的练习日报，不是实际投放。\n活动 C01，日期 2026-09-30，已经投放。标题正文为下面两行，保留英文逗号、双引号和换行：\n钟楼更新, \"第一章\"\n试读\n当天展示1千次，点击50次，新增订阅3次，实际花费6元人民币。点击与订阅都是事件次数，没有跨日报的个人身份表。"
+    },
+    {
+      "id": "R02",
+      "text": "这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。\n活动 C01，日期 2026-09-30，已经投放。标题正文为下面两行：\n钟楼更新, \"第一章\"\n试读\n当天展示1千次，点击50次，新增订阅3次，实际花费6元人民币。"
+    },
+    {
+      "id": "R03",
+      "text": "活动 C02，日期 2026-10-01，已经投放。标题为：守塔人的来信。\n当天展示2,000次，点击80次，新增订阅4次，实际花费12元人民币。"
+    },
+    {
+      "id": "R04",
+      "text": "活动 C03，日期 2026-10-01，已经投放。标题为：夜行学徒。\n日报只记录点击20次和实际花费8元人民币。展示次数未提供，新增订阅没有统计。没有其他表可供补齐。"
+    },
+    {
+      "id": "R05",
+      "text": "活动 C04，日期 2026-10-01，已经投放。标题为：旧城的钥匙。\n当天展示0次，点击0次，新增订阅0次，实际花费0元人民币。这些都是明确记录的零，并非缺失值。"
+    },
+    {
+      "id": "R06",
+      "text": "活动 C05，计划日期 2026-10-02，尚未投放。拟定标题为：下一段钟声。\n方案预计展示1.5千次、预计点击75次，预算10元人民币；没有实际展示、点击、新增订阅或花费数据。"
+    },
+    {
+      "id": "R07",
+      "text": "活动 C06，日期 2026-10-01，已经投放。标题为：钟楼的回声。\n当天展示500次，点击25次，新增订阅2次，实际花费4元人民币。"
+    },
+    {
+      "id": "R08",
+      "text": "活动 C01，日期 2026-10-01，已经投放。标题为：第二天的试读。\n这是 C01 的第二天日报，与 R01 不同日期。当天展示800次，点击40次，新增订阅1次，实际花费5元人民币。"
+    },
+    {
+      "id": "R09",
+      "text": "本条仍是教师编写的练习日报。\n活动 C07，日期 2026-10-03，已经投放。标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读\n标题到上一行结束。当天实际点击7次，实际花费0元人民币。展示次数未提供，新增订阅没有统计，也没有其他资料可以补齐。"
+    },
+    {
+      "id": "R10",
+      "text": "本条仍是教师编写的练习日报。\n活动 C07，计划日期 2026-10-04，尚未投放。标题原文为“收到的不是回声。”，句号属于标题，引号只标明标题边界。\n方案预计展示0次、预计点击0次，预算0元人民币；尚未开展，没有实际展示、点击、新增订阅或花费记录。这不是 R09 的重复转存，而是另一天的计划。"
+    }
+  ],
+  "versions": {
+    "V1": {
+      "report": {
+        "version": "V1",
+        "startedAt": "2026-10-05T03:55:27.301Z",
+        "codeHead": "618a3c09699a4a5aa106101be1f6e37149669f0e",
+        "settings": {
+          "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "providerName": "bailian",
+          "modelId": "qwen-plus-2025-12-01",
+          "temperature": 0,
+          "maxOutputTokens": 8192,
+          "maxRetries": 0,
+          "providerOptions": {
+            "bailian": {
+              "enable_thinking": false
+            }
+          },
+          "timeout": {
+            "totalMs": 120000
+          },
+          "versions": {
+            "ai": "7.0.122",
+            "openaiCompatible": "3.0.59"
+          },
+          "versionsCompared": [
+            "V1",
+            "V2"
+          ],
+          "maximumFetchAttempts": 2,
+          "fetchesPerVersion": 1,
+          "maxConcurrency": 1,
+          "automaticRetries": 0,
+          "referenceSentToModel": false
+        },
+        "promptSHA256": "c09a16171d687d1352889b0192346b8dd25a5b4e2cfbe49c5ff9faac0dffc5e7",
+        "instructionsSHA256": "a044f2fafd4695188a4b4546ebc31bed7dbf553452c204c617f7bab5080fd878",
+        "inputCollectionSHA256": "9f5956f4828dd3108d9cde53595c8b9e8a239f084dac4c4dfcd7ce2ddda0b77c",
+        "wrapperEntries": 1,
+        "actualFetchAttempts": 1,
+        "http": [
+          {
+            "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+            "method": "POST",
+            "requestAt": "2026-10-05T03:55:27.316Z",
+            "status": 200,
+            "responseAt": "2026-10-05T03:56:25.500Z"
+          }
+        ],
+        "result": {
+          "text": "{\n  \"records\": [\n    {\n      \"sourceId\": \"R01\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C01\",\n        \"date\": \"2026-09-30\",\n        \"title\": \"标题正文为下面两行，\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R02\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": \"R01\",\n      \"evidence\": {\n        \"campaignId\": \"C01\",\n        \"date\": \"2026-09-30\",\n        \"title\": \"标题正文为下面两行：\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": \"这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。\"\n      }\n    },\n    {\n      \"sourceId\": \"R03\",\n      \"campaignId\": \"C02\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"守塔人的来信。\",\n      \"status\": \"observed\",\n      \"impressions\": 2000,\n      \"clicks\": 80,\n      \"subscriptions\": 4,\n      \"spendCNY\": 12,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C02\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：守塔人的来信。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示2,000次\",\n        \"clicks\": \"点击80次\",\n        \"subscriptions\": \"新增订阅4次\",\n        \"spendCNY\": \"实际花费12元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R04\",\n      \"campaignId\": \"C03\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"夜行学徒。\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 20,\n      \"subscriptions\": null,\n      \"spendCNY\": 8,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C03\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：夜行学徒。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"点击20次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费8元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R05\",\n      \"campaignId\": \"C04\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"旧城的钥匙。\",\n      \"status\": \"observed\",\n      \"impressions\": 0,\n      \"clicks\": 0,\n      \"subscriptions\": 0,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C04\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：旧城的钥匙。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示0次\",\n        \"clicks\": \"点击0次\",\n        \"subscriptions\": \"新增订阅0次\",\n        \"spendCNY\": \"实际花费0元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R06\",\n      \"campaignId\": \"C05\",\n      \"date\": \"2026-10-02\",\n      \"title\": \"下一段钟声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 10,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C05\",\n        \"date\": \"2026-10-02\",\n        \"title\": \"拟定标题为：下一段钟声。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示1.5千次\",\n        \"clicks\": \"预计点击75次\",\n        \"subscriptions\": \"没有实际...新增订阅...数据\",\n        \"spendCNY\": \"没有实际...花费数据\",\n        \"budgetCNY\": \"预算10元人民币\",\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R07\",\n      \"campaignId\": \"C06\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"钟楼的回声。\",\n      \"status\": \"observed\",\n      \"impressions\": 500,\n      \"clicks\": 25,\n      \"subscriptions\": 2,\n      \"spendCNY\": 4,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C06\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：钟楼的回声。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示500次\",\n        \"clicks\": \"点击25次\",\n        \"subscriptions\": \"新增订阅2次\",\n        \"spendCNY\": \"实际花费4元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R08\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"第二天的试读。\",\n      \"status\": \"observed\",\n      \"impressions\": 800,\n      \"clicks\": 40,\n      \"subscriptions\": 1,\n      \"spendCNY\": 5,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C01\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：第二天的试读。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示800次\",\n        \"clicks\": \"点击40次\",\n        \"subscriptions\": \"新增订阅1次\",\n        \"spendCNY\": \"实际花费5元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R09\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-03\",\n      \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 7,\n      \"subscriptions\": null,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C07\",\n        \"date\": \"2026-10-03\",\n        \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"实际点击7次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费0元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R10\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-04\",\n      \"title\": \"收到的不是回声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 0,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C07\",\n        \"date\": \"2026-10-04\",\n        \"title\": \"标题原文为“收到的不是回声。”，句号属于标题，引号只标明标题边界。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示0次\",\n        \"clicks\": \"预计点击0次\",\n        \"subscriptions\": \"没有实际...新增订阅...记录\",\n        \"spendCNY\": \"没有实际...花费记录\",\n        \"budgetCNY\": \"预算0元人民币\",\n        \"duplicateOf\": null\n      }\n    }\n  ],\n  \"summary\": {\n    \"uniqueObservedSourceIds\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R07\", \"R08\", \"R09\"],\n    \"ctrSourceIds\": [\"R01\", \"R02\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\"R01\", \"R02\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  }\n}",
+          "finishReason": "stop",
+          "rawFinishReason": "stop",
+          "usage": {
+            "inputTokens": 1584,
+            "inputTokenDetails": {
+              "noCacheTokens": 1584,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 2628,
+            "outputTokenDetails": {
+              "textTokens": 2628,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 4212
+          },
+          "warnings": [],
+          "response": {
+            "id": "chatcmpl-7571098c-09f8-9397-b73d-becc724f3f1a",
+            "modelId": "qwen-plus-2025-12-01",
+            "timestamp": "2026-10-05T03:55:29.000Z"
+          }
+        },
+        "error": null,
+        "endedAt": "2026-10-05T03:56:25.506Z",
+        "elapsedMs": 58204.280399999996
+      },
+      "raw": "{\n  \"records\": [\n    {\n      \"sourceId\": \"R01\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C01\",\n        \"date\": \"2026-09-30\",\n        \"title\": \"标题正文为下面两行，\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R02\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": \"R01\",\n      \"evidence\": {\n        \"campaignId\": \"C01\",\n        \"date\": \"2026-09-30\",\n        \"title\": \"标题正文为下面两行：\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": \"这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。\"\n      }\n    },\n    {\n      \"sourceId\": \"R03\",\n      \"campaignId\": \"C02\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"守塔人的来信。\",\n      \"status\": \"observed\",\n      \"impressions\": 2000,\n      \"clicks\": 80,\n      \"subscriptions\": 4,\n      \"spendCNY\": 12,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C02\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：守塔人的来信。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示2,000次\",\n        \"clicks\": \"点击80次\",\n        \"subscriptions\": \"新增订阅4次\",\n        \"spendCNY\": \"实际花费12元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R04\",\n      \"campaignId\": \"C03\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"夜行学徒。\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 20,\n      \"subscriptions\": null,\n      \"spendCNY\": 8,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C03\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：夜行学徒。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"点击20次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费8元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R05\",\n      \"campaignId\": \"C04\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"旧城的钥匙。\",\n      \"status\": \"observed\",\n      \"impressions\": 0,\n      \"clicks\": 0,\n      \"subscriptions\": 0,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C04\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：旧城的钥匙。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示0次\",\n        \"clicks\": \"点击0次\",\n        \"subscriptions\": \"新增订阅0次\",\n        \"spendCNY\": \"实际花费0元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R06\",\n      \"campaignId\": \"C05\",\n      \"date\": \"2026-10-02\",\n      \"title\": \"下一段钟声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 10,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C05\",\n        \"date\": \"2026-10-02\",\n        \"title\": \"拟定标题为：下一段钟声。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示1.5千次\",\n        \"clicks\": \"预计点击75次\",\n        \"subscriptions\": \"没有实际...新增订阅...数据\",\n        \"spendCNY\": \"没有实际...花费数据\",\n        \"budgetCNY\": \"预算10元人民币\",\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R07\",\n      \"campaignId\": \"C06\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"钟楼的回声。\",\n      \"status\": \"observed\",\n      \"impressions\": 500,\n      \"clicks\": 25,\n      \"subscriptions\": 2,\n      \"spendCNY\": 4,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C06\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：钟楼的回声。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示500次\",\n        \"clicks\": \"点击25次\",\n        \"subscriptions\": \"新增订阅2次\",\n        \"spendCNY\": \"实际花费4元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R08\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"第二天的试读。\",\n      \"status\": \"observed\",\n      \"impressions\": 800,\n      \"clicks\": 40,\n      \"subscriptions\": 1,\n      \"spendCNY\": 5,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C01\",\n        \"date\": \"2026-10-01\",\n        \"title\": \"标题为：第二天的试读。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示800次\",\n        \"clicks\": \"点击40次\",\n        \"subscriptions\": \"新增订阅1次\",\n        \"spendCNY\": \"实际花费5元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R09\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-03\",\n      \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 7,\n      \"subscriptions\": null,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C07\",\n        \"date\": \"2026-10-03\",\n        \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"实际点击7次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费0元人民币。\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R10\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-04\",\n      \"title\": \"收到的不是回声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 0,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"C07\",\n        \"date\": \"2026-10-04\",\n        \"title\": \"标题原文为“收到的不是回声。”，句号属于标题，引号只标明标题边界。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示0次\",\n        \"clicks\": \"预计点击0次\",\n        \"subscriptions\": \"没有实际...新增订阅...记录\",\n        \"spendCNY\": \"没有实际...花费记录\",\n        \"budgetCNY\": \"预算0元人民币\",\n        \"duplicateOf\": null\n      }\n    }\n  ],\n  \"summary\": {\n    \"uniqueObservedSourceIds\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R07\", \"R08\", \"R09\"],\n    \"ctrSourceIds\": [\"R01\", \"R02\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"ctrClicks\": 222,\n    \"ctrImpressions\": 5300,\n    \"ctr\": 0.04188679245283019,\n    \"knownActualSpendCNY\": 39,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\"R01\", \"R02\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"limits\": \"不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）\"\n  }\n}",
+      "candidate": {
+        "records": [
+          {
+            "sourceId": "R01",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C01",
+              "date": "2026-09-30",
+              "title": "标题正文为下面两行，\n钟楼更新, \"第一章\"\n试读",
+              "status": "已经投放",
+              "impressions": "展示1千次",
+              "clicks": "点击50次",
+              "subscriptions": "新增订阅3次",
+              "spendCNY": "实际花费6元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R02",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": "R01",
+            "evidence": {
+              "campaignId": "C01",
+              "date": "2026-09-30",
+              "title": "标题正文为下面两行：\n钟楼更新, \"第一章\"\n试读",
+              "status": "已经投放",
+              "impressions": "展示1千次",
+              "clicks": "点击50次",
+              "subscriptions": "新增订阅3次",
+              "spendCNY": "实际花费6元人民币",
+              "budgetCNY": null,
+              "duplicateOf": "这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。"
+            }
+          },
+          {
+            "sourceId": "R03",
+            "campaignId": "C02",
+            "date": "2026-10-01",
+            "title": "守塔人的来信。",
+            "status": "observed",
+            "impressions": 2000,
+            "clicks": 80,
+            "subscriptions": 4,
+            "spendCNY": 12,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C02",
+              "date": "2026-10-01",
+              "title": "标题为：守塔人的来信。",
+              "status": "已经投放",
+              "impressions": "展示2,000次",
+              "clicks": "点击80次",
+              "subscriptions": "新增订阅4次",
+              "spendCNY": "实际花费12元人民币。",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R04",
+            "campaignId": "C03",
+            "date": "2026-10-01",
+            "title": "夜行学徒。",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 20,
+            "subscriptions": null,
+            "spendCNY": 8,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C03",
+              "date": "2026-10-01",
+              "title": "标题为：夜行学徒。",
+              "status": "已经投放",
+              "impressions": "展示次数未提供",
+              "clicks": "点击20次",
+              "subscriptions": "新增订阅没有统计",
+              "spendCNY": "实际花费8元人民币。",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R05",
+            "campaignId": "C04",
+            "date": "2026-10-01",
+            "title": "旧城的钥匙。",
+            "status": "observed",
+            "impressions": 0,
+            "clicks": 0,
+            "subscriptions": 0,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C04",
+              "date": "2026-10-01",
+              "title": "标题为：旧城的钥匙。",
+              "status": "已经投放",
+              "impressions": "展示0次",
+              "clicks": "点击0次",
+              "subscriptions": "新增订阅0次",
+              "spendCNY": "实际花费0元人民币。",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R06",
+            "campaignId": "C05",
+            "date": "2026-10-02",
+            "title": "下一段钟声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 10,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C05",
+              "date": "2026-10-02",
+              "title": "拟定标题为：下一段钟声。",
+              "status": "尚未投放",
+              "impressions": "预计展示1.5千次",
+              "clicks": "预计点击75次",
+              "subscriptions": "没有实际...新增订阅...数据",
+              "spendCNY": "没有实际...花费数据",
+              "budgetCNY": "预算10元人民币",
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R07",
+            "campaignId": "C06",
+            "date": "2026-10-01",
+            "title": "钟楼的回声。",
+            "status": "observed",
+            "impressions": 500,
+            "clicks": 25,
+            "subscriptions": 2,
+            "spendCNY": 4,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C06",
+              "date": "2026-10-01",
+              "title": "标题为：钟楼的回声。",
+              "status": "已经投放",
+              "impressions": "展示500次",
+              "clicks": "点击25次",
+              "subscriptions": "新增订阅2次",
+              "spendCNY": "实际花费4元人民币。",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R08",
+            "campaignId": "C01",
+            "date": "2026-10-01",
+            "title": "第二天的试读。",
+            "status": "observed",
+            "impressions": 800,
+            "clicks": 40,
+            "subscriptions": 1,
+            "spendCNY": 5,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C01",
+              "date": "2026-10-01",
+              "title": "标题为：第二天的试读。",
+              "status": "已经投放",
+              "impressions": "展示800次",
+              "clicks": "点击40次",
+              "subscriptions": "新增订阅1次",
+              "spendCNY": "实际花费5元人民币。",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R09",
+            "campaignId": "C07",
+            "date": "2026-10-03",
+            "title": "风中的\"旧信\", 与尾声\n再读",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 7,
+            "subscriptions": null,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C07",
+              "date": "2026-10-03",
+              "title": "标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读",
+              "status": "已经投放",
+              "impressions": "展示次数未提供",
+              "clicks": "实际点击7次",
+              "subscriptions": "新增订阅没有统计",
+              "spendCNY": "实际花费0元人民币。",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R10",
+            "campaignId": "C07",
+            "date": "2026-10-04",
+            "title": "收到的不是回声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 0,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "C07",
+              "date": "2026-10-04",
+              "title": "标题原文为“收到的不是回声。”，句号属于标题，引号只标明标题边界。",
+              "status": "尚未投放",
+              "impressions": "预计展示0次",
+              "clicks": "预计点击0次",
+              "subscriptions": "没有实际...新增订阅...记录",
+              "spendCNY": "没有实际...花费记录",
+              "budgetCNY": "预算0元人民币",
+              "duplicateOf": null
+            }
+          }
+        ],
+        "summary": {
+          "uniqueObservedSourceIds": [
+            "R01",
+            "R02",
+            "R03",
+            "R04",
+            "R05",
+            "R07",
+            "R08",
+            "R09"
+          ],
+          "ctrSourceIds": [
+            "R01",
+            "R02",
+            "R03",
+            "R05",
+            "R07",
+            "R08"
+          ],
+          "ctrClicks": 222,
+          "ctrImpressions": 5300,
+          "ctr": 0.04188679245283019,
+          "knownActualSpendCNY": 39,
+          "knownSubscriptionEvents": 10,
+          "knownSubscriptionSourceIds": [
+            "R01",
+            "R02",
+            "R03",
+            "R05",
+            "R07",
+            "R08"
+          ],
+          "limits": "不能推出总体投放效果；不能推出独立订阅人数（因无身份去重）；不能推出标题与转化之间的因果效果（因无对照、无归因设计、无变量控制）"
+        }
+      },
+      "inspection": {
+        "version": "V1",
+        "createdAt": "2026-10-05T03:58:15.770Z",
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceSubstringIssues": [
+          {
+            "sourceId": "R01",
+            "field": "title",
+            "quote": "标题正文为下面两行，\n钟楼更新, \"第一章\"\n试读"
+          },
+          {
+            "sourceId": "R06",
+            "field": "subscriptions",
+            "quote": "没有实际...新增订阅...数据"
+          },
+          {
+            "sourceId": "R06",
+            "field": "spendCNY",
+            "quote": "没有实际...花费数据"
+          },
+          {
+            "sourceId": "R10",
+            "field": "subscriptions",
+            "quote": "没有实际...新增订阅...记录"
+          },
+          {
+            "sourceId": "R10",
+            "field": "spendCNY",
+            "quote": "没有实际...花费记录"
+          }
+        ],
+        "summaryIssues": [
+          {
+            "field": "uniqueObservedSourceIds",
+            "actual": [
+              "R01",
+              "R02",
+              "R03",
+              "R04",
+              "R05",
+              "R07",
+              "R08",
+              "R09"
+            ],
+            "expected": [
+              "R01",
+              "R03",
+              "R04",
+              "R05",
+              "R07",
+              "R08",
+              "R09"
+            ]
+          },
+          {
+            "field": "ctrSourceIds",
+            "actual": [
+              "R01",
+              "R02",
+              "R03",
+              "R05",
+              "R07",
+              "R08"
+            ],
+            "expected": [
+              "R01",
+              "R03",
+              "R07",
+              "R08"
+            ]
+          },
+          {
+            "field": "ctrClicks",
+            "actual": 222,
+            "expected": 195
+          },
+          {
+            "field": "ctrImpressions",
+            "actual": 5300,
+            "expected": 4300
+          },
+          {
+            "field": "ctr",
+            "actual": 0.04188679245283019,
+            "expected": 0.04534883720930233
+          },
+          {
+            "field": "knownActualSpendCNY",
+            "actual": 39,
+            "expected": 35
+          },
+          {
+            "field": "knownSubscriptionSourceIds",
+            "actual": [
+              "R01",
+              "R02",
+              "R03",
+              "R05",
+              "R07",
+              "R08"
+            ],
+            "expected": [
+              "R01",
+              "R03",
+              "R05",
+              "R07",
+              "R08"
+            ]
+          }
+        ],
+        "titleDecisions": [
+          {
+            "sourceId": "R01",
+            "acceptedValues": [
+              "钟楼更新, \"第一章\"\n试读"
+            ],
+            "decision": "明确两行边界",
+            "reason": "原文明确标题两行，精确保留字符。"
+          },
+          {
+            "sourceId": "R02",
+            "acceptedValues": [
+              "钟楼更新, \"第一章\"\n试读"
+            ],
+            "decision": "明确两行边界",
+            "reason": "原文明确标题两行，精确保留字符。"
+          },
+          {
+            "sourceId": "R03",
+            "acceptedValues": [
+              "守塔人的来信",
+              "守塔人的来信。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R04",
+            "acceptedValues": [
+              "夜行学徒",
+              "夜行学徒。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R05",
+            "acceptedValues": [
+              "旧城的钥匙",
+              "旧城的钥匙。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R06",
+            "acceptedValues": [
+              "下一段钟声",
+              "下一段钟声。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R07",
+            "acceptedValues": [
+              "钟楼的回声",
+              "钟楼的回声。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R08",
+            "acceptedValues": [
+              "第二天的试读",
+              "第二天的试读。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R09",
+            "acceptedValues": [
+              "风中的\"旧信\", 与尾声\n再读"
+            ],
+            "decision": "明确两行边界",
+            "reason": "原文明确结束行，保留逗号/引号/LF。"
+          },
+          {
+            "sourceId": "R10",
+            "acceptedValues": [
+              "收到的不是回声。"
+            ],
+            "decision": "明确末句号归属",
+            "reason": "原文明说句号属于标题，引号只标边界。"
+          }
+        ],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "scope": "只检查结构、值、连续子串与冻结汇总；逐条证据是否支持字段及limits含义留给人工。",
+        "mechanicalState": "failed"
+      },
+      "csvExport": {
+        "version": "V1",
+        "state": "exported",
+        "csvBytes": 866,
+        "csvSHA256": "2790245d275230141d54f960eea24c0af6234bb510de56083889a72deafd7828",
+        "scope": "导出实际候选，不替换业务值或汇总；证据留在原JSON。"
+      },
+      "csvReadback": {
+        "version": "V1",
+        "state": "passed",
+        "rows": 10,
+        "columns": [
+          "sourceId",
+          "campaignId",
+          "date",
+          "title",
+          "status",
+          "impressions",
+          "clicks",
+          "subscriptions",
+          "spendCNY",
+          "budgetCNY",
+          "duplicateOf"
+        ],
+        "restoredRows": [
+          {
+            "sourceId": "R01",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R02",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": "R01"
+          },
+          {
+            "sourceId": "R03",
+            "campaignId": "C02",
+            "date": "2026-10-01",
+            "title": "守塔人的来信。",
+            "status": "observed",
+            "impressions": 2000,
+            "clicks": 80,
+            "subscriptions": 4,
+            "spendCNY": 12,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R04",
+            "campaignId": "C03",
+            "date": "2026-10-01",
+            "title": "夜行学徒。",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 20,
+            "subscriptions": null,
+            "spendCNY": 8,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R05",
+            "campaignId": "C04",
+            "date": "2026-10-01",
+            "title": "旧城的钥匙。",
+            "status": "observed",
+            "impressions": 0,
+            "clicks": 0,
+            "subscriptions": 0,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R06",
+            "campaignId": "C05",
+            "date": "2026-10-02",
+            "title": "下一段钟声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 10,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R07",
+            "campaignId": "C06",
+            "date": "2026-10-01",
+            "title": "钟楼的回声。",
+            "status": "observed",
+            "impressions": 500,
+            "clicks": 25,
+            "subscriptions": 2,
+            "spendCNY": 4,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R08",
+            "campaignId": "C01",
+            "date": "2026-10-01",
+            "title": "第二天的试读。",
+            "status": "observed",
+            "impressions": 800,
+            "clicks": 40,
+            "subscriptions": 1,
+            "spendCNY": 5,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R09",
+            "campaignId": "C07",
+            "date": "2026-10-03",
+            "title": "风中的\"旧信\", 与尾声\n再读",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 7,
+            "subscriptions": null,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R10",
+            "campaignId": "C07",
+            "date": "2026-10-04",
+            "title": "收到的不是回声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 0,
+            "duplicateOf": null
+          }
+        ],
+        "processId": 64888,
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "modelCalls": 0,
+        "semanticAdoption": false
+      }
+    },
+    "V2": {
+      "report": {
+        "version": "V2",
+        "startedAt": "2026-10-05T03:56:25.508Z",
+        "codeHead": "618a3c09699a4a5aa106101be1f6e37149669f0e",
+        "settings": {
+          "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+          "providerName": "bailian",
+          "modelId": "qwen-plus-2025-12-01",
+          "temperature": 0,
+          "maxOutputTokens": 8192,
+          "maxRetries": 0,
+          "providerOptions": {
+            "bailian": {
+              "enable_thinking": false
+            }
+          },
+          "timeout": {
+            "totalMs": 120000
+          },
+          "versions": {
+            "ai": "7.0.122",
+            "openaiCompatible": "3.0.59"
+          },
+          "versionsCompared": [
+            "V1",
+            "V2"
+          ],
+          "maximumFetchAttempts": 2,
+          "fetchesPerVersion": 1,
+          "maxConcurrency": 1,
+          "automaticRetries": 0,
+          "referenceSentToModel": false
+        },
+        "promptSHA256": "944f0f07a57a1ac611db39bc2ae191e14d89d2fbee0cc24b04423740431dd695",
+        "instructionsSHA256": "a044f2fafd4695188a4b4546ebc31bed7dbf553452c204c617f7bab5080fd878",
+        "inputCollectionSHA256": "9f5956f4828dd3108d9cde53595c8b9e8a239f084dac4c4dfcd7ce2ddda0b77c",
+        "wrapperEntries": 1,
+        "actualFetchAttempts": 1,
+        "http": [
+          {
+            "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+            "method": "POST",
+            "requestAt": "2026-10-05T03:56:25.510Z",
+            "status": 200,
+            "responseAt": "2026-10-05T03:57:24.816Z"
+          }
+        ],
+        "result": {
+          "text": "{\n  \"records\": [\n    {\n      \"sourceId\": \"R01\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C01\",\n        \"date\": \"日期 2026-09-30\",\n        \"title\": \"标题正文为下面两行，保留英文逗号、双引号和换行：\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R02\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": \"R01\",\n      \"evidence\": {\n        \"campaignId\": \"活动 C01\",\n        \"date\": \"日期 2026-09-30\",\n        \"title\": \"标题正文为下面两行：\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": \"这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。\"\n      }\n    },\n    {\n      \"sourceId\": \"R03\",\n      \"campaignId\": \"C02\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"守塔人的来信。\",\n      \"status\": \"observed\",\n      \"impressions\": 2000,\n      \"clicks\": 80,\n      \"subscriptions\": 4,\n      \"spendCNY\": 12,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C02\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：守塔人的来信。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示2,000次\",\n        \"clicks\": \"点击80次\",\n        \"subscriptions\": \"新增订阅4次\",\n        \"spendCNY\": \"实际花费12元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R04\",\n      \"campaignId\": \"C03\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"夜行学徒。\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 20,\n      \"subscriptions\": null,\n      \"spendCNY\": 8,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C03\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：夜行学徒。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"点击20次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费8元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R05\",\n      \"campaignId\": \"C04\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"旧城的钥匙。\",\n      \"status\": \"observed\",\n      \"impressions\": 0,\n      \"clicks\": 0,\n      \"subscriptions\": 0,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C04\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：旧城的钥匙。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示0次\",\n        \"clicks\": \"点击0次\",\n        \"subscriptions\": \"新增订阅0次\",\n        \"spendCNY\": \"实际花费0元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R06\",\n      \"campaignId\": \"C05\",\n      \"date\": \"2026-10-02\",\n      \"title\": \"下一段钟声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 10,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C05\",\n        \"date\": \"计划日期 2026-10-02\",\n        \"title\": \"拟定标题为：下一段钟声。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示1.5千次\",\n        \"clicks\": \"预计点击75次\",\n        \"subscriptions\": \"没有实际展示、点击、新增订阅或花费数据\",\n        \"spendCNY\": \"没有实际展示、点击、新增订阅或花费数据\",\n        \"budgetCNY\": \"预算10元人民币\",\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R07\",\n      \"campaignId\": \"C06\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"钟楼的回声。\",\n      \"status\": \"observed\",\n      \"impressions\": 500,\n      \"clicks\": 25,\n      \"subscriptions\": 2,\n      \"spendCNY\": 4,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C06\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：钟楼的回声。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示500次\",\n        \"clicks\": \"点击25次\",\n        \"subscriptions\": \"新增订阅2次\",\n        \"spendCNY\": \"实际花费4元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R08\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"第二天的试读。\",\n      \"status\": \"observed\",\n      \"impressions\": 800,\n      \"clicks\": 40,\n      \"subscriptions\": 1,\n      \"spendCNY\": 5,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C01\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：第二天的试读。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示800次\",\n        \"clicks\": \"点击40次\",\n        \"subscriptions\": \"新增订阅1次\",\n        \"spendCNY\": \"实际花费5元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R09\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-03\",\n      \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 7,\n      \"subscriptions\": null,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C07\",\n        \"date\": \"日期 2026-10-03\",\n        \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"实际点击7次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费0元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R10\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-04\",\n      \"title\": \"收到的不是回声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 0,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C07\",\n        \"date\": \"计划日期 2026-10-04\",\n        \"title\": \"标题原文为“收到的不是回声。”，句号属于标题，引号只标明标题边界。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示0次\",\n        \"clicks\": \"预计点击0次\",\n        \"subscriptions\": \"没有实际展示、点击、新增订阅或花费记录\",\n        \"spendCNY\": \"没有实际展示、点击、新增订阅或花费记录\",\n        \"budgetCNY\": \"预算0元人民币\",\n        \"duplicateOf\": null\n      }\n    }\n  ],\n  \"summary\": {\n    \"uniqueObservedSourceIds\": [\"R01\", \"R03\", \"R04\", \"R05\", \"R07\", \"R08\", \"R09\"],\n    \"ctrSourceIds\": [\"R01\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\"R01\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  }\n}",
+          "finishReason": "stop",
+          "rawFinishReason": "stop",
+          "usage": {
+            "inputTokens": 1752,
+            "inputTokenDetails": {
+              "noCacheTokens": 1752,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 2680,
+            "outputTokenDetails": {
+              "textTokens": 2680,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 4432
+          },
+          "warnings": [],
+          "response": {
+            "id": "chatcmpl-c9b89033-3779-9836-b775-337b236f0f7c",
+            "modelId": "qwen-plus-2025-12-01",
+            "timestamp": "2026-10-05T03:56:27.000Z"
+          }
+        },
+        "error": null,
+        "endedAt": "2026-10-05T03:57:24.819Z",
+        "elapsedMs": 59309.2451
+      },
+      "raw": "{\n  \"records\": [\n    {\n      \"sourceId\": \"R01\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C01\",\n        \"date\": \"日期 2026-09-30\",\n        \"title\": \"标题正文为下面两行，保留英文逗号、双引号和换行：\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R02\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-09-30\",\n      \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n      \"status\": \"observed\",\n      \"impressions\": 1000,\n      \"clicks\": 50,\n      \"subscriptions\": 3,\n      \"spendCNY\": 6,\n      \"budgetCNY\": null,\n      \"duplicateOf\": \"R01\",\n      \"evidence\": {\n        \"campaignId\": \"活动 C01\",\n        \"date\": \"日期 2026-09-30\",\n        \"title\": \"标题正文为下面两行：\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示1千次\",\n        \"clicks\": \"点击50次\",\n        \"subscriptions\": \"新增订阅3次\",\n        \"spendCNY\": \"实际花费6元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": \"这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。\"\n      }\n    },\n    {\n      \"sourceId\": \"R03\",\n      \"campaignId\": \"C02\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"守塔人的来信。\",\n      \"status\": \"observed\",\n      \"impressions\": 2000,\n      \"clicks\": 80,\n      \"subscriptions\": 4,\n      \"spendCNY\": 12,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C02\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：守塔人的来信。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示2,000次\",\n        \"clicks\": \"点击80次\",\n        \"subscriptions\": \"新增订阅4次\",\n        \"spendCNY\": \"实际花费12元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R04\",\n      \"campaignId\": \"C03\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"夜行学徒。\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 20,\n      \"subscriptions\": null,\n      \"spendCNY\": 8,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C03\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：夜行学徒。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"点击20次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费8元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R05\",\n      \"campaignId\": \"C04\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"旧城的钥匙。\",\n      \"status\": \"observed\",\n      \"impressions\": 0,\n      \"clicks\": 0,\n      \"subscriptions\": 0,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C04\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：旧城的钥匙。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示0次\",\n        \"clicks\": \"点击0次\",\n        \"subscriptions\": \"新增订阅0次\",\n        \"spendCNY\": \"实际花费0元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R06\",\n      \"campaignId\": \"C05\",\n      \"date\": \"2026-10-02\",\n      \"title\": \"下一段钟声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 10,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C05\",\n        \"date\": \"计划日期 2026-10-02\",\n        \"title\": \"拟定标题为：下一段钟声。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示1.5千次\",\n        \"clicks\": \"预计点击75次\",\n        \"subscriptions\": \"没有实际展示、点击、新增订阅或花费数据\",\n        \"spendCNY\": \"没有实际展示、点击、新增订阅或花费数据\",\n        \"budgetCNY\": \"预算10元人民币\",\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R07\",\n      \"campaignId\": \"C06\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"钟楼的回声。\",\n      \"status\": \"observed\",\n      \"impressions\": 500,\n      \"clicks\": 25,\n      \"subscriptions\": 2,\n      \"spendCNY\": 4,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C06\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：钟楼的回声。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示500次\",\n        \"clicks\": \"点击25次\",\n        \"subscriptions\": \"新增订阅2次\",\n        \"spendCNY\": \"实际花费4元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R08\",\n      \"campaignId\": \"C01\",\n      \"date\": \"2026-10-01\",\n      \"title\": \"第二天的试读。\",\n      \"status\": \"observed\",\n      \"impressions\": 800,\n      \"clicks\": 40,\n      \"subscriptions\": 1,\n      \"spendCNY\": 5,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C01\",\n        \"date\": \"日期 2026-10-01\",\n        \"title\": \"标题为：第二天的试读。\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示800次\",\n        \"clicks\": \"点击40次\",\n        \"subscriptions\": \"新增订阅1次\",\n        \"spendCNY\": \"实际花费5元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R09\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-03\",\n      \"title\": \"风中的\\\"旧信\\\", 与尾声\\n再读\",\n      \"status\": \"observed\",\n      \"impressions\": null,\n      \"clicks\": 7,\n      \"subscriptions\": null,\n      \"spendCNY\": 0,\n      \"budgetCNY\": null,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C07\",\n        \"date\": \"日期 2026-10-03\",\n        \"title\": \"标题正文为下面两行，双引号、英文逗号和换行均属于标题：\\n风中的\\\"旧信\\\", 与尾声\\n再读\",\n        \"status\": \"已经投放\",\n        \"impressions\": \"展示次数未提供\",\n        \"clicks\": \"实际点击7次\",\n        \"subscriptions\": \"新增订阅没有统计\",\n        \"spendCNY\": \"实际花费0元人民币\",\n        \"budgetCNY\": null,\n        \"duplicateOf\": null\n      }\n    },\n    {\n      \"sourceId\": \"R10\",\n      \"campaignId\": \"C07\",\n      \"date\": \"2026-10-04\",\n      \"title\": \"收到的不是回声。\",\n      \"status\": \"planned\",\n      \"impressions\": null,\n      \"clicks\": null,\n      \"subscriptions\": null,\n      \"spendCNY\": null,\n      \"budgetCNY\": 0,\n      \"duplicateOf\": null,\n      \"evidence\": {\n        \"campaignId\": \"活动 C07\",\n        \"date\": \"计划日期 2026-10-04\",\n        \"title\": \"标题原文为“收到的不是回声。”，句号属于标题，引号只标明标题边界。\",\n        \"status\": \"尚未投放\",\n        \"impressions\": \"预计展示0次\",\n        \"clicks\": \"预计点击0次\",\n        \"subscriptions\": \"没有实际展示、点击、新增订阅或花费记录\",\n        \"spendCNY\": \"没有实际展示、点击、新增订阅或花费记录\",\n        \"budgetCNY\": \"预算0元人民币\",\n        \"duplicateOf\": null\n      }\n    }\n  ],\n  \"summary\": {\n    \"uniqueObservedSourceIds\": [\"R01\", \"R03\", \"R04\", \"R05\", \"R07\", \"R08\", \"R09\"],\n    \"ctrSourceIds\": [\"R01\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"ctrClicks\": 202,\n    \"ctrImpressions\": 4300,\n    \"ctr\": 0.04697674418604651,\n    \"knownActualSpendCNY\": 31,\n    \"knownSubscriptionEvents\": 10,\n    \"knownSubscriptionSourceIds\": [\"R01\", \"R03\", \"R05\", \"R07\", \"R08\"],\n    \"limits\": \"无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）\"\n  }\n}",
+      "candidate": {
+        "records": [
+          {
+            "sourceId": "R01",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C01",
+              "date": "日期 2026-09-30",
+              "title": "标题正文为下面两行，保留英文逗号、双引号和换行：\n钟楼更新, \"第一章\"\n试读",
+              "status": "已经投放",
+              "impressions": "展示1千次",
+              "clicks": "点击50次",
+              "subscriptions": "新增订阅3次",
+              "spendCNY": "实际花费6元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R02",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": "R01",
+            "evidence": {
+              "campaignId": "活动 C01",
+              "date": "日期 2026-09-30",
+              "title": "标题正文为下面两行：\n钟楼更新, \"第一章\"\n试读",
+              "status": "已经投放",
+              "impressions": "展示1千次",
+              "clicks": "点击50次",
+              "subscriptions": "新增订阅3次",
+              "spendCNY": "实际花费6元人民币",
+              "budgetCNY": null,
+              "duplicateOf": "这是 R01 的同一份日报的重复转存，不是新增一天或第二次投放。"
+            }
+          },
+          {
+            "sourceId": "R03",
+            "campaignId": "C02",
+            "date": "2026-10-01",
+            "title": "守塔人的来信。",
+            "status": "observed",
+            "impressions": 2000,
+            "clicks": 80,
+            "subscriptions": 4,
+            "spendCNY": 12,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C02",
+              "date": "日期 2026-10-01",
+              "title": "标题为：守塔人的来信。",
+              "status": "已经投放",
+              "impressions": "展示2,000次",
+              "clicks": "点击80次",
+              "subscriptions": "新增订阅4次",
+              "spendCNY": "实际花费12元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R04",
+            "campaignId": "C03",
+            "date": "2026-10-01",
+            "title": "夜行学徒。",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 20,
+            "subscriptions": null,
+            "spendCNY": 8,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C03",
+              "date": "日期 2026-10-01",
+              "title": "标题为：夜行学徒。",
+              "status": "已经投放",
+              "impressions": "展示次数未提供",
+              "clicks": "点击20次",
+              "subscriptions": "新增订阅没有统计",
+              "spendCNY": "实际花费8元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R05",
+            "campaignId": "C04",
+            "date": "2026-10-01",
+            "title": "旧城的钥匙。",
+            "status": "observed",
+            "impressions": 0,
+            "clicks": 0,
+            "subscriptions": 0,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C04",
+              "date": "日期 2026-10-01",
+              "title": "标题为：旧城的钥匙。",
+              "status": "已经投放",
+              "impressions": "展示0次",
+              "clicks": "点击0次",
+              "subscriptions": "新增订阅0次",
+              "spendCNY": "实际花费0元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R06",
+            "campaignId": "C05",
+            "date": "2026-10-02",
+            "title": "下一段钟声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 10,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C05",
+              "date": "计划日期 2026-10-02",
+              "title": "拟定标题为：下一段钟声。",
+              "status": "尚未投放",
+              "impressions": "预计展示1.5千次",
+              "clicks": "预计点击75次",
+              "subscriptions": "没有实际展示、点击、新增订阅或花费数据",
+              "spendCNY": "没有实际展示、点击、新增订阅或花费数据",
+              "budgetCNY": "预算10元人民币",
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R07",
+            "campaignId": "C06",
+            "date": "2026-10-01",
+            "title": "钟楼的回声。",
+            "status": "observed",
+            "impressions": 500,
+            "clicks": 25,
+            "subscriptions": 2,
+            "spendCNY": 4,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C06",
+              "date": "日期 2026-10-01",
+              "title": "标题为：钟楼的回声。",
+              "status": "已经投放",
+              "impressions": "展示500次",
+              "clicks": "点击25次",
+              "subscriptions": "新增订阅2次",
+              "spendCNY": "实际花费4元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R08",
+            "campaignId": "C01",
+            "date": "2026-10-01",
+            "title": "第二天的试读。",
+            "status": "observed",
+            "impressions": 800,
+            "clicks": 40,
+            "subscriptions": 1,
+            "spendCNY": 5,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C01",
+              "date": "日期 2026-10-01",
+              "title": "标题为：第二天的试读。",
+              "status": "已经投放",
+              "impressions": "展示800次",
+              "clicks": "点击40次",
+              "subscriptions": "新增订阅1次",
+              "spendCNY": "实际花费5元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R09",
+            "campaignId": "C07",
+            "date": "2026-10-03",
+            "title": "风中的\"旧信\", 与尾声\n再读",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 7,
+            "subscriptions": null,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C07",
+              "date": "日期 2026-10-03",
+              "title": "标题正文为下面两行，双引号、英文逗号和换行均属于标题：\n风中的\"旧信\", 与尾声\n再读",
+              "status": "已经投放",
+              "impressions": "展示次数未提供",
+              "clicks": "实际点击7次",
+              "subscriptions": "新增订阅没有统计",
+              "spendCNY": "实际花费0元人民币",
+              "budgetCNY": null,
+              "duplicateOf": null
+            }
+          },
+          {
+            "sourceId": "R10",
+            "campaignId": "C07",
+            "date": "2026-10-04",
+            "title": "收到的不是回声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 0,
+            "duplicateOf": null,
+            "evidence": {
+              "campaignId": "活动 C07",
+              "date": "计划日期 2026-10-04",
+              "title": "标题原文为“收到的不是回声。”，句号属于标题，引号只标明标题边界。",
+              "status": "尚未投放",
+              "impressions": "预计展示0次",
+              "clicks": "预计点击0次",
+              "subscriptions": "没有实际展示、点击、新增订阅或花费记录",
+              "spendCNY": "没有实际展示、点击、新增订阅或花费记录",
+              "budgetCNY": "预算0元人民币",
+              "duplicateOf": null
+            }
+          }
+        ],
+        "summary": {
+          "uniqueObservedSourceIds": [
+            "R01",
+            "R03",
+            "R04",
+            "R05",
+            "R07",
+            "R08",
+            "R09"
+          ],
+          "ctrSourceIds": [
+            "R01",
+            "R03",
+            "R05",
+            "R07",
+            "R08"
+          ],
+          "ctrClicks": 202,
+          "ctrImpressions": 4300,
+          "ctr": 0.04697674418604651,
+          "knownActualSpendCNY": 31,
+          "knownSubscriptionEvents": 10,
+          "knownSubscriptionSourceIds": [
+            "R01",
+            "R03",
+            "R05",
+            "R07",
+            "R08"
+          ],
+          "limits": "无法推出总体投放效果；无法推出独立订阅人数（因无去重标识）；无法推断标题内容与转化之间的因果效果（因无对照组、无变量控制、无归因模型）"
+        }
+      },
+      "inspection": {
+        "version": "V2",
+        "createdAt": "2026-10-05T03:58:15.772Z",
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceSubstringIssues": [],
+        "summaryIssues": [
+          {
+            "field": "ctrSourceIds",
+            "actual": [
+              "R01",
+              "R03",
+              "R05",
+              "R07",
+              "R08"
+            ],
+            "expected": [
+              "R01",
+              "R03",
+              "R07",
+              "R08"
+            ]
+          },
+          {
+            "field": "ctrClicks",
+            "actual": 202,
+            "expected": 195
+          },
+          {
+            "field": "ctr",
+            "actual": 0.04697674418604651,
+            "expected": 0.04534883720930233
+          },
+          {
+            "field": "knownActualSpendCNY",
+            "actual": 31,
+            "expected": 35
+          }
+        ],
+        "titleDecisions": [
+          {
+            "sourceId": "R01",
+            "acceptedValues": [
+              "钟楼更新, \"第一章\"\n试读"
+            ],
+            "decision": "明确两行边界",
+            "reason": "原文明确标题两行，精确保留字符。"
+          },
+          {
+            "sourceId": "R02",
+            "acceptedValues": [
+              "钟楼更新, \"第一章\"\n试读"
+            ],
+            "decision": "明确两行边界",
+            "reason": "原文明确标题两行，精确保留字符。"
+          },
+          {
+            "sourceId": "R03",
+            "acceptedValues": [
+              "守塔人的来信",
+              "守塔人的来信。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R04",
+            "acceptedValues": [
+              "夜行学徒",
+              "夜行学徒。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R05",
+            "acceptedValues": [
+              "旧城的钥匙",
+              "旧城的钥匙。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R06",
+            "acceptedValues": [
+              "下一段钟声",
+              "下一段钟声。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R07",
+            "acceptedValues": [
+              "钟楼的回声",
+              "钟楼的回声。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R08",
+            "acceptedValues": [
+              "第二天的试读",
+              "第二天的试读。"
+            ],
+            "decision": "needs_human",
+            "reason": "原文尾句号归属不唯一，两种形式暂均接受；不称已确定可发布标题。"
+          },
+          {
+            "sourceId": "R09",
+            "acceptedValues": [
+              "风中的\"旧信\", 与尾声\n再读"
+            ],
+            "decision": "明确两行边界",
+            "reason": "原文明确结束行，保留逗号/引号/LF。"
+          },
+          {
+            "sourceId": "R10",
+            "acceptedValues": [
+              "收到的不是回声。"
+            ],
+            "decision": "明确末句号归属",
+            "reason": "原文明说句号属于标题，引号只标边界。"
+          }
+        ],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "scope": "只检查结构、值、连续子串与冻结汇总；逐条证据是否支持字段及limits含义留给人工。",
+        "mechanicalState": "failed"
+      },
+      "csvExport": {
+        "version": "V2",
+        "state": "exported",
+        "csvBytes": 866,
+        "csvSHA256": "2790245d275230141d54f960eea24c0af6234bb510de56083889a72deafd7828",
+        "scope": "导出实际候选，不替换业务值或汇总；证据留在原JSON。"
+      },
+      "csvReadback": {
+        "version": "V2",
+        "state": "passed",
+        "rows": 10,
+        "columns": [
+          "sourceId",
+          "campaignId",
+          "date",
+          "title",
+          "status",
+          "impressions",
+          "clicks",
+          "subscriptions",
+          "spendCNY",
+          "budgetCNY",
+          "duplicateOf"
+        ],
+        "restoredRows": [
+          {
+            "sourceId": "R01",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R02",
+            "campaignId": "C01",
+            "date": "2026-09-30",
+            "title": "钟楼更新, \"第一章\"\n试读",
+            "status": "observed",
+            "impressions": 1000,
+            "clicks": 50,
+            "subscriptions": 3,
+            "spendCNY": 6,
+            "budgetCNY": null,
+            "duplicateOf": "R01"
+          },
+          {
+            "sourceId": "R03",
+            "campaignId": "C02",
+            "date": "2026-10-01",
+            "title": "守塔人的来信。",
+            "status": "observed",
+            "impressions": 2000,
+            "clicks": 80,
+            "subscriptions": 4,
+            "spendCNY": 12,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R04",
+            "campaignId": "C03",
+            "date": "2026-10-01",
+            "title": "夜行学徒。",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 20,
+            "subscriptions": null,
+            "spendCNY": 8,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R05",
+            "campaignId": "C04",
+            "date": "2026-10-01",
+            "title": "旧城的钥匙。",
+            "status": "observed",
+            "impressions": 0,
+            "clicks": 0,
+            "subscriptions": 0,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R06",
+            "campaignId": "C05",
+            "date": "2026-10-02",
+            "title": "下一段钟声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 10,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R07",
+            "campaignId": "C06",
+            "date": "2026-10-01",
+            "title": "钟楼的回声。",
+            "status": "observed",
+            "impressions": 500,
+            "clicks": 25,
+            "subscriptions": 2,
+            "spendCNY": 4,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R08",
+            "campaignId": "C01",
+            "date": "2026-10-01",
+            "title": "第二天的试读。",
+            "status": "observed",
+            "impressions": 800,
+            "clicks": 40,
+            "subscriptions": 1,
+            "spendCNY": 5,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R09",
+            "campaignId": "C07",
+            "date": "2026-10-03",
+            "title": "风中的\"旧信\", 与尾声\n再读",
+            "status": "observed",
+            "impressions": null,
+            "clicks": 7,
+            "subscriptions": null,
+            "spendCNY": 0,
+            "budgetCNY": null,
+            "duplicateOf": null
+          },
+          {
+            "sourceId": "R10",
+            "campaignId": "C07",
+            "date": "2026-10-04",
+            "title": "收到的不是回声。",
+            "status": "planned",
+            "impressions": null,
+            "clicks": null,
+            "subscriptions": null,
+            "spendCNY": null,
+            "budgetCNY": 0,
+            "duplicateOf": null
+          }
+        ],
+        "processId": 64888,
+        "pythonVersion": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+        "modelCalls": 0,
+        "semanticAdoption": false
+      }
+    }
+  },
+  "scope": "十份完整材料与两次原始结果；页面只读，不请求模型。"
+}

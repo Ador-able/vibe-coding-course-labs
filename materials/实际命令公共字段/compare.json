@@ -1,0 +1,17 @@
+{
+  "projection": "实际命令公共字段；省略机器调用器、cwd和pid。stdout/stderr中仅将本章lab位置替换为project，不改业务文字。",
+  "action": "compare",
+  "workingDirectory": "project",
+  "executable": "node",
+  "argv": [
+    "compare-templates.mjs"
+  ],
+  "head": "618a3c09699a4a5aa106101be1f6e37149669f0e",
+  "startedAt": "2026-10-05T03:55:27.136Z",
+  "finishedAt": "2026-10-05T03:57:24.831Z",
+  "status": 0,
+  "signal": null,
+  "stdout": "{\n  \"codeHead\": \"618a3c09699a4a5aa106101be1f6e37149669f0e\",\n  \"actualFetchAttempts\": 2,\n  \"outcomes\": [\n    {\n      \"version\": \"V1\",\n      \"state\": \"returned\",\n      \"actualFetchAttempts\": 1,\n      \"error\": null\n    },\n    {\n      \"version\": \"V2\",\n      \"state\": \"returned\",\n      \"actualFetchAttempts\": 1,\n      \"error\": null\n    }\n  ]\n}\n\n",
+  "stderr": "",
+  "scope": "只执行V1、V2两个固定顺序请求；不自动重试。"
+}

@@ -1,4 +1,4 @@
-# 批量执行要保存每一项的状态
+# 提示模板变化后怎样验证整个任务
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 
@@ -7,10 +7,6 @@
 ```powershell
 pnpm install --frozen-lockfile
 ```
-
-可用命令见 `package.json` 的 `scripts`。沿用课程本节给出的入口和参数，不需要重复运行其他课的实验。
-
-课堂路径保留在 `inputs/`、`prompts/`。从当前源码目录运行时直接使用这些相对路径。
 
 本节点只包含本课子项目；其他项目从对应课次节点取得。当前项目目录及 Node.js 入口见本节教材。
 
