@@ -1,0 +1,494 @@
+{
+  "definition": {
+    "schemaVersion": 1,
+    "unitKey": "vcm-07-05",
+    "module": 10,
+    "phase": "B当前真实人改稿后的只读目录",
+    "approvedBy": null,
+    "root": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab",
+    "preparedHead": "9766de2df4bfccfd950e6bf93d1bcc081885d5e2",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\data\\continuation-753d2b56-6c26-49c7-8edc-52e9a6d2e981.sqlite",
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "expectedFiveTables": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\runs\\B正式起点完整五表.json",
+    "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\runs\\session-B-directory-01",
+    "approval": {
+      "reviewPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\runs\\session-B-directory-review-01.json"
+    },
+    "settings": {
+      "pluginId": "novel-workbench-course@novel-workbench-course-lab",
+      "marketplaceName": "novel-workbench-course-lab",
+      "serverName": "novel_lab",
+      "enabledTools": [
+        "read_work",
+        "list_chapters",
+        "read_chapter",
+        "export_work"
+      ],
+      "sandboxMode": "read-only",
+      "approvalPolicy": "never",
+      "webSearchMode": "disabled"
+    },
+    "skillNames": [
+      "novel-workbench-course:novel-chapter-task",
+      "novel-workbench-course:novel-chapter-review"
+    ],
+    "runtime": {
+      "configOverrides": [
+        "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-05-lab\"",
+        "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+        "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+        "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"export_work\"]",
+        "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+        "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "plugins.code-review@openai-bundled.enabled=false",
+        "plugins.codex-app-tools@openai-bundled.enabled=false",
+        "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "plugins.coursebook@personal.enabled=false",
+        "plugins.unified-computer-use@openai-bundled.enabled=false",
+        "plugins.frameflow@frameflow.enabled=false",
+        "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "plugins.novel-practice@novel-agent-lab.enabled=false",
+        "plugins.presentations@openai-primary-runtime.enabled=false",
+        "plugins.documents@openai-primary-runtime.enabled=false",
+        "plugins.pdf@openai-primary-runtime.enabled=false",
+        "plugins.visualize@openai-bundled.enabled=false",
+        "plugins.frameflow@personal.enabled=false",
+        "plugins.spreadsheets@openai-primary-runtime.enabled=false",
+        "plugins.tripo-studio-mcp@tripo-studio.enabled=false",
+        "plugins.chrome@openai-bundled.enabled=false",
+        "plugins.template-creator@openai-primary-runtime.enabled=false",
+        "plugins.scene-production@personal.enabled=false",
+        "plugins.browser@openai-bundled.enabled=false",
+        "memories.use_memories=false",
+        "memories.generate_memories=false",
+        "features.memories=false",
+        "project_doc_max_bytes=0",
+        "developer_instructions=\"\"",
+        "skills.bundled.enabled=false",
+        "skills.config=[{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\change-aware-validation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\codebase-simplification\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\theitzy\\\\course-automation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\documents\\\\26.930.11008\\\\skills\\\\documents\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\note-to-anki-rich\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\pdf\\\\26.930.11008\\\\skills\\\\pdf\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\presentations\\\\26.930.11008\\\\skills\\\\presentations\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\record-ui-evidence\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\remove-authoring-residue\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-breakdown\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-models\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\basics\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\concept-art\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\delivery\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\project-vision\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-assembly\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-layout\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\visual-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\semantic-code-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\spreadsheets\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\excel-live-control\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\technical-prose-standard\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\template-creator\\\\26.930.11008\\\\skills\\\\template-creator\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-bundled\\\\visualize\\\\1.0.46\\\\skills\\\\visualize\\\\SKILL.md\",enabled=false}]",
+        "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\h07-05-lab\"={trust_level=\"trusted\"}}",
+        "features.hooks=false",
+        "features.plugins=true",
+        "web_search=\"disabled\""
+      ]
+    },
+    "threadOptions": {
+      "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab",
+      "sandboxMode": "read-only",
+      "approvalPolicy": "never",
+      "webSearchMode": "disabled"
+    },
+    "trustKey": "d:\\projects\\knowledge\\.coursebook-work\\h07-05-lab",
+    "sharedConfig": {
+      "path": "C:/Users/32686/.codex/config.toml",
+      "expected": {
+        "path": "C:/Users/32686/.codex/config.toml",
+        "bytes": 8825,
+        "sha256": "70f0bee7243cfa1ff88189d5ad0fbc963e2d1913b7fa0e30523f66da84030dd7",
+        "mtime": "2026-10-04T13:38:29.499Z"
+      },
+      "onDifference": "停止，不读取共享正文、不写回旧字节。"
+    },
+    "installation": {
+      "mode": "沿已正常取得的0.1.1九原件；forceRefetch:false，不重做安装/强刷、不删除或手改缓存。"
+    },
+    "cache": {
+      "baseRoot": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course",
+      "versionRoot": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1",
+      "version": "0.1.1",
+      "beforeFiles": [
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\binding.json",
+          "bytes": 294,
+          "sha256": "36dbe52321bbd7d6e6ebfb7660d49e7909522531cc9d05f55b5c5b7fa2858760"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\mcp.json",
+          "bytes": 256,
+          "sha256": "972b43c3b645fff5e3427e5beaad07a564aadc29843f6d1e446c734b3e1549d7"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\plugin.json",
+          "bytes": 704,
+          "sha256": "156ca8f7e8c652cda83fed02897a1c6424aa1404c0a7acd2bd37babcd818b8ad"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\serve.mjs",
+          "bytes": 465,
+          "sha256": "a4ebdb3109a8317037ece2ba9bbf04f3afda952332d8ce8b8aa861f66634a4c6"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+          "bytes": 1399,
+          "sha256": "ab5318121643307b59818fcf6c669afd86a364063579a92fbb70b46d5a282cc3"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-review\\references\\prose-review.md",
+          "bytes": 696,
+          "sha256": "fd2cfa298df6d8b4cd5180bf0f80aa29f989841777a3b614aa5fc1c7b1cdcf8c"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-review\\SKILL.md",
+          "bytes": 2339,
+          "sha256": "4aac3333634771348f2d709ecbceaeddc0a9b760386e9b7dacc73c1e2093bf4a"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-task\\references\\state-and-review.md",
+          "bytes": 2125,
+          "sha256": "e11b2b0ab1855fc0882e95d1311b83c795c4013ffe3dc50ef0f7cdc4ccdc1802"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-task\\SKILL.md",
+          "bytes": 2938,
+          "sha256": "3fc61f5819d0d12053ffda7329b43281e4ca497e5dac0ca8c6bcb35edba81fc3"
+        }
+      ],
+      "expectedFiles": [
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\binding.json",
+          "bytes": 294,
+          "sha256": "36dbe52321bbd7d6e6ebfb7660d49e7909522531cc9d05f55b5c5b7fa2858760"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\mcp.json",
+          "bytes": 256,
+          "sha256": "972b43c3b645fff5e3427e5beaad07a564aadc29843f6d1e446c734b3e1549d7"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\plugin.json",
+          "bytes": 704,
+          "sha256": "156ca8f7e8c652cda83fed02897a1c6424aa1404c0a7acd2bd37babcd818b8ad"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\serve.mjs",
+          "bytes": 465,
+          "sha256": "a4ebdb3109a8317037ece2ba9bbf04f3afda952332d8ce8b8aa861f66634a4c6"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+          "bytes": 1399,
+          "sha256": "ab5318121643307b59818fcf6c669afd86a364063579a92fbb70b46d5a282cc3"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-review\\references\\prose-review.md",
+          "bytes": 696,
+          "sha256": "fd2cfa298df6d8b4cd5180bf0f80aa29f989841777a3b614aa5fc1c7b1cdcf8c"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-review\\SKILL.md",
+          "bytes": 2339,
+          "sha256": "4aac3333634771348f2d709ecbceaeddc0a9b760386e9b7dacc73c1e2093bf4a"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-task\\references\\state-and-review.md",
+          "bytes": 2125,
+          "sha256": "e11b2b0ab1855fc0882e95d1311b83c795c4013ffe3dc50ef0f7cdc4ccdc1802"
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.1\\skills\\novel-chapter-task\\SKILL.md",
+          "bytes": 2938,
+          "sha256": "3fc61f5819d0d12053ffda7329b43281e4ca497e5dac0ca8c6bcb35edba81fc3"
+        }
+      ],
+      "forceRefetch": false,
+      "bindingSource": {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\binding.json",
+        "bytes": 294,
+        "sha256": "36dbe52321bbd7d6e6ebfb7660d49e7909522531cc9d05f55b5c5b7fa2858760"
+      }
+    },
+    "sources": [
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\binding.json",
+        "bytes": 294,
+        "sha256": "36dbe52321bbd7d6e6ebfb7660d49e7909522531cc9d05f55b5c5b7fa2858760"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\mcp.json",
+        "bytes": 256,
+        "sha256": "972b43c3b645fff5e3427e5beaad07a564aadc29843f6d1e446c734b3e1549d7"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\plugin.json",
+        "bytes": 704,
+        "sha256": "156ca8f7e8c652cda83fed02897a1c6424aa1404c0a7acd2bd37babcd818b8ad"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\serve.mjs",
+        "bytes": 465,
+        "sha256": "a4ebdb3109a8317037ece2ba9bbf04f3afda952332d8ce8b8aa861f66634a4c6"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+        "bytes": 1399,
+        "sha256": "ab5318121643307b59818fcf6c669afd86a364063579a92fbb70b46d5a282cc3"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\skills\\novel-chapter-review\\references\\prose-review.md",
+        "bytes": 696,
+        "sha256": "fd2cfa298df6d8b4cd5180bf0f80aa29f989841777a3b614aa5fc1c7b1cdcf8c"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\skills\\novel-chapter-review\\SKILL.md",
+        "bytes": 2339,
+        "sha256": "4aac3333634771348f2d709ecbceaeddc0a9b760386e9b7dacc73c1e2093bf4a"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\skills\\novel-chapter-task\\references\\state-and-review.md",
+        "bytes": 2125,
+        "sha256": "e11b2b0ab1855fc0882e95d1311b83c795c4013ffe3dc50ef0f7cdc4ccdc1802"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\plugins\\novel-workbench-course\\skills\\novel-chapter-task\\SKILL.md",
+        "bytes": 2938,
+        "sha256": "3fc61f5819d0d12053ffda7329b43281e4ca497e5dac0ca8c6bcb35edba81fc3"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\scripts\\plugin-runtime.mjs",
+        "bytes": 1928,
+        "sha256": "a549cfa249d311751f775e5ba488d8fb9ccf5bb7a543e55e2fba3acf5c0d592a"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\scripts\\plugin-preflight.mjs",
+        "bytes": 16216,
+        "sha256": "feaee28c8962d09ea54efa84fd813cd9036f60df76354319bd516bdead6ea060"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\scripts\\observe-continuation.mjs",
+        "bytes": 7037,
+        "sha256": "51e3b935722b1c52adb43f1b86d2f3a48e251c8c4ac25e08465dbda52af928a3"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\scripts\\archive-plugin-session.mjs",
+        "bytes": 2974,
+        "sha256": "3eac8cddb7a0cadfc0fe1e7a48aa98bc9412ac26efb332f39a5ffa975b630fca"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\config\\plugin-check.json",
+        "bytes": 341,
+        "sha256": "67183587c7b421be89a52c5e3250994fd144bda2b19ea5053ce1c03f1fcab8b2"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\package.json",
+        "bytes": 1554,
+        "sha256": "8e57120c50fac7e0eecfa281eb0f3b9a28afceb370901d2439b530747ca4b15b"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\pnpm-lock.yaml",
+        "bytes": 41368,
+        "sha256": "083add71a3fcc9a44ec9596f21403557e9dc6168e67675ef592634e9d78baba1"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\materials\\B完整教师输入.txt",
+        "bytes": 2017,
+        "sha256": "98f6c71742a3a17f44e24a004b0f99b88a7402cfecf1f22543a28f7cad67fd03"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\materials\\离线人工决定.md",
+        "bytes": 2971,
+        "sha256": "70cff62df65a1d0f270cf60f1a825b865696f52a122aeb96f188c5afa1e3745b"
+      },
+      {
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\materials\\接续前任务实际读回.json",
+        "bytes": 415,
+        "sha256": "6172fd5283ce701e4ec2d14cdf08d3cdfb0ce5a54c66c9c364faa27c25cf154a"
+      }
+    ],
+    "fixedHostDependency": {
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\.pnpm\\@openai+codex@0.160.0-win32-x64\\node_modules\\@openai\\codex\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "bytes": 326872368,
+      "sha256": "fdda5fa3cf3fb3d000b876720742857676293e4315e4b045fae6f8bd7e866d1d",
+      "mtime": "2026-10-02T08:53:42.064Z"
+    },
+    "host": {
+      "executable": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\.pnpm\\@openai+codex@0.160.0-win32-x64\\node_modules\\@openai\\codex\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+      "argv": [
+        "-c",
+        "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-05-lab\"",
+        "-c",
+        "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+        "-c",
+        "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+        "-c",
+        "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"export_work\"]",
+        "-c",
+        "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+        "-c",
+        "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "-c",
+        "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "-c",
+        "plugins.code-review@openai-bundled.enabled=false",
+        "-c",
+        "plugins.codex-app-tools@openai-bundled.enabled=false",
+        "-c",
+        "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "-c",
+        "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "-c",
+        "plugins.coursebook@personal.enabled=false",
+        "-c",
+        "plugins.unified-computer-use@openai-bundled.enabled=false",
+        "-c",
+        "plugins.frameflow@frameflow.enabled=false",
+        "-c",
+        "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+        "-c",
+        "plugins.novel-practice@novel-agent-lab.enabled=false",
+        "-c",
+        "plugins.presentations@openai-primary-runtime.enabled=false",
+        "-c",
+        "plugins.documents@openai-primary-runtime.enabled=false",
+        "-c",
+        "plugins.pdf@openai-primary-runtime.enabled=false",
+        "-c",
+        "plugins.visualize@openai-bundled.enabled=false",
+        "-c",
+        "plugins.frameflow@personal.enabled=false",
+        "-c",
+        "plugins.spreadsheets@openai-primary-runtime.enabled=false",
+        "-c",
+        "plugins.tripo-studio-mcp@tripo-studio.enabled=false",
+        "-c",
+        "plugins.chrome@openai-bundled.enabled=false",
+        "-c",
+        "plugins.template-creator@openai-primary-runtime.enabled=false",
+        "-c",
+        "plugins.scene-production@personal.enabled=false",
+        "-c",
+        "plugins.browser@openai-bundled.enabled=false",
+        "-c",
+        "memories.use_memories=false",
+        "-c",
+        "memories.generate_memories=false",
+        "-c",
+        "features.memories=false",
+        "-c",
+        "project_doc_max_bytes=0",
+        "-c",
+        "developer_instructions=\"\"",
+        "-c",
+        "skills.bundled.enabled=false",
+        "-c",
+        "skills.config=[{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\change-aware-validation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\codebase-simplification\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\theitzy\\\\course-automation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\documents\\\\26.930.11008\\\\skills\\\\documents\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\note-to-anki-rich\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\pdf\\\\26.930.11008\\\\skills\\\\pdf\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\presentations\\\\26.930.11008\\\\skills\\\\presentations\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\record-ui-evidence\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\remove-authoring-residue\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-breakdown\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-models\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\basics\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\concept-art\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\delivery\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\project-vision\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-assembly\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-layout\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\visual-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\semantic-code-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\spreadsheets\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\excel-live-control\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\technical-prose-standard\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\template-creator\\\\26.930.11008\\\\skills\\\\template-creator\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-bundled\\\\visualize\\\\1.0.46\\\\skills\\\\visualize\\\\SKILL.md\",enabled=false}]",
+        "-c",
+        "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\h07-05-lab\"={trust_level=\"trusted\"}}",
+        "-c",
+        "features.hooks=false",
+        "-c",
+        "features.plugins=true",
+        "-c",
+        "web_search=\"disabled\"",
+        "app-server",
+        "--stdio"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab",
+      "windowsHide": true
+    },
+    "protocol": [
+      {
+        "step": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "plugin_course_preflight",
+            "version": "1.0.0"
+          },
+          "capabilities": {
+            "experimentalApi": true
+          }
+        }
+      },
+      {
+        "step": 2,
+        "method": "initialized",
+        "notification": true,
+        "params": {}
+      },
+      {
+        "step": 3,
+        "method": "config/read",
+        "params": {
+          "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab",
+          "includeLayers": false
+        }
+      },
+      {
+        "step": 4,
+        "method": "plugin/list",
+        "params": {
+          "cwds": [
+            "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab"
+          ],
+          "marketplaceKinds": [
+            "local"
+          ],
+          "forceRefetch": false
+        }
+      },
+      {
+        "step": 5,
+        "method": "hooks/list",
+        "params": {
+          "cwds": [
+            "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab"
+          ]
+        }
+      },
+      {
+        "step": 6,
+        "method": "skills/list",
+        "params": {
+          "cwds": [
+            "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab"
+          ],
+          "forceReload": true
+        }
+      },
+      {
+        "step": 7,
+        "method": "thread/start",
+        "params": {
+          "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab",
+          "sandbox": "read-only",
+          "approvalPolicy": "never"
+        }
+      },
+      {
+        "step": 8,
+        "method": "mcpServerStatus/list",
+        "params": {
+          "threadId": "<仅本次实际threadId>",
+          "detail": "toolsAndAuthOnly"
+        }
+      },
+      {
+        "step": 9,
+        "method": "thread/archive",
+        "params": {
+          "threadId": "<仅本次实际threadId>"
+        }
+      }
+    ],
+    "failureConditions": [
+      "目录须只有两enabled方法和四只读业务工具；缓存九原件、真实绑定和完整五表须相符。",
+      "任何真实失败保存并停止，不生成理想结果；本目录无自然任务。",
+      "共享摘要变化不读取原因、不恢复旧值。"
+    ],
+    "boundaries": [
+      "A已cancelled且第4章已人改r2/draft；本轮不改变业务对象。",
+      "project_doc_max_bytes=0不能据此排除全局用户规则。"
+    ]
+  },
+  "definitionSha256": "0e2b531c88b3385e7e11ee9530dce69239ddd5fa62fa002daf912c85b7fab496",
+  "programSha256": "feaee28c8962d09ea54efa84fd813cd9036f60df76354319bd516bdead6ea060",
+  "review": {
+    "approvedBy": "/root/mcp_connection_author，依据主编本章隔离实验授权",
+    "definitionSha256": "0e2b531c88b3385e7e11ee9530dce69239ddd5fa62fa002daf912c85b7fab496",
+    "programSha256": "feaee28c8962d09ea54efa84fd813cd9036f60df76354319bd516bdead6ea060",
+    "scope": "唯一零轮只读目录，正常实际前置后方执行B，不安装/写共享配置。"
+  },
+  "nodeVersion": "24.12.0"
+}

@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "actualViewed": "三个实际人工流程画面及同稿三方案顶部/底部共九幅，逐张实际查看。",
+  "shots": [
+    {
+      "variant": "原版",
+      "position": "顶部",
+      "scrollY": 0,
+      "pageHeight": 1330,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "bodyUtf16": 1027,
+      "image": {
+        "file": "05-原版-顶部.jpg",
+        "bytes": 83303,
+        "sha256": "31722675e2f0b6bc688207ac4205ce8387a9248dbb9343e090d1702bebea4a49",
+        "width": 1425,
+        "height": 891
+      },
+      "dom": {
+        "file": "05-原版-顶部.json",
+        "bytes": 3918,
+        "sha256": "98dd461f0c89648292bef72c65bcb111260a8f5ddf7dc6661204a10b67b4da63"
+      }
+    },
+    {
+      "variant": "原版",
+      "position": "底部",
+      "scrollY": 430.3999938964844,
+      "pageHeight": 1330,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "bodyUtf16": 1027,
+      "image": {
+        "file": "05-原版-底部.jpg",
+        "bytes": 79959,
+        "sha256": "d43a59f3f6a780836fe5587212336bcc563c2e57884f13dc412a36f6a4ca5246",
+        "width": 1425,
+        "height": 891
+      },
+      "dom": {
+        "file": "05-原版-底部.json",
+        "bytes": 3934,
+        "sha256": "e212621cf8dce50b31ca5f4cf2dc298d6ad7a7bea7ded5f9238b5eb0b078de07"
+      }
+    },
+    {
+      "variant": "台面",
+      "position": "顶部",
+      "scrollY": 0,
+      "pageHeight": 1115,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "bodyUtf16": 1027,
+      "image": {
+        "file": "06-台面-顶部.jpg",
+        "bytes": 97862,
+        "sha256": "0be57dff7cd0884b7654ecffd8f5adc413e93be613c6e22b2a918abcbd0f9f08",
+        "width": 1425,
+        "height": 891
+      },
+      "dom": {
+        "file": "06-台面-顶部.json",
+        "bytes": 3914,
+        "sha256": "8e518600a2060a67a77e28c0c6f8bbff928c90e94f3fdb3edfcbac9041911032"
+      }
+    },
+    {
+      "variant": "台面",
+      "position": "底部",
+      "scrollY": 215.1999969482422,
+      "pageHeight": 1115,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "bodyUtf16": 1027,
+      "image": {
+        "file": "06-台面-底部.jpg",
+        "bytes": 93067,
+        "sha256": "a940e2d88ddd7042aee39dd70e58d32e9f8a654f25a766dbda76539eaceb71d0",
+        "width": 1425,
+        "height": 891
+      },
+      "dom": {
+        "file": "06-台面-底部.json",
+        "bytes": 3930,
+        "sha256": "7098ef2e901d32c31940c3a0e816c98bfbdc9d7b34633332660515379df651a5"
+      }
+    },
+    {
+      "variant": "笔记页",
+      "position": "顶部",
+      "scrollY": 0,
+      "pageHeight": 1482,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "bodyUtf16": 1027,
+      "image": {
+        "file": "07-笔记页-顶部.jpg",
+        "bytes": 52601,
+        "sha256": "8a2144860d5833c41bc15fcf0dd212c785d712f4fe7b8aeb20c08d1edf739119",
+        "width": 1425,
+        "height": 891
+      },
+      "dom": {
+        "file": "07-笔记页-顶部.json",
+        "bytes": 3915,
+        "sha256": "694510228e3561f9bcfb56b7b1c339b3b3cab4b37e9f5501c575e36bcc5beb26"
+      }
+    },
+    {
+      "variant": "笔记页",
+      "position": "底部",
+      "scrollY": 582.4000244140625,
+      "pageHeight": 1482,
+      "viewport": {
+        "height": 900,
+        "width": 1440
+      },
+      "bodyUtf16": 1027,
+      "image": {
+        "file": "07-笔记页-底部.jpg",
+        "bytes": 75309,
+        "sha256": "28b32f993a401a61c0ddf2f163b6aa959c475b82ada0125536cc8073ffdb06ad",
+        "width": 1425,
+        "height": 891
+      },
+      "dom": {
+        "file": "07-笔记页-底部.json",
+        "bytes": 3931,
+        "sha256": "9fe633b6e8867f3591235f00c98ca309efb0092eeef3481bf586f807a8fc5cd2"
+      }
+    }
+  ],
+  "flow": [
+    {
+      "stage": "01-原版-读取r1",
+      "image": {
+        "file": "01-原版-读取r1-视口.jpg",
+        "bytes": 72514,
+        "sha256": "f1777aef21be3ae02ddffb15c4d3a68d3c21588791a304b548fbeb16d526a9c8",
+        "width": 1673,
+        "height": 1022
+      },
+      "dom": {
+        "file": "01-原版-读取r1.json",
+        "bytes": 3362,
+        "sha256": "72f6853480f3c050d0187209f4f0051c9e6f96966ea91ed41ec1ee644cf573b7"
+      }
+    },
+    {
+      "stage": "02-原版-人工未保存",
+      "image": {
+        "file": "02-原版-人工未保存-视口.jpg",
+        "bytes": 82271,
+        "sha256": "984e7692bc5ef09d49d56b3fae06c3aa8b00401310bf00ba3c312451a050919a",
+        "width": 1674,
+        "height": 1022
+      },
+      "dom": {
+        "file": "02-原版-人工未保存.json",
+        "bytes": 3457,
+        "sha256": "f69e8c4054714937f2b7362e279c1df7e218f819fe1ad0eb5965e4a7e8115523"
+      }
+    },
+    {
+      "stage": "03-原版-实际保存r2",
+      "image": {
+        "file": "03-原版-实际保存r2-视口.jpg",
+        "bytes": 97721,
+        "sha256": "cd5dcb509611a24a12d6cbbd06622f1485eae42e21dbdb7e4cd90724cb192028",
+        "width": 2173,
+        "height": 1016
+      },
+      "dom": {
+        "file": "03-原版-实际保存r2.json",
+        "bytes": 3480,
+        "sha256": "ac302dc61a3227084afcf173ac7c3cc1c78d297a433184a15759975803b7f8ad"
+      }
+    }
+  ],
+  "r1Utf16": 1013,
+  "r2Utf16": 1027,
+  "counts": {
+    "works": 1,
+    "work_versions": 4,
+    "chapters": 4,
+    "chapter_versions": 9,
+    "tasks": 8
+  },
+  "boundary": "JPEG视口捕获+完整DOM值，不是fullPage图片，不是全部正文同时可见；三方案顶/底覆盖整个布局，textarea内部正文需另滚。人工流程截图未使用受控统一视口，不能冒称三方案比较。",
+  "cleanup": "仅停止自有exec96591/关闭自有标签/恢复viewport；4348无返回活动连接，不扩大到全部进程或其他端口。"
+}

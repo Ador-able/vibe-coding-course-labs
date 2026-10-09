@@ -22,6 +22,7 @@
     "test": "node --test dist/test/*.test.js",
     "plugin:preflight": "node scripts/plugin-preflight.mjs",
     "plugin:observe": "node scripts/observe-plugin.mjs",
+    "session:observe": "node scripts/observe-continuation.mjs",
     "host:opencode": "node scripts/opencode-local.mjs",
     "host:observe": "node scripts/observe-opencode.mjs",
     "command:preflight": "node scripts/observe-command-states.mjs --mode preflight",

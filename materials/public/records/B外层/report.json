@@ -1,0 +1,21 @@
+{
+  "began": "2026-10-04T14:37:53.144Z",
+  "ended": "2026-10-04T14:40:00.597Z",
+  "exitCode": 0,
+  "signal": null,
+  "pid": 72036,
+  "globalBefore": {
+    "bytes": 8825,
+    "sha256": "70f0bee7243cfa1ff88189d5ad0fbc963e2d1913b7fa0e30523f66da84030dd7",
+    "mtime": "2026-10-04T14:36:23.702Z"
+  },
+  "globalAfter": {
+    "bytes": 8825,
+    "sha256": "70f0bee7243cfa1ff88189d5ad0fbc963e2d1913b7fa0e30523f66da84030dd7",
+    "mtime": "2026-10-04T14:36:23.702Z"
+  },
+  "sharedSummaryUnchanged": true,
+  "stdoutBytes": 2873,
+  "stderrBytes": 169,
+  "scope": "唯一自然B，同一会话只读接续，不新增目录/自动重试；实际失败原样保留，结束只归档本章会话。"
+}

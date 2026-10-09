@@ -1,4 +1,4 @@
-# 让 Agent 根据检查结果修正并完成任务
+# 接续 Agent 会话并核对真实业务状态
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

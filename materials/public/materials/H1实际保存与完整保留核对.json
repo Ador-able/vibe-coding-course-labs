@@ -1,0 +1,187 @@
+{
+  "status": "PASS",
+  "actor": "本章编写者的课堂演示决定，非用户或读者采用",
+  "adopted": false,
+  "post": {
+    "request": {
+      "sequence": 49,
+      "source": {
+        "tabId": 980420647
+      },
+      "method": "Network.requestWillBeSent",
+      "params": {
+        "documentURL": "http://127.0.0.1:4348/?chapter=4&variant=original",
+        "frameId": "90F1F9EED7677848BF4CEEB3CF0A02F1",
+        "hasUserGesture": true,
+        "initiator": {
+          "stack": {
+            "callFrames": [
+              {
+                "columnNumber": 69,
+                "functionName": "request",
+                "lineNumber": 6,
+                "scriptId": "19",
+                "url": "http://127.0.0.1:4348/app.js"
+              },
+              {
+                "columnNumber": 413,
+                "functionName": "",
+                "lineNumber": 38,
+                "scriptId": "19",
+                "url": "http://127.0.0.1:4348/app.js"
+              }
+            ]
+          },
+          "type": "script"
+        },
+        "loaderId": "8AB6AAA34EEE2414EEC2ACDA3EB1D4F3",
+        "redirectHasExtraInfo": false,
+        "request": {
+          "hasPostData": true,
+          "headers": {
+            "Referer": "http://127.0.0.1:4348/?chapter=4&variant=original",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0",
+            "content-type": "application/json",
+            "sec-ch-ua": "\"Chromium\";v=\"154\", \"Microsoft Edge\";v=\"154\", \"Not A(Brand\";v=\"99\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+          },
+          "initialPriority": "High",
+          "isSameSite": true,
+          "method": "POST",
+          "mixedContentType": "none",
+          "postData": "{\"workId\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"chapterNumber\":4,\"expectedWorkRevision\":4,\"expectedChapterRevision\":1,\"expectedPreviousRevisions\":[{\"number\":1,\"revision\":2},{\"number\":2,\"revision\":1},{\"number\":3,\"revision\":4}],\"title\":\"凭据\",\"body\":\"林澈重新打开笔记，压住摊开的簿页。十一枚铜牌还在工具布上，老人挪开灯座，给桌中央腾出一块地方。\\n\\n“零散的单子也找找。”林澈说。\\n\\n老人拉开桌下的抽屉，取出两束用麻绳捆着的纸。绳结发硬，他用指甲一点点挑松，没有扯断。林澈把铜牌连布往里移，免得纸边扫乱刚数过的次序。\\n\\n第一束都是窄单。老人摊开一张，林澈先看顶端的“北库”，再沿格线找物名。铁钉、油壶、铜套，一张张移到右手边。纸上有的写着柜格，有的只写物名。他把看不清的单独放下，让老人换着角度照灯，两人辨出字后才归回原堆。\\n\\n“找着丁七，也得看是不是铜牌。”林澈指着一张单子。那上面只有一个丁字，下面写的是垫片。他没有把它夹进笔记。\\n\\n老人打开第二束，先翻到背面，又将几张折叠的纸逐一展开。一片薄纸粘在折缝里，他停下手，托住两边慢慢分开。露出的物名栏里，铜牌二字挤在一道横线上。\\n\\n林澈俯身看去。柜格写着丁七，数目是壹；下面还有两字：随件。\\n\\n他将簿子转过来，把单子放在丁七那行旁边。簿中存入十二，领出栏依旧空白。单上没有填日期，“随件”后面也没有物件名称。\\n\\n“这里说的是哪件？”老人拿起单子，贴近灯看，又翻过背面。背面没有补字。他用手指压平折痕，沿着空栏重新看了一遍。\\n\\n林澈把纸上的字和空处都抄下来，没有将簿上的十二改成十一，也没有给钟楼那枚牌添上出处。库里每枚牌的字都相同，单上又没有日期和所随物件的名称，仍不能认定钟楼那枚牌正是这里缺的一枚。\\n\\n“师父铺里也收旧件吗？”老人问。\\n\\n“收。我常替他把送来的东西摆到台上。”林澈摸到箱盖，原想取出量尺寸的纸，手却停住了。他受托查昨夜的停钟，记下了左锤两次上移，机芯却还不能拆。这张薄纸也没有告诉他，钟楼吊环旁的牌何时挂上去。\\n\\n他另起一行写：问师父，旧件带牌送验，铺里是否另留写明物件名称和牌面字样的接件单？\\n\\n老人把未查的纸推近，两人又翻了一遍，想找出与这张单子相连的记录。林澈照原来的次序叠好查过的纸，老人逐张核对背面。没有一张补出“随件”所指的物件。\\n\\n老人最后拿起那张薄单，拇指在右下角停住。\\n\\n“这儿还有字。”\\n\\n林澈移近灯。刚才压在折边下的小栏露了出来，栏头是“收回”，里面写着一个壹字。他先看清格线，确认那不是上一栏数目的透影，再把纸转给老人。老人用空白纸遮住其余各栏，留下那一个字，两人又读了一次。\\n\\n林澈在抄录后补上“收回栏：壹”，将单子留在摊开的簿旁，没有填进任何空栏。\\n\\n灯下，单上写着收回一枚；工具布上的铜牌，仍只有十一枚。\"}",
+          "postDataEntries": [
+            {
+              "bytes": "eyJ3b3JrSWQiOiJoYXJuZXNzLTAyZjdkYjU5LWU2YTEtNGU5YS04YzRkLTc1YWRmYTJhMWZlYSIsImNoYXB0ZXJOdW1iZXIiOjQsImV4cGVjdGVkV29ya1JldmlzaW9uIjo0LCJleHBlY3RlZENoYXB0ZXJSZXZpc2lvbiI6MSwiZXhwZWN0ZWRQcmV2aW91c1JldmlzaW9ucyI6W3sibnVtYmVyIjoxLCJyZXZpc2lvbiI6Mn0seyJudW1iZXIiOjIsInJldmlzaW9uIjoxfSx7Im51bWJlciI6MywicmV2aXNpb24iOjR9XSwidGl0bGUiOiLlh63mja4iLCJib2R5Ijoi5p6X5r6I6YeN5paw5omT5byA56yU6K6w77yM5Y6L5L2P5pGK5byA55qE57C/6aG144CC5Y2B5LiA5p6a6ZOc54mM6L+Y5Zyo5bel5YW35biD5LiK77yM6ICB5Lq65oyq5byA54Gv5bqn77yM57uZ5qGM5Lit5aSu6IW+5Ye65LiA5Z2X5Zyw5pa544CCXG5cbuKAnOmbtuaVo+eahOWNleWtkOS5n+aJvuaJvuOAguKAneael+a+iOivtOOAglxuXG7ogIHkurrmi4nlvIDmoYzkuIvnmoTmir3lsYnvvIzlj5blh7rkuKTmnZ/nlKjpurvnu7PmjYbnnYDnmoTnurjjgILnu7Pnu5Plj5HnoazvvIzku5bnlKjmjIfnlLLkuIDngrnngrnmjJHmnb7vvIzmsqHmnInmia/mlq3jgILmnpfmvojmiorpk5zniYzov57luIPlvoDph4znp7vvvIzlhY3lvpfnurjovrnmiavkubHliJrmlbDov4fnmoTmrKHluo/jgIJcblxu56ys5LiA5p2f6YO95piv56qE5Y2V44CC6ICB5Lq65pGK5byA5LiA5byg77yM5p6X5r6I5YWI55yL6aG256uv55qE4oCc5YyX5bqT4oCd77yM5YaN5rK/5qC857q/5om+54mp5ZCN44CC6ZOB6ZKJ44CB5rK55aO244CB6ZOc5aWX77yM5LiA5byg5byg56e75Yiw5Y+z5omL6L6544CC57q45LiK5pyJ55qE5YaZ552A5p+c5qC877yM5pyJ55qE5Y+q5YaZ54mp5ZCN44CC5LuW5oqK55yL5LiN5riF55qE5Y2V54us5pS+5LiL77yM6K6p6ICB5Lq65o2i552A6KeS5bqm54Wn54Gv77yM5Lik5Lq66L6o5Ye65a2X5ZCO5omN5b2S5Zue5Y6f5aCG44CCXG5cbuKAnOaJvuedgOS4geS4g++8jOS5n+W+l+eci+aYr+S4jeaYr+mTnOeJjOOAguKAneael+a+iOaMh+edgOS4gOW8oOWNleWtkOOAgumCo+S4iumdouWPquacieS4gOS4quS4geWtl++8jOS4i+mdouWGmeeahOaYr+Weq+eJh+OAguS7luayoeacieaKiuWug+Wkuei/m+eslOiusOOAglxuXG7ogIHkurrmiZPlvIDnrKzkuozmnZ/vvIzlhYjnv7vliLDog4zpnaLvvIzlj4jlsIblh6DlvKDmipjlj6DnmoTnurjpgJDkuIDlsZXlvIDjgILkuIDniYfoloTnurjnspjlnKjmipjnvJ3ph4zvvIzku5blgZzkuIvmiYvvvIzmiZjkvY/kuKTovrnmhaLmhaLliIblvIDjgILpnLLlh7rnmoTnianlkI3moI/ph4zvvIzpk5zniYzkuozlrZfmjKTlnKjkuIDpgZPmqKrnur/kuIrjgIJcblxu5p6X5r6I5L+v6Lqr55yL5Y6744CC5p+c5qC85YaZ552A5LiB5LiD77yM5pWw55uu5piv5aO577yb5LiL6Z2i6L+Y5pyJ5Lik5a2X77ya6ZqP5Lu244CCXG5cbuS7luWwhuewv+WtkOi9rOi/h+adpe+8jOaKiuWNleWtkOaUvuWcqOS4geS4g+mCo+ihjOaXgei+ueOAguewv+S4reWtmOWFpeWNgeS6jO+8jOmihuWHuuagj+S+neaXp+epuueZveOAguWNleS4iuayoeacieWhq+aXpeacn++8jOKAnOmaj+S7tuKAneWQjumdouS5n+ayoeacieeJqeS7tuWQjeensOOAglxuXG7igJzov5nph4zor7TnmoTmmK/lk6rku7bvvJ/igJ3ogIHkurrmi7/otbfljZXlrZDvvIzotLTov5Hnga/nnIvvvIzlj4jnv7vov4fog4zpnaLjgILog4zpnaLmsqHmnInooaXlrZfjgILku5bnlKjmiYvmjIfljovlubPmipjnl5XvvIzmsr/nnYDnqbrmoI/ph43mlrDnnIvkuobkuIDpgY3jgIJcblxu5p6X5r6I5oqK57q45LiK55qE5a2X5ZKM56m65aSE6YO95oqE5LiL5p2l77yM5rKh5pyJ5bCG57C/5LiK55qE5Y2B5LqM5pS55oiQ5Y2B5LiA77yM5Lmf5rKh5pyJ57uZ6ZKf5qW86YKj5p6a54mM5re75LiK5Ye65aSE44CC5bqT6YeM5q+P5p6a54mM55qE5a2X6YO955u45ZCM77yM5Y2V5LiK5Y+I5rKh5pyJ5pel5pyf5ZKM5omA6ZqP54mp5Lu255qE5ZCN56ew77yM5LuN5LiN6IO96K6k5a6a6ZKf5qW86YKj5p6a54mM5q2j5piv6L+Z6YeM57y655qE5LiA5p6a44CCXG5cbuKAnOW4iOeItumTuumHjOS5n+aUtuaXp+S7tuWQl++8n+KAneiAgeS6uumXruOAglxuXG7igJzmlLbjgILmiJHluLjmm7/ku5bmiorpgIHmnaXnmoTkuJzopb/mkYbliLDlj7DkuIrjgILigJ3mnpfmvojmkbjliLDnrrHnm5bvvIzljp/mg7Plj5blh7rph4/lsLrlr7jnmoTnurjvvIzmiYvljbTlgZzkvY/kuobjgILku5blj5fmiZjmn6XmmKjlpJznmoTlgZzpkp/vvIzorrDkuIvkuoblt6bplKTkuKTmrKHkuIrnp7vvvIzmnLroiq/ljbTov5jkuI3og73mi4bjgILov5nlvKDoloTnurjkuZ/msqHmnInlkYror4nku5bvvIzpkp/mpbzlkIrnjq/ml4HnmoTniYzkvZXml7bmjILkuIrljrvjgIJcblxu5LuW5Y+m6LW35LiA6KGM5YaZ77ya6Zeu5biI54i277yM5pen5Lu25bim54mM6YCB6aqM77yM6ZO66YeM5piv5ZCm5Y+m55WZ5YaZ5piO54mp5Lu25ZCN56ew5ZKM54mM6Z2i5a2X5qC355qE5o6l5Lu25Y2V77yfXG5cbuiAgeS6uuaKiuacquafpeeahOe6uOaOqOi/ke+8jOS4pOS6uuWPiOe/u+S6huS4gOmBje+8jOaDs+aJvuWHuuS4jui/meW8oOWNleWtkOebuOi/nueahOiusOW9leOAguael+a+iOeFp+WOn+adpeeahOasoeW6j+WPoOWlveafpei/h+eahOe6uO+8jOiAgeS6uumAkOW8oOaguOWvueiDjOmdouOAguayoeacieS4gOW8oOihpeWHuuKAnOmaj+S7tuKAneaJgOaMh+eahOeJqeS7tuOAglxuXG7ogIHkurrmnIDlkI7mi7/otbfpgqPlvKDoloTljZXvvIzmi4fmjIflnKjlj7PkuIvop5LlgZzkvY/jgIJcblxu4oCc6L+Z5YS/6L+Y5pyJ5a2X44CC4oCdXG5cbuael+a+iOenu+i/keeBr+OAguWImuaJjeWOi+WcqOaKmOi+ueS4i+eahOWwj+agj+mcsuS6huWHuuadpe+8jOagj+WktOaYr+KAnOaUtuWbnuKAne+8jOmHjOmdouWGmeedgOS4gOS4quWjueWtl+OAguS7luWFiOeci+a4heagvOe6v++8jOehruiupOmCo+S4jeaYr+S4iuS4gOagj+aVsOebrueahOmAj+W9se+8jOWGjeaKiue6uOi9rOe7meiAgeS6uuOAguiAgeS6uueUqOepuueZvee6uOmBruS9j+WFtuS9meWQhOagj++8jOeVmeS4i+mCo+S4gOS4quWtl++8jOS4pOS6uuWPiOivu+S6huS4gOasoeOAglxuXG7mnpfmvojlnKjmioTlvZXlkI7ooaXkuIrigJzmlLblm57moI/vvJrlo7nigJ3vvIzlsIbljZXlrZDnlZnlnKjmkYrlvIDnmoTnsL/ml4HvvIzmsqHmnInloavov5vku7vkvZXnqbrmoI/jgIJcblxu54Gv5LiL77yM5Y2V5LiK5YaZ552A5pS25Zue5LiA5p6a77yb5bel5YW35biD5LiK55qE6ZOc54mM77yM5LuN5Y+q5pyJ5Y2B5LiA5p6a44CCIn0="
+            }
+          ],
+          "referrerPolicy": "strict-origin-when-cross-origin",
+          "url": "http://127.0.0.1:4348/api/draft"
+        },
+        "requestId": "20804.16",
+        "timestamp": 219496.132322,
+        "type": "Fetch",
+        "wallTime": 1791124103.214046
+      }
+    },
+    "response": {
+      "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+      "number": 4,
+      "revision": 2,
+      "title": "凭据",
+      "body": "林澈重新打开笔记，压住摊开的簿页。十一枚铜牌还在工具布上，老人挪开灯座，给桌中央腾出一块地方。\n\n“零散的单子也找找。”林澈说。\n\n老人拉开桌下的抽屉，取出两束用麻绳捆着的纸。绳结发硬，他用指甲一点点挑松，没有扯断。林澈把铜牌连布往里移，免得纸边扫乱刚数过的次序。\n\n第一束都是窄单。老人摊开一张，林澈先看顶端的“北库”，再沿格线找物名。铁钉、油壶、铜套，一张张移到右手边。纸上有的写着柜格，有的只写物名。他把看不清的单独放下，让老人换着角度照灯，两人辨出字后才归回原堆。\n\n“找着丁七，也得看是不是铜牌。”林澈指着一张单子。那上面只有一个丁字，下面写的是垫片。他没有把它夹进笔记。\n\n老人打开第二束，先翻到背面，又将几张折叠的纸逐一展开。一片薄纸粘在折缝里，他停下手，托住两边慢慢分开。露出的物名栏里，铜牌二字挤在一道横线上。\n\n林澈俯身看去。柜格写着丁七，数目是壹；下面还有两字：随件。\n\n他将簿子转过来，把单子放在丁七那行旁边。簿中存入十二，领出栏依旧空白。单上没有填日期，“随件”后面也没有物件名称。\n\n“这里说的是哪件？”老人拿起单子，贴近灯看，又翻过背面。背面没有补字。他用手指压平折痕，沿着空栏重新看了一遍。\n\n林澈把纸上的字和空处都抄下来，没有将簿上的十二改成十一，也没有给钟楼那枚牌添上出处。库里每枚牌的字都相同，单上又没有日期和所随物件的名称，仍不能认定钟楼那枚牌正是这里缺的一枚。\n\n“师父铺里也收旧件吗？”老人问。\n\n“收。我常替他把送来的东西摆到台上。”林澈摸到箱盖，原想取出量尺寸的纸，手却停住了。他受托查昨夜的停钟，记下了左锤两次上移，机芯却还不能拆。这张薄纸也没有告诉他，钟楼吊环旁的牌何时挂上去。\n\n他另起一行写：问师父，旧件带牌送验，铺里是否另留写明物件名称和牌面字样的接件单？\n\n老人把未查的纸推近，两人又翻了一遍，想找出与这张单子相连的记录。林澈照原来的次序叠好查过的纸，老人逐张核对背面。没有一张补出“随件”所指的物件。\n\n老人最后拿起那张薄单，拇指在右下角停住。\n\n“这儿还有字。”\n\n林澈移近灯。刚才压在折边下的小栏露了出来，栏头是“收回”，里面写着一个壹字。他先看清格线，确认那不是上一栏数目的透影，再把纸转给老人。老人用空白纸遮住其余各栏，留下那一个字，两人又读了一次。\n\n林澈在抄录后补上“收回栏：壹”，将单子留在摊开的簿旁，没有填进任何空栏。\n\n灯下，单上写着收回一枚；工具布上的铜牌，仍只有十一枚。",
+      "status": "draft",
+      "workRevision": 4,
+      "origin": "human",
+      "taskId": null,
+      "threadId": null,
+      "updatedAt": "2026-10-04T14:28:23.228Z",
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 2
+        },
+        {
+          "number": 2,
+          "revision": 1
+        },
+        {
+          "number": 3,
+          "revision": 4
+        }
+      ],
+      "reviewNote": null
+    },
+    "status": 200
+  },
+  "section": {
+    "unit": "UTF-16",
+    "start": 555,
+    "end": 587,
+    "original": "库里每枚牌的字都相同，一张写着丁七的单子，还不能替它们各自认路。",
+    "replacement": "库里每枚牌的字都相同，单上又没有日期和所随物件的名称，仍不能认定钟楼那枚牌正是这里缺的一枚。",
+    "prefixUnits": 555,
+    "suffixUnits": 426,
+    "prefixPreserved": true,
+    "suffixPreserved": true
+  },
+  "original": {
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "number": 4,
+    "revision": 1,
+    "title": "凭据",
+    "body": "林澈重新打开笔记，压住摊开的簿页。十一枚铜牌还在工具布上，老人挪开灯座，给桌中央腾出一块地方。\n\n“零散的单子也找找。”林澈说。\n\n老人拉开桌下的抽屉，取出两束用麻绳捆着的纸。绳结发硬，他用指甲一点点挑松，没有扯断。林澈把铜牌连布往里移，免得纸边扫乱刚数过的次序。\n\n第一束都是窄单。老人摊开一张，林澈先看顶端的“北库”，再沿格线找物名。铁钉、油壶、铜套，一张张移到右手边。纸上有的写着柜格，有的只写物名。他把看不清的单独放下，让老人换着角度照灯，两人辨出字后才归回原堆。\n\n“找着丁七，也得看是不是铜牌。”林澈指着一张单子。那上面只有一个丁字，下面写的是垫片。他没有把它夹进笔记。\n\n老人打开第二束，先翻到背面，又将几张折叠的纸逐一展开。一片薄纸粘在折缝里，他停下手，托住两边慢慢分开。露出的物名栏里，铜牌二字挤在一道横线上。\n\n林澈俯身看去。柜格写着丁七，数目是壹；下面还有两字：随件。\n\n他将簿子转过来，把单子放在丁七那行旁边。簿中存入十二，领出栏依旧空白。单上没有填日期，“随件”后面也没有物件名称。\n\n“这里说的是哪件？”老人拿起单子，贴近灯看，又翻过背面。背面没有补字。他用手指压平折痕，沿着空栏重新看了一遍。\n\n林澈把纸上的字和空处都抄下来，没有将簿上的十二改成十一，也没有给钟楼那枚牌添上出处。库里每枚牌的字都相同，一张写着丁七的单子，还不能替它们各自认路。\n\n“师父铺里也收旧件吗？”老人问。\n\n“收。我常替他把送来的东西摆到台上。”林澈摸到箱盖，原想取出量尺寸的纸，手却停住了。他受托查昨夜的停钟，记下了左锤两次上移，机芯却还不能拆。这张薄纸也没有告诉他，钟楼吊环旁的牌何时挂上去。\n\n他另起一行写：问师父，旧件带牌送验，铺里是否另留写明物件名称和牌面字样的接件单？\n\n老人把未查的纸推近，两人又翻了一遍，想找出与这张单子相连的记录。林澈照原来的次序叠好查过的纸，老人逐张核对背面。没有一张补出“随件”所指的物件。\n\n老人最后拿起那张薄单，拇指在右下角停住。\n\n“这儿还有字。”\n\n林澈移近灯。刚才压在折边下的小栏露了出来，栏头是“收回”，里面写着一个壹字。他先看清格线，确认那不是上一栏数目的透影，再把纸转给老人。老人用空白纸遮住其余各栏，留下那一个字，两人又读了一次。\n\n林澈在抄录后补上“收回栏：壹”，将单子留在摊开的簿旁，没有填进任何空栏。\n\n灯下，单上写着收回一枚；工具布上的铜牌，仍只有十一枚。",
+    "status": "draft",
+    "workRevision": 4,
+    "origin": "agent",
+    "taskId": "06da53fd-6c20-4e4b-bc56-617e1bb92892",
+    "threadId": "01a10742-5e23-70d3-8784-6debe8fbcd7c",
+    "updatedAt": "2026-10-04T14:14:44.085Z",
+    "previousRevisions": [
+      {
+        "number": 1,
+        "revision": 2
+      },
+      {
+        "number": 2,
+        "revision": 1
+      },
+      {
+        "number": 3,
+        "revision": 4
+      }
+    ],
+    "reviewNote": null
+  },
+  "changed": {
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "number": 4,
+    "revision": 2,
+    "title": "凭据",
+    "body": "林澈重新打开笔记，压住摊开的簿页。十一枚铜牌还在工具布上，老人挪开灯座，给桌中央腾出一块地方。\n\n“零散的单子也找找。”林澈说。\n\n老人拉开桌下的抽屉，取出两束用麻绳捆着的纸。绳结发硬，他用指甲一点点挑松，没有扯断。林澈把铜牌连布往里移，免得纸边扫乱刚数过的次序。\n\n第一束都是窄单。老人摊开一张，林澈先看顶端的“北库”，再沿格线找物名。铁钉、油壶、铜套，一张张移到右手边。纸上有的写着柜格，有的只写物名。他把看不清的单独放下，让老人换着角度照灯，两人辨出字后才归回原堆。\n\n“找着丁七，也得看是不是铜牌。”林澈指着一张单子。那上面只有一个丁字，下面写的是垫片。他没有把它夹进笔记。\n\n老人打开第二束，先翻到背面，又将几张折叠的纸逐一展开。一片薄纸粘在折缝里，他停下手，托住两边慢慢分开。露出的物名栏里，铜牌二字挤在一道横线上。\n\n林澈俯身看去。柜格写着丁七，数目是壹；下面还有两字：随件。\n\n他将簿子转过来，把单子放在丁七那行旁边。簿中存入十二，领出栏依旧空白。单上没有填日期，“随件”后面也没有物件名称。\n\n“这里说的是哪件？”老人拿起单子，贴近灯看，又翻过背面。背面没有补字。他用手指压平折痕，沿着空栏重新看了一遍。\n\n林澈把纸上的字和空处都抄下来，没有将簿上的十二改成十一，也没有给钟楼那枚牌添上出处。库里每枚牌的字都相同，单上又没有日期和所随物件的名称，仍不能认定钟楼那枚牌正是这里缺的一枚。\n\n“师父铺里也收旧件吗？”老人问。\n\n“收。我常替他把送来的东西摆到台上。”林澈摸到箱盖，原想取出量尺寸的纸，手却停住了。他受托查昨夜的停钟，记下了左锤两次上移，机芯却还不能拆。这张薄纸也没有告诉他，钟楼吊环旁的牌何时挂上去。\n\n他另起一行写：问师父，旧件带牌送验，铺里是否另留写明物件名称和牌面字样的接件单？\n\n老人把未查的纸推近，两人又翻了一遍，想找出与这张单子相连的记录。林澈照原来的次序叠好查过的纸，老人逐张核对背面。没有一张补出“随件”所指的物件。\n\n老人最后拿起那张薄单，拇指在右下角停住。\n\n“这儿还有字。”\n\n林澈移近灯。刚才压在折边下的小栏露了出来，栏头是“收回”，里面写着一个壹字。他先看清格线，确认那不是上一栏数目的透影，再把纸转给老人。老人用空白纸遮住其余各栏，留下那一个字，两人又读了一次。\n\n林澈在抄录后补上“收回栏：壹”，将单子留在摊开的簿旁，没有填进任何空栏。\n\n灯下，单上写着收回一枚；工具布上的铜牌，仍只有十一枚。",
+    "status": "draft",
+    "workRevision": 4,
+    "origin": "human",
+    "taskId": null,
+    "threadId": null,
+    "updatedAt": "2026-10-04T14:28:23.228Z",
+    "previousRevisions": [
+      {
+        "number": 1,
+        "revision": 2
+      },
+      {
+        "number": 2,
+        "revision": 1
+      },
+      {
+        "number": 3,
+        "revision": 4
+      }
+    ],
+    "reviewNote": null
+  },
+  "counts": {
+    "works": 1,
+    "work_versions": 4,
+    "chapters": 4,
+    "chapter_versions": 9,
+    "tasks": 8
+  },
+  "cliArgs": [
+    "dist/cli.js",
+    "chapter",
+    "4",
+    "--db",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\data\\continuation-753d2b56-6c26-49c7-8edc-52e9a6d2e981.sqlite",
+    "--work",
+    "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea"
+  ],
+  "limits": [
+    "实际人工保存与拒绝决定发生后才准备B。",
+    "人改稿变为draft，本文不进行采用或发布。",
+    "截图第一次与第二次超时发生在编辑前/保存前，分别留存；不影响已经独立核过的单次实际POST。",
+    "HTTP包含计算字段basisCurrent，已按实际接口剥离再与领域对象核对。"
+  ]
+}

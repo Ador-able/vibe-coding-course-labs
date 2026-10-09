@@ -1,0 +1,18 @@
+{
+  "executable": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "scripts/observe-continuation.mjs",
+    "--db",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\data\\continuation-753d2b56-6c26-49c7-8edc-52e9a6d2e981.sqlite",
+    "--work",
+    "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "--chapter",
+    "4",
+    "--prompt",
+    "materials/A完整教师输入.txt",
+    "--stop-after-save"
+  ],
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab",
+  "began": "2026-10-04T14:12:32.180Z",
+  "definitionSha256": "99452560bc65745464ff6a5d04dea2440eeadc94fd5bb539b4e4c49047870242"
+}

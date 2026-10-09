@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "novel-workbench-course",
+  "version": "0.1.1",
+  "description": "通过同一 MCP 业务状态练习材料读取、草稿保存和结果检查。",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "小说任务练习",
+        "shortDescription": "读取当前材料，依据实际保存结果推进任务。",
+        "longDescription": "将章节实践方法与本地教学 MCP 组合；小说用于观察工具、上下文、反馈和人的决定。",
+        "category": "Productivity",
+        "capabilities": [
+          "Read",
+          "Write"
+        ]
+      }
+    }
+  }
+}
