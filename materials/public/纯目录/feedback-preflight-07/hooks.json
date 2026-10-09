@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-09\\lab",
+      "hooks": [
+        {
+          "key": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-09\\lab\\.codex\\hooks.json:post_tool_use:0:0",
+          "eventName": "postToolUse",
+          "handlerType": "command",
+          "command": "node scripts/check-draft-placeholder.mjs correct",
+          "async": false,
+          "matcher": "^mcp__novel_lab__save_draft$",
+          "timeoutSec": 10,
+          "statusMessage": "读取真实保存返回，检查编辑占位符",
+          "additionalContextLimit": null,
+          "sourcePath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-09\\lab\\.codex\\hooks.json",
+          "source": "project",
+          "pluginId": null,
+          "displayOrder": 0,
+          "enabled": true,
+          "isManaged": false,
+          "currentHash": "sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9",
+          "trustStatus": "untrusted"
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

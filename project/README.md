@@ -1,4 +1,4 @@
-# 用 Hook 接通自动检查
+# 把有效的反馈流程复用起来
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

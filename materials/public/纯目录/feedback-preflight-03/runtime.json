@@ -1,0 +1,18 @@
+{
+  "configOverrides": [
+    "model=\"gpt-6.1-sol\"",
+    "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-09-09\\\\lab\"={trust_level=\"trusted\"}}",
+    "mcp_servers.novel_lab={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-09-09\\\\lab\\\\dist\\\\mcp.js\",\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-09-09\\\\lab\\\\data\\\\feedback.sqlite\"],cwd=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-09-09\\\\lab\",enabled=true,required=true,enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"save_draft\"],default_tools_approval_mode=\"approve\"}",
+    "memories.use_memories=false",
+    "memories.generate_memories=false",
+    "features.memories=false",
+    "project_doc_max_bytes=0",
+    "developer_instructions=\"\"",
+    "skills.bundled.enabled=false",
+    "features.shell_tool=true",
+    "web_search=\"disabled\"",
+    "features.hooks=true"
+  ],
+  "omittedOverrideCount": 18,
+  "scope": "当前模型、项目、业务服务、记忆关闭及Hook信任保留；已停用其他入口名称和路径不收录。"
+}

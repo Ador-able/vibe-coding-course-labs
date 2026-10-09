@@ -1,0 +1,5 @@
+[plugins."novel-workbench-course@novel-workbench-course-lab"]
+enabled = false
+
+[plugins."novel-workbench-course@novel-workbench-course-lab".mcp_servers.novel_lab]
+default_tools_approval_mode = "approve"

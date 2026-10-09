@@ -1,305 +1,297 @@
 {
-  "run": "hook-task-497edb80-756b-4f6d-b698-9711b99e595f",
+  "run": "feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af",
   "projections": [
     {
-      "path": "lab/runs/hook-preflight-01/report.json",
-      "target": "纯目录/hook-preflight-01/report.json",
-      "originalSha256": "0798f42d7c00c4e382654db448e99f4e2eafe274d98fe5496505c03a7f79c919"
+      "path": "lab/runs/feedback-preflight-01/report.json",
+      "target": "纯目录/feedback-preflight-01/report.json",
+      "originalSha256": "51de4008e84e0f84c1b511a3c7714307825bd185ed632803ea88c436c8feb6bf"
     },
     {
-      "path": "lab/runs/hook-preflight-01/catalog.json",
-      "target": "纯目录/hook-preflight-01/catalog.json",
-      "originalSha256": "a9dc5c3160a1dc38facad66101dba64627787f35fe25d98d0fd3a559dc86bf23"
+      "path": "lab/runs/feedback-preflight-01/skills.json",
+      "target": "纯目录/feedback-preflight-01/skills.json",
+      "originalSha256": "5b5fec173d41c5e617568a16b3d56fc51d8a1e1d74e4900476818ae9a510d53e"
     },
     {
-      "path": "lab/runs/hook-preflight-01/mcp-status.json",
-      "target": "纯目录/hook-preflight-01/mcp-status.json",
-      "originalSha256": "55b86b90558b5a25e54c2438d0593adaecf042ad93eb58b5a2050191e8b516f3"
+      "path": "lab/runs/feedback-preflight-01/mcp-status.json",
+      "target": "纯目录/feedback-preflight-01/mcp-status.json",
+      "originalSha256": "56132da9d453fadf96061a04526705b3277b7df2594c7113269436eeaf3e17b3"
     },
     {
-      "path": "lab/runs/hook-preflight-01/protocol.json",
-      "target": "纯目录/hook-preflight-01/protocol.json",
-      "originalSha256": "e43f081312fdb15356a48ec3a3ab5305e2dbd8b43182ff7d24d0f61851f1c189"
+      "path": "lab/runs/feedback-preflight-01/configuration.json",
+      "target": "纯目录/feedback-preflight-01/configuration.json",
+      "originalSha256": "d4e01d998d11f5ee42c2ec145dad2728955c74cb51c49b15a0b332bbc948380d"
     },
     {
-      "path": "lab/runs/hook-preflight-02/report.json",
-      "target": "纯目录/hook-preflight-02/report.json",
-      "originalSha256": "63ade3281de147ea567b877da44bc7a7de91ddad70a7e2981038a061273075fc"
+      "path": "lab/runs/feedback-preflight-01/runtime.json",
+      "target": "纯目录/feedback-preflight-01/runtime.json",
+      "originalSha256": "6e0251e61a0b1f3f7bd7a56dcbd9c22fc212da33fce5f0831af43a0aed67a7fe"
     },
     {
-      "path": "lab/runs/hook-preflight-02/catalog.json",
-      "target": "纯目录/hook-preflight-02/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
+      "path": "lab/runs/feedback-preflight-01/protocol.json",
+      "target": "纯目录/feedback-preflight-01/protocol.json",
+      "originalSha256": "65da8947cf9f33f98b8b07c52f88307aca1a5cbb71764c3e6004860716aa4e31"
     },
     {
-      "path": "lab/runs/hook-preflight-02/mcp-status.json",
-      "target": "纯目录/hook-preflight-02/mcp-status.json",
-      "originalSha256": "22131745b2ec4a694d9164c20a177ce36c0dd9a33c3f2a16b05d65d597a8dea2"
+      "path": "lab/runs/feedback-preflight-02/report.json",
+      "target": "纯目录/feedback-preflight-02/report.json",
+      "originalSha256": "e1c9ab17d59d1a891ffd895e9f8b317acd5c3c15df684e7f28f95b4f60e5f4f1"
     },
     {
-      "path": "lab/runs/hook-preflight-02/protocol.json",
-      "target": "纯目录/hook-preflight-02/protocol.json",
-      "originalSha256": "ef634d8f0a2ec5781c0ec69614b9f2cad2a7f7361fe6c4851a302fc9ee4a9254"
+      "path": "lab/runs/feedback-preflight-02/skills.json",
+      "target": "纯目录/feedback-preflight-02/skills.json",
+      "originalSha256": "970a5fb050a92861ffbcbd7fc54de6c7a61bd0da25917810e701029eef811e50"
     },
     {
-      "path": "lab/runs/hook-preflight-03-native/report.json",
-      "target": "纯目录/hook-preflight-03-native/report.json",
-      "originalSha256": "396dbc529b8aa730d4b10d7b65c0e9881fb0d3a47921de5ed21f6018596d79d0"
+      "path": "lab/runs/feedback-preflight-02/mcp-status.json",
+      "target": "纯目录/feedback-preflight-02/mcp-status.json",
+      "originalSha256": "01560430f1080cabcf29bad33b59559e8a6759d9e8d4ac766f1cf6adad066a51"
     },
     {
-      "path": "lab/runs/hook-preflight-03-native/catalog.json",
-      "target": "纯目录/hook-preflight-03-native/catalog.json",
+      "path": "lab/runs/feedback-preflight-02/configuration.json",
+      "target": "纯目录/feedback-preflight-02/configuration.json",
+      "originalSha256": "713c4442f2847716a0068531dc7a561ae5f3b746331d52619740e27639072934"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-02/runtime.json",
+      "target": "纯目录/feedback-preflight-02/runtime.json",
+      "originalSha256": "c229769c84cb79c37e39a0bdf560272842cfb438826ebbac8938036606880219"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-02/protocol.json",
+      "target": "纯目录/feedback-preflight-02/protocol.json",
+      "originalSha256": "c4c252b34f22d6a6f5371f452a9d63cfa042a528a77308f964ac5672197d42e8"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-03/report.json",
+      "target": "纯目录/feedback-preflight-03/report.json",
+      "originalSha256": "dab005140dc7fa3f3d20a62c258e8cbc93727b422a57d27a9ed807e95adf5148"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-03/skills.json",
+      "target": "纯目录/feedback-preflight-03/skills.json",
+      "originalSha256": "970a5fb050a92861ffbcbd7fc54de6c7a61bd0da25917810e701029eef811e50"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-03/mcp-status.json",
+      "target": "纯目录/feedback-preflight-03/mcp-status.json",
       "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
     },
     {
-      "path": "lab/runs/hook-preflight-03-native/mcp-status.json",
-      "target": "纯目录/hook-preflight-03-native/mcp-status.json",
+      "path": "lab/runs/feedback-preflight-03/configuration.json",
+      "target": "纯目录/feedback-preflight-03/configuration.json",
+      "originalSha256": "490ac1054bff5f796983d9e4637e08db899d72e479430675804488371792bafc"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-03/runtime.json",
+      "target": "纯目录/feedback-preflight-03/runtime.json",
+      "originalSha256": "06b2186ccd3392cc3196c32235ec756620d06d8fcde154eb98c7ee8c3b887e8e"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-03/protocol.json",
+      "target": "纯目录/feedback-preflight-03/protocol.json",
+      "originalSha256": "9549caad7f524ed6cd211e97d2d70f0eeb09cc929e2efc6dc8cdf0712546a02c"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-04/report.json",
+      "target": "纯目录/feedback-preflight-04/report.json",
+      "originalSha256": "1b223d4e2dc2c3fe6a660f112215a0046d832da01583ef9880ff9c5e9cd64afd"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-04/skills.json",
+      "target": "纯目录/feedback-preflight-04/skills.json",
+      "originalSha256": "8b18bfa9a777546fae83c50f1591ebc16b8de3e3ef630e891266fe2f63b10776"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-04/mcp-status.json",
+      "target": "纯目录/feedback-preflight-04/mcp-status.json",
+      "originalSha256": "e9f8fdb8025e1b65e48d8eab6e56c42b5da33104af34a8f533b67341af042b25"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-04/configuration.json",
+      "target": "纯目录/feedback-preflight-04/configuration.json",
+      "originalSha256": "713c4442f2847716a0068531dc7a561ae5f3b746331d52619740e27639072934"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-04/runtime.json",
+      "target": "纯目录/feedback-preflight-04/runtime.json",
+      "originalSha256": "3a8eb13d981300481f423fa20da75252978da44a53f143e8efc593bb0f4db013"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-04/protocol.json",
+      "target": "纯目录/feedback-preflight-04/protocol.json",
+      "originalSha256": "8ef281356a66c0c4745c755a4360442df782a7f3318facdbfd12ca6d46fd6ee5"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-05/report.json",
+      "target": "纯目录/feedback-preflight-05/report.json",
+      "originalSha256": "9dc0f17a3777d9460351d4684a428db513f2e5cbae0f4644b5e9d6c1e675c337"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-05/skills.json",
+      "target": "纯目录/feedback-preflight-05/skills.json",
+      "originalSha256": "8b18bfa9a777546fae83c50f1591ebc16b8de3e3ef630e891266fe2f63b10776"
+    },
+    {
+      "path": "lab/runs/feedback-preflight-05/mcp-status.json",
+      "target": "纯目录/feedback-preflight-05/mcp-status.json",
       "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
     },
     {
-      "path": "lab/runs/hook-preflight-03-native/protocol.json",
-      "target": "纯目录/hook-preflight-03-native/protocol.json",
-      "originalSha256": "90766a000685722237182afa30d16c7465ea7e820a2de1f602ab4a9874253f8f"
+      "path": "lab/runs/feedback-preflight-05/configuration.json",
+      "target": "纯目录/feedback-preflight-05/configuration.json",
+      "originalSha256": "15859c7dc845679cf31b0a4bd81f8f8c879e47b73a8e9ed4105e36d7ccb85862"
     },
     {
-      "path": "lab/runs/hook-preflight-04-native/report.json",
-      "target": "纯目录/hook-preflight-04-native/report.json",
-      "originalSha256": "bb6f00b5271472ce26224896e341ebda50f7cbce74750268f87c3d3f46f0a811"
+      "path": "lab/runs/feedback-preflight-05/runtime.json",
+      "target": "纯目录/feedback-preflight-05/runtime.json",
+      "originalSha256": "7072341a7cc5bee0e98752f670c0a89b1ba878481df5a426be19697a4e9c59b1"
     },
     {
-      "path": "lab/runs/hook-preflight-04-native/catalog.json",
-      "target": "纯目录/hook-preflight-04-native/catalog.json",
-      "originalSha256": "7d81aec094bcf6b677b074917597cc09da9f8659ef33755199823926ca02ab68"
+      "path": "lab/runs/feedback-preflight-05/protocol.json",
+      "target": "纯目录/feedback-preflight-05/protocol.json",
+      "originalSha256": "31c6ec9c1c606a70e94937d8c706fe2ab991834304cffb45b91da7024a008294"
     },
     {
-      "path": "lab/runs/hook-preflight-04-native/mcp-status.json",
-      "target": "纯目录/hook-preflight-04-native/mcp-status.json",
-      "originalSha256": "737fae851ff0ba92ff71ec687645f972161b399a5dc4bc8e6472ecc5059b2535"
+      "path": "lab/runs/feedback-preflight-06/report.json",
+      "target": "纯目录/feedback-preflight-06/report.json",
+      "originalSha256": "a2e5880c92a2913bb98091d8f14666cabe858ab24a4a774094f69d5e521adbb8"
     },
     {
-      "path": "lab/runs/hook-preflight-04-native/protocol.json",
-      "target": "纯目录/hook-preflight-04-native/protocol.json",
-      "originalSha256": "501333839e23a2907b24b81ea296c0a18f56db03323c804d3b69d97642a9f592"
+      "path": "lab/runs/feedback-preflight-06/skills.json",
+      "target": "纯目录/feedback-preflight-06/skills.json",
+      "originalSha256": "8b18bfa9a777546fae83c50f1591ebc16b8de3e3ef630e891266fe2f63b10776"
     },
     {
-      "path": "lab/runs/hook-preflight-05-native/report.json",
-      "target": "纯目录/hook-preflight-05-native/report.json",
-      "originalSha256": "cbc7d0ba68c116c62419258e3921a83003a1981adc69408d30e838b1ac246f38"
+      "path": "lab/runs/feedback-preflight-06/mcp-status.json",
+      "target": "纯目录/feedback-preflight-06/mcp-status.json",
+      "originalSha256": "f664d4143ac049831f02202076f5d9a61f40c9ac65e5315db9322f0d0ea05640"
     },
     {
-      "path": "lab/runs/hook-preflight-05-native/catalog.json",
-      "target": "纯目录/hook-preflight-05-native/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
+      "path": "lab/runs/feedback-preflight-06/configuration.json",
+      "target": "纯目录/feedback-preflight-06/configuration.json",
+      "originalSha256": "2f0af95ca47268f76bbe41a325c983fafd581a8fd53e14a592d1ad5b5dd5dbaa"
     },
     {
-      "path": "lab/runs/hook-preflight-05-native/mcp-status.json",
-      "target": "纯目录/hook-preflight-05-native/mcp-status.json",
-      "originalSha256": "960b196624ccf88864104747e69752fc357796e5aa430a9c840c18de3a34e0de"
+      "path": "lab/runs/feedback-preflight-06/runtime.json",
+      "target": "纯目录/feedback-preflight-06/runtime.json",
+      "originalSha256": "55ad9a90565ffad9b76d02a50ab89aa7b2323fb9af223f44027519c20280fb22"
     },
     {
-      "path": "lab/runs/hook-preflight-05-native/protocol.json",
-      "target": "纯目录/hook-preflight-05-native/protocol.json",
-      "originalSha256": "3d54450645ee0aed6e090afdabfce0b7cc16192e0dd4973a5106765afc285b03"
+      "path": "lab/runs/feedback-preflight-06/protocol.json",
+      "target": "纯目录/feedback-preflight-06/protocol.json",
+      "originalSha256": "58b06ae02f3ab6342290c33c5fbbf6cbeb03cc5cdc8c85ed6a2cb186bbd0f216"
     },
     {
-      "path": "lab/runs/hook-preflight-06-definitions/report.json",
-      "target": "纯目录/hook-preflight-06-definitions/report.json",
-      "originalSha256": "8e44c099428b1b8c1b3d6e8e016e4b3a04f6b526317a88234cd4774366584fe9"
+      "path": "lab/runs/feedback-preflight-07/report.json",
+      "target": "纯目录/feedback-preflight-07/report.json",
+      "originalSha256": "a18c82e8527449d6fdf8888b94029f59512c5a9ba4b3b88b8a61e10cf39da802"
     },
     {
-      "path": "lab/runs/hook-preflight-06-definitions/catalog.json",
-      "target": "纯目录/hook-preflight-06-definitions/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
+      "path": "lab/runs/feedback-preflight-07/skills.json",
+      "target": "纯目录/feedback-preflight-07/skills.json",
+      "originalSha256": "8b18bfa9a777546fae83c50f1591ebc16b8de3e3ef630e891266fe2f63b10776"
     },
     {
-      "path": "lab/runs/hook-preflight-06-definitions/mcp-status.json",
-      "target": "纯目录/hook-preflight-06-definitions/mcp-status.json",
-      "originalSha256": "7ef7ffa8564c02e89c97ba5a32100de385c2bb53ca8e1b5e5600399edc75d62a"
-    },
-    {
-      "path": "lab/runs/hook-preflight-06-definitions/protocol.json",
-      "target": "纯目录/hook-preflight-06-definitions/protocol.json",
-      "originalSha256": "eb7d5bd28ba0b3df5fe8e70bd8efb7a1c9dd52c87d354fb208ebdf8928cc685b"
-    },
-    {
-      "path": "lab/runs/hook-preflight-07-directory/report.json",
-      "target": "纯目录/hook-preflight-07-directory/report.json",
-      "originalSha256": "128c25d98c59d33991260258135f8204dacdc41a6449a271646512c6ff275d26"
-    },
-    {
-      "path": "lab/runs/hook-preflight-07-directory/catalog.json",
-      "target": "纯目录/hook-preflight-07-directory/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
-    },
-    {
-      "path": "lab/runs/hook-preflight-07-directory/mcp-status.json",
-      "target": "纯目录/hook-preflight-07-directory/mcp-status.json",
+      "path": "lab/runs/feedback-preflight-07/mcp-status.json",
+      "target": "纯目录/feedback-preflight-07/mcp-status.json",
       "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
     },
     {
-      "path": "lab/runs/hook-preflight-07-directory/protocol.json",
-      "target": "纯目录/hook-preflight-07-directory/protocol.json",
-      "originalSha256": "64feb4d1a59c390647b3453403a7adae95f96f085063b3235a284f2f4b61116f"
+      "path": "lab/runs/feedback-preflight-07/configuration.json",
+      "target": "纯目录/feedback-preflight-07/configuration.json",
+      "originalSha256": "15859c7dc845679cf31b0a4bd81f8f8c879e47b73a8e9ed4105e36d7ccb85862"
     },
     {
-      "path": "lab/runs/hook-preflight-08-layers/report.json",
-      "target": "纯目录/hook-preflight-08-layers/report.json",
-      "originalSha256": "128c25d98c59d33991260258135f8204dacdc41a6449a271646512c6ff275d26"
+      "path": "lab/runs/feedback-preflight-07/runtime.json",
+      "target": "纯目录/feedback-preflight-07/runtime.json",
+      "originalSha256": "7072341a7cc5bee0e98752f670c0a89b1ba878481df5a426be19697a4e9c59b1"
     },
     {
-      "path": "lab/runs/hook-preflight-08-layers/catalog.json",
-      "target": "纯目录/hook-preflight-08-layers/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
+      "path": "lab/runs/feedback-preflight-07/protocol.json",
+      "target": "纯目录/feedback-preflight-07/protocol.json",
+      "originalSha256": "607742ffe0cf0b16cde9beacb63a3418e624016f965e14b6d4ee45d9baca65f5"
     },
     {
-      "path": "lab/runs/hook-preflight-08-layers/mcp-status.json",
-      "target": "纯目录/hook-preflight-08-layers/mcp-status.json",
-      "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      "path": "lab/runs/root-feedback-preflight/report.json",
+      "target": "纯目录/root-feedback-preflight/report.json",
+      "originalSha256": "b91d86320812ab62b617f97eb221aebcd0eab7f3ba7063784b2e3a3e83d40de3"
     },
     {
-      "path": "lab/runs/hook-preflight-08-layers/protocol.json",
-      "target": "纯目录/hook-preflight-08-layers/protocol.json",
-      "originalSha256": "1891610b967dbfbb006dcec8becfae413b1291bba78dd9ef78cd24a0d2ddb9e2"
+      "path": "lab/runs/root-feedback-preflight/skills.json",
+      "target": "纯目录/root-feedback-preflight/skills.json",
+      "originalSha256": "8b18bfa9a777546fae83c50f1591ebc16b8de3e3ef630e891266fe2f63b10776"
     },
     {
-      "path": "lab/runs/hook-preflight-09-discovered/report.json",
-      "target": "纯目录/hook-preflight-09-discovered/report.json",
-      "originalSha256": "27b3c82232bc9b0de5776c9bc0f7886229d32695940a4f9526ebcf57505678fa"
+      "path": "lab/runs/root-feedback-preflight/mcp-status.json",
+      "target": "纯目录/root-feedback-preflight/mcp-status.json",
+      "originalSha256": "973a4b9215fa757d50af3c14e7055f07b30939c364b3da4195a87cbf3e131f86"
     },
     {
-      "path": "lab/runs/hook-preflight-09-discovered/catalog.json",
-      "target": "纯目录/hook-preflight-09-discovered/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
+      "path": "lab/runs/root-feedback-preflight/configuration.json",
+      "target": "纯目录/root-feedback-preflight/configuration.json",
+      "originalSha256": "15859c7dc845679cf31b0a4bd81f8f8c879e47b73a8e9ed4105e36d7ccb85862"
     },
     {
-      "path": "lab/runs/hook-preflight-09-discovered/mcp-status.json",
-      "target": "纯目录/hook-preflight-09-discovered/mcp-status.json",
-      "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      "path": "lab/runs/root-feedback-preflight/runtime.json",
+      "target": "纯目录/root-feedback-preflight/runtime.json",
+      "originalSha256": "9c87031f18c58933f5ef3120b0d524d5107a98eca6e25f90dcb6d0337034e887"
     },
     {
-      "path": "lab/runs/hook-preflight-09-discovered/protocol.json",
-      "target": "纯目录/hook-preflight-09-discovered/protocol.json",
-      "originalSha256": "5cc7f0d85057482862d287ad13662dae7c4ca315d7799f56019300db7a7357a0"
+      "path": "lab/runs/root-feedback-preflight/protocol.json",
+      "target": "纯目录/root-feedback-preflight/protocol.json",
+      "originalSha256": "cd672b40e66cd2fd6a954cfbd6267ca721360689969ad49dd9788afa58e096da"
     },
     {
-      "path": "lab/runs/hook-preflight-10-final-definitions/report.json",
-      "target": "纯目录/hook-preflight-10-final-definitions/report.json",
-      "originalSha256": "27b3c82232bc9b0de5776c9bc0f7886229d32695940a4f9526ebcf57505678fa"
+      "path": "lab/runs/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/input.json",
+      "target": "实际任务/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/input.json",
+      "originalSha256": "c8f26b27511ff34381149704414821ef14dec54309c42fc75407cfce5bb88998"
     },
     {
-      "path": "lab/runs/hook-preflight-10-final-definitions/catalog.json",
-      "target": "纯目录/hook-preflight-10-final-definitions/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
+      "path": "lab/runs/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/skills.json",
+      "target": "实际任务/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/skills.json",
+      "originalSha256": "8b18bfa9a777546fae83c50f1591ebc16b8de3e3ef630e891266fe2f63b10776"
     },
     {
-      "path": "lab/runs/hook-preflight-10-final-definitions/mcp-status.json",
-      "target": "纯目录/hook-preflight-10-final-definitions/mcp-status.json",
-      "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
+      "path": "lab/runs/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/mcp-status.json",
+      "target": "实际任务/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/mcp-status.json",
+      "originalSha256": "49a239411745f75020fcf25309fdf5834cb10713e0c040f397241253f08f6cfb"
     },
     {
-      "path": "lab/runs/hook-preflight-10-final-definitions/protocol.json",
-      "target": "纯目录/hook-preflight-10-final-definitions/protocol.json",
-      "originalSha256": "110c3d40867428b628f45588a69df333fc472cd44f6572157c0fc1703ff6a28a"
+      "path": "lab/runs/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/thread.json",
+      "target": "实际任务/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/thread.json",
+      "originalSha256": "a48d397460dff59df4a3b8b5facad3baf5514a1e498684a3781194ae797cd225"
     },
     {
-      "path": "lab/runs/hook-preflight-11-final-tools/report.json",
-      "target": "纯目录/hook-preflight-11-final-tools/report.json",
-      "originalSha256": "bc6731a02321bb24f8ce083a8e448d99bd97ddf54f09c42affd1f84e13065406"
+      "path": "lab/runs/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/notifications.json",
+      "target": "实际任务/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/notifications.json",
+      "originalSha256": "f4289f090e9ec42d8124849b4bf5341d8e61cdab150f46315d4b4b2f7c986a11"
     },
     {
-      "path": "lab/runs/hook-preflight-11-final-tools/catalog.json",
-      "target": "纯目录/hook-preflight-11-final-tools/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
-    },
-    {
-      "path": "lab/runs/hook-preflight-11-final-tools/mcp-status.json",
-      "target": "纯目录/hook-preflight-11-final-tools/mcp-status.json",
-      "originalSha256": "737fae851ff0ba92ff71ec687645f972161b399a5dc4bc8e6472ecc5059b2535"
-    },
-    {
-      "path": "lab/runs/hook-preflight-11-final-tools/protocol.json",
-      "target": "纯目录/hook-preflight-11-final-tools/protocol.json",
-      "originalSha256": "53cc1868d49b7933cdbddc4d9b915eb478c4c3e3902247a6b76d571cd8075280"
-    },
-    {
-      "path": "lab/runs/hook-preflight-12-review-definitions/report.json",
-      "target": "纯目录/hook-preflight-12-review-definitions/report.json",
-      "originalSha256": "e4668e1df65a346124221c752c49957d1a0e461ade3868021cb3cf5ee4dd9727"
-    },
-    {
-      "path": "lab/runs/hook-preflight-12-review-definitions/catalog.json",
-      "target": "纯目录/hook-preflight-12-review-definitions/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
-    },
-    {
-      "path": "lab/runs/hook-preflight-12-review-definitions/mcp-status.json",
-      "target": "纯目录/hook-preflight-12-review-definitions/mcp-status.json",
-      "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b"
-    },
-    {
-      "path": "lab/runs/hook-preflight-12-review-definitions/protocol.json",
-      "target": "纯目录/hook-preflight-12-review-definitions/protocol.json",
-      "originalSha256": "1da2a61d5f108c09cf503bb7f7ec67cbddeae02f85852f8ad19cdb448b00a422"
-    },
-    {
-      "path": "lab/runs/hook-preflight-13-review-tools/report.json",
-      "target": "纯目录/hook-preflight-13-review-tools/report.json",
-      "originalSha256": "6d6084952b98cbb83930cb6e1bdc53ec8269a83ae1e0807ddbdf0bce8452c763"
-    },
-    {
-      "path": "lab/runs/hook-preflight-13-review-tools/catalog.json",
-      "target": "纯目录/hook-preflight-13-review-tools/catalog.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
-    },
-    {
-      "path": "lab/runs/hook-preflight-13-review-tools/mcp-status.json",
-      "target": "纯目录/hook-preflight-13-review-tools/mcp-status.json",
-      "originalSha256": "bb24fd59cd2c38da9d4ce62adda435d99c1e3473a360cb791a26ea6cc475202b"
-    },
-    {
-      "path": "lab/runs/hook-preflight-13-review-tools/protocol.json",
-      "target": "纯目录/hook-preflight-13-review-tools/protocol.json",
-      "originalSha256": "e55490901383a0d0ca0b287eba26801bcf6f80019211c90eaffaac72f9e36220"
-    },
-    {
-      "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/skills.json",
-      "target": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/skills.json",
-      "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453"
-    },
-    {
-      "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/mcp-status.json",
-      "target": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/mcp-status.json",
-      "originalSha256": "0d81c33504263b98ef550ecd5a831c07c05ae505db688fd7f7d748594d3df011"
-    },
-    {
-      "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/notifications.json",
-      "target": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/notifications.json",
-      "originalSha256": "ca63f0293308b009105bcc89a828a43a03f52ee4cac23c3bd656692719c55400"
-    },
-    {
-      "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/protocol.jsonl",
-      "target": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/protocol.jsonl",
-      "originalSha256": "f459f701946893a995dfe1ca18aafb7e889a2271f2f197e1e6e45c7e7a80ec1c"
+      "path": "lab/runs/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/protocol.jsonl",
+      "target": "实际任务/feedback-task-62b1d3ce-c372-4f6e-8f59-141dcd2ce5af/protocol.jsonl",
+      "originalSha256": "af6692cdc152ab7681fd35d30c0bfe374c7f96ca59c82c4449d05091a638a0d6"
     }
   ],
-  "notifications": 443,
-  "protocolMessages": 462,
-  "tools": 6,
-  "hookStarted": 4,
-  "hookCompleted": 4,
+  "protocolMessages": 440,
+  "notifications": 421,
+  "commands": 2,
+  "mcpCalls": 6,
+  "saves": 1,
+  "hookStarts": 1,
+  "hookCompletions": 1,
   "countsBefore": {
-    "works": 1,
-    "work_versions": 1,
-    "chapters": 0,
-    "chapter_versions": 0,
-    "tasks": 0
-  },
-  "countsAfter": {
     "works": 1,
     "work_versions": 1,
     "chapters": 1,
     "chapter_versions": 2,
     "tasks": 0
   },
-  "limits": "配置、目录与事件部分是公开投影。实际全部 MCP 对象、Hook stdin/stdout/stderr、保存全文/两版历史与必要反馈上下文保留。不收录私有归档整文件、用户全局配置正文或凭据。首次初始化已保存作品但输出回执目录缺失的错误见当时会话工具结果；包内保留随后的独立读回，未伪造原始 stderr 文件，也没有再次初始化。"
+  "countsAfter": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 1,
+    "chapter_versions": 3,
+    "tasks": 0
+  },
+  "scope": "完整公开本实验必要输入和结果；其他目录、受保护宿主system/developer/身份正文与私有记忆、推理内容、凭据、私有归档整文件不收录。唯一允许的developer片段是本实验检查器反馈。预算耗尽、无进展、连续失败和中断没有实测；单次任务不证明Skill或Hook独立因果收益。"
 }

@@ -1,0 +1,58 @@
+{
+  "model": "gpt-6.1-sol",
+  "features": {
+    "context_management": {
+      "experimental_mode": true
+    },
+    "network_proxy": null,
+    "hooks": false,
+    "js_repl": false,
+    "memories": false,
+    "shell_tool": true,
+    "api_key_model_discovery": false,
+    "auth_elicitation": true,
+    "background_paginated_rollout_migration": false,
+    "codex_apps_mcp_2026_07_28": false,
+    "mcp_2026_07_28": false,
+    "mentions_v2": true,
+    "remote_control": false,
+    "remote_plugin": true,
+    "tool_suggest": true,
+    "windows_sandbox_service": false
+  },
+  "memories": {
+    "version": null,
+    "dual_write": null,
+    "disable_on_external_context": null,
+    "generate_memories": false,
+    "use_memories": false,
+    "dedicated_tools": null,
+    "max_raw_memories_for_consolidation": null,
+    "max_unused_days": null,
+    "max_rollout_age_days": null,
+    "max_rollouts_per_startup": null,
+    "min_rollout_idle_hours": null,
+    "min_rate_limit_remaining_percent": null,
+    "extract_model": null,
+    "consolidation_model": null
+  },
+  "skills": {
+    "bundled": {
+      "enabled": false
+    },
+    "config": [],
+    "disabledOtherSkillEntries": 38
+  },
+  "project_doc_max_bytes": 0,
+  "developerInstructionsPresent": false,
+  "projectTrust": [
+    [
+      "d:\\projects\\knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-09-09\\lab",
+      {
+        "trust_level": "trusted"
+      }
+    ]
+  ],
+  "limits": "配置仅保留本实验开关与项目路径；宿主system/developer、身份和记忆受保护正文不收录。",
+  "scope": "实际配置的本实验开关保留，其他Skill停用路径不收录。"
+}
