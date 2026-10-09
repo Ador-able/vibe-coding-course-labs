@@ -1,0 +1,48 @@
+{
+  "notBlindHistoricalLabels": true,
+  "notRerunRetrieval": true,
+  "zeroAnswerCalls": true,
+  "cases": [
+    {
+      "id": "Q1-base",
+      "question": "AX-17委托的是什么检查，由谁检查？",
+      "condition": "base",
+      "scope": "191旧四便签v1；本节人工相关判据，不追认为历史实验事前标注",
+      "k": 2,
+      "relevanceCriterion": "同一AX-17，直接同时给出检查对象与检查人；同项目费用是背景，另委托不合格。",
+      "goldIds": [
+        "teacher-AX-17-task:v1:page-1"
+      ],
+      "rankedIds": [
+        "teacher-AX-71-task:v1:page-1",
+        "teacher-AX-17-fee:v1:page-1",
+        "teacher-AX-17-task:v1:page-1"
+      ],
+      "declaredManual": {
+        "precisionAtK": 0,
+        "recallAtK": 0,
+        "reciprocalRankAtK": 0
+      }
+    },
+    {
+      "id": "Q1-filtered",
+      "question": "AX-17委托的是什么检查，由谁检查？",
+      "condition": "filtered",
+      "scope": "191旧四便签v1；本节人工相关判据，不追认为历史实验事前标注",
+      "k": 2,
+      "relevanceCriterion": "同一AX-17，直接同时给出检查对象与检查人；同项目费用是背景，另委托不合格。",
+      "goldIds": [
+        "teacher-AX-17-task:v1:page-1"
+      ],
+      "rankedIds": [
+        "teacher-AX-17-fee:v1:page-1",
+        "teacher-AX-17-task:v1:page-1"
+      ],
+      "declaredManual": {
+        "precisionAtK": 0.5,
+        "recallAtK": 1,
+        "reciprocalRankAtK": 0.5
+      }
+    }
+  ]
+}
