@@ -1,0 +1,80 @@
+{
+  "root": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\data\\changes-471b16da-bb1c-4fea-a891-01e4d0e7a431.sqlite",
+  "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+  "chapterNumber": 3,
+  "taskBefore": {
+    "id": "ca965925-bd81-445a-871f-59eb53b4c6f0",
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "chapterNumber": 3,
+    "codeVersion": "2b55a39a7f9bc1e9a1758cc4ec1e2c1949e19557",
+    "threadId": null,
+    "state": "created",
+    "createdAt": "2026-10-03T05:58:35.082Z",
+    "updatedAt": "2026-10-03T05:58:35.082Z",
+    "error": null,
+    "usage": null
+  },
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\data\\changes-471b16da-bb1c-4fea-a891-01e4d0e7a431.sqlite",
+    "taskId": "ca965925-bd81-445a-871f-59eb53b4c6f0",
+    "excerptPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\materials\\人工选区-C.json"
+  },
+  "runtime": {
+    "configOverrides": [
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-03-lab\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"export_work\",\"revise_excerpt\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.code-review@openai-bundled.enabled=false",
+      "plugins.codex-app-tools@openai-bundled.enabled=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.coursebook@personal.enabled=false",
+      "plugins.unified-computer-use@openai-bundled.enabled=false",
+      "plugins.frameflow@frameflow.enabled=false",
+      "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "skills.config=[{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\change-aware-validation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\codebase-simplification\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\theitzy\\\\course-automation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\coursebook\\\\1.0.0+codex.20260929131132\\\\skills\\\\coursebook\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\documents\\\\26.930.11008\\\\skills\\\\documents\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\assets\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\audio-generation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\basics\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\export\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\motion-graphics\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\narration\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\planning\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\publishing\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\shaders\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\style-presets\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\timeline-editing\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\verification\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\frameflow\\\\frameflow\\\\0.9.1+codex.20261002141143\\\\skills\\\\video-generation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\note-to-anki-rich\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\pdf\\\\26.930.11008\\\\skills\\\\pdf\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\presentations\\\\26.930.11008\\\\skills\\\\presentations\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\record-ui-evidence\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\remove-authoring-residue\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-breakdown\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-models\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\basics\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\concept-art\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\delivery\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\project-vision\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-assembly\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-layout\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\visual-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\semantic-code-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\spreadsheets\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\excel-live-control\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\technical-prose-standard\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\template-creator\\\\26.930.11008\\\\skills\\\\template-creator\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-bundled\\\\visualize\\\\1.0.46\\\\skills\\\\visualize\\\\SKILL.md\",enabled=false}]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab",
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "codeVersion": "2b55a39a7f9bc1e9a1758cc4ec1e2c1949e19557",
+  "prompt": "请对作品 harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea《乌桐镇的停钟》第 3 章《丁七格》的当前草稿做一次局部修订。以下是编者在完整阅读真实稿件后作出的课堂反馈；它不代表课程用户已采用小说。目标是改善唯一选定片段的动作表达，保留其事实及范围外全文，保存结果仍为 draft。\n\n此前经现有人工采用入口保存的第三章完整对象如下。它是历史 r2，不能替代当前稿；本次不要重新采用：\n\n{\n  \"workId\": \"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\n  \"number\": 3,\n  \"revision\": 2,\n  \"title\": \"丁七格\",\n  \"body\": \"林澈收好折尺，把工具裹回布里，提箱跟老人下楼。经过第三阶时，他贴着墙落脚。老人锁上塔门，带他绕过后院，走到北面一间低屋前。林澈将抄着“北库，丁七”的纸从箱里取出。这趟原是来查昨夜的停钟，如今得先弄清吊环旁那块牌指向哪里。\\n\\n老人换了一把短钥匙开门，推开半扇窗，把灯放在桌角。屋里靠墙立着木柜，桌上叠着几本簿册。他抽出一本，先翻封面，再沿页边逐张寻找。林澈站在桌子另一侧，将纸压在箱盖上，等他把簿子转过来。\\n\\n“丁字的在这里。”\\n\\n林澈没有先找七。他用指腹沿表头往下移，看见“柜格”“物名”“存入数”“领出”几栏。相邻两行，丁六对着铁垫片，丁八对着铜套；中间的丁七，物名写着铜牌，存入数是十二。\\n\\n他抬头看柜子。左边一柜的格门依次钉着丁一、丁二，向下排到丁八。老人循着他的目光走过去，手指停在丁七的小木签上。\\n\\n“开这格？”\\n\\n“开。丁七在柜格这一栏，不是第七件。”林澈把纸上的圈改成方框，旁边补上“柜格”，又指了一下簿中的相邻两行。\\n\\n老人打开格门，取出一只浅木匣，端到桌上。匣里铜牌叠在一起，边角泛着暗绿。林澈铺开工具布，老人一枚枚取出，正面朝上排好。每枚都有两行凹字：北库，丁七。林澈俯身逐一看过，再回到簿上，确认他们没有找错行。\\n\\n他数到第十一枚时，手指停在布的末端。\\n\\n老人没有合匣。“等一等，我再数。”\\n\\n他将铜牌移到布的另一侧，一枚挪过才报一个数。林澈按住布角，不让它随铜牌拖动。数过十，老人把最后一枚单独放下。\\n\\n“十一。”\\n\\n他又拿起木匣，朝灯倾了倾，查看四角，把匣底擦净；随后回到柜前，摸过格内两侧和后沿，取出灯照了照，才关上格门。林澈留在桌边，照着老人刚排好的次序复数，结果仍是十一。\\n\\n“簿上真是十二？”老人问。\\n\\n林澈把那一行送到灯下。老人也俯身看了，手指从物名移到数目，再往右移。领出一栏没有日期，没有数目，也没有署名。林澈用一张纸遮住上下两行，免得看串；那片空白仍与丁七这一行相接。\\n\\n他在自己的纸上另起三行：丁七格铜牌，簿载存入十二枚；今日取出并复数，实物十一枚；此行领出栏空白。写完，他把纸推给老人看。\\n\\n老人读到第二行，望了一眼塔楼的方向。“楼上挂着一块。”\\n\\n林澈的笔尖也停了。他很想把两处接起来，好带回一个能说清的结果；可布上每枚牌都是同样的字，楼上那枚又没有取下来比过。\\n\\n“只能记同字。”他在三行下面添了一句，“钟楼所见铜牌是否由此格领出，未明。”\\n\\n老人把簿子重新摊平，没有急着收牌。“那就还得找领出的凭据。”\\n\\n林澈点头，将这一页的位置记下。桌上十一枚铜牌排得齐整，簿上十二的末笔清清楚楚。从存入到今日开柜，中间本该有东西可追；他们眼前的领出栏，却还空着。\",\n  \"status\": \"adopted\",\n  \"workRevision\": 3,\n  \"origin\": \"human\",\n  \"taskId\": \"744cfda0-0eb8-4e9c-b834-b8c0bc90a00e\",\n  \"threadId\": \"01a1001e-cc96-7cf2-a29e-9e2355f2beff\",\n  \"updatedAt\": \"2026-10-03T05:18:54.499Z\",\n  \"previousRevisions\": [\n    {\n      \"number\": 1,\n      \"revision\": 2\n    },\n    {\n      \"number\": 2,\n      \"revision\": 1\n    }\n  ],\n  \"reviewNote\": \"这是主编在完整阅读实际第三章《丁七格》及独立核对真实保存、读回和业务记录后作出的课堂演示决定，不代表用户已经审核或采用课程、小说与界面。\\\\n\\\\n实际草稿为第三章 r1，任务744cfda0-0eb8-4e9c-b834-b8c0bc90a00e；当前作品要求r3，第一章r2、第二章r1。正文将丁七判断为柜格号，分别核对登记十二枚、实物十一枚和领出栏空白。守塔人实际参与二次清点，林澈没有把同字钟楼牌认定为缺少的一枚，也未解释停钟原因，师父未出场。它符合本次章目标，叙述通过查找、取物、清点和查栏推进，可以作为本次课堂后续修改的基础。\"\n}\n\n随后编者通过真实工作台人工编辑入口仅修改了末段，减去抽象的解释句，保留动作与未决事实。实际保存并读回的当前 r3 完整对象如下，标题与末段外其余正文保持：\n\n{\n  \"workId\": \"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\n  \"number\": 3,\n  \"revision\": 3,\n  \"title\": \"丁七格\",\n  \"body\": \"林澈收好折尺，把工具裹回布里，提箱跟老人下楼。经过第三阶时，他贴着墙落脚。老人锁上塔门，带他绕过后院，走到北面一间低屋前。林澈将抄着“北库，丁七”的纸从箱里取出。这趟原是来查昨夜的停钟，如今得先弄清吊环旁那块牌指向哪里。\\n\\n老人换了一把短钥匙开门，推开半扇窗，把灯放在桌角。屋里靠墙立着木柜，桌上叠着几本簿册。他抽出一本，先翻封面，再沿页边逐张寻找。林澈站在桌子另一侧，将纸压在箱盖上，等他把簿子转过来。\\n\\n“丁字的在这里。”\\n\\n林澈没有先找七。他用指腹沿表头往下移，看见“柜格”“物名”“存入数”“领出”几栏。相邻两行，丁六对着铁垫片，丁八对着铜套；中间的丁七，物名写着铜牌，存入数是十二。\\n\\n他抬头看柜子。左边一柜的格门依次钉着丁一、丁二，向下排到丁八。老人循着他的目光走过去，手指停在丁七的小木签上。\\n\\n“开这格？”\\n\\n“开。丁七在柜格这一栏，不是第七件。”林澈把纸上的圈改成方框，旁边补上“柜格”，又指了一下簿中的相邻两行。\\n\\n老人打开格门，取出一只浅木匣，端到桌上。匣里铜牌叠在一起，边角泛着暗绿。林澈铺开工具布，老人一枚枚取出，正面朝上排好。每枚都有两行凹字：北库，丁七。林澈俯身逐一看过，再回到簿上，确认他们没有找错行。\\n\\n他数到第十一枚时，手指停在布的末端。\\n\\n老人没有合匣。“等一等，我再数。”\\n\\n他将铜牌移到布的另一侧，一枚挪过才报一个数。林澈按住布角，不让它随铜牌拖动。数过十，老人把最后一枚单独放下。\\n\\n“十一。”\\n\\n他又拿起木匣，朝灯倾了倾，查看四角，把匣底擦净；随后回到柜前，摸过格内两侧和后沿，取出灯照了照，才关上格门。林澈留在桌边，照着老人刚排好的次序复数，结果仍是十一。\\n\\n“簿上真是十二？”老人问。\\n\\n林澈把那一行送到灯下。老人也俯身看了，手指从物名移到数目，再往右移。领出一栏没有日期，没有数目，也没有署名。林澈用一张纸遮住上下两行，免得看串；那片空白仍与丁七这一行相接。\\n\\n他在自己的纸上另起三行：丁七格铜牌，簿载存入十二枚；今日取出并复数，实物十一枚；此行领出栏空白。写完，他把纸推给老人看。\\n\\n老人读到第二行，望了一眼塔楼的方向。“楼上挂着一块。”\\n\\n林澈的笔尖也停了。他很想把两处接起来，好带回一个能说清的结果；可布上每枚牌都是同样的字，楼上那枚又没有取下来比过。\\n\\n“只能记同字。”他在三行下面添了一句，“钟楼所见铜牌是否由此格领出，未明。”\\n\\n老人把簿子重新摊平，没有急着收牌。“那就还得找领出的凭据。”\\n\\n林澈点头，将这一页的位置记下，合上自己的笔记。老人面前的簿子仍摊着，十一枚铜牌也还留在灯下；丁七那行的领出栏空着。\",\n  \"status\": \"draft\",\n  \"workRevision\": 3,\n  \"origin\": \"human\",\n  \"taskId\": null,\n  \"threadId\": null,\n  \"updatedAt\": \"2026-10-03T05:31:31.642Z\",\n  \"previousRevisions\": [\n    {\n      \"number\": 1,\n      \"revision\": 2\n    },\n    {\n      \"number\": 2,\n      \"revision\": 1\n    }\n  ],\n  \"reviewNote\": null\n}\n\n本轮意见与理由：\n\n使这一段核读簿册的动作更自然。保留老人实际参与、物名与数目核对、领出栏没有日期/数目/署名、遮住相邻行防止看错等事实。可以调整这一段内部的句序和动作表达，不新增原因或新异常，不修改前后段、末段的人工改稿、标题或前两章。\n\n原段依次写送到灯下、手指移过各栏、判断空栏、再遮上下行；希望核读动作顺畅，仍能从人物做的事看清他们核对了哪些栏、怎样避免串行。这是表达取舍，不把它说成已发现的剧情事实错误。\n\n在人工 r3 保存并完整读回后，编者从当前全文选定以下范围，start/end 为 UTF-16 下标。本轮服务必须绑定这份人工原件：\n\n{\n  \"workId\": \"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\n  \"chapterNumber\": 3,\n  \"expectedWorkRevision\": 3,\n  \"expectedChapterRevision\": 3,\n  \"expectedPreviousRevisions\": [\n    {\n      \"number\": 1,\n      \"revision\": 2\n    },\n    {\n      \"number\": 2,\n      \"revision\": 1\n    }\n  ],\n  \"start\": 719,\n  \"end\": 805,\n  \"originalText\": \"林澈把那一行送到灯下。老人也俯身看了，手指从物名移到数目，再往右移。领出一栏没有日期，没有数目，也没有署名。林澈用一张纸遮住上下两行，免得看串；那片空白仍与丁七这一行相接。\"\n}\n\n先用真实工具重读当前作品要求、章节目录、第一章、第二章和完整第三章。根据实际当前对象对照上述历史采用稿、人工修改和意见，判断这条意见现在是否仍适用。不要拿较早的提议或记忆覆盖当前稿。若实际要求、本章、前文或选区不同，或必须改范围外内容才能完成，请读回并说明具体需要人决定什么，停下，不扩大选区。\n\n本轮可写入能力是 revise_excerpt。它只接受 replacement：人工选区的完整替换正文，不是整章、批注或修改说明。服务从当前全文保留标题、非空前缀与后缀，沿原 Store 保存事务核对要求、本章、全部前文及任务对象。请使用该能力落实局部修改；不调用全章 save_draft，不通过 Shell、CLI、文件补丁或直接数据库操作绕过选区，不修改作品资料、其他章节、人工采用状态或额外任务。\n\n工具拒绝、写入失败或基线变化时，读回当前对象，说明哪些内容已经保存或尚未完成，不重复旧基线，也不自行另绑范围。允许范围不足时请人选择。\n\n如果实际保存成功，继续读回完整第三章及目录，对照历史 r2 和本轮修改前 r3。交回本轮替换片段、实际完整新稿、真实保存及读回修订、标题/选区外正文/人工末段保留的依据，以及仍需人阅读决定的表达取舍。工具成功、任务 completed 和 origin 字段不代替文学采用；不要宣告整部作品完成或发布。\n",
+  "hostCatalogConfirmed": true,
+  "scope": {
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "chapterNumber": 3,
+    "expectedWorkRevision": 3,
+    "expectedChapterRevision": 3,
+    "expectedPreviousRevisions": [
+      {
+        "number": 1,
+        "revision": 2
+      },
+      {
+        "number": 2,
+        "revision": 1
+      }
+    ],
+    "start": 719,
+    "end": 805,
+    "originalText": "林澈把那一行送到灯下。老人也俯身看了，手指从物名移到数目，再往右移。领出一栏没有日期，没有数目，也没有署名。林澈用一张纸遮住上下两行，免得看串；那片空白仍与丁七这一行相接。"
+  },
+  "scopeFile": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\materials\\人工选区-C.json",
+  "limits": "本轮一次真实0-turn目录已确认五工具、两方法与实际Task绑定；仍未运行C自然任务。全局用户规则只记录路径，文学表现与采用尚待实际正文和人工判断。"
+}

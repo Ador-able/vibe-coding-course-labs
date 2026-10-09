@@ -1,0 +1,20 @@
+{
+  "before": {
+    "bytes": 8729,
+    "sha256": "afcc799ff6e752e4e06e6209e1dc7042dca8224fd057912bc1c5edeb15175c1e"
+  },
+  "afterOfficialRemoval": {
+    "bytes": 8729,
+    "sha256": "afcc799ff6e752e4e06e6209e1dc7042dca8224fd057912bc1c5edeb15175c1e",
+    "sameOriginalBytes": true
+  },
+  "explicitByteRestore": false,
+  "originalBytesUnchangedAfterOfficialRemoval": true,
+  "removalError": null,
+  "after": {
+    "bytes": 8729,
+    "sha256": "afcc799ff6e752e4e06e6209e1dc7042dca8224fd057912bc1c5edeb15175c1e"
+  },
+  "privateConfigBackupExcludedFromPublic": true,
+  "limits": "只走官方移除并核本轮原字节；若不相同则保留当前配置并报告，不写回私有备份或历史配置。"
+}

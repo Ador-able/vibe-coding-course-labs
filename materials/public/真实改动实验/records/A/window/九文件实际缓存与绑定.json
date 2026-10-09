@@ -1,0 +1,74 @@
+{
+  "cacheRoot": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.0",
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\data\\changes-471b16da-bb1c-4fea-a891-01e4d0e7a431.sqlite",
+    "taskId": null,
+    "excerptPath": null
+  },
+  "files": [
+    {
+      "relativePath": "binding.json",
+      "bytes": 255,
+      "cacheSha256": "cbe38ebc5183f24cb515482a706de28ace085342ff4ed6d531bcaa1757dfb3d6",
+      "sourceSha256": "cbe38ebc5183f24cb515482a706de28ace085342ff4ed6d531bcaa1757dfb3d6",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "mcp.json",
+      "bytes": 245,
+      "cacheSha256": "12a38ff216eee0db455a5627850a573f5240b2c5ad69432f3d8da924f01122ba",
+      "sourceSha256": "12a38ff216eee0db455a5627850a573f5240b2c5ad69432f3d8da924f01122ba",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "plugin.json",
+      "bytes": 674,
+      "cacheSha256": "320193129e161fda32be1d0bfb5bd5b8401dd43096eaa0961cb319dbf2dad4db",
+      "sourceSha256": "320193129e161fda32be1d0bfb5bd5b8401dd43096eaa0961cb319dbf2dad4db",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "serve.mjs",
+      "bytes": 458,
+      "cacheSha256": "efbf1ad92b9e07fa89d29dd8cec7a4af3333ed08124375e72294164e59a09484",
+      "sourceSha256": "efbf1ad92b9e07fa89d29dd8cec7a4af3333ed08124375e72294164e59a09484",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-review/references/basis-and-status.md",
+      "bytes": 1382,
+      "cacheSha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030",
+      "sourceSha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-review/references/prose-review.md",
+      "bytes": 687,
+      "cacheSha256": "2f322a1148b56fa26cb9d238bdda636bee6cb0398448a7050def58c280b19315",
+      "sourceSha256": "2f322a1148b56fa26cb9d238bdda636bee6cb0398448a7050def58c280b19315",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-review/SKILL.md",
+      "bytes": 2307,
+      "cacheSha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973",
+      "sourceSha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-task/references/state-and-review.md",
+      "bytes": 2098,
+      "cacheSha256": "8d5b6aaad2e0c794ed2363e87bf31abcece2688d278f52329b65af1d7b2f7685",
+      "sourceSha256": "8d5b6aaad2e0c794ed2363e87bf31abcece2688d278f52329b65af1d7b2f7685",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-task/SKILL.md",
+      "bytes": 2906,
+      "cacheSha256": "5ee8b465842d0dd4caf2ec9d27784fbb49f018a184f822ce9f38be8c88146ac1",
+      "sourceSha256": "5ee8b465842d0dd4caf2ec9d27784fbb49f018a184f822ce9f38be8c88146ac1",
+      "sameBytes": true
+    }
+  ]
+}

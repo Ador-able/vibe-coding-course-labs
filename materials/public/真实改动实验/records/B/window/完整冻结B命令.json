@@ -1,0 +1,22 @@
+{
+  "command": "C:\\Program Files\\nodejs\\node.exe",
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab",
+  "args": [
+    "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+    "plugin:observe",
+    "--db",
+    "data/changes-471b16da-bb1c-4fea-a891-01e4d0e7a431.sqlite",
+    "--work",
+    "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "--chapter",
+    "3",
+    "--prompt",
+    "materials/任务-B.txt"
+  ],
+  "finalInputSha256": "eeec97e22cb0d3447a966f1a86868faa23cd88f0ac22ad0414dc1c3b6825e644",
+  "targetTaskId": "744cfda0-0eb8-4e9c-b834-b8c0bc90a00e",
+  "executed": false,
+  "callChain": "现有plugin:observe -> 成熟Codex SDK runStreamed -> 实际五工具及已绑定Store目标",
+  "additionalDirectoryThreads": 0,
+  "limits": "这是已确认实际目录后的完整拟命令，未运行。真实生成/保存/读回、失败和终态须以未来唯一B原始记录判断。"
+}

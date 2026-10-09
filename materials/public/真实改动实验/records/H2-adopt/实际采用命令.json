@@ -1,0 +1,26 @@
+{
+  "executable": "C:\\Program Files\\nodejs\\node.exe",
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab",
+  "startedAtUtc": "2026-10-03T05:18:53.795Z",
+  "args": [
+    "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+    "lab",
+    "adopt",
+    "3",
+    "--db",
+    "data/changes-471b16da-bb1c-4fea-a891-01e4d0e7a431.sqlite",
+    "--work",
+    "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "--expected-revision",
+    "1",
+    "--note",
+    "这是主编在完整阅读实际第三章《丁七格》及独立核对真实保存、读回和业务记录后作出的课堂演示决定，不代表用户已经审核或采用课程、小说与界面。\n\n实际草稿为第三章 r1，任务744cfda0-0eb8-4e9c-b834-b8c0bc90a00e；当前作品要求r3，第一章r2、第二章r1。正文将丁七判断为柜格号，分别核对登记十二枚、实物十一枚和领出栏空白。守塔人实际参与二次清点，林澈没有把同字钟楼牌认定为缺少的一枚，也未解释停钟原因，师父未出场。它符合本次章目标，叙述通过查找、取物、清点和查栏推进，可以作为本次课堂后续修改的基础。",
+    "--output",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\H2-实际采用\\现有CLI完整采用返回.json"
+  ],
+  "finishedAtUtc": "2026-10-03T05:18:54.529Z",
+  "pid": 62036,
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

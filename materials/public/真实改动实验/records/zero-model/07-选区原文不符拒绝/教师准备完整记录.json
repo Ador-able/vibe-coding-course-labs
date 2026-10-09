@@ -1,0 +1,31 @@
+{
+  "taskId": "8d23315e-8cb9-4fc5-85ca-48f1a27e31b4",
+  "task": {
+    "id": "8d23315e-8cb9-4fc5-85ca-48f1a27e31b4",
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "chapterNumber": 2,
+    "codeVersion": "302ef48369f917981fbacff8f5907d6045d8d9b2",
+    "threadId": null,
+    "state": "created",
+    "createdAt": "2026-10-03T02:24:57.905Z",
+    "updatedAt": "2026-10-03T02:24:57.905Z",
+    "error": null,
+    "usage": null
+  },
+  "scope": {
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "chapterNumber": 2,
+    "expectedWorkRevision": 2,
+    "expectedChapterRevision": 1,
+    "expectedPreviousRevisions": [
+      {
+        "number": 1,
+        "revision": 2
+      }
+    ],
+    "start": 0,
+    "end": 25,
+    "originalText": "课堂构造的错误原文，不是当前片段。"
+  },
+  "teacherInput": "字段类型合法，但人工范围记录里的原文有误；不能自动移位或扩大选区。"
+}

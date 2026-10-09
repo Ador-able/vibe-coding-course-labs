@@ -1,0 +1,31 @@
+{
+  "taskId": "297e1dcc-b6ca-4bdf-bcb4-a9ee7bb1291f",
+  "task": {
+    "id": "297e1dcc-b6ca-4bdf-bcb4-a9ee7bb1291f",
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "chapterNumber": 2,
+    "codeVersion": "302ef48369f917981fbacff8f5907d6045d8d9b2",
+    "threadId": null,
+    "state": "created",
+    "createdAt": "2026-10-03T02:24:58.110Z",
+    "updatedAt": "2026-10-03T02:24:58.110Z",
+    "error": null,
+    "usage": null
+  },
+  "scope": {
+    "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "chapterNumber": 2,
+    "expectedWorkRevision": 2,
+    "expectedChapterRevision": 1,
+    "expectedPreviousRevisions": [
+      {
+        "number": 1,
+        "revision": 2
+      }
+    ],
+    "start": 0,
+    "end": 25,
+    "originalText": "老人把钥匙收进掌心，往前走了一步，又停在林澈身边。"
+  },
+  "teacherInput": "局部绑定进程目录只有一种写动作；通过真实调用检查未知整章入口和多余参数。"
+}

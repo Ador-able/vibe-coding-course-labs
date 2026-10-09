@@ -1,0 +1,24 @@
+{
+  "executable": "C:/Program Files/nodejs/node.exe",
+  "args": [
+    "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+    "lab",
+    "update",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\H1-拟写入完整作品资料.json",
+    "--db",
+    "data/changes-471b16da-bb1c-4fea-a891-01e4d0e7a431.sqlite",
+    "--work",
+    "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "--expected-revision",
+    "2",
+    "--output",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\H1-实际完整更新返回.json"
+  ],
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab",
+  "startedAtUtc": "2026-10-03T04:14:02.919Z",
+  "finishedAtUtc": "2026-10-03T04:14:03.282Z",
+  "pid": 4940,
+  "exitCode": 0,
+  "signal": null,
+  "error": null
+}

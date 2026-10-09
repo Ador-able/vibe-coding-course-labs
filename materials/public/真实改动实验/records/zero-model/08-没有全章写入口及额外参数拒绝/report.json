@@ -1,0 +1,79 @@
+{
+  "name": "08-没有全章写入口及额外参数拒绝",
+  "directory": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\零模型实施\\官方Client-ec4aa12f-5961-4f37-aa2e-09e5953bec11\\08-没有全章写入口及额外参数拒绝",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\data\\zero-85f22ec8-6739-4712-9e1e-cff02a1383d0.sqlite",
+  "codeVersion": "302ef48369f917981fbacff8f5907d6045d8d9b2",
+  "command": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\dist\\mcp.js",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab\\data\\zero-85f22ec8-6739-4712-9e1e-cff02a1383d0.sqlite",
+    "297e1dcc-b6ca-4bdf-bcb4-a9ee7bb1291f",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\零模型实施\\官方Client-ec4aa12f-5961-4f37-aa2e-09e5953bec11\\08-没有全章写入口及额外参数拒绝\\教师绑定选区.json"
+  ],
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-03-lab",
+  "pidDuringConnection": 37120,
+  "pidAfterOfficialClose": null,
+  "protocolEvents": 25,
+  "toolCalls": 10,
+  "countsInitial": {
+    "works": 1,
+    "work_versions": 2,
+    "chapters": 2,
+    "chapter_versions": 3,
+    "tasks": 0
+  },
+  "countsBefore": {
+    "works": 1,
+    "work_versions": 2,
+    "chapters": 2,
+    "chapter_versions": 3,
+    "tasks": 1
+  },
+  "countsAfter": {
+    "works": 1,
+    "work_versions": 2,
+    "chapters": 2,
+    "chapter_versions": 3,
+    "tasks": 1
+  },
+  "backup": {
+    "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\零模型实施\\官方Client-ec4aa12f-5961-4f37-aa2e-09e5953bec11\\08-没有全章写入口及额外参数拒绝\\结束一致备份.sqlite",
+    "bytes": 65536,
+    "sha256": "64d6cdffc2003d07b2ed01391dd9fdfecf0a6b2a5924cf67debed9349825ca78",
+    "allFiveTablesEqual": true
+  },
+  "verification": {
+    "unknownWholeWrite": {
+      "content": [
+        {
+          "type": "text",
+          "text": "MCP error -32602: Tool save_draft not found"
+        }
+      ],
+      "isError": true
+    },
+    "extraParameters": {
+      "content": [
+        {
+          "type": "text",
+          "text": "MCP error -32602: Input validation error: Invalid arguments for tool revise_excerpt: Unrecognized keys: \"workId\", \"chapterNumber\""
+        }
+      ],
+      "isError": true
+    },
+    "wrongType": {
+      "content": [
+        {
+          "type": "text",
+          "text": "MCP error -32602: Input validation error: Invalid arguments for tool revise_excerpt: Invalid input: expected string, received number at replacement"
+        }
+      ],
+      "isError": true
+    },
+    "allFiveTablesUnchanged": true
+  },
+  "failure": null,
+  "modelExecuted": false,
+  "globalPluginWindow": false,
+  "scope": "教师人工准备的接口实验，不是正式 A/B/C、人物意见或模型创作；各库相互独立，当前全文与历史逻辑核对不证明整个连接期间物理字节始终不变。"
+}
