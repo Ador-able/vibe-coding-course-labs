@@ -11,6 +11,8 @@
     "lab": "node dist/cli.js",
     "agent": "node dist/agent.js",
     "mcp": "node dist/mcp.js",
+    "mcp:two": "node dist/mcp-two-tools.js",
+    "mcp:exercise": "node scripts/exercise-two-tools.mjs",
     "mcp:inspect": "node scripts/inspect-mcp.mjs",
     "plugin:prepare": "node scripts/prepare-plugin.mjs",
     "plugin:catalog": "node scripts/plugin-catalog.mjs",
