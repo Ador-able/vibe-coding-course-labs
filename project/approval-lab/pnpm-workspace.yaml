@@ -1,0 +1,7 @@
+packages:
+  - '.'
+minimumReleaseAgeExclude:
+  - 'ai@7.0.127'
+  - '@ai-sdk/openai-compatible@3.0.62'
+  - '@types/node@24.19.1'
+  - '@ai-sdk/gateway@4.0.103'

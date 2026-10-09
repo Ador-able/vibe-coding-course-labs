@@ -1,0 +1,8 @@
+node_modules/
+dist/
+data/
+/runs/
+.env
+.env.*
+!.env.example
+*.sqlite*

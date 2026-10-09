@@ -1,0 +1,10 @@
+{
+  "command": "pnpm lab chapter 1 --db 'data/approval.sqlite' --output '../动作审批-场景二-B未批准独立章稿.json'",
+  "result": {
+    "chunk_id": "8b4cbe",
+    "wall_time_seconds": 2.3611598,
+    "exit_code": 0,
+    "original_token_count": 75,
+    "output": "$ node dist/cli.js \"chapter\" \"1\" \"--db\" \"data/approval.sqlite\" \"--output\" \"../动作审批-场景二-B未批准独立章稿.json\"\n(node:67120) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+}

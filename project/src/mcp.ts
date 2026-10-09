@@ -1,8 +1,9 @@
 import {McpServer} from '@modelcontextprotocol/sdk/server/mcp.js';
 import {StdioServerTransport} from '@modelcontextprotocol/sdk/server/stdio.js';
 import type {CallToolResult} from '@modelcontextprotocol/sdk/types.js';
+import {z} from 'zod';
 import {Store} from './store.js';
-import {workId,chapterNumber,draftInput,LabError} from './schemas.js';
+import {workId,chapterNumber,draftInput,workOutput,chapterOutput,LabError} from './schemas.js';
 
 const dbPath=process.argv[2];
 if(!dbPath)throw new Error('需要数据库路径。');
@@ -18,10 +19,10 @@ const result=(action:()=>unknown):CallToolResult=>{
     return {isError:true,content:[{type:'text',text:JSON.stringify(failure)}]};
   }
 };
-server.registerTool('read_work',{title:'读取当前作品要求',description:'取得有效用途、设定、大纲及要求修订；写作和保存前先调用。',inputSchema:{workId},annotations:readAnnotations},({workId})=>result(()=>store.getWork(workId)));
-server.registerTool('list_chapters',{title:'查询已保存章节',description:'查询真实保存数量、各章修订和人工采用状态，不包含正文。',inputSchema:{workId},annotations:readAnnotations},({workId})=>result(()=>({chapters:store.listChapters(workId)})));
-server.registerTool('read_chapter',{title:'读回完整章节',description:'取得一章的当前正文和修订；不存在时 result 为 null。保存后用它核对实际内容。',inputSchema:{workId,chapterNumber},annotations:readAnnotations},({workId,chapterNumber})=>result(()=>store.getChapter(workId,chapterNumber)));
-server.registerTool('save_draft',{title:'保存章节草稿',description:'按刚读取的要求和正文基线保存草稿。没有旧正文时 expectedChapterRevision=0；状态始终为 draft，不能代替人工采用。冲突时先重读，不重试旧基线。',inputSchema:draftInput.shape,annotations:{readOnlyHint:false,destructiveHint:false,idempotentHint:false,openWorldHint:false}},input=>result(()=>store.saveDraft(input,'agent',taskId)));
+server.registerTool('read_work',{title:'读取当前作品要求',description:'取得有效用途、设定、大纲及要求修订；写作和保存前先调用。',inputSchema:{workId},outputSchema:{result:workOutput},annotations:readAnnotations},({workId})=>result(()=>store.getWork(workId)));
+server.registerTool('list_chapters',{title:'查询已保存章节',description:'查询真实保存数量、各章修订和人工采用状态，不包含正文。',inputSchema:{workId},outputSchema:{result:z.object({chapters:z.array(chapterOutput.omit({body:true}))})},annotations:readAnnotations},({workId})=>result(()=>({chapters:store.listChapters(workId)})));
+server.registerTool('read_chapter',{title:'读回完整章节',description:'取得一章的当前正文和修订；不存在时 result 为 null。保存后用它核对实际内容。',inputSchema:{workId,chapterNumber},outputSchema:{result:chapterOutput.nullable()},annotations:readAnnotations},({workId,chapterNumber})=>result(()=>store.getChapter(workId,chapterNumber)));
+server.registerTool('save_draft',{title:'保存章节草稿',description:'按当前要求、正文和前文基线保存草稿。expectedPreviousRevisions 逐项列出第1章至上一章的修订，写第1章时为 []。没有旧正文时 expectedChapterRevision=0。状态始终 draft；冲突时重读，不重试旧基线。',inputSchema:draftInput.shape,outputSchema:{result:chapterOutput},annotations:{readOnlyHint:false,destructiveHint:false,idempotentHint:false,openWorldHint:false}},input=>result(()=>store.saveDraft(input,'agent',taskId)));
 const transport=new StdioServerTransport();
 transport.onclose=()=>store.close();
 await server.connect(transport);

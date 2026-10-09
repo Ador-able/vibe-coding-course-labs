@@ -1,0 +1,291 @@
+{
+  "boundary": "仅公开教学记录；无运行数据库、凭据、内部 Codex 会话或安装缓存",
+  "runtimeCommit": "1b372cc2b30ec3378ee5318e504d6d41608d9784",
+  "files": [
+    {
+      "file": "动作审批-场景一-人工拒绝-命令回执.json",
+      "bytes": 1000,
+      "digest": "9b44d7bf2b74b2d4cbac7a2f19f9e0c06b800e4edd594d6dabeba95c6e7aae51"
+    },
+    {
+      "file": "动作审批-场景一-人工拒绝.json",
+      "bytes": 11050,
+      "digest": "5c3d80acb24db6b7553f236d7e472cdb1955135a6fb2239aacb6f1e18dbd2e84"
+    },
+    {
+      "file": "动作审批-场景一-待决.json",
+      "bytes": 9432,
+      "digest": "10521365f65d079c26ffacb571ab64898808c200103de6ddc7cd56ea5036a0b0"
+    },
+    {
+      "file": "动作审批-场景一-拒绝后SDK结束.json",
+      "bytes": 13350,
+      "digest": "83e668e82c9e7f1bc64b8a81f24b88b3b610880020ce7c2769748b20f733a7b1"
+    },
+    {
+      "file": "动作审批-场景一-拒绝后独立章稿.json",
+      "bytes": 5,
+      "digest": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "file": "动作审批-场景一-拒绝接续-命令回执.json",
+      "bytes": 1012,
+      "digest": "4407548d3adfeb0ba388a02d39e0682026d6bd3b5663b579f51d2f3d7c3994e5"
+    },
+    {
+      "file": "动作审批-场景一-提议命令回执.json",
+      "bytes": 876,
+      "digest": "ff363214590a9739af04aa00fbe8c7336ce4256fac520e6aa3208c8bbcc6320b"
+    },
+    {
+      "file": "动作审批-场景一-未批准独立章稿-命令回执.json",
+      "bytes": 593,
+      "digest": "f6afffaaeb8a194a43d9eafc4d65ef5b00c64fcc7b1e0502c2f127b6450ddf9f"
+    },
+    {
+      "file": "动作审批-场景一-未批准独立章稿.json",
+      "bytes": 5,
+      "digest": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "file": "动作审批-场景一-重开待决-命令回执.json",
+      "bytes": 653,
+      "digest": "e5696f373f2607400d52a5cff6569255a394185c2baca4805c42658623264085"
+    },
+    {
+      "file": "动作审批-场景一-重开待决.json",
+      "bytes": 9432,
+      "digest": "10521365f65d079c26ffacb571ab64898808c200103de6ddc7cd56ea5036a0b0"
+    },
+    {
+      "file": "动作审批-场景二-A人工批准-命令回执.json",
+      "bytes": 1118,
+      "digest": "90cf88825e42004a2eb49850866153bef3a2ac10c6a4a997fabfbbf26c1627c3"
+    },
+    {
+      "file": "动作审批-场景二-A已批准后独立章稿.json",
+      "bytes": 5,
+      "digest": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "file": "动作审批-场景二-A已批准未执行.json",
+      "bytes": 11146,
+      "digest": "1ef43da205a1481aef5a0596fcec257579e3ca9144128d6c4dbab5c057314808"
+    },
+    {
+      "file": "动作审批-场景二-B人工批准-命令回执.json",
+      "bytes": 1136,
+      "digest": "d6507c035665be6c344f9f22dc9543c748ce7c223c189789686a7dbf87c9f61f"
+    },
+    {
+      "file": "动作审批-场景二-B执行后状态.json",
+      "bytes": 42419,
+      "digest": "8a6bca465845096ab7a07a106fb935ec7bc740cb0f9691eca33f6595dc3b2da2"
+    },
+    {
+      "file": "动作审批-场景二-B执行后独立章稿.json",
+      "bytes": 598,
+      "digest": "21abf8c0b1958bc58b3d6f6fd44a886c1a05db2b620e756b4d5f4a3dad054911"
+    },
+    {
+      "file": "动作审批-场景二-B批准后未执行独立章稿.json",
+      "bytes": 5,
+      "digest": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "file": "动作审批-场景二-B明确批准.json",
+      "bytes": 30671,
+      "digest": "a410ef391a1c15b8e0477054f153b8017c095cfce5b886a00f658d5cceb4bf13"
+    },
+    {
+      "file": "动作审批-场景二-B未批准独立章稿-命令回执.json",
+      "bytes": 595,
+      "digest": "6e5f94e67e49002f2fdcab0e35e246f1edde437be5a5ea8309087a89097ce7a3"
+    },
+    {
+      "file": "动作审批-场景二-B未批准独立章稿.json",
+      "bytes": 5,
+      "digest": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "file": "动作审批-场景二-B真正执行-命令回执.json",
+      "bytes": 1006,
+      "digest": "9a9e7e807de625dd70e0e2ab732545348ba73262abd3dbd1d54f2bc5fdf0fb94"
+    },
+    {
+      "file": "动作审批-场景二-B重开待决-命令回执.json",
+      "bytes": 655,
+      "digest": "59c44a1e4072a7db960b1705d0ba7aece4c8a67b41ad0052bfc4d00f1184dea4"
+    },
+    {
+      "file": "动作审批-场景二-B重开待决.json",
+      "bytes": 28749,
+      "digest": "1bcf62fb15e486aeaf8ad4aeff050ec393d4a0562f80f9fd380a6eaef50a0083"
+    },
+    {
+      "file": "动作审批-场景二-原动作A.json",
+      "bytes": 9432,
+      "digest": "ce4f02255e230ecae88c7d27a41202b6e169556f0101799a085e586541c8144c"
+    },
+    {
+      "file": "动作审批-场景二-原动作提议-命令回执.json",
+      "bytes": 884,
+      "digest": "143fe8bbadd4ebf3fee32a1659ed4e900bde20b6b79045b15d59422351c9df3c"
+    },
+    {
+      "file": "动作审批-场景二-新待决B.json",
+      "bytes": 28749,
+      "digest": "1bcf62fb15e486aeaf8ad4aeff050ec393d4a0562f80f9fd380a6eaef50a0083"
+    },
+    {
+      "file": "动作审批-场景二-旧批准拒绝后待决.json",
+      "bytes": 28749,
+      "digest": "1bcf62fb15e486aeaf8ad4aeff050ec393d4a0562f80f9fd380a6eaef50a0083"
+    },
+    {
+      "file": "动作审批-场景二-旧批准拒绝后独立章稿.json",
+      "bytes": 5,
+      "digest": "38e0b9de817f645c4bec37c0d4a3e58baecccb040f5718dc069a72c7385a0bed"
+    },
+    {
+      "file": "动作审批-场景二-旧批准推进被拒绝-命令回执.json",
+      "bytes": 1065,
+      "digest": "efc8609f148bbfa89a28b7a91d4330db3e83ca63086fe8e764742ea858231013"
+    },
+    {
+      "file": "动作审批-场景二-替代新动作-命令回执.json",
+      "bytes": 1378,
+      "digest": "92e941eacec32fb59c4391636de09ee535b5557df4e33b2442c613aaa339dc2c"
+    },
+    {
+      "file": "动作审批实验顺序与验收.md",
+      "bytes": 3939,
+      "digest": "3a6e61e2070913aea66038ed293461ad8e8a8db2c545a944288b6c41d85d8191"
+    },
+    {
+      "file": "原生动作审批完整核对.json",
+      "bytes": 7145,
+      "digest": "3d35c89045e29a9a0ef5f730db2de0700874ae88339383a011c452fdc741bd28"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/1-propose/input.json",
+      "bytes": 1135,
+      "digest": "e6cc65879c30d820c8ff050e8443e215e8c3ba047a0e01e1f71282ba9c6c057b"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/1-propose/request-1.json",
+      "bytes": 3765,
+      "digest": "ee9411fd6f283a0ca3b7fe2da5eb0a63b6a75c607099b186aff3c5d7f74ba54c"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/1-propose/response-1.json",
+      "bytes": 1240,
+      "digest": "a754fc1b36eb311fb4be2ba06a6a452e070979bf1aeb57338ecc4d24f07ab9eb"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/1-propose/result.json",
+      "bytes": 5495,
+      "digest": "caff8f31dd1903f0953d734f7c6f850599e3881952eddebdc314f6e88a5ba9bc"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/2-resume/input.json",
+      "bytes": 2429,
+      "digest": "057902edb5569e197117305b503db0667c37cf8c8d585eab7afbf4df1428057d"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/2-resume/request-1.json",
+      "bytes": 2166,
+      "digest": "b6229ea691cd3881fa55dbac1a3da086590aebe18899217cd0e689b7874ae9ab"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/2-resume/response-1.json",
+      "bytes": 681,
+      "digest": "dc5e5c9e1f6a1dab995fa4bc37aa340a16829fe4375651178ec24c9973aa8b79"
+    },
+    {
+      "file": "runs/f6b29930-e01b-4e70-9cfe-32d1d387bbbb/2-resume/result.json",
+      "bytes": 2157,
+      "digest": "2099be3b170f596ed87ce1ede103d188c3f86db2abc27cb99381dea0b9ded9a8"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/1-propose/input.json",
+      "bytes": 1135,
+      "digest": "e6cc65879c30d820c8ff050e8443e215e8c3ba047a0e01e1f71282ba9c6c057b"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/1-propose/request-1.json",
+      "bytes": 3765,
+      "digest": "ee9411fd6f283a0ca3b7fe2da5eb0a63b6a75c607099b186aff3c5d7f74ba54c"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/1-propose/response-1.json",
+      "bytes": 1240,
+      "digest": "c35dcf3ab6d0391e4d8ec3187d9fbb2f5b6cb856d9285e5583009c5747980132"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/1-propose/result.json",
+      "bytes": 5495,
+      "digest": "f4110c6a871d74f186049def56cc0ef331d7fb0ef199d3675b59d1bf11cdbdac"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/2-close/input.json",
+      "bytes": 2599,
+      "digest": "08ec30364c73f71ac4c9f0b7c6543e958ef9bf98d79a181cb2aee2a74b03566c"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/2-close/request-1.json",
+      "bytes": 2337,
+      "digest": "4ce155567075ec02b05c2426f076fc442417bcd61c51226f772284c4d5be066b"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/2-close/response-1.json",
+      "bytes": 1203,
+      "digest": "029457eb6192b03917cffd17d2057d5f7f505ebba5493265e64628eda7931995"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/2-close/result.json",
+      "bytes": 4413,
+      "digest": "0c463eec1b05f56839a72355e90be0b26a10c8f628d0237ba5be24b58e1e4d2e"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/3-propose/input.json",
+      "bytes": 4733,
+      "digest": "5b72f16c3406811bb57ce9940947c43f98e10b01961e829e1944487b4cf1dbd9"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/3-propose/request-1.json",
+      "bytes": 6359,
+      "digest": "ffbb7accc6d2a73909aa971bd1251024c9bd721513d51ef3886f12c91ce0a6cb"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/3-propose/response-1.json",
+      "bytes": 1326,
+      "digest": "d540593b0ce0471d4ba1836599b3d8a4b34228d65431210dae22ed72b52fb7b4"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/3-propose/result.json",
+      "bytes": 6038,
+      "digest": "a735bcfdb9efe338120067ba6b38e4374cc99b582c0663e452962cb0a08d5146"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/4-resume/input.json",
+      "bytes": 6180,
+      "digest": "c901c01f9bd6a18f096826bb89254bdd7ff8249eec4d35455de2e3eff2b6ee66"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/4-resume/request-1.json",
+      "bytes": 5345,
+      "digest": "2dcb94bb47809e0784a8eeb5662b8a8b1be67ba817ce2d3c83f1399e90049e3e"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/4-resume/response-1.json",
+      "bytes": 1372,
+      "digest": "d5345484842c5c08bd8eef0b53fdd35116c4d8a130eece0d6f39cbd095a4fd65"
+    },
+    {
+      "file": "runs/2722f82d-19d6-49f9-b879-93ffaed5a01e/4-resume/result.json",
+      "bytes": 5577,
+      "digest": "c10b6ca7c18ab2df0bb26d7f783a66d981cd30cbf43a25caa6f7494cd025b34b"
+    }
+  ]
+}

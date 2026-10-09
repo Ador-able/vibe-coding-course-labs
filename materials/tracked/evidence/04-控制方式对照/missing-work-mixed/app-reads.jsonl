@@ -1,2 +1,0 @@
-{"phase":"started","tool":"read_work","arguments":{"workId":"absent-work"},"atMs":436937.5178}
-{"phase":"finished","tool":"read_work","arguments":{"workId":"absent-work"},"startedMs":436937.5178,"finishedMs":436940.728,"ok":false,"error":{"code":"WORK_NOT_FOUND","message":"没有作品 absent-work，先初始化。"},"raw":{"content":[{"type":"text","text":"{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"}],"isError":true}}

@@ -12,7 +12,7 @@ test('真实保存可重开读取；人的修改令旧提议失效',async()=>{
   const seed=workInput.parse(JSON.parse(await readFile('seed/钟楼.json','utf8')));
   const store=new Store(db);
   store.init(seed);
-  const input={workId:seed.id,chapterNumber:1,expectedWorkRevision:1,expectedChapterRevision:0,title:'人工测试章节',body:'这段人工文字仅用于验证存储，不是模型生成。'};
+  const input={workId:seed.id,chapterNumber:1,expectedWorkRevision:1,expectedChapterRevision:0,expectedPreviousRevisions:[],title:'人工测试章节',body:'这段人工文字仅用于验证存储，不是模型生成。'};
   const first=store.saveDraft(input,'agent');
   assert.equal(first.status,'draft');
   store.close();

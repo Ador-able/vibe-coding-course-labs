@@ -1,8 +1,6 @@
-# AI 工具与控制方式练习
+# Agent 任务教学实验
 
 这是一个命令行实验：读取当前作品要求，借助 Codex 的成熟 Harness 写一章草稿，通过 MCP 保存，再读回真实内容。小说只是练习工具和状态判断的载体。本项目不实现模型与工具调度循环。
-
-本节的只读对照使用同一业务服务，比较固定串行、条件路由、独立读取并行、Agent 选择与混合安排。运行入口、数据条件和记录含义见[控制方式实验](控制方式实验.md)。该入口不需要重新生成或保存章稿。
 
 ## 运行
 
@@ -40,10 +38,29 @@ Ctrl+C 或取消参数使用 SDK 的 AbortSignal。取消时间只是实验触�
 
 `pnpm lab save 草稿.json` 是人工保存入口，与 MCP 共享同一个业务函数。输入必须包含作品、章节、当前要求修订、当前正文修订、标题和正文。修改会生成新修订；旧修订提议得到 `STALE_CHAPTER`，原有正文保持。MCP 的 `save_draft` 只能保存草稿，不提供人工采用工具。本实验不宣称这些入口构成生产权限隔离。
 
+## 改稿后接续
+
+可以将单章大纲扩成三个连续章节。人工修改资料用 `update`；修改正文用 `save`；采用某个确切修订用 `adopt`，并写下自己的阅读判断。采用动作也产生新修订。作品资料与正文都有实际历史文本，可分别回查；采用状态是入口记录的决定，不是模型评分或程序自动品质认证。
+
+```powershell
+pnpm lab update seed/钟楼三章.json --expected-revision 1
+pnpm lab work-version 1
+pnpm lab save data/改稿提议.json
+pnpm lab adopt 1 --expected-revision 2 --note "我读过这份草稿，决定采用当前开篇。"
+pnpm agent --chapter 2 --resume-task 前一次任务标识
+pnpm lab export data/三章草稿.md
+```
+
+改稿提议填写 `expectedPreviousRevisions`：第一章为 `[]`，第二章需列出第一章当前修订，第三章需列出前两章当前修订。若要求或前文已变化，保存分别返回 `STALE_WORK` 或 `STALE_PREVIOUS`，不会把旧依据静默当作新依据。
+
+`--resume-task` 从业务任务记录取得真正的 Harness 会话标识，再调用 SDK `resumeThread`。接续的是对话，当前资料仍须重新读取。本次执行有自己的新任务标识，旧任务的取消或完成状态保持。每次只要求一章，由成熟 Harness 承担工具选择与执行；没有自行重放消息或循环调度模型。
+
+导出包含按顺序排列的当前正文、修订、状态与采用说明。输出同时说明大纲是否全部有稿、资料基线是否仍一致。草稿、采用与资料变更不会被隐藏；这些状态均不代替人对文学品质的判断。
+
 ## 实现和范围
 
-`agent.ts` 调用一次 `startThread` 和 `runStreamed`，只消费事件、记录运行和核对产物。Codex 决定何时调用工具。`mcp.ts` 以官方 MCP SDK 提供 stdio 服务，业务日志写 stderr；`store.ts` 维护 SQLite 的当前资料、正文版本和任务记录；`cli.ts` 是人工入口。入口由 Zod 校验格式，业务入口检查对象、实际范围和基线；原子事务及主键维持修订一致性。
+`agent.ts` 选择 `startThread` 或 `resumeThread`，调用一次 `runStreamed`，只消费事件、记录运行和核对产物。Codex 决定何时调用工具。`mcp.ts` 以官方 MCP SDK 提供 stdio 服务，业务日志写 stderr；`store.ts` 维护 SQLite 的当前资料、正文版本和任务记录；`cli.ts` 是人工入口。入口由 Zod 校验格式，业务入口检查对象、实际范围和基线；原子事务及主键维持修订一致性。
 
-当前可单独调用 `read_work`、`read_chapter`、`list_chapters` 和 `save_draft`。初始化数据只有一章；本阶段不包含多章推进、人工采用、插件加载或资源与提示目录。对应能力在实际加入并运行后再用于课程。
+当前可单独调用 `read_work`、`read_chapter`、`list_chapters` 和 `save_draft`。初始化提供单章起点，也可用人工入口扩为三章。人工采用、资料更新和导出不开放为 Agent 的自行批准工具。插件加载与资源、提示目录尚未包含，实际加入并运行后再用于课程。
 
 Node 24.12.0 的 `node:sqlite` 仍为实验性模块。本项目使用其同步数据库、参数绑定与事务，未依赖外部数据库服务。同步调用适合本实验规模，不以此证明大型并发系统的性能。

@@ -1,0 +1,38 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"workId\": \"clocktower\",  \"chapterNumber\": 1,  \"expectedWorkRevision\": 1,  \"expectedChapterRevision\": 0,  \"expectedPreviousRevisions\": [],  \"title\": \"两下敲击\",  \"body\": \"周伯推开钟楼的门，林澈跟着走到停住的钟架旁。他刚在本子上写下检查的第一步，墙后便传来两下轻微的敲击。他停笔等了一会儿，没有给声音的来由下判断。\"}",
+                "name": "save_draft"
+              },
+              "id": "call_9fae302edc7143b09b1c95",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1790945060,
+    "id": "chatcmpl-355d4e32-47e6-9358-8d87-99d039fa2628",
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 118,
+      "prompt_tokens": 719,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 837
+    }
+  }
+}

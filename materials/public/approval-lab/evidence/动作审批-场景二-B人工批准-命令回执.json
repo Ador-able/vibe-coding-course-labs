@@ -1,0 +1,10 @@
+{
+  "command": "pnpm approval decide 2722f82d-19d6-49f9-b879-93ffaed5a01e --db 'data/approval.sqlite' --approval-id aitxt-cA2F3yU7gw46qwWerJNbCUTj --decision approve --reason '编者教学判断：已核读新动作B的完整三下、停顿、再一下正文，批准这一具体保存动作；不代表文学采用或发布。' --output '../动作审批-场景二-B明确批准.json'",
+  "result": {
+    "chunk_id": "d3e2b0",
+    "wall_time_seconds": 2.6274839,
+    "exit_code": 0,
+    "original_token_count": 143,
+    "output": "$ node dist/approval-cli.js \"decide\" \"2722f82d-19d6-49f9-b879-93ffaed5a01e\" \"--db\" \"data/approval.sqlite\" \"--approval-id\" \"aitxt-cA2F3yU7gw46qwWerJNbCUTj\" \"--decision\" \"approve\" \"--reason\" \"编者教学判断：已核读新动作B的完整三下、停顿、再一下正文，批准这一具体保存动作；不代表文学采用或发布。\" \"--output\" \"../动作审批-场景二-B明确批准.json\"\n(node:64700) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+}

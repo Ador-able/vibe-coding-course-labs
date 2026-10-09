@@ -1,0 +1,10 @@
+{
+  "command": "pnpm approval propose 'fixtures/保存动作A.json' --db 'data/approval.sqlite' --env 'D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/ui-request-review/.env' --output '../动作审批-场景二-原动作A.json'",
+  "result": {
+    "chunk_id": "a8f8a6",
+    "wall_time_seconds": 3.4806162,
+    "exit_code": 0,
+    "original_token_count": 111,
+    "output": "$ node dist/approval-cli.js \"propose\" \"fixtures/保存动作A.json\" \"--db\" \"data/approval.sqlite\" \"--env\" \"D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/ui-request-review/.env\" \"--output\" \"../动作审批-场景二-原动作A.json\"\n(node:69692) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+}

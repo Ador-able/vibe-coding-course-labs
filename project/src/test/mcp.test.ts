@@ -22,7 +22,7 @@ test('独立 MCP 客户端按实际目录读取、保存、读回，并报告旧
     assert.deepEqual(tools.tools.map(tool=>tool.name).sort(),['list_chapters','read_chapter','read_work','save_draft']);
     const initial=await client.callTool({name:'read_work',arguments:{workId:seed.id}});
     assert.equal((initial.structuredContent as {result:{revision:number}}).result.revision,1);
-    const args={workId:seed.id,chapterNumber:1,expectedWorkRevision:1,expectedChapterRevision:0,title:'MCP 人工验证',body:'通过真实 stdio 服务写入的人工测试文本，不是模型生成。'};
+    const args={workId:seed.id,chapterNumber:1,expectedWorkRevision:1,expectedChapterRevision:0,expectedPreviousRevisions:[],title:'MCP 人工验证',body:'通过真实 stdio 服务写入的人工测试文本，不是模型生成。'};
     const saved=await client.callTool({name:'save_draft',arguments:args});
     assert.equal((saved.structuredContent as {result:{revision:number}}).result.revision,1);
     const readBack=await client.callTool({name:'read_chapter',arguments:{workId:seed.id,chapterNumber:1}});

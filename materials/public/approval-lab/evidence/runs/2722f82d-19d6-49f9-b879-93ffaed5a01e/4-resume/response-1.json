@@ -1,0 +1,27 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "已确认当前草稿状态如下，等待人工批准执行：\n\n{\n  \"workId\": \"clocktower\",\n  \"chapterNumber\": 1,\n  \"expectedWorkRevision\": 1,\n  \"expectedChapterRevision\": 0,\n  \"expectedPreviousRevisions\": [],\n  \"title\": \"三下再一下\",\n  \"body\": \"周伯推开钟楼的门，林澈跟着走到停住的钟架旁。他刚在本子上写下检查的第一步，墙后便传来三下轻微的敲击。短暂停顿以后，同一处又响了一下。他停笔，在本子上记下“三下，停顿，再一下”，没有给声音的来由下判断。\",\n  \"status\": \"draft\",\n  \"workRevision\": 1,\n  \"origin\": \"agent\",\n  \"taskId\": null,\n  \"threadId\": null,\n  \"updatedAt\": \"2026-10-02T12:47:01.254Z\",\n  \"previousRevisions\": []\n}\n\n请人工审批是否执行该保存动作。",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1790945224,
+    "id": "chatcmpl-b6de2f20-2f87-9b59-970e-f25ea1b2e298",
+    "model": "qwen-flash",
+    "object": "chat.completion",
+    "usage": {
+      "completion_tokens": 234,
+      "prompt_tokens": 1109,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "total_tokens": 1343
+    }
+  }
+}

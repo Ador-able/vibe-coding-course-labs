@@ -1,0 +1,10 @@
+{
+  "command": "pnpm approval show f6b29930-e01b-4e70-9cfe-32d1d387bbbb --db 'data/approval.sqlite' --output '../动作审批-场景一-重开待决.json'",
+  "result": {
+    "chunk_id": "034d6d",
+    "wall_time_seconds": 2.3246328,
+    "exit_code": 0,
+    "original_token_count": 83,
+    "output": "$ node dist/approval-cli.js \"show\" \"f6b29930-e01b-4e70-9cfe-32d1d387bbbb\" \"--db\" \"data/approval.sqlite\" \"--output\" \"../动作审批-场景一-重开待决.json\"\n(node:34220) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+}

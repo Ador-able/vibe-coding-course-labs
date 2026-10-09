@@ -1,4 +1,4 @@
-# 按任务选择工作流、Agent 或混合方式
+# 人的决定怎样改变 Agent 下一步
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

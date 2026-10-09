@@ -1,0 +1,101 @@
+{
+  "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+  "body": {
+    "model": "qwen-flash",
+    "max_tokens": 2048,
+    "enable_thinking": false,
+    "stream": false,
+    "parallel_tool_calls": false,
+    "messages": [
+      {
+        "role": "system",
+        "content": "这是人工动作审批教学实验。人拒绝或撤回保存时，不执行、不重试、不擅自提出替代保存；只如实说明当前状态。只有明确要求提议新动作时才提出新请求。不得采用、发送或发布。"
+      },
+      {
+        "role": "user",
+        "content": "请准确提议以下 save_draft 动作，全部参数如下。不得改写给定正文或省略修订依据；这是教学草稿的保存请求，必须等待针对具体动作的人工批准。\n{\n  \"workId\": \"clocktower\",\n  \"chapterNumber\": 1,\n  \"expectedWorkRevision\": 1,\n  \"expectedChapterRevision\": 0,\n  \"expectedPreviousRevisions\": [],\n  \"title\": \"两下敲击\",\n  \"body\": \"周伯推开钟楼的门，林澈跟着走到停住的钟架旁。他刚在本子上写下检查的第一步，墙后便传来两下轻微的敲击。他停笔等了一会儿，没有给声音的来由下判断。\"\n}"
+      }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "save_draft",
+          "description": "按当前作品、章稿与前文修订保存一份本地教学草稿。需要针对本次具体参数的人工批准，不采用或发布。",
+          "parameters": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "workId": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "chapterNumber": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedWorkRevision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedChapterRevision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedPreviousRevisions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "revision"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "body": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "workId",
+              "chapterNumber",
+              "expectedWorkRevision",
+              "expectedChapterRevision",
+              "expectedPreviousRevisions",
+              "title",
+              "body"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "tool_choice": {
+      "type": "function",
+      "function": {
+        "name": "save_draft"
+      }
+    }
+  }
+}

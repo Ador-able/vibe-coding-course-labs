@@ -1,2 +1,0 @@
-{"phase":"started","tool":"read_chapter","arguments":{"workId":"absent-work","chapterNumber":1},"atMs":408326.8854}
-{"phase":"finished","tool":"read_chapter","arguments":{"workId":"absent-work","chapterNumber":1},"startedMs":408326.8854,"finishedMs":408331.8603,"ok":false,"error":{"code":"WORK_NOT_FOUND","message":"没有作品 absent-work，先初始化。"},"raw":{"content":[{"type":"text","text":"{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"}],"isError":true}}

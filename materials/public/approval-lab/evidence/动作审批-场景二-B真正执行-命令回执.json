@@ -1,0 +1,10 @@
+{
+  "command": "pnpm approval resume 2722f82d-19d6-49f9-b879-93ffaed5a01e --db 'data/approval.sqlite' --approval-id aitxt-cA2F3yU7gw46qwWerJNbCUTj --env 'D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/ui-request-review/.env' --output '../动作审批-场景二-B执行后状态.json'",
+  "result": {
+    "chunk_id": "cbe43f",
+    "wall_time_seconds": 4.36373,
+    "exit_code": 0,
+    "original_token_count": 127,
+    "output": "$ node dist/approval-cli.js \"resume\" \"2722f82d-19d6-49f9-b879-93ffaed5a01e\" \"--db\" \"data/approval.sqlite\" \"--approval-id\" \"aitxt-cA2F3yU7gw46qwWerJNbCUTj\" \"--env\" \"D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/ui-request-review/.env\" \"--output\" \"../动作审批-场景二-B执行后状态.json\"\n(node:60440) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+}
