@@ -9,7 +9,7 @@ document.querySelector('#app')!.innerHTML = `
   <p id="status" role="status">正在载入资料……</p>
   <section id="comparison" hidden><h2>三条流程的实际结果</h2><p class="note">对照最后一次输入与完整流程用量；回答需自行核对。</p><div class="table-scroll"><table><thead><tr><th>流程</th><th>实际调用</th><th>最后回答输入</th><th>整链输入</th><th>整链输出</th><th>输入＋输出</th><th>实际回答</th></tr></thead><tbody id="results"></tbody></table></div></section>
   <details id="request-detail" hidden><summary id="request-title">查看完整请求记录</summary><div id="request-content" class="inspector-body"></div></details>
-  <details class="guide"><summary>查看资料目录与原文</summary><div class="guide-body"><p class="note">qwen-flash · 非思考 · 温度 0。目录用于导航，完整条款在原文中；浏览资料不调用模型。</p><div id="catalog"></div></div></details>
+  <details class="guide"><summary>查看资料目录与原文</summary><div class="guide-body"><p class="note">温度 0。目录用于导航，完整条款在原文中；浏览资料不调用模型。</p><div id="catalog"></div></div></details>
   <details class="note-section"><summary>跨会话：保存并读回任务便笺</summary><div class="note-body"><p class="badge">人工教学记录 · 非模型生成</p>
     <p class="note">便笺来自先前任务状态，由我们核对后保存。新会话会带上便笺和它指向的原文，不带旧聊天；这部分不与上面三条流程作同等总成本比较。</p>
     <div id="teaching-note"></div><label class="confirm"><input id="confirm" type="checkbox">我已核对这份人工教学便笺中的条件、未决事项与来源。</label>
