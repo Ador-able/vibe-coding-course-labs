@@ -22,9 +22,12 @@
     "plugin:preflight": "node scripts/plugin-preflight.mjs",
     "plugin:observe": "node scripts/observe-plugin.mjs",
     "host:opencode": "node scripts/opencode-local.mjs",
-    "host:observe": "node scripts/observe-opencode.mjs"
-    ,"hook:preflight": "node scripts/hook-preflight.mjs"
-    ,"hook:observe": "node scripts/observe-hooks.mjs"
+    "host:observe": "node scripts/observe-opencode.mjs",
+    "hook:preflight": "node scripts/hook-preflight.mjs",
+    "hook:observe": "node scripts/observe-hooks.mjs",
+    "feedback:prepare": "node scripts/prepare-feedback.mjs",
+    "feedback:preflight": "node scripts/feedback-preflight.mjs",
+    "feedback:observe": "node scripts/observe-feedback.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.31.0",
