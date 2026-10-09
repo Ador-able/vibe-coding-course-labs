@@ -1,4 +1,4 @@
-# 先调查已有项目，再交给 AI 修改
+# 用 AGENTS.md 说明项目规则
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

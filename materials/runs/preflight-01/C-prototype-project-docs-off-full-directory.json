@@ -1,0 +1,596 @@
+{
+  "name": "C-prototype-project-docs-off",
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype",
+  "projectDocMaxBytes": 0,
+  "runtime": {
+    "configOverrides": [
+      "model=\"gpt-6.1-sol\"",
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\h09-06-lab\\\\project\"={trust_level=\"trusted\"}}",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+      "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.code-review@openai-bundled.enabled=false",
+      "plugins.codex-app-tools@openai-bundled.enabled=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.coursebook@personal.enabled=false",
+      "plugins.unified-computer-use@openai-bundled.enabled=false",
+      "plugins.frameflow@frameflow.enabled=false",
+      "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.novel-practice@novel-agent-lab.enabled=false",
+      "plugins.presentations@openai-primary-runtime.enabled=false",
+      "plugins.documents@openai-primary-runtime.enabled=false",
+      "plugins.pdf@openai-primary-runtime.enabled=false",
+      "plugins.visualize@openai-bundled.enabled=false",
+      "plugins.frameflow@personal.enabled=false",
+      "plugins.spreadsheets@openai-primary-runtime.enabled=false",
+      "plugins.tripo-studio-mcp@tripo-studio.enabled=false",
+      "plugins.chrome@openai-bundled.enabled=false",
+      "plugins.template-creator@openai-primary-runtime.enabled=false",
+      "plugins.scene-production@personal.enabled=false",
+      "plugins.browser@openai-bundled.enabled=false",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "skills.config=[{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\change-aware-validation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\codebase-simplification\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\theitzy\\\\course-automation\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\documents\\\\26.930.11008\\\\skills\\\\documents\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\note-to-anki-rich\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\pdf\\\\26.930.11008\\\\skills\\\\pdf\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\presentations\\\\26.930.11008\\\\skills\\\\presentations\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\record-ui-evidence\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\remove-authoring-residue\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-breakdown\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-models\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\basics\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\concept-art\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\delivery\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\project-vision\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-assembly\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-layout\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\visual-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\semantic-code-review\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\spreadsheets\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\excel-live-control\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\skills\\\\technical-prose-standard\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\template-creator\\\\26.930.11008\\\\skills\\\\template-creator\\\\SKILL.md\",enabled=false},{path=\"C:\\\\Users\\\\32686\\\\.codex\\\\plugins\\\\cache\\\\openai-bundled\\\\visualize\\\\1.0.46\\\\skills\\\\visualize\\\\SKILL.md\",enabled=false}]",
+      "features.shell_tool=true",
+      "features.hooks=false",
+      "web_search=\"disabled\"",
+      "sandbox_mode=\"read-only\"",
+      "approval_policy=\"never\""
+    ]
+  },
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "features": {
+      "context_management": {
+        "experimental_mode": true
+      },
+      "network_proxy": null,
+      "hooks": false,
+      "js_repl": false,
+      "memories": false,
+      "shell_tool": true,
+      "api_key_model_discovery": false,
+      "auth_elicitation": true,
+      "background_paginated_rollout_migration": false,
+      "codex_apps_mcp_2026_07_28": false,
+      "mcp_2026_07_28": false,
+      "mentions_v2": true,
+      "remote_control": false,
+      "remote_plugin": true,
+      "tool_suggest": true,
+      "windows_sandbox_service": false
+    },
+    "memories": {
+      "version": null,
+      "dual_write": null,
+      "disable_on_external_context": null,
+      "generate_memories": false,
+      "use_memories": false,
+      "dedicated_tools": null,
+      "max_raw_memories_for_consolidation": null,
+      "max_unused_days": null,
+      "max_rollout_age_days": null,
+      "max_rollouts_per_startup": null,
+      "min_rollout_idle_hours": null,
+      "min_rate_limit_remaining_percent": null,
+      "extract_model": null,
+      "consolidation_model": null
+    },
+    "web_search": "disabled",
+    "sandbox_mode": "read-only",
+    "approval_policy": "never",
+    "project_doc_max_bytes": 0,
+    "developerInstructionsPresent": false,
+    "mcpEntries": [
+      {
+        "name": "anki_mcp",
+        "enabled": false
+      },
+      {
+        "name": "blender",
+        "enabled": false
+      },
+      {
+        "name": "comfy_mcp",
+        "enabled": false
+      },
+      {
+        "name": "codex_apps",
+        "enabled": false
+      },
+      {
+        "name": "node_repl",
+        "enabled": false
+      }
+    ],
+    "pluginEntries": [
+      {
+        "name": "documents@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "frameflow@frameflow",
+        "enabled": false
+      },
+      {
+        "name": "presentations@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "pdf@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "scene-production@personal",
+        "enabled": false
+      },
+      {
+        "name": "template-creator@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "browser@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "spreadsheets@openai-primary-runtime",
+        "enabled": false
+      },
+      {
+        "name": "chrome@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "code-review@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "frameflow@personal",
+        "enabled": false
+      },
+      {
+        "name": "novel-practice@novel-agent-lab",
+        "enabled": false
+      },
+      {
+        "name": "visualize@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "coursebook@personal",
+        "enabled": false
+      },
+      {
+        "name": "tripo-studio-mcp@tripo-studio",
+        "enabled": false
+      },
+      {
+        "name": "unified-computer-use@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "codex-app-tools@openai-bundled",
+        "enabled": false
+      },
+      {
+        "name": "novel-workbench-course@novel-workbench-course-lab",
+        "enabled": false
+      }
+    ],
+    "skills": {
+      "bundled": {
+        "enabled": false
+      },
+      "config": [
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\change-aware-validation\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\codebase-simplification\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "D:\\Projects\\theitzy\\course-automation\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.930.11008\\skills\\documents\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\note-to-anki-rich\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\pdf\\26.930.11008\\skills\\pdf\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.930.11008\\skills\\presentations\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\record-ui-evidence\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\remove-authoring-residue\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-breakdown\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-models\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\basics\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\concept-art\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\delivery\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\project-vision\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-assembly\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-layout\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\visual-review\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\semantic-code-review\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\spreadsheets\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\excel-live-control\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\skills\\technical-prose-standard\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\template-creator\\26.930.11008\\skills\\template-creator\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-bundled\\visualize\\1.0.46\\skills\\visualize\\SKILL.md",
+          "enabled": false
+        }
+      ]
+    },
+    "limits": "config/read仅实验相关投影；没有保存或读取受保护正文的内容。"
+  },
+  "hooks": {
+    "data": [
+      {
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype",
+        "hooks": [],
+        "warnings": [],
+        "errors": []
+      }
+    ]
+  },
+  "skills": {
+    "data": [
+      {
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype",
+        "skills": [
+          {
+            "name": "change-aware-validation",
+            "description": "用于在提交、推送、合并或宣称任务完成前，根据实际 Diff 选择并运行最小但可信的验证（change-aware validation / targeted testing）。适用于决定该跑哪些测试、构建、类型检查、真实入口、浏览器流程或集成检查。避免下意识运行全量测试、重复执行已通过检查、为覆盖率补弱测试，或用内部自报结果代替外部验证。",
+            "interface": {
+              "displayName": "变更感知验证",
+              "shortDescription": "按实际 Diff 选择最小有效验证",
+              "iconSmall": null,
+              "iconLarge": null,
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": null,
+              "defaultPrompt": "使用 $change-aware-validation 检查当前改动，选择并运行最小但可信的验证，不要默认跑全量测试。"
+            },
+            "path": "C:\\Users\\32686\\.codex\\skills\\change-aware-validation\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "codebase-simplification",
+            "description": "用于代码库简化（codebase simplification）、系统降熵、架构清理、技术债审计和大型重构分析。基于证据寻找可删除的死代码、重复行为、冗余状态与 API，以及没有现实需求支撑的推测性抽象；重点消除复杂度，而不是把复杂度转移到新的封装、配置或框架中。不用于格式化、微型重构、性能调优或功能开发。",
+            "interface": {
+              "displayName": "代码库简化",
+              "shortDescription": "基于证据删除无价值复杂度",
+              "iconSmall": null,
+              "iconLarge": null,
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": null,
+              "defaultPrompt": "使用 $codebase-simplification 审计当前代码库，找出最值得实施的简化，只分析，不修改。"
+            },
+            "path": "C:\\Users\\32686\\.codex\\skills\\codebase-simplification\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "course-automation",
+            "description": "整理本地、百度云暂存或 TheItzy 课程，完成双语百度网盘交付、课程目录和既定发布资料。用于课程整理、转存、已上传课程最终化、双语根目录及中断恢复。",
+            "interface": {
+              "displayName": "课程自动化",
+              "shortDescription": "整理课程并完成双语百度网盘交付",
+              "iconSmall": null,
+              "iconLarge": null,
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": null,
+              "defaultPrompt": "使用 $course-automation 整理指定课程并完成双语网盘交付。"
+            },
+            "path": "D:\\Projects\\theitzy\\course-automation\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "note-to-anki-rich",
+            "description": "将任意领域笔记转成多样化、图文并茂的 Anki 卡片。适用于用户希望把学习笔记、大纲、Markdown、讲义、文章或知识摘录转换成高质量 Anki 卡片，按内容自动选择卡型而不是全部做成问答，在原始笔记无图时补充有助记忆的图片，并通过 Anki MCP 直接导入或更新现有卡片的场景。",
+            "interface": {
+              "displayName": "笔记转 Anki 富卡",
+              "shortDescription": "把任意笔记转成多样化、图文丰富并可直接导入的 Anki 卡片",
+              "iconSmall": "C:\\Users\\32686\\.codex\\skills\\note-to-anki-rich\\assets\\note-to-anki-rich-small.svg",
+              "iconLarge": "C:\\Users\\32686\\.codex\\skills\\note-to-anki-rich\\assets\\note-to-anki-rich-large.svg",
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": "#1F7A8C",
+              "defaultPrompt": "使用 $note-to-anki-rich 把我的笔记转成多样化、图文丰富的 Anki 卡片，并通过 Anki MCP 导入。"
+            },
+            "path": "C:\\Users\\32686\\.codex\\skills\\note-to-anki-rich\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "record-ui-evidence",
+            "description": "用于为 Web 或桌面前端改动录制可验证的界面证据（UI evidence / browser demo / GIF）。从确切代码版本启动真实应用，通过浏览器自动化完成一条真实流程，按关键状态截图并编码为经过检查的 GIF。适用于 PR 演示、回归证明和交互验收。不用于制作营销动画，也不会在未明确要求时上传、推送或修改远端 PR。",
+            "interface": {
+              "displayName": "录制 UI 证据",
+              "shortDescription": "从真实应用流程生成可验证 GIF",
+              "iconSmall": null,
+              "iconLarge": null,
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": null,
+              "defaultPrompt": "使用 $record-ui-evidence 从当前代码版本录制这条界面流程，并生成经过验证的本地 GIF。"
+            },
+            "path": "C:\\Users\\32686\\.codex\\skills\\record-ui-evidence\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "remove-authoring-residue",
+            "description": "用于审计或清理代码注释、JSDoc、README、设计文档、Prompt 和长期说明中的开发过程残留（authoring residue / reasoning transcript leakage）。重点处理临时决策编号、PR/commit/评审视角、版本变更叙事、面向 reviewer 的辩护、控制流复述、含糊规划和中英文工作稿残片。不会删除仍有价值的事实，而是把它们改写成当前仓库状态下可独立验证的契约。",
+            "interface": {
+              "displayName": "清理开发过程残留",
+              "shortDescription": "删除 PR 视角、评审辩护与推理过程残留",
+              "iconSmall": null,
+              "iconLarge": null,
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": null,
+              "defaultPrompt": "使用 $remove-authoring-residue 审计当前 Diff 中的注释和文档，保留事实，清理开发会话与评审过程残留。"
+            },
+            "path": "C:\\Users\\32686\\.codex\\skills\\remove-authoring-residue\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "semantic-code-review",
+            "description": "用于审查 Pull Request、分支、提交、补丁或工作区改动（semantic code review / PR review）。重点发现正确性、行为契约、状态所有权、异步生命周期、资源释放、安全绕过、兼容性、真实运行入口和测试证据方面的高置信度缺陷。不用于单纯格式检查、命名偏好、泛泛而谈的最佳实践或为了凑数量提出细枝末节。",
+            "interface": {
+              "displayName": "语义代码审查",
+              "shortDescription": "审查契约、生命周期、绕过路径与真实入口",
+              "iconSmall": null,
+              "iconLarge": null,
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": null,
+              "defaultPrompt": "使用 $semantic-code-review 审查当前改动，只报告有证据的正确性和系统性问题，不要罗列风格 nit。"
+            },
+            "path": "C:\\Users\\32686\\.codex\\skills\\semantic-code-review\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "technical-prose-standard",
+            "description": "用于编写、重写、审查或压缩技术文字，包括业务文档、技术架构、README、设计说明、JSDoc、代码注释、测试注释、AI Prompt、诊断信息和 UI 文案。目标是在保留行为、条件、时序、所有权、失败方式和限制的前提下，删除重复、装饰、推理过程和无价值细节。不用于文学润色或单纯追求更短字数。",
+            "interface": {
+              "displayName": "技术文字标准",
+              "shortDescription": "保留完整契约，删除重复、废话与无价值细节",
+              "iconSmall": null,
+              "iconLarge": null,
+              "iconSmallUrl": null,
+              "iconLargeUrl": null,
+              "brandColor": null,
+              "defaultPrompt": "使用 $technical-prose-standard 整理这份技术文字，保持关键信息完整，压缩重复与过程性废话。"
+            },
+            "path": "C:\\Users\\32686\\.codex\\skills\\technical-prose-standard\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  "thread": {
+    "thread": {
+      "id": "01a0ff29-a64c-7193-ba5f-f84cd9dd93eb",
+      "environments": [
+        {
+          "environmentId": "local",
+          "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype",
+          "runtimeWorkspaceRoots": [
+            "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype"
+          ]
+        }
+      ],
+      "extra": null,
+      "sessionId": "01a0ff29-a64c-7193-ba5f-f84cd9dd93eb",
+      "forkedFromId": null,
+      "parentThreadId": null,
+      "preview": "",
+      "ephemeral": false,
+      "section": null,
+      "sectionEnteredAt": null,
+      "projectId": null,
+      "historyMode": "paginated",
+      "modelProvider": "openai",
+      "model": "gpt-6.1-sol",
+      "reasoningEffort": "high",
+      "createdAt": 1790987314,
+      "updatedAt": 1790987314,
+      "recencyAt": 1790987314,
+      "status": {
+        "type": "idle"
+      },
+      "path": "C:\\Users\\32686\\.codex\\sessions\\2026\\10\\03\\rollout-2026-10-03T08-28-34-01a0ff29-a64c-7193-ba5f-f84cd9dd93eb.jsonl",
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype",
+      "cliVersion": "0.160.0",
+      "originator": "Codex Desktop",
+      "source": "vscode",
+      "canAcceptDirectInput": true,
+      "threadSource": null,
+      "agentNickname": null,
+      "agentRole": null,
+      "gitInfo": null,
+      "name": null,
+      "daybreakEnabled": null,
+      "turns": []
+    },
+    "model": "gpt-6.1-sol",
+    "modelProvider": "openai",
+    "serviceTier": "priority",
+    "disabledPluginIds": [],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype",
+    "runtimeWorkspaceRoots": [
+      "D:\\Projects\\Knowledge\\.coursebook-work\\h09-06-lab\\project\\prototype"
+    ],
+    "instructionSources": [
+      "C:\\Users\\32686\\.codex\\AGENTS.md"
+    ],
+    "approvalPolicy": "never",
+    "approvalsReviewer": "user",
+    "sandbox": {
+      "type": "readOnly",
+      "networkAccess": false
+    },
+    "activePermissionProfile": null,
+    "reasoningEffort": "high",
+    "multiAgentMode": "explicitRequestOnly"
+  },
+  "mcpStatus": {
+    "data": [
+      {
+        "name": "anki_mcp",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "httpOrigin": null,
+        "serverInfo": null,
+        "serverCapabilities": null,
+        "tools": {},
+        "toolsError": null,
+        "resources": [],
+        "resourceTemplates": [],
+        "authStatus": "unsupported"
+      },
+      {
+        "name": "blender",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "httpOrigin": null,
+        "serverInfo": null,
+        "serverCapabilities": null,
+        "tools": {},
+        "toolsError": null,
+        "resources": [],
+        "resourceTemplates": [],
+        "authStatus": "unsupported"
+      },
+      {
+        "name": "codex_apps",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "httpOrigin": "https://chatgpt.com",
+        "serverInfo": null,
+        "serverCapabilities": null,
+        "tools": {},
+        "toolsError": null,
+        "resources": [],
+        "resourceTemplates": [],
+        "authStatus": "unsupported"
+      },
+      {
+        "name": "comfy_mcp",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "httpOrigin": null,
+        "serverInfo": null,
+        "serverCapabilities": null,
+        "tools": {},
+        "toolsError": null,
+        "resources": [],
+        "resourceTemplates": [],
+        "authStatus": "unsupported"
+      },
+      {
+        "name": "node_repl",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "httpOrigin": null,
+        "serverInfo": null,
+        "serverCapabilities": null,
+        "tools": {},
+        "toolsError": null,
+        "resources": [],
+        "resourceTemplates": [],
+        "authStatus": "unsupported"
+      }
+    ],
+    "nextCursor": null
+  },
+  "archived": true,
+  "error": null,
+  "processExit": {
+    "code": 0,
+    "signal": null
+  }
+}
