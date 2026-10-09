@@ -20,6 +20,9 @@
     "messages:build": "vite build --config vite.messages.config.ts",
     "messages:inspect": "node scripts/messages-inspect.mjs",
     "messages:lock": "node scripts/messages-lock.mjs",
+    "requests:dev": "node --import tsx src/requests/server.ts",
+    "requests:check": "tsc --noEmit --project tsconfig.requests.json",
+    "requests:build": "vite build --config vite.requests.config.ts",
     "build": "vite build",
     "check": "tsc --noEmit",
     "test": "node --import tsx --test test/*.test.ts"

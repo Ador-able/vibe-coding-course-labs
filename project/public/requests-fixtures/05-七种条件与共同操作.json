@@ -1,0 +1,100 @@
+{
+  "status": "教师实验设计，尚未实现或运行；字段中的判断目标不是实测通过结论",
+  "sdk": "ai@7.0.122的streamText、MockLanguageModelV4、DefaultChatTransport、readUIMessageStream",
+  "defaults": {
+    "maxRetries": 1,
+    "streamRetries": "省略；不开流中自动重试",
+    "timeout": {
+      "totalMs": 15000
+    },
+    "materials": [
+      "A",
+      "B"
+    ],
+    "modelCalls": "官方模拟提供方，无付费云模型/凭据/工具调用"
+  },
+  "cases": [
+    {
+      "id": "S1",
+      "material": "A",
+      "condition": "受控正常结束",
+      "action": "完整读出A摘要；起始瞬间双击同一主操作",
+      "observe": "一个POST/一个请求ID/一次模拟doStream调用；收到的完整摘要和A全文对应。内容偏差仍需人判断。"
+    },
+    {
+      "id": "S2",
+      "material": "B",
+      "condition": "开始前持续返回不可重试的APICallError，statusCode401、isRetryable=false",
+      "action": "由A成功对象切换B后提交；不自动替换为A答案",
+      "observe": "实际SDK调用次数、原错误类/状态、客户端错误和保留输入；旧A与当前B分开标识。模型错误字段是教师模拟，不是浏览器POST真实401。"
+    },
+    {
+      "id": "S3",
+      "material": "B",
+      "condition": "第一次开始前APICallError503/isRetryable=true，第二次才提供完整受控流",
+      "action": "人明确再次提交B；SDK在该新请求内部有限重试",
+      "observe": "一次人提交和内部模拟调用次数分别记录；两个完整doStream输入相同；只显示该请求最后收到的流。"
+    },
+    {
+      "id": "S4",
+      "material": "B",
+      "condition": "受控正常慢流；实际收到至少三个delta后人按停止",
+      "action": "POST当前请求ID的cancel；本地AbortController停止当前HTTP读取；再人工核查该ID的服务端记录，终态确认后换A提交",
+      "observe": "人的停止动作、cancel是否送达、服务端signal原因/SDKonAbort、完整局部前缀；旧B的记录不写入新A。未确认时不称服务端已停。"
+    },
+    {
+      "id": "S5",
+      "material": "A",
+      "condition": "同一慢流，仅SDKtimeout.totalMs改成1200",
+      "action": "等待实际超时，保留输入和已收到前缀；不自动再次提交",
+      "observe": "SDK实际TimeoutError及onAbort或错误回调、实际耗时/原事件；不把1200ms写成所有运行环境的严格墙钟保证。"
+    },
+    {
+      "id": "S6",
+      "material": "B",
+      "condition": "提供方已输出三个非空delta后发送error part，其中是503的APICallError",
+      "action": "消费至真实失败，保留前缀；不设置streamRetries",
+      "observe": "是否实际只有一次doStream；maxRetries不作为已开始流的自动接续承诺；错误前缀不能变成成功答案。"
+    },
+    {
+      "id": "S7",
+      "material": "B",
+      "condition": "已输出三个delta后，本机教学服务真实销毁这条HTTP响应连接",
+      "action": "客户端保留片段与输入，显示完成情况尚未确认；人工GET这个请求的完整记录",
+      "observe": "真实连接中断和客户端原异常；服务端close、应用转发信号与SDK结果分别记录。不是关闭电脑网络，不据Failed to fetch断言物理断网。若终态先赢过销毁则保留竞态事实，不重跑挑结果。",
+      "delayAfterThirdDeltaMs": 250
+    }
+  ],
+  "ui": {
+    "directions": [
+      "保留现有原版结构",
+      "集中工作台面",
+      "连续笔记页"
+    ],
+    "sameData": "所有方向共用同一当前请求对象、上次完整对象和输入草稿；切换方向不重新提交",
+    "viewports": [
+      {
+        "width": 1280,
+        "height": 900
+      },
+      {
+        "width": 390,
+        "height": 844
+      }
+    ],
+    "zoom": 1,
+    "keyStates": [
+      "初始",
+      "运行中/局部文本",
+      "停止/超时/错误",
+      "旧A完整而新B失败",
+      "展开当前原事件与完整输入",
+      "B长标题与完整长材料"
+    ],
+    "acceptance": [
+      "功能与真实状态",
+      "定位和操作辨认",
+      "整体口吻及具体收益/代价；不宣布使用者偏好"
+    ]
+  }
+}
