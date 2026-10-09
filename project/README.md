@@ -1,4 +1,4 @@
-# 工具结果怎样让 Agent 继续行动
+# 按任务选择工作流、Agent 或混合方式
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

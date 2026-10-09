@@ -1,0 +1,25 @@
+{
+  "experimentId": "2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484",
+  "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+  "node": "v24.12.0",
+  "modes": [
+    "serial",
+    "routed",
+    "concurrent",
+    "agent",
+    "mixed"
+  ],
+  "cases": [
+    "empty",
+    "existing",
+    "missing-work"
+  ],
+  "fixture": {
+    "file": "evidence/01-单章真实运行/完整运行-chapter.json",
+    "sha256": "5ea833cb75042fb09829daeedb4c74a652f832bbd059e790471598dce959edc0",
+    "originalOrigin": "agent",
+    "originalStatus": "draft",
+    "originalUpdatedAt": "2026-10-02T09:10:24.789Z"
+  },
+  "notes": "每组独立数据库和新线程；已有稿由人工载入历史真实草稿。本实验不保存、不采用新章稿；不以单次时间排名。"
+}

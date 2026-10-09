@@ -1,0 +1,155 @@
+[
+  {
+    "path": "evidence/04-控制方式对照/empty-serial",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "empty",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/empty-routed",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "empty",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/empty-concurrent",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "empty",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/empty-agent",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "empty",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/empty-mixed",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "empty",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/existing-serial",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "existing",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/existing-routed",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "existing",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/existing-concurrent",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "existing",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/existing-agent",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "existing",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/existing-mixed",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": true,
+    "actualState": "ready",
+    "chapterStatus": "existing",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/missing-work-serial",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "application-stopped",
+    "actualReady": false,
+    "actualState": "unavailable",
+    "chapterStatus": "unknown",
+    "readCount": 1
+  },
+  {
+    "path": "evidence/04-控制方式对照/missing-work-routed",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "application-stopped",
+    "actualReady": false,
+    "actualState": "unavailable",
+    "chapterStatus": "unknown",
+    "readCount": 1
+  },
+  {
+    "path": "evidence/04-控制方式对照/missing-work-concurrent",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "application-stopped",
+    "actualReady": false,
+    "actualState": "unavailable",
+    "chapterStatus": "unknown",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/missing-work-agent",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "completed",
+    "actualReady": false,
+    "actualState": "unavailable",
+    "chapterStatus": "unknown",
+    "readCount": 2
+  },
+  {
+    "path": "evidence/04-控制方式对照/missing-work-mixed",
+    "codeVersion": "41d85503136510f7703019f2e4e7beb53c6225f5",
+    "sdkHistoricalState": "application-stopped",
+    "actualReady": false,
+    "actualState": "unavailable",
+    "chapterStatus": "unknown",
+    "readCount": 1
+  },
+  {
+    "path": "D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/root-control-download/control-arrangement-lab/runs/control/2026-10-02T12-24-14.883Z-04dfb35c-41c6-48da-b23d-d48984376cc9/existing-agent",
+    "codeVersion": "2fee072a43f72378c8111a4a07a338e330d6e86f",
+    "sdkHistoricalState": "completed",
+    "actualReady": false,
+    "actualState": "incomplete",
+    "chapterStatus": "unknown",
+    "readCount": 0
+  },
+  {
+    "path": "D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/root-control-download/control-arrangement-lab/runs/control/2026-10-02T12-28-55.674Z-665b3965-1afa-4c02-8471-d5c0415b66c5/empty-mixed",
+    "codeVersion": "2fee072a43f72378c8111a4a07a338e330d6e86f",
+    "sdkHistoricalState": "completed",
+    "actualReady": false,
+    "actualState": "incomplete",
+    "chapterStatus": "unknown",
+    "readCount": 1
+  }
+]

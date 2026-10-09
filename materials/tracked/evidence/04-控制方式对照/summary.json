@@ -1,0 +1,248 @@
+[
+  {
+    "condition": "empty",
+    "mode": "serial",
+    "state": "completed",
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 19950,
+      "cached_input_tokens": 10880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 441,
+      "reasoning_output_tokens": 208
+    },
+    "elapsedMs": 23709.4,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\empty-serial"
+  },
+  {
+    "condition": "empty",
+    "mode": "routed",
+    "state": "completed",
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 19966,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 347,
+      "reasoning_output_tokens": 90
+    },
+    "elapsedMs": 27786.2,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\empty-routed"
+  },
+  {
+    "condition": "empty",
+    "mode": "concurrent",
+    "state": "completed",
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 19950,
+      "cached_input_tokens": 10880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 420,
+      "reasoning_output_tokens": 189
+    },
+    "elapsedMs": 22370.8,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\empty-concurrent"
+  },
+  {
+    "condition": "empty",
+    "mode": "agent",
+    "state": "completed",
+    "appReadCalls": 0,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 66578,
+      "cached_input_tokens": 54400,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 497,
+      "reasoning_output_tokens": 67
+    },
+    "elapsedMs": 34607.5,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\empty-agent"
+  },
+  {
+    "condition": "empty",
+    "mode": "mixed",
+    "state": "completed",
+    "appReadCalls": 1,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 66338,
+      "cached_input_tokens": 64000,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 408,
+      "reasoning_output_tokens": 47
+    },
+    "elapsedMs": 29391.4,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\empty-mixed"
+  },
+  {
+    "condition": "existing",
+    "mode": "serial",
+    "state": "completed",
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 21018,
+      "cached_input_tokens": 18304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1348,
+      "reasoning_output_tokens": 963
+    },
+    "elapsedMs": 49907.1,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\existing-serial"
+  },
+  {
+    "condition": "existing",
+    "mode": "routed",
+    "state": "completed",
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 23022,
+      "cached_input_tokens": 20224,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1162,
+      "reasoning_output_tokens": 785
+    },
+    "elapsedMs": 47637.7,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\existing-routed"
+  },
+  {
+    "condition": "existing",
+    "mode": "concurrent",
+    "state": "completed",
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 23005,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1037,
+      "reasoning_output_tokens": 661
+    },
+    "elapsedMs": 53266.1,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\existing-concurrent"
+  },
+  {
+    "condition": "existing",
+    "mode": "agent",
+    "state": "completed",
+    "appReadCalls": 0,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 95097,
+      "cached_input_tokens": 66432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2323,
+      "reasoning_output_tokens": 699
+    },
+    "elapsedMs": 65373.6,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\existing-agent"
+  },
+  {
+    "condition": "existing",
+    "mode": "mixed",
+    "state": "completed",
+    "appReadCalls": 1,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 67424,
+      "cached_input_tokens": 65280,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1246,
+      "reasoning_output_tokens": 726
+    },
+    "elapsedMs": 53251.4,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\existing-mixed"
+  },
+  {
+    "condition": "missing-work",
+    "mode": "serial",
+    "state": "application-stopped",
+    "appReadCalls": 1,
+    "sdkTurns": 0,
+    "usage": null,
+    "elapsedMs": 235.4,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\missing-work-serial"
+  },
+  {
+    "condition": "missing-work",
+    "mode": "routed",
+    "state": "application-stopped",
+    "appReadCalls": 1,
+    "sdkTurns": 0,
+    "usage": null,
+    "elapsedMs": 223.2,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\missing-work-routed"
+  },
+  {
+    "condition": "missing-work",
+    "mode": "concurrent",
+    "state": "application-stopped",
+    "appReadCalls": 2,
+    "sdkTurns": 0,
+    "usage": null,
+    "elapsedMs": 229.5,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\missing-work-concurrent"
+  },
+  {
+    "condition": "missing-work",
+    "mode": "agent",
+    "state": "completed",
+    "appReadCalls": 0,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 66125,
+      "cached_input_tokens": 63616,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 299,
+      "reasoning_output_tokens": 0
+    },
+    "elapsedMs": 27906,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\missing-work-agent"
+  },
+  {
+    "condition": "missing-work",
+    "mode": "mixed",
+    "state": "application-stopped",
+    "appReadCalls": 1,
+    "sdkTurns": 0,
+    "usage": null,
+    "elapsedMs": 367.9,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-06-03\\runs\\control\\2026-10-02T11-58-30.217Z-c63fd562-63ae-482b-9ac3-f6bf84fce484\\missing-work-mixed"
+  }
+]

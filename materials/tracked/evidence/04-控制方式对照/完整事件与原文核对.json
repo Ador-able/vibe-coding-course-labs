@@ -1,0 +1,829 @@
+[
+  {
+    "case": "empty",
+    "mode": "serial",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ],
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [],
+    "usage": {
+      "input_tokens": 19950,
+      "cached_input_tokens": 10880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 441,
+      "reasoning_output_tokens": 208
+    }
+  },
+  {
+    "case": "empty",
+    "mode": "routed",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ],
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [],
+    "usage": {
+      "input_tokens": 19966,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 347,
+      "reasoning_output_tokens": 90
+    }
+  },
+  {
+    "case": "empty",
+    "mode": "concurrent",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_work"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [],
+    "usage": {
+      "input_tokens": 19950,
+      "cached_input_tokens": 10880,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 420,
+      "reasoning_output_tokens": 189
+    }
+  },
+  {
+    "case": "empty",
+    "mode": "agent",
+    "beforeAfterEqual": true,
+    "appOrder": [],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [
+      {
+        "event": "item.started",
+        "id": "item_1",
+        "tool": "read_work",
+        "arguments": {
+          "workId": "clocktower"
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.started",
+        "id": "item_2",
+        "tool": "read_chapter",
+        "arguments": {
+          "workId": "clocktower",
+          "chapterNumber": 1
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_1",
+        "tool": "read_work",
+        "arguments": {
+          "workId": "clocktower"
+        },
+        "status": "completed",
+        "resultMatchesBaseline": true,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_2",
+        "tool": "read_chapter",
+        "arguments": {
+          "workId": "clocktower",
+          "chapterNumber": 1
+        },
+        "status": "completed",
+        "resultMatchesBaseline": true,
+        "errorField": null
+      }
+    ],
+    "usage": {
+      "input_tokens": 66578,
+      "cached_input_tokens": 54400,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 497,
+      "reasoning_output_tokens": 67
+    }
+  },
+  {
+    "case": "empty",
+    "mode": "mixed",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [
+      {
+        "event": "item.started",
+        "id": "item_1",
+        "tool": "read_chapter",
+        "arguments": {
+          "chapterNumber": 1,
+          "workId": "clocktower"
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_1",
+        "tool": "read_chapter",
+        "arguments": {
+          "chapterNumber": 1,
+          "workId": "clocktower"
+        },
+        "status": "completed",
+        "resultMatchesBaseline": true,
+        "errorField": null
+      }
+    ],
+    "usage": {
+      "input_tokens": 66338,
+      "cached_input_tokens": 64000,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 408,
+      "reasoning_output_tokens": 47
+    }
+  },
+  {
+    "case": "existing",
+    "mode": "serial",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ],
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [],
+    "usage": {
+      "input_tokens": 21018,
+      "cached_input_tokens": 18304,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1348,
+      "reasoning_output_tokens": 963
+    }
+  },
+  {
+    "case": "existing",
+    "mode": "routed",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ],
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [],
+    "usage": {
+      "input_tokens": 23022,
+      "cached_input_tokens": 20224,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1162,
+      "reasoning_output_tokens": 785
+    }
+  },
+  {
+    "case": "existing",
+    "mode": "concurrent",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [],
+    "usage": {
+      "input_tokens": 23005,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1037,
+      "reasoning_output_tokens": 661
+    }
+  },
+  {
+    "case": "existing",
+    "mode": "agent",
+    "beforeAfterEqual": true,
+    "appOrder": [],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [
+      {
+        "event": "item.started",
+        "id": "item_1",
+        "tool": "read_work",
+        "arguments": {
+          "workId": "clocktower"
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.started",
+        "id": "item_2",
+        "tool": "read_chapter",
+        "arguments": {
+          "workId": "clocktower",
+          "chapterNumber": 1
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_1",
+        "tool": "read_work",
+        "arguments": {
+          "workId": "clocktower"
+        },
+        "status": "completed",
+        "resultMatchesBaseline": true,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_2",
+        "tool": "read_chapter",
+        "arguments": {
+          "workId": "clocktower",
+          "chapterNumber": 1
+        },
+        "status": "completed",
+        "resultMatchesBaseline": true,
+        "errorField": null
+      }
+    ],
+    "usage": {
+      "input_tokens": 95097,
+      "cached_input_tokens": 66432,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2323,
+      "reasoning_output_tokens": 699
+    }
+  },
+  {
+    "case": "existing",
+    "mode": "mixed",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ]
+    ],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [
+      {
+        "event": "item.started",
+        "id": "item_1",
+        "tool": "read_chapter",
+        "arguments": {
+          "chapterNumber": 1,
+          "workId": "clocktower"
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_1",
+        "tool": "read_chapter",
+        "arguments": {
+          "chapterNumber": 1,
+          "workId": "clocktower"
+        },
+        "status": "completed",
+        "resultMatchesBaseline": true,
+        "errorField": null
+      }
+    ],
+    "usage": {
+      "input_tokens": 67424,
+      "cached_input_tokens": 65280,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1246,
+      "reasoning_output_tokens": 726
+    }
+  },
+  {
+    "case": "missing-work",
+    "mode": "serial",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ]
+    ],
+    "publicModelEvents": [],
+    "modelCalls": [],
+    "usage": null
+  },
+  {
+    "case": "missing-work",
+    "mode": "routed",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ]
+    ],
+    "publicModelEvents": [],
+    "modelCalls": [],
+    "usage": null
+  },
+  {
+    "case": "missing-work",
+    "mode": "concurrent",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "started",
+        "read_chapter"
+      ],
+      [
+        "finished",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_chapter"
+      ]
+    ],
+    "publicModelEvents": [],
+    "modelCalls": [],
+    "usage": null
+  },
+  {
+    "case": "missing-work",
+    "mode": "agent",
+    "beforeAfterEqual": true,
+    "appOrder": [],
+    "publicModelEvents": [
+      [
+        "thread.started",
+        null
+      ],
+      [
+        "turn.started",
+        null
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.started",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "mcp_tool_call"
+      ],
+      [
+        "item.completed",
+        "agent_message"
+      ],
+      [
+        "turn.completed",
+        null
+      ]
+    ],
+    "modelCalls": [
+      {
+        "event": "item.started",
+        "id": "item_1",
+        "tool": "read_work",
+        "arguments": {
+          "workId": "absent-work"
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.started",
+        "id": "item_2",
+        "tool": "read_chapter",
+        "arguments": {
+          "workId": "absent-work",
+          "chapterNumber": 1
+        },
+        "status": "in_progress",
+        "resultMatchesBaseline": null,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_1",
+        "tool": "read_work",
+        "arguments": {
+          "workId": "absent-work"
+        },
+        "status": "failed",
+        "resultMatchesBaseline": false,
+        "errorField": null
+      },
+      {
+        "event": "item.completed",
+        "id": "item_2",
+        "tool": "read_chapter",
+        "arguments": {
+          "workId": "absent-work",
+          "chapterNumber": 1
+        },
+        "status": "failed",
+        "resultMatchesBaseline": false,
+        "errorField": null
+      }
+    ],
+    "usage": {
+      "input_tokens": 66125,
+      "cached_input_tokens": 63616,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 299,
+      "reasoning_output_tokens": 0
+    }
+  },
+  {
+    "case": "missing-work",
+    "mode": "mixed",
+    "beforeAfterEqual": true,
+    "appOrder": [
+      [
+        "started",
+        "read_work"
+      ],
+      [
+        "finished",
+        "read_work"
+      ]
+    ],
+    "publicModelEvents": [],
+    "modelCalls": [],
+    "usage": null
+  }
+]
