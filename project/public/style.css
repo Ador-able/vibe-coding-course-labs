@@ -44,6 +44,12 @@ p { margin: .5rem 0 1rem; }
 .technical pre { white-space: pre-wrap; overflow-wrap: anywhere; font-size: .8rem; line-height: 1.6; }
 .technical a { display: inline-block; margin: 9px 18px 9px 0; }
 .scope { font-size: .86rem; color: #627387; margin-top: 22px; }
+.page-buttons, #hits { display: flex; gap: 8px; flex-wrap: wrap; }
+.original-text { margin-top: 22px; }
+.original-text summary { cursor: pointer; }
+.chunk-item { margin-top: 20px; padding-top: 16px; border-top: 1px solid #dce2e8; }
+.chunk-item .extracted-text { margin-top: 8px; }
+.question-text { font-weight: 600; }
 
 /* 原版保持两栏并列；两个候选只调整同一内容面的观看关系。 */
 body[data-direction="desk"] { background: #e7edf1; color: #202e3b; }
