@@ -1,3 +1,4 @@
-packages: []
+packages:
+  - .
+
 virtualStoreDir: .pnpm
-packageImportMethod: copy

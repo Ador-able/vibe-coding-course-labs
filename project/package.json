@@ -1,10 +1,13 @@
 {
-  "name": "vibe-coding-later-model-labs",
+  "name": "course-item-feedback",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@11.20.0",
-  "engines": {
-    "node": ">=24.12.0 <25"
+  "scripts": {
+    "history": "node register-history.mjs",
+    "repair": "node repair-two.mjs",
+    "check:state": "node check-state.mjs",
+    "read:state": "node read-state.mjs",
+    "prepare:page": "node prepare-page.mjs"
   },
   "dependencies": {
     "ai": "7.0.122",

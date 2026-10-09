@@ -18,8 +18,8 @@ await writeExclusive(join(directory,'repair-batch.json'),{startedAt:new Date().t
 const controller=new AbortController();let interrupted=false;
 const onInterrupt=()=>{interrupted=true;controller.abort(new Error('本轮操作者中断；不自动重发。'));};
 process.once('SIGINT',onInterrupt);
-const versions={ai:JSON.parse(await readFile(join(root,'../node_modules/ai/package.json'),'utf8')).version,
- openaiCompatible:JSON.parse(await readFile(join(root,'../node_modules/@ai-sdk/openai-compatible/package.json'),'utf8')).version};
+const versions={ai:JSON.parse(await readFile(join(root,'node_modules/ai/package.json'),'utf8')).version,
+ openaiCompatible:JSON.parse(await readFile(join(root,'node_modules/@ai-sdk/openai-compatible/package.json'),'utf8')).version};
 assert.deepEqual(versions,{ai:'7.0.122',openaiCompatible:'3.0.59'});
 
 async function execute(id){
