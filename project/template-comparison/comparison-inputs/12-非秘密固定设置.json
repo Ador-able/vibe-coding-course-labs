@@ -1,0 +1,29 @@
+{
+  "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "providerName": "bailian",
+  "modelId": "qwen-plus-2025-12-01",
+  "temperature": 0,
+  "maxOutputTokens": 8192,
+  "maxRetries": 0,
+  "providerOptions": {
+    "bailian": {
+      "enable_thinking": false
+    }
+  },
+  "timeout": {
+    "totalMs": 120000
+  },
+  "versions": {
+    "ai": "7.0.122",
+    "openaiCompatible": "3.0.59"
+  },
+  "versionsCompared": [
+    "V1",
+    "V2"
+  ],
+  "maximumFetchAttempts": 2,
+  "fetchesPerVersion": 1,
+  "maxConcurrency": 1,
+  "automaticRetries": 0,
+  "referenceSentToModel": false
+}

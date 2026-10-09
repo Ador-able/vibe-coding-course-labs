@@ -1,0 +1,59 @@
+{
+  "startedAt": "2026-10-05T03:55:27.299Z",
+  "codeHead": "618a3c09699a4a5aa106101be1f6e37149669f0e",
+  "actualVersions": {
+    "ai": "7.0.122",
+    "openaiCompatible": "3.0.59"
+  },
+  "settings": {
+    "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "providerName": "bailian",
+    "modelId": "qwen-plus-2025-12-01",
+    "temperature": 0,
+    "maxOutputTokens": 8192,
+    "maxRetries": 0,
+    "providerOptions": {
+      "bailian": {
+        "enable_thinking": false
+      }
+    },
+    "timeout": {
+      "totalMs": 120000
+    },
+    "versions": {
+      "ai": "7.0.122",
+      "openaiCompatible": "3.0.59"
+    },
+    "versionsCompared": [
+      "V1",
+      "V2"
+    ],
+    "maximumFetchAttempts": 2,
+    "fetchesPerVersion": 1,
+    "maxConcurrency": 1,
+    "automaticRetries": 0,
+    "referenceSentToModel": false
+  },
+  "order": [
+    "V1",
+    "V2"
+  ],
+  "actualFetchAttempts": 2,
+  "outcomes": [
+    {
+      "version": "V1",
+      "state": "returned",
+      "actualFetchAttempts": 1,
+      "error": null
+    },
+    {
+      "version": "V2",
+      "state": "returned",
+      "actualFetchAttempts": 1,
+      "error": null
+    }
+  ],
+  "scope": "同一十份完整材料；V1、V2各一次，顺序执行；原始请求/响应正文完整保存，秘密头不保存。",
+  "endedAt": "2026-10-05T03:57:24.822Z",
+  "elapsedMs": 117521.9286
+}
