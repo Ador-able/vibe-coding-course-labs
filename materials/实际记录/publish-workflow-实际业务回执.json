@@ -1,0 +1,1490 @@
+{
+  "action": "publish-workflow",
+  "startedAt": "2026-10-05T05:40:12.727Z",
+  "finishedAt": "2026-10-05T05:40:13.150Z",
+  "finished": false,
+  "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ 'in_progress'\n- 'published'\n",
+  "fixedHead": "10428f08223b703ed4e99256d2f086258752623f",
+  "records": [
+    {
+      "endpoint": "/workflows/5owiqM4AugfT3axS/activate",
+      "method": "POST",
+      "startedAt": "2026-10-05T05:40:12.727Z",
+      "finishedAt": "2026-10-05T05:40:13.087Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "updatedAt": "2026-10-05T05:39:53.600Z",
+          "createdAt": "2026-10-05T05:39:53.600Z",
+          "id": "5owiqM4AugfT3axS",
+          "name": "vcm-11-03-文件身份与完整文字",
+          "description": null,
+          "active": true,
+          "isArchived": false,
+          "nodes": [
+            {
+              "id": "aa7a7738-4821-4ae4-afe6-75d204a35025",
+              "name": "接收两份目录",
+              "type": "n8n-nodes-base.webhook",
+              "typeVersion": 2.1,
+              "position": [
+                -1080,
+                120
+              ],
+              "parameters": {
+                "httpMethod": "POST",
+                "path": "vcm-11-03-file-material",
+                "authentication": "none",
+                "responseMode": "responseNode",
+                "options": {}
+              },
+              "webhookId": "1350e374-7f87-4340-a47f-2cb11989a5da"
+            },
+            {
+              "id": "7eae7d93-5216-44f0-9b7b-22dab56f46b9",
+              "name": "文件目录",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                -860,
+                120
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify($json.body) }}",
+                "includeOtherFields": false,
+                "options": {}
+              }
+            },
+            {
+              "id": "fbc363cc-85d7-4102-b75a-04a5a3eff6f3",
+              "name": "逐项资料",
+              "type": "n8n-nodes-base.splitOut",
+              "typeVersion": 1,
+              "position": [
+                -640,
+                120
+              ],
+              "parameters": {
+                "fieldToSplitOut": "documents",
+                "include": "allOtherFields",
+                "options": {
+                  "destinationFieldName": "document"
+                }
+              }
+            },
+            {
+              "id": "3556108d-05d6-4a02-959e-79f4d1a320fb",
+              "name": "下载完整文件",
+              "type": "n8n-nodes-base.httpRequest",
+              "typeVersion": 4.5,
+              "position": [
+                -420,
+                120
+              ],
+              "parameters": {
+                "method": "GET",
+                "url": "={{ $json.document.downloadUrl }}",
+                "authentication": "none",
+                "options": {
+                  "response": {
+                    "response": {
+                      "responseFormat": "file",
+                      "fullResponse": true,
+                      "outputPropertyName": "sourceFile",
+                      "neverError": false
+                    }
+                  },
+                  "timeout": 30000
+                }
+              },
+              "retryOnFail": false
+            },
+            {
+              "id": "3fe9f1cd-829f-4764-92da-bdddf28018cb",
+              "name": "保留本项身份与下载",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                -200,
+                120
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify({\n  requestId: $('逐项资料').item.json.requestId,\n  sourceId: $('逐项资料').item.json.document.sourceId,\n  fileName: $('逐项资料').item.json.document.fileName,\n  expectedMimeType: $('逐项资料').item.json.document.expectedMimeType,\n  downloadUrl: $('逐项资料').item.json.document.downloadUrl,\n  actualMimeType: $binary.sourceFile.mimeType,\n  binaryField: 'sourceFile',\n  binaryMetadata: {\n    fileName: $binary.sourceFile.fileName,\n    mimeType: $binary.sourceFile.mimeType,\n    fileExtension: $binary.sourceFile.fileExtension,\n    fileSize: $binary.sourceFile.fileSize,\n    bytes: $binary.sourceFile.bytes\n  },\n  downloadResponse: {\n    statusCode: $json.statusCode,\n    statusMessage: $json.statusMessage,\n    headers: $json.headers\n  }\n}) }}",
+                "includeOtherFields": true,
+                "include": "selected",
+                "includeFields": "statusCode",
+                "options": {
+                  "stripBinary": false
+                }
+              }
+            },
+            {
+              "id": "45d75439-7f85-458f-bf88-10b804eb2a98",
+              "name": "按实际MIME选择",
+              "type": "n8n-nodes-base.switch",
+              "typeVersion": 3.4,
+              "position": [
+                20,
+                120
+              ],
+              "parameters": {
+                "mode": "rules",
+                "rules": {
+                  "values": [
+                    {
+                      "conditions": {
+                        "options": {
+                          "caseSensitive": true,
+                          "leftValue": "",
+                          "typeValidation": "strict",
+                          "version": 3
+                        },
+                        "conditions": [
+                          {
+                            "id": "516bfe68-1606-4941-a59b-f4d7921757f4",
+                            "leftValue": "={{ $json.actualMimeType }}",
+                            "rightValue": "application/pdf",
+                            "operator": {
+                              "type": "string",
+                              "operation": "equals"
+                            }
+                          }
+                        ],
+                        "combinator": "and"
+                      },
+                      "renameOutput": true,
+                      "outputKey": "PDF"
+                    },
+                    {
+                      "conditions": {
+                        "options": {
+                          "caseSensitive": true,
+                          "leftValue": "",
+                          "typeValidation": "strict",
+                          "version": 3
+                        },
+                        "conditions": [
+                          {
+                            "id": "9aff6125-e804-4548-94d4-c6cdddf837b1",
+                            "leftValue": "={{ $json.actualMimeType }}",
+                            "rightValue": "text/plain",
+                            "operator": {
+                              "type": "string",
+                              "operation": "equals"
+                            }
+                          }
+                        ],
+                        "combinator": "and"
+                      },
+                      "renameOutput": true,
+                      "outputKey": "TXT"
+                    }
+                  ]
+                },
+                "options": {
+                  "fallbackOutput": "extra",
+                  "renameFallbackOutput": "未支持类型",
+                  "allMatchingOutputs": false
+                }
+              }
+            },
+            {
+              "id": "678e2dd7-d366-4108-bc8b-4b672493389c",
+              "name": "提取PDF三页",
+              "type": "n8n-nodes-base.extractFromFile",
+              "typeVersion": 1.1,
+              "position": [
+                240,
+                -60
+              ],
+              "parameters": {
+                "operation": "pdf",
+                "binaryPropertyName": "sourceFile",
+                "options": {
+                  "maxPages": 3,
+                  "joinPages": false,
+                  "keepSource": "both"
+                }
+              }
+            },
+            {
+              "id": "3bd9f626-81c6-4ac6-b26b-94e982d6703d",
+              "name": "解码UTF8文本",
+              "type": "n8n-nodes-base.extractFromFile",
+              "typeVersion": 1.1,
+              "position": [
+                240,
+                180
+              ],
+              "parameters": {
+                "operation": "text",
+                "binaryPropertyName": "sourceFile",
+                "destinationKey": "text",
+                "options": {
+                  "encoding": "utf8",
+                  "stripBOM": true,
+                  "keepSource": "both"
+                }
+              }
+            },
+            {
+              "id": "60d1586f-1827-42e0-ae03-f17840fe806e",
+              "name": "未支持类型停止",
+              "type": "n8n-nodes-base.stopAndError",
+              "typeVersion": 1,
+              "position": [
+                240,
+                420
+              ],
+              "parameters": {
+                "errorType": "errorMessage",
+                "errorMessage": "={{ \"未支持本项实际 MIME：\" + $json.actualMimeType + \"；sourceId=\" + $json.sourceId }}"
+              }
+            },
+            {
+              "id": "8221fe46-baa3-4260-bddb-f8f753e135a3",
+              "name": "合回两份解析资料",
+              "type": "n8n-nodes-base.merge",
+              "typeVersion": 3.2,
+              "position": [
+                460,
+                60
+              ],
+              "parameters": {
+                "mode": "append",
+                "numberInputs": 2
+              }
+            },
+            {
+              "id": "b9557e8c-116e-4e7b-85b9-1a3ca7874a71",
+              "name": "准备本项完整文字",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                680,
+                60
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify({\n  requestId: $json.requestId,\n  sourceId: $json.sourceId,\n  fileName: $json.fileName,\n  expectedMimeType: $json.expectedMimeType,\n  downloadUrl: $json.downloadUrl,\n  actualMimeType: $json.actualMimeType,\n  binaryField: $json.binaryField,\n  binaryMetadata: $json.binaryMetadata,\n  downloadResponse: $json.downloadResponse,\n  parser: $json.actualMimeType === 'application/pdf' ? 'Extract From File: PDF' : 'Extract From File: Text',\n  rawParsedText: $json.text,\n  parsedPageCount: Array.isArray($json.text) ? $json.text.length : null,\n  pdfMetadata: $json.actualMimeType === 'application/pdf' ? {\n    numpages: $json.numpages,\n    numrender: $json.numrender,\n    info: $json.info,\n    metadata: $json.metadata,\n    version: $json.version\n  } : null,\n  preparedText: (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text),\n  materialStatus: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'text_available' : 'text_empty',\n  preparedPrompt: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? \"请只依据下面提供的完整章节文字，说明林澈已经直接观察到什么、哪些原因仍不知道。分别列出已观察事实和待查问题，每项附一段来自本材料的原文。不要根据文件编号、文件名或故事常识补出原因，不续写故事。\\n\\n材料来源：\" + $json.sourceId + \"\\n文件名：\" + $json.fileName + \"\\n完整提取文字：\\n\" + (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) : null,\n  stage: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'prepared_not_sent' : 'material_incomplete'\n}) }}",
+                "includeOtherFields": false,
+                "options": {}
+              }
+            },
+            {
+              "id": "5db7d6b3-7473-43d8-87e0-2876abc129aa",
+              "name": "汇集完整两项",
+              "type": "n8n-nodes-base.aggregate",
+              "typeVersion": 1,
+              "position": [
+                900,
+                60
+              ],
+              "parameters": {
+                "aggregate": "aggregateAllItemData",
+                "destinationFieldName": "documents",
+                "include": "allFields",
+                "options": {
+                  "includeBinaries": false
+                }
+              }
+            },
+            {
+              "id": "ac57de15-5e4b-4e92-b888-3f5a71108be8",
+              "name": "标记材料准备状态",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                1120,
+                60
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify({\n  requestId: $('文件目录').first().json.requestId,\n  stage: $json.documents.length === 2 && $json.documents.every(d => d.materialStatus === 'text_available') ? 'prepared_not_sent' : 'material_incomplete',\n  documentCount: $json.documents.length,\n  documents: $json.documents,\n  modelRequestCount: 0,\n  notificationStatus: 'not_sent'\n}) }}",
+                "includeOtherFields": false,
+                "options": {}
+              }
+            },
+            {
+              "id": "91f02f39-e8ce-491f-a538-2ad216604b67",
+              "name": "返回完整待发送材料",
+              "type": "n8n-nodes-base.respondToWebhook",
+              "typeVersion": 1.5,
+              "position": [
+                1340,
+                60
+              ],
+              "parameters": {
+                "respondWith": "json",
+                "responseBody": "={{ $json }}",
+                "options": {
+                  "responseCode": 200,
+                  "enableStreaming": false
+                }
+              }
+            }
+          ],
+          "connections": {
+            "接收两份目录": {
+              "main": [
+                [
+                  {
+                    "node": "文件目录",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "文件目录": {
+              "main": [
+                [
+                  {
+                    "node": "逐项资料",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "逐项资料": {
+              "main": [
+                [
+                  {
+                    "node": "下载完整文件",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "下载完整文件": {
+              "main": [
+                [
+                  {
+                    "node": "保留本项身份与下载",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "保留本项身份与下载": {
+              "main": [
+                [
+                  {
+                    "node": "按实际MIME选择",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "合回两份解析资料": {
+              "main": [
+                [
+                  {
+                    "node": "准备本项完整文字",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "准备本项完整文字": {
+              "main": [
+                [
+                  {
+                    "node": "汇集完整两项",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "汇集完整两项": {
+              "main": [
+                [
+                  {
+                    "node": "标记材料准备状态",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "标记材料准备状态": {
+              "main": [
+                [
+                  {
+                    "node": "返回完整待发送材料",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "按实际MIME选择": {
+              "main": [
+                [
+                  {
+                    "node": "提取PDF三页",
+                    "type": "main",
+                    "index": 0
+                  }
+                ],
+                [
+                  {
+                    "node": "解码UTF8文本",
+                    "type": "main",
+                    "index": 0
+                  }
+                ],
+                [
+                  {
+                    "node": "未支持类型停止",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "提取PDF三页": {
+              "main": [
+                [
+                  {
+                    "node": "合回两份解析资料",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "解码UTF8文本": {
+              "main": [
+                [
+                  {
+                    "node": "合回两份解析资料",
+                    "type": "main",
+                    "index": 1
+                  }
+                ]
+              ]
+            }
+          },
+          "settings": {
+            "executionOrder": "v1",
+            "timezone": "Asia/Shanghai",
+            "binaryMode": "separate",
+            "saveDataSuccessExecution": "all",
+            "saveDataErrorExecution": "all",
+            "saveManualExecutions": true
+          },
+          "staticData": null,
+          "meta": null,
+          "nodeGroups": [],
+          "pinData": {},
+          "versionId": "a1ced136-8f54-4212-9efa-bd8796a80f69",
+          "activeVersionId": "a1ced136-8f54-4212-9efa-bd8796a80f69",
+          "versionCounter": 1,
+          "triggerCount": 0,
+          "sourceWorkflowId": null,
+          "activeVersion": {
+            "updatedAt": "2026-10-05T05:39:53.603Z",
+            "createdAt": "2026-10-05T05:39:53.603Z",
+            "versionId": "a1ced136-8f54-4212-9efa-bd8796a80f69",
+            "workflowId": "5owiqM4AugfT3axS",
+            "nodes": [
+              {
+                "id": "aa7a7738-4821-4ae4-afe6-75d204a35025",
+                "name": "接收两份目录",
+                "type": "n8n-nodes-base.webhook",
+                "typeVersion": 2.1,
+                "position": [
+                  -1080,
+                  120
+                ],
+                "parameters": {
+                  "httpMethod": "POST",
+                  "path": "vcm-11-03-file-material",
+                  "authentication": "none",
+                  "responseMode": "responseNode",
+                  "options": {}
+                },
+                "webhookId": "1350e374-7f87-4340-a47f-2cb11989a5da"
+              },
+              {
+                "id": "7eae7d93-5216-44f0-9b7b-22dab56f46b9",
+                "name": "文件目录",
+                "type": "n8n-nodes-base.set",
+                "typeVersion": 3.5,
+                "position": [
+                  -860,
+                  120
+                ],
+                "parameters": {
+                  "mode": "raw",
+                  "jsonOutput": "={{ JSON.stringify($json.body) }}",
+                  "includeOtherFields": false,
+                  "options": {}
+                }
+              },
+              {
+                "id": "fbc363cc-85d7-4102-b75a-04a5a3eff6f3",
+                "name": "逐项资料",
+                "type": "n8n-nodes-base.splitOut",
+                "typeVersion": 1,
+                "position": [
+                  -640,
+                  120
+                ],
+                "parameters": {
+                  "fieldToSplitOut": "documents",
+                  "include": "allOtherFields",
+                  "options": {
+                    "destinationFieldName": "document"
+                  }
+                }
+              },
+              {
+                "id": "3556108d-05d6-4a02-959e-79f4d1a320fb",
+                "name": "下载完整文件",
+                "type": "n8n-nodes-base.httpRequest",
+                "typeVersion": 4.5,
+                "position": [
+                  -420,
+                  120
+                ],
+                "parameters": {
+                  "method": "GET",
+                  "url": "={{ $json.document.downloadUrl }}",
+                  "authentication": "none",
+                  "options": {
+                    "response": {
+                      "response": {
+                        "responseFormat": "file",
+                        "fullResponse": true,
+                        "outputPropertyName": "sourceFile",
+                        "neverError": false
+                      }
+                    },
+                    "timeout": 30000
+                  }
+                },
+                "retryOnFail": false
+              },
+              {
+                "id": "3fe9f1cd-829f-4764-92da-bdddf28018cb",
+                "name": "保留本项身份与下载",
+                "type": "n8n-nodes-base.set",
+                "typeVersion": 3.5,
+                "position": [
+                  -200,
+                  120
+                ],
+                "parameters": {
+                  "mode": "raw",
+                  "jsonOutput": "={{ JSON.stringify({\n  requestId: $('逐项资料').item.json.requestId,\n  sourceId: $('逐项资料').item.json.document.sourceId,\n  fileName: $('逐项资料').item.json.document.fileName,\n  expectedMimeType: $('逐项资料').item.json.document.expectedMimeType,\n  downloadUrl: $('逐项资料').item.json.document.downloadUrl,\n  actualMimeType: $binary.sourceFile.mimeType,\n  binaryField: 'sourceFile',\n  binaryMetadata: {\n    fileName: $binary.sourceFile.fileName,\n    mimeType: $binary.sourceFile.mimeType,\n    fileExtension: $binary.sourceFile.fileExtension,\n    fileSize: $binary.sourceFile.fileSize,\n    bytes: $binary.sourceFile.bytes\n  },\n  downloadResponse: {\n    statusCode: $json.statusCode,\n    statusMessage: $json.statusMessage,\n    headers: $json.headers\n  }\n}) }}",
+                  "includeOtherFields": true,
+                  "include": "selected",
+                  "includeFields": "statusCode",
+                  "options": {
+                    "stripBinary": false
+                  }
+                }
+              },
+              {
+                "id": "45d75439-7f85-458f-bf88-10b804eb2a98",
+                "name": "按实际MIME选择",
+                "type": "n8n-nodes-base.switch",
+                "typeVersion": 3.4,
+                "position": [
+                  20,
+                  120
+                ],
+                "parameters": {
+                  "mode": "rules",
+                  "rules": {
+                    "values": [
+                      {
+                        "conditions": {
+                          "options": {
+                            "caseSensitive": true,
+                            "leftValue": "",
+                            "typeValidation": "strict",
+                            "version": 3
+                          },
+                          "conditions": [
+                            {
+                              "id": "516bfe68-1606-4941-a59b-f4d7921757f4",
+                              "leftValue": "={{ $json.actualMimeType }}",
+                              "rightValue": "application/pdf",
+                              "operator": {
+                                "type": "string",
+                                "operation": "equals"
+                              }
+                            }
+                          ],
+                          "combinator": "and"
+                        },
+                        "renameOutput": true,
+                        "outputKey": "PDF"
+                      },
+                      {
+                        "conditions": {
+                          "options": {
+                            "caseSensitive": true,
+                            "leftValue": "",
+                            "typeValidation": "strict",
+                            "version": 3
+                          },
+                          "conditions": [
+                            {
+                              "id": "9aff6125-e804-4548-94d4-c6cdddf837b1",
+                              "leftValue": "={{ $json.actualMimeType }}",
+                              "rightValue": "text/plain",
+                              "operator": {
+                                "type": "string",
+                                "operation": "equals"
+                              }
+                            }
+                          ],
+                          "combinator": "and"
+                        },
+                        "renameOutput": true,
+                        "outputKey": "TXT"
+                      }
+                    ]
+                  },
+                  "options": {
+                    "fallbackOutput": "extra",
+                    "renameFallbackOutput": "未支持类型",
+                    "allMatchingOutputs": false
+                  }
+                }
+              },
+              {
+                "id": "678e2dd7-d366-4108-bc8b-4b672493389c",
+                "name": "提取PDF三页",
+                "type": "n8n-nodes-base.extractFromFile",
+                "typeVersion": 1.1,
+                "position": [
+                  240,
+                  -60
+                ],
+                "parameters": {
+                  "operation": "pdf",
+                  "binaryPropertyName": "sourceFile",
+                  "options": {
+                    "maxPages": 3,
+                    "joinPages": false,
+                    "keepSource": "both"
+                  }
+                }
+              },
+              {
+                "id": "3bd9f626-81c6-4ac6-b26b-94e982d6703d",
+                "name": "解码UTF8文本",
+                "type": "n8n-nodes-base.extractFromFile",
+                "typeVersion": 1.1,
+                "position": [
+                  240,
+                  180
+                ],
+                "parameters": {
+                  "operation": "text",
+                  "binaryPropertyName": "sourceFile",
+                  "destinationKey": "text",
+                  "options": {
+                    "encoding": "utf8",
+                    "stripBOM": true,
+                    "keepSource": "both"
+                  }
+                }
+              },
+              {
+                "id": "60d1586f-1827-42e0-ae03-f17840fe806e",
+                "name": "未支持类型停止",
+                "type": "n8n-nodes-base.stopAndError",
+                "typeVersion": 1,
+                "position": [
+                  240,
+                  420
+                ],
+                "parameters": {
+                  "errorType": "errorMessage",
+                  "errorMessage": "={{ \"未支持本项实际 MIME：\" + $json.actualMimeType + \"；sourceId=\" + $json.sourceId }}"
+                }
+              },
+              {
+                "id": "8221fe46-baa3-4260-bddb-f8f753e135a3",
+                "name": "合回两份解析资料",
+                "type": "n8n-nodes-base.merge",
+                "typeVersion": 3.2,
+                "position": [
+                  460,
+                  60
+                ],
+                "parameters": {
+                  "mode": "append",
+                  "numberInputs": 2
+                }
+              },
+              {
+                "id": "b9557e8c-116e-4e7b-85b9-1a3ca7874a71",
+                "name": "准备本项完整文字",
+                "type": "n8n-nodes-base.set",
+                "typeVersion": 3.5,
+                "position": [
+                  680,
+                  60
+                ],
+                "parameters": {
+                  "mode": "raw",
+                  "jsonOutput": "={{ JSON.stringify({\n  requestId: $json.requestId,\n  sourceId: $json.sourceId,\n  fileName: $json.fileName,\n  expectedMimeType: $json.expectedMimeType,\n  downloadUrl: $json.downloadUrl,\n  actualMimeType: $json.actualMimeType,\n  binaryField: $json.binaryField,\n  binaryMetadata: $json.binaryMetadata,\n  downloadResponse: $json.downloadResponse,\n  parser: $json.actualMimeType === 'application/pdf' ? 'Extract From File: PDF' : 'Extract From File: Text',\n  rawParsedText: $json.text,\n  parsedPageCount: Array.isArray($json.text) ? $json.text.length : null,\n  pdfMetadata: $json.actualMimeType === 'application/pdf' ? {\n    numpages: $json.numpages,\n    numrender: $json.numrender,\n    info: $json.info,\n    metadata: $json.metadata,\n    version: $json.version\n  } : null,\n  preparedText: (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text),\n  materialStatus: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'text_available' : 'text_empty',\n  preparedPrompt: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? \"请只依据下面提供的完整章节文字，说明林澈已经直接观察到什么、哪些原因仍不知道。分别列出已观察事实和待查问题，每项附一段来自本材料的原文。不要根据文件编号、文件名或故事常识补出原因，不续写故事。\\n\\n材料来源：\" + $json.sourceId + \"\\n文件名：\" + $json.fileName + \"\\n完整提取文字：\\n\" + (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) : null,\n  stage: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'prepared_not_sent' : 'material_incomplete'\n}) }}",
+                  "includeOtherFields": false,
+                  "options": {}
+                }
+              },
+              {
+                "id": "5db7d6b3-7473-43d8-87e0-2876abc129aa",
+                "name": "汇集完整两项",
+                "type": "n8n-nodes-base.aggregate",
+                "typeVersion": 1,
+                "position": [
+                  900,
+                  60
+                ],
+                "parameters": {
+                  "aggregate": "aggregateAllItemData",
+                  "destinationFieldName": "documents",
+                  "include": "allFields",
+                  "options": {
+                    "includeBinaries": false
+                  }
+                }
+              },
+              {
+                "id": "ac57de15-5e4b-4e92-b888-3f5a71108be8",
+                "name": "标记材料准备状态",
+                "type": "n8n-nodes-base.set",
+                "typeVersion": 3.5,
+                "position": [
+                  1120,
+                  60
+                ],
+                "parameters": {
+                  "mode": "raw",
+                  "jsonOutput": "={{ JSON.stringify({\n  requestId: $('文件目录').first().json.requestId,\n  stage: $json.documents.length === 2 && $json.documents.every(d => d.materialStatus === 'text_available') ? 'prepared_not_sent' : 'material_incomplete',\n  documentCount: $json.documents.length,\n  documents: $json.documents,\n  modelRequestCount: 0,\n  notificationStatus: 'not_sent'\n}) }}",
+                  "includeOtherFields": false,
+                  "options": {}
+                }
+              },
+              {
+                "id": "91f02f39-e8ce-491f-a538-2ad216604b67",
+                "name": "返回完整待发送材料",
+                "type": "n8n-nodes-base.respondToWebhook",
+                "typeVersion": 1.5,
+                "position": [
+                  1340,
+                  60
+                ],
+                "parameters": {
+                  "respondWith": "json",
+                  "responseBody": "={{ $json }}",
+                  "options": {
+                    "responseCode": 200,
+                    "enableStreaming": false
+                  }
+                }
+              }
+            ],
+            "connections": {
+              "接收两份目录": {
+                "main": [
+                  [
+                    {
+                      "node": "文件目录",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "文件目录": {
+                "main": [
+                  [
+                    {
+                      "node": "逐项资料",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "逐项资料": {
+                "main": [
+                  [
+                    {
+                      "node": "下载完整文件",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "下载完整文件": {
+                "main": [
+                  [
+                    {
+                      "node": "保留本项身份与下载",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "保留本项身份与下载": {
+                "main": [
+                  [
+                    {
+                      "node": "按实际MIME选择",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "合回两份解析资料": {
+                "main": [
+                  [
+                    {
+                      "node": "准备本项完整文字",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "准备本项完整文字": {
+                "main": [
+                  [
+                    {
+                      "node": "汇集完整两项",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "汇集完整两项": {
+                "main": [
+                  [
+                    {
+                      "node": "标记材料准备状态",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "标记材料准备状态": {
+                "main": [
+                  [
+                    {
+                      "node": "返回完整待发送材料",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "按实际MIME选择": {
+                "main": [
+                  [
+                    {
+                      "node": "提取PDF三页",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ],
+                  [
+                    {
+                      "node": "解码UTF8文本",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ],
+                  [
+                    {
+                      "node": "未支持类型停止",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "提取PDF三页": {
+                "main": [
+                  [
+                    {
+                      "node": "合回两份解析资料",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "解码UTF8文本": {
+                "main": [
+                  [
+                    {
+                      "node": "合回两份解析资料",
+                      "type": "main",
+                      "index": 1
+                    }
+                  ]
+                ]
+              }
+            },
+            "nodeGroups": [],
+            "authors": "课堂 编者",
+            "name": null,
+            "description": null,
+            "autosaved": false,
+            "workflowPublishHistory": [
+              {
+                "createdAt": "2026-10-05T05:40:13.054Z",
+                "id": 4,
+                "workflowId": "5owiqM4AugfT3axS",
+                "versionId": "a1ced136-8f54-4212-9efa-bd8796a80f69",
+                "event": "activated",
+                "userId": "ab93e55c-27f3-4f17-8ba8-c07f2c407db4"
+              }
+            ]
+          },
+          "scopes": [
+            "execution:delete",
+            "execution:list",
+            "execution:read",
+            "execution:reveal",
+            "workflow:create",
+            "workflow:delete",
+            "workflow:disableRedaction",
+            "workflow:enableRedaction",
+            "workflow:execute",
+            "workflow:execute-chat",
+            "workflow:export",
+            "workflow:import",
+            "workflow:list",
+            "workflow:move",
+            "workflow:publish",
+            "workflow:read",
+            "workflow:share",
+            "workflow:unpublish",
+            "workflow:unshare",
+            "workflow:update"
+          ],
+          "checksum": "6731ca391e4812e70bd38d4e9e7acb47a2adb255c4fe05f3b28437c7b851ce25"
+        }
+      }
+    },
+    {
+      "endpoint": "/workflows/5owiqM4AugfT3axS/publication-status",
+      "method": "GET",
+      "startedAt": "2026-10-05T05:40:13.087Z",
+      "finishedAt": "2026-10-05T05:40:13.119Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "status": "in_progress",
+          "liveVersionId": null,
+          "pendingVersionId": "a1ced136-8f54-4212-9efa-bd8796a80f69",
+          "triggers": []
+        }
+      }
+    },
+    {
+      "endpoint": "/workflows/5owiqM4AugfT3axS",
+      "method": "GET",
+      "startedAt": "2026-10-05T05:40:13.119Z",
+      "finishedAt": "2026-10-05T05:40:13.149Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "id": "5owiqM4AugfT3axS",
+          "name": "vcm-11-03-文件身份与完整文字",
+          "versionId": "a1ced136-8f54-4212-9efa-bd8796a80f69",
+          "activeVersionId": "a1ced136-8f54-4212-9efa-bd8796a80f69",
+          "active": true,
+          "checksum": "6731ca391e4812e70bd38d4e9e7acb47a2adb255c4fe05f3b28437c7b851ce25",
+          "nodes": [
+            {
+              "id": "aa7a7738-4821-4ae4-afe6-75d204a35025",
+              "name": "接收两份目录",
+              "type": "n8n-nodes-base.webhook",
+              "typeVersion": 2.1,
+              "position": [
+                -1080,
+                120
+              ],
+              "parameters": {
+                "httpMethod": "POST",
+                "path": "vcm-11-03-file-material",
+                "authentication": "none",
+                "responseMode": "responseNode",
+                "options": {}
+              },
+              "webhookId": "1350e374-7f87-4340-a47f-2cb11989a5da"
+            },
+            {
+              "id": "7eae7d93-5216-44f0-9b7b-22dab56f46b9",
+              "name": "文件目录",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                -860,
+                120
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify($json.body) }}",
+                "includeOtherFields": false,
+                "options": {}
+              }
+            },
+            {
+              "id": "fbc363cc-85d7-4102-b75a-04a5a3eff6f3",
+              "name": "逐项资料",
+              "type": "n8n-nodes-base.splitOut",
+              "typeVersion": 1,
+              "position": [
+                -640,
+                120
+              ],
+              "parameters": {
+                "fieldToSplitOut": "documents",
+                "include": "allOtherFields",
+                "options": {
+                  "destinationFieldName": "document"
+                }
+              }
+            },
+            {
+              "id": "3556108d-05d6-4a02-959e-79f4d1a320fb",
+              "name": "下载完整文件",
+              "type": "n8n-nodes-base.httpRequest",
+              "typeVersion": 4.5,
+              "position": [
+                -420,
+                120
+              ],
+              "parameters": {
+                "method": "GET",
+                "url": "={{ $json.document.downloadUrl }}",
+                "authentication": "none",
+                "options": {
+                  "response": {
+                    "response": {
+                      "responseFormat": "file",
+                      "fullResponse": true,
+                      "outputPropertyName": "sourceFile",
+                      "neverError": false
+                    }
+                  },
+                  "timeout": 30000
+                }
+              },
+              "retryOnFail": false
+            },
+            {
+              "id": "3fe9f1cd-829f-4764-92da-bdddf28018cb",
+              "name": "保留本项身份与下载",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                -200,
+                120
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify({\n  requestId: $('逐项资料').item.json.requestId,\n  sourceId: $('逐项资料').item.json.document.sourceId,\n  fileName: $('逐项资料').item.json.document.fileName,\n  expectedMimeType: $('逐项资料').item.json.document.expectedMimeType,\n  downloadUrl: $('逐项资料').item.json.document.downloadUrl,\n  actualMimeType: $binary.sourceFile.mimeType,\n  binaryField: 'sourceFile',\n  binaryMetadata: {\n    fileName: $binary.sourceFile.fileName,\n    mimeType: $binary.sourceFile.mimeType,\n    fileExtension: $binary.sourceFile.fileExtension,\n    fileSize: $binary.sourceFile.fileSize,\n    bytes: $binary.sourceFile.bytes\n  },\n  downloadResponse: {\n    statusCode: $json.statusCode,\n    statusMessage: $json.statusMessage,\n    headers: $json.headers\n  }\n}) }}",
+                "includeOtherFields": true,
+                "include": "selected",
+                "includeFields": "statusCode",
+                "options": {
+                  "stripBinary": false
+                }
+              }
+            },
+            {
+              "id": "45d75439-7f85-458f-bf88-10b804eb2a98",
+              "name": "按实际MIME选择",
+              "type": "n8n-nodes-base.switch",
+              "typeVersion": 3.4,
+              "position": [
+                20,
+                120
+              ],
+              "parameters": {
+                "mode": "rules",
+                "rules": {
+                  "values": [
+                    {
+                      "conditions": {
+                        "options": {
+                          "caseSensitive": true,
+                          "leftValue": "",
+                          "typeValidation": "strict",
+                          "version": 3
+                        },
+                        "conditions": [
+                          {
+                            "id": "516bfe68-1606-4941-a59b-f4d7921757f4",
+                            "leftValue": "={{ $json.actualMimeType }}",
+                            "rightValue": "application/pdf",
+                            "operator": {
+                              "type": "string",
+                              "operation": "equals"
+                            }
+                          }
+                        ],
+                        "combinator": "and"
+                      },
+                      "renameOutput": true,
+                      "outputKey": "PDF"
+                    },
+                    {
+                      "conditions": {
+                        "options": {
+                          "caseSensitive": true,
+                          "leftValue": "",
+                          "typeValidation": "strict",
+                          "version": 3
+                        },
+                        "conditions": [
+                          {
+                            "id": "9aff6125-e804-4548-94d4-c6cdddf837b1",
+                            "leftValue": "={{ $json.actualMimeType }}",
+                            "rightValue": "text/plain",
+                            "operator": {
+                              "type": "string",
+                              "operation": "equals"
+                            }
+                          }
+                        ],
+                        "combinator": "and"
+                      },
+                      "renameOutput": true,
+                      "outputKey": "TXT"
+                    }
+                  ]
+                },
+                "options": {
+                  "fallbackOutput": "extra",
+                  "renameFallbackOutput": "未支持类型",
+                  "allMatchingOutputs": false
+                }
+              }
+            },
+            {
+              "id": "678e2dd7-d366-4108-bc8b-4b672493389c",
+              "name": "提取PDF三页",
+              "type": "n8n-nodes-base.extractFromFile",
+              "typeVersion": 1.1,
+              "position": [
+                240,
+                -60
+              ],
+              "parameters": {
+                "operation": "pdf",
+                "binaryPropertyName": "sourceFile",
+                "options": {
+                  "maxPages": 3,
+                  "joinPages": false,
+                  "keepSource": "both"
+                }
+              }
+            },
+            {
+              "id": "3bd9f626-81c6-4ac6-b26b-94e982d6703d",
+              "name": "解码UTF8文本",
+              "type": "n8n-nodes-base.extractFromFile",
+              "typeVersion": 1.1,
+              "position": [
+                240,
+                180
+              ],
+              "parameters": {
+                "operation": "text",
+                "binaryPropertyName": "sourceFile",
+                "destinationKey": "text",
+                "options": {
+                  "encoding": "utf8",
+                  "stripBOM": true,
+                  "keepSource": "both"
+                }
+              }
+            },
+            {
+              "id": "60d1586f-1827-42e0-ae03-f17840fe806e",
+              "name": "未支持类型停止",
+              "type": "n8n-nodes-base.stopAndError",
+              "typeVersion": 1,
+              "position": [
+                240,
+                420
+              ],
+              "parameters": {
+                "errorType": "errorMessage",
+                "errorMessage": "={{ \"未支持本项实际 MIME：\" + $json.actualMimeType + \"；sourceId=\" + $json.sourceId }}"
+              }
+            },
+            {
+              "id": "8221fe46-baa3-4260-bddb-f8f753e135a3",
+              "name": "合回两份解析资料",
+              "type": "n8n-nodes-base.merge",
+              "typeVersion": 3.2,
+              "position": [
+                460,
+                60
+              ],
+              "parameters": {
+                "mode": "append",
+                "numberInputs": 2
+              }
+            },
+            {
+              "id": "b9557e8c-116e-4e7b-85b9-1a3ca7874a71",
+              "name": "准备本项完整文字",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                680,
+                60
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify({\n  requestId: $json.requestId,\n  sourceId: $json.sourceId,\n  fileName: $json.fileName,\n  expectedMimeType: $json.expectedMimeType,\n  downloadUrl: $json.downloadUrl,\n  actualMimeType: $json.actualMimeType,\n  binaryField: $json.binaryField,\n  binaryMetadata: $json.binaryMetadata,\n  downloadResponse: $json.downloadResponse,\n  parser: $json.actualMimeType === 'application/pdf' ? 'Extract From File: PDF' : 'Extract From File: Text',\n  rawParsedText: $json.text,\n  parsedPageCount: Array.isArray($json.text) ? $json.text.length : null,\n  pdfMetadata: $json.actualMimeType === 'application/pdf' ? {\n    numpages: $json.numpages,\n    numrender: $json.numrender,\n    info: $json.info,\n    metadata: $json.metadata,\n    version: $json.version\n  } : null,\n  preparedText: (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text),\n  materialStatus: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'text_available' : 'text_empty',\n  preparedPrompt: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? \"请只依据下面提供的完整章节文字，说明林澈已经直接观察到什么、哪些原因仍不知道。分别列出已观察事实和待查问题，每项附一段来自本材料的原文。不要根据文件编号、文件名或故事常识补出原因，不续写故事。\\n\\n材料来源：\" + $json.sourceId + \"\\n文件名：\" + $json.fileName + \"\\n完整提取文字：\\n\" + (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) : null,\n  stage: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'prepared_not_sent' : 'material_incomplete'\n}) }}",
+                "includeOtherFields": false,
+                "options": {}
+              }
+            },
+            {
+              "id": "5db7d6b3-7473-43d8-87e0-2876abc129aa",
+              "name": "汇集完整两项",
+              "type": "n8n-nodes-base.aggregate",
+              "typeVersion": 1,
+              "position": [
+                900,
+                60
+              ],
+              "parameters": {
+                "aggregate": "aggregateAllItemData",
+                "destinationFieldName": "documents",
+                "include": "allFields",
+                "options": {
+                  "includeBinaries": false
+                }
+              }
+            },
+            {
+              "id": "ac57de15-5e4b-4e92-b888-3f5a71108be8",
+              "name": "标记材料准备状态",
+              "type": "n8n-nodes-base.set",
+              "typeVersion": 3.5,
+              "position": [
+                1120,
+                60
+              ],
+              "parameters": {
+                "mode": "raw",
+                "jsonOutput": "={{ JSON.stringify({\n  requestId: $('文件目录').first().json.requestId,\n  stage: $json.documents.length === 2 && $json.documents.every(d => d.materialStatus === 'text_available') ? 'prepared_not_sent' : 'material_incomplete',\n  documentCount: $json.documents.length,\n  documents: $json.documents,\n  modelRequestCount: 0,\n  notificationStatus: 'not_sent'\n}) }}",
+                "includeOtherFields": false,
+                "options": {}
+              }
+            },
+            {
+              "id": "91f02f39-e8ce-491f-a538-2ad216604b67",
+              "name": "返回完整待发送材料",
+              "type": "n8n-nodes-base.respondToWebhook",
+              "typeVersion": 1.5,
+              "position": [
+                1340,
+                60
+              ],
+              "parameters": {
+                "respondWith": "json",
+                "responseBody": "={{ $json }}",
+                "options": {
+                  "responseCode": 200,
+                  "enableStreaming": false
+                }
+              }
+            }
+          ],
+          "connections": {
+            "接收两份目录": {
+              "main": [
+                [
+                  {
+                    "node": "文件目录",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "文件目录": {
+              "main": [
+                [
+                  {
+                    "node": "逐项资料",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "逐项资料": {
+              "main": [
+                [
+                  {
+                    "node": "下载完整文件",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "下载完整文件": {
+              "main": [
+                [
+                  {
+                    "node": "保留本项身份与下载",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "保留本项身份与下载": {
+              "main": [
+                [
+                  {
+                    "node": "按实际MIME选择",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "合回两份解析资料": {
+              "main": [
+                [
+                  {
+                    "node": "准备本项完整文字",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "准备本项完整文字": {
+              "main": [
+                [
+                  {
+                    "node": "汇集完整两项",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "汇集完整两项": {
+              "main": [
+                [
+                  {
+                    "node": "标记材料准备状态",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "标记材料准备状态": {
+              "main": [
+                [
+                  {
+                    "node": "返回完整待发送材料",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "按实际MIME选择": {
+              "main": [
+                [
+                  {
+                    "node": "提取PDF三页",
+                    "type": "main",
+                    "index": 0
+                  }
+                ],
+                [
+                  {
+                    "node": "解码UTF8文本",
+                    "type": "main",
+                    "index": 0
+                  }
+                ],
+                [
+                  {
+                    "node": "未支持类型停止",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "提取PDF三页": {
+              "main": [
+                [
+                  {
+                    "node": "合回两份解析资料",
+                    "type": "main",
+                    "index": 0
+                  }
+                ]
+              ]
+            },
+            "解码UTF8文本": {
+              "main": [
+                [
+                  {
+                    "node": "合回两份解析资料",
+                    "type": "main",
+                    "index": 1
+                  }
+                ]
+              ]
+            }
+          },
+          "settings": {
+            "executionOrder": "v1",
+            "timezone": "Asia/Shanghai",
+            "binaryMode": "separate",
+            "saveDataSuccessExecution": "all",
+            "saveDataErrorExecution": "all",
+            "saveManualExecutions": true
+          },
+          "pinData": {}
+        }
+      }
+    }
+  ],
+  "projection": "原REST解析对象按课堂业务字段保留；省略管理身份/共享权限等元数据，不含Cookie、请求认证头或私有执行协议，不称线上原字节。"
+}

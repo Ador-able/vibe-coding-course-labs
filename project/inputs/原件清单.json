@@ -1,0 +1,22 @@
+[
+  {
+    "sourceId": "clock-chapter-three-pdf",
+    "fileName": "第三章资料.pdf",
+    "publicName": "chapter-three.pdf",
+    "expectedMimeType": "application/pdf",
+    "bytes": 5226,
+    "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97",
+    "relativePath": "files/chapter-three.pdf",
+    "origin": "05-02 已有自主课堂资料；本节没有重新制作或解析"
+  },
+  {
+    "sourceId": "clock-chapter-three-txt",
+    "fileName": "小说第三章完整原文.txt",
+    "publicName": "chapter-three.txt",
+    "expectedMimeType": "text/plain",
+    "bytes": 3093,
+    "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+    "relativePath": "files/chapter-three.txt",
+    "origin": "05-02 已有自主课堂资料；本节没有重新制作或解析"
+  }
+]

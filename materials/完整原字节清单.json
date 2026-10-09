@@ -1,0 +1,198 @@
+{
+  "publicHead": "3da21bb831f63520690ea1bd4cc547ed037e17b0",
+  "publicTag": "course-file-material-public-03",
+  "trackedFiles": 37,
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "file": "公开材料.bundle",
+      "bytes": 1376560,
+      "sha256": "b7c59b49d74d69428632ded67e2cd9b5986bde9406d972dd9ccc4c48fb104b11"
+    },
+    {
+      "file": "固定记录.json",
+      "bytes": 2922,
+      "sha256": "45ebba43bf17d63fd6793f5111ef473282e4d34063802790c56daf22d1df4a0b"
+    },
+    {
+      "file": "教师材料/四题完整提示与答案.md",
+      "bytes": 4559,
+      "sha256": "bb2e7fc68bedd38ac4297fba7158a304e8d8bd148dcd3d5e8750ff6fbef3dad0"
+    },
+    {
+      "file": "配置/.gitattributes",
+      "bytes": 78,
+      "sha256": "82e00f80b3ed209b631dd549096106aa5bb092986a2e89f35a566d7645678d28"
+    },
+    {
+      "file": "配置/.gitignore",
+      "bytes": 6,
+      "sha256": "247681cefffa8448d973f21147c92b38b63f492a98a50aca3b3c490bc97499e1"
+    },
+    {
+      "file": "配置/主编唯一批次执行定义.json",
+      "bytes": 4570,
+      "sha256": "398220e6439e6b34b246790c88f6921ad465f700b8df8caf041583adb1ec1593"
+    },
+    {
+      "file": "配置/files/chapter-three.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97"
+    },
+    {
+      "file": "配置/files/chapter-three.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "file": "配置/inputs/既有三页正文参考.json",
+      "bytes": 3556,
+      "sha256": "48fa9e0fc9da25383d754c0f88df651f4212ffc9c6952a0897d9fad8d21eacd8"
+    },
+    {
+      "file": "配置/inputs/四题完整提示与答案.md",
+      "bytes": 4216,
+      "sha256": "1cf39bf86a7f3ca3a1a2e0bda5dd37297848a137b1b730b5ed61cb65412f5c17"
+    },
+    {
+      "file": "配置/inputs/完整两项目录输入.json",
+      "bytes": 586,
+      "sha256": "07742a136de42a17583aece4768155792e24997ae943700922f2ec0225e149e3"
+    },
+    {
+      "file": "配置/inputs/完整提示模板.txt",
+      "bytes": 392,
+      "sha256": "df117df7c0d83dd2ddbcef08286c3ec09ddb5a177392fc9779aceaff9b0c4beb"
+    },
+    {
+      "file": "配置/inputs/原件清单.json",
+      "bytes": 818,
+      "sha256": "c6dfd96f2023d58b62bc355aa0a01460216367e7c4fd4f1b0eb83145249a9b54"
+    },
+    {
+      "file": "配置/README.md",
+      "bytes": 6560,
+      "sha256": "54ea2484a509e39467d52a2a1fdae5bff9f8fa621e8ce7e72d0903237faf31f3"
+    },
+    {
+      "file": "配置/scripts/检查配置语法与原件.mjs",
+      "bytes": 4975,
+      "sha256": "11b2fe5b1b49fb8e1d6b7db457bc89b552c32b027d3b4de1efc1311ff7186221"
+    },
+    {
+      "file": "配置/workflow.json",
+      "bytes": 13984,
+      "sha256": "e537400dfa6064212923fd54d658f17cd56fe4aef495187de2cf82bd215ac04b"
+    },
+    {
+      "file": "实际记录/本次容器PDF提取警告原行.txt",
+      "bytes": 351,
+      "sha256": "52c011d83b496d8a27b27331a136fa33374e26cdd78ba70352fd8aa92af74ae7"
+    },
+    {
+      "file": "实际记录/本次文件服务完整日志.txt",
+      "bytes": 156,
+      "sha256": "44d7277545c6ab5884417781f6ae2249ccd4c551283de841ff4593b7af8512dd"
+    },
+    {
+      "file": "实际记录/既有业务对象执行前后完整业务读回.json",
+      "bytes": 153242,
+      "sha256": "8479da37bbb22d9e76f59c1fe3ad37e15956ee8083ae402ba7389b5599685568"
+    },
+    {
+      "file": "实际记录/全部节点实际业务执行.json",
+      "bytes": 112760,
+      "sha256": "c6b596c4b642c700dd52d3b18958ae9cc820808c9f30732e89d80b9ffae31f8d"
+    },
+    {
+      "file": "实际记录/实际存储-chapter-three.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97"
+    },
+    {
+      "file": "实际记录/实际存储-chapter-three.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "file": "实际记录/实际记录原字节清单.json",
+      "bytes": 2537,
+      "sha256": "e79c52a21778570cae99ff0531c8ba9b84157403c0c47e8c73fb9caefa2598c6"
+    },
+    {
+      "file": "实际记录/实际批次完整响应.json",
+      "bytes": 12909,
+      "sha256": "91d1019e1c85b49522e16a35a72ed6e98915f2ef72fdb576906da4a28d4458b9"
+    },
+    {
+      "file": "实际记录/主编实际完整核对.json",
+      "bytes": 4293,
+      "sha256": "fcabc7179d4f6e2ba72114d526512ea292ad5bcb7bc306d75b68f0085e09d87d"
+    },
+    {
+      "file": "实际记录/create-workflow-实际业务回执.json",
+      "bytes": 37382,
+      "sha256": "f858f482b33d031d959afedbc066ae95e2909296df958f7a6e4e545cd1f9b686"
+    },
+    {
+      "file": "实际记录/post-once-实际业务回执.json",
+      "bytes": 33539,
+      "sha256": "95c97230b9646ca13559df4c84d375ed1adaffd78e80f638e67c853be9c959ad"
+    },
+    {
+      "file": "实际记录/publish-workflow-实际业务回执.json",
+      "bytes": 57455,
+      "sha256": "b1e15f79450e868a0a7a61062aae71de8ccf31ec83c8efc4cb6a0c9d82b39e8a"
+    },
+    {
+      "file": "实际记录/read-results-final-实际业务回执.json",
+      "bytes": 105157,
+      "sha256": "5d2a5e14e2ea2704e0e68fdb015738c828ce5b99fb67348f595c577d5accf087"
+    },
+    {
+      "file": "实际记录/TXT实际完整待发送提示.txt",
+      "bytes": 3488,
+      "sha256": "f699050d379316a349c28108171ff96f3771a6004c83e8b1e1f39be99e2339c2"
+    },
+    {
+      "file": "实际记录/TXT实际完整提取文字.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "file": "图/完整局部编辑提示.txt",
+      "bytes": 2073,
+      "sha256": "3d5a2abbe10f9e543777fe9bec893e6dc5f9bf68cb876d0341b99e88a095bce4"
+    },
+    {
+      "file": "图/完整生成提示.txt",
+      "bytes": 2661,
+      "sha256": "8845b6c353927b57278f10722116a18b85e80a5cbc007e794c965adfd556f612"
+    },
+    {
+      "file": "图/文件身份与待发送材料.png",
+      "bytes": 1299008,
+      "sha256": "c4a2f846044051400bdaff4facfec4c9a82b52572ae7c773e841ffc39fb27866"
+    },
+    {
+      "file": "文件材料配置.bundle",
+      "bytes": 22162,
+      "sha256": "b6e935c9b94b7f9c2b3640effd3ddb9f79add05db37bc5adc2964f27e03801b2"
+    },
+    {
+      "file": "研究采用与定位.md",
+      "bytes": 3291,
+      "sha256": "27e872e59acff4cb99c5595ce22d8edc058dd7b970c7ca175da299bc30945922"
+    },
+    {
+      "file": "README.md",
+      "bytes": 5729,
+      "sha256": "d71ff1981201f208b59e359c0677730cbb6a342d3dd2254960f8d385276dcc97"
+    }
+  ],
+  "scope": "清单不列自身；公开材料.bundle另列。所有业务原文字节保留，纯Git恢复无运行。"
+}

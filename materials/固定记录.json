@@ -1,0 +1,83 @@
+{
+  "start": "115a4188f4b0d8ecda505feb4c9f740dad71d376",
+  "end": "10428f08223b703ed4e99256d2f086258752623f",
+  "startTag": "course-file-material-start-03",
+  "endTag": "course-file-material-end-03",
+  "files": [
+    {
+      "relativePath": ".gitattributes",
+      "bytes": 78,
+      "sha256": "82e00f80b3ed209b631dd549096106aa5bb092986a2e89f35a566d7645678d28"
+    },
+    {
+      "relativePath": ".gitignore",
+      "bytes": 6,
+      "sha256": "247681cefffa8448d973f21147c92b38b63f492a98a50aca3b3c490bc97499e1"
+    },
+    {
+      "relativePath": "README.md",
+      "bytes": 6560,
+      "sha256": "54ea2484a509e39467d52a2a1fdae5bff9f8fa621e8ce7e72d0903237faf31f3"
+    },
+    {
+      "relativePath": "files/chapter-three.pdf",
+      "bytes": 5226,
+      "sha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97"
+    },
+    {
+      "relativePath": "files/chapter-three.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5"
+    },
+    {
+      "relativePath": "inputs/原件清单.json",
+      "bytes": 818,
+      "sha256": "c6dfd96f2023d58b62bc355aa0a01460216367e7c4fd4f1b0eb83145249a9b54"
+    },
+    {
+      "relativePath": "inputs/四题完整提示与答案.md",
+      "bytes": 4216,
+      "sha256": "1cf39bf86a7f3ca3a1a2e0bda5dd37297848a137b1b730b5ed61cb65412f5c17"
+    },
+    {
+      "relativePath": "inputs/完整两项目录输入.json",
+      "bytes": 586,
+      "sha256": "07742a136de42a17583aece4768155792e24997ae943700922f2ec0225e149e3"
+    },
+    {
+      "relativePath": "inputs/完整提示模板.txt",
+      "bytes": 392,
+      "sha256": "df117df7c0d83dd2ddbcef08286c3ec09ddb5a177392fc9779aceaff9b0c4beb"
+    },
+    {
+      "relativePath": "inputs/既有三页正文参考.json",
+      "bytes": 3556,
+      "sha256": "48fa9e0fc9da25383d754c0f88df651f4212ffc9c6952a0897d9fad8d21eacd8"
+    },
+    {
+      "relativePath": "scripts/检查配置语法与原件.mjs",
+      "bytes": 4975,
+      "sha256": "11b2fe5b1b49fb8e1d6b7db457bc89b552c32b027d3b4de1efc1311ff7186221"
+    },
+    {
+      "relativePath": "workflow.json",
+      "bytes": 13984,
+      "sha256": "e537400dfa6064212923fd54d658f17cd56fe4aef495187de2cf82bd215ac04b"
+    },
+    {
+      "relativePath": "主编唯一批次执行定义.json",
+      "bytes": 4570,
+      "sha256": "398220e6439e6b34b246790c88f6921ad465f700b8df8caf041583adb1ec1593"
+    }
+  ],
+  "bundle": {
+    "fileName": "文件材料配置.bundle",
+    "bytes": 22162,
+    "sha256": "b6e935c9b94b7f9c2b3640effd3ddb9f79add05db37bc5adc2964f27e03801b2"
+  },
+  "actualScope": "一批2项；PDF空结果保持，TXT全文与提示未发送。静态定义approvedBy:null是备课材料，实际采用看实际记录。",
+  "sourceOriginalBytesEqual": true,
+  "modelRequests": 0,
+  "notifications": 0,
+  "publicProjection": "14实际材料的projection为各自公共业务字段；不称所有私有原字节公开。"
+}
