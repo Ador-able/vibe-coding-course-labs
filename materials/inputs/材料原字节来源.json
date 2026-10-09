@@ -1,0 +1,749 @@
+{
+  "inherited": [
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-original-hxwwJe/assertions.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-original-hxwwJe/assertions.json",
+      "bytes": 706,
+      "sha256": "d99703a9ef1e467fb16c6f52b384d1b210c08012d1663284b7315928432b2463",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-original-hxwwJe/evidence.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-original-hxwwJe/evidence.json",
+      "bytes": 328035,
+      "sha256": "dc6057717518c37e6a482db6beea559807fd5c0fb732e0c036522ea81b0f6abe",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-result.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-result.json",
+      "bytes": 173,
+      "sha256": "c188425c7521c127dc657188ee072d0a377dd02e973e2f63cb646c08d51f77fe",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-desk-K92HAt/assertions.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-desk-K92HAt/assertions.json",
+      "bytes": 2496,
+      "sha256": "ef5c97c5a2e6b203fbb03eeae2f182eaef176c848e2e97a4efe31f9815c276f3",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-desk-K92HAt/evidence.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-desk-K92HAt/evidence.json",
+      "bytes": 461582,
+      "sha256": "649eb83767054e19508fccfeeb90ce94c562fe13d6faf8e4e46420e6c9404345",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-notes-z0mJY5/assertions.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-notes-z0mJY5/assertions.json",
+      "bytes": 2496,
+      "sha256": "ef5c97c5a2e6b203fbb03eeae2f182eaef176c848e2e97a4efe31f9815c276f3",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-notes-z0mJY5/evidence.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-notes-z0mJY5/evidence.json",
+      "bytes": 461590,
+      "sha256": "1a37730e86b99bae3b37dabbe006db09cc2288b58f9a80f97b9f7a5358d9ad0a",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-original-RGafPI/assertions.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-original-RGafPI/assertions.json",
+      "bytes": 2496,
+      "sha256": "ef5c97c5a2e6b203fbb03eeae2f182eaef176c848e2e97a4efe31f9815c276f3",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-original-RGafPI/evidence.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-original-RGafPI/evidence.json",
+      "bytes": 461614,
+      "sha256": "dd15140871bcf78428aeeff4d4089b2f4d58687f802b8db602f0c4d1f4042ca8",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-result.json",
+      "sourcePath": "cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-result.json",
+      "bytes": 1220,
+      "sha256": "f814d351760cb45fba73913dedaa8424dc089f93223d756bc90019a7eeb74486",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-original-VBGyPg/assertions.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-original-VBGyPg/assertions.json",
+      "bytes": 812,
+      "sha256": "2ad6e76aaaf48a56c12dbecca4e9d49df257e16c2b0cf875c0e94f5c9f6ae6fa",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-original-VBGyPg/evidence.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-original-VBGyPg/evidence.json",
+      "bytes": 79477,
+      "sha256": "4c7445eb1c4b8ab6d75f093f5eda0d80b46fc370c5d0ffa2294052e5eb031c82",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-result.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-result.json",
+      "bytes": 248,
+      "sha256": "dfd66f93769d35328a32892324252ed2c02dea50aa3124910292019bff07ad70",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-desk-eGdKjY/assertions.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-desk-eGdKjY/assertions.json",
+      "bytes": 812,
+      "sha256": "1e6917f349af1e428264df2c487a7a7781865118595467ee703c351a22a9e095",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-desk-eGdKjY/evidence.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-desk-eGdKjY/evidence.json",
+      "bytes": 79464,
+      "sha256": "457da2ff2b7d98be51ebfbdb433124ea2a36297ca3ba753aeba7f832cd962298",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-notes-ldFSSY/assertions.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-notes-ldFSSY/assertions.json",
+      "bytes": 812,
+      "sha256": "1e6917f349af1e428264df2c487a7a7781865118595467ee703c351a22a9e095",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-notes-ldFSSY/evidence.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-notes-ldFSSY/evidence.json",
+      "bytes": 79469,
+      "sha256": "a4f5403771fc1bff9a077c3b7d3c39438aa8efcedfef9fbb0bfbf0216bcabb38",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-original-s1Ysq0/assertions.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-original-s1Ysq0/assertions.json",
+      "bytes": 812,
+      "sha256": "1e6917f349af1e428264df2c487a7a7781865118595467ee703c351a22a9e095",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-original-s1Ysq0/evidence.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-original-s1Ysq0/evidence.json",
+      "bytes": 79484,
+      "sha256": "42bb481ea1e34554b09a1ab86e743e943225ded9c4d6f4b7d30097e8cdba4ba1",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-result.json",
+      "sourcePath": "cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-result.json",
+      "bytes": 680,
+      "sha256": "4de11f550a8c5a268cb49fdd035a4f0174eeb2f0d0a7809c766adbb5394a4bfd",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-original-aEH0Vf/assertions.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-original-aEH0Vf/assertions.json",
+      "bytes": 706,
+      "sha256": "d99703a9ef1e467fb16c6f52b384d1b210c08012d1663284b7315928432b2463",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-original-aEH0Vf/evidence.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-original-aEH0Vf/evidence.json",
+      "bytes": 328023,
+      "sha256": "bd74c033adfe310bb78115fc5d530c63143f942290f25cbf033ef81b9daa9a48",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-result.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-result.json",
+      "bytes": 173,
+      "sha256": "a795ab1b81a8436b5658ac83b14e07493ff10472cdfea52fc149d80c69d1bad3",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-desk-93hDGx/assertions.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-desk-93hDGx/assertions.json",
+      "bytes": 999,
+      "sha256": "eb5469732524b5bc8692cdf3dc8d61470ec0d090a56472aeeaac8eaa83c2c18b",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-desk-93hDGx/evidence.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-desk-93hDGx/evidence.json",
+      "bytes": 461338,
+      "sha256": "58426fe7f4de7059287c10413cd699e6145de3de71f61967e179e21aea524abd",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-notes-hSd0H6/assertions.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-notes-hSd0H6/assertions.json",
+      "bytes": 999,
+      "sha256": "eb5469732524b5bc8692cdf3dc8d61470ec0d090a56472aeeaac8eaa83c2c18b",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-notes-hSd0H6/evidence.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-notes-hSd0H6/evidence.json",
+      "bytes": 461325,
+      "sha256": "275c3ee8f7732418997400628a705986971a27b7c62d59159f24e7400cf63b7d",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-original-yfigBC/assertions.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-original-yfigBC/assertions.json",
+      "bytes": 999,
+      "sha256": "eb5469732524b5bc8692cdf3dc8d61470ec0d090a56472aeeaac8eaa83c2c18b",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-original-yfigBC/evidence.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-original-yfigBC/evidence.json",
+      "bytes": 461349,
+      "sha256": "085e31d5a238c25c121e57fa16095627a49f2f09dc814d1484636f3b6e8881dc",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-result.json",
+      "sourcePath": "cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-result.json",
+      "bytes": 466,
+      "sha256": "d7428393877da7b40cb97bf6ec4c26446715a3ddf41bc7df4beb13e989030390",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/examples/test-saving-original.mjs",
+      "sourcePath": "examples/test-saving-original.mjs",
+      "bytes": 23583,
+      "sha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/examples/test-saving.mjs",
+      "sourcePath": "examples/test-saving.mjs",
+      "bytes": 23625,
+      "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/examples/两处隐藏按钮定位差异.json",
+      "sourcePath": "examples/两处隐藏按钮定位差异.json",
+      "bytes": 973,
+      "sha256": "9cc857f3f1014ea6bc1651f559797d8648af53c87398037bfb3221f92ab8b748",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/examples/人工采用记录.json",
+      "sourcePath": "examples/人工采用记录.json",
+      "bytes": 807,
+      "sha256": "da448182545579ff3331592e7e5b99a3faa3fa44e0d94108a2d37a4598464294",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/examples/原等待期app.js",
+      "sourcePath": "examples/原等待期app.js",
+      "bytes": 7442,
+      "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/examples/完整应用差异.diff",
+      "sourcePath": "examples/完整应用差异.diff",
+      "bytes": 6670,
+      "sha256": "a39b3fbee5a87d207e1bed1c627a922c0f0486769eaa28b6f0a016772d0150a1",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/examples/采用既有修复app.js",
+      "sourcePath": "examples/采用既有修复app.js",
+      "bytes": 7557,
+      "sha256": "9468234bc8decf413e8053ff645d2cbe7a5ed881765c2ee2cd31cacd814b1780",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "fixtures/应用固定存档.bundle",
+      "sourcePath": "fixtures/应用固定存档.bundle",
+      "bytes": 187792,
+      "sha256": "e620fb4bc0de3a97c56c7ef41f355e77c88426c539f1ae46919655898dc29a40",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "fixtures/应用固定树.json",
+      "sourcePath": "fixtures/应用固定树.json",
+      "bytes": 61269,
+      "sha256": "1f73bb662d6836612d6e9ecd120c4258026f7e31d82f5e1ca4d0dcba72d3198c",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/教师测试任务全文.md",
+      "sourcePath": "inputs/教师任务全文.md",
+      "bytes": 3751,
+      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/actual-input.md",
+      "sourcePath": "records/green/actual-input.md",
+      "bytes": 3751,
+      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/actual-test-source.mjs",
+      "sourcePath": "records/green/actual-test-source.mjs",
+      "bytes": 23625,
+      "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/after.json",
+      "sourcePath": "records/green/after.json",
+      "bytes": 31169,
+      "sha256": "1712c616ed4b18149f52307b3a2ed0a63a048e45f35429f51c2ba2ac8872be0c",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/before.json",
+      "sourcePath": "records/green/before.json",
+      "bytes": 31169,
+      "sha256": "1712c616ed4b18149f52307b3a2ed0a63a048e45f35429f51c2ba2ac8872be0c",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/behavior-stdout.txt",
+      "sourcePath": "records/green/behavior-stdout.txt",
+      "bytes": 620,
+      "sha256": "5363a30052b516f13271360045dd2a8639be7847259ff1b060a540e629eb311e",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/complete-commands.json",
+      "sourcePath": "records/green/complete-commands.json",
+      "bytes": 1440,
+      "sha256": "6c90b383c3b6f927113aa414d568bf2eed5961b359d19803b27444e2c5407756",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/complete-test-databases.json",
+      "sourcePath": "records/green/complete-test-databases.json",
+      "bytes": 341601,
+      "sha256": "7f430fdc7bf78982108c91f500a43a0a16f6f6a700108931569369a419c9ce64",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/green/report.json",
+      "sourcePath": "records/green/report.json",
+      "bytes": 875,
+      "sha256": "089d65340f45f6f9511e60cc94d0a69b396aea4325661cd97e97c47ceac81eeb",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/actual-test-source.mjs",
+      "sourcePath": "records/model-task/actual-test-source.mjs",
+      "bytes": 23583,
+      "sha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/after.json",
+      "sourcePath": "records/model-task/after.json",
+      "bytes": 31169,
+      "sha256": "774b31537e3a66b2bb2d10e034cd916792cbbc9491170c32d7a253998ca895ed",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/before.json",
+      "sourcePath": "records/model-task/before.json",
+      "bytes": 30982,
+      "sha256": "f4c96eef9f3ff37c5126b5b65ed99a447885766f00a08f4bf1db0ef1fdee5657",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/complete-commands.json",
+      "sourcePath": "records/model-task/complete-commands.json",
+      "bytes": 91991,
+      "sha256": "eb5806d43f54118a1c6b5579ff0bf5f7952b6270f2c325788e2e35ca490fcc2d",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/complete-file-changes.json",
+      "sourcePath": "records/model-task/complete-file-changes.json",
+      "bytes": 24364,
+      "sha256": "869f345b63d2d759d454b65baa9773b4758fe375bb2475c388f2181e7c4a4bd4",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/complete-test-databases.json",
+      "sourcePath": "records/model-task/complete-test-databases.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/configuration.json",
+      "sourcePath": "records/model-task/configuration.json",
+      "bytes": 7471,
+      "sha256": "3f08c1098c34ecf7d1c877858ac3b98561aa8252e92b2e219f4eec163bfa3c58",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/final-response.txt",
+      "sourcePath": "records/model-task/final-response.txt",
+      "bytes": 317,
+      "sha256": "cc922ecc791dd9d1cfef34d0cc7916ee6374492f956c4c32eb05215557aae502",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/hooks.json",
+      "sourcePath": "records/model-task/hooks.json",
+      "bytes": 171,
+      "sha256": "f18bcebfc880dcc22b14daef35c19b7278ff932cb250f3c2d43fc5048e32e022",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/input.json",
+      "sourcePath": "records/model-task/input.json",
+      "bytes": 13038,
+      "sha256": "a2c2e7cd873f8d0130f60eead57d6d656188e5dfce6ebdacee7a8ee3b597697c",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/mcp-status.json",
+      "sourcePath": "records/model-task/mcp-status.json",
+      "bytes": 1646,
+      "sha256": "0be76d317fe3b9bb94652ad176240a6027894d2fad0cd2881f9b03810e32cf8e",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/notifications-public.json",
+      "sourcePath": "records/model-task/notifications-public.json",
+      "bytes": 947640,
+      "sha256": "4562a9908b3fcaf759f5473dff7d896ec82f2ffef4e2d9486dbf3a3d27a2e178",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/protocol-public.jsonl",
+      "sourcePath": "records/model-task/protocol-public.jsonl",
+      "bytes": 1037755,
+      "sha256": "cc297a439b6090bf41a84d57378b34c26dab837e4b8f728fce697b87c2e39daf",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/report.json",
+      "sourcePath": "records/model-task/report.json",
+      "bytes": 2350,
+      "sha256": "878cff02492e02a2165f0badca75e55545305facb29cf4fa87fd42133f189a3f",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/skills.json",
+      "sourcePath": "records/model-task/skills.json",
+      "bytes": 9321,
+      "sha256": "26b497f50b473630383ce3a7b56a58b8bf52f127dba15208893a91b258408206",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/started.json",
+      "sourcePath": "records/model-task/started.json",
+      "bytes": 2121,
+      "sha256": "c2b7f0f1aa166c7a8f6ef5e4f84139abead651ea2bbc1e85166e0013d98d0928",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/stderr.txt",
+      "sourcePath": "records/model-task/stderr.txt",
+      "bytes": 216,
+      "sha256": "4b409d7ee2e56061630159667b14546ef285b9b87d9362a342300723b507ae66",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/model-task/thread-public.json",
+      "sourcePath": "records/model-task/thread-public.json",
+      "bytes": 129121,
+      "sha256": "f909123a2c9950a3f6c47831b46db3ce050401125121523d8b3b79b9b9091f7a",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/actual-input.md",
+      "sourcePath": "records/old-red/actual-input.md",
+      "bytes": 3751,
+      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/actual-test-source.mjs",
+      "sourcePath": "records/old-red/actual-test-source.mjs",
+      "bytes": 23625,
+      "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/after.json",
+      "sourcePath": "records/old-red/after.json",
+      "bytes": 31169,
+      "sha256": "b25d10be30ae5cdab75e8cfb6197214c5b6e2d1a5fe08761c0b7197752c0b80c",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/before.json",
+      "sourcePath": "records/old-red/before.json",
+      "bytes": 31169,
+      "sha256": "b25d10be30ae5cdab75e8cfb6197214c5b6e2d1a5fe08761c0b7197752c0b80c",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/behavior-stdout.txt",
+      "sourcePath": "records/old-red/behavior-stdout.txt",
+      "bytes": 20227,
+      "sha256": "0a29afa85370935ec5823aaa4409192f762f2020fa01e3284c00430dcad78d9e",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/complete-commands.json",
+      "sourcePath": "records/old-red/complete-commands.json",
+      "bytes": 21385,
+      "sha256": "0ab5796e3ff3aedacb915af4949e9ae48b782df96f43e1f3fbc1e3f8f7957ea8",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/complete-test-databases.json",
+      "sourcePath": "records/old-red/complete-test-databases.json",
+      "bytes": 223757,
+      "sha256": "518078004d025882c0abd0ccdd5c41fa08117b3b4e8bceeda4894d5abf0327fd",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/old-red/report.json",
+      "sourcePath": "records/old-red/report.json",
+      "bytes": 876,
+      "sha256": "3ad083bfbe7572eb2da49212e2beb08d8df98cb6c6070b6a4e27f19c18a7fbe4",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/actual-input.md",
+      "sourcePath": "records/original-locator-failure/actual-input.md",
+      "bytes": 3751,
+      "sha256": "d50725790ff281bdb26eb848761b58b3d164fac2c36e32815ff05774c3cea34a",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/actual-test-source.mjs",
+      "sourcePath": "records/original-locator-failure/actual-test-source.mjs",
+      "bytes": 23583,
+      "sha256": "da8188d51a94ee7e1f3c43c1097f1980afceaf564a91f0966772c72f904bd3c1",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/after.json",
+      "sourcePath": "records/original-locator-failure/after.json",
+      "bytes": 31169,
+      "sha256": "774b31537e3a66b2bb2d10e034cd916792cbbc9491170c32d7a253998ca895ed",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/before.json",
+      "sourcePath": "records/original-locator-failure/before.json",
+      "bytes": 31169,
+      "sha256": "774b31537e3a66b2bb2d10e034cd916792cbbc9491170c32d7a253998ca895ed",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/behavior-stdout.txt",
+      "sourcePath": "records/original-locator-failure/behavior-stdout.txt",
+      "bytes": 9520,
+      "sha256": "cbbe5a389170674e806ddb429f564799c666c75b5bc148a7aa8a93ebf9cb2543",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/complete-commands.json",
+      "sourcePath": "records/original-locator-failure/complete-commands.json",
+      "bytes": 10630,
+      "sha256": "f13a2864c62d049bc3e74d902363e0c0bb56605f851d771346e3aede36cf9f03",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/complete-test-databases.json",
+      "sourcePath": "records/original-locator-failure/complete-test-databases.json",
+      "bytes": 105913,
+      "sha256": "d77af15b4378c017e31822027bcc83985dcfb1c76cc8dc2e1133aceb532b20fc",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    },
+    {
+      "path": "inputs/历史/records/original-locator-failure/report.json",
+      "sourcePath": "records/original-locator-failure/report.json",
+      "bytes": 851,
+      "sha256": "3b0f4c705c02057c552c6d52b31afc9f8c88445a8cff7a59ffc3afc7a220fbe7",
+      "sourceAssetId": 399,
+      "sourcePublicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+      "fullOriginalCopied": true
+    }
+  ],
+  "exclusions": [
+    "案例 SQLite 文件未复制；完整五表和所有历史正文在原 evidence 与 complete-test-databases JSON 中按原字节保留。",
+    "未复制第三方研究全文或官方源码。"
+  ],
+  "hostStarts": 0,
+  "modelStarts": 0,
+  "applicationRestores": 0
+}

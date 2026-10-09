@@ -1,0 +1,123 @@
+{
+  "unit": "vcm-09-03",
+  "source": {
+    "assetId": 399,
+    "publicHead": "6e8ad8096bd96fd299148338cd119a538a388121",
+    "zipSha256": "b8c86d256071c1c4ccbd7b9977498cf3fd29282cad699e0e5075fc8625b2156f",
+    "fixedRecordBytes": 20271,
+    "fixedRecordSha256": "133103ae7cf7f04e096379ab06a28f3c5298892fcd06d9538ee95c30994eaa00"
+  },
+  "application": {
+    "root": "../project",
+    "baseHead": "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720",
+    "currentHead": "c3805c360551c10fedfd9b5473e569cfd7666dc0",
+    "knownFixSource": "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+    "diff": "历史/examples/完整应用差异.diff",
+    "oldApp": "历史/examples/原等待期app.js",
+    "currentApp": "历史/examples/采用既有修复app.js",
+    "onlyChangedApplicationFile": "prototype/app.js"
+  },
+  "tests": {
+    "currentProjectFile": "../project/scripts/test-saving.mjs",
+    "source": "历史/examples/test-saving.mjs",
+    "sha256": "c2ce7ae8608d6f4437f6bb0c641754db35099d98a8f93e106b13b0e7fc318d92",
+    "origin": "前一节模型写测试，编者只更正两个隐藏按钮定位。此处复制为既有未跟踪材料，不由本轮评审生成。",
+    "original": "历史/examples/test-saving-original.mjs",
+    "locatorDifference": "历史/examples/两处隐藏按钮定位差异.json"
+  },
+  "history": {
+    "oldRed": {
+      "root": "历史/records/old-red",
+      "report": "历史/records/old-red/report.json",
+      "commands": "历史/records/old-red/complete-commands.json",
+      "completeDatabaseObjects": "历史/records/old-red/complete-test-databases.json",
+      "meaning": "同一派生测试在旧等待行为的真实失败；需回查完整门、键盘、请求及对象，不以颜色名称证明。"
+    },
+    "green": {
+      "root": "历史/records/green",
+      "report": "历史/records/green/report.json",
+      "commands": "历史/records/green/complete-commands.json",
+      "completeDatabaseObjects": "历史/records/green/complete-test-databases.json",
+      "meaning": "人工采用此前既有 app.js，保持同一派生测试，在三个整页方向和服务前 abort 条件观察结果。不是所有网络情况、信息辨认或审美通过。"
+    },
+    "locatorFailure": {
+      "root": "历史/records/original-locator-failure",
+      "report": "历史/records/original-locator-failure/report.json",
+      "commands": "历史/records/original-locator-failure/complete-commands.json",
+      "completeDatabaseObjects": "历史/records/original-locator-failure/complete-test-databases.json",
+      "meaning": "原始测试的隐藏按钮定位失败，没有进入真实业务阶段，不能称应用红。"
+    },
+    "modelTask": {
+      "root": "历史/records/model-task",
+      "report": "历史/records/model-task/report.json",
+      "commands": "历史/records/model-task/complete-commands.json",
+      "completeFileChanges": "历史/records/model-task/complete-file-changes.json",
+      "meaning": "上节唯一实际模型任务被中断，产生原始测试但未运行语法或行为检查；不补造完成回答。"
+    }
+  },
+  "completeCases": [
+    {
+      "path": "历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/failure-original-hxwwJe/evidence.json",
+      "bytes": 328035,
+      "sha256": "dc6057717518c37e6a482db6beea559807fd5c0fb732e0c036522ea81b0f6abe"
+    },
+    {
+      "path": "历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-desk-K92HAt/evidence.json",
+      "bytes": 461582,
+      "sha256": "649eb83767054e19508fccfeeb90ce94c562fe13d6faf8e4e46420e6c9404345"
+    },
+    {
+      "path": "历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-notes-z0mJY5/evidence.json",
+      "bytes": 461590,
+      "sha256": "1a37730e86b99bae3b37dabbe006db09cc2288b58f9a80f97b9f7a5358d9ad0a"
+    },
+    {
+      "path": "历史/cases/saving-5600e271-e0ca-4c34-93b5-6d9da5edef89/normal-original-RGafPI/evidence.json",
+      "bytes": 461614,
+      "sha256": "dd15140871bcf78428aeeff4d4089b2f4d58687f802b8db602f0c4d1f4042ca8"
+    },
+    {
+      "path": "历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/failure-original-VBGyPg/evidence.json",
+      "bytes": 79477,
+      "sha256": "4c7445eb1c4b8ab6d75f093f5eda0d80b46fc370c5d0ffa2294052e5eb031c82"
+    },
+    {
+      "path": "历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-desk-eGdKjY/evidence.json",
+      "bytes": 79464,
+      "sha256": "457da2ff2b7d98be51ebfbdb433124ea2a36297ca3ba753aeba7f832cd962298"
+    },
+    {
+      "path": "历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-notes-ldFSSY/evidence.json",
+      "bytes": 79469,
+      "sha256": "a4f5403771fc1bff9a077c3b7d3c39438aa8efcedfef9fbb0bfbf0216bcabb38"
+    },
+    {
+      "path": "历史/cases/saving-5f5a3d2f-bc63-4257-b415-f0bb82ffb535/normal-original-s1Ysq0/evidence.json",
+      "bytes": 79484,
+      "sha256": "42bb481ea1e34554b09a1ab86e743e943225ded9c4d6f4b7d30097e8cdba4ba1"
+    },
+    {
+      "path": "历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/failure-original-aEH0Vf/evidence.json",
+      "bytes": 328023,
+      "sha256": "bd74c033adfe310bb78115fc5d530c63143f942290f25cbf033ef81b9daa9a48"
+    },
+    {
+      "path": "历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-desk-93hDGx/evidence.json",
+      "bytes": 461338,
+      "sha256": "58426fe7f4de7059287c10413cd699e6145de3de71f61967e179e21aea524abd"
+    },
+    {
+      "path": "历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-notes-hSd0H6/evidence.json",
+      "bytes": 461325,
+      "sha256": "275c3ee8f7732418997400628a705986971a27b7c62d59159f24e7400cf63b7d"
+    },
+    {
+      "path": "历史/cases/saving-ea326d24-9c72-4328-9a63-c4576e133d86/normal-original-yfigBC/evidence.json",
+      "bytes": 461349,
+      "sha256": "085e31d5a238c25c121e57fa16095627a49f2f09dc814d1484636f3b6e8881dc"
+    }
+  ],
+  "teacherBusinessInput": "历史/教师测试任务全文.md",
+  "provenance": "材料原字节来源.json",
+  "boundary": "以上全部为网站 399 已有历史原件；复制和文件索引没有新 GET、键盘输入、业务写入或测试执行。本节只新增一次待批准的独立原生评审。"
+}

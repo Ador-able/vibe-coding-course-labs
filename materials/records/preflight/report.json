@@ -1,0 +1,44 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\runs\\preflight-01",
+  "version": "codex-cli 0.160.0",
+  "nodeVersion": "v24.12.0",
+  "threadId": "01a10088-054b-7e12-8e53-f580e3c67ba1",
+  "error": null,
+  "directoryCheck": {
+    "checks": {
+      "parentModel": true,
+      "emptyThread": true,
+      "permission": true,
+      "runtimeWorkspace": true,
+      "sources": true,
+      "switches": true,
+      "configurationClosed": true,
+      "skillClosed": true,
+      "hookClosed": true,
+      "mcpClosed": true
+    },
+    "passed": true,
+    "expectedSources": [
+      "C:\\Users\\32686\\.codex\\AGENTS.md",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\h09-03-lab\\project\\AGENTS.md"
+    ],
+    "effectiveReviewModel": "gpt-6.1-sol",
+    "boundary": "来源路径支持宿主取得相应约定；不证明模型逐条采用。只读不是项目外读取的严格隔离。"
+  },
+  "threadStarts": 1,
+  "reviewStarts": 0,
+  "turnStarts": 0,
+  "commandItems": 0,
+  "hookExecutions": 0,
+  "archived": true,
+  "processExit": {
+    "code": 0,
+    "signal": null
+  },
+  "projectAndInputsUnchanged": true,
+  "globalConfigHashBefore": "afcc799ff6e752e4e06e6209e1dc7042dca8224fd057912bc1c5edeb15175c1e",
+  "globalConfigHashAfter": "afcc799ff6e752e4e06e6209e1dc7042dca8224fd057912bc1c5edeb15175c1e",
+  "globalConfigUnchanged": true,
+  "passed": true,
+  "limits": "一次空会话和完整非秘密目录。没有模型评审、命令、测试、服务、业务调用或共享配置修改；有效 review_model 与普通模型分别记录。"
+}
