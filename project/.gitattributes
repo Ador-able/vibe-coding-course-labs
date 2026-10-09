@@ -1,2 +1,3 @@
-# 实际运行证据保留原始字节，不进行换行转换。
+# 固定实验材料和实际运行证据保留原始字节。
 evidence/08-双工具MCP/** -text
+fixtures/replanning/*.md -text

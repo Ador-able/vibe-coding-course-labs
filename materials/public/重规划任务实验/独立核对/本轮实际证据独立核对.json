@@ -1,0 +1,212 @@
+{
+  "checkedAt": "2026-10-02T19:20:24.931Z",
+  "startCommit": "4d9ee276425036ee8be02c65511d3309fd16ee0d",
+  "runId": "04bcea30-910a-4032-855d-4b57c1577398",
+  "threadId": "01a0fdff-0260-7ce2-9fa3-8e09c355047b",
+  "events": 46,
+  "commands": [
+    {
+      "id": "item_1",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'replan/task.json','replan/PRD-人工示范.md','replan/阶段计划-人工示范.md','replan/当前进度.md','replan/前置-最新进度.md','replan/前置-完整材料核对.md','replan/人工变化说明.md','replan/人工初始化完整回执.json','replan/第二章-人工修改完整输入.json','replan/第二章-改前全文.md' -Raw\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_2",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'replan/task.json','replan/PRD-人工示范.md','replan/阶段计划-人工示范.md','replan/当前进度.md' -Raw\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_3",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'replan/前置-最新进度.md','replan/前置-完整材料核对.md','replan/人工变化说明.md' -Raw\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_4",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'replan/人工初始化完整回执.json' -Raw\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_5",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'replan/第二章-人工修改完整输入.json','replan/第二章-改前全文.md' -Raw; rg -n 'exportWork|constructor|case \\\"show\\\"|case \\\"chapter\\\"|--db|new Store' dist/cli.js dist/store.js\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_6",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'dist/cli.js','dist/store.js' -Raw\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_7",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-FileHash -LiteralPath 'data/replan-2c26eb51-ca58-4ed0-8a32-400e0d1464ba.sqlite' -Algorithm SHA256; node dist/cli.js show --db data/replan-2c26eb51-ca58-4ed0-8a32-400e0d1464ba.sqlite --work 2c26eb51-ca58-4ed0-8a32-400e0d1464ba\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_9",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command 'node dist/cli.js chapter 1 --db data/replan-2c26eb51-ca58-4ed0-8a32-400e0d1464ba.sqlite --work 2c26eb51-ca58-4ed0-8a32-400e0d1464ba'",
+      "exitCode": 0
+    },
+    {
+      "id": "item_10",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command 'node dist/cli.js chapter 2 --db data/replan-2c26eb51-ca58-4ed0-8a32-400e0d1464ba.sqlite --work 2c26eb51-ca58-4ed0-8a32-400e0d1464ba'",
+      "exitCode": 0
+    },
+    {
+      "id": "item_11",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command 'node dist/cli.js chapter 3 --db data/replan-2c26eb51-ca58-4ed0-8a32-400e0d1464ba.sqlite --work 2c26eb51-ca58-4ed0-8a32-400e0d1464ba'",
+      "exitCode": 0
+    },
+    {
+      "id": "item_12",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'deliverables/2c26eb51-ca58-4ed0-8a32-400e0d1464ba-旧三章待审.md' -Raw\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_13",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"@'\nimport {Store} from './dist/store.js';\nimport {readFileSync} from 'node:fs';\nimport {createHash} from 'node:crypto';\nconst id='2c26eb51-ca58-4ed0-8a32-400e0d1464ba';\nconst store=new Store(\"'`data/replan-${id}.sqlite`);\ntry { console.log(JSON.stringify(store.exportWork(id),null,2)); } finally {store.close();}\n'\"'@ | node --input-type=module\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_14",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"@'\nimport {Store} from './dist/store.js';\nimport {readFileSync} from 'node:fs';\nimport {createHash} from 'node:crypto';\nconst id='2c26eb51-ca58-4ed0-8a32-400e0d1464ba';\nconst store=new Store(\"'`data/replan-${id}.sqlite`);\nconst hash=b=>createHash('\"'sha256').update(b).digest('hex');\ntry {\n const init=JSON.parse(readFileSync('replan/人工初始化完整回执.json','utf8'));\n const input=JSON.parse(readFileSync('replan/第二章-人工修改完整输入.json','utf8'));\n const chapters=[1,2,3].map(n=>store.getChapter(id,n));\n const oldBytes=readFileSync(\"'`deliverables/${id}-旧三章待审.md`),old=oldBytes.toString('\"'utf8');\n const current=store.exportWork(id).text,newBytes=Buffer.from(current,'utf8');\n let i=0;while(i<old.length&&i<current.length&&old[i]===current[i])i++;\n let j=0;while(j<oldBytes.length&&j<newBytes.length&&oldBytes[j]===newBytes[j])j++;\n console.log(JSON.stringify({textEqual:old===current,bytesEqual:oldBytes.equals(newBytes),firstUTF16Offset:i,firstByteOffset:j,old:{codePoints:[...old].length,bytes:oldBytes.length,sha256:hash(oldBytes)},current:{codePoints:[...current].length,bytes:newBytes.length,sha256:hash(newBytes)},workExactlyMatchesInit:JSON.stringify(store.getWork(id))===JSON.stringify(init.work),chapterObjectsMatchInit:chapters.map((c,n)=>JSON.stringify(c)===JSON.stringify(init.chapters[n])),chapter2TitleBodyMatchInput:chapters[1].title===input.title&&chapters[1].body===input.body,oldChapter2FileMatchesInit:readFileSync('replan/第二章-改前全文.md','utf8')===init.chapters[1].body+'\\\\n',lengths:chapters.map(c=>({number:c.number,han:(c.body.match(/\\\\p{Script=Han}/gu)||[]).length,nonWhitespace:[...c.body].filter(x=>\"'!(/'\"\\\\s/u.test(x))).length,codePoints:[...c.body].length}))},null,2));\n const a=old.split('\\\\n'),b=current.split('\\\\n');\n const dp=Array.from({length:a.length+1},()=>new Uint32Array(b.length+1));\n for(let x=a.length-1;x>=0;x--)for(let y=b.length-1;y>=0;y--)dp[x][y]=a[x]===b[y]?1+dp[x+1][y+1]:Math.max(dp[x+1][y],dp[x][y+1]);\n let x=0,y=0;const differences=[];\n while(x<a.length||y<b.length){if(x<a.length&&y<b.length&&a[x]===b[y]){x++;y++;continue;}const d={oldStartLine:x+1,newStartLine:y+1,removed:[],added:[]};while(x<a.length||y<b.length){if(x<a.length&&y<b.length&&a[x]===b[y])break;if(y>=b.length||(x<a.length&&dp[x+1][y]>=dp[x][y+1]))d.removed.push(a[x++]);else d.added.push(b[y++]);}differences.push(d);}\n console.log(JSON.stringify({allLineDifferences:differences},null,2));\n}finally{store.close();}\n'@ | node --input-type=module\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_15",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"@'\nimport {readFileSync} from 'node:fs';\nimport {createHash} from 'node:crypto';\nconst task=JSON.parse(readFileSync('replan/task.json','utf8'));\nconst paths=['replan/task.json','replan/PRD-人工示范.md','replan/阶段计划-人工示范.md','replan/前置-最新进度.md','replan/前置-完整材料核对.md','replan/人工变化说明.md','replan/人工初始化完整回执.json','replan/第二章-人工修改完整输入.json','replan/第二章-改前全文.md',task.deliverable,task.db,'dist/cli.js','dist/store.js'];\nconst hashes=Object.fromEntries(paths.map(p=>[p,createHash('sha256').update(readFileSync(p)).digest('hex')]));\nconst receipt=JSON.parse(readFileSync('replan/人工初始化完整回执.json','utf8'));\nconst before=readFileSync('replan/第二章-改前全文.md','utf8');const body=receipt.chapters[1].body;\nconsole.log(JSON.stringify({hashes,beforeChapter2:{prefixExactlyMatchesBody:before.startsWith(body),extraAfterBody:before.slice(body.length),fileCodePoints:[...before].length,bodyCodePoints:[...body].length}},null,2));\n'@ | node --input-type=module\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_18",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'replan/调整后的计划.md','replan/当前进度.md' -Raw\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_21",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"@'\nimport {readFileSync} from 'node:fs';\nimport {createHash} from 'node:crypto';\nconst task=JSON.parse(readFileSync('replan/task.json','utf8'));\nconst paths=['replan/task.json','replan/PRD-人工示范.md','replan/阶段计划-人工示范.md','replan/前置-最新进度.md','replan/前置-完整材料核对.md','replan/人工变化说明.md','replan/人工初始化完整回执.json','replan/第二章-人工修改完整输入.json','replan/第二章-改前全文.md',task.deliverable,task.db,'dist/cli.js','dist/store.js'];\nconsole.log(JSON.stringify(Object.fromEntries(paths.map(p=>[p,createHash('sha256').update(readFileSync(p)).digest('hex')])),null,2));\n'@ | node --input-type=module\"",
+      "exitCode": 0
+    },
+    {
+      "id": "item_22",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'replan/调整后的计划.md','replan/当前进度.md' -Raw\"",
+      "exitCode": 0
+    }
+  ],
+  "turnCompleted": true,
+  "error": null,
+  "reading": "31个无损片段及两份最终文件全文已经实际通读；仅全字符串完全相同的长值替换为首见路径、UTF16长度与SHA引用，原始11文件不改。",
+  "humanChange": {
+    "onlyChapter2": true,
+    "beforeRevision": 1,
+    "afterRevision": 2,
+    "fullInputSaveReadbackEqual": true,
+    "otherChaptersAndWorkUnchanged": true
+  },
+  "businessAfterHumanToAfterAIUnchanged": true,
+  "readOnlyFiveTableCounts": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 3,
+    "chapter_versions": 4,
+    "tasks": 0
+  },
+  "currentReadOnlyTablesEqualFinalSnapshot": true,
+  "readOnlyDatabaseBytesEqualBeforeAfter": true,
+  "databaseSha256": "c282600eeb383462df7f3416173e732670d02986df92bb1a7a7716f04fc4eb94",
+  "oldDelivery": {
+    "bytes": 10125,
+    "sha256": "fa57fc107c9f13d8a2857a45bafd10b98c0a5c37c45e4535d1c8fd1c9541fb63",
+    "unchangedAcrossThreeSnapshotsAndCurrent": true,
+    "mtime": "2026-10-02T18:47:42.760Z",
+    "currentByteEqual": false
+  },
+  "currentMemoryText": {
+    "bytes": 10209,
+    "sha256": "71d55c7f2ada4fcae121a25b9a83e83d54341bff9f4b568ab270d0aafec68756",
+    "utf16Length": 3539
+  },
+  "lineDifferences": [
+    {
+      "line": 55,
+      "before": "状态：draft，正文 r1；资料基线一致，品质仍需人判断。",
+      "after": "状态：draft，正文 r2；资料基线一致，品质仍需人判断。"
+    },
+    {
+      "line": 99,
+      "before": "林澈收起螺丝刀，将灯留在原处。",
+      "after": "林澈把铁盖装回，逐颗拧好螺丝，合上工具箱。"
+    },
+    {
+      "line": 101,
+      "before": "“先看清它下一次怎么动。”",
+      "after": "“先把这里记下来。午后再来，看清它怎么动。”"
+    },
+    {
+      "line": 103,
+      "before": "周伯重新望向墙面。影子的尖端正缓缓接近那道砖缝，林澈蹲在洞口前，等着红线和石壁上的小点再次相遇。",
+      "after": "周伯收起窗台上的灯，领着他下楼。塔门锁好后，林澈站在街边，重新看了一眼笔记里的小点。他和周伯约好了午后在这里碰面，没有再回钟室。"
+    },
+    {
+      "line": 107,
+      "before": "状态：draft，正文 r1；资料基线一致，品质仍需人判断。",
+      "after": "状态：draft，正文 r1；资料有变动，需重新核对。"
+    }
+  ],
+  "modelComparison": {
+    "firstWrongExtraNewlineCheckPreserved": true,
+    "nextExactCheckCorrected": true
+  },
+  "writes": [
+    {
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-15-04\\lab\\replan\\当前进度.md",
+      "kind": "update"
+    },
+    {
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-15-04\\lab\\replan\\调整后的计划.md",
+      "kind": "add"
+    },
+    {
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-15-04\\lab\\replan\\当前进度.md",
+      "kind": "update"
+    }
+  ],
+  "fullSavedPlanAndProgressMatchLastToolReadback": true,
+  "planQuotes": {
+    "count": 18,
+    "allExactCurrentBodySubstrings": true
+  },
+  "wholeInputsMatchedActualToolReturns": true,
+  "unchangedHashSamples": {
+    "replan/task.json": "805dde7d0f83f3e3c389e5757ad63dc055e424c67ab8ab5c756a1db55c915f44",
+    "replan/PRD-人工示范.md": "1e775aadbc51ef8907bcabf12386450aa45fa725840613e97dba2b4c9b07637b",
+    "replan/阶段计划-人工示范.md": "da71bce8bc79917fa4a1156184f2a5501f08c4cb2204b64cd00b48754ce68b74",
+    "replan/前置-最新进度.md": "a3a958d7e46b7697cea52bd5269ed9c2ae9307a2fb4ffaf0209ebca3cd62f646",
+    "replan/前置-完整材料核对.md": "bfaf531ce766b43b4064a2362e0bac302e36de7d6dacc0435994b4a8d3277860",
+    "replan/人工变化说明.md": "f15d82c12b0fc2fe2307be5d6965eeaab86bb01497b90bed7f653096bad4d1ac",
+    "replan/人工初始化完整回执.json": "82d0a401bf09075a35ad3137a9aedc26f5ea0d90f4d637aeb264798ce438a058",
+    "replan/第二章-人工修改完整输入.json": "151ed5bcfb0576b7c738b9505ddb7a88a52a80713c35e4d541863cafdf1a84f6",
+    "replan/第二章-改前全文.md": "d032a9830e379fa787c49dff05d02e1d87a78b8c5bb90aad7b544eeea819ceca",
+    "deliverables/2c26eb51-ca58-4ed0-8a32-400e0d1464ba-旧三章待审.md": "fa57fc107c9f13d8a2857a45bafd10b98c0a5c37c45e4535d1c8fd1c9541fb63",
+    "data/replan-2c26eb51-ca58-4ed0-8a32-400e0d1464ba.sqlite": "c282600eeb383462df7f3416173e732670d02986df92bb1a7a7716f04fc4eb94",
+    "dist/cli.js": "eeb8afc966be82cce7fa07d9aee3ff8ac7541b4773a7922f6f914d852dc9bf1d",
+    "dist/store.js": "999c305461affe554fbd6b725b6c50c9304ab69549486909e12f3d7c5d2dbb25"
+  },
+  "plan": {
+    "bytes": 15877,
+    "sha256": "9d48ce1b3e5f7f70849ae22e9373c278a95e8f7dbea30fbb0ec4fc2d894b9db4",
+    "utf16Length": 6649
+  },
+  "progress": {
+    "bytes": 8179,
+    "sha256": "282dfcc0b30772a703b9a077da3891057b11678e4fe7201eb0b791db9393cf42",
+    "utf16Length": 3615
+  },
+  "limits": [
+    "只核对当前独立作品及记录，不声称历史写作/采用全过程已审计。",
+    "SDK一轮任务可能包含多个供应商请求；公共事件不包含隐藏配置或原始网络请求。",
+    "模型计划末尾“读取期间保持一致”超出取样证据；成立的是采样前后主DB字节及五表一致，不证明全过程字节恒定。",
+    "计划P2所称人工变化已保存只指本轮第二章一步，不宣称整个原P2阶段已执行。",
+    "第三章相容所需的午后返回/周伯开门/重开盖/重放灯是条件推断，未写入小说。",
+    "未来取舍、定点修改、新当前交付、真实读者连续阅读和文学采用没有执行。",
+    "前置A原始本地私有记忆返回未发布；本轮新SDK公共轨迹没有这一内容。"
+  ]
+}
