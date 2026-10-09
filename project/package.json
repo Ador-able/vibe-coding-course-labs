@@ -24,7 +24,9 @@
     "test": "node --test dist/test/*.test.js",
     "prototype": "node scripts/start-prototype.mjs",
     "prototype:seed": "node scripts/prototype-seed.mjs",
-    "prototype:ui": "node scripts/capture-prototype.mjs"
+    "prototype:ui": "node scripts/capture-prototype.mjs",
+    "prototype:mcp": "node scripts/read-prototype-mcp.mjs",
+    "prototype:time": "node scripts/observe-reminder.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "1.31.0",
