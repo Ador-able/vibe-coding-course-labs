@@ -1,0 +1,23 @@
+{
+  "phase": "continue",
+  "runId": "2026-10-02T15-34-42-431Z",
+  "threadId": "01a0fd40-e063-72a1-bdb5-4588d02ffbab",
+  "resumedThreadId": "01a0fd40-e063-72a1-bdb5-4588d02ffbab",
+  "startedAt": "2026-10-02T15:36:32.210Z",
+  "finishedAt": "2026-10-02T15:37:52.513Z",
+  "completed": true,
+  "error": null,
+  "usage": {
+    "input_tokens": 184623,
+    "cached_input_tokens": 155776,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2261,
+    "reasoning_output_tokens": 0
+  },
+  "publicEventCount": 7,
+  "omittedReasoningEvents": 0,
+  "finalResponseBytes": 4684,
+  "finalResponseSha256": "2a78f7e13fe4c7a511dc3f9509b7c44012d7aa8128f13fb10182dd846e8dfb9f",
+  "savedBy": "实验记录程序将最终回答保存为本地独立草稿，不是模型写文件或业务入库",
+  "scope": "公开事件不含推理内容；只读本地材料；未运行对外发送、业务采用、数据库恢复或运行中取消"
+}
