@@ -1,0 +1,42 @@
+name: delivery
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  saving:
+    name: saving-delivery
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    defaults:
+      run:
+        working-directory: project
+    steps:
+      - uses: actions/checkout@v7
+      - name: 记录事件与真实检出提交
+        env:
+          DELIVERY_EVENT: ${{ github.event_name }}
+          DELIVERY_PR_HEAD: ${{ github.event.pull_request.head.sha }}
+          DELIVERY_EVENT_SHA: ${{ github.sha }}
+        run: |
+          echo "event=$DELIVERY_EVENT"
+          echo "pr_head=$DELIVERY_PR_HEAD"
+          echo "event_sha=$DELIVERY_EVENT_SHA"
+          echo "checkout_head=$(git rev-parse HEAD)"
+      - uses: pnpm/setup@v3
+        with:
+          node-version: 24.12.0
+          install: false
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run check:delivery
+      - name: 保留本次实际保存证据
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: delivery-saving-${{ github.run_id }}-${{ github.run_attempt }}
+          path: project/runs/delivery-saving-*
+          if-no-files-found: warn

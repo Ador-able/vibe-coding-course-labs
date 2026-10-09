@@ -1,0 +1,2 @@
+#!/bin/sh
+exec pnpm --dir project run check:delivery
