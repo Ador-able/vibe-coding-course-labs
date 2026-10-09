@@ -8,7 +8,8 @@
   "engines": { "node": ">=24.12.0" },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "lab": "node dist/cli.js"
+    "lab": "node dist/cli.js",
+    "approval": "node dist/approval-cli.js"
   },
   "dependencies": {
     "ai": "7.0.127",
