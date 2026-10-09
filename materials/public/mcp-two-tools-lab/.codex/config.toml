@@ -1,5 +1,0 @@
-[plugins."novel-practice@novel-agent-lab"]
-enabled = false
-
-[plugins."novel-practice@novel-agent-lab".mcp_servers.novel_lab]
-default_tools_approval_mode = "approve"

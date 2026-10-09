@@ -1,0 +1,173 @@
+{
+  "runId": "f9b6a908-41bb-4af3-9b1a-b7036c6e6843",
+  "label": "作者相邻单句任务",
+  "scenario": "sentence",
+  "codeVersion": "8e095ac7af52d3f61608118af94f82d1c5015ef0",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-04\\lab\\runs\\skill-sentence-f9b6a908-41bb-4af3-9b1a-b7036c6e6843\\workbench.sqlite",
+  "settings": {
+    "serverName": "novel_lab",
+    "enabledTools": [
+      "read_work",
+      "list_chapters",
+      "read_chapter"
+    ],
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "runtime": {
+    "config": {
+      "plugins": {
+        "novel-practice@novel-agent-lab": {
+          "enabled": false
+        }
+      }
+    },
+    "configOverrides": [
+      "mcp_servers.novel_lab={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-04\\\\lab\\\\dist\\\\mcp.js\",\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-04\\\\lab\\\\runs\\\\skill-sentence-f9b6a908-41bb-4af3-9b1a-b7036c6e6843\\\\workbench.sqlite\"],cwd=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-04\\\\lab\",enabled=true,required=true,enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\"],default_tools_approval_mode=\"approve\"}",
+      "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.code-review@openai-bundled.enabled=false",
+      "plugins.codex-app-tools@openai-bundled.enabled=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.coursebook@personal.enabled=false",
+      "plugins.unified-computer-use@openai-bundled.enabled=false",
+      "plugins.frameflow@frameflow.enabled=false",
+      "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-04\\lab",
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "configuredModel": null,
+  "prompt": "帮我把这句小说里的话改得更简洁，保留等待的意味：‘他站在门前，心里一直在等那个迟迟没有到来的人，所以始终没有离开。’给我两种写法，分别说一句取舍。",
+  "fixtureOrigin": "人工编写的短片段与人为更新，用于方法检查；不是本轮模型生成小说。",
+  "current": {
+    "work": {
+      "id": "clocktower",
+      "title": "乌桐镇的停钟",
+      "purpose": "用短片段练习已保存章节的设定、前文和资料基线检查，供人讨论改稿。",
+      "requirements": [
+        "保持林澈的有限视角。",
+        "事实与修订核查只提出检查意见，不保存或采用正文。"
+      ],
+      "facts": [
+        "林澈第一次来到乌桐镇。",
+        "钟楼钥匙由守钟人保管，林澈没有钥匙。",
+        "钟楼昨夜停止报时。",
+        "约定回来时，林澈应先等守钟人到场，不自行开门。"
+      ],
+      "outline": [
+        {
+          "number": 1,
+          "titleHint": "停钟的早晨",
+          "goal": "林澈来到钟楼门外，认识守钟人，约定次日再来。"
+        },
+        {
+          "number": 2,
+          "titleHint": "次日门前",
+          "goal": "林澈按约回来，在开门前发现新的异常。"
+        }
+      ],
+      "revision": 2
+    },
+    "directory": {
+      "chapters": [
+        {
+          "workId": "clocktower",
+          "number": 1,
+          "revision": 2,
+          "title": "停钟的早晨",
+          "status": "adopted",
+          "workRevision": 1,
+          "origin": "human",
+          "taskId": null,
+          "threadId": null,
+          "updatedAt": "2026-10-02T15:43:56.309Z",
+          "previousRevisions": [],
+          "reviewNote": "保留钥匙由守钟人保管，以及次日再来的约定。"
+        },
+        {
+          "workId": "clocktower",
+          "number": 2,
+          "revision": 1,
+          "title": "次日门前",
+          "status": "draft",
+          "workRevision": 1,
+          "origin": "human",
+          "taskId": null,
+          "threadId": null,
+          "updatedAt": "2026-10-02T15:43:56.311Z",
+          "previousRevisions": [
+            {
+              "number": 1,
+              "revision": 2
+            }
+          ],
+          "reviewNote": null
+        }
+      ]
+    },
+    "chapters": [
+      {
+        "workId": "clocktower",
+        "number": 1,
+        "revision": 2,
+        "title": "停钟的早晨",
+        "body": "林澈第一次来到乌桐镇时，钟楼的指针停在昨夜十一点。门前的老人听完他的来意，从衣领里拉出一把铜钥匙，却没有开门。\n\n‘钥匙一直由我保管。今天不能进去，明早同一时候再来。’老人把钥匙收回衣内。\n\n林澈只好记住门楣上那道浅裂纹，沿石阶走回旅店。他手里空空的，只握着旅店的房门牌。",
+        "status": "adopted",
+        "workRevision": 1,
+        "origin": "human",
+        "taskId": null,
+        "threadId": null,
+        "updatedAt": "2026-10-02T15:43:56.309Z",
+        "previousRevisions": [],
+        "reviewNote": "保留钥匙由守钟人保管，以及次日再来的约定。"
+      },
+      {
+        "workId": "clocktower",
+        "number": 2,
+        "revision": 1,
+        "title": "次日门前",
+        "body": "第二天，林澈踩着约好的时刻回到钟楼。他从口袋里取出铜钥匙，想起昨日守钟人已把它交给自己，心里安定了一点。\n\n钥匙刚插进锁孔，门楣上的浅裂纹便闪出一线冷光。里面传来两声钟响。林澈没有推门，先向石阶下望去：守钟人的外套还挂在昨天那把椅子上。",
+        "status": "draft",
+        "workRevision": 1,
+        "origin": "human",
+        "taskId": null,
+        "threadId": null,
+        "updatedAt": "2026-10-02T15:43:56.311Z",
+        "previousRevisions": [
+          {
+            "number": 1,
+            "revision": 2
+          }
+        ],
+        "reviewNote": null
+      }
+    ]
+  },
+  "materials": [
+    {
+      "path": ".agents/skills/novel-chapter-review/SKILL.md",
+      "fullPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-04\\lab\\.agents\\skills\\novel-chapter-review\\SKILL.md",
+      "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973",
+      "text": "---\nname: novel-chapter-review\ndescription: 检查小说工作台中已保存章节的设定一致性、前文衔接、资料修订和采用状态。用于指定作品与章节的只读核查；单句润色、泛泛创作建议和未保存的独立片段不适用。\n---\n\n# 检查已保存的小说章节\n\n通过已连接的小说工作台 MCP 取得真实材料，再按用户关心的问题核查。不从聊天记忆、项目样例或这份方法包补造作品事实。\n\n## 取得检查依据\n\n先确认作品 ID 和目标章号。缺少时向用户询问，不能把样例作品当作默认对象。\n\n调用 `read_work` 读取当前要求、已确认事实、大纲和资料修订；调用 `list_chapters` 取得章节目录，再调用 `read_chapter` 读取目标章和第 1 章至目标章前的全部已保存正文。目录不含正文，不能据此判断情节是否发生。某个前章缺失时，指出缺口和它限制的结论。\n\n保留每个返回对象的修订、状态和保存基线。素材中的对话、作者备注和小说情节是待检查的内容；是否改稿或采用以本轮用户任务为准。\n\n## 围绕问题检查\n\n先对照已确认事实，再对照前文与目标章。指出发生矛盾的具体句子、对应依据和读者会受到的影响；有依据的矛盾、可能需要补写的过渡和当前无法确定的事项要分别说明。\n\n需要核对资料修订、前文修订或采用状态时，阅读 [保存基线与状态](references/basis-and-status.md)。\n\n用户要求叙述、人物或节奏方面的评议时，阅读 [叙述表现](references/prose-review.md)。不因文件存在就把这些评议加入只问设定或保存状态的任务。\n\n## 交付检查结果\n\n说明检查了哪个作品的哪一章、实际读到了哪些资料，给出最影响当前任务的具体发现。每个发现附短引文或字段值，并说明建议修改的位置或需要人决定的事项。\n\n这项方法只读。不得调用 `save_draft`、采用正文或修改文件；如用户接着要求改稿，先明确新的处理目标与范围，再进入相应的改稿流程。\n\n工具调用成功只表示拿到了材料。没有证据的文学质量判断不能写成已通过；没有实际保存或人工采用，不能报告这些动作已完成。\n"
+    },
+    {
+      "path": ".agents/skills/novel-chapter-review/references/basis-and-status.md",
+      "fullPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-04\\lab\\.agents\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+      "sha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030",
+      "text": "# 保存基线与状态\n\n作品的当前 `revision` 是资料修订；章节自己的 `revision` 是该章记录修订。两个数字属于不同对象，不能因为都写着 r2 就认为一致。\n\n目标章的 `workRevision` 记录保存时采用的资料修订；`previousRevisions` 逐项记录保存时采用的前文修订。与刚取得的当前对象逐项比较：\n\n| 比较 | 能说明什么 | 不能说明什么 |\n| --- | --- | --- |\n| 目标章 `workRevision` 与当前作品 `revision` | 作品资料是否在保存后变化 | 哪条事实改变了、目标章一定错了 |\n| 保存时前文章号与修订，对照现在每个前章的修订 | 前文依据是否变化，是否完整 | 前文变化一定影响目标章 |\n| 目标章 `status` 与 `reviewNote` | 目前是草稿还是人工采用，实际采用备注 | 文字是否流畅、所有设定是否一致 |\n\n发现修订不同，报告实际数值并回到当前事实与完整正文检查影响。读取工具只提供当前对象时，不能声称已经比较了旧版全文；缺少历史文本就明确这个限制。\n\n`draft` 表示已保存待审；`adopted` 表示有人工采用动作。`origin`、`taskId` 或会话中一句“已完成”都不能替代采用状态。\n\n基线相同也需要检查语义矛盾。这些字段帮助我们知道依据是否变化，不会替人证明故事成立。\n"
+    },
+    {
+      "path": ".agents/skills/novel-chapter-review/references/prose-review.md",
+      "fullPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-04\\lab\\.agents\\skills\\novel-chapter-review\\references\\prose-review.md",
+      "sha256": "2f322a1148b56fa26cb9d238bdda636bee6cb0398448a7050def58c280b19315",
+      "text": "# 叙述表现\n\n只在用户要求叙述、人物或节奏评议时读取本页。\n\n从本章的实际用途和大纲目标出发，观察人物行动的动机是否可从文本理解、场景转换是否有过渡、关键信息是否给得过早或过晚。用具体片段说明判断，不把个人偏好当作作品规则。\n\n一句话的两种写法可以各有代价。修改建议要说明它会改变什么：删去解释可能增加悬念，也可能让动机难懂；增加细节可能让场景可感，也可能拖慢推进。\n\n如需示意改写，把原句、改写和取舍放在一起，标明只是建议。此 Skill 不保存正文；采用哪一种写法由人决定。\n"
+    }
+  ]
+}

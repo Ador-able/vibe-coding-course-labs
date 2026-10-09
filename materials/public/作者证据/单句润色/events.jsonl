@@ -1,0 +1,4 @@
+{"type":"thread.started","thread_id":"01a0fd49-5412-7061-a969-e064ef67544d"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"1. **“他守在门前，等着那个迟迟未到的人。”**  \n   等待的意思更明确，“守”也保留了不肯离开的执着。\n\n2. **“那人迟迟未到，他仍站在门前。”**  \n   更含蓄，用“仍”暗示等待，把情绪留给读者。"}}
+{"type":"turn.completed","usage":{"input_tokens":18061,"cached_input_tokens":0,"cache_write_input_tokens":0,"output_tokens":152,"reasoning_output_tokens":65}}

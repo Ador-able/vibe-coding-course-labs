@@ -1,4 +1,4 @@
-# 做一个能真实调用的简单 MCP 服务
+# 用 Skill 复用方法、资料和脚本
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

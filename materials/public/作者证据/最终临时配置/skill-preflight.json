@@ -1,0 +1,71 @@
+{
+  "root": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-04\\lab",
+  "isolated": true,
+  "overrides": [
+    "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "plugins.code-review@openai-bundled.enabled=false",
+    "plugins.codex-app-tools@openai-bundled.enabled=false",
+    "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "plugins.coursebook@personal.enabled=false",
+    "plugins.unified-computer-use@openai-bundled.enabled=false",
+    "plugins.frameflow@frameflow.enabled=false",
+    "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}"
+  ],
+  "nextOverrides": [
+    "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "plugins.code-review@openai-bundled.enabled=false",
+    "plugins.codex-app-tools@openai-bundled.enabled=false",
+    "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+    "plugins.coursebook@personal.enabled=false",
+    "plugins.unified-computer-use@openai-bundled.enabled=false",
+    "plugins.frameflow@frameflow.enabled=false",
+    "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}"
+  ],
+  "toolSummary": [
+    {
+      "name": "anki_mcp",
+      "status": "disabled",
+      "pluginId": null,
+      "tools": []
+    },
+    {
+      "name": "blender",
+      "status": "disabled",
+      "pluginId": null,
+      "tools": []
+    },
+    {
+      "name": "codex_apps",
+      "status": "disabled",
+      "pluginId": null,
+      "tools": []
+    },
+    {
+      "name": "comfy_mcp",
+      "status": "disabled",
+      "pluginId": null,
+      "tools": []
+    },
+    {
+      "name": "node_repl",
+      "status": "disabled",
+      "pluginId": null,
+      "tools": []
+    },
+    {
+      "name": "novel_lab",
+      "status": "connected",
+      "pluginId": null,
+      "tools": [
+        "list_chapters",
+        "read_chapter",
+        "read_work"
+      ]
+    }
+  ],
+  "transcriptPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-04\\lab\\runs\\skill-final-preflight\\protocol.json"
+}
