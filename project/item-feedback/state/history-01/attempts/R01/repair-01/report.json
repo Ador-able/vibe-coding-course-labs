@@ -1,0 +1,74 @@
+{
+  "sourceId": "R01",
+  "startedAt": "2026-10-05T01:26:41.320Z",
+  "recipe": {
+    "sourceId": "R01",
+    "inputCollectionSHA256": "0c7109884a5cd1c2ed1c084a6a34edf75874dd8b00ba3776540740c7e1b3f39d",
+    "settings": {
+      "modelId": "qwen-plus-2025-12-01",
+      "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+      "temperature": 0,
+      "maxOutputTokens": 3072,
+      "maxRetries": 0,
+      "enable_thinking": false,
+      "timeout": {
+        "totalMs": 60000
+      },
+      "maxConcurrency": 2
+    },
+    "promptSHA256": "0de5a2cae5c1e98d2faee1c601d6db1f6de98d11f65dcdaaa4d650bee07e7af8",
+    "feedbackSHA256": "03c2944b7ec6d0a3500befc614b9993ad646ff3c51a1a3821781e301ed3167e9",
+    "instructionsSHA256": "a044f2fafd4695188a4b4546ebc31bed7dbf553452c204c617f7bab5080fd878",
+    "checkVersion": "course-record-check-v1"
+  },
+  "recipeSHA256": "7529604f7a24ee9c36141fbb73812faed933888a05738f36b7b7f1c1b4c67a63",
+  "versions": {
+    "ai": "7.0.122",
+    "openaiCompatible": "3.0.59"
+  },
+  "wrapperEntries": 1,
+  "actualFetchAttempts": 1,
+  "http": [
+    {
+      "url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+      "method": "POST",
+      "requestAt": "2026-10-05T01:26:41.333Z",
+      "requestBody": "{\"model\":\"qwen-plus-2025-12-01\",\"max_tokens\":3072,\"temperature\":0,\"enable_thinking\":false,\"messages\":[{\"role\":\"system\",\"content\":\"你是材料整理助手。只依据教师提供的材料和字段口径工作。未提供的事实保留缺口，计划与实际分开；返回可回查的结构化记录。\\n\\n\"},{\"role\":\"user\",\"content\":\"请依据完整原材料和人工反馈，重做 R01 的完整字段记录。这是已存在批任务中的一项处理失败，不是新增来源或整批重生成。只输出一个合法 JSON 对象，没有 Markdown 围栏、没有 records/summary 包装、没有额外说明。\\n\\n对象固定十一业务字段 sourceId/campaignId/date/title/status/impressions/clicks/subscriptions/spendCNY/budgetCNY/duplicateOf，外加 evidence。evidence 固定 campaignId/date/title/status/impressions/clicks/subscriptions/spendCNY/budgetCNY/duplicateOf 十项；非 null 证据必须是本项完整材料中的一个连续原文子串，不得改写或插入省略号。数值可按原单位规范化；没有预算或重复关系的两项证据可为 null。日期保留 YYYY-MM-DD，次数为整数，人民币为数值，未提供的实际量为 null，明确的零保留0。保持上次正确业务值；不执行投放、通知、CSV导出或统计。\\n\\n完整原材料：\\n{\\n  \\\"id\\\": \\\"R01\\\",\\n  \\\"text\\\": \\\"本轮所有记录均为教师编写的练习日报，不是实际投放。\\\\n活动 C01，日期 2026-09-30，已经投放。标题正文为下面两行，保留英文逗号、双引号和换行：\\\\n钟楼更新, \\\\\\\"第一章\\\\\\\"\\\\n试读\\\\n当天展示1千次，点击50次，新增订阅3次，实际花费6元人民币。点击与订阅都是事件次数，没有跨日报的个人身份表。\\\"\\n}\\n\\n上次实际完整对象：\\n{\\n  \\\"sourceId\\\": \\\"R01\\\",\\n  \\\"campaignId\\\": \\\"C01\\\",\\n  \\\"date\\\": \\\"2026-09-30\\\",\\n  \\\"title\\\": \\\"钟楼更新, \\\\\\\"第一章\\\\\\\"\\\\n试读\\\",\\n  \\\"status\\\": \\\"observed\\\",\\n  \\\"impressions\\\": 1000,\\n  \\\"clicks\\\": 50,\\n  \\\"subscriptions\\\": 3,\\n  \\\"spendCNY\\\": 6,\\n  \\\"budgetCNY\\\": null,\\n  \\\"duplicateOf\\\": null,\\n  \\\"evidence\\\": {\\n    \\\"campaignId\\\": \\\"活动 C01\\\",\\n    \\\"date\\\": \\\"日期 2026-09-30\\\",\\n    \\\"title\\\": \\\"标题正文为下面两行：\\\\n钟楼更新, \\\\\\\"第一章\\\\\\\"\\\\n试读\\\",\\n    \\\"status\\\": \\\"已经投放\\\",\\n    \\\"impressions\\\": \\\"展示1千次\\\",\\n    \\\"clicks\\\": \\\"点击50次\\\",\\n    \\\"subscriptions\\\": \\\"新增订阅3次\\\",\\n    \\\"spendCNY\\\": \\\"实际花费6元人民币\\\",\\n    \\\"budgetCNY\\\": null,\\n    \\\"duplicateOf\\\": null\\n  }\\n}\\n\\n完整人工反馈：\\nR01 的标题值与输入一致，但 evidence.title 不是 R01 的连续原文。你用了“标题正文为下面两行：”这个引导句，R01 实际在“两行”后还有“保留英文逗号、双引号和换行”。不要用 R02 的句子替代 R01 的证据。请返回 R01 的完整字段对象，保留已正确的数值和标题换行，并让十项 evidence 都能回到 R01 自己的原文。此次没有要求重新计算整批统计，也没有许可删除其他来源。\\n\"}]}",
+      "status": 200,
+      "responseBody": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\n  \\\"sourceId\\\": \\\"R01\\\",\\n  \\\"campaignId\\\": \\\"C01\\\",\\n  \\\"date\\\": \\\"2026-09-30\\\",\\n  \\\"title\\\": \\\"钟楼更新, \\\\\\\"第一章\\\\\\\"\\\\n试读\\\",\\n  \\\"status\\\": \\\"observed\\\",\\n  \\\"impressions\\\": 1000,\\n  \\\"clicks\\\": 50,\\n  \\\"subscriptions\\\": 3,\\n  \\\"spendCNY\\\": 6,\\n  \\\"budgetCNY\\\": null,\\n  \\\"duplicateOf\\\": null,\\n  \\\"evidence\\\": {\\n    \\\"campaignId\\\": \\\"活动 C01\\\",\\n    \\\"date\\\": \\\"日期 2026-09-30\\\",\\n    \\\"title\\\": \\\"标题正文为下面两行，保留英文逗号、双引号和换行：\\\\n钟楼更新, \\\\\\\"第一章\\\\\\\"\\\\n试读\\\",\\n    \\\"status\\\": \\\"已经投放\\\",\\n    \\\"impressions\\\": \\\"展示1千次\\\",\\n    \\\"clicks\\\": \\\"点击50次\\\",\\n    \\\"subscriptions\\\": \\\"新增订阅3次\\\",\\n    \\\"spendCNY\\\": \\\"实际花费6元人民币\\\",\\n    \\\"budgetCNY\\\": null,\\n    \\\"duplicateOf\\\": null\\n  }\\n}\",\"role\":\"assistant\"}}],\"created\":1791163603,\"id\":\"chatcmpl-4746ff61-4990-95c7-a586-4fb1a806bf14\",\"model\":\"qwen-plus-2025-12-01\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":257,\"prompt_tokens\":775,\"total_tokens\":1032}}",
+      "responseAt": "2026-10-05T01:26:47.564Z"
+    }
+  ],
+  "result": {
+    "text": "{\n  \"sourceId\": \"R01\",\n  \"campaignId\": \"C01\",\n  \"date\": \"2026-09-30\",\n  \"title\": \"钟楼更新, \\\"第一章\\\"\\n试读\",\n  \"status\": \"observed\",\n  \"impressions\": 1000,\n  \"clicks\": 50,\n  \"subscriptions\": 3,\n  \"spendCNY\": 6,\n  \"budgetCNY\": null,\n  \"duplicateOf\": null,\n  \"evidence\": {\n    \"campaignId\": \"活动 C01\",\n    \"date\": \"日期 2026-09-30\",\n    \"title\": \"标题正文为下面两行，保留英文逗号、双引号和换行：\\n钟楼更新, \\\"第一章\\\"\\n试读\",\n    \"status\": \"已经投放\",\n    \"impressions\": \"展示1千次\",\n    \"clicks\": \"点击50次\",\n    \"subscriptions\": \"新增订阅3次\",\n    \"spendCNY\": \"实际花费6元人民币\",\n    \"budgetCNY\": null,\n    \"duplicateOf\": null\n  }\n}",
+    "finishReason": "stop",
+    "rawFinishReason": "stop",
+    "usage": {
+      "inputTokens": 775,
+      "inputTokenDetails": {
+        "noCacheTokens": 775,
+        "cacheReadTokens": 0
+      },
+      "outputTokens": 257,
+      "outputTokenDetails": {
+        "textTokens": 257,
+        "reasoningTokens": 0
+      },
+      "totalTokens": 1032
+    },
+    "warnings": [],
+    "response": {
+      "id": "chatcmpl-4746ff61-4990-95c7-a586-4fb1a806bf14",
+      "modelId": "qwen-plus-2025-12-01",
+      "timestamp": "2026-10-05T01:26:43.000Z"
+    }
+  },
+  "error": null,
+  "projection": "SDK结果仅保留text/finishReason/rawFinishReason/usage/warnings及response身份时间；原发送体和原响应体另存。",
+  "billing": "只记录实际usage，未查账单；没有据并发推算费用下降。",
+  "endedAt": "2026-10-05T01:26:47.566Z",
+  "elapsedMs": 6245.5031,
+  "callerInterrupted": false,
+  "completeSdkResultObtained": true,
+  "failureLimit": null
+}

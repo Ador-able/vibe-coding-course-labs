@@ -1,0 +1,25 @@
+{
+  "sourceId": "R03",
+  "campaignId": "C02",
+  "date": "2026-10-01",
+  "title": "守塔人的来信。",
+  "status": "observed",
+  "impressions": 2000,
+  "clicks": 80,
+  "subscriptions": 4,
+  "spendCNY": 12,
+  "budgetCNY": null,
+  "duplicateOf": null,
+  "evidence": {
+    "campaignId": "活动 C02",
+    "date": "日期 2026-10-01",
+    "title": "标题为：守塔人的来信。",
+    "status": "已经投放",
+    "impressions": "展示2,000次",
+    "clicks": "点击80次",
+    "subscriptions": "新增订阅4次",
+    "spendCNY": "实际花费12元人民币",
+    "budgetCNY": null,
+    "duplicateOf": null
+  }
+}

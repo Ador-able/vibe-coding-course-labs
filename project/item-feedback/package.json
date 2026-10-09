@@ -1,10 +1,13 @@
 {
-  "name": "course-extract-denominators",
+  "name": "course-item-feedback",
   "private": true,
   "type": "module",
   "scripts": {
-    "run:extract": "node run-extract.mjs",
-    "check:request": "node check-request.mjs"
+    "history": "node register-history.mjs",
+    "repair": "node repair-two.mjs",
+    "check:state": "node check-state.mjs",
+    "read:state": "node read-state.mjs",
+    "prepare:page": "node prepare-page.mjs"
   },
   "dependencies": {
     "ai": "7.0.122",

@@ -1,0 +1,93 @@
+{
+  "sourceIds": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08"
+  ],
+  "repairIds": [
+    "R01",
+    "R06"
+  ],
+  "settings": {
+    "modelId": "qwen-plus-2025-12-01",
+    "baseURL": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "temperature": 0,
+    "maxOutputTokens": 3072,
+    "maxRetries": 0,
+    "enable_thinking": false,
+    "timeout": {
+      "totalMs": 60000
+    },
+    "maxConcurrency": 2
+  },
+  "checkVersion": "course-record-check-v1",
+  "initialItemSHA256": {
+    "R01": "30aac14e654ae61b30bd8dc593b28da2bb3335f3b6687fed8f51371a976e7b25",
+    "R02": "81f7553546187fc564427dd764baad2b62528f7ee7bd04d007f900e0ba52d7f7",
+    "R03": "bf11a42ed1389ef4b4de3bb8b75e678d5915c627d05f40fda9a36d4ced2ebdfc",
+    "R04": "d2da9563fd90bff16c2d2532bb31ebe15b27e7d638067cf0a91f040a2ac77c11",
+    "R05": "55baad26e45167eda25e8cd1e690e7957ba1084fc8f672056fb47b1b78792cfa",
+    "R06": "f0654c26405ec5e641c7a58b55d1b2ddc1d7a91dd5767e0a7f15cdf6010dd0f0",
+    "R07": "c4c9f06de965348bcd80fdc8bc41ce9544fa983689729c5523d38943011da4d9",
+    "R08": "7ccbd35e393c6790149e1a652a7faa16e57d823b10456b08dde4ccde38145631"
+  },
+  "historicalRequestCount": 1,
+  "originalFiles": [
+    {
+      "path": "inputs/reports.json",
+      "bytes": 2359,
+      "sha256": "0c7109884a5cd1c2ed1c084a6a34edf75874dd8b00ba3776540740c7e1b3f39d"
+    },
+    {
+      "path": "inputs/teacher-reference.json",
+      "bytes": 3139,
+      "sha256": "21e21b5c9031b82579595cd44efbae49c86a826cce70140f539dab242449bf4c"
+    },
+    {
+      "path": "prompts/instructions.txt",
+      "bytes": 176,
+      "sha256": "a044f2fafd4695188a4b4546ebc31bed7dbf553452c204c617f7bab5080fd878"
+    },
+    {
+      "path": "prompts/task.txt",
+      "bytes": 4584,
+      "sha256": "b1b4c6d1d86b8e626b10810f5753319ac357fcac9b9e1237c27e5ba18e6e23c3"
+    },
+    {
+      "path": "runs/extract-01/output.txt",
+      "bytes": 6741,
+      "sha256": "43b93b2d5528f8309859e008649a7ca2101f59ea83aaa7817cfa3fb88eec21a5"
+    },
+    {
+      "path": "runs/extract-01/request-body.json",
+      "bytes": 5059,
+      "sha256": "12975894844c5b58fcf14ac97ad2c592abd660fa27c30ccf8259db6d67717525"
+    },
+    {
+      "path": "runs/extract-01/response-body.txt",
+      "bytes": 7909,
+      "sha256": "82b453bd62ba84ce8cb307e7b8bca53a6f488cc31c3263d73d5d96697516df9c"
+    },
+    {
+      "path": "runs/extract-01/report.json",
+      "bytes": 24100,
+      "sha256": "1e154fe6e140c8cac6684a69d4dc64d507321287a288ac7e7a64044257e62907"
+    },
+    {
+      "path": "content-review.md",
+      "bytes": 3731,
+      "sha256": "7e9492489f30fce0a360f89d20d38affec91d68324ccf57524813c9c0e6e4345"
+    },
+    {
+      "path": "runs/inspection.json",
+      "bytes": 43920,
+      "sha256": "65643be46100c4bc85b5f3bb5d5179fb51ddfcd5cdf3e8ab41a1334fea100082"
+    }
+  ],
+  "scope": "八项历史对象来自同一次187请求；只允许R01和R06各一次新请求。"
+}
