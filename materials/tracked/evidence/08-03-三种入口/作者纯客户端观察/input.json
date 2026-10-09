@@ -1,0 +1,49 @@
+{
+  "runId": "56f1598c-293e-40b6-b134-0cdf013b790f",
+  "codeVersion": "3a6db6d5a155e46359c8e640c2a435d51a60c950",
+  "node": "v24.12.0",
+  "mcpSdk": "1.31.0",
+  "serverEntry": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-03\\lab\\dist\\mcp.js",
+  "serverEntrySha256": "4975634d6b302f1d3b30038bc6ff22aaf485c916e1282b5ce3202fe015440ebe",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-03\\lab\\runs\\mcp-entries\\56f1598c-293e-40b6-b134-0cdf013b790f\\teaching.sqlite",
+  "fixture": {
+    "origin": "human",
+    "work": {
+      "id": "entry-clocktower",
+      "title": "钟楼门前",
+      "purpose": "以人工材料比较取得资料、执行读取和取得检查提示。",
+      "requirements": [
+        "检查指定章节的具体依据，保留仍待人决定的事项。",
+        "本次只观察读取；短稿不是完整小说交付。"
+      ],
+      "facts": [
+        "林澈是修钟师学徒，没有钟楼钥匙。",
+        "进入钟楼需要周伯开门。",
+        "钟楼的钟昨夜停了。"
+      ],
+      "outline": [
+        {
+          "number": 1,
+          "titleHint": "门前",
+          "goal": "林澈交代来意，请周伯开门。"
+        },
+        {
+          "number": 2,
+          "titleHint": "检查",
+          "goal": "开门后检查停钟；此章尚未保存。"
+        }
+      ]
+    },
+    "firstChapter": {
+      "workId": "entry-clocktower",
+      "chapterNumber": 1,
+      "expectedWorkRevision": 1,
+      "expectedChapterRevision": 0,
+      "expectedPreviousRevisions": [],
+      "title": "门前",
+      "body": "林澈在钟楼门前放下工具箱，递出师父交给他的委托信。门板上的锁没有松动，他收回推门的手，说明自己没有钥匙。\n\n周伯从门后接过信，读完以后提起钥匙串。林澈退到石阶旁，等他开门。"
+    }
+  },
+  "modelCalls": 0,
+  "globalConfigurationChanges": 0
+}

@@ -1,0 +1,975 @@
+[
+  {
+    "phase": "发现",
+    "method": "tools/list",
+    "params": {},
+    "response": {
+      "tools": [
+        {
+          "name": "read_work",
+          "title": "读取当前作品要求",
+          "description": "取得有效用途、设定、大纲及要求修订；写作和保存前先调用。",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "workId": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              }
+            },
+            "required": [
+              "workId"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9-]+$"
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "purpose": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "requirements": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "facts": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "outline": {
+                    "minItems": 1,
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "number": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "titleHint": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "goal": {
+                          "type": "string",
+                          "minLength": 1
+                        }
+                      },
+                      "required": [
+                        "number",
+                        "titleHint",
+                        "goal"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "id",
+                  "title",
+                  "purpose",
+                  "requirements",
+                  "facts",
+                  "outline",
+                  "revision"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "result"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "list_chapters",
+          "title": "查询已保存章节",
+          "description": "查询真实保存数量、各章修订和人工采用状态，不包含正文。",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "workId": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              }
+            },
+            "required": [
+              "workId"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "chapters": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "workId": {
+                          "type": "string",
+                          "pattern": "^[a-z0-9-]+$"
+                        },
+                        "number": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "revision": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "draft",
+                            "adopted"
+                          ]
+                        },
+                        "workRevision": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "origin": {
+                          "type": "string",
+                          "enum": [
+                            "human",
+                            "agent"
+                          ]
+                        },
+                        "taskId": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "threadId": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "updatedAt": {
+                          "type": "string"
+                        },
+                        "previousRevisions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "number": {
+                                "type": "integer",
+                                "exclusiveMinimum": 0,
+                                "maximum": 9007199254740991
+                              },
+                              "revision": {
+                                "type": "integer",
+                                "exclusiveMinimum": 0,
+                                "maximum": 9007199254740991
+                              }
+                            },
+                            "required": [
+                              "number",
+                              "revision"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "reviewNote": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "workId",
+                        "number",
+                        "revision",
+                        "title",
+                        "status",
+                        "workRevision",
+                        "origin",
+                        "taskId",
+                        "threadId",
+                        "updatedAt"
+                      ],
+                      "additionalProperties": false
+                    }
+                  }
+                },
+                "required": [
+                  "chapters"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "result"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "read_chapter",
+          "title": "读回完整章节",
+          "description": "取得一章的当前正文和修订；不存在时 result 为 null。保存后用它核对实际内容。",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "workId": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "chapterNumber": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "workId",
+              "chapterNumber"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "properties": {
+                      "workId": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9-]+$"
+                      },
+                      "number": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "revision": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "title": {
+                        "type": "string"
+                      },
+                      "body": {
+                        "type": "string"
+                      },
+                      "status": {
+                        "type": "string",
+                        "enum": [
+                          "draft",
+                          "adopted"
+                        ]
+                      },
+                      "workRevision": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "origin": {
+                        "type": "string",
+                        "enum": [
+                          "human",
+                          "agent"
+                        ]
+                      },
+                      "taskId": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "threadId": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "updatedAt": {
+                        "type": "string"
+                      },
+                      "previousRevisions": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "properties": {
+                            "number": {
+                              "type": "integer",
+                              "exclusiveMinimum": 0,
+                              "maximum": 9007199254740991
+                            },
+                            "revision": {
+                              "type": "integer",
+                              "exclusiveMinimum": 0,
+                              "maximum": 9007199254740991
+                            }
+                          },
+                          "required": [
+                            "number",
+                            "revision"
+                          ],
+                          "additionalProperties": false
+                        }
+                      },
+                      "reviewNote": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "workId",
+                      "number",
+                      "revision",
+                      "title",
+                      "body",
+                      "status",
+                      "workRevision",
+                      "origin",
+                      "taskId",
+                      "threadId",
+                      "updatedAt"
+                    ],
+                    "additionalProperties": false
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              }
+            },
+            "required": [
+              "result"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": true,
+            "destructiveHint": false,
+            "idempotentHint": true,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        },
+        {
+          "name": "save_draft",
+          "title": "保存章节草稿",
+          "description": "按当前要求、正文和前文基线保存草稿。expectedPreviousRevisions 逐项列出第1章至上一章的修订，写第1章时为 []。没有旧正文时 expectedChapterRevision=0。状态始终 draft；冲突时重读，不重试旧基线。",
+          "inputSchema": {
+            "type": "object",
+            "properties": {
+              "workId": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "chapterNumber": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedWorkRevision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedChapterRevision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedPreviousRevisions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "revision"
+                  ]
+                }
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "body": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "workId",
+              "chapterNumber",
+              "expectedWorkRevision",
+              "expectedChapterRevision",
+              "expectedPreviousRevisions",
+              "title",
+              "body"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#"
+          },
+          "outputSchema": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "type": "object",
+                "properties": {
+                  "workId": {
+                    "type": "string",
+                    "pattern": "^[a-z0-9-]+$"
+                  },
+                  "number": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "revision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "title": {
+                    "type": "string"
+                  },
+                  "body": {
+                    "type": "string"
+                  },
+                  "status": {
+                    "type": "string",
+                    "enum": [
+                      "draft",
+                      "adopted"
+                    ]
+                  },
+                  "workRevision": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  },
+                  "origin": {
+                    "type": "string",
+                    "enum": [
+                      "human",
+                      "agent"
+                    ]
+                  },
+                  "taskId": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "threadId": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "updatedAt": {
+                    "type": "string"
+                  },
+                  "previousRevisions": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "number": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "revision": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        }
+                      },
+                      "required": [
+                        "number",
+                        "revision"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "reviewNote": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "required": [
+                  "workId",
+                  "number",
+                  "revision",
+                  "title",
+                  "body",
+                  "status",
+                  "workRevision",
+                  "origin",
+                  "taskId",
+                  "threadId",
+                  "updatedAt"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "result"
+            ],
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "additionalProperties": false
+          },
+          "annotations": {
+            "readOnlyHint": false,
+            "destructiveHint": false,
+            "idempotentHint": false,
+            "openWorldHint": false
+          },
+          "execution": {
+            "taskSupport": "forbidden"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "phase": "发现",
+    "method": "resources/list",
+    "params": {},
+    "response": {
+      "resources": [
+        {
+          "name": "entry-clocktower-requirements",
+          "title": "钟楼门前",
+          "uri": "novel://works/entry-clocktower/requirements",
+          "description": "读取时取得数据库当前资料；目录或此前读取不代替本次有效修订。",
+          "mimeType": "application/json"
+        },
+        {
+          "name": "entry-clocktower-chapter-1",
+          "title": "第 1 章 门前",
+          "uri": "novel://works/entry-clocktower/chapters/1",
+          "description": "读取已保存正文、修订及状态；不存在的章不是空白已完成稿。",
+          "mimeType": "application/json"
+        }
+      ]
+    }
+  },
+  {
+    "phase": "发现",
+    "method": "resources/templates/list",
+    "params": {},
+    "response": {
+      "resourceTemplates": [
+        {
+          "name": "work_requirements",
+          "title": "当前作品要求",
+          "uriTemplate": "novel://works/{workId}/requirements",
+          "description": "读取时取得数据库当前资料；目录或此前读取不代替本次有效修订。",
+          "mimeType": "application/json"
+        },
+        {
+          "name": "chapter_text",
+          "title": "当前章节正文",
+          "uriTemplate": "novel://works/{workId}/chapters/{chapterNumber}",
+          "description": "读取已保存正文、修订及状态；不存在的章不是空白已完成稿。",
+          "mimeType": "application/json"
+        }
+      ]
+    }
+  },
+  {
+    "phase": "发现",
+    "method": "prompts/list",
+    "params": {},
+    "response": {
+      "prompts": [
+        {
+          "name": "review_chapter",
+          "title": "检查一章的依据与表现",
+          "description": "由人选择检查对象；取得当前资料、正文和检查方法，不运行模型、不改变稿件状态。",
+          "arguments": [
+            {
+              "name": "workId",
+              "required": true
+            },
+            {
+              "name": "chapterNumber",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "resources/read",
+    "params": {
+      "uri": "novel://works/entry-clocktower/requirements"
+    },
+    "response": {
+      "contents": [
+        {
+          "uri": "novel://works/entry-clocktower/requirements",
+          "mimeType": "application/json",
+          "text": "{\"id\":\"entry-clocktower\",\"title\":\"钟楼门前\",\"purpose\":\"以人工材料比较取得资料、执行读取和取得检查提示。\",\"requirements\":[\"检查指定章节的具体依据，保留仍待人决定的事项。\",\"本次只观察读取；短稿不是完整小说交付。\"],\"facts\":[\"林澈是修钟师学徒，没有钟楼钥匙。\",\"进入钟楼需要周伯开门。\",\"钟楼的钟昨夜停了。\"],\"outline\":[{\"number\":1,\"titleHint\":\"门前\",\"goal\":\"林澈交代来意，请周伯开门。\"},{\"number\":2,\"titleHint\":\"检查\",\"goal\":\"开门后检查停钟；此章尚未保存。\"}],\"revision\":1}"
+        }
+      ]
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "tools/call",
+    "params": {
+      "name": "read_work",
+      "arguments": {
+        "workId": "entry-clocktower"
+      }
+    },
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":{\"id\":\"entry-clocktower\",\"title\":\"钟楼门前\",\"purpose\":\"以人工材料比较取得资料、执行读取和取得检查提示。\",\"requirements\":[\"检查指定章节的具体依据，保留仍待人决定的事项。\",\"本次只观察读取；短稿不是完整小说交付。\"],\"facts\":[\"林澈是修钟师学徒，没有钟楼钥匙。\",\"进入钟楼需要周伯开门。\",\"钟楼的钟昨夜停了。\"],\"outline\":[{\"number\":1,\"titleHint\":\"门前\",\"goal\":\"林澈交代来意，请周伯开门。\"},{\"number\":2,\"titleHint\":\"检查\",\"goal\":\"开门后检查停钟；此章尚未保存。\"}],\"revision\":1}}"
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "id": "entry-clocktower",
+          "title": "钟楼门前",
+          "purpose": "以人工材料比较取得资料、执行读取和取得检查提示。",
+          "requirements": [
+            "检查指定章节的具体依据，保留仍待人决定的事项。",
+            "本次只观察读取；短稿不是完整小说交付。"
+          ],
+          "facts": [
+            "林澈是修钟师学徒，没有钟楼钥匙。",
+            "进入钟楼需要周伯开门。",
+            "钟楼的钟昨夜停了。"
+          ],
+          "outline": [
+            {
+              "number": 1,
+              "titleHint": "门前",
+              "goal": "林澈交代来意，请周伯开门。"
+            },
+            {
+              "number": 2,
+              "titleHint": "检查",
+              "goal": "开门后检查停钟；此章尚未保存。"
+            }
+          ],
+          "revision": 1
+        }
+      }
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "prompts/get",
+    "params": {
+      "name": "review_chapter",
+      "arguments": {
+        "workId": "entry-clocktower",
+        "chapterNumber": "1"
+      }
+    },
+    "response": {
+      "description": "检查 钟楼门前 第 1 章 r1 的当前快照",
+      "messages": [
+        {
+          "role": "user",
+          "content": {
+            "type": "text",
+            "text": "请检查作品 entry-clocktower 的第 1 章。先核对目标、资料修订、前文修订和保存状态，再对照每条关键设定与原文具体句子，区分确定矛盾、可能问题和资料未说明的情况。表达与创作取舍请给具体阅读理由，不能以模型自评分代替人的判断。只提出检查结果和仍待人决定的事项，不保存、不采用。下面是本次取得的资料快照；业务状态以后可能变化，准备修改时必须重读。"
+          }
+        },
+        {
+          "role": "user",
+          "content": {
+            "type": "resource",
+            "resource": {
+              "uri": "novel://works/entry-clocktower/requirements",
+              "mimeType": "application/json",
+              "text": "{\"id\":\"entry-clocktower\",\"title\":\"钟楼门前\",\"purpose\":\"以人工材料比较取得资料、执行读取和取得检查提示。\",\"requirements\":[\"检查指定章节的具体依据，保留仍待人决定的事项。\",\"本次只观察读取；短稿不是完整小说交付。\"],\"facts\":[\"林澈是修钟师学徒，没有钟楼钥匙。\",\"进入钟楼需要周伯开门。\",\"钟楼的钟昨夜停了。\"],\"outline\":[{\"number\":1,\"titleHint\":\"门前\",\"goal\":\"林澈交代来意，请周伯开门。\"},{\"number\":2,\"titleHint\":\"检查\",\"goal\":\"开门后检查停钟；此章尚未保存。\"}],\"revision\":1}"
+            }
+          }
+        },
+        {
+          "role": "user",
+          "content": {
+            "type": "resource",
+            "resource": {
+              "uri": "novel://works/entry-clocktower/chapters/1",
+              "mimeType": "application/json",
+              "text": "{\"workId\":\"entry-clocktower\",\"number\":1,\"revision\":1,\"title\":\"门前\",\"body\":\"林澈在钟楼门前放下工具箱，递出师父交给他的委托信。门板上的锁没有松动，他收回推门的手，说明自己没有钥匙。\\n\\n周伯从门后接过信，读完以后提起钥匙串。林澈退到石阶旁，等他开门。\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-02T14:47:47.696Z\",\"previousRevisions\":[],\"reviewNote\":null}"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "resources/read",
+    "params": {
+      "uri": "novel://works/entry-clocktower/chapters/1"
+    },
+    "response": {
+      "contents": [
+        {
+          "uri": "novel://works/entry-clocktower/chapters/1",
+          "mimeType": "application/json",
+          "text": "{\"workId\":\"entry-clocktower\",\"number\":1,\"revision\":1,\"title\":\"门前\",\"body\":\"林澈在钟楼门前放下工具箱，递出师父交给他的委托信。门板上的锁没有松动，他收回推门的手，说明自己没有钥匙。\\n\\n周伯从门后接过信，读完以后提起钥匙串。林澈退到石阶旁，等他开门。\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-02T14:47:47.696Z\",\"previousRevisions\":[],\"reviewNote\":null}"
+        }
+      ]
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "tools/call",
+    "params": {
+      "name": "read_chapter",
+      "arguments": {
+        "workId": "entry-clocktower",
+        "chapterNumber": 1
+      }
+    },
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":{\"workId\":\"entry-clocktower\",\"number\":1,\"revision\":1,\"title\":\"门前\",\"body\":\"林澈在钟楼门前放下工具箱，递出师父交给他的委托信。门板上的锁没有松动，他收回推门的手，说明自己没有钥匙。\\n\\n周伯从门后接过信，读完以后提起钥匙串。林澈退到石阶旁，等他开门。\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-02T14:47:47.696Z\",\"previousRevisions\":[],\"reviewNote\":null}}"
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "workId": "entry-clocktower",
+          "number": 1,
+          "revision": 1,
+          "title": "门前",
+          "body": "林澈在钟楼门前放下工具箱，递出师父交给他的委托信。门板上的锁没有松动，他收回推门的手，说明自己没有钥匙。\n\n周伯从门后接过信，读完以后提起钥匙串。林澈退到石阶旁，等他开门。",
+          "status": "draft",
+          "workRevision": 1,
+          "origin": "human",
+          "taskId": null,
+          "threadId": null,
+          "updatedAt": "2026-10-02T14:47:47.696Z",
+          "previousRevisions": [],
+          "reviewNote": null
+        }
+      }
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "tools/call",
+    "params": {
+      "name": "read_chapter",
+      "arguments": {
+        "workId": "entry-clocktower",
+        "chapterNumber": 2
+      }
+    },
+    "response": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":null}"
+        }
+      ],
+      "structuredContent": {
+        "result": null
+      }
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "resources/read",
+    "params": {
+      "uri": "novel://works/entry-clocktower/chapters/2"
+    },
+    "error": {
+      "name": "McpError",
+      "code": -32002,
+      "message": "MCP error -32002: MCP error -32002: 该章正文尚未保存。",
+      "data": {
+        "uri": "novel://works/entry-clocktower/chapters/2",
+        "code": "CHAPTER_NOT_FOUND"
+      }
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "prompts/get",
+    "params": {
+      "name": "review_chapter",
+      "arguments": {
+        "workId": "entry-clocktower",
+        "chapterNumber": "2"
+      }
+    },
+    "error": {
+      "name": "McpError",
+      "code": -32002,
+      "message": "MCP error -32002: MCP error -32002: 该章正文尚未保存。",
+      "data": null
+    }
+  },
+  {
+    "phase": "观察A",
+    "method": "prompts/get",
+    "params": {
+      "name": "review_chapter",
+      "arguments": {
+        "workId": "entry-clocktower"
+      }
+    },
+    "error": {
+      "name": "McpError",
+      "code": -32602,
+      "message": "MCP error -32602: MCP error -32602: Invalid arguments for prompt review_chapter: Invalid input: expected string, received undefined at chapterNumber",
+      "data": null
+    }
+  },
+  {
+    "phase": "观察B",
+    "method": "resources/read",
+    "params": {
+      "uri": "novel://works/entry-clocktower/requirements"
+    },
+    "response": {
+      "contents": [
+        {
+          "uri": "novel://works/entry-clocktower/requirements",
+          "mimeType": "application/json",
+          "text": "{\"id\":\"entry-clocktower\",\"title\":\"钟楼门前\",\"purpose\":\"以人工材料比较取得资料、执行读取和取得检查提示。\",\"requirements\":[\"检查指定章节的具体依据，保留仍待人决定的事项。\",\"本次只观察读取；短稿不是完整小说交付。\"],\"facts\":[\"林澈是修钟师学徒，没有钟楼钥匙。\",\"进入钟楼需要周伯开门。\",\"钟楼的钟昨夜停了。\",\"开门前，周伯应先核对委托信上的编号。\"],\"outline\":[{\"number\":1,\"titleHint\":\"门前\",\"goal\":\"林澈交代来意，请周伯开门。\"},{\"number\":2,\"titleHint\":\"检查\",\"goal\":\"开门后检查停钟；此章尚未保存。\"}],\"revision\":2}"
+        }
+      ]
+    }
+  },
+  {
+    "phase": "观察B",
+    "method": "prompts/get",
+    "params": {
+      "name": "review_chapter",
+      "arguments": {
+        "workId": "entry-clocktower",
+        "chapterNumber": "1"
+      }
+    },
+    "response": {
+      "description": "检查 钟楼门前 第 1 章 r1 的当前快照",
+      "messages": [
+        {
+          "role": "user",
+          "content": {
+            "type": "text",
+            "text": "请检查作品 entry-clocktower 的第 1 章。先核对目标、资料修订、前文修订和保存状态，再对照每条关键设定与原文具体句子，区分确定矛盾、可能问题和资料未说明的情况。表达与创作取舍请给具体阅读理由，不能以模型自评分代替人的判断。只提出检查结果和仍待人决定的事项，不保存、不采用。下面是本次取得的资料快照；业务状态以后可能变化，准备修改时必须重读。"
+          }
+        },
+        {
+          "role": "user",
+          "content": {
+            "type": "resource",
+            "resource": {
+              "uri": "novel://works/entry-clocktower/requirements",
+              "mimeType": "application/json",
+              "text": "{\"id\":\"entry-clocktower\",\"title\":\"钟楼门前\",\"purpose\":\"以人工材料比较取得资料、执行读取和取得检查提示。\",\"requirements\":[\"检查指定章节的具体依据，保留仍待人决定的事项。\",\"本次只观察读取；短稿不是完整小说交付。\"],\"facts\":[\"林澈是修钟师学徒，没有钟楼钥匙。\",\"进入钟楼需要周伯开门。\",\"钟楼的钟昨夜停了。\",\"开门前，周伯应先核对委托信上的编号。\"],\"outline\":[{\"number\":1,\"titleHint\":\"门前\",\"goal\":\"林澈交代来意，请周伯开门。\"},{\"number\":2,\"titleHint\":\"检查\",\"goal\":\"开门后检查停钟；此章尚未保存。\"}],\"revision\":2}"
+            }
+          }
+        },
+        {
+          "role": "user",
+          "content": {
+            "type": "resource",
+            "resource": {
+              "uri": "novel://works/entry-clocktower/chapters/1",
+              "mimeType": "application/json",
+              "text": "{\"workId\":\"entry-clocktower\",\"number\":1,\"revision\":1,\"title\":\"门前\",\"body\":\"林澈在钟楼门前放下工具箱，递出师父交给他的委托信。门板上的锁没有松动，他收回推门的手，说明自己没有钥匙。\\n\\n周伯从门后接过信，读完以后提起钥匙串。林澈退到石阶旁，等他开门。\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-02T14:47:47.696Z\",\"previousRevisions\":[],\"reviewNote\":null}"
+            }
+          }
+        }
+      ]
+    }
+  }
+]
