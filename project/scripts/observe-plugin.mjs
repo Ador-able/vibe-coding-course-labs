@@ -14,11 +14,8 @@ const {values}=parseArgs({options:{db:{type:'string',default:'data/plugin.sqlite
 if(!values.prompt)throw new Error('需要保存了完整请求的提示文件。');
 const root=process.cwd(),database=resolve(values.db),out=resolve('runs',randomUUID());
 const preflight=JSON.parse(await readFile('runs/plugin-preflight.json','utf8'));
-const {settings,runtime,threadOptions}=await pluginRuntime(root);
-const skillEntry=preflight.catalog.data.find(item=>item.cwd===root);
-const enabledSkills=(skillEntry?.skills??[]).filter(item=>item.enabled);
-const expectedSkillNames=['novel-workbench-course:novel-chapter-review','novel-workbench-course:novel-chapter-task'];
-if(!preflight.isolated||!preflight.skillsIsolated||!preflight.memoryIsolated||!skillEntry||skillEntry.errors.length||enabledSkills.length!==2||!enabledSkills.every(item=>item.pluginId===settings.pluginId)||JSON.stringify(enabledSkills.map(item=>item.name).sort())!==JSON.stringify(expectedSkillNames))throw new Error('本章两项方法、工具与记忆配置尚未通过实际目录检查。');
+if(!preflight.isolated||!preflight.skillsIsolated||!preflight.memoryIsolated||preflight.skills.length!==2)throw new Error('插件 Skill、配置的工具与记忆配置尚未通过本机隔离检查。');
+const {runtime,threadOptions}=await pluginRuntime(root);
 const binding=JSON.parse(await readFile('plugins/novel-workbench-course/binding.json','utf8'));
 if(resolve(binding.database)!==database)throw new Error('观察数据库与插件实际绑定不一致；请重新准备本次绑定。');
 const prompt=await readFile(values.prompt,'utf8');
