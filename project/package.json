@@ -12,7 +12,6 @@
     "agent": "node dist/agent.js",
     "mcp": "node dist/mcp.js",
     "mcp:inspect": "node scripts/inspect-mcp.mjs",
-    "mcp:entries": "node scripts/observe-entries.mjs",
     "plugin:prepare": "node scripts/prepare-plugin.mjs",
     "plugin:catalog": "node scripts/plugin-catalog.mjs",
     "plugin:add": "node scripts/plugin-manage.mjs add",
