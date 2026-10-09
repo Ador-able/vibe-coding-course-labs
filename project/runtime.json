@@ -1,0 +1,16 @@
+{
+  "n8nVersion": "2.41.6",
+  "containerNodeVersion": "v26.7.0",
+  "image": "docker.n8n.io/n8nio/n8n:2.41.6@sha256:87e0bab2c93192e8dd885ff7b0697c22a1bd97489568a8c67cc140fd7dbb342d",
+  "nativeNodeVersions": {
+    "webhook": 2.1,
+    "dataTable": 1.1,
+    "if": 2.3,
+    "respondToWebhook": 1.5,
+    "wait": 1.1,
+    "stopAndError": 1
+  },
+  "timezone": "Asia/Shanghai",
+  "notificationStatus": "not_sent",
+  "waitSeconds": 5
+}
