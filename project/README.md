@@ -1,4 +1,4 @@
-# 把简单服务与 Skill 组成一个可用插件
+# 用 Hook 接通自动检查
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

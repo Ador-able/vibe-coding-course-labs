@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+      "hooks": [
+        {
+          "key": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json:post_tool_use:0:0",
+          "eventName": "postToolUse",
+          "handlerType": "command",
+          "command": "node scripts/check-draft-placeholder.mjs correct",
+          "async": false,
+          "matcher": "^mcp__novel_lab__save_draft$",
+          "timeoutSec": 600,
+          "statusMessage": "读取真实保存返回，检查编辑占位符",
+          "additionalContextLimit": null,
+          "sourcePath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json",
+          "source": "project",
+          "pluginId": null,
+          "displayOrder": 0,
+          "enabled": true,
+          "isManaged": false,
+          "currentHash": "sha256:4317cace8dbcff1fcfd484805e0109305c5a6c623289fb0a7681063a777b5c35",
+          "trustStatus": "untrusted"
+        },
+        {
+          "key": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json:post_tool_use:1:0",
+          "eventName": "postToolUse",
+          "handlerType": "command",
+          "command": "node scripts/check-draft-placeholder.mjs wrong-matcher",
+          "async": false,
+          "matcher": "^save_draft$",
+          "timeoutSec": 600,
+          "statusMessage": "未包含宿主命名空间的匹配条件",
+          "additionalContextLimit": null,
+          "sourcePath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json",
+          "source": "project",
+          "pluginId": null,
+          "displayOrder": 1,
+          "enabled": true,
+          "isManaged": false,
+          "currentHash": "sha256:545c2aaa065c37434f533858c20a87df457b3b606a99f31f837328f5fa06d1af",
+          "trustStatus": "untrusted"
+        },
+        {
+          "key": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json:post_tool_use:2:0",
+          "eventName": "postToolUse",
+          "handlerType": "command",
+          "command": "node scripts/missing-hook-script.mjs",
+          "async": false,
+          "matcher": "^mcp__novel_lab__save_draft$",
+          "timeoutSec": 600,
+          "statusMessage": "调用确实缺失的检查脚本并保留失败",
+          "additionalContextLimit": null,
+          "sourcePath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json",
+          "source": "project",
+          "pluginId": null,
+          "displayOrder": 2,
+          "enabled": true,
+          "isManaged": false,
+          "currentHash": "sha256:7eef6a8e6eba8229b978c2f7d9add6ec6955a3b9edcf8e1b1cbcafd712e3e476",
+          "trustStatus": "untrusted"
+        }
+      ],
+      "warnings": [],
+      "errors": []
+    }
+  ]
+}

@@ -1,0 +1,350 @@
+[
+  {
+    "direction": "sent",
+    "message": {
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "clientInfo": {
+          "name": "hook_course_preflight",
+          "version": "1.0.0"
+        },
+        "capabilities": {
+          "experimentalApi": true
+        }
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 1,
+      "result": {
+        "userAgent": "Codex Desktop/0.160.0 (Windows 10.0.26300; x86_64) dumb (hook_course_preflight; 1.0.0)",
+        "codexHome": "C:\\Users\\32686\\.codex",
+        "platformFamily": "windows",
+        "platformOs": "windows"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "method": "initialized",
+      "params": {}
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 2,
+      "method": "config/read",
+      "params": {
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+        "includeLayers": true
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "configWarning",
+      "params": {
+        "summary": "Project-local config, hooks, and exec policies are disabled in the following folders until the project is trusted, but skills still load.\n    1. D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\n       To load project-local config, hooks, and exec policies, add d:\\projects\\knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab as a trusted project in C:\\Users\\32686\\.codex\\config.toml.\n",
+        "details": null
+      },
+      "emittedAtMs": 1790967421986
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "configWarning",
+      "params": {
+        "summary": "Codex is ignoring 1 unrecognized configuration setting. Check for typos or deprecated settings.\n  session-flags: `projects.\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-06\\\\lab\"` is ignored.",
+        "details": null
+      },
+      "emittedAtMs": 1790967421986
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "remoteControl/status/changed",
+      "params": {
+        "scope": "与本章任务无关的账号或远程连接状态未收录。"
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 2,
+      "result": {
+        "config": {
+          "memories": {
+            "version": null,
+            "dual_write": null,
+            "disable_on_external_context": null,
+            "generate_memories": false,
+            "use_memories": false,
+            "dedicated_tools": null,
+            "max_raw_memories_for_consolidation": null,
+            "max_unused_days": null,
+            "max_rollout_age_days": null,
+            "max_rollouts_per_startup": null,
+            "min_rollout_idle_hours": null,
+            "min_rate_limit_remaining_percent": null,
+            "extract_model": null,
+            "consolidation_model": null
+          },
+          "features": {
+            "context_management": {
+              "experimental_mode": true
+            },
+            "network_proxy": null,
+            "hooks": true,
+            "js_repl": false,
+            "memories": false,
+            "api_key_model_discovery": false,
+            "auth_elicitation": true,
+            "background_paginated_rollout_migration": false,
+            "codex_apps_mcp_2026_07_28": false,
+            "mcp_2026_07_28": false,
+            "mentions_v2": true,
+            "remote_control": false,
+            "remote_plugin": true,
+            "tool_suggest": true,
+            "windows_sandbox_service": false
+          },
+          "skills": {
+            "bundled": {
+              "enabled": false
+            },
+            "config": [
+              {
+                "path": "C:\\Users\\32686\\.codex\\skills\\change-aware-validation\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\skills\\codebase-simplification\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "D:\\Projects\\theitzy\\course-automation\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.930.11008\\skills\\documents\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\skills\\note-to-anki-rich\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\pdf\\26.930.11008\\skills\\pdf\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.930.11008\\skills\\presentations\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\skills\\record-ui-evidence\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\skills\\remove-authoring-residue\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-breakdown\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-models\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\basics\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\concept-art\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\delivery\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\project-vision\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-assembly\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-layout\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\visual-review\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\skills\\semantic-code-review\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\spreadsheets\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\excel-live-control\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\skills\\technical-prose-standard\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-primary-runtime\\template-creator\\26.930.11008\\skills\\template-creator\\SKILL.md",
+                "enabled": false
+              },
+              {
+                "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\openai-bundled\\visualize\\1.0.46\\skills\\visualize\\SKILL.md",
+                "enabled": false
+              }
+            ]
+          },
+          "project_doc_max_bytes": 0,
+          "developer_instructions": ""
+        },
+        "projectTrust": [],
+        "layers": [
+          {
+            "name": {
+              "type": "sessionFlags"
+            },
+            "configKeys": [
+              "marketplaces",
+              "plugins",
+              "mcp_servers",
+              "memories",
+              "features",
+              "project_doc_max_bytes",
+              "developer_instructions",
+              "skills",
+              "projects"
+            ]
+          },
+          {
+            "name": {
+              "type": "project",
+              "dotCodexFolder": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex"
+            },
+            "disabledReason": "To load project-local config, hooks, and exec policies, add d:\\projects\\knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab as a trusted project in C:\\Users\\32686\\.codex\\config.toml.",
+            "configKeys": [
+              "plugins"
+            ]
+          },
+          {
+            "name": {
+              "type": "user",
+              "file": "C:\\Users\\32686\\.codex\\config.toml",
+              "profile": null
+            },
+            "configKeys": [
+              "model",
+              "model_reasoning_effort",
+              "sandbox_mode",
+              "model_provider",
+              "service_tier",
+              "notify",
+              "mcp_servers",
+              "desktop",
+              "windows",
+              "marketplaces",
+              "plugins",
+              "projects",
+              "shell_environment_policy",
+              "skills",
+              "features",
+              "memories"
+            ]
+          },
+          {
+            "name": {
+              "type": "system",
+              "file": "C:\\ProgramData\\OpenAI\\Codex\\config.toml"
+            },
+            "configKeys": []
+          }
+        ],
+        "limits": "仅收录本章涉及的配置及层的来源；其他配置正文未收录。"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 3,
+      "method": "hooks/list",
+      "params": {
+        "cwds": [
+          "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab"
+        ]
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 3,
+      "result": {
+        "data": [
+          {
+            "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+            "hooks": [],
+            "warnings": [],
+            "errors": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 4,
+      "method": "skills/list",
+      "params": {
+        "cwds": [
+          "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab"
+        ],
+        "forceReload": true
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 4,
+      "result": {
+        "data": [
+          {
+            "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+            "skills": [],
+            "errors": [],
+            "disabledSkills": 24,
+            "enabledSkills": 0,
+            "scope": "不收录本实验没有采用的其他 Skill 名称、描述与正文；启用和停用数量保留。"
+          }
+        ]
+      }
+    }
+  }
+]

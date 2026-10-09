@@ -1,0 +1,18 @@
+[
+  {
+    "direction": "sent",
+    "message": {
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "clientInfo": {
+          "name": "hook_course_preflight",
+          "version": "1.0.0"
+        },
+        "capabilities": {
+          "experimentalApi": true
+        }
+      }
+    }
+  }
+]

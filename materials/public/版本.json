@@ -1,243 +1,84 @@
 {
   "start": {
-    "tag": "vcm-08-05-start",
-    "commit": "8e095ac7af52d3f61608118af94f82d1c5015ef0"
-  },
-  "end": {
-    "tag": "vcm-08-05-end",
+    "tag": "vcm-08-06-start",
     "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6"
   },
-  "runtime": {
-    "node": "24.12.0",
-    "pnpm": "11.20.0",
-    "codex": "0.160.0",
-    "mcpSdk": "1.31.0",
-    "openCode": "1.18.34"
+  "end": {
+    "tag": "vcm-08-06-end",
+    "commit": "038fec968dd717b522a61669997ca3b3a7aec62e"
   },
-  "runs": [
+  "actualTaskCode": "038fec968dd717b522a61669997ca3b3a7aec62e",
+  "node": "24.12.0",
+  "pnpm": "11.20.0",
+  "codex": "0.160.0",
+  "mcpSdk": "1.31.0",
+  "model": "gpt-6.1-sol",
+  "threadId": "01a0fe09-869c-7050-94bc-659139eda3b9",
+  "turnId": "01a0fe09-9029-7dd1-a00d-dc9eab9be091",
+  "workHashes": [
     {
-      "name": "cc25b4cc-07a1-4442-ae67-65e51ae7bae4",
-      "host": "Codex SDK/CLI 0.160.0",
-      "model": "沿用使用者的 Codex 配置；本记录未指定模型",
-      "codeVersion": "9bf53927703c1ccd175527be8bca4e015b376e09",
-      "sessionId": "01a0fd82-66b3-7263-b37b-868b9e905e29"
+      "path": ".codex/hooks.json",
+      "bytes": 1132,
+      "sha256": "6e4020cbd3c55ebb72178467841a5c31d83d3ee2de037cbc622e33340492cc60",
+      "gitSha256": "6e4020cbd3c55ebb72178467841a5c31d83d3ee2de037cbc622e33340492cc60",
+      "sameAfterLineEndingNormalization": true
     },
     {
-      "name": "6369f475-eb69-4b00-946a-90009b98f8bf",
-      "host": "Codex SDK/CLI 0.160.0",
-      "model": "沿用使用者的 Codex 配置；本记录未指定模型",
-      "codeVersion": "a2c39f62455f26bb0fd8766b6d954bfac6ccb883",
-      "sessionId": "01a0fd8f-3841-7993-9dfb-4021fa755ef2"
+      "path": "scripts/check-draft-placeholder.mjs",
+      "bytes": 2035,
+      "sha256": "a91808f018d43f6ea3afda1036237d16f11fb0724200e197dd463f876a63b069",
+      "gitSha256": "a91808f018d43f6ea3afda1036237d16f11fb0724200e197dd463f876a63b069",
+      "sameAfterLineEndingNormalization": true
     },
     {
-      "name": "opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581",
-      "host": "OpenCode 1.18.34",
-      "model": "opencode/big-pickle",
-      "codeVersion": "9bf53927703c1ccd175527be8bca4e015b376e09",
-      "sessionId": "ses_f027d9591ffeYxTo76SBdmV8wy"
+      "path": "scripts/missing-hook-script.mjs",
+      "bytes": 1363,
+      "sha256": "e7c29d6f9dc809f96d2c8accc167d191b18a97a0bf90023dbf3e6729c74cb362",
+      "gitSha256": "e7c29d6f9dc809f96d2c8accc167d191b18a97a0bf90023dbf3e6729c74cb362",
+      "sameAfterLineEndingNormalization": true
     },
     {
-      "name": "opencode-46a874e5-4417-4915-9c1e-c0230247a32b",
-      "host": "OpenCode 1.18.34",
-      "model": "courseDashscope/qwen-flash",
-      "codeVersion": "019246553ff6a19c0761bf54526417ad6230941e",
-      "sessionId": "ses_f026111f3ffer4jCSY7aRMpCWY"
+      "path": "scripts/hook-runtime.mjs",
+      "bytes": 1136,
+      "sha256": "d5e6e8ddaf291b7208a459ab5999960105b4b9c3ef1ee1d7363d3c9e1d61688a",
+      "gitSha256": "d5e6e8ddaf291b7208a459ab5999960105b4b9c3ef1ee1d7363d3c9e1d61688a",
+      "sameAfterLineEndingNormalization": true
     },
     {
-      "name": "opencode-fc97f770-15ee-47a3-b920-1624b79243be",
-      "host": "OpenCode 1.18.34",
-      "model": "courseDashscope/qwen-flash",
-      "codeVersion": "1903c5376c6b49934b3da0030427cbc5e2c86aa0",
-      "sessionId": "ses_f026111f3ffer4jCSY7aRMpCWY"
+      "path": "scripts/observe-hooks.mjs",
+      "bytes": 10172,
+      "sha256": "f0fb83f5597be2a70bc3b25c1690b268d25d3de8c0d42a5143e6aaf72e6d4877",
+      "gitSha256": "f0fb83f5597be2a70bc3b25c1690b268d25d3de8c0d42a5143e6aaf72e6d4877",
+      "sameAfterLineEndingNormalization": true
     },
     {
-      "name": "opencode-88736be9-1713-4341-aa1b-4791bb82782b",
-      "host": "OpenCode 1.18.34",
-      "model": "courseDashscope/qwen-plus",
-      "codeVersion": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-      "sessionId": "ses_f024e7f5cffeiFwGlfx2Po8Xnz"
-    }
-  ],
-  "invariant": [
+      "path": "scripts/plugin-runtime.mjs",
+      "bytes": 1621,
+      "sha256": "b2f1649b8823664b2968239499a57280f8fcacd2b844518864958f687a9cca94",
+      "gitSha256": "f0761a13ee829d17260b3dd937ae218ca9ad508ce51d1971ab7e1d69b24821af",
+      "sameAfterLineEndingNormalization": true
+    },
     {
-      "path": "src/store.ts",
-      "versions": [
-        {
-          "version": "9bf53927703c1ccd175527be8bca4e015b376e09",
-          "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
-        },
-        {
-          "version": "a2c39f62455f26bb0fd8766b6d954bfac6ccb883",
-          "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
-        },
-        {
-          "version": "019246553ff6a19c0761bf54526417ad6230941e",
-          "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
-        },
-        {
-          "version": "1903c5376c6b49934b3da0030427cbc5e2c86aa0",
-          "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
-        },
-        {
-          "version": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-          "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
-        },
-        {
-          "version": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
-          "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
-        }
-      ]
+      "path": "prompts/hook-scene.txt",
+      "bytes": 1426,
+      "sha256": "d3eb46b2ae13131b6e36a97e1d725d589ddc1d72c25af2f8bca0e172d7a635e6",
+      "gitSha256": "d3eb46b2ae13131b6e36a97e1d725d589ddc1d72c25af2f8bca0e172d7a635e6",
+      "sameAfterLineEndingNormalization": true
     },
     {
       "path": "src/mcp.ts",
-      "versions": [
-        {
-          "version": "9bf53927703c1ccd175527be8bca4e015b376e09",
-          "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
-        },
-        {
-          "version": "a2c39f62455f26bb0fd8766b6d954bfac6ccb883",
-          "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
-        },
-        {
-          "version": "019246553ff6a19c0761bf54526417ad6230941e",
-          "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
-        },
-        {
-          "version": "1903c5376c6b49934b3da0030427cbc5e2c86aa0",
-          "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
-        },
-        {
-          "version": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-          "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
-        },
-        {
-          "version": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
-          "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
-        }
-      ]
+      "bytes": 6767,
+      "sha256": "44a6e1fe96e6ff0f81f4eff014282e21c8918c6d6398c69c5943f2bc8bd4a109",
+      "gitSha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3",
+      "sameAfterLineEndingNormalization": true
     },
     {
-      "path": "src/schemas.ts",
-      "versions": [
-        {
-          "version": "9bf53927703c1ccd175527be8bca4e015b376e09",
-          "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
-        },
-        {
-          "version": "a2c39f62455f26bb0fd8766b6d954bfac6ccb883",
-          "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
-        },
-        {
-          "version": "019246553ff6a19c0761bf54526417ad6230941e",
-          "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
-        },
-        {
-          "version": "1903c5376c6b49934b3da0030427cbc5e2c86aa0",
-          "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
-        },
-        {
-          "version": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-          "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
-        },
-        {
-          "version": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
-          "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
-        }
-      ]
-    },
-    {
-      "path": "plugins/novel-workbench-course/skills/novel-chapter-task/SKILL.md",
-      "versions": [
-        {
-          "version": "9bf53927703c1ccd175527be8bca4e015b376e09",
-          "sha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4"
-        },
-        {
-          "version": "a2c39f62455f26bb0fd8766b6d954bfac6ccb883",
-          "sha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4"
-        },
-        {
-          "version": "019246553ff6a19c0761bf54526417ad6230941e",
-          "sha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4"
-        },
-        {
-          "version": "1903c5376c6b49934b3da0030427cbc5e2c86aa0",
-          "sha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4"
-        },
-        {
-          "version": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-          "sha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4"
-        },
-        {
-          "version": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
-          "sha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4"
-        }
-      ]
-    },
-    {
-      "path": "plugins/novel-workbench-course/skills/novel-chapter-task/references/state-and-review.md",
-      "versions": [
-        {
-          "version": "9bf53927703c1ccd175527be8bca4e015b376e09",
-          "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
-        },
-        {
-          "version": "a2c39f62455f26bb0fd8766b6d954bfac6ccb883",
-          "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
-        },
-        {
-          "version": "019246553ff6a19c0761bf54526417ad6230941e",
-          "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
-        },
-        {
-          "version": "1903c5376c6b49934b3da0030427cbc5e2c86aa0",
-          "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
-        },
-        {
-          "version": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-          "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
-        },
-        {
-          "version": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
-          "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3"
-        }
-      ]
-    },
-    {
-      "path": "plugins/novel-workbench-course/skills/novel-chapter-review/SKILL.md",
-      "versions": [
-        {
-          "version": "9bf53927703c1ccd175527be8bca4e015b376e09",
-          "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
-        },
-        {
-          "version": "a2c39f62455f26bb0fd8766b6d954bfac6ccb883",
-          "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
-        },
-        {
-          "version": "019246553ff6a19c0761bf54526417ad6230941e",
-          "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
-        },
-        {
-          "version": "1903c5376c6b49934b3da0030427cbc5e2c86aa0",
-          "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
-        },
-        {
-          "version": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-          "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
-        },
-        {
-          "version": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
-          "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
-        }
-      ]
+      "path": "src/store.ts",
+      "bytes": 11326,
+      "sha256": "38685e9871494f7bfdd91f7a3dfed2330501e55d97cc6e0e0974bab1d58a28c7",
+      "gitSha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1",
+      "sameAfterLineEndingNormalization": true
     }
   ],
-  "lastPaidCode": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
-  "changesAfterLastPaidRun": [
-    "README.md",
-    "scripts/plugin-preflight.mjs"
-  ],
-  "lastVerification": "固定完成前已冻结安装与构建通过；目录修补后只做官方纯目录与移除，不追加模型调用。"
+  "scope": "同一固定代码的一条官方宿主自然任务；核对 Git 与批准的工作字节时保留 CRLF/LF 区别，不混称字节相同。"
 }

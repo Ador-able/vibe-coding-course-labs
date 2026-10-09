@@ -20,22 +20,20 @@ const environmentOverrides={
 };
 Object.assign(env,environmentOverrides);
 // 密钥只进入当前子进程；公开记录保留变量占位符，不保存值或认证文件。
-const apiKey=env.API_KEY??null;
-if(apiKey)env.API_KEY=apiKey;
+const apiKey=env.API_KEY;
+if(!apiKey||!env.API_BASE_URL||!env.MODEL)throw new Error('请从仓库根目录使用 scripts/run-lab.mjs 启动，沿用请求观察室的模型设置。');
+env.API_KEY=apiKey;
 const config=JSON.parse(await readFile(resolve(cwd,'opencode.json'),'utf8'));
-// 用课程页面已保存的设置组织本次宿主配置；公开记录保留密钥占位符。
-if(env.API_BASE_URL)config.provider.courseModel.options.baseURL=env.API_BASE_URL;
-if(env.MODEL){
-  const selected=env.MODEL;
-  const limits={context:32768,output:4096};
-  config.provider.courseModel.models={[selected]:{name:selected,options:{},limit:limits}};
-  config.model=config.small_model='courseModel/'+selected;
-}
+// 本轮设置共用课程页面保存的地址与型号；密钥仍使用环境变量占位符。
+config.provider.courseModel.options.baseURL=env.API_BASE_URL;
+const selected=env.MODEL,limits={context:32768,output:4096};
+config.provider.courseModel.models={[selected]:{name:selected,options:{},limit:limits}};
+config.model=config.small_model='courseModel/'+selected;
 config.mcp={novel_lab:{type:'local',command:[process.execPath,resolve(root,'dist/mcp.js'),resolve(root,values.db)],enabled:true}};
 env.OPENCODE_CONFIG_CONTENT=JSON.stringify(config);
 const entry=resolve(root,'node_modules/opencode-ai/bin/opencode.exe');
 const prompt=values['prompt-file']?await readFile(resolve(root,values['prompt-file']),'utf8'):null;
-await writeFile(resolve(out,'input.json'),JSON.stringify({entry,cwd,args:positionals,profile,config,prompt,credentialSource:apiKey?'课程页面已保存设置；密钥只注入当前子进程':null,environmentOverrides:{...environmentOverrides,OPENCODE_CONFIG_CONTENT:'已完整记录于 config 字段'}},null,2));
+await writeFile(resolve(out,'input.json'),JSON.stringify({entry,cwd,args:positionals,profile,config,prompt,credentialSource:'课程页面已保存设置；密钥只注入当前子进程',environmentOverrides:{...environmentOverrides,OPENCODE_CONFIG_CONTENT:'已完整记录于 config 字段'}},null,2));
 const child=spawn(entry,positionals,{cwd,env,windowsHide:true,stdio:['pipe','pipe','pipe']});
 child.stdin.end(prompt??undefined);
 const stdout=[],stderr=[];

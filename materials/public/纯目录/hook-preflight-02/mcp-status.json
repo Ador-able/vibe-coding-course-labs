@@ -1,0 +1,37 @@
+{
+  "data": [],
+  "nextCursor": null,
+  "otherServers": [
+    {
+      "name": "anki_mcp",
+      "pluginId": null,
+      "runtimeStatus": "disabled",
+      "toolNames": []
+    },
+    {
+      "name": "blender",
+      "pluginId": null,
+      "runtimeStatus": "disabled",
+      "toolNames": []
+    },
+    {
+      "name": "codex_apps",
+      "pluginId": null,
+      "runtimeStatus": "disabled",
+      "toolNames": []
+    },
+    {
+      "name": "comfy_mcp",
+      "pluginId": null,
+      "runtimeStatus": "disabled",
+      "toolNames": []
+    },
+    {
+      "name": "node_repl",
+      "pluginId": null,
+      "runtimeStatus": "disabled",
+      "toolNames": []
+    }
+  ],
+  "scope": "本实验业务入口完整保留，其他目录只保留身份、状态与工具名，不公开无关 Schema。"
+}

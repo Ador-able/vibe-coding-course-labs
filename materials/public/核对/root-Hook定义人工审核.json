@@ -1,0 +1,76 @@
+{
+  "approvedBy": "root",
+  "codeVersion": "038fec968dd717b522a61669997ca3b3a7aec62e",
+  "approvedHooks": [
+    {
+      "key": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json:post_tool_use:0:0",
+      "currentHash": "sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9",
+      "matcher": "^mcp__novel_lab__save_draft$",
+      "command": "node scripts/check-draft-placeholder.mjs correct"
+    },
+    {
+      "key": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json:post_tool_use:1:0",
+      "currentHash": "sha256:47d05e00f646c060077a856b2d9b4c22541b549cf3b1a68ab43caa85ac180683",
+      "matcher": "^save_draft$",
+      "command": "node scripts/check-draft-placeholder.mjs wrong-matcher"
+    },
+    {
+      "key": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\\hooks.json:post_tool_use:2:0",
+      "currentHash": "sha256:71eae1b9d91338a0d274e0fdcb29b9e054ce6b494d85327a568ca156e23861b4",
+      "matcher": "^mcp__novel_lab__save_draft$",
+      "command": "node scripts/missing-hook-script.mjs"
+    }
+  ],
+  "definitionFiles": [
+    {
+      "path": ".codex/hooks.json",
+      "bytes": 1132,
+      "sha256": "6e4020cbd3c55ebb72178467841a5c31d83d3ee2de037cbc622e33340492cc60"
+    },
+    {
+      "path": "scripts/check-draft-placeholder.mjs",
+      "bytes": 2035,
+      "sha256": "a91808f018d43f6ea3afda1036237d16f11fb0724200e197dd463f876a63b069"
+    },
+    {
+      "path": "scripts/missing-hook-script.mjs",
+      "bytes": 1363,
+      "sha256": "e7c29d6f9dc809f96d2c8accc167d191b18a97a0bf90023dbf3e6729c74cb362"
+    },
+    {
+      "path": "scripts/hook-runtime.mjs",
+      "bytes": 1136,
+      "sha256": "d5e6e8ddaf291b7208a459ab5999960105b4b9c3ef1ee1d7363d3c9e1d61688a"
+    },
+    {
+      "path": "scripts/observe-hooks.mjs",
+      "bytes": 10172,
+      "sha256": "f0fb83f5597be2a70bc3b25c1690b268d25d3de8c0d42a5143e6aaf72e6d4877"
+    },
+    {
+      "path": "scripts/plugin-runtime.mjs",
+      "bytes": 1621,
+      "sha256": "b2f1649b8823664b2968239499a57280f8fcacd2b844518864958f687a9cca94"
+    },
+    {
+      "path": "prompts/hook-scene.txt",
+      "bytes": 1426,
+      "sha256": "d3eb46b2ae13131b6e36a97e1d725d589ddc1d72c25af2f8bca0e172d7a635e6"
+    },
+    {
+      "path": "src/mcp.ts",
+      "bytes": 6767,
+      "sha256": "44a6e1fe96e6ff0f81f4eff014282e21c8918c6d6398c69c5943f2bc8bd4a109"
+    },
+    {
+      "path": "src/store.ts",
+      "bytes": 11326,
+      "sha256": "38685e9871494f7bfdd91f7a3dfed2330501e55d97cc6e0e0974bab1d58a28c7"
+    }
+  ],
+  "overrides": [
+    "hooks.state={\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-06\\\\lab\\\\.codex\\\\hooks.json:post_tool_use:0:0\"={enabled=true,trusted_hash=\"sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9\"},\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-06\\\\lab\\\\.codex\\\\hooks.json:post_tool_use:1:0\"={enabled=true,trusted_hash=\"sha256:47d05e00f646c060077a856b2d9b4c22541b549cf3b1a68ab43caa85ac180683\"},\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-06\\\\lab\\\\.codex\\\\hooks.json:post_tool_use:2:0\"={enabled=true,trusted_hash=\"sha256:71eae1b9d91338a0d274e0fdcb29b9e054ce6b494d85327a568ca156e23861b4\"}}"
+  ],
+  "scope": "仅本实验目录、三个已逐文件审核的项目Hook、本进程SessionFlags和一次自然任务；不写全局信任/安装，不使用bypass。",
+  "review": "完整脚本、实际目录、固定canonical名称与无matcher alias、原始MCP响应序列化、Post输入/额外developer上下文、并发和退出1非阻断调用链已核读。匹配不到和缺失脚本都保留真实结果；不推断文学提质因果。"
+}

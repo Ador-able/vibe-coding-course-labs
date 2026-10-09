@@ -1,1366 +1,1296 @@
 {
   "files": [
     {
-      "path": "证据/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/input.json",
-      "bytes": 2435,
-      "sha256": "9ce9b6cf12897b59eaead3bf3b7e8523826e0139c91568cf40364367d1018b64",
+      "path": "纯目录/hook-preflight-01/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/input.json"
+        "path": "lab/runs/hook-preflight-01/hooks.json"
       }
     },
     {
-      "path": "证据/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/before.json",
-      "bytes": 1834,
-      "sha256": "83f2086375e1fb57569fd1cf8867f224cd286a58a1f5a98f9b0dce424f4a2155",
+      "path": "纯目录/hook-preflight-01/configuration.json",
+      "bytes": 1128,
+      "sha256": "4df8c30413738623126e21ef744b94b8f0c04526fce88d1a4bd7dee6f4c77d06",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/before.json"
+        "path": "lab/runs/hook-preflight-01/configuration.json"
       }
     },
     {
-      "path": "证据/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/after.json",
-      "bytes": 13637,
-      "sha256": "e8e5d16bbb4c897b72d60b662fe788e713f1265857bd5e1f93a27bbf06d8bc69",
+      "path": "纯目录/hook-preflight-01/stderr.txt",
+      "bytes": 3009,
+      "sha256": "fa49049d4586464cca40b0660d547ee2847c70745d1f0d06f39c7c37768c7c23",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/after.json"
+        "path": "lab/runs/hook-preflight-01/stderr.txt"
       }
     },
     {
-      "path": "证据/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/events.jsonl",
-      "bytes": 59256,
-      "sha256": "349f1821ea793540e3731a90c752ffdc8c842ab8b4e874cc6ea576adf5d9f20b",
+      "path": "纯目录/hook-preflight-01/report.json",
+      "bytes": 19890,
+      "sha256": "1e604f4cf4df145321790d19180138b6fb86d2d022be65e05c2a7f77339ed646",
       "origin": {
         "type": "公开投影",
-        "originalSha256": "3584bff1382dc4ee345c92b813f48ba15fa6cd4667fa73c9c3c973d221e2f863",
-        "originalEvents": 28,
-        "omitted": [
-          {
-            "eventType": "item.started",
-            "itemId": "item_1",
-            "status": "in_progress",
-            "characters": 0,
-            "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-          },
-          {
-            "eventType": "item.completed",
-            "itemId": "item_1",
-            "status": "completed",
-            "characters": 914,
-            "sha256": "7dc3fc338dcd0fa3a99488999d0eb288231a6e1685e15b887e7b62ee29701c92"
-          }
-        ]
+        "originalSha256": "0798f42d7c00c4e382654db448e99f4e2eafe274d98fe5496505c03a7f79c919",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
       }
     },
     {
-      "path": "证据/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/final-response.txt",
-      "bytes": 712,
-      "sha256": "6e3cbf84eb63c2a67d3131408b535a1e714b1318e8ca11f704804a95a31930b9",
+      "path": "纯目录/hook-preflight-01/catalog.json",
+      "bytes": 373,
+      "sha256": "3a241c949843c18c073f0c69e41dadf9a798ec96b27140fa4a0f5362833c0c8a",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "a9dc5c3160a1dc38facad66101dba64627787f35fe25d98d0fd3a559dc86bf23",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-01/mcp-status.json",
+      "bytes": 18628,
+      "sha256": "db1052bbe3c85092697c95bf21a8d36874794205bd7996c00f7ca00acd568be2",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "55b86b90558b5a25e54c2438d0593adaecf042ad93eb58b5a2050191e8b516f3",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-01/protocol.json",
+      "bytes": 38031,
+      "sha256": "c7a24dda88515c1d939b8fe20245aff6211a7fb21e6ab21e9e89165452f29dae",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "e43f081312fdb15356a48ec3a3ab5305e2dbd8b43182ff7d24d0f61851f1c189",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-02/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/final-response.txt"
+        "path": "lab/runs/hook-preflight-02/hooks.json"
       }
     },
     {
-      "path": "证据/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/report.json",
-      "bytes": 1365,
-      "sha256": "c57f198f3a3a84a2c913606c72f27e63ce2e8d9c652e4e2dcf5a0944f18469d3",
+      "path": "纯目录/hook-preflight-02/configuration.json",
+      "bytes": 7692,
+      "sha256": "b4c4cdaaad594d4b55ebbb9eec1488ef261f3d1a0b938e1937d24ef2ebc26ec4",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/report.json"
+        "path": "lab/runs/hook-preflight-02/configuration.json"
       }
     },
     {
-      "path": "证据/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/archive-correction/archive.json",
-      "bytes": 3204,
-      "sha256": "732385a4d4fa2f36bd014d2dd0b420dcb8f80741f0c14cc8e63aeae678204297",
+      "path": "纯目录/hook-preflight-02/stderr.txt",
+      "bytes": 1959,
+      "sha256": "5e953247db88eb74185f8c7ca6a8a65362c04f584f9bc9656a28d5d0ffd617cd",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/cc25b4cc-07a1-4442-ae67-65e51ae7bae4/archive-correction/archive.json"
+        "path": "lab/runs/hook-preflight-02/stderr.txt"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/input.json",
-      "bytes": 11116,
-      "sha256": "d2416eb3bbede400bde827d90398e1268f521a69e78099b8ec0a789403e57eb5",
+      "path": "纯目录/hook-preflight-02/report.json",
+      "bytes": 8845,
+      "sha256": "9c7b34207a4c238018c51a5b44a86656615995a6e8f9d1bd66bcb756c848cbbf",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "63ade3281de147ea567b877da44bc7a7de91ddad70a7e2981038a061273075fc",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-02/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-02/mcp-status.json",
+      "bytes": 792,
+      "sha256": "706a08fd88f1786a72d5aefebcea94cac7bd996c9e7020c8104e35066ff622e1",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "22131745b2ec4a694d9164c20a177ce36c0dd9a33c3f2a16b05d65d597a8dea2",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-02/protocol.json",
+      "bytes": 19917,
+      "sha256": "d1580390c4f867a37f01e393b9c3018d0c83e488f40f50ad00a0ba6df37b5ef4",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ef634d8f0a2ec5781c0ec69614b9f2cad2a7f7361fe6c4851a302fc9ee4a9254",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-03-native/hooks.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/input.json"
+        "path": "lab/runs/hook-preflight-03-native/hooks.json"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/before.json",
-      "bytes": 1834,
-      "sha256": "83f2086375e1fb57569fd1cf8867f224cd286a58a1f5a98f9b0dce424f4a2155",
+      "path": "纯目录/hook-preflight-03-native/configuration.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/before.json"
+        "path": "lab/runs/hook-preflight-03-native/configuration.json"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/after.json",
-      "bytes": 8964,
-      "sha256": "722b2ae724bcedf12cf7fe87f9f9b5ebb61bc2949ac520e1880bdc5d2177a187",
+      "path": "纯目录/hook-preflight-03-native/stderr.txt",
+      "bytes": 745,
+      "sha256": "83b381c31838fcdcb7241cbe7be7b5a8fa4be1f7b1cfe15a87039f120d23e2a3",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/after.json"
+        "path": "lab/runs/hook-preflight-03-native/stderr.txt"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/events.jsonl",
-      "bytes": 33189,
-      "sha256": "fce82e775b46262273ab24faeb0559d98edcf1d60372d507f5c0aacd9c388a34",
+      "path": "纯目录/hook-preflight-03-native/report.json",
+      "bytes": 6882,
+      "sha256": "24e47e74799cab00299289f803b00a122cc775a6ecdf3bb71396d0c35c65f323",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "396dbc529b8aa730d4b10d7b65c0e9881fb0d3a47921de5ed21f6018596d79d0",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-03-native/catalog.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-03-native/mcp-status.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-03-native/protocol.json",
+      "bytes": 307,
+      "sha256": "90766a000685722237182afa30d16c7465ea7e820a2de1f602ab4a9874253f8f",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "90766a000685722237182afa30d16c7465ea7e820a2de1f602ab4a9874253f8f",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-04-native/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/events.jsonl"
+        "path": "lab/runs/hook-preflight-04-native/hooks.json"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/final-response.txt",
-      "bytes": 706,
-      "sha256": "f025f3ca34cc8d4638c57009967b4f6a2eb26535369731c2362f67b56b31a355",
+      "path": "纯目录/hook-preflight-04-native/configuration.json",
+      "bytes": 1128,
+      "sha256": "4df8c30413738623126e21ef744b94b8f0c04526fce88d1a4bd7dee6f4c77d06",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/final-response.txt"
+        "path": "lab/runs/hook-preflight-04-native/configuration.json"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/report.json",
-      "bytes": 929,
-      "sha256": "59c16ae4d9113a5fe2b5e384ea474b1aeefba89b995578e443ddc7b75cb06338",
+      "path": "纯目录/hook-preflight-04-native/stderr.txt",
+      "bytes": 2414,
+      "sha256": "c1affaf2318c17d16e3a6f2c30789f7a2e8032b894dba0ba4873a13a49b57a20",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/report.json"
+        "path": "lab/runs/hook-preflight-04-native/stderr.txt"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/archive.json",
-      "bytes": 3204,
-      "sha256": "f3b0cc7fe283f478756bbd46a785c0c5b9a35d7f3c58d8c44e9ed4d10f80b4f8",
+      "path": "纯目录/hook-preflight-04-native/report.json",
+      "bytes": 23478,
+      "sha256": "d5bf238bc9218f0b02ad94265389608ab3533998ad096dc016cee63f5582c44f",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "bb6f00b5271472ce26224896e341ebda50f7cbce74750268f87c3d3f46f0a811",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-04-native/catalog.json",
+      "bytes": 373,
+      "sha256": "dc6f831dee5ba802e4dd13f9e8b5b98756f58e50bd3032b8d624dccfcd9f58b8",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "7d81aec094bcf6b677b074917597cc09da9f8659ef33755199823926ca02ab68",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-04-native/mcp-status.json",
+      "bytes": 21351,
+      "sha256": "646ce756496c52e3f07d42b345834788c8269afff5e50f75f396fe500301aeaf",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "737fae851ff0ba92ff71ec687645f972161b399a5dc4bc8e6472ecc5059b2535",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-04-native/protocol.json",
+      "bytes": 38622,
+      "sha256": "bdc4ea6dae80550bb0b35efaa86ad14ed5e4b93dcbf6af909bd6ac9e55544411",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "501333839e23a2907b24b81ea296c0a18f56db03323c804d3b69d97642a9f592",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-05-native/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/archive.json"
+        "path": "lab/runs/hook-preflight-05-native/hooks.json"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/人工入口完整章节.json",
-      "bytes": 3411,
-      "sha256": "b5b946541002570b84e641eb77e1e06a627a26dec0f0b37494b104b1d8732e53",
+      "path": "纯目录/hook-preflight-05-native/configuration.json",
+      "bytes": 5134,
+      "sha256": "b288f01bcd2e116f84a9f3b40c82917e07b39b5c851563cb2cf4df0fbc44e8c7",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/人工入口完整章节.json"
+        "path": "lab/runs/hook-preflight-05-native/configuration.json"
       }
     },
     {
-      "path": "证据/6369f475-eb69-4b00-946a-90009b98f8bf/作者独立核对.json",
-      "bytes": 813,
-      "sha256": "3d54c6fcdf435424fc8f12f0a5881a8e442ab0989363b865af9afbfea11f6d72",
+      "path": "纯目录/hook-preflight-05-native/stderr.txt",
+      "bytes": 2010,
+      "sha256": "16099184cf929f2acad03489169607455ad4d588c86c6976b50bd840f107a2a2",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/6369f475-eb69-4b00-946a-90009b98f8bf/作者独立核对.json"
+        "path": "lab/runs/hook-preflight-05-native/stderr.txt"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/request.json",
-      "bytes": 633,
-      "sha256": "13c90b650c71cb0548ccc605ee056ab03503c7b400c9715532c870de264a3e8e",
+      "path": "纯目录/hook-preflight-05-native/report.json",
+      "bytes": 27039,
+      "sha256": "ae8cdaa01514f9cc652a646f953c22e6caea2f642a2291511111ed2f3fe585b4",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "cbc7d0ba68c116c62419258e3921a83003a1981adc69408d30e838b1ac246f38",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-05-native/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-05-native/mcp-status.json",
+      "bytes": 21351,
+      "sha256": "6a293837f1627d4195f6bdd91a672ecb76e00060f07b0ecfc5de0001c25a3669",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "960b196624ccf88864104747e69752fc357796e5aa430a9c840c18de3a34e0de",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-05-native/protocol.json",
+      "bytes": 42864,
+      "sha256": "c89c1aee8ab56bd8eb6f084a9b3904a329efef6100e5ca1112573ed2fac2bb0c",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "3d54450645ee0aed6e090afdabfce0b7cc16192e0dd4973a5106765afc285b03",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-06-definitions/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/request.json"
+        "path": "lab/runs/hook-preflight-06-definitions/hooks.json"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/input.json",
-      "bytes": 3777,
-      "sha256": "07da3f9d8ce1fdbb7399b45fa2cbe527a95664e1939794eeb52dc9f7e2b4db31",
+      "path": "纯目录/hook-preflight-06-definitions/configuration.json",
+      "bytes": 5134,
+      "sha256": "b288f01bcd2e116f84a9f3b40c82917e07b39b5c851563cb2cf4df0fbc44e8c7",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/input.json"
+        "path": "lab/runs/hook-preflight-06-definitions/configuration.json"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/before.json",
-      "bytes": 1834,
-      "sha256": "83f2086375e1fb57569fd1cf8867f224cd286a58a1f5a98f9b0dce424f4a2155",
+      "path": "纯目录/hook-preflight-06-definitions/stderr.txt",
+      "bytes": 2010,
+      "sha256": "5e46a50439308a6f614b64c326d7c66f13fe2d2f0b0ea8ca7c40e91959b734d5",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/before.json"
+        "path": "lab/runs/hook-preflight-06-definitions/stderr.txt"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/after.json",
-      "bytes": 1834,
-      "sha256": "83f2086375e1fb57569fd1cf8867f224cd286a58a1f5a98f9b0dce424f4a2155",
+      "path": "纯目录/hook-preflight-06-definitions/report.json",
+      "bytes": 27039,
+      "sha256": "f2f4a0fc3d4e4439d06f00a9a39dbf099f6c15619d7065d01650d7e2a30b5122",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "8e44c099428b1b8c1b3d6e8e016e4b3a04f6b526317a88234cd4774366584fe9",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-06-definitions/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-06-definitions/mcp-status.json",
+      "bytes": 21351,
+      "sha256": "db8e1a322ee19748bb0a1019e6c0f2608d9607ff6c3753a714aeb908ce9391df",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "7ef7ffa8564c02e89c97ba5a32100de385c2bb53ca8e1b5e5600399edc75d62a",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-06-definitions/protocol.json",
+      "bytes": 42864,
+      "sha256": "39346ded03017028a20262d4400bf7e6ac492a7bffcfc91ff7f6fa3c2d8ece84",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "eb7d5bd28ba0b3df5fe8e70bd8efb7a1c9dd52c87d354fb208ebdf8928cc685b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-07-directory/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/after.json"
+        "path": "lab/runs/hook-preflight-07-directory/hooks.json"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/events.jsonl",
-      "bytes": 767,
-      "sha256": "bf7a2728c789ea389616154dbd495c2954251c3b92c77c5e38992ca7c5172e4d",
+      "path": "纯目录/hook-preflight-07-directory/configuration.json",
+      "bytes": 5133,
+      "sha256": "0c0879372339da6fb3f71bbfccc414e5862a14d941f5861ba6efa26b32a1fbfc",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/events.jsonl"
+        "path": "lab/runs/hook-preflight-07-directory/configuration.json"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/stdout.txt",
-      "bytes": 768,
-      "sha256": "49af3c6b98dbb7eadc49dfda7e025b70a5d4420c20ca0b3a9af3991bdc559e5a",
+      "path": "纯目录/hook-preflight-07-directory/stderr.txt",
+      "bytes": 1809,
+      "sha256": "2e250e80040e1ca96f6c89e7c78a9756d94ec3dff4d6034c4cc8a2da18d825d9",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/stdout.txt"
+        "path": "lab/runs/hook-preflight-07-directory/stderr.txt"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/stderr.txt",
+      "path": "纯目录/hook-preflight-07-directory/report.json",
+      "bytes": 6926,
+      "sha256": "c2a9f4e66a80aa29764db67bf00b7c5946e4ca4cfa38882af5ea7128c67c1338",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "128c25d98c59d33991260258135f8204dacdc41a6449a271646512c6ff275d26",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-07-directory/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-07-directory/mcp-status.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-07-directory/protocol.json",
+      "bytes": 10357,
+      "sha256": "c5e76bdba5031b99a5dbf657745c9491250bd6e027a3d4d26e53d5721e24d928",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "64feb4d1a59c390647b3453403a7adae95f96f085063b3235a284f2f4b61116f",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-08-layers/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-08-layers/hooks.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-08-layers/configuration.json",
+      "bytes": 6685,
+      "sha256": "4b83a215f504ce7ebdc69d7df5d989afec13042c423c2427352df29b82716a5e",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-08-layers/configuration.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-08-layers/stderr.txt",
+      "bytes": 1809,
+      "sha256": "b809998560083966fec13a86f339b9dd502e8be26b33be45ba284b5dacb77c4d",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-08-layers/stderr.txt"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-08-layers/report.json",
+      "bytes": 6926,
+      "sha256": "c2a9f4e66a80aa29764db67bf00b7c5946e4ca4cfa38882af5ea7128c67c1338",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "128c25d98c59d33991260258135f8204dacdc41a6449a271646512c6ff275d26",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-08-layers/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-08-layers/mcp-status.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-08-layers/protocol.json",
+      "bytes": 12319,
+      "sha256": "b0fc7bb5276e06cd971423a2a3396c3c5d49e8e7f694548d8e38a09743e54a18",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "1891610b967dbfbb006dcec8becfae413b1291bba78dd9ef78cd24a0d2ddb9e2",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-09-discovered/hooks.json",
+      "bytes": 3214,
+      "sha256": "9fef5eb751e0020581cce87e0c62ff50cc9d5cd69747e984191e213ab081c71d",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-09-discovered/hooks.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-09-discovered/configuration.json",
+      "bytes": 6608,
+      "sha256": "7ee16095a6202a02bc5f4ac3e64683ecfb6cdcdcd93159bc48f770e4f8797dff",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-09-discovered/configuration.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-09-discovered/stderr.txt",
+      "bytes": 808,
+      "sha256": "64eed14bde211695436ff1a536a629cc17e4a27f6db60ac7f83892c959909a88",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-09-discovered/stderr.txt"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-09-discovered/report.json",
+      "bytes": 6930,
+      "sha256": "a325f870b6b882a9b75efe3fb8a6fc8704ddab4e3d860ff5f7c82fe190cae330",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "27b3c82232bc9b0de5776c9bc0f7886229d32695940a4f9526ebcf57505678fa",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-09-discovered/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-09-discovered/mcp-status.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-09-discovered/protocol.json",
+      "bytes": 14439,
+      "sha256": "1213c68bd8df5cdb9e6a4cadc5f5c0a108d3b38f53aa409547a3911cc949d1d7",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "5cc7f0d85057482862d287ad13662dae7c4ca315d7799f56019300db7a7357a0",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-10-final-definitions/hooks.json",
+      "bytes": 3211,
+      "sha256": "3baeac2f882379190e5f5e942ef18b1d0dd7a07366d5fce1bdc6f5f331795c89",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-10-final-definitions/hooks.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-10-final-definitions/configuration.json",
+      "bytes": 6608,
+      "sha256": "7ee16095a6202a02bc5f4ac3e64683ecfb6cdcdcd93159bc48f770e4f8797dff",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-10-final-definitions/configuration.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-10-final-definitions/stderr.txt",
+      "bytes": 808,
+      "sha256": "dcd09bad652b322445ef09bd3f052b685d82905d01e2ecbbf897d0fd41bfc971",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-10-final-definitions/stderr.txt"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-10-final-definitions/report.json",
+      "bytes": 6930,
+      "sha256": "a325f870b6b882a9b75efe3fb8a6fc8704ddab4e3d860ff5f7c82fe190cae330",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "27b3c82232bc9b0de5776c9bc0f7886229d32695940a4f9526ebcf57505678fa",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-10-final-definitions/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-10-final-definitions/mcp-status.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-10-final-definitions/protocol.json",
+      "bytes": 14436,
+      "sha256": "24cb11b5c74c6f0cbefe9f000996091b0042a587e814fcc1a8f25e6b4d463ee1",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "110c3d40867428b628f45588a69df333fc472cd44f6572157c0fc1703ff6a28a",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-11-final-tools/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-11-final-tools/hooks.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-11-final-tools/configuration.json",
+      "bytes": 6609,
+      "sha256": "a3160a9cdc1009cbc4528f0b67a281e590494b9392d92c2163c58b5d06976894",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-11-final-tools/configuration.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-11-final-tools/stderr.txt",
+      "bytes": 1413,
+      "sha256": "6e3a15905d60c54e61c96f621c71ad05b2876641a7d76d978d13f557885b19e5",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-11-final-tools/stderr.txt"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-11-final-tools/report.json",
+      "bytes": 27069,
+      "sha256": "bd0940b31005a696dd0f49197c691cd5663e77f65d0263dd0b4b6049e9560fe0",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "bc6731a02321bb24f8ce083a8e448d99bd97ddf54f09c42affd1f84e13065406",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-11-final-tools/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-11-final-tools/mcp-status.json",
+      "bytes": 21351,
+      "sha256": "646ce756496c52e3f07d42b345834788c8269afff5e50f75f396fe500301aeaf",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "737fae851ff0ba92ff71ec687645f972161b399a5dc4bc8e6472ecc5059b2535",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-11-final-tools/protocol.json",
+      "bytes": 43649,
+      "sha256": "7874ab8902f7a5757921917fac87d1763882d3d627487a55343126307c2a6ece",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "53cc1868d49b7933cdbddc4d9b915eb478c4c3e3902247a6b76d571cd8075280",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-12-review-definitions/hooks.json",
+      "bytes": 3211,
+      "sha256": "3baeac2f882379190e5f5e942ef18b1d0dd7a07366d5fce1bdc6f5f331795c89",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-12-review-definitions/hooks.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-12-review-definitions/configuration.json",
+      "bytes": 6655,
+      "sha256": "081f33d99907a28de7e94206421915ad16c9402edd9002be1f6e279a9ec1b1b5",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-12-review-definitions/configuration.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-12-review-definitions/stderr.txt",
+      "bytes": 808,
+      "sha256": "3f2d823e2debd87ed35686cf0282ca7536807520a7cd7d09a287df25b1e401b3",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-12-review-definitions/stderr.txt"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-12-review-definitions/report.json",
+      "bytes": 6994,
+      "sha256": "5162a6aac2758461b29ab4eba9ce29a735c4ef8e68be66eef2d501cb73cc1d0a",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "e4668e1df65a346124221c752c49957d1a0e461ade3868021cb3cf5ee4dd9727",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-12-review-definitions/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-12-review-definitions/mcp-status.json",
+      "bytes": 4,
+      "sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-12-review-definitions/protocol.json",
+      "bytes": 14497,
+      "sha256": "55f057d23bb378cfb1a29db7c589f3f849f821fcc99a973d6919f8e0218e351b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "1da2a61d5f108c09cf503bb7f7ec67cbddeae02f85852f8ad19cdb448b00a422",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-13-review-tools/hooks.json",
+      "bytes": 218,
+      "sha256": "c87acad6f51e0e1f3324394062adcc445841f9e08cfbdc2e029a17baf2de11db",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-13-review-tools/hooks.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-13-review-tools/configuration.json",
+      "bytes": 6656,
+      "sha256": "dcfa2507e144f1d1b594d15be81ecb0494b61a92ac68cd7e175b620740e1f600",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-13-review-tools/configuration.json"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-13-review-tools/stderr.txt",
+      "bytes": 1413,
+      "sha256": "5929611439abdfd4c9edbc01022db4a340283d6a9229b4ad2490fcfc518ae5cf",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-preflight-13-review-tools/stderr.txt"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-13-review-tools/report.json",
+      "bytes": 27133,
+      "sha256": "b119f16bbdb353fba1a86ca5bb07b37830362d26488b34383886dd29ea418e0c",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "6d6084952b98cbb83930cb6e1bdc53ec8269a83ae1e0807ddbdf0bce8452c763",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-13-review-tools/catalog.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-13-review-tools/mcp-status.json",
+      "bytes": 21351,
+      "sha256": "9b1f68e183e86a850ed85d12615c9e1bd4c51b21fab364b3c0750c02432566ab",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "bb24fd59cd2c38da9d4ce62adda435d99c1e3473a360cb791a26ea6cc475202b",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "纯目录/hook-preflight-13-review-tools/protocol.json",
+      "bytes": 43710,
+      "sha256": "c92a171cabadeae15230be789d7d5b83ecd80fdefe8c3564baf742c40c1bfea7",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "e55490901383a0d0ca0b287eba26801bcf6f80019211c90eaffaac72f9e36220",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/input.json",
+      "bytes": 13636,
+      "sha256": "6acaefdd739958c9cacc8d58ff32ca9660e849becd448e99a1fa6876a62872de",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/input.json"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/before.json",
+      "bytes": 1822,
+      "sha256": "abb903d2b976137cad405efc1db5b37292c5c3ded11bdd0024f947031b53aa68",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/before.json"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/after.json",
+      "bytes": 4316,
+      "sha256": "7ef422e82c9285bb014c2ed32d96fea7ba776f9291a5421dbea4222ddc2c8d3a",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/after.json"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/hooks.json",
+      "bytes": 3205,
+      "sha256": "7d960ef85c2006f7c33e44b3a89a62c2bfb953d7536cadee6058a19cacf594bb",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/hooks.json"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/thread.json",
+      "bytes": 20864,
+      "sha256": "9c93221d605ee681faeba3f3333ce1247a398088f395dac69631a30246b2399f",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/thread.json"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/stderr.txt",
+      "bytes": 1428,
+      "sha256": "44ff4467f52e937874f75a161ffeb207f2197bd292837d5264986f6bf1009b41",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/stderr.txt"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/final-response.txt",
+      "bytes": 910,
+      "sha256": "6cc9bcc5375274472749ea341a9218f760d4d6ce11220982acf41fe3cfadb529",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/final-response.txt"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/人工入口完整章节.json",
+      "bytes": 815,
+      "sha256": "e05b406fd7dfd81f1b9688d4319303ecec768f0b7d33aad551bb8b255fa2edf0",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/人工入口完整章节.json"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/人工入口stderr.txt",
+      "bytes": 169,
+      "sha256": "691987a54e7a672f0a8984828ba7378e1f5913b9f57eb6b2db6a66b4ae4617e1",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/人工入口stderr.txt"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/report.json",
+      "bytes": 1648,
+      "sha256": "fc3233acd19ed901f0072d7da8e02c11c80a0adf6ebb1bdcb9e6636a96752cf9",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/report.json"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/skills.json",
+      "bytes": 373,
+      "sha256": "99cdd9ccc56ad108442a4d0fd3049a90974014526286cd1d64173cee69cb1cca",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ba552bfa408f578ce839898e3fce8e6f9cc9e3448778c8d4583b08ab17323453",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/mcp-status.json",
+      "bytes": 21351,
+      "sha256": "4bbd2eeac19da49f906dd749cace9f5384df670a91d864b7169581118c5e492b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "0d81c33504263b98ef550ecd5a831c07c05ae505db688fd7f7d748594d3df011",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/notifications.json",
+      "bytes": 171536,
+      "sha256": "e59696032f74b561aa6086eb67d1c55ca5b9e51cee9534a038531a2e1701a64b",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "ca63f0293308b009105bcc89a828a43a03f52ee4cac23c3bd656692719c55400",
+        "scope": "仅省略无关方法描述、服务 Schema 或账号状态，保留本实验完整入口与事件。"
+      }
+    },
+    {
+      "path": "证据/hook-task-497edb80-756b-4f6d-b698-9711b99e595f/protocol.jsonl",
+      "bytes": 189274,
+      "sha256": "0be7f5d3523593b6fd67657ce138d7c6a8f27c7cfa6e2f80482826b385904947",
+      "origin": {
+        "type": "公开投影",
+        "originalSha256": "f459f701946893a995dfe1ca18aafb7e889a2271f2f197e1e6e45c7e7a80ec1c",
+        "messages": 462,
+        "scope": "原始采集的 config/read 已只记录实验字段；本次再省略无关账号状态、方法描述与服务 Schema。不称全部协议原字节公开。"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdin.json",
+      "bytes": 2910,
+      "sha256": "f1aea597fa04a74bfcfcf640460739aa725107f0d2fa6bade50a808199977510",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdin.json"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdout.txt",
+      "bytes": 324,
+      "sha256": "2d5bc65c3826a5918e0cc9d9bbab32bfb55072cec4244a3b412ec6aad9e90b0c",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdout.txt"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/检查对象.json",
+      "bytes": 942,
+      "sha256": "5e0c3340a092aff00b908eaf9c69df93bf4dfb6d663663b380287c823251c38a",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/检查对象.json"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/进程结果.json",
+      "bytes": 117,
+      "sha256": "afbce0f9bbd3daeece349c40955583c99285e1d346fed18bd54442274fd8a039",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/进程结果.json"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdin.json",
+      "bytes": 2172,
+      "sha256": "b1c2730219e04df368fb911f811be9566fdf2c547463ae576d63c5a3c1f56fad",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdin.json"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdout.txt",
+      "bytes": 404,
+      "sha256": "0fc9ddb76468cab6539eeaf51f2e37248438d25686596fbad18ab660eebd6037",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdout.txt"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/检查对象.json",
+      "bytes": 733,
+      "sha256": "ea6473cd5b22890da14e8fb335179587446f82881e1af9576e546b2be9592f26",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/检查对象.json"
+      }
+    },
+    {
+      "path": "Hook输入输出/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/进程结果.json",
+      "bytes": 117,
+      "sha256": "64a0f68cd4e39e039d4a13bdcf3eb78def9e23148c316d083d32227078711e9a",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/correct-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/进程结果.json"
+      }
+    },
+    {
+      "path": "Hook输入输出/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stderr.txt",
+      "bytes": 850,
+      "sha256": "32b26e79beb6b06242c26c3b3759f8fc8629e9fbed4cee37a203349b7f2933d9",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stderr.txt"
+      }
+    },
+    {
+      "path": "Hook输入输出/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdin.json",
+      "bytes": 2910,
+      "sha256": "f1aea597fa04a74bfcfcf640460739aa725107f0d2fa6bade50a808199977510",
+      "origin": {
+        "type": "原文件字节",
+        "path": "lab/runs/hooks/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdin.json"
+      }
+    },
+    {
+      "path": "Hook输入输出/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdout.txt",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/stderr.txt"
+        "path": "lab/runs/hooks/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/stdout.txt"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/exit.json",
-      "bytes": 19,
-      "sha256": "af5af69e54e414ecb1eecff2074ce8ea0a7ca156f5992c192601d4dc8747c654",
+      "path": "Hook输入输出/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/进程结果.json",
+      "bytes": 246,
+      "sha256": "2625e590cdd2b0a9a229093b0e1c15f01b488b38a1ee11af9681c33da0ea2c84",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/exit.json"
+        "path": "lab/runs/hooks/missing-exec-4199a1f3-67e9-4899-8d2d-b3d33fdde119/进程结果.json"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/report.json",
-      "bytes": 410,
-      "sha256": "8052570f7f64f94c494692ffc650a3f1b8826a9d20593c96d577763e68e83604",
+      "path": "Hook输入输出/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stderr.txt",
+      "bytes": 850,
+      "sha256": "32b26e79beb6b06242c26c3b3759f8fc8629e9fbed4cee37a203349b7f2933d9",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/report.json"
+        "path": "lab/runs/hooks/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stderr.txt"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session.json",
-      "bytes": 4128,
-      "sha256": "2c7c63f6ed14174c9ea02e61596569d54b8d17c81a02ab1b45abe2e30a7b5c08",
+      "path": "Hook输入输出/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdin.json",
+      "bytes": 2172,
+      "sha256": "b1c2730219e04df368fb911f811be9566fdf2c547463ae576d63c5a3c1f56fad",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session.json"
+        "path": "lab/runs/hooks/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdin.json"
       }
     },
     {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export-stderr.txt",
-      "bytes": 50,
-      "sha256": "9c5807d245f5de6cc957e6090809a998d463beb313a3a31155c52b4e057b1c74",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export-stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/input.json",
-      "bytes": 3431,
-      "sha256": "319abf406f4cc9bd3731fa941907ab3795637910a80c35b3ca458210f8ba6442",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/input.json"
-      }
-    },
-    {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/exit.json",
-      "bytes": 19,
-      "sha256": "7449fd72551048d79305cb6d97e56f952ddfa0d6c2dd76b4a30d8b7e85a0d337",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/exit.json"
-      }
-    },
-    {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/stdout.txt",
-      "bytes": 4128,
-      "sha256": "2c7c63f6ed14174c9ea02e61596569d54b8d17c81a02ab1b45abe2e30a7b5c08",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/stdout.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/stderr.txt",
-      "bytes": 50,
-      "sha256": "9c5807d245f5de6cc957e6090809a998d463beb313a3a31155c52b4e057b1c74",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-ff162b3c-66a2-4fd6-8c43-6d01aaa14581/session-export/stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/request.json",
-      "bytes": 687,
-      "sha256": "8ff0cca05aed8592604810f8ad622b39bfcdc201adc73975f956ebba1aeaeeec",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/request.json"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/input.json",
-      "bytes": 4661,
-      "sha256": "ca819f787f8b04c59a6ea85f067121925c65ec0ba5c7942ef4a818c1add90a4e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/input.json"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/before.json",
-      "bytes": 1834,
-      "sha256": "83f2086375e1fb57569fd1cf8867f224cd286a58a1f5a98f9b0dce424f4a2155",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/before.json"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/after.json",
-      "bytes": 4254,
-      "sha256": "01c5f09cbbf7f2645ce482b4891ea5ec36938cf293ab1c46d15beb8c4834b837",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/after.json"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/events.jsonl",
-      "bytes": 8145,
-      "sha256": "5da5294bf709e84ec16fd494004f135224ec07921d9755b3e04d2c9833049207",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/events.jsonl"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/stdout.txt",
-      "bytes": 8157,
-      "sha256": "531297c722284d38e235a6a93a317ef9ea0baeb5dfe3bf0aff556b6136f0e91b",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/stdout.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/stderr.txt",
+      "path": "Hook输入输出/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdout.txt",
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/stderr.txt"
+        "path": "lab/runs/hooks/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/stdout.txt"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
+      "path": "Hook输入输出/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/进程结果.json",
+      "bytes": 246,
+      "sha256": "e5cd3485991403a667dfd24f46e5ebdc170d3e04cd5d4999ebf4201473308fb9",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/exit.json"
+        "path": "lab/runs/hooks/missing-exec-8f3c9a5b-fecf-4d83-82fa-68b6c94567c7/进程结果.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/report.json",
-      "bytes": 411,
-      "sha256": "f470d801a9511d56e6f5bb9425b90b7911a94ba69267697cbdac11efe0b270df",
+      "path": "核对/实际运行对象核对.json",
+      "bytes": 2154,
+      "sha256": "5deff1ce499868005e696f7609f2b05d548bd574095ca99bf43537d190b8c9a5",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/report.json"
+        "path": "实际运行对象核对.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session.json",
-      "bytes": 15770,
-      "sha256": "891bddc1b84143ceeb5e29bcf61ea7269bc0d24f4693188fa6d5072ec064f7da",
+      "path": "核对/实际全部MCP对象与Hook事件.json",
+      "bytes": 18694,
+      "sha256": "2e77a6c04b9005b5cb78ede4e949987da8e9c630eb50299374602b9cfee7ca92",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session.json"
+        "path": "实际全部MCP对象与Hook事件.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export-stderr.txt",
-      "bytes": 50,
-      "sha256": "22448cdbe38c8f48fc8f3bdb2cb0f8034375cb7cb82e27a09fb836c09ca65f81",
+      "path": "核对/实际反馈对应的developer上下文.json",
+      "bytes": 1247,
+      "sha256": "0a2f07c7643abecf81eaa6f84f685595de09518da94e916b27cc10583b63dc7c",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export-stderr.txt"
+        "path": "实际反馈对应的developer上下文.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/input.json",
-      "bytes": 4318,
-      "sha256": "963a53998b0bb563d7da96a94b81cfa28e4d715da74c267d7f3f5a7fdb8b89e3",
+      "path": "核对/root-真实Hook与两版保存独立核对.json",
+      "bytes": 6302,
+      "sha256": "9525be06a9e1fc1643e28ddfc7f2421206998f4b99f36ecb373f00c942682bae",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/input.json"
+        "path": "root-真实Hook与两版保存独立核对.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
+      "path": "核对/root-Hook定义人工审核.json",
+      "bytes": 4036,
+      "sha256": "7ab517fe341dc615f1b2c0693805ae1e303882a2a85cc04e86fff645ff2e2e54",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/exit.json"
+        "path": "root-Hook定义人工审核.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/stdout.txt",
-      "bytes": 15770,
-      "sha256": "891bddc1b84143ceeb5e29bcf61ea7269bc0d24f4693188fa6d5072ec064f7da",
+      "path": "核对/当次人工审核记录.json",
+      "bytes": 4036,
+      "sha256": "7ab517fe341dc615f1b2c0693805ae1e303882a2a85cc04e86fff645ff2e2e54",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/stdout.txt"
+        "path": "lab/runs/hook-trust-review.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/stderr.txt",
-      "bytes": 50,
-      "sha256": "22448cdbe38c8f48fc8f3bdb2cb0f8034375cb7cb82e27a09fb836c09ca65f81",
+      "path": "证据/初始作品读回.json",
+      "bytes": 924,
+      "sha256": "4b4cf9711317f1ce46c2576e34518e33e357d347ca8f130be3f4659c73255ddf",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/session-export/stderr.txt"
+        "path": "lab/runs/初始作品读回.json"
       }
     },
     {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/人工入口完整章节.json",
-      "bytes": 1106,
-      "sha256": "49ca6daa3cac65906dadb8e3429bc30658bcb26479a368d52c451ffe0d6f8bcf",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/人工入口完整章节.json"
-      }
-    },
-    {
-      "path": "证据/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/作者独立核对.json",
-      "bytes": 1026,
-      "sha256": "df7e7503f369cde710052aacaf428b2b80b2843fb2daefb760f1def80521cbd2",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-46a874e5-4417-4915-9c1e-c0230247a32b/作者独立核对.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/request.json",
-      "bytes": 2227,
-      "sha256": "b105af69aa3bfef0c32af57724b1999c65be4bc04550d9b5d09e518f5a38c6d7",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/request.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/input.json",
-      "bytes": 6171,
-      "sha256": "7cdd9f7f5b7af7b612bdc6c2e8e72323c78b87a2cb28936a0bb8ed7db3733b07",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/input.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/before.json",
-      "bytes": 4254,
-      "sha256": "01c5f09cbbf7f2645ce482b4891ea5ec36938cf293ab1c46d15beb8c4834b837",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/before.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/after.json",
-      "bytes": 5672,
-      "sha256": "2d8749cd5ea04fb7d0d0474a2404292d2de9104fa058dd099a474bda3b8c4eec",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/after.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/events.jsonl",
-      "bytes": 20584,
-      "sha256": "e2ca70ff1603cb6549d0996afc053929fb08d110c371da7c2ff47ecfe8a32fa4",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/events.jsonl"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/stdout.txt",
-      "bytes": 20608,
-      "sha256": "6de138a1e3c38512f73edb0c82b6e684e6a2c2fbeacc01bdac31ffd605e3f1f4",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/stdout.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/exit.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/report.json",
-      "bytes": 411,
-      "sha256": "b03eed72ef45ed3c7a9b7a10ad631c6b1891e25a04c637e8d70f0733d022333c",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/report.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session.json",
-      "bytes": 49709,
-      "sha256": "08f1557875ea57d85ac5a5d104e6412b4557848d668b8f94607dd4ceb702d1e8",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export-stderr.txt",
-      "bytes": 50,
-      "sha256": "22448cdbe38c8f48fc8f3bdb2cb0f8034375cb7cb82e27a09fb836c09ca65f81",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export-stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/input.json",
-      "bytes": 4318,
-      "sha256": "963a53998b0bb563d7da96a94b81cfa28e4d715da74c267d7f3f5a7fdb8b89e3",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/input.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/exit.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/stdout.txt",
-      "bytes": 49709,
-      "sha256": "08f1557875ea57d85ac5a5d104e6412b4557848d668b8f94607dd4ceb702d1e8",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/stdout.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/stderr.txt",
-      "bytes": 50,
-      "sha256": "22448cdbe38c8f48fc8f3bdb2cb0f8034375cb7cb82e27a09fb836c09ca65f81",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/session-export/stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/人工入口完整章节.json",
-      "bytes": 1211,
-      "sha256": "729cb588efb121e6fee3dd30ea2ac40b86695f8537cfdf1d3c5257adf4e5aceb",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/人工入口完整章节.json"
-      }
-    },
-    {
-      "path": "证据/opencode-fc97f770-15ee-47a3-b920-1624b79243be/作者独立核对.json",
-      "bytes": 1193,
-      "sha256": "fe863ad7cd76407eabef471ad18bbf483ac226ab7d034a888870b1bd74909f86",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-fc97f770-15ee-47a3-b920-1624b79243be/作者独立核对.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/request.json",
-      "bytes": 743,
-      "sha256": "768cfb1d38e79a72ce45c6cfdcfa548a74decc861d688547c239f2ee3f45a5d6",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/request.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/input.json",
-      "bytes": 5027,
-      "sha256": "4b6e1eb2cb62dd2eed4c6be4e76b37fe37ec3320978f0139355fbe2155ffe6a6",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/input.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/before.json",
-      "bytes": 1834,
-      "sha256": "83f2086375e1fb57569fd1cf8867f224cd286a58a1f5a98f9b0dce424f4a2155",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/before.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/after.json",
-      "bytes": 5058,
-      "sha256": "4681e1c326cb14e3146d7268cc3d384c940fef5209498c3b25ac93f25be9116a",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/after.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/events.jsonl",
-      "bytes": 28673,
-      "sha256": "a7caf70a9384261f06eaf10d819db9b389dbedf8b2d36167d402fad7a0ed5d0b",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/events.jsonl"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/stdout.txt",
-      "bytes": 28699,
-      "sha256": "a9fac55307f9439d9659abf327e89760a2e0b39d7d227267bf634d25f818e04a",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/stdout.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/exit.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/report.json",
-      "bytes": 411,
-      "sha256": "9e89f070a1c945a36f6ebe7d3534d51daff7730d701be03f77602bec8d9e5622",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/report.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session.json",
-      "bytes": 42288,
-      "sha256": "3a22d0b971a92d09f9354f86ab14c08448ce4a23ab9a3d4cc966c445316bbdfe",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export-stderr.txt",
-      "bytes": 50,
-      "sha256": "ff94233287455323266ca18a36269cadce151b2396ca0b417d1d81eb91074d79",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export-stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/input.json",
-      "bytes": 4685,
-      "sha256": "42659673b262ce54541e9530bcfea5c931eb463ddddf732ca7af10541bb2503c",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/input.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/exit.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/stdout.txt",
-      "bytes": 42288,
-      "sha256": "3a22d0b971a92d09f9354f86ab14c08448ce4a23ab9a3d4cc966c445316bbdfe",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/stdout.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/stderr.txt",
-      "bytes": 50,
-      "sha256": "ff94233287455323266ca18a36269cadce151b2396ca0b417d1d81eb91074d79",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/session-export/stderr.txt"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/人工入口完整章节.json",
-      "bytes": 1508,
-      "sha256": "312efa06b1ec4380bd4d44d72df60c446edad7e3056771c53e43dd9c470b05cd",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/人工入口完整章节.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/作者独立核对.json",
-      "bytes": 1888,
-      "sha256": "aa05f3a4045cbaa435a36da395fe6ba3f79adcac496ad2b23aee4375ab5f6048",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/作者独立核对.json"
-      }
-    },
-    {
-      "path": "证据/opencode-88736be9-1713-4341-aa1b-4791bb82782b/精确配置差异.json",
-      "bytes": 2078,
-      "sha256": "629bba8ec387a33901e199f7a3687b169fb40bd15d7857a7b08276ed8997130e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-88736be9-1713-4341-aa1b-4791bb82782b/精确配置差异.json"
-      }
-    },
-    {
-      "path": "核对/root-两宿主原始运行独立核对.json",
-      "bytes": 1617,
-      "sha256": "55aeadd2fb9bba21ca5d93337bcb1a090c9d23dfdc8354bee40dd25f4cb89f29",
-      "origin": {
-        "type": "原文件字节",
-        "path": "root-两宿主原始运行独立核对.json"
-      }
-    },
-    {
-      "path": "核对/root-后续两轮原始运行独立核对.json",
-      "bytes": 12985,
-      "sha256": "050b61357f9ff190a018bdd26db35993eed2f4492b9b46e3b24d4393c82ef132",
-      "origin": {
-        "type": "原文件字节",
-        "path": "root-后续两轮原始运行独立核对.json"
-      }
-    },
-    {
-      "path": "核对/最终安装九文件核对.json",
-      "bytes": 1602,
-      "sha256": "7aafe48ed15cd973acab91573972c5616f9ec610c7ab0ae2e22da334d27f98bb",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/最终安装九文件核对.json"
-      }
-    },
-    {
-      "path": "核对/最终目录移除后配置摘要.json",
-      "bytes": 350,
-      "sha256": "123048c51f1e07878b80b7f543fcea17b2ff5704f636ffa7c0c70cde6a7ad0a6",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/最终目录移除后配置摘要.json"
-      }
-    },
-    {
-      "path": "核对/交付入口/安装.json",
-      "bytes": 331,
-      "sha256": "a12db6ba31254e86d69165afc3b1287ae71c2a401d588dbb122d0be00da1af8e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/安装.json"
-      }
-    },
-    {
-      "path": "核对/交付入口/移除.json",
-      "bytes": 157,
-      "sha256": "9c85b92bf4e5a76bb52c5761a81edd93732398af2d24c752a34f62cbd559a515",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/移除.json"
-      }
-    },
-    {
-      "path": "核对/交付入口/核查.json",
-      "bytes": 1361,
-      "sha256": "e739b425762c0d6756ee4b9cc28b6d10ce14c068cb913087dd99c7dcb00736dd",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/核查.json"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录初查/catalog.json",
-      "bytes": 1614,
-      "sha256": "d6328d5146e40229f745d350d2973dd98018ddbd4a5fd684de718eed9f20d5c1",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "084ff5da02b335dd20c818953366330e9e7d824df8e1d8b94002239937e62fa8",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录初查/mcp-status.json",
-      "bytes": 22227,
-      "sha256": "36a68da92555e5ed97ae288f5375f099e4e03b9fe729078d2735959560443e3a",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "ab593aaa40f6f356f050145a025562cb9f2c6359d25a6ceac75dd117903fe3fe",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录初查/report.json",
-      "bytes": 13752,
-      "sha256": "4de7ba0c7c7f73ce64a469e14cadfb68baed94560a60d1a679856e7f507ceb02",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "bc6d4f37237bab2c9ee8d014c9630e2ef3590ea79100efffc697db6fd07173e8",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录初查/configuration.json",
-      "bytes": 5114,
-      "sha256": "a8d4eb6c69972f7c7ddc47685f61093a1d1fafa411e5fe06f73083a8ba41b8ee",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/目录初查/configuration.json"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录初查/stderr.txt",
-      "bytes": 2349,
-      "sha256": "93032ea8ed89fe22b9f3d012f4874fd3699b7b3da50cee4ab04c03babf0db0d0",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/目录初查/stderr.txt"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录初查/protocol.json",
-      "bytes": 45975,
-      "sha256": "fad56f765a3bf962704df4b953a35df31fab44240b49d994fb348504dbcd55a9",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "8cdf96b7bff5f378ca47104cf529a7563b1874965381702add9735d4b90e7c83",
-        "omission": "Skill 目录与其他工具 Schema 按上述规则投影；事件、请求、顺序及本插件对象保留。config/read 在采集时本来就只记录实验涉及字段。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录复查/catalog.json",
-      "bytes": 1614,
-      "sha256": "62c3604c7397168bad3a21896429a979c093708647ffb2ea9894170e48053a07",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "cb415bc8a48ceddae71653cb3e95098e339cda915afd0c14b40b6730763201cc",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录复查/mcp-status.json",
-      "bytes": 21536,
-      "sha256": "5a3c7d8fe5eb6e8ed75a49177106a8ebd6c120ab34db8857f90d40e9f8ea077a",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "064499097607d869251c5fd9ad485c943f7a63293eaaa646ca11ca141c3aaeaa",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录复查/report.json",
-      "bytes": 18379,
-      "sha256": "0ae21274407a7fd1fdcc93eda4ee2acfd303a3ab565516495e8f3543c86e1175",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "94769f73548bf5299b3b8508803fed40789ba72bcad6432abc34e919650e8ccd",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录复查/configuration.json",
-      "bytes": 7672,
-      "sha256": "939cb71411603d57aa0fe171ce9fc0ad1f3f9f395351a6d3c758f872e4ff2da5",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/目录复查/configuration.json"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录复查/stderr.txt",
-      "bytes": 2053,
-      "sha256": "7f8bfb25776ae600c6badbae7ae5325ba4eebfb5e86d8cfedf349a10fbb868b1",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/目录复查/stderr.txt"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录复查/protocol.json",
-      "bytes": 45828,
-      "sha256": "069bca1117236a6e77b5ffeeb72be41380510d507e0e539114f335da829ad17a",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "0b54cfbcd136764ea4a2b7ab590b0062d6b863a36bbb4acdc8ddce32b2ffe32e",
-        "omission": "Skill 目录与其他工具 Schema 按上述规则投影；事件、请求、顺序及本插件对象保留。config/read 在采集时本来就只记录实验涉及字段。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录确认/catalog.json",
-      "bytes": 1614,
-      "sha256": "62c3604c7397168bad3a21896429a979c093708647ffb2ea9894170e48053a07",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "cb415bc8a48ceddae71653cb3e95098e339cda915afd0c14b40b6730763201cc",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录确认/mcp-status.json",
-      "bytes": 21536,
-      "sha256": "d9ab3c261a6dfdea047d0577a4580ea1ac1f0e499d8b13bf44dd676a55db43c7",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "329e22e1bdcf23cfc819e24218b9fd88ac5bff37a600015bd0d25fc7f6c8195c",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录确认/report.json",
-      "bytes": 13347,
-      "sha256": "70d452a2fe68d20b537bb8c71bfcffb3392f52ad00a4051602f8d95ed70d29c6",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "ca093aaed35260157662f29585a9e4b044750f7dc12dfacdbb204b368b505d71",
-        "omission": "只保留本课程插件完整对象与其他目录数量/状态；本机原文件可由主编核对。"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录确认/configuration.json",
-      "bytes": 5114,
-      "sha256": "a8d4eb6c69972f7c7ddc47685f61093a1d1fafa411e5fe06f73083a8ba41b8ee",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/目录确认/configuration.json"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录确认/stderr.txt",
-      "bytes": 1629,
-      "sha256": "b38ff669cbef630e34eb1e4828c9be5a090915d6ce8478506bf423850efee245",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/交付入口/目录确认/stderr.txt"
-      }
-    },
-    {
-      "path": "核对/交付入口/目录确认/protocol.json",
-      "bytes": 42822,
-      "sha256": "bd6874de6db43d287b76026776fbfb3013ba86c792db266567beddc817958b02",
-      "origin": {
-        "type": "公开投影",
-        "originalSha256": "d3b503203f6ed6d7dffb066effa6d1f138127f2e008b752198260ccfa27e76fa",
-        "omission": "Skill 目录与其他工具 Schema 按上述规则投影；事件、请求、顺序及本插件对象保留。config/read 在采集时本来就只记录实验涉及字段。"
-      }
-    },
-    {
-      "path": "核对/目录失效与修补核对.json",
-      "bytes": 2023,
-      "sha256": "96c48ad96a4441940f9354c279b3bf2996397a76627fbfccd06a8e211f9d76aa",
-      "origin": {
-        "type": "依据真实纯目录与固定源码整理"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-mcp/input.json",
-      "bytes": 4126,
-      "sha256": "850c7e618112001bed63edb9e1813be388a8b0df7b6d67efcfe6a19dd5a63146",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-mcp/input.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-mcp/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-mcp/exit.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-mcp/stdout.txt",
-      "bytes": 358,
-      "sha256": "df80e97df2b5951c271b21f5b8f621f6c57d266aad69ac40964b578ffb7f3e5d",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-mcp/stdout.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-mcp/stderr.txt",
-      "bytes": 6,
-      "sha256": "5ffd561502139fe2fee15a84a01e1fd95753b6d85bfb5634063041b98467ba7f",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-mcp/stderr.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-skills/input.json",
-      "bytes": 4228,
-      "sha256": "44f90e1eed6e0e60208066fdac71ea7fce73aa8f6f1a0b9a1a38c6d357b11b9e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-skills/input.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-skills/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-skills/exit.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-skills/stdout.txt",
-      "bytes": 22899,
-      "sha256": "146c12ac058b2f01b7dc44077662b51e90d88a267c00757e27366a78e7be2cce",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-skills/stdout.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-skills/stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-skills/stderr.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-final-agent/input.json",
-      "bytes": 4248,
-      "sha256": "6a9e4434ad6ef2ab1f1798b1c8fd0b6aed870775c571a7a21011bf03fa2b741b",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-final-agent/input.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-final-agent/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-final-agent/exit.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-final-agent/stdout.txt",
-      "bytes": 4114,
-      "sha256": "767bbb9169b84b00b1bab71983de365b31c16ad673989ca5efba98087b84088f",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-final-agent/stdout.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-final-agent/stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-final-agent/stderr.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-skill/input.json",
-      "bytes": 4326,
-      "sha256": "4ea251caa142f3089db2d9afdac3621a8c2f9a41ed1365925a14b5c173af6ae1",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-skill/input.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-skill/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-skill/exit.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-skill/stdout.txt",
-      "bytes": 3355,
-      "sha256": "6930ee14bfc138d63ba2d6c26388dd1da29acf6764aa7c76e9bf6644759d7aab",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-skill/stdout.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-skill/stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-skill/stderr.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-reference/input.json",
-      "bytes": 4500,
-      "sha256": "06d00b8c3e946ed9760324e6b971170e08c3076dfdf3e8fcc32e3df2b0dd2a1c",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-reference/input.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-reference/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-reference/exit.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-reference/stdout.txt",
-      "bytes": 6200,
-      "sha256": "865d5eb0a888ca22ee0a079bc96665d6ee7976938629c6625658741f00d55882",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-reference/stdout.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-qwen-manual-reference/stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-qwen-manual-reference/stderr.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-agent/input.json",
-      "bytes": 4615,
-      "sha256": "fc7d6b35c1480c716b071cc1b62738a9bb8342abbbe55dcd775de72fcff28d95",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-agent/input.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-agent/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-agent/exit.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-agent/stdout.txt",
-      "bytes": 4235,
-      "sha256": "aa2702d2c11951d003d524ef923f4451ee3bcb960af460958a577359a070351f",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-agent/stdout.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-agent/stderr.txt",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-agent/stderr.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-mcp/input.json",
-      "bytes": 4592,
-      "sha256": "2afdddb41cd78f0882c1f6ea20ec9516788a6130ec74e48703b930ba07db2f2b",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-mcp/input.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-mcp/exit.json",
-      "bytes": 38,
-      "sha256": "38a3d642bde4de37620c162a2a836c87a30620d4bf4c48dcbbc0f21064106e5e",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-mcp/exit.json"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-mcp/stdout.txt",
-      "bytes": 358,
-      "sha256": "2c3f13539e1bc9721a9d6bfef1e82881e5e4b87b4d880ba601060f5686713455",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-mcp/stdout.txt"
-      }
-    },
-    {
-      "path": "诊断/opencode-plus-mcp/stderr.txt",
-      "bytes": 6,
-      "sha256": "5ffd561502139fe2fee15a84a01e1fd95753b6d85bfb5634063041b98467ba7f",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/runs/opencode-plus-mcp/stderr.txt"
-      }
-    },
-    {
-      "path": "业务数据库/plugin.sqlite",
+      "path": "业务数据库/hook.sqlite",
       "bytes": 45056,
-      "sha256": "53fd8c2c4cad7fa9580f1a6654c32955331fc6f0cde151a4810bfd6bf90121b3",
+      "sha256": "933694f5c0578579caba2f513be5611024b507c2a388e0cac28dc1bf20f87420",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/data/plugin.sqlite"
+        "path": "lab/data/hook.sqlite"
       }
     },
     {
-      "path": "业务数据库/plugin-isolated.sqlite",
-      "bytes": 45056,
-      "sha256": "b93f949242b388a20854c49bb4e862450eb8153b57bdab37466ae97ecda3a27a",
+      "path": "图解/保存后检查.png",
+      "bytes": 1279707,
+      "sha256": "bbbc8faa567c1acb68dadc1a180832687f010bcee3af7b29fa6fc62f671106cb",
       "origin": {
         "type": "原文件字节",
-        "path": "lab/data/plugin-isolated.sqlite"
-      }
-    },
-    {
-      "path": "业务数据库/opencode.sqlite",
-      "bytes": 45056,
-      "sha256": "53fd8c2c4cad7fa9580f1a6654c32955331fc6f0cde151a4810bfd6bf90121b3",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/data/opencode.sqlite"
-      }
-    },
-    {
-      "path": "业务数据库/opencode-qwen.sqlite",
-      "bytes": 45056,
-      "sha256": "23c1e42d2932f79e63346a50d4f5fee9645220f29e8636c714a4748b99b54b2d",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/data/opencode-qwen.sqlite"
-      }
-    },
-    {
-      "path": "业务数据库/opencode-plus.sqlite",
-      "bytes": 45056,
-      "sha256": "c642af5329c48ff4859023c5f1e8a3733c87e5ecde539fc9c3bb4ca040d6a9de",
-      "origin": {
-        "type": "原文件字节",
-        "path": "lab/data/opencode-plus.sqlite"
-      }
-    },
-    {
-      "path": "图解/方法与工具随插件交付.png",
-      "bytes": 1637767,
-      "sha256": "357e0bb236297a9ace870855770a2143bef035bfe003c0afb677cbb9ed08bd34",
-      "origin": {
-        "type": "原文件字节",
-        "path": "配图/方法与工具随插件交付.png"
+        "path": "配图/保存后检查.png"
       }
     },
     {
       "path": "图解/生成提示.txt",
-      "bytes": 4314,
-      "sha256": "9fa6443c6731aa96970daa2a7a2cef875f67380e91ee59b9896c5ef5ed36d1ed",
+      "bytes": 2230,
+      "sha256": "cf3b27002e4a01b2dc7714de8a8cc826e7f28b1dced6ffe1b43f0097a2c0ed2c",
       "origin": {
         "type": "原文件字节",
         "path": "配图/生成提示.txt"
       }
     },
     {
-      "path": "版本.json",
-      "bytes": 9204,
-      "sha256": "8d6926758a6839d2d7e314429ef2b20f4c04166747a36e68382a48ad2e29153e",
+      "path": "图解/编辑提示.txt",
+      "bytes": 1883,
+      "sha256": "6dd381ad3f3f67262970143b3d31ca8394874a3945eebeb800867faf81909185",
       "origin": {
-        "type": "固定 Git 与每轮实际输入"
+        "type": "原文件字节",
+        "path": "配图/编辑提示.txt"
+      }
+    },
+    {
+      "path": "准备本机审核记录.mjs",
+      "bytes": 2146,
+      "sha256": "6c2f10e28b4310a91b1b6658787bff21ed1535079d8265620f45a5637874c7c7",
+      "origin": {
+        "type": "原文件字节",
+        "path": "准备本机审核记录.mjs"
+      }
+    },
+    {
+      "path": "版本.json",
+      "bytes": 3301,
+      "sha256": "a3c8f1131bd7ca819a1a69d5c51fbf3124662d349ad64db8c880f7b5cc2457fd",
+      "origin": {
+        "type": "固定 Git 与正式运行的冻结文件核对"
       }
     },
     {
       "path": "实验索引.json",
-      "bytes": 14171,
-      "sha256": "858982eb903612c3ab888afa51b9310f0fbc86a326ca3cb4633798c22fc1ba44",
+      "bytes": 14555,
+      "sha256": "4d47a75c4099d3033c2fb8bb822a1088cc32f80618373d4cf1642fdaaa84410d",
       "origin": {
-        "type": "实际记录索引；不代替原对象"
+        "type": "全部公开内容与未收录范围"
       }
     },
     {
       "path": "course.bundle",
-      "bytes": 184810,
-      "sha256": "efa1a9b217bc6c90020ce25a4cd898b8e8751956ff3ec660128fb3928a9ab69d",
+      "bytes": 196820,
+      "sha256": "07329dcf93c61574d72073dc93f3a62a4990b15d1aa86ee84fcd572e881abaae",
       "origin": {
         "type": "固定 Git bundle",
         "tags": [
-          "vcm-08-05-start",
-          "vcm-08-05-end"
+          "vcm-08-06-start",
+          "vcm-08-06-end"
         ]
       }
     },
     {
       "path": "使用说明.md",
-      "bytes": 4012,
-      "sha256": "00cd198f734201f2fcb28763ec096b7908f8bfde4d9323a7e024f7d786e7fede",
+      "bytes": 6923,
+      "sha256": "d2ada3e851c636872c2c138829fcc34fceece67e844c296b6a96e12ef8483495",
       "origin": {
-        "type": "本包真实范围与恢复操作"
+        "type": "原文件字节",
+        "path": "公开包使用说明.md"
       }
     }
   ],
-  "positionUnit": "utf16",
-  "scope": "仅显式允许的课程代码、方法、真实业务材料与投影证据；此清单自身不计入清单。"
+  "scope": "其他全部文件原字节 SHA；本清单自身不列入。"
 }

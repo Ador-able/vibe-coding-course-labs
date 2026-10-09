@@ -1,4 +1,4 @@
-import {spawn} from 'node:child_process';
+import {spawn,execFileSync} from 'node:child_process';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
 import {resolve} from 'node:path';
 import {randomUUID} from 'node:crypto';
@@ -12,7 +12,7 @@ const prompt=await readFile(values['prompt-file'],'utf8');
 const before=snapshot();
 await mkdir(out,{recursive:true});
 await writeFile(resolve(out,'before.json'),JSON.stringify(before,null,2));
-await writeFile(resolve(out,'request.json'),JSON.stringify({prompt,model:values.model,agent:'chapter-task',database,requestedSessionId:values.session??null,limits:'使用原生 OpenCode 命令执行，不实现模型或工具循环；接续输入是后续人工反馈，不代替首次条件或失败。'},null,2));
+await writeFile(resolve(out,'request.json'),JSON.stringify({prompt,model:values.model,agent:'chapter-task',database,requestedSessionId:values.session??null,codeVersion:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),limits:'使用原生 OpenCode 命令执行，不实现模型或工具循环；接续输入是后续人工反馈，不代替首次条件或失败。'},null,2));
 console.log(JSON.stringify({out,state:'running'}));
 const sessionArgs=values.session?['--session',values.session]:[];
 const child=spawn(process.execPath,[resolve('scripts/opencode-local.mjs'),'--db',values.db,'--out',out,'--prompt-file',values['prompt-file'],'--','run','--agent','chapter-task','--model',values.model,...sessionArgs,'--format','json','--thinking'],{cwd:root,windowsHide:true,stdio:['ignore','inherit','inherit']});

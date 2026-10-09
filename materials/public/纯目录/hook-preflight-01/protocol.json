@@ -1,0 +1,1124 @@
+[
+  {
+    "direction": "sent",
+    "message": {
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "clientInfo": {
+          "name": "hook_course_preflight",
+          "version": "1.0.0"
+        },
+        "capabilities": {
+          "experimentalApi": true
+        }
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 1,
+      "result": {
+        "userAgent": "Codex Desktop/0.160.0 (Windows 10.0.26300; x86_64) dumb (hook_course_preflight; 1.0.0)",
+        "codexHome": "C:\\Users\\32686\\.codex",
+        "platformFamily": "windows",
+        "platformOs": "windows"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "method": "initialized",
+      "params": {}
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 2,
+      "method": "config/read",
+      "params": {
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+        "includeLayers": false
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "configWarning",
+      "params": {
+        "summary": "Project-local config, hooks, and exec policies are disabled in the following folders until the project is trusted, but skills still load.\n    1. D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab\\.codex\n       To load project-local config, hooks, and exec policies, add d:\\projects\\knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab as a trusted project in C:\\Users\\32686\\.codex\\config.toml.\n",
+        "details": null
+      },
+      "emittedAtMs": 1790966974667
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "remoteControl/status/changed",
+      "params": {
+        "scope": "与本章任务无关的账号或远程连接状态未收录。"
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 2,
+      "result": {
+        "config": {
+          "memories": {
+            "version": null,
+            "dual_write": null,
+            "disable_on_external_context": null,
+            "generate_memories": false,
+            "use_memories": false,
+            "dedicated_tools": null,
+            "max_raw_memories_for_consolidation": null,
+            "max_unused_days": null,
+            "max_rollout_age_days": null,
+            "max_rollouts_per_startup": null,
+            "min_rollout_idle_hours": null,
+            "min_rate_limit_remaining_percent": null,
+            "extract_model": null,
+            "consolidation_model": null
+          },
+          "features": {
+            "context_management": {
+              "experimental_mode": true
+            },
+            "network_proxy": null,
+            "hooks": false,
+            "js_repl": false,
+            "memories": false,
+            "api_key_model_discovery": false,
+            "auth_elicitation": true,
+            "background_paginated_rollout_migration": false,
+            "codex_apps_mcp_2026_07_28": false,
+            "mcp_2026_07_28": false,
+            "mentions_v2": true,
+            "remote_control": false,
+            "remote_plugin": true,
+            "tool_suggest": true,
+            "windows_sandbox_service": false
+          },
+          "skills": {
+            "bundled": {
+              "enabled": false
+            }
+          },
+          "project_doc_max_bytes": 0,
+          "developer_instructions": ""
+        },
+        "limits": "仅收录本章涉及的配置。"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 3,
+      "method": "hooks/list",
+      "params": {
+        "cwds": [
+          "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab"
+        ]
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 3,
+      "result": {
+        "data": [
+          {
+            "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+            "hooks": [],
+            "warnings": [],
+            "errors": []
+          }
+        ]
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 4,
+      "method": "skills/list",
+      "params": {
+        "cwds": [
+          "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab"
+        ],
+        "forceReload": true
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 4,
+      "result": {
+        "data": [
+          {
+            "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+            "skills": [],
+            "errors": [],
+            "disabledSkills": 0,
+            "enabledSkills": 38,
+            "scope": "不收录本实验没有采用的其他 Skill 名称、描述与正文；启用和停用数量保留。"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 5,
+      "method": "thread/start",
+      "params": {
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+        "sandbox": "read-only",
+        "approvalPolicy": "never"
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "account/updated",
+      "params": {
+        "scope": "与本章任务无关的账号或远程连接状态未收录。"
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 5,
+      "result": {
+        "thread": {
+          "id": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+          "environments": [
+            {
+              "environmentId": "local",
+              "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+              "runtimeWorkspaceRoots": [
+                "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab"
+              ]
+            }
+          ],
+          "extra": null,
+          "sessionId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+          "forkedFromId": null,
+          "parentThreadId": null,
+          "preview": "",
+          "ephemeral": false,
+          "section": null,
+          "sectionEnteredAt": null,
+          "projectId": null,
+          "historyMode": "paginated",
+          "modelProvider": "openai",
+          "model": "gpt-6.1-sol",
+          "reasoningEffort": "high",
+          "createdAt": 1790966978,
+          "updatedAt": 1790966978,
+          "recencyAt": 1790966978,
+          "status": {
+            "type": "idle"
+          },
+          "path": "C:\\Users\\32686\\.codex\\sessions\\2026\\10\\03\\rollout-2026-10-03T02-49-37-01a0fdf3-4954-7343-bc1b-c562ed81b175.jsonl",
+          "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+          "cliVersion": "0.160.0",
+          "originator": "Codex Desktop",
+          "source": "vscode",
+          "canAcceptDirectInput": true,
+          "threadSource": null,
+          "agentNickname": null,
+          "agentRole": null,
+          "gitInfo": null,
+          "name": null,
+          "daybreakEnabled": null,
+          "turns": []
+        },
+        "model": "gpt-6.1-sol",
+        "modelProvider": "openai",
+        "serviceTier": "priority",
+        "disabledPluginIds": [],
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+        "runtimeWorkspaceRoots": [
+          "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab"
+        ],
+        "instructionSources": [
+          "C:\\Users\\32686\\.codex\\AGENTS.md"
+        ],
+        "approvalPolicy": "never",
+        "approvalsReviewer": "user",
+        "sandbox": {
+          "type": "readOnly",
+          "networkAccess": false
+        },
+        "activePermissionProfile": null,
+        "reasoningEffort": "high",
+        "multiAgentMode": "explicitRequestOnly"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 6,
+      "method": "mcpServerStatus/list",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "detail": "toolsAndAuthOnly"
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "thread/started",
+      "params": {
+        "thread": {
+          "id": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+          "environments": [
+            {
+              "environmentId": "local",
+              "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+              "runtimeWorkspaceRoots": [
+                "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab"
+              ]
+            }
+          ],
+          "extra": null,
+          "sessionId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+          "forkedFromId": null,
+          "parentThreadId": null,
+          "preview": "",
+          "ephemeral": false,
+          "section": null,
+          "sectionEnteredAt": null,
+          "projectId": null,
+          "historyMode": "paginated",
+          "modelProvider": "openai",
+          "model": "gpt-6.1-sol",
+          "reasoningEffort": "high",
+          "createdAt": 1790966978,
+          "updatedAt": 1790966978,
+          "recencyAt": 1790966978,
+          "status": {
+            "type": "idle"
+          },
+          "path": "C:\\Users\\32686\\.codex\\sessions\\2026\\10\\03\\rollout-2026-10-03T02-49-37-01a0fdf3-4954-7343-bc1b-c562ed81b175.jsonl",
+          "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-06\\lab",
+          "cliVersion": "0.160.0",
+          "originator": "Codex Desktop",
+          "source": "vscode",
+          "canAcceptDirectInput": true,
+          "threadSource": null,
+          "agentNickname": null,
+          "agentRole": null,
+          "gitInfo": null,
+          "name": null,
+          "daybreakEnabled": null,
+          "turns": []
+        }
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "comfy_mcp",
+        "status": "starting",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "codex_apps",
+        "status": "starting",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "coursebook",
+        "status": "starting",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "frameflow",
+        "status": "starting",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "node_repl",
+        "status": "starting",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "blender",
+        "status": "starting",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "cua_repl",
+        "status": "starting",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978452
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "node_repl",
+        "status": "ready",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978476
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "frameflow",
+        "status": "ready",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978485
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "cua_repl",
+        "status": "ready",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978529
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "coursebook",
+        "status": "ready",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966978799
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "blender",
+        "status": "ready",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966979038
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "codex_apps",
+        "status": "ready",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966982137
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "mcpServer/startupStatus/updated",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "name": "comfy_mcp",
+        "status": "ready",
+        "error": null,
+        "failureReason": null
+      },
+      "emittedAtMs": 1790966984616
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 6,
+      "result": {
+        "data": [],
+        "nextCursor": null,
+        "otherServers": [
+          {
+            "name": "anki_mcp",
+            "pluginId": null,
+            "runtimeStatus": "disabled",
+            "toolNames": []
+          },
+          {
+            "name": "blender",
+            "pluginId": null,
+            "runtimeStatus": "connected",
+            "toolNames": [
+              "get_blendfile_summary_datablocks",
+              "get_blendfile_summary_path_info",
+              "jump_to_view3d_object_data_by_name",
+              "render_thumbnail_to_path",
+              "get_blendfile_summary_usage_guess",
+              "render_viewport_to_path",
+              "get_screenshot_of_window_as_image",
+              "search_manual_docs",
+              "jump_to_view3d_object_by_name",
+              "get_blendfile_summary_of_linked_libraries",
+              "get_screenshot_of_area_as_image",
+              "get_blendfile_summary_missing_files_for_cli",
+              "get_objects_summary",
+              "jump_to_tab_by_space_type",
+              "get_blendfile_summary_datablocks_for_cli",
+              "execute_blender_code_for_cli",
+              "get_blendfile_summary_of_linked_libraries_for_cli",
+              "get_object_detail_summary",
+              "jump_to_tab_by_name",
+              "get_screenshot_of_window_as_json",
+              "get_blendfile_summary_path_info_for_cli",
+              "get_python_api_docs",
+              "search_api_docs",
+              "get_blendfile_summary_missing_files",
+              "execute_blender_code",
+              "get_blendfile_summary_usage_guess_for_cli"
+            ]
+          },
+          {
+            "name": "code-review",
+            "pluginId": "code-review@openai-bundled",
+            "runtimeStatus": "disabled",
+            "toolNames": []
+          },
+          {
+            "name": "codex_app",
+            "pluginId": "codex-app-tools@openai-bundled",
+            "runtimeStatus": "disabled",
+            "toolNames": []
+          },
+          {
+            "name": "codex_apps",
+            "pluginId": null,
+            "runtimeStatus": "connected",
+            "toolNames": [
+              "google_contacts.get_profile",
+              "sites.remove_custom_domain",
+              "github.label_pr",
+              "github.get_pr_reactions",
+              "github.remove_issue_label",
+              "google_drive.get_spreadsheet_metadata",
+              "github.unresolve_review_thread",
+              "github.add_issue_labels",
+              "chatgpt_space.create_presentation",
+              "chatgpt_space.create_canvas",
+              "chatgpt_space.patch_page",
+              "google_calendar.respond_event",
+              "github.request_pull_request_reviewers",
+              "google_drive.update_file",
+              "github.download_user_content",
+              "chatgpt_space.trash_page",
+              "github.update_file",
+              "github.update_review_comment",
+              "chatgpt_space.create_spreadsheet",
+              "github.fetch_workflow_job_steps",
+              "github.search_repositories",
+              "github.unlock_issue_conversation",
+              "gmail.batch_read_email_threads",
+              "figma.search_design_system",
+              "gmail.delete_emails",
+              "google_drive.get_document",
+              "figma.generate_figma_design",
+              "google_drive.search_spreadsheet_rows",
+              "figma.get_motion_context",
+              "figma.get_design_context",
+              "google_calendar.fetch",
+              "figma.get_generative_plugin",
+              "figma.update_generative_plugin",
+              "google_calendar.list_event_labels",
+              "google_drive.share_file",
+              "sites.get_site_analytics_overview",
+              "figma.open_figma_mcp_app_in_thread",
+              "gmail.create_draft",
+              "plugin_management.get_app_permissions",
+              "github.fetch_pr_patch",
+              "safety_settings.get_trusted_contact",
+              "github.get_profile",
+              "google_drive.get_file_comments",
+              "google_drive.get_profile",
+              "sites.list_projects",
+              "sites.check_slug_availability",
+              "github.create_file",
+              "chatgpt_space.set_page_auto_update",
+              "safety_settings.prepare_parental_control_update",
+              "sites.list_site_analytics_events",
+              "chatgpt_space.manage_page_comment",
+              "chatgpt_space.read_page_transcript",
+              "github.update_issue",
+              "google_drive.create_file",
+              "sites.query_site_analytics_event",
+              "github.get_issue_comment_reactions",
+              "chatgpt_space.get_page_auto_update",
+              "google_drive.import_spreadsheet",
+              "github.resolve_review_thread",
+              "github.delete_file",
+              "sites.get_environment",
+              "github.create_issue",
+              "codex_document_control.list_document_sessions",
+              "github.fetch_pr_file_patch",
+              "chatgpt_space.list_page_comments",
+              "google_drive.bulk_update_file_comments",
+              "figma.list_shaders",
+              "github.get_pr_mergeability",
+              "figma.weave_list_tools",
+              "github.fetch_file",
+              "github.rerun_workflow_job",
+              "google_calendar.create_event",
+              "plugin_management.search_plugins",
+              "google_drive.get_document_tables",
+              "github.fetch_workflow_run_artifacts",
+              "github.remove_issue_assignees",
+              "figma.report_mcp_app_failure",
+              "github.fetch_issue_comments",
+              "figma.get_libraries",
+              "figma.send_code_connect_mappings",
+              "github.create_commit",
+              "figma.weave_get_tool_inputs",
+              "figma.whoami",
+              "chatgpt_space.update_space_sharing",
+              "chatgpt_space.read_page_reference",
+              "figma.get_figjam",
+              "sites.read_database_table_rows",
+              "github.create_pull_request",
+              "github.fetch_blob",
+              "github.fetch_pr",
+              "github.get_repo_collaborator_permission",
+              "safety_settings.update_parental_control",
+              "github.add_reaction_to_pr_review_comment",
+              "sites.deploy_site_version",
+              "pets.prepare_pet_upload",
+              "sites.get_database_overview",
+              "gmail.forward_emails",
+              "google_calendar.read_event",
+              "github.search_installed_repositories_streaming",
+              "sites.get_site",
+              "github.add_comment_to_issue",
+              "figma.weave_run_tool",
+              "google_drive.get_slide_thumbnail",
+              "chatgpt_space.create_page",
+              "chatgpt_space.list_pages",
+              "codex_document_control.get_document_tool_schemas",
+              "github.add_reaction_to_pr",
+              "google_drive.get_presentation_text",
+              "figma.create_generative_plugin",
+              "google_drive.get_document_text",
+              "github.remove_pull_request_reviewers",
+              "google_drive.batch_update_spreadsheet",
+              "github.list_user_org_memberships",
+              "google_drive.create_presentation_from_template",
+              "sites.update_environment",
+              "github.list_pull_request_reviews",
+              "github.list_recent_issues",
+              "gmail.batch_modify_email",
+              "google_calendar.search",
+              "google_drive.get_spreadsheet_comments",
+              "google_drive.batch_update_presentation",
+              "chatgpt_space.edit_page",
+              "github.search_prs",
+              "pets.list_pets",
+              "sites.refresh_custom_domain_status",
+              "chatgpt_space.progress_update",
+              "safety_settings.get_parental_controls",
+              "google_drive.create_folder",
+              "gmail.search_email_ids",
+              "chatgpt_space.get_artifact_execution_status",
+              "google_drive.list_file_revisions",
+              "google_drive.search",
+              "github.dismiss_pull_request_review",
+              "figma.update_shader",
+              "figma.create_shader",
+              "google_calendar.batch_read_event",
+              "pets.share_pet",
+              "sites.change_site_slug",
+              "sites.list_site_versions",
+              "figma.create_new_file",
+              "chatgpt_space.run_page_auto_update",
+              "sites.validate_suggested_schedule",
+              "github.search_commits",
+              "github.fetch_workflow_run_jobs",
+              "figma.get_code_connect_map",
+              "gmail.archive_emails",
+              "gmail.read_attachment",
+              "google_drive.get_document_comments",
+              "sites.list_sites",
+              "figma.mentionable_files",
+              "github.download_workflow_artifact",
+              "github.search_installed_repositories_v2",
+              "github.add_issue_assignees",
+              "google_drive.import_presentation",
+              "hotline.get_local_hotline",
+              "gmail.send_email",
+              "google_calendar.delete_event",
+              "chatgpt_space.create_space",
+              "figma.list_generative_plugins",
+              "plugin_management.suggest_plugins",
+              "sites.update_site_access",
+              "github.rerun_failed_workflow_run_jobs",
+              "figma.download_assets",
+              "chatgpt_space.get_space",
+              "pets.create_pet",
+              "github.fetch_workflow_job_logs",
+              "figma.get_metadata",
+              "figma.weave_get_model_run_output",
+              "github.list_repositories",
+              "google_drive.import_document",
+              "sites.get_deployment_status",
+              "sites.update_environment_variables",
+              "google_drive.fetch_file_revision",
+              "google_drive.copy_file",
+              "github.fetch",
+              "chatgpt_space.get_page_sharing",
+              "github.get_pr_review_comment_reactions",
+              "github.list_installed_accounts",
+              "sites.get_site_version",
+              "chatgpt_space.reply_page_comment",
+              "google_drive.recent_documents",
+              "pets.adopt",
+              "gmail.batch_read_email",
+              "google_calendar.list_calendars",
+              "sites.create_site",
+              "sites.get_environment_variables",
+              "google_calendar.set_event_label_silently",
+              "figma.get_context_for_code_connect",
+              "github.get_users_recent_prs_in_repo",
+              "sites.save_version_and_deploy_private",
+              "github.list_pull_request_review_threads",
+              "google_drive.get_spreadsheet_cells",
+              "google_drive.get_document_paragraph_range",
+              "github.remove_reaction_from_issue_comment",
+              "github.lock_issue_conversation",
+              "plugin_management.uninstall_app",
+              "chatgpt_space.update_page_sharing",
+              "google_drive.fetch",
+              "figma.generate_diagram",
+              "figma.get_variable_defs",
+              "google_drive.duplicate_sheet_in_new_spreadsheet",
+              "google_calendar.get_profile",
+              "sites.get_database_table_rows",
+              "google_contacts.search_contacts",
+              "github.get_repo",
+              "github.create_blob",
+              "github.list_installations",
+              "google_drive.get_presentation_comments",
+              "google_drive.list_folder",
+              "chatgpt_space.search_sharing_recipients",
+              "plugin_management.get_plugin_dependencies",
+              "gmail.search_emails",
+              "figma.weave_find_model",
+              "gmail.send_draft",
+              "github.fetch_issue",
+              "google_contacts.read_contact",
+              "google_drive.get_presentation_tables",
+              "github.get_commit_combined_status",
+              "google_drive.find_document_text_range",
+              "google_drive.list_drives",
+              "codex_document_control.execute_document_command",
+              "google_drive.get_presentation",
+              "github.fetch_pr_comments",
+              "pets.unshare_pet",
+              "sites.save_site_version",
+              "chatgpt_space.inspect_page_reference",
+              "github.search_issues",
+              "gmail.bulk_label_matching_emails",
+              "github.list_repositories_by_installation",
+              "github.list_user_orgs",
+              "gmail.get_profile",
+              "google_drive.get_file_metadata",
+              "chatgpt_space.move_page",
+              "figma.weave_get_tool_run_output",
+              "plugin_management.update_app_permissions",
+              "github.update_pull_request",
+              "sites.get_site_worker_logs",
+              "pets.delete_pet",
+              "sites.create_source_repository_write_credential",
+              "sites.update_site_metadata",
+              "chatgpt_space.list_page_automations",
+              "chatgpt_space.read_page_changes",
+              "chatgpt_space.attach_automation_to_page",
+              "sites.create_schedule",
+              "google_drive.get_presentation_outline",
+              "github.search_branches",
+              "figma.list_file_components_for_code_connect",
+              "github.get_user_login",
+              "google_calendar.get_colors",
+              "figma.use_figma",
+              "pets.get_pet_download_link",
+              "figma.weave_run_model",
+              "github.list_pr_changed_filenames",
+              "github.list_repositories_by_affiliation",
+              "github.convert_pull_request_to_draft",
+              "github.merge_pull_request",
+              "gmail.read_email_thread",
+              "figma.get_screenshot",
+              "google_drive.batch_update_document",
+              "google_calendar.search_events",
+              "chatgpt_space.create_controller_automation",
+              "github.remove_reaction_from_pr",
+              "sites.deploy_private_site_version",
+              "pets.validate_pet_spritesheet",
+              "github.update_ref",
+              "google_drive.export_file",
+              "github.fetch_commit",
+              "google_drive.upload_file",
+              "chatgpt_space.create_page_visualization",
+              "pets.update_pet",
+              "sites.add_custom_domain",
+              "gmail.create_label",
+              "sites.delete_site",
+              "sites.list_custom_domains",
+              "gmail.list_labels",
+              "sites.generate_siwc_bypass_token",
+              "github.add_review_to_pr",
+              "github.update_issue_comment",
+              "sites.read_database_overview",
+              "github.fetch_commit_workflow_runs",
+              "github.search",
+              "google_drive.get_spreadsheet_range",
+              "figma.generate_deck",
+              "gmail.list_drafts",
+              "chatgpt_space.get_space_sharing",
+              "gmail.apply_labels_to_emails",
+              "google_drive.delete_file",
+              "google_drive.get_slide",
+              "figma.get_code_connect_suggestions",
+              "chatgpt_space.read_page",
+              "figma.authorize_mcp_app",
+              "google_calendar.update_event",
+              "figma.upload_assets",
+              "chatgpt_space.list_spaces",
+              "figma.add_code_connect_map",
+              "gmail.update_draft",
+              "github.add_reaction_to_issue_comment",
+              "figma.export_video",
+              "figma.get_shader",
+              "figma.list_file_shaders",
+              "figma.weave_cancel_tool_run",
+              "github.enable_auto_merge",
+              "github.create_tree",
+              "github.create_branch",
+              "github.remove_reaction_from_pr_review_comment",
+              "github.reply_to_review_comment",
+              "safety_settings.get_family_info",
+              "gmail.read_email",
+              "sites.get_project",
+              "sites.list_sites_creator_control_panel_projects",
+              "chatgpt_space.find_pages",
+              "google_calendar.get_availability",
+              "github.compare_commits",
+              "github.get_pr_info",
+              "github.get_pr_statuses",
+              "sites.update_access",
+              "github.mark_pull_request_ready_for_review",
+              "pets.select_pet",
+              "chatgpt_space.write_page_reference",
+              "figma.weave_upload_asset",
+              "github.get_pr_diff"
+            ]
+          },
+          {
+            "name": "comfy_mcp",
+            "pluginId": null,
+            "runtimeStatus": "connected",
+            "toolNames": [
+              "auth_status",
+              "system_stats",
+              "partner_model_schema",
+              "switch_comfyui_version",
+              "download_model",
+              "update_comfyui",
+              "which",
+              "node_dependencies",
+              "vary_workflow",
+              "list_workflow_slots",
+              "partner_generate",
+              "discover",
+              "launch_comfyui",
+              "emit_partner_workflow",
+              "workflow_deps",
+              "generate_image",
+              "list_partner_models",
+              "set_workflow_slot",
+              "validate_workflow",
+              "run_workflow",
+              "upload_file",
+              "project",
+              "list_workflow_notes",
+              "search_templates",
+              "free_memory",
+              "fetch_outputs",
+              "run_template",
+              "install_node",
+              "auth_login",
+              "fetch_template",
+              "job",
+              "nodes",
+              "restart_comfyui",
+              "search_models",
+              "stop_comfyui",
+              "get_template",
+              "get_logs",
+              "download",
+              "server_info"
+            ]
+          },
+          {
+            "name": "coursebook",
+            "pluginId": "coursebook@personal",
+            "runtimeStatus": "connected",
+            "toolNames": [
+              "propose_compilation_plan",
+              "save_source_index",
+              "complete_asset_upload",
+              "start_compilation",
+              "update_project",
+              "begin_asset_upload",
+              "propose_learning_path",
+              "checkpoint_work_item",
+              "get_compilation_status",
+              "create_submission",
+              "get_submission",
+              "read_knowledge",
+              "register_source",
+              "get_source_context",
+              "create_project",
+              "revise_submission",
+              "upsert_section_group",
+              "create_section",
+              "claim_work_item",
+              "search_knowledge",
+              "save_knowledge_relations",
+              "submit_for_review",
+              "get_workspace_context",
+              "get_project_context",
+              "get_review_feedback",
+              "review_submission_content",
+              "get_source_asset",
+              "record_note_sources",
+              "update_section"
+            ]
+          },
+          {
+            "name": "cua_repl",
+            "pluginId": "unified-computer-use@openai-bundled",
+            "runtimeStatus": "connected",
+            "toolNames": [
+              "js_reset",
+              "js",
+              "turn_ended"
+            ]
+          },
+          {
+            "name": "frameflow",
+            "pluginId": "frameflow@frameflow",
+            "runtimeStatus": "connected",
+            "toolNames": [
+              "caption_catalog",
+              "script_edit",
+              "project_output_edit",
+              "timeline_edit",
+              "item_motion_edit",
+              "asset_preview",
+              "timeline_read",
+              "video_enhance",
+              "voice_reference_save",
+              "editing_knowledge_read",
+              "visual_asset_read",
+              "asset_read",
+              "item_layout_edit",
+              "motion_graphic_edit",
+              "asset_search",
+              "audio_waveform_read",
+              "audio_generate",
+              "transition_edit",
+              "visual_asset_write",
+              "asset_analysis",
+              "motion_graphic_preview",
+              "asset_upload",
+              "visual_library_manage",
+              "motion_graphic_cues_read",
+              "project_export",
+              "asset_manage",
+              "project_read",
+              "visual_library_read",
+              "caption_edit",
+              "task_read",
+              "audio_edit",
+              "project_list",
+              "asset_transcript",
+              "timeline_preview",
+              "project_create",
+              "script_read",
+              "editing_knowledge_save",
+              "asset_add",
+              "task_cancel",
+              "script_sync",
+              "item_effect_edit",
+              "caption_generate",
+              "editing_knowledge_search",
+              "video_generate",
+              "task_retry",
+              "video_generation_catalog",
+              "motion_graphic_apply",
+              "catalog_read",
+              "history_manage"
+            ]
+          },
+          {
+            "name": "node_repl",
+            "pluginId": null,
+            "runtimeStatus": "connected",
+            "toolNames": [
+              "turn_ended",
+              "js_add_node_module_dir",
+              "js_reset",
+              "js"
+            ]
+          }
+        ],
+        "scope": "本实验业务入口完整保留，其他目录只保留身份、状态与工具名，不公开无关 Schema。"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 7,
+      "method": "thread/archive",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175"
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "thread/status/changed",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175",
+        "status": {
+          "type": "notLoaded"
+        }
+      },
+      "emittedAtMs": 1790966984738
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 7,
+      "result": {}
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "thread/archived",
+      "params": {
+        "threadId": "01a0fdf3-4954-7343-bc1b-c562ed81b175"
+      },
+      "emittedAtMs": 1790966984760
+    }
+  }
+]

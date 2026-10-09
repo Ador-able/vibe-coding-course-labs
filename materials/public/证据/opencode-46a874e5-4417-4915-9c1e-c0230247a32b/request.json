@@ -1,8 +1,0 @@
-{
-  "prompt": "请使用 novel-chapter-task 方法，为作品 clocktower 完成第 1 章草稿。以当前工作台要求为准，生成完整正文并实际保存；读回后告诉我保存到了哪一章、处于什么状态，哪些地方仍需要我读稿判断。\n",
-  "model": "courseDashscope/qwen-flash",
-  "agent": "chapter-task",
-  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-05\\lab\\data\\opencode-qwen.sqlite",
-  "codeVersion": "019246553ff6a19c0761bf54526417ad6230941e",
-  "limits": "使用原生 OpenCode 命令执行，不实现模型或工具循环；不同模型不作为严格效果比较。"
-}
