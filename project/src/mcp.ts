@@ -2,12 +2,15 @@ import {McpServer,ResourceTemplate} from '@modelcontextprotocol/sdk/server/mcp.j
 import {StdioServerTransport} from '@modelcontextprotocol/sdk/server/stdio.js';
 import {ErrorCode,McpError,type CallToolResult,type ReadResourceResult} from '@modelcontextprotocol/sdk/types.js';
 import {z} from 'zod';
+import {readFileSync} from 'node:fs';
 import {Store} from './store.js';
-import {workId,chapterNumber,draftInput,workOutput,chapterOutput,LabError} from './schemas.js';
+import {workId,chapterNumber,draftInput,approvedExcerpt,workOutput,chapterOutput,LabError} from './schemas.js';
 
 const dbPath=process.argv[2];
 if(!dbPath)throw new Error('需要数据库路径。');
-const taskId=process.argv[3]??null;
+const taskId=process.argv[3]||null;
+const excerpt=process.argv[4]?approvedExcerpt.parse(JSON.parse(readFileSync(process.argv[4],'utf8'))):null;
+if(excerpt&&!taskId)throw new Error('局部修改需要已绑定的章节任务。');
 const store=new Store(dbPath);
 const server=new McpServer({name:'novel-lab',version:'0.1.0'},{instructions:'先读取当前作品要求及正文，依据返回的修订保存草稿；保存后读回。这里不提供人工采用能力。'});
 const readAnnotations={readOnlyHint:true,destructiveHint:false,idempotentHint:true,openWorldHint:false};
@@ -22,7 +25,33 @@ const result=(action:()=>unknown):CallToolResult=>{
 server.registerTool('read_work',{title:'读取当前作品要求',description:'取得有效用途、设定、大纲及要求修订；写作和保存前先调用。',inputSchema:{workId},outputSchema:{result:workOutput},annotations:readAnnotations},({workId})=>result(()=>store.getWork(workId)));
 server.registerTool('list_chapters',{title:'查询已保存章节',description:'查询真实保存数量、各章修订和人工采用状态，不包含正文。',inputSchema:{workId},outputSchema:{result:z.object({chapters:z.array(chapterOutput.omit({body:true}))})},annotations:readAnnotations},({workId})=>result(()=>({chapters:store.listChapters(workId)})));
 server.registerTool('read_chapter',{title:'读回完整章节',description:'取得一章的当前正文和修订；不存在时 result 为 null。保存后用它核对实际内容。',inputSchema:{workId,chapterNumber},outputSchema:{result:chapterOutput.nullable()},annotations:readAnnotations},({workId,chapterNumber})=>result(()=>store.getChapter(workId,chapterNumber)));
-server.registerTool('save_draft',{title:'保存章节草稿',description:'按当前要求、正文和前文基线保存草稿。expectedPreviousRevisions 逐项列出第1章至上一章的修订，写第1章时为 []。没有旧正文时 expectedChapterRevision=0。状态始终 draft；冲突时重读，不重试旧基线。',inputSchema:draftInput.shape,outputSchema:{result:chapterOutput},annotations:{readOnlyHint:false,destructiveHint:false,idempotentHint:false,openWorldHint:false}},input=>result(()=>store.saveDraft(input,'agent',taskId)));
+const writeAnnotations={readOnlyHint:false,destructiveHint:false,idempotentHint:false,openWorldHint:false};
+if(excerpt){
+  // 对象、基线和选区由人工绑定，模型只能提交该片段的替换文本。
+  server.registerTool('revise_excerpt',{title:'修改人工选定片段',description:'只替换本轮人工绑定的当前章节片段。replacement 是该片段完整替换文本；标题和选区外原文保持，结果仍是 draft。旧基线或选区不符时拒绝，先读当前正文再请人重新决定范围。',inputSchema:z.strictObject({replacement:z.string().min(1)}),outputSchema:{result:chapterOutput},annotations:writeAnnotations},({replacement})=>result(()=>store.reviseExcerpt(excerpt,replacement,'agent',taskId)));
+}else{
+  server.registerTool('save_draft',{title:'保存章节草稿',description:'按当前要求、正文和前文基线保存草稿。expectedPreviousRevisions 逐项列出第1章至上一章的修订，写第1章时为 []。没有旧正文时 expectedChapterRevision=0。状态始终 draft；冲突时重读，不重试旧基线。',inputSchema:draftInput.shape,outputSchema:{result:chapterOutput},annotations:writeAnnotations},input=>result(()=>store.saveDraft(input,'agent',taskId)));
+}
+
+const exportOutput=z.object({
+  workId,
+  workRevision:z.number().int().positive(),
+  expectedChapters:z.number().int().nonnegative(),
+  savedChapters:z.number().int().nonnegative(),
+  allOutlineChaptersSaved:z.boolean(),
+  chapters:z.array(z.object({
+    number:chapterNumber,
+    revision:z.number().int().positive(),
+    status:chapterOutput.shape.status,
+    workRevision:z.number().int().positive(),
+    previousRevisions:draftInput.shape.expectedPreviousRevisions,
+    reviewNote:z.string().nullable(),
+    basisCurrent:z.boolean(),
+  })),
+  text:z.string(),
+});
+// 返回同一业务导出的规范全文，不在 MCP 入口另写文件或维护状态。
+server.registerTool('export_work',{title:'取得完整待审 Markdown',description:'取得指定作品当前已保存章节的完整 Markdown、修订和采用状态，按章号返回全部已保存正文。不写文件、不修改正文、不采用或发布。没有已保存章节时返回空目录和仅含作品信息的文本。allOutlineChaptersSaved 只表示大纲中的章节已有保存对象，不表示稿件被人认可。',inputSchema:{workId},outputSchema:{result:exportOutput},annotations:readAnnotations},({workId})=>result(()=>store.exportWork(workId)));
 
 const workUri=(id:string)=>`novel://works/${id}/requirements`;
 const chapterUri=(id:string,number:number)=>`novel://works/${id}/chapters/${number}`;

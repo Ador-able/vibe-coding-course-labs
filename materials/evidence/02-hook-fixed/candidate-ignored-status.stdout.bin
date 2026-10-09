@@ -1,9 +1,0 @@
-A  .githooks/pre-commit
-A  .github/workflows/delivery.yml
-A  docs/delivery-check.md
-M  package.json
-A  scripts/check-saving-delivery.mjs
-?? scripts/test-saving.mjs
-!! dist/
-!! node_modules/
-!! runs/

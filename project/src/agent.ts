@@ -37,7 +37,7 @@ const toolCalls:unknown[]=[];
 store.updateTask(taskId,{state:'running'});
 console.log(JSON.stringify({taskId,state:'running',runDir}));
 try{
-  const codex=new Codex({codexPathOverride:config.codexPathOverride,config:{plugins:{'novel-practice@novel-agent-lab':{enabled:false}},mcp_servers:{novel_lab:{command:process.execPath,args:[resolve('dist/mcp.js'),db,taskId],cwd:root,required:true,enabled:true,default_tools_approval_mode:'approve'}}}});
+  const codex=new Codex({codexPathOverride:config.codexPathOverride,config:{plugins:{'novel-workbench-course@novel-workbench-course-lab':{enabled:false}},mcp_servers:{novel_lab:{command:process.execPath,args:[resolve('dist/mcp.js'),db,taskId],cwd:root,required:true,enabled:true,default_tools_approval_mode:'approve'}}}});
   const options={workingDirectory:root,sandboxMode:'read-only' as const,approvalPolicy:'never' as const,webSearchMode:'disabled' as const,model:config.model};
   const thread=previousTask?.threadId?codex.resumeThread(previousTask.threadId,options):codex.startThread(options);
   const {events}=await thread.runStreamed(prompt,{signal:controller.signal});

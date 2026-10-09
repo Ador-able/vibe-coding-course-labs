@@ -1,0 +1,47 @@
+{
+  "out": "<课堂项目>\\runs\\heldout-C",
+  "threadId": "01a10887-2bba-7c53-a21f-7bb278fd1af3",
+  "resumeThreadId": "01a10887-2bba-7c53-a21f-7bb278fd1af3",
+  "completed": true,
+  "cancelled": false,
+  "error": null,
+  "usage": {
+    "input_tokens": 483771,
+    "cached_input_tokens": 431872,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 6936,
+    "reasoning_output_tokens": 1949
+  },
+  "task": {
+    "id": "43669b1b-fbab-4924-bec6-d7e718c438e4",
+    "workId": "heldout-01252847-2f31-4ada-a646-9c0e3d17a327",
+    "chapterNumber": 2,
+    "codeVersion": "b789bc481b244bc38270616d100b6ac4d2a6d867",
+    "threadId": "01a10887-2bba-7c53-a21f-7bb278fd1af3",
+    "state": "completed",
+    "createdAt": "2026-10-05T01:32:39.434Z",
+    "updatedAt": "2026-10-05T01:36:22.054Z",
+    "error": null,
+    "usage": {
+      "input_tokens": 483771,
+      "cached_input_tokens": 431872,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 6936,
+      "reasoning_output_tokens": 1949
+    }
+  },
+  "stopProof": null,
+  "eventCount": 24,
+  "archiveFinal": true,
+  "archived": true,
+  "archiveError": null,
+  "state": "completed",
+  "limits": [
+    "SDK事件不提供逐模型请求计数。",
+    "A已保存返回后的教学停止与真正未确认写入分开；真实对象仍须另读。",
+    "Task运行状态不替代稿件状态、当前修订或人的采用。",
+    "A和B不归档；只有指定archive-final的C归档这个自有会话。",
+    "五分钟只报告进度，不按耗时自动取消或续发。",
+    "不读取私有rollout，不修改共享配置或其他前置作品。"
+  ]
+}

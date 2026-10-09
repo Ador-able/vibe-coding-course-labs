@@ -1,0 +1,62 @@
+{
+  "out": "<课堂项目>\\runs\\heldout-A",
+  "threadId": "01a10887-2bba-7c53-a21f-7bb278fd1af3",
+  "resumeThreadId": null,
+  "completed": false,
+  "cancelled": true,
+  "error": {
+    "name": "AbortError",
+    "message": "The operation was aborted",
+    "stack": "AbortError: The operation was aborted\n    at abortChildProcess (node:child_process:776:27)\n    at AbortSignal.onAbortListener (node:child_process:846:7)\n    at [nodejs.internal.kHybridDispatch] (node:internal/event_target:856:20)\n    at AbortSignal.dispatchEvent (node:internal/event_target:789:26)\n    at runAbort (node:internal/abort_controller:547:10)\n    at abortSignal (node:internal/abort_controller:518:3)\n    at AbortController.abort (node:internal/abort_controller:566:5)\n    at file:///<课堂项目>/scripts/observe-continuation.mjs:64:33"
+  },
+  "usage": null,
+  "task": {
+    "id": "7550c45f-0268-483f-8513-9f8a6b2c6be0",
+    "workId": "heldout-01252847-2f31-4ada-a646-9c0e3d17a327",
+    "chapterNumber": 1,
+    "codeVersion": "b789bc481b244bc38270616d100b6ac4d2a6d867",
+    "threadId": "01a10887-2bba-7c53-a21f-7bb278fd1af3",
+    "state": "cancelled",
+    "createdAt": "2026-10-04T20:01:13.498Z",
+    "updatedAt": "2026-10-04T20:09:05.341Z",
+    "error": "The operation was aborted",
+    "usage": null
+  },
+  "stopProof": {
+    "at": "2026-10-04T20:09:05.329Z",
+    "eventIndex": 20,
+    "eventCountAtTrigger": 21,
+    "receivedTurnCompleted": false,
+    "toolItemId": "item_10",
+    "receipt": {
+      "workId": "heldout-01252847-2f31-4ada-a646-9c0e3d17a327",
+      "number": 1,
+      "revision": 1,
+      "title": "第1章 等在门口的人",
+      "body": "午后的雨落下来时，姨妈正把包袱系紧。岑禾临时替她守邮驿，只问了一句：“有人来取信怎么办？”\n\n姨妈把一只封好的信封放在柜台内侧，上面写着“苏青亲收”。她说，得认准了人，当面交；随即赶去镇外办事。岑禾再想问怎样认，门外已只剩车轮溅起的水。抽屉里的旧便条写着：灰外套，带一只布袋。\n\n岑禾把便条压在信封旁，没有碰封口。\n\n快到傍晚，一个穿灰外套的人站在门槛外，布袋底下滴着水。\n\n“我叫苏青，来拿回信。”她把湿袖口往上卷了卷，“昨天说好今天取的。”\n\n岑禾看了一眼便条。衣服和袋子都对得上，可街上刚才也走过一个穿灰衣的人。\n\n“有带身份证吗？”\n\n来人摸过衣袋，手停住了。“收在行李里，行李还在河街客栈。我怕淋湿，只带了这个。”她取出一张住宿单，姓名栏写着苏青。\n\n岑禾没有把信推过去。“单子没有照片，我还不能凭它认人。”\n\n周伯这时收伞进来，说自己昨天在渡口见过她。岑禾问：“您知道她姓名，是昨天就知道，还是刚才听见的？”\n\n周伯想了想：“刚听见的。昨天她问过船。”\n\n来人低下头，把住宿单折回去。柜台上的电话拨了两遍都没有接通。岑禾放下听筒，不再让她等一个不知道何时会回的电话。\n\n“身份证在我自己的箱子里。”来人说，“我去取，你能留着信吗？”\n\n“信会留着。你回来时，我要看证件上的姓名是不是苏青，再把照片和你本人对照。对得上，才交给你。”\n\n她望着信封，没有伸手：“我原先写信，只问她明年春天还肯不肯让我来看她。她总说忙，我怕再来一趟，又扑空。”\n\n周伯指了指墙上的钟：“现在五点二十三。船五点五十开，今天就这一班。从这里走到渡口还要十分钟。”\n\n河街客栈在菜市后头，岑禾常走那条路，知道去取东西再回来，至少得一刻钟。他把这时间说了出来：“路上耽搁几分钟，就可能赶不上。”\n\n“赶不上呢？”\n\n“只能住一夜，明天走。”周伯说。\n\n她捏了捏住宿单：“那我先去拿。别替我把信交给别人。”\n\n岑禾点头，把封好的回信收回柜台内侧。灰外套的背影走进雨里，他在便条空白处写下五点二十三，旁边留出一行，等她带证件回来时再记。他抬头看着钟，没有把那一行填上。",
+      "status": "draft",
+      "workRevision": 1,
+      "origin": "agent",
+      "taskId": "7550c45f-0268-483f-8513-9f8a6b2c6be0",
+      "threadId": "01a10887-2bba-7c53-a21f-7bb278fd1af3",
+      "updatedAt": "2026-10-04T20:09:05.320Z",
+      "previousRevisions": [],
+      "reviewNote": null
+    },
+    "actor": "编者设置的一次教学停止点",
+    "operation": "AbortController.abort()"
+  },
+  "eventCount": 21,
+  "archiveFinal": false,
+  "archived": false,
+  "archiveError": null,
+  "state": "cancelled",
+  "limits": [
+    "SDK事件不提供逐模型请求计数。",
+    "A已保存返回后的教学停止与真正未确认写入分开；真实对象仍须另读。",
+    "Task运行状态不替代稿件状态、当前修订或人的采用。",
+    "A和B不归档；只有指定archive-final的C归档这个自有会话。",
+    "五分钟只报告进度，不按耗时自动取消或续发。",
+    "不读取私有rollout，不修改共享配置或其他前置作品。"
+  ]
+}

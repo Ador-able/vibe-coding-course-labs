@@ -1,6 +1,0 @@
-[codex/delivery-checked-saving 877c9d6] 加入草稿保存交付检查
- 5 files changed, 675 insertions(+), 1 deletion(-)
- create mode 100755 .githooks/pre-commit
- create mode 100644 .github/workflows/delivery.yml
- create mode 100644 docs/delivery-check.md
- create mode 100644 scripts/check-saving-delivery.mjs

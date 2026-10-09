@@ -19,6 +19,16 @@ export const draftInput=z.object({
   title:z.string().trim().min(1),
   body:z.string().trim().min(1),
 });
+export const approvedExcerpt=z.strictObject({
+  workId,
+  chapterNumber,
+  expectedWorkRevision:z.number().int().positive(),
+  expectedChapterRevision:z.number().int().positive(),
+  expectedPreviousRevisions:draftInput.shape.expectedPreviousRevisions,
+  start:z.number().int().nonnegative(),
+  end:z.number().int().positive(),
+  originalText:z.string().min(1),
+}).refine(input=>input.end>input.start,'选区结束位置必须在开始位置之后。');
 export const workOutput=workInput.extend({revision:z.number().int().positive()});
 export const chapterOutput=z.object({
   workId,
@@ -37,6 +47,7 @@ export const chapterOutput=z.object({
 });
 export type WorkInput=z.infer<typeof workInput>;
 export type DraftInput=z.infer<typeof draftInput>;
+export type ApprovedExcerpt=z.infer<typeof approvedExcerpt>;
 
 export class LabError extends Error {
   constructor(public readonly code:string,message:string){super(message);this.name='LabError';}

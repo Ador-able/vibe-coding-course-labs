@@ -1,0 +1,15 @@
+{
+  "source": "本次课堂已停止的 heldout.sqlite",
+  "target": "课堂最终一致备份.sqlite",
+  "method": "只读 SQLite 连接的官方 backup",
+  "fiveTables": {
+    "works": 1,
+    "work_versions": 3,
+    "chapters": 2,
+    "chapter_versions": 5,
+    "tasks": 3
+  },
+  "sameLogicalObjects": true,
+  "sourceMainFileBytesUnchangedDuringThisBackup": true,
+  "limits": "不将此观察扩成整个模型执行期间的物理字节不变；备份与主库不要求文件头和页布局逐字相同。"
+}

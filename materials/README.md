@@ -1,79 +1,65 @@
-# 把经过验证的改动交付出去：练习入口
+# 验收自己的 Agent：课堂材料
 
-课程学习如何组织 AI 的工作、检查和交付。小说原文只是保存与读回的练习材料，本包不评定文学或界面审美。
+本包提供独立应用源码、完整教师输入、真实业务对象、三轮 SDK 公开事件、人工操作与最后文件。它用于学习怎样检查 AI 的过程和交付；小说是练习材料。
 
-## 从哪个点开始
+## 先分清文件的身份
 
-包内 `code/应用完整.bundle` 是应用自己的完整 Git 存档，含真实旧行为、交付起点和本地完成提交。不要在父 Knowledge 仓库或仅有 ZIP 的目录直接取 HEAD。
+`history.bundle` 保存完整自主项目 Git 历史。代码起点为 `a38b82de03b4ca7ed3b7ccdbcf71ed4207205d85`（`vcm-13-01-start`），本节最小实现完成点为 `b789bc481b244bc38270616d100b6ac4d2a6d867`（`vcm-13-01-prepared`）。`project/` 的 190 个文件逐项取该提交的 Git blob 原字节，不把 Windows 检出换行称同一原字节。里面的旧故事与 evidence 是以前课堂的完整自主记录，不是本次新故事。
 
-| 点 | 固定标签 | 完整提交 | 用途 |
-| --- | --- | --- | --- |
-| 交付起点 | course-vcm-09-05-start | c3805c360551c10fedfd9b5473e569cfd7666dc0 | 应用已修好等待行为，尚没有本节五项交付入口 |
-| 完成点 | course-vcm-09-05-end | 877c9d61dc98c33a36e813060a2c4331867f4624 | 原生 Git 钩子实际通过后收录五项文件 |
-| 真实旧点 | course-vcm-09-05-old | 2c1f4e17c70377fc80e9f90d044e8e75ed3b5720 | 旧等待期会接纳输入，后来又被读回覆盖 |
+本节 A／B／C 使用同一实现，实际版本为 0.13.1／0.13.2／0.13.3 的工具组合与绑定另存 `actual-runtime/` 和各阶段 input-public；B/C 教师请求和人的新资料不在准备提交里，完整原件单列 `teacher/`。运行完成不靠制造一个没有业务意义的源码差异来证明。
 
-另一个 `公共交付完整.bundle` 只包含本练习载荷的独立公共 Git 根；它的 HEAD 不能当成应用版本。确切公共提交和原字节清单在 `固定交付记录.json`、`完整原字节清单.json`。
+本次作品 ID 为 `heldout-01252847-2f31-4ada-a646-9c0e3d17a327`。`records/A/before.*` 是真实零章起点（已有 A Task），不是导入旧正文；`data/课堂最终一致备份.sqlite` 是最后两章采用后的完整一致副本。六份阶段 SQLite 原字节与对应完整五表保留。最终五表条目数为 works=1、work_versions=3、chapters=2、chapter_versions=5、tasks=3；这些数量只帮助定位，不能代替文学阅读。
 
-## 零模型恢复
+## 本机查看和导出
 
-需要 Git 和 Node.js。本次实测 Node24.12.0、pnpm11.20.0、Git2.52.0.windows.1、Playwright1.63.0，实际浏览器为 Edge154.0.4258.48。不要全局安装项目依赖或改原锁文件。
-
-将本包解压到一个新的短目录，例如 `D:/练习/交付01`。在该目录运行：
-
-```sh
-node tools/恢复练习.mjs checked
-```
-
-恢复器先逐项核包的原字节，再 clone 应用存档到新的 `project/`，建立个人分支 `codex/practice-delivery-checked`，检出完成点并核自己的 Git 根、168 个完整跟踪文件。最后把既有 c2ce 教师测试恢复为 `scripts/test-saving.mjs` 未跟踪原件；它不属于五项提交。
-
-可独立选择 `start` 恢复到 `start-project/` 的 c380 起点；或 `old` 恢复到 `old-project/` 的 2c1 旧点。旧点先核164原文件，再仅采用 `delivery-files/` 中的 package、检查脚本与钩子三个原产物；它不会暂存、启用钩子或提交。目标已存在时失败并保留当前目录，换一个新解压目录重新练习。
-
-恢复只改变新自有目录，不启动宿主或服务，不写入实验数据库，不安装或执行检查，也不复原账号、全局配置、外部仓库或业务状态。完整 Git stdout/stderr/status/signal 和字节核对回执保存在解压根。
-
-## 安装与检查
-
-进入选中的实际应用 Git 根，再用项目原有 workspace 和锁文件安装：
-
-```sh
-pnpm install --frozen-lockfile
-```
-
-不加 `--ignore-workspace`，不改年龄策略、锁文件或第三方库。课程已经提供模型生成的完整五文件、原任务与原回复；阅读它们不需要模型调用。
-
-完成点和已采用三项入口的旧点可以运行 `pnpm run check:delivery`。默认 Chromium 需当前项目已有的 Playwright 浏览器安装；Windows 若使用既有 Edge，可在当前 PowerShell 进程明确设置：
+需要 Node ≥24.12.0、固定 pnpm 11.20.0。本次主编实际使用 Node 24.19.0；TypeScript、SDK 和 MCP 版本以 package.json 与锁文件为准。本包不含 node_modules。解压到自己的独立短目录，进入 `project/`：
 
 ```powershell
-$env:DELIVERY_BROWSER_CHANNEL = 'msedge'
-pnpm run check:delivery
+pnpm install --frozen-lockfile --virtual-store-dir .pnpm --package-import-method copy
+pnpm --virtual-store-dir .pnpm exec tsc -p tsconfig.json
+Copy-Item -LiteralPath '../data/课堂最终一致备份.sqlite' -Destination './课堂副本.sqlite'
+node dist/cli.js show --db 课堂副本.sqlite --work heldout-01252847-2f31-4ada-a646-9c0e3d17a327
+node dist/cli.js chapter 1 --db 课堂副本.sqlite --work heldout-01252847-2f31-4ada-a646-9c0e3d17a327
+node dist/cli.js chapter 2 --db 课堂副本.sqlite --work heldout-01252847-2f31-4ada-a646-9c0e3d17a327
+node dist/cli.js export 课堂重新导出.md --db 课堂副本.sqlite --work heldout-01252847-2f31-4ada-a646-9c0e3d17a327
 ```
 
-检查实际构建 dist，再运行原版一个正常保存实例。每次新建 `runs/delivery-saving-UUID/` 和 SQLite，由 Store 初始化完整既有作品及三章；脚本驱动正常键盘使用教师补记，不是模型重写小说。请求门仅延迟真实 POST/GET，观察结束后才断言；记录完整输入、请求返回、当前/历史、刷新、浏览器及清理。正确版应通过；旧版应完成同一流程后以五项业务失败非零退出。环境失败不是业务红，原错误与完整产物应保留。
+导出位置参数写文件，父目录须实际存在。独立导出与 `deliverables/最后一封回信-课堂完整采用稿.md` 比较完整正文和版本；这个原文件为 7277 字节。若想人工查看／改稿，启动同一 Store 的薄网页入口：
 
-本章不运行 `scripts/test-saving.mjs` 的既有十二实例，也不重新渲染原版/台面/笔记页。真实异常、并发、界面辨认、审美和文学采用须按相应需要另判。
-
-## 真正提交时的条件
-
-本地钩子不会因 clone 自动启用。只在自己的这份 Git 根明确设置 `git config --local core.hooksPath .githooks`。同时确保磁盘钩子可以执行、Git 中 mode 为100755；Unix可用 `chmod +x .githooks/pre-commit`，`git add --chmod=+x`只控制index，不代替磁盘或真正执行。
-
-完整暂存时，当前实现只纳入这五项：
-
-```sh
-git add -- package.json scripts/check-saving-delivery.mjs .githooks/pre-commit .github/workflows/delivery.yml docs/delivery-check.md
-git add --chmod=+x -- .githooks/pre-commit
-git diff --cached
-git diff
-git status --short --untracked-files=all
-git write-tree
+```powershell
+node dist/prototype-server.js --db 课堂副本.sqlite --work heldout-01252847-2f31-4ada-a646-9c0e3d17a327 --port 4368
 ```
 
-确认工作区/index逐文件对应，教师原件仍未跟踪。旧版只暂存前三项，以同一检查检验真实旧行为；不能用脚本缺失或伪退出演拒绝。只用自己获准的提交身份正常 `git commit`，不用跳过参数。本文普通钩子检查的是工作区，任意部分暂存并未验证。
+在自己的本地端口打开页面，页底保留原版／台面／笔记页三种方向。改稿会生成自己的新草稿并取消该章当前采用，不是修改随包的只读证据。请只在复制后的库里操作，停止只关闭自己的服务。本文没有承诺窄屏体验。
 
-已记录的实际旧提交退出1、HEAD2c1不变、三项index保留；当前提交退出0、HEAD877c、parentc380、commit tree等于提交前候选树，精确五项且Hook100755。Hook真实Trace2启动/退出、Git原输出与SQLite放在 `evidence/02-hook-*`、`evidence/03-hook-*-业务原件`。两个独立正常实例是先前检查链验证，真正的Git触发实例另存，不能合成只有一次执行。
+如需恢复源码历史，在另一空目录用 `git -c core.autocrlf=false clone ../history.bundle project-history`，再 checkout 明确的 start 或 prepared 标签。不要覆盖本包 project，也不要修改全局 Git 设置。
 
-## 已有记录与还没发生的操作
+## 怎样重做新的 AI 任务
 
-`evidence/01-助手生成/` 保留原任务、原回复、十五个完整命令/聚合输出、完整Diff与公共协议投影。原观察器scope false／exit1没有倒改：它误把 `git status --ignored` 里的 M/?? 行当纯忽略项；实际 !! 仍只有node_modules。独立解释不替代后来的真实业务结果。只有API实际提供的aggregatedOutput，没有伪造独立Shell stdout/stderr。
+当前 Task 已经完成或取消，旧 thread 是本次课堂实际会话，不能当成你宿主里的现成会话。用新作品／新库／新 Task 和你已认证的成熟宿主重新开展。先替换 initial-work 的 ID，在自己的空库经原 CLI 初始化；将自己的实际业务入口与已有方法交给宿主。观察器源代码保存本次关联、SDK runStreamed／resumeThread、实际保存后 Abort 和归档方法，但本次停用目录／路径绑定／批准回执并不是跨电脑的通用一键重放配置，包内不含私有启动器。
 
-JSON公共投影排除受保护宿主指令/推理正文与身份字段，重新序列化；它不是全协议原字节公开。Git和检查业务原件按实际字节保留，精确原/新摘要在 `公开范围.json`。第三方原课全文、官方全文、私有宿主配置和内部主编证明不在公共包，来源定位与编者采用判断在 `research/`。
+按 A 完整输入执行到真实保存返回，停止后先读实际对象。H1 中两条要求是编者故意加入的同级条件冲突；真正存在晚返分支的冲突，早返且核实交接完成仍是合法第三路。B 请求只检查当前资料，不续写。读完 B 再由你真正选择目标，保存当前要求和需要修改的正文。自己的 C 输入必须依据自己的真实前置，不预填本次版本号或模型回应。
 
-`delivery-files/.github/workflows/delivery.yml` 是可评审的PR检查配置，尚没有远端run/artifact。PR、推送、分支保护、merge和部署都没有执行。若准备外部交付，先在自己的仓库核实际base/head、Diff、授权与身份，再核真实CI checkout/log/artifact和最终mergeSHA；本地成功不冒充这些对象。
+教师材料中 H2 是主编课堂选择，不是课程用户的文学决定。旧 A 请求的 STALE_WORK 是另一次官方 Client 零模型反例，不是自然 B/C 遇到的错误。工具先在作品基线处拒绝，其他错误分支没有因此全部验证。最终采用和导出均另由人完成。
+
+## 怎样读完整实际记录
+
+`records/A`：21 个 SDK 事件；save_draft 返回第一章 r1 后教学取消，没有 turn.completed，用量 null；章稿保留。final-response.txt 只是停止前最后一段模型消息，不是正常最终收尾答复。
+
+`records/B`：15 个 SDK 事件；同会话只读，取得新要求和完整首章，指出晚返条件的冲突与具体优先级问题。业务资料／首章及 A Task 不变，观察器将 B 的独立 Task 记录 completed。
+
+`records/C`：24 个 SDK 事件；读取要求 r3、已采用首章 r3和空第二章，保存第二章 r1／draft并完整读回，正常完成后归档同一会话。只有章节任务 Skill 和它的一份状态参考被实际阅读，不把两项启用方法都称参与。
+
+`records/human`：真实 H1 资料变化、H2 人的要求／首章人工操作与采用、一次旧请求拒绝，以及 H3 第二章采用和真实文件导出。`records/final` 是最后 HTTP 完整业务返回与五表；当前首章 r3／第二章 r2 都 adopted，依据当前。
+
+`records/directory-*` 保留必要目录与首次未就绪失败。首查没有取得正确本节缓存，不把正常缓存稍后形成或第二次目录通过改写成首查已通过。目录通过只证明当时连接与能力，不代替后面自然任务。
+
+这些 SDK 事件是公开客户端层的过程记录，不是完整底层模型协议，不提供逐次模型请求数。公共投影排除非教学账户通知、remoteControl／installationId、共享配置正文及私有路径／宿主指令；内部原件保持。全部教师请求、业务工具参数和完整业务返回不概括；省略范围见公开投影说明。不取得私有 rollout。累计 usage 不解释为上下文窗口、单次 API 调用或金额。
+
+## 实际页面与完整文本
+
+`ui/` 中三个 H2 JPEG 使用同一个人工保存后的完整首章（r2 draft）、同 1280×720 CSS 视口／DPR1.25、同字段和必要操作。实际一次保存后切换方向，不重演三次保存。原存 png 的字节实际是 JPEG，正确 jpg 只改扩展名，没有图像加工。实际尺寸原版1264×1330、台面1264×1115、笔记页1264×1508。旧误读 PNG 头的元数据只保留为内部未采用证据，本包尺寸索引以实际 JPEG 解码为准。
+
+H3 第二章页为1264×1330 JPEG；实际页面读两章已采用并点第二章，没有再改稿。全页截图不代表 textarea 每行都同时可见；完整 value、实际 POST／GET、HTTP／DB 和真实文件负责全文核对。三方案的功能、辨认、整体口吻与结构代价分开记录，原版可以胜出，不替用户选择。
+
+教学图是干净关系示意，灰线不代表实际章稿逐字呈现；它不是本次运行截图。没有新 ChatCut 入口、OAuth授权、剪辑或导出记录，课程中的剪辑表只作迁移准备。

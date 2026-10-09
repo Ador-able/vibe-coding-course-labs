@@ -1,0 +1,1319 @@
+{
+  "passed": true,
+  "root": "<课堂项目>",
+  "runtime": {
+    "configOverrides": [
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h13-01-lab\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"export_work\",\"save_draft\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.anki_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.blender={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.code-review@openai-bundled.enabled=false",
+      "plugins.codex-app-tools@openai-bundled.enabled=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.comfy_mcp={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.coursebook@personal.enabled=false",
+      "plugins.unified-computer-use@openai-bundled.enabled=false",
+      "plugins.frameflow@frameflow.enabled=false",
+      "mcp_servers.node_repl={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.novel-practice@novel-agent-lab.enabled=false",
+      "plugins.presentations@openai-primary-runtime.enabled=false",
+      "plugins.documents@openai-primary-runtime.enabled=false",
+      "plugins.pdf@openai-primary-runtime.enabled=false",
+      "plugins.visualize@openai-bundled.enabled=false",
+      "plugins.frameflow@personal.enabled=false",
+      "plugins.spreadsheets@openai-primary-runtime.enabled=false",
+      "plugins.tripo-studio-mcp@tripo-studio.enabled=false",
+      "plugins.chrome@openai-bundled.enabled=false",
+      "plugins.template-creator@openai-primary-runtime.enabled=false",
+      "plugins.scene-production@personal.enabled=false",
+      "plugins.browser@openai-bundled.enabled=false",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "skills.config=[{path=\"<宿主用户目录>\\\\.codex\\\\skills\\\\change-aware-validation\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\skills\\\\codebase-simplification\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\theitzy\\\\course-automation\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\documents\\\\26.930.11008\\\\skills\\\\documents\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\skills\\\\note-to-anki-rich\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\pdf\\\\26.930.11008\\\\skills\\\\pdf\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\presentations\\\\26.930.11008\\\\skills\\\\presentations\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\skills\\\\record-ui-evidence\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\skills\\\\remove-authoring-residue\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-breakdown\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\asset-models\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\basics\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\concept-art\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\delivery\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\project-vision\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-assembly\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\scene-layout\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\personal\\\\scene-production\\\\2.1.0+codex.20260830125156\\\\skills\\\\visual-review\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\skills\\\\semantic-code-review\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\spreadsheets\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\spreadsheets\\\\26.930.11008\\\\skills\\\\excel-live-control\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\skills\\\\technical-prose-standard\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\openai-primary-runtime\\\\template-creator\\\\26.930.11008\\\\skills\\\\template-creator\\\\SKILL.md\",enabled=false},{path=\"<宿主用户目录>\\\\.codex\\\\plugins\\\\cache\\\\openai-bundled\\\\visualize\\\\1.0.46\\\\skills\\\\visualize\\\\SKILL.md\",enabled=false}]",
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\h13-01-lab\"={trust_level=\"trusted\"}}",
+      "features.hooks=false",
+      "features.plugins=true",
+      "web_search=\"disabled\""
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "<课堂项目>",
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "threadId": "01a109b2-3e77-7b70-9246-0deddc1b60f4",
+  "archived": true,
+  "exitResult": {
+    "pid": 43796,
+    "exitCode": 0,
+    "signal": null
+  },
+  "configuration": {
+    "memories": {
+      "use_memories": false,
+      "generate_memories": false
+    },
+    "features": {
+      "memories": false,
+      "hooks": false,
+      "plugins": true
+    },
+    "skills": {
+      "bundled": {
+        "enabled": false
+      },
+      "config": [
+        {
+          "path": "<宿主用户目录>\\.codex\\skills\\change-aware-validation\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\skills\\codebase-simplification\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "D:\\Projects\\theitzy\\course-automation\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\openai-primary-runtime\\documents\\26.930.11008\\skills\\documents\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\skills\\note-to-anki-rich\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\openai-primary-runtime\\pdf\\26.930.11008\\skills\\pdf\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\openai-primary-runtime\\presentations\\26.930.11008\\skills\\presentations\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\skills\\record-ui-evidence\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\skills\\remove-authoring-residue\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-breakdown\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\asset-models\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\basics\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\concept-art\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\delivery\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\project-vision\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-assembly\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\scene-layout\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\personal\\scene-production\\2.1.0+codex.20260830125156\\skills\\visual-review\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\skills\\semantic-code-review\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\spreadsheets\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\openai-primary-runtime\\spreadsheets\\26.930.11008\\skills\\excel-live-control\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\skills\\technical-prose-standard\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\openai-primary-runtime\\template-creator\\26.930.11008\\skills\\template-creator\\SKILL.md",
+          "enabled": false
+        },
+        {
+          "path": "<宿主用户目录>\\.codex\\plugins\\cache\\openai-bundled\\visualize\\1.0.46\\skills\\visualize\\SKILL.md",
+          "enabled": false
+        }
+      ]
+    },
+    "project_doc_max_bytes": 0,
+    "hasDeveloperInstructions": false,
+    "nativeProjectTrust": "trusted",
+    "web_search": "disabled"
+  },
+  "plugins": {
+    "marketplaces": [
+      {
+        "name": "openai-primary-runtime",
+        "path": "<宿主用户目录>\\.cache\\codex-runtimes\\codex-primary-runtime\\plugins\\openai-primary-runtime\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "documents@openai-primary-runtime",
+            "name": "documents",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "pdf@openai-primary-runtime",
+            "name": "pdf",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "spreadsheets@openai-primary-runtime",
+            "name": "spreadsheets",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "presentations@openai-primary-runtime",
+            "name": "presentations",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "template-creator@openai-primary-runtime",
+            "name": "template-creator",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "openai-bundled",
+        "path": "<宿主用户目录>\\.codex\\.tmp\\bundled-marketplaces\\openai-bundled\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "codex-app-tools@openai-bundled",
+            "name": "codex-app-tools",
+            "localVersion": "0.1.5",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "browser@openai-bundled",
+            "name": "browser",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "unified-computer-use@openai-bundled",
+            "name": "unified-computer-use",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "chrome@openai-bundled",
+            "name": "chrome",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "computer-use@openai-bundled",
+            "name": "computer-use",
+            "localVersion": "26.930.31730",
+            "installed": false,
+            "enabled": false
+          },
+          {
+            "id": "latex@openai-bundled",
+            "name": "latex",
+            "localVersion": "0.2.8",
+            "installed": false,
+            "enabled": false
+          },
+          {
+            "id": "code-review@openai-bundled",
+            "name": "code-review",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "visualize@openai-bundled",
+            "name": "visualize",
+            "localVersion": "1.0.46",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "chatcut-inc",
+        "path": "<宿主用户目录>\\.codex\\.tmp\\marketplaces\\chatcut-inc\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "chatcut@chatcut-inc",
+            "name": "chatcut",
+            "localVersion": "1.10.15",
+            "installed": false,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "frameflow",
+        "path": "D:\\Projects\\FrameFlow\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "frameflow@frameflow",
+            "name": "frameflow",
+            "localVersion": "0.9.1+codex.20261005091207",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "personal",
+        "path": "D:\\Projects\\Knowledge\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "coursebook@personal",
+            "name": "coursebook",
+            "localVersion": "1.0.0+codex.20260929131132",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "novel-workbench-course-lab",
+        "path": "<课堂项目>\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "novel-workbench-course@novel-workbench-course-lab",
+            "name": "novel-workbench-course",
+            "localVersion": "0.13.3",
+            "source": {
+              "type": "local",
+              "path": "<课堂项目>\\plugins\\novel-workbench-course"
+            },
+            "installed": true,
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "name": "tripo-studio",
+        "path": "E:\\Projects\\tripo-studio-mcp\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "tripo-studio-mcp@tripo-studio",
+            "name": "tripo-studio-mcp",
+            "localVersion": "0.8.0+codex.20260728052752",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      }
+    ],
+    "marketplaceLoadErrors": [],
+    "scope": "自有源保留路径；其他项不保存远端源、共享身份、计划、账户、接口描述或凭据。"
+  },
+  "hooks": {
+    "data": [
+      {
+        "cwd": "<课堂项目>",
+        "hooks": [],
+        "warnings": [],
+        "errors": []
+      }
+    ],
+    "scope": "目录必须为空；不保存 Hook 命令、Prompt 或规则正文。"
+  },
+  "catalog": {
+    "data": [
+      {
+        "cwd": "<课堂项目>",
+        "skills": [
+          {
+            "name": "change-aware-validation",
+            "path": "<宿主用户目录>\\.codex\\skills\\change-aware-validation\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "codebase-simplification",
+            "path": "<宿主用户目录>\\.codex\\skills\\codebase-simplification\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "course-automation",
+            "path": "D:\\Projects\\theitzy\\course-automation\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "note-to-anki-rich",
+            "path": "<宿主用户目录>\\.codex\\skills\\note-to-anki-rich\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "novel-workbench-course:novel-chapter-review",
+            "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\skills\\novel-chapter-review\\SKILL.md",
+            "scope": "user",
+            "enabled": true,
+            "pluginId": "novel-workbench-course@novel-workbench-course-lab"
+          },
+          {
+            "name": "novel-workbench-course:novel-chapter-task",
+            "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\skills\\novel-chapter-task\\SKILL.md",
+            "scope": "user",
+            "enabled": true,
+            "pluginId": "novel-workbench-course@novel-workbench-course-lab"
+          },
+          {
+            "name": "record-ui-evidence",
+            "path": "<宿主用户目录>\\.codex\\skills\\record-ui-evidence\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "remove-authoring-residue",
+            "path": "<宿主用户目录>\\.codex\\skills\\remove-authoring-residue\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "semantic-code-review",
+            "path": "<宿主用户目录>\\.codex\\skills\\semantic-code-review\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          },
+          {
+            "name": "technical-prose-standard",
+            "path": "<宿主用户目录>\\.codex\\skills\\technical-prose-standard\\SKILL.md",
+            "scope": "user",
+            "enabled": false,
+            "pluginId": null
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "scope": "只保存名称、路径、启用与归属；两份自有方法原文另由固定源核对。"
+  },
+  "status": {
+    "data": [
+      {
+        "name": "anki_mcp",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "authStatus": "unsupported",
+        "toolNames": []
+      },
+      {
+        "name": "blender",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "authStatus": "unsupported",
+        "toolNames": []
+      },
+      {
+        "name": "codex_apps",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "authStatus": "unsupported",
+        "toolNames": []
+      },
+      {
+        "name": "comfy_mcp",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "authStatus": "unsupported",
+        "toolNames": []
+      },
+      {
+        "name": "node_repl",
+        "runtimeStatus": "disabled",
+        "pluginId": null,
+        "authStatus": "unsupported",
+        "toolNames": []
+      },
+      {
+        "name": "novel_lab",
+        "runtimeStatus": "connected",
+        "pluginId": "novel-workbench-course@novel-workbench-course-lab",
+        "httpOrigin": null,
+        "serverInfo": {
+          "name": "novel-lab",
+          "title": null,
+          "version": "0.1.0",
+          "description": null,
+          "icons": null,
+          "websiteUrl": null
+        },
+        "serverCapabilities": {
+          "prompts": {
+            "listChanged": true
+          },
+          "resources": {
+            "listChanged": true
+          },
+          "tools": {
+            "listChanged": true
+          }
+        },
+        "tools": {
+          "read_chapter": {
+            "name": "read_chapter",
+            "title": "读回完整章节",
+            "description": "取得一章的当前正文和修订；不存在时 result 为 null。保存后用它核对实际内容。. This tool is part of plugin `小说任务练习`.",
+            "inputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "workId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                },
+                "chapterNumber": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "workId",
+                "chapterNumber"
+              ]
+            },
+            "outputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "result": {
+                  "anyOf": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "workId": {
+                          "type": "string",
+                          "pattern": "^[a-z0-9-]+$"
+                        },
+                        "number": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "revision": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "body": {
+                          "type": "string"
+                        },
+                        "status": {
+                          "type": "string",
+                          "enum": [
+                            "draft",
+                            "adopted"
+                          ]
+                        },
+                        "workRevision": {
+                          "type": "integer",
+                          "exclusiveMinimum": 0,
+                          "maximum": 9007199254740991
+                        },
+                        "origin": {
+                          "type": "string",
+                          "enum": [
+                            "human",
+                            "agent"
+                          ]
+                        },
+                        "taskId": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "threadId": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "updatedAt": {
+                          "type": "string"
+                        },
+                        "previousRevisions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "number": {
+                                "type": "integer",
+                                "exclusiveMinimum": 0,
+                                "maximum": 9007199254740991
+                              },
+                              "revision": {
+                                "type": "integer",
+                                "exclusiveMinimum": 0,
+                                "maximum": 9007199254740991
+                              }
+                            },
+                            "required": [
+                              "number",
+                              "revision"
+                            ],
+                            "additionalProperties": false
+                          }
+                        },
+                        "reviewNote": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "workId",
+                        "number",
+                        "revision",
+                        "title",
+                        "body",
+                        "status",
+                        "workRevision",
+                        "origin",
+                        "taskId",
+                        "threadId",
+                        "updatedAt"
+                      ],
+                      "additionalProperties": false
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "additionalProperties": false
+            },
+            "annotations": {
+              "readOnlyHint": true,
+              "destructiveHint": false,
+              "idempotentHint": true,
+              "openWorldHint": false
+            }
+          },
+          "save_draft": {
+            "name": "save_draft",
+            "title": "保存章节草稿",
+            "description": "按当前要求、正文和前文基线保存草稿。expectedPreviousRevisions 逐项列出第1章至上一章的修订，写第1章时为 []。没有旧正文时 expectedChapterRevision=0。状态始终 draft；冲突时重读，不重试旧基线。. This tool is part of plugin `小说任务练习`.",
+            "inputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "workId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                },
+                "chapterNumber": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "expectedWorkRevision": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "expectedChapterRevision": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 9007199254740991
+                },
+                "expectedPreviousRevisions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "number": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      },
+                      "revision": {
+                        "type": "integer",
+                        "exclusiveMinimum": 0,
+                        "maximum": 9007199254740991
+                      }
+                    },
+                    "required": [
+                      "number",
+                      "revision"
+                    ]
+                  }
+                },
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "body": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "workId",
+                "chapterNumber",
+                "expectedWorkRevision",
+                "expectedChapterRevision",
+                "expectedPreviousRevisions",
+                "title",
+                "body"
+              ]
+            },
+            "outputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "object",
+                  "properties": {
+                    "workId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    "number": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "body": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "draft",
+                        "adopted"
+                      ]
+                    },
+                    "workRevision": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "origin": {
+                      "type": "string",
+                      "enum": [
+                        "human",
+                        "agent"
+                      ]
+                    },
+                    "taskId": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "threadId": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "updatedAt": {
+                      "type": "string"
+                    },
+                    "previousRevisions": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "number": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "revision": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          }
+                        },
+                        "required": [
+                          "number",
+                          "revision"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "reviewNote": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "workId",
+                    "number",
+                    "revision",
+                    "title",
+                    "body",
+                    "status",
+                    "workRevision",
+                    "origin",
+                    "taskId",
+                    "threadId",
+                    "updatedAt"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "additionalProperties": false
+            },
+            "annotations": {
+              "readOnlyHint": false,
+              "destructiveHint": false,
+              "idempotentHint": false,
+              "openWorldHint": false
+            }
+          },
+          "read_work": {
+            "name": "read_work",
+            "title": "读取当前作品要求",
+            "description": "取得有效用途、设定、大纲及要求修订；写作和保存前先调用。. This tool is part of plugin `小说任务练习`.",
+            "inputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "workId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                }
+              },
+              "required": [
+                "workId"
+              ]
+            },
+            "outputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "purpose": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "requirements": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "facts": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "outline": {
+                      "minItems": 1,
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "number": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "titleHint": {
+                            "type": "string",
+                            "minLength": 1
+                          },
+                          "goal": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        },
+                        "required": [
+                          "number",
+                          "titleHint",
+                          "goal"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "title",
+                    "purpose",
+                    "requirements",
+                    "facts",
+                    "outline",
+                    "revision"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "additionalProperties": false
+            },
+            "annotations": {
+              "readOnlyHint": true,
+              "destructiveHint": false,
+              "idempotentHint": true,
+              "openWorldHint": false
+            }
+          },
+          "export_work": {
+            "name": "export_work",
+            "title": "取得完整待审 Markdown",
+            "description": "取得指定作品当前已保存章节的完整 Markdown、修订和采用状态，按章号返回全部已保存正文。不写文件、不修改正文、不采用或发布。没有已保存章节时返回空目录和仅含作品信息的文本。allOutlineChaptersSaved 只表示大纲中的章节已有保存对象，不表示稿件被人认可。. This tool is part of plugin `小说任务练习`.",
+            "inputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "workId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                }
+              },
+              "required": [
+                "workId"
+              ]
+            },
+            "outputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "object",
+                  "properties": {
+                    "workId": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9-]+$"
+                    },
+                    "workRevision": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "expectedChapters": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "savedChapters": {
+                      "type": "integer",
+                      "minimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "allOutlineChaptersSaved": {
+                      "type": "boolean"
+                    },
+                    "chapters": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "number": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "revision": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "status": {
+                            "type": "string",
+                            "enum": [
+                              "draft",
+                              "adopted"
+                            ]
+                          },
+                          "workRevision": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "previousRevisions": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "number": {
+                                  "type": "integer",
+                                  "exclusiveMinimum": 0,
+                                  "maximum": 9007199254740991
+                                },
+                                "revision": {
+                                  "type": "integer",
+                                  "exclusiveMinimum": 0,
+                                  "maximum": 9007199254740991
+                                }
+                              },
+                              "required": [
+                                "number",
+                                "revision"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "reviewNote": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "basisCurrent": {
+                            "type": "boolean"
+                          }
+                        },
+                        "required": [
+                          "number",
+                          "revision",
+                          "status",
+                          "workRevision",
+                          "previousRevisions",
+                          "reviewNote",
+                          "basisCurrent"
+                        ],
+                        "additionalProperties": false
+                      }
+                    },
+                    "text": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "workId",
+                    "workRevision",
+                    "expectedChapters",
+                    "savedChapters",
+                    "allOutlineChaptersSaved",
+                    "chapters",
+                    "text"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "additionalProperties": false
+            },
+            "annotations": {
+              "readOnlyHint": true,
+              "destructiveHint": false,
+              "idempotentHint": true,
+              "openWorldHint": false
+            }
+          },
+          "list_chapters": {
+            "name": "list_chapters",
+            "title": "查询已保存章节",
+            "description": "查询真实保存数量、各章修订和人工采用状态，不包含正文。. This tool is part of plugin `小说任务练习`.",
+            "inputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "workId": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9-]+$"
+                }
+              },
+              "required": [
+                "workId"
+              ]
+            },
+            "outputSchema": {
+              "$schema": "http://json-schema.org/draft-07/schema#",
+              "type": "object",
+              "properties": {
+                "result": {
+                  "type": "object",
+                  "properties": {
+                    "chapters": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "workId": {
+                            "type": "string",
+                            "pattern": "^[a-z0-9-]+$"
+                          },
+                          "number": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "revision": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "title": {
+                            "type": "string"
+                          },
+                          "status": {
+                            "type": "string",
+                            "enum": [
+                              "draft",
+                              "adopted"
+                            ]
+                          },
+                          "workRevision": {
+                            "type": "integer",
+                            "exclusiveMinimum": 0,
+                            "maximum": 9007199254740991
+                          },
+                          "origin": {
+                            "type": "string",
+                            "enum": [
+                              "human",
+                              "agent"
+                            ]
+                          },
+                          "taskId": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "threadId": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          },
+                          "updatedAt": {
+                            "type": "string"
+                          },
+                          "previousRevisions": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "properties": {
+                                "number": {
+                                  "type": "integer",
+                                  "exclusiveMinimum": 0,
+                                  "maximum": 9007199254740991
+                                },
+                                "revision": {
+                                  "type": "integer",
+                                  "exclusiveMinimum": 0,
+                                  "maximum": 9007199254740991
+                                }
+                              },
+                              "required": [
+                                "number",
+                                "revision"
+                              ],
+                              "additionalProperties": false
+                            }
+                          },
+                          "reviewNote": {
+                            "type": [
+                              "string",
+                              "null"
+                            ]
+                          }
+                        },
+                        "required": [
+                          "workId",
+                          "number",
+                          "revision",
+                          "title",
+                          "status",
+                          "workRevision",
+                          "origin",
+                          "taskId",
+                          "threadId",
+                          "updatedAt"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "chapters"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "required": [
+                "result"
+              ],
+              "additionalProperties": false
+            },
+            "annotations": {
+              "readOnlyHint": true,
+              "destructiveHint": false,
+              "idempotentHint": true,
+              "openWorldHint": false
+            }
+          }
+        },
+        "toolsError": null,
+        "resources": [],
+        "resourceTemplates": [],
+        "authStatus": "unsupported"
+      }
+    ],
+    "nextCursor": null,
+    "scope": "自有工具保留完整定义；其他入口只保留身份、状态及工具名。"
+  },
+  "installedCache": [
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\binding.json",
+      "bytes": 252,
+      "sha256": "2d07944da052d8bfb8ce91c7baee1d10786e6183a289d6995946b9c2c9ec6d99"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\mcp.json",
+      "bytes": 245,
+      "sha256": "12a38ff216eee0db455a5627850a573f5240b2c5ad69432f3d8da924f01122ba"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\plugin.json",
+      "bytes": 705,
+      "sha256": "f3a399614994ab94e620acf42cc250de90f8da841649903e72a3f8da43a7f306"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\serve.mjs",
+      "bytes": 458,
+      "sha256": "efbf1ad92b9e07fa89d29dd8cec7a4af3333ed08124375e72294164e59a09484"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+      "bytes": 1382,
+      "sha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\skills\\novel-chapter-review\\references\\prose-review.md",
+      "bytes": 687,
+      "sha256": "2f322a1148b56fa26cb9d238bdda636bee6cb0398448a7050def58c280b19315"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\skills\\novel-chapter-review\\SKILL.md",
+      "bytes": 2307,
+      "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\skills\\novel-chapter-task\\references\\state-and-review.md",
+      "bytes": 2098,
+      "sha256": "8d5b6aaad2e0c794ed2363e87bf31abcece2688d278f52329b65af1d7b2f7685"
+    },
+    {
+      "path": "<宿主用户目录>\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.13.3\\skills\\novel-chapter-task\\SKILL.md",
+      "bytes": 2906,
+      "sha256": "5ee8b465842d0dd4caf2ec9d27784fbb49f018a184f822ce9f38be8c88146ac1"
+    }
+  ],
+  "counts": {
+    "requests": 8,
+    "turnStart": 0,
+    "commandExec": 0,
+    "hookRuns": 0,
+    "executionEvents": 0
+  },
+  "fullFiveTablesUnchanged": true,
+  "sharedSummaryUnchanged": true,
+  "error": null,
+  "limits": [
+    "实际目录仅确认本次状态，仍未发送自然任务或调用业务工具。",
+    "project_doc_max_bytes=0不关闭全局用户规则；不读取其正文。",
+    "只核本连接实际 native PID 及归档/退出，不扩成所有子孙进程或全机检查。",
+    "缓存刷新与正常官方会话持久化可以写缓存/会话文件；本观察器不写回共享配置或恢复备份，实际摘要是否不变另列。",
+    "三个继承隔离标记仅在整体目录契约通过时放行；它们不表示全局用户规则已被隔离。"
+  ]
+}
