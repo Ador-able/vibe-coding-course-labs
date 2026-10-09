@@ -1,0 +1,30 @@
+{
+  "action": "publish-parent",
+  "startedAt": "2026-10-05T04:19:55.214Z",
+  "finishedAt": "2026-10-05T04:19:55.564Z",
+  "records": [
+    {
+      "endpoint": "/workflows/B7ZScg0RrMuWWsas/activate",
+      "method": "POST",
+      "body": {
+        "versionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+        "expectedChecksum": "54e265c027b3b032243390c0dbbc30501500940e65f66d8951ec6cf4bd747e4e"
+      },
+      "startedAt": "2026-10-05T04:19:55.214Z",
+      "finishedAt": "2026-10-05T04:19:55.564Z",
+      "response": {
+        "status": 400,
+        "data": {
+          "code": 400,
+          "message": "Cannot publish workflow: Node \"同一次子执行传入全部任务\" references workflow dszrp2tvQDiaatg2 (\"课堂 vcm-11-07 完整材料子流程\") which is not published. Please publish all referenced sub-workflows first.",
+          "meta": {
+            "validationError": true
+          }
+        }
+      }
+    }
+  ],
+  "projection": {
+    "scope": "完整业务请求正文与公开业务响应对象；省略Cookie、REST/HTTP头、账户与工作流所有者、执行底层私有协议。未把主编内部断言当业务请求结果。"
+  }
+}

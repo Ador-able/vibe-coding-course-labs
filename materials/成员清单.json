@@ -1,0 +1,304 @@
+{
+  "members": [
+    {
+      "member": "配置/.gitattributes",
+      "sourceName": ".gitattributes",
+      "bytes": 40,
+      "sha256": "01f787bc2ad68436fcdd682b711c99c3ecfbd3656e4a3de7bfa0d61f962281c5",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/.gitignore",
+      "sourceName": ".gitignore",
+      "bytes": 15,
+      "sha256": "5e6831cbb1cfdaf75ebb918a110de6df80448c5b5371ba96e30e117e74c424ee",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/README.md",
+      "sourceName": "README.md",
+      "bytes": 3678,
+      "sha256": "d5f000dac75fd9be376e1bebf83f8898b873602070fa79f98c3dead2d8855b37",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/bind-branch.mjs",
+      "sourceName": "bind-branch.mjs",
+      "bytes": 1773,
+      "sha256": "b17142d36e1e826ecf7a8a4192cd90155de3fc9cd69a3e86f95a8d4396426828",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/child.template.json",
+      "sourceName": "child.template.json",
+      "bytes": 16329,
+      "sha256": "6d8428cd74e5bf4027e5057106915d14d36798e5d9f3b51adfe0ac38020ce9f5",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/inputs/catalog.json",
+      "sourceName": "catalog.json",
+      "bytes": 2244,
+      "sha256": "350501fa54f9573868f58a0ef8b789256e7ab06b52ad8b3ec51de42595b003bb",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/inputs/current-batch.json",
+      "sourceName": "current-batch.json",
+      "bytes": 1310,
+      "sha256": "863e6ba61b6cc957bca5e0a02c2505226984f7a139992220f8f7596f32005227",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/parent.template.json",
+      "sourceName": "parent.template.json",
+      "bytes": 6588,
+      "sha256": "158a4458d17b53ea1957303988058d19ed92f62e780bf513336fceb09b10daef",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/receipt-table.json",
+      "sourceName": "receipt-table.json",
+      "bytes": 1039,
+      "sha256": "f338740d467614528524dd1866aeff52abea4d4f4a08aa05d02bb0d7ecbc3569",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "配置/runtime.json",
+      "sourceName": "runtime.json",
+      "bytes": 426,
+      "sha256": "40ddf9c78f5a299a3dfdefc37ddac4d9c893aeeab9274f03ad289d4e0dfc3b59",
+      "scope": "执行前固定工作树原字节；Git换行范围另列"
+    },
+    {
+      "member": "本轮原生配置.bundle",
+      "sourceName": "本轮原生配置.bundle",
+      "bytes": 9725,
+      "sha256": "eedf12308e97e3cc3955589a787ca1619504a91955baa44f6c4e2687fd869e5b",
+      "scope": "仅十份课程配置的独立Git历史和两标签"
+    },
+    {
+      "member": "教学材料/01本轮批次完整输入.json",
+      "sourceName": "01-本轮批次完整输入.json",
+      "bytes": 1310,
+      "sha256": "863e6ba61b6cc957bca5e0a02c2505226984f7a139992220f8f7596f32005227",
+      "scope": "实施前完整教师输入或预期/方案；不能追认为执行输出"
+    },
+    {
+      "member": "教学材料/02含归档项的完整教师目录.json",
+      "sourceName": "02-含归档项的完整教师目录.json",
+      "bytes": 2244,
+      "sha256": "350501fa54f9573868f58a0ef8b789256e7ab06b52ad8b3ec51de42595b003bb",
+      "scope": "实施前完整教师输入或预期/方案；不能追认为执行输出"
+    },
+    {
+      "member": "教学材料/03子流程输入字段完整契约.json",
+      "sourceName": "03-子流程输入字段完整契约.json",
+      "bytes": 2437,
+      "sha256": "c38de4f949946e73543592774339cc9aa3cb041afd87e1465f30250d7f91609a",
+      "scope": "实施前完整教师输入或预期/方案；不能追认为执行输出"
+    },
+    {
+      "member": "教学材料/04预期分类与实际核查点.json",
+      "sourceName": "04-预期分类与实际核查点.json",
+      "bytes": 1809,
+      "sha256": "c6f0bfaaaf950ae59e8e8a91f5c43e8bfe576a910b126f03bad64d2dfe868977",
+      "scope": "实施前完整教师输入或预期/方案；不能追认为执行输出"
+    },
+    {
+      "member": "教学材料/05三个完整教学判断题.md",
+      "sourceName": "05-三个完整教学判断题.md",
+      "bytes": 4708,
+      "sha256": "33892fa21819914cd3412b205f0c6b28d78ec17037d6491c763bbe3234127565",
+      "scope": "实施前完整教师输入或预期/方案；不能追认为执行输出"
+    },
+    {
+      "member": "教学材料/06让AI核对批次和子流程的完整提示词.txt",
+      "sourceName": "06-让AI核对批次和子流程的完整提示词.txt",
+      "bytes": 3940,
+      "sha256": "87d5de279ef28a2af5c175a9f351cecb5e374f48b0d76f85f0c7839fdf4fbde9",
+      "scope": "实施前完整教师输入或预期/方案；不能追认为执行输出"
+    },
+    {
+      "member": "教学材料/07字段值与说明的完整教师反例.json",
+      "sourceName": "07-字段值与说明的完整教师反例.json",
+      "bytes": 565,
+      "sha256": "befe894217bdc8ad3c2f037a1ad5211b917eda7cb2a81849d3b2fd0bcbfb75bb",
+      "scope": "实施前完整教师输入或预期/方案；不能追认为执行输出"
+    },
+    {
+      "member": "旧单项对照/formal-duplicate-完整节点业务执行.json",
+      "sourceName": "08-既有-formal-duplicate-完整节点业务执行.json",
+      "bytes": 6063,
+      "sha256": "6342f71c0702c07951f68b3dbbaea44bd6480e23fa282f0f70c4b761c7cbfdf6",
+      "scope": "前面既有单项运行的全部节点业务投影；非本轮新执行"
+    },
+    {
+      "member": "旧单项对照/formal-E01-完整节点业务执行.json",
+      "sourceName": "08-既有-formal-E01-完整节点业务执行.json",
+      "bytes": 11572,
+      "sha256": "67b46ac387f7259bba1bd6c79e86e006669c45f0fc6fda55cdb490b793cae2e7",
+      "scope": "前面既有单项运行的全部节点业务投影；非本轮新执行"
+    },
+    {
+      "member": "旧单项对照/formal-E02-failed-完整节点业务执行.json",
+      "sourceName": "08-既有-formal-E02-failed-完整节点业务执行.json",
+      "bytes": 14994,
+      "sha256": "837a3d12074ac1490841978b4154210564b068fd3ffd1fec40e2fc709b31be19",
+      "scope": "前面既有单项运行的全部节点业务投影；非本轮新执行"
+    },
+    {
+      "member": "旧单项对照/test-完整节点业务执行.json",
+      "sourceName": "08-既有-test-完整节点业务执行.json",
+      "bytes": 11571,
+      "sha256": "a0f0fd90ad8f8dd4d14a7bf7b7518260dfa1928a99dc3b9e7109ba249da28b65",
+      "scope": "前面既有单项运行的全部节点业务投影；非本轮新执行"
+    },
+    {
+      "member": "实际记录/create-child-bound.json",
+      "sourceName": "create-child-bound.json",
+      "bytes": 63600,
+      "sha256": "de53c6bcb6e3469d7dc729c25c1ed418c80d3d69399eb2d4fe5956d6f2c8532b",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/create-parent.json",
+      "sourceName": "create-parent.json",
+      "bytes": 27653,
+      "sha256": "dc0d6783da3c52ac39d1a66b5f28f7fa52dc7f422839b578df6b6ac3f97370e6",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/create-table.json",
+      "sourceName": "create-table.json",
+      "bytes": 12336,
+      "sha256": "3dfd43f85e8974eca7dc54aa6553233954a5641c457e187c8d27a815a8f4a1bc",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/post-once.json",
+      "sourceName": "post-once.json",
+      "bytes": 6307,
+      "sha256": "679e346694027b9fc4126167784ba03ee535ef342dc274deb10983982b4492ae",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/publication-ready.json",
+      "sourceName": "publication-ready.json",
+      "bytes": 64544,
+      "sha256": "b70dd07d925294ffe3df561731d74c1a110d431bc28d161194b1c2b8ee6159bc",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/publish-child.json",
+      "sourceName": "publish-child.json",
+      "bytes": 89144,
+      "sha256": "261818c0aad895879235afc8b3b28b39c46073eb899e23a088143469b863bc4d",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/publish-parent-after-child.json",
+      "sourceName": "publish-parent-after-child.json",
+      "bytes": 38549,
+      "sha256": "7fd266c9b0651fcd543e96a62a3a9166c5e158b1bdd803e8dca8c8f44085dc5b",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/publish-parent.json",
+      "sourceName": "publish-parent.json",
+      "bytes": 1160,
+      "sha256": "a32bf7d7cf155fdb9860b39d4c0a84830f5294bdf1623a8a09044417c6bf7c0d",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/read-results.json",
+      "sourceName": "read-results.json",
+      "bytes": 149124,
+      "sha256": "8cba02291666b897fd5de1c5f816ee4b83d939bb62955e38cb36997d69ede40d",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/子流程-全部节点业务执行.json",
+      "sourceName": "子流程-全部节点业务执行.json",
+      "bytes": 45684,
+      "sha256": "a1e1a772edb91ccd8d9e954c2c836fc47f783b935bbba9d0ab31bfb098a63907",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/最终全部回执行与列.json",
+      "sourceName": "最终全部回执行与列.json",
+      "bytes": 7725,
+      "sha256": "9d155aaba056b480dab3668f811cf8235a27bb25d92b81e32cc382ef0586d846",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/本次完整逐项结果与范围.json",
+      "sourceName": "本次完整逐项结果与范围.json",
+      "bytes": 3815,
+      "sha256": "d232cc60edc4468cdc929bccbcd4be76367a5672341045eb9d267c8baf92a75a",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "实际记录/父流程-全部节点业务执行.json",
+      "sourceName": "父流程-全部节点业务执行.json",
+      "bytes": 28945,
+      "sha256": "241baca2cb86b9eefc4834bc69646b2b2ddfd64ef328a71d6fbcc92d1b901b91",
+      "scope": "本轮唯一实际执行的明确公开业务范围；各原projection保留"
+    },
+    {
+      "member": "README.md",
+      "sourceName": "公开实践README.md",
+      "bytes": 6914,
+      "sha256": "53d45923cb0f459874e0c443bc9e624ae406b30e36ea63bc1d212136675980b5",
+      "scope": "当前独立恢复与使用说明"
+    },
+    {
+      "member": "教学材料/完整题目提示与答案.md",
+      "sourceName": "三题完整问题提示与答案.md",
+      "bytes": 4253,
+      "sha256": "a40accec60f85b277316d0dd1d20abe75c6ea4f3c56d537bcf3bf4ef55c9ced7",
+      "scope": "真实结果收齐后的完整题/提示/答案；不是新模型回答"
+    },
+    {
+      "member": "图示/分路以后保留原材料.png",
+      "sourceName": "分路以后保留原材料.png",
+      "bytes": 1304381,
+      "sha256": "a5517223a0daa3e86d7aede47ab63fdeb3c22212925ab83ede60eb77e692024f",
+      "scope": "实际查看的原创说明图；非运行截图"
+    },
+    {
+      "member": "图示/原生成完整实际提示.txt",
+      "sourceName": "原生成完整实际提示.txt",
+      "bytes": 1766,
+      "sha256": "00433f81a6259c0eb32fb1dc573f41d78a7f6955ed7056fe0d9f34fdb4fed6f2",
+      "scope": "原创说明图的完整实际提示或采用范围"
+    },
+    {
+      "member": "图示/限定原值分路的完整实际编辑提示.txt",
+      "sourceName": "限定原值分路的完整实际编辑提示.txt",
+      "bytes": 729,
+      "sha256": "4f1114d00d403ce97bc540da315671c12914e7c86039bae16b9e63a4c1ea52f1",
+      "scope": "原创说明图的完整实际提示或采用范围"
+    },
+    {
+      "member": "图示/图示当前采用范围.md",
+      "sourceName": "图示当前采用范围.md",
+      "bytes": 1140,
+      "sha256": "d7b026572c4f68710779cbff9495ca8a4608e7f2d944422d18ff651e6445bb1e",
+      "scope": "原创说明图的完整实际提示或采用范围"
+    },
+    {
+      "member": "固定配置与字节.json",
+      "sourceName": "完整固定配置的公开范围",
+      "bytes": 3869,
+      "sha256": "e687723ec1c742f084b426e87ce12fc1fd9149ddf3f85930cd7e4347e751d5df",
+      "scope": "只包含起止与十个文件字节，不包含编纂过程"
+    }
+  ],
+  "excluded": [
+    "本机第三方课件与官方全文",
+    "root-私有实际运行与认证、Cookie、账户/所有者及底层执行编码协议",
+    "本机内部审阅、脚本预检与台账"
+  ],
+  "scope": "记录保留完整业务对象和明确字段投影，不声称私有原件全部公开。清单本身不自引用。"
+}

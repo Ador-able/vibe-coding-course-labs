@@ -1,0 +1,58 @@
+{
+  "materialType": "预期；尚未运行，不是观测结果",
+  "byEventId": {
+    "course-vcm-11-07-E01": {
+      "failTaskType": "boolean",
+      "failTask": false,
+      "expectedRouteStatus": "recorded",
+      "meaning": "课堂完整回执登记，不是文学采用或通知"
+    },
+    "course-vcm-11-07-E02": {
+      "failTaskType": "boolean",
+      "failTask": true,
+      "expectedRouteStatus": "classroom_failed",
+      "meaning": "业务条件未通过的回执，不向n8n抛出运行时异常"
+    },
+    "course-vcm-11-07-E03": {
+      "failTaskType": "string",
+      "failTask": "false",
+      "expectedRouteStatus": "needs_review",
+      "meaning": "不能按布尔false处理；默认分支保留原输入供人判断"
+    }
+  },
+  "switchRules": [
+    {
+      "leftValue": "={{ $json.task.failTask === false }}",
+      "operation": "boolean true",
+      "output": "recorded"
+    },
+    {
+      "leftValue": "={{ $json.task.failTask === true }}",
+      "operation": "boolean true",
+      "output": "classroom_failed"
+    }
+  ],
+  "fallback": "extra output / needs_review",
+  "matching": "只进入首个匹配输出；不做类型转换",
+  "evidence": [
+    "完整原POST与解析对象",
+    "SplitOut三个完整项",
+    "调用节点三个完整输入",
+    "子触发器实际三个完整输入",
+    "Switch各输出与默认输出",
+    "三个分支及Append完整输出",
+    "实际独立表全行",
+    "子流程最后输出",
+    "父调用返回",
+    "HTTP完整返回",
+    "真实父子执行关系/版本/状态"
+  ],
+  "notProven": [
+    "任意输入/空分支都通过",
+    "数据库故障后自动续跑",
+    "并发幂等",
+    "外部通知送达",
+    "小说采用",
+    "模型质量提高"
+  ]
+}

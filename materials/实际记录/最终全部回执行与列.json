@@ -1,0 +1,192 @@
+{
+  "columns": [
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "v5ScdcQKpaUUVa4O",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "batchId",
+      "type": "string",
+      "index": 0
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "pO4WGzky4SEHjxP2",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "sourceVersion",
+      "type": "string",
+      "index": 1
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "Z3NZAW1t38nHJlgP",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "eventId",
+      "type": "string",
+      "index": 2
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "BU9qftWMJFQEB7UK",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "feedbackId",
+      "type": "string",
+      "index": 3
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "jC7co8sZFvinIdeS",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "workId",
+      "type": "string",
+      "index": 4
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "2njdo2zf0r9Qc5yJ",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "chapterNumber",
+      "type": "number",
+      "index": 5
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "CH5hNFQdWoynAhH0",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "readerId",
+      "type": "string",
+      "index": 6
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "36jSvPRlbiCTnX7t",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "feedback",
+      "type": "string",
+      "index": 7
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "12XY9lP0yHuhi7Cw",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "originalInputJson",
+      "type": "string",
+      "index": 8
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "MFtszLJqadx3xuJw",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "routeStatus",
+      "type": "string",
+      "index": 9
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "8Km9feKbKLgg8Pib",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "reason",
+      "type": "string",
+      "index": 10
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "hoP8pIfUwPtXlKVu",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "parentExecutionId",
+      "type": "string",
+      "index": 11
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "EegKmEjdrgQEsQyJ",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "childExecutionId",
+      "type": "string",
+      "index": 12
+    },
+    {
+      "updatedAt": "2026-10-05T04:18:45.704Z",
+      "createdAt": "2026-10-05T04:18:45.704Z",
+      "id": "MvwW4sRfF882W6cW",
+      "dataTableId": "OIWDbdl7ALKOfYOV",
+      "name": "notificationStatus",
+      "type": "string",
+      "index": 13
+    }
+  ],
+  "rows": {
+    "count": 3,
+    "data": [
+      {
+        "batchId": "course-vcm-11-07-batch-01",
+        "sourceVersion": "vcm-11-07-feedback-v1",
+        "eventId": "course-vcm-11-07-E01",
+        "feedbackId": "V11-07-FB01",
+        "workId": "clocktower",
+        "chapterNumber": 1,
+        "readerId": "classroom-reader-01",
+        "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+        "originalInputJson": "{\"batchId\":\"course-vcm-11-07-batch-01\",\"sourceVersion\":\"vcm-11-07-feedback-v1\",\"selectedEventIds\":[\"course-vcm-11-07-E02\",\"course-vcm-11-07-E01\",\"course-vcm-11-07-E03\"],\"parentExecutionId\":\"5\",\"task\":{\"eventId\":\"course-vcm-11-07-E01\",\"feedbackId\":\"V11-07-FB01\",\"workId\":\"clocktower\",\"chapterNumber\":1,\"readerId\":\"classroom-reader-01\",\"feedback\":\"第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。\",\"failTask\":false}}",
+        "routeStatus": "recorded",
+        "reason": "原始failTask为布尔false；课堂完整回执登记，不代表采用或通知。",
+        "parentExecutionId": "5",
+        "childExecutionId": "6",
+        "notificationStatus": "not_sent",
+        "id": 1,
+        "createdAt": "2026-10-05T04:22:23.781Z",
+        "updatedAt": "2026-10-05T04:22:23.781Z"
+      },
+      {
+        "batchId": "course-vcm-11-07-batch-01",
+        "sourceVersion": "vcm-11-07-feedback-v1",
+        "eventId": "course-vcm-11-07-E02",
+        "feedbackId": "V11-07-FB02",
+        "workId": "clocktower",
+        "chapterNumber": 1,
+        "readerId": "classroom-reader-02",
+        "feedback": "林澈在听到声音以后先记录，没有立即下判断。我希望后续保持这个行动习惯。",
+        "originalInputJson": "{\"batchId\":\"course-vcm-11-07-batch-01\",\"sourceVersion\":\"vcm-11-07-feedback-v1\",\"selectedEventIds\":[\"course-vcm-11-07-E02\",\"course-vcm-11-07-E01\",\"course-vcm-11-07-E03\"],\"parentExecutionId\":\"5\",\"task\":{\"eventId\":\"course-vcm-11-07-E02\",\"feedbackId\":\"V11-07-FB02\",\"workId\":\"clocktower\",\"chapterNumber\":1,\"readerId\":\"classroom-reader-02\",\"feedback\":\"林澈在听到声音以后先记录，没有立即下判断。我希望后续保持这个行动习惯。\",\"failTask\":true}}",
+        "routeStatus": "classroom_failed",
+        "reason": "原始failTask为布尔true；课堂业务条件未通过，保留材料，不抛出节点异常。",
+        "parentExecutionId": "5",
+        "childExecutionId": "6",
+        "notificationStatus": "not_sent",
+        "id": 2,
+        "createdAt": "2026-10-05T04:22:23.783Z",
+        "updatedAt": "2026-10-05T04:22:23.783Z"
+      },
+      {
+        "batchId": "course-vcm-11-07-batch-01",
+        "sourceVersion": "vcm-11-07-feedback-v1",
+        "eventId": "course-vcm-11-07-E03",
+        "feedbackId": "V11-07-FB03",
+        "workId": "clocktower",
+        "chapterNumber": 1,
+        "readerId": "classroom-reader-03",
+        "feedback": "我希望后续仍分清已经观察到的现象和人物的猜测。请不要因为林澈记录了敲击，就把声音来源写成已经确认。",
+        "originalInputJson": "{\"batchId\":\"course-vcm-11-07-batch-01\",\"sourceVersion\":\"vcm-11-07-feedback-v1\",\"selectedEventIds\":[\"course-vcm-11-07-E02\",\"course-vcm-11-07-E01\",\"course-vcm-11-07-E03\"],\"parentExecutionId\":\"5\",\"task\":{\"eventId\":\"course-vcm-11-07-E03\",\"feedbackId\":\"V11-07-FB03\",\"workId\":\"clocktower\",\"chapterNumber\":1,\"readerId\":\"classroom-reader-03\",\"feedback\":\"我希望后续仍分清已经观察到的现象和人物的猜测。请不要因为林澈记录了敲击，就把声音来源写成已经确认。\",\"failTask\":\"false\"}}",
+        "routeStatus": "needs_review",
+        "reason": "原值不严格等于布尔false或true；保留原值和完整材料，等待人核对。",
+        "parentExecutionId": "5",
+        "childExecutionId": "6",
+        "notificationStatus": "not_sent",
+        "id": 3,
+        "createdAt": "2026-10-05T04:22:23.784Z",
+        "updatedAt": "2026-10-05T04:22:23.784Z"
+      }
+    ]
+  }
+}

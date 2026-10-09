@@ -1,0 +1,1031 @@
+{
+  "action": "publish-parent-after-child",
+  "startedAt": "2026-10-05T04:20:33.001Z",
+  "finishedAt": "2026-10-05T04:20:33.388Z",
+  "records": [
+    {
+      "endpoint": "/workflows/B7ZScg0RrMuWWsas/activate",
+      "method": "POST",
+      "body": {
+        "versionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+        "expectedChecksum": "54e265c027b3b032243390c0dbbc30501500940e65f66d8951ec6cf4bd747e4e"
+      },
+      "startedAt": "2026-10-05T04:20:33.002Z",
+      "finishedAt": "2026-10-05T04:20:33.338Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": {
+            "id": "B7ZScg0RrMuWWsas",
+            "name": "课堂 vcm-11-07 本轮批次父流程",
+            "description": null,
+            "active": true,
+            "nodes": [
+              {
+                "id": "270d5b0f-480e-5d6a-92d9-e2ab8d661efc",
+                "name": "接收本轮完整批次",
+                "type": "n8n-nodes-base.webhook",
+                "typeVersion": 2.1,
+                "position": [
+                  0,
+                  100
+                ],
+                "parameters": {
+                  "httpMethod": "POST",
+                  "path": "course-vcm-11-07-batch",
+                  "responseMode": "responseNode",
+                  "options": {}
+                },
+                "webhookId": "4cfdf478-6a0e-48a1-a561-fd0c4d6fc518"
+              },
+              {
+                "id": "3d8d3451-749d-5f1f-8966-9c03b90130fb",
+                "name": "保留本轮名单与材料",
+                "type": "n8n-nodes-base.set",
+                "typeVersion": 3.5,
+                "position": [
+                  220,
+                  100
+                ],
+                "parameters": {
+                  "mode": "manual",
+                  "assignments": {
+                    "assignments": [
+                      {
+                        "id": "4b1d40a4-e456-52af-88c1-90ea10ba83a4",
+                        "name": "batchId",
+                        "value": "={{ $json.body.batchId }}",
+                        "type": "string"
+                      },
+                      {
+                        "id": "664cefbb-eb68-5fe1-b426-b619e13a2755",
+                        "name": "sourceVersion",
+                        "value": "={{ $json.body.sourceVersion }}",
+                        "type": "string"
+                      },
+                      {
+                        "id": "c5028bea-45ff-5aa5-b8af-1b4c66f69684",
+                        "name": "selectedEventIds",
+                        "value": "={{ $json.body.selectedEventIds }}",
+                        "type": "array"
+                      },
+                      {
+                        "id": "9e198f77-bbd9-5a4b-b6c0-28e3ed4c0194",
+                        "name": "tasks",
+                        "value": "={{ $json.body.tasks }}",
+                        "type": "array"
+                      },
+                      {
+                        "id": "ede195b4-1350-563c-8c9b-722560c3d842",
+                        "name": "parentExecutionId",
+                        "value": "={{ $execution.id }}",
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "includeOtherFields": false,
+                  "include": "all",
+                  "options": {}
+                }
+              },
+              {
+                "id": "485d62dc-1786-5e35-b5cd-529c1ea6edaf",
+                "name": "拆开本轮三个任务",
+                "type": "n8n-nodes-base.splitOut",
+                "typeVersion": 1,
+                "position": [
+                  440,
+                  100
+                ],
+                "parameters": {
+                  "fieldToSplitOut": "tasks",
+                  "include": "allOtherFields",
+                  "options": {
+                    "destinationFieldName": "task"
+                  }
+                }
+              },
+              {
+                "id": "135c0712-5a6f-5eb0-88b9-743a51534d79",
+                "name": "同一次子执行传入全部任务",
+                "type": "n8n-nodes-base.executeWorkflow",
+                "typeVersion": 1.4,
+                "position": [
+                  660,
+                  100
+                ],
+                "parameters": {
+                  "source": "database",
+                  "workflowId": {
+                    "__rl": true,
+                    "value": "dszrp2tvQDiaatg2",
+                    "mode": "id"
+                  },
+                  "mode": "once",
+                  "workflowInputs": {
+                    "mappingMode": "defineBelow",
+                    "value": {
+                      "batchId": "={{ $json.batchId }}",
+                      "sourceVersion": "={{ $json.sourceVersion }}",
+                      "selectedEventIds": "={{ $json.selectedEventIds }}",
+                      "parentExecutionId": "={{ $json.parentExecutionId }}",
+                      "task": "={{ $json.task }}"
+                    },
+                    "matchingColumns": [],
+                    "schema": [
+                      {
+                        "id": "batchId",
+                        "displayName": "batchId",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "string",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "sourceVersion",
+                        "displayName": "sourceVersion",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "string",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "selectedEventIds",
+                        "displayName": "selectedEventIds",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "array",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "parentExecutionId",
+                        "displayName": "parentExecutionId",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "string",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "task",
+                        "displayName": "task",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "object",
+                        "canBeUsedToMatch": true
+                      }
+                    ],
+                    "attemptToConvertTypes": false,
+                    "convertFieldsToString": false
+                  },
+                  "options": {
+                    "waitForSubWorkflow": true
+                  }
+                }
+              },
+              {
+                "id": "d10d882e-2ec6-5d77-9919-f062a5191fb9",
+                "name": "返回完整本轮回执",
+                "type": "n8n-nodes-base.respondToWebhook",
+                "typeVersion": 1.5,
+                "position": [
+                  880,
+                  100
+                ],
+                "parameters": {
+                  "respondWith": "json",
+                  "responseBody": "={{ $input.all().map(item => item.json) }}",
+                  "options": {
+                    "responseCode": 200
+                  }
+                }
+              }
+            ],
+            "connections": {
+              "接收本轮完整批次": {
+                "main": [
+                  [
+                    {
+                      "node": "保留本轮名单与材料",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "保留本轮名单与材料": {
+                "main": [
+                  [
+                    {
+                      "node": "拆开本轮三个任务",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "拆开本轮三个任务": {
+                "main": [
+                  [
+                    {
+                      "node": "同一次子执行传入全部任务",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "同一次子执行传入全部任务": {
+                "main": [
+                  [
+                    {
+                      "node": "返回完整本轮回执",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              }
+            },
+            "settings": {
+              "executionOrder": "v1",
+              "timezone": "Asia/Shanghai",
+              "saveDataErrorExecution": "all",
+              "saveDataSuccessExecution": "all",
+              "saveManualExecutions": true
+            },
+            "pinData": {},
+            "versionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+            "activeVersionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+            "createdAt": "2026-10-05T04:19:42.976Z",
+            "updatedAt": "2026-10-05T04:19:42.976Z",
+            "checksum": "90008bd1b7f382ba932a21fd1ae01f438b256b5e7c845fe4bf8ecef6c3c65a41",
+            "activeVersion": {
+              "versionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+              "workflowId": "B7ZScg0RrMuWWsas",
+              "nodes": [
+                {
+                  "id": "270d5b0f-480e-5d6a-92d9-e2ab8d661efc",
+                  "name": "接收本轮完整批次",
+                  "type": "n8n-nodes-base.webhook",
+                  "typeVersion": 2.1,
+                  "position": [
+                    0,
+                    100
+                  ],
+                  "parameters": {
+                    "httpMethod": "POST",
+                    "path": "course-vcm-11-07-batch",
+                    "responseMode": "responseNode",
+                    "options": {}
+                  },
+                  "webhookId": "4cfdf478-6a0e-48a1-a561-fd0c4d6fc518"
+                },
+                {
+                  "id": "3d8d3451-749d-5f1f-8966-9c03b90130fb",
+                  "name": "保留本轮名单与材料",
+                  "type": "n8n-nodes-base.set",
+                  "typeVersion": 3.5,
+                  "position": [
+                    220,
+                    100
+                  ],
+                  "parameters": {
+                    "mode": "manual",
+                    "assignments": {
+                      "assignments": [
+                        {
+                          "id": "4b1d40a4-e456-52af-88c1-90ea10ba83a4",
+                          "name": "batchId",
+                          "value": "={{ $json.body.batchId }}",
+                          "type": "string"
+                        },
+                        {
+                          "id": "664cefbb-eb68-5fe1-b426-b619e13a2755",
+                          "name": "sourceVersion",
+                          "value": "={{ $json.body.sourceVersion }}",
+                          "type": "string"
+                        },
+                        {
+                          "id": "c5028bea-45ff-5aa5-b8af-1b4c66f69684",
+                          "name": "selectedEventIds",
+                          "value": "={{ $json.body.selectedEventIds }}",
+                          "type": "array"
+                        },
+                        {
+                          "id": "9e198f77-bbd9-5a4b-b6c0-28e3ed4c0194",
+                          "name": "tasks",
+                          "value": "={{ $json.body.tasks }}",
+                          "type": "array"
+                        },
+                        {
+                          "id": "ede195b4-1350-563c-8c9b-722560c3d842",
+                          "name": "parentExecutionId",
+                          "value": "={{ $execution.id }}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "includeOtherFields": false,
+                    "include": "all",
+                    "options": {}
+                  }
+                },
+                {
+                  "id": "485d62dc-1786-5e35-b5cd-529c1ea6edaf",
+                  "name": "拆开本轮三个任务",
+                  "type": "n8n-nodes-base.splitOut",
+                  "typeVersion": 1,
+                  "position": [
+                    440,
+                    100
+                  ],
+                  "parameters": {
+                    "fieldToSplitOut": "tasks",
+                    "include": "allOtherFields",
+                    "options": {
+                      "destinationFieldName": "task"
+                    }
+                  }
+                },
+                {
+                  "id": "135c0712-5a6f-5eb0-88b9-743a51534d79",
+                  "name": "同一次子执行传入全部任务",
+                  "type": "n8n-nodes-base.executeWorkflow",
+                  "typeVersion": 1.4,
+                  "position": [
+                    660,
+                    100
+                  ],
+                  "parameters": {
+                    "source": "database",
+                    "workflowId": {
+                      "__rl": true,
+                      "value": "dszrp2tvQDiaatg2",
+                      "mode": "id"
+                    },
+                    "mode": "once",
+                    "workflowInputs": {
+                      "mappingMode": "defineBelow",
+                      "value": {
+                        "batchId": "={{ $json.batchId }}",
+                        "sourceVersion": "={{ $json.sourceVersion }}",
+                        "selectedEventIds": "={{ $json.selectedEventIds }}",
+                        "parentExecutionId": "={{ $json.parentExecutionId }}",
+                        "task": "={{ $json.task }}"
+                      },
+                      "matchingColumns": [],
+                      "schema": [
+                        {
+                          "id": "batchId",
+                          "displayName": "batchId",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "string",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "sourceVersion",
+                          "displayName": "sourceVersion",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "string",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "selectedEventIds",
+                          "displayName": "selectedEventIds",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "array",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "parentExecutionId",
+                          "displayName": "parentExecutionId",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "string",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "task",
+                          "displayName": "task",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "object",
+                          "canBeUsedToMatch": true
+                        }
+                      ],
+                      "attemptToConvertTypes": false,
+                      "convertFieldsToString": false
+                    },
+                    "options": {
+                      "waitForSubWorkflow": true
+                    }
+                  }
+                },
+                {
+                  "id": "d10d882e-2ec6-5d77-9919-f062a5191fb9",
+                  "name": "返回完整本轮回执",
+                  "type": "n8n-nodes-base.respondToWebhook",
+                  "typeVersion": 1.5,
+                  "position": [
+                    880,
+                    100
+                  ],
+                  "parameters": {
+                    "respondWith": "json",
+                    "responseBody": "={{ $input.all().map(item => item.json) }}",
+                    "options": {
+                      "responseCode": 200
+                    }
+                  }
+                }
+              ],
+              "connections": {
+                "接收本轮完整批次": {
+                  "main": [
+                    [
+                      {
+                        "node": "保留本轮名单与材料",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                },
+                "保留本轮名单与材料": {
+                  "main": [
+                    [
+                      {
+                        "node": "拆开本轮三个任务",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                },
+                "拆开本轮三个任务": {
+                  "main": [
+                    [
+                      {
+                        "node": "同一次子执行传入全部任务",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                },
+                "同一次子执行传入全部任务": {
+                  "main": [
+                    [
+                      {
+                        "node": "返回完整本轮回执",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                }
+              },
+              "name": null,
+              "createdAt": "2026-10-05T04:19:42.978Z",
+              "updatedAt": "2026-10-05T04:19:42.978Z"
+            }
+          }
+        }
+      }
+    },
+    {
+      "endpoint": "/workflows/B7ZScg0RrMuWWsas/publication-status",
+      "method": "GET",
+      "body": null,
+      "startedAt": "2026-10-05T04:20:33.338Z",
+      "finishedAt": "2026-10-05T04:20:33.361Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": {
+            "status": "in_progress",
+            "liveVersionId": null,
+            "pendingVersionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+            "triggers": []
+          }
+        }
+      }
+    },
+    {
+      "endpoint": "/workflows/B7ZScg0RrMuWWsas",
+      "method": "GET",
+      "body": null,
+      "startedAt": "2026-10-05T04:20:33.361Z",
+      "finishedAt": "2026-10-05T04:20:33.388Z",
+      "response": {
+        "status": 200,
+        "data": {
+          "data": {
+            "id": "B7ZScg0RrMuWWsas",
+            "name": "课堂 vcm-11-07 本轮批次父流程",
+            "description": null,
+            "active": true,
+            "nodes": [
+              {
+                "id": "270d5b0f-480e-5d6a-92d9-e2ab8d661efc",
+                "name": "接收本轮完整批次",
+                "type": "n8n-nodes-base.webhook",
+                "typeVersion": 2.1,
+                "position": [
+                  0,
+                  100
+                ],
+                "parameters": {
+                  "httpMethod": "POST",
+                  "path": "course-vcm-11-07-batch",
+                  "responseMode": "responseNode",
+                  "options": {}
+                },
+                "webhookId": "4cfdf478-6a0e-48a1-a561-fd0c4d6fc518"
+              },
+              {
+                "id": "3d8d3451-749d-5f1f-8966-9c03b90130fb",
+                "name": "保留本轮名单与材料",
+                "type": "n8n-nodes-base.set",
+                "typeVersion": 3.5,
+                "position": [
+                  220,
+                  100
+                ],
+                "parameters": {
+                  "mode": "manual",
+                  "assignments": {
+                    "assignments": [
+                      {
+                        "id": "4b1d40a4-e456-52af-88c1-90ea10ba83a4",
+                        "name": "batchId",
+                        "value": "={{ $json.body.batchId }}",
+                        "type": "string"
+                      },
+                      {
+                        "id": "664cefbb-eb68-5fe1-b426-b619e13a2755",
+                        "name": "sourceVersion",
+                        "value": "={{ $json.body.sourceVersion }}",
+                        "type": "string"
+                      },
+                      {
+                        "id": "c5028bea-45ff-5aa5-b8af-1b4c66f69684",
+                        "name": "selectedEventIds",
+                        "value": "={{ $json.body.selectedEventIds }}",
+                        "type": "array"
+                      },
+                      {
+                        "id": "9e198f77-bbd9-5a4b-b6c0-28e3ed4c0194",
+                        "name": "tasks",
+                        "value": "={{ $json.body.tasks }}",
+                        "type": "array"
+                      },
+                      {
+                        "id": "ede195b4-1350-563c-8c9b-722560c3d842",
+                        "name": "parentExecutionId",
+                        "value": "={{ $execution.id }}",
+                        "type": "string"
+                      }
+                    ]
+                  },
+                  "includeOtherFields": false,
+                  "include": "all",
+                  "options": {}
+                }
+              },
+              {
+                "id": "485d62dc-1786-5e35-b5cd-529c1ea6edaf",
+                "name": "拆开本轮三个任务",
+                "type": "n8n-nodes-base.splitOut",
+                "typeVersion": 1,
+                "position": [
+                  440,
+                  100
+                ],
+                "parameters": {
+                  "fieldToSplitOut": "tasks",
+                  "include": "allOtherFields",
+                  "options": {
+                    "destinationFieldName": "task"
+                  }
+                }
+              },
+              {
+                "id": "135c0712-5a6f-5eb0-88b9-743a51534d79",
+                "name": "同一次子执行传入全部任务",
+                "type": "n8n-nodes-base.executeWorkflow",
+                "typeVersion": 1.4,
+                "position": [
+                  660,
+                  100
+                ],
+                "parameters": {
+                  "source": "database",
+                  "workflowId": {
+                    "__rl": true,
+                    "value": "dszrp2tvQDiaatg2",
+                    "mode": "id"
+                  },
+                  "mode": "once",
+                  "workflowInputs": {
+                    "mappingMode": "defineBelow",
+                    "value": {
+                      "batchId": "={{ $json.batchId }}",
+                      "sourceVersion": "={{ $json.sourceVersion }}",
+                      "selectedEventIds": "={{ $json.selectedEventIds }}",
+                      "parentExecutionId": "={{ $json.parentExecutionId }}",
+                      "task": "={{ $json.task }}"
+                    },
+                    "matchingColumns": [],
+                    "schema": [
+                      {
+                        "id": "batchId",
+                        "displayName": "batchId",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "string",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "sourceVersion",
+                        "displayName": "sourceVersion",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "string",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "selectedEventIds",
+                        "displayName": "selectedEventIds",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "array",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "parentExecutionId",
+                        "displayName": "parentExecutionId",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "string",
+                        "canBeUsedToMatch": true
+                      },
+                      {
+                        "id": "task",
+                        "displayName": "task",
+                        "required": false,
+                        "defaultMatch": false,
+                        "display": true,
+                        "type": "object",
+                        "canBeUsedToMatch": true
+                      }
+                    ],
+                    "attemptToConvertTypes": false,
+                    "convertFieldsToString": false
+                  },
+                  "options": {
+                    "waitForSubWorkflow": true
+                  }
+                }
+              },
+              {
+                "id": "d10d882e-2ec6-5d77-9919-f062a5191fb9",
+                "name": "返回完整本轮回执",
+                "type": "n8n-nodes-base.respondToWebhook",
+                "typeVersion": 1.5,
+                "position": [
+                  880,
+                  100
+                ],
+                "parameters": {
+                  "respondWith": "json",
+                  "responseBody": "={{ $input.all().map(item => item.json) }}",
+                  "options": {
+                    "responseCode": 200
+                  }
+                }
+              }
+            ],
+            "connections": {
+              "接收本轮完整批次": {
+                "main": [
+                  [
+                    {
+                      "node": "保留本轮名单与材料",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "保留本轮名单与材料": {
+                "main": [
+                  [
+                    {
+                      "node": "拆开本轮三个任务",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "拆开本轮三个任务": {
+                "main": [
+                  [
+                    {
+                      "node": "同一次子执行传入全部任务",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              },
+              "同一次子执行传入全部任务": {
+                "main": [
+                  [
+                    {
+                      "node": "返回完整本轮回执",
+                      "type": "main",
+                      "index": 0
+                    }
+                  ]
+                ]
+              }
+            },
+            "settings": {
+              "executionOrder": "v1",
+              "timezone": "Asia/Shanghai",
+              "saveDataErrorExecution": "all",
+              "saveDataSuccessExecution": "all",
+              "saveManualExecutions": true
+            },
+            "pinData": {},
+            "versionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+            "activeVersionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+            "createdAt": "2026-10-05T04:19:42.976Z",
+            "updatedAt": "2026-10-05T04:19:42.976Z",
+            "checksum": "90008bd1b7f382ba932a21fd1ae01f438b256b5e7c845fe4bf8ecef6c3c65a41",
+            "activeVersion": {
+              "versionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+              "workflowId": "B7ZScg0RrMuWWsas",
+              "nodes": [
+                {
+                  "id": "270d5b0f-480e-5d6a-92d9-e2ab8d661efc",
+                  "name": "接收本轮完整批次",
+                  "type": "n8n-nodes-base.webhook",
+                  "typeVersion": 2.1,
+                  "position": [
+                    0,
+                    100
+                  ],
+                  "parameters": {
+                    "httpMethod": "POST",
+                    "path": "course-vcm-11-07-batch",
+                    "responseMode": "responseNode",
+                    "options": {}
+                  },
+                  "webhookId": "4cfdf478-6a0e-48a1-a561-fd0c4d6fc518"
+                },
+                {
+                  "id": "3d8d3451-749d-5f1f-8966-9c03b90130fb",
+                  "name": "保留本轮名单与材料",
+                  "type": "n8n-nodes-base.set",
+                  "typeVersion": 3.5,
+                  "position": [
+                    220,
+                    100
+                  ],
+                  "parameters": {
+                    "mode": "manual",
+                    "assignments": {
+                      "assignments": [
+                        {
+                          "id": "4b1d40a4-e456-52af-88c1-90ea10ba83a4",
+                          "name": "batchId",
+                          "value": "={{ $json.body.batchId }}",
+                          "type": "string"
+                        },
+                        {
+                          "id": "664cefbb-eb68-5fe1-b426-b619e13a2755",
+                          "name": "sourceVersion",
+                          "value": "={{ $json.body.sourceVersion }}",
+                          "type": "string"
+                        },
+                        {
+                          "id": "c5028bea-45ff-5aa5-b8af-1b4c66f69684",
+                          "name": "selectedEventIds",
+                          "value": "={{ $json.body.selectedEventIds }}",
+                          "type": "array"
+                        },
+                        {
+                          "id": "9e198f77-bbd9-5a4b-b6c0-28e3ed4c0194",
+                          "name": "tasks",
+                          "value": "={{ $json.body.tasks }}",
+                          "type": "array"
+                        },
+                        {
+                          "id": "ede195b4-1350-563c-8c9b-722560c3d842",
+                          "name": "parentExecutionId",
+                          "value": "={{ $execution.id }}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "includeOtherFields": false,
+                    "include": "all",
+                    "options": {}
+                  }
+                },
+                {
+                  "id": "485d62dc-1786-5e35-b5cd-529c1ea6edaf",
+                  "name": "拆开本轮三个任务",
+                  "type": "n8n-nodes-base.splitOut",
+                  "typeVersion": 1,
+                  "position": [
+                    440,
+                    100
+                  ],
+                  "parameters": {
+                    "fieldToSplitOut": "tasks",
+                    "include": "allOtherFields",
+                    "options": {
+                      "destinationFieldName": "task"
+                    }
+                  }
+                },
+                {
+                  "id": "135c0712-5a6f-5eb0-88b9-743a51534d79",
+                  "name": "同一次子执行传入全部任务",
+                  "type": "n8n-nodes-base.executeWorkflow",
+                  "typeVersion": 1.4,
+                  "position": [
+                    660,
+                    100
+                  ],
+                  "parameters": {
+                    "source": "database",
+                    "workflowId": {
+                      "__rl": true,
+                      "value": "dszrp2tvQDiaatg2",
+                      "mode": "id"
+                    },
+                    "mode": "once",
+                    "workflowInputs": {
+                      "mappingMode": "defineBelow",
+                      "value": {
+                        "batchId": "={{ $json.batchId }}",
+                        "sourceVersion": "={{ $json.sourceVersion }}",
+                        "selectedEventIds": "={{ $json.selectedEventIds }}",
+                        "parentExecutionId": "={{ $json.parentExecutionId }}",
+                        "task": "={{ $json.task }}"
+                      },
+                      "matchingColumns": [],
+                      "schema": [
+                        {
+                          "id": "batchId",
+                          "displayName": "batchId",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "string",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "sourceVersion",
+                          "displayName": "sourceVersion",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "string",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "selectedEventIds",
+                          "displayName": "selectedEventIds",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "array",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "parentExecutionId",
+                          "displayName": "parentExecutionId",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "string",
+                          "canBeUsedToMatch": true
+                        },
+                        {
+                          "id": "task",
+                          "displayName": "task",
+                          "required": false,
+                          "defaultMatch": false,
+                          "display": true,
+                          "type": "object",
+                          "canBeUsedToMatch": true
+                        }
+                      ],
+                      "attemptToConvertTypes": false,
+                      "convertFieldsToString": false
+                    },
+                    "options": {
+                      "waitForSubWorkflow": true
+                    }
+                  }
+                },
+                {
+                  "id": "d10d882e-2ec6-5d77-9919-f062a5191fb9",
+                  "name": "返回完整本轮回执",
+                  "type": "n8n-nodes-base.respondToWebhook",
+                  "typeVersion": 1.5,
+                  "position": [
+                    880,
+                    100
+                  ],
+                  "parameters": {
+                    "respondWith": "json",
+                    "responseBody": "={{ $input.all().map(item => item.json) }}",
+                    "options": {
+                      "responseCode": 200
+                    }
+                  }
+                }
+              ],
+              "connections": {
+                "接收本轮完整批次": {
+                  "main": [
+                    [
+                      {
+                        "node": "保留本轮名单与材料",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                },
+                "保留本轮名单与材料": {
+                  "main": [
+                    [
+                      {
+                        "node": "拆开本轮三个任务",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                },
+                "拆开本轮三个任务": {
+                  "main": [
+                    [
+                      {
+                        "node": "同一次子执行传入全部任务",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                },
+                "同一次子执行传入全部任务": {
+                  "main": [
+                    [
+                      {
+                        "node": "返回完整本轮回执",
+                        "type": "main",
+                        "index": 0
+                      }
+                    ]
+                  ]
+                }
+              },
+              "name": null,
+              "createdAt": "2026-10-05T04:19:42.978Z",
+              "updatedAt": "2026-10-05T04:19:42.978Z"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "projection": {
+    "scope": "完整业务请求正文与公开业务响应对象；省略Cookie、REST/HTTP头、账户与工作流所有者、执行底层私有协议。未把主编内部断言当业务请求结果。"
+  }
+}

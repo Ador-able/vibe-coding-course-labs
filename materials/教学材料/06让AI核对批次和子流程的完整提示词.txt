@@ -1,0 +1,65 @@
+请帮助我检查一个固定业务流程的交付方案。重点是任务信息是否完整，实际执行还没有发生，不要替我宣布成功。
+
+这是一项一次性分类和登记练习，不评价小说、不改正文、不发送通知。本轮只处理输入中的三个task，不去读取整个联系人库。完整名单也随每项输入保留。
+
+唯一拟提交的正文如下：
+{
+  "batchId": "course-vcm-11-07-batch-01",
+  "sourceVersion": "vcm-11-07-feedback-v1",
+  "selectedEventIds": ["course-vcm-11-07-E02", "course-vcm-11-07-E01", "course-vcm-11-07-E03"],
+  "tasks": [
+    {
+      "eventId": "course-vcm-11-07-E02",
+      "feedbackId": "V11-07-FB02",
+      "workId": "clocktower",
+      "chapterNumber": 1,
+      "readerId": "classroom-reader-02",
+      "feedback": "林澈在听到声音以后先记录，没有立即下判断。我希望后续保持这个行动习惯。",
+      "failTask": true
+    },
+    {
+      "eventId": "course-vcm-11-07-E01",
+      "feedbackId": "V11-07-FB01",
+      "workId": "clocktower",
+      "chapterNumber": 1,
+      "readerId": "classroom-reader-01",
+      "feedback": "第一章最后的敲击让我想继续读。我还不知道声音从哪里来，请保留这个悬念。",
+      "failTask": false
+    },
+    {
+      "eventId": "course-vcm-11-07-E03",
+      "feedbackId": "V11-07-FB03",
+      "workId": "clocktower",
+      "chapterNumber": 1,
+      "readerId": "classroom-reader-03",
+      "feedback": "我希望后续仍分清已经观察到的现象和人物的猜测。请不要因为林澈记录了敲击，就把声音来源写成已经确认。",
+      "failTask": "false"
+    }
+  ]
+}
+
+材料目录另有一条归档意见，但不在本轮POST中：
+{
+  "eventId": "course-vcm-11-07-ARCHIVE01",
+  "feedbackId": "V11-07-FB-OLD",
+  "workId": "clocktower",
+  "chapterNumber": 1,
+  "readerId": "classroom-reader-old",
+  "feedback": "上一轮我建议开头加快一点。这是归档练习意见，不属于这次选中的三条反馈。",
+  "failTask": false
+}
+
+拟用流程：父流程为每项保留batchId、sourceVersion、selectedEventIds，加入运行时真实parentExecutionId；把tasks拆成task后，用一次Execute Sub-workflow传入全部三项，开启等待。五项子流程输入是batchId:string、sourceVersion:string、selectedEventIds:array、parentExecutionId:string、task:object。
+
+子流程严格比较task.failTask与布尔false/true。布尔false记recorded，布尔true记classroom_failed，其余进入额外默认输出needs_review，原值不强制转换。分支保留完整原输入、真实childExecutionId、分类理由和notificationStatus=not_sent。合并使用Append，把完整回执写进本节独立空表；子流程最后的保存结果交还父流程。返回排列可能不同，用eventId对应。
+
+状态含义：recorded只表示完整课堂回执登记，classroom_failed表示课堂业务条件未通过，needs_review表示类型或分类待人核对。这一例没有制造运行时节点异常。三个状态都不能证明通知送达、故事采用或模型判断正确。
+
+请据这些完整材料回答：
+1. 五项字段应携带什么实际值，如何确认“当前项”没有被首项或字段描述代替？
+2. 三条failTask原值的类型是什么，按规则各应去哪里？外层object声明能证明内层布尔条件已满足吗？
+3. 合并顺序改变时，应比较哪些身份和完整字段，而不是仅比较条数？
+4. 哪些预期已经能由规则推导，哪些仍必须打开实际子流程输入、表行、父子执行关系和完整回传才能确认？
+5. 若以后添加外部工具异常、通知或跨轮接续，需要另核什么真实结果？不要把当前未运行方案包装成这些能力已验证。
+
+给出具体字段或原句依据，保留不能判断的地方。仅解释和提出检查方案，不帮我创建工作流、改材料、改章稿或发消息。

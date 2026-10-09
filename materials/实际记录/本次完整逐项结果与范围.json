@@ -1,0 +1,122 @@
+{
+  "passed": true,
+  "actualPostCount": 1,
+  "newWorkflowExecutions": 2,
+  "actualModelCalls": 0,
+  "templateHead": "55af1c10adb32a962139d44c81a67c48310d9bd6",
+  "parentExecution": {
+    "id": "5",
+    "finished": true,
+    "mode": "webhook",
+    "status": "success",
+    "startedAt": "2026-10-05T04:22:23.554Z",
+    "stoppedAt": "2026-10-05T04:22:23.821Z",
+    "workflowId": "B7ZScg0RrMuWWsas",
+    "workflowVersionId": "292bb412-fd96-4eaf-83ef-b4a74e8c201c",
+    "waitTill": null,
+    "retryOf": null,
+    "retrySuccessId": null
+  },
+  "childExecution": {
+    "id": "6",
+    "finished": true,
+    "mode": "integrated",
+    "status": "success",
+    "startedAt": "2026-10-05T04:22:23.642Z",
+    "stoppedAt": "2026-10-05T04:22:23.797Z",
+    "workflowId": "dszrp2tvQDiaatg2",
+    "workflowVersionId": "f389210e-0a8a-4774-8010-71bf041d708d",
+    "waitTill": null,
+    "retryOf": null,
+    "retrySuccessId": null
+  },
+  "childParent": {
+    "executionId": "5",
+    "workflowId": "B7ZScg0RrMuWWsas",
+    "shouldResume": true,
+    "executionContext": {
+      "version": 1,
+      "establishedAt": 1791174143500,
+      "source": "webhook",
+      "triggerNode": {
+        "name": "接收本轮完整批次",
+        "type": "n8n-nodes-base.webhook"
+      },
+      "redaction": {
+        "version": 2,
+        "production": false,
+        "manual": false
+      }
+    }
+  },
+  "subExecutionsCount": 1,
+  "wholeInputsPassed": true,
+  "wholeFieldTypeAndContentPassed": true,
+  "columns": 14,
+  "receiptRows": 3,
+  "inputOrder": [
+    "course-vcm-11-07-E02",
+    "course-vcm-11-07-E01",
+    "course-vcm-11-07-E03"
+  ],
+  "returnOrder": [
+    "course-vcm-11-07-E01",
+    "course-vcm-11-07-E02",
+    "course-vcm-11-07-E03"
+  ],
+  "branches": [
+    {
+      "eventId": "course-vcm-11-07-E01",
+      "routeStatus": "recorded"
+    },
+    {
+      "eventId": "course-vcm-11-07-E02",
+      "routeStatus": "classroom_failed"
+    },
+    {
+      "eventId": "course-vcm-11-07-E03",
+      "routeStatus": "needs_review"
+    }
+  ],
+  "allNotSent": true,
+  "oldObjectsExactUnchanged": [
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/Lf2QxQhDgmkAEZ2B/columns",
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/Lf2QxQhDgmkAEZ2B/rows?take=100&skip=0",
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/bSJwPfqACpWNkwgj/columns",
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/bSJwPfqACpWNkwgj/rows?take=100&skip=0",
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/hEVtgm6TxtdKTxfX/columns",
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/hEVtgm6TxtdKTxfX/rows?take=100&skip=0",
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/CLVf1nXA7BXatyFI/columns",
+    "/projects/gXQZ4ApJJUo90ztC/data-tables/CLVf1nXA7BXatyFI/rows?take=100&skip=0",
+    "/workflows/EjDipUeuPFyNhN4s",
+    "/workflows/EjDipUeuPFyNhN4s/publication-status"
+  ],
+  "parentOutputPairedItems": [
+    {
+      "eventId": "course-vcm-11-07-E01",
+      "pairedItem": {
+        "item": 1
+      }
+    },
+    {
+      "eventId": "course-vcm-11-07-E02",
+      "pairedItem": {
+        "item": 1
+      }
+    },
+    {
+      "eventId": "course-vcm-11-07-E03",
+      "pairedItem": {
+        "item": 2
+      }
+    }
+  ],
+  "limits": [
+    "这是固定原值分路，不是AI理解反馈或改稿。",
+    "classroom_failed是保存的课堂分类；本次两个引擎执行仍success/finished:true。",
+    "E03原字符串false不等于JSON布尔false，需人核对且原值保留。",
+    "父调用输出E01/E02的pairedItem.item实际均为1，E03为2；不宣称位置追溯全部正确，不推断原因。验收按eventId与完整输入匹配，原metadata全保留。",
+    "两节点执行不构成三项业务均通过，也不代表通知、文学采用或崩溃恢复。",
+    "REST来源为原status和解析对象，公开节点为准确业务投影，未称HTTP线上原字节或完整私有协议。"
+  ]
+}
