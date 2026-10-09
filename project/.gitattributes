@@ -1,1 +1,9 @@
 public/streaming-history/*.json -text
+fixtures/message-history/* -text
+src/message-history/* text eol=lf
+scripts/messages-*.mjs text eol=lf
+message-history.html text eol=lf
+README-messages.md text eol=lf
+tsconfig.messages.json text eol=lf
+vite.messages.config.ts text eol=lf
+evidence/message-history/** -text

@@ -1,0 +1,46 @@
+[
+  {
+    "sourceRecordId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+    "message": {
+      "id": "teaching-review-1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+      "role": "user",
+      "parts": [
+        {
+          "type": "text",
+          "text": "请根据我的校正，重新整理摘要和待确认问题。保留未决事项，不新增承诺。"
+        },
+        {
+          "type": "data-review-note",
+          "id": "review-note-1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+          "data": {
+            "targetMessageId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "text": "原纪要说每次开放预计接待20人，不是限20人；10月10日前落实只是先前问题中的新建议，原纪要没有这个期限。"
+          }
+        }
+      ]
+    },
+    "boundary": "教师拟定的人工校正，本节执行后才是实际保存的输入；尚未发给模型。两份校正各针对自己的完整原件，不把正常轮的10月10日建议归给停止轮。"
+  },
+  {
+    "sourceRecordId": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+    "message": {
+      "id": "teaching-review-f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+      "role": "user",
+      "parts": [
+        {
+          "type": "text",
+          "text": "请根据我的校正，重新整理摘要和待确认问题。保留未决事项，不新增承诺。"
+        },
+        {
+          "type": "data-review-note",
+          "id": "review-note-f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+          "data": {
+            "targetMessageId": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "text": "原纪要说每次开放预计接待20人，不是限20人。上一条问题只收到“1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与”，任务没有完成。请以原纪要重做完整摘要和待确认问题，不把半句当作完成清单。"
+          }
+        }
+      ]
+    },
+    "boundary": "教师拟定的人工校正，本节执行后才是实际保存的输入；尚未发给模型。两份校正各针对自己的完整原件，不把正常轮的10月10日建议归给停止轮。"
+  }
+]

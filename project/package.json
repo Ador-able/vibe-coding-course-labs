@@ -15,6 +15,11 @@
     "streaming:dev": "node --import tsx src/streaming/server.ts",
     "streaming:start": "node --import tsx src/streaming/server.ts --production",
     "streaming:replay": "vite --host 127.0.0.1 --port 4332 --strictPort",
+    "messages:dev": "node --import tsx src/message-history/server.ts",
+    "messages:check": "tsc --noEmit --project tsconfig.messages.json",
+    "messages:build": "vite build --config vite.messages.config.ts",
+    "messages:inspect": "node scripts/messages-inspect.mjs",
+    "messages:lock": "node scripts/messages-lock.mjs",
     "build": "vite build",
     "check": "tsc --noEmit",
     "test": "node --import tsx --test test/*.test.ts"
