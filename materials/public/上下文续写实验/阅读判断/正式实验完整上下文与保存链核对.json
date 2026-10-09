@@ -1,0 +1,137 @@
+{
+  "recordedAtUtc": "2026-10-02T22:45:01.072Z",
+  "run": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\978f57cc-e453-44e8-a911-0ff02c97a43a",
+  "eventFile": {
+    "bytes": 49181,
+    "sha256": "d486a42f6c23b6b9bdb71f5250a7b89921118f3eebfe358ae5a1a4dbef6a1b27",
+    "eventCount": 28
+  },
+  "inputComparison": {
+    "promptSameString": true,
+    "sourceCommitSame": true,
+    "remainingRuntimeOverridesSameStrings": true,
+    "remainingThreadOptionsSame": true,
+    "pathSerialization": [
+      {
+        "field": "runtime.configOverrides[0]",
+        "actual": "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-02-lab\"",
+        "frozen": "marketplaces.novel-workbench-course-lab.source=\"D:/Projects/Knowledge/.coursebook-work/h07-02-lab\"",
+        "sameString": false,
+        "sameResolvedPath": true
+      },
+      {
+        "field": "threadOptions.workingDirectory",
+        "actual": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab",
+        "frozen": "D:/Projects/Knowledge/.coursebook-work/h07-02-lab",
+        "sameString": false,
+        "sameResolvedPath": true
+      }
+    ],
+    "scope": "只有路径斜杠序列化不同，解析后等价；实际input与冻结定义均原样保留。此前纯函数预检传入正斜杠lab参数，不能证明观察器process.cwd()的字符串逐字相同。"
+  },
+  "methodProof": [
+    {
+      "itemId": "item_1",
+      "path": "skills/novel-chapter-task/SKILL.md",
+      "sourceFile": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\context-formal-control\\实际安装缓存\\skills\\novel-chapter-task\\SKILL.md",
+      "sourceBytes": 2489,
+      "sourceSha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4",
+      "actualUtf8Bytes": 2491,
+      "actualStdoutSha256": "68be886dbbe0b4ef4a427813008680692114b97182657c6c7f4ed392a3efb918",
+      "scope": "完整原文本相同，Shell在末尾另输出一个行结束；两份原字节分别保留。"
+    },
+    {
+      "itemId": "item_4",
+      "path": "skills/novel-chapter-task/references/state-and-review.md",
+      "sourceFile": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\context-formal-control\\实际安装缓存\\skills\\novel-chapter-task\\references\\state-and-review.md",
+      "sourceBytes": 1801,
+      "sourceSha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3",
+      "actualUtf8Bytes": 1803,
+      "actualStdoutSha256": "acd44510453589a62a3e5f6a97deebefc2c62d2bbd8bfcf0e33aa5573b3dbdf8",
+      "scope": "完整原文本相同，Shell在末尾另输出一个行结束；两份原字节分别保留。"
+    }
+  ],
+  "materialProof": [
+    {
+      "path": "materials/来稿/课堂整理/简述.md",
+      "bytes": 973,
+      "sha256": "41295b600f6e3817ebec3fd8c52f82e8af784a88f6dea3848a753388efb2ab08",
+      "lineCount": 15,
+      "allLinesActuallyReturned": true,
+      "teachingConstruction": true
+    },
+    {
+      "path": "materials/来稿/临时想法/机芯.md",
+      "bytes": 719,
+      "sha256": "a4d1906358422b159cd6dfd5bcd82bde500e8d7ab0bb88086832196789c0ceb8",
+      "lineCount": 15,
+      "allLinesActuallyReturned": true,
+      "teachingConstruction": true
+    }
+  ],
+  "shellCount": 4,
+  "mcpCallCount": 7,
+  "allMcpTextAndStructuredEqual": true,
+  "startedAndCompletedArgumentsEqual": true,
+  "currentHumanFirstChapterActuallyReturned": true,
+  "initialTargetActuallyNull": true,
+  "fullSaveAndReadBackAndCurrentAndBackupAgree": true,
+  "workAndFirstHistoryUnchanged": true,
+  "quotes": [
+    {
+      "label": "首章有效人工条件",
+      "text": "你先看，别动机芯；真要拆，等你师父来了再说。",
+      "startUtf16": 588,
+      "endUtf16": 610,
+      "scope": "正文原句定位，不用关键词匹配代替上下文阅读或文学判断。"
+    },
+    {
+      "label": "首章末林澈拿灯",
+      "text": "他把灯取下，凑近木柱。",
+      "startUtf16": 966,
+      "endUtf16": 977,
+      "scope": "正文原句定位，不用关键词匹配代替上下文阅读或文学判断。"
+    },
+    {
+      "label": "次章隐含交灯",
+      "text": "灯由老人提着。",
+      "startUtf16": 268,
+      "endUtf16": 275,
+      "scope": "正文原句定位，不用关键词匹配代替上下文阅读或文学判断。"
+    },
+    {
+      "label": "次章未碰重锤",
+      "text": "尺子没有挨到重锤。",
+      "startUtf16": 240,
+      "endUtf16": 249,
+      "scope": "正文原句定位，不用关键词匹配代替上下文阅读或文学判断。"
+    },
+    {
+      "label": "次章不拨齿轮",
+      "text": "他不去拨齿轮，只找了轴端一处缺口",
+      "startUtf16": 302,
+      "endUtf16": 318,
+      "scope": "正文原句定位，不用关键词匹配代替上下文阅读或文学判断。"
+    },
+    {
+      "label": "新线索仍待查",
+      "text": "铜牌究竟随重锤来的，还是后来挂上去的，还要有记录才能分清。",
+      "startUtf16": 732,
+      "endUtf16": 761,
+      "scope": "正文原句定位，不用关键词匹配代替上下文阅读或文学判断。"
+    },
+    {
+      "label": "未实施查簿",
+      "text": "“去查簿。这里先照原样留着。”",
+      "startUtf16": 1052,
+      "endUtf16": 1067,
+      "scope": "正文原句定位，不用关键词匹配代替上下文阅读或文学判断。"
+    }
+  ],
+  "completeRead": {
+    "events": "作者已逐项通读全部28事件，包括全部4命令、7工具参数和完整返回、3条AI消息及终态。",
+    "story": "首章当前完整r2和第二章完整r1均逐段读完。",
+    "privateScope": "4个实际Shell仅读取自有Skill/参考与课堂来稿目录/全文，未读取受保护规则正文；不提取私有rollout。"
+  },
+  "limits": "本轮能说明读取、判断痕迹与实际正文中的处理相连；不能证明通用可靠性，不能把灯的过渡省略定为确定矛盾，不代替人工文学采用。"
+}

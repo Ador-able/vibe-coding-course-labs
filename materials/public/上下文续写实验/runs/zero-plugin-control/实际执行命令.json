@@ -1,0 +1,89 @@
+[
+  {
+    "label": "实际准备绑定",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "scripts/prepare-plugin.mjs",
+      "--db",
+      "data/context.sqlite"
+    ],
+    "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-02-lab",
+    "startedAtUtc": "2026-10-02T22:10:51.711Z",
+    "pid": 18000,
+    "finishedAtUtc": "2026-10-02T22:10:51.800Z",
+    "exitCode": 0,
+    "signal": null,
+    "stdoutPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\实际准备绑定.stdout.txt",
+    "stderrPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\实际准备绑定.stderr.txt"
+  },
+  {
+    "label": "官方安装",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "scripts/plugin-manage.mjs",
+      "add",
+      "--output",
+      "runs\\zero-plugin-control\\官方安装.json"
+    ],
+    "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-02-lab",
+    "startedAtUtc": "2026-10-02T22:10:51.801Z",
+    "pid": 24444,
+    "finishedAtUtc": "2026-10-02T22:10:51.943Z",
+    "exitCode": 0,
+    "signal": null,
+    "stdoutPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方安装.stdout.txt",
+    "stderrPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方安装.stderr.txt"
+  },
+  {
+    "label": "官方能力目录",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "scripts/plugin-catalog.mjs",
+      "--output",
+      "runs\\zero-plugin-control\\官方能力目录.json"
+    ],
+    "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-02-lab",
+    "startedAtUtc": "2026-10-02T22:10:51.956Z",
+    "pid": 66380,
+    "finishedAtUtc": "2026-10-02T22:10:52.076Z",
+    "exitCode": 0,
+    "signal": null,
+    "stdoutPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方能力目录.stdout.txt",
+    "stderrPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方能力目录.stderr.txt"
+  },
+  {
+    "label": "官方零模型前检",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "scripts/plugin-preflight.mjs",
+      "--out",
+      "runs\\zero-plugin-control\\官方零模型前检"
+    ],
+    "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-02-lab",
+    "startedAtUtc": "2026-10-02T22:10:52.077Z",
+    "pid": 29516,
+    "finishedAtUtc": "2026-10-02T22:10:54.686Z",
+    "exitCode": 0,
+    "signal": null,
+    "stdoutPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方零模型前检.stdout.txt",
+    "stderrPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方零模型前检.stderr.txt"
+  },
+  {
+    "label": "官方移除",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "scripts/plugin-manage.mjs",
+      "remove",
+      "--output",
+      "runs\\zero-plugin-control\\官方移除.json"
+    ],
+    "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-02-lab",
+    "startedAtUtc": "2026-10-02T22:10:54.690Z",
+    "pid": 34500,
+    "finishedAtUtc": "2026-10-02T22:10:54.819Z",
+    "exitCode": 0,
+    "signal": null,
+    "stdoutPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方移除.stdout.txt",
+    "stderrPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\runs\\zero-plugin-control\\官方移除.stderr.txt"
+  }
+]

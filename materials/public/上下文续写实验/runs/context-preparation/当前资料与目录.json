@@ -1,0 +1,46 @@
+{
+  "work": {
+    "id": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+    "title": "乌桐镇的停钟",
+    "purpose": "用连续两章待审草稿讨论开篇方向和章节接续，供人工阅读判断。",
+    "requirements": [
+      "读者未读设定表，应能从正文理解林澈来到钟楼的目的和遇到的阻碍。",
+      "正文约 800 至 1200 个中文字符；章末留下一个具体、尚未解释的异常。",
+      "只保存本次指定章节，状态为草稿，等待人工判断。"
+    ],
+    "facts": [
+      "林澈是修钟师学徒，这是他第一次来到乌桐镇。",
+      "林澈没有钟楼钥匙，进入钟楼需要守塔人开门。",
+      "钟楼的钟在昨夜停了。"
+    ],
+    "outline": [
+      {
+        "number": 1,
+        "titleHint": "停钟",
+        "goal": "林澈受托查看停钟，在门外遇到阻碍，由守塔人开门；钟楼内出现一个具体异常。"
+      },
+      {
+        "number": 2,
+        "titleHint": "重锤",
+        "goal": "从第一章结尾紧接着继续，林澈与守塔人进一步查看重锤上移，并取得一条可回查的新线索；师父本章尚未到场，停钟与异常的原因仍未被解释。"
+      }
+    ],
+    "revision": 2
+  },
+  "chapters": [
+    {
+      "workId": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+      "number": 1,
+      "revision": 2,
+      "title": "停钟",
+      "status": "draft",
+      "workRevision": 1,
+      "origin": "human",
+      "taskId": null,
+      "threadId": null,
+      "updatedAt": "2026-10-02T21:02:25.626Z",
+      "previousRevisions": [],
+      "reviewNote": null
+    }
+  ]
+}

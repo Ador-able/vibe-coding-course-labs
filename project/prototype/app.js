@@ -22,7 +22,7 @@ function render(){
     $('chapter-heading').textContent='尚未保存';
     $('revision').textContent='作品 r'+snapshot.work.revision+' · 正文未保存';
     $('draft-title').value='';$('draft-body').value='';
-    $('edit-state').textContent='等待首章草稿';
+    $('edit-state').textContent='等待本章草稿';
     setBusy(busy);message('第 '+selected+' 章尚未保存。');
     return;
   }

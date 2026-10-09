@@ -1,0 +1,73 @@
+{
+  "cacheRoot": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.0",
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-02-lab\\data\\context.sqlite"
+  },
+  "files": [
+    {
+      "relativePath": "binding.json",
+      "bytes": 177,
+      "cacheSha256": "1fd1382bb97e3c8a37b7d0c3549bab4f96dab31e03352a8bd34dbce43cfe24a0",
+      "sourceSha256": "1fd1382bb97e3c8a37b7d0c3549bab4f96dab31e03352a8bd34dbce43cfe24a0",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "mcp.json",
+      "bytes": 245,
+      "cacheSha256": "12a38ff216eee0db455a5627850a573f5240b2c5ad69432f3d8da924f01122ba",
+      "sourceSha256": "12a38ff216eee0db455a5627850a573f5240b2c5ad69432f3d8da924f01122ba",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "plugin.json",
+      "bytes": 674,
+      "cacheSha256": "320193129e161fda32be1d0bfb5bd5b8401dd43096eaa0961cb319dbf2dad4db",
+      "sourceSha256": "320193129e161fda32be1d0bfb5bd5b8401dd43096eaa0961cb319dbf2dad4db",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "serve.mjs",
+      "bytes": 389,
+      "cacheSha256": "6cf3535b4bb49c07a51c23a142e0e2f830eefaa7d3ff4e6eff25308ae228a48c",
+      "sourceSha256": "6cf3535b4bb49c07a51c23a142e0e2f830eefaa7d3ff4e6eff25308ae228a48c",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-review/references/basis-and-status.md",
+      "bytes": 1382,
+      "cacheSha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030",
+      "sourceSha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-review/references/prose-review.md",
+      "bytes": 687,
+      "cacheSha256": "2f322a1148b56fa26cb9d238bdda636bee6cb0398448a7050def58c280b19315",
+      "sourceSha256": "2f322a1148b56fa26cb9d238bdda636bee6cb0398448a7050def58c280b19315",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-review/SKILL.md",
+      "bytes": 2307,
+      "cacheSha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973",
+      "sourceSha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-task/references/state-and-review.md",
+      "bytes": 1801,
+      "cacheSha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3",
+      "sourceSha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3",
+      "sameBytes": true
+    },
+    {
+      "relativePath": "skills/novel-chapter-task/SKILL.md",
+      "bytes": 2489,
+      "cacheSha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4",
+      "sourceSha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4",
+      "sameBytes": true
+    }
+  ],
+  "scope": "只检查本次自有插件9份实际缓存和绑定；缓存相同不代表模型已使用方法。"
+}
