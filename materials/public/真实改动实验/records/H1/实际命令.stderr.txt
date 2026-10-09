@@ -1,3 +1,0 @@
-$ node dist/cli.js "update" "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\H1-拟写入完整作品资料.json" "--db" "data/changes-471b16da-bb1c-4fea-a891-01e4d0e7a431.sqlite" "--work" "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea" "--expected-revision" "2" "--output" "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-03\\H1-实际完整更新返回.json"
-(node:38908) ExperimentalWarning: SQLite is an experimental feature and might change at any time
-(Use `node --trace-warnings ...` to show where the warning was created)

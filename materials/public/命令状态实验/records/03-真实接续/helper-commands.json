@@ -1,0 +1,296 @@
+[
+  {
+    "at": "2026-10-03T09:57:28.118Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @(53471,53472)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:28.943Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 63704' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"ProcessId\":63704,\"ParentProcessId\":55504,\"CreationDate\":\"2026-10-03T17:57:28.137429+08:00\",\"ExecutablePath\":\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",\"CommandLine\":\"\\\"C:\\\\Program Files\\\\nodejs\\\\node.exe\\\" D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-06-lab\\\\.pnpm\\\\@openai+codex@0.160.0\\\\node_modules\\\\@openai\\\\codex\\\\bin\\\\codex.js -c \\\"approval_policy=\\\\\\\"never\\\\\\\"\\\" -c features.hooks=false -c memories.use_memories=false -c memories.generate_memories=false -c \\\"web_search=\\\\\\\"disabled\\\\\\\"\\\" -c project_doc_max_bytes=0 app-server --stdio\"}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:29.674Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ParentProcessId = 63704' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"ProcessId\":18088,\"ParentProcessId\":63704,\"CreationDate\":\"2026-10-03T17:57:28.142546+08:00\",\"ExecutablePath\":\"C:\\\\WINDOWS\\\\system32\\\\conhost.exe\",\"CommandLine\":\"\\\\??\\\\C:\\\\WINDOWS\\\\system32\\\\conhost.exe 0x4\"},{\"ProcessId\":63828,\"ParentProcessId\":63704,\"CreationDate\":\"2026-10-03T17:57:28.182+08:00\",\"ExecutablePath\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-06-lab\\\\.pnpm\\\\@openai+codex@0.160.0-win32-x64\\\\node_modules\\\\@openai\\\\codex\\\\vendor\\\\x86_64-pc-windows-msvc\\\\bin\\\\codex.exe\",\"CommandLine\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-06-lab\\\\.pnpm\\\\@openai+codex@0.160.0-win32-x64\\\\node_modules\\\\@openai\\\\codex\\\\vendor\\\\x86_64-pc-windows-msvc\\\\bin\\\\codex.exe -c \\\"approval_policy=\\\\\\\"never\\\\\\\"\\\" -c features.hooks=false -c memories.use_memories=false -c memories.generate_memories=false -c \\\"web_search=\\\\\\\"disabled\\\\\\\"\\\" -c project_doc_max_bytes=0 app-server --stdio\"}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:31.760Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @(53471)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"LocalAddress\":\"127.0.0.1\",\"LocalPort\":53471,\"OwningProcess\":41264}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:32.466Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 41264' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"ProcessId\":41264,\"ParentProcessId\":63828,\"CreationDate\":\"2026-10-03T17:57:29.838181+08:00\",\"ExecutablePath\":\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",\"CommandLine\":\"\\\"C:/Program Files/nodejs/node.exe\\\" dist/prototype-server.js --db data/runtime-fe028f0c-7dff-46b5-91bd-f5775193ef7b.sqlite --work harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea --port 53471\"}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:33.150Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ParentProcessId = 41264' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"ProcessId\":76660,\"ParentProcessId\":41264,\"CreationDate\":\"2026-10-03T17:57:29.844303+08:00\",\"ExecutablePath\":\"C:\\\\WINDOWS\\\\system32\\\\conhost.exe\",\"CommandLine\":\"\\\\??\\\\C:\\\\WINDOWS\\\\system32\\\\conhost.exe 0x4\"}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:35.080Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @(53472)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"LocalAddress\":\"127.0.0.1\",\"LocalPort\":53472,\"OwningProcess\":46200}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:35.807Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 46200' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"ProcessId\":46200,\"ParentProcessId\":63828,\"CreationDate\":\"2026-10-03T17:57:33.157179+08:00\",\"ExecutablePath\":\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",\"CommandLine\":\"\\\"C:/Program Files/nodejs/node.exe\\\" dist/prototype-server.js --db data/runtime-fe028f0c-7dff-46b5-91bd-f5775193ef7b.sqlite --work harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea --port 53472\"}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:36.496Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ParentProcessId = 46200' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"ProcessId\":43144,\"ParentProcessId\":46200,\"CreationDate\":\"2026-10-03T17:57:33.163907+08:00\",\"ExecutablePath\":\"C:\\\\WINDOWS\\\\system32\\\\conhost.exe\",\"CommandLine\":\"\\\\??\\\\C:\\\\WINDOWS\\\\system32\\\\conhost.exe 0x4\"}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:40.015Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 41264' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:41.577Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @(53471)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:42.086Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 46200' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"ProcessId\":46200,\"ParentProcessId\":63828,\"CreationDate\":\"2026-10-03T17:57:33.157179+08:00\",\"ExecutablePath\":\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",\"CommandLine\":\"\\\"C:/Program Files/nodejs/node.exe\\\" dist/prototype-server.js --db data/runtime-fe028f0c-7dff-46b5-91bd-f5775193ef7b.sqlite --work harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea --port 53472\"}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:43.631Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @(53472)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[{\"LocalAddress\":\"127.0.0.1\",\"LocalPort\":53472,\"OwningProcess\":46200}]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:48.256Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 46200' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:49.866Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @(53472)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:51.569Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @(53471,53472)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:52.085Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 41264' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:52.592Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 46200' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:53.103Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 63704' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:53.780Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 18088' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  },
+  {
+    "at": "2026-10-03T09:57:54.457Z",
+    "command": [
+      "C:/Program Files/PowerShell/7/pwsh.exe",
+      "-NoLogo",
+      "-NoProfile",
+      "-Command",
+      "$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = 63828' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-06-lab",
+    "exitCode": 0,
+    "stdout": "[]\r\n",
+    "stderr": ""
+  }
+]

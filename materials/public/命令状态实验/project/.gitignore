@@ -1,0 +1,9 @@
+node_modules/
+.pnpm/
+dist/
+data/
+runs/
+lab.config.json
+plugins/novel-workbench-course/binding.json
+*.sqlite*
+deliverables/runtime-f03472d3-de5d-4343-a102-9dbb9ca9d24b-三章待审.md

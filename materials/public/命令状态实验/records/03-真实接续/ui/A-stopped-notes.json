@@ -1,0 +1,7 @@
+{
+  "url": "http://127.0.0.1:53471/?work=harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea&chapter=3&variant=notes",
+  "responses": [],
+  "navigationError": "page.goto: net::ERR_CONNECTION_REFUSED at http://127.0.0.1:53471/?work=harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea&chapter=3&variant=notes\nCall log:\n\u001b[2m  - navigating to \"http://127.0.0.1:53471/?work=harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea&chapter=3&variant=notes\", waiting until \"networkidle\"\u001b[22m\n",
+  "value": null,
+  "scope": "整页截图和完整 textarea value；不是全部正文同时显示。失败页面是浏览器实际访问结果，不是小说应用的状态提示。"
+}
