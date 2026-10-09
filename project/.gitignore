@@ -1,7 +1,3 @@
 node_modules/
-dist/
-data/
+.pnpm/
 runs/
-lab.config.json
-plugins/novel-practice/binding.json
-*.sqlite*

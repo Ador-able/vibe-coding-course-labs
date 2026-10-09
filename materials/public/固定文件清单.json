@@ -1,0 +1,288 @@
+{
+  "executionStart": "4e199ccd4fa3222b076809065e1400befc9ebd96",
+  "publicDeliveryEnd": "94a39be2d142c22683692e4505eb2bf6af516c19",
+  "modelReexecutedAtEnd": false,
+  "SDK": "0.160.0",
+  "CLI": "0.160.0",
+  "localObservedNode": "24.12.0",
+  "localObservedPnpm": "11.20.0",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 27,
+      "sha256": "326fa8e799fecd2a1e2b3ea1c0ca1cd20612ce106b61381947c8f718c576e9b1",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 567,
+      "sha256": "e653d1f601a1c55f59ebc10561aae684c3d73ddf61c1cc6874c8ceb13e88200e",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "README.md",
+      "bytes": 5956,
+      "sha256": "34d655834fff0e76802d5019cb7e8b74dbcbd1d8a0066d671b9b1de171ade5f4",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "materials/三章完整待审稿.md",
+      "bytes": 10125,
+      "sha256": "fa57fc107c9f13d8a2857a45bafd10b98c0a5c37c45e4535d1c8fd1c9541fb63",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "materials/当前要求与设定.json",
+      "bytes": 1759,
+      "sha256": "2b2a348977ffefb49f29c0e10a77b2675acd72fa9e4204b3e9ccf91d71c48558",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "materials/第1章.txt",
+      "bytes": 3345,
+      "sha256": "34ad4c4d250c7c1dd886f555a1e97a2fb4ee63f2ac49fb4a102b6a9bca0fa9a7",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "materials/第2章.txt",
+      "bytes": 3217,
+      "sha256": "d032a9830e379fa787c49dff05d02e1d87a78b8c5bb90aad7b544eeea819ceca",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "materials/第3章.txt",
+      "bytes": 3093,
+      "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "package.json",
+      "bytes": 363,
+      "sha256": "1340dd9b7013d8300bd88abe790c04cb9099b53dcd8d32f3cfb6c3564ecbcbcf",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 2865,
+      "sha256": "620da6f2885d61c07a4ee6068baa8ab6f9b679ba45e88c568c7c4fe28bca7d4e",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 238,
+      "sha256": "cd091d3c17799abf98769c9a15bc50a77fbac43131a761a9d77a2b783ec1122f",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "prompts/会话A完整输入.txt",
+      "bytes": 2813,
+      "sha256": "6e966e1bcb9d0aacf312444a49c11aa47ea4622e3eb895cc576e355a9a8d3417",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "prompts/会话B完整输入.txt",
+      "bytes": 3578,
+      "sha256": "c003e11ca23e9dbba9b9faa9963dc27d3015e4ac33b8b2d92d13d6512bd43ce5",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "prompts/完整调查任务.txt",
+      "bytes": 1798,
+      "sha256": "b81e2693f31e2a47c0979703d875f87d297e2ab21d376096783fb624acf2bb8b",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/A-rollout-公开投影.jsonl",
+      "bytes": 202828,
+      "sha256": "0d747b250f49d82cb363c86feee2b819e3a3fd38f7c6873dac3159e1e35c2a4b",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/A-公开SDK/all-agent-messages.txt",
+      "bytes": 7751,
+      "sha256": "f0d96b49829da54c0ca0edad2986e96f5e990ebbc42f5ffa6e2f0b03fc64e5b8",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/A-公开SDK/events.jsonl",
+      "bytes": 39220,
+      "sha256": "58cede7479afb8d06ebe73ef9ea4a38b90a9a2cfc8759e390cb46f0b52eb3b00",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/A-公开SDK/input.json",
+      "bytes": 4156,
+      "sha256": "9cc9a35ba66d02a1c2ca039e2ac198fe0b69fca1b53a26e2562e5ecc5b580fe2",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/A-公开SDK/report.json",
+      "bytes": 2328,
+      "sha256": "30399be0ed7b6827d8914f075724887ac8073b40bc1fec272a727d6b74d03262",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/A-公开SDK/timed-events.jsonl",
+      "bytes": 40141,
+      "sha256": "c463f21e5464597de086c47204c3c8503e6840cba05e12d1de09ab54a795aaa0",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/A-完整最终回答.txt",
+      "bytes": 7187,
+      "sha256": "4155130786af48f66ee0ea0c0a61b75a211e1bfd914f4261a3c411b8f175269c",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B-公开SDK/all-agent-messages.txt",
+      "bytes": 5333,
+      "sha256": "993c6ff79596f6f1ae77e51ee5df5ef282595aa9f333dbec38f3f6c24bd26456",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B-公开SDK/events.jsonl",
+      "bytes": 8165,
+      "sha256": "fa8c7e9067cd4ed12247662888bbaa0a84dd1e875a3f8ec7b279752b9dd66bea",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B-公开SDK/input.json",
+      "bytes": 4923,
+      "sha256": "11624ec6022f5bb93055dd71fbfcd71b66d1aba0b37e15a76fe047833b79710e",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B-公开SDK/report.json",
+      "bytes": 2329,
+      "sha256": "222f589b29c2e803cdd7e7ba59d2d369e33ca3eb51b968826a6d0dd793824ef1",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B-公开SDK/timed-events.jsonl",
+      "bytes": 9051,
+      "sha256": "9113d013e9078d21c32a73963b6b380108ced1ad19c6c5eb4b97bccf36fd75ae",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B主-rollout-公开投影.jsonl",
+      "bytes": 108504,
+      "sha256": "9547c72ca0ab037b0620ba5d177a1f0e3744393ea7f570d592ec17926809d05c",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B主-完整最终回答.txt",
+      "bytes": 4563,
+      "sha256": "aa2a9177e226873893ff1e9e8f0be3e8bd9b214f6cb8d36f6214ec366a90e9cb",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B主-实际收到的完整子报告.txt",
+      "bytes": 9546,
+      "sha256": "3f25cafc8bcf6b0d3eaf27e1eb1e859d0508f05e16fc95ac7727e5526b488852",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B子-rollout-公开投影.jsonl",
+      "bytes": 191368,
+      "sha256": "29dc4132419e203784b60b3633521816a470e7d31b5d917667ed8cd7843dcfe4",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/B子-完整最终回答.txt",
+      "bytes": 9453,
+      "sha256": "083b35b7b453fc1085bb80b467f98e9900222984cdbc657e35b10abac2ba2c55",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/公开投影说明.md",
+      "bytes": 3628,
+      "sha256": "2fd54836bb8f4f6d20624e30c7d14c8bdb556d529d9cd3a433bd09d2d4c7d56b",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/公开投影边界.json",
+      "bytes": 29388,
+      "sha256": "091d55936e0b4edf1eba4115795cad0a82e6b5e89b3dfc05f3961cff599b49d5",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/子会话应用读取原返回.json",
+      "bytes": 38047,
+      "sha256": "56c1a71a015fc63d5fc2475d8f43444e1808103a7dd802c2f02295ffced959e8",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整可见结果核对.json",
+      "bytes": 33303,
+      "sha256": "f21aa8ffe3f6945badc32edaadd7a320b23fa6a356700955ee9a1d238d6fc7d6",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整工具返回/A-1-完整stdout.txt",
+      "bytes": 325,
+      "sha256": "7966db6cac85c3a795c3dce58b55161b950c7e6959efc7de29060f86b62722ab",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整工具返回/A-2-完整stdout.txt",
+      "bytes": 12561,
+      "sha256": "557ba38682c919dec5d769c57334c671070899a16e51aa5e250e1d134c5e08a7",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整工具返回/A-3-完整stdout.txt",
+      "bytes": 11067,
+      "sha256": "6a86c78f421fc47f5739e1d8b7db0b4a9d2e2464fbebb33d726cb0f62955a448",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整工具返回/A-4-完整stdout.txt",
+      "bytes": 818,
+      "sha256": "ae900b291eef04ef83b702dab37eb3c647401422a976f37ec8134177ffe60632",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整工具返回/B主-1-完整stdout.txt",
+      "bytes": 405,
+      "sha256": "d139ecad93d3161be83048392481dfc3a838b650c0fcdce5c681d049840533b9",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整工具返回/B子-1-完整stdout.txt",
+      "bytes": 12721,
+      "sha256": "01277c3b4897ca1436574a8d02e8e7ad35ac007806d833f9c21d4a615a433b0e",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "records/完整工具返回/B子-2-完整stdout.txt",
+      "bytes": 11224,
+      "sha256": "232cb7990768bed705ec7fd0ef074a074994e68df446f915bd92b104ed5ddf99",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "scripts/observe.mjs",
+      "bytes": 3661,
+      "sha256": "d143d08d7758de403aaad8000152de78f23c6ac064e36bb5535b4e5a91505248",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "完整阅读判断.md",
+      "bytes": 7569,
+      "sha256": "96adb6c8f693ee992b831f096ace5d1b025c3fc5695b22ea5f23d271444579c0",
+      "gitBlobByteIdentical": true
+    },
+    {
+      "path": "子代理有限比较-完整Git历史.bundle",
+      "bytes": 152681,
+      "sha256": "460e2a4145775e6353db4291714480a548049cc2d10c99ae0d82b059ca333d99",
+      "scope": "本独立项目的实际提交与起止标签；不是宿主配置、凭据或聊天数据库备份。"
+    }
+  ],
+  "scope": "固定实际代码/材料、两轮SDK记录、三个rollout窄公开投影和完整输出；Git只含安全实际执行起点和公开交付提交；不含受保护宿主指令正文、本机完整私有原件、node_modules、其他原课、全局配置或业务库。"
+}

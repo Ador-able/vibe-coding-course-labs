@@ -1,0 +1,683 @@
+[
+  {
+    "name": "A",
+    "original": {
+      "bytes": 265897,
+      "sha256": "a06a28eb887ce8233635d338f68957aa767d8189485dffef728aa210739861c1",
+      "lines": 43
+    },
+    "publicProjection": {
+      "file": "A-rollout-公开投影.jsonl",
+      "bytes": 202828,
+      "sha256": "0d747b250f49d82cb363c86feee2b819e3a3fd38f7c6873dac3159e1e35c2a4b",
+      "lines": 43
+    },
+    "omissions": [
+      {
+        "line": 1,
+        "jsonPointer": "/payload/creator_user_id",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 29
+        },
+        "originalValueUtf16": 29,
+        "omittedUtf16": 29,
+        "omittedCodepoints": 29,
+        "omittedDecodedUtf8Bytes": 29,
+        "omittedDecodedSha256": "c639b2e87a2bf3b599de9aa19c5d35c3d39a579430f8e38611c52a10931d1520",
+        "originalJsonEncodedByteRange": {
+          "start": 104,
+          "end": 133
+        },
+        "originalJsonEncodedSha256": "c639b2e87a2bf3b599de9aa19c5d35c3d39a579430f8e38611c52a10931d1520",
+        "replacement": "[账户身份字段省略]",
+        "reason": "仅省略该真实账户身份字段值。"
+      },
+      {
+        "line": 1,
+        "jsonPointer": "/payload/creator_account_id",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 36
+        },
+        "originalValueUtf16": 36,
+        "omittedUtf16": 36,
+        "omittedCodepoints": 36,
+        "omittedDecodedUtf8Bytes": 36,
+        "omittedDecodedSha256": "55d796a8da9b0818544cb4797c02315c28022c124053379f68b8ff914ec3d09a",
+        "originalJsonEncodedByteRange": {
+          "start": 157,
+          "end": 193
+        },
+        "originalJsonEncodedSha256": "55d796a8da9b0818544cb4797c02315c28022c124053379f68b8ff914ec3d09a",
+        "replacement": "[账户身份字段省略]",
+        "reason": "仅省略该真实账户身份字段值。"
+      },
+      {
+        "line": 1,
+        "jsonPointer": "/payload/base_instructions/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 21769
+        },
+        "originalValueUtf16": 21769,
+        "omittedUtf16": 21769,
+        "omittedCodepoints": 21769,
+        "omittedDecodedUtf8Bytes": 21779,
+        "omittedDecodedSha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "originalJsonEncodedByteRange": {
+          "start": 737,
+          "end": 22746
+        },
+        "originalJsonEncodedSha256": "6fa61816cc8e4b5875ebb70f06865b9bca29b507460153b6bfd304f988e8466b",
+        "replacement": "[宿主内部基础指令正文省略]",
+        "reason": "宿主内部基础指令不公开；仅保留字段位置、类型、长度和 SHA，本机原件供审核。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 14155
+        },
+        "originalValueUtf16": 14155,
+        "omittedUtf16": 14155,
+        "omittedCodepoints": 14155,
+        "omittedDecodedUtf8Bytes": 14439,
+        "omittedDecodedSha256": "e8c98dff2110bdc1a8b346f5f182e59b449d1b8524d68597929f80a726ea5d5e",
+        "originalJsonEncodedByteRange": {
+          "start": 23501,
+          "end": 38397
+        },
+        "originalJsonEncodedSha256": "73c18b219e1fdd538a880537e2c0ea4a03c754d8b85de0872f4fc221165c3791",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/1/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 17877
+        },
+        "originalValueUtf16": 17877,
+        "omittedUtf16": 17877,
+        "omittedCodepoints": 17877,
+        "omittedDecodedUtf8Bytes": 22185,
+        "omittedDecodedSha256": "16695489a6e2c03e6812d00611e78f5f33a81ef29291d742eccd02fafcaa3e23",
+        "originalJsonEncodedByteRange": {
+          "start": 38429,
+          "end": 60707
+        },
+        "originalJsonEncodedSha256": "4b282b8ba6077939638fe03069901f734a0f65687fe2c826ce4ef8326c65c744",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/2/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 342
+        },
+        "originalValueUtf16": 342,
+        "omittedUtf16": 342,
+        "omittedCodepoints": 342,
+        "omittedDecodedUtf8Bytes": 342,
+        "omittedDecodedSha256": "4103287cd2f8e02c0c606bbbae018671bd04d7e7eeca9cbf862f8b53f9275313",
+        "originalJsonEncodedByteRange": {
+          "start": 60739,
+          "end": 61085
+        },
+        "originalJsonEncodedSha256": "3ed06135b57b3d4b4a82ed5eca6bb99db09a6ea28fc477305952ef998ee25c55",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/3/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 920
+        },
+        "originalValueUtf16": 920,
+        "omittedUtf16": 920,
+        "omittedCodepoints": 920,
+        "omittedDecodedUtf8Bytes": 920,
+        "omittedDecodedSha256": "bec8e7b5358a20b4cd552dae768b3a65ebf4ea9fb2645220085b84d60ee3fe81",
+        "originalJsonEncodedByteRange": {
+          "start": 61117,
+          "end": 62052
+        },
+        "originalJsonEncodedSha256": "152e7b5a5bdd42d58b784295f541ec391130804fb0592d838556cff6517c6346",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/4/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 650
+        },
+        "originalValueUtf16": 650,
+        "omittedUtf16": 650,
+        "omittedCodepoints": 650,
+        "omittedDecodedUtf8Bytes": 650,
+        "omittedDecodedSha256": "f61278588cc6c46a13ce95f73bf89bc9034911707fabe99bf905e5fd783dcf02",
+        "originalJsonEncodedByteRange": {
+          "start": 62084,
+          "end": 62748
+        },
+        "originalJsonEncodedSha256": "b385981e8888561824a90f52a19662272b3d3d514455348616de47184e8af2d4",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 4,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 2429
+        },
+        "originalValueUtf16": 2429,
+        "omittedUtf16": 2429,
+        "omittedCodepoints": 2429,
+        "omittedDecodedUtf8Bytes": 2429,
+        "omittedDecodedSha256": "47091490938505958b0c22ff42db6fd79b272a2af6923166f4c2cc53c4fe0df4",
+        "originalJsonEncodedByteRange": {
+          "start": 63327,
+          "end": 65792
+        },
+        "originalJsonEncodedSha256": "c10287854e9da77a0325150b1513762652383f278b1e6f2f4186b4c6eb97cb5c",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 5,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 271
+        },
+        "originalValueUtf16": 271,
+        "omittedUtf16": 271,
+        "omittedCodepoints": 271,
+        "omittedDecodedUtf8Bytes": 271,
+        "omittedDecodedSha256": "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e",
+        "originalJsonEncodedByteRange": {
+          "start": 66191,
+          "end": 66462
+        },
+        "originalJsonEncodedSha256": "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      }
+    ],
+    "allOtherParsedRowsAndFieldsIdentical": true
+  },
+  {
+    "name": "B主",
+    "original": {
+      "bytes": 171573,
+      "sha256": "367bef03cfb68b82ff8d676e3a1196b1953d9ced76fee988c93107f7bf136fa7",
+      "lines": 53
+    },
+    "publicProjection": {
+      "file": "B主-rollout-公开投影.jsonl",
+      "bytes": 108504,
+      "sha256": "9547c72ca0ab037b0620ba5d177a1f0e3744393ea7f570d592ec17926809d05c",
+      "lines": 53
+    },
+    "omissions": [
+      {
+        "line": 1,
+        "jsonPointer": "/payload/creator_user_id",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 29
+        },
+        "originalValueUtf16": 29,
+        "omittedUtf16": 29,
+        "omittedCodepoints": 29,
+        "omittedDecodedUtf8Bytes": 29,
+        "omittedDecodedSha256": "c639b2e87a2bf3b599de9aa19c5d35c3d39a579430f8e38611c52a10931d1520",
+        "originalJsonEncodedByteRange": {
+          "start": 104,
+          "end": 133
+        },
+        "originalJsonEncodedSha256": "c639b2e87a2bf3b599de9aa19c5d35c3d39a579430f8e38611c52a10931d1520",
+        "replacement": "[账户身份字段省略]",
+        "reason": "仅省略该真实账户身份字段值。"
+      },
+      {
+        "line": 1,
+        "jsonPointer": "/payload/creator_account_id",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 36
+        },
+        "originalValueUtf16": 36,
+        "omittedUtf16": 36,
+        "omittedCodepoints": 36,
+        "omittedDecodedUtf8Bytes": 36,
+        "omittedDecodedSha256": "55d796a8da9b0818544cb4797c02315c28022c124053379f68b8ff914ec3d09a",
+        "originalJsonEncodedByteRange": {
+          "start": 157,
+          "end": 193
+        },
+        "originalJsonEncodedSha256": "55d796a8da9b0818544cb4797c02315c28022c124053379f68b8ff914ec3d09a",
+        "replacement": "[账户身份字段省略]",
+        "reason": "仅省略该真实账户身份字段值。"
+      },
+      {
+        "line": 1,
+        "jsonPointer": "/payload/base_instructions/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 21769
+        },
+        "originalValueUtf16": 21769,
+        "omittedUtf16": 21769,
+        "omittedCodepoints": 21769,
+        "omittedDecodedUtf8Bytes": 21779,
+        "omittedDecodedSha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "originalJsonEncodedByteRange": {
+          "start": 737,
+          "end": 22746
+        },
+        "originalJsonEncodedSha256": "6fa61816cc8e4b5875ebb70f06865b9bca29b507460153b6bfd304f988e8466b",
+        "replacement": "[宿主内部基础指令正文省略]",
+        "reason": "宿主内部基础指令不公开；仅保留字段位置、类型、长度和 SHA，本机原件供审核。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 14155
+        },
+        "originalValueUtf16": 14155,
+        "omittedUtf16": 14155,
+        "omittedCodepoints": 14155,
+        "omittedDecodedUtf8Bytes": 14439,
+        "omittedDecodedSha256": "e8c98dff2110bdc1a8b346f5f182e59b449d1b8524d68597929f80a726ea5d5e",
+        "originalJsonEncodedByteRange": {
+          "start": 23501,
+          "end": 38397
+        },
+        "originalJsonEncodedSha256": "73c18b219e1fdd538a880537e2c0ea4a03c754d8b85de0872f4fc221165c3791",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/1/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 17877
+        },
+        "originalValueUtf16": 17877,
+        "omittedUtf16": 17877,
+        "omittedCodepoints": 17877,
+        "omittedDecodedUtf8Bytes": 22185,
+        "omittedDecodedSha256": "16695489a6e2c03e6812d00611e78f5f33a81ef29291d742eccd02fafcaa3e23",
+        "originalJsonEncodedByteRange": {
+          "start": 38429,
+          "end": 60707
+        },
+        "originalJsonEncodedSha256": "4b282b8ba6077939638fe03069901f734a0f65687fe2c826ce4ef8326c65c744",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/2/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 342
+        },
+        "originalValueUtf16": 342,
+        "omittedUtf16": 342,
+        "omittedCodepoints": 342,
+        "omittedDecodedUtf8Bytes": 342,
+        "omittedDecodedSha256": "4103287cd2f8e02c0c606bbbae018671bd04d7e7eeca9cbf862f8b53f9275313",
+        "originalJsonEncodedByteRange": {
+          "start": 60739,
+          "end": 61085
+        },
+        "originalJsonEncodedSha256": "3ed06135b57b3d4b4a82ed5eca6bb99db09a6ea28fc477305952ef998ee25c55",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/3/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 920
+        },
+        "originalValueUtf16": 920,
+        "omittedUtf16": 920,
+        "omittedCodepoints": 920,
+        "omittedDecodedUtf8Bytes": 920,
+        "omittedDecodedSha256": "bec8e7b5358a20b4cd552dae768b3a65ebf4ea9fb2645220085b84d60ee3fe81",
+        "originalJsonEncodedByteRange": {
+          "start": 61117,
+          "end": 62052
+        },
+        "originalJsonEncodedSha256": "152e7b5a5bdd42d58b784295f541ec391130804fb0592d838556cff6517c6346",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/4/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 650
+        },
+        "originalValueUtf16": 650,
+        "omittedUtf16": 650,
+        "omittedCodepoints": 650,
+        "omittedDecodedUtf8Bytes": 650,
+        "omittedDecodedSha256": "f61278588cc6c46a13ce95f73bf89bc9034911707fabe99bf905e5fd783dcf02",
+        "originalJsonEncodedByteRange": {
+          "start": 62084,
+          "end": 62748
+        },
+        "originalJsonEncodedSha256": "b385981e8888561824a90f52a19662272b3d3d514455348616de47184e8af2d4",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 4,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 2429
+        },
+        "originalValueUtf16": 2429,
+        "omittedUtf16": 2429,
+        "omittedCodepoints": 2429,
+        "omittedDecodedUtf8Bytes": 2429,
+        "omittedDecodedSha256": "47091490938505958b0c22ff42db6fd79b272a2af6923166f4c2cc53c4fe0df4",
+        "originalJsonEncodedByteRange": {
+          "start": 63327,
+          "end": 65792
+        },
+        "originalJsonEncodedSha256": "c10287854e9da77a0325150b1513762652383f278b1e6f2f4186b4c6eb97cb5c",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 5,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 271
+        },
+        "originalValueUtf16": 271,
+        "omittedUtf16": 271,
+        "omittedCodepoints": 271,
+        "omittedDecodedUtf8Bytes": 271,
+        "omittedDecodedSha256": "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e",
+        "originalJsonEncodedByteRange": {
+          "start": 66192,
+          "end": 66463
+        },
+        "originalJsonEncodedSha256": "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      }
+    ],
+    "allOtherParsedRowsAndFieldsIdentical": true
+  },
+  {
+    "name": "B子",
+    "original": {
+      "bytes": 254490,
+      "sha256": "637dbe172bb779181c175c61605e6cc0d0347eedb3747e4a15ad16cbadfbfa87",
+      "lines": 33
+    },
+    "publicProjection": {
+      "file": "B子-rollout-公开投影.jsonl",
+      "bytes": 191368,
+      "sha256": "29dc4132419e203784b60b3633521816a470e7d31b5d917667ed8cd7843dcfe4",
+      "lines": 33
+    },
+    "omissions": [
+      {
+        "line": 1,
+        "jsonPointer": "/payload/creator_user_id",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 29
+        },
+        "originalValueUtf16": 29,
+        "omittedUtf16": 29,
+        "omittedCodepoints": 29,
+        "omittedDecodedUtf8Bytes": 29,
+        "omittedDecodedSha256": "c639b2e87a2bf3b599de9aa19c5d35c3d39a579430f8e38611c52a10931d1520",
+        "originalJsonEncodedByteRange": {
+          "start": 104,
+          "end": 133
+        },
+        "originalJsonEncodedSha256": "c639b2e87a2bf3b599de9aa19c5d35c3d39a579430f8e38611c52a10931d1520",
+        "replacement": "[账户身份字段省略]",
+        "reason": "仅省略该真实账户身份字段值。"
+      },
+      {
+        "line": 1,
+        "jsonPointer": "/payload/creator_account_id",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 36
+        },
+        "originalValueUtf16": 36,
+        "omittedUtf16": 36,
+        "omittedCodepoints": 36,
+        "omittedDecodedUtf8Bytes": 36,
+        "omittedDecodedSha256": "55d796a8da9b0818544cb4797c02315c28022c124053379f68b8ff914ec3d09a",
+        "originalJsonEncodedByteRange": {
+          "start": 157,
+          "end": 193
+        },
+        "originalJsonEncodedSha256": "55d796a8da9b0818544cb4797c02315c28022c124053379f68b8ff914ec3d09a",
+        "replacement": "[账户身份字段省略]",
+        "reason": "仅省略该真实账户身份字段值。"
+      },
+      {
+        "line": 1,
+        "jsonPointer": "/payload/base_instructions/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 21769
+        },
+        "originalValueUtf16": 21769,
+        "omittedUtf16": 21769,
+        "omittedCodepoints": 21769,
+        "omittedDecodedUtf8Bytes": 21779,
+        "omittedDecodedSha256": "e1bdd4f8f0df4b20f4a0ffc8a861ce819df45325d8cecdfb92e80379cf8d142e",
+        "originalJsonEncodedByteRange": {
+          "start": 1054,
+          "end": 23063
+        },
+        "originalJsonEncodedSha256": "6fa61816cc8e4b5875ebb70f06865b9bca29b507460153b6bfd304f988e8466b",
+        "replacement": "[宿主内部基础指令正文省略]",
+        "reason": "宿主内部基础指令不公开；仅保留字段位置、类型、长度和 SHA，本机原件供审核。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 14155
+        },
+        "originalValueUtf16": 14155,
+        "omittedUtf16": 14155,
+        "omittedCodepoints": 14155,
+        "omittedDecodedUtf8Bytes": 14439,
+        "omittedDecodedSha256": "e8c98dff2110bdc1a8b346f5f182e59b449d1b8524d68597929f80a726ea5d5e",
+        "originalJsonEncodedByteRange": {
+          "start": 23845,
+          "end": 38741
+        },
+        "originalJsonEncodedSha256": "73c18b219e1fdd538a880537e2c0ea4a03c754d8b85de0872f4fc221165c3791",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/1/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 17877
+        },
+        "originalValueUtf16": 17877,
+        "omittedUtf16": 17877,
+        "omittedCodepoints": 17877,
+        "omittedDecodedUtf8Bytes": 22185,
+        "omittedDecodedSha256": "16695489a6e2c03e6812d00611e78f5f33a81ef29291d742eccd02fafcaa3e23",
+        "originalJsonEncodedByteRange": {
+          "start": 38773,
+          "end": 61051
+        },
+        "originalJsonEncodedSha256": "4b282b8ba6077939638fe03069901f734a0f65687fe2c826ce4ef8326c65c744",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/2/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 342
+        },
+        "originalValueUtf16": 342,
+        "omittedUtf16": 342,
+        "omittedCodepoints": 342,
+        "omittedDecodedUtf8Bytes": 342,
+        "omittedDecodedSha256": "4103287cd2f8e02c0c606bbbae018671bd04d7e7eeca9cbf862f8b53f9275313",
+        "originalJsonEncodedByteRange": {
+          "start": 61083,
+          "end": 61429
+        },
+        "originalJsonEncodedSha256": "3ed06135b57b3d4b4a82ed5eca6bb99db09a6ea28fc477305952ef998ee25c55",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/3/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 920
+        },
+        "originalValueUtf16": 920,
+        "omittedUtf16": 920,
+        "omittedCodepoints": 920,
+        "omittedDecodedUtf8Bytes": 920,
+        "omittedDecodedSha256": "bec8e7b5358a20b4cd552dae768b3a65ebf4ea9fb2645220085b84d60ee3fe81",
+        "originalJsonEncodedByteRange": {
+          "start": 61461,
+          "end": 62396
+        },
+        "originalJsonEncodedSha256": "152e7b5a5bdd42d58b784295f541ec391130804fb0592d838556cff6517c6346",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 3,
+        "jsonPointer": "/payload/content/4/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 650
+        },
+        "originalValueUtf16": 650,
+        "omittedUtf16": 650,
+        "omittedCodepoints": 650,
+        "omittedDecodedUtf8Bytes": 650,
+        "omittedDecodedSha256": "f61278588cc6c46a13ce95f73bf89bc9034911707fabe99bf905e5fd783dcf02",
+        "originalJsonEncodedByteRange": {
+          "start": 62428,
+          "end": 63092
+        },
+        "originalJsonEncodedSha256": "b385981e8888561824a90f52a19662272b3d3d514455348616de47184e8af2d4",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 4,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 2482
+        },
+        "originalValueUtf16": 2482,
+        "omittedUtf16": 2482,
+        "omittedCodepoints": 2482,
+        "omittedDecodedUtf8Bytes": 2482,
+        "omittedDecodedSha256": "ed146aef547fe4dad4e977ee39f5ba39522c80a1689db8e99144573663ac9880",
+        "originalJsonEncodedByteRange": {
+          "start": 63671,
+          "end": 66189
+        },
+        "originalJsonEncodedSha256": "a27a37d400ca57bc64cec65a3fb8fc85d359149ddf7a13e11b1d2bb2d38f3ddf",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      },
+      {
+        "line": 5,
+        "jsonPointer": "/payload/content/0/text",
+        "originalValueType": "string",
+        "valueUtf16Range": {
+          "start": 0,
+          "end": 271
+        },
+        "originalValueUtf16": 271,
+        "omittedUtf16": 271,
+        "omittedCodepoints": 271,
+        "omittedDecodedUtf8Bytes": 271,
+        "omittedDecodedSha256": "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e",
+        "originalJsonEncodedByteRange": {
+          "start": 66589,
+          "end": 66860
+        },
+        "originalJsonEncodedSha256": "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e",
+        "replacement": "[宿主内部 developer 指令正文省略；原位置、类型、长度和 SHA 见公开投影边界.json。]",
+        "reason": "该宿主内部指令正文及其中私有记忆/背景仅供本机审核；公开保留消息角色、字段位置与元信息，不改变运行时确实参与输入的事实。"
+      }
+    ],
+    "allOtherParsedRowsAndFieldsIdentical": true
+  }
+]
