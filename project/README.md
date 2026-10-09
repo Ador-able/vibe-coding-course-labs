@@ -1,4 +1,4 @@
-# 让 AI 通过工具获取信息和执行操作
+# 工具结果怎样让 Agent 继续行动
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 
