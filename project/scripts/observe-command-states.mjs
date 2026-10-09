@@ -46,9 +46,8 @@ const snapshot=path=>{
 };
 if(!isDeepStrictEqual(snapshot(database),initial))throw new Error('正式起点五表与完整固定原件不同；不覆盖数据库。');
 if(mode==='lesson'){
-  const bytes=await readFile(resolve(review.preflightReport)),checked=JSON.parse(bytes.toString('utf8'));
-  if(checked.mode!=='preflight'||checked.error||!checked.pipeAndTTYVerified||checked.implementationHead!==definition.completedPreflight.implementationHead||sha(bytes)!==definition.completedPreflight.reportSha256)throw new Error('已核的真实 pipe / PTY 前检原件不同；不启动长服务。');
-  if(sha(await readFile(resolve(project,'scripts/inspect-command-condition.mjs')))!==definition.completedPreflight.programSha256)throw new Error('短程序已改变，不能沿用该实际前检。');
+  const checked=JSON.parse(await readFile(resolve(review.preflightReport),'utf8'));
+  if(checked.mode!=='preflight'||checked.error||!checked.pipeAndTTYVerified||checked.implementationHead!==head)throw new Error('本固定实现尚无真实 pipe / PTY 成功预检；不启动长服务。');
 }
 const out=resolve(project,'runs','command-'+mode+'-'+randomUUID());
 await mkdir(out,{recursive:true});
@@ -80,7 +79,7 @@ const systemJSON=command=>{
 const listeners=ports=>systemJSON("$lessonRows=@(Get-NetTCPConnection -State Listen -ErrorAction Stop | Where-Object {$_.LocalPort -in @("+ports.join(',')+")} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonRows -Compress");
 const processIdentity=pid=>systemJSON("$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ProcessId = "+pid+"' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress");
 const descendants=pid=>systemJSON("$lessonRows=@(Get-CimInstance Win32_Process -Filter 'ParentProcessId = "+pid+"' -ErrorAction Stop | Select-Object ProcessId,ParentProcessId,CreationDate,ExecutablePath,CommandLine); ConvertTo-Json -InputObject $lessonRows -Compress");
-const ports=[53471,53472];
+const ports=[53471,53472,53473];
 
 // 沿现有观察器的 stdio 方式连接官方入口；有限课堂动作不调度模型或自动批准。
 function startHost(){
@@ -218,7 +217,7 @@ const ui=async(port,label)=>{
     }
   }finally{await browser.close();}
 };
-let pipeAndTTYVerified=false,A=null,B=null,identityA=null,identityB=null,hostIdentity=null,hostChildren=[],hostClosed=null;
+let pipeAndTTYVerified=false,A=null,B=null,C=null,identityA=null,identityB=null,identityC=null,hostIdentity=null,hostChildren=[],hostClosed=null;
 try{
   const available=listeners(ports);record('ports-before',{listeners:available});
   if(available.length)throw new Error('本章固定端口已被占用；不改端口、不停止占用者。');
@@ -241,10 +240,19 @@ try{
     await checkpoint('preflight-after');
   }else{
     store=new Store(database);
+    task('C','created');task('C','running');C=startCommand('C等待输入且未启动服务');
+    const gate=await waitFor('stdin 门槛',()=>{const line=output(C).stdout.split(/\r?\n/).find(line=>line.startsWith('{'));return line?JSON.parse(line):null;},C);
+    if(gate.state!=='waiting-for-stdin-before-service'||gate.serviceLoaded!==false||gate.lessonRun!==definition.ids.C)throw new Error('实际等待位置与明确教师门槛不同。');
+    identityC=processIdentity(gate.pid);const CListeners=listeners([53473]);
+    record('C-before-stop',{gate,identity:identityC,descendants:descendants(gate.pid),listeners:CListeners,originalPending:pending(C)});
+    if(identityC.length!==1||CListeners.length)throw new Error('C 的等待进程或未启动服务条件尚未确认。');
+    await stop(C,'停止C');
+    const afterC={identity:processIdentity(gate.pid),listeners:listeners([53473])};record('C-after-stop',afterC);
+    if(afterC.identity.length||afterC.listeners.length)throw new Error('C 的实际 PID 或端口仍存在；不提前宣称已清理。');
+    task('C','cancelled');
+    await checkpoint('C-after-stop');
     task('A','created');task('A','running');
-    // 只准备本次明确导出路径的父目录，业务导出仍交给既有 CLI。
-    const created=await mkdir(dirname(exportPath),{recursive:true});
-    record('export-directory-prepared',{path:dirname(exportPath),exportPath,newlyCreatedPath:created??null});
+    const build=startCommand('A项目构建检查');if((await completed(build)).exitCode!==0)throw new Error('实际构建检查失败。');
     const exported=startCommand('A当前三章实际导出');if((await completed(exported)).exitCode!==0)throw new Error('实际导出命令失败。');
     const expected=store.exportWork(definition.workId),fileBefore=await readFile(exportPath);
     if(!fileBefore.equals(Buffer.from(expected.text)))throw new Error('实际导出文件与完整 Store 导出不同。');
@@ -281,7 +289,7 @@ try{
   }
 }catch(cause){
   error=cause.message;record('error',{message:error});
-  if(store)for(const label of ['A','B','failure']){
+  if(store)for(const label of ['A','B','C','failure']){
     const row=snapshot(database).tasks.find(row=>row.id===definition.ids[label]);
     if(row&&JSON.parse(row.content).state==='running'){
       const actual=commands.findLast(call=>call.params.env?.LESSON_RUN_ID===definition.ids[label]);
@@ -302,7 +310,7 @@ try{
 }
 const after=snapshot(database),afterCode=await codeState(),globalAfter=sha(await readFile(globalPath));
 try{
-  const actual={listeners:listeners(ports),identities:[identityA,identityB,hostIdentity,hostChildren].filter(Boolean).flat().map(value=>({before:value,after:processIdentity(value.ProcessId)})),hostClosed};
+  const actual={listeners:listeners(ports),identities:[identityC,identityA,identityB,hostIdentity,hostChildren].filter(Boolean).flat().map(value=>({before:value,after:processIdentity(value.ProcessId)})),hostClosed};
   record('final-owned-process-check',actual);
   if(actual.listeners.length||actual.identities.some(item=>item.after.length))throw new Error('最终端口或已记录 PID 仍有对象；不宣称清理完成，不结束未知进程。');
   await checkpoint('final');
@@ -311,7 +319,7 @@ const commandsPublic=commands.map(({promise,startedMs,...call})=>({...call,outpu
 const businessPreserved=definition.expectedPreservedTables.every(table=>isDeepStrictEqual(after[table],initial[table]));
 const oldTasksPreserved=initial.tasks.every(original=>isDeepStrictEqual(after.tasks.find(row=>row.id===original.id),original));
 const newTaskIds=after.tasks.filter(row=>!initial.tasks.some(original=>original.id===row.id)).map(row=>row.id);
-const taskAdditionsWithinDefinition=newTaskIds.length<=definition.expectedTaskAdditionsMaximum&&newTaskIds.every(id=>['A','B','failure'].some(label=>definition.ids[label]===id));
+const taskAdditionsWithinDefinition=newTaskIds.length<=definition.expectedTaskAdditionsMaximum&&newTaskIds.every(id=>['A','B','C','failure'].some(label=>definition.ids[label]===id));
 const modelOrThreadStarts=protocol.filter(entry=>entry.direction==='sent'&&['thread/start','turn/start'].includes(entry.message.method)).length;
 const report={out,mode,implementationHead:head,version,officialWrapper,error,pipeAndTTYVerified,commands:commandsPublic,modelOrThreadStarts,businessPreserved,oldTasksPreserved,newTaskIds,taskAdditionsWithinDefinition,countsBefore:Object.fromEntries(tables.map(table=>[table,initial[table].length])),countsAfter:Object.fromEntries(tables.map(table=>[table,after[table].length])),codeUnchanged:isDeepStrictEqual(beforeCode,afterCode),globalConfigSha256Before:globalBefore,globalConfigSha256After:globalAfter,globalConfigUnchanged:globalBefore===globalAfter,configuration,hostClosed,scope:'教师固定命令实验，零 thread/turn；没有模型自然选择、审批等待或文学采用。processId 是本连接标识，OS PID 和实际产物另查。'};
 await writes;
