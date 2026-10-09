@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-02T17:27:54.987Z",
+  "results": [
+    {
+      "host": "Codex",
+      "run": "6369f475-eb69-4b00-946a-90009b98f8bf",
+      "events": 23,
+      "calls": [
+        "read_work",
+        "list_chapters",
+        "read_chapter",
+        "save_draft",
+        "read_chapter",
+        "list_chapters"
+      ],
+      "methodReadCount": 2,
+      "modelReadbackCount": 1,
+      "bodyHan": 842,
+      "nonWhitespace": 998,
+      "bodySha256": "ee7a3f2d435e828fab877fe3c3ab6b017f916b00845598d924af9daccc27b532",
+      "rawEventsSha256": "fce82e775b46262273ab24faeb0559d98edcf1d60372d507f5c0aacd9c388a34",
+      "databaseMatchesCli": true,
+      "inputMatchesOriginal": true,
+      "taskRecords": 0
+    },
+    {
+      "host": "OpenCode",
+      "run": "opencode-46a874e5-4417-4915-9c1e-c0230247a32b",
+      "events": 12,
+      "calls": [
+        "read_work",
+        "read_chapter",
+        "save_draft"
+      ],
+      "methodReadCount": 0,
+      "modelReadbackCount": 0,
+      "bodyHan": 220,
+      "nonWhitespace": 263,
+      "bodySha256": "bb930d351270dac7dd9fd2cdb7da06b89141fe288a638802042b16d072032a04",
+      "rawEventsSha256": "5da5294bf709e84ec16fd494004f135224ec07921d9755b3e04d2c9833049207",
+      "databaseMatchesCli": true,
+      "inputMatchesOriginal": true,
+      "taskRecords": 0
+    }
+  ],
+  "isolatedCatalog": true,
+  "originalGlobalConfigRestored": true,
+  "limits": "两个不同模型与宿主的实测，不用于模型质量排名或因果比较；第二个自然任务未读方法、未模型读回且篇幅不达标，保存成功不代表目标完成。无额外模型调用。"
+}

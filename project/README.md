@@ -1,4 +1,4 @@
-# 用 Skill 复用方法、资料和脚本
+# 把简单服务与 Skill 组成一个可用插件
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

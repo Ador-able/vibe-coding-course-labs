@@ -1,0 +1,63 @@
+{
+  "oldCode": "8994a9d886fc5c3335dc1f6dec69c2df0ac0924e",
+  "oldRule": "const nextOverrides=[...new Set(inventory.filter(item=>item.pluginId!==settings.pluginId).map(item=>item.pluginId?`plugins.${item.pluginId}.enabled=false`:`mcp_servers.${item.name}={command=${JSON.stringify(process.execPath)},args=[],enabled=false}`))];",
+  "endCode": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+  "change": "仅延续前次由真实目录确认的 plugins.*.enabled=false 与禁用 mcp_servers 覆盖；不写全局配置。",
+  "actualChecks": [
+    {
+      "name": "目录初查",
+      "isolated": false,
+      "skillsIsolated": false,
+      "memoryIsolated": true,
+      "overrides": 17,
+      "error": null,
+      "ownSkills": [
+        "novel-workbench-course:novel-chapter-review",
+        "novel-workbench-course:novel-chapter-task"
+      ],
+      "ownTools": [
+        "read_chapter",
+        "read_work",
+        "save_draft",
+        "list_chapters"
+      ]
+    },
+    {
+      "name": "目录复查",
+      "isolated": true,
+      "skillsIsolated": true,
+      "memoryIsolated": true,
+      "overrides": 22,
+      "error": null,
+      "ownSkills": [
+        "novel-workbench-course:novel-chapter-review",
+        "novel-workbench-course:novel-chapter-task"
+      ],
+      "ownTools": [
+        "read_work",
+        "list_chapters",
+        "save_draft",
+        "read_chapter"
+      ]
+    },
+    {
+      "name": "目录确认",
+      "isolated": true,
+      "skillsIsolated": true,
+      "memoryIsolated": true,
+      "overrides": 22,
+      "error": null,
+      "ownSkills": [
+        "novel-workbench-course:novel-chapter-review",
+        "novel-workbench-course:novel-chapter-task"
+      ],
+      "ownTools": [
+        "save_draft",
+        "read_work",
+        "list_chapters",
+        "read_chapter"
+      ]
+    }
+  ],
+  "scope": "初查记录旧生成状态中丢失停用项后的实际非隔离目录；修补后复查与确认稳定。并未在修补后假称执行了旧代码。没有模型或业务调用。"
+}

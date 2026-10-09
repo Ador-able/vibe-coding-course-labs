@@ -1,0 +1,28 @@
+{
+  "data": [
+    {
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-05\\lab",
+      "skills": [
+        {
+          "name": "novel-workbench-course:novel-chapter-review",
+          "description": "检查小说工作台中已保存章节的设定一致性、前文衔接、资料修订和采用状态。用于指定作品与章节的只读核查；单句润色、泛泛创作建议和未保存的独立片段不适用。",
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.0\\skills\\novel-chapter-review\\SKILL.md",
+          "scope": "user",
+          "enabled": true,
+          "pluginId": "novel-workbench-course@novel-workbench-course-lab"
+        },
+        {
+          "name": "novel-workbench-course:novel-chapter-task",
+          "description": "依据小说工作台中的当前要求和前文，起草或修改指定章节，保存完整正文为待人工判断的草稿。用于明确要求保存章节的任务；只读检查应使用 novel-chapter-review，单句润色和未保存的独立片段不适用。",
+          "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.0\\skills\\novel-chapter-task\\SKILL.md",
+          "scope": "user",
+          "enabled": true,
+          "pluginId": "novel-workbench-course@novel-workbench-course-lab"
+        }
+      ],
+      "errors": [],
+      "omittedSkills": 38,
+      "omission": "本文件不收录其他方法的描述或正文；只保留数量。"
+    }
+  ]
+}

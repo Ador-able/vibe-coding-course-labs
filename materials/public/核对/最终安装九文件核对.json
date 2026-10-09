@@ -1,0 +1,43 @@
+{
+  "stage": "最终纯目录复做安装；不是前一次模型运行缓存的原始取证",
+  "installedPath": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.0",
+  "entries": [
+    {
+      "file": "binding.json",
+      "sha256": "54765aeea71409e1b5027878a19b57ebc1232ae4d039c823c868fa39bf2d49fb"
+    },
+    {
+      "file": "mcp.json",
+      "sha256": "972b43c3b645fff5e3427e5beaad07a564aadc29843f6d1e446c734b3e1549d7"
+    },
+    {
+      "file": "plugin.json",
+      "sha256": "f863f6743891313f3110557e88418c0b19d15170738b5e07e5ab7a145841bd0c"
+    },
+    {
+      "file": "serve.mjs",
+      "sha256": "f8b163ecab93595d414164ddc017a38809ba14d7364edb331e0844bc0a9da551"
+    },
+    {
+      "file": "skills/novel-chapter-review/references/basis-and-status.md",
+      "sha256": "ab5318121643307b59818fcf6c669afd86a364063579a92fbb70b46d5a282cc3"
+    },
+    {
+      "file": "skills/novel-chapter-review/references/prose-review.md",
+      "sha256": "fd2cfa298df6d8b4cd5180bf0f80aa29f989841777a3b614aa5fc1c7b1cdcf8c"
+    },
+    {
+      "file": "skills/novel-chapter-review/SKILL.md",
+      "sha256": "4aac3333634771348f2d709ecbceaeddc0a9b760386e9b7dacc73c1e2093bf4a"
+    },
+    {
+      "file": "skills/novel-chapter-task/references/state-and-review.md",
+      "sha256": "90e4d2affe700e1d23f3d246cb3b821ee8f441846682dabdc012c73e25804996"
+    },
+    {
+      "file": "skills/novel-chapter-task/SKILL.md",
+      "sha256": "18dde9af10496de3775e3a48d9f7d86f3e1c47d43b6b18176458cb01bc5438bb"
+    }
+  ],
+  "allEqual": true
+}

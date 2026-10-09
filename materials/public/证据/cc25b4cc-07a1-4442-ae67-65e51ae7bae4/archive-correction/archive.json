@@ -1,0 +1,91 @@
+{
+  "threadId": "01a0fd82-66b3-7263-b37b-868b9e905e29",
+  "archived": true,
+  "error": null,
+  "transcript": [
+    {
+      "direction": "sent",
+      "message": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "plugin_course_archive",
+            "version": "1.0.0"
+          }
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "id": 1,
+        "result": {
+          "userAgent": "Codex Desktop/0.160.0 (Windows 10.0.26300; x86_64) dumb (plugin_course_archive; 1.0.0)",
+          "codexHome": "C:\\Users\\32686\\.codex",
+          "platformFamily": "windows",
+          "platformOs": "windows"
+        }
+      }
+    },
+    {
+      "direction": "sent",
+      "message": {
+        "method": "initialized",
+        "params": {}
+      }
+    },
+    {
+      "direction": "sent",
+      "message": {
+        "id": 2,
+        "method": "thread/archive",
+        "params": {
+          "threadId": "01a0fd82-66b3-7263-b37b-868b9e905e29"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "method": "configWarning",
+        "params": {
+          "summary": "Project-local config, hooks, and exec policies are disabled in the following folders until the project is trusted, but skills still load.\n    1. D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-05\\lab\\.codex\n       To load project-local config, hooks, and exec policies, add d:\\projects\\knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-05\\lab as a trusted project in C:\\Users\\32686\\.codex\\config.toml.\n",
+          "details": null
+        },
+        "emittedAtMs": 1790960306116
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "method": "remoteControl/status/changed",
+        "params": {
+          "status": "disabled",
+          "serverName": "HelloWorld",
+          "installationId": "167157db-fdbc-442a-9dca-51c6e433fea3",
+          "environmentId": null
+        },
+        "emittedAtMs": 1790960306116
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "id": 2,
+        "result": {}
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "method": "thread/archived",
+        "params": {
+          "threadId": "01a0fd82-66b3-7263-b37b-868b9e905e29"
+        },
+        "emittedAtMs": 1790960306134
+      }
+    }
+  ],
+  "stderr": "{\"timestamp\":\"2026-10-02T16:58:26.113637Z\",\"level\":\"ERROR\",\"fields\":{\"message\":\"Project-local config, hooks, and exec policies are disabled in the following folders until the project is trusted, but skills still load.\\n    1. D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-05\\\\lab\\\\.codex\\n       To load project-local config, hooks, and exec policies, add d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcm-08-05\\\\lab as a trusted project in C:\\\\Users\\\\32686\\\\.codex\\\\config.toml.\\n\"},\"target\":\"codex_app_server\"}\n"
+}

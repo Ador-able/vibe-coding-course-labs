@@ -1,0 +1,56 @@
+{
+  "baselineConfigSha256": "34d879ec660e8c01ad186edbd3ac06a9d43be904e03f5b383cae041bfc6ebaba",
+  "finalConfigSha256": "34d879ec660e8c01ad186edbd3ac06a9d43be904e03f5b383cae041bfc6ebaba",
+  "configBytesEqual": true,
+  "records": [
+    {
+      "name": "安装",
+      "args": [
+        "scripts/plugin-manage.mjs",
+        "add",
+        "--output",
+        "runs/交付入口/安装.json"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "目录初查",
+      "args": [
+        "scripts/plugin-preflight.mjs",
+        "--out",
+        "runs/交付入口/目录初查"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "目录复查",
+      "args": [
+        "scripts/plugin-preflight.mjs",
+        "--out",
+        "runs/交付入口/目录复查"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "目录确认",
+      "args": [
+        "scripts/plugin-preflight.mjs",
+        "--out",
+        "runs/交付入口/目录确认"
+      ],
+      "exitCode": 0
+    },
+    {
+      "name": "移除",
+      "args": [
+        "scripts/plugin-manage.mjs",
+        "remove",
+        "--output",
+        "runs/交付入口/移除.json"
+      ],
+      "exitCode": 0
+    }
+  ],
+  "failure": null,
+  "scope": "只有官方安装、公开目录读取与归档、官方移除；未发送模型任务、未执行业务读写工具、未复制认证文件。"
+}
