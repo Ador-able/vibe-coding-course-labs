@@ -1,0 +1,19 @@
+{
+  "playbackId": "2bdaad4d-ca23-47c4-ac85-b18a10ac7e7a",
+  "scope": "零模型历史事件回放；本次中止不改历史任务状态。",
+  "fixtureFile": "1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+  "expectedSourceSha256": "ba1c2ad1f410c978b598eb8948d73240d1a46f6015a3f1c44b27ae6602c33638",
+  "historicalRunId": null,
+  "historicalStartMessageId": null,
+  "returnedMessageId": null,
+  "historicalState": null,
+  "playbackState": "failed",
+  "startedAt": "2026-10-03T02:45:35.174Z",
+  "endedAt": "2026-10-03T02:45:35.180Z",
+  "replayIntervalMs": 120,
+  "error": "Failed to fetch",
+  "sdkErrors": [],
+  "actualEventsRead": [],
+  "snapshots": [],
+  "finalSnapshot": null
+}

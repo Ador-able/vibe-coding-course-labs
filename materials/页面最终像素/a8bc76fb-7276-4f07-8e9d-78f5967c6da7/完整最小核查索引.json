@@ -1,0 +1,148 @@
+{
+  "browserRunId": "a8bc76fb-7276-4f07-8e9d-78f5967c6da7",
+  "createdAt": "2026-10-03T03:08:48.130Z",
+  "git": "add1adab052527a76c7ee6200c1c3cb1bc0477df",
+  "gitWasClean": true,
+  "url": "http://127.0.0.1:4332/streaming.html",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "deviceScaleFactor": 1,
+  "scope": "底色、下次回放标签、加载失败中文提示的最小实际核查；不重复原104项条件，不调用模型或业务服务。",
+  "newModelCalls": 0,
+  "newBusinessSaves": 0,
+  "checks": [
+    {
+      "name": "固定且干净的最终应用点",
+      "passed": true,
+      "evidence": "add1adab052527a76c7ee6200c1c3cb1bc0477df"
+    }
+  ],
+  "captures": [],
+  "network": [
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/streaming.html",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/@vite/client",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/main.ts?t=1790996537232",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.pnpm/vite@8.3.1_@types+node@24.19.0_esbuild@0.28.2_tsx@4.23.15/node_modules/vite/dist/client/env.mjs",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/style.css",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/replay.css?t=1790996163279",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/ai.js?v=a4b22152",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/material.ts",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/dist-DEQrqO-5.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/schemas-BmlxXjIp.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/streaming.html",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/@vite/client",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/main.ts?t=1790996537232",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.pnpm/vite@8.3.1_@types+node@24.19.0_esbuild@0.28.2_tsx@4.23.15/node_modules/vite/dist/client/env.mjs",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/style.css",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/replay.css?t=1790996163279",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/ai.js?v=a4b22152",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/src/streaming/material.ts",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/dist-DEQrqO-5.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "page": "共同对象",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/schemas-BmlxXjIp.js?v=057a3a39",
+      "method": "GET"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+    {
+      "page": "共同对象",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    }
+  ],
+  "browserVersion": "154.0.4258.48",
+  "completed": false,
+  "failure": {
+    "message": "page.evaluate: TypeError: Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.\n    at eval (eval at evaluate (:311:30), <anonymous>:4:71)\n    at Array.map (<anonymous>)\n    at eval (eval at evaluate (:311:30), <anonymous>:3:71)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)",
+    "stack": "page.evaluate: TypeError: Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'.\n    at eval (eval at evaluate (:311:30), <anonymous>:4:71)\n    at Array.map (<anonymous>)\n    at eval (eval at evaluate (:311:30), <anonymous>:3:71)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at capture (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-02\\验证最终回放像素.mjs:42:32)\n    at async directions (D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-04-02\\验证最终回放像素.mjs:66:23)\n    at async file:///D:/Projects/Knowledge/.coursebook-work/localhost-9dfdb2d9c020/2/runs/authoring-20261002/vcm-04-02/%E9%AA%8C%E8%AF%81%E6%9C%80%E7%BB%88%E5%9B%9E%E6%94%BE%E5%83%8F%E7%B4%A0.mjs:77:3"
+  }
+}

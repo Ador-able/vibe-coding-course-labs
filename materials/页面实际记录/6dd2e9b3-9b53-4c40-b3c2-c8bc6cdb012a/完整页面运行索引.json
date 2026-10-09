@@ -1,0 +1,1226 @@
+{
+  "browserRunId": "6dd2e9b3-9b53-4c40-b3c2-c8bc6cdb012a",
+  "createdAt": "2026-10-03T02:47:18.200Z",
+  "git": "9014f2bbb5cbe40bdc868890e0b03ff25069919e",
+  "gitWasClean": true,
+  "url": "http://127.0.0.1:4332/streaming.html",
+  "scope": "新的零模型浏览器回放；原Node读取a8f5c50a与历史模型运行不重做、不改写。",
+  "viewport": {
+    "width": 1280,
+    "height": 900
+  },
+  "deviceScaleFactor": 1,
+  "newModelCalls": 0,
+  "newBusinessSaves": 0,
+  "checks": [
+    {
+      "name": "original完整固定纪要",
+      "passed": true,
+      "evidence": 196
+    },
+    {
+      "name": "original完整轮消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "original完整轮三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "4a8e307b-b95b-4d3f-aee3-55ddfb9f5ba9",
+        "historical": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "start": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "message": "1153e17e-e0b4-4870-978f-bf0eca94b0fb"
+      }
+    },
+    {
+      "name": "original完整轮全部原事件与ID",
+      "passed": true,
+      "evidence": 62
+    },
+    {
+      "name": "original完整轮原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "original完整轮导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 58
+      }
+    },
+    {
+      "name": "original完整轮页面完整正文",
+      "passed": true,
+      "evidence": [
+        "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+        "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？"
+      ]
+    },
+    {
+      "name": "original完整轮只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "original再次回放消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "original再次回放三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "3b59058d-0905-44dd-b144-b8890ca45de4",
+        "historical": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "start": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "message": "1153e17e-e0b4-4870-978f-bf0eca94b0fb"
+      }
+    },
+    {
+      "name": "original再次回放全部原事件与ID",
+      "passed": true,
+      "evidence": 62
+    },
+    {
+      "name": "original再次回放原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "original再次回放导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 58
+      }
+    },
+    {
+      "name": "original再次回放页面完整正文",
+      "passed": true,
+      "evidence": [
+        "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+        "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？"
+      ]
+    },
+    {
+      "name": "original再次回放只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "original再次读取有新身份",
+      "passed": true,
+      "evidence": [
+        "4a8e307b-b95b-4d3f-aee3-55ddfb9f5ba9",
+        "3b59058d-0905-44dd-b144-b8890ca45de4"
+      ]
+    },
+    {
+      "name": "original历史停止轮消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "original历史停止轮三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "6d832d05-7e8c-4b2d-9fbc-eaf135600da3",
+        "historical": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "start": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "message": "f7f927eb-9faa-49d4-af68-fe3429ed2e67"
+      }
+    },
+    {
+      "name": "original历史停止轮全部原事件与ID",
+      "passed": true,
+      "evidence": 52
+    },
+    {
+      "name": "original历史停止轮原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "original历史停止轮导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 48
+      }
+    },
+    {
+      "name": "original历史停止轮页面完整正文",
+      "passed": true,
+      "evidence": [
+        "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+        "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与"
+      ]
+    },
+    {
+      "name": "original历史停止轮只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "original停止半句与未知保留",
+      "passed": true,
+      "evidence": {
+        "type": "text",
+        "text": "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与",
+        "state": "streaming"
+      }
+    },
+    {
+      "name": "original实际浏览器下载原字节",
+      "passed": true,
+      "evidence": {
+        "bytes": 23046,
+        "sha256": "4f54884f3dddde0041ac586304ebc70342593fdd2bdd3f9b042166b0f816a17b"
+      }
+    },
+    {
+      "name": "original浏览器下载完整观察",
+      "passed": true,
+      "evidence": "original-下载本次观察.json"
+    },
+    {
+      "name": "original停止后没有晚到更新",
+      "passed": true,
+      "evidence": {
+        "events": 10
+      }
+    },
+    {
+      "name": "original本地中止不改历史状态或补事件",
+      "passed": true,
+      "evidence": {
+        "state": "interrupted",
+        "historicalState": "completed",
+        "events": 10
+      }
+    },
+    {
+      "name": "original原件加载失败保留上次对象",
+      "passed": true,
+      "evidence": "12bc9bfd-c10a-4daa-b6d4-319d63586b03"
+    },
+    {
+      "name": "original真实载入失败独立记录",
+      "passed": true,
+      "evidence": {
+        "playbackId": "4d9c1f08-4085-401b-a231-81fa509e2e47",
+        "scope": "零模型历史事件回放；本次中止不改历史任务状态。",
+        "fixtureFile": "1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+        "expectedSourceSha256": "ba1c2ad1f410c978b598eb8948d73240d1a46f6015a3f1c44b27ae6602c33638",
+        "historicalRunId": null,
+        "historicalStartMessageId": null,
+        "returnedMessageId": null,
+        "historicalState": null,
+        "playbackState": "failed",
+        "startedAt": "2026-10-03T02:47:44.165Z",
+        "endedAt": "2026-10-03T02:47:44.171Z",
+        "replayIntervalMs": 120,
+        "error": "Failed to fetch",
+        "sdkErrors": [],
+        "actualEventsRead": [],
+        "snapshots": [],
+        "finalSnapshot": null
+      }
+    },
+    {
+      "name": "同对象完整original方向切换没有重消费",
+      "passed": true,
+      "evidence": "3b59058d-0905-44dd-b144-b8890ca45de4"
+    },
+    {
+      "name": "同对象完整original窄屏数据与页面宽度",
+      "passed": true,
+      "evidence": 390
+    },
+    {
+      "name": "同对象完整studio方向切换没有重消费",
+      "passed": true,
+      "evidence": "3b59058d-0905-44dd-b144-b8890ca45de4"
+    },
+    {
+      "name": "同对象完整studio窄屏数据与页面宽度",
+      "passed": true,
+      "evidence": 390
+    },
+    {
+      "name": "同对象完整notebook方向切换没有重消费",
+      "passed": true,
+      "evidence": "3b59058d-0905-44dd-b144-b8890ca45de4"
+    },
+    {
+      "name": "同对象完整notebook窄屏数据与页面宽度",
+      "passed": true,
+      "evidence": 390
+    },
+    {
+      "name": "同对象停止original方向切换没有重消费",
+      "passed": true,
+      "evidence": "6d832d05-7e8c-4b2d-9fbc-eaf135600da3"
+    },
+    {
+      "name": "同对象停止original窄屏数据与页面宽度",
+      "passed": true,
+      "evidence": 390
+    },
+    {
+      "name": "同对象停止studio方向切换没有重消费",
+      "passed": true,
+      "evidence": "6d832d05-7e8c-4b2d-9fbc-eaf135600da3"
+    },
+    {
+      "name": "同对象停止studio窄屏数据与页面宽度",
+      "passed": true,
+      "evidence": 390
+    },
+    {
+      "name": "同对象停止notebook方向切换没有重消费",
+      "passed": true,
+      "evidence": "6d832d05-7e8c-4b2d-9fbc-eaf135600da3"
+    },
+    {
+      "name": "同对象停止notebook窄屏数据与页面宽度",
+      "passed": true,
+      "evidence": 390
+    },
+    {
+      "name": "studio完整固定纪要",
+      "passed": true,
+      "evidence": 196
+    },
+    {
+      "name": "studio完整轮消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "studio完整轮三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "86a88744-7c96-4c7c-b8f4-89286d806f7a",
+        "historical": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "start": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "message": "1153e17e-e0b4-4870-978f-bf0eca94b0fb"
+      }
+    },
+    {
+      "name": "studio完整轮全部原事件与ID",
+      "passed": true,
+      "evidence": 62
+    },
+    {
+      "name": "studio完整轮原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "studio完整轮导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 58
+      }
+    },
+    {
+      "name": "studio完整轮页面完整正文",
+      "passed": true,
+      "evidence": [
+        "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+        "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？"
+      ]
+    },
+    {
+      "name": "studio完整轮只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "studio再次回放消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "studio再次回放三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "fab971b2-a1aa-437b-861e-540d95487a74",
+        "historical": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "start": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "message": "1153e17e-e0b4-4870-978f-bf0eca94b0fb"
+      }
+    },
+    {
+      "name": "studio再次回放全部原事件与ID",
+      "passed": true,
+      "evidence": 62
+    },
+    {
+      "name": "studio再次回放原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "studio再次回放导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 58
+      }
+    },
+    {
+      "name": "studio再次回放页面完整正文",
+      "passed": true,
+      "evidence": [
+        "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+        "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？"
+      ]
+    },
+    {
+      "name": "studio再次回放只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "studio再次读取有新身份",
+      "passed": true,
+      "evidence": [
+        "86a88744-7c96-4c7c-b8f4-89286d806f7a",
+        "fab971b2-a1aa-437b-861e-540d95487a74"
+      ]
+    },
+    {
+      "name": "studio历史停止轮消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "studio历史停止轮三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "9afb3988-3423-4fed-a0f1-3c93253809fe",
+        "historical": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "start": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "message": "f7f927eb-9faa-49d4-af68-fe3429ed2e67"
+      }
+    },
+    {
+      "name": "studio历史停止轮全部原事件与ID",
+      "passed": true,
+      "evidence": 52
+    },
+    {
+      "name": "studio历史停止轮原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "studio历史停止轮导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 48
+      }
+    },
+    {
+      "name": "studio历史停止轮页面完整正文",
+      "passed": true,
+      "evidence": [
+        "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+        "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与"
+      ]
+    },
+    {
+      "name": "studio历史停止轮只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "studio停止半句与未知保留",
+      "passed": true,
+      "evidence": {
+        "type": "text",
+        "text": "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与",
+        "state": "streaming"
+      }
+    },
+    {
+      "name": "studio实际浏览器下载原字节",
+      "passed": true,
+      "evidence": {
+        "bytes": 23046,
+        "sha256": "4f54884f3dddde0041ac586304ebc70342593fdd2bdd3f9b042166b0f816a17b"
+      }
+    },
+    {
+      "name": "studio浏览器下载完整观察",
+      "passed": true,
+      "evidence": "studio-下载本次观察.json"
+    },
+    {
+      "name": "studio停止后没有晚到更新",
+      "passed": true,
+      "evidence": {
+        "events": 10
+      }
+    },
+    {
+      "name": "studio本地中止不改历史状态或补事件",
+      "passed": true,
+      "evidence": {
+        "state": "interrupted",
+        "historicalState": "completed",
+        "events": 10
+      }
+    },
+    {
+      "name": "studio原件加载失败保留上次对象",
+      "passed": true,
+      "evidence": "0bef1eaa-37dc-4d90-a103-b0c27c1aa542"
+    },
+    {
+      "name": "studio真实载入失败独立记录",
+      "passed": true,
+      "evidence": {
+        "playbackId": "14d9cc57-c71f-4abe-bbcb-e7a142777f60",
+        "scope": "零模型历史事件回放；本次中止不改历史任务状态。",
+        "fixtureFile": "1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+        "expectedSourceSha256": "ba1c2ad1f410c978b598eb8948d73240d1a46f6015a3f1c44b27ae6602c33638",
+        "historicalRunId": null,
+        "historicalStartMessageId": null,
+        "returnedMessageId": null,
+        "historicalState": null,
+        "playbackState": "failed",
+        "startedAt": "2026-10-03T02:48:10.488Z",
+        "endedAt": "2026-10-03T02:48:10.494Z",
+        "replayIntervalMs": 120,
+        "error": "Failed to fetch",
+        "sdkErrors": [],
+        "actualEventsRead": [],
+        "snapshots": [],
+        "finalSnapshot": null
+      }
+    },
+    {
+      "name": "notebook完整固定纪要",
+      "passed": true,
+      "evidence": 196
+    },
+    {
+      "name": "notebook完整轮消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "notebook完整轮三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "b64be511-9cbc-4c59-a772-66eaf46b2d6b",
+        "historical": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "start": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "message": "1153e17e-e0b4-4870-978f-bf0eca94b0fb"
+      }
+    },
+    {
+      "name": "notebook完整轮全部原事件与ID",
+      "passed": true,
+      "evidence": 62
+    },
+    {
+      "name": "notebook完整轮原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "notebook完整轮导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 58
+      }
+    },
+    {
+      "name": "notebook完整轮页面完整正文",
+      "passed": true,
+      "evidence": [
+        "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+        "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？"
+      ]
+    },
+    {
+      "name": "notebook完整轮只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "notebook再次回放消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "notebook再次回放三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "8e69625a-d5b1-4617-9abb-7fff5e6dfaa0",
+        "historical": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "start": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "message": "1153e17e-e0b4-4870-978f-bf0eca94b0fb"
+      }
+    },
+    {
+      "name": "notebook再次回放全部原事件与ID",
+      "passed": true,
+      "evidence": 62
+    },
+    {
+      "name": "notebook再次回放原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "notebook再次回放导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 58
+      }
+    },
+    {
+      "name": "notebook再次回放页面完整正文",
+      "passed": true,
+      "evidence": [
+        "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+        "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？"
+      ]
+    },
+    {
+      "name": "notebook再次回放只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "notebook再次读取有新身份",
+      "passed": true,
+      "evidence": [
+        "b64be511-9cbc-4c59-a772-66eaf46b2d6b",
+        "8e69625a-d5b1-4617-9abb-7fff5e6dfaa0"
+      ]
+    },
+    {
+      "name": "notebook历史停止轮消费者读取结束",
+      "passed": true,
+      "evidence": "finished"
+    },
+    {
+      "name": "notebook历史停止轮三处历史身份与本次回放区分",
+      "passed": true,
+      "evidence": {
+        "playback": "126fc4fe-cc55-41f9-b1e3-687205dd83ac",
+        "historical": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "start": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "message": "f7f927eb-9faa-49d4-af68-fe3429ed2e67"
+      }
+    },
+    {
+      "name": "notebook历史停止轮全部原事件与ID",
+      "passed": true,
+      "evidence": 52
+    },
+    {
+      "name": "notebook历史停止轮原历史时间",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "notebook历史停止轮导出JSON最后消息值",
+      "passed": true,
+      "evidence": {
+        "snapshots": 48
+      }
+    },
+    {
+      "name": "notebook历史停止轮页面完整正文",
+      "passed": true,
+      "evidence": [
+        "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+        "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与"
+      ]
+    },
+    {
+      "name": "notebook历史停止轮只有一个进度位置",
+      "passed": true,
+      "evidence": true
+    },
+    {
+      "name": "notebook停止半句与未知保留",
+      "passed": true,
+      "evidence": {
+        "type": "text",
+        "text": "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与",
+        "state": "streaming"
+      }
+    },
+    {
+      "name": "notebook实际浏览器下载原字节",
+      "passed": true,
+      "evidence": {
+        "bytes": 23046,
+        "sha256": "4f54884f3dddde0041ac586304ebc70342593fdd2bdd3f9b042166b0f816a17b"
+      }
+    },
+    {
+      "name": "notebook浏览器下载完整观察",
+      "passed": true,
+      "evidence": "notebook-下载本次观察.json"
+    },
+    {
+      "name": "notebook停止后没有晚到更新",
+      "passed": true,
+      "evidence": {
+        "events": 10
+      }
+    },
+    {
+      "name": "notebook本地中止不改历史状态或补事件",
+      "passed": true,
+      "evidence": {
+        "state": "interrupted",
+        "historicalState": "completed",
+        "events": 10
+      }
+    },
+    {
+      "name": "notebook原件加载失败保留上次对象",
+      "passed": true,
+      "evidence": "b131a733-955c-41d3-94b6-880fcf978a49"
+    },
+    {
+      "name": "notebook真实载入失败独立记录",
+      "passed": true,
+      "evidence": {
+        "playbackId": "7437f115-80ad-4e08-b332-cb933416d738",
+        "scope": "零模型历史事件回放；本次中止不改历史任务状态。",
+        "fixtureFile": "1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+        "expectedSourceSha256": "ba1c2ad1f410c978b598eb8948d73240d1a46f6015a3f1c44b27ae6602c33638",
+        "historicalRunId": null,
+        "historicalStartMessageId": null,
+        "returnedMessageId": null,
+        "historicalState": null,
+        "playbackState": "failed",
+        "startedAt": "2026-10-03T02:48:36.023Z",
+        "endedAt": "2026-10-03T02:48:36.032Z",
+        "replayIntervalMs": 120,
+        "error": "Failed to fetch",
+        "sdkErrors": [],
+        "actualEventsRead": [],
+        "snapshots": [],
+        "finalSnapshot": null
+      }
+    },
+    {
+      "name": "网络只有本机GET，没有模型或业务请求",
+      "passed": true,
+      "evidence": 48
+    },
+    {
+      "name": "无未捕获页面异常",
+      "passed": true,
+      "evidence": []
+    }
+  ],
+  "captures": [
+    {
+      "label": "original-初始整页",
+      "direction": "original",
+      "json": "original-初始整页.json",
+      "image": "original-初始整页.png",
+      "capturedAt": "2026-10-03T02:47:19.262Z"
+    },
+    {
+      "label": "original-摘要结束问题仍在接收",
+      "direction": "original",
+      "json": "original-摘要结束问题仍在接收.json",
+      "image": "original-摘要结束问题仍在接收.png",
+      "capturedAt": "2026-10-03T02:47:23.791Z"
+    },
+    {
+      "label": "original-完整结束整页",
+      "direction": "original",
+      "json": "original-完整结束整页.json",
+      "image": "original-完整结束整页.png",
+      "capturedAt": "2026-10-03T02:47:26.899Z"
+    },
+    {
+      "label": "original-历史停止整页",
+      "direction": "original",
+      "json": "original-历史停止整页.json",
+      "image": "original-历史停止整页.png",
+      "capturedAt": "2026-10-03T02:47:40.925Z"
+    },
+    {
+      "label": "original-停止全部事件与长原记录",
+      "direction": "original",
+      "json": "original-停止全部事件与长原记录.json",
+      "image": "original-停止全部事件与长原记录.png",
+      "capturedAt": "2026-10-03T02:47:41.049Z"
+    },
+    {
+      "label": "original-本次中止历史仍完整",
+      "direction": "original",
+      "json": "original-本次中止历史仍完整.json",
+      "image": "original-本次中止历史仍完整.png",
+      "capturedAt": "2026-10-03T02:47:44.070Z"
+    },
+    {
+      "label": "original-受控加载失败保留旧对象",
+      "direction": "original",
+      "json": "original-受控加载失败保留旧对象.json",
+      "image": "original-受控加载失败保留旧对象.png",
+      "capturedAt": "2026-10-03T02:47:44.178Z"
+    },
+    {
+      "label": "同对象-完整-original-整页",
+      "direction": "original",
+      "json": "同对象-完整-original-整页.json",
+      "image": "同对象-完整-original-整页.png",
+      "capturedAt": "2026-10-03T02:47:44.290Z"
+    },
+    {
+      "label": "同对象-完整-original-窄屏",
+      "direction": "original",
+      "json": "同对象-完整-original-窄屏.json",
+      "image": "同对象-完整-original-窄屏.png",
+      "capturedAt": "2026-10-03T02:47:44.358Z"
+    },
+    {
+      "label": "同对象-完整-studio-整页",
+      "direction": "studio",
+      "json": "同对象-完整-studio-整页.json",
+      "image": "同对象-完整-studio-整页.png",
+      "capturedAt": "2026-10-03T02:47:44.425Z"
+    },
+    {
+      "label": "同对象-完整-studio-窄屏",
+      "direction": "studio",
+      "json": "同对象-完整-studio-窄屏.json",
+      "image": "同对象-完整-studio-窄屏.png",
+      "capturedAt": "2026-10-03T02:47:44.482Z"
+    },
+    {
+      "label": "同对象-完整-notebook-整页",
+      "direction": "notebook",
+      "json": "同对象-完整-notebook-整页.json",
+      "image": "同对象-完整-notebook-整页.png",
+      "capturedAt": "2026-10-03T02:47:44.552Z"
+    },
+    {
+      "label": "同对象-完整-notebook-窄屏",
+      "direction": "notebook",
+      "json": "同对象-完整-notebook-窄屏.json",
+      "image": "同对象-完整-notebook-窄屏.png",
+      "capturedAt": "2026-10-03T02:47:44.622Z"
+    },
+    {
+      "label": "同对象-停止-original-整页",
+      "direction": "original",
+      "json": "同对象-停止-original-整页.json",
+      "image": "同对象-停止-original-整页.png",
+      "capturedAt": "2026-10-03T02:47:44.742Z"
+    },
+    {
+      "label": "同对象-停止-original-窄屏",
+      "direction": "original",
+      "json": "同对象-停止-original-窄屏.json",
+      "image": "同对象-停止-original-窄屏.png",
+      "capturedAt": "2026-10-03T02:47:44.805Z"
+    },
+    {
+      "label": "同对象-停止-studio-整页",
+      "direction": "studio",
+      "json": "同对象-停止-studio-整页.json",
+      "image": "同对象-停止-studio-整页.png",
+      "capturedAt": "2026-10-03T02:47:44.869Z"
+    },
+    {
+      "label": "同对象-停止-studio-窄屏",
+      "direction": "studio",
+      "json": "同对象-停止-studio-窄屏.json",
+      "image": "同对象-停止-studio-窄屏.png",
+      "capturedAt": "2026-10-03T02:47:44.927Z"
+    },
+    {
+      "label": "同对象-停止-notebook-整页",
+      "direction": "notebook",
+      "json": "同对象-停止-notebook-整页.json",
+      "image": "同对象-停止-notebook-整页.png",
+      "capturedAt": "2026-10-03T02:47:44.981Z"
+    },
+    {
+      "label": "同对象-停止-notebook-窄屏",
+      "direction": "notebook",
+      "json": "同对象-停止-notebook-窄屏.json",
+      "image": "同对象-停止-notebook-窄屏.png",
+      "capturedAt": "2026-10-03T02:47:45.049Z"
+    },
+    {
+      "label": "studio-初始整页",
+      "direction": "studio",
+      "json": "studio-初始整页.json",
+      "image": "studio-初始整页.png",
+      "capturedAt": "2026-10-03T02:47:45.707Z"
+    },
+    {
+      "label": "studio-摘要结束问题仍在接收",
+      "direction": "studio",
+      "json": "studio-摘要结束问题仍在接收.json",
+      "image": "studio-摘要结束问题仍在接收.png",
+      "capturedAt": "2026-10-03T02:47:50.242Z"
+    },
+    {
+      "label": "studio-完整结束整页",
+      "direction": "studio",
+      "json": "studio-完整结束整页.json",
+      "image": "studio-完整结束整页.png",
+      "capturedAt": "2026-10-03T02:47:53.326Z"
+    },
+    {
+      "label": "studio-历史停止整页",
+      "direction": "studio",
+      "json": "studio-历史停止整页.json",
+      "image": "studio-历史停止整页.png",
+      "capturedAt": "2026-10-03T02:48:07.325Z"
+    },
+    {
+      "label": "studio-停止全部事件与长原记录",
+      "direction": "studio",
+      "json": "studio-停止全部事件与长原记录.json",
+      "image": "studio-停止全部事件与长原记录.png",
+      "capturedAt": "2026-10-03T02:48:07.427Z"
+    },
+    {
+      "label": "studio-本次中止历史仍完整",
+      "direction": "studio",
+      "json": "studio-本次中止历史仍完整.json",
+      "image": "studio-本次中止历史仍完整.png",
+      "capturedAt": "2026-10-03T02:48:10.392Z"
+    },
+    {
+      "label": "studio-受控加载失败保留旧对象",
+      "direction": "studio",
+      "json": "studio-受控加载失败保留旧对象.json",
+      "image": "studio-受控加载失败保留旧对象.png",
+      "capturedAt": "2026-10-03T02:48:10.504Z"
+    },
+    {
+      "label": "notebook-初始整页",
+      "direction": "notebook",
+      "json": "notebook-初始整页.json",
+      "image": "notebook-初始整页.png",
+      "capturedAt": "2026-10-03T02:48:11.213Z"
+    },
+    {
+      "label": "notebook-摘要结束问题仍在接收",
+      "direction": "notebook",
+      "json": "notebook-摘要结束问题仍在接收.json",
+      "image": "notebook-摘要结束问题仍在接收.png",
+      "capturedAt": "2026-10-03T02:48:15.741Z"
+    },
+    {
+      "label": "notebook-完整结束整页",
+      "direction": "notebook",
+      "json": "notebook-完整结束整页.json",
+      "image": "notebook-完整结束整页.png",
+      "capturedAt": "2026-10-03T02:48:18.846Z"
+    },
+    {
+      "label": "notebook-历史停止整页",
+      "direction": "notebook",
+      "json": "notebook-历史停止整页.json",
+      "image": "notebook-历史停止整页.png",
+      "capturedAt": "2026-10-03T02:48:32.855Z"
+    },
+    {
+      "label": "notebook-停止全部事件与长原记录",
+      "direction": "notebook",
+      "json": "notebook-停止全部事件与长原记录.json",
+      "image": "notebook-停止全部事件与长原记录.png",
+      "capturedAt": "2026-10-03T02:48:32.981Z"
+    },
+    {
+      "label": "notebook-本次中止历史仍完整",
+      "direction": "notebook",
+      "json": "notebook-本次中止历史仍完整.json",
+      "image": "notebook-本次中止历史仍完整.png",
+      "capturedAt": "2026-10-03T02:48:35.936Z"
+    },
+    {
+      "label": "notebook-受控加载失败保留旧对象",
+      "direction": "notebook",
+      "json": "notebook-受控加载失败保留旧对象.json",
+      "image": "notebook-受控加载失败保留旧对象.png",
+      "capturedAt": "2026-10-03T02:48:36.045Z"
+    }
+  ],
+  "network": [
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/streaming.html",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/@vite/client",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/src/streaming/main.ts",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/src/streaming/style.css",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/src/streaming/replay.css",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/ai.js?v=a4b22152",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/src/streaming/material.ts",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/node_modules/.pnpm/vite@8.3.1_@types+node@24.19.0_esbuild@0.28.2_tsx@4.23.15/node_modules/vite/dist/client/env.mjs",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/dist-DEQrqO-5.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/schemas-BmlxXjIp.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/streaming-history/f7f927eb-9faa-49d4-af68-fe3429ed2e67.json",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "original",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/streaming.html",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/@vite/client",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/src/streaming/main.ts",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/src/streaming/style.css",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/src/streaming/replay.css",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/ai.js?v=a4b22152",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/src/streaming/material.ts",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/node_modules/.pnpm/vite@8.3.1_@types+node@24.19.0_esbuild@0.28.2_tsx@4.23.15/node_modules/vite/dist/client/env.mjs",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/dist-DEQrqO-5.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/schemas-BmlxXjIp.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/streaming-history/f7f927eb-9faa-49d4-af68-fe3429ed2e67.json",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "studio",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/streaming.html",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/@vite/client",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/src/streaming/main.ts",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/src/streaming/style.css",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/src/streaming/replay.css",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/ai.js?v=a4b22152",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/src/streaming/material.ts",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/node_modules/.pnpm/vite@8.3.1_@types+node@24.19.0_esbuild@0.28.2_tsx@4.23.15/node_modules/vite/dist/client/env.mjs",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/rolldown-runtime-EAsCxrDo.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/dist-DEQrqO-5.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/node_modules/.vite/deps/schemas-BmlxXjIp.js?v=057a3a39",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/streaming-history/f7f927eb-9faa-49d4-af68-fe3429ed2e67.json",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    },
+    {
+      "direction": "notebook",
+      "url": "http://127.0.0.1:4332/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "method": "GET"
+    }
+  ],
+  "pageErrors": [],
+  "consoleErrors": [
+    {
+      "direction": "original",
+      "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+    },
+    {
+      "direction": "original",
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+    },
+    {
+      "direction": "studio",
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+    },
+    {
+      "direction": "notebook",
+      "text": "Failed to load resource: net::ERR_INTERNET_DISCONNECTED"
+    }
+  ],
+  "browserVersion": "154.0.4258.48",
+  "completedAt": "2026-10-03T02:48:36.134Z",
+  "completed": true
+}

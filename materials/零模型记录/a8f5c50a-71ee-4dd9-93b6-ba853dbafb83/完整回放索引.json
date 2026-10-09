@@ -1,0 +1,125 @@
+{
+  "replayId": "a8f5c50a-71ee-4dd9-93b6-ba853dbafb83",
+  "createdAt": "2026-10-03T01:52:27.472Z",
+  "scope": "把两份历史 UI 事件交给成熟 SDK 重新读取；不是新模型生成、HTTP 重连或业务保存。",
+  "historicalExecutionGit": "d966a050551e0dab7bf7e21ba1924c32baeb5986",
+  "replayEnvironmentGit": "31209d553e6b95af2f1ac1055fc6de5d08e22a36",
+  "sdkVersion": "7.0.122",
+  "recorderSha256": "7a9898b2dac80ce09b25af636e878fe7e8819ab58a34ec6454ed0ca1904e3b2f",
+  "sdkEntrySha256": "37bf68f66c9645a5ef73109736206a8c47c9b3cac6051341ee7aa9ad53261753",
+  "newModelCalls": 0,
+  "newBusinessSaves": 0,
+  "cases": [
+    {
+      "historicalRunId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+      "snapshots": 58,
+      "readerReturnedNormally": true,
+      "sdkErrors": [],
+      "thrownError": null,
+      "comparisons": {
+        "inputOriginalBytesUnchanged": true,
+        "finalSnapshotExactlyMatchesHistoricalFinalMessage": false,
+        "textPartsExactlyMatchHistoricalStageAnswers": true,
+        "finalMessageId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "finalMetadata": {
+          "model": "qwen-flash",
+          "state": "completed",
+          "stages": [
+            {
+              "stage": "summary",
+              "model": "qwen-flash",
+              "finishReason": "stop",
+              "usage": {
+                "prompt_tokens": 179,
+                "completion_tokens": 96,
+                "total_tokens": 275,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                }
+              }
+            },
+            {
+              "stage": "questions",
+              "model": "qwen-flash",
+              "finishReason": "stop",
+              "usage": {
+                "prompt_tokens": 305,
+                "completion_tokens": 77,
+                "total_tokens": 382,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                }
+              }
+            }
+          ]
+        },
+        "finalTextStates": [
+          "done",
+          "done"
+        ],
+        "progressParts": [
+          {
+            "type": "data-progress",
+            "id": "workflow-progress",
+            "data": {
+              "stage": "completed",
+              "label": "摘要和待确认问题均已完整结束"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "historicalRunId": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+      "snapshots": 48,
+      "readerReturnedNormally": true,
+      "sdkErrors": [],
+      "thrownError": null,
+      "comparisons": {
+        "inputOriginalBytesUnchanged": true,
+        "finalSnapshotExactlyMatchesHistoricalFinalMessage": false,
+        "textPartsExactlyMatchHistoricalStageAnswers": true,
+        "finalMessageId": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "finalMetadata": {
+          "model": "qwen-flash",
+          "state": "stopped",
+          "stages": [
+            {
+              "stage": "summary",
+              "model": "qwen-flash",
+              "finishReason": "stop",
+              "usage": {
+                "prompt_tokens": 179,
+                "completion_tokens": 112,
+                "total_tokens": 291,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                }
+              }
+            },
+            {
+              "stage": "questions",
+              "model": "qwen-flash",
+              "finishReason": null,
+              "usage": null
+            }
+          ]
+        },
+        "finalTextStates": [
+          "done",
+          "streaming"
+        ],
+        "progressParts": [
+          {
+            "type": "data-progress",
+            "id": "workflow-progress",
+            "data": {
+              "stage": "stopped",
+              "label": "已停止，收到的文字仍保留，任务未完成。"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

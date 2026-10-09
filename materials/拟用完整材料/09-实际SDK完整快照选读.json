@@ -1,0 +1,976 @@
+{
+  "scope": "一次真实零模型SDK读取的已保存消息快照投影；不是新增模型、重跑SDK或教师补写。",
+  "replayId": "a8f5c50a-71ee-4dd9-93b6-ba853dbafb83",
+  "snapshotNumbering": "snapshotNumber从1开始；jsonPointer中的数组索引从0开始。",
+  "cases": [
+    {
+      "historicalRunId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+      "fullResultFile": "零模型记录/a8f5c50a-71ee-4dd9-93b6-ba853dbafb83/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "fullResultBytes": 121831,
+      "fullResultSha256": "22d3c75c20c1f6a4068b696b94dfe27e69ca7243ac031116b8cb0a1c503c3d87",
+      "snapshotsTotal": 58,
+      "runtimeComparisons": {
+        "inputOriginalBytesUnchanged": true,
+        "finalSnapshotExactlyMatchesHistoricalFinalMessage": false,
+        "textPartsExactlyMatchHistoricalStageAnswers": true,
+        "finalMessageId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+        "finalMetadata": {
+          "model": "qwen-flash",
+          "state": "completed",
+          "stages": [
+            {
+              "stage": "summary",
+              "model": "qwen-flash",
+              "finishReason": "stop",
+              "usage": {
+                "prompt_tokens": 179,
+                "completion_tokens": 96,
+                "total_tokens": 275,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                }
+              }
+            },
+            {
+              "stage": "questions",
+              "model": "qwen-flash",
+              "finishReason": "stop",
+              "usage": {
+                "prompt_tokens": 305,
+                "completion_tokens": 77,
+                "total_tokens": 382,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                }
+              }
+            }
+          ]
+        },
+        "finalTextStates": [
+          "done",
+          "done"
+        ],
+        "progressParts": [
+          {
+            "type": "data-progress",
+            "id": "workflow-progress",
+            "data": {
+              "stage": "completed",
+              "label": "摘要和待确认问题均已完整结束"
+            }
+          }
+        ]
+      },
+      "snapshots": [
+        {
+          "snapshotNumber": 3,
+          "jsonPointer": "/snapshots/2",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 4,
+          "jsonPointer": "/snapshots/3",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 5,
+          "jsonPointer": "/snapshots/4",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 6,
+          "jsonPointer": "/snapshots/5",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 31,
+          "jsonPointer": "/snapshots/30",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "state": "done"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 32,
+          "jsonPointer": "/snapshots/31",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "questions",
+                  "label": "摘要已结束，应用正在生成待确认问题"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "state": "done"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 33,
+          "jsonPointer": "/snapshots/32",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "questions",
+                  "label": "摘要已结束，应用正在生成待确认问题"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 56,
+          "jsonPointer": "/snapshots/55",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "questions",
+                  "label": "摘要已结束，应用正在生成待确认问题"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？",
+                "state": "done"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 57,
+          "jsonPointer": "/snapshots/56",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "completed",
+                  "label": "摘要和待确认问题均已完整结束"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？",
+                "state": "done"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 58,
+          "jsonPointer": "/snapshots/57",
+          "snapshot": {
+            "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "completed",
+              "stages": [
+                {
+                  "stage": "summary",
+                  "model": "qwen-flash",
+                  "finishReason": "stop",
+                  "usage": {
+                    "prompt_tokens": 179,
+                    "completion_tokens": 96,
+                    "total_tokens": 275,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 0
+                    }
+                  }
+                },
+                {
+                  "stage": "questions",
+                  "model": "qwen-flash",
+                  "finishReason": "stop",
+                  "usage": {
+                    "prompt_tokens": 305,
+                    "completion_tokens": 77,
+                    "total_tokens": 382,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 0
+                    }
+                  }
+                }
+              ]
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "completed",
+                  "label": "摘要和待确认问题均已完整结束"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？",
+                "state": "done"
+              }
+            ]
+          }
+        }
+      ],
+      "finalSnapshot": {
+        "jsonPointer": "/finalSnapshot",
+        "snapshot": {
+          "id": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+          "metadata": {
+            "model": "qwen-flash",
+            "state": "completed",
+            "stages": [
+              {
+                "stage": "summary",
+                "model": "qwen-flash",
+                "finishReason": "stop",
+                "usage": {
+                  "prompt_tokens": 179,
+                  "completion_tokens": 96,
+                  "total_tokens": 275,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0
+                  }
+                }
+              },
+              {
+                "stage": "questions",
+                "model": "qwen-flash",
+                "finishReason": "stop",
+                "usage": {
+                  "prompt_tokens": 305,
+                  "completion_tokens": 77,
+                  "total_tokens": 382,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0
+                  }
+                }
+              }
+            ]
+          },
+          "role": "assistant",
+          "parts": [
+            {
+              "type": "data-progress",
+              "id": "workflow-progress",
+              "data": {
+                "stage": "completed",
+                "label": "摘要和待确认问题均已完整结束"
+              }
+            },
+            {
+              "type": "step-start"
+            },
+            {
+              "type": "text",
+              "text": "共享书架计划于10月12日下午开放，林晓负责图书整理，许宁负责借阅说明制作。书架与阅读桌已到位，图书仅限在活动室内阅读，不外借，每次限20人，使用后需归位。志愿者值班名单及开放具体时间待与场地管理员确认。借阅说明中损坏处理方式未定。材料整理完成后将评估是否如期开放，暂不对外承诺。",
+              "state": "done"
+            },
+            {
+              "type": "step-start"
+            },
+            {
+              "type": "text",
+              "text": "1. 志愿者值班名单何时确定，是否需在开放前完成排班并通知相关人员？  \n2. 与场地管理员确认的开放具体起止时间是否已明确，能否在10月10日前落实？  \n3. 借阅说明中图书损坏的处理方式应如何界定，是否有统一标准或责任划分方案？",
+              "state": "done"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "historicalRunId": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+      "fullResultFile": "零模型记录/a8f5c50a-71ee-4dd9-93b6-ba853dbafb83/f7f927eb-9faa-49d4-af68-fe3429ed2e67.json",
+      "fullResultBytes": 96361,
+      "fullResultSha256": "b3ca7b3a0ff9b7ee477719c98a5ef787c88734d3539a5feae77080b58113d1e6",
+      "snapshotsTotal": 48,
+      "runtimeComparisons": {
+        "inputOriginalBytesUnchanged": true,
+        "finalSnapshotExactlyMatchesHistoricalFinalMessage": false,
+        "textPartsExactlyMatchHistoricalStageAnswers": true,
+        "finalMessageId": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+        "finalMetadata": {
+          "model": "qwen-flash",
+          "state": "stopped",
+          "stages": [
+            {
+              "stage": "summary",
+              "model": "qwen-flash",
+              "finishReason": "stop",
+              "usage": {
+                "prompt_tokens": 179,
+                "completion_tokens": 112,
+                "total_tokens": 291,
+                "prompt_tokens_details": {
+                  "cached_tokens": 0
+                }
+              }
+            },
+            {
+              "stage": "questions",
+              "model": "qwen-flash",
+              "finishReason": null,
+              "usage": null
+            }
+          ]
+        },
+        "finalTextStates": [
+          "done",
+          "streaming"
+        ],
+        "progressParts": [
+          {
+            "type": "data-progress",
+            "id": "workflow-progress",
+            "data": {
+              "stage": "stopped",
+              "label": "已停止，收到的文字仍保留，任务未完成。"
+            }
+          }
+        ]
+      },
+      "snapshots": [
+        {
+          "snapshotNumber": 3,
+          "jsonPointer": "/snapshots/2",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 4,
+          "jsonPointer": "/snapshots/3",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 5,
+          "jsonPointer": "/snapshots/4",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 6,
+          "jsonPointer": "/snapshots/5",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定安排",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 35,
+          "jsonPointer": "/snapshots/34",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "summary",
+                  "label": "应用正在生成摘要"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+                "state": "done"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 36,
+          "jsonPointer": "/snapshots/35",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "questions",
+                  "label": "摘要已结束，应用正在生成待确认问题"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+                "state": "done"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 37,
+          "jsonPointer": "/snapshots/36",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "questions",
+                  "label": "摘要已结束，应用正在生成待确认问题"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 46,
+          "jsonPointer": "/snapshots/45",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "questions",
+                  "label": "摘要已结束，应用正在生成待确认问题"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 47,
+          "jsonPointer": "/snapshots/46",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "running",
+              "stages": []
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "stopped",
+                  "label": "已停止，收到的文字仍保留，任务未完成。"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与",
+                "state": "streaming"
+              }
+            ]
+          }
+        },
+        {
+          "snapshotNumber": 48,
+          "jsonPointer": "/snapshots/47",
+          "snapshot": {
+            "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+            "metadata": {
+              "model": "qwen-flash",
+              "state": "stopped",
+              "stages": [
+                {
+                  "stage": "summary",
+                  "model": "qwen-flash",
+                  "finishReason": "stop",
+                  "usage": {
+                    "prompt_tokens": 179,
+                    "completion_tokens": 112,
+                    "total_tokens": 291,
+                    "prompt_tokens_details": {
+                      "cached_tokens": 0
+                    }
+                  }
+                },
+                {
+                  "stage": "questions",
+                  "model": "qwen-flash",
+                  "finishReason": null,
+                  "usage": null
+                }
+              ]
+            },
+            "role": "assistant",
+            "parts": [
+              {
+                "type": "data-progress",
+                "id": "workflow-progress",
+                "data": {
+                  "stage": "stopped",
+                  "label": "已停止，收到的文字仍保留，任务未完成。"
+                }
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+                "state": "done"
+              },
+              {
+                "type": "step-start"
+              },
+              {
+                "type": "text",
+                "text": "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与",
+                "state": "streaming"
+              }
+            ]
+          }
+        }
+      ],
+      "finalSnapshot": {
+        "jsonPointer": "/finalSnapshot",
+        "snapshot": {
+          "id": "f7f927eb-9faa-49d4-af68-fe3429ed2e67",
+          "metadata": {
+            "model": "qwen-flash",
+            "state": "stopped",
+            "stages": [
+              {
+                "stage": "summary",
+                "model": "qwen-flash",
+                "finishReason": "stop",
+                "usage": {
+                  "prompt_tokens": 179,
+                  "completion_tokens": 112,
+                  "total_tokens": 291,
+                  "prompt_tokens_details": {
+                    "cached_tokens": 0
+                  }
+                }
+              },
+              {
+                "stage": "questions",
+                "model": "qwen-flash",
+                "finishReason": null,
+                "usage": null
+              }
+            ]
+          },
+          "role": "assistant",
+          "parts": [
+            {
+              "type": "data-progress",
+              "id": "workflow-progress",
+              "data": {
+                "stage": "stopped",
+                "label": "已停止，收到的文字仍保留，任务未完成。"
+              }
+            },
+            {
+              "type": "step-start"
+            },
+            {
+              "type": "text",
+              "text": "已确定安排：10月12日下午开放一层共享书架，林晓负责整理捐赠图书，许宁负责制作借阅说明；书架与阅读桌已到位，图书仅限在社区活动室内阅读，不外借，每次限20人，使用后需放回原处。未决事项：志愿者值班名单待定，开放起止时间需与场地管理员确认，借阅说明中损坏处理方式尚未讨论，是否如期开放将视材料整理完成情况决定，暂不对外承诺。",
+              "state": "done"
+            },
+            {
+              "type": "step-start"
+            },
+            {
+              "type": "text",
+              "text": "1. 志愿者值班名单何时能够确定？是否需要在开放前完成排班并通知相关人员？\n\n2. 与",
+              "state": "streaming"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

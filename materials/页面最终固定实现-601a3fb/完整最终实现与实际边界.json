@@ -1,0 +1,79 @@
+{
+  "sourceCommit": "31209d553e6b95af2f1ac1055fc6de5d08e22a36",
+  "behaviorCommit": "9014f2bbb5cbe40bdc868890e0b03ff25069919e",
+  "finalCommit": "601a3fbe5849875c8324d4b2d816ede7f97e20ff",
+  "deliveryTag": "vcm-04-02-replay-delivery",
+  "intermediateLocalTag": {
+    "name": "vcm-04-02-replay-end",
+    "commit": "80a6d7f05519948b96affdd8b365cb87958b9100",
+    "includedInPublicBundle": false
+  },
+  "behaviorRun": "6dd2e9b3-9b53-4c40-b3c2-c8bc6cdb012a",
+  "finalPixelRun": {
+    "id": "713ea14c-0126-4e3e-9329-690bdac7bce4",
+    "commit": "add1adab052527a76c7ee6200c1c3cb1bc0477df",
+    "wholeRunCompleted": false,
+    "captures": 17,
+    "scope": "前面底色/下次选择/有前次失败条件通过；无前次失败发现加载提示残留，原记录保留"
+  },
+  "failureDisplayRun": {
+    "id": "9fe6ef63-4677-43d0-8aaa-45f9113b1284",
+    "commit": "601a3fbe5849875c8324d4b2d816ede7f97e20ff",
+    "wholeRunCompleted": true,
+    "checks": 7,
+    "scope": "只核两种中文提示、原异常、前次对象与重新读取入口"
+  },
+  "authorPixelReading": {
+    "images": [
+      "713ea全部17图",
+      "9fe6ef63两图",
+      "6dd2共同完整/停止桌面6图",
+      "旧图270/271"
+    ],
+    "noNewProviderRequest": true
+  },
+  "newModelCalls": 0,
+  "newBusinessSaves": 0,
+  "finalChanges": [
+    "本页body至少占满视口",
+    "下次回放标签区分当前对象与下一次选择",
+    "中文载入失败主提示；清除遮住failed状态的加载提示，原异常保留"
+  ],
+  "files": [
+    {
+      "file": ".gitattributes",
+      "bytes": 38,
+      "sha256": "3dc9051aa251a61df7291d52805e9cf01cb7da161debca36c49c153f7b8f2a54"
+    },
+    {
+      "file": "package.json",
+      "bytes": 1272,
+      "sha256": "eb0fa86cbd35785ded799536b05f54314b0d78801bc9b566ef627836c7f5c950"
+    },
+    {
+      "file": "public/streaming-history/1153e17e-e0b4-4870-978f-bf0eca94b0fb.json",
+      "bytes": 27209,
+      "sha256": "ba1c2ad1f410c978b598eb8948d73240d1a46f6015a3f1c44b27ae6602c33638"
+    },
+    {
+      "file": "public/streaming-history/f7f927eb-9faa-49d4-af68-fe3429ed2e67.json",
+      "bytes": 23046,
+      "sha256": "4f54884f3dddde0041ac586304ebc70342593fdd2bdd3f9b042166b0f816a17b"
+    },
+    {
+      "file": "src/streaming/main.ts",
+      "bytes": 15606,
+      "sha256": "f26069ac7afd43eadbf4df1d8534ce72d99f057e281c41a31de898ea7e45c36d"
+    },
+    {
+      "file": "src/streaming/replay.css",
+      "bytes": 6134,
+      "sha256": "e1256be72098e3799b701abb26046e9f6cf723c7baa377c6debaad125e4dc722"
+    },
+    {
+      "file": "流式历史回放.md",
+      "bytes": 1691,
+      "sha256": "01b3373c0816629db70de6eb9d7b049f58a2c2f00ba03a4eacceb10f4058f4c1"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "nature": "教师构造的更新方式比较，未提交模型；累计快照不是SDK本次实际输出。",
+  "actualDeltas": [
+    {
+      "historicalRunId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+      "eventIndex": 5,
+      "event": {
+        "type": "text-delta",
+        "id": "summary",
+        "delta": "共享"
+      }
+    },
+    {
+      "historicalRunId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+      "eventIndex": 6,
+      "event": {
+        "type": "text-delta",
+        "id": "summary",
+        "delta": "书"
+      }
+    },
+    {
+      "historicalRunId": "1153e17e-e0b4-4870-978f-bf0eca94b0fb",
+      "eventIndex": 7,
+      "event": {
+        "type": "text-delta",
+        "id": "summary",
+        "delta": "架"
+      }
+    }
+  ],
+  "constructedCumulativeSnapshots": [
+    "共享",
+    "共享书",
+    "共享书架"
+  ],
+  "explanation": {
+    "deltaAppend": "共享书架",
+    "latestSnapshotReplace": "共享书架",
+    "wrongCumulativeAppend": "共享共享书共享书架",
+    "scope": "只比较字符串更新方式；不补造已运行的页面、服务结果或SDK快照。"
+  }
+}

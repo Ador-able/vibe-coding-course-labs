@@ -1,0 +1,36 @@
+{
+  "name": "ai-request-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
+  "scripts": {
+    "dev": "node --env-file-if-exists=.env --import tsx src/server.ts",
+    "start": "node --env-file-if-exists=.env --import tsx src/server.ts --production",
+    "structured:dev": "node --env-file-if-exists=.env --import tsx src/structured/server.ts",
+    "structured:start": "node --env-file-if-exists=.env --import tsx src/structured/server.ts --production",
+    "streaming:dev": "node --env-file-if-exists=.env --import tsx src/streaming/server.ts",
+    "streaming:start": "node --env-file-if-exists=.env --import tsx src/streaming/server.ts --production",
+    "streaming:replay": "vite --host 127.0.0.1 --port 4332 --strictPort",
+    "build": "vite build",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "3.0.59",
+    "ai": "7.0.122",
+    "eventsource-parser": "4.1.1",
+    "express": "^5.2.1",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.13.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1"
+  }
+}
