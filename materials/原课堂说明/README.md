@@ -6,14 +6,6 @@
 
 需要 Node.js 24.12.0、pnpm 11.20.0。Codex SDK/CLI 固定为 0.160.0，MCP SDK 固定为 1.31.0；模型任务需要本机已有可用的 Codex 登录或配置。
 
-在配套包的 Harness最小任务 目录从 bundle 恢复一个独立 Git 仓库，再进入固定起点。任务观察入口用本仓库提交记录运行版本；直接在不含 .git 的源码快照中发任务，不能保证得到本节的提交。
-
-```powershell
-git clone ./Harness固定起止.bundle 任务实验
-Set-Location 任务实验
-git checkout vcm-07-01-start
-```
-
 ```powershell
 pnpm install --frozen-lockfile --virtual-store-dir .pnpm
 pnpm build
