@@ -1,29 +1,43 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { resolve, join, dirname } from 'node:path';
+import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-
-const root = dirname(fileURLToPath(import.meta.url));
-const runDir = resolve(root, process.argv[2] ?? 'runs/comparison-01');
-const material = JSON.parse(await readFile(join(root, 'inputs/materials.json'), 'utf8'));
-const ids = new Set(['M01', ...material.chapters.flatMap(c => c.paragraphs.map(p => p.id))]);
-const report = JSON.parse(await readFile(join(runDir, 'report.json'), 'utf8'));
-const countHan = value => [...value.matchAll(/\p{Script=Han}/gu)].length;
-const counts = report.calls.map(call => {
-  let output, parseError;
-  try { output = JSON.parse(call.result?.text ?? ''); } catch (error) { parseError = error.message; }
-  const cited = output?.evidence?.flatMap(x => x.sourceIds ?? []) ?? [];
-  const isMap = call.id.startsWith('02-map-');
-  const range = isMap ? [200, 320] : [300, 450];
-  const han = typeof output?.summary === 'string' ? countHan(output.summary) : null;
-  return { id: call.id, parseError: parseError ?? null, han, range, lengthMeetsRequest: han !== null && han >= range[0] && han <= range[1], unresolvedCount: output?.unresolved?.length ?? null, invalidSourceIds: cited.filter(x => !ids.has(x)), finishReason: call.result?.finishReason, usage: call.result?.usage, observation: '仅格式、数量与编号存在性；内容关系另由人回查原段' };
-});
-const sums = {};
-for (const method of report.methods) {
-  const relevant = counts.filter(x => method.name === 'whole' ? x.id === '01-whole' : method.name === 'map-reduce' ? x.id.startsWith('02-map-') || x.id === '03-reduce' : x.id.startsWith('04-refine-'));
-  const inputTokens = relevant.reduce((n, x) => n + (x.usage?.inputTokens ?? 0), 0);
-  const outputTokens = relevant.reduce((n, x) => n + (x.usage?.outputTokens ?? 0), 0);
-  sums[method.name] = { calls: relevant.length, elapsedMs: method.elapsedMs, inputTokens, outputTokens, priceEstimateCny: (inputTokens * 0.8 + outputTokens * 2) / 1000000, priceScope: '北京 qwen-plus-2025-12-01 输入不超过128K的非思考公开原价估算；未核账户账单，不证明实付或免费' };
+const root = fileURLToPath(new URL('.', import.meta.url));
+const read = async path => JSON.parse(await readFile(join(root,path),'utf8'));
+const records=(await read('inputs/records.json')).records;
+const reference=await read('inputs/教师预置参考.json');
+const stages=[];
+for(const stage of ['discovery','v1','v2']){
+  let report;
+  try{report=await read('runs/'+stage+'-01/report.json');}catch(cause){if(cause.code==='ENOENT'){stages.push({stage,observed:false});continue;}throw cause;}
+  const codebook=stage==='discovery'?null:await read('inputs/codebook-'+stage+'.json');
+  const legal=new Set(codebook?.labels.map(x=>x.code));
+  const rows=[],calls=[];
+  for(const call of report.calls){
+    const item={id:call.id,recordIds:call.recordIds,httpStatuses:call.http.map(x=>x.status),finishReason:call.result?.finishReason,usage:call.result?.usage,returned:!!call.result};
+    if(!call.result){item.error=call.error;calls.push(item);continue;}
+    let data;
+    try{data=JSON.parse(call.result.text);item.jsonValid=true;}catch(cause){item.jsonValid=false;item.parseError=cause.message;calls.push(item);continue;}
+    if(stage==='discovery'){item.candidateCount=data.candidates?.length;item.unresolved=data.unresolved;calls.push(item);continue;}
+    item.version=data.codebookVersion;
+    item.returnedIds=(data.items||[]).map(x=>x.id);
+    item.batchIdsExact=JSON.stringify([...item.returnedIds].sort())===JSON.stringify([...call.recordIds].sort());
+    for(const row of data.items||[]){
+      const source=records.find(x=>x.id===row.id);
+      const labels=row.labels||[];
+      const codes=labels.map(x=>x.code);
+      const expected=reference.v1.find(x=>x[0]===row.id);
+      const expectedCodes=stage==='v2'&&reference.v2Difference[row.id]?reference.v2Difference[row.id]:expected?.[2];
+      const statusKnown=['classified','unknown','other'].includes(row.status);
+      const actualCodes=[...codes].sort(),truthCodes=expectedCodes?[...expectedCodes].sort():null;
+      rows.push({id:row.id,status:row.status,codes,reason:row.reason,quotes:labels.map(x=>({code:x.code,quote:x.quote,literal:!!source&&typeof x.quote==='string'&&x.quote.length>0&&source.text.includes(x.quote)})),sourceExists:!!source,labelIdsLegal:codes.every(x=>legal.has(x)),duplicateLabels:codes.length!==new Set(codes).size,statusKnown,emptyStateCorrect:row.status==='classified'?codes.length>0:codes.length===0,teacherReference:{status:expected?.[1],codes:expectedCodes},statusAndWholeSetMatches:!!expected&&row.status===expected[1]&&JSON.stringify(actualCodes)===JSON.stringify(truthCodes)});
+    }
+    calls.push(item);
+  }
+  const counts={classified:0,unknown:0,other:0};
+  const labelCounts={};
+  for(const row of rows){if(row.status in counts)counts[row.status]++;for(const code of new Set(row.codes))labelCounts[code]=(labelCounts[code]||0)+1;}
+  stages.push({stage,observed:true,codebookVersion:codebook?.version,requestCount:report.requestCount,calls,rows,statusCounts:counts,labelCounts,distinctRecords: new Set(rows.map(x=>x.id)).size,submittedRecords:records.length,wholeRowsMatchTeacherReference:rows.filter(x=>x.statusAndWholeSetMatches).length,allRowsPresent:rows.length===records.length&&new Set(rows.map(x=>x.id)).size===records.length,contentPassed:null,limits:'原句存在不证明所贴主题适用；与明示教师口径一致不等于未知真实反馈的分类质量。'});
 }
-const inspection = { requestCount: report.requestCount, counts, sums, contentPassed: null };
-await writeFile(join(runDir, 'mechanical-inspection.json'), JSON.stringify(inspection, null, 2) + '\n');
-console.log(JSON.stringify(inspection, null, 2));
+await writeFile(join(root,'runs/mechanical-inspection.json'),JSON.stringify({classificationUnit:'一条完整反馈',stages},null,2)+'\n');
+console.log(JSON.stringify(stages.map(x=>({stage:x.stage,observed:x.observed,rows:x.rows?.length,teacherMatches:x.wholeRowsMatchTeacherReference,status:x.statusCounts,labels:x.labelCounts}))));
+

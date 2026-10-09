@@ -1,0 +1,134 @@
+{
+  "passed": true,
+  "stages": [
+    {
+      "stage": "discovery",
+      "calls": [
+        {
+          "id": "batch-1",
+          "recordIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "requestSha256": "921f91867e3b64ac0697b4ed9d62e570c18484f42f59b6f29b2154cc3d5b3d5f",
+          "responseSha256": "d797879cf9118dbcb36dcb1ca0cd6eb6c4ad638c2f8482d1b094ad2296966d61",
+          "outputSha256": "7b6edc9e5f438b4dc2d070e365a143b3a77a5b51cd3e16e26b62f527ebe86fff",
+          "fullInputsExact": true,
+          "fullOutputExact": true,
+          "usageExact": true
+        },
+        {
+          "id": "batch-2",
+          "recordIds": [
+            "F07",
+            "F08",
+            "F09",
+            "F10",
+            "F11",
+            "F12"
+          ],
+          "requestSha256": "ea64b398183458242f6b7b6ec81559d05f777b08a0ce12f41fa22fa463511a29",
+          "responseSha256": "5262676a223619c3442b8976ca2d205256b202616380e836b2cc7e18618c731a",
+          "outputSha256": "e6f2746bef0820c453c3cd4669cf037ea26e6eae2b29ba57f7f0f6ba661f525f",
+          "fullInputsExact": true,
+          "fullOutputExact": true,
+          "usageExact": true
+        }
+      ],
+      "sourceExact": true,
+      "instructionsExact": true,
+      "codebookExact": true
+    },
+    {
+      "stage": "v1",
+      "calls": [
+        {
+          "id": "batch-1",
+          "recordIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "requestSha256": "fc72d7832133faf28de1d589d47ac93cac068854f7b1c4884b4553caa3becd63",
+          "responseSha256": "2630735a937809b21620cfbe828185628edc348e9948d606bcae6d333cd2bb68",
+          "outputSha256": "ffb4bba0121fb80350ec73ff64a7b51d82ac770a944a4e4e9b1d4517c05b9cb1",
+          "fullInputsExact": true,
+          "fullOutputExact": true,
+          "usageExact": true
+        },
+        {
+          "id": "batch-2",
+          "recordIds": [
+            "F07",
+            "F08",
+            "F09",
+            "F10",
+            "F11",
+            "F12"
+          ],
+          "requestSha256": "a3bea395d4020fc35236b3050dfa75f858228a9877a312d37ec8300bc8dea142",
+          "responseSha256": "d1e5d448366a37631d3c0d6a7db4dcc60e83dc96ea25d510d680baa07a297806",
+          "outputSha256": "b80bcc960d5295c04bda5412f77a40f7fcedbb2eca432c1a64d0048909bb1650",
+          "fullInputsExact": true,
+          "fullOutputExact": true,
+          "usageExact": true
+        }
+      ],
+      "sourceExact": true,
+      "instructionsExact": true,
+      "codebookExact": true
+    },
+    {
+      "stage": "v2",
+      "calls": [
+        {
+          "id": "batch-1",
+          "recordIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "requestSha256": "2ceb744f603b285fcb5236fc1efaabba5823b07db956cd3096335161caf44f67",
+          "responseSha256": "8df71b5d97c0c15f8b87be1c43c8ed9969580d9c096e17263cb049fc83eca2ae",
+          "outputSha256": "0fe902dc6fca768a07844a37f8ef5c4eb85881f59f00bde3c00bc77490dabdb4",
+          "fullInputsExact": true,
+          "fullOutputExact": true,
+          "usageExact": true
+        },
+        {
+          "id": "batch-2",
+          "recordIds": [
+            "F07",
+            "F08",
+            "F09",
+            "F10",
+            "F11",
+            "F12"
+          ],
+          "requestSha256": "aae8eefdd57c85238b994d23d85f8341d20c6c40f59eeb64b5ddd83cf11b347b",
+          "responseSha256": "c8dee484b8192eaaff976887e7d300f17a5d69a226f189d7f1c83e02b1539fef",
+          "outputSha256": "2553c5a4ff8cd123b002fc1f9360c4c6a4a2500e2c2746e51cf73a741c9d3330",
+          "fullInputsExact": true,
+          "fullOutputExact": true,
+          "usageExact": true
+        }
+      ],
+      "sourceExact": true,
+      "instructionsExact": true,
+      "codebookExact": true
+    }
+  ],
+  "requests": 6,
+  "modelCallsAdded": 0,
+  "scope": "核现有材料、六次真实发送/返回和对应关系，不证明分类内容正确。"
+}

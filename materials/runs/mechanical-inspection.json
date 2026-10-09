@@ -1,0 +1,784 @@
+{
+  "classificationUnit": "一条完整反馈",
+  "stages": [
+    {
+      "stage": "discovery",
+      "observed": true,
+      "requestCount": 2,
+      "calls": [
+        {
+          "id": "batch-1",
+          "recordIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "httpStatuses": [
+            200
+          ],
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 506,
+            "inputTokenDetails": {
+              "noCacheTokens": 506,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 650,
+            "outputTokenDetails": {
+              "textTokens": 650,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 1156
+          },
+          "returned": true,
+          "jsonValid": true,
+          "candidateCount": 6,
+          "unresolved": []
+        },
+        {
+          "id": "batch-2",
+          "recordIds": [
+            "F07",
+            "F08",
+            "F09",
+            "F10",
+            "F11",
+            "F12"
+          ],
+          "httpStatuses": [
+            200
+          ],
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 484,
+            "inputTokenDetails": {
+              "noCacheTokens": 484,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 628,
+            "outputTokenDetails": {
+              "textTokens": 628,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 1112
+          },
+          "returned": true,
+          "jsonValid": true,
+          "candidateCount": 4,
+          "unresolved": [
+            {
+              "recordId": "F10",
+              "reason": "表述过于笼统（'这次还是很糟糕，再改改'），无具体对象、维度或依据，无法定位到界面、内容、事实、结构或功能中的任一可操作主题。"
+            }
+          ]
+        }
+      ],
+      "rows": [],
+      "statusCounts": {
+        "classified": 0,
+        "unknown": 0,
+        "other": 0
+      },
+      "labelCounts": {},
+      "distinctRecords": 0,
+      "submittedRecords": 12,
+      "wholeRowsMatchTeacherReference": 0,
+      "allRowsPresent": false,
+      "contentPassed": null,
+      "limits": "原句存在不证明所贴主题适用；与明示教师口径一致不等于未知真实反馈的分类质量。"
+    },
+    {
+      "stage": "v1",
+      "observed": true,
+      "codebookVersion": "v1",
+      "requestCount": 2,
+      "calls": [
+        {
+          "id": "batch-1",
+          "recordIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "httpStatuses": [
+            200
+          ],
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 1431,
+            "inputTokenDetails": {
+              "noCacheTokens": 1431,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 732,
+            "outputTokenDetails": {
+              "textTokens": 732,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 2163
+          },
+          "returned": true,
+          "jsonValid": true,
+          "version": "v1",
+          "returnedIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "batchIdsExact": true
+        },
+        {
+          "id": "batch-2",
+          "recordIds": [
+            "F07",
+            "F08",
+            "F09",
+            "F10",
+            "F11",
+            "F12"
+          ],
+          "httpStatuses": [
+            200
+          ],
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 1409,
+            "inputTokenDetails": {
+              "noCacheTokens": 1409,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 733,
+            "outputTokenDetails": {
+              "textTokens": 733,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 2142
+          },
+          "returned": true,
+          "jsonValid": true,
+          "version": "v1",
+          "returnedIds": [
+            "F07",
+            "F08",
+            "F09",
+            "F10",
+            "F11",
+            "F12"
+          ],
+          "batchIdsExact": true
+        }
+      ],
+      "rows": [
+        {
+          "id": "F01",
+          "status": "classified",
+          "codes": [
+            "FACT"
+          ],
+          "reason": "指出将钟面显示时间错误推断为停钟时刻，属于对事实判断依据是否成立的质疑，符合FACT定义中‘确认程度和原材料支持是否正确’。",
+          "quotes": [
+            {
+              "code": "FACT",
+              "quote": "把钟面显示十一点写成“昨夜十一点停钟”，这个判断没有原文支持。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "FACT"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F02",
+          "status": "classified",
+          "codes": [
+            "LINK"
+          ],
+          "reason": "明确指出跨章动作未衔接、重复已结束场面，属于段落/章节间结构组织与行动连贯性问题，符合LINK定义中‘跨段跨章的行动衔接、重复场面’。",
+          "quotes": [
+            {
+              "code": "LINK",
+              "quote": "上一章已经进塔，新章却又演一遍开门。请把跨章动作接起来，别重复已经结束的场面。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "LINK"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F03",
+          "status": "classified",
+          "codes": [
+            "SAVE"
+          ],
+          "reason": "聚焦于‘是否真正写入并能刷新读回’这一核心诉求，明确指向保存结果的持久性与可读回性，符合SAVE定义；不涉及发布或采用决策，故非HUMAN。",
+          "quotes": [
+            {
+              "code": "SAVE",
+              "quote": "页面显示保存成功，刷新后仍是旧正文。我需要这次修改真的保存，并能重新读到。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "SAVE"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F04",
+          "status": "classified",
+          "codes": [
+            "SAVE"
+          ],
+          "reason": "要求保留历史版本（r1）并确保可找回，直接对应SAVE定义中‘历史版本是否保留并可找回’；非CONTEXT（未讨论材料适用范围），非HUMAN（未要求人工确认动作）。",
+          "quotes": [
+            {
+              "code": "SAVE",
+              "quote": "请保留人工修改前的 r1，让我能找回整版正文，不要用新稿覆盖掉历史。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "SAVE"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F05",
+          "status": "classified",
+          "codes": [
+            "HUMAN"
+          ],
+          "reason": "明确要求‘未经确认不能自动推进’，且分别约束‘采用’和‘发布’两个环节需人工干预，完全匹配HUMAN定义中‘由谁确认采用、发布，及未经确认不能自动推进的要求’。",
+          "quotes": [
+            {
+              "code": "HUMAN",
+              "quote": "我还没确认，别自动把草稿标为采用。发布也要等我明确点头。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "HUMAN"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F06",
+          "status": "classified",
+          "codes": [
+            "RUN"
+          ],
+          "reason": "描述执行状态反馈模糊（等待中）、无法判断任务是否完成或卡住，属于运行过程的状态感知问题，符合RUN定义中‘生成或执行是否开始、等待、结束、失败、卡住及状态反馈’。",
+          "quotes": [
+            {
+              "code": "RUN",
+              "quote": "点击运行后一直显示等待，不知道这轮任务是否已经结束，还是卡在中间。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "RUN"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F07",
+          "status": "classified",
+          "codes": [
+            "UI"
+          ],
+          "reason": "明确指出界面元素（按钮显著性、文字排布密度）影响阅读辨认，符合UI定义；后半句‘保存和刷新本身正常’排除SAVE/RUN主题；‘请先改善页面阅读’是UI问题的诉求延伸，不引入新主题。",
+          "quotes": [
+            {
+              "code": "UI",
+              "quote": "按钮不明显，文字也挤成一块；",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "UI"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F08",
+          "status": "classified",
+          "codes": [
+            "FACT",
+            "UI"
+          ],
+          "reason": "前半句明确将未查明事项表述为已确认，属事实判断错误，符合FACT；后半句按钮命名导致功能不可辨，属UI。两句各自独立、均有原句支撑，无否定或排除。",
+          "quotes": [
+            {
+              "code": "FACT",
+              "quote": "把尚未查明的轴连接写成了已确认的故障原因；",
+              "literal": true
+            },
+            {
+              "code": "UI",
+              "quote": "正文阅读按钮的名字也让人不知道点了会看什么。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "FACT",
+              "UI"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F09",
+          "status": "classified",
+          "codes": [
+            "CONTEXT"
+          ],
+          "reason": "明确限定本次应采用的材料范围（已确认设定）、排除不应使用的材料（未采用试稿），且后句‘我不是让你改变采用状态’排除HUMAN，完全匹配CONTEXT定义。",
+          "quotes": [
+            {
+              "code": "CONTEXT",
+              "quote": "只用已确认设定，不要把未采用试稿当作事实。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "CONTEXT"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F10",
+          "status": "unknown",
+          "codes": [],
+          "reason": "‘这次还是很糟糕，再改改。’未指明具体问题对象（是事实？结构？界面？保存？），无任何可定位的原句指向七类中任一主题，信息不足判断处理需要。",
+          "quotes": [],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "unknown",
+            "codes": []
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F11",
+          "status": "other",
+          "codes": [],
+          "reason": "‘我想把成稿印成册，寄给外地读者。’主题明确为输出形式与分发方式（印刷、邮寄），七类标签均未覆盖该需求；非保存（SAVE仅指系统内写入/读回）、非运行（RUN不涉及物理分发）、非界面（UI不涵盖打印行为），故属other。",
+          "quotes": [],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "other",
+            "codes": []
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F12",
+          "status": "classified",
+          "codes": [
+            "LINK",
+            "CONTEXT"
+          ],
+          "reason": "‘反复解释的两段合成一次’直接对应LINK中‘冗余解释、段落组织’；‘上个会话已经取消的500字要求’明确界定旧要求失效，属CONTEXT中‘已取消的旧要求’；两句互不干扰，各有原句支撑。",
+          "quotes": [
+            {
+              "code": "LINK",
+              "quote": "不要改剧情，只把反复解释的两段合成一次；",
+              "literal": true
+            },
+            {
+              "code": "CONTEXT",
+              "quote": "也别照上个会话已经取消的500字要求再压缩。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "LINK",
+              "CONTEXT"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        }
+      ],
+      "statusCounts": {
+        "classified": 10,
+        "unknown": 1,
+        "other": 1
+      },
+      "labelCounts": {
+        "FACT": 2,
+        "LINK": 2,
+        "SAVE": 2,
+        "HUMAN": 1,
+        "RUN": 1,
+        "UI": 2,
+        "CONTEXT": 2
+      },
+      "distinctRecords": 12,
+      "submittedRecords": 12,
+      "wholeRowsMatchTeacherReference": 12,
+      "allRowsPresent": true,
+      "contentPassed": null,
+      "limits": "原句存在不证明所贴主题适用；与明示教师口径一致不等于未知真实反馈的分类质量。"
+    },
+    {
+      "stage": "v2",
+      "observed": true,
+      "codebookVersion": "v2",
+      "requestCount": 2,
+      "calls": [
+        {
+          "id": "batch-1",
+          "recordIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "httpStatuses": [
+            200
+          ],
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 1557,
+            "inputTokenDetails": {
+              "noCacheTokens": 1557,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 755,
+            "outputTokenDetails": {
+              "textTokens": 755,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 2312
+          },
+          "returned": true,
+          "jsonValid": true,
+          "version": "v2",
+          "returnedIds": [
+            "F01",
+            "F02",
+            "F03",
+            "F04",
+            "F05",
+            "F06"
+          ],
+          "batchIdsExact": true
+        },
+        {
+          "id": "batch-2",
+          "recordIds": [
+            "F07",
+            "F08",
+            "F09",
+            "F10",
+            "F11",
+            "F12"
+          ],
+          "httpStatuses": [
+            200
+          ],
+          "finishReason": "stop",
+          "usage": {
+            "inputTokens": 1535,
+            "inputTokenDetails": {
+              "noCacheTokens": 1535,
+              "cacheReadTokens": 0
+            },
+            "outputTokens": 709,
+            "outputTokenDetails": {
+              "textTokens": 709,
+              "reasoningTokens": 0
+            },
+            "totalTokens": 2244
+          },
+          "returned": true,
+          "jsonValid": false,
+          "parseError": "Unexpected token ''', ...\"\"reason\": '“反复解释的两段合\"... is not valid JSON"
+        }
+      ],
+      "rows": [
+        {
+          "id": "F01",
+          "status": "classified",
+          "codes": [
+            "FACT"
+          ],
+          "reason": "明确指出将钟面显示时间推断为停钟时刻属于无依据的判断，涉及事实推断与原材料支持之间的匹配问题，符合FACT定义中‘确认程度和原材料支持是否正确’。",
+          "quotes": [
+            {
+              "code": "FACT",
+              "quote": "把钟面显示十一点写成“昨夜十一点停钟”，这个判断没有原文支持。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "FACT"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F02",
+          "status": "classified",
+          "codes": [
+            "LINK"
+          ],
+          "reason": "指出跨章节动作未衔接、存在重复场面，要求‘把跨章动作接起来’，属于段落/章节间结构组织与行动连贯性问题，符合LINK定义中‘跨段跨章的行动衔接、重复场面’。",
+          "quotes": [
+            {
+              "code": "LINK",
+              "quote": "上一章已经进塔，新章却又演一遍开门。请把跨章动作接起来，别重复已经结束的场面。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "LINK"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F03",
+          "status": "classified",
+          "codes": [
+            "WRITE"
+          ],
+          "reason": "核心诉求是修改后能真实写入并刷新读回，'刷新后仍是旧正文'直接体现当前写入失败或读回不一致，符合WRITE定义中‘本次修改是否真正写入并能刷新重新读到’。",
+          "quotes": [
+            {
+              "code": "WRITE",
+              "quote": "页面显示保存成功，刷新后仍是旧正文。我需要这次修改真的保存，并能重新读到。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "WRITE"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F04",
+          "status": "classified",
+          "codes": [
+            "HISTORY"
+          ],
+          "reason": "明确要求保留指定旧修订（r1）并能完整找回其正文，强调历史版本不被覆盖，符合HISTORY定义中‘修改前或指定旧修订是否保留，并能找回其完整正文’。",
+          "quotes": [
+            {
+              "code": "HISTORY",
+              "quote": "请保留人工修改前的 r1，让我能找回整版正文，不要用新稿覆盖掉历史。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "HISTORY"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F05",
+          "status": "classified",
+          "codes": [
+            "HUMAN"
+          ],
+          "reason": "强调‘我还没确认’‘别自动’‘等我明确点头’，指向采用与发布必须经人工确认才可推进，符合HUMAN定义中‘由谁确认采用、发布，及未经确认不能自动推进的要求’。",
+          "quotes": [
+            {
+              "code": "HUMAN",
+              "quote": "我还没确认，别自动把草稿标为采用。发布也要等我明确点头。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "HUMAN"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        },
+        {
+          "id": "F06",
+          "status": "classified",
+          "codes": [
+            "RUN"
+          ],
+          "reason": "聚焦于任务执行后的状态反馈缺失（不知是否结束/是否卡住），属生成或执行过程的状态感知问题，符合RUN定义中‘生成或执行是否开始、等待、结束、失败、卡住及状态反馈’。",
+          "quotes": [
+            {
+              "code": "RUN",
+              "quote": "点击运行后一直显示等待，不知道这轮任务是否已经结束，还是卡在中间。",
+              "literal": true
+            }
+          ],
+          "sourceExists": true,
+          "labelIdsLegal": true,
+          "duplicateLabels": false,
+          "statusKnown": true,
+          "emptyStateCorrect": true,
+          "teacherReference": {
+            "status": "classified",
+            "codes": [
+              "RUN"
+            ]
+          },
+          "statusAndWholeSetMatches": true
+        }
+      ],
+      "statusCounts": {
+        "classified": 6,
+        "unknown": 0,
+        "other": 0
+      },
+      "labelCounts": {
+        "FACT": 1,
+        "LINK": 1,
+        "WRITE": 1,
+        "HISTORY": 1,
+        "HUMAN": 1,
+        "RUN": 1
+      },
+      "distinctRecords": 6,
+      "submittedRecords": 12,
+      "wholeRowsMatchTeacherReference": 6,
+      "allRowsPresent": false,
+      "contentPassed": null,
+      "limits": "原句存在不证明所贴主题适用；与明示教师口径一致不等于未知真实反馈的分类质量。"
+    }
+  ]
+}
