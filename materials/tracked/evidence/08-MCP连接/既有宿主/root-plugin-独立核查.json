@@ -1,0 +1,26 @@
+{
+  "startedAt": "2026-10-02T11:55:56.132Z",
+  "configurationBefore": "e9e0639561a519a7b93b6cfce80d52798c299c44b8f43343ef62cc73a68f547d",
+  "codeVersion": "3c6dde16004469f3fc36ba417804a65880ee43e5",
+  "prepared": true,
+  "installed": true,
+  "checked": true,
+  "removed": true,
+  "errors": [],
+  "checkExitCode": 0,
+  "timedOut": false,
+  "check": {
+    "inspectionId": "426f9341-ca18-422c-94bb-2522dabc6165",
+    "threadId": "01a0fc78-9781-7f12-8615-313b6b0cc81f",
+    "passed": true,
+    "unchanged": true,
+    "verifiedReads": true,
+    "verifiedSkillRead": true,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-bundle-check\\runs\\plugin-426f9341-ca18-422c-94bb-2522dabc6165",
+    "error": null
+  },
+  "configurationAfter": "e9e0639561a519a7b93b6cfce80d52798c299c44b8f43343ef62cc73a68f547d",
+  "configurationRestored": true,
+  "pluginEntryAbsent": true,
+  "finishedAt": "2026-10-02T11:57:08.735Z"
+}

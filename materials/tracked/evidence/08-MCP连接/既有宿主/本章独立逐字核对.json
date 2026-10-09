@@ -1,0 +1,34 @@
+{
+  "runId": "426f9341-ca18-422c-94bb-2522dabc6165",
+  "codeVersion": "3c6dde16004469f3fc36ba417804a65880ee43e5",
+  "actualToolCalls": 5,
+  "toolTypes": [
+    "read_work",
+    "list_chapters",
+    "read_chapter"
+  ],
+  "comparisons": [
+    {
+      "number": 1,
+      "revision": 3,
+      "status": "adopted",
+      "completeObjectMatches": true,
+      "bodySha256": "6575507858e4ee5bb23a6cc556e73bc848613e546ba4b5fd1012853dc2639010"
+    },
+    {
+      "number": 2,
+      "revision": 1,
+      "status": "draft",
+      "completeObjectMatches": true,
+      "bodySha256": "4b2fc4863e5b15df095d498149ddd6db8cf3238d76da8366614c8edfd7f06e35"
+    },
+    {
+      "number": 3,
+      "revision": 1,
+      "status": "draft",
+      "completeObjectMatches": true,
+      "bodySha256": "e8256d847638f80dc7fbe61af35819748a9124eea6291275420aad9237af750c"
+    }
+  ],
+  "readScope": "完整SDK输入、17个事件、安装Skill与状态参考全文、五次工具完整对象、完整最终回答；与独立CLI读回逐字匹配。"
+}

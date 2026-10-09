@@ -1,0 +1,47 @@
+{
+  "runId": "7485fbc1-3894-41a7-a58b-5acb671c1143",
+  "codeVersion": "b3d0ba13c8c3bc948ac52d1aad983a9f52b68a09",
+  "node": "v24.12.0",
+  "mcpSdk": "1.31.0",
+  "clientName": "mcp-connection-observer",
+  "serverEntry": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-08-01\\mcp-connection-lab\\dist\\mcp.js",
+  "serverEntrySha256": "4975634d6b302f1d3b30038bc6ff22aaf485c916e1282b5ce3202fe015440ebe",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\vcm-08-01\\mcp-connection-lab\\runs\\mcp-connection\\7485fbc1-3894-41a7-a58b-5acb671c1143\\teaching.sqlite",
+  "fixture": {
+    "origin": "human",
+    "work": {
+      "id": "bridge-clocktower",
+      "title": "钟楼门前",
+      "purpose": "人工教学资料，用于分辨连接、目录与正文读取。",
+      "requirements": [
+        "只检查真实保存状态；不生成、保存或采用正文。"
+      ],
+      "facts": [
+        "林澈没有钟楼钥匙，必须请周伯开门。",
+        "钟楼的钟昨夜停了。"
+      ],
+      "outline": [
+        {
+          "number": 1,
+          "titleHint": "门前",
+          "goal": "林澈在门外等待周伯。"
+        },
+        {
+          "number": 2,
+          "titleHint": "检查",
+          "goal": "开门以后检查停钟；此章尚未写。"
+        }
+      ]
+    },
+    "firstChapter": {
+      "workId": "bridge-clocktower",
+      "chapterNumber": 1,
+      "expectedWorkRevision": 1,
+      "expectedChapterRevision": 0,
+      "expectedPreviousRevisions": [],
+      "title": "门前",
+      "body": "林澈站在钟楼门外，把工具箱放在脚边。昨夜停下的钟没有再响，他伸手推了一次门，门板纹丝不动。\n\n周伯提着钥匙从街角走来。林澈收回手，说明师父让他来查看停钟。周伯点了点头，把钥匙插进锁孔。"
+    }
+  },
+  "observation": "官方 Client 的公开解析消息，不调用模型，不改变全局宿主配置。"
+}
