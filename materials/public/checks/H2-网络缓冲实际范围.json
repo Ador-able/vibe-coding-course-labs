@@ -1,0 +1,20 @@
+{
+  "hasMore": false,
+  "truncated": true,
+  "events": 46,
+  "firstSequence": 28,
+  "lastSequence": 161,
+  "posts": [
+    {
+      "sequence": 135,
+      "id": "57248.32",
+      "url": "http://127.0.0.1:4348/api/draft"
+    },
+    {
+      "sequence": 149,
+      "id": "57248.34",
+      "url": "http://127.0.0.1:4348/api/draft"
+    }
+  ],
+  "limits": "第一次只读核对器假设所有缓冲事件均未被逐出，实际 truncated=true。保留原记录，实际两次POST/响应逐项核对；不推出所有网络活动完整覆盖。没有业务重跑。"
+}

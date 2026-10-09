@@ -1,0 +1,9 @@
+{
+  "status": 400,
+  "body": {
+    "error": {
+      "code": "INVALID_INPUT",
+      "message": "请填写完整标题、正文和有效的保存依据。"
+    }
+  }
+}

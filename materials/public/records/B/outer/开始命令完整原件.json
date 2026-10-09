@@ -1,0 +1,25 @@
+{
+  "definitionPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-08\\B-完整自然任务定义.json",
+  "command": {
+    "file": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "scripts/observe-plugin.mjs",
+      "--db",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\data\\delivery-ae681edb-a545-4274-a5b5-db0ca791feeb.sqlite",
+      "--work",
+      "handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b",
+      "--chapter",
+      "3",
+      "--prompt",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\teaching\\delivery\\B-完整教师输入.txt"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab"
+  },
+  "startedAt": "2026-10-04T17:33:38.862Z",
+  "sharedBefore": {
+    "path": "C:/Users/32686/.codex/config.toml",
+    "bytes": 8825,
+    "sha256": "d2debdc09ea42f45d8fdd3524e1ef7ac3410abe5935a2baf448d9b7f6ef9fe06"
+  },
+  "scope": "唯一已定义自然只读任务；不新增目录、重试、循环、Task、保存或采用。"
+}

@@ -1,0 +1,22 @@
+{
+  "file": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "dist/cli.js",
+    "adopt",
+    "1",
+    "--expected-revision",
+    "2",
+    "--note",
+    "编者课堂采用：当前 r2 已完整读回。宋予与文姨身份明确，归还空栏没有为赶船擅填；保留去找陈师傅核实的实际行动。",
+    "--db",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\data\\delivery-ae681edb-a545-4274-a5b5-db0ca791feeb.sqlite",
+    "--work",
+    "handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b"
+  ],
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-08-lab",
+  "exit": 0,
+  "signal": null,
+  "stdout": "{\n  \"workId\": \"handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b\",\n  \"number\": 1,\n  \"revision\": 3,\n  \"title\": \"空着的一行\",\n  \"body\": \"志愿者宋予把纸箱从门边搬到桌上时，窗缝里又挤进一阵雨。管理员文姨关上窗，钥匙仍挂在手腕上。墙上的借阅日历停在星期一，下面多了一张手写的纸：本周起停止借阅。\\n\\n“这三册送回分馆，小屋里就没有旧藏书了。”文姨说。\\n\\n宋予将桌上的三册书依次翻到扉页，对着交接表读编号。前两册各有归还日期，第三册那一行空着。他把笔移到纸边，没有写进去。\\n\\n“这本昨天就在架上。”他记得自己擦过架子，也记得浅蓝的封皮。\\n\\n文姨拿出借阅簿。“在架上不等于还过。看编号。”\\n\\n宋予重新翻开书，找到盖在内页角落的印章。那一串数字与借阅簿最后一行相同，借阅人写着陈师傅，归还栏却没有日期。书页中夹着一张折起的便条，他只将便条取出，没有扯开松动的书脊。\\n\\n便条写着：修好的那册放回原处，缺页另记。字迹被折痕分成两半，落款处只剩一个陈字。\\n\\n门外，邻居叫他们快些，最后一班船十七点二十分就走。宋予看了一眼钟，离发船还不到一小时。只要把日期补上，纸箱现在就能封。\\n\\n他将笔放下。“我去问清楚。您先核另外两册。”\\n\\n文姨点头，拿钥匙打开库房，去取封箱纸。宋予把第三册留在桌上，便条压在交接表旁。空着的一行没有变，桌上三本书也没有少。他穿上雨衣，朝陈师傅的修理铺跑去。\",\n  \"status\": \"adopted\",\n  \"workRevision\": 1,\n  \"origin\": \"human\",\n  \"taskId\": null,\n  \"threadId\": null,\n  \"updatedAt\": \"2026-10-04T17:47:08.945Z\",\n  \"previousRevisions\": [],\n  \"reviewNote\": \"编者课堂采用：当前 r2 已完整读回。宋予与文姨身份明确，归还空栏没有为赶船擅填；保留去找陈师傅核实的实际行动。\"\n}\n",
+  "stderr": "(node:43476) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "error": null
+}

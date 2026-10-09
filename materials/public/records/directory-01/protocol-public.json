@@ -1,0 +1,94 @@
+[
+  {
+    "direction": "sent",
+    "message": {
+      "id": 1,
+      "method": "initialize",
+      "params": {
+        "clientInfo": {
+          "name": "course-07-08-directory",
+          "version": "0.1.0"
+        },
+        "capabilities": {
+          "experimentalApi": true
+        }
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 1,
+      "result": {
+        "userAgent": "Codex Desktop/0.160.0 (Windows 10.0.26300; x86_64) dumb (course-07-08-directory; 0.1.0)",
+        "codexHome": "C:\\Users\\32686\\.codex",
+        "platformFamily": "windows",
+        "platformOs": "windows"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "method": "initialized",
+      "params": {}
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 2,
+      "method": "config/read",
+      "params": {
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab",
+        "includeLayers": false
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "method": "remoteControl/status/changed",
+      "params": {
+        "omitted": true,
+        "reason": "非教学账户或远程控制通知值省略，内部原件保留。"
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 2,
+      "result": {
+        "omitted": true,
+        "reason": "非教学配置或其他插件目录结果省略，自有实际方法和工具另保留完整返回。"
+      }
+    }
+  },
+  {
+    "direction": "sent",
+    "message": {
+      "id": 3,
+      "method": "plugin/list",
+      "params": {
+        "cwds": [
+          "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab"
+        ],
+        "marketplaceKinds": [
+          "local"
+        ],
+        "forceRefetch": false
+      }
+    }
+  },
+  {
+    "direction": "received",
+    "message": {
+      "id": 3,
+      "result": {
+        "omitted": true,
+        "reason": "非教学配置或其他插件目录结果省略，自有实际方法和工具另保留完整返回。"
+      }
+    }
+  }
+]

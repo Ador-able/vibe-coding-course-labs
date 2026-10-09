@@ -1,4 +1,4 @@
-# 接续 Agent 会话并核对真实业务状态
+# 把人的参与与完整交付接进 Agent
 
 当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
 

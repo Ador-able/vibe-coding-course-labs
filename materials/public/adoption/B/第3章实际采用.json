@@ -1,0 +1,22 @@
+{
+  "file": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "dist/cli.js",
+    "adopt",
+    "3",
+    "--expected-revision",
+    "1",
+    "--note",
+    "编者课堂采用：当前 r1 原文与人工改后的前两章已完整对照。接收员核号、凭据、缺页说明和签名照片给送书任务形成结尾；这些只为故事内事实，不证明真实分馆业务。",
+    "--db",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\data\\delivery-ae681edb-a545-4274-a5b5-db0ca791feeb.sqlite",
+    "--work",
+    "handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b"
+  ],
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-08-lab",
+  "exit": 0,
+  "signal": null,
+  "stdout": "{\n  \"workId\": \"handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b\",\n  \"number\": 3,\n  \"revision\": 2,\n  \"title\": \"回来的电话\",\n  \"body\": \"船离开后，宋予没有马上走。他站在码头屋檐下，看雨点把刚才的脚印打散。收箱条留在口袋里，文姨的交接副本则被他抱在怀中。\\n\\n“赶上了？”文姨的电话打来。\\n\\n“赶上了。周师傅收了箱，还没到分馆。”\\n\\n文姨让他先回小屋。桌上已经空了，她却没有把交接夹收进柜子。宋予脱下湿雨衣，找了一块干布擦净桌面，把副本摊在原来的位置。\\n\\n六点过后，周师傅发来一条消息：船已到镇上，书箱正在送往分馆。宋予读给文姨听，在纸边记下时间。那条消息没有说书数，也没有说凭据是否齐全，他们继续等。\\n\\n电话响时，文姨按了免提。分馆接收员逐册念出编号，三个都与表上相同；第三册末尾缺页也已注明。她又读了纸袋中的收条日期，问文姨那张便条是否一并存档。\\n\\n“是。交接说明里写了，保留它。”文姨说。\\n\\n接收员答应，将点收后的表格照片发来。宋予放大照片，三册编号、缺页说明和接收员签名都看得清。他把“分馆点收”及电话时间写进副本，文姨读过，才合上交接夹。\\n\\n天已经暗了。宋予去关窗，看见原先摆书的位置留下三道浅浅的干印。小屋少了几本书，也少了一项还没说清的事。\\n\\n文姨将照片存好，把钥匙从手腕上取下来，放进抽屉。宋予拿起自己的雨衣。明天还得整理桌椅，但今晚，那三册旧书和跟着它们的纸，确实都到分馆了。\",\n  \"status\": \"adopted\",\n  \"workRevision\": 1,\n  \"origin\": \"human\",\n  \"taskId\": null,\n  \"threadId\": null,\n  \"updatedAt\": \"2026-10-04T17:47:09.125Z\",\n  \"previousRevisions\": [\n    {\n      \"number\": 1,\n      \"revision\": 1\n    },\n    {\n      \"number\": 2,\n      \"revision\": 1\n    }\n  ],\n  \"reviewNote\": \"编者课堂采用：当前 r1 原文与人工改后的前两章已完整对照。接收员核号、凭据、缺页说明和签名照片给送书任务形成结尾；这些只为故事内事实，不证明真实分馆业务。\"\n}\n",
+  "stderr": "(node:67264) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "error": null
+}

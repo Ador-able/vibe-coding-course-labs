@@ -1,0 +1,18 @@
+{
+  "file": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "dist/cli.js",
+    "chapter",
+    "2",
+    "--db",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\data\\delivery-ae681edb-a545-4274-a5b5-db0ca791feeb.sqlite",
+    "--work",
+    "handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b"
+  ],
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-08-lab",
+  "exit": 0,
+  "signal": null,
+  "stdout": "{\n  \"workId\": \"handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b\",\n  \"number\": 2,\n  \"revision\": 3,\n  \"title\": \"封箱之前\",\n  \"body\": \"修理铺的门开着，陈师傅正在收屋檐下的工具。宋予把书的编号念给他听，又展开便条。\\n\\n“是这本。”陈师傅擦干手，取出抽屉里的收条，“昨天修好，送回去了。后面少一页，我没有补别本的进去。”\\n\\n收条上有完整编号，送回小屋一栏写着昨天的日期。宋予问能不能带回去交文姨核对。陈师傅没有让他代签，在纸上补了自己的名字，将两张纸一起递给他。\\n\\n宋予回到小屋，文姨已经把另外两册放进纸箱。第三册还在桌上。他将收条摊在空栏旁，文姨先读编号，再看日期，最后翻到书末，核对陈师傅说的缺页。\\n\\n“归还可以填，缺页得另写。”她说。\\n\\n宋予将归还日期抄进表格，又在表内的交接说明栏写下：第三册末尾缺一页，按现状送交，请分馆接收时核对。他没有在缺页处夹一张空纸，也没有把表格上的完好勾选上。文姨读过，签下自己的名字。\\n\\n他们把第三册放入箱中，用干净纸隔开封皮；交接表和两张凭据装进纸袋，放在最上面。文姨封箱，宋予在箱盖写上分馆名称，抱起纸箱。\\n\\n到码头时，周师傅正往船上搬货。宋予将箱子递过去，说明里面有三册书，第三册缺页，袋里有凭据。周师傅将箱子放到避雨的座位下，给他一张收箱条。\\n\\n船靠岸后，他会把箱子转送分馆；点收仍得由接收员做。宋予看清收箱条上的时间，十七点十六分。他把纸折好放进雨衣口袋，没有在自己的交接副本上写“分馆已收”。\",\n  \"status\": \"adopted\",\n  \"workRevision\": 1,\n  \"origin\": \"human\",\n  \"taskId\": null,\n  \"threadId\": null,\n  \"updatedAt\": \"2026-10-04T17:47:09.034Z\",\n  \"previousRevisions\": [\n    {\n      \"number\": 1,\n      \"revision\": 2\n    }\n  ],\n  \"reviewNote\": \"编者课堂采用：当前 r2 已实际纠正便条指称，并澄清送回日期和表内交接说明。书数、缺页、签名与运输交接保留，不把送船当成分馆点收。\"\n}\n",
+  "stderr": "(node:19252) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "error": null
+}

@@ -1,0 +1,77 @@
+{
+  "threadId": "01a107eb-eab1-7891-adab-61b01b433cd9",
+  "archived": true,
+  "error": null,
+  "transcript": [
+    {
+      "direction": "sent",
+      "message": {
+        "id": 1,
+        "method": "initialize",
+        "params": {
+          "clientInfo": {
+            "name": "plugin_course_archive",
+            "version": "1.0.0"
+          }
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "id": 1,
+        "result": {
+          "userAgent": "Codex Desktop/0.160.0 (Windows 10.0.26300; x86_64) dumb (plugin_course_archive; 1.0.0)",
+          "codexHome": "C:\\Users\\32686\\.codex",
+          "platformFamily": "windows",
+          "platformOs": "windows"
+        }
+      }
+    },
+    {
+      "direction": "sent",
+      "message": {
+        "method": "initialized",
+        "params": {}
+      }
+    },
+    {
+      "direction": "sent",
+      "message": {
+        "id": 2,
+        "method": "thread/archive",
+        "params": {
+          "threadId": "01a107eb-eab1-7891-adab-61b01b433cd9"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "method": "remoteControl/status/changed",
+        "params": {
+          "omitted": true,
+          "reason": "非教学账户或远程控制通知值省略，内部原件保留。"
+        }
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "id": 2,
+        "result": {}
+      }
+    },
+    {
+      "direction": "received",
+      "message": {
+        "method": "thread/archived",
+        "params": {
+          "threadId": "01a107eb-eab1-7891-adab-61b01b433cd9"
+        },
+        "emittedAtMs": 1791134412172
+      }
+    }
+  ],
+  "stderr": ""
+}

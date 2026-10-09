@@ -1,0 +1,19 @@
+{
+  "checkerFailure": {
+    "scope": "作者只读核对器，非Agent或业务失败",
+    "firstDefinition": "两轮完整真实记录核对-首次返回形状误判.mjs",
+    "cause": "list_chapters.result实际是含chapters数组的对象，首次核对器误将其当成数组；原生资源工具structured_content实际为null，文本结果不应和null比较。",
+    "fix": "按实际mcp.ts和原事件完整返回校正两处表示，原事件/模型/数据库没有改变，没有重跑模型任务。",
+    "actualCorrectedResult": {"passed":true,"AEvents":30,"BEvents":26,"finalFiveCounts":[2,5,7,22,8]},
+    "limit": "首次工具错误输出在宿主中截断，保留首次检查器定义；不冒称另有完整首次stderr文件。"
+  },
+  "prototypeStop": {
+    "sessionId": 70575,
+    "pid": 44984,
+    "action": "仅向本章既有实际HTTP exec会话发送Ctrl+C",
+    "actualExitCode": 1,
+    "actualNewOutput": "",
+    "checked": "随后Get-Process -Id 44984及Get-NetTCPConnection 127.0.0.1:4348 Listen均无返回对象",
+    "scope": "只核本章准确PID与端口；不扩称全机或全部子孙进程检查。"
+  }
+}

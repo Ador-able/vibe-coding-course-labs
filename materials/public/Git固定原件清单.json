@@ -1,7 +1,31 @@
 {
-  "head": "9766de2df4bfccfd950e6bf93d1bcc081885d5e2",
-  "begin": "84d439034d8dcdf10da72188d697c244429a6ed2",
-  "actualA": "335fbd5150eb8e7244bfb864233f13f49418a00c",
+  "inheritedStart": "9766de2df4bfccfd950e6bf93d1bcc081885d5e2",
+  "reviewStart": "d99e74888bbc7a5a073710c54f871a2096b62376",
+  "delivered": "a38b82de03b4ca7ed3b7ccdbcf71ed4207205d85",
+  "tags": {
+    "inheritedStart": "vcm-07-08-start",
+    "codePreparation": "vcm-07-08-end",
+    "reviewStart": "vcm-07-08-review-start",
+    "actualDelivered": "vcm-07-08-delivered"
+  },
+  "staged": [
+    "deliverables/乌桐镇的停钟-四章课堂采用.md",
+    "deliverables/最后一只书箱-三章课堂采用.md"
+  ],
+  "commitOutput": "[codex/vcm-07-08 a38b82d] 固定两部课堂采用全文和准确导出\n 2 files changed, 282 insertions(+)\n create mode 100644 \"deliverables/\\344\\271\\214\\346\\241\\220\\351\\225\\207\\347\\232\\204\\345\\201\\234\\351\\222\\237-\\345\\233\\233\\347\\253\\240\\350\\257\\276\\345\\240\\202\\351\\207\\207\\347\\224\\250.md\"\n create mode 100644 \"deliverables/\\346\\234\\200\\345\\220\\216\\344\\270\\200\\345\\217\\252\\344\\271\\246\\347\\256\\261-\\344\\270\\211\\347\\253\\240\\350\\257\\276\\345\\240\\202\\351\\207\\207\\347\\224\\250.md\"\n",
+  "rows": [
+    {
+      "file": "deliverables/乌桐镇的停钟-四章课堂采用.md",
+      "bytes": 14167,
+      "sha256": "f9bf85477e33ad96b905d122eaf2abf66d8ed8157499c4447d3ef199b0b020f5"
+    },
+    {
+      "file": "deliverables/最后一只书箱-三章课堂采用.md",
+      "bytes": 5877,
+      "sha256": "344dc2d1c9ffa42e09a45f433b76f635ffd1b1357d421ad99b399d5b72eee09a"
+    }
+  ],
+  "scope": "本次仅提交两份实际采用导出文件，没有改变应用源码。vcm-07-08-end早先固定的是代码准备点，真实交付结束点另用delivered标签准确标明，旧标签保持。业务正式起点和结束分别以一致SQLite备份固定；不将Git提交代替真实五表状态。",
   "files": [
     {
       "path": ".agents/plugins/marketplace.json",
@@ -42,6 +66,16 @@
       "path": "config/skill-check.json",
       "bytes": 188,
       "sha256": "2505df8209228ad309edf77c014d39c04bf31dcd571c18f8011f86f142b72f28"
+    },
+    {
+      "path": "deliverables/乌桐镇的停钟-四章课堂采用.md",
+      "bytes": 14167,
+      "sha256": "f9bf85477e33ad96b905d122eaf2abf66d8ed8157499c4447d3ef199b0b020f5"
+    },
+    {
+      "path": "deliverables/最后一只书箱-三章课堂采用.md",
+      "bytes": 5877,
+      "sha256": "344dc2d1c9ffa42e09a45f433b76f635ffd1b1357d421ad99b399d5b72eee09a"
     },
     {
       "path": "docs/三章接续实验.md",
@@ -636,7 +670,7 @@
     {
       "path": "plugins/novel-workbench-course/plugin.json",
       "bytes": 704,
-      "sha256": "156ca8f7e8c652cda83fed02897a1c6424aa1404c0a7acd2bd37babcd818b8ad"
+      "sha256": "20a5db268a6b0c6d5fa8352f3efb5ded0dc6c7570682ea503b12e95892b62a22"
     },
     {
       "path": "plugins/novel-workbench-course/serve.mjs",
@@ -887,6 +921,21 @@
       "path": "src/test/state.test.ts",
       "bytes": 1584,
       "sha256": "adee8dedcd0129eb5f802ee7674ad01e7acec9e138081bb710ccb1916703d06e"
+    },
+    {
+      "path": "teaching/delivery/A-完整教师输入.txt",
+      "bytes": 1748,
+      "sha256": "f85eaf7604826d7e7653b18ad2b64d6da1305093a1da405e1417bd06e8ee8ef8"
+    },
+    {
+      "path": "teaching/delivery/B-完整教师输入.txt",
+      "bytes": 1562,
+      "sha256": "e93100c4bf361af0572e5fe2695a2dbbdd0e4baf28d691394cfa42e883339b58"
+    },
+    {
+      "path": "teaching/delivery/新作品完整人工材料.json",
+      "bytes": 7046,
+      "sha256": "ef47d5da8481910146cc3726c5088cf8b695f137009f3dd5c57d3634137ef131"
     },
     {
       "path": "tsconfig.json",

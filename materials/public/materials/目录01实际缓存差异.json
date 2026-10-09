@@ -1,0 +1,285 @@
+{
+  "passed": false,
+  "error": {
+    "message": "实际缓存九原件与本章源、entry/database 绑定不符。",
+    "stack": "Error: 实际缓存九原件与本章源、entry/database 绑定不符。\n    at requireTrue (file:///D:/Projects/Knowledge/.coursebook-work/h07-08-lab/scripts/plugin-preflight.mjs:86:61)\n    at file:///D:/Projects/Knowledge/.coursebook-work/h07-08-lab/scripts/plugin-preflight.mjs:98:3"
+  },
+  "expectedCount": 9,
+  "actualCount": 0,
+  "differences": [
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\binding.json",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\binding.json",
+        "bytes": 256,
+        "sha256": "14cb682690963dcdbf41a30fdccd06212a0c330e868d546d8a723a1b04908244"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\mcp.json",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\mcp.json",
+        "bytes": 256,
+        "sha256": "972b43c3b645fff5e3427e5beaad07a564aadc29843f6d1e446c734b3e1549d7"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\plugin.json",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\plugin.json",
+        "bytes": 704,
+        "sha256": "20a5db268a6b0c6d5fa8352f3efb5ded0dc6c7570682ea503b12e95892b62a22"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\serve.mjs",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\serve.mjs",
+        "bytes": 465,
+        "sha256": "a4ebdb3109a8317037ece2ba9bbf04f3afda952332d8ce8b8aa861f66634a4c6"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+        "bytes": 1399,
+        "sha256": "ab5318121643307b59818fcf6c669afd86a364063579a92fbb70b46d5a282cc3"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-review\\references\\prose-review.md",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-review\\references\\prose-review.md",
+        "bytes": 696,
+        "sha256": "fd2cfa298df6d8b4cd5180bf0f80aa29f989841777a3b614aa5fc1c7b1cdcf8c"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-review\\SKILL.md",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-review\\SKILL.md",
+        "bytes": 2339,
+        "sha256": "4aac3333634771348f2d709ecbceaeddc0a9b760386e9b7dacc73c1e2093bf4a"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-task\\references\\state-and-review.md",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-task\\references\\state-and-review.md",
+        "bytes": 2125,
+        "sha256": "e11b2b0ab1855fc0882e95d1311b83c795c4013ffe3dc50ef0f7cdc4ccdc1802"
+      },
+      "actual": null
+    },
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-task\\SKILL.md",
+      "expected": {
+        "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\skills\\novel-chapter-task\\SKILL.md",
+        "bytes": 2938,
+        "sha256": "3fc61f5819d0d12053ffda7329b43281e4ca497e5dac0ca8c6bcb35edba81fc3"
+      },
+      "actual": null
+    }
+  ],
+  "plugins": {
+    "marketplaces": [
+      {
+        "name": "openai-primary-runtime",
+        "path": "C:\\Users\\32686\\.cache\\codex-runtimes\\codex-primary-runtime\\plugins\\openai-primary-runtime\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "documents@openai-primary-runtime",
+            "name": "documents",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "pdf@openai-primary-runtime",
+            "name": "pdf",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "spreadsheets@openai-primary-runtime",
+            "name": "spreadsheets",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "presentations@openai-primary-runtime",
+            "name": "presentations",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "template-creator@openai-primary-runtime",
+            "name": "template-creator",
+            "localVersion": "26.930.11008",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "openai-bundled",
+        "path": "C:\\Users\\32686\\.codex\\.tmp\\bundled-marketplaces\\openai-bundled\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "codex-app-tools@openai-bundled",
+            "name": "codex-app-tools",
+            "localVersion": "0.1.5",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "browser@openai-bundled",
+            "name": "browser",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "unified-computer-use@openai-bundled",
+            "name": "unified-computer-use",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "chrome@openai-bundled",
+            "name": "chrome",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "computer-use@openai-bundled",
+            "name": "computer-use",
+            "localVersion": "26.930.31730",
+            "installed": false,
+            "enabled": false
+          },
+          {
+            "id": "latex@openai-bundled",
+            "name": "latex",
+            "localVersion": "0.2.8",
+            "installed": false,
+            "enabled": false
+          },
+          {
+            "id": "code-review@openai-bundled",
+            "name": "code-review",
+            "localVersion": "26.930.31730",
+            "installed": true,
+            "enabled": false
+          },
+          {
+            "id": "visualize@openai-bundled",
+            "name": "visualize",
+            "localVersion": "1.0.46",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "chatcut-inc",
+        "path": "C:\\Users\\32686\\.codex\\.tmp\\marketplaces\\chatcut-inc\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "chatcut@chatcut-inc",
+            "name": "chatcut",
+            "localVersion": "1.10.15",
+            "installed": false,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "frameflow",
+        "path": "D:\\Projects\\FrameFlow\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "frameflow@frameflow",
+            "name": "frameflow",
+            "localVersion": "0.9.1+codex.20261005001827",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "personal",
+        "path": "D:\\Projects\\Knowledge\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "coursebook@personal",
+            "name": "coursebook",
+            "localVersion": "1.0.0+codex.20260929131132",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      },
+      {
+        "name": "novel-workbench-course-lab",
+        "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "novel-workbench-course@novel-workbench-course-lab",
+            "name": "novel-workbench-course",
+            "localVersion": "0.1.2",
+            "source": {
+              "type": "local",
+              "path": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\plugins\\novel-workbench-course"
+            },
+            "installed": true,
+            "enabled": true
+          }
+        ]
+      },
+      {
+        "name": "tripo-studio",
+        "path": "E:\\Projects\\tripo-studio-mcp\\.agents\\plugins\\marketplace.json",
+        "plugins": [
+          {
+            "id": "tripo-studio-mcp@tripo-studio",
+            "name": "tripo-studio-mcp",
+            "localVersion": "0.8.0+codex.20260728052752",
+            "installed": true,
+            "enabled": false
+          }
+        ]
+      }
+    ],
+    "marketplaceLoadErrors": [],
+    "scope": "自有源保留路径；其他项不保存远端源、共享身份、计划、账户、接口描述或凭据。"
+  },
+  "sharedSummaryUnchanged": true,
+  "fullFiveTablesUnchanged": true,
+  "bindings": [
+    {
+      "path": "C:\\Users\\32686\\.codex\\plugins\\cache\\novel-workbench-course-lab\\novel-workbench-course\\0.1.2\\binding.json",
+      "bytes": 256,
+      "sha256": "14cb682690963dcdbf41a30fdccd06212a0c330e868d546d8a723a1b04908244",
+      "binding": {
+        "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\dist\\mcp.js",
+        "database": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\data\\delivery-ae681edb-a545-4274-a5b5-db0ca791feeb.sqlite",
+        "taskId": null,
+        "excerptPath": null
+      }
+    }
+  ]
+}

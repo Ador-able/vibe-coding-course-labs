@@ -1,61 +1,91 @@
 [
   {
-    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\runs\\e9af1133-2b8d-4dca-86f5-26379ca536d3\\archive.json",
+    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\runs\\d95380a1-9139-4892-a5fb-015817e04784\\archive.json",
     "originalBytes": 1783,
-    "originalSha256": "eed01bb7cc3c22fe7a3ef10ecc2ed23962120790afa36c6570915d819dca3983",
+    "originalSha256": "4813d009e5967647f827b0838c7f1fe10ba3befa04e9b922a2dc1d689689edf5",
+    "publicPath": "records/A/archive-public.json",
+    "publicBytes": 1695,
+    "publicSha256": "66d2459deac66946867c5dc6e0179851a2719792997708538b333139d7e6b2cd",
+    "removed": [
+      {
+        "index": 4,
+        "method": "remoteControl/status/changed",
+        "kind": "notificationValues"
+      }
+    ]
+  },
+  {
+    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\runs\\bd4a0a92-e017-4fd7-af2a-ca0b25aba11a\\archive.json",
+    "originalBytes": 1783,
+    "originalSha256": "99a98cf419e5fecb9ba4d4f8ccf9eaa486870004a0a66f74fac028b2f3684362",
     "publicPath": "records/B/archive-public.json",
-    "publicBytes": 1702,
-    "publicSha256": "0fa9dd2f543127bc8228564406ed05de8c6c72567c8676080878a6c6e272d23a",
+    "publicBytes": 1695,
+    "publicSha256": "88962c8ef1bec0f4d9b9d1747d5dcce582a4b6014be120265bf2dc744ff05531",
     "removed": [
       {
-        "index": 4,
-        "method": "remoteControl/status/changed"
+        "index": 2,
+        "method": "remoteControl/status/changed",
+        "kind": "notificationValues"
       }
     ]
   },
   {
-    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\runs\\session-A-directory-01\\protocol.json",
-    "originalBytes": 13421,
-    "originalSha256": "57c6eb87b1e87b782d169a062c5d6f643e6a5061a884d302046ad163f25b50f0",
-    "publicPath": "records/directory-A-01/protocol-public.json",
-    "publicBytes": 13457,
-    "publicSha256": "0ebfb4e38acd0f10850d3984d0b135b9816f127c6e9834a27ecf8ed409c2d15f",
+    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\runs\\delivery-directory-01\\protocol.json",
+    "originalBytes": 13420,
+    "originalSha256": "b4ef0518d6d4db43b13d4794586364e2b0af3d7f427d1238decde0faff834db3",
+    "publicPath": "records/directory-01/protocol-public.json",
+    "publicBytes": 2043,
+    "publicSha256": "ee4a5bf7ceafa05ab9270cd4edc5f59eddd42d3499a8770646c26a886540bbca",
     "removed": [
       {
         "index": 4,
-        "method": "remoteControl/status/changed"
+        "method": "remoteControl/status/changed",
+        "kind": "notificationValues"
+      },
+      {
+        "index": 5,
+        "method": "config/read",
+        "kind": "nonTeachingResult"
+      },
+      {
+        "index": 7,
+        "method": "plugin/list",
+        "kind": "nonTeachingResult"
       }
     ]
   },
   {
-    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\runs\\session-A-directory-02\\protocol.json",
-    "originalBytes": 55827,
-    "originalSha256": "4263653082f283fb23d49c9dde0df8af0041177f54b70af0cebfaa7850d0645b",
-    "publicPath": "records/directory-A-02/protocol-public.json",
-    "publicBytes": 55892,
-    "publicSha256": "cb173a2b88f300cc1637b8395453aa1a4367c2edb5cea84573805a8c4cea46ca",
+    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\runs\\delivery-directory-02\\protocol.json",
+    "originalBytes": 48532,
+    "originalSha256": "e093ae14c492373e83d03452d0379a1ffbaac8a71c084cf668d4772af4390501",
+    "publicPath": "records/directory-02/protocol-public.json",
+    "publicBytes": 34992,
+    "publicSha256": "d6363a185b55adaf1f58a2d87f5e0abb9799e604e066ae1cb2676099708e6c7d",
     "removed": [
       {
         "index": 4,
-        "method": "remoteControl/status/changed"
+        "method": "remoteControl/status/changed",
+        "kind": "notificationValues"
+      },
+      {
+        "index": 5,
+        "method": "config/read",
+        "kind": "nonTeachingResult"
+      },
+      {
+        "index": 7,
+        "method": "plugin/list",
+        "kind": "nonTeachingResult"
+      },
+      {
+        "index": 11,
+        "method": "skills/list",
+        "kind": "otherSkillRows"
       },
       {
         "index": 17,
-        "method": "account/updated"
-      }
-    ]
-  },
-  {
-    "originalPath": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-05-lab\\runs\\session-B-directory-01\\protocol.json",
-    "originalBytes": 48319,
-    "originalSha256": "004c170ddd817615b27d6a9b3168068371ad1c8d258e86e3edfb275d908ccacb",
-    "publicPath": "records/directory-B-01/protocol-public.json",
-    "publicBytes": 48355,
-    "publicSha256": "cfcacdf93073c85f629f715e343fa23a27169f64f5f9b03deaafc1277fc52a30",
-    "removed": [
-      {
-        "index": 4,
-        "method": "remoteControl/status/changed"
+        "method": "account/updated",
+        "kind": "notificationValues"
       }
     ]
   }

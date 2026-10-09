@@ -1,0 +1,18 @@
+{
+  "file": "C:\\Program Files\\nodejs\\node.exe",
+  "args": [
+    "dist/cli.js",
+    "export",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\deliverables\\最后一只书箱-三章课堂采用.md",
+    "--db",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\h07-08-lab\\data\\delivery-ae681edb-a545-4274-a5b5-db0ca791feeb.sqlite",
+    "--work",
+    "handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b"
+  ],
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/h07-08-lab",
+  "exit": 0,
+  "signal": null,
+  "stdout": "{\n  \"workId\": \"handoff-05661ea7-9b48-44fe-84c8-ed73a99cfd6b\",\n  \"workRevision\": 1,\n  \"expectedChapters\": 3,\n  \"savedChapters\": 3,\n  \"allOutlineChaptersSaved\": true,\n  \"chapters\": [\n    {\n      \"number\": 1,\n      \"revision\": 3,\n      \"status\": \"adopted\",\n      \"workRevision\": 1,\n      \"previousRevisions\": [],\n      \"reviewNote\": \"编者课堂采用：当前 r2 已完整读回。宋予与文姨身份明确，归还空栏没有为赶船擅填；保留去找陈师傅核实的实际行动。\",\n      \"basisCurrent\": true\n    },\n    {\n      \"number\": 2,\n      \"revision\": 3,\n      \"status\": \"adopted\",\n      \"workRevision\": 1,\n      \"previousRevisions\": [\n        {\n          \"number\": 1,\n          \"revision\": 2\n        }\n      ],\n      \"reviewNote\": \"编者课堂采用：当前 r2 已实际纠正便条指称，并澄清送回日期和表内交接说明。书数、缺页、签名与运输交接保留，不把送船当成分馆点收。\",\n      \"basisCurrent\": false\n    },\n    {\n      \"number\": 3,\n      \"revision\": 2,\n      \"status\": \"adopted\",\n      \"workRevision\": 1,\n      \"previousRevisions\": [\n        {\n          \"number\": 1,\n          \"revision\": 1\n        },\n        {\n          \"number\": 2,\n          \"revision\": 1\n        }\n      ],\n      \"reviewNote\": \"编者课堂采用：当前 r1 原文与人工改后的前两章已完整对照。接收员核号、凭据、缺页说明和签名照片给送书任务形成结尾；这些只为故事内事实，不证明真实分馆业务。\",\n      \"basisCurrent\": false\n    }\n  ],\n  \"path\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\h07-08-lab\\\\deliverables\\\\最后一只书箱-三章课堂采用.md\"\n}\n",
+  "stderr": "(node:78596) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n",
+  "error": null
+}
