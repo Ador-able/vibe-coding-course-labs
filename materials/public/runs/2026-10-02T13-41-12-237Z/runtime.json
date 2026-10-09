@@ -1,0 +1,11 @@
+{
+  "node": "v24.12.0",
+  "sdkVersion": "0.160.0",
+  "actualCliVersion": "codex-cli 0.160.0",
+  "actualCliPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-12-02\\gap-decision-lab\\node_modules\\.pnpm\\@openai+codex@0.160.0-win32-x64\\node_modules\\@openai\\codex\\vendor\\x86_64-pc-windows-msvc\\bin\\codex.exe",
+  "actualCliSha256": "fdda5fa3cf3fb3d000b876720742857676293e4315e4b045fae6f8bd7e866d1d",
+  "modelConfigured": null,
+  "modelNameEvidence": "未显式设置型号；本次四个会话沿用同一现有入口配置，不据默认值猜型号",
+  "timeoutMilliseconds": 180000,
+  "newIndependentThreads": true
+}

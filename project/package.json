@@ -1,25 +1,14 @@
 {
-  "name": "agent-practice-lab",
-  "version": "0.1.0",
+  "name": "ai-input-gap-practice",
   "private": true,
+  "version": "1.0.0",
   "type": "module",
-  "description": "使用成熟 Codex Harness 的 AI 任务教学实验",
-  "packageManager": "pnpm@11.20.0",
-  "engines": { "node": ">=24.12.0" },
   "scripts": {
-    "build": "tsc -p tsconfig.json",
-    "lab": "node dist/cli.js",
-    "agent": "node dist/agent.js",
-    "mcp": "node dist/mcp.js",
-    "test": "node --test dist/test/*.test.js"
+    "materials": "node prepare-materials.mjs",
+    "run": "node run.mjs"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.31.0",
-    "@openai/codex-sdk": "0.160.0",
-    "zod": "4.6.5"
-  },
-  "devDependencies": {
-    "@types/node": "24.19.1",
-    "typescript": "7.0.2"
+    "@openai/codex": "0.160.0",
+    "@openai/codex-sdk": "0.160.0"
   }
 }

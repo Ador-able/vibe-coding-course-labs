@@ -1,0 +1,41 @@
+{
+  "conditionId": "a",
+  "title": "可查事实",
+  "threadId": "01a0fcd8-f6d4-7fa1-a4ae-e72b44f20802",
+  "turnCompleted": true,
+  "error": null,
+  "aborted": false,
+  "elapsedMilliseconds": 80373,
+  "usage": {
+    "input_tokens": 107153,
+    "cached_input_tokens": 94208,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1457,
+    "reasoning_output_tokens": 73
+  },
+  "reasoningEventsOmitted": 0,
+  "publicCompletedItems": [
+    {
+      "id": "item_0",
+      "type": "agent_message"
+    },
+    {
+      "id": "item_1",
+      "type": "command_execution",
+      "status": "failed",
+      "exitCode": -1
+    },
+    {
+      "id": "item_2",
+      "type": "mcp_tool_call",
+      "status": "completed"
+    },
+    {
+      "id": "item_3",
+      "type": "agent_message"
+    }
+  ],
+  "finalResponseCharacters": 1212,
+  "finalResponseSha256": "d9c58991e953d5dc1e9052374d3a8b439de4d2851d6cc8b60f45834e91b4c33a",
+  "novelSavedOrAdopted": false
+}
