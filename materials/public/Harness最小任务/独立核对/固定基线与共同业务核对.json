@@ -1,0 +1,281 @@
+{
+  "pluginHead": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+  "prototypeHead": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+  "shared": [
+    {
+      "path": "src/store.ts",
+      "pluginBlob": "9f3fd574de14f964fd3e930ed763e183eb3ce280",
+      "prototypeBlob": "9f3fd574de14f964fd3e930ed763e183eb3ce280",
+      "equal": true
+    },
+    {
+      "path": "src/schemas.ts",
+      "pluginBlob": "d889a44da7bf10674b458a21278ccfa0ab7d8f61",
+      "prototypeBlob": "d889a44da7bf10674b458a21278ccfa0ab7d8f61",
+      "equal": true
+    },
+    {
+      "path": "src/cli.ts",
+      "pluginBlob": "753d9c2c1ef94bc6daffd936baa7bb0c67cdf86a",
+      "prototypeBlob": "753d9c2c1ef94bc6daffd936baa7bb0c67cdf86a",
+      "equal": true
+    },
+    {
+      "path": "src/mcp.ts",
+      "pluginBlob": "e27fa83b94b3d366f00d95c4a9af35637156cd82",
+      "prototypeBlob": "e27fa83b94b3d366f00d95c4a9af35637156cd82",
+      "equal": true
+    }
+  ],
+  "rows": [
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "src/store.ts",
+      "blob": "9f3fd574de14f964fd3e930ed763e183eb3ce280",
+      "bytes": 11179,
+      "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1",
+      "checkoutBytes": 11326,
+      "checkoutSha256": "38685e9871494f7bfdd91f7a3dfed2330501e55d97cc6e0e0974bab1d58a28c7",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-src-store.ts",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "src/schemas.ts",
+      "blob": "d889a44da7bf10674b458a21278ccfa0ab7d8f61",
+      "bytes": 1671,
+      "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4",
+      "checkoutBytes": 1714,
+      "checkoutSha256": "ffaa5ef72ac127b7189e2f9aafe52cf5a684935113f8fea8bca1eaed9584338c",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-src-schemas.ts",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "src/cli.ts",
+      "blob": "753d9c2c1ef94bc6daffd936baa7bb0c67cdf86a",
+      "bytes": 2955,
+      "sha256": "3bd881879873d69961f0fd7d909e2139dc7834ff272c4c35d5859502da75b3f0",
+      "checkoutBytes": 2998,
+      "checkoutSha256": "a1a29756f41469e9e4750be19bbc10bf32568e999d34a460194d817d159e2d77",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-src-cli.ts",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "src/mcp.ts",
+      "blob": "e27fa83b94b3d366f00d95c4a9af35637156cd82",
+      "bytes": 6711,
+      "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3",
+      "checkoutBytes": 6767,
+      "checkoutSha256": "44a6e1fe96e6ff0f81f4eff014282e21c8918c6d6398c69c5943f2bc8bd4a109",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-src-mcp.ts",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "scripts/plugin-runtime.mjs",
+      "blob": "4ee16056bcf3d2548a39edb7b191d3f08e68a133",
+      "bytes": 1592,
+      "sha256": "f0761a13ee829d17260b3dd937ae218ca9ad508ce51d1971ab7e1d69b24821af",
+      "checkoutBytes": 1592,
+      "checkoutSha256": "f0761a13ee829d17260b3dd937ae218ca9ad508ce51d1971ab7e1d69b24821af",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-scripts-plugin-runtime.mjs",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "scripts/prepare-plugin.mjs",
+      "blob": "de7f87a646c4587d49e33c2298db13848da969c7",
+      "bytes": 801,
+      "sha256": "74d506017ac8eda2946ececb8e4b83e03fc1cd6bb26fcc0b3b086c525cff50d7",
+      "checkoutBytes": 815,
+      "checkoutSha256": "559a7405d1825cf064f53c9bcb0e989da51dcb08ddfed8836574f071ee976525",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-scripts-prepare-plugin.mjs",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "scripts/plugin-preflight.mjs",
+      "blob": "a0f50a3c74fc7e0753a099f5625c3f963cef3101",
+      "bytes": 6234,
+      "sha256": "0b59b805d8d885d3b9be69ed091fc3754d354c206f0a8ad006c1eb4189e38a6b",
+      "checkoutBytes": 6234,
+      "checkoutSha256": "0b59b805d8d885d3b9be69ed091fc3754d354c206f0a8ad006c1eb4189e38a6b",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-scripts-plugin-preflight.mjs",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "scripts/observe-plugin.mjs",
+      "blob": "5b5f8c54e0096d785ab188afcd3a9fe148b771e1",
+      "bytes": 3734,
+      "sha256": "1ac8958381133d7bf5c4c80cfce0906806f6f2169b9e496ca6f690a99f1cc47f",
+      "checkoutBytes": 3734,
+      "checkoutSha256": "1ac8958381133d7bf5c4c80cfce0906806f6f2169b9e496ca6f690a99f1cc47f",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-scripts-observe-plugin.mjs",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "plugins/novel-workbench-course/skills/novel-chapter-task/SKILL.md",
+      "blob": "ff93846ade4c1ac1d65b6d67e8110c694ef804f4",
+      "bytes": 2489,
+      "sha256": "fdca238ee1b75327a8f5d30a411d452ff388713c390caca6f855ca9fc44b9dd4",
+      "checkoutBytes": 2519,
+      "checkoutSha256": "18dde9af10496de3775e3a48d9f7d86f3e1c47d43b6b18176458cb01bc5438bb",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-plugins-novel-workbench-course-skills-novel-chapter-task-SKILL.md",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "plugins/novel-workbench-course/skills/novel-chapter-task/references/state-and-review.md",
+      "blob": "6300ab2123536645270b321f2d664d6b0a0558e6",
+      "bytes": 1801,
+      "sha256": "b4ce9dcb410b8f551ade1278fc8a3abd12c747a4a054ab764e316aaba81732f3",
+      "checkoutBytes": 1826,
+      "checkoutSha256": "90e4d2affe700e1d23f3d246cb3b821ee8f441846682dabdc012c73e25804996",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-plugins-novel-workbench-course-skills-novel-chapter-task-references-state-and-review.md",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "seed/钟楼.json",
+      "blob": "d8c191fce961664b4b148da0c8d6b7974ab4f4d0",
+      "bytes": 842,
+      "sha256": "e82fe3fefee1b315c74eb245fee2cff14a69a3d4fc9c6d3796e6e738919dfc86",
+      "checkoutBytes": 864,
+      "checkoutSha256": "d29a914c7bf94c5aa738a07b5726c65bd672604064622f25e819f58a1afd1af9",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-seed-钟楼.json",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "config/plugin-check.json",
+      "blob": "51bba783841fed4911ee8cef5bb2c204c67ef24b",
+      "bytes": 320,
+      "sha256": "febc3af240cfa51f9ea666aeed848da995bca1ea4767c6734ccc45a17af29d9b",
+      "checkoutBytes": 320,
+      "checkoutSha256": "febc3af240cfa51f9ea666aeed848da995bca1ea4767c6734ccc45a17af29d9b",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-config-plugin-check.json",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "plugin",
+      "commit": "5bc3d274985350eeb0b4e3a9b0d74e050e121fa6",
+      "path": "package.json",
+      "blob": "fbd1b706c820ed08a5b778e8d4d4c818292ddc3c",
+      "bytes": 1200,
+      "sha256": "5682482cfd3ae75b26952962c9714a4909e1020c70d86fa21fb5272116a0a8ef",
+      "checkoutBytes": 1200,
+      "checkoutSha256": "5682482cfd3ae75b26952962c9714a4909e1020c70d86fa21fb5272116a0a8ef",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\plugin-package.json",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "prototype",
+      "commit": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+      "path": "src/prototype-http.ts",
+      "blob": "59f78e34a34005ae4296fc3de4c592eedc23e04c",
+      "bytes": 2879,
+      "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7",
+      "checkoutBytes": 2879,
+      "checkoutSha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\prototype-src-prototype-http.ts",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "prototype",
+      "commit": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+      "path": "src/prototype-server.ts",
+      "blob": "2097e0599a813b78b69ad30311045d1c53d63a33",
+      "bytes": 820,
+      "sha256": "ccab39aa20334444cd3c7495e8cd98ec7f0070507efed26263d67a51ca57297b",
+      "checkoutBytes": 820,
+      "checkoutSha256": "ccab39aa20334444cd3c7495e8cd98ec7f0070507efed26263d67a51ca57297b",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\prototype-src-prototype-server.ts",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "prototype",
+      "commit": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+      "path": "scripts/start-prototype.mjs",
+      "blob": "1549851c79442b2292041a3e4b32a54275e04b79",
+      "bytes": 570,
+      "sha256": "7cf77f23f40d52aea0e45997358fd55f0a7bc8d0415c9b59c03a8fc4da6eac13",
+      "checkoutBytes": 570,
+      "checkoutSha256": "7cf77f23f40d52aea0e45997358fd55f0a7bc8d0415c9b59c03a8fc4da6eac13",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\prototype-scripts-start-prototype.mjs",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "prototype",
+      "commit": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+      "path": "prototype/index.html",
+      "blob": "5b5bdb96fdb7d74113030970500d5378538563fb",
+      "bytes": 2397,
+      "sha256": "d03b27f5608d427978b0b9d9536f4ec3c0ee7ac1cb705199c52ce732a7186be5",
+      "checkoutBytes": 2397,
+      "checkoutSha256": "d03b27f5608d427978b0b9d9536f4ec3c0ee7ac1cb705199c52ce732a7186be5",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\prototype-prototype-index.html",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "prototype",
+      "commit": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+      "path": "prototype/app.js",
+      "blob": "c6329050ef63803b2aba5ec9b1dd7e238c350c02",
+      "bytes": 7552,
+      "sha256": "0bdb2644361b7a962982e7bd6ad0cd60765e1da74caeb200d8a412ec19bd8927",
+      "checkoutBytes": 7552,
+      "checkoutSha256": "0bdb2644361b7a962982e7bd6ad0cd60765e1da74caeb200d8a412ec19bd8927",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\prototype-prototype-app.js",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "prototype",
+      "commit": "0cb480c4f2fc4acf680d7581617106f85473b28c",
+      "path": "package.json",
+      "blob": "b6c5613cffc41c3b62fe27e3b180ff938be6729b",
+      "bytes": 1413,
+      "sha256": "f183db2a06b2990d90f6967edc48358e844df191399116ae07380654e6cc3ce0",
+      "checkoutBytes": 1413,
+      "checkoutSha256": "f183db2a06b2990d90f6967edc48358e844df191399116ae07380654e6cc3ce0",
+      "copiedGitBytesPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\prototype-package.json",
+      "scope": "固定Git blob原字节；工作区检出字节分别记录，不假定LF与CRLF是同一原件"
+    },
+    {
+      "origin": "installed-official-sdk",
+      "package": "@openai/codex-sdk@0.160.0",
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-05\\lab\\node_modules\\@openai\\codex-sdk\\README.md",
+      "bytes": 5147,
+      "sha256": "bc454b26a6920efb1826912be6b6ba96348ab39d9f4e70078465deb586dbbfe7",
+      "copiedRawPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\Codex-SDK-0.160.0-README.md",
+      "scope": "已安装官方包原字节与锁定版本；不是网站现行SDK全部实现的声明"
+    },
+    {
+      "origin": "installed-official-sdk",
+      "package": "@openai/codex-sdk@0.160.0",
+      "path": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-08-05\\lab\\node_modules\\@openai\\codex-sdk\\dist\\index.d.ts",
+      "bytes": 10369,
+      "sha256": "954d28bec3db17316c2f6acbbd157210ded9f75143c50827215739110327c7ac",
+      "copiedRawPath": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcm-07-01\\当前固定代码\\Codex-SDK-0.160.0-dist-index.d.ts",
+      "scope": "已安装官方包原字节与锁定版本；不是网站现行SDK全部实现的声明"
+    }
+  ],
+  "implementationCreated": false,
+  "modelTaskStarted": false,
+  "scope": "只读既有固定代码，未修改两章原件、共享数据库或全局设置"
+}

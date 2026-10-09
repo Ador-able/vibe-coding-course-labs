@@ -1,0 +1,41 @@
+{
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab",
+  "runOverride": "false",
+  "ownEntry": {
+    "enabled": false
+  },
+  "layers": [
+    {
+      "name": {
+        "type": "sessionFlags"
+      },
+      "disabledReason": null,
+      "ownEntry": {
+        "enabled": false
+      }
+    },
+    {
+      "name": {
+        "type": "project",
+        "dotCodexFolder": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab\\.codex"
+      },
+      "disabledReason": "To load project-local config, hooks, and exec policies, add d:\\projects\\knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\projects\\agent-practice-lab as a trusted project in C:\\Users\\32686\\.codex\\config.toml.",
+      "ownEntry": {
+        "enabled": false,
+        "mcp_servers": {
+          "novel_lab": {
+            "default_tools_approval_mode": "approve"
+          }
+        }
+      }
+    }
+  ],
+  "origins": {
+    "plugins.novel-practice@novel-agent-lab.enabled": {
+      "name": {
+        "type": "sessionFlags"
+      },
+      "version": "sha256:d0800c0b3d3210eccf0bf321115adbd6cc058dabc10c34b3c9314461d1e300d9"
+    }
+  }
+}

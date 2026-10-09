@@ -1,0 +1,64 @@
+{
+  "runId": "3a7d5bb2-83d8-42ce-962b-313feee34ad9",
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\h07-01-lab\\runs\\pre-model-ui-3a7d5bb2-83d8-42ce-962b-313feee34ad9",
+  "codeVersion": "a5f339a1fc9f35f3456b0cd3a08c94adc1a6471d",
+  "gitStatus": "",
+  "viewport": {
+    "width": 1360,
+    "height": 900
+  },
+  "mobileViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "browser": "本机 Edge / Playwright 1.63.0，无登录隔离上下文",
+  "main": {
+    "work": {
+      "id": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+      "title": "乌桐镇的停钟",
+      "purpose": "用第一章草稿讨论开篇方向，供人工阅读判断。",
+      "requirements": [
+        "读者未读设定表，应能从正文理解林澈来到钟楼的目的和遇到的阻碍。",
+        "正文约 800 至 1200 个中文字符；章末留下一个具体、尚未解释的异常。",
+        "只保存本次指定章节，状态为草稿，等待人工判断。"
+      ],
+      "facts": [
+        "林澈是修钟师学徒，这是他第一次来到乌桐镇。",
+        "林澈没有钟楼钥匙，进入钟楼需要守塔人开门。",
+        "钟楼的钟在昨夜停了。"
+      ],
+      "outline": [
+        {
+          "number": 1,
+          "titleHint": "停钟",
+          "goal": "林澈受托查看停钟，在门外遇到阻碍，由守塔人开门；钟楼内出现一个具体异常。"
+        }
+      ],
+      "revision": 1
+    },
+    "chapters": []
+  },
+  "humanInput": {
+    "id": "human-ui-55c66e74-dd80-474a-8320-e34f349c05a9",
+    "title": "人工界面测试",
+    "purpose": "核对编辑行为，不是模型输出。",
+    "requirements": [
+      "保存完整人工测试文字。"
+    ],
+    "facts": [
+      "本文由人提供，不能冒充本次小说生成。"
+    ],
+    "outline": [
+      {
+        "number": 1,
+        "titleHint": "人工测试章",
+        "goal": "核对读回、等待、失败与旧修订。"
+      }
+    ]
+  },
+  "humanTitle": "人工测试章",
+  "humanInitialBody": "这是独立数据库中的人工测试文字。\n它只用于检查编辑状态，不是课堂小说，也不是模型生成结果。",
+  "humanEditedBody": "这是独立数据库中的人工测试文字。\n它只用于检查编辑状态，不是课堂小说，也不是模型生成结果。\n人工修改：保存这句测试文字。",
+  "modelCalled": false,
+  "variants": []
+}

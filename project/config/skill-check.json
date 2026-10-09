@@ -1,0 +1,7 @@
+{
+  "serverName": "novel_lab",
+  "enabledTools": ["read_work", "list_chapters", "read_chapter"],
+  "sandboxMode": "read-only",
+  "approvalPolicy": "never",
+  "webSearchMode": "disabled"
+}

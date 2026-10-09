@@ -1,0 +1,10 @@
+(node:44996) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+file:///D:/Projects/Knowledge/.coursebook-work/h07-01-lab/scripts/observe-plugin.mjs:18
+if(resolve(binding.database)!==database)throw new Error('观察数据库与插件实际绑定不一致；请重新准备本次绑定。');
+                                              ^
+
+Error: 观察数据库与插件实际绑定不一致；请重新准备本次绑定。
+    at file:///D:/Projects/Knowledge/.coursebook-work/h07-01-lab/scripts/observe-plugin.mjs:18:47
+
+Node.js v24.12.0

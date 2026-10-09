@@ -1,0 +1,8 @@
+node_modules/
+.pnpm/
+dist/
+data/
+runs/
+lab.config.json
+plugins/novel-workbench-course/binding.json
+*.sqlite*

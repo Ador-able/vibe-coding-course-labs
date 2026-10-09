@@ -1,11 +1,39 @@
 {
-  "name": "ai-delegation-observation",
+  "name": "agent-practice-lab",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "使用官方 Codex 宿主观察有限调查的委派与复核",
+  "description": "使用成熟 Codex Harness 的 AI 任务教学实验",
   "packageManager": "pnpm@11.20.0",
-  "engines": {"node": ">=24.12.0"},
-  "scripts": {"observe": "node scripts/observe.mjs"},
-  "dependencies": {"@openai/codex-sdk": "0.160.0"}
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lab": "node dist/cli.js",
+    "agent": "node dist/agent.js",
+    "mcp": "node dist/mcp.js",
+    "prototype": "node dist/prototype-server.js",
+    "mcp:inspect": "node scripts/inspect-mcp.mjs",
+    "plugin:prepare": "node scripts/prepare-plugin.mjs",
+    "plugin:catalog": "node scripts/plugin-catalog.mjs",
+    "plugin:add": "node scripts/plugin-manage.mjs add",
+    "plugin:remove": "node scripts/plugin-manage.mjs remove",
+    "test": "node --test dist/test/*.test.js",
+    "plugin:preflight": "node scripts/plugin-preflight.mjs",
+    "plugin:observe": "node scripts/observe-plugin.mjs",
+    "host:opencode": "node scripts/opencode-local.mjs",
+    "host:observe": "node scripts/observe-opencode.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "@openai/codex-sdk": "0.160.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.1",
+    "opencode-ai": "1.18.34",
+    "typescript": "7.0.2"
+  }
 }

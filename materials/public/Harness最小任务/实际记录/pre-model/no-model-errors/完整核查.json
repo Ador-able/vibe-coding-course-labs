@@ -1,0 +1,141 @@
+{
+  "root": "D:/Projects/Knowledge/.coursebook-work/h07-01-lab",
+  "codeVersion": "a5f339a1fc9f35f3456b0cd3a08c94adc1a6471d",
+  "checks": [
+    {
+      "name": "启动缺少明确对象",
+      "args": [
+        "dist/prototype-server.js"
+      ],
+      "expected": "启动需要明确的 --db 与 --work",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "dist/prototype-server.js"
+      ],
+      "startedAt": "2026-10-02T20:40:24.077Z",
+      "finishedAt": "2026-10-02T20:40:24.174Z",
+      "exitCode": 1,
+      "passed": true
+    },
+    {
+      "name": "启动数据库尚未初始化",
+      "args": [
+        "dist/prototype-server.js",
+        "--db",
+        "data/not-initialized-085ad713-81fe-4356-88a5-ae45969e2a79.sqlite",
+        "--work",
+        "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea"
+      ],
+      "expected": "数据库尚不存在",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "dist/prototype-server.js",
+        "--db",
+        "data/not-initialized-085ad713-81fe-4356-88a5-ae45969e2a79.sqlite",
+        "--work",
+        "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea"
+      ],
+      "startedAt": "2026-10-02T20:40:24.174Z",
+      "finishedAt": "2026-10-02T20:40:24.271Z",
+      "exitCode": 1,
+      "passed": true
+    },
+    {
+      "name": "任务缺少完整请求文件",
+      "args": [
+        "scripts/observe-plugin.mjs"
+      ],
+      "expected": "需要保存了完整请求的提示文件",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/observe-plugin.mjs"
+      ],
+      "startedAt": "2026-10-02T20:40:24.271Z",
+      "finishedAt": "2026-10-02T20:40:24.320Z",
+      "exitCode": 1,
+      "passed": true
+    },
+    {
+      "name": "观察库与实际工具绑定不同",
+      "args": [
+        "scripts/observe-plugin.mjs",
+        "--db",
+        "data/not-initialized-085ad713-81fe-4356-88a5-ae45969e2a79.sqlite",
+        "--work",
+        "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+        "--chapter",
+        "1",
+        "--prompt",
+        "prompts/Harness第一章.txt"
+      ],
+      "expected": "观察数据库与插件实际绑定不一致",
+      "command": [
+        "C:\\Program Files\\nodejs\\node.exe",
+        "scripts/observe-plugin.mjs",
+        "--db",
+        "data/not-initialized-085ad713-81fe-4356-88a5-ae45969e2a79.sqlite",
+        "--work",
+        "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+        "--chapter",
+        "1",
+        "--prompt",
+        "prompts/Harness第一章.txt"
+      ],
+      "startedAt": "2026-10-02T20:40:24.320Z",
+      "finishedAt": "2026-10-02T20:40:24.370Z",
+      "exitCode": 1,
+      "passed": true
+    }
+  ],
+  "before": {
+    "works": [
+      {
+        "id": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+        "revision": 1,
+        "content": "{\"id\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"title\":\"乌桐镇的停钟\",\"purpose\":\"用第一章草稿讨论开篇方向，供人工阅读判断。\",\"requirements\":[\"读者未读设定表，应能从正文理解林澈来到钟楼的目的和遇到的阻碍。\",\"正文约 800 至 1200 个中文字符；章末留下一个具体、尚未解释的异常。\",\"只保存本次指定章节，状态为草稿，等待人工判断。\"],\"facts\":[\"林澈是修钟师学徒，这是他第一次来到乌桐镇。\",\"林澈没有钟楼钥匙，进入钟楼需要守塔人开门。\",\"钟楼的钟在昨夜停了。\"],\"outline\":[{\"number\":1,\"titleHint\":\"停钟\",\"goal\":\"林澈受托查看停钟，在门外遇到阻碍，由守塔人开门；钟楼内出现一个具体异常。\"}]}"
+      }
+    ],
+    "work_versions": [
+      {
+        "work_id": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+        "revision": 1,
+        "content": "{\"id\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"title\":\"乌桐镇的停钟\",\"purpose\":\"用第一章草稿讨论开篇方向，供人工阅读判断。\",\"requirements\":[\"读者未读设定表，应能从正文理解林澈来到钟楼的目的和遇到的阻碍。\",\"正文约 800 至 1200 个中文字符；章末留下一个具体、尚未解释的异常。\",\"只保存本次指定章节，状态为草稿，等待人工判断。\"],\"facts\":[\"林澈是修钟师学徒，这是他第一次来到乌桐镇。\",\"林澈没有钟楼钥匙，进入钟楼需要守塔人开门。\",\"钟楼的钟在昨夜停了。\"],\"outline\":[{\"number\":1,\"titleHint\":\"停钟\",\"goal\":\"林澈受托查看停钟，在门外遇到阻碍，由守塔人开门；钟楼内出现一个具体异常。\"}]}"
+      }
+    ],
+    "chapters": [],
+    "chapter_versions": [],
+    "tasks": []
+  },
+  "after": {
+    "works": [
+      {
+        "id": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+        "revision": 1,
+        "content": "{\"id\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"title\":\"乌桐镇的停钟\",\"purpose\":\"用第一章草稿讨论开篇方向，供人工阅读判断。\",\"requirements\":[\"读者未读设定表，应能从正文理解林澈来到钟楼的目的和遇到的阻碍。\",\"正文约 800 至 1200 个中文字符；章末留下一个具体、尚未解释的异常。\",\"只保存本次指定章节，状态为草稿，等待人工判断。\"],\"facts\":[\"林澈是修钟师学徒，这是他第一次来到乌桐镇。\",\"林澈没有钟楼钥匙，进入钟楼需要守塔人开门。\",\"钟楼的钟在昨夜停了。\"],\"outline\":[{\"number\":1,\"titleHint\":\"停钟\",\"goal\":\"林澈受托查看停钟，在门外遇到阻碍，由守塔人开门；钟楼内出现一个具体异常。\"}]}"
+      }
+    ],
+    "work_versions": [
+      {
+        "work_id": "harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea",
+        "revision": 1,
+        "content": "{\"id\":\"harness-02f7db59-e6a1-4e9a-8c4d-75adfa2a1fea\",\"title\":\"乌桐镇的停钟\",\"purpose\":\"用第一章草稿讨论开篇方向，供人工阅读判断。\",\"requirements\":[\"读者未读设定表，应能从正文理解林澈来到钟楼的目的和遇到的阻碍。\",\"正文约 800 至 1200 个中文字符；章末留下一个具体、尚未解释的异常。\",\"只保存本次指定章节，状态为草稿，等待人工判断。\"],\"facts\":[\"林澈是修钟师学徒，这是他第一次来到乌桐镇。\",\"林澈没有钟楼钥匙，进入钟楼需要守塔人开门。\",\"钟楼的钟在昨夜停了。\"],\"outline\":[{\"number\":1,\"titleHint\":\"停钟\",\"goal\":\"林澈受托查看停钟，在门外遇到阻碍，由守塔人开门；钟楼内出现一个具体异常。\"}]}"
+      }
+    ],
+    "chapters": [],
+    "chapter_versions": [],
+    "tasks": []
+  },
+  "sameBusinessState": true,
+  "runDirectoriesBefore": [
+    "pre-model",
+    "pre-model-ui-3a7d5bb2-83d8-42ce-962b-313feee34ad9"
+  ],
+  "runDirectoriesAfter": [
+    "pre-model",
+    "pre-model-ui-3a7d5bb2-83d8-42ce-962b-313feee34ad9"
+  ],
+  "noNewRunDirectory": true,
+  "unexpectedDatabase": false,
+  "modelCalled": false,
+  "scope": "四项错误均在 SDK 模型任务入口之前终止。本次没有实测运行中取消，也没有证明写入中断会自动回滚。"
+}
