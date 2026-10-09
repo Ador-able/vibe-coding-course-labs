@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>资料回查</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body data-direction="original">
+    <header class="toolbar">
+      <span class="brand">资料回查</span>
+      <details class="direction-tools">
+        <summary>页面方向</summary>
+        <div role="group" aria-label="同一份数据的页面方向">
+          <button type="button" data-direction="original" aria-pressed="true">原版</button>
+          <button type="button" data-direction="desk" aria-pressed="false">台面</button>
+          <button type="button" data-direction="notes" aria-pressed="false">笔记页</button>
+        </div>
+      </details>
+    </header>
+    <main>
+      <header class="page-heading">
+        <h1>这段话来自哪一页？</h1>
+        <p>先找到对应原页，再判断文字能说明什么。</p>
+      </header>
+      <form id="locate-form" class="query-form">
+        <label>资料版本<select id="fixture" disabled></select></label>
+        <label class="query-label">需要回查的原句<input id="query" value="还不知道" required /></label>
+        <button id="locate" type="submit" disabled>定位原文</button>
+      </form>
+      <p id="status" role="status">正在读取解析记录。</p>
+      <div class="workspace">
+        <section class="reading" aria-label="提取文字与命中位置">
+          <div id="document-heading"></div>
+          <div id="hits"></div>
+          <div id="pages"></div>
+        </section>
+        <section class="source" aria-label="原文件页面">
+          <div class="source-title"><h2 id="page-title">原页</h2><a id="image-link" target="_blank" rel="noopener" hidden>放大原页</a></div>
+          <div id="source-page"></div>
+        </section>
+      </div>
+      <details class="technical"><summary>文件与完整解析记录</summary><div id="file-details"></div><a href="observation.json" download>下载完整解析记录</a><pre id="raw-record"></pre></details>
+      <p class="scope">这是固定文件的本地文字提取与原页回查。字面定位不评价语义检索能力；本页没有调用OCR或模型。</p>
+    </main>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
