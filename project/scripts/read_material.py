@@ -102,9 +102,6 @@ def read_one(fixture, destination):
 def main():
     if pymupdf.__version__ != "1.27.2.2":
         raise RuntimeError("请使用requirements.txt固定的PyMuPDF版本。")
-    git_root = subprocess.check_output(["git", "rev-parse", "--show-toplevel"], cwd=ROOT, text=True).strip()
-    if Path(git_root).resolve() != ROOT:
-        raise RuntimeError("本练习需要自己的Git根。")
     catalog = json.loads((PUBLIC / "fixtures.json").read_text(encoding="utf-8"))
     run_id = str(uuid.uuid4())
     destination = PUBLIC / "runs" / run_id

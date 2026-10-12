@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-10-04T11:53:27.634506+00:00",
+  "generatorGitHead": "edd22cef42a0d900b0e75a31080530e784fca584",
+  "generator": "PyMuPDF 1.27.2.2",
+  "provenance": "教师构造文件表达，复用完整历史小说正文；不是新模型生成或文学采用。",
+  "sourceFile": {
+    "name": "小说第三章完整原文.txt",
+    "bytes": 3093,
+    "sha256": "f80c723e7eada5bcfef34e2737941be7844df688b060b1889acecdd04c5384b5",
+    "utf16Length": 1063
+  },
+  "fixtures": [
+    {
+      "key": "native-v1",
+      "label": "文字版",
+      "path": "files/native-v1/第三章资料.pdf",
+      "docId": "clock-chapter-three",
+      "expectedPhysicalPages": 3,
+      "change": "三页可提取文字；页眉、页码和便签属于教师增加的可见文字。",
+      "fileName": "第三章资料.pdf",
+      "fileBytes": 5226,
+      "fileSha256": "ba956b0cd60890370e92930730e5bdb7f2b8086236c5afa40cde09f6dec48e97"
+    },
+    {
+      "key": "scan-v1",
+      "label": "中页扫描版",
+      "path": "files/scan-v1/第三章资料.pdf",
+      "docId": "clock-chapter-three",
+      "expectedPhysicalPages": 3,
+      "change": "从文字版复制第1、3页，第2页仅放同页的144dpi图像，不加隐藏文本。",
+      "fileName": "第三章资料.pdf",
+      "fileBytes": 141952,
+      "fileSha256": "02f870076bf49f10f799bf89abfcf4e95490ace786921fa88d18b72dc8579403"
+    },
+    {
+      "key": "native-v2",
+      "label": "改便签版",
+      "path": "files/native-v2/第三章资料.pdf",
+      "docId": "clock-chapter-three",
+      "expectedPhysicalPages": 3,
+      "change": "仅更换第3页编者便签；25段小说正文保持相同，不执行索引替换。",
+      "fileName": "第三章资料.pdf",
+      "fileBytes": 5247,
+      "fileSha256": "38fdcd25043aa2752a29b4592ba9f1e1d2b90177acd017611667269f3aa8ee16"
+    },
+    {
+      "key": "broken",
+      "label": "错误文件",
+      "path": "files/broken/无法读取.pdf",
+      "docId": "unreadable-teacher-file",
+      "expectedPhysicalPages": null,
+      "change": "明确构造的非PDF字节，不能以0页成功吞掉。",
+      "fileName": "无法读取.pdf",
+      "fileBytes": 40,
+      "fileSha256": "6508275182d1f6c8b3db3b5644622e29241ed00030c53b461c5ea22924daa40a"
+    }
+  ]
+}

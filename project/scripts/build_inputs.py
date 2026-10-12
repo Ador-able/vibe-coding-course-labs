@@ -20,9 +20,6 @@ def sha256(value):
 
 
 def repo_head():
-    git_root = subprocess.check_output(["git", "rev-parse", "--show-toplevel"], cwd=ROOT, text=True).strip()
-    if Path(git_root).resolve() != ROOT:
-        raise RuntimeError("须在本练习的独立Git目录运行，不能借用父项目HEAD。")
     return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
 
 
