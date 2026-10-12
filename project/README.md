@@ -1,17 +1,13 @@
 # 关键词和向量检索可以一起用
 
-当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
-
-在 `project/` 中准备当前源码需要的依赖：
+在 `project/` 中启动静态页：
 
 ```powershell
-pnpm install --frozen-lockfile
+python -m http.server 4346 --bind 127.0.0.1 --directory public
 ```
 
-可用命令见 `package.json` 的 `scripts`。沿用课程本节给出的入口和参数，不需要重复运行其他课的实验。
+打开 http://127.0.0.1:4346/。已有候选、向量、原文和原页可直接查看，不需要安装依赖、配置模型或重新请求嵌入。结束时在这个终端按 Ctrl+C。
 
-课堂路径保留在 `inputs/`。从当前源码目录运行时直接使用这些相对路径。
+需要用已有向量重算排序时，再按锁文件准备依赖，让编码助手运行 `pnpm retrieval:rank`，传入仓库 `materials/实际记录/embeddings-e273a2bf-4aed-4c2e-bb5d-21a6fb3da732/report.json` 的实际路径。它只计算已有向量，不请求模型；保留原记录和新结果。
 
-使用 OpenAI 兼容接口的入口从仓库根运行 `node scripts/run-lab.mjs <源码目录> <Node.js入口> [本节参数...]`。它读取请求观察室已保存的设置；当前型号和地址由你的设置决定。
-
-完整输入、课堂结果与原操作说明在仓库根 `materials/`。原说明保留当时的命令和记录；本机准备以本 README 和当前课程步骤为准。
+更换资料后确需新向量时，从仓库根使用 `node scripts/run-lab.mjs project scripts/observe-embeddings.mjs`，沿用请求观察室的服务和向量模型设置。这个操作会产生真实调用，默认查看无需执行。

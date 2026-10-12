@@ -9,7 +9,11 @@ const argument = process.argv[2];
 assert(argument, '指定实际embeddings运行的report.json，不自动选择某次通过记录');
 const inputPath = path.resolve(argument), actual = readJson(inputPath), material = loadMaterials();
 assert.equal(actual.completed, true, '不能用未完成的向量记录继续排名');
-assert.deepEqual(actual.values, material.values); assert.deepEqual(actual.settings, material.settings);
+assert.deepEqual(actual.values, material.values);
+// 模型和地址来自这份向量记录，其余排序条件仍逐项核对。
+material.settings.semantic.baseURL = actual.settings.semantic.baseURL;
+material.settings.semantic.model = actual.settings.semantic.model;
+assert.deepEqual(actual.settings, material.settings);
 assert.deepEqual(actual.embeddings.map(({ embedding, ...value }) => value), material.values);
 assert.equal(actual.actualHttpRequests, 3); assert.equal(actual.batches.length, 3);
 for (const batch of actual.batches) {
