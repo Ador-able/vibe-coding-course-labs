@@ -1,13 +1,13 @@
 # 提示模板变化后怎样验证整个任务
 
-当前源码位于 `project/`。本课节点见仓库根的 `github-nodes.json`。
-
-在 `project/` 中准备当前源码需要的依赖：
+先在 `project/template-comparison/public/` 查看已有结果，无需安装项目依赖或调用模型：
 
 ```powershell
-pnpm install --frozen-lockfile
+python -m http.server 4358 --bind 127.0.0.1
 ```
 
-本节点只包含本课子项目；其他项目从对应课次节点取得。当前项目目录及 Node.js 入口见本节教材。
+打开 `http://127.0.0.1:4358/comparison.html`，按课程步骤回查完整输入、结果与检查状态。
 
-完整输入、课堂结果与原操作说明在仓库根 `materials/`。原说明保留当时的命令和记录；本机准备以本 README 和当前课程步骤为准。
+需要亲手运行新材料时，再在 `project/` 执行 `pnpm install --frozen-lockfile`，使用本节给出的共用入口和独立结果目录。沿用请求观察室已保存的 OpenAI 兼容设置。
+
+完整输入、历史结果和说明位于仓库根的 `materials/`；本课 Git 节点见 `github-nodes.json`。
