@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "lesson": 162,
+    "title": "完整草稿与保存链路",
+    "summary": "一次只读调查；完整源码、当前对象与原答可回查。先前目录检查在模型任务前停止，分别保留。",
+    "finalResponse": "records/investigation-02/investigation/final-response.txt",
+    "files": [
+      {
+        "title": "实际调查完整报告",
+        "path": "records/investigation-02/report.json"
+      },
+      {
+        "title": "实际调查原协议",
+        "path": "records/investigation-02/investigation/protocol.jsonl"
+      },
+      {
+        "title": "开始与结束的完整业务对象",
+        "path": "records/investigation-02/before.json"
+      },
+      {
+        "title": "结束完整对象",
+        "path": "records/investigation-02/after.json"
+      },
+      {
+        "title": "前置目录失败原报告（0模型任务）",
+        "path": "records/investigation-01/report.json"
+      }
+    ]
+  }
+]
