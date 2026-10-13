@@ -1,0 +1,5 @@
+.local/
+binding.json
+*.bound.json
+*.log
+node_modules/

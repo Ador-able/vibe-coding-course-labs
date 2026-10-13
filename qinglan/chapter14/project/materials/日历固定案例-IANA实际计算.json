@@ -1,0 +1,27 @@
+{
+  "kind": "classroom-date-time-runtime-check",
+  "classroomCurrentDate": "2026-10-05",
+  "workId": "qinglan-xiuxianlu",
+  "workTitle": "青岚修仙录",
+  "meetingStart": "2026-10-12T09:00:00+08:00",
+  "meetingEnd": "2026-10-12T09:30:00+08:00",
+  "utcStart": "2026-10-12T01:00:00.000Z",
+  "utcEnd": "2026-10-12T01:30:00.000Z",
+  "shanghai": [
+    "2026-10-12 09:00",
+    "2026-10-12 09:30"
+  ],
+  "losAngeles": [
+    "2026-10-11 18:00",
+    "2026-10-11 18:30"
+  ],
+  "durationMinutes": 30,
+  "runtime": {
+    "entry": "当前工具运行时 Intl.DateTimeFormat",
+    "version": null
+  },
+  "externalCalendarCalls": 0,
+  "modelCalls": 0,
+  "invitationCalls": 0,
+  "scope": "固定教师案例的本机IANA时区换算；不是今天、不是日历忙闲、创建、邀请或人的确认"
+}
