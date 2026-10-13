@@ -27,7 +27,7 @@ async function feedbackResult(manifest, key) {
   const [input,call,tasks,feedbacks] = await Promise.all([entry.input,entry.response,entry.taskFinal,entry.feedbackFinal].map(load));
   const task=eventRow(tasks,input.eventId), feedback=eventRow(feedbacks,input.eventId);
   const work=$('#work'); work.replaceChildren(el('h2',entry.label), origin('本章隔离 n8n 表独立读回；查看不会再次提交。'));
-  work.append(prose(input.feedback),table([['入口回答', 'HTTP '+call.status],['任务状态',task?.status],['通知',task?.notificationStatus],['任务行 ID',task?.id],['反馈行 ID',feedback?.id ?? '未写入成功反馈'],['反馈引用任务',feedback?.taskRowId ?? '无成功反馈引用']]));
+  work.append(prose(input.feedback),table([['入口回答', 'HTTP '+call.status],['任务状态',task?.status],['通知',task?.notificationStatus],['任务行 ID',task?.id],['反馈行 ID',feedback?.id ?? '未写入成功反馈'],['反馈引用任务',feedback?.taskRowId ?? '无成功反馈引用'],...(page==='ids'?[['任务引用反馈',task?.feedbackRowId ?? '未写入反馈引用']]:[])]));
   if(page==='webhook'&&entry.taskReceived){const first=eventRow(await load(entry.taskReceived),input.eventId);work.append(table([['202 后首次实际读回',first?.status],['这次查询时间',entry.receivedReadAt]]));}
   if(page==='ids'){work.append(el('p','Task.id 交给 Feedback.taskRowId；Feedback.id 回写 Task.feedbackRowId。'));if(entry.incorrectLookup)work.append(detail('错用执行 ID 的实际查询',raw(await load(entry.incorrectLookup))));}
   const all=el('div');all.append(raw({input,http:call,task,feedback}),entry.execution?detail('原生节点实际执行',raw(await load(entry.execution))):el('p','执行详情尚未保存。'));work.append(detail('完整输入、回答与两表原件',all));
@@ -67,7 +67,7 @@ async function show() {
       const card=await load('inputs/接收者验收卡.json'); $('#work').append(el('h2',card.currentTask),origin('接收者卡 · 未执行'),prose(card.input.feedback));
       for(const step of card.steps){const s=el('div',undefined,'task-step');s.append(el('strong',step.id+' · '+step.state),el('p',step.task),origin('负责：'+step.responsible));$('#work').append(s);}
       $('#work').append(detail('开始前要填写的入口与对象',raw(card.prerequisites)),detail('通过、未通过、阻塞与未检查',raw(card.criteria)),detail('完整提交输入',raw(card.input)));
-      $('#source').append(el('h2','第十三章已有实际结果'),prose(card.previousChapter.templates),el('p','抽取保留647B、8行11列候选CSV；仍需人工核查。'),detail('候选文件来源',raw(card.previousChapter.extractionCsv)),origin(card.recipientAction));
+      $('#source').append(el('h2','第十三章已有实际结果'),prose(card.previousChapter.templates.split('。').slice(0,2).join('。')+'。'),el('p','抽取保留647B、8行11列候选CSV；仍需人工核查。'),detail('候选文件来源',raw(card.previousChapter.extractionCsv)),origin(card.recipientAction));
     }
   }catch(error){$('#work').replaceChildren(el('p',error.message,'empty'));}finally{$('#button').disabled=false;}
 }

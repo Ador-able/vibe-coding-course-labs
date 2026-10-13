@@ -8,7 +8,13 @@
 
 ## 亲手运行原生流程
 
-固定执行起点为 `qinglan-ch14-run-start`，完整输入与实际执行源码由该标签回查；实录的 `source.json` 登记具体使用的 Git 提交。
+先保存自己的改动，再从干净的实践起点建立自己的分支：
+
+```powershell
+git switch -c qinglan-my-ch14 qinglan-ch14-practice-start
+```
+
+继续使用本章目录。这个标签保留完整输入、程序和空记录索引，后续命令将保存你自己的结果；课堂完整实录保留在 `qinglan-ch14-end`。自己的记录需保存后再切换分支。
 
 仅这一部分需要 Docker 与本机 n8n。查看课堂记录无需启动 n8n。
 

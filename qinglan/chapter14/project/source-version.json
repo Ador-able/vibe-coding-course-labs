@@ -1,6 +1,6 @@
 {
   "kind": "actual-executable-source-and-complete-inputs",
-  "sourceSha256": "d172d5d3fc791cdcbcbd5c8f01479711759cf28cc1a6d7e44e9575e70160b899",
+  "sourceSha256": "e4111d0a3e40df67294b81d5315226eb7978a95395e3c8f2c29868c63a977817",
   "frozenInputSha256": "5d18a243580bab289ef34ff92558a02417b7895d6095415dcab2ff7d5dbe6075",
   "files": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4309,
-      "sha256": "89406a61c5abc643573555829f728808953fcf9bcd5d9bbfc9e608e56d4e4a85"
+      "bytes": 4527,
+      "sha256": "fee716328103c91968f17c38e5a4c1799f5156069393ebfc0fb756f39a00b2c7"
     },
     {
       "path": "files/chapter-three.pdf",
@@ -190,8 +190,8 @@
     },
     {
       "path": "public/app.js",
-      "bytes": 11115,
-      "sha256": "e35f97063a2266de3b9c86f8cd54f0d2968010c7aabdf937147ac19a81564b8c"
+      "bytes": 11250,
+      "sha256": "f2f1d6101d5f6a60a07667a64fd9c354080e59563f3f5554eaef9eb2091c5e42"
     },
     {
       "path": "public/authorization.html",
@@ -245,13 +245,13 @@
     },
     {
       "path": "scripts/freeze-source.mjs",
-      "bytes": 1203,
-      "sha256": "593643322fa6912b9276518194f2c8a2e07c857201d69de7f993cb65a4dbba9a"
+      "bytes": 1208,
+      "sha256": "b20701d4b44e0137e182f245a6bde608429e5f72e6fe3a0b53ba14d31599a76a"
     },
     {
       "path": "scripts/n8n.mjs",
-      "bytes": 11314,
-      "sha256": "bb587e6e5c761414bd3c00fa62143fa8f0191e446d3f839d0fcfd2c489856c9f"
+      "bytes": 12183,
+      "sha256": "f019e4f84fdb40f529a83cea6007dd73e1133534349793b693ddba0bbf5637c3"
     },
     {
       "path": "scripts/setup-classroom.mjs",
@@ -329,5 +329,5 @@
       "sha256": "0e6f33dfc8cca04ad8db9112af179d2e7d9ffb087f888afbed7ed60e09b2f657"
     }
   ],
-  "gitStart": "以 qinglan-ch14-run-start 标签及各实际采集 source.json 的 gitCommit 回查；不在源码中自引用提交 SHA。"
+  "gitStart": "以 qinglan-ch14-practice-start 标签及各实际采集 source.json 的 gitCommit 回查；不在源码中自引用提交 SHA。"
 }

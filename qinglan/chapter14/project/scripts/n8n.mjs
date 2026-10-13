@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { setTimeout as delay } from 'node:timers/promises';
-import { root,load,save,configuration,exchange,publicApi,publicRecord,workflowProjection,executionProjection } from '../src/native-rest.mjs';
+import { root,load,save,sha,configuration,exchange,publicApi,publicRecord,workflowProjection,executionProjection } from '../src/native-rest.mjs';
 import { checkSource } from '../src/source.mjs';
 
 const command=process.argv[2], key=process.argv[3];
@@ -54,7 +54,21 @@ if(command==='prepare'){
   index.feedback.push(entry);await manifest();
 }else if(command==='files'){
   const folder='records/files/files-01';await ensureNew(folder);const call=await postFrozen(folder,'inputs/完整两项目录输入.json','/webhook/qinglan-ch14-files');
-  const list=await publicApi('/executions?workflowId='+binding.workflows.files+'&limit=10');const current=list.record.body.data.find(e=>Date.parse(e.startedAt)>=Date.parse(call.startedAt));if(!current)throw new Error('文件请求没有可核的实际执行。');await executionSnapshot(folder+'/execution.json',current.id);
+  // 执行索引可能晚于入口返回可见；以原生接收的完整输入匹配，不依赖两端时间。
+  const input=JSON.parse(call.request.bodyText),inputSha256=sha(JSON.stringify(input));let current;
+  const until=Date.now()+30000;
+  do{
+    const list=await publicApi('/executions?workflowId='+binding.workflows.files+'&limit=10'),matches=[];
+    for(const entry of list.record.body.data){
+      const detail=await publicApi('/executions/'+encodeURIComponent(entry.id)+'?includeData=true&ignoreDataSizeLimit=true');
+      const received=detail.record.body.data?.resultData?.runData?.['接收两份目录']?.[0]?.data?.main?.[0]?.[0]?.json?.body;
+      if(received?.requestId===input.requestId&&sha(JSON.stringify(received))===inputSha256)matches.push(detail.record.body.id);
+    }
+    if(matches.length>1)throw new Error('完整文件输入对应多个实际执行；保留原件，不选择其一。');
+    if(matches.length===1){current=matches[0];break;}await delay(500);
+  }while(Date.now()<until);
+  if(!current)throw new Error('文件输入的执行索引尚不可见，原件保留；没有重发POST。');
+  await executionSnapshot(folder+'/execution.json',current);
   const reads=await fs.readFile(path.join(root,'.local/file-reads.jsonl'),'utf8');const actual=reads.trim().split('\n').filter(Boolean).map(JSON.parse).filter(r=>Date.parse(r.requestedAt)>=Date.parse(call.startedAt)&&Date.parse(r.requestedAt)<=Date.parse(call.finishedAt));await save(folder+'/actual-file-reads.json',actual);
   index.files={input:folder+'/input.json',response:folder+'/response.json',execution:folder+'/execution.json',fileReads:folder+'/actual-file-reads.json'};await manifest();
 }else if(command==='branch'){
