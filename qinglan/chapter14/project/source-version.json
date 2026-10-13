@@ -1,6 +1,6 @@
 {
   "kind": "actual-executable-source-and-complete-inputs",
-  "sourceSha256": "f2ee21b4a22c75373e86051caf9988e42d160d0cf90bed59583d2bc510003ffc",
+  "sourceSha256": "07e80b5506dd874c98c463b341c4929ef49fba273ad6c760ccc52db74be8582f",
   "frozenInputSha256": "5d18a243580bab289ef34ff92558a02417b7895d6095415dcab2ff7d5dbe6075",
   "files": [
     {
@@ -15,8 +15,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4145,
-      "sha256": "24143a775a11c3de68bebabc68c8dd56075e8165d8b01e37490ada27aa6fce90"
+      "bytes": 4309,
+      "sha256": "89406a61c5abc643573555829f728808953fcf9bcd5d9bbfc9e608e56d4e4a85"
     },
     {
       "path": "files/chapter-three.pdf",
@@ -245,13 +245,13 @@
     },
     {
       "path": "scripts/freeze-source.mjs",
-      "bytes": 1199,
-      "sha256": "377d87f99e0d429a264858fac67cd9999814168a9cd17be9fcadd7a3b704c0ae"
+      "bytes": 1203,
+      "sha256": "593643322fa6912b9276518194f2c8a2e07c857201d69de7f993cb65a4dbba9a"
     },
     {
       "path": "scripts/n8n.mjs",
-      "bytes": 11310,
-      "sha256": "20e05942fdeda333fffb0874724e8bd3e6010d5edcd3af5a93f6d15fc89a1a91"
+      "bytes": 11314,
+      "sha256": "bb587e6e5c761414bd3c00fa62143fa8f0191e446d3f839d0fcfd2c489856c9f"
     },
     {
       "path": "scripts/setup-classroom.mjs",
@@ -329,5 +329,5 @@
       "sha256": "0e6f33dfc8cca04ad8db9112af179d2e7d9ffb087f888afbed7ed60e09b2f657"
     }
   ],
-  "gitStart": "以 qinglan-ch14-start 标签及各实际采集 source.json 的 gitCommit 回查；不在源码中自引用提交 SHA。"
+  "gitStart": "以 qinglan-ch14-run-start 标签及各实际采集 source.json 的 gitCommit 回查；不在源码中自引用提交 SHA。"
 }

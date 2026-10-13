@@ -18,7 +18,7 @@ async function ensureNew(folder){try{await fs.access(path.join(root,folder));thr
 async function rowsSnapshot(name,table){const r=await readRows(table);await publicRecord(name,r);return r.record.body;}
 async function executionSnapshot(name,id){
   let last; const until=Date.now()+30000;
-  do{last=await publicApi('/executions/'+encodeURIComponent(id)+'?includeData=true&includeFullData=true');if(['success','error','canceled','crashed'].includes(last.record.body.status))break;await delay(500);}while(Date.now()<until);
+  do{last=await publicApi('/executions/'+encodeURIComponent(id)+'?includeData=true&ignoreDataSizeLimit=true');if(['success','error','canceled','crashed'].includes(last.record.body.status))break;await delay(500);}while(Date.now()<until);
   await publicRecord(name,last,executionProjection);return last.record.body;
 }
 async function postFrozen(folder,inputName,route){const bodyText=await fs.readFile(path.join(root,inputName),'utf8');await fs.writeFile(path.join(root,folder,'input.json'),bodyText);const config=await configuration();const result=await exchange(config.baseUrl,route,'POST',bodyText);await save(folder+'/response.json',result.record);return result.record;}
