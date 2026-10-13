@@ -24,6 +24,7 @@ for (const reportPath of reportPaths) {
       const request = readJson(path.join(at, 'request-body.json'));
       assert.deepEqual(request.messages, [{ role: 'system', content: call.input.instructions }, { role: 'user', content: call.input.prompt }]);
       assert.equal(request.model, call.settings.modelId); assert.equal(request.max_tokens, call.settings.maxOutputTokens); assert.equal(request.temperature, 0);
+      if (call.settings.thinking) assert.deepEqual(request.thinking, call.settings.thinking);
       if (exchange.responseBody !== undefined) assert.equal(sha256(fs.readFileSync(path.join(at, 'response-body.txt'))), exchange.responseSHA256);
     }
     let inspection = { generationState: call.status, semanticDecision: 'pending', wholeTaskAdopted: false, error: call.error ?? null };

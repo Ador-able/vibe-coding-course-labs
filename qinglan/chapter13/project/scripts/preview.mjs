@@ -10,7 +10,7 @@ const material = teaching(), name = process.argv[2];
 if (!/^[a-z0-9][a-z0-9-]{0,63}$/.test(name || '')) throw new Error('请提供新的预览记录名。');
 const directory = path.join(root, 'records/previews', name); fs.mkdirSync(path.dirname(directory), { recursive: true }); fs.mkdirSync(directory);
 const calls = [];
-const add = (id, input, budget, scope) => calls.push({ id, input, inputSHA256: sha256(JSON.stringify(input)), maxOutputTokens: budget, temperature: 0, maxRetries: 0, materialScope: scope });
+const add = (id, input, budget, scope) => calls.push({ id, input, inputSHA256: sha256(JSON.stringify(input)), maxOutputTokens: budget, temperature: 0, maxRetries: 0, thinking: material.settings.thinking, materialScope: scope });
 add('long/01-whole', material.longInput('whole', { materials: [1, 2, 3].map(material.longChapter).join('\n\n') }), material.settings.maxOutputTokens.longText, ['C1', 'C2', 'C3']);
 for (const n of [1, 2, 3]) add(`long/02-map-${n}`, material.longInput('map', { materials: material.longChapter(n) }), material.settings.maxOutputTokens.longText, [`C${n}`]);
 add('long/04-refine-1', material.longInput('refine-first', { materials: material.longChapter(1) }), material.settings.maxOutputTokens.longText, ['C1']);
@@ -20,7 +20,8 @@ for (const version of ['V1', 'V2']) add(`templates/${version}`, material.templat
 for (const id of ['R01', 'R06']) add(`repairs/repair-${id}`, { instructions: material.files['抽取-共同规则.txt'], prompt: material.files[`逐项-完整任务-${id}.txt`] }, material.settings.maxOutputTokens.itemRepair, [id]);
 for (const call of calls) {
   let serialized = 0;
-  const provider = createOpenAICompatible({ name: 'compatible', baseURL: material.settings.providers.baseURL, apiKey: 'preview-only', fetch: async (_url, init) => {
+  const provider = createOpenAICompatible({ name: 'compatible', baseURL: material.settings.providers.baseURL, apiKey: 'preview-only',
+    transformRequestBody: body => ({ ...body, thinking: call.thinking }), fetch: async (_url, init) => {
     serialized++; call.requestBody = String(init.body); call.requestSHA256 = sha256(call.requestBody);
     throw new Error('仅采集SDK序列化正文，未进入HTTP。');
   } });
@@ -30,7 +31,7 @@ for (const call of calls) {
   assert.equal(serialized, 1); const request = JSON.parse(call.requestBody);
   assert.deepEqual(request.messages, [{ role: 'system', content: call.input.instructions }, { role: 'user', content: call.input.prompt }]);
   assert.equal(request.max_tokens, call.maxOutputTokens); assert.equal(request.temperature, 0);
-  assert.notEqual(request.enable_thinking, false); assert.notEqual(request.reasoning_effort, 'none');
+  assert.deepEqual(request.thinking, material.settings.thinking); assert.equal(request.thinking.type, 'disabled');
 }
 const dependencies = [
   { id: 'long/03-reduce', requires: ['02-map-1', '02-map-2', '02-map-3'], template: material.files['长文-reduce.txt'] },

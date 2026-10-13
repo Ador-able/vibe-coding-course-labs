@@ -7,17 +7,19 @@ import { sha256, replaceJson } from './files.mjs';
 
 export function modelRecorder(run, maximumRequests) {
   const config = readSharedConfig(true);
+  const thinking = run.inputs.files['非敏感固定设置.json'].thinking;
   const publicError = error => ({ name: error.name, message: String(error.message).replaceAll(config.apiKey, '[凭据未记录]'), statusCode: error.statusCode ?? null });
   return async function answer(id, input, maxOutputTokens, materialScope) {
     const begin = performance.now();
     const directory = path.join(run.directory, id); fs.mkdirSync(directory);
-    const settings = { modelId: config.model, baseURL: config.baseUrl, temperature: 0, maxOutputTokens, maxRetries: 0 };
+    const settings = { modelId: config.model, baseURL: config.baseUrl, temperature: 0, maxOutputTokens, maxRetries: 0, thinking };
     const record = { id, input, materialScope, settings, inputSHA256: sha256(JSON.stringify(input)), startedAt: new Date().toISOString(), actualHttpRequests: 0, http: [], status: 'started' };
     run.report.calls.push(record); run.report.textTasks++;
     const save = () => { replaceJson(path.join(directory, 'record.json'), record); run.save(); };
     fs.writeFileSync(path.join(directory, 'instructions.txt'), input.instructions, { flag: 'wx' });
     fs.writeFileSync(path.join(directory, 'prompt.txt'), input.prompt, { flag: 'wx' }); save();
-    const provider = createOpenAICompatible({ name: 'compatible', baseURL: config.baseUrl, apiKey: config.apiKey, includeUsage: true, fetch: async (url, init) => {
+    const provider = createOpenAICompatible({ name: 'compatible', baseURL: config.baseUrl, apiKey: config.apiKey, includeUsage: true,
+      transformRequestBody: body => ({ ...body, thinking }), fetch: async (url, init) => {
       if (record.actualHttpRequests || run.report.actualHttpRequests >= maximumRequests) throw new Error('超过本轮已冻结的真实请求范围。');
       const body = String(init.body);
       fs.writeFileSync(path.join(directory, 'request-body.json'), body, { flag: 'wx' });

@@ -19,7 +19,7 @@ const reportFile = path.join(directory, 'repair-report.json');
 fs.writeFileSync(reportFile, '{}', { flag: 'wx' });
 const report = { group: 'repairs', startedAt: new Date().toISOString(), executionGitHead, sourceVersion: source.sourceVersion,
   inputFiles: inputs.registry.files, textTasks: 0, actualHttpRequests: 0, calls: [], outcome: 'started', sourceKind: 'teacher_candidate' };
-const run = { directory, report, save: () => replaceJson(reportFile, report) }, answer = modelRecorder(run, 2);
+const run = { directory, report, inputs, save: () => replaceJson(reportFile, report) }, answer = modelRecorder(run, 2);
 const outcomes = await repairItems(run, material, plan, answer);
 report.outcome = outcomes.some(result => result.status === 'rejected') ? 'failed' : 'returned'; report.finishedAt = new Date().toISOString(); run.save();
 console.log(JSON.stringify({ actualHttpRequests: report.actualHttpRequests, outcomes: outcomes.map((result, i) => ({ sourceId: plan.repairIds[i], status: result.status })), otherItemsUnchanged: true, summaryAdopted: false }));

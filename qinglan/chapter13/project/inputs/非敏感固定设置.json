@@ -2,13 +2,15 @@
   "kind": "调用前的非敏感课堂条件，不含APIKey",
   "temperature": 0,
   "maxRetries": 0,
-  "thinking": "未显式关闭思考，以实际发送体为准",
+  "thinking": {
+    "type": "disabled"
+  },
   "maxOutputTokens": {
-    "longText": 16384,
-    "classification": 16384,
-    "extraction": 16384,
-    "itemRepair": 8192,
-    "templateComparison": 16384
+    "longText": 4096,
+    "classification": 4096,
+    "extraction": 8192,
+    "itemRepair": 4096,
+    "templateComparison": 8192
   },
   "calls": {
     "longText": 8,

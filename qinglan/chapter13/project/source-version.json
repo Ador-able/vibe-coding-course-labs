@@ -1,7 +1,7 @@
 {
-  "sourceVersion": "sha256:22a215990cfc173fef944cbc7f4f2352c1f032041f8592db8139da3fc9f1c57a",
-  "gitBase": "8901504697d1db68b46668bed779e0bc55137204",
-  "frozenAt": "2026-10-13T05:06:50.097Z",
+  "sourceVersion": "sha256:1c7ad14c7dbea0d9b1228167019423c49537385aefe717547696e26e12ab4846",
+  "gitBase": "7f65d10c3b63036d967136ed97d4fa297bf6b485",
+  "frozenAt": "2026-10-13T05:24:33.835Z",
   "files": [
     {
       "name": "启动实验.cmd",
@@ -55,8 +55,8 @@
     },
     {
       "name": "scripts/check-records.mjs",
-      "bytes": 3397,
-      "sha256": "f7fe84f9fc3696f6d7d0f8b3fe2b83b06ca630c5b1abefadcf0a931eac6c200d"
+      "bytes": 3491,
+      "sha256": "adefc31340cf6cd6b9922311e10e9ac5427bc1fbee9141a16d94b19762dfc68b"
     },
     {
       "name": "scripts/check-source.mjs",
@@ -90,8 +90,8 @@
     },
     {
       "name": "scripts/observe-repairs.mjs",
-      "bytes": 1981,
-      "sha256": "a3d6b5be5723e096c4e1da4e0f26ed7816045137727e14b7a8fc066c121a1623"
+      "bytes": 1989,
+      "sha256": "2384069e1eea7b763c9277bedd5baff03e690ad670ac005bffc2c39bd5a00b80"
     },
     {
       "name": "scripts/observe-templates.mjs",
@@ -105,8 +105,8 @@
     },
     {
       "name": "scripts/preview.mjs",
-      "bytes": 4290,
-      "sha256": "d7ec18e8826af588d5036d2f0e02ec3e92eb4da8e7b13de4f00c7bde3d031bc2"
+      "bytes": 4415,
+      "sha256": "cffba461e5023225a19c022ab2b4f576f7d39ec7b0b2a4fb7c5844e0e53070ed"
     },
     {
       "name": "scripts/read-batch.mjs",
@@ -145,8 +145,8 @@
     },
     {
       "name": "src/model.mjs",
-      "bytes": 4057,
-      "sha256": "750b2f15943029018f77320e260d2aa61d0ca7a46b383658ec9cd12d01490916"
+      "bytes": 4204,
+      "sha256": "b2cf4a7a01628717f27b2621efb3375e51f26c5a226c39bff6ef847b9afe5a1b"
     },
     {
       "name": "src/teaching.mjs",
