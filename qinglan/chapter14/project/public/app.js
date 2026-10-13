@@ -36,7 +36,7 @@ async function feedbackResult(manifest, key) {
 async function show() {
   $('#status').textContent=''; $('#button').disabled=true; $('#work').replaceChildren(); $('#source').replaceChildren();
   try {
-    const value=$('#choice').value;
+    const value=$('#choice')?.value;
     if(['flow','ids','webhook'].includes(page)){await feedbackResult(await load('records/index.json'),value);}
     else if(page==='authorization'){
       const material=await load('inputs/授权案例完整材料.json'), example=material.cases.find(c=>c.id===value);
