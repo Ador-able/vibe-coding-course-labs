@@ -1,0 +1,35 @@
+(node:139308) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+normal: FAIL；完整记录：D:\Projects\Knowledge\.coursebook-work\c15-historical\qinglan\chapter15\project\runs\regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda\record.json
+✖ 正常保存：完整A、POST等待、GET读回等待、恢复编辑及刷新历史 (3769.3795ms)
+abort: PASS；完整记录：D:\Projects\Knowledge\.coursebook-work\c15-historical\qinglan\chapter15\project\runs\regression-acf120ce-6971-4e94-b2f9-6d2c6fb99076\record.json
+✔ 服务收到POST前abort：无服务POST/新增修订，保留A并先读当前稿 (1532.2931ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 1
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 5361.8767
+
+✖ failing tests:
+
+test at scripts\test-saving.mjs:741:7
+✖ 正常保存：完整A、POST等待、GET读回等待、恢复编辑及刷新历史 (3769.3795ms)
+  AssertionError [ERR_ASSERTION]: normal 失败：post等待/title禁用; post等待/title不可编辑; post等待/title完整A未变; post等待/title不能取得焦点; post等待/body禁用; post等待/body不可编辑; post等待/body完整A未变; post等待/body不能取得焦点; post等待覆盖编辑禁用; post等待本地完整A; get等待/title禁用; get等待/title不可编辑; get等待/title完整A未变; get等待/title不能取得焦点; get等待/body禁用; get等待/body不可编辑; get等待/body完整A未变; get等待/body不能取得焦点; get等待覆盖编辑禁用; get等待本地完整A；完整记录：D:\Projects\Knowledge\.coursebook-work\c15-historical\qinglan\chapter15\project\runs\regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda\record.json
+  
+  false !== true
+  
+      at runScenario (file:///D:/Projects/Knowledge/.coursebook-work/c15-historical/qinglan/chapter15/project/scripts/test-saving.mjs:736:10)
+      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+      at async Test.run (node:internal/test_runner/test:1113:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)
+      at async file:///D:/Projects/Knowledge/.coursebook-work/c15-historical/qinglan/chapter15/project/scripts/test-saving.mjs:741:1 {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: false,
+    expected: true,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

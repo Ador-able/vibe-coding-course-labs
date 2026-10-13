@@ -1,0 +1,182 @@
+diff --git "a/D:/Projects/Knowledge/.coursebook-work/\345\260\217\350\257\264\345\256\236\351\252\214\347\273\237\344\270\200-20261013/chapter15/165-\346\250\241\345\236\213\347\224\237\346\210\220\345\200\231\351\200\211-20\345\210\206\351\222\237\344\270\255\346\226\255.mjs" "b/D:/Projects/Knowledge/.coursebook-work/\345\260\217\350\257\264\345\256\236\351\252\214\347\273\237\344\270\200-20261013/chapter15/165-\351\207\207\347\224\250\346\265\213\350\257\225\350\204\232\346\234\254-\344\270\255\346\226\207\350\257\264\346\230\216.mjs"
+index 4020037..cab73a5 100644
+--- "a/D:/Projects/Knowledge/.coursebook-work/\345\260\217\350\257\264\345\256\236\351\252\214\347\273\237\344\270\200-20261013/chapter15/165-\346\250\241\345\236\213\347\224\237\346\210\220\345\200\231\351\200\211-20\345\210\206\351\222\237\344\270\255\346\226\255.mjs"
++++ "b/D:/Projects/Knowledge/.coursebook-work/\345\260\217\350\257\264\345\256\236\351\252\214\347\273\237\344\270\200-20261013/chapter15/165-\351\207\207\347\224\250\346\265\213\350\257\225\350\204\232\346\234\254-\344\270\255\346\226\207\350\257\264\346\230\216.mjs"
+@@ -1,7 +1,7 @@
+-// Teacher execution: set DELIVERY_BROWSER_CHANNEL explicitly, then
+-// node --test scripts/test-saving.mjs (requires the existing dist; never builds).
+-// Run this same file/input at the restored historical point and frozen correct point.
+-// Historical red is an intentional comparison, not a newly found current-app defect.
++// 先明确设置 DELIVERY_BROWSER_CHANNEL，再运行：
++// node --test scripts/test-saving.mjs（使用已有 dist，不执行构建）。
++// 历史恢复点和正确版本使用同一脚本与输入。
++// 历史恢复点用于对照，当前正确应用的状态另行核对。
+ import test from 'node:test';
+ import assert from 'node:assert/strict';
+ import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
+@@ -15,7 +15,7 @@ const LIMIT = 12_000;
+ const ACTION_LIMIT = 4_000;
+ const STEP_LIMIT = 30_000;
+ const OBSERVATION_LIMIT = 120_000;
+-const TEST_LIMIT = 420_000; // Leaves a separate budget for all cleanup/recording.
++const TEST_LIMIT = 420_000; // 另留时间完成清理和记录。
+ const sourcePaths = [
+   'package.json', 'AGENTS.md', 'prototype/AGENTS.md', 'prototype/app.js',
+   'prototype/index.html', 'prototype/app.css', 'src/prototype-http.ts', 'src/store.ts', 'src/schemas.ts',
+@@ -49,7 +49,7 @@ async function bounded(promise, label, milliseconds = LIMIT) {
+   let timer;
+   try {
+     return await Promise.race([promise, new Promise((_, reject) => {
+-      timer = setTimeout(() => reject(new Error(`${label}: exceeded ${milliseconds}ms`)), milliseconds);
++      timer = setTimeout(() => reject(new Error(`${label}：超过 ${milliseconds} 毫秒`)), milliseconds);
+     })]);
+   } finally { clearTimeout(timer); }
+ }
+@@ -66,8 +66,8 @@ function gitState(directory) {
+     try {
+       const stdout = execFileSync('git', command, {cwd: project, encoding: 'utf8',
+         timeout: LIMIT, windowsHide: true, maxBuffer: 8 * 1024 * 1024,
+-        // A fresh run-local nonexistent path prevents Git reading private
+-        // global configuration. This path is never created by the script.
++        // 使用本次运行目录内不存在的路径，避免读取私密全局 Git 配置。
++        // 脚本不会创建这个配置路径。
+         env: {...process.env, GIT_CONFIG_NOSYSTEM: '1',
+           GIT_CONFIG_GLOBAL: resolve(directory, 'no-global-config')},
+         stdio: ['ignore', 'pipe', 'pipe']});
+@@ -93,8 +93,8 @@ function readSources(report) {
+   report.environment.lock = {bytes: lock.length, sha256: sha256(lock)};
+ }
+ function instrumentServer(server, report) {
+-  // Observe the same IncomingMessage/ServerResponse as the real HTTP handler.
+-  // No extra handler answers a request; stream bytes and finish/abort are recorded.
++  // 在真实 HTTP 处理器的 IncomingMessage/ServerResponse 上记录。
++  // 只记录流字节和 finish/abort，不另行响应请求。
+   server.prependListener('request', (request, response) => {
+     const entry = {id: report.service.length + 1, receivedAt: now(),
+       method: request.method, url: request.url, headers: request.headers,
+@@ -150,7 +150,7 @@ function instrumentPage(page, report, captures) {
+   page.on('response', response => {
+     const job = (async () => {
+       const entry = requests.get(response.request());
+-      if (!entry) throw new Error('Response has no recorded request');
++      if (!entry) throw new Error('响应没有对应的请求记录');
+       entry.response = {at: now(), url: response.url(), status: response.status(),
+         headers: await response.allHeaders()};
+       const bytes = await response.body();
+@@ -169,7 +169,7 @@ function instrumentPage(page, report, captures) {
+   page.on('console', message => report.console.push({at: now(), type: message.type(), text: message.text()}));
+   page.on('dialog', dialog => {
+     report.dialogs.push({at: now(), type: dialog.type(), message: dialog.message(), action: 'accept'});
+-    // Explicitly leave the dirty page during the one refresh; no draft is saved.
++    // 刷新时确认离开带有本地编辑的页面，不保存这些编辑。
+     const job = dialog.accept().catch(error => report.recordingErrors.push({kind: 'dialog', error: errorRecord(error)}));
+     captures.add(job);
+     void job.finally(() => captures.delete(job));
+@@ -197,7 +197,7 @@ async function pageState(page, report, label) {
+   });
+   state.fields.title.editable = await page.locator('#draft-title').isEditable();
+   state.fields.body.editable = await page.locator('#draft-body').isEditable();
+-  // Hidden controls are included only in this observation, never in an action.
++  // 隐藏控件只用于观察，不操作。
+   state.buttons = await page.getByRole('button', {includeHidden: true}).evaluateAll(nodes =>
+     nodes.map(node => ({id: node.id, text: node.textContent, disabled: node.disabled,
+       hidden: node.hidden, visible: !!node.getClientRects().length,
+@@ -221,10 +221,10 @@ async function attemptPair(page, report, phase, edits) {
+     await page.locator(`#${id}`).scrollIntoViewIfNeeded({timeout: ACTION_LIMIT});
+     entry.before = await pageState(page, report, `${phase}/${field}/before`);
+     const box = await page.locator(`#${id}`).boundingBox();
+-    if (!box) throw new Error(`${phase}: ${id} has no visible pointer target`);
++    if (!box) throw new Error(`${phase}：${id} 没有可见的鼠标目标`);
+     entry.pointerTarget = box;
+-    // A real mouse click followed by real keyboard events. A disabled field
+-    // naturally rejects focus/input; there is no fill, DOM assignment or force.
++    // 使用真实鼠标和键盘，观察禁用字段是否拒绝焦点和输入。
++    // 不使用 fill、DOM 赋值或强制操作。
+     await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+     entry.focused = await pageState(page, report, `${phase}/${field}/pointer`);
+     await page.keyboard.press('ControlOrMeta+End');
+@@ -458,7 +458,7 @@ function assertBusiness(report, observed, input, expectation, A, finalDb) {
+       const browserEntry = report.browserNetwork.find(item => item.method === entry.method &&
+         new URL(item.url).pathname + new URL(item.url).search === entry.url &&
+         item.response?.body === entry.response.body);
+-      assert.ok(browserEntry, `missing full browser response for service request ${entry.id}`);
++      assert.ok(browserEntry, `服务请求 ${entry.id} 缺少完整浏览器响应`);
+       assert.equal(browserEntry.response.status, entry.response.status);
+       assert.deepEqual(JSON.parse(browserEntry.response.body), JSON.parse(entry.response.body));
+     }
+@@ -496,14 +496,14 @@ async function runScenario(scenario) {
+     }
+     catch (error) {
+       report.recordingErrors.push({kind: 'write', label, recordPath, error: errorRecord(error)});
+-      process.stderr.write(`Record write failed: ${recordPath}: ${error.message}\n`);
++      process.stderr.write(`记录写入失败：${recordPath}：${error.message}\n`);
+       return false;
+     }
+   }
+   async function step(name, action) {
+     report.activeStep = name;
+     const remaining = observationDeadline - Date.now();
+-    if (remaining <= 0) throw new Error('Observation budget exhausted; proceeding to cleanup and final recording.');
++    if (remaining <= 0) throw new Error('观察时间已用完，开始清理并记录最终状态。');
+     observed[name] = await bounded(Promise.resolve().then(action), `observation/${name}`, Math.min(STEP_LIMIT, remaining));
+     report.completed.push(name);
+     report.observed = observed;
+@@ -550,7 +550,7 @@ async function runScenario(scenario) {
+     await route.continue();
+   });
+   try {
+-    // No shared practice.json/data path, and no reused database or directory.
++    // 每例使用新目录和数据库，不读取共享练习配置。
+     mkdirSync(resolve(project, 'runs'), {recursive: true});
+     mkdirSync(directory);
+     report.environment.gitBefore = gitState(directory);
+@@ -570,10 +570,10 @@ async function runScenario(scenario) {
+     databaseState(store, seedModule.snapshot, input.work.id, report, 'seed');
+     persist('seed');
+     const channel = report.environment.deliveryBrowserChannel;
+-    if (!channel || !channel.trim()) throw new Error('DELIVERY_BROWSER_CHANNEL must explicitly specify the browser channel; no fallback is allowed.');
++    if (!channel || !channel.trim()) throw new Error('必须用 DELIVERY_BROWSER_CHANNEL 明确指定浏览器通道，不使用替代通道。');
+     const [nodeMajor, nodeMinor] = process.versions.node.split('.').map(Number);
+     if (nodeMajor !== 24 || nodeMinor < 12) {
+-      throw new Error(`package.json requires Node >=24.12.0 <25; actual ${process.version}`);
++      throw new Error(`package.json 要求 Node >=24.12.0 <25，实际为 ${process.version}`);
+     }
+     const {chromium} = await import('@playwright/test');
+     report.environment.playwright = JSON.parse(readFileSync(resolve(project, 'node_modules/@playwright/test/package.json'), 'utf8')).version;
+@@ -674,8 +674,8 @@ async function runScenario(scenario) {
+     const errors = report.activeStep ? report.observationErrors : report.environmentErrors;
+     errors.push({step: report.activeStep ?? 'setup', error: errorRecord(error)});
+   } finally {
+-    // Release both gates even after an observation failure. Cleanup can complete
+-    // a pending real save; the resulting final database is recorded explicitly.
++    // 观察失败后也放行两个门，清理可能完成仍在等待的真实保存。
++    // 因此清理后再次完整记录数据库。
+     postGate.open('finally release');
+     getGate.open('finally release');
+     if (page) {
+@@ -725,19 +725,19 @@ async function runScenario(scenario) {
+       !report.recordingErrors.length && !report.cleanupErrors.length;
+     if (!persist('final')) {
+       report.passed = false;
+-      // If the filesystem refuses the record, preserve the complete diagnostic
+-      // on stderr and fail; do not report a successful disk delivery or retry.
++      // 记录写入失败时，将完整诊断留在 stderr 并报失败。
++      // 不重试，也不把未落盘记录报作成功。
+       process.stderr.write(JSON.stringify(report, null, 2) + '\n');
+     }
+     if (report.recordingErrors.length) report.passed = false;
+-    process.stdout.write(`${scenario}: ${report.passed ? 'PASS' : 'FAIL'}; record ${recordPath}\n`);
++    process.stdout.write(`${scenario}: ${report.passed ? 'PASS' : 'FAIL'}；完整记录：${recordPath}\n`);
+   }
+   const failures = report.assertions.filter(item => !item.passed).map(item => item.name);
+-  assert.equal(report.passed, true, `${scenario} failed: ${failures.join('; ')}; full record: ${recordPath}`);
++  assert.equal(report.passed, true, `${scenario} 失败：${failures.join('; ')}；完整记录：${recordPath}`);
+ }
+ 
+-// Sequential, independent node:test cases. A historical normal failure must not
+-// prevent the service-before abort observation from running with its own seed.
++// 两个独立用例顺序运行，历史正常保存失败后仍执行 abort 观察。
++// 每例都单独初始化完整三章。
+ await test('正常保存：完整A、POST等待、GET读回等待、恢复编辑及刷新历史',
+   {concurrency: false, timeout: TEST_LIMIT}, () => runScenario('normal'));
+ await test('服务收到POST前abort：无服务POST/新增修订，保留A并先读当前稿',

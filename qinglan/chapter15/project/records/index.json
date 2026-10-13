@@ -54,5 +54,48 @@
         "path": "records/rules-01/after.json"
       }
     ]
+  },
+  {
+    "lesson": 165,
+    "title": "保存等待的旧版与正确版",
+    "summary": "同一测试在两个冻结点各运行一次：旧版正常保存触发20条等待检查失败，旧版服务前abort通过；正确版两例均通过。模型生成任务在20分钟边界中断，原稿与中文采用脚本分别保留。",
+    "files": [
+      {
+        "title": "历史恢复点 · 正常保存完整记录",
+        "path": "records/regression-old-normal/record.json"
+      },
+      {
+        "title": "历史恢复点 · 服务前abort完整记录",
+        "path": "records/regression-old-abort/record.json"
+      },
+      {
+        "title": "正确点 · 正常保存完整记录",
+        "path": "records/regression-fixed-normal/record.json"
+      },
+      {
+        "title": "正确点 · 服务前abort完整记录",
+        "path": "records/regression-fixed-abort/record.json"
+      },
+      {
+        "title": "中断生成完整原协议",
+        "path": "records/tests-01/tests/protocol.jsonl"
+      },
+      {
+        "title": "中断生成完整报告",
+        "path": "records/tests-01/report.json"
+      },
+      {
+        "title": "生成任务最后进度（非正式最终回答）",
+        "path": "records/tests-01/tests/final-response.txt"
+      },
+      {
+        "title": "四库独立完整读回",
+        "path": "records/regression/165-主编独立四库完整读回.json"
+      },
+      {
+        "title": "全部原件及字节清单",
+        "path": "records/regression/完整原件清单.json"
+      }
+    ]
   }
 ]

@@ -1,0 +1,14 @@
+(node:125032) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+normal: PASS；完整记录：D:\Projects\Knowledge\.coursebook-work\c15-impl\qinglan\chapter15\project\runs\regression-3e5313ab-9baf-40ce-86d9-e467159fb938\record.json
+✔ 正常保存：完整A、POST等待、GET读回等待、恢复编辑及刷新历史 (2611.1941ms)
+abort: PASS；完整记录：D:\Projects\Knowledge\.coursebook-work\c15-impl\qinglan\chapter15\project\runs\regression-208426a1-0e5d-4711-bcc2-e6b9c32d04e5\record.json
+✔ 服务收到POST前abort：无服务POST/新增修订，保留A并先读当前稿 (1541.7411ms)
+ℹ tests 2
+ℹ suites 0
+ℹ pass 2
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 4209.87

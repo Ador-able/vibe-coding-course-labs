@@ -1,0 +1,428 @@
+{
+  "kind": "byte_identical_classroom_record_archive",
+  "createdAt": "2026-10-13T13:36:39.788Z",
+  "files": [
+    {
+      "path": "records/tests-01/after.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\after.json",
+      "bytes": 276,
+      "sha256": "3b1b8748ed6c8ba052cdbf9dee41132fe9f01e37d82620a0420e23e96802e652"
+    },
+    {
+      "path": "records/tests-01/before.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\before.json",
+      "bytes": 222,
+      "sha256": "156a32c1b3aedf5939c2716f073bc63117c47f51be0da47a5829627a22bd3130"
+    },
+    {
+      "path": "records/tests-01/report.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\report.json",
+      "bytes": 279579,
+      "sha256": "74f96c376725f4ac028fa88be22143b55c7986c31c6a876c5132f66bd940913f"
+    },
+    {
+      "path": "records/tests-01/tests/directories.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\directories.json",
+      "bytes": 1811,
+      "sha256": "805221c89cb4cbe1d13e28791200e2be3bc6a99d90a8a2c2841fc30d955ea290"
+    },
+    {
+      "path": "records/tests-01/tests/final-response.txt",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\final-response.txt",
+      "bytes": 352,
+      "sha256": "f3d9c8f552e90967abd721232717c0427f4019e5cd9e7b1ecc4acfbc5cd26089"
+    },
+    {
+      "path": "records/tests-01/tests/input.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\input.json",
+      "bytes": 16167,
+      "sha256": "41d504a327baac27221481504b50940155115cdc2d7cc64a79d7d81d2b231ec1"
+    },
+    {
+      "path": "records/tests-01/tests/protocol.jsonl",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\protocol.jsonl",
+      "bytes": 2015026,
+      "sha256": "475f3072ecd37b3e71a7d8d77c7c7bd00f29d094694e3f02edb5a9df6eede41f"
+    },
+    {
+      "path": "records/tests-01/tests/report.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\report.json",
+      "bytes": 276954,
+      "sha256": "f5f664f1c2cc2ca5a6d26d886418495a381086dee1309ac39be814f259f515cf"
+    },
+    {
+      "path": "records/tests-01/tests/stderr.txt",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\stderr.txt",
+      "bytes": 1773,
+      "sha256": "f5eed4bdee1047a4bbd4fb01215dd30f83e17dad7847b071b8bce1b06b5c2878"
+    },
+    {
+      "path": "records/tests-01/tests/submitted.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\submitted.json",
+      "bytes": 235,
+      "sha256": "6cd83d62b85b9348c33529ca090c6941d09c8bca1607e75d906f5be85cc0920b"
+    },
+    {
+      "path": "records/tests-01/tests/thread.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\tests-01\\tests\\thread.json",
+      "bytes": 297633,
+      "sha256": "202c0c5658db919f3d4c66ecfdb5e951cbdc56801567a0f374de35bca244f771"
+    },
+    {
+      "path": "records/regression-old-normal/practice.sqlite",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda\\practice.sqlite",
+      "bytes": 73728,
+      "sha256": "0c0157567e3c26b237bb2d9050db41e7aa5f66366fe06ca89cb7c7ecd18b47c9"
+    },
+    {
+      "path": "records/regression-old-normal/practice.sqlite-shm",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda\\practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "records/regression-old-normal/practice.sqlite-wal",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda\\practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/regression-old-normal/record.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda\\record.json",
+      "bytes": 2870057,
+      "sha256": "87bda1e0535e2bc9460c8da629cbd47ea6da4e147c806f04717368a945aae36c"
+    },
+    {
+      "path": "records/regression-old-abort/practice.sqlite",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-acf120ce-6971-4e94-b2f9-6d2c6fb99076\\practice.sqlite",
+      "bytes": 69632,
+      "sha256": "d78849780d12e8ace1f0e0e4730886cb0b6507f130ce6ca0f7705d7503b01bd9"
+    },
+    {
+      "path": "records/regression-old-abort/practice.sqlite-shm",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-acf120ce-6971-4e94-b2f9-6d2c6fb99076\\practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "records/regression-old-abort/practice.sqlite-wal",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-acf120ce-6971-4e94-b2f9-6d2c6fb99076\\practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/regression-old-abort/record.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-acf120ce-6971-4e94-b2f9-6d2c6fb99076\\record.json",
+      "bytes": 1672795,
+      "sha256": "27a5af7bfd5c46a0940fc58bbf8972bd3d886118e4ad2e20abd36a0c19bd44c9"
+    },
+    {
+      "path": "records/regression-fixed-normal/practice.sqlite",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-3e5313ab-9baf-40ce-86d9-e467159fb938\\practice.sqlite",
+      "bytes": 73728,
+      "sha256": "b99cf176639d65ba6b660625e745d1c48a345060c8905ab92f4e51bfafc7928e"
+    },
+    {
+      "path": "records/regression-fixed-normal/practice.sqlite-shm",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-3e5313ab-9baf-40ce-86d9-e467159fb938\\practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "records/regression-fixed-normal/practice.sqlite-wal",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-3e5313ab-9baf-40ce-86d9-e467159fb938\\practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/regression-fixed-normal/record.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-3e5313ab-9baf-40ce-86d9-e467159fb938\\record.json",
+      "bytes": 2894273,
+      "sha256": "07382d69e26c582aac4947f8c0b84ea57703c9affc63453c7fe63aff8413bcc6"
+    },
+    {
+      "path": "records/regression-fixed-abort/practice.sqlite",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-208426a1-0e5d-4711-bcc2-e6b9c32d04e5\\practice.sqlite",
+      "bytes": 69632,
+      "sha256": "59421a111717dcb1caaec0236ab8e4b8429cbea278e670d960e74f0395b6193a"
+    },
+    {
+      "path": "records/regression-fixed-abort/practice.sqlite-shm",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-208426a1-0e5d-4711-bcc2-e6b9c32d04e5\\practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "records/regression-fixed-abort/practice.sqlite-wal",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-208426a1-0e5d-4711-bcc2-e6b9c32d04e5\\practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/regression-fixed-abort/record.json",
+      "source": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-208426a1-0e5d-4711-bcc2-e6b9c32d04e5\\record.json",
+      "bytes": 1673629,
+      "sha256": "74ed6d6d356fcd97a1ae6fad4937e099fbc9c8140f39982cd0a55dc746b653cb"
+    },
+    {
+      "path": "records/regression/165-模型生成候选-20分钟中断.mjs",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-模型生成候选-20分钟中断.mjs",
+      "bytes": 44667,
+      "sha256": "deb57d007fb3a5cb0c20b709e4d6ca527191a2aa9141d90236644769751ae1e0"
+    },
+    {
+      "path": "records/regression/165-模型生成候选-实际新增文件Git差异.patch",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-模型生成候选-实际新增文件Git差异.patch",
+      "bytes": 45958,
+      "sha256": "d7fbde52eef030b97a86de18addb1f27617f23dee7573394d399280f3781367f"
+    },
+    {
+      "path": "records/regression/165-采用测试脚本-中文说明.mjs",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-采用测试脚本-中文说明.mjs",
+      "bytes": 44461,
+      "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49"
+    },
+    {
+      "path": "records/regression/165-中文采用派生-真实文件差异.patch",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-中文采用派生-真实文件差异.patch",
+      "bytes": 12508,
+      "sha256": "463de4198542fe0e87c44c7e35bcd9b73fcba63523811019e56b5c0ed3dd26bd"
+    },
+    {
+      "path": "records/regression/165-中文采用派生与AST核验.json",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-中文采用派生与AST核验.json",
+      "bytes": 12679,
+      "sha256": "598a72c873a43e9e32286b6a8d001319ee1072a1fbf85d19ad5bf6d2024523cb"
+    },
+    {
+      "path": "records/regression/165-中断候选完整交接回执.json",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-中断候选完整交接回执.json",
+      "bytes": 1858,
+      "sha256": "d6319b62ca9c1776272be885473d6d96c77dca342bdc27e9afd81754b26f86c9"
+    },
+    {
+      "path": "records/regression/165-四例执行冻结起点回执.json",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-四例执行冻结起点回执.json",
+      "bytes": 8989,
+      "sha256": "7805de6fbc49e1dff3213758e3f135656868e3ab3af0d88ff9c1f7867fca89a0"
+    },
+    {
+      "path": "records/regression/165-旧恢复实际执行-完整终端.txt",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-旧恢复实际执行-完整终端.txt",
+      "bytes": 2498,
+      "sha256": "e6e3ba9bc7be1cecd1baaaa6d3f7424fc860ac81586365f01fd13b3151f7f5c4"
+    },
+    {
+      "path": "records/regression/165-正确实现实际执行-完整终端.txt",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-正确实现实际执行-完整终端.txt",
+      "bytes": 835,
+      "sha256": "c542a4664cb8dbc37650cc8b7df37d23d18c88702acb22abc61ea5aae84a0802"
+    },
+    {
+      "path": "records/regression/165-主编独立四库完整读回-首次跨运行域数组原型检查.json",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-主编独立四库完整读回-首次跨运行域数组原型检查.json",
+      "bytes": 5218,
+      "sha256": "d5b0bc7f5631ccfc62b49833b402e2f99a9a25cb88c9e9a678edf3c416525a88"
+    },
+    {
+      "path": "records/regression/165-主编独立四库完整读回.json",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-主编独立四库完整读回.json",
+      "bytes": 5963,
+      "sha256": "e48fdc1320a667b05cf963a69a80fdac4c361645c4d3c76600334fed422293b3"
+    },
+    {
+      "path": "records/regression/165-本轮单界面历史行为恢复-真实Git差异.patch",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-本轮单界面历史行为恢复-真实Git差异.patch",
+      "bytes": 6279,
+      "sha256": "a016280e48f06a7d0e8fcac806d038a0292fd9ad1e5109f576d3e119df46bffd"
+    },
+    {
+      "path": "records/regression/165-本轮历史恢复准备回执.json",
+      "source": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter15/165-本轮历史恢复准备回执.json",
+      "bytes": 1178,
+      "sha256": "8a7a06cdc691f32c95bf6aa83b4893ec841221467b4d5f70afcf721d13514c70"
+    },
+    {
+      "path": "records/regression/generation-source-version.json",
+      "source": "git:1a5c634a596b5fdbb3742e8b3df3e7e48a026582:qinglan/chapter15/project/source-version.json",
+      "bytes": 6567,
+      "sha256": "03e8f3de0b09ede35f7656faa8f957a38b04b86103eb4b5e84a9720cc57a5b21"
+    },
+    {
+      "path": "records/regression/old-source-version.json",
+      "source": "git:ae16bc886a46e8d8d1f8e9d6c5cbb31ffbefeb5c:qinglan/chapter15/project/source-version.json",
+      "bytes": 6726,
+      "sha256": "f0ae457877b35fe50fda6d3d6ee5b96c3aabf04f4c1557c16f6ca627beae25ab"
+    },
+    {
+      "path": "records/regression/fixed-source-version.json",
+      "source": "git:400ff2f26a3570fa2bb47ba6ca77717c7fc49575:qinglan/chapter15/project/source-version.json",
+      "bytes": 6726,
+      "sha256": "c20ac28438f9c1664997867a20f9e1face4cc9bb2f9379eb76759a25a37e0a61"
+    },
+    {
+      "path": "records/regression/历史恢复点到正确点-完整Git差异.patch",
+      "source": "精确 ae16bc8→400ff2f 完整Git差异",
+      "bytes": 7514,
+      "sha256": "624ba772381541ab11f44a40379d8419102166f8dd45bcb891a8e02fa84c21dd"
+    }
+  ],
+  "scenarios": [
+    {
+      "kind": "old",
+      "id": "0b6ddc97-c9b9-4546-882a-98219cf6ecda",
+      "scenario": "normal",
+      "path": "D:/Projects/Knowledge/.coursebook-work/c15-historical/qinglan/chapter15/project/runs/regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda/record.json",
+      "database": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-0b6ddc97-c9b9-4546-882a-98219cf6ecda\\practice.sqlite",
+      "recordSha256": "87bda1e0535e2bc9460c8da629cbd47ea6da4e147c806f04717368a945aae36c",
+      "databaseSha256": "0c0157567e3c26b237bb2d9050db41e7aa5f66366fe06ca89cb7c7ecd18b47c9",
+      "recordedFiveTablesMatchDirectSQL": true,
+      "completeTitlesBodiesRevisionsAndSourceMatchIndependentInput": true,
+      "fullCapturedInputMatchesIndependentA": true,
+      "unchangedWorkAndHistory": true,
+      "unchangedOtherChapterRowsAndHistory": true,
+      "originalR1HistoryExact": true,
+      "r2HistoryExactToCurrent": true,
+      "servicePost": 1,
+      "fullActualPostBodyAndResponseMatchA": true,
+      "abortAllFiveTablesUnchanged": true,
+      "finishedWithoutEnvironmentRecordingCleanupErrors": true,
+      "sourceChanges": [],
+      "assertionPass": false,
+      "databaseBytesUnchangedByRead": true,
+      "SQLRecordEqualSerializedValues": true,
+      "publicRecord": "records/regression-old-normal/record.json",
+      "publicDatabase": "records/regression-old-normal/practice.sqlite",
+      "pass": false,
+      "failedAssertions": [
+        "post等待/title禁用",
+        "post等待/title不可编辑",
+        "post等待/title完整A未变",
+        "post等待/title不能取得焦点",
+        "post等待/body禁用",
+        "post等待/body不可编辑",
+        "post等待/body完整A未变",
+        "post等待/body不能取得焦点",
+        "post等待覆盖编辑禁用",
+        "post等待本地完整A",
+        "get等待/title禁用",
+        "get等待/title不可编辑",
+        "get等待/title完整A未变",
+        "get等待/title不能取得焦点",
+        "get等待/body禁用",
+        "get等待/body不可编辑",
+        "get等待/body完整A未变",
+        "get等待/body不能取得焦点",
+        "get等待覆盖编辑禁用",
+        "get等待本地完整A"
+      ]
+    },
+    {
+      "kind": "old",
+      "id": "acf120ce-6971-4e94-b2f9-6d2c6fb99076",
+      "scenario": "abort",
+      "path": "D:/Projects/Knowledge/.coursebook-work/c15-historical/qinglan/chapter15/project/runs/regression-acf120ce-6971-4e94-b2f9-6d2c6fb99076/record.json",
+      "database": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-historical\\qinglan\\chapter15\\project\\runs\\regression-acf120ce-6971-4e94-b2f9-6d2c6fb99076\\practice.sqlite",
+      "recordSha256": "27a5af7bfd5c46a0940fc58bbf8972bd3d886118e4ad2e20abd36a0c19bd44c9",
+      "databaseSha256": "d78849780d12e8ace1f0e0e4730886cb0b6507f130ce6ca0f7705d7503b01bd9",
+      "recordedFiveTablesMatchDirectSQL": true,
+      "completeTitlesBodiesRevisionsAndSourceMatchIndependentInput": true,
+      "fullCapturedInputMatchesIndependentA": true,
+      "unchangedWorkAndHistory": true,
+      "unchangedOtherChapterRowsAndHistory": true,
+      "originalR1HistoryExact": true,
+      "r2HistoryExactToCurrent": true,
+      "servicePost": 0,
+      "fullActualPostBodyAndResponseMatchA": true,
+      "abortAllFiveTablesUnchanged": true,
+      "finishedWithoutEnvironmentRecordingCleanupErrors": true,
+      "sourceChanges": [],
+      "assertionPass": true,
+      "databaseBytesUnchangedByRead": true,
+      "SQLRecordEqualSerializedValues": true,
+      "publicRecord": "records/regression-old-abort/record.json",
+      "publicDatabase": "records/regression-old-abort/practice.sqlite",
+      "pass": true,
+      "failedAssertions": []
+    },
+    {
+      "kind": "fixed",
+      "id": "3e5313ab-9baf-40ce-86d9-e467159fb938",
+      "scenario": "normal",
+      "path": "D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/runs/regression-3e5313ab-9baf-40ce-86d9-e467159fb938/record.json",
+      "database": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-3e5313ab-9baf-40ce-86d9-e467159fb938\\practice.sqlite",
+      "recordSha256": "07382d69e26c582aac4947f8c0b84ea57703c9affc63453c7fe63aff8413bcc6",
+      "databaseSha256": "b99cf176639d65ba6b660625e745d1c48a345060c8905ab92f4e51bfafc7928e",
+      "recordedFiveTablesMatchDirectSQL": true,
+      "completeTitlesBodiesRevisionsAndSourceMatchIndependentInput": true,
+      "fullCapturedInputMatchesIndependentA": true,
+      "unchangedWorkAndHistory": true,
+      "unchangedOtherChapterRowsAndHistory": true,
+      "originalR1HistoryExact": true,
+      "r2HistoryExactToCurrent": true,
+      "servicePost": 1,
+      "fullActualPostBodyAndResponseMatchA": true,
+      "abortAllFiveTablesUnchanged": true,
+      "finishedWithoutEnvironmentRecordingCleanupErrors": true,
+      "sourceChanges": [],
+      "assertionPass": true,
+      "databaseBytesUnchangedByRead": true,
+      "SQLRecordEqualSerializedValues": true,
+      "publicRecord": "records/regression-fixed-normal/record.json",
+      "publicDatabase": "records/regression-fixed-normal/practice.sqlite",
+      "pass": true,
+      "failedAssertions": []
+    },
+    {
+      "kind": "fixed",
+      "id": "208426a1-0e5d-4711-bcc2-e6b9c32d04e5",
+      "scenario": "abort",
+      "path": "D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/runs/regression-208426a1-0e5d-4711-bcc2-e6b9c32d04e5/record.json",
+      "database": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\regression-208426a1-0e5d-4711-bcc2-e6b9c32d04e5\\practice.sqlite",
+      "recordSha256": "74ed6d6d356fcd97a1ae6fad4937e099fbc9c8140f39982cd0a55dc746b653cb",
+      "databaseSha256": "59421a111717dcb1caaec0236ab8e4b8429cbea278e670d960e74f0395b6193a",
+      "recordedFiveTablesMatchDirectSQL": true,
+      "completeTitlesBodiesRevisionsAndSourceMatchIndependentInput": true,
+      "fullCapturedInputMatchesIndependentA": true,
+      "unchangedWorkAndHistory": true,
+      "unchangedOtherChapterRowsAndHistory": true,
+      "originalR1HistoryExact": true,
+      "r2HistoryExactToCurrent": true,
+      "servicePost": 0,
+      "fullActualPostBodyAndResponseMatchA": true,
+      "abortAllFiveTablesUnchanged": true,
+      "finishedWithoutEnvironmentRecordingCleanupErrors": true,
+      "sourceChanges": [],
+      "assertionPass": true,
+      "databaseBytesUnchangedByRead": true,
+      "SQLRecordEqualSerializedValues": true,
+      "publicRecord": "records/regression-fixed-abort/record.json",
+      "publicDatabase": "records/regression-fixed-abort/practice.sqlite",
+      "pass": true,
+      "failedAssertions": []
+    }
+  ],
+  "originalTask": {
+    "record": "records/tests-01/report.json",
+    "state": "interrupted",
+    "ordinaryTurns": 1,
+    "reviewStarts": 0,
+    "limitMs": 1200000,
+    "retries": 0,
+    "formalFinalAnswer": false
+  },
+  "languageDerivation": {
+    "originalSha256": "deb57d007fb3a5cb0c20b709e4d6ca527191a2aa9141d90236644769751ae1e0",
+    "adoptedSha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49",
+    "changedBy": "实验实现子代理 /root/chapter11_package",
+    "proof": "records/regression/165-中文采用派生与AST核验.json"
+  },
+  "privacy": {
+    "actualSecretValuesChecked": 4,
+    "matches": 0,
+    "authFilesCopied": false
+  },
+  "newModels": 0,
+  "newBrowserRuns": 0,
+  "scope": "模型中断原件、两版脚本、四例完整JSON/独立库与终端逐字节保留。首次跨运行域数组原型检查和后续完整序列化读回分别保留。"
+}

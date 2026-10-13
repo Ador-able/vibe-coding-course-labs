@@ -1,0 +1,50 @@
+{
+  "state": "candidate_from_interrupted_task_not_adopted",
+  "repo": "D:/Projects/Knowledge/.coursebook-work/c15-historical",
+  "executionGit": "1a5c634a596b5fdbb3742e8b3df3e7e48a026582",
+  "executionSourceSha256": "e222e2aced48d5980d0275cf2964c3222fdf0b8937ad1c93aabdfa9fa9d721ae",
+  "inputRegistrySha256": "bd7023f850a4668eb8620781fbe4e77407c818d5c9e1ae4bcc687700ccb27621",
+  "task": {
+    "status": "interrupted",
+    "durationMs": 1200026,
+    "interrupted": true,
+    "error": null,
+    "commands": 20,
+    "nonzeroExits": 1,
+    "fileChangeItems": 5,
+    "ordinaryTurnStarts": 1,
+    "reviewStarts": 0,
+    "interruptRequests": 1,
+    "archiveRequests": 1,
+    "businessUnchanged": true,
+    "processExit": {
+      "code": 0,
+      "signal": null
+    }
+  },
+  "candidate": {
+    "path": "165-模型生成候选-20分钟中断.mjs",
+    "livePath": "scripts/test-saving.mjs",
+    "bytes": 44667,
+    "sha256": "deb57d007fb3a5cb0c20b709e4d6ca527191a2aa9141d90236644769751ae1e0",
+    "copiedBytesIdentical": true
+  },
+  "actualDiff": {
+    "path": "165-模型生成候选-实际新增文件Git差异.patch",
+    "kind": "git_diff_no_index_empty_to_actual_untracked_candidate",
+    "bytes": 45958,
+    "sha256": "d7fbde52eef030b97a86de18addb1f27617f23dee7573394d399280f3781367f"
+  },
+  "syntax": {
+    "exitCode": 0,
+    "stdout": "",
+    "stderr": "",
+    "scope": "node --check只解析语法，未导入或执行脚本。"
+  },
+  "gitStatus": "?? qinglan/chapter15/project/scripts/test-saving.mjs\n",
+  "inputsByteHashesVerified": 14,
+  "browserCasesRunByOperator": 0,
+  "modelRetries": 0,
+  "formalFinalAnswer": false,
+  "limits": "真实20分钟预算中断；最后可见回答只是进度。候选尚未人工采用、未验证运行行为，下一步由主编完整静读决定四例。未重写模型原件或将语法成功当业务通过。"
+}
