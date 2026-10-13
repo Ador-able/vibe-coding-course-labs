@@ -1,0 +1,49 @@
+{
+  "kind": "copied_from_actual_root_exec_tool_results",
+  "recordedAt": "2026-10-13T13:38:59.016Z",
+  "runs": [
+    {
+      "kind": "old",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/c15-historical/qinglan/chapter15/project",
+      "environment": {
+        "DELIVERY_BROWSER_CHANNEL": "msedge"
+      },
+      "command": "node --test scripts/test-saving.mjs",
+      "precededBy": "node scripts/check-source.mjs (passed)",
+      "toolResult": {
+        "chunk_id": "0e6afb",
+        "exit_code": 1,
+        "wall_time_seconds": 7.6642095999999995
+      },
+      "terminal": "165-旧恢复实际执行-完整终端.txt",
+      "cases": [
+        "0b6ddc97-c9b9-4546-882a-98219cf6ecda",
+        "acf120ce-6971-4e94-b2f9-6d2c6fb99076"
+      ],
+      "scope": "一次Node测试进程执行两个独立真实浏览器场景；normal目标失败，abort通过，没有重跑。"
+    },
+    {
+      "kind": "fixed",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project",
+      "environment": {
+        "DELIVERY_BROWSER_CHANNEL": "msedge"
+      },
+      "command": "node --test scripts/test-saving.mjs",
+      "precededBy": "node scripts/check-source.mjs (passed)",
+      "toolResult": {
+        "chunk_id": "3e57f1",
+        "exit_code": 0,
+        "wall_time_seconds": 6.1619299
+      },
+      "terminal": "165-正确实现实际执行-完整终端.txt",
+      "cases": [
+        "3e5313ab-9baf-40ce-86d9-e467159fb938",
+        "208426a1-0e5d-4711-bcc2-e6b9c32d04e5"
+      ],
+      "scope": "一次Node测试进程执行两个独立真实浏览器场景；两例通过，没有重跑。"
+    }
+  ],
+  "modelRequests": 0,
+  "actualBrowserCases": 4,
+  "note": "工具实际退出码从本轮已返回的exec回执精确抄录；recordedAt是保存这个回执的时间，不补作进程启动或点击时刻。终端捕获完整原字节不修改尾空格。"
+}

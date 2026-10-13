@@ -97,5 +97,41 @@
         "path": "records/regression/完整原件清单.json"
       }
     ]
+  },
+  {
+    "lesson": 170,
+    "title": "核实原生代码评审",
+    "summary": "一次原生评审自然完成，未报告材料支持的新增正确性问题；完整评审正文、读取过程与前后对象分别保留。",
+    "finalResponse": "records/review-01/review/final-response.txt",
+    "files": [
+      {
+        "title": "原生评审完整报告",
+        "path": "records/review-01/report.json"
+      },
+      {
+        "title": "完整原协议",
+        "path": "records/review-01/review/protocol.jsonl"
+      },
+      {
+        "title": "普通回复单独原件",
+        "path": "records/review-01/review/agent-message.txt"
+      },
+      {
+        "title": "评审实际输入",
+        "path": "records/review-01/review/input.json"
+      },
+      {
+        "title": "评审开始完整对象",
+        "path": "records/review-01/before.json"
+      },
+      {
+        "title": "评审结束完整对象",
+        "path": "records/review-01/after.json"
+      },
+      {
+        "title": "四例实际进程退出回执",
+        "path": "records/regression/165-主编实际执行进程回执.json"
+      }
+    ]
   }
 ]
