@@ -7,6 +7,8 @@
   "engines": {"node": ">=24.12.0 <25"},
   "scripts": {
     "build": "tsc",
+    "test:delivery": "node --test scripts/check-saving-delivery.mjs",
+    "check:delivery": "pnpm run build && pnpm run test:delivery",
     "lab": "node scripts/viewer.mjs",
     "practice:seed": "node scripts/seed.mjs",
     "prototype": "node scripts/start-workbench.mjs",
