@@ -1,0 +1,24 @@
+[
+  {
+    "requestedAt": "2026-10-13T09:28:52.829Z",
+    "method": "GET",
+    "path": "/chapter-three.pdf",
+    "fileName": "chapter-three.pdf",
+    "mimeType": "application/pdf",
+    "bytes": 83234,
+    "sha256": "b76de601551821bbc8f902476332182d39014133f011e538666c04386b9fd6cc",
+    "userAgent": "n8n",
+    "status": 200
+  },
+  {
+    "requestedAt": "2026-10-13T09:28:52.838Z",
+    "method": "GET",
+    "path": "/chapter-three.txt",
+    "fileName": "chapter-three.txt",
+    "mimeType": "text/plain",
+    "bytes": 3245,
+    "sha256": "363b32b0054129db8b916db8453d885513ac0ad35206a9b5aba57a6282200834",
+    "userAgent": "n8n",
+    "status": 200
+  }
+]

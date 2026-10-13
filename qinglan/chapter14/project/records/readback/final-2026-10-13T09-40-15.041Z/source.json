@@ -1,0 +1,15 @@
+{
+  "kind": "actual-independent-readonly-after-all-business-requests",
+  "executionSource": {
+    "sourceSha256": "d172d5d3fc791cdcbcbd5c8f01479711759cf28cc1a6d7e44e9575e70160b899",
+    "gitCommit": "9c69aefa6c52242eba30917439ed59c4ce3d606a",
+    "frozenInputSha256": "5d18a243580bab289ef34ff92558a02417b7895d6095415dcab2ff7d5dbe6075"
+  },
+  "collectorSource": {
+    "sourceSha256": "8d21ad446ec57f41bf0b1b6b70309f87c6182fa9e962d9d5f0d445cbd531eba5",
+    "baseGit": "9c69aefa6c52242eba30917439ed59c4ce3d606a",
+    "workingTreeCorrection": true
+  },
+  "businessPosts": 0,
+  "modelRequests": 0
+}

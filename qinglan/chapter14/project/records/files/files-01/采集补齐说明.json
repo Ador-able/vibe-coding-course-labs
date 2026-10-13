@@ -1,0 +1,21 @@
+{
+  "kind": "actual-readonly-recovery-after-harvest-list-empty",
+  "originalCliFailure": "files POST实际200且提取成功；首次执行列表200空，采集脚本exit1；未重发POST。",
+  "originalListPrivatePath": ".local/raw-api/20b1932c-821d-41ff-89f1-2669d8a54be8.json",
+  "laterListPrivatePath": ".local/raw-api/4b2d75f6-88dc-481f-9648-3d0749f0f956.json",
+  "detailPrivatePath": ".local/raw-api/3b917ed1-c670-4289-9c1b-49db63da8a41.json",
+  "executionId": "5",
+  "workflowId": "HXQymRJDpVrF0kGr",
+  "executionStatus": "success",
+  "requestIdMatched": "qinglan-ch14-files-01",
+  "unchangedRequest": "records/files/files-01/response.json",
+  "requestOverlap": {
+    "filesStartedAt": "2026-10-13T09:28:52.494Z",
+    "filesFinishedAt": "2026-10-13T09:29:13.151Z",
+    "branchStartedAt": "2026-10-13T09:29:02.627Z",
+    "explanation": "作者启动branch时files进程尚未退出，发生约10秒重叠；已保留原实际时序，不重跑。"
+  },
+  "sourceChanged": false,
+  "businessPostRetries": 0,
+  "modelRequests": 0
+}

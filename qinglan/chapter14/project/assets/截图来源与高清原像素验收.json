@@ -1,0 +1,31 @@
+{
+  "recordedAt": "2026-10-13T09:47:08.661Z",
+  "method": "CUA raw CDP Page.captureScreenshot PNG; DOM-backed clip; native deviceScaleFactor3; actual browser zoom1.52; no resizing/upscaling/stitching",
+  "browser": "IAB 2 tab9",
+  "displaySourceSha": "8d21ad446ec57f41bf0b1b6b70309f87c6182fa9e962d9d5f0d445cbd531eba5",
+  "actualExecutionSourceSha": "d172d5d3fc791cdcbcbd5c8f01479711759cf28cc1a6d7e44e9575e70160b899",
+  "temporaryMetricsCleared": true,
+  "images": [
+    {
+      "name": "两表引用-E01-高清聚焦.png",
+      "bytes": 308305,
+      "width": 2103,
+      "height": 3348,
+      "sha256": "edc539c16b9e717e0c604c72ac643aea63a9794994e9340559bbe76f668f9d8b",
+      "physicalViewed": true
+    },
+    {
+      "name": "PDF三页-实际提取-高清聚焦.png",
+      "bytes": 318376,
+      "width": 2079,
+      "height": 2484,
+      "sha256": "126ec6f1a0c157559530b6906a92d0584a5301aac5dfa8535b15784b8ea95e4f",
+      "physicalViewed": true
+    }
+  ],
+  "notAdopted": [
+    "两表引用-初始坐标未采用.png"
+  ],
+  "modelRequests": 0,
+  "browserBusinessSubmissions": 0
+}

@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://localhost:5689/webhook/qinglan-ch14-feedback",
+    "bodyText": "{\n  \"eventId\": \"qinglan-feedback-E01\",\n  \"feedbackId\": \"QFB-E01\",\n  \"workId\": \"qinglan-xiuxianlu\",\n  \"chapterNumber\": 1,\n  \"readerId\": \"classroom-reader-01\",\n  \"feedback\": \"林青退开半步才看见铜片上的手影，这个结尾让我想继续读。请暂时保留声源未明，也不要让他拿起铜片。\",\n  \"failTask\": false\n}\n",
+    "bodyBytes": 339,
+    "bodySha256": "f325172ecd986d9539afb2e0fe5d21f042a5eae7952daa0ea66a5443074f5e28"
+  },
+  "startedAt": "2026-10-13T09:28:26.938Z",
+  "finishedAt": "2026-10-13T09:28:27.294Z",
+  "elapsedMs": 357,
+  "status": 202,
+  "responseHeaders": {
+    "contentType": "application/json; charset=utf-8"
+  },
+  "bodyText": "{\"eventId\":\"qinglan-feedback-E01\",\"taskRowId\":1,\"duplicate\":false,\"status\":\"received\",\"notificationStatus\":\"not_sent\",\"executionId\":\"2\"}",
+  "body": {
+    "eventId": "qinglan-feedback-E01",
+    "taskRowId": 1,
+    "duplicate": false,
+    "status": "received",
+    "notificationStatus": "not_sent",
+    "executionId": "2"
+  },
+  "bodyBytes": 136,
+  "bodySha256": "2fa70ff5ea063c40202a8bc8c96547c426d239a099e66163e831dfa8cf99f4fc"
+}
