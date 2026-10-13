@@ -1,7 +1,7 @@
 {
-  "sourceSha256": "db69402854ec9a4241f3ff1bb4bd61674d93ef7db00f6c7d257a9541c08c614e",
-  "sourceVersion": "db69402854ec9a4241f3ff1bb4bd61674d93ef7db00f6c7d257a9541c08c614e",
-  "preparedFromGit": "bbe1e28bbafc09ba7d2e3d70a0516093fca7feeb",
+  "sourceSha256": "e222e2aced48d5980d0275cf2964c3222fdf0b8937ad1c93aabdfa9fa9d721ae",
+  "sourceVersion": "e222e2aced48d5980d0275cf2964c3222fdf0b8937ad1c93aabdfa9fa9d721ae",
+  "preparedFromGit": "f6fa9b8e509e0d6b151286e358bc1f65b6c818fd",
   "practiceTag": "qinglan-ch15-practice-start",
   "inputRegistrySha256": "bd7023f850a4668eb8620781fbe4e77407c818d5c9e1ae4bcc687700ccb27621",
   "files": [
@@ -102,8 +102,8 @@
     },
     {
       "path": "prototype/app.js",
-      "bytes": 6818,
-      "sha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63"
+      "bytes": 6703,
+      "sha256": "34cf106aedbf9f594e8dcda725f1ce41f58d8bbf5bc06811f6223460bde0ef98"
     },
     {
       "path": "prototype/index.html",
