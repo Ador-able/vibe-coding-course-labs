@@ -1,3 +1,0 @@
-{"timestamp":"2026-10-13T12:04:22.506615Z","level":"WARN","fields":{"message":"Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell"},"target":"codex_core::shell_snapshot"}
-{"timestamp":"2026-10-13T12:04:22.655623Z","level":"WARN","fields":{"message":"state db discrepancy during find_thread_path_by_id_str_in_subdir: falling_back"},"target":"codex_rollout::list"}
-{"timestamp":"2026-10-13T12:04:22.655673Z","level":"WARN","fields":{"message":"state db discrepancy during read_repair_rollout_path: upsert_needed (slow path)"},"target":"codex_rollout::state_db"}
