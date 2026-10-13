@@ -1,0 +1,25 @@
+{
+  "mode": "export",
+  "processId": 135372,
+  "pythonVersion": "3.13.11",
+  "modelCalls": 0,
+  "source": "records\\extraction\\extract-04\\extract\\output.txt",
+  "scope": "候选业务字段完整往返，不修复证据、汇总或作采用决定",
+  "state": "exported",
+  "rows": 8,
+  "columns": [
+    "sourceId",
+    "taskId",
+    "date",
+    "title",
+    "status",
+    "pendingAssertions",
+    "passedAssertions",
+    "problemEvents",
+    "actualMinutes",
+    "budgetMinutes",
+    "duplicateOf"
+  ],
+  "bytes": 647,
+  "sha256": "d94371aad66753e9245762debcf656c32c31a4580c16af304205c9fbf466f45a"
+}

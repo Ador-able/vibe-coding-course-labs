@@ -1,0 +1,59 @@
+{
+  "sourceIds": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08"
+  ],
+  "repairIds": [
+    "R01",
+    "R06"
+  ],
+  "initialItemSHA256": {
+    "R01": "5015e80288aca81a932490dc834dfd62e0390c4526c8cdf7e67bee198d595b65",
+    "R02": "98d89e649de30e192abc36017418800eb50a01e812070d900fe8800a1809a21d",
+    "R03": "c5f95acb9826a5b6492d4fd4f1d9d920b956d515e5fb77ba5b353f198a344d97",
+    "R04": "02dcd6e507b14613d7cbaf7d0360419facdc5c204596f9732caabb0075ecea57",
+    "R05": "dbfaef5bb0153b1096fda03930545aee1da99720780294fddb1cde579976f2e9",
+    "R06": "41054c94ee386ce34d807a2c604ec0f2225a3d7c193faab70e4b08a252c9c753",
+    "R07": "abbc11d0f295cfc3e81a8c04e1cfc52c266a3f84311342083b5d25baec41753b",
+    "R08": "5d1190eb285e64995b86f5a912d67667df5a0bde8914e33ffd2b787b96a3470f"
+  },
+  "extractionReportPath": "records/extraction/extract-04/report.json",
+  "summary": {
+    "uniqueObservedSourceIds": [
+      "R01",
+      "R03",
+      "R04",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "ratioSourceIds": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "sumPassed": 65,
+    "sumPending": 76,
+    "passRatio": 0.8552631578947368,
+    "knownActualMinutes": 35,
+    "knownProblemEvents": 10,
+    "knownProblemSourceIds": [
+      "R01",
+      "R03",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "limits": "存在资料缺口：R04缺少待核清单总数和问题标注，R06为计划未执行，R02为重复转存。因此不能推出所有核查的总体通过率、独立断言/问题数、文学品质或整理方法的因果效果。"
+  },
+  "summaryAdopted": false,
+  "scope": "真实整批原答与教师错误候选分列；只修复两份教师候选，不重算或采用整批汇总。"
+}

@@ -1,0 +1,162 @@
+{
+  "sourceVersion": "sha256:22a215990cfc173fef944cbc7f4f2352c1f032041f8592db8139da3fc9f1c57a",
+  "gitBase": "3abac6b711599c2cef3c30b79036d3dc72c1321f",
+  "frozenAt": "2026-10-13T04:54:23.707Z",
+  "files": [
+    {
+      "name": "启动实验.cmd",
+      "bytes": 67,
+      "sha256": "3de5da502d99a1dfe1ddae66f818c17d59689c3c01943d8635182e663b31cb92"
+    },
+    {
+      "name": "package.json",
+      "bytes": 1239,
+      "sha256": "f3beb3160e6e14c06eb2c88689bff2bc3d761b25f543fdb2b0e550214a6e7f6f"
+    },
+    {
+      "name": "pnpm-lock.yaml",
+      "bytes": 3626,
+      "sha256": "03f5a8fd54dc260b0d08e00f3a14df8ebbc2ae4445518ebf6fea4a7b5cdb9822"
+    },
+    {
+      "name": "public/app.css",
+      "bytes": 3255,
+      "sha256": "86f91231fa1c9eefaecc637f0a9beef23a50c00e08bcf1bb487ad8e42f003d74"
+    },
+    {
+      "name": "public/app.js",
+      "bytes": 17568,
+      "sha256": "b771b691bbeb16a2f0c32705bc713d2a3a4ba436238f335d5056a3de1d3c0d8f"
+    },
+    {
+      "name": "public/batch.html",
+      "bytes": 1030,
+      "sha256": "6117a4ae9f37fe6fd6c38b157280cbf04af5c8a99ef1670c4825110e2ccaff74"
+    },
+    {
+      "name": "public/classification.html",
+      "bytes": 1039,
+      "sha256": "d71c01c0283c60e63f45e373c83e5c56286ffb5295aced905f7b0f5d4fd13b48"
+    },
+    {
+      "name": "public/extraction.html",
+      "bytes": 1035,
+      "sha256": "78941fb9f522e12df6e7483ec8172c1860b320b4a2f536568ef0323782902c78"
+    },
+    {
+      "name": "public/index.html",
+      "bytes": 1029,
+      "sha256": "7fae04c9fdf612b1e6fd0dd3395ad85136f545f5a47a50994201a694166b7b68"
+    },
+    {
+      "name": "public/templates.html",
+      "bytes": 1034,
+      "sha256": "bde9cfeaac5ddae4ae45573daa8e80c2552cfb42a817d8a48fba7bf32572f502"
+    },
+    {
+      "name": "scripts/check-records.mjs",
+      "bytes": 3397,
+      "sha256": "f7fe84f9fc3696f6d7d0f8b3fe2b83b06ca630c5b1abefadcf0a931eac6c200d"
+    },
+    {
+      "name": "scripts/check-source.mjs",
+      "bytes": 1204,
+      "sha256": "5de8cfb08f7d6168ec4e4865785243c96e49e81b0e846bb7b4aec9007085d701"
+    },
+    {
+      "name": "scripts/csv-records.py",
+      "bytes": 3942,
+      "sha256": "3abf7fb33efc5776711248cc461f1e42a0084764d35e56fa84e2d61494157302"
+    },
+    {
+      "name": "scripts/freeze-source.mjs",
+      "bytes": 1388,
+      "sha256": "0491b2d8404a856affbbe7fee9b1296dbc26c88f56915e137c6f65762673036a"
+    },
+    {
+      "name": "scripts/observe-extract.mjs",
+      "bytes": 503,
+      "sha256": "3b36e9d08ca4ae4f48eff175c58688aa388b78f546c81e6f2b710193b66eed29"
+    },
+    {
+      "name": "scripts/observe-labels.mjs",
+      "bytes": 724,
+      "sha256": "23009dda1e931938801d3b9b36e984aa114c688c5f6360c0160b15de8c52d7e1"
+    },
+    {
+      "name": "scripts/observe-long.mjs",
+      "bytes": 2381,
+      "sha256": "a25d306291ba7e6b761090d21319f06cad88962717b2433406a7bf66c8401fa4"
+    },
+    {
+      "name": "scripts/observe-repairs.mjs",
+      "bytes": 1981,
+      "sha256": "a3d6b5be5723e096c4e1da4e0f26ed7816045137727e14b7a8fc066c121a1623"
+    },
+    {
+      "name": "scripts/observe-templates.mjs",
+      "bytes": 555,
+      "sha256": "604589c8f1c5cae779680f1e930899e1662c18e2fce3b1ab5629846be03a1814"
+    },
+    {
+      "name": "scripts/prepare-page.mjs",
+      "bytes": 2157,
+      "sha256": "f0592c48db4c89fc14e103772569af08dad435bc70a3c2d602d3d46a43d07ab3"
+    },
+    {
+      "name": "scripts/preview.mjs",
+      "bytes": 4290,
+      "sha256": "d7ec18e8826af588d5036d2f0e02ec3e92eb4da8e7b13de4f00c7bde3d031bc2"
+    },
+    {
+      "name": "scripts/read-batch.mjs",
+      "bytes": 1168,
+      "sha256": "825de3aa0d0450f40106f6b0556059457b2329df0f7cf9ca5ca4ccc1e89aa614"
+    },
+    {
+      "name": "scripts/register-batch.mjs",
+      "bytes": 877,
+      "sha256": "c7fc585d065d814494ffd1b96fa509be68e2d4091273472a5e203e12205c2da5"
+    },
+    {
+      "name": "server.mjs",
+      "bytes": 2487,
+      "sha256": "8ff2ae21eb9b5f0238ef76a0c0e31ab7df21508494e222e3628a2b1cf006136c"
+    },
+    {
+      "name": "src/batch.mjs",
+      "bytes": 4903,
+      "sha256": "044d24d33c93bc7f47db6e41747077d22d3e5a5b7369b674908010610c6fc78d"
+    },
+    {
+      "name": "src/checks.mjs",
+      "bytes": 9059,
+      "sha256": "688d7544a0cd54fd60158429bdac26630a50f1b023baba1b458d0c27761f6823"
+    },
+    {
+      "name": "src/config.mjs",
+      "bytes": 570,
+      "sha256": "83bc36afb84dd027ca69dca07c8ee46e323e6e12390f415696776bf6e1d179d4"
+    },
+    {
+      "name": "src/files.mjs",
+      "bytes": 4057,
+      "sha256": "fb0c586507aa760d3990f109b5be186af2c387da1f4d6db6384668c9c2f62acf"
+    },
+    {
+      "name": "src/model.mjs",
+      "bytes": 4057,
+      "sha256": "750b2f15943029018f77320e260d2aa61d0ca7a46b383658ec9cd12d01490916"
+    },
+    {
+      "name": "src/teaching.mjs",
+      "bytes": 2510,
+      "sha256": "ab48ca1407bb398184185826b028a5ee3350a1391e3d1c477f60080934063420"
+    },
+    {
+      "name": "test/core.test.mjs",
+      "bytes": 5520,
+      "sha256": "cd96be97655173debf88d5c1b3c17c2c7e5aa45799eb4d5b78fb48bd80ce6c2c"
+    }
+  ]
+}

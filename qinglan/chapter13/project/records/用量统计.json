@@ -1,0 +1,993 @@
+{
+  "kind": "仅汇总已取得的30个HTTP返回中的usage；未取得用量的两次不填0，不代表账户账单",
+  "providerAttempts": 32,
+  "httpResponses": 30,
+  "unknownTerminal": 1,
+  "transportFailureWithoutResponse": 1,
+  "receivedUsageCount": 30,
+  "totalsOfReceivedUsage": {
+    "initiated": 32,
+    "returned": 30,
+    "usageUnavailable": 2,
+    "inputTokens": 52430,
+    "outputTokens": 117964,
+    "reasoningTokens": 97856
+  },
+  "groups": [
+    {
+      "name": "旧条件一",
+      "initiated": 6,
+      "returned": 6,
+      "usageUnavailable": 0,
+      "inputTokens": 11958,
+      "outputTokens": 22120,
+      "reasoningTokens": 21291
+    },
+    {
+      "name": "旧条件二",
+      "initiated": 6,
+      "returned": 5,
+      "usageUnavailable": 1,
+      "inputTokens": 9595,
+      "outputTokens": 77532,
+      "reasoningTokens": 76565
+    },
+    {
+      "name": "当前长文",
+      "initiated": 8,
+      "returned": 8,
+      "usageUnavailable": 0,
+      "inputTokens": 16939,
+      "outputTokens": 7738,
+      "reasoningTokens": 0
+    },
+    {
+      "name": "反馈分类",
+      "initiated": 6,
+      "returned": 6,
+      "usageUnavailable": 0,
+      "inputTokens": 7049,
+      "outputTokens": 3115,
+      "reasoningTokens": 0
+    },
+    {
+      "name": "核查抽取",
+      "initiated": 2,
+      "returned": 1,
+      "usageUnavailable": 1,
+      "inputTokens": 1437,
+      "outputTokens": 1896,
+      "reasoningTokens": 0
+    },
+    {
+      "name": "教师候选修复",
+      "initiated": 2,
+      "returned": 2,
+      "usageUnavailable": 0,
+      "inputTokens": 1935,
+      "outputTokens": 496,
+      "reasoningTokens": 0
+    },
+    {
+      "name": "模板核对",
+      "initiated": 2,
+      "returned": 2,
+      "usageUnavailable": 0,
+      "inputTokens": 3517,
+      "outputTokens": 5067,
+      "reasoningTokens": 0
+    }
+  ],
+  "calls": [
+    {
+      "file": "records/batch/batch-03/repair-R01/record.json",
+      "id": "repair-R01",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 996,
+        "completion_tokens": 253,
+        "total_tokens": 1249,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "514c9b091e63dd24e1b48613efa493088d3f3b00f2e7fbad0d14ef66054f2214",
+      "responseSHA256": "d5fcee8c5dd1617d33a87425b73cd001de8a5d85760838e7988208324cf0e28b"
+    },
+    {
+      "file": "records/batch/batch-03/repair-R06/record.json",
+      "id": "repair-R06",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 939,
+        "completion_tokens": 243,
+        "total_tokens": 1182,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "ae3a46d56046dc394085bc4bfc1a94bbc654b5ed3b72484437afb8e7f4237d3d",
+      "responseSHA256": "8ee7123b0bcbf0658b429e3a1a8e84d28a0cf793423a18abc75f73a8bf844e2a"
+    },
+    {
+      "file": "records/classification-discovery/discovery-03/batch-1/record.json",
+      "id": "batch-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 518,
+        "completion_tokens": 567,
+        "total_tokens": 1085,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "e127e597ef59ca560e26bd21768923898ab881b36f7e07ddc009963c809c6cd0",
+      "responseSHA256": "b455bab17a65c03e02778fcb97cfc61ffc146f3ef91aeb9d089ed53ce2d8ac83"
+    },
+    {
+      "file": "records/classification-discovery/discovery-03/batch-2/record.json",
+      "id": "batch-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 477,
+        "completion_tokens": 362,
+        "total_tokens": 839,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "8beafc216eac16776e9f9a394d176a00c35dad42fbead36f5cbc7f59a95fc5d8",
+      "responseSHA256": "dc3b2085db2268b8f5ecf0af9d047eea4a09a51cf1ad2b1120652e1c7dd0f3ff"
+    },
+    {
+      "file": "records/classification-v1/v1-03/batch-1/record.json",
+      "id": "batch-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1468,
+        "completion_tokens": 573,
+        "total_tokens": 2041,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "6b3d3949d213d98a2194b3c8223433becc7ca3b36a19244f94dd1e543f2ef572",
+      "responseSHA256": "038f298f9aae7e22aab32ff372f412ed888bad18e631d24f72d40805d6a58ff6"
+    },
+    {
+      "file": "records/classification-v1/v1-03/batch-2/record.json",
+      "id": "batch-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1427,
+        "completion_tokens": 548,
+        "total_tokens": 1975,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "bf1d69333243bcadeb5c7aee962d8f87375c44df0229ae2d64e34025d3ad26fa",
+      "responseSHA256": "0834f3d0aca30087275f52f9f0d9a4481b4277b24ed08e9d5250fa447fee72bc"
+    },
+    {
+      "file": "records/classification-v2/v2-03/batch-1/record.json",
+      "id": "batch-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1600,
+        "completion_tokens": 565,
+        "total_tokens": 2165,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "694c7fb55edaabed846d38ae810dec9a4307a73086a5bc167e626ea2713f8f80",
+      "responseSHA256": "b5ed16f159fabf2071cd69b5ed0f7ed455c7d6e5d9fd568e0a49e7bc442bd4c8"
+    },
+    {
+      "file": "records/classification-v2/v2-03/batch-2/record.json",
+      "id": "batch-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1559,
+        "completion_tokens": 500,
+        "total_tokens": 2059,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "8ea7ba5bb8d4d7dec35ae7469bb5afbba29f5c2a120136c6d86c405737c33e3e",
+      "responseSHA256": "9f501cbb2840ac6436aa76fda836911b2c83663e62ce99ff0a91623120033464"
+    },
+    {
+      "file": "records/extraction/extract-03/extract/record.json",
+      "id": "extract",
+      "status": "failed",
+      "httpStatus": null,
+      "finishReason": null,
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 8192,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": null,
+      "requestSHA256": "63ee41d6d839b474370670f34abdfd367278f8ad0f14a27b51e82d0a08ab2fa8",
+      "responseSHA256": null
+    },
+    {
+      "file": "records/extraction/extract-04/extract/record.json",
+      "id": "extract",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 8192,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1437,
+        "completion_tokens": 1896,
+        "total_tokens": 3333,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "63ee41d6d839b474370670f34abdfd367278f8ad0f14a27b51e82d0a08ab2fa8",
+      "responseSHA256": "09fed12855fa65e380bd29edab49451081112f0d618a5987c26fc4047156b5d4"
+    },
+    {
+      "file": "records/long-text/long-01/01-whole/record.json",
+      "id": "01-whole",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 3470,
+        "completion_tokens": 4096,
+        "total_tokens": 7566,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096
+        }
+      },
+      "requestSHA256": "0b6c9c607951c150ce40a2616acb9c5d629510b9110467f0f8c7a063410d02dd",
+      "responseSHA256": "44fcf9038bd513b0562c1f3ce942b3ad7bcc3417517ff93837458561288d9116"
+    },
+    {
+      "file": "records/long-text/long-01/02-map-1/record.json",
+      "id": "02-map-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1477,
+        "completion_tokens": 4096,
+        "total_tokens": 5573,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096
+        }
+      },
+      "requestSHA256": "8c0f973cdbad76e8837ccadc54a9b42dc34f0920b51961784971eab1801d2c11",
+      "responseSHA256": "02384867aaa0499573d182491717d666c0e9220423c42f802458b025632a458d"
+    },
+    {
+      "file": "records/long-text/long-01/02-map-2/record.json",
+      "id": "02-map-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1502,
+        "completion_tokens": 4096,
+        "total_tokens": 5598,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096
+        }
+      },
+      "requestSHA256": "2913b0c82c1d8a8f57695702899fe514201d4940cb9bb50c11ab3f2dfbd6eceb",
+      "responseSHA256": "330e9c09592dc7f310d7de67bb06436d3e9025b4ee57bec78756fb400e2439a1"
+    },
+    {
+      "file": "records/long-text/long-01/02-map-3/record.json",
+      "id": "02-map-3",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1518,
+        "completion_tokens": 4096,
+        "total_tokens": 5614,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096
+        }
+      },
+      "requestSHA256": "76e0edd6f6ba3896551c3d5ef3c377a38bc09e4430e2c539342e5afa1699bbe1",
+      "responseSHA256": "1ab60144eeab850ea7a796126abbd7026e4ab8caa052584ae178e82f02b23df1"
+    },
+    {
+      "file": "records/long-text/long-01/04-refine-1/record.json",
+      "id": "04-refine-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1543,
+        "completion_tokens": 1640,
+        "total_tokens": 3183,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 811
+        }
+      },
+      "requestSHA256": "15127e31da69d1aa7c1fb9c56c6d55206957954b09b01d537b12d201fbf9563a",
+      "responseSHA256": "e2664409aae2f75c04852a023c63a2a04d6ba8481705bad761cf2a029aae71d8"
+    },
+    {
+      "file": "records/long-text/long-01/04-refine-2/record.json",
+      "id": "04-refine-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 2448,
+        "completion_tokens": 4096,
+        "total_tokens": 6544,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 4096
+        }
+      },
+      "requestSHA256": "3e94d265a7a736c3e817039fdb025e51782740a566071ec52b8044d68b7ce2ed",
+      "responseSHA256": "3f5c45f9904a90a856d576a35c036b419507d3c6cedb7f01c3d78b51e9d737a3"
+    },
+    {
+      "file": "records/long-text/long-02/01-whole/record.json",
+      "id": "01-whole",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 16384,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 3487,
+        "completion_tokens": 16384,
+        "total_tokens": 19871,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16384
+        }
+      },
+      "requestSHA256": "34387256b6fb752b8bef558f4ba658b0993810f0b4f77f0cec9a4ad32e766264",
+      "responseSHA256": "6d049f017a4c9ff157ae99f2c2fdb8be2697c29f5c027b0cbb8cbc311298fcd8"
+    },
+    {
+      "file": "records/long-text/long-02/02-map-1/record.json",
+      "id": "02-map-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 16384,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1494,
+        "completion_tokens": 16384,
+        "total_tokens": 17878,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16384
+        }
+      },
+      "requestSHA256": "28a1db5ecd70d220bd91eff295e450e9fe6c7c608d0471a15bbe0f977196a857",
+      "responseSHA256": "a2a5a5f96b9a567866d3393eb03ff9fff14128ca1bf084d3a02d62b49a81fe8f"
+    },
+    {
+      "file": "records/long-text/long-02/02-map-2/record.json",
+      "id": "02-map-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 16384,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1519,
+        "completion_tokens": 16384,
+        "total_tokens": 17903,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16384
+        }
+      },
+      "requestSHA256": "0ccae8fd83d77e5db2ce8f427a003f0aae1f24f79cb4fad393a6232ba89dc1d0",
+      "responseSHA256": "3cc888a6119c24b126a0fe285884295f7012066956d976575ba0a98c81b6d1e8"
+    },
+    {
+      "file": "records/long-text/long-02/02-map-3/record.json",
+      "id": "02-map-3",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "length",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 16384,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1535,
+        "completion_tokens": 16384,
+        "total_tokens": 17919,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 16384
+        }
+      },
+      "requestSHA256": "78f1880f8f8826ee3161056dc38588a0f4a244e7a3702b4eb6a0c7ac75e08e97",
+      "responseSHA256": "545cfa7b81cc96478d3bf4f83910a3d16b87c30e8865657ff03dfb58ae040e62"
+    },
+    {
+      "file": "records/long-text/long-02/04-refine-1/record.json",
+      "id": "04-refine-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 16384,
+        "maxRetries": 0
+      },
+      "usage": {
+        "prompt_tokens": 1560,
+        "completion_tokens": 11996,
+        "total_tokens": 13556,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 11029
+        }
+      },
+      "requestSHA256": "98da7c100be839db47db10caaf5f7bc1caf4805065060e9ce4688e2deb815318",
+      "responseSHA256": "afbf715bd272cf5b1d2d8e9e40aed37cb2858d95e64052a7c5ce0981bf8bb2d4"
+    },
+    {
+      "file": "records/long-text/long-02/04-refine-2/record.json",
+      "id": "04-refine-2",
+      "status": "started",
+      "httpStatus": null,
+      "finishReason": null,
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 16384,
+        "maxRetries": 0
+      },
+      "usage": null,
+      "requestSHA256": "8fd6734092912218d01f2393afcac07640443579f1672d7e9b08ddaddc13714d",
+      "responseSHA256": null
+    },
+    {
+      "file": "records/long-text/long-03/01-whole/record.json",
+      "id": "01-whole",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 3408,
+        "completion_tokens": 683,
+        "total_tokens": 4091,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "d6d5353f83f389d1c2d2d919fb7babfa2db0a582c63d6df5e390ad50d1cb7d34",
+      "responseSHA256": "888e9b78724159899b3a037d05376f42c50218125b562516cadea415f7b9a42c"
+    },
+    {
+      "file": "records/long-text/long-03/02-map-1/record.json",
+      "id": "02-map-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1415,
+        "completion_tokens": 704,
+        "total_tokens": 2119,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "16e24f1d780f27cf38fd14879d36e52a60ecaaf7cd18ed3ac2c33e8410259bee",
+      "responseSHA256": "f8878f31dc0449b8b8fc96269eb57e2090fcde0c68ef507ad03d55b35782b583"
+    },
+    {
+      "file": "records/long-text/long-03/02-map-2/record.json",
+      "id": "02-map-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1440,
+        "completion_tokens": 666,
+        "total_tokens": 2106,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "0829aed4a0e6ef2422c17ca1051455be0b01d0f13290f689020aadc42760cbd0",
+      "responseSHA256": "a1ef2c264852b3730c313a3bd7b6ad0c46a3ea08b8bb279cbdeda7176d0f1bbe"
+    },
+    {
+      "file": "records/long-text/long-03/02-map-3/record.json",
+      "id": "02-map-3",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1456,
+        "completion_tokens": 687,
+        "total_tokens": 2143,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "323e76b6818e0d4895162179dde34ea479f411cdf8d7a5a999c5205b2bd9728d",
+      "responseSHA256": "20240ee4d0b9153ac9268f020dbd7f4041c5f2b294bf86e23a84c9ea5dc585f1"
+    },
+    {
+      "file": "records/long-text/long-03/03-reduce/record.json",
+      "id": "03-reduce",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2643,
+        "completion_tokens": 1437,
+        "total_tokens": 4080,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "74fde82f1f812e7387589785313cf1c821f9d02859b5e0c1382a22e78c355bc0",
+      "responseSHA256": "28aff608008989dc65bbe895991afe32f1e57ed58109caed5fd3a042eebdc0fb"
+    },
+    {
+      "file": "records/long-text/long-03/04-refine-1/record.json",
+      "id": "04-refine-1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1481,
+        "completion_tokens": 780,
+        "total_tokens": 2261,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "f5da99d674bd2f574b7e624beffe9a0b19e468bf30d02e5c56c13954fef06879",
+      "responseSHA256": "a115de8461a49bab3f7235a26f3fa73ade46b3433cf656787675e39decdb2aa2"
+    },
+    {
+      "file": "records/long-text/long-03/04-refine-2/record.json",
+      "id": "04-refine-2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2338,
+        "completion_tokens": 1182,
+        "total_tokens": 3520,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "806dfe252a63660d028c42d29147a9bb4e2053ae8071d6f362cc675ac8b2f870",
+      "responseSHA256": "aa6e8e0d34f645c9271f39ae0238b7756be081dceb5d4c12aee901c1f787d669"
+    },
+    {
+      "file": "records/long-text/long-03/04-refine-3/record.json",
+      "id": "04-refine-3",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 4096,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 2758,
+        "completion_tokens": 1599,
+        "total_tokens": 4357,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "87b3f0fe578d51e2fb016815e464fbf01d763022ee7c0cc3302e081a229613f9",
+      "responseSHA256": "5afbbfb512297176778c6a912779a7c9b9a316500edc9b2f314d4ccd7ac6f324"
+    },
+    {
+      "file": "records/templates/templates-03/V1/record.json",
+      "id": "V1",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 8192,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1678,
+        "completion_tokens": 2465,
+        "total_tokens": 4143,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "17bc116a72f5357c598766abd550ab2876caee58505664d57741fe3e1dfcd5d5",
+      "responseSHA256": "6fe616562744ab0788bb34f9e4c50b4ed0493b3f7ae75e67f0208acff956a5c9"
+    },
+    {
+      "file": "records/templates/templates-03/V2/record.json",
+      "id": "V2",
+      "status": "returned",
+      "httpStatus": 200,
+      "finishReason": "stop",
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 8192,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "usage": {
+        "prompt_tokens": 1839,
+        "completion_tokens": 2602,
+        "total_tokens": 4441,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 0
+        }
+      },
+      "requestSHA256": "b3e49def772e3fd52a9967c02066c3535f7864c0cc1dbcaf8b7751aa97890486",
+      "responseSHA256": "355683b5efd20940149243ec8c3cc99e58a29be706cf39e87334b84b4134f545"
+    }
+  ],
+  "sourceVersions": {
+    "initial": "sha256:22a215990cfc173fef944cbc7f4f2352c1f032041f8592db8139da3fc9f1c57a",
+    "second": "sha256:22a215990cfc173fef944cbc7f4f2352c1f032041f8592db8139da3fc9f1c57a",
+    "comparison": "sha256:1c7ad14c7dbea0d9b1228167019423c49537385aefe717547696e26e12ab4846",
+    "display": "sha256:f77ee9eb8024e427f9e7de2d83466c3518e87e8129eabfa6b14ee5d5bb8d76ff"
+  }
+}

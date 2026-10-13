@@ -1,7 +1,7 @@
 {
-  "sourceVersion": "sha256:1c7ad14c7dbea0d9b1228167019423c49537385aefe717547696e26e12ab4846",
-  "gitBase": "7f65d10c3b63036d967136ed97d4fa297bf6b485",
-  "frozenAt": "2026-10-13T05:24:33.835Z",
+  "sourceVersion": "sha256:f77ee9eb8024e427f9e7de2d83466c3518e87e8129eabfa6b14ee5d5bb8d76ff",
+  "gitBase": "5a77af73e6e6e05fa4865177e40730f593406064",
+  "frozenAt": "2026-10-13T06:12:53.779Z",
   "files": [
     {
       "name": "启动实验.cmd",
@@ -25,8 +25,8 @@
     },
     {
       "name": "public/app.js",
-      "bytes": 17568,
-      "sha256": "b771b691bbeb16a2f0c32705bc713d2a3a4ba436238f335d5056a3de1d3c0d8f"
+      "bytes": 18201,
+      "sha256": "79878ada2bd694cb45a39212cb7c310b42ff085bd7827038f19307e05ef670f3"
     },
     {
       "name": "public/batch.html",

@@ -1,0 +1,11 @@
+sourceId,taskId,date,title,status,pendingAssertions,passedAssertions,problemEvents,actualMinutes,budgetMinutes,duplicateOf
+R01,A01,2026-10-05,"藏书阁核查, ""第一章""
+进入条件",observed,20,18,3,6,,
+R02,A01,2026-10-05,"藏书阁核查, ""第一章""
+进入条件",observed,20,18,3,6,,R01
+R03,A02,2026-10-06,铜片上的手,observed,30,24,4,12,,
+R04,A03,2026-10-06,借阅登记与离阁,observed,,3,,8,,
+R05,A04,2026-10-06,封绳以内,observed,0,0,0,0,,
+R06,A05,2026-10-07,下一次桌边观察,planned,,,,,10,
+R07,A06,2026-10-06,亮隙没有跟着走,observed,10,8,2,4,,
+R08,A01,2026-10-06,第二天的入阁核对,observed,16,15,1,5,,

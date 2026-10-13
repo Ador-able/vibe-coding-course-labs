@@ -1,0 +1,87 @@
+{
+  "parseError": null,
+  "issues": [],
+  "rows": [
+    {
+      "id": "F07",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "UI",
+          "quote": "按钮不明显，文字也挤成一块"
+        }
+      ],
+      "reason": "反馈明确要求改善界面阅读，属于界面呈现与辨认。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F08",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "FACT",
+          "quote": "把桌边听声后见手影张开写成了已查明东架昨夜异响的原因"
+        },
+        {
+          "code": "UI",
+          "quote": "正文阅读按钮的名字也让人不知道点了会看什么"
+        }
+      ],
+      "reason": "前半句指出事实判断错误，后半句指出按钮命名不清晰，分别对应FACT和UI。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F09",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "CONTEXT",
+          "quote": "只用已确认设定，不要把未采用试稿当作事实"
+        }
+      ],
+      "reason": "反馈明确说明应使用哪些材料，且明确不要求改变采用状态，属于材料与要求范围。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F10",
+      "status": "unknown",
+      "labels": [],
+      "reason": "原文仅表达不满，未说明具体处理对象，信息不足。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F11",
+      "status": "other",
+      "labels": [],
+      "reason": "主题明确为打印成册并寄给读者，但八类标签均不覆盖。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F12",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "LINK",
+          "quote": "把反复解释的两段合成一次"
+        },
+        {
+          "code": "CONTEXT",
+          "quote": "别照上个会话已经取消的500字要求再压缩"
+        }
+      ],
+      "reason": "前半句要求合并重复段落，属于结构与衔接；后半句明确排除已取消的旧要求，属于材料与要求范围。",
+      "issues": [],
+      "referenceMatches": true
+    }
+  ],
+  "semanticDecision": "pending",
+  "wholeTaskAdopted": false,
+  "usableRecords": 6,
+  "submittedRecords": 6,
+  "mechanicalState": "passed"
+}

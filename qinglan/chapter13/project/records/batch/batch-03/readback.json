@@ -1,0 +1,758 @@
+{
+  "processId": 136076,
+  "readAt": "2026-10-13T05:40:20.875Z",
+  "modelCalls": 0,
+  "items": [
+    {
+      "sourceId": "R01",
+      "bytes": 6019,
+      "sha256": "a7402c71cc5eb71029d271768366fe3a525894d15f9f613d2b05cee34b238d01",
+      "item": {
+        "sourceId": "R01",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R01",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R01",
+              "taskId": "A01",
+              "date": "2026-10-05",
+              "title": "藏书阁核查, \"第一章\"\n进入条件",
+              "status": "observed",
+              "pendingAssertions": 20,
+              "passedAssertions": 18,
+              "problemEvents": 3,
+              "actualMinutes": 6,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A01",
+                "date": "日期 2026-10-05",
+                "title": "藏书阁核查, \"第一章\"\n进入条件",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": "二十条断言",
+                "passedAssertions": "十八条",
+                "problemEvents": "3次",
+                "actualMinutes": "6分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "passed"
+          },
+          {
+            "kind": "teacher_candidate",
+            "generationState": "provided",
+            "record": {
+              "sourceId": "R01",
+              "taskId": "A01",
+              "date": "2026-10-05",
+              "title": "藏书阁核查, \"第一章\"\n进入条件",
+              "status": "observed",
+              "pendingAssertions": 20,
+              "passedAssertions": 18,
+              "problemEvents": 3,
+              "actualMinutes": 6,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A01",
+                "date": "日期 2026-10-05",
+                "title": "标题正文为下面两行：\n藏书阁核查, \"第一章\"\n进入条件",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": "本轮待核清单有二十条断言",
+                "passedAssertions": "日志记已核通过十八条",
+                "problemEvents": "问题标注3次",
+                "actualMinutes": "实际耗时6分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [
+                {
+                  "sourceId": "R01",
+                  "field": "title",
+                  "quote": "标题正文为下面两行：\n藏书阁核查, \"第一章\"\n进入条件",
+                  "message": "不是本项连续原句。"
+                }
+              ],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "failed"
+            },
+            "checkState": "failed",
+            "contentDecision": "exercise_input"
+          },
+          {
+            "kind": "cloud_repair",
+            "recipe": {
+              "sourceId": "R01",
+              "sourceKind": "teacher_candidate",
+              "promptSHA256": "17ce6473eb8009c57766209da11ff8e4fd9c7c4f3618c936ad7d45ed2cbfe9a3",
+              "instructionsSHA256": "39b504f146458e8a24e123ecde81ac5fa3d2add639617e538006b2409724dca2",
+              "settings": {
+                "kind": "调用前的非敏感课堂条件，不含APIKey",
+                "temperature": 0,
+                "maxRetries": 0,
+                "thinking": {
+                  "type": "disabled"
+                },
+                "maxOutputTokens": {
+                  "longText": 4096,
+                  "classification": 4096,
+                  "extraction": 8192,
+                  "itemRepair": 4096,
+                  "templateComparison": 8192
+                },
+                "calls": {
+                  "longText": 8,
+                  "classification": 6,
+                  "extraction": 1,
+                  "templateComparison": 2,
+                  "itemRepair": 2,
+                  "totalPlanned": 19
+                },
+                "itemRepairOrigin": "195独立使用调用前冻结的R01/R06教师错误候选进行真实修复；187实际原答并列保留，不预设真实抽取失败。失败原件保留、不为得到理想结果重跑。",
+                "mapConcurrency": 3,
+                "repairConcurrency": 2,
+                "providers": {
+                  "textModelAlias": "ep-ymk08qa8",
+                  "baseURL": "https://tokenhub.tencentmaas.com/v1"
+                },
+                "prices": "本轮自定义别名无已确认公开单价，不套用旧qwen价格或将usage当账单。"
+              }
+            },
+            "generationState": "returned",
+            "checkState": "passed",
+            "contentDecision": "needs_human",
+            "record": {
+              "sourceId": "R01",
+              "taskId": "A01",
+              "date": "2026-10-05",
+              "title": "藏书阁核查, \"第一章\"\n进入条件",
+              "status": "observed",
+              "pendingAssertions": 20,
+              "passedAssertions": 18,
+              "problemEvents": 3,
+              "actualMinutes": 6,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A01",
+                "date": "日期 2026-10-05",
+                "title": "标题正文为下面两行，保留英文逗号、双引号和换行：\n藏书阁核查, \"第一章\"\n进入条件",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": "本轮待核清单有二十条断言",
+                "passedAssertions": "日志记已核通过十八条",
+                "problemEvents": "问题标注3次",
+                "actualMinutes": "实际耗时6分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "callPath": "repair-R01/record.json",
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            }
+          }
+        ],
+        "currentAttempt": 2
+      }
+    },
+    {
+      "sourceId": "R02",
+      "bytes": 1497,
+      "sha256": "98d89e649de30e192abc36017418800eb50a01e812070d900fe8800a1809a21d",
+      "item": {
+        "sourceId": "R02",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R02",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R02",
+              "taskId": "A01",
+              "date": "2026-10-05",
+              "title": "藏书阁核查, \"第一章\"\n进入条件",
+              "status": "observed",
+              "pendingAssertions": 20,
+              "passedAssertions": 18,
+              "problemEvents": 3,
+              "actualMinutes": 6,
+              "budgetMinutes": null,
+              "duplicateOf": "R01",
+              "evidence": {
+                "taskId": "整理任务 A01",
+                "date": "日期 2026-10-05",
+                "title": "藏书阁核查, \"第一章\"\n进入条件",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": "二十条断言",
+                "passedAssertions": "十八条",
+                "problemEvents": "3次",
+                "actualMinutes": "6分钟",
+                "budgetMinutes": null,
+                "duplicateOf": "这是 R01 的同一份核查日志的重复转存"
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "passed"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R03",
+      "bytes": 1384,
+      "sha256": "c5f95acb9826a5b6492d4fd4f1d9d920b956d515e5fb77ba5b353f198a344d97",
+      "item": {
+        "sourceId": "R03",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R03",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R03",
+              "taskId": "A02",
+              "date": "2026-10-06",
+              "title": "铜片上的手",
+              "status": "observed",
+              "pendingAssertions": 30,
+              "passedAssertions": 24,
+              "problemEvents": 4,
+              "actualMinutes": 12,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A02",
+                "date": "日期 2026-10-06",
+                "title": "铜片上的手",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": "30条断言",
+                "passedAssertions": "24条",
+                "problemEvents": "4次",
+                "actualMinutes": "12分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "passed"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R04",
+      "bytes": 1752,
+      "sha256": "02dcd6e507b14613d7cbaf7d0360419facdc5c204596f9732caabb0075ecea57",
+      "item": {
+        "sourceId": "R04",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R04",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R04",
+              "taskId": "A03",
+              "date": "2026-10-06",
+              "title": "借阅登记与离阁",
+              "status": "observed",
+              "pendingAssertions": null,
+              "passedAssertions": 3,
+              "problemEvents": null,
+              "actualMinutes": 8,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A03",
+                "date": "日期 2026-10-06",
+                "title": "借阅登记与离阁",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": null,
+                "passedAssertions": "3条断言",
+                "problemEvents": null,
+                "actualMinutes": "8分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [
+                {
+                  "sourceId": "R04",
+                  "field": "pendingAssertions",
+                  "quote": null,
+                  "message": "不是本项连续原句。"
+                },
+                {
+                  "sourceId": "R04",
+                  "field": "problemEvents",
+                  "quote": null,
+                  "message": "不是本项连续原句。"
+                }
+              ],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "failed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "failed"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R05",
+      "bytes": 1354,
+      "sha256": "dbfaef5bb0153b1096fda03930545aee1da99720780294fddb1cde579976f2e9",
+      "item": {
+        "sourceId": "R05",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R05",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R05",
+              "taskId": "A04",
+              "date": "2026-10-06",
+              "title": "封绳以内",
+              "status": "observed",
+              "pendingAssertions": 0,
+              "passedAssertions": 0,
+              "problemEvents": 0,
+              "actualMinutes": 0,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A04",
+                "date": "日期 2026-10-06",
+                "title": "封绳以内",
+                "status": "已经结束",
+                "pendingAssertions": "0条",
+                "passedAssertions": "0条",
+                "problemEvents": "0次",
+                "actualMinutes": "0分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "passed"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R06",
+      "bytes": 7092,
+      "sha256": "83f5e25e754010779921639a91cdca27b71f7e1d5a1c9d0eaddbf687b6adc295",
+      "item": {
+        "sourceId": "R06",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R06",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R06",
+              "taskId": "A05",
+              "date": "2026-10-07",
+              "title": "下一次桌边观察",
+              "status": "planned",
+              "pendingAssertions": null,
+              "passedAssertions": null,
+              "problemEvents": null,
+              "actualMinutes": null,
+              "budgetMinutes": 10,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A05",
+                "date": "计划日期 2026-10-07",
+                "title": "下一次桌边观察",
+                "status": "尚未进行本轮核查",
+                "pendingAssertions": null,
+                "passedAssertions": null,
+                "problemEvents": null,
+                "actualMinutes": null,
+                "budgetMinutes": "预留10分钟"
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [
+                {
+                  "sourceId": "R06",
+                  "message": "业务字段及全部证据字段须齐全。"
+                }
+              ],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [
+                {
+                  "sourceId": "R06",
+                  "field": "pendingAssertions",
+                  "quote": null,
+                  "message": "不是本项连续原句。"
+                },
+                {
+                  "sourceId": "R06",
+                  "field": "passedAssertions",
+                  "quote": null,
+                  "message": "不是本项连续原句。"
+                },
+                {
+                  "sourceId": "R06",
+                  "field": "problemEvents",
+                  "quote": null,
+                  "message": "不是本项连续原句。"
+                },
+                {
+                  "sourceId": "R06",
+                  "field": "actualMinutes",
+                  "quote": null,
+                  "message": "不是本项连续原句。"
+                },
+                {
+                  "sourceId": "R06",
+                  "field": "duplicateOf",
+                  "quote": null,
+                  "message": "不是本项连续原句。"
+                }
+              ],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "failed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "failed"
+          },
+          {
+            "kind": "teacher_candidate",
+            "generationState": "provided",
+            "record": {
+              "sourceId": "R06",
+              "taskId": "A05",
+              "date": "2026-10-07",
+              "title": "下一次桌边观察。",
+              "status": "planned",
+              "pendingAssertions": null,
+              "passedAssertions": null,
+              "problemEvents": null,
+              "actualMinutes": null,
+              "budgetMinutes": 10,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A05",
+                "date": "计划日期 2026-10-07",
+                "title": "拟定标题为：下一次桌边观察。",
+                "status": "尚未进行本轮核查",
+                "pendingAssertions": "方案预计待核30条断言",
+                "passedAssertions": "预计通过28条",
+                "problemEvents": "没有实际...问题标注",
+                "actualMinutes": "没有实际...耗时记录",
+                "budgetMinutes": "预留10分钟",
+                "duplicateOf": null
+              }
+            },
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [
+                {
+                  "sourceId": "R06",
+                  "field": "problemEvents",
+                  "quote": "没有实际...问题标注",
+                  "message": "不是本项连续原句。"
+                },
+                {
+                  "sourceId": "R06",
+                  "field": "actualMinutes",
+                  "quote": "没有实际...耗时记录",
+                  "message": "不是本项连续原句。"
+                }
+              ],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "failed"
+            },
+            "checkState": "failed",
+            "contentDecision": "exercise_input"
+          },
+          {
+            "kind": "cloud_repair",
+            "recipe": {
+              "sourceId": "R06",
+              "sourceKind": "teacher_candidate",
+              "promptSHA256": "1f307273bcc65ff33bd6f9f1e47090f394d972ad31313b05c3ca9515d93f52c5",
+              "instructionsSHA256": "39b504f146458e8a24e123ecde81ac5fa3d2add639617e538006b2409724dca2",
+              "settings": {
+                "kind": "调用前的非敏感课堂条件，不含APIKey",
+                "temperature": 0,
+                "maxRetries": 0,
+                "thinking": {
+                  "type": "disabled"
+                },
+                "maxOutputTokens": {
+                  "longText": 4096,
+                  "classification": 4096,
+                  "extraction": 8192,
+                  "itemRepair": 4096,
+                  "templateComparison": 8192
+                },
+                "calls": {
+                  "longText": 8,
+                  "classification": 6,
+                  "extraction": 1,
+                  "templateComparison": 2,
+                  "itemRepair": 2,
+                  "totalPlanned": 19
+                },
+                "itemRepairOrigin": "195独立使用调用前冻结的R01/R06教师错误候选进行真实修复；187实际原答并列保留，不预设真实抽取失败。失败原件保留、不为得到理想结果重跑。",
+                "mapConcurrency": 3,
+                "repairConcurrency": 2,
+                "providers": {
+                  "textModelAlias": "ep-ymk08qa8",
+                  "baseURL": "https://tokenhub.tencentmaas.com/v1"
+                },
+                "prices": "本轮自定义别名无已确认公开单价，不套用旧qwen价格或将usage当账单。"
+              }
+            },
+            "generationState": "returned",
+            "checkState": "passed",
+            "contentDecision": "needs_human",
+            "record": {
+              "sourceId": "R06",
+              "taskId": "A05",
+              "date": "2026-10-07",
+              "title": "下一次桌边观察。",
+              "status": "planned",
+              "pendingAssertions": null,
+              "passedAssertions": null,
+              "problemEvents": null,
+              "actualMinutes": null,
+              "budgetMinutes": 10,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A05",
+                "date": "计划日期 2026-10-07",
+                "title": "拟定标题为：下一次桌边观察。",
+                "status": "尚未进行本轮核查",
+                "pendingAssertions": "方案预计待核30条断言",
+                "passedAssertions": "预计通过28条",
+                "problemEvents": "没有实际待核清单、通过数、问题标注或耗时记录",
+                "actualMinutes": "没有实际待核清单、通过数、问题标注或耗时记录",
+                "budgetMinutes": "预留10分钟",
+                "duplicateOf": null
+              }
+            },
+            "callPath": "repair-R06/record.json",
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            }
+          }
+        ],
+        "currentAttempt": 2
+      }
+    },
+    {
+      "sourceId": "R07",
+      "bytes": 1392,
+      "sha256": "abbc11d0f295cfc3e81a8c04e1cfc52c266a3f84311342083b5d25baec41753b",
+      "item": {
+        "sourceId": "R07",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R07",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R07",
+              "taskId": "A06",
+              "date": "2026-10-06",
+              "title": "亮隙没有跟着走",
+              "status": "observed",
+              "pendingAssertions": 10,
+              "passedAssertions": 8,
+              "problemEvents": 2,
+              "actualMinutes": 4,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A06",
+                "date": "日期 2026-10-06",
+                "title": "亮隙没有跟着走",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": "10条断言",
+                "passedAssertions": "8条",
+                "problemEvents": "2次",
+                "actualMinutes": "4分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "passed"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R08",
+      "bytes": 1400,
+      "sha256": "5d1190eb285e64995b86f5a912d67667df5a0bde8914e33ffd2b787b96a3470f",
+      "item": {
+        "sourceId": "R08",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/extract-04/report.json",
+            "sourceId": "R08",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R08",
+              "taskId": "A01",
+              "date": "2026-10-06",
+              "title": "第二天的入阁核对",
+              "status": "observed",
+              "pendingAssertions": 16,
+              "passedAssertions": 15,
+              "problemEvents": 1,
+              "actualMinutes": 5,
+              "budgetMinutes": null,
+              "duplicateOf": null,
+              "evidence": {
+                "taskId": "整理任务 A01",
+                "date": "日期 2026-10-06",
+                "title": "第二天的入阁核对",
+                "status": "已经进行本轮核查",
+                "pendingAssertions": "16条断言",
+                "passedAssertions": "15条",
+                "problemEvents": "1次",
+                "actualMinutes": "5分钟",
+                "budgetMinutes": null,
+                "duplicateOf": null
+              }
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "contentDecision": "needs_human",
+            "checkState": "passed"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    }
+  ],
+  "otherItemsUnchanged": true,
+  "summaryAdopted": false,
+  "scope": "新的只读进程取得完整逐项状态；没有测试中途崩溃或自动恢复。"
+}

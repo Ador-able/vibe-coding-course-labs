@@ -1,0 +1,25 @@
+{
+  "sourceId": "R06",
+  "taskId": "A05",
+  "date": "2026-10-07",
+  "title": "下一次桌边观察。",
+  "status": "planned",
+  "pendingAssertions": null,
+  "passedAssertions": null,
+  "problemEvents": null,
+  "actualMinutes": null,
+  "budgetMinutes": 10,
+  "duplicateOf": null,
+  "evidence": {
+    "taskId": "整理任务 A05",
+    "date": "计划日期 2026-10-07",
+    "title": "拟定标题为：下一次桌边观察。",
+    "status": "尚未进行本轮核查",
+    "pendingAssertions": "方案预计待核30条断言",
+    "passedAssertions": "预计通过28条",
+    "problemEvents": "没有实际待核清单、通过数、问题标注或耗时记录",
+    "actualMinutes": "没有实际待核清单、通过数、问题标注或耗时记录",
+    "budgetMinutes": "预留10分钟",
+    "duplicateOf": null
+  }
+}

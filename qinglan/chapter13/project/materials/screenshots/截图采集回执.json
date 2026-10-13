@@ -1,0 +1,166 @@
+{
+  "kind": "本章课堂实录的浏览器原生高清截图",
+  "sourceVersion": "sha256:f77ee9eb8024e427f9e7de2d83466c3518e87e8129eabfa6b14ee5d5bb8d76ff",
+  "modelCalls": 0,
+  "postProcessing": "无缩放、无插值放大、无拼接",
+  "screenshots": [
+    {
+      "file": "分类v2-F03-高清聚焦.png",
+      "clip": {
+        "x": 36.47750045779503,
+        "y": 328.11501297254284,
+        "width": 1527.0450101349852,
+        "height": 802.7325021340657,
+        "scale": 1
+      },
+      "sourceVersion": "sha256:f77ee9eb8024e427f9e7de2d83466c3518e87e8129eabfa6b14ee5d5bb8d76ff",
+      "viewport": {
+        "cssWidth": 1052,
+        "cssHeight": 986,
+        "zoom": 1.5199999809265137,
+        "nativeDPR": 2
+      },
+      "pixels": {
+        "width": 3054,
+        "height": 1604
+      },
+      "upscaled": false,
+      "bytes": 244077,
+      "sha256": "5010873d4c6f4f712d8a7c04542a3fd8f93515924978579a2dac08112066d7c3"
+    },
+    {
+      "file": "核查日志-R06-高清聚焦.png",
+      "clip": {
+        "x": 73.75250456769209,
+        "y": 591.7900145466701,
+        "width": 1437.2950716860032,
+        "height": 473.2700245788219,
+        "scale": 1
+      },
+      "sourceVersion": "sha256:f77ee9eb8024e427f9e7de2d83466c3518e87e8129eabfa6b14ee5d5bb8d76ff",
+      "viewport": {
+        "cssWidth": 1042,
+        "cssHeight": 986,
+        "zoom": 1.5199999809265137,
+        "nativeDPR": 2
+      },
+      "pixels": {
+        "width": 2874,
+        "height": 946
+      },
+      "upscaled": false,
+      "bytes": 174453,
+      "sha256": "a90b7d289c08364472267f584b42cbc709e7fedb9ab8b1a7570632fb75649adc"
+    },
+    {
+      "file": "逐项状态-R06-高清聚焦.png",
+      "clip": {
+        "x": 73.75250456769209,
+        "y": 591.7900145466701,
+        "width": 1437.2950716860032,
+        "height": 759.4450429604549,
+        "scale": 1
+      },
+      "sourceVersion": "sha256:f77ee9eb8024e427f9e7de2d83466c3518e87e8129eabfa6b14ee5d5bb8d76ff",
+      "viewport": {
+        "cssWidth": 1042,
+        "cssHeight": 986,
+        "zoom": 1.5199999809265137,
+        "nativeDPR": 2
+      },
+      "pixels": {
+        "width": 2874,
+        "height": 1518
+      },
+      "upscaled": false,
+      "bytes": 237662,
+      "sha256": "b3cfdf9c2b395f57dc7bdbf77920b6c5215f6941df59f762256441c93bc92f7d"
+    },
+    {
+      "file": "模板V2-高清聚焦.png",
+      "clip": {
+        "x": 36.47750045779503,
+        "y": 328.11501297254284,
+        "width": 1527.0450101349852,
+        "height": 760.7950124259369,
+        "scale": 1
+      },
+      "sourceVersion": "sha256:f77ee9eb8024e427f9e7de2d83466c3518e87e8129eabfa6b14ee5d5bb8d76ff",
+      "viewport": {
+        "cssWidth": 1052,
+        "cssHeight": 986,
+        "zoom": 1.5199999809265137,
+        "nativeDPR": 2
+      },
+      "pixels": {
+        "width": 3054,
+        "height": 1520
+      },
+      "upscaled": false,
+      "bytes": 248042,
+      "sha256": "5222d5e03ab3914a64ac33abf2246cdac7762e32b4f3735633a8c641e754cbd0"
+    }
+  ],
+  "mobileLayouts": [
+    {
+      "page": "batch",
+      "button": {
+        "right": 360.52632904052734,
+        "x": 279.47369384765625
+      },
+      "clientWidth": 380,
+      "scrollWidth": 380
+    },
+    {
+      "clientWidth": 380,
+      "page": "extraction",
+      "panels": [
+        {
+          "width": 340.5263366699219,
+          "x": 20,
+          "y": 389.3914489746094
+        },
+        {
+          "width": 340.5263366699219,
+          "x": 20,
+          "y": 663.0921020507812
+        }
+      ],
+      "scrollWidth": 380
+    },
+    {
+      "clientWidth": 380,
+      "page": "templates",
+      "panels": [
+        {
+          "width": 340.5263366699219,
+          "x": 20,
+          "y": 489.4490356445313
+        },
+        {
+          "width": 340.5263366699219,
+          "x": 20,
+          "y": 763.1497192382812
+        }
+      ],
+      "scrollWidth": 380
+    },
+    {
+      "clientWidth": 380,
+      "page": "classification",
+      "panels": [
+        {
+          "width": 340.5263366699219,
+          "x": 20,
+          "y": 466.35693359375
+        },
+        {
+          "width": 340.5263366699219,
+          "x": 20,
+          "y": 679.6875
+        }
+      ],
+      "scrollWidth": 380
+    }
+  ]
+}

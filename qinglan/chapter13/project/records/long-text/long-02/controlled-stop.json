@@ -1,0 +1,58 @@
+{
+  "kind": "受控终端操作：停止本线程长文执行进程；原报告和原记录不改写",
+  "stoppedAt": "2026-10-13T05:19:59.040Z",
+  "processId": 129928,
+  "executionGitHead": "7f65d10c3b63036d967136ed97d4fa297bf6b485",
+  "actualRequestsStarted": 6,
+  "reason": "提高到16384后四个独立节点仍length且全部预算用于reasoning，无正文；停止继续该条件",
+  "observedCalls": [
+    {
+      "id": "01-whole",
+      "status": "returned",
+      "finishReason": "length",
+      "httpStatus": 200,
+      "visibleCharacters": 0
+    },
+    {
+      "id": "02-map-1",
+      "status": "returned",
+      "finishReason": "length",
+      "httpStatus": 200,
+      "visibleCharacters": 0
+    },
+    {
+      "id": "02-map-2",
+      "status": "returned",
+      "finishReason": "length",
+      "httpStatus": 200,
+      "visibleCharacters": 0
+    },
+    {
+      "id": "02-map-3",
+      "status": "returned",
+      "finishReason": "length",
+      "httpStatus": 200,
+      "visibleCharacters": 0
+    },
+    {
+      "id": "04-refine-1",
+      "status": "returned",
+      "finishReason": "stop",
+      "httpStatus": 200,
+      "visibleCharacters": 1463
+    },
+    {
+      "id": "04-refine-2",
+      "status": "started",
+      "finishReason": null,
+      "httpStatus": null,
+      "visibleCharacters": null
+    }
+  ],
+  "uncertainty": "在途客户端停止不证明提供方未完成或未计费。没有取得返回的节点继续标为未取得最终状态。",
+  "notSent": [
+    "03-reduce",
+    "04-refine-3"
+  ],
+  "sourceFilesUnmodified": true
+}

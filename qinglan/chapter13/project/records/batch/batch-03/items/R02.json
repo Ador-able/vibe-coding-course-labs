@@ -1,0 +1,50 @@
+{
+  "sourceId": "R02",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/extract-04/report.json",
+      "sourceId": "R02",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R02",
+        "taskId": "A01",
+        "date": "2026-10-05",
+        "title": "藏书阁核查, \"第一章\"\n进入条件",
+        "status": "observed",
+        "pendingAssertions": 20,
+        "passedAssertions": 18,
+        "problemEvents": 3,
+        "actualMinutes": 6,
+        "budgetMinutes": null,
+        "duplicateOf": "R01",
+        "evidence": {
+          "taskId": "整理任务 A01",
+          "date": "日期 2026-10-05",
+          "title": "藏书阁核查, \"第一章\"\n进入条件",
+          "status": "已经进行本轮核查",
+          "pendingAssertions": "二十条断言",
+          "passedAssertions": "十八条",
+          "problemEvents": "3次",
+          "actualMinutes": "6分钟",
+          "budgetMinutes": null,
+          "duplicateOf": "这是 R01 的同一份核查日志的重复转存"
+        }
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "contentDecision": "needs_human",
+      "checkState": "passed"
+    }
+  ],
+  "currentAttempt": 0
+}

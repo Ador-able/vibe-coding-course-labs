@@ -28,9 +28,15 @@ function fieldTable(row, columns = data.material.reference.fields) {
   for (const key of columns) { const tr = document.createElement('tr'); tr.append(text('th', fields[key] || key), text('td', row?.[key] === null ? key === 'duplicateOf' ? '未标明重复转存' : '未知（null）' : Array.isArray(row?.[key]) ? row[key].join('、') : key === 'status' ? statusNames[row?.[key]] || row?.[key] : String(row?.[key] ?? '未返回'))); table.append(tr); }
   return table;
 }
+function recordFields(row) {
+  const fragment = document.createDocumentFragment();
+  fragment.append(fieldTable(row, ['status', 'pendingAssertions', 'passedAssertions', 'problemEvents', 'actualMinutes', 'budgetMinutes']));
+  const source = document.createElement('details'); source.append(text('summary', '来源、标题与重复关系'), fieldTable(row, ['sourceId', 'taskId', 'date', 'title', 'duplicateOf']));
+  fragment.append(source); return fragment;
+}
 function evidence(row) {
   const wrapper = document.createElement('details'); wrapper.append(text('summary', '字段的原句依据'));
-  for (const [key, quote] of Object.entries(row.evidence || {})) { const item = text('div', `${fields[key] || key}\n${quote === null ? '此项无材料，允许 null' : quote}`, 'evidence'); wrapper.append(item); }
+  for (const [key, quote] of Object.entries(row.evidence || {})) { const item = text('div', `${fields[key] || key}\n${quote === null ? ['budgetMinutes', 'duplicateOf'].includes(key) ? '此项未提供，允许 null' : '未给出原句依据' : quote}`, 'evidence'); wrapper.append(item); }
   return wrapper;
 }
 function checkView(check) {
@@ -67,8 +73,8 @@ function originalLog(id) {
 }
 function recordView(call, id, title = '本轮实际字段') {
   const node = panel(title), parsed = parse(call?.result?.text), row = parsed?.records?.find(record => record.sourceId === id);
-  if (row) node.append(fieldTable(row), evidence(row));
-  else node.append(text('p', '没有取得本项可解析对象。', 'warning'), details('完整实际原答', call?.result?.text || call?.error));
+  if (row) node.append(recordFields(row), evidence(row));
+  else node.append(text('p', call?.check?.parseError ? '回答格式未通过，尚未导入字段。' : '没有取得本项字段。', 'warning'), details('完整实际原答', call?.result?.text || call?.error));
   if (call) node.append(checkView(call.check), rawView(call)); return node;
 }
 function longPage() {
@@ -146,8 +152,8 @@ function batchPage() {
     for (const attempt of item.attempts) {
       const title = attempt.kind === 'cloud' ? '整批抽取真实原项' : attempt.kind === 'teacher_candidate' ? '独立教师错误候选' : '本轮真实修复';
       const section = document.createElement('details'); section.open = attempt.kind === 'cloud_repair' || item.attempts.length === 1; section.append(text('summary', title));
-      section.append(text('p', `${statusNames[attempt.generationState] || attempt.generationState} · ${statusNames[attempt.check?.mechanicalState] || '检查未取得'} · ${statusNames[attempt.contentDecision] || '待人工核对'}`, 'criterion'));
-      if (attempt.record) section.append(fieldTable(attempt.record), evidence(attempt.record)); else section.append(text('p', '本项未取得可解析对象；完整整批原答保留。', 'warning'));
+      section.append(text('p', `回答：${statusNames[attempt.generationState] || attempt.generationState} · 程序：${statusNames[attempt.check?.mechanicalState] || '检查未取得'} · 内容：${statusNames[attempt.contentDecision] || '待人工核对'}`, 'criterion'));
+      if (attempt.record) section.append(recordFields(attempt.record), evidence(attempt.record)); else section.append(text('p', '本项未取得可解析对象；完整整批原答保留。', 'warning'));
       section.append(checkView(attempt.check));
       if (attempt.callPath) section.append(rawView({ recordUrl: '/' + data.batch.directory + '/' + attempt.callPath }));
       else if (attempt.kind === 'cloud' && data.runs.extraction?.calls[0]) section.append(rawView(data.runs.extraction.calls[0]));

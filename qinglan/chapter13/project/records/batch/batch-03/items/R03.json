@@ -1,0 +1,50 @@
+{
+  "sourceId": "R03",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/extract-04/report.json",
+      "sourceId": "R03",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R03",
+        "taskId": "A02",
+        "date": "2026-10-06",
+        "title": "铜片上的手",
+        "status": "observed",
+        "pendingAssertions": 30,
+        "passedAssertions": 24,
+        "problemEvents": 4,
+        "actualMinutes": 12,
+        "budgetMinutes": null,
+        "duplicateOf": null,
+        "evidence": {
+          "taskId": "整理任务 A02",
+          "date": "日期 2026-10-06",
+          "title": "铜片上的手",
+          "status": "已经进行本轮核查",
+          "pendingAssertions": "30条断言",
+          "passedAssertions": "24条",
+          "problemEvents": "4次",
+          "actualMinutes": "12分钟",
+          "budgetMinutes": null,
+          "duplicateOf": null
+        }
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "contentDecision": "needs_human",
+      "checkState": "passed"
+    }
+  ],
+  "currentAttempt": 0
+}

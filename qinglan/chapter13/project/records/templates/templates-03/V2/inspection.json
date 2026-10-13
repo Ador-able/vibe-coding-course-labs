@@ -1,0 +1,14 @@
+{
+  "parseError": {
+    "name": "SyntaxError",
+    "message": "Unexpected token '`', \"```json\n{\n\"... is not valid JSON"
+  },
+  "formatIssues": [],
+  "coverageIssues": [],
+  "valueIssues": [],
+  "evidenceIssues": [],
+  "summaryIssues": [],
+  "semanticDecision": "pending",
+  "wholeTaskAdopted": false,
+  "mechanicalState": "failed"
+}

@@ -1,0 +1,13 @@
+{
+  "mode": "export",
+  "processId": 112088,
+  "pythonVersion": "3.13.11",
+  "modelCalls": 0,
+  "source": "records\\templates\\templates-03\\V2\\output.txt",
+  "scope": "候选业务字段完整往返，不修复证据、汇总或作采用决定",
+  "state": "failed",
+  "error": {
+    "name": "JSONDecodeError",
+    "message": "Expecting value: line 1 column 1 (char 0)"
+  }
+}
