@@ -1,0 +1,30 @@
+{
+  "name": "qinglan-batch-materials-lab",
+  "private": true,
+  "type": "module",
+  "description": "青岚小说资料的长文整理、分类、抽取、逐项状态和模板核对",
+  "packageManager": "pnpm@11.20.0",
+  "engines": { "node": ">=24.12.0 <25" },
+  "scripts": {
+    "dev": "node server.mjs",
+    "build": "node scripts/check-source.mjs",
+    "test": "node --test test/*.test.mjs",
+    "source:freeze": "node scripts/freeze-source.mjs",
+    "requests:preview": "node scripts/preview.mjs",
+    "long:observe": "node scripts/observe-long.mjs",
+    "labels:observe": "node scripts/observe-labels.mjs",
+    "extract:observe": "node scripts/observe-extract.mjs",
+    "templates:observe": "node scripts/observe-templates.mjs",
+    "items:register": "node scripts/register-batch.mjs",
+    "items:observe": "node scripts/observe-repairs.mjs",
+    "items:readback": "node scripts/read-batch.mjs",
+    "csv:export": "python -X utf8 scripts/csv-records.py export",
+    "csv:readback": "python -X utf8 scripts/csv-records.py readback",
+    "records:check": "node scripts/check-records.mjs",
+    "page:prepare": "node scripts/prepare-page.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "3.0.59",
+    "ai": "7.0.122"
+  }
+}

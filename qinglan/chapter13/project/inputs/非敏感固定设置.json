@@ -1,0 +1,29 @@
+{
+  "kind": "调用前的非敏感课堂条件，不含APIKey",
+  "temperature": 0,
+  "maxRetries": 0,
+  "thinking": "未显式关闭思考，以实际发送体为准",
+  "maxOutputTokens": {
+    "longText": 4096,
+    "classification": 4096,
+    "extraction": 8192,
+    "itemRepair": 4096,
+    "templateComparison": 8192
+  },
+  "calls": {
+    "longText": 8,
+    "classification": 6,
+    "extraction": 1,
+    "templateComparison": 2,
+    "itemRepair": 2,
+    "totalPlanned": 19
+  },
+  "itemRepairOrigin": "195独立使用调用前冻结的R01/R06教师错误候选进行真实修复；187实际原答并列保留，不预设真实抽取失败。失败原件保留、不为得到理想结果重跑。",
+  "mapConcurrency": 3,
+  "repairConcurrency": 2,
+  "providers": {
+    "textModelAlias": "ep-ymk08qa8",
+    "baseURL": "https://tokenhub.tencentmaas.com/v1"
+  },
+  "prices": "本轮自定义别名无已确认公开单价，不套用旧qwen价格或将usage当账单。"
+}

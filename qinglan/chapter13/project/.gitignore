@@ -1,0 +1,6 @@
+node_modules/
+.tmp/
+public/records/private-*/
+records/private-*/
+records/*/private-*/
+*.log

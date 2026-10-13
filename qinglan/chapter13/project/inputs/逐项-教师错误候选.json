@@ -1,0 +1,55 @@
+{
+  "kind": "调用前构造的错误候选，只用于逐项反馈练习。与187真实原答并列保存，绝不记为实际模型失败或作者采用。",
+  "candidates": [
+    {
+      "sourceId": "R01",
+      "taskId": "A01",
+      "date": "2026-10-05",
+      "title": "藏书阁核查, \"第一章\"\n进入条件",
+      "status": "observed",
+      "pendingAssertions": 20,
+      "passedAssertions": 18,
+      "problemEvents": 3,
+      "actualMinutes": 6,
+      "budgetMinutes": null,
+      "duplicateOf": null,
+      "evidence": {
+        "taskId": "整理任务 A01",
+        "date": "日期 2026-10-05",
+        "title": "标题正文为下面两行：\n藏书阁核查, \"第一章\"\n进入条件",
+        "status": "已经进行本轮核查",
+        "pendingAssertions": "本轮待核清单有二十条断言",
+        "passedAssertions": "日志记已核通过十八条",
+        "problemEvents": "问题标注3次",
+        "actualMinutes": "实际耗时6分钟",
+        "budgetMinutes": null,
+        "duplicateOf": null
+      }
+    },
+    {
+      "sourceId": "R06",
+      "taskId": "A05",
+      "date": "2026-10-07",
+      "title": "下一次桌边观察。",
+      "status": "planned",
+      "pendingAssertions": null,
+      "passedAssertions": null,
+      "problemEvents": null,
+      "actualMinutes": null,
+      "budgetMinutes": 10,
+      "duplicateOf": null,
+      "evidence": {
+        "taskId": "整理任务 A05",
+        "date": "计划日期 2026-10-07",
+        "title": "拟定标题为：下一次桌边观察。",
+        "status": "尚未进行本轮核查",
+        "pendingAssertions": "方案预计待核30条断言",
+        "passedAssertions": "预计通过28条",
+        "problemEvents": "没有实际...问题标注",
+        "actualMinutes": "没有实际...耗时记录",
+        "budgetMinutes": "预留10分钟",
+        "duplicateOf": null
+      }
+    }
+  ]
+}
