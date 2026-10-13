@@ -51,34 +51,14 @@
   },
   "files": [
     {
-      "path": "../../../package.json",
-      "bytes": 220,
-      "sha256": "f19d8fc2fa6aa7aac07a7388e18a3f4a270c5a39f30b8605c9d50f721c387753"
-    },
-    {
-      "path": "../../../pnpm-workspace.yaml",
-      "bytes": 351,
-      "sha256": "dd8ea94fd7a864c8c073c6d4bf3b811619587216dc6c8b49b637f3b5b0c0ffd3"
-    },
-    {
-      "path": "inputs/170-完整原生评审任务.txt",
-      "bytes": 1824,
-      "sha256": "08790fef3665f0c845893f6fbb2eba327d9177b5554d150d19f3ad1c1de60294"
-    },
-    {
       "path": "inputs/170-评审对象.json",
       "bytes": 13350,
       "sha256": "97aa0df2f2c7023704ff8fee9d6c31e95f8d48808ff56e1506b9edc700491f6f"
     },
     {
-      "path": "inputs/CI官方版本与范围.json",
-      "bytes": 1508,
-      "sha256": "785e38f52332398b6a29ae2aea3a568e9800dade195758d30edb17f42cacf6b4"
-    },
-    {
-      "path": "inputs/完整教师初始化.json",
-      "bytes": 12147,
-      "sha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147"
+      "path": "inputs/170-完整原生评审任务.txt",
+      "bytes": 1824,
+      "sha256": "08790fef3665f0c845893f6fbb2eba327d9177b5554d150d19f3ad1c1de60294"
     },
     {
       "path": "inputs/独立业务预期.json",
@@ -89,6 +69,16 @@
       "path": "inputs/青岚修仙录-三章原始课堂存档.md",
       "bytes": 10231,
       "sha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf"
+    },
+    {
+      "path": "inputs/完整教师初始化.json",
+      "bytes": 12147,
+      "sha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147"
+    },
+    {
+      "path": "inputs/CI官方版本与范围.json",
+      "bytes": 1508,
+      "sha256": "785e38f52332398b6a29ae2aea3a568e9800dade195758d30edb17f42cacf6b4"
     },
     {
       "path": "package.json",
@@ -104,6 +94,16 @@
       "path": "prototype/app.js",
       "bytes": 6818,
       "sha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63"
+    },
+    {
+      "path": "records/delivery-prior/root-package.json",
+      "bytes": 220,
+      "sha256": "f19d8fc2fa6aa7aac07a7388e18a3f4a270c5a39f30b8605c9d50f721c387753"
+    },
+    {
+      "path": "records/delivery-prior/root-pnpm-workspace.yaml",
+      "bytes": 351,
+      "sha256": "dd8ea94fd7a864c8c073c6d4bf3b811619587216dc6c8b49b637f3b5b0c0ffd3"
     },
     {
       "path": "records/regression-fixed-abort/practice.sqlite",
@@ -186,46 +186,6 @@
       "sha256": "87bda1e0535e2bc9460c8da629cbd47ea6da4e147c806f04717368a945aae36c"
     },
     {
-      "path": "records/regression/165-中文采用派生-真实文件差异.patch",
-      "bytes": 12508,
-      "sha256": "463de4198542fe0e87c44c7e35bcd9b73fcba63523811019e56b5c0ed3dd26bd"
-    },
-    {
-      "path": "records/regression/165-中文采用派生与AST核验.json",
-      "bytes": 12679,
-      "sha256": "598a72c873a43e9e32286b6a8d001319ee1072a1fbf85d19ad5bf6d2024523cb"
-    },
-    {
-      "path": "records/regression/165-中断候选完整交接回执.json",
-      "bytes": 1858,
-      "sha256": "d6319b62ca9c1776272be885473d6d96c77dca342bdc27e9afd81754b26f86c9"
-    },
-    {
-      "path": "records/regression/165-主编实际执行进程回执.json",
-      "bytes": 1905,
-      "sha256": "c77051192a2742000e77a82bc6c3301a98cedb4f53b2b26a934be6be02b5c8f4"
-    },
-    {
-      "path": "records/regression/165-主编独立四库完整读回-首次跨运行域数组原型检查.json",
-      "bytes": 5218,
-      "sha256": "d5b0bc7f5631ccfc62b49833b402e2f99a9a25cb88c9e9a678edf3c416525a88"
-    },
-    {
-      "path": "records/regression/165-主编独立四库完整读回.json",
-      "bytes": 5963,
-      "sha256": "e48fdc1320a667b05cf963a69a80fdac4c361645c4d3c76600334fed422293b3"
-    },
-    {
-      "path": "records/regression/165-四例执行冻结起点回执.json",
-      "bytes": 8989,
-      "sha256": "7805de6fbc49e1dff3213758e3f135656868e3ab3af0d88ff9c1f7867fca89a0"
-    },
-    {
-      "path": "records/regression/165-旧恢复实际执行-完整终端.txt",
-      "bytes": 2498,
-      "sha256": "e6e3ba9bc7be1cecd1baaaa6d3f7424fc860ac81586365f01fd13b3151f7f5c4"
-    },
-    {
       "path": "records/regression/165-本轮单界面历史行为恢复-真实Git差异.patch",
       "bytes": 6279,
       "sha256": "a016280e48f06a7d0e8fcac806d038a0292fd9ad1e5109f576d3e119df46bffd"
@@ -234,6 +194,16 @@
       "path": "records/regression/165-本轮历史恢复准备回执.json",
       "bytes": 1178,
       "sha256": "8a7a06cdc691f32c95bf6aa83b4893ec841221467b4d5f70afcf721d13514c70"
+    },
+    {
+      "path": "records/regression/165-采用测试脚本-中文说明.mjs",
+      "bytes": 44461,
+      "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49"
+    },
+    {
+      "path": "records/regression/165-旧恢复实际执行-完整终端.txt",
+      "bytes": 2498,
+      "sha256": "e6e3ba9bc7be1cecd1baaaa6d3f7424fc860ac81586365f01fd13b3151f7f5c4"
     },
     {
       "path": "records/regression/165-模型生成候选-20分钟中断.mjs",
@@ -246,14 +216,54 @@
       "sha256": "d7fbde52eef030b97a86de18addb1f27617f23dee7573394d399280f3781367f"
     },
     {
+      "path": "records/regression/165-四例执行冻结起点回执.json",
+      "bytes": 8989,
+      "sha256": "7805de6fbc49e1dff3213758e3f135656868e3ab3af0d88ff9c1f7867fca89a0"
+    },
+    {
       "path": "records/regression/165-正确实现实际执行-完整终端.txt",
       "bytes": 835,
       "sha256": "c542a4664cb8dbc37650cc8b7df37d23d18c88702acb22abc61ea5aae84a0802"
     },
     {
-      "path": "records/regression/165-采用测试脚本-中文说明.mjs",
-      "bytes": 44461,
-      "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49"
+      "path": "records/regression/165-中断候选完整交接回执.json",
+      "bytes": 1858,
+      "sha256": "d6319b62ca9c1776272be885473d6d96c77dca342bdc27e9afd81754b26f86c9"
+    },
+    {
+      "path": "records/regression/165-中文采用派生-真实文件差异.patch",
+      "bytes": 12508,
+      "sha256": "463de4198542fe0e87c44c7e35bcd9b73fcba63523811019e56b5c0ed3dd26bd"
+    },
+    {
+      "path": "records/regression/165-中文采用派生与AST核验.json",
+      "bytes": 12679,
+      "sha256": "598a72c873a43e9e32286b6a8d001319ee1072a1fbf85d19ad5bf6d2024523cb"
+    },
+    {
+      "path": "records/regression/165-主编独立四库完整读回-首次跨运行域数组原型检查.json",
+      "bytes": 5218,
+      "sha256": "d5b0bc7f5631ccfc62b49833b402e2f99a9a25cb88c9e9a678edf3c416525a88"
+    },
+    {
+      "path": "records/regression/165-主编独立四库完整读回.json",
+      "bytes": 5963,
+      "sha256": "e48fdc1320a667b05cf963a69a80fdac4c361645c4d3c76600334fed422293b3"
+    },
+    {
+      "path": "records/regression/165-主编实际执行进程回执.json",
+      "bytes": 1905,
+      "sha256": "c77051192a2742000e77a82bc6c3301a98cedb4f53b2b26a934be6be02b5c8f4"
+    },
+    {
+      "path": "records/regression/历史恢复点到正确点-完整Git差异.patch",
+      "bytes": 7514,
+      "sha256": "624ba772381541ab11f44a40379d8419102166f8dd45bcb891a8e02fa84c21dd"
+    },
+    {
+      "path": "records/regression/完整原件清单.json",
+      "bytes": 22535,
+      "sha256": "636c106ae782cffeec0047ccd160d348525f38af6016e0336f5efae76c209063"
     },
     {
       "path": "records/regression/fixed-source-version.json",
@@ -271,14 +281,9 @@
       "sha256": "f0ae457877b35fe50fda6d3d6ee5b96c3aabf04f4c1557c16f6ca627beae25ab"
     },
     {
-      "path": "records/regression/历史恢复点到正确点-完整Git差异.patch",
-      "bytes": 7514,
-      "sha256": "624ba772381541ab11f44a40379d8419102166f8dd45bcb891a8e02fa84c21dd"
-    },
-    {
-      "path": "records/regression/完整原件清单.json",
-      "bytes": 22535,
-      "sha256": "636c106ae782cffeec0047ccd160d348525f38af6016e0336f5efae76c209063"
+      "path": "records/review-01/完整原件审计.json",
+      "bytes": 40243,
+      "sha256": "593e48b9361a34ffdab3b175d2eab8e180778ff2427a9013d4a42641118b33a2"
     },
     {
       "path": "records/review-01/after.json",
@@ -339,11 +344,6 @@
       "path": "records/review-01/review/thread.json",
       "bytes": 448253,
       "sha256": "9afedcb0c4a0856cae1ae43d256ba377e299678e8f286972e103fec249ee7d70"
-    },
-    {
-      "path": "records/review-01/完整原件审计.json",
-      "bytes": 40243,
-      "sha256": "593e48b9361a34ffdab3b175d2eab8e180778ff2427a9013d4a42641118b33a2"
     },
     {
       "path": "records/tests-01/after.json",
@@ -478,5 +478,36 @@
     }
   },
   "scope": "本索引只记录已取得前置事实和尚未运行的交付任务/检查，不把YAML、代码生成、模型评审或草稿保存当作CI与文学采用。",
-  "preparedAt": "2026-10-13T13:55:37.261Z"
+  "preparedAt": "2026-10-13T13:55:37.261Z",
+  "rootMetadataSources": [
+    {
+      "actualPath": "../../../package.json",
+      "capturedPath": "records/delivery-prior/root-package.json",
+      "git": "b7b385cd10171b2c13b96058d801f80f5a7d8740",
+      "gitBlob": {
+        "bytes": 209,
+        "sha256": "3dd1aa11a09478e7a415caf96b3e2b3ab4ed41e2dc9df9363bd98ed7037ceb1b"
+      },
+      "capturedWorkBytes": {
+        "bytes": 220,
+        "sha256": "f19d8fc2fa6aa7aac07a7388e18a3f4a270c5a39f30b8605c9d50f721c387753"
+      },
+      "sameTextWithExistingLineEndingConversion": true
+    },
+    {
+      "actualPath": "../../../pnpm-workspace.yaml",
+      "capturedPath": "records/delivery-prior/root-pnpm-workspace.yaml",
+      "git": "b7b385cd10171b2c13b96058d801f80f5a7d8740",
+      "gitBlob": {
+        "bytes": 342,
+        "sha256": "91303b0b7942f865f388ef7d5ace4f95a253118d0bd73a0b2c8b6a152f2d53de"
+      },
+      "capturedWorkBytes": {
+        "bytes": 351,
+        "sha256": "dd8ea94fd7a864c8c073c6d4bf3b811619587216dc6c8b49b637f3b5b0c0ffd3"
+      },
+      "sameTextWithExistingLineEndingConversion": true
+    }
+  ],
+  "rootMetadataScope": "完整任务仍读取仓库根实际package/workspace配置。准确课堂原字节快照单独冻结，既有根配置文本行尾转换不当作源码改动。"
 }
