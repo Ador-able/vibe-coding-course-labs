@@ -16,7 +16,7 @@ function publicMessage(message,method){
 }
 // 仅传递固定版本原生RPC，不安排模型工具步骤、不自动批准或重试。
 export function host({cwd,out,settings,docBudget=32768,readOnly=true,onNotification=()=>{},onFailure=()=>{}}){
-  const overrides=[`model=${JSON.stringify(settings.model)}`,'features.shell_tool=true','features.hooks=false','features.memories=false','memories.use_memories=false','memories.generate_memories=false','skills.bundled.enabled=false','web_search="disabled"','developer_instructions=""',`project_doc_max_bytes=${docBudget}`,`sandbox_mode="${readOnly?'read-only':'workspace-write'}"`,'approval_policy="never"'];
+  const overrides=[`model=${JSON.stringify(settings.model)}`,'features.apps=false','features.shell_tool=true','features.hooks=false','features.memories=false','memories.use_memories=false','memories.generate_memories=false','skills.bundled.enabled=false','web_search="disabled"','developer_instructions=""',`project_doc_max_bytes=${docBudget}`,`sandbox_mode="${readOnly?'read-only':'workspace-write'}"`,'approval_policy="never"'];
   const child=spawn(process.execPath,[officialEntry,...overrides.flatMap(value=>['-c',value]),'app-server','--stdio'],{cwd,env:codexEnvironment(),stdio:['pipe','pipe','pipe'],windowsHide:true});
   const pending=new Map(),notifications=[],protocol=[],stderr=[];let id=0,closing=false,writes=Promise.resolve();
   const closed=new Promise(done=>child.once('close',(code,signal)=>done({code,signal})));

@@ -1,7 +1,7 @@
 {
-  "sourceSha256": "78eb14a0fce0ba718faa34d716c636eb195a22658f7e570c389bc39afe8f75c8",
-  "sourceVersion": "78eb14a0fce0ba718faa34d716c636eb195a22658f7e570c389bc39afe8f75c8",
-  "preparedFromGit": "c089517e87aba5908070ff932281612c82020226",
+  "sourceSha256": "db69402854ec9a4241f3ff1bb4bd61674d93ef7db00f6c7d257a9541c08c614e",
+  "sourceVersion": "db69402854ec9a4241f3ff1bb4bd61674d93ef7db00f6c7d257a9541c08c614e",
+  "preparedFromGit": "bbe1e28bbafc09ba7d2e3d70a0516093fca7feeb",
   "practiceTag": "qinglan-ch15-practice-start",
   "inputRegistrySha256": "bd7023f850a4668eb8620781fbe4e77407c818d5c9e1ae4bcc687700ccb27621",
   "files": [
@@ -22,8 +22,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4019,
-      "sha256": "87a961199ded8c6612a1485f7e9e57e377accec2e6e9663d4b596fb1c57a340c"
+      "bytes": 4059,
+      "sha256": "d7eb9f90f0b223a31b0647df81f95a16de8a13b43f998381310fe45d492568fd"
     },
     {
       "path": "config/固定实验参数.json",
@@ -137,13 +137,13 @@
     },
     {
       "path": "scripts/host.mjs",
-      "bytes": 4264,
-      "sha256": "531787e352b10dfcdbe89e313be209444e276e2fb9cb05ed7a70a9ad6b17260d"
+      "bytes": 4286,
+      "sha256": "8e7dfce7e5ec8a45255b3233289d6e0a9f1a1cf0cc0ed509b24bef8cfb8fac4e"
     },
     {
       "path": "scripts/observe.mjs",
-      "bytes": 11212,
-      "sha256": "9fed832ea5ab33bb097b5279370c59ad393c155eecf1f3669f81ff71f3c20e34"
+      "bytes": 11249,
+      "sha256": "3cddf8e2d661de6ffba68d3bfc41565f94b61cb3681a3ae7b3d5919f52c0c540"
     },
     {
       "path": "scripts/prepare-history.mjs",

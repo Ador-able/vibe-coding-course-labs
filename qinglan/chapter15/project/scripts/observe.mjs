@@ -59,8 +59,7 @@ async function observeCase({label,cwd,budget,readOnly,prompt=null,nativeReview=f
     await h.request('initialize',{clientInfo:{name:'qinglan_ch15_observer',version:'1.0.0'},capabilities:{experimentalApi:true}});h.send({method:'initialized',params:{}});
     directories.configuration=configurationProjection(await h.request('config/read',{cwd,includeLayers:false}));
     directories.hooks=await h.request('hooks/list',{cwds:[cwd]});directories.skills=await h.request('skills/list',{cwds:[cwd],forceReload:true});
-    if(directories.configuration.developerInstructionsPresent||directories.configuration.features?.hooks!==false||directories.configuration.web_search!=='disabled'||directories.skills.data.some(item=>item.skills.some(skill=>skill.enabled)||item.errors?.length)||directories.hooks.data.some(item=>item.hooks.length||item.errors.length))throw new Error('实际目录超出冻结范围；未调用模型。');
-    if(mode!=='preflight'){
+    if(directories.configuration.developerInstructionsPresent||directories.configuration.features?.apps!==false||directories.configuration.features?.hooks!==false||directories.configuration.web_search!=='disabled'||directories.skills.data.some(item=>item.skills.some(skill=>skill.enabled)||item.errors?.length)||directories.hooks.data.some(item=>item.hooks.length||item.errors.length))throw new Error('实际目录超出冻结范围；未调用模型。');
       started=await h.request('thread/start',{cwd,model:settings.model,runtimeWorkspaceRoots:[root],sandbox:readOnly?'read-only':'workspace-write',approvalPolicy:'never'});threadId=started.thread.id;
       directories.mcp=await h.request('mcpServerStatus/list',{threadId,detail:'toolsAndAuthOnly'});
       if(started.model!==settings.model||started.approvalPolicy!=='never'||directories.mcp.data.some(item=>Object.keys(item.tools??{}).length))throw new Error('实际模型、权限或MCP目录超出冻结范围；未调用模型。');
@@ -73,7 +72,6 @@ async function observeCase({label,cwd,budget,readOnly,prompt=null,nativeReview=f
         await completion;
         localWrite('thread',await h.request('thread/read',{threadId,includeTurns:true}));
       }
-    }
   }catch(cause){error??=cause.message;if(turnId&&!turn&&h.child.exitCode===null){await interrupt();try{await completion;}catch{}}}
   finally{
     clearTimeout(timeout);clearTimeout(grace);
@@ -88,7 +86,7 @@ async function observeCase({label,cwd,budget,readOnly,prompt=null,nativeReview=f
   return report;
 }
 if(mode==='rules-sources')for(const condition of [{label:'A-root',cwd:root,budget:32768},{label:'B-prototype',cwd:resolve('prototype'),budget:32768},{label:'C-zero',cwd:resolve('prototype'),budget:0}]){const item=await observeCase({...condition,readOnly:true});cases.push(item);if(item.error)break;}
-else cases.push(await observeCase({label:mode==='preflight'?'directory':task??'review',cwd:definition?.cwd??root,budget:definition?.budget??32768,readOnly:definition?.readOnly??true,prompt:definition?readFileSync('inputs/'+definition.prompt,'utf8'):null,nativeReview:mode==='review'}));
+else cases.push(await observeCase({label:mode==='preflight'?'directory':task??'review',cwd:definition?.cwd??root,budget:mode==='preflight'?0:definition?.budget??32768,readOnly:definition?.readOnly??true,prompt:definition?readFileSync('inputs/'+definition.prompt,'utf8'):null,nativeReview:mode==='review'}));
 const after={code:codeState(),database:databaseState()};write('after',after);
 const report={out,mode,task:task??null,version,cases,sourceUnchanged:isDeepStrictEqual(before.code,after.code),businessUnchanged:isDeepStrictEqual(before.database,after.database),ordinaryTurnStarts:cases.reduce((sum,item)=>sum+item.ordinaryTurnStarts,0),reviewStarts:cases.reduce((sum,item)=>sum+item.reviewStarts,0),limits:'只读沙箱不表示目录外文件绝对不可读；任务范围、实际命令和前后对象另核。没有自动续发、重试或业务生成。'};write('report',report);
 console.log(JSON.stringify({out,mode,cases:cases.length,ordinaryTurnStarts:report.ordinaryTurnStarts,reviewStarts:report.reviewStarts,errors:cases.map(item=>item.error).filter(Boolean),businessUnchanged:report.businessUnchanged}));

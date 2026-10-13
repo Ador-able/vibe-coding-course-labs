@@ -10,7 +10,7 @@
 
 五节各有准确start/end，见`inputs/五节Git与实测计划.json`。前三章完整教师输入、独立A和键盘补记均在`inputs/`。当前应用已暂停保存/读回等待期间的编辑；需要对照历史缺陷时，只在自己的独立恢复副本运行`node scripts/restore-historical-bug.mjs`，它只恢复实际旧setBusy/render行为。历史原源码与SHA在`materials/historical/`，这不是当前正确应用仍有问题。
 
-本章沿用官方Codex SDK/CLI0.160.0和既有本机登录；私有`CODEX_HOME`只复制登录与模型选择，不复制用户规则、插件或记忆。配置、会话及认证只在Git忽略的`runs/private-codex-home`。规则来源按原生实际返回记录，不套用其他版本的加载结果。`host:check`只查目录；`rules:observe`只创建三空会话，无模型任务。
+本章沿用官方Codex SDK/CLI0.160.0和既有本机登录；私有`CODEX_HOME`只复制登录与模型选择，不复制用户规则、插件或记忆。配置、会话及认证只在Git忽略的`runs/private-codex-home`。本章关闭Apps集成，规则来源和MCP目录按空会话中的原生实际返回核对。`host:check`创建一份空会话并归档；`rules:observe`创建三份空会话，均不发送模型任务。
 
 亲自调查或改代码时，把`inputs/`中当前完整提示交给已经使用的编码助手即可。先保存自己的源码改动，再按本节Git起点开始，保留真实Diff、结果与未完成条件。
 
