@@ -26,5 +26,33 @@
         "path": "records/investigation-01/report.json"
       }
     ]
+  },
+  {
+    "lesson": 164,
+    "title": "规则加载与参考读取",
+    "summary": "三份空会话分别核规则来源；另一次只读任务观察条件参考的实际读取。",
+    "finalResponse": "records/rules-01/rules/final-response.txt",
+    "files": [
+      {
+        "title": "三份空会话完整报告",
+        "path": "records/rules-sources-01/report.json"
+      },
+      {
+        "title": "实际规则任务完整报告",
+        "path": "records/rules-01/report.json"
+      },
+      {
+        "title": "规则任务完整原协议",
+        "path": "records/rules-01/rules/protocol.jsonl"
+      },
+      {
+        "title": "任务开始完整对象",
+        "path": "records/rules-01/before.json"
+      },
+      {
+        "title": "任务结束完整对象",
+        "path": "records/rules-01/after.json"
+      }
+    ]
   }
 ]

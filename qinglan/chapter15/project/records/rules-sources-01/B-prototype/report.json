@@ -1,0 +1,29 @@
+{
+  "label": "B-prototype",
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\prototype",
+  "budget": 32768,
+  "version": "codex-cli 0.160.0",
+  "model": "gpt-6.1-sol",
+  "modelProvider": "openai",
+  "instructionSources": [
+    "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\AGENTS.md",
+    "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\prototype\\AGENTS.md"
+  ],
+  "threadId": "01a13526-4325-7903-89fe-b850aaf2e90a",
+  "turnId": null,
+  "turn": null,
+  "usage": null,
+  "error": null,
+  "interrupted": false,
+  "processExit": {
+    "code": 0,
+    "signal": null
+  },
+  "threadStarts": 1,
+  "ordinaryTurnStarts": 0,
+  "reviewStarts": 0,
+  "commands": [],
+  "fileChanges": [],
+  "scope": "空会话/目录查询，没有模型任务。",
+  "reviewVisibleText": null
+}

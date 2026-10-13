@@ -1,0 +1,93 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\runs\\rules-sources-01",
+  "mode": "rules-sources",
+  "task": null,
+  "version": "codex-cli 0.160.0",
+  "cases": [
+    {
+      "label": "A-root",
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project",
+      "budget": 32768,
+      "version": "codex-cli 0.160.0",
+      "model": "gpt-6.1-sol",
+      "modelProvider": "openai",
+      "instructionSources": [
+        "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\AGENTS.md"
+      ],
+      "threadId": "01a13526-2f2c-72a3-b588-c23d6dc53a8b",
+      "turnId": null,
+      "turn": null,
+      "usage": null,
+      "error": null,
+      "interrupted": false,
+      "processExit": {
+        "code": 0,
+        "signal": null
+      },
+      "threadStarts": 1,
+      "ordinaryTurnStarts": 0,
+      "reviewStarts": 0,
+      "commands": [],
+      "fileChanges": [],
+      "scope": "空会话/目录查询，没有模型任务。"
+    },
+    {
+      "label": "B-prototype",
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\prototype",
+      "budget": 32768,
+      "version": "codex-cli 0.160.0",
+      "model": "gpt-6.1-sol",
+      "modelProvider": "openai",
+      "instructionSources": [
+        "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\AGENTS.md",
+        "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\prototype\\AGENTS.md"
+      ],
+      "threadId": "01a13526-4325-7903-89fe-b850aaf2e90a",
+      "turnId": null,
+      "turn": null,
+      "usage": null,
+      "error": null,
+      "interrupted": false,
+      "processExit": {
+        "code": 0,
+        "signal": null
+      },
+      "threadStarts": 1,
+      "ordinaryTurnStarts": 0,
+      "reviewStarts": 0,
+      "commands": [],
+      "fileChanges": [],
+      "scope": "空会话/目录查询，没有模型任务。"
+    },
+    {
+      "label": "C-zero",
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter15\\project\\prototype",
+      "budget": 0,
+      "version": "codex-cli 0.160.0",
+      "model": "gpt-6.1-sol",
+      "modelProvider": "openai",
+      "instructionSources": [],
+      "threadId": "01a13526-448a-7631-8845-adbd263452ca",
+      "turnId": null,
+      "turn": null,
+      "usage": null,
+      "error": null,
+      "interrupted": false,
+      "processExit": {
+        "code": 0,
+        "signal": null
+      },
+      "threadStarts": 1,
+      "ordinaryTurnStarts": 0,
+      "reviewStarts": 0,
+      "commands": [],
+      "fileChanges": [],
+      "scope": "空会话/目录查询，没有模型任务。"
+    }
+  ],
+  "sourceUnchanged": true,
+  "businessUnchanged": true,
+  "ordinaryTurnStarts": 0,
+  "reviewStarts": 0,
+  "limits": "只读沙箱不表示目录外文件绝对不可读；任务范围、实际命令和前后对象另核。没有自动续发、重试或业务生成。"
+}

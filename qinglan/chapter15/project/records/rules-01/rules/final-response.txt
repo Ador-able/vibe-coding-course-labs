@@ -1,0 +1,56 @@
+不能。**保存返回 200、读回正文相同，可以支持一次草稿持久化与读回一致的判断；“提示、对照和重新编辑入口足够清楚”仍需观察人怎样理解实际页面。**这也不能反推页面已有故障。[save-review.md 第9行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/docs/save-review.md:9)明确区分了程序通过、人的辨认、页面审美和文学采用。
+
+实际 Git 核对结果如下，结束时复核仍一致：
+
+- Git 根：`D:\Projects\Knowledge\.coursebook-work\c15-impl`
+- HEAD：`f210690e36f307cbd281e8d1d7c96a6b6c2f5fe7`
+- 分支：`codex/qinglan-chapter15`
+- cwd：`D:\Projects\Knowledge\.coursebook-work\c15-impl\qinglan\chapter15\project\prototype`
+- 暂存区、工作区均无已跟踪改动；未跟踪文件列表为空。
+
+首次 Git 状态查询报告全局 ignore 文件访问被拒绝；随后禁用全局／系统配置及全局 ignore 复核，未取得该文件内容。
+
+来源与当前对象也已核对。[完整教师初始化.json 第4、5、8、10行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/inputs/完整教师初始化.json:4)记录来源提交 `3abac6b711599c2cef3c30b79036d3dc72c1321f`、原课堂导出路径及“此前模型生成与编者改稿”的来源。项目内原存档副本为 10231 字节，实际 SHA256 与来源记录相符。原存档的章修订是 r3、r1、r3；本实验初始化为新的三章 `human/draft r1`，没有复制原任务或采用历史。[seed.mjs 第12、14、15行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/scripts/seed.mjs:12)说明了这一初始化过程。
+
+[162-准备完整当前对象.json](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/inputs/162-准备完整当前对象.json:3)是已有 seed 后实际读回记录。其完整 GET 原始正文在第47行，解析后的三章正文在第87、103、124行；五表中的章节正文在第169、175、181行，历史正文在第189、195、201行。我对照了完整字符串，三章均与教师输入一致。记录显示作品 r1、三章均 `basisCurrent=true`，前文基线分别为空、第1章 r1、第1与第2章 r1；五表行数为 `1、1、3、3、0`。第228、229、230行记录的是 **0 次模型请求、2 次 GET、0 次 POST**，因此它不能充当实际保存或冲突操作的实录。
+
+林青的身份、炼气三层和筑基愿望见教师输入第20、21行；完整第三章保留了“中间没看着”和“闻声后见手影张开”的观察边界，没有将先后关系确认为声音触发。我没有增写小说事实。独立业务预期中的补记也明确属于键盘测试文字，未文学采用（[第3行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/inputs/独立业务预期.json:3)）。
+
+1. **功能：已有调用链依据，保存与冲突的实际执行仍待核。**
+
+   完整章稿由页面 `GET /api/work` 读取。HTTP 层通过 `getWork`、`getChapter` 补齐正文，并通过 `exportWork`计算依据状态；数据库正文来自 `chapters.content`。定位：[prototype-http.ts 第18、20、21行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/src/prototype-http.ts:18)，[store.ts 第43、55、134、135行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/src/store.ts:55)。
+
+   本地编辑缓存持有完整章名、正文、读入章对象，以及作品修订和全部前文章节修订；保存发送这些完整字段。[app.js 第15、18行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/prototype/app.js:15)对应缓存和请求，[schemas.ts 第13、16、17、18、19、20行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/src/schemas.ts:13)定义输入约束，其中章名和正文会先 `trim()`。
+
+   POST 的 200 位于 `Store.saveDraft` 返回之后：事务核对作品、本章和前文修订，写入当前表与历史表，并提交事务。页面随后 GET；**两段请求完成后才清除本地缓存并显示“已保存 rN”**。保存及读回等待期间已有编辑暂停代码，不能把历史等待输入缺陷当作当前故障。定位：[HTTP 第24行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/src/prototype-http.ts:24)，[Store 第28、29、82、83、94、97、103、107行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/src/store.ts:91)，app.js 第12、18行。
+
+   程序能决定输入是否合法、基线是否过期、事务是否完成及读回时的当前对象；它不能据此决定文学采用。保存固定为 `draft`，采用另有独立方法（Store 第107、119、125行）；`human`是保存来源字段。
+
+   待核的是实际 POST／GET 等待、成功后恢复编辑、409、POST 已提交而 GET 失败及并发更新。独立预期第28、29、30、31、32行是预期；第35行限定了服务收到 POST 前的 abort，第40行明确排除了提交后 GET 失败、未知终态、并发、全部空白字符和审美。**本轮没有执行这些状态。**
+
+2. **信息辨认：已有提示和入口，仍需观察以下具体状态。**
+
+   下表的行号均指 [app.js](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/prototype/app.js:6)；实际入口文字在 [index.html 第10、13、18行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/prototype/index.html:10)。
+
+   | 状态 | 源码已说明的行为 | 仍需让人辨认的含义 |
+   |---|---|---|
+   | 本地有修改 | 第10、11行按章名／正文与本地基线比较，显示“有未保存修改” | 当前字句是否仅留在本地 |
+   | POST 与随后 GET 等待 | 第12、18行暂停编辑；等待期间显示“正在保存草稿” | 此时尚未完成整个保存读回流程 |
+   | 保存成功后再次输入 | 第18行显示“已保存 rN”；第11行的新输入会更新未保存标记，但不清掉保存消息 | “已保存”指前一次稿件，新输入仍未保存 |
+   | 409 后读取当前稿 | 第7、16行保留本地稿并展示远端正文；第14、15行分别使用新快照修订和旧本地基线 | 导航修订、上方本地稿、下方已保存稿分别指什么 |
+   | 点击“以当前稿重新编辑” | 第20行删除该章本地编辑缓存；第15行从最新快照重建编辑和基线 | 此操作会换掉原本地编辑，不会自动合并、保存或采用 |
+   | 无响应或结果未确认 | 第8、18行保留本地稿，并限制继续保存，要求先读取当前稿 | 不能把连接失败理解为服务器一定没保存 |
+
+   另有两个明确边界：第16行的远端对照只显示正文和修订，没有展示远端章名或自动差异；保留本地稿时，读取当前稿也不会更新它的旧保存基线。因此还需观察**仅章名变化、作品资料变化、前文变化**时，人能否理解冲突原因及下一步。
+
+   程序能记录文本、修订、按钮状态与请求结果；人决定哪些本地字句应保留、如何合并，以及是否从远端稿重新开始。第3章正文原字不变而 `basisCurrent=false`，也是依据变化，不等于正文丢失或文学质量失败（save-review.md 第7行、Store 第134、135行）。
+
+3. **审美：已有样式安排，实际页面感受待核。**
+
+   源码已有突出“保存草稿”的主按钮、折叠作品资料和错误详情、独立的远端对照区，以及窄屏样式。定位：index.html 第8、10、13、18行，[app.css 第7、8、9、10、11行](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/prototype/app.css:7)。
+
+   仍需看实际宽屏和窄屏页面：完整长文滚动时是否容易找到反馈，上下两份正文是否容易对照，小字号修订与依据提示是否易读，当前应执行的操作是否清楚，页面是否适合安静阅读。程序可以核对布局、可见性和焦点等状态；人判断阅读舒适度、视觉取舍和审美。**本轮未查看浏览器实际渲染，不能称审美通过。**
+
+真实正文读取范围全部在当前 `project` 内：题列七个文件均完整读取；另完整读取了根与 prototype 的 `AGENTS.md`、两份 docs 参考、README、prototype 的 HTML/CSS、seed 脚本、原课堂存档副本、输入冻结清单、162 完整调查任务和 `records/index.json`。其他文件只列过路径，未当作已读；原存档来源路径只取自公开记录，没有跨项目读取其原件。
+
+本轮仅作文件读取、静态字段／哈希对照和 Git 元数据查询，未访问实时 SQLite、发送 HTTP、安装、build/test、启动服务、保存／采用、提交或推送。规则文件存在或被加载，不能证明过去任务读过参考或遵循了规则；本轮结论依据的是上述实际读取内容，未执行条件继续保留为待核。
