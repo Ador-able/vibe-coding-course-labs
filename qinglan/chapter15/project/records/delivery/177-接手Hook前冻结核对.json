@@ -1,0 +1,250 @@
+[
+  {
+    "kind": "old",
+    "root": "D:/Projects/Knowledge/.coursebook-work/c15-delivery-old-lf",
+    "head": "e2ef7566d5dd8b1cc32b0a941e522c69d2f486c6",
+    "tree": "1437a827378e4a469b56ac7a77ef2cc960753815",
+    "paths": [
+      ".githooks/pre-commit",
+      ".github/workflows/chapter15-delivery.yml",
+      "qinglan/chapter15/project/docs/delivery-check.md",
+      "qinglan/chapter15/project/package.json",
+      "qinglan/chapter15/project/scripts/check-saving-delivery.mjs"
+    ],
+    "files": [
+      {
+        "path": "qinglan/chapter15/project/package.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/pnpm-lock.yaml",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/AGENTS.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/AGENTS.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.js",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/index.html",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.css",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/prototype-http.ts",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/store.ts",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/schemas.ts",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/seed.mjs",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/test-saving.mjs",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/check-saving-delivery.mjs",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/workbench-boundaries.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/save-review.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/delivery-check.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/完整教师初始化.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/独立业务预期.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/输入冻结清单.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/青岚修仙录-三章原始课堂存档.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-完整交付任务.txt",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-前置实录索引.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/CI官方版本与范围.json",
+        "same": true
+      },
+      {
+        "path": "package.json",
+        "same": true
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "same": true
+      },
+      {
+        "path": ".githooks/pre-commit",
+        "same": true
+      },
+      {
+        "path": ".github/workflows/chapter15-delivery.yml",
+        "same": true
+      }
+    ],
+    "ok": true
+  },
+  {
+    "kind": "fixed",
+    "root": "D:/Projects/Knowledge/.coursebook-work/c15-delivery-fixed-lf",
+    "head": "7ae265962ede99a0cfbcb6b631cfe2dc7772d233",
+    "tree": "1e37a610910675b783222e543d2331d7b9b0c7f9",
+    "paths": [
+      ".githooks/pre-commit",
+      ".github/workflows/chapter15-delivery.yml",
+      "qinglan/chapter15/project/docs/delivery-check.md",
+      "qinglan/chapter15/project/package.json",
+      "qinglan/chapter15/project/scripts/check-saving-delivery.mjs"
+    ],
+    "files": [
+      {
+        "path": "qinglan/chapter15/project/package.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/pnpm-lock.yaml",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/AGENTS.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/AGENTS.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.js",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/index.html",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.css",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/prototype-http.ts",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/store.ts",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/schemas.ts",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/seed.mjs",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/test-saving.mjs",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/check-saving-delivery.mjs",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/workbench-boundaries.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/save-review.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/delivery-check.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/完整教师初始化.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/独立业务预期.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/输入冻结清单.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/青岚修仙录-三章原始课堂存档.md",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-完整交付任务.txt",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-前置实录索引.json",
+        "same": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/CI官方版本与范围.json",
+        "same": true
+      },
+      {
+        "path": "package.json",
+        "same": true
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "same": true
+      },
+      {
+        "path": ".githooks/pre-commit",
+        "same": true
+      },
+      {
+        "path": ".github/workflows/chapter15-delivery.yml",
+        "same": true
+      }
+    ],
+    "ok": true
+  }
+]

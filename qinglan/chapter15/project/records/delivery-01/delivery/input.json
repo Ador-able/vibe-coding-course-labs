@@ -1,0 +1,294 @@
+{
+  "version": "codex-cli 0.160.0",
+  "nodeVersion": "v24.12.0",
+  "gitHead": "f71cee739bd8be4ad908044d5bc02aec0f08ff49",
+  "source": {
+    "sourceSha256": "f643ff57a202b3b469d18d098c0ba28d260dc0baa03cfae3b1f2fa7c9bfb5579",
+    "sourceVersion": "f643ff57a202b3b469d18d098c0ba28d260dc0baa03cfae3b1f2fa7c9bfb5579",
+    "preparedFromGit": "b7b385cd10171b2c13b96058d801f80f5a7d8740",
+    "practiceTag": "qinglan-ch15-practice-start",
+    "inputRegistrySha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "bytes": 8,
+        "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+      },
+      {
+        "path": ".gitignore",
+        "bytes": 46,
+        "sha256": "e0480ea74e4aa0fad04cd653f3ad5666c37c339f54c438e345f1df17ba2ab8a3"
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 646,
+        "sha256": "bbf43bcea5dc136a89a06896db0ab3689eb33fff85a29475f9a2f67d91f3658b"
+      },
+      {
+        "path": "README.md",
+        "bytes": 4059,
+        "sha256": "d7eb9f90f0b223a31b0647df81f95a16de8a13b43f998381310fe45d492568fd"
+      },
+      {
+        "path": "config/固定实验参数.json",
+        "bytes": 705,
+        "sha256": "e894bbe9562e099aaab5e1220d270de280b8a69697ee9ae326406a0305b289b2"
+      },
+      {
+        "path": "docs/save-review.md",
+        "bytes": 900,
+        "sha256": "e4fba210fbcf3ff93da21a06c19cca7db8c3caadae97ee67923f15bdb2293c82"
+      },
+      {
+        "path": "docs/workbench-boundaries.md",
+        "bytes": 726,
+        "sha256": "34b61318c2373df6ae2e320050ae50b3867ca374ac1ff2823f884575260ed9a0"
+      },
+      {
+        "path": "materials/historical/2c1到19f-历史真实Git差异.patch",
+        "bytes": 6670,
+        "sha256": "a39b3fbee5a87d207e1bed1c627a922c0f0486769eaa28b6f0a016772d0150a1"
+      },
+      {
+        "path": "materials/historical/保存等待历史行为.json",
+        "bytes": 1548,
+        "sha256": "0a05740ecd9e43cc3bd5d5751283d0362082d55804fb97439b86a79d5fceb2c6"
+      },
+      {
+        "path": "materials/historical/保存等待旧缺陷差异.patch",
+        "bytes": 800,
+        "sha256": "15a0414856ad66d92820afcae310313079b4ede4a5e4a80d98e09bfd06a0d733"
+      },
+      {
+        "path": "materials/historical/历史真实Git差异来源.json",
+        "bytes": 1315,
+        "sha256": "3be0e91a52e3e1c57934829521e50725e3173a5dc15a14b09091f1db6910ba14"
+      },
+      {
+        "path": "materials/historical/原始旧app.js.txt",
+        "bytes": 7442,
+        "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d"
+      },
+      {
+        "path": "materials/viewer.css",
+        "bytes": 1160,
+        "sha256": "b24444c3dba9be67f6f9d6849f7ca91d64d71721018b3efaaba9de7dec39e08c"
+      },
+      {
+        "path": "materials/viewer.html",
+        "bytes": 911,
+        "sha256": "8303a65de756a9d7018fa4d4a9f698d24bdbfbbcb5520d0a145188d1927f7a1f"
+      },
+      {
+        "path": "materials/viewer.js",
+        "bytes": 2095,
+        "sha256": "aed961a287146ea190bf0cdd805c868d23535ac953670c5441cd7467e51325f5"
+      },
+      {
+        "path": "package.json",
+        "bytes": 849,
+        "sha256": "5a49bafabdde763f1acd7c7e20c1f62cb823db1b0edb2305716725e95e3d4881"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "bytes": 11803,
+        "sha256": "de3f9ad9a418477fdcc58866755b6a80daf948e147da75d7a10273ae63ca842c"
+      },
+      {
+        "path": "prototype/AGENTS.md",
+        "bytes": 327,
+        "sha256": "7e9059087edc967ec754976fe8382b2c63071edcb22b467e7f9d6aa1013a0aa3"
+      },
+      {
+        "path": "prototype/app.css",
+        "bytes": 3539,
+        "sha256": "31e828f6ee09c434c1e1509c8cda642480f6b683de067d60d07342eb194e7872"
+      },
+      {
+        "path": "prototype/app.js",
+        "bytes": 6818,
+        "sha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63"
+      },
+      {
+        "path": "prototype/index.html",
+        "bytes": 1996,
+        "sha256": "b8326f50774696ee4d5f74df05fab8a937cbb5ebb6ef20e4ac29d13f209077f8"
+      },
+      {
+        "path": "scripts/check-source.mjs",
+        "bytes": 791,
+        "sha256": "75dbbdc169fa80db7519c54814f71ccc036206762a0a4ba57f1ebe0261a368c0"
+      },
+      {
+        "path": "scripts/codex-environment.mjs",
+        "bytes": 1311,
+        "sha256": "52bd168f399bf254eadb4b681483c3c5c159bab8259b64a78fb53826e378edc6"
+      },
+      {
+        "path": "scripts/codex-local.mjs",
+        "bytes": 549,
+        "sha256": "9504313e2e552cbe5f94d95b95bfff73ce1ba486b68e061cce011a854a65ea7f"
+      },
+      {
+        "path": "scripts/freeze-inputs.mjs",
+        "bytes": 652,
+        "sha256": "c36fe50a0a330a975b3749baba3b18170538c99e0f00c12772f175feec6f8019"
+      },
+      {
+        "path": "scripts/freeze-source.mjs",
+        "bytes": 674,
+        "sha256": "656e50f77cc892b4ce3b369d24f3cca845845d9dc175fbe963d8962dc5303196"
+      },
+      {
+        "path": "scripts/host.mjs",
+        "bytes": 4286,
+        "sha256": "8e7dfce7e5ec8a45255b3233289d6e0a9f1a1cf0cc0ed509b24bef8cfb8fac4e"
+      },
+      {
+        "path": "scripts/observe.mjs",
+        "bytes": 11249,
+        "sha256": "3cddf8e2d661de6ffba68d3bfc41565f94b61cb3681a3ae7b3d5919f52c0c540"
+      },
+      {
+        "path": "scripts/prepare-history.mjs",
+        "bytes": 2393,
+        "sha256": "5b5759ec96984a953d40030f64547dc351a2dacec6211a8be876717d17cc3014"
+      },
+      {
+        "path": "scripts/restore-historical-bug.mjs",
+        "bytes": 925,
+        "sha256": "9707cce86dfb0e668736410712d89ffa3d4e79bd96a305b0a7b52acd60611d81"
+      },
+      {
+        "path": "scripts/seed.mjs",
+        "bytes": 2347,
+        "sha256": "75733066e52ab8ead8b68b67027c7c9bcec96f78b5ff5b5dac38598b1648731f"
+      },
+      {
+        "path": "scripts/source-files.mjs",
+        "bytes": 813,
+        "sha256": "b502e734085234c38182d4d07dca307f74ce2dbeac9ced7425c1efcfc2e567f4"
+      },
+      {
+        "path": "scripts/start-workbench.mjs",
+        "bytes": 563,
+        "sha256": "b06838edbef4e2c425fb01eb972267bdfa1c37f304d6e916afa68b57f9fa0f46"
+      },
+      {
+        "path": "scripts/test-saving.mjs",
+        "bytes": 44461,
+        "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49"
+      },
+      {
+        "path": "scripts/viewer.mjs",
+        "bytes": 1490,
+        "sha256": "97ee42521c27a3d0bf824b4bdcbd37385fb070578dd29ff977f216c10e538718"
+      },
+      {
+        "path": "src/prototype-http.ts",
+        "bytes": 2879,
+        "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7"
+      },
+      {
+        "path": "src/prototype-server.ts",
+        "bytes": 799,
+        "sha256": "fd87aad5d0ea024f17ec6fed884e4f125d65dbc7790b3de72f81259bbf9d6047"
+      },
+      {
+        "path": "src/schemas.ts",
+        "bytes": 2185,
+        "sha256": "8e2a62f49627a90af374652beefb323d642d0e727387ef0f2d022d9bb51f319f"
+      },
+      {
+        "path": "src/store.ts",
+        "bytes": 12129,
+        "sha256": "2c2142a774d777eb9d22d5a649eaed5d75df3097068d715d3019b91d34bc1dcf"
+      },
+      {
+        "path": "tsconfig.json",
+        "bytes": 286,
+        "sha256": "fbc452b9b5e2b481e0da3768692bdfd9cf813ac2beb7b9f828b4f696d15926b4"
+      }
+    ]
+  },
+  "parameters": {
+    "threadId": "01a13591-d341-7252-a4d3-adfc385f500c",
+    "input": [
+      {
+        "type": "text",
+        "text": "你在青岚修仙录小说工作台的独立练习项目中。完整三章来自既有课堂存档，不是本轮模型新写或新采用的小说。林青为青岚宗外门弟子、炼气三层，筑基是长远愿望。不要增加突破、拿起铜片或声音触发手影等事实。\n\n先确认真实Git根、HEAD、分支、工作区、未跟踪文件与当前目录。读取范围限于当前实验project与本节公开材料；不要读全局私密规则、Memory、凭据或原始宿主系统/开发者指令。保留完整输入、真实来源和未完成条件。\n\n本次任务分A与B。A已具备实际旧缺陷、同输入红绿、明确修复与原生评审，可以给重要保存行为建立最小提交检查。B是决定是否正式采用第二章，内容负责人尚未决定；保留待决定，不领取B、不采用章稿、不修改界面、不从正文相同或程序通过推断文学已采用。单一工作台的辨认与审美也按真实使用另外判断。\n\n先读实际package.json、仓库根pnpm-workspace.yaml、AGENTS.md、prototype/app.js、src/prototype-http.ts、src/store.ts、scripts/seed.mjs、完整教师初始化/独立业务预期、已冻结test-saving.mjs及inputs/177-前置实录索引.json所列的实际旧新实录/完整原生评审。只生成五项：scripts/check-saving-delivery.mjs、package.json两个相关scripts、仓库根.githooks/pre-commit、仓库根.github/workflows/chapter15-delivery.yml、docs/delivery-check.md。不得改应用/HTTP/Store/教师原件/其他测试/锁文件，无新依赖。\n\n新检查只跑一个正常保存实例，使用独立runs/delivery-saving-UUID/SQLite与同一完整预期；复用成熟Store/真实HTTP/seed/Playwright。两门、正常键盘、完整请求响应、读回刷新和五表历史按独立预期执行，观察完成后统一断言，环境/记录/清理失败分别保留，非零传播；不复制弱undefined断言。浏览器默认Chromium，Windows可用DELIVERY_BROWSER_CHANNEL=msedge明确选择，没有自动回退。\n\npackage增加test:delivery=node --test scripts/check-saving-delivery.mjs、check:delivery=pnpm run build && pnpm run test:delivery。Git钩子位于课程Git根，通过pnpm --dir qinglan/chapter15/project run check:delivery调用本章入口，exec传播非零，不挂其他章节全套。使用LF/100755并写清core.hooksPath需在自己的clone显式启用，不改本轮仓库配置或Git暂存。普通钩子检查工作区；本次验证完整暂存且worktree/index逐项相同，不声称任意部分暂存已经被检查。\n\nPR YAML只定义pull_request本章相关路径及同一必要检查，contents:read，既有Node24.12.0/pnpm11.20.0/锁依赖与Chromium前置；记录event、PR head/base、事件SHA与实际git rev-parse HEAD，保存真实runs/delivery-saving-*证据。Actions版本从inputs/CI官方版本与范围.json取得，该文件未核实前不能猜版本。只定义配置，不创建PR、不触发远端、不合并、不设置分支保护。\n\n中文说明包括一次准备、Windows明确channel、完整教师初始化来源、实际行为和限制、Hook启用与完整暂存条件、PR/CI实际版本与日志/artifact核查、失败清理和代价。YAML未运行不称CI成功，功能/辨认/审美/文学采用分别判断。\n\n只读并生成上述五文件，不安装、不build/test、不启动服务/浏览器、不写业务库、不Git add/commit/push、不联网、不修改第三方库。最终交精确Diff、主要调用链、失败传播和清理、未运行项与人需决定的B。模型产物经静态核读后，教师才在独立旧/新副本直接检查各一次，再真实Git Hook提交各一次；不通过不追理想结果。\n"
+      }
+    ],
+    "approvalPolicy": "never",
+    "sandboxPolicy": {
+      "type": "workspaceWrite",
+      "writableRoots": [
+        "D:/Projects/Knowledge/.coursebook-work/c15-impl"
+      ],
+      "networkAccess": false,
+      "excludeTmpdirEnvVar": true,
+      "excludeSlashTmp": true
+    }
+  },
+  "prompt": "你在青岚修仙录小说工作台的独立练习项目中。完整三章来自既有课堂存档，不是本轮模型新写或新采用的小说。林青为青岚宗外门弟子、炼气三层，筑基是长远愿望。不要增加突破、拿起铜片或声音触发手影等事实。\n\n先确认真实Git根、HEAD、分支、工作区、未跟踪文件与当前目录。读取范围限于当前实验project与本节公开材料；不要读全局私密规则、Memory、凭据或原始宿主系统/开发者指令。保留完整输入、真实来源和未完成条件。\n\n本次任务分A与B。A已具备实际旧缺陷、同输入红绿、明确修复与原生评审，可以给重要保存行为建立最小提交检查。B是决定是否正式采用第二章，内容负责人尚未决定；保留待决定，不领取B、不采用章稿、不修改界面、不从正文相同或程序通过推断文学已采用。单一工作台的辨认与审美也按真实使用另外判断。\n\n先读实际package.json、仓库根pnpm-workspace.yaml、AGENTS.md、prototype/app.js、src/prototype-http.ts、src/store.ts、scripts/seed.mjs、完整教师初始化/独立业务预期、已冻结test-saving.mjs及inputs/177-前置实录索引.json所列的实际旧新实录/完整原生评审。只生成五项：scripts/check-saving-delivery.mjs、package.json两个相关scripts、仓库根.githooks/pre-commit、仓库根.github/workflows/chapter15-delivery.yml、docs/delivery-check.md。不得改应用/HTTP/Store/教师原件/其他测试/锁文件，无新依赖。\n\n新检查只跑一个正常保存实例，使用独立runs/delivery-saving-UUID/SQLite与同一完整预期；复用成熟Store/真实HTTP/seed/Playwright。两门、正常键盘、完整请求响应、读回刷新和五表历史按独立预期执行，观察完成后统一断言，环境/记录/清理失败分别保留，非零传播；不复制弱undefined断言。浏览器默认Chromium，Windows可用DELIVERY_BROWSER_CHANNEL=msedge明确选择，没有自动回退。\n\npackage增加test:delivery=node --test scripts/check-saving-delivery.mjs、check:delivery=pnpm run build && pnpm run test:delivery。Git钩子位于课程Git根，通过pnpm --dir qinglan/chapter15/project run check:delivery调用本章入口，exec传播非零，不挂其他章节全套。使用LF/100755并写清core.hooksPath需在自己的clone显式启用，不改本轮仓库配置或Git暂存。普通钩子检查工作区；本次验证完整暂存且worktree/index逐项相同，不声称任意部分暂存已经被检查。\n\nPR YAML只定义pull_request本章相关路径及同一必要检查，contents:read，既有Node24.12.0/pnpm11.20.0/锁依赖与Chromium前置；记录event、PR head/base、事件SHA与实际git rev-parse HEAD，保存真实runs/delivery-saving-*证据。Actions版本从inputs/CI官方版本与范围.json取得，该文件未核实前不能猜版本。只定义配置，不创建PR、不触发远端、不合并、不设置分支保护。\n\n中文说明包括一次准备、Windows明确channel、完整教师初始化来源、实际行为和限制、Hook启用与完整暂存条件、PR/CI实际版本与日志/artifact核查、失败清理和代价。YAML未运行不称CI成功，功能/辨认/审美/文学采用分别判断。\n\n只读并生成上述五文件，不安装、不build/test、不启动服务/浏览器、不写业务库、不Git add/commit/push、不联网、不修改第三方库。最终交精确Diff、主要调用链、失败传播和清理、未运行项与人需决定的B。模型产物经静态核读后，教师才在独立旧/新副本直接检查各一次，再真实Git Hook提交各一次；不通过不追理想结果。\n",
+  "promptSha256": "87f110f8c4823afcb963e85148c425eb72e3faca32d8531493e195548337ee39",
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "review_model": null,
+    "features": {
+      "network_proxy": null,
+      "apps": false,
+      "hooks": false,
+      "memories": false,
+      "shell_tool": true,
+      "api_key_model_discovery": false,
+      "auth_elicitation": true,
+      "background_paginated_rollout_migration": false,
+      "codex_apps_mcp_2026_07_28": false,
+      "mcp_2026_07_28": false,
+      "mentions_v2": true,
+      "remote_control": false,
+      "remote_plugin": true,
+      "tool_suggest": true,
+      "windows_sandbox_service": false
+    },
+    "memories": {
+      "version": null,
+      "dual_write": null,
+      "disable_on_external_context": null,
+      "generate_memories": false,
+      "use_memories": false,
+      "dedicated_tools": null,
+      "max_raw_memories_for_consolidation": null,
+      "max_unused_days": null,
+      "max_rollout_age_days": null,
+      "max_rollouts_per_startup": null,
+      "min_rollout_idle_hours": null,
+      "min_rate_limit_remaining_percent": null,
+      "extract_model": null,
+      "consolidation_model": null
+    },
+    "web_search": "disabled",
+    "project_doc_max_bytes": 32768,
+    "sandbox_mode": "workspace-write",
+    "approval_policy": "never",
+    "developerInstructionsPresent": false,
+    "mcpEntries": [],
+    "pluginEntries": []
+  },
+  "configOverrides": [
+    "model=\"gpt-6.1-sol\"",
+    "features.apps=false",
+    "features.shell_tool=true",
+    "features.hooks=false",
+    "features.memories=false",
+    "memories.use_memories=false",
+    "memories.generate_memories=false",
+    "skills.bundled.enabled=false",
+    "web_search=\"disabled\"",
+    "developer_instructions=\"\"",
+    "project_doc_max_bytes=32768",
+    "sandbox_mode=\"workspace-write\"",
+    "approval_policy=\"never\""
+  ]
+}

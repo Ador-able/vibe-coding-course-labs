@@ -1,8 +1,8 @@
 # 青岚修仙录：保存调查
 
-沿用课程仓库的一次准备：在根目录`pnpm install --frozen-lockfile`、`pnpm build`，之后进入`qinglan/chapter15/project`。资料与完整实录随Git保存，不用下载实验附件。已有各章依赖与登录继续沿用。
+沿用已经克隆的课程仓库与本章准备，进入`qinglan/chapter15/project`。单独从本章开始时，在仓库根一次运行`pnpm install --frozen-lockfile --filter qinglan-existing-project-lab`，再在本章项目目录运行`pnpm build`。资料与完整实录随Git保存，已有登录继续沿用。
 
-运行`pnpm lab`，打开`http://127.0.0.1:4364`。一个选择控件、一个“查看结果”，五节共用完整课堂记录；页面只读取本地文件，不调用模型。当前尚未保存新实录时会显示空状态。
+运行`pnpm lab`，打开`http://127.0.0.1:4364`。选择当前任务并点“查看结果”，先读结论和必要对照，再按需展开完整原答与过程。五节共用本地课堂记录，查看不调用模型；没有保存实录时会显示空状态。
 
 自己的工作台先运行`pnpm practice:seed`初始化新的独立SQLite和完整三章，再运行`pnpm prototype`，打开`http://127.0.0.1:4365`。它使用第十章已有单一界面、Store和HTTP。三章来自10231字节的既有课堂存档，本次初始化为新作品、三章human/draft r1；原r3历史与模型任务不复制，human不表示正式采用。
 
@@ -21,3 +21,5 @@
 正常保存与服务收到请求前abort使用同一完整预期，实际浏览器请求门只延迟真实POST/GET；实际输入用正常键盘，不伪造响应或越过disabled。页面/请求/数据库当前和历史、环境与清理各有记录。服务已经保存后GET失败、真实并发、审美和文学采用若未运行就保持未验证。Git交付只检查一个正常保存实例；Hook启用、完整暂存对应和真实提交需另核，PR YAML尚未运行就不称CI通过。
 
 Node/SQLite、Windows既有Edge与本地Codex宿主仍是实际运行前置。观察器在超时后请求一次原生中断，终态未知就保留未知；它不保证只读沙箱绝对阻止目录外读取，实际命令和任务范围仍要核。模型写的测试或交付代码先静态核读，再执行真实检查；单凭聊天结束或构建不能代替业务验证。
+
+提交检查的四例、真实Git触发与独立读库报告在`records/delivery/`及`records/delivery-*/`。旧检查起点`qinglan-ch15-05-delivery-old-check-start`、正确起点`qinglan-ch15-05-delivery-fixed-check-start`、实际正确提交`qinglan-ch15-05-delivery-fixed-hook-end`分别保留真实Git对象。最终课堂版为`qinglan-ch15-end`。

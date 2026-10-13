@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eu
+
+# 检查当前工作区；完整暂存及 worktree/index 相同由提交者逐项核对。
+course_root=$(git rev-parse --show-toplevel)
+cd "$course_root"
+exec pnpm --dir qinglan/chapter15/project run check:delivery

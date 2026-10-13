@@ -1,0 +1,24 @@
+已生成五项并完成静态核读。精确 Diff 共 **+896 / −0**；四个新增文件的完整内容见链接：
+
+| 文件 | Diff |
+|---|---:|
+| [check-saving-delivery.mjs](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/scripts/check-saving-delivery.mjs) | 新增 739 行 |
+| [package.json](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/package.json) | 新增 2 行 |
+| [pre-commit](D:/Projects/Knowledge/.coursebook-work/c15-impl/.githooks/pre-commit) | 新增 7 行 |
+| [chapter15-delivery.yml](D:/Projects/Knowledge/.coursebook-work/c15-impl/.github/workflows/chapter15-delivery.yml) | 新增 56 行 |
+| [delivery-check.md](D:/Projects/Knowledge/.coursebook-work/c15-impl/qinglan/chapter15/project/docs/delivery-check.md) | 新增 92 行 |
+
+package 仅增加：
+
+```diff
++ "test:delivery": "node --test scripts/check-saving-delivery.mjs",
++ "check:delivery": "pnpm run build && pnpm run test:delivery",
+```
+
+调用链为本章构建 → 单个正常保存实例 → 独立 SQLite、seed、真实 HTTP、Playwright → 两门键盘观察、读回刷新、五表历史 → 清理 → 统一断言。环境、观察、记录和清理失败分别保留并传播非零；证据不删除、不自动重试。
+
+74 个保留原件 SHA 未变。新文件均为 LF；**Hook 的 100755 尚待教师暂存时登记**，本轮没有写 index 或配置。
+
+未安装、构建、测试、启动服务或浏览器、写业务库、提交或运行 CI。教师静态核读后再按完整暂存条件执行旧/新直接检查及真实 Hook 提交，各一次。
+
+完整三章仍来自既有课堂存档。**B 保持待内容负责人决定，未领取、未采用**；页面辨认、审美与文学采用仍需分别判断。

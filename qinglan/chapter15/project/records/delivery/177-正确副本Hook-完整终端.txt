@@ -1,0 +1,21 @@
+$ pnpm run build && pnpm run test:delivery
+$ tsc
+$ node --test scripts/check-saving-delivery.mjs
+(node:124656) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+delivery-saving: PASS；完整记录：D:\Projects\Knowledge\.coursebook-work\c15-delivery-fixed-lf\qinglan\chapter15\project\runs\delivery-saving-83cae4a3-b2f1-4e6a-9b5a-9866e6930cde\record.json
+✔ 正常保存交付：完整A、两门、键盘、真实读回、刷新和五表历史 (3020.6976ms)
+ℹ tests 1
+ℹ suites 0
+ℹ pass 1
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 3073.4158
+[codex/qinglan-ch15-delivery-fixed a22bb96] 验证第二章保存交付检查
+ 5 files changed, 896 insertions(+)
+ create mode 100755 .githooks/pre-commit
+ create mode 100644 .github/workflows/chapter15-delivery.yml
+ create mode 100644 qinglan/chapter15/project/docs/delivery-check.md
+ create mode 100644 qinglan/chapter15/project/scripts/check-saving-delivery.mjs

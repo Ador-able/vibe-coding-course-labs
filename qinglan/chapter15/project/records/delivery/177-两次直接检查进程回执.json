@@ -1,0 +1,32 @@
+{
+  "savedAt": "2026-10-13T14:57:13.001Z",
+  "cases": [
+    {
+      "kind": "old-direct",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "e3c457",
+          "wall_time_seconds": 6.3361622,
+          "exit_code": 1,
+          "original_token_count": 609,
+          "output": "$ pnpm run build && pnpm run test:delivery\r\n$ tsc\r\n$ node --test scripts/check-saving-delivery.mjs\r\n(node:137976) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\ndelivery-saving: FAIL；完整记录：D:\\Projects\\Knowledge\\.coursebook-work\\c15-delivery-old-lf\\qinglan\\chapter15\\project\\runs\\delivery-saving-ca0a46da-39f7-4bde-966d-3fc326becf21\\record.json\r\n✖ 正常保存交付：完整A、两门、键盘、真实读回、刷新和五表历史 (2768.6617ms)\r\nℹ tests 1\r\nℹ suites 0\r\nℹ pass 0\r\nℹ fail 1\r\nℹ cancelled 0\r\nℹ skipped 0\r\nℹ todo 0\r\nℹ duration_ms 2828.7912\r\n\r\n✖ failing tests:\r\n\r\ntest at scripts\\check-saving-delivery.mjs:738:7\r\n✖ 正常保存交付：完整A、两门、键盘、真实读回、刷新和五表历史 (2768.6617ms)\r\n  AssertionError [ERR_ASSERTION]: 保存交付检查失败：post等待/title禁用且不可编辑; post等待/title不能取得焦点且完整A未变; post等待/body禁用且不可编辑; post等待/body不能取得焦点且完整A未变; post等待覆盖、导航、保存和读取暂停，门恰命中一次; get等待/title禁用且不可编辑; get等待/title不能取得焦点且完整A未变; get等待/body禁用且不可编辑; get等待/body不能取得焦点且完整A未变; get等待覆盖、导航、保存和读取暂停，门恰命中一次；完整记录：D:\\Projects\\Knowledge\\.coursebook-work\\c15-delivery-old-lf\\qinglan\\chapter15\\project\\runs\\delivery-saving-ca0a46da-39f7-4bde-966d-3fc326becf21\\record.json\r\n  \r\n  false !== true\r\n  \r\n      at TestContext.runDelivery (file:///D:/Projects/Knowledge/.coursebook-work/c15-delivery-old-lf/qinglan/chapter15/project/scripts/check-saving-delivery.mjs:735:10)\r\n      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\r\n      at async Test.run (node:internal/test_runner/test:1113:7)\r\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)\r\n      at async file:///D:/Projects/Knowledge/.coursebook-work/c15-delivery-old-lf/qinglan/chapter15/project/scripts/check-saving-delivery.mjs:738:1 {\r\n    generatedMessage: false,\r\n    code: 'ERR_ASSERTION',\r\n    actual: false,\r\n    expected: true,\r\n    operator: 'strictEqual',\r\n    diff: 'simple'\r\n  }\r\n[ELIFECYCLE] Command failed with exit code 1.\r\n[ELIFECYCLE] Command failed with exit code 1.\r\n"
+        }
+      }
+    },
+    {
+      "kind": "fixed-direct",
+      "result": {
+        "status": "fulfilled",
+        "value": {
+          "chunk_id": "307289",
+          "wall_time_seconds": 6.336162,
+          "exit_code": 0,
+          "original_token_count": 174,
+          "output": "$ pnpm run build && pnpm run test:delivery\r\n$ tsc\r\n$ node --test scripts/check-saving-delivery.mjs\r\n(node:30468) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\ndelivery-saving: PASS；完整记录：D:\\Projects\\Knowledge\\.coursebook-work\\c15-delivery-fixed-lf\\qinglan\\chapter15\\project\\runs\\delivery-saving-695e59c7-437a-4901-8f13-0866dc7d6add\\record.json\r\n✔ 正常保存交付：完整A、两门、键盘、真实读回、刷新和五表历史 (2826.5674ms)\r\nℹ tests 1\r\nℹ suites 0\r\nℹ pass 1\r\nℹ fail 0\r\nℹ cancelled 0\r\nℹ skipped 0\r\nℹ todo 0\r\nℹ duration_ms 2886.2918\r\n"
+        }
+      }
+    }
+  ],
+  "note": "真实exec_command结果；保存时刻不是运行开始时刻。两例均已结束，不能重跑为取得理想结果；Git Hook两例尚未执行。"
+}

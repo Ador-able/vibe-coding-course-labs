@@ -1,0 +1,112 @@
+[
+  {
+    "path": "records/delivery-old-direct/practice.sqlite",
+    "bytes": 73728,
+    "sha256": "1c994914387ab29ddb5fd29d75ad38b1376884d8e3f20ed46b405d4bd8ecafb2"
+  },
+  {
+    "path": "records/delivery-old-direct/record.json",
+    "bytes": 3040115,
+    "sha256": "2b839fdf4e4612a0536d5003ef96c37039f48ab7e88689da785469453bd13a6a"
+  },
+  {
+    "path": "records/delivery-fixed-direct/practice.sqlite",
+    "bytes": 73728,
+    "sha256": "9d58e0c3b4093ccbcd2db4f1898af9cc9842f1ed5b2ec6a37b0ef200841c8c02"
+  },
+  {
+    "path": "records/delivery-fixed-direct/record.json",
+    "bytes": 3112411,
+    "sha256": "ee91b9aa7e46ae859b707da4e5a5292147f5c4539e7fb8f3dcf21198ef355557"
+  },
+  {
+    "path": "records/delivery-old-hook/practice.sqlite",
+    "bytes": 73728,
+    "sha256": "790d394d8a3bfa61d21aeafd382c61156290f4b385c85aa2fca49ad818ea822b"
+  },
+  {
+    "path": "records/delivery-old-hook/record.json",
+    "bytes": 3039919,
+    "sha256": "63ed536470819c4d07b88fe118fdeb731a534342be84d1df3cbed5ec9e44f43a"
+  },
+  {
+    "path": "records/delivery-fixed-hook/practice.sqlite",
+    "bytes": 73728,
+    "sha256": "a015333d0baacbf80356e18ea237b953c41ed333bb1266be6ecf64ad487c3f49"
+  },
+  {
+    "path": "records/delivery-fixed-hook/record.json",
+    "bytes": 3112215,
+    "sha256": "b582767b41cdf3b273a77cc7ee359df5c15fa4657850655d181543ad7a9af505"
+  },
+  {
+    "path": "records/delivery/177-旧副本直接检查-完整终端.txt",
+    "bytes": 2435,
+    "sha256": "7d7329f79a9925cb5820db348baa45f79653fa8007aed515df33b2417a7acbc7"
+  },
+  {
+    "path": "records/delivery/177-正确副本直接检查-完整终端.txt",
+    "bytes": 695,
+    "sha256": "3f09eaca20e8ae75ffcbecfb01e4e2fad7ada2fdf6d10f885f716252c19b9dcc"
+  },
+  {
+    "path": "records/delivery/177-两次直接检查进程回执.json",
+    "bytes": 4073,
+    "sha256": "11e5e9b382d784a0d1e4f88ceec7d8cf4111c6130d84d872b13c13366202f888"
+  },
+  {
+    "path": "records/delivery/177-旧副本Hook-完整终端.txt",
+    "bytes": 2435,
+    "sha256": "14db0703f884b18616df4f9ca032c21c474d03ca1d3eced8c3781c93a60fd6a8"
+  },
+  {
+    "path": "records/delivery/177-正确副本Hook-完整终端.txt",
+    "bytes": 1067,
+    "sha256": "5744af1846f0a8e4091d1cc64e18fbcbfc214cd6b995da6a116b4d1a5ec30ecf"
+  },
+  {
+    "path": "records/delivery/177-旧副本Hook-trace2.jsonl",
+    "bytes": 76730,
+    "sha256": "1d750960f96d271e015a1600a5abffaba8809ad2187cfde76df2eb649014d29b"
+  },
+  {
+    "path": "records/delivery/177-正确副本Hook-trace2.jsonl",
+    "bytes": 85585,
+    "sha256": "3a384a77a5cc5bac7c2f05f0909db6171fa5b90df583f53b93d7ac58aa1e39f1"
+  },
+  {
+    "path": "records/delivery/177-旧副本Hook-进程回执.json",
+    "bytes": 151,
+    "sha256": "be5e11177a5500bee7f97c91455bd6529dc2ce1db5d5b53c9bde677c4afe7f9f"
+  },
+  {
+    "path": "records/delivery/177-正确副本Hook-进程回执.json",
+    "bytes": 153,
+    "sha256": "b3380ae020c9fccbfd8b8e6116acf5669b6d0be5d29d8ce15cac024ea2a96742"
+  },
+  {
+    "path": "records/delivery/177-主编实际执行冻结与完整暂存回执.json",
+    "bytes": 20764,
+    "sha256": "74ba8d8a7d686907346869870e033bf9efb222ddc493c5cdef8d1c2ba505256d"
+  },
+  {
+    "path": "records/delivery/177-接手Hook前冻结核对.json",
+    "bytes": 6649,
+    "sha256": "2e29f29262a34801feab0813fcdd58c71204a524ed1d7da4bd1100dce853dba0"
+  },
+  {
+    "path": "records/delivery/四例独立核对.json",
+    "bytes": 153350,
+    "sha256": "4d04e094c392e4f5871595ec4631069301086a352ffe2a90b7784c280913cdf6"
+  },
+  {
+    "path": "materials/screenshots/提交检查实录页-高清原像素.png",
+    "bytes": 404801,
+    "sha256": "56d8c56a505635a6b5e04beae5b02546338dc52433f3df58e1062dba33e718ee"
+  },
+  {
+    "path": "records/delivery/查看页验收.json",
+    "bytes": 7132,
+    "sha256": "3114a65a317f2412ffcddc2876b31abc231105768c6ef1f76747fb02c1b679c4"
+  }
+]

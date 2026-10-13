@@ -1,0 +1,478 @@
+[
+  {
+    "kind": "old",
+    "root": "D:/Projects/Knowledge/.coursebook-work/c15-delivery-old-lf",
+    "project": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-delivery-old-lf\\qinglan\\chapter15\\project",
+    "head": "e2ef7566d5dd8b1cc32b0a941e522c69d2f486c6",
+    "pendingFiles": [
+      ".githooks/pre-commit",
+      ".github/workflows/chapter15-delivery.yml",
+      "qinglan/chapter15/project/docs/delivery-check.md",
+      "qinglan/chapter15/project/package.json",
+      "qinglan/chapter15/project/scripts/check-saving-delivery.mjs"
+    ],
+    "files": [
+      {
+        "path": "qinglan/chapter15/project/package.json",
+        "bytes": 985,
+        "sha256": "2f0ea93b096b9c92ba021cb568eb08e7cd2a08062d064f970dfd6e9795913ed8",
+        "indexBytes": 985,
+        "indexSha256": "2f0ea93b096b9c92ba021cb568eb08e7cd2a08062d064f970dfd6e9795913ed8",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/pnpm-lock.yaml",
+        "bytes": 11803,
+        "sha256": "de3f9ad9a418477fdcc58866755b6a80daf948e147da75d7a10273ae63ca842c",
+        "indexBytes": 11803,
+        "indexSha256": "de3f9ad9a418477fdcc58866755b6a80daf948e147da75d7a10273ae63ca842c",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/AGENTS.md",
+        "bytes": 646,
+        "sha256": "bbf43bcea5dc136a89a06896db0ab3689eb33fff85a29475f9a2f67d91f3658b",
+        "indexBytes": 646,
+        "indexSha256": "bbf43bcea5dc136a89a06896db0ab3689eb33fff85a29475f9a2f67d91f3658b",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/AGENTS.md",
+        "bytes": 327,
+        "sha256": "7e9059087edc967ec754976fe8382b2c63071edcb22b467e7f9d6aa1013a0aa3",
+        "indexBytes": 327,
+        "indexSha256": "7e9059087edc967ec754976fe8382b2c63071edcb22b467e7f9d6aa1013a0aa3",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.js",
+        "bytes": 6703,
+        "sha256": "34cf106aedbf9f594e8dcda725f1ce41f58d8bbf5bc06811f6223460bde0ef98",
+        "indexBytes": 6703,
+        "indexSha256": "34cf106aedbf9f594e8dcda725f1ce41f58d8bbf5bc06811f6223460bde0ef98",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/index.html",
+        "bytes": 1996,
+        "sha256": "b8326f50774696ee4d5f74df05fab8a937cbb5ebb6ef20e4ac29d13f209077f8",
+        "indexBytes": 1996,
+        "indexSha256": "b8326f50774696ee4d5f74df05fab8a937cbb5ebb6ef20e4ac29d13f209077f8",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.css",
+        "bytes": 3539,
+        "sha256": "31e828f6ee09c434c1e1509c8cda642480f6b683de067d60d07342eb194e7872",
+        "indexBytes": 3539,
+        "indexSha256": "31e828f6ee09c434c1e1509c8cda642480f6b683de067d60d07342eb194e7872",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/prototype-http.ts",
+        "bytes": 2879,
+        "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7",
+        "indexBytes": 2879,
+        "indexSha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/store.ts",
+        "bytes": 12129,
+        "sha256": "2c2142a774d777eb9d22d5a649eaed5d75df3097068d715d3019b91d34bc1dcf",
+        "indexBytes": 12129,
+        "indexSha256": "2c2142a774d777eb9d22d5a649eaed5d75df3097068d715d3019b91d34bc1dcf",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/schemas.ts",
+        "bytes": 2185,
+        "sha256": "8e2a62f49627a90af374652beefb323d642d0e727387ef0f2d022d9bb51f319f",
+        "indexBytes": 2185,
+        "indexSha256": "8e2a62f49627a90af374652beefb323d642d0e727387ef0f2d022d9bb51f319f",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/seed.mjs",
+        "bytes": 2347,
+        "sha256": "75733066e52ab8ead8b68b67027c7c9bcec96f78b5ff5b5dac38598b1648731f",
+        "indexBytes": 2347,
+        "indexSha256": "75733066e52ab8ead8b68b67027c7c9bcec96f78b5ff5b5dac38598b1648731f",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/test-saving.mjs",
+        "bytes": 44461,
+        "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49",
+        "indexBytes": 44461,
+        "indexSha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/check-saving-delivery.mjs",
+        "bytes": 45058,
+        "sha256": "b8d0d282d548a40bb8aca59bd1b0a837c17484909597f4ea09d932ccdade6585",
+        "indexBytes": 45058,
+        "indexSha256": "b8d0d282d548a40bb8aca59bd1b0a837c17484909597f4ea09d932ccdade6585",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/workbench-boundaries.md",
+        "bytes": 726,
+        "sha256": "34b61318c2373df6ae2e320050ae50b3867ca374ac1ff2823f884575260ed9a0",
+        "indexBytes": 726,
+        "indexSha256": "34b61318c2373df6ae2e320050ae50b3867ca374ac1ff2823f884575260ed9a0",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/save-review.md",
+        "bytes": 900,
+        "sha256": "e4fba210fbcf3ff93da21a06c19cca7db8c3caadae97ee67923f15bdb2293c82",
+        "indexBytes": 900,
+        "indexSha256": "e4fba210fbcf3ff93da21a06c19cca7db8c3caadae97ee67923f15bdb2293c82",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/delivery-check.md",
+        "bytes": 12949,
+        "sha256": "9785d68abd11547dbe3dc7cc7f618ab3f0ac720f85b038ef3eb574ab312d8a61",
+        "indexBytes": 12949,
+        "indexSha256": "9785d68abd11547dbe3dc7cc7f618ab3f0ac720f85b038ef3eb574ab312d8a61",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/完整教师初始化.json",
+        "bytes": 12147,
+        "sha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147",
+        "indexBytes": 12147,
+        "indexSha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/独立业务预期.json",
+        "bytes": 5127,
+        "sha256": "9b2080f4f9d3c0d4ba830dc5299d04ae538cc2b0237500f0b220b87fd6b4195e",
+        "indexBytes": 5127,
+        "indexSha256": "9b2080f4f9d3c0d4ba830dc5299d04ae538cc2b0237500f0b220b87fd6b4195e",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/输入冻结清单.json",
+        "bytes": 2327,
+        "sha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+        "indexBytes": 2327,
+        "indexSha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/青岚修仙录-三章原始课堂存档.md",
+        "bytes": 10231,
+        "sha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf",
+        "indexBytes": 10231,
+        "indexSha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-完整交付任务.txt",
+        "bytes": 3739,
+        "sha256": "87f110f8c4823afcb963e85148c425eb72e3faca32d8531493e195548337ee39",
+        "indexBytes": 3739,
+        "indexSha256": "87f110f8c4823afcb963e85148c425eb72e3faca32d8531493e195548337ee39",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-前置实录索引.json",
+        "bytes": 18423,
+        "sha256": "126a847ea32cb2777ff57ea68f207dfee775a903920c8a0b2998449a2cbedc27",
+        "indexBytes": 18423,
+        "indexSha256": "126a847ea32cb2777ff57ea68f207dfee775a903920c8a0b2998449a2cbedc27",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/CI官方版本与范围.json",
+        "bytes": 1508,
+        "sha256": "785e38f52332398b6a29ae2aea3a568e9800dade195758d30edb17f42cacf6b4",
+        "indexBytes": 1508,
+        "indexSha256": "785e38f52332398b6a29ae2aea3a568e9800dade195758d30edb17f42cacf6b4",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "package.json",
+        "bytes": 209,
+        "sha256": "3dd1aa11a09478e7a415caf96b3e2b3ab4ed41e2dc9df9363bd98ed7037ceb1b",
+        "indexBytes": 209,
+        "indexSha256": "3dd1aa11a09478e7a415caf96b3e2b3ab4ed41e2dc9df9363bd98ed7037ceb1b",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "bytes": 342,
+        "sha256": "91303b0b7942f865f388ef7d5ace4f95a253118d0bd73a0b2c8b6a152f2d53de",
+        "indexBytes": 342,
+        "indexSha256": "91303b0b7942f865f388ef7d5ace4f95a253118d0bd73a0b2c8b6a152f2d53de",
+        "workEqualsIndex": true
+      },
+      {
+        "path": ".githooks/pre-commit",
+        "bytes": 234,
+        "sha256": "def58b0cbd9feb6f2917bbf610b7fea6a09443065b153b3aeba198648ca93ca0",
+        "indexBytes": 234,
+        "indexSha256": "def58b0cbd9feb6f2917bbf610b7fea6a09443065b153b3aeba198648ca93ca0",
+        "workEqualsIndex": true
+      },
+      {
+        "path": ".github/workflows/chapter15-delivery.yml",
+        "bytes": 2094,
+        "sha256": "a95add4419d5303d779185b87bee1c78cd85e190ac2261d3330b6cb6b487cf45",
+        "indexBytes": 2094,
+        "indexSha256": "a95add4419d5303d779185b87bee1c78cd85e190ac2261d3330b6cb6b487cf45",
+        "workEqualsIndex": true
+      }
+    ],
+    "allRuntimeSourceAndCandidatesEqualIndex": true,
+    "remainingUnstagedDiff": 0,
+    "hookMode": "100755 b274a1f31c51a99504a34c5475dd1fedd276e5ad 0\t.githooks/pre-commit",
+    "candidateTree": "1437a827378e4a469b56ac7a77ef2cc960753815",
+    "inputRegistrySha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+    "hookNotYetRun": true,
+    "limits": "仅核本章检查实际消费的跟踪源码/输入及全部五项候选；dist由随后实际build生成，未消费的其他章节历史文本不作为本轮全字节保证。"
+  },
+  {
+    "kind": "fixed",
+    "root": "D:/Projects/Knowledge/.coursebook-work/c15-delivery-fixed-lf",
+    "project": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-delivery-fixed-lf\\qinglan\\chapter15\\project",
+    "head": "7ae265962ede99a0cfbcb6b631cfe2dc7772d233",
+    "pendingFiles": [
+      ".githooks/pre-commit",
+      ".github/workflows/chapter15-delivery.yml",
+      "qinglan/chapter15/project/docs/delivery-check.md",
+      "qinglan/chapter15/project/package.json",
+      "qinglan/chapter15/project/scripts/check-saving-delivery.mjs"
+    ],
+    "files": [
+      {
+        "path": "qinglan/chapter15/project/package.json",
+        "bytes": 985,
+        "sha256": "2f0ea93b096b9c92ba021cb568eb08e7cd2a08062d064f970dfd6e9795913ed8",
+        "indexBytes": 985,
+        "indexSha256": "2f0ea93b096b9c92ba021cb568eb08e7cd2a08062d064f970dfd6e9795913ed8",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/pnpm-lock.yaml",
+        "bytes": 11803,
+        "sha256": "de3f9ad9a418477fdcc58866755b6a80daf948e147da75d7a10273ae63ca842c",
+        "indexBytes": 11803,
+        "indexSha256": "de3f9ad9a418477fdcc58866755b6a80daf948e147da75d7a10273ae63ca842c",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/AGENTS.md",
+        "bytes": 646,
+        "sha256": "bbf43bcea5dc136a89a06896db0ab3689eb33fff85a29475f9a2f67d91f3658b",
+        "indexBytes": 646,
+        "indexSha256": "bbf43bcea5dc136a89a06896db0ab3689eb33fff85a29475f9a2f67d91f3658b",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/AGENTS.md",
+        "bytes": 327,
+        "sha256": "7e9059087edc967ec754976fe8382b2c63071edcb22b467e7f9d6aa1013a0aa3",
+        "indexBytes": 327,
+        "indexSha256": "7e9059087edc967ec754976fe8382b2c63071edcb22b467e7f9d6aa1013a0aa3",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.js",
+        "bytes": 6818,
+        "sha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63",
+        "indexBytes": 6818,
+        "indexSha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/index.html",
+        "bytes": 1996,
+        "sha256": "b8326f50774696ee4d5f74df05fab8a937cbb5ebb6ef20e4ac29d13f209077f8",
+        "indexBytes": 1996,
+        "indexSha256": "b8326f50774696ee4d5f74df05fab8a937cbb5ebb6ef20e4ac29d13f209077f8",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/prototype/app.css",
+        "bytes": 3539,
+        "sha256": "31e828f6ee09c434c1e1509c8cda642480f6b683de067d60d07342eb194e7872",
+        "indexBytes": 3539,
+        "indexSha256": "31e828f6ee09c434c1e1509c8cda642480f6b683de067d60d07342eb194e7872",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/prototype-http.ts",
+        "bytes": 2879,
+        "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7",
+        "indexBytes": 2879,
+        "indexSha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/store.ts",
+        "bytes": 12129,
+        "sha256": "2c2142a774d777eb9d22d5a649eaed5d75df3097068d715d3019b91d34bc1dcf",
+        "indexBytes": 12129,
+        "indexSha256": "2c2142a774d777eb9d22d5a649eaed5d75df3097068d715d3019b91d34bc1dcf",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/src/schemas.ts",
+        "bytes": 2185,
+        "sha256": "8e2a62f49627a90af374652beefb323d642d0e727387ef0f2d022d9bb51f319f",
+        "indexBytes": 2185,
+        "indexSha256": "8e2a62f49627a90af374652beefb323d642d0e727387ef0f2d022d9bb51f319f",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/seed.mjs",
+        "bytes": 2347,
+        "sha256": "75733066e52ab8ead8b68b67027c7c9bcec96f78b5ff5b5dac38598b1648731f",
+        "indexBytes": 2347,
+        "indexSha256": "75733066e52ab8ead8b68b67027c7c9bcec96f78b5ff5b5dac38598b1648731f",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/test-saving.mjs",
+        "bytes": 44461,
+        "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49",
+        "indexBytes": 44461,
+        "indexSha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/scripts/check-saving-delivery.mjs",
+        "bytes": 45058,
+        "sha256": "b8d0d282d548a40bb8aca59bd1b0a837c17484909597f4ea09d932ccdade6585",
+        "indexBytes": 45058,
+        "indexSha256": "b8d0d282d548a40bb8aca59bd1b0a837c17484909597f4ea09d932ccdade6585",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/workbench-boundaries.md",
+        "bytes": 726,
+        "sha256": "34b61318c2373df6ae2e320050ae50b3867ca374ac1ff2823f884575260ed9a0",
+        "indexBytes": 726,
+        "indexSha256": "34b61318c2373df6ae2e320050ae50b3867ca374ac1ff2823f884575260ed9a0",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/save-review.md",
+        "bytes": 900,
+        "sha256": "e4fba210fbcf3ff93da21a06c19cca7db8c3caadae97ee67923f15bdb2293c82",
+        "indexBytes": 900,
+        "indexSha256": "e4fba210fbcf3ff93da21a06c19cca7db8c3caadae97ee67923f15bdb2293c82",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/docs/delivery-check.md",
+        "bytes": 12949,
+        "sha256": "9785d68abd11547dbe3dc7cc7f618ab3f0ac720f85b038ef3eb574ab312d8a61",
+        "indexBytes": 12949,
+        "indexSha256": "9785d68abd11547dbe3dc7cc7f618ab3f0ac720f85b038ef3eb574ab312d8a61",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/完整教师初始化.json",
+        "bytes": 12147,
+        "sha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147",
+        "indexBytes": 12147,
+        "indexSha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/独立业务预期.json",
+        "bytes": 5127,
+        "sha256": "9b2080f4f9d3c0d4ba830dc5299d04ae538cc2b0237500f0b220b87fd6b4195e",
+        "indexBytes": 5127,
+        "indexSha256": "9b2080f4f9d3c0d4ba830dc5299d04ae538cc2b0237500f0b220b87fd6b4195e",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/输入冻结清单.json",
+        "bytes": 2327,
+        "sha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+        "indexBytes": 2327,
+        "indexSha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/青岚修仙录-三章原始课堂存档.md",
+        "bytes": 10231,
+        "sha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf",
+        "indexBytes": 10231,
+        "indexSha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-完整交付任务.txt",
+        "bytes": 3739,
+        "sha256": "87f110f8c4823afcb963e85148c425eb72e3faca32d8531493e195548337ee39",
+        "indexBytes": 3739,
+        "indexSha256": "87f110f8c4823afcb963e85148c425eb72e3faca32d8531493e195548337ee39",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/177-前置实录索引.json",
+        "bytes": 18423,
+        "sha256": "126a847ea32cb2777ff57ea68f207dfee775a903920c8a0b2998449a2cbedc27",
+        "indexBytes": 18423,
+        "indexSha256": "126a847ea32cb2777ff57ea68f207dfee775a903920c8a0b2998449a2cbedc27",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "qinglan/chapter15/project/inputs/CI官方版本与范围.json",
+        "bytes": 1508,
+        "sha256": "785e38f52332398b6a29ae2aea3a568e9800dade195758d30edb17f42cacf6b4",
+        "indexBytes": 1508,
+        "indexSha256": "785e38f52332398b6a29ae2aea3a568e9800dade195758d30edb17f42cacf6b4",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "package.json",
+        "bytes": 209,
+        "sha256": "3dd1aa11a09478e7a415caf96b3e2b3ab4ed41e2dc9df9363bd98ed7037ceb1b",
+        "indexBytes": 209,
+        "indexSha256": "3dd1aa11a09478e7a415caf96b3e2b3ab4ed41e2dc9df9363bd98ed7037ceb1b",
+        "workEqualsIndex": true
+      },
+      {
+        "path": "pnpm-workspace.yaml",
+        "bytes": 342,
+        "sha256": "91303b0b7942f865f388ef7d5ace4f95a253118d0bd73a0b2c8b6a152f2d53de",
+        "indexBytes": 342,
+        "indexSha256": "91303b0b7942f865f388ef7d5ace4f95a253118d0bd73a0b2c8b6a152f2d53de",
+        "workEqualsIndex": true
+      },
+      {
+        "path": ".githooks/pre-commit",
+        "bytes": 234,
+        "sha256": "def58b0cbd9feb6f2917bbf610b7fea6a09443065b153b3aeba198648ca93ca0",
+        "indexBytes": 234,
+        "indexSha256": "def58b0cbd9feb6f2917bbf610b7fea6a09443065b153b3aeba198648ca93ca0",
+        "workEqualsIndex": true
+      },
+      {
+        "path": ".github/workflows/chapter15-delivery.yml",
+        "bytes": 2094,
+        "sha256": "a95add4419d5303d779185b87bee1c78cd85e190ac2261d3330b6cb6b487cf45",
+        "indexBytes": 2094,
+        "indexSha256": "a95add4419d5303d779185b87bee1c78cd85e190ac2261d3330b6cb6b487cf45",
+        "workEqualsIndex": true
+      }
+    ],
+    "allRuntimeSourceAndCandidatesEqualIndex": true,
+    "remainingUnstagedDiff": 0,
+    "hookMode": "100755 b274a1f31c51a99504a34c5475dd1fedd276e5ad 0\t.githooks/pre-commit",
+    "candidateTree": "1e37a610910675b783222e543d2331d7b9b0c7f9",
+    "inputRegistrySha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+    "hookNotYetRun": true,
+    "limits": "仅核本章检查实际消费的跟踪源码/输入及全部五项候选；dist由随后实际build生成，未消费的其他章节历史文本不作为本轮全字节保证。"
+  }
+]

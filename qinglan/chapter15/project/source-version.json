@@ -1,7 +1,7 @@
 {
-  "sourceSha256": "f643ff57a202b3b469d18d098c0ba28d260dc0baa03cfae3b1f2fa7c9bfb5579",
-  "sourceVersion": "f643ff57a202b3b469d18d098c0ba28d260dc0baa03cfae3b1f2fa7c9bfb5579",
-  "preparedFromGit": "b7b385cd10171b2c13b96058d801f80f5a7d8740",
+  "sourceSha256": "c87d92a4cab7c649d76402253b47f2334f6e2fc2e96e199488a9b05268ad1158",
+  "sourceVersion": "c87d92a4cab7c649d76402253b47f2334f6e2fc2e96e199488a9b05268ad1158",
+  "preparedFromGit": "f71cee739bd8be4ad908044d5bc02aec0f08ff49",
   "practiceTag": "qinglan-ch15-practice-start",
   "inputRegistrySha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
   "files": [
@@ -22,13 +22,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 4059,
-      "sha256": "d7eb9f90f0b223a31b0647df81f95a16de8a13b43f998381310fe45d492568fd"
+      "bytes": 4524,
+      "sha256": "6eca1bc460f1c78bd1971c6df80aa06a8daf9c438ed8ce113ecd6bbeb639ce23"
     },
     {
       "path": "config/固定实验参数.json",
       "bytes": 705,
       "sha256": "e894bbe9562e099aaab5e1220d270de280b8a69697ee9ae326406a0305b289b2"
+    },
+    {
+      "path": "docs/delivery-check.md",
+      "bytes": 4373,
+      "sha256": "948ab3cd9ba1b5708c175667b716f748a97db6835699e96a8044142783a86d82"
     },
     {
       "path": "docs/save-review.md",
@@ -66,9 +71,14 @@
       "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d"
     },
     {
+      "path": "materials/screenshots/提交检查实录页-高清原像素.png",
+      "bytes": 404801,
+      "sha256": "56d8c56a505635a6b5e04beae5b02546338dc52433f3df58e1062dba33e718ee"
+    },
+    {
       "path": "materials/viewer.css",
-      "bytes": 1160,
-      "sha256": "b24444c3dba9be67f6f9d6849f7ca91d64d71721018b3efaaba9de7dec39e08c"
+      "bytes": 1443,
+      "sha256": "831ec9c41eac63150183168594881959c93d2eee7c7c4774e37561e53f0b9ee7"
     },
     {
       "path": "materials/viewer.html",
@@ -77,13 +87,13 @@
     },
     {
       "path": "materials/viewer.js",
-      "bytes": 2095,
-      "sha256": "aed961a287146ea190bf0cdd805c868d23535ac953670c5441cd7467e51325f5"
+      "bytes": 3317,
+      "sha256": "7abfccc60b0c728c9042d4dc6fc02c4bad3729685bbd483697a80707c6e1de98"
     },
     {
       "path": "package.json",
-      "bytes": 849,
-      "sha256": "5a49bafabdde763f1acd7c7e20c1f62cb823db1b0edb2305716725e95e3d4881"
+      "bytes": 985,
+      "sha256": "2f0ea93b096b9c92ba021cb568eb08e7cd2a08062d064f970dfd6e9795913ed8"
     },
     {
       "path": "pnpm-lock.yaml",
@@ -109,6 +119,11 @@
       "path": "prototype/index.html",
       "bytes": 1996,
       "sha256": "b8326f50774696ee4d5f74df05fab8a937cbb5ebb6ef20e4ac29d13f209077f8"
+    },
+    {
+      "path": "scripts/check-saving-delivery.mjs",
+      "bytes": 45058,
+      "sha256": "b8d0d282d548a40bb8aca59bd1b0a837c17484909597f4ea09d932ccdade6585"
     },
     {
       "path": "scripts/check-source.mjs",
