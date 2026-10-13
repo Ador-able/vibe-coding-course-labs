@@ -1,14 +1,14 @@
 {
   "frozen": true,
-  "sourceKind": "主编完整原件，经独立输入审查 READY",
-  "synchronizedAt": "2026-10-13T04:41:26.648Z",
-  "teacherManifestSHA256": "2679ce165a8d3debb1f5e52ea9f609a4ffdaca590f7dcc1c2fc231bd832906ca",
+  "sourceKind": "主编冻结原件，字节与本轮教师清单一致；实际Git起点另记",
+  "synchronizedAt": "2026-10-13T05:06:47.821Z",
+  "teacherManifestSHA256": "c7bf2b262e4d9beb94eb58d477281fafb152e30b8bf6908cdf2f26629190a518",
   "files": [
     {
       "key": "分类-共同规则.txt",
       "name": "分类-共同规则.txt",
-      "bytes": 316,
-      "sha256": "0988cf44adf4093a5a6999c451ada2a5b8b8023f362f1798fa45b2bf4a466e8b"
+      "bytes": 391,
+      "sha256": "5c20609259c5c5ec7e4d90b751604bf2e450c63ea217da727a5562b0f9239a59"
     },
     {
       "key": "分类-十二条完整反馈.json",
@@ -133,8 +133,8 @@
     {
       "key": "长文-instructions.txt",
       "name": "长文-instructions.txt",
-      "bytes": 383,
-      "sha256": "3b48ad4e801e28b82c3883f63daf5930f2a8c0c65d053827169684c8d90bb317"
+      "bytes": 458,
+      "sha256": "8c5e69f3f29676c34ff28067c390437cc827300059f445d700073dc969b621cc"
     },
     {
       "key": "长文-map.txt",
@@ -187,8 +187,8 @@
     {
       "key": "非敏感固定设置.json",
       "name": "非敏感固定设置.json",
-      "bytes": 972,
-      "sha256": "216310876f4efd385586c641b49a7dbad9fb4fc35dbfaa5eebcefba05aacfe8a"
+      "bytes": 976,
+      "sha256": "17e76d8e2459ba03764515ef1c78f736efb42a7e25ace199e376726a3c45de89"
     }
   ]
 }

@@ -4,11 +4,11 @@
   "maxRetries": 0,
   "thinking": "未显式关闭思考，以实际发送体为准",
   "maxOutputTokens": {
-    "longText": 4096,
-    "classification": 4096,
-    "extraction": 8192,
-    "itemRepair": 4096,
-    "templateComparison": 8192
+    "longText": 16384,
+    "classification": 16384,
+    "extraction": 16384,
+    "itemRepair": 8192,
+    "templateComparison": 16384
   },
   "calls": {
     "longText": 8,
