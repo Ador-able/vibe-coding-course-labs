@@ -1,7 +1,7 @@
 {
-  "sourceSha256": "e222e2aced48d5980d0275cf2964c3222fdf0b8937ad1c93aabdfa9fa9d721ae",
-  "sourceVersion": "e222e2aced48d5980d0275cf2964c3222fdf0b8937ad1c93aabdfa9fa9d721ae",
-  "preparedFromGit": "f6fa9b8e509e0d6b151286e358bc1f65b6c818fd",
+  "sourceSha256": "5b25cfa35ee1346a71648d216ba28b52fc5f3cb188ede51eca71f19d7aae83ea",
+  "sourceVersion": "5b25cfa35ee1346a71648d216ba28b52fc5f3cb188ede51eca71f19d7aae83ea",
+  "preparedFromGit": "1a5c634a596b5fdbb3742e8b3df3e7e48a026582",
   "practiceTag": "qinglan-ch15-practice-start",
   "inputRegistrySha256": "bd7023f850a4668eb8620781fbe4e77407c818d5c9e1ae4bcc687700ccb27621",
   "files": [
@@ -169,6 +169,11 @@
       "path": "scripts/start-workbench.mjs",
       "bytes": 563,
       "sha256": "b06838edbef4e2c425fb01eb972267bdfa1c37f304d6e916afa68b57f9fa0f46"
+    },
+    {
+      "path": "scripts/test-saving.mjs",
+      "bytes": 44461,
+      "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49"
     },
     {
       "path": "scripts/viewer.mjs",
