@@ -1,0 +1,42 @@
+{
+  "kind": "historical_git_original",
+  "baseGit": "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720",
+  "headGit": "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+  "oldApp": {
+    "blob": "6b9d7f045cb5afff6f7755f33a0080fad89def68",
+    "bytes": 7442,
+    "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d"
+  },
+  "fixedApp": {
+    "blob": "26bf36b20687f77e2374cbb370e39c8f26e61d87",
+    "bytes": 7557,
+    "sha256": "9468234bc8decf413e8053ff645d2cbe7a5ed881765c2ee2cd31cacd814b1780"
+  },
+  "gitVersion": "git version 2.52.0.windows.1",
+  "command": [
+    "git",
+    "-c",
+    "core.quotepath=false",
+    "diff",
+    "--binary",
+    "--no-ext-diff",
+    "--no-textconv",
+    "--no-color",
+    "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720",
+    "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+    "--",
+    "prototype/app.js"
+  ],
+  "files": [
+    {
+      "path": "2c1到19f-历史真实Git差异.patch",
+      "bytes": 6670,
+      "sha256": "a39b3fbee5a87d207e1bed1c627a922c0f0486769eaa28b6f0a016772d0150a1"
+    }
+  ],
+  "bundle": {
+    "bytes": 187792,
+    "sha256": "e620fb4bc0de3a97c56c7ef41f355e77c88426c539f1ae46919655898dc29a40"
+  },
+  "scope": "真实历史2c1→19f的Git输出原字节；另一个说明式差异文件为教师归纳。当前单工作台恢复副本不是历史2c1原提交。"
+}

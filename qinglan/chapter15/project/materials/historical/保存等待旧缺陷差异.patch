@@ -1,0 +1,8 @@
+--- 当前正确的单一工作台
++++ 历史等待行为恢复副本
+@@ setBusy @@
+-function setBusy(value){busy=value;$('draft-title').disabled=value||!snapshot;$('draft-body').disabled=value||!snapshot;$('use-current').disabled=value;$('reload').disabled=value;$('read-current').disabled=value;$('save').disabled=value||uncertain||!isDirty();for(const button of $('chapters').querySelectorAll('button'))button.disabled=value;}
++function setBusy(value){busy=value;$('reload').disabled=value;$('read-current').disabled=value;$('save').disabled=value||uncertain||!isDirty();for(const button of $('chapters').querySelectorAll('button'))button.disabled=value;}
+@@ render @@
+-$('draft-title').disabled=busy;$('draft-body').disabled=busy;
++$('draft-title').disabled=false;$('draft-body').disabled=false;

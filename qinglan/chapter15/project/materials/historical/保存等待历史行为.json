@@ -1,0 +1,19 @@
+{
+  "kind": "derived_historical_regression_fixture",
+  "oldTag": "vcm-09-02-start",
+  "oldTagGit": "2633fe651e7a4292a2a879d2e75717b0f91a1fda",
+  "oldSourcePath": "project/prototype/app.js",
+  "oldSourceBytes": 7442,
+  "oldSourceSha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d",
+  "currentCorrectBytes": 6818,
+  "currentCorrectSha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63",
+  "oldBusy": "function setBusy(value){busy=value;$('reload').disabled=value;$('read-current').disabled=value;$('save').disabled=value||uncertain||!isDirty();for(const button of $('chapters').querySelectorAll('button'))button.disabled=value;}",
+  "correctBusy": "function setBusy(value){busy=value;$('draft-title').disabled=value||!snapshot;$('draft-body').disabled=value||!snapshot;$('use-current').disabled=value;$('reload').disabled=value;$('read-current').disabled=value;$('save').disabled=value||uncertain||!isDirty();for(const button of $('chapters').querySelectorAll('button'))button.disabled=value;}",
+  "restoredBytes": 6703,
+  "restoredSha256": "34cf106aedbf9f594e8dcda725f1ce41f58d8bbf5bc06811f6223460bde0ef98",
+  "scope": "只在当前单一工作台中恢复历史setBusy未暂停编辑、render将编辑重新启用的两个行为。不是旧三布局应用全文，也不是当前正确应用新发现仍坏。",
+  "changes": [
+    "setBusy恢复实际历史函数，不暂停章名/正文/覆盖编辑。",
+    "render的两编辑字段恢复disabled=false，其余当前单界面代码保持。"
+  ]
+}

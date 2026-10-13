@@ -1,0 +1,7 @@
+{
+  "state": "not_ready",
+  "purpose": "本节实际开始前，由主编填写真实旧点/正确点Git、完整差异和4例原记录路径及SHA，再重生成输入清单与源码freeze。",
+  "baseGit": null,
+  "fixedGit": null,
+  "files": []
+}

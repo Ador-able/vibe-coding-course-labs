@@ -1,0 +1,25 @@
+{
+  "sdk": "0.160.0",
+  "model": "gpt-6.1-sol",
+  "approvalPolicy": "never",
+  "readOnlySandbox": "read-only",
+  "writingSandbox": "workspace-write",
+  "networkAccess": false,
+  "projectDocMaxBytes": 32768,
+  "limits": {
+    "investigationMs": 600000,
+    "rulesMs": 600000,
+    "testsMs": 1200000,
+    "reviewMs": 600000,
+    "deliveryMs": 1200000,
+    "interruptGraceMs": 60000
+  },
+  "modelTasksPlanned": 5,
+  "emptySessionsPlanned": 3,
+  "browserCasesPlanned": {
+    "regression": 4,
+    "deliveryDirect": 2,
+    "deliveryGitHook": 2
+  },
+  "scope": "5次自然客户端任务，不等于5次底层模型调用；保留实际模型、终态、完整命令和原答。未显式更改思考配置。"
+}

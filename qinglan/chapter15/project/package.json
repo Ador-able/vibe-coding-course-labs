@@ -1,0 +1,22 @@
+{
+  "name": "qinglan-existing-project-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {"node": ">=24.12.0 <25"},
+  "scripts": {
+    "build": "tsc",
+    "lab": "node scripts/viewer.mjs",
+    "practice:seed": "node scripts/seed.mjs",
+    "prototype": "node scripts/start-workbench.mjs",
+    "source:freeze": "node scripts/freeze-source.mjs",
+    "source:check": "node scripts/check-source.mjs",
+    "host:check": "node scripts/observe.mjs preflight",
+    "rules:observe": "node scripts/observe.mjs rules-sources",
+    "task": "node scripts/observe.mjs task",
+    "review": "node scripts/observe.mjs review"
+  },
+  "dependencies": {"@openai/codex-sdk": "0.160.0", "zod": "4.6.5"},
+  "devDependencies": {"@playwright/test": "1.63.0", "@types/node": "24.19.1", "typescript": "7.0.2"}
+}
