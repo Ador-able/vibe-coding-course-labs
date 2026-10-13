@@ -1,0 +1,85 @@
+{
+  "condition": "A",
+  "runId": "5b5e3cea-2ab6-4870-bfb3-d0bf874beffb",
+  "codeVersion": "1862e28dc38c658310b6727f431a61601b5ce449",
+  "threadId": "01a13217-e784-7e11-83b5-80b02d273116",
+  "startedAt": "2026-10-12T21:49:49.756Z",
+  "endedAt": "2026-10-12T21:52:11.492Z",
+  "elapsedMs": 141735.30730000001,
+  "state": "completed",
+  "turnCompleted": true,
+  "usage": {
+    "input_tokens": 53356,
+    "cached_input_tokens": 31104,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 5847,
+    "reasoning_output_tokens": 540
+  },
+  "error": null,
+  "materialBefore": [
+    {
+      "file": "三章完整待审稿.md",
+      "bytes": 10130,
+      "sha256": "7abebaa0d526d8ddd61bae55d7a407f69ba56175fd63a9097ca1ac226ca68d6e"
+    },
+    {
+      "file": "作品.json",
+      "bytes": 2731,
+      "sha256": "5bcf0da2463d8eb83b2c3495e4f1368434b556da183f872d4e8859723bb88fbf"
+    },
+    {
+      "file": "材料说明.md",
+      "bytes": 451,
+      "sha256": "086b28faab3ccd7f9d56e03d27ed74299b50df3a8488ee2cdc87c2b089e4f5d2"
+    },
+    {
+      "file": "第一章.md",
+      "bytes": 3477,
+      "sha256": "9a4b74348d82429be40d2ec4bcc47146fe9ce59f41b6d9c4076bb7b3f5512392"
+    },
+    {
+      "file": "第三章.md",
+      "bytes": 3154,
+      "sha256": "55ca684792cffe5824c643ff1d39868b07cf2ad6e73d16eb7bfd81f27f34e3e9"
+    },
+    {
+      "file": "第二章.md",
+      "bytes": 3274,
+      "sha256": "32918e036f71b2ff6c1df7edcd7fce74baad33eb0b5ba691656d10f3a7b38e73"
+    }
+  ],
+  "materialAfter": [
+    {
+      "file": "三章完整待审稿.md",
+      "bytes": 10130,
+      "sha256": "7abebaa0d526d8ddd61bae55d7a407f69ba56175fd63a9097ca1ac226ca68d6e"
+    },
+    {
+      "file": "作品.json",
+      "bytes": 2731,
+      "sha256": "5bcf0da2463d8eb83b2c3495e4f1368434b556da183f872d4e8859723bb88fbf"
+    },
+    {
+      "file": "材料说明.md",
+      "bytes": 451,
+      "sha256": "086b28faab3ccd7f9d56e03d27ed74299b50df3a8488ee2cdc87c2b089e4f5d2"
+    },
+    {
+      "file": "第一章.md",
+      "bytes": 3477,
+      "sha256": "9a4b74348d82429be40d2ec4bcc47146fe9ce59f41b6d9c4076bb7b3f5512392"
+    },
+    {
+      "file": "第三章.md",
+      "bytes": 3154,
+      "sha256": "55ca684792cffe5824c643ff1d39868b07cf2ad6e73d16eb7bfd81f27f34e3e9"
+    },
+    {
+      "file": "第二章.md",
+      "bytes": 3274,
+      "sha256": "32918e036f71b2ff6c1df7edcd7fce74baad33eb0b5ba691656d10f3a7b38e73"
+    }
+  ],
+  "materialByteIdentical": true,
+  "scope": "主会话全部公开 SDK 事件；子会话原始工具和任务需要据真实 receiver_thread_ids 另行读取，不能把本报告的 usage 当整个团队用量。"
+}

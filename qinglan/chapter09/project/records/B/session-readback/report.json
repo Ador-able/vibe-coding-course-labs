@@ -1,0 +1,34 @@
+{
+  "reads": [
+    {
+      "label": "主会话",
+      "threadId": "01a1321a-81b9-7303-97c9-feca54ec28e3",
+      "pages": 1,
+      "items": 18,
+      "explicitFinalMessages": 1,
+      "types": [
+        "userMessage",
+        "agentMessage",
+        "subAgentActivity",
+        "collabAgentToolCall",
+        "reasoning",
+        "commandExecution"
+      ]
+    },
+    {
+      "label": "子会话-1",
+      "threadId": "01a1321a-be9f-7f71-ac16-ab47c1ba7fc8",
+      "pages": 1,
+      "items": 10,
+      "explicitFinalMessages": 1,
+      "types": [
+        "reasoning",
+        "agentMessage",
+        "commandExecution"
+      ]
+    }
+  ],
+  "error": null,
+  "modelTasks": 0,
+  "limits": "原样保存官方应用接口返回的完整可见条目；未返回或不可见的输入、工具与用量仍是证据缺口，不根据密文相同推断明文。"
+}

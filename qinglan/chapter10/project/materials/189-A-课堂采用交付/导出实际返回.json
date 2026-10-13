@@ -1,0 +1,73 @@
+{
+  "workId": "qinglan",
+  "workRevision": 5,
+  "expectedChapters": 4,
+  "savedChapters": 4,
+  "allOutlineChaptersSaved": true,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 5,
+      "status": "adopted",
+      "workRevision": 5,
+      "previousRevisions": [],
+      "reviewNote": "编者已完整阅读第一章r4、第二章r2、第三章r3、第四章r2，作为课堂四章阶段成果采用。第一章澄清两本书的指代，第二章明确无名指继续向掌心弯的运动；保留入阁与借阅权限、无人观察空档及未知边界，保留第三章的情绪落点和第四章的有限尝试与强悬念，不追加修炼成功或重复收束。此为编者课堂采用，不表示发布；保存时基线保留。",
+      "basisCurrent": true
+    },
+    {
+      "number": 2,
+      "revision": 3,
+      "status": "adopted",
+      "workRevision": 5,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        }
+      ],
+      "reviewNote": "编者已完整阅读第一章r4、第二章r2、第三章r3、第四章r2，作为课堂四章阶段成果采用。第一章澄清两本书的指代，第二章明确无名指继续向掌心弯的运动；保留入阁与借阅权限、无人观察空档及未知边界，保留第三章的情绪落点和第四章的有限尝试与强悬念，不追加修炼成功或重复收束。此为编者课堂采用，不表示发布；保存时基线保留。",
+      "basisCurrent": false
+    },
+    {
+      "number": 3,
+      "revision": 4,
+      "status": "adopted",
+      "workRevision": 4,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        },
+        {
+          "number": 2,
+          "revision": 1
+        }
+      ],
+      "reviewNote": "编者已完整阅读第一章r4、第二章r2、第三章r3、第四章r2，作为课堂四章阶段成果采用。第一章澄清两本书的指代，第二章明确无名指继续向掌心弯的运动；保留入阁与借阅权限、无人观察空档及未知边界，保留第三章的情绪落点和第四章的有限尝试与强悬念，不追加修炼成功或重复收束。此为编者课堂采用，不表示发布；保存时基线保留。",
+      "basisCurrent": false
+    },
+    {
+      "number": 4,
+      "revision": 3,
+      "status": "adopted",
+      "workRevision": 5,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        },
+        {
+          "number": 2,
+          "revision": 1
+        },
+        {
+          "number": 3,
+          "revision": 3
+        }
+      ],
+      "reviewNote": "编者已完整阅读第一章r4、第二章r2、第三章r3、第四章r2，作为课堂四章阶段成果采用。第一章澄清两本书的指代，第二章明确无名指继续向掌心弯的运动；保留入阁与借阅权限、无人观察空档及未知边界，保留第三章的情绪落点和第四章的有限尝试与强悬念，不追加修炼成功或重复收束。此为编者课堂采用，不表示发布；保存时基线保留。",
+      "basisCurrent": false
+    }
+  ],
+  "path": "D:\\Projects\\Knowledge\\.coursebook-work\\小说实验统一-20261013\\chapter10\\project\\materials\\189-A-课堂采用交付\\青岚修仙录-四章课堂采用.md"
+}

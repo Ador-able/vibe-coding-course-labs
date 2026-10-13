@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "missing-work",
+    "mode": "agent",
+    "sdkState": "completed",
+    "materials": {
+      "ready": false,
+      "state": "unavailable",
+      "workRead": false,
+      "chapterRead": false,
+      "chapterStatus": "unknown"
+    },
+    "appReadCalls": 0,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 76629,
+      "cached_input_tokens": 24832,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 325,
+      "reasoning_output_tokens": 31
+    },
+    "elapsedMs": 31016.8,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-35-08.505Z-12e22a69-a51b-4415-9c13-9826532b2ed0\\missing-work-agent"
+  }
+]

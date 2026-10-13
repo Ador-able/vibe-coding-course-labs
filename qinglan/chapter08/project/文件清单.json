@@ -1,0 +1,606 @@
+{
+  "sourceVersion": "e5485bafa2076f1befb6378084123896bde0e0e5",
+  "modelExecutionVersion": "2715a3c95ebe5f31e508b9f2b8d44f766bd3fdca",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 20,
+      "sha256": "6d05020c8bbc17d51c51188ceb89f5ecd8a39cec1365db8aa58fcf2b83699799"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 94,
+      "sha256": "79e458d1113575500f222bf34d84fbe9d6b2aef3df24e0cc8401f27ff76a8eef"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4793,
+      "sha256": "619f19c27e62112ef9db7c939a6fadf3750cf9fa6f210b85f7a0c97e2d8ba45e"
+    },
+    {
+      "path": "materials/PRD-人工示范.md",
+      "bytes": 5230,
+      "sha256": "1418de4243834419a9dda71f1ed2c0e03b8a17775d1f98064c933a6e9a25d454"
+    },
+    {
+      "path": "materials/人工变化说明.md",
+      "bytes": 1469,
+      "sha256": "8e37b9df81a9aa6352f2f97c56765762974a82dd61ebcdd98dbfa367c2b6fa15"
+    },
+    {
+      "path": "materials/作品.json",
+      "bytes": 2731,
+      "sha256": "5bcf0da2463d8eb83b2c3495e4f1368434b556da183f872d4e8859723bb88fbf"
+    },
+    {
+      "path": "materials/原型实录/desk/02-waiting-full.png",
+      "bytes": 315577,
+      "sha256": "1d9b3ed7b56fc1461796d7ba84faa5b4f323dfae136b74c6acc2068062b24526"
+    },
+    {
+      "path": "materials/原型实录/desk/03-conflict-full.png",
+      "bytes": 328525,
+      "sha256": "7a42ad1b452d524e250e269e5d167377305a95a066da83e5be51d4a93a2a270c"
+    },
+    {
+      "path": "materials/原型实录/desk/04-compare-full.png",
+      "bytes": 452111,
+      "sha256": "9b53f31ccb5bbf0aa26a27664cd7467b16346fc879522e6fb51b655491d5c736"
+    },
+    {
+      "path": "materials/原型实录/desk/05-network-unconfirmed-full.png",
+      "bytes": 303356,
+      "sha256": "4aa4b29ac88e65bff2c6a9f36161c6e13e6a61b96c4e1d189931340f4e518795"
+    },
+    {
+      "path": "materials/原型实录/desk/initial-viewport.png",
+      "bytes": 174659,
+      "sha256": "b2c50be187ca0df1743abbab28381f01a44fd55c8b737e76b54492d36f1473c5"
+    },
+    {
+      "path": "materials/原型实录/desk/report.json",
+      "bytes": 11940,
+      "sha256": "c36aeb7050450c0059bd7d0095a0d6c9ca08661f7fb651d13bb6524dcdd18e33"
+    },
+    {
+      "path": "materials/原型实录/desk/waiting-state.json",
+      "bytes": 3748,
+      "sha256": "6dc13c2e7968afa6ab762d5041b3c0d4e6aa011ecdc0baf5a8958540072f58a9"
+    },
+    {
+      "path": "materials/原型实录/independent-check.json",
+      "bytes": 1279,
+      "sha256": "c99f9fa8970fe18bc268dbba0f9c0399dff8df4d2472ede68a5234f9887eb851"
+    },
+    {
+      "path": "materials/原型实录/notes/02-waiting-full.png",
+      "bytes": 301041,
+      "sha256": "fd45d233cef0c606eed86eea04b6f1e7673e32104266468eb258ae7d1932092a"
+    },
+    {
+      "path": "materials/原型实录/notes/03-conflict-full.png",
+      "bytes": 316837,
+      "sha256": "e4661f6619bd1d391c57d5f5ed0642a118cbf4e0066b7dc13f3677d7bd722b36"
+    },
+    {
+      "path": "materials/原型实录/notes/04-compare-full.png",
+      "bytes": 442007,
+      "sha256": "afb92b51e5e5a8f9fc8e132d5a5d579ebd5f17e9d9bfba26b35049cc049fffbc"
+    },
+    {
+      "path": "materials/原型实录/notes/05-network-unconfirmed-full.png",
+      "bytes": 309392,
+      "sha256": "17734ae681fd519a0f79d1f1a280962fd61679911bb92ea7a45fcc74e51ac2b4"
+    },
+    {
+      "path": "materials/原型实录/notes/initial-viewport.png",
+      "bytes": 157350,
+      "sha256": "b9cd38c0fe0c74f10287d73e2a9a924c22c42ae24c10b6aeaea8fc15d9f165a0"
+    },
+    {
+      "path": "materials/原型实录/notes/report.json",
+      "bytes": 11943,
+      "sha256": "80d96621c0d897d12880aa57e8b2942c0392a036b55a250a8fb2de8844545677"
+    },
+    {
+      "path": "materials/原型实录/notes/waiting-state.json",
+      "bytes": 3748,
+      "sha256": "6dc13c2e7968afa6ab762d5041b3c0d4e6aa011ecdc0baf5a8958540072f58a9"
+    },
+    {
+      "path": "materials/原型实录/original/02-waiting-full.png",
+      "bytes": 233664,
+      "sha256": "94bc00b76443dda91aefec51d43e056fc3a842085ca47c69d350408959f0ba0e"
+    },
+    {
+      "path": "materials/原型实录/original/03-conflict-full.png",
+      "bytes": 248385,
+      "sha256": "3b2d0d0009dfdd38bfbfe7c86a8344876d769c3b4f6f183bace2b90e0d180262"
+    },
+    {
+      "path": "materials/原型实录/original/04-compare-full.png",
+      "bytes": 372694,
+      "sha256": "bb54eea18b677dff0e69031d0fa2cb8814cfe77ce539e0f21522094c585405cf"
+    },
+    {
+      "path": "materials/原型实录/original/05-network-unconfirmed-full.png",
+      "bytes": 276035,
+      "sha256": "4d0e902ff1378731fc1325c09d3e315a3eee04c91d38f537ff2c183fe963175b"
+    },
+    {
+      "path": "materials/原型实录/original/initial-viewport.png",
+      "bytes": 160359,
+      "sha256": "04bbf9b587447146ff4fe2f6491c7f400ad174fdc5df50b1696738bcc6ffdb32"
+    },
+    {
+      "path": "materials/原型实录/original/report.json",
+      "bytes": 11952,
+      "sha256": "a2305da51067b83bb951088db8498b7dd5fcc5039f5c3f7a0760f2994576ed61"
+    },
+    {
+      "path": "materials/原型实录/original/waiting-state.json",
+      "bytes": 3748,
+      "sha256": "6dc13c2e7968afa6ab762d5041b3c0d4e6aa011ecdc0baf5a8958540072f58a9"
+    },
+    {
+      "path": "materials/实录文件来源.json",
+      "bytes": 12638,
+      "sha256": "a1bb203218671e748f837ab42f4add25a71124cb9f1cc37fa1bf4ed4c473b92f"
+    },
+    {
+      "path": "materials/材料说明.md",
+      "bytes": 927,
+      "sha256": "a98dc5b67e4b28be5fadf9923b9e48043f81e24e1025e8ec36908727449c9b48"
+    },
+    {
+      "path": "materials/第一章.md",
+      "bytes": 3477,
+      "sha256": "9a4b74348d82429be40d2ec4bcc47146fe9ce59f41b6d9c4076bb7b3f5512392"
+    },
+    {
+      "path": "materials/第三章.md",
+      "bytes": 3154,
+      "sha256": "55ca684792cffe5824c643ff1d39868b07cf2ad6e73d16eb7bfd81f27f34e3e9"
+    },
+    {
+      "path": "materials/第二章-人工修改后.md",
+      "bytes": 3480,
+      "sha256": "a84f7387cda4a1a497bf323edaa4e161078aeeea4932bbf112098de724245484"
+    },
+    {
+      "path": "materials/第二章.md",
+      "bytes": 3274,
+      "sha256": "32918e036f71b2ff6c1df7edcd7fce74baad33eb0b5ba691656d10f3a7b38e73"
+    },
+    {
+      "path": "materials/访谈-教学构造.md",
+      "bytes": 2185,
+      "sha256": "f251a5f8a52f1bd01fa398415d0d5cc777858a95b0851164a7bdd104eac4a1b9"
+    },
+    {
+      "path": "materials/跨会话实录/README.md",
+      "bytes": 4028,
+      "sha256": "112bae4d85c1be5bbaf7f50d8207ab84319576b02649ccba76a9432217df8a90"
+    },
+    {
+      "path": "materials/跨会话实录/deliverables/cross-8eb3c6f6-48b0-4b12-a914-dfff994e776b-三章待审.md",
+      "bytes": 10378,
+      "sha256": "62dc04bf21669ba1784fdd2d0e053c1010290e8b08b1f8c17b5f060bfde65c27"
+    },
+    {
+      "path": "materials/跨会话实录/runs/cross-a-independent-check.json",
+      "bytes": 602,
+      "sha256": "e880e4a6de3516c92b0cedb421bf3cd2b54638719c296ab0fadcc0a43aad1686"
+    },
+    {
+      "path": "materials/跨会话实录/runs/cross-b-independent-check.json",
+      "bytes": 662,
+      "sha256": "541f3f25e2f81afda50233d9f5f20cb80f233c36676bcd07e1db4a3f77d3220f"
+    },
+    {
+      "path": "materials/跨会话实录/task-state/task.json",
+      "bytes": 1681,
+      "sha256": "4934ad711b37a697feb33862baacdbc79096735d86ad2c240a86ecd08f0e08c6"
+    },
+    {
+      "path": "materials/跨会话实录/task-state/人工初始化完整回执.json",
+      "bytes": 14220,
+      "sha256": "c98f5f36c0c19ef937c4f6534a11ebea60dbf2bd3e89c906c8355f07cc6fdeca"
+    },
+    {
+      "path": "materials/跨会话实录/task-state/任务说明.md",
+      "bytes": 2406,
+      "sha256": "d170d86c73b8c07386a6bf4a34e9dfbad97d3adbd478111fb0ad7b174bfc1b2f"
+    },
+    {
+      "path": "materials/跨会话实录/task-state/会话A完整输入.txt",
+      "bytes": 1846,
+      "sha256": "d79bca69c516cc09817dfaa6cd88b45e40bed8228331b4cd23cddb142fdd6872"
+    },
+    {
+      "path": "materials/跨会话实录/task-state/会话B完整输入.txt",
+      "bytes": 1761,
+      "sha256": "7bf0c730c84d1f6c7d85566dc186f44afe42fe4d9a22eb32f899e8ff0d28ea2b"
+    },
+    {
+      "path": "materials/跨会话实录/task-state/完整材料核对.md",
+      "bytes": 15996,
+      "sha256": "90c9ae07319ef1f0b37078bdf2d2af794773088e0e7fc3767bffd08b1bdf149c"
+    },
+    {
+      "path": "materials/跨会话实录/task-state/最新进度.md",
+      "bytes": 4400,
+      "sha256": "73247d20ef4764b48bf9862a9b3e6574d41fe984cd9205637102fc90509f5c15"
+    },
+    {
+      "path": "materials/跨会话实录/task.json",
+      "bytes": 1930,
+      "sha256": "6e4e54161da4b4228d3226a8b29c6eaab83e3c621206794c1f2469722451b905"
+    },
+    {
+      "path": "materials/跨会话实录/来源与字节核对.json",
+      "bytes": 4278,
+      "sha256": "661eebae8cea3d7ce4d150e613aa005113465cc68a31683080dd4ec528b7e45b"
+    },
+    {
+      "path": "materials/跨会话实录/模型记录/A-final-response.txt",
+      "bytes": 269,
+      "sha256": "c5e6dd314e16e95aba7a531e83249eb6b7e7a8005612b5e05e31c93c6bf56aaa"
+    },
+    {
+      "path": "materials/跨会话实录/模型记录/A-input.json",
+      "bytes": 4825,
+      "sha256": "f02b9b1f9028668579da249304ac03da337ff4a7969195f2613311c08422abb8"
+    },
+    {
+      "path": "materials/跨会话实录/模型记录/A-report.json",
+      "bytes": 3172,
+      "sha256": "374d94243cfb98ad40d7f325b09cfcb30bdf6c8241e1d227afcd5f39365c3357"
+    },
+    {
+      "path": "materials/跨会话实录/模型记录/B-final-response.txt",
+      "bytes": 2005,
+      "sha256": "6bda94716601a64d7380ba1678ddd77238fec2a8ea43d0e72d2c9e5ad83cbdd6"
+    },
+    {
+      "path": "materials/跨会话实录/模型记录/B-input.json",
+      "bytes": 4656,
+      "sha256": "984366ef55297257d5c412ef173b4e4ef9f36366c33d7fc71c9a04cadd246ef3"
+    },
+    {
+      "path": "materials/跨会话实录/模型记录/B-report.json",
+      "bytes": 2705,
+      "sha256": "e983bc1e35eb389f558d387846dd05f153933349b15657b52d23503cc6f11624"
+    },
+    {
+      "path": "materials/重规划实录/deliverables/replan-570ce159-db6a-445b-aea4-89cfa9258e99-旧三章待审.md",
+      "bytes": 10378,
+      "sha256": "62dc04bf21669ba1784fdd2d0e053c1010290e8b08b1f8c17b5f060bfde65c27"
+    },
+    {
+      "path": "materials/重规划实录/replan/task.json",
+      "bytes": 2881,
+      "sha256": "e61c6783d224634bce5762b7b94c628017727009db7e433dde384cb2c1469ccf"
+    },
+    {
+      "path": "materials/重规划实录/replan/人工保存完整返回.json",
+      "bytes": 3849,
+      "sha256": "d40bcbc12cbcfa0c7e90835be190fb5e843ef20b3070c7c4d7e8b158439fa850"
+    },
+    {
+      "path": "materials/重规划实录/replan/人工初始化完整回执.json",
+      "bytes": 14220,
+      "sha256": "9086da511dee50ab4a5769530359c24b3b999449b6b35a1aa4acf326075e7a91"
+    },
+    {
+      "path": "materials/重规划实录/replan/任务说明.md",
+      "bytes": 1357,
+      "sha256": "988edc2831f043030b8ec2cf7141ff72c51f3a7cb7907851f440bfb27c804e7c"
+    },
+    {
+      "path": "materials/重规划实录/replan/前置-完整材料核对.md",
+      "bytes": 15996,
+      "sha256": "90c9ae07319ef1f0b37078bdf2d2af794773088e0e7fc3767bffd08b1bdf149c"
+    },
+    {
+      "path": "materials/重规划实录/replan/前置-最新进度.md",
+      "bytes": 4400,
+      "sha256": "73247d20ef4764b48bf9862a9b3e6574d41fe984cd9205637102fc90509f5c15"
+    },
+    {
+      "path": "materials/重规划实录/replan/完整重规划输入.txt",
+      "bytes": 1906,
+      "sha256": "490186a307b69b8a47103841ec5e10f9b0ba013d1eea0e53e250b45a7776a96c"
+    },
+    {
+      "path": "materials/重规划实录/replan/当前进度.md",
+      "bytes": 7126,
+      "sha256": "9c0798dab3877ec74fc8d305d77d7ae38388300e142510b727aa229e6d2581a8"
+    },
+    {
+      "path": "materials/重规划实录/replan/改前-chapter-1.json",
+      "bytes": 3792,
+      "sha256": "5d4350b3b9aa01778b41df91d6a1f5125012e4577efabfa4586a0146771910f6"
+    },
+    {
+      "path": "materials/重规划实录/replan/改前-chapter-2.json",
+      "bytes": 3641,
+      "sha256": "ab8b5d9710361c441a44b2e75bf3db6b72889a426191d94f2448f81e7325ca78"
+    },
+    {
+      "path": "materials/重规划实录/replan/改前-chapter-3.json",
+      "bytes": 3573,
+      "sha256": "2e72a8535b23d223dd094f02fdd9c2b3c179a7ac1e1662891dd48b2516aadeb5"
+    },
+    {
+      "path": "materials/重规划实录/replan/改前-show.json",
+      "bytes": 4077,
+      "sha256": "562adebe5bcfcdf8921c43964ad3a152b50c0ab370d84e4fd2c60caa7732d0d2"
+    },
+    {
+      "path": "materials/重规划实录/replan/第二章-人工修改完整输入.json",
+      "bytes": 3741,
+      "sha256": "25e5fbdb289b7894409879657618b135d811ed19e2fb3e819c6aada715919f59"
+    },
+    {
+      "path": "materials/重规划实录/replan/第二章-拟改后全文.md",
+      "bytes": 3463,
+      "sha256": "2aff3a4680edcf3a7f71c002bb258da26061e45b86a2b115758cbc9be67a9dcf"
+    },
+    {
+      "path": "materials/重规划实录/replan/第二章-改前全文.md",
+      "bytes": 3257,
+      "sha256": "f2ffc5708dab38cad0ae3ead431fedec5662871aa0fb438742680cd01b4ebcff"
+    },
+    {
+      "path": "materials/重规划实录/replan/第二章-改后实际读回.json",
+      "bytes": 3849,
+      "sha256": "d40bcbc12cbcfa0c7e90835be190fb5e843ef20b3070c7c4d7e8b158439fa850"
+    },
+    {
+      "path": "materials/重规划实录/replan/调整后的计划.md",
+      "bytes": 19361,
+      "sha256": "927cec67016508d71d8a2679e49d18f7bab6cffa6ef7a94575ff53c8344d5764"
+    },
+    {
+      "path": "materials/重规划实录/runs/replan-after-model.json",
+      "bytes": 117672,
+      "sha256": "1477d55f9f13e2a04584a801c42c6dd6f0b49183df461931c4a3df0ad59d4cc4"
+    },
+    {
+      "path": "materials/重规划实录/runs/replan-before-human.json",
+      "bytes": 87254,
+      "sha256": "24a38a3bfca573ad28501678ef3f2f371036963163c366c4d85cb917c25452b6"
+    },
+    {
+      "path": "materials/重规划实录/runs/replan-before-model.json",
+      "bytes": 91834,
+      "sha256": "2df4ddaa15f53b345b437dac952d3cb0d1ad9186ce2a644a050c2a5935b4122a"
+    },
+    {
+      "path": "materials/重规划实录/runs/replan-independent-check.json",
+      "bytes": 822,
+      "sha256": "82669220075dc436483a4e43e5430b381f7af31193648b7deda0e09ba251528b"
+    },
+    {
+      "path": "materials/重规划实录/runs/replan-preflight.json",
+      "bytes": 3637,
+      "sha256": "18f1b96eba0e088e3142d496173bd4b72de6ef078e11587a1bc7f75c8b8799e0"
+    },
+    {
+      "path": "materials/重规划实录/模型记录/final-response.txt",
+      "bytes": 1873,
+      "sha256": "d2b84fcea4542e0810d8d414c7663b530c7332d4d5f952a0afe5d25c18c2ebbb"
+    },
+    {
+      "path": "materials/重规划实录/模型记录/input.json",
+      "bytes": 6115,
+      "sha256": "50778594bbb686364e5817382f7626a5b292b00e36c3c477b29ce5aa1ccb0137"
+    },
+    {
+      "path": "materials/重规划实录/模型记录/report.json",
+      "bytes": 2503,
+      "sha256": "1cfa1b623f19c432e95e560749537b7ab0b4b90127bfe6e91e79225f794040fd"
+    },
+    {
+      "path": "materials/阶段计划-人工示范.md",
+      "bytes": 7194,
+      "sha256": "1b0824cff72f476626c597c1bc2ea1668b03fe74eacba0dc4e264a228ce2f025"
+    },
+    {
+      "path": "package.json",
+      "bytes": 1259,
+      "sha256": "4a1f3690926762587aac45b737daa2a27a167e5a73627fd3d770d28eab12b01e"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 36227,
+      "sha256": "0d859dc27633aa2f9371e2b85f6ee3869bd88b9b357700ed60e7cd2ac323c398"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 16,
+      "sha256": "44b627aa58902d12f2b7469e46784fd611bac456409c630d7636c0e7059c14aa"
+    },
+    {
+      "path": "prototype/app.css",
+      "bytes": 11587,
+      "sha256": "1f5fb868042ba8ba0d42cb7de4b7cf273662ce3ccb4b886bfdda905c1c42df4f"
+    },
+    {
+      "path": "prototype/app.js",
+      "bytes": 7632,
+      "sha256": "682fd6545592e978dc9cc1979634948ba02a026fe24baa774dd9f7406096a9c8"
+    },
+    {
+      "path": "prototype/index.html",
+      "bytes": 2534,
+      "sha256": "eb668c6d78a6b0f91b58e01c78c0bcaa5e96fecf4abeab7e3e86680ce712e765"
+    },
+    {
+      "path": "scripts/capture-prototype.mjs",
+      "bytes": 11689,
+      "sha256": "30967b6b17f32f76ad267bda3fa7414a0c07eb5fc221a71de840b234a75132d4"
+    },
+    {
+      "path": "scripts/capture-stage.mjs",
+      "bytes": 2220,
+      "sha256": "0950219c437a16afaecbbbba56bd5aed871ab7f517bdc02b0da0e1ce1b94c2f5"
+    },
+    {
+      "path": "scripts/codex-environment.mjs",
+      "bytes": 1603,
+      "sha256": "2887c23409afadd2ae44072bbde4b1709f93d35ed55117642580c756a30292df"
+    },
+    {
+      "path": "scripts/codex-local.mjs",
+      "bytes": 583,
+      "sha256": "1084d043de2cfd4a49ae05d241bdda7c5c0a38d08c01b804185bd76b5d648bcc"
+    },
+    {
+      "path": "scripts/observe-reminder.mjs",
+      "bytes": 1067,
+      "sha256": "9d64ea25801147cd3c632dfba76f45eda429c2bc1738bedba8b69cf01564b73a"
+    },
+    {
+      "path": "scripts/prepare-replan.mjs",
+      "bytes": 7914,
+      "sha256": "b2c8678326d6ea00e680f7ae5247350e0df6e0ebe586256233d294f017000fef"
+    },
+    {
+      "path": "scripts/prepare-stage.mjs",
+      "bytes": 7306,
+      "sha256": "4f4ee4f836b25e61ab4226a5720e64daef96b46f385f49de577291b75e1125c2"
+    },
+    {
+      "path": "scripts/prototype-seed.mjs",
+      "bytes": 1933,
+      "sha256": "3a18833ee412f57b272f913b102b45c5d5479f1088e9ed04b8b725c4cc766d53"
+    },
+    {
+      "path": "scripts/read-prototype-mcp.mjs",
+      "bytes": 3031,
+      "sha256": "b59a4131f2f772b4383c11ee005c590c1710f00d35e888290f34bc62d9d01e35"
+    },
+    {
+      "path": "scripts/replan-session.mjs",
+      "bytes": 2656,
+      "sha256": "2789d85b04afb0e5f93d62e091aa43a84828d8b0770fdf6a9d3c36f0f47257b3"
+    },
+    {
+      "path": "scripts/start-prototype.mjs",
+      "bytes": 570,
+      "sha256": "7cf77f23f40d52aea0e45997358fd55f0a7bc8d0415c9b59c03a8fc4da6eac13"
+    },
+    {
+      "path": "scripts/task-preflight.mjs",
+      "bytes": 3902,
+      "sha256": "9c58b386e1e61e496ea78a80a8ed980f7cbf79be6c285a9385702ed5822963e8"
+    },
+    {
+      "path": "scripts/task-runtime.mjs",
+      "bytes": 1312,
+      "sha256": "2258fda784ed819a2a1b757622a024d8f006a776233daa7ad3687946ce9b6155"
+    },
+    {
+      "path": "scripts/task-session.mjs",
+      "bytes": 4281,
+      "sha256": "e080bf1d69637d67ecc95c73f2d4b39f7742e3590dc4739a99d55310565354ad"
+    },
+    {
+      "path": "src/cli.ts",
+      "bytes": 2958,
+      "sha256": "1d1a24bb787461014109f8ef125e4e7453270025e32128419f21b995d31f17b6"
+    },
+    {
+      "path": "src/mcp.ts",
+      "bytes": 6711,
+      "sha256": "f6cf99fffe6a99c02267a478ceb2e728a1f29e57de55a63dbf99aeec5fd662e3"
+    },
+    {
+      "path": "src/prototype-http.ts",
+      "bytes": 2879,
+      "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7"
+    },
+    {
+      "path": "src/prototype-server.ts",
+      "bytes": 820,
+      "sha256": "ccab39aa20334444cd3c7495e8cd98ec7f0070507efed26263d67a51ca57297b"
+    },
+    {
+      "path": "src/schemas.ts",
+      "bytes": 1671,
+      "sha256": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4"
+    },
+    {
+      "path": "src/store.ts",
+      "bytes": 11179,
+      "sha256": "f6fac8551c1f6c8ba6c8c7acba079ad20f976ca3b73238e55abe06f2edd464b1"
+    },
+    {
+      "path": "src/test/prototype.test.ts",
+      "bytes": 3182,
+      "sha256": "40a6954ae88d8ae99243bdb36a2d71db18250aff330aee1f3800581e7a633aee"
+    },
+    {
+      "path": "src/version.ts",
+      "bytes": 264,
+      "sha256": "99b0f2d307208b363fbe0715fbbab000c3478e3df79eff7f3809c3873925cf5b"
+    },
+    {
+      "path": "tsconfig.json",
+      "bytes": 286,
+      "sha256": "fbc452b9b5e2b481e0da3768692bdfd9cf813ac2beb7b9f828b4f696d15926b4"
+    },
+    {
+      "path": "交付说明.md",
+      "bytes": 2975,
+      "sha256": "c94c23285e155377ea5da926fc9a016c2bafa9e09d760dbdca5a79151dfc429b"
+    },
+    {
+      "path": "dist/cli.js",
+      "bytes": 3578,
+      "sha256": "7713a7f21cdf18a713c3396b4c9a9393e998b4c96c3c0d5edbc616ee264b0919"
+    },
+    {
+      "path": "dist/mcp.js",
+      "bytes": 7165,
+      "sha256": "4975634d6b302f1d3b30038bc6ff22aaf485c916e1282b5ce3202fe015440ebe"
+    },
+    {
+      "path": "dist/prototype-http.js",
+      "bytes": 3428,
+      "sha256": "5e7f67090dd73e9f79a2ecd08c08cfd1a1a029f4cbbcb0c8f362c07d8839a42f"
+    },
+    {
+      "path": "dist/prototype-server.js",
+      "bytes": 896,
+      "sha256": "344b08aa8459f99692d9a17e7a87313d4e1017136279cb7159f0f065c80c0fc9"
+    },
+    {
+      "path": "dist/schemas.js",
+      "bytes": 1715,
+      "sha256": "9470421f8305af68e1f468d517ae2cf44cb18dade4a4417f12978bb164153a8f"
+    },
+    {
+      "path": "dist/store.js",
+      "bytes": 11375,
+      "sha256": "0a03f73accb1641f0946c6e3bfed658480a78894c8505e809d60707e4501be6f"
+    },
+    {
+      "path": "dist/version.js",
+      "bytes": 263,
+      "sha256": "a67d0fae4c468190a7f2ccf79307f70081ad84b36465be62bc8459f63905b804"
+    },
+    {
+      "path": "dist/test/prototype.test.js",
+      "bytes": 3564,
+      "sha256": "ce91cf11ef05df991abbfd11652708e7bf0f2edb8213e717b68db1828e86d448"
+    },
+    {
+      "path": "source-version.json",
+      "bytes": 62,
+      "sha256": "a58c265c0306b06b4e02dd18f9748810b4de6444622d88e7fcaeae91eee9bbc2"
+    }
+  ]
+}

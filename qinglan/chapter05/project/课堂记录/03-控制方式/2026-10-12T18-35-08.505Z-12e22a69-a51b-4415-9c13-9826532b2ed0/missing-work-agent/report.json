@@ -1,0 +1,78 @@
+{
+  "condition": "missing-work",
+  "mode": "agent",
+  "threadId": "01a13165-a9e8-7a62-9961-9c9c4c46db75",
+  "sdkState": "completed",
+  "materials": {
+    "ready": false,
+    "state": "unavailable",
+    "workRead": false,
+    "chapterRead": false,
+    "chapterStatus": "unknown",
+    "reads": [
+      {
+        "origin": "sdk-tool",
+        "tool": "read_work",
+        "ok": false,
+        "error": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"
+            }
+          ],
+          "structured_content": null
+        }
+      }
+    ]
+  },
+  "applicationRoute": null,
+  "appReadCalls": 0,
+  "modelToolCalls": 1,
+  "sdkTurns": 1,
+  "usage": {
+    "input_tokens": 76629,
+    "cached_input_tokens": 24832,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 325,
+    "reasoning_output_tokens": 31
+  },
+  "elapsedMs": 31016.8,
+  "unchanged": true,
+  "error": null,
+  "appReads": [],
+  "modelItems": [
+    {
+      "id": "item_0",
+      "type": "agent_message",
+      "text": "我会只用指定的只读工具核对作品和第 1 章；若读取失败，会明确区分错误与无章稿状态。\n"
+    },
+    {
+      "id": "item_1",
+      "type": "mcp_tool_call",
+      "server": "novel_lab",
+      "tool": "read_work",
+      "arguments": {
+        "workId": "absent-work"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"
+          }
+        ],
+        "structured_content": null
+      },
+      "error": null,
+      "status": "failed"
+    },
+    {
+      "id": "item_2",
+      "type": "agent_message",
+      "text": "- **实际状态**：读取作品 `absent-work` 失败，错误码为 `WORK_NOT_FOUND`，原始信息：“没有作品 absent-work，先初始化。”这不能视为“第 1 章没有章稿”；本次未取得章稿全文。\n- **核对结果**：未取得作品已确认事实、本章目标及正文，无法核对，也无法依据材料提出准备方向。\n- **下一步**：请人工核实作品 ID；若确实尚未初始化，由人工决定是否初始化及确认作品材料，再进行只读核对。本轮未保存、未采用、未修改任何文件。"
+    }
+  ],
+  "finalResponse": "- **实际状态**：读取作品 `absent-work` 失败，错误码为 `WORK_NOT_FOUND`，原始信息：“没有作品 absent-work，先初始化。”这不能视为“第 1 章没有章稿”；本次未取得章稿全文。\n- **核对结果**：未取得作品已确认事实、本章目标及正文，无法核对，也无法依据材料提出准备方向。\n- **下一步**：请人工核实作品 ID；若确实尚未初始化，由人工决定是否初始化及确认作品材料，再进行只读核对。本轮未保存、未采用、未修改任何文件。",
+  "limits": "sdkState 仅表示会话运行状态；materials 依据实际读取结果，不证明内容判断正确。时间含宿主启动、正常宿主配置与工具往返；usage 为 SDK 整轮汇总。公开事件不是底层模型请求数量或内部推理，不能据单次记录比较稳定性能。"
+}

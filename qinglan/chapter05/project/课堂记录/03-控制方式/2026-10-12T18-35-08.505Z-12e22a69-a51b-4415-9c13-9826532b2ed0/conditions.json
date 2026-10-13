@@ -1,0 +1,22 @@
+{
+  "experimentId": "2026-10-12T18-35-08.505Z-12e22a69-a51b-4415-9c13-9826532b2ed0",
+  "codeVersion": "dfdd6c54f7452423e5d7d73231ea60609d20015a69dce3b894ad3fd875f4cbca",
+  "node": "v24.12.0",
+  "configuredModel": null,
+  "codexPathOverride": null,
+  "cancelAfterMs": 180000,
+  "modes": [
+    "agent"
+  ],
+  "cases": [
+    "missing-work"
+  ],
+  "fixture": {
+    "file": "materials/第一章真实稿.json",
+    "sha256": "1052089276d0abb46a3b1baec92d9f18fb46a7fcc86cf05728355084070939ad",
+    "originalOrigin": "agent",
+    "originalStatus": "draft",
+    "originalUpdatedAt": "2026-10-12T18:16:34.644Z"
+  },
+  "notes": "每组独立数据库和新线程；已有稿由人工载入历史真实草稿。本实验不保存、不采用新章稿；不以单次时间排名。"
+}

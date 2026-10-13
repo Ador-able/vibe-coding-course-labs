@@ -1,0 +1,19 @@
+{
+  "name": "qinglan-delegation-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "青岚修仙录：独立调查、子代理委派与主任务回查",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "observe": "node scripts/observe.mjs",
+    "host:check": "node scripts/task-preflight.mjs",
+    "inspect": "node scripts/read-observation.mjs"
+  },
+  "dependencies": {
+    "@openai/codex-sdk": "0.160.0"
+  }
+}

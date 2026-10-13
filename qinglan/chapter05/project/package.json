@@ -1,0 +1,31 @@
+{
+  "name": "qinglan-agent-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "通过青岚修仙录练习工具读写、Agent 与人工决定",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/记录构建.mjs",
+    "lab": "node dist/cli.js",
+    "agent": "node dist/agent.js",
+    "compare": "node dist/control.js",
+    "approval": "node scripts/run-lab.mjs . dist/approval-cli.js",
+    "mcp": "node dist/mcp.js",
+    "test": "node --test dist/test/*.test.js"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "3.0.62",
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "@openai/codex-sdk": "0.160.0",
+    "ai": "7.0.127",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "task": {
+    "id": "ced4a5b2-d4fc-411f-a4ec-ae50f06d476c",
+    "workId": "qinglan",
+    "chapterNumber": 1,
+    "codeVersion": "5afd275a880536f0ef8927c0bf6133a9a9e2127a52225f049ccdd5f3262be44c",
+    "threadId": "01a1316a-1d97-75a0-86b8-9aa88939b237",
+    "state": "completed",
+    "createdAt": "2026-10-12T18:41:11.803Z",
+    "updatedAt": "2026-10-12T18:42:22.806Z",
+    "error": null,
+    "usage": {
+      "input_tokens": 204872,
+      "cached_input_tokens": 190848,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1907,
+      "reasoning_output_tokens": 151
+    }
+  },
+  "baseline": 0,
+  "saved": true,
+  "exactBodyEqual": true,
+  "hanCount": 944,
+  "revision": 1,
+  "workRevision": 2,
+  "status": "draft",
+  "calls": [
+    "read_work",
+    "list_chapters",
+    "read_chapter",
+    "save_draft",
+    "read_chapter",
+    "list_chapters"
+  ],
+  "manualReading": "全文已读。首次无令，执事许可西架；取两本初阶书并记问题；按人的B方向写收功问答书页无人触碰翻动，林青和执事共同见证。未采用A页码变化，不揭原因、不进封架、不突破。"
+}

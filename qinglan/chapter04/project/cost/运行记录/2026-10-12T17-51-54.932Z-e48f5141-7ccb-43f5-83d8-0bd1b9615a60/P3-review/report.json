@@ -1,0 +1,28 @@
+{
+  "id": "P3-review",
+  "pair": "P3",
+  "sample": "S3",
+  "step": "review",
+  "state": "completed",
+  "startedAt": "2026-10-12T17:57:04.323Z",
+  "endedAt": "2026-10-12T17:57:46.215Z",
+  "elapsedMs": 41891.96799999999,
+  "threadId": "01a13142-cefd-7e33-89ca-3885fdbb6c7f",
+  "promptSha256": "df26e51ad004b8ccd0e84803a5190c26569ea55877a3fc37224f1faec73af476",
+  "outputSha256": "e6a8fefea428fc2c1f77600e6d39c25b3afdaadcf9d901ce18790a524361d76b",
+  "outputUtf16": 1273,
+  "usageEvents": [
+    {
+      "input_tokens": 26644,
+      "cached_input_tokens": 22784,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1234,
+      "reasoning_output_tokens": 125
+    }
+  ],
+  "toolEvents": [],
+  "failure": null,
+  "scriptRetries": 0,
+  "internalRetryCount": null,
+  "limits": "公开调用完成不等于内容合格；必须按冻结的六类必要条件阅读全文。"
+}

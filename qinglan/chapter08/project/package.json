@@ -1,0 +1,37 @@
+{
+  "name": "qinglan-prototype-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "青岚修仙录：原型、跨会话与调整计划实验",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lab": "node dist/cli.js",
+    "mcp": "node dist/mcp.js",
+    "test": "node --test dist/test/*.test.js",
+    "prototype": "node scripts/start-prototype.mjs",
+    "prototype:ui": "node scripts/capture-prototype.mjs",
+    "prototype:mcp": "node scripts/read-prototype-mcp.mjs",
+    "prototype:time": "node scripts/observe-reminder.mjs",
+    "cross:prepare": "node scripts/prepare-stage.mjs",
+    "cross:a": "node scripts/task-session.mjs --mode A",
+    "cross:b": "node scripts/task-session.mjs --mode B",
+    "replan:prepare": "node scripts/prepare-replan.mjs",
+    "replan:run": "node scripts/replan-session.mjs",
+    "host:check": "node scripts/task-preflight.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "@openai/codex-sdk": "0.160.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  }
+}

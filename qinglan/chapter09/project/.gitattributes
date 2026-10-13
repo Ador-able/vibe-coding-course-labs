@@ -1,0 +1,17 @@
+materials/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+prompts/** -text
+records/** -text -whitespace
+teaching/** -text whitespace=trailing-space,space-before-tab,cr-at-eol
+
+*.json -text
+*.jsonl -text
+*.txt -text
+materials/** -text
+records/** -text
+prompts/** -text
+teaching/** -text
+inputs/** -text
+seed/** -text
+材料包/** -text
+课堂记录/** -text
+运行记录/** -text

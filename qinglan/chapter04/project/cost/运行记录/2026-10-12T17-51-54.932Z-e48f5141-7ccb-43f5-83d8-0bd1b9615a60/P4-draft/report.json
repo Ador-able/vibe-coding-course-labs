@@ -1,0 +1,28 @@
+{
+  "id": "P4-draft",
+  "pair": "P4",
+  "sample": "S2",
+  "step": "draft",
+  "state": "completed",
+  "startedAt": "2026-10-12T17:57:46.217Z",
+  "endedAt": "2026-10-12T17:58:50.999Z",
+  "elapsedMs": 64782.50530000002,
+  "threadId": "01a13143-72b0-7831-ad5a-e58d2c3d0bcc",
+  "promptSha256": "3f892d99ba5447bcc12d7f5ad2c734cd202cfbc85549a787ae12dc4d71cc58b9",
+  "outputSha256": "10451847f87fe7631e0e5a40d1d0ff18e80da284c615aaa1e52b2f4e2df8c3df",
+  "outputUtf16": 1319,
+  "usageEvents": [
+    {
+      "input_tokens": 25307,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1202,
+      "reasoning_output_tokens": 57
+    }
+  ],
+  "toolEvents": [],
+  "failure": null,
+  "scriptRetries": 0,
+  "internalRetryCount": null,
+  "limits": "公开调用完成不等于内容合格；必须按冻结的六类必要条件阅读全文。"
+}

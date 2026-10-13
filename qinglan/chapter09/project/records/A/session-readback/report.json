@@ -1,0 +1,20 @@
+{
+  "reads": [
+    {
+      "label": "主会话",
+      "threadId": "01a13217-e784-7e11-83b5-80b02d273116",
+      "pages": 1,
+      "items": 8,
+      "explicitFinalMessages": 1,
+      "types": [
+        "userMessage",
+        "agentMessage",
+        "commandExecution",
+        "reasoning"
+      ]
+    }
+  ],
+  "error": null,
+  "modelTasks": 0,
+  "limits": "原样保存官方应用接口返回的完整可见条目；未返回或不可见的输入、工具与用量仍是证据缺口，不根据密文相同推断明文。"
+}

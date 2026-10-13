@@ -1,0 +1,31 @@
+{
+  "scope": "161 执行前冻结输入与完整业务起点",
+  "modelTasks": 0,
+  "files": [
+    {
+      "path": "inputs/161-完整任务.txt",
+      "bytes": 2383,
+      "sha256": "faf44461fe5c9c68c46724dac10a9145cb6315bed4aaea5ba10be62f45468973"
+    },
+    {
+      "path": "inputs/161-编者目标.md",
+      "bytes": 1222,
+      "sha256": "413b3894801084e4aec73b0e6830b2b550492275eb90fe880ea7250a26f92774"
+    },
+    {
+      "path": "materials/来稿/QL-CONTEXT-02-第一章简述.md",
+      "bytes": 1335,
+      "sha256": "668f44a7a77a2d93419ede4391416429bdd376decfaa71e2d0c4a62518dcc2bb"
+    },
+    {
+      "path": "materials/来稿/QL-CONTEXT-02-第二章构想.md",
+      "bytes": 863,
+      "sha256": "855878cea751b3b3cb841a07bab4413da1a84e8c9b4bba3fd98ec467fca0c09d"
+    },
+    {
+      "path": "materials/起点/161-任务前.json",
+      "bytes": 21066,
+      "sha256": "ca892f1295c44b3ec0ccc9927272f6e177b8a75487785a6365ca1710d2beb032"
+    }
+  ]
+}

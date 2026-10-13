@@ -1,0 +1,1 @@
+业务读取失败：[{"tool":"read_chapter","error":{"code":"WORK_NOT_FOUND","message":"没有作品 absent-work，先初始化。"}}]。未取得完整资料，停止本轮核对；需要核实作品 absent-work 的标识或初始化状态后再推进。

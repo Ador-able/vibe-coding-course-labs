@@ -1,0 +1,24 @@
+{
+  "approvedBy": "root",
+  "scope": "逐文件阅读固定 Hook 定义及其两个脚本；只检查保存返回并写入实验日志。缺失脚本对照为真实启动不存在的 not-installed-check.mjs。执行信任限定于本次宿主进程。",
+  "definitionFiles": [
+    {
+      "path": "scripts/check-draft-placeholder.mjs",
+      "sha256": "a91808f018d43f6ea3afda1036237d16f11fb0724200e197dd463f876a63b069"
+    },
+    {
+      "path": "scripts/missing-hook-script.mjs",
+      "sha256": "e7c29d6f9dc809f96d2c8accc167d191b18a97a0bf90023dbf3e6729c74cb362"
+    },
+    {
+      "path": "config/hooks-对照.json",
+      "sha256": "6e4020cbd3c55ebb72178467841a5c31d83d3ee2de037cbc622e33340492cc60"
+    },
+    {
+      "path": "config/hooks-反馈.json",
+      "sha256": "162e00ddb3a1e6e6f308c637e533b829974b186d6b950f681302935b4503d3fd"
+    }
+  ],
+  "missingTarget": "scripts/not-installed-check.mjs",
+  "missingTargetAbsent": true
+}

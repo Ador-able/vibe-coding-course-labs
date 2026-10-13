@@ -1,0 +1,13 @@
+{
+  "taskId": "28218478-41cb-4d42-a93f-22edae525205",
+  "workId": "qinglan",
+  "chapterNumber": 1,
+  "db": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\data\\05-A\\novel.sqlite",
+  "codeVersion": "f9b814614e5bae95b8769fe94872d2d15b641713b3fc7cb6880079f0226d528e",
+  "baselineRevision": 1,
+  "previousTaskId": null,
+  "requestedThreadId": null,
+  "configuredModel": null,
+  "runtime": "项目锁定 Codex SDK 及其 CLI",
+  "prompt": "请完成作品 qinglan 的第 1 章草稿任务。先使用 novel_lab 的 read_work、list_chapters 和 read_chapter 读取当前用途、设定、大纲、要求、目标章及前面每章的正文和修订。依据当前材料生成约 800 至 1200 个中文字符的完整章节，使用 save_draft 真实保存，再用 read_chapter 和 list_chapters 核对。expectedPreviousRevisions 应逐项记录前面各章的当前修订，第一章为 []。只调用 novel_lab 业务工具，不使用 shell、直接写文件或其他插件。发现关键条件冲突或旧资料与现在不同，依据当前资料；重要取舍无法据现有材料决定时准确说明，不猜测、不用旧基线覆盖。不要自行采用稿件。最后只汇报作品、章节、实际保存修订、保存状态及待人工判断事项；完成宣言不能替代读回结果。"
+}

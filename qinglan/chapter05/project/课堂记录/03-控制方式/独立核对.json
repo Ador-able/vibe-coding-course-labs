@@ -1,0 +1,586 @@
+{
+  "conditions": 15,
+  "sdkTurns": 11,
+  "independentlyUnchanged": true,
+  "note": "每组独立数据库，需模型的条件各开新会话；部分独立条件同时启动，耗时只记本次，不作性能排名。公开SDK轮次不等于底层模型请求数，账单、内部重试未知。",
+  "results": [
+    {
+      "condition": "empty",
+      "mode": "agent",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "empty"
+      },
+      "appReadCalls": 0,
+      "modelToolCalls": 2,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 77787,
+        "cached_input_tokens": 50432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 398,
+        "reasoning_output_tokens": 0
+      },
+      "elapsedMs": 26848.4,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        },
+        {
+          "type": "mcp_tool_call",
+          "tool": "read_chapter",
+          "status": "completed"
+        },
+        {
+          "type": "mcp_tool_call",
+          "tool": "read_work",
+          "status": "completed"
+        },
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "- **实际状态**：已读取《青岚修仙录》作品材料（修订 1）；第 1 章读取成功，返回 `result: null`，当前没有章稿可核对，并非读取错误。\n- **准备方向**：按本章目标组织“到阁说明来意 → 获准进入并明确借阅范围 → 开始借阅 → 遇见具体未解异常”。已确认林青首次到阁、没有入阁令、保持炼气三层；东侧书架昨夜子时因异响封闭，章末仍未解封。\n- **不足与下一步**：尚无正文，无法判断叙事是否清楚或符合要求。先由人确定异常的具体表现及获准借阅的具体范围，再推进草稿；现有材料未确定这些选择，不能当作既定事实。\n\n本轮未创作、保存、采用或修改任何文件。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-35-08.517Z-86bfc0b7-8de3-4064-93b0-ee354eb0dba3\\empty-agent"
+    },
+    {
+      "condition": "empty",
+      "mode": "concurrent",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "empty"
+      },
+      "appReadCalls": 2,
+      "modelToolCalls": 0,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 25628,
+        "cached_input_tokens": 22784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 373,
+        "reasoning_output_tokens": 115
+      },
+      "elapsedMs": 25127.4,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": true
+        },
+        {
+          "tool": "read_chapter",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "- **实际状态**：作品《青岚修仙录》材料读取成功，版本为 1；第 1 章读取成功，返回 `null`，即本次未取得章稿，并非读取错误。没有正文可供逐句核对或引用。\n\n- **准备方向**：按本章目标推进“到阁说明来意 → 获执事放行并明确借阅范围 → 开始借阅 → 遇见具体未解异常”。应交代林青首次来阁、为寻找适合炼气三层的法门而来、没有入阁令。东侧昨夜子时因异响封闭，林青今晨得知；本章结束时仍未解封。全程保持炼气三层，不擅入封架，不靠强者或宝物解决问题。\n\n- **不足与下一步**：材料尚未确定具体可借阅区域、所借法门及异常的表现，这些创作选择仍需人判断，不能当作既定事实。下一步先由人明确必要选择，再进入起草；本次未创作、保存、采用或修改任何内容。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-34-21.490Z-c1916659-1dab-497f-b1c4-b3dd9dd582da\\empty-concurrent"
+    },
+    {
+      "condition": "empty",
+      "mode": "mixed",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "empty"
+      },
+      "appReadCalls": 1,
+      "modelToolCalls": 1,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 77583,
+        "cached_input_tokens": 51200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 346,
+        "reasoning_output_tokens": 0
+      },
+      "elapsedMs": 29744.2,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        },
+        {
+          "type": "mcp_tool_call",
+          "tool": "read_chapter",
+          "status": "completed"
+        },
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "- **实际状态**：`read_chapter(qinglan, 1)` 成功返回 `result: null`，第 1 章当前没有章稿，因此没有正文可供核对。\n- **准备方向**：依据章目标“在门前说明来意并获执事放行；在允许的范围内开始借阅，遇见一个具体的未解异常”，先明确林青寻找适合炼气三层法门的目的，再安排获准进入、开始借阅和发现异常。须遵守“林青没有入阁令”及“本段结束时东侧仍未解封”等已确认事实，不突破境界、不擅入封架。\n- **不足与下一步**：材料尚未确定具体借阅的法门、异常的表现及发现方式，需由人判断。下一步先确认这些创作选择，再进入起草；本轮未创作、保存、采用或修改任何文件。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-35-08.493Z-d3a5766a-4f3b-4a32-8ed6-c37183bb1864\\empty-mixed"
+    },
+    {
+      "condition": "empty",
+      "mode": "routed",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "empty"
+      },
+      "appReadCalls": 2,
+      "modelToolCalls": 0,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 25642,
+        "cached_input_tokens": 22784,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 372,
+        "reasoning_output_tokens": 120
+      },
+      "elapsedMs": 28469.8,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_chapter",
+          "ok": true
+        },
+        {
+          "tool": "read_work",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "- **实际状态**：第 1 章读取成功，返回 `null`，当前章稿为空，不是读取错误。作品《青岚修仙录》资料版本为 1；没有正文可逐句核对。\n\n- **准备方向**：围绕“求借法门 → 门前说明来意 → 获准进入 → 在允许范围内开始借阅 → 遇见未解异常”准备情节。已确认林青首次到阁、没有入阁令，目的是寻找适合炼气三层的法门。必须遵守“获得放行和借阅范围后才能进入”，并保持“本段结束时东侧仍未解封”；不得突破境界或引入替他解决问题的强者、宝物。\n\n- **不足与下一步**：材料尚未确定具体借阅区域、法门内容，以及异常的表现和触发方式，这些仍需人判断。尤其不能自行认定新异常与东侧异响有关。下一步先由人明确这些创作选择，再准备章稿；本次未创作正文、保存、采用或修改文件。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-34-21.503Z-2f299224-a7fb-4978-aa33-ccc65d9bb67c\\empty-routed"
+    },
+    {
+      "condition": "empty",
+      "mode": "serial",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "empty"
+      },
+      "appReadCalls": 2,
+      "modelToolCalls": 0,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 25622,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 266,
+        "reasoning_output_tokens": 0
+      },
+      "elapsedMs": 23034.6,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": true
+        },
+        {
+          "tool": "read_chapter",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "**实际状态：**作品《青岚修仙录》（qinglan）材料读取成功，版本为 1；第 1 章读取成功，结果为 `null`，表示当前没有章稿，并非读取错误，因此没有正文可逐句核对。\n\n**准备方向：**依照本章目标，围绕“说明来意并获执事放行”“在允许的范围内开始借阅”“遇见一个具体的未解异常”推进。写作时须遵守已确认事实：林青首次到藏书阁、仍为炼气三层、没有入阁令；东侧书架“于昨夜子时封闭”，且“本段结束时东侧仍未解封”。让读者从行动中理解他寻找合适法门的目的及入阁前的阻碍。\n\n**不足与下一步：**材料尚未确定执事允许的具体借阅范围，以及异常的具体表现，这些仍需人判断。下一步先明确这两项创作选择，再起草第 1 章；异常原因暂不揭开，也不将备选设定视为事实。本次未创作章稿、保存、采用或修改文件。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-34-21.521Z-ed182746-7980-46a1-b4d3-312b1f66a4e1\\empty-serial"
+    },
+    {
+      "condition": "existing",
+      "mode": "agent",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "existing"
+      },
+      "appReadCalls": 0,
+      "modelToolCalls": 2,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 80115,
+        "cached_input_tokens": 50432,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 670,
+        "reasoning_output_tokens": 75
+      },
+      "elapsedMs": 37656.5,
+      "independentUnchanged": true,
+      "chapters": 1,
+      "versions": 1,
+      "applicationOrder": [],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        },
+        {
+          "type": "mcp_tool_call",
+          "tool": "read_work",
+          "status": "completed"
+        },
+        {
+          "type": "mcp_tool_call",
+          "tool": "read_chapter",
+          "status": "completed"
+        },
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "已读取作品要求修订 1，以及第 1 章《阁前问路》修订 1 的**全文**。当前为人工来源草稿（`draft`），未采用，无历史修订、无审核备注。本轮未保存、未采用、未修改文件。\n\n事实与章目标基本符合：\n\n- 身份、境界与目的明确：“他入青岚宗外门已有两年，眼下仍是炼气三层。”首次到访且无令：“弟子没有。”“我是外门林青，第一次来。想借炼气初阶的法门，不知今日还能不能进。”\n- 先获许可再进入，随后在允许区域选书，未擅入封架；结尾明确：“远处东侧的封条仍旧贴着，纹丝未动。”\n- 修炼问题尚待验证：“这还不能算找到了病根。”全文未出现突破或外力直接解决问题。\n- 章末异常具体且未解释：同一处文字由“左肩滞气者，参看本册第二十四页。”变为“左肩滞气者，参看本册第十九页。”符合本章目标。\n\n有一处需人工判断：执事说“西侧下两层书架，有炼气一至三层的基础法门”，实际选书却出现“另一册开篇便要求炼气四层”。这未必构成矛盾，但适用范围容易让读者疑惑，应决定是否调整表述。正文也没有证明异常与东侧封架有关，不能据此建立因果。\n\n下一步建议先由人审阅并决定是否修改、采用本章，再推进第二章。若保留当前结尾，可围绕已提出的“可有别的抄本能核对？”准备一次核对；其他抄本是否存在、核对结果及异常原因，均尚未确认。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-32-45.468Z-c289e308-447d-4e8a-99a7-112587f0f480\\existing-agent"
+    },
+    {
+      "condition": "existing",
+      "mode": "concurrent",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "existing"
+      },
+      "appReadCalls": 2,
+      "modelToolCalls": 0,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 26777,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 810,
+        "reasoning_output_tokens": 276
+      },
+      "elapsedMs": 39991.1,
+      "independentUnchanged": true,
+      "chapters": 1,
+      "versions": 1,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": true
+        },
+        {
+          "tool": "read_chapter",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "1. **实际状态**  \n已完整阅读所附正文。第 1 章《阁前问路》存在，版本为 1，状态为 `draft`（草稿），来源标记为人工；对应作品要求版本 1。返回的历史版本列表为空，审核备注为空。两项读取均成功，没有读取错误；当前材料未显示已采用。\n\n2. **事实与章目标核对**  \n正文与已确认事实一致，已完成本章主要目标：\n\n- **身份、境界与目的明确**：“他入青岚宗外门已有两年，眼下仍是炼气三层。”具体困难是“行气至左肩，气息便散”，足以让未读设定的读者理解借阅动机。全文未出现突破或外力替他解决问题。\n- **首次到访、无令、获准后进入**：“弟子没有。”以及“我是外门林青，第一次来。”随后执事明确借阅范围、移开木挡并说“进去吧”，林青才跨过门槛。\n- **封架时序与范围一致**：“今早他原想来找一部适合当前境界的法门，却在饭堂听说，藏书阁东侧昨夜子时出了异响，已经封架。”此后他在西侧借阅，没有擅入东侧。\n- **异常具体且未被解释**：同一处文字先是“左肩滞气者，参看本册第二十四页。”，后变成“左肩滞气者，参看本册第十九页。”结尾“远处东侧的封条仍旧贴着，纹丝未动”，保留了封闭状态，也没有确认异常与东侧有关。\n\n3. **不足与下一步**  \n未发现明确的设定冲突或章目标缺项。异常的原因、执事是否见过类似情况，以及它与东侧异响有无关联，均仍未知，不能据此补成事实。\n\n下一步宜先由人审阅并决定是否采用这份草稿，以及是否保留“页码指引变化”作为后续线索。方向确定后，再规划第二章的一次具体核对；核对对象与方式仍需确定，不能预先认定第十九页藏有答案。本次未创作、保存、采用或修改任何内容。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-30.917Z-25a7476a-3f3c-4683-a819-abd4e0be75fe\\existing-concurrent"
+    },
+    {
+      "condition": "existing",
+      "mode": "mixed",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "existing"
+      },
+      "appReadCalls": 1,
+      "modelToolCalls": 1,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 78756,
+        "cached_input_tokens": 51200,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 761,
+        "reasoning_output_tokens": 157
+      },
+      "elapsedMs": 39472.2,
+      "independentUnchanged": true,
+      "chapters": 1,
+      "versions": 1,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        },
+        {
+          "type": "mcp_tool_call",
+          "tool": "read_chapter",
+          "status": "completed"
+        },
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "**实际状态**：已读取第 1 章《阁前问路》全文，修订号 1，状态为草稿（`draft`），来源为人工（`human`），关联作品修订号 1；尚未采用。本轮未保存、未采用、未修改文件。\n\n**事实与章目标核对**：正文整体符合已确认事实，并完成本章目标。\n\n- 身份、境界与来意明确：“他入青岚宗外门已有两年，眼下仍是炼气三层。”以及“我是外门林青，第一次来。想借炼气初阶的法门”。正文没有突破境界或借助强者、宝物解决问题。\n- 入阁程序完整：“弟子没有。”对应没有入阁令；执事说明借阅范围后才说“进去吧。”林青随后“沿过道走向获准借阅的书架”，没有擅入封架。\n- 封架时间与持续状态相符：“藏书阁东侧昨夜子时出了异响，已经封架。”结尾仍是“远处东侧的封条仍旧贴着，纹丝未动。”\n- 学习行动与未解异常具体：“准备借回去照着核对几日”保留了修炼过程；引文从“参看本册第二十四页”变成“参看本册第十九页”，形成了尚未解释的异常。\n\n**不足与下一步**：有一处可澄清：执事介绍西侧书架有“炼气一至三层的基础法门”，林青却找到“开篇便要求炼气四层”的书。这不直接证明越界，但书架收录范围略有歧义。\n\n下一步宜先由人审阅，决定是否保留草稿新增的左肩行气问题、书籍设定及页码变化异常，并决定是否采用。若继续推进第二章，可围绕现有异常核对一条线索；核对方法、异常原因及其与东侧封架是否有关，仍未确认，不宜自行定案。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-30.918Z-08b66a5a-6009-4a75-8e79-345ce384756a\\existing-mixed"
+    },
+    {
+      "condition": "existing",
+      "mode": "routed",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "existing"
+      },
+      "appReadCalls": 2,
+      "modelToolCalls": 0,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 26798,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 633,
+        "reasoning_output_tokens": 150
+      },
+      "elapsedMs": 37378.1,
+      "independentUnchanged": true,
+      "chapters": 1,
+      "versions": 1,
+      "applicationOrder": [
+        {
+          "tool": "read_chapter",
+          "ok": true
+        },
+        {
+          "tool": "read_work",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "**实际状态**：已完整读到第 1 章《阁前问路》正文，版本 1，状态为草稿（`draft`），来源为人工（`human`）；无历史版本和审核备注。不能据此认定已被人工采用。本次未调用工具，也未保存、采用或修改任何内容。\n\n**事实与章目标核对**：未发现明确冲突，第一章目标已落实。\n\n- 身份、境界与借阅目的明确：“他入青岚宗外门已有两年，眼下仍是炼气三层。”左肩散气的问题为查找法门提供了具体动机，正文没有突破境界或直接解决修炼困难。\n- 首次来阁、无令、先获准再进入的顺序成立：“弟子没有。”“我是外门林青，第一次来。”执事说明范围、移开木挡并说“进去吧。”之后，林青才跨过门槛。\n- 封架时间与消息来源符合事实：“今早……在饭堂听说，藏书阁东侧昨夜子时出了异响，已经封架。”此后他在获准的西侧取阅，末尾“远处东侧的封条仍旧贴着，纹丝未动。”\n- 异常具体且未解释：同处小字从“左肩滞气者，参看本册第二十四页。”变为“左肩滞气者，参看本册第十九页。”林青先核对页码，再向执事求证，行动清楚。\n\n**不足与下一步**：当前仍未完成借书登记，也未验证法门效果；正文明确说“这还不能算找到了病根。”这些是后续待推进事项，不构成本章缺漏。异常成因、是否与东侧封架有关，均无证据，不能写成既定事实。\n\n建议先由人判断是否采用当前草稿；若继续第二章，可围绕变化后的页码做一次可观察的核对。具体核对方式、执事的反应及异常走向仍需人决定，本次不替其选定。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-30.918Z-d845e8e4-fecd-4d8b-9004-48558eebf201\\existing-routed"
+    },
+    {
+      "condition": "existing",
+      "mode": "serial",
+      "sdkState": "completed",
+      "materials": {
+        "ready": true,
+        "state": "ready",
+        "chapterStatus": "existing"
+      },
+      "appReadCalls": 2,
+      "modelToolCalls": 0,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 26781,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 652,
+        "reasoning_output_tokens": 163
+      },
+      "elapsedMs": 35637.8,
+      "independentUnchanged": true,
+      "chapters": 1,
+      "versions": 1,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": true
+        },
+        {
+          "tool": "read_chapter",
+          "ok": true
+        }
+      ],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "实际状态：两次读取均成功。第 1 章《阁前问路》有完整正文，版本为 1，状态为 `draft`（草稿），来源标记为人工；关联作品要求版本为 1。没有评审意见，不能视为已经人工采用。\n\n已核对全文，主要事实和本章目标基本落实：\n\n- 身份、境界与目的明确：“他入青岚宗外门已有两年，眼下仍是炼气三层。”又以“想借炼气初阶的法门”说明来意；没有突破或突然获得解决问题的外力。\n- 入阁程序完整：“弟子没有。”与“我是外门林青，第一次来”交代前提；执事说明借阅范围并说“进去吧”之后，他才进入。\n- 行动遵守封架限制：“沿过道走向获准借阅的书架。”结尾仍是“远处东侧的封条仍旧贴着，纹丝未动。”\n- 异常具体且未解释：同一处小字从“参看本册第二十四页”变为“参看本册第十九页”，并写明“第十七页上没有擦痕，也没有添笔。”符合章末留下未解异常的目标。\n\n不足与下一步：\n\n- 有一处需要人工判断的衔接疑点：执事说指定书架放的是“炼气一至三层的基础法门”，其中却有“另一册开篇便要求炼气四层”。正文未解释这种差异。它不等于林青越界，但应确认是疏漏还是有意保留的细节。\n- “左肩散气”、具体书名和页码变化属于当前草稿内容，尚不能作为已采用的后续事实；异常与东侧封架的关系也没有证据。\n- 建议先由人审阅并决定是否调整、采用本章，再推进第二章。采用后，可围绕文中已提出的“可有别的抄本能核对？”安排一次范围内的核对；是否存在其他抄本、核对发现什么，仍需人决定。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-32-45.467Z-f750330b-cd82-4d15-baf4-6960ac471cfc\\existing-serial"
+    },
+    {
+      "condition": "missing-work",
+      "mode": "agent",
+      "sdkState": "completed",
+      "materials": {
+        "ready": false,
+        "state": "unavailable",
+        "chapterStatus": "unknown"
+      },
+      "appReadCalls": 0,
+      "modelToolCalls": 1,
+      "sdkTurns": 1,
+      "usage": {
+        "input_tokens": 76629,
+        "cached_input_tokens": 24832,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 325,
+        "reasoning_output_tokens": 31
+      },
+      "elapsedMs": 31016.8,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [],
+      "modelItems": [
+        {
+          "type": "agent_message"
+        },
+        {
+          "type": "mcp_tool_call",
+          "tool": "read_work",
+          "status": "failed"
+        },
+        {
+          "type": "agent_message"
+        }
+      ],
+      "finalResponse": "- **实际状态**：读取作品 `absent-work` 失败，错误码为 `WORK_NOT_FOUND`，原始信息：“没有作品 absent-work，先初始化。”这不能视为“第 1 章没有章稿”；本次未取得章稿全文。\n- **核对结果**：未取得作品已确认事实、本章目标及正文，无法核对，也无法依据材料提出准备方向。\n- **下一步**：请人工核实作品 ID；若确实尚未初始化，由人工决定是否初始化及确认作品材料，再进行只读核对。本轮未保存、未采用、未修改任何文件。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-35-08.505Z-12e22a69-a51b-4415-9c13-9826532b2ed0\\missing-work-agent"
+    },
+    {
+      "condition": "missing-work",
+      "mode": "concurrent",
+      "sdkState": "not-started",
+      "materials": {
+        "ready": false,
+        "state": "unavailable",
+        "chapterStatus": "unknown"
+      },
+      "appReadCalls": 2,
+      "modelToolCalls": 0,
+      "sdkTurns": 0,
+      "usage": null,
+      "elapsedMs": 167.5,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": false
+        },
+        {
+          "tool": "read_chapter",
+          "ok": false
+        }
+      ],
+      "modelItems": [],
+      "finalResponse": "业务读取失败：[{\"tool\":\"read_work\",\"error\":{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}},{\"tool\":\"read_chapter\",\"error\":{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}}]。未取得完整资料，停止本轮核对；需要核实作品 absent-work 的标识或初始化状态后再推进。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-04.085Z-ca303528-7cbb-43e8-9661-c39e2447e425\\missing-work-concurrent"
+    },
+    {
+      "condition": "missing-work",
+      "mode": "mixed",
+      "sdkState": "not-started",
+      "materials": {
+        "ready": false,
+        "state": "unavailable",
+        "chapterStatus": "unknown"
+      },
+      "appReadCalls": 1,
+      "modelToolCalls": 0,
+      "sdkTurns": 0,
+      "usage": null,
+      "elapsedMs": 170.4,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": false
+        }
+      ],
+      "modelItems": [],
+      "finalResponse": "业务读取失败：[{\"tool\":\"read_work\",\"error\":{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}}]。未取得完整资料，停止本轮核对；需要核实作品 absent-work 的标识或初始化状态后再推进。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-04.055Z-0d513c85-2929-4923-80d3-2c67bfebd57d\\missing-work-mixed"
+    },
+    {
+      "condition": "missing-work",
+      "mode": "routed",
+      "sdkState": "not-started",
+      "materials": {
+        "ready": false,
+        "state": "unavailable",
+        "chapterStatus": "unknown"
+      },
+      "appReadCalls": 1,
+      "modelToolCalls": 0,
+      "sdkTurns": 0,
+      "usage": null,
+      "elapsedMs": 169.8,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_chapter",
+          "ok": false
+        }
+      ],
+      "modelItems": [],
+      "finalResponse": "业务读取失败：[{\"tool\":\"read_chapter\",\"error\":{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}}]。未取得完整资料，停止本轮核对；需要核实作品 absent-work 的标识或初始化状态后再推进。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-04.085Z-a2bbd99a-3478-4879-84d7-0b295fd9f683\\missing-work-routed"
+    },
+    {
+      "condition": "missing-work",
+      "mode": "serial",
+      "sdkState": "not-started",
+      "materials": {
+        "ready": false,
+        "state": "unavailable",
+        "chapterStatus": "unknown"
+      },
+      "appReadCalls": 1,
+      "modelToolCalls": 0,
+      "sdkTurns": 0,
+      "usage": null,
+      "elapsedMs": 160.2,
+      "independentUnchanged": true,
+      "chapters": 0,
+      "versions": 0,
+      "applicationOrder": [
+        {
+          "tool": "read_work",
+          "ok": false
+        }
+      ],
+      "modelItems": [],
+      "finalResponse": "业务读取失败：[{\"tool\":\"read_work\",\"error\":{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}}]。未取得完整资料，停止本轮核对；需要核实作品 absent-work 的标识或初始化状态后再推进。",
+      "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-32-17.301Z-3e163eaa-f448-4681-b1f1-37f06c1cc1c3\\missing-work-serial"
+    }
+  ]
+}

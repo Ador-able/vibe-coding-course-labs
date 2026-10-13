@@ -1,0 +1,102 @@
+{
+  "status": "01可运行；未调用模型，生成行为由主任务另行验证",
+  "project": "D:/Projects/Knowledge/.coursebook-work/ch05-agent-lab",
+  "retainedFailedInstallDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\小说实验统一-20261013\\chapter05\\工具与Agent",
+  "source": {
+    "repository": "https://github.com/Ador-able/vibe-coding-course-labs",
+    "commit": "18303817357bb1683a499777cc4341f9337aa59c",
+    "unchanged": [
+      "src/store.ts",
+      "src/mcp.ts",
+      "src/schemas.ts"
+    ]
+  },
+  "build": {
+    "sha256": "72b77e523bfc595b08b5aff302b03692884f109a9f353413870c90a67e09a0a2",
+    "files": {
+      "AGENTS.md": "e593e3040403a9d9a0d2e8441f2ed41f72ce9518273a1081733b78bce5ce8b58",
+      "dist/agent.js": "34ded3776c12036bc4ad9aa687cc1f69b81bce37872f1e3309a1394d1adffdb6",
+      "dist/cli.js": "49f929fc04cdf36eaef5ab3736580c982534eef10ee64f6e5c9cb5c8234b62b0",
+      "dist/mcp.js": "1faeefd729a1704cc58e0c2541dccc5ac848e0c3d0da00f671fe3876ec4e68a7",
+      "dist/schemas.js": "9470421f8305af68e1f468d517ae2cf44cb18dade4a4417f12978bb164153a8f",
+      "dist/store.js": "bb6aac24e43d1f40fb5e88b2de82a664ac5d13e694687a7637e1c05a581d15c6",
+      "dist/test/mcp.test.js": "27ae49cce1503703cf30f90f4df67445a433c812cbacfb81784b8fcae1339f6d",
+      "dist/test/progression.test.js": "593490414157ca0b23693bc18b642f721c723236bec04617bd9d556e58f8a081",
+      "dist/test/state.test.js": "897a434f3e11c8ad4a3586905323bf14a7b34d838c6f030ee42700e8f1d1f991",
+      "package.json": "0df0f0666017220c57c397b2f39b7947766706214a84a88110a9d91abb9dfc57",
+      "pnpm-lock.yaml": "d73a854c30e990dbaed9125db61f72100e3e7c2ce339967d7ce6d6344a90899b",
+      "scripts/记录构建.mjs": "f8fd156613a2ba5cf245b78c6fe3c9901bda66326d6e838a74cf792fbb0df77e",
+      "seed/青岚修仙录.json": "15757f62ccd6d698f5b0fdf261857cfd6f4359485d9b7d8e96d91f64e65ec5c0",
+      "src/agent.ts": "5d59a2a3b9bbedb16932d18a8c786f6224167b5a2c98c0e6dd5908ae9f7673e4",
+      "src/cli.ts": "7f3267d325e62a963420a7b0532f043af2efbb5e095db36e5c1551c1789c52b6",
+      "src/mcp.ts": "1228ff23c854712f72009820bb554b3e164495b9162378fbd7d86c4854675a28",
+      "src/schemas.ts": "e91f302d6187612029c231fc63ad1fd24e37da5b7a1b176455f3a5828dceaee4",
+      "src/store.ts": "ef30b71dec808ed2cec8eea1685a72cd0474ae49ba50e313f422b14faad31d57",
+      "src/test/mcp.test.ts": "d264e8c2aec0474055fd94c77ecc7dfc2ce76180dfb1f63b63fb935c94416d81",
+      "src/test/progression.test.ts": "9878245e1f6a4db7dda975664740c134dd773d50616c5a7d1de00c2c06dfcb79",
+      "src/test/state.test.ts": "22a677d34157639aa3b3662b94668df88f1a5cc2f74cbe05858b3b80858dab48",
+      "tsconfig.json": "fbc452b9b5e2b481e0da3768692bdfd9cf813ac2beb7b9f828b4f696d15926b4",
+      "准备实验.mjs": "76a05f7111150a99cb935745109303deb61691895d118588dfb9c126889620aa"
+    }
+  },
+  "checks": [
+    {
+      "command": "pnpm install --package-import-method=copy",
+      "result": "通过；干净短目录，113包，1.8秒"
+    },
+    {
+      "command": "pnpm build",
+      "result": "通过"
+    },
+    {
+      "command": "pnpm test",
+      "result": "3项通过；真实MCP读写与旧基线拒绝、持久化与人工修改、连续前文修订与导出"
+    },
+    {
+      "command": "node 准备实验.mjs 01 --db data/验证/novel.sqlite",
+      "result": "通过；仅创建指定课独立库"
+    },
+    {
+      "command": "node dist/cli.js chapter 1 --db data/验证/novel.sqlite",
+      "result": "通过；结果为null"
+    }
+  ],
+  "duplicatePreparation": {
+    "exitCode": 1,
+    "unchanged": true,
+    "sha256": "c09ec907e6c60c91037f6e90c9c3c552103da5b4c1b88f8f4c325a90e368838e"
+  },
+  "emptyChapter": {
+    "exitCode": 0,
+    "result": null
+  },
+  "modelCalls": 0,
+  "failures": [
+    {
+      "operation": "原目录 pnpm install --ignore-workspace",
+      "result": "EPERM rename，undici"
+    },
+    {
+      "operation": "原目录 pnpm install",
+      "result": "EPERM rename，@standard-schema/spec"
+    },
+    {
+      "operation": "原目录 pnpm install --force --package-import-method=copy",
+      "result": "导入长期无进展，结束该安装进程，保留目录"
+    },
+    {
+      "operation": "复制后的首次构建",
+      "result": "源码复制不完整，缺tsconfig；使用原生文件复制补全后构建通过；该轮0项测试不计验证"
+    }
+  ],
+  "commands": {
+    "prepare": "node 准备实验.mjs 01",
+    "run": "pnpm agent --db data/01/novel.sqlite --chapter 1 --cancel-after-ms 180000",
+    "readBack": "pnpm lab chapter 1 --db data/01/novel.sqlite"
+  },
+  "limits": [
+    "模型真实生成、工具选择、完成状态和故事质量尚待主任务验证",
+    "未制作后续实验的真实稿夹具",
+    "不同目录安装差异只证明干净短目录安装成功，不据此确定原目录EPERM根因"
+  ]
+}

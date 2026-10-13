@@ -1,0 +1,138 @@
+[
+  {
+    "label": "临时端口前检",
+    "tool": "exec_command",
+    "arguments": {
+      "cmd": "$lessonPorts = @(Get-NetTCPConnection -State Listen -ErrorAction SilentlyContinue | Where-Object {$_.LocalPort -in @(4342,4343,4344)} | Select-Object LocalAddress,LocalPort,OwningProcess); ConvertTo-Json -InputObject $lessonPorts -Compress",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter10/project",
+      "max_output_tokens": 1000
+    },
+    "result": {
+      "chunk_id": "b99664",
+      "wall_time_seconds": 2.4893688,
+      "exit_code": 0,
+      "original_token_count": 1,
+      "output": "[]\r\n"
+    }
+  },
+  {
+    "label": "普通管道有限命令",
+    "tool": "exec_command",
+    "arguments": {
+      "cmd": "$env:LESSON_RUN_ID = 'b4c599e8-5852-4954-b04e-564649d13f8b'; node scripts/inspect-command-condition.mjs",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter10/project",
+      "max_output_tokens": 1300
+    },
+    "result": {
+      "chunk_id": "414340",
+      "wall_time_seconds": 2.0870355,
+      "exit_code": 0,
+      "original_token_count": 51,
+      "output": "{\"pid\":98268,\"cwd\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\小说实验统一-20261013\\\\chapter10\\\\project\",\"stdinIsTTY\":false,\"stdoutIsTTY\":false,\"lessonRun\":\"b4c599e8-5852-4954-b04e-564649d13f8b\"}\n"
+    }
+  },
+  {
+    "label": "同一程序交互终端",
+    "tool": "exec_command",
+    "arguments": {
+      "cmd": "$env:LESSON_RUN_ID = 'b4c599e8-5852-4954-b04e-564649d13f8b'; node scripts/inspect-command-condition.mjs",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter10/project",
+      "tty": true,
+      "max_output_tokens": 1300
+    },
+    "result": {
+      "chunk_id": "a7987a",
+      "wall_time_seconds": 2.1051976,
+      "exit_code": 0,
+      "original_token_count": 75,
+      "output": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H\u001b]0;C:\\Program Files\\PowerShell\\7\\pwsh.exe\u0007\u001b[?25h{\"pid\":107916,\"cwd\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\小说实验统一-20261013\\\\chapter10\\\\project\",\"stdinIsTTY\":true,\"stdoutIsTTY\":true,\"lessonRun\":\"b4c599e8-5852-4954-b04e-564649d13f8b\"}\r\n\u001b[?9001l\u001b[?1004l"
+    }
+  },
+  {
+    "label": "尚未输入start的等待过程",
+    "tool": "exec_command",
+    "arguments": {
+      "cmd": "$env:LESSON_RUN_ID = 'b4c599e8-5852-4954-b04e-564649d13f8b'; node scripts/wait-before-service.mjs --port 4344",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter10/project",
+      "tty": true,
+      "yield_time_ms": 1000,
+      "max_output_tokens": 1300
+    },
+    "result": {
+      "chunk_id": "db39f9",
+      "wall_time_seconds": 10.0057231,
+      "session_id": 80033,
+      "original_token_count": 78,
+      "output": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H\u001b]0;C:\\Program Files\\PowerShell\\7\\pwsh.exe\u0007\u001b[?25h{\"state\":\"waiting-for-stdin-before-service\",\"pid\":53932,\"cwd\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\小说实验统一-20261013\\\\chapter10\\\\project\",\"lessonRun\":\"b4c599e8-5852-4954-b04e-564649d13f8b\",\"serviceLoaded\":false}\r\n"
+    }
+  },
+  {
+    "label": "输入start前停止确切等待会话",
+    "tool": "write_stdin",
+    "arguments": {
+      "session_id": 80033,
+      "chars": "\u0003",
+      "yield_time_ms": 1000,
+      "max_output_tokens": 1200
+    },
+    "result": {
+      "chunk_id": "4f84c6",
+      "wall_time_seconds": 0.0000289,
+      "exit_code": 1,
+      "original_token_count": 4,
+      "output": "\u001b[?9001l\u001b[?1004l"
+    }
+  },
+  {
+    "label": "等待过程停止核对与有限完整导出",
+    "tool": "exec_command",
+    "arguments": {
+      "cmd": "$lessonPid = @(Get-Process -Id 53932 -ErrorAction SilentlyContinue | Select-Object Id,ProcessName); $lessonPort = @(Get-NetTCPConnection -State Listen -LocalPort 4344 -ErrorAction SilentlyContinue | Select-Object LocalPort,OwningProcess); [ordered]@{waitingProcess=$lessonPid;waitingPort=$lessonPort} | ConvertTo-Json -Compress; node scripts/current-lab.mjs export runs/command-b4c599e8-5852-4954-b04e-564649d13f8b/完整三章待审.md",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter10/project",
+      "max_output_tokens": 2200
+    },
+    "result": {
+      "chunk_id": "06e796",
+      "wall_time_seconds": 2.5274203,
+      "exit_code": 0,
+      "original_token_count": 372,
+      "output": "{\"waitingProcess\":[],\"waitingPort\":[]}\r\n(node:91900) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:84100) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\n  \"workId\": \"qinglan\",\n  \"workRevision\": 4,\n  \"expectedChapters\": 3,\n  \"savedChapters\": 3,\n  \"allOutlineChaptersSaved\": true,\n  \"chapters\": [\n    {\n      \"number\": 1,\n      \"revision\": 3,\n      \"status\": \"draft\",\n      \"workRevision\": 1,\n      \"previousRevisions\": [],\n      \"reviewNote\": null,\n      \"basisCurrent\": false\n    },\n    {\n      \"number\": 2,\n      \"revision\": 1,\n      \"status\": \"draft\",\n      \"workRevision\": 2,\n      \"previousRevisions\": [\n        {\n          \"number\": 1,\n          \"revision\": 3\n        }\n      ],\n      \"reviewNote\": null,\n      \"basisCurrent\": false\n    },\n    {\n      \"number\": 3,\n      \"revision\": 3,\n      \"status\": \"draft\",\n      \"workRevision\": 4,\n      \"previousRevisions\": [\n        {\n          \"number\": 1,\n          \"revision\": 3\n        },\n        {\n          \"number\": 2,\n          \"revision\": 1\n        }\n      ],\n      \"reviewNote\": null,\n      \"basisCurrent\": true\n    }\n  ],\n  \"path\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\小说实验统一-20261013\\\\chapter10\\\\project\\\\runs\\\\command-b4c599e8-5852-4954-b04e-564649d13f8b\\\\完整三章待审.md\"\n}\n"
+    }
+  },
+  {
+    "label": "持续阅读服务A",
+    "tool": "exec_command",
+    "arguments": {
+      "cmd": "$env:LESSON_RUN_ID = 'b4c599e8-5852-4954-b04e-564649d13f8b'; node scripts/start-prototype.mjs --port 4342",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter10/project",
+      "tty": true,
+      "yield_time_ms": 1000,
+      "max_output_tokens": 1000
+    },
+    "result": {
+      "chunk_id": "1ea11f",
+      "wall_time_seconds": 10.0080813,
+      "session_id": 33146,
+      "original_token_count": 171,
+      "output": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H\u001b]0;C:\\Program Files\\PowerShell\\7\\pwsh.exe\u0007\u001b[?25h(node:87640) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\n(node:103880) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\n{\"url\":\"http://127.0.0.1:4342\",\"db\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\小说实验统一-20261013\\\\chapter10\\\\project\\\\data\\\\practice-29afd0ce-c6e1-43db-9f80-e5772cf229cb.sqlite\",\"workId\":\"qinglan\",\"mode\":\"真实 Store；显示当前保存内容\"}\r\n"
+    }
+  },
+  {
+    "label": "持续阅读服务B",
+    "tool": "exec_command",
+    "arguments": {
+      "cmd": "$env:LESSON_RUN_ID = 'b4c599e8-5852-4954-b04e-564649d13f8b'; node scripts/start-prototype.mjs --port 4343",
+      "workdir": "D:/Projects/Knowledge/.coursebook-work/小说实验统一-20261013/chapter10/project",
+      "tty": true,
+      "yield_time_ms": 1000,
+      "max_output_tokens": 1000
+    },
+    "result": {
+      "chunk_id": "eb09e7",
+      "wall_time_seconds": 10.0081153,
+      "session_id": 30877,
+      "original_token_count": 171,
+      "output": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H\u001b]0;C:\\Program Files\\PowerShell\\7\\pwsh.exe\u0007\u001b[?25h(node:104004) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\n(node:60004) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\n{\"url\":\"http://127.0.0.1:4343\",\"db\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\小说实验统一-20261013\\\\chapter10\\\\project\\\\data\\\\practice-29afd0ce-c6e1-43db-9f80-e5772cf229cb.sqlite\",\"workId\":\"qinglan\",\"mode\":\"真实 Store；显示当前保存内容\"}\r\n"
+    }
+  }
+]

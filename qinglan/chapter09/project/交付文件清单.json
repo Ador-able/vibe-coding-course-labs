@@ -1,0 +1,352 @@
+{
+  "sourceVersion": "7dc512c2c80f747f5562a54768ae815d09d74b78",
+  "executionSourceVersion": "1862e28dc38c658310b6727f431a61601b5ce449",
+  "fileCount": 69,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 189,
+      "sha256": "9245187011db9f6d012809cc7c89ddb5e2be8cf5bea0f2948b0426adba25bed0"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 43,
+      "sha256": "458f018c6a280e4fc7cf365c3ef75d2b34e7bc8c3a96f345efd51ea34b534ec0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2433,
+      "sha256": "1a00d9bab43649edc55d29a25e4cec215ec9579f11a1f09b6dd7a354be733c01"
+    },
+    {
+      "path": "inputs-manifest.json",
+      "bytes": 2321,
+      "sha256": "d28d6f25c5155c109f60bdf2277d2c4813bae0d0ba0b4967bdabf0b5ab7e9f36"
+    },
+    {
+      "path": "materials/三章完整待审稿.md",
+      "bytes": 10130,
+      "sha256": "7abebaa0d526d8ddd61bae55d7a407f69ba56175fd63a9097ca1ac226ca68d6e"
+    },
+    {
+      "path": "materials/作品.json",
+      "bytes": 2731,
+      "sha256": "5bcf0da2463d8eb83b2c3495e4f1368434b556da183f872d4e8859723bb88fbf"
+    },
+    {
+      "path": "materials/材料说明.md",
+      "bytes": 451,
+      "sha256": "086b28faab3ccd7f9d56e03d27ed74299b50df3a8488ee2cdc87c2b089e4f5d2"
+    },
+    {
+      "path": "materials/第一章.md",
+      "bytes": 3477,
+      "sha256": "9a4b74348d82429be40d2ec4bcc47146fe9ce59f41b6d9c4076bb7b3f5512392"
+    },
+    {
+      "path": "materials/第三章.md",
+      "bytes": 3154,
+      "sha256": "55ca684792cffe5824c643ff1d39868b07cf2ad6e73d16eb7bfd81f27f34e3e9"
+    },
+    {
+      "path": "materials/第二章.md",
+      "bytes": 3274,
+      "sha256": "32918e036f71b2ff6c1df7edcd7fce74baad33eb0b5ba691656d10f3a7b38e73"
+    },
+    {
+      "path": "package.json",
+      "bytes": 497,
+      "sha256": "cada1b17b73f9faf620b2b6b52dcc001d725f0f561b0d9b1227a9a3612835672"
+    },
+    {
+      "path": "pnpm-lock.yaml",
+      "bytes": 2865,
+      "sha256": "620da6f2885d61c07a4ee6068baa8ab6f9b679ba45e88c568c7c4fe28bca7d4e"
+    },
+    {
+      "path": "pnpm-workspace.yaml",
+      "bytes": 238,
+      "sha256": "cd091d3c17799abf98769c9a15bc50a77fbac43131a761a9d77a2b783ec1122f"
+    },
+    {
+      "path": "prompts/会话A完整输入.txt",
+      "bytes": 3415,
+      "sha256": "5c0d98c7f274b6213cbe2ef3aa792b6f420c8318fe32d2d3f1f2fda544363a24"
+    },
+    {
+      "path": "prompts/会话B完整输入.txt",
+      "bytes": 4373,
+      "sha256": "0172536ae22286f535f0f518a92cc6bb7eeda6ddc05164717f564e91e733f8e2"
+    },
+    {
+      "path": "prompts/完整调查任务.txt",
+      "bytes": 2360,
+      "sha256": "b931a9e04cbbaec02397e81b428330f7687e5e8e5230967813af96c42202ac29"
+    },
+    {
+      "path": "records/A/all-agent-messages.txt",
+      "bytes": 16479,
+      "sha256": "bfd4bdbd1f51d79201673c0bb742c4f2289bd98e71a6febe85d66aa234dbbf3a"
+    },
+    {
+      "path": "records/A/input.json",
+      "bytes": 8089,
+      "sha256": "a3ac0a5af9d050470ba4c25f5b7ad1abc5e0f3fe4d4107e4084b6da0c97a9b3b"
+    },
+    {
+      "path": "records/A/reading-independent-check.json",
+      "bytes": 1067,
+      "sha256": "9c3657c42fc03636636796d4a736946340dcf399a6218e7df5411c9fd085eee4"
+    },
+    {
+      "path": "records/A/report.json",
+      "bytes": 2608,
+      "sha256": "7f5678b7f447f24ca9a75f0893db0aa2bb063b904afa76f74560dff2a0824d86"
+    },
+    {
+      "path": "records/A/session-readback/report.json",
+      "bytes": 525,
+      "sha256": "99c084bfdbf4f4972f87a496a3831aae7f175ff46d622f204b3b492f76a91cfc"
+    },
+    {
+      "path": "records/A/session-readback/主会话-messages.json",
+      "bytes": 16786,
+      "sha256": "43cb973db0a9162237fdfe4b0fdb082806341f4ee59b3ae006b6723b322e98ef"
+    },
+    {
+      "path": "records/A/session-readback/主会话-metadata.json",
+      "bytes": 4781,
+      "sha256": "783e01ca04e17ac12ddec6bd882418ebf4ee621ea8a203aaf612411d9c3c6e35"
+    },
+    {
+      "path": "records/A/session-readback/主会话-完整最终回答.txt",
+      "bytes": 15930,
+      "sha256": "59928b1c3ba6ce226477b17dff24c4fac176938e2b1346e8ba197a821994d324"
+    },
+    {
+      "path": "records/A/session-readback/公开-主会话-items-0.json",
+      "bytes": 55646,
+      "sha256": "657794969e302d6a2502b89d66c60500549fe5cd5358c7c52278cfc3e7980c61"
+    },
+    {
+      "path": "records/A/公开-events.jsonl",
+      "bytes": 50139,
+      "sha256": "8b972c65204ca86f9cfb084a6e6d03b6f0321fdc71ab1bea9738464e6017a0a0"
+    },
+    {
+      "path": "records/A/公开-timed-events.jsonl",
+      "bytes": 50802,
+      "sha256": "4848ced28f822a1cd7615a4eba81488ab57362f961855810238f85428cfbed39"
+    },
+    {
+      "path": "records/B/all-agent-messages.txt",
+      "bytes": 6887,
+      "sha256": "682dc2de4914509870bc40896c2abdf4c7ca92fe07ac1793bb2502a926b6880a"
+    },
+    {
+      "path": "records/B/evidence/主会话-用量.json",
+      "bytes": 695,
+      "sha256": "073c690228c1994d5cac8a38328376cf888dee664a4c998d6fc2b40a43b71341"
+    },
+    {
+      "path": "records/B/evidence/主会话完整工具返回-1.txt",
+      "bytes": 1644,
+      "sha256": "352d1174d70dd456067000727be1eae9887d755b4aa8f06c6de87b3de749d55c"
+    },
+    {
+      "path": "records/B/evidence/主会话实际收到的完整子报告.txt",
+      "bytes": 12382,
+      "sha256": "f47fc547226d9d08290dbd3253ae6c58d24b2b61fb1e8dbafb581f2afce64873"
+    },
+    {
+      "path": "records/B/evidence/委派创建参数与输入边界.json",
+      "bytes": 893,
+      "sha256": "cacd38354c322f7198accce2cee202752445af86dbad253b578c3961f45d0865"
+    },
+    {
+      "path": "records/B/evidence/子会话-1-用量.json",
+      "bytes": 695,
+      "sha256": "8f772f0510972f2d20b5e774def8575cf8daf40f3b11432b5946dac753f871b7"
+    },
+    {
+      "path": "records/B/evidence/子会话完整工具返回-1.txt",
+      "bytes": 22776,
+      "sha256": "d45e1ffdb8a22901e2cdd2bbfe46a55fc6a0ab6ab1654366eec2c266e8332677"
+    },
+    {
+      "path": "records/B/evidence/子会话完整工具返回-2.txt",
+      "bytes": 17099,
+      "sha256": "575dd0bdcaf536add8dd508bfc8ed3313df4603dbb2e7a53f89485c3b7bd5acc"
+    },
+    {
+      "path": "records/B/evidence/子会话完整工具返回-3.txt",
+      "bytes": 241,
+      "sha256": "28ba62eba11f3b8c3d663b61e6d91b88f7f4ce56f1f13206eeda7633b9ad02f6"
+    },
+    {
+      "path": "records/B/evidence/独立核对.json",
+      "bytes": 1610,
+      "sha256": "f2ad3dc8be26f801330c0777f9566745324ba0e21871f600645980478911bdbe"
+    },
+    {
+      "path": "records/B/input.json",
+      "bytes": 9051,
+      "sha256": "fe8d4d2214bd8e8bcf89dacfe2684650f488b35ad4c77f600c124095d7d391f3"
+    },
+    {
+      "path": "records/B/report.json",
+      "bytes": 2601,
+      "sha256": "34b99fd558b16474a26fdcc8bea2d3a3c6026e709e526cda6726cb47dddb88b5"
+    },
+    {
+      "path": "records/B/session-readback/report.json",
+      "bytes": 854,
+      "sha256": "13139caf0dc6179f103cc66de3c7f8b649877d925ed366684ebf0b20628a39e7"
+    },
+    {
+      "path": "records/B/session-readback/主会话-messages.json",
+      "bytes": 7183,
+      "sha256": "eb60c04e46be2cd6dc54279080f3359f4a9416cdc5f399d2975a303ef4e24191"
+    },
+    {
+      "path": "records/B/session-readback/主会话-metadata.json",
+      "bytes": 5743,
+      "sha256": "f7d7ce56518aa529057cf6cac97a223c83cbaf0078fc7abde6814e222df7aed0"
+    },
+    {
+      "path": "records/B/session-readback/主会话-完整最终回答.txt",
+      "bytes": 6259,
+      "sha256": "ddd6d4a7e2a59f86b9aca0083fa0cee51aea0cac853d87d99dace246aff7e633"
+    },
+    {
+      "path": "records/B/session-readback/公开-主会话-items-0.json",
+      "bytes": 19785,
+      "sha256": "92dcf35be828396fc8fd5d27edea7da22e23d3609cfc5ce369093282ef10d334"
+    },
+    {
+      "path": "records/B/session-readback/公开-子会话-1-items-0.json",
+      "bytes": 60238,
+      "sha256": "c12d21547aa36a4526f5d4234ae6a016e8430f26940fdbc4594ffc6147ab9cfa"
+    },
+    {
+      "path": "records/B/session-readback/子会话-1-messages.json",
+      "bytes": 13035,
+      "sha256": "47b8eccb0e9362ae51eebb53c3904d76d807a95f0917be6ea72a9a1329a5519a"
+    },
+    {
+      "path": "records/B/session-readback/子会话-1-metadata.json",
+      "bytes": 1670,
+      "sha256": "f9664025309e936221fc74d42c5de7e61f306599e6d0b91b19c40b31f57d3169"
+    },
+    {
+      "path": "records/B/session-readback/子会话-1-完整最终回答.txt",
+      "bytes": 12292,
+      "sha256": "df25102faf44ce304ac3905db9b2fdac38200d4a272eb84260996ec63411b0ab"
+    },
+    {
+      "path": "records/B/公开-events.jsonl",
+      "bytes": 11909,
+      "sha256": "cef603ecb98e837ab133be3f39a490824015dd98d7ac93c1b5044a5d17b27b99"
+    },
+    {
+      "path": "records/B/公开-timed-events.jsonl",
+      "bytes": 13082,
+      "sha256": "573642e841399bfabe059ca504b25817e68afc2b02619641af9c177680149ed9"
+    },
+    {
+      "path": "records/来源与公开范围.json",
+      "bytes": 18055,
+      "sha256": "e97eff9ee3de4080888650a9c1e1e00ed2669833f7c1f73c5e75fb69506717cc"
+    },
+    {
+      "path": "records/阅读说明.md",
+      "bytes": 3460,
+      "sha256": "0950a2a6ed5ba3f5ac794880a8cbbf23496c8fdda8c00f05ae1817042cf0d2f0"
+    },
+    {
+      "path": "scripts/codex-environment.mjs",
+      "bytes": 1603,
+      "sha256": "2887c23409afadd2ae44072bbde4b1709f93d35ed55117642580c756a30292df"
+    },
+    {
+      "path": "scripts/codex-local.mjs",
+      "bytes": 583,
+      "sha256": "1084d043de2cfd4a49ae05d241bdda7c5c0a38d08c01b804185bd76b5d648bcc"
+    },
+    {
+      "path": "scripts/observe.mjs",
+      "bytes": 4193,
+      "sha256": "671a40a3c7c28356110e76acf220e44b14867e9ecb31926726378a6162f5aa43"
+    },
+    {
+      "path": "scripts/read-observation.mjs",
+      "bytes": 4286,
+      "sha256": "89e69f65e63810e0badd2f69e2dc479d1d58255c125ed10116c14ae8eb3812b8"
+    },
+    {
+      "path": "scripts/task-preflight.mjs",
+      "bytes": 4814,
+      "sha256": "f7f1a822110e730f3a492a1aa8101f7dc68563679ffe2751f3221735865aaee6"
+    },
+    {
+      "path": "scripts/task-runtime.mjs",
+      "bytes": 1338,
+      "sha256": "66db47dc6d71ef3f7bade82e07bf0d6788d78793f48c6f63731f02ffcc31ce20"
+    },
+    {
+      "path": "scripts/version.mjs",
+      "bytes": 253,
+      "sha256": "83d8b6a2e4e6c5925c6ea012651a14580038be69a80f273017d1a5daa990abaa"
+    },
+    {
+      "path": "teaching/157-主任务提示-教师提案-未执行.txt",
+      "bytes": 1699,
+      "sha256": "58a90772c5468745a75221bbc32461256a48ed0f4064412959674da46e204f13"
+    },
+    {
+      "path": "teaching/157-子任务卡-教师提案-未执行.txt",
+      "bytes": 2687,
+      "sha256": "1a5f2165a741c44e61cee67e2eab713472ace08f1868165df7a76d09b88305bb"
+    },
+    {
+      "path": "teaching/157-完整需求与方案.md",
+      "bytes": 1317,
+      "sha256": "7f02dec5e6345bc60f22b5dbfef731f9460f2be0497d2674900189e87e0dc9af"
+    },
+    {
+      "path": "teaching/160-主任务-完整教师提案-未执行.txt",
+      "bytes": 2682,
+      "sha256": "fcffbbdd5cf5b812e6fb6caec4f69eea26b08ee501e4e94c495ae8d0e2ede734"
+    },
+    {
+      "path": "teaching/160-完整接口与交还材料.md",
+      "bytes": 5458,
+      "sha256": "eeb8b485add5cee2d7379b07bd2bfb52d66978b372f5ab6e9cdde571a2ce08b7"
+    },
+    {
+      "path": "teaching/160-相反结论完整卡.md",
+      "bytes": 2203,
+      "sha256": "85d5048ed25c3bb9f85939f8b241a102881f09dee4d34d1cf535ece9d35ce4d1"
+    },
+    {
+      "path": "teaching/160-第一章完整变体.md",
+      "bytes": 4681,
+      "sha256": "4721ff3d71efd884e6ef6fe3e02cc143300b00c77a1dd027e59e88c721168b3a"
+    },
+    {
+      "path": "teaching/160-调查一-完整教师提案-未执行.txt",
+      "bytes": 1960,
+      "sha256": "57dc1a36ad18660e27b57b6047d9067d7cd68397644e3663edd6f433d449723c"
+    },
+    {
+      "path": "teaching/160-调查二-完整教师提案-未执行.txt",
+      "bytes": 2014,
+      "sha256": "fc2a5185017fb72264a1841675187892a405d6cdbeff98ce7a2d47a857ba5a42"
+    },
+    {
+      "path": "source-version.json",
+      "bytes": 138,
+      "sha256": "b02ff5ffcffb83d98a6005733261775d9943047d1fcdeacb2f7e87b53ce13837"
+    }
+  ]
+}

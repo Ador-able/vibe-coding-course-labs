@@ -1,0 +1,21 @@
+[
+  {
+    "condition": "missing-work",
+    "mode": "mixed",
+    "sdkState": "not-started",
+    "materials": {
+      "ready": false,
+      "state": "unavailable",
+      "workRead": false,
+      "chapterRead": false,
+      "chapterStatus": "unknown"
+    },
+    "appReadCalls": 1,
+    "sdkTurns": 0,
+    "usage": null,
+    "elapsedMs": 170.4,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-04.055Z-0d513c85-2929-4923-80d3-2c67bfebd57d\\missing-work-mixed"
+  }
+]

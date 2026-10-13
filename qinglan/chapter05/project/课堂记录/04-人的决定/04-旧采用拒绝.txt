@@ -1,0 +1,4 @@
+$ node dist/cli.js "adopt" "1" "--db" "data/04/novel.sqlite" "--expected-revision" "3" "--note" "编者受控旧版本采用请求，预期拒绝。"
+(node:105756) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"code":"STALE_CHAPTER","message":"正文已是 r4，不能采用旧版本。"}

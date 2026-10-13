@@ -1,0 +1,21 @@
+{
+  "scope": "第三章按人已选方向起草",
+  "command": "pnpm agent --prompt inputs/167-B-完整任务.txt --chapter 3",
+  "files": [
+    {
+      "path": "inputs/167-B-完整任务.txt",
+      "bytes": 2687,
+      "sha256": "4cac5561ecd8a0f38ee27f10155ef8728cc17bdea8191d2310d2b539ac354210"
+    },
+    {
+      "path": "inputs/167-B-编者目标.md",
+      "bytes": 2218,
+      "sha256": "76842a6c51a9d349b7e8525ea7eef7ee0a72a52bf54075987a0a31c94f8905b0"
+    },
+    {
+      "path": "materials/起点/167-B-任务前.json",
+      "bytes": 37303,
+      "sha256": "0669bfe5e1f61300494af3180bc585926fbbcc9789766a9417169f09cd0b89e4"
+    }
+  ]
+}

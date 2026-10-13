@@ -1,0 +1,66 @@
+{
+  "sourceVersion": "860993374d13d447116ef2e83754c844fb6bd237",
+  "scope": "编者直接执行命令的观察，未调用模型；A另有实际Edge页面DOM全文读取与截图。",
+  "databaseUnchanged": true,
+  "taskCount": 5,
+  "newTasks": 0,
+  "exportMatches": true,
+  "exportBytes": 10231,
+  "exportSha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf",
+  "stopped": [
+    {
+      "port": 4342,
+      "unreachable": true,
+      "code": "ECONNREFUSED"
+    },
+    {
+      "port": 4343,
+      "unreachable": true,
+      "code": "ECONNREFUSED"
+    },
+    {
+      "port": 4344,
+      "unreachable": true,
+      "code": "ECONNREFUSED"
+    }
+  ],
+  "mainPointerRestored": true,
+  "mainPractice": {
+    "id": "966e76a7-b840-42a6-83b4-c65ed27aedb3",
+    "database": "data/practice-966e76a7-b840-42a6-83b4-c65ed27aedb3.sqlite",
+    "workId": "qinglan",
+    "restoredFrom": "materials/起点/158-模型完成.json",
+    "sourceSha256": "a5bd2654be7751e402ebae2bcbd65d488b4ac332d3a525285d4aeb33de377534",
+    "restoredAt": "2026-10-12T22:24:22.013Z",
+    "scope": "完整恢复所选实录快照；未调用模型，未覆盖其他练习库。"
+  },
+  "mainUiStatus": 200,
+  "tables": {
+    "works": {
+      "before": 1,
+      "after": 1,
+      "equal": true
+    },
+    "work_versions": {
+      "before": 4,
+      "after": 4,
+      "equal": true
+    },
+    "chapters": {
+      "before": 3,
+      "after": 3,
+      "equal": true
+    },
+    "chapter_versions": {
+      "before": 7,
+      "after": 7,
+      "equal": true
+    },
+    "tasks": {
+      "before": 5,
+      "after": 5,
+      "equal": true
+    }
+  },
+  "comparisonNote": "SQLite返回行使用无原型对象；先序列化为相同JSON对象类型，再逐表比较全部字段。首次直接比较不同原型的对象返回false，已保留该次结果。"
+}

@@ -16,3 +16,16 @@ project/**/comparison-runs/my-*/
 **/lab.config.json
 **/binding.json
 *.log
+
+**/dist/
+**/runtime/
+**/.data/
+**/.local-data/
+**/runs/
+**/data/
+**/artifacts/
+**/private-codex-home/
+**/auth.json
+**/model.json
+**/tokens.json
+**/credentials.json

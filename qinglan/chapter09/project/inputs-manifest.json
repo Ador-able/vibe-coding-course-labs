@@ -1,0 +1,61 @@
+{
+  "task": "只读关系调查：A 主会话自查；B 一次真实委派后主会话回查",
+  "mainReadback": {
+    "file": "materials/第三章.md",
+    "lines": [
+      21,
+      33
+    ],
+    "fullParagraphs": [
+      "林青在新纸上记下“合窗，书页起，未见四折纸动”。他原本想写“风已停，书仍动”，落笔前又把“风已停”几个字划掉。窗合了，纸没动，都不能替他量出案面上的每一缕气流。况且刚才也没有看清究竟是什么使书页起来。",
+      "走回长案旁时，他又望了一眼东侧。封条没有解开，木栏后也没有人出来。书页的变化发生在他们眼前，却还不能把它与昨夜子时东侧的声响接成同一件事。林青想问执事是否早有猜测，看见对方把记录压在簿下，又暂时住了口。"
+    ]
+  },
+  "files": [
+    {
+      "path": "materials/三章完整待审稿.md",
+      "bytes": 10130,
+      "sha256": "7abebaa0d526d8ddd61bae55d7a407f69ba56175fd63a9097ca1ac226ca68d6e"
+    },
+    {
+      "path": "materials/作品.json",
+      "bytes": 2731,
+      "sha256": "5bcf0da2463d8eb83b2c3495e4f1368434b556da183f872d4e8859723bb88fbf"
+    },
+    {
+      "path": "materials/材料说明.md",
+      "bytes": 451,
+      "sha256": "086b28faab3ccd7f9d56e03d27ed74299b50df3a8488ee2cdc87c2b089e4f5d2"
+    },
+    {
+      "path": "materials/第一章.md",
+      "bytes": 3477,
+      "sha256": "9a4b74348d82429be40d2ec4bcc47146fe9ce59f41b6d9c4076bb7b3f5512392"
+    },
+    {
+      "path": "materials/第三章.md",
+      "bytes": 3154,
+      "sha256": "55ca684792cffe5824c643ff1d39868b07cf2ad6e73d16eb7bfd81f27f34e3e9"
+    },
+    {
+      "path": "materials/第二章.md",
+      "bytes": 3274,
+      "sha256": "32918e036f71b2ff6c1df7edcd7fce74baad33eb0b5ba691656d10f3a7b38e73"
+    },
+    {
+      "path": "prompts/会话A完整输入.txt",
+      "bytes": 3415,
+      "sha256": "5c0d98c7f274b6213cbe2ef3aa792b6f420c8318fe32d2d3f1f2fda544363a24"
+    },
+    {
+      "path": "prompts/会话B完整输入.txt",
+      "bytes": 4373,
+      "sha256": "0172536ae22286f535f0f518a92cc6bb7eeda6ddc05164717f564e91e733f8e2"
+    },
+    {
+      "path": "prompts/完整调查任务.txt",
+      "bytes": 2360,
+      "sha256": "b931a9e04cbbaec02397e81b428330f7687e5e8e5230967813af96c42202ac29"
+    }
+  ]
+}

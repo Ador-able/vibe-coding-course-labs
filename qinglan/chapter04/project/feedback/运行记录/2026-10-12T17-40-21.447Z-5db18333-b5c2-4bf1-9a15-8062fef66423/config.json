@@ -1,0 +1,31 @@
+{
+  "sdkVersion": "0.160.0",
+  "configuredModel": null,
+  "settings": {
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled",
+    "modelReasoningEffort": "low"
+  },
+  "maxCallMs": 180000,
+  "input": {
+    "preparedAt": "2026-10-12T17:37:21.451Z",
+    "sourceDir": "D:\\Projects\\Knowledge\\.coursebook-work\\小说实验统一-20261013\\chapter04\\project\\运行记录\\2026-10-12T17-33-04.755Z-42976b0b-04b4-4d6c-8b13-bfef42a8e443\\1-none",
+    "originalSha256": "f092f445594313477fc58a6ab3adc3151281f9ed16cc185f403f22f1cdd10ebd",
+    "taskSha256": "6292f6504a109f702a9a351928ffef3aa049712d7ac1544dd90aa0a81c94efd5",
+    "instructionSha256": "6fee4609ee30063232bffd14908ded0a70c1088f35bfaa0d9d4558ae0d343c84",
+    "promptSha256": "5117a47aacb3ca67bcbaa19b80d608a6d4507c0996473f2be23be47ae04e7699",
+    "allowedChanges": [
+      {
+        "before": "说是子时已过",
+        "after": "说是正值子时"
+      },
+      {
+        "before": "执事今早拉了封绳",
+        "after": "执事昨夜子时就拉了封绳"
+      }
+    ],
+    "boundary": "使用真实原稿，仅反馈指定短语，不预写或提供修改后的完整正文。"
+  }
+}

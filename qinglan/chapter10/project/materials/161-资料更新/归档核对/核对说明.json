@@ -1,0 +1,15 @@
+{
+  "scope": "辅助导出文件核对，不修改业务库或旧运行记录",
+  "originalSourceVersion": "581d3931f4bb14a8af8715cc9d7b467576fc9945",
+  "originalFile": "materials/161-资料更新/更新前完整资料.json",
+  "originalSHA256": "3dff9d8c26bfb4eae7872ad43f825af4ed75ae97d6c7f25c9d1bbbe30e7c58a0",
+  "actualDifference": [
+    "facts第4条混入更新后内容",
+    "outline混入第二章条目"
+  ],
+  "cause": "整理更新输入时共享数组引用，辅助前态导出受后续数组修改影响。",
+  "correctSource": "真实人工CLI work-version 1 读回；与158-人工完成快照works.content及revision逐项相等",
+  "correctSHA256": "f64ca7e80b5640054c87fe2e437054cb424d8a778f7a6441bba3042549abda11",
+  "businessHistoryUnchanged": true,
+  "modelRunsUnchanged": true
+}

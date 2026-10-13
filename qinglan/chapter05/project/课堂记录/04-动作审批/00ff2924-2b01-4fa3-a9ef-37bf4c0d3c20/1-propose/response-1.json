@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "content": "",
+          "reasoning_content": "The user is asking me to propose a save_draft action with all parameters given. This is a teaching experiment for manual action approval. I need to call save_draft with exactly these parameters. The body must not be rewritten and must not omit revision basis. This is a save request for a teaching draft that must wait for specific manual approval.\n\nLet me invoke save_draft with the provided parameters.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"workId\": \"qinglan\", \"chapterNumber\": 1, \"expectedWorkRevision\": 1, \"expectedChapterRevision\": 0, \"expectedPreviousRevisions\": [], \"title\": \"一枚铜钱\", \"body\": \"林青向执事说明来意，获准进入藏书阁西侧，取出适合炼气三层的《行气小录》。书中旁注所指的页码发生变化，他把书交给执事核对。执事将书平放在案上，拿一枚铜钱压住书角。两人没有解释异常的原因，东侧封条仍然完好。\"}",
+                "name": "save_draft"
+              },
+              "id": "call_opop2ztqbh3ar2taaoia7pl5",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1791830415,
+    "id": "c324a9dc-ff35-4fd8-80e3-0daee7c7d062",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 881,
+      "completion_tokens": 301,
+      "total_tokens": 1182,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 80
+      }
+    }
+  }
+}

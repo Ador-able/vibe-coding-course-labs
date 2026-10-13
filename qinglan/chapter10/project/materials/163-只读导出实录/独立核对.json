@@ -1,0 +1,82 @@
+{
+  "runId": "2f33a3ac-2ff4-443d-bf58-a22b81bbc60c",
+  "sourceVersion": "581d3931f4bb14a8af8715cc9d7b467576fc9945",
+  "threadId": "01a13248-db68-7060-ba7c-ce330906b1a9",
+  "checks": {
+    "completed": true,
+    "fourBusinessTablesUnchanged": true,
+    "actualFiveTablesMatchAfter": true,
+    "oneNewCompletedTask": true,
+    "priorTaskUnchanged": true,
+    "onlyReadTools": true,
+    "oneExport": true,
+    "completeChaptersRead": true,
+    "finalMarkdownExactlyMatchesToolExport": true,
+    "finalMarkdownBytesMatchCLI": true,
+    "frozenFilesAllUnchanged": true,
+    "sourceVersionUnchanged": true
+  },
+  "exportBytes": 6863,
+  "counts": {
+    "works": {
+      "before": 1,
+      "after": 1
+    },
+    "work_versions": {
+      "before": 2,
+      "after": 2
+    },
+    "chapters": {
+      "before": 2,
+      "after": 2
+    },
+    "chapter_versions": {
+      "before": 4,
+      "after": 4
+    },
+    "tasks": {
+      "before": 1,
+      "after": 2
+    }
+  },
+  "toolCalls": [
+    {
+      "tool": "read_work",
+      "arguments": {
+        "workId": "qinglan"
+      },
+      "status": "completed"
+    },
+    {
+      "tool": "list_chapters",
+      "arguments": {
+        "workId": "qinglan"
+      },
+      "status": "completed"
+    },
+    {
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "qinglan",
+        "chapterNumber": 1
+      },
+      "status": "completed"
+    },
+    {
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "qinglan",
+        "chapterNumber": 2
+      },
+      "status": "completed"
+    },
+    {
+      "tool": "export_work",
+      "arguments": {
+        "workId": "qinglan"
+      },
+      "status": "completed"
+    }
+  ],
+  "limits": "模型只取得导出内容；核对脚本另行保存回执与人工CLI文件，不将这些外部动作记为模型写文件。"
+}

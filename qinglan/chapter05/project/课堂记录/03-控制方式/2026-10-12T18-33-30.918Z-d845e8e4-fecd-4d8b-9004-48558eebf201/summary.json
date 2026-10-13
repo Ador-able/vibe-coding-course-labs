@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "existing",
+    "mode": "routed",
+    "sdkState": "completed",
+    "materials": {
+      "ready": true,
+      "state": "ready",
+      "workRead": true,
+      "chapterRead": true,
+      "chapterStatus": "existing"
+    },
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 26798,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 633,
+      "reasoning_output_tokens": 150
+    },
+    "elapsedMs": 37378.1,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-30.918Z-d845e8e4-fecd-4d8b-9004-48558eebf201\\existing-routed"
+  }
+]

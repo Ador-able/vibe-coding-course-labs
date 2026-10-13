@@ -1,0 +1,158 @@
+[
+  {
+    "id": "1-none",
+    "condition": "none",
+    "state": "completed",
+    "startedAt": "2026-10-12T17:33:04.766Z",
+    "endedAt": "2026-10-12T17:34:16.735Z",
+    "elapsedMs": 71967.88620000001,
+    "threadId": "01a1312c-d7d6-7cd1-a560-c7b407553f83",
+    "promptSha256": "6292f6504a109f702a9a351928ffef3aa049712d7ac1544dd90aa0a81c94efd5",
+    "outputSha256": "f092f445594313477fc58a6ab3adc3151281f9ed16cc185f403f22f1cdd10ebd",
+    "outputUtf16": 1345,
+    "usageEvents": [
+      {
+        "input_tokens": 25304,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1315,
+        "reasoning_output_tokens": 150
+      }
+    ],
+    "toolEvents": [],
+    "failure": null,
+    "scriptRetries": 0,
+    "internalRetryCount": null,
+    "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+  },
+  {
+    "id": "2-conflict",
+    "condition": "conflict",
+    "state": "completed",
+    "startedAt": "2026-10-12T17:34:16.736Z",
+    "endedAt": "2026-10-12T17:35:34.172Z",
+    "elapsedMs": 77436.6515,
+    "threadId": "01a1312d-f0e2-7663-81b0-d714512ba96d",
+    "promptSha256": "cad85701e4e42be3d23e72235126458792bcc5fd53f5369de77ba19f37c423da",
+    "outputSha256": "b8e0b304f2fc555d9dc531244b35efa2121e7498ea4da018f0a56e01808ba587",
+    "outputUtf16": 1264,
+    "usageEvents": [
+      {
+        "input_tokens": 25386,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1254,
+        "reasoning_output_tokens": 167
+      }
+    ],
+    "toolEvents": [],
+    "failure": null,
+    "scriptRetries": 0,
+    "internalRetryCount": null,
+    "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+  },
+  {
+    "id": "3-consistent",
+    "condition": "consistent",
+    "state": "completed",
+    "startedAt": "2026-10-12T17:35:34.174Z",
+    "endedAt": "2026-10-12T17:36:36.694Z",
+    "elapsedMs": 62519.23790000001,
+    "threadId": "01a1312f-1f70-7f53-b28e-92ebd7ad2706",
+    "promptSha256": "0a082f6faf9e066896c2bbde52fe0ce81d2754ae6662776f83bc6f1f9c51f5a4",
+    "outputSha256": "d1304e32acb293eeda55e1aee317c20c70742653d3a427e4ee0a4f0beb4298c3",
+    "outputUtf16": 1267,
+    "usageEvents": [
+      {
+        "input_tokens": 25389,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1130,
+        "reasoning_output_tokens": 43
+      }
+    ],
+    "toolEvents": [],
+    "failure": null,
+    "scriptRetries": 0,
+    "internalRetryCount": null,
+    "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+  },
+  {
+    "id": "4-consistent",
+    "condition": "consistent",
+    "state": "completed",
+    "startedAt": "2026-10-12T17:36:36.695Z",
+    "endedAt": "2026-10-12T17:37:40.048Z",
+    "elapsedMs": 63353.4075,
+    "threadId": "01a13130-1398-71b3-a779-580d546b1ca5",
+    "promptSha256": "0a082f6faf9e066896c2bbde52fe0ce81d2754ae6662776f83bc6f1f9c51f5a4",
+    "outputSha256": "b5f057ae20649d63ca83dcba4e7b63866d831e8dc53435763264f01fb7079b91",
+    "outputUtf16": 1269,
+    "usageEvents": [
+      {
+        "input_tokens": 25385,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1140,
+        "reasoning_output_tokens": 46
+      }
+    ],
+    "toolEvents": [],
+    "failure": null,
+    "scriptRetries": 0,
+    "internalRetryCount": null,
+    "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+  },
+  {
+    "id": "5-conflict",
+    "condition": "conflict",
+    "state": "completed",
+    "startedAt": "2026-10-12T17:37:40.050Z",
+    "endedAt": "2026-10-12T17:38:41.064Z",
+    "elapsedMs": 61014.0221,
+    "threadId": "01a13131-0b17-76b3-8057-35034d72775e",
+    "promptSha256": "cad85701e4e42be3d23e72235126458792bcc5fd53f5369de77ba19f37c423da",
+    "outputSha256": "c8920dd7aff3451832d8d574682de1d9c6f3f663c9b2d8fca9b3c06a7f909fe5",
+    "outputUtf16": 1304,
+    "usageEvents": [
+      {
+        "input_tokens": 25386,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1124,
+        "reasoning_output_tokens": 0
+      }
+    ],
+    "toolEvents": [],
+    "failure": null,
+    "scriptRetries": 0,
+    "internalRetryCount": null,
+    "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+  },
+  {
+    "id": "6-none",
+    "condition": "none",
+    "state": "completed",
+    "startedAt": "2026-10-12T17:38:41.066Z",
+    "endedAt": "2026-10-12T17:39:53.247Z",
+    "elapsedMs": 72181.11339999997,
+    "threadId": "01a13131-f974-7e21-85ec-536a46495a61",
+    "promptSha256": "6292f6504a109f702a9a351928ffef3aa049712d7ac1544dd90aa0a81c94efd5",
+    "outputSha256": "8f1ec561d98e7509523c7174a92aa88e54c7ce1616e6e10466722c886a617b46",
+    "outputUtf16": 1276,
+    "usageEvents": [
+      {
+        "input_tokens": 25302,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 1282,
+        "reasoning_output_tokens": 193
+      }
+    ],
+    "toolEvents": [],
+    "failure": null,
+    "scriptRetries": 0,
+    "internalRetryCount": null,
+    "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+  }
+]

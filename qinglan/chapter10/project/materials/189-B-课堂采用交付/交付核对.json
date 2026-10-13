@@ -1,0 +1,54 @@
+{
+  "onlyRequestedHumanSentenceChanged": true,
+  "firstAndThirdCompleteObjectsPreservedBeforeAdoption": true,
+  "allAdoptedBodiesAndTitlesPreserved": true,
+  "oldHistoryAndWorkAndTaskPreserved": true,
+  "mainDatabaseUnchanged": true,
+  "mainPointerRestored": true,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 2,
+      "status": "adopted",
+      "workRevision": 1,
+      "previousRevisions": [],
+      "reviewNote": "编者已完整阅读《雨过讲堂》第一章r1、第二章r2、第三章r1，作为课堂短篇采用。本次完成范围是三册抄本及用途、保管和归还说明实际交给指定接收人，逐册点收、落笔收讫并将回执交回誊录房；不延伸为已完成月底还书或人物已经获得修炼成效。保留不同职责之间必要的说明密度；第二章补清帮人抬凳前重新背好竹箱的动作，作为编辑澄清。此为编者课堂采用，不表示发布；保存时基线保留。",
+      "basisCurrent": true
+    },
+    {
+      "number": 2,
+      "revision": 3,
+      "status": "adopted",
+      "workRevision": 1,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 1
+        }
+      ],
+      "reviewNote": "编者已完整阅读《雨过讲堂》第一章r1、第二章r2、第三章r1，作为课堂短篇采用。本次完成范围是三册抄本及用途、保管和归还说明实际交给指定接收人，逐册点收、落笔收讫并将回执交回誊录房；不延伸为已完成月底还书或人物已经获得修炼成效。保留不同职责之间必要的说明密度；第二章补清帮人抬凳前重新背好竹箱的动作，作为编辑澄清。此为编者课堂采用，不表示发布；保存时基线保留。",
+      "basisCurrent": false
+    },
+    {
+      "number": 3,
+      "revision": 2,
+      "status": "adopted",
+      "workRevision": 1,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 1
+        },
+        {
+          "number": 2,
+          "revision": 1
+        }
+      ],
+      "reviewNote": "编者已完整阅读《雨过讲堂》第一章r1、第二章r2、第三章r1，作为课堂短篇采用。本次完成范围是三册抄本及用途、保管和归还说明实际交给指定接收人，逐册点收、落笔收讫并将回执交回誊录房；不延伸为已完成月底还书或人物已经获得修炼成效。保留不同职责之间必要的说明密度；第二章补清帮人抬凳前重新背好竹箱的动作，作为编辑澄清。此为编者课堂采用，不表示发布；保存时基线保留。",
+      "basisCurrent": false
+    }
+  ],
+  "exportBytes": 10148,
+  "exportSha256": "b7fea790eb0d98b9fb85cd0a9829507bba23a2cf59f4f8efc60727334086d9d4",
+  "fullExportBytesEqual": true
+}

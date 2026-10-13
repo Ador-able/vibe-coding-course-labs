@@ -1,0 +1,42 @@
+{
+  "runId": "414a9067-650f-4803-946d-423cb6587653",
+  "sourceVersion": "8940ce3b11cce5b5a8af1dc522afdff17d87248a",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\小说实验统一-20261013\\chapter10\\project\\data\\practice-966e76a7-b840-42a6-83b4-c65ed27aedb3.sqlite",
+  "workId": "qinglan",
+  "chapterNumber": 3,
+  "threadId": "01a1325d-02f8-7050-a85c-735573be6656",
+  "state": "completed",
+  "completed": true,
+  "error": null,
+  "usage": {
+    "input_tokens": 125757,
+    "cached_input_tokens": 93952,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1425,
+    "reasoning_output_tokens": 254
+  },
+  "timeoutReached": false,
+  "eventCount": 26,
+  "task": {
+    "id": "414a9067-650f-4803-946d-423cb6587653",
+    "workId": "qinglan",
+    "chapterNumber": 3,
+    "codeVersion": "8940ce3b11cce5b5a8af1dc522afdff17d87248a",
+    "threadId": "01a1325d-02f8-7050-a85c-735573be6656",
+    "state": "completed",
+    "createdAt": "2026-10-12T23:05:16.116Z",
+    "updatedAt": "2026-10-12T23:06:11.258Z",
+    "error": null,
+    "usage": {
+      "input_tokens": 125757,
+      "cached_input_tokens": 93952,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1425,
+      "reasoning_output_tokens": 254
+    }
+  },
+  "stopProof": null,
+  "readOnly": false,
+  "businessUnchanged": false,
+  "scope": "Harness运行、业务保存与人工采用分别核对。只读任务仍记录本轮Task；不会把历史恢复当作新模型运行。"
+}

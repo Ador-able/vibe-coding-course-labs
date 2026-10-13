@@ -1,0 +1,16 @@
+{
+  "scope": "163只读核对输入与真实两章起点",
+  "command": "pnpm agent --prompt inputs/163-完整任务.txt --chapter 2 --read-only",
+  "files": [
+    {
+      "path": "inputs/163-完整任务.txt",
+      "bytes": 1779,
+      "sha256": "108d763227eaac3b101764111365b1ed6a35efaf4b6df69430f3d4e60f0f56cf"
+    },
+    {
+      "path": "materials/起点/163-任务前.json",
+      "bytes": 29422,
+      "sha256": "b5d15b6345a1295ce0c1e8e1e0a0967577d3d1fae935af89042679cf74a36e22"
+    }
+  ]
+}

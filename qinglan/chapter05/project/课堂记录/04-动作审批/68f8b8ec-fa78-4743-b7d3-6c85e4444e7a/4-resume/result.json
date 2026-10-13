@@ -1,0 +1,94 @@
+{
+  "provider": {
+    "provider": "openai-compatible",
+    "baseUrl": "https://tokenhub.tencentmaas.com/v1",
+    "model": "ep-ymk08qa8"
+  },
+  "mode": "resume",
+  "content": [
+    {
+      "type": "text",
+      "text": "我将根据您提供的参数提议保存草稿。\n\n<｜DSML｜tool_calls>\n<｜DSML｜invoke name=\"save_draft\">\n<｜DSML｜parameter name=\"workId\" string=\"true\">qinglan</｜DSML｜parameter>\n<｜DSML｜parameter name=\"chapterNumber\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedWorkRevision\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedChapterRevision\" string=\"false\">0</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedPreviousRevisions\" string=\"false\">[]</｜DSML｜parameter>\n<｜DSML｜parameter name=\"title\" string=\"true\">两枚铜钱</｜DSML｜parameter>\n<｜DSML｜parameter name=\"body\" string=\"true\">林青向执事说明来意，获准进入藏书阁西侧，取出适合炼气三层的《行气小录》。书中旁注所指的页码发生变化，他把书交给执事核对。执事将书平放在案上，拿两枚铜钱压住书角。两人没有解释异常的原因，东侧封条仍然完好。</｜DSML｜parameter>\n</｜DSML｜invoke>\n</｜DSML｜tool_calls>"
+    },
+    {
+      "type": "reasoning",
+      "text": "好的，用户这次直接给出了新的、完整的 save_draft 动作参数，要求我严格按照给定参数提议此动作，不能改写正文或省略修订依据。这需要等待针对该动作的人工批准。\n\n我检查了参数，比较关键的一点是，正文内容提到了“两枚铜钱”，与之前用户提到的“一枚铜钱”版本都不同。但根据教学指令，我必须完全按照给定的正文来提议，不能自行修改。\n\n我明白这里的规则，就是执行用户明确给出的操作指令。既然用户提供了所有必填参数，我应该直接调用 save_draft 工具，将这些参数原样传递进去。\n\n这个动作应该是一次纯粹的提议，目的是保存草稿。提交后，系统会返回执行结果，我就可以根据结果来确认这个动作是否成功，以及看看返回了哪些状态信息。\n\n好的，思路清晰了，我现在就按照用户给的参数去执行这个 save_draft 调用。"
+    }
+  ],
+  "responseMessages": [
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_yxwcvkcgm304g8pu9i12jk3c",
+          "toolName": "save_draft",
+          "output": {
+            "type": "json",
+            "value": {
+              "workId": "qinglan",
+              "number": 1,
+              "revision": 1,
+              "title": "两枚铜钱",
+              "body": "林青向执事说明来意，获准进入藏书阁西侧，取出适合炼气三层的《行气小录》。书中旁注所指的页码发生变化，他把书交给执事核对。执事将书平放在案上，拿两枚铜钱压住书角。两人没有解释异常的原因，东侧封条仍然完好。",
+              "status": "draft",
+              "workRevision": 1,
+              "origin": "agent",
+              "taskId": null,
+              "threadId": null,
+              "updatedAt": "2026-10-12T18:43:05.079Z",
+              "previousRevisions": [],
+              "reviewNote": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "我将根据您提供的参数提议保存草稿。\n\n<｜DSML｜tool_calls>\n<｜DSML｜invoke name=\"save_draft\">\n<｜DSML｜parameter name=\"workId\" string=\"true\">qinglan</｜DSML｜parameter>\n<｜DSML｜parameter name=\"chapterNumber\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedWorkRevision\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedChapterRevision\" string=\"false\">0</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedPreviousRevisions\" string=\"false\">[]</｜DSML｜parameter>\n<｜DSML｜parameter name=\"title\" string=\"true\">两枚铜钱</｜DSML｜parameter>\n<｜DSML｜parameter name=\"body\" string=\"true\">林青向执事说明来意，获准进入藏书阁西侧，取出适合炼气三层的《行气小录》。书中旁注所指的页码发生变化，他把书交给执事核对。执事将书平放在案上，拿两枚铜钱压住书角。两人没有解释异常的原因，东侧封条仍然完好。</｜DSML｜parameter>\n</｜DSML｜invoke>\n</｜DSML｜tool_calls>"
+        },
+        {
+          "type": "reasoning",
+          "text": "好的，用户这次直接给出了新的、完整的 save_draft 动作参数，要求我严格按照给定参数提议此动作，不能改写正文或省略修订依据。这需要等待针对该动作的人工批准。\n\n我检查了参数，比较关键的一点是，正文内容提到了“两枚铜钱”，与之前用户提到的“一枚铜钱”版本都不同。但根据教学指令，我必须完全按照给定的正文来提议，不能自行修改。\n\n我明白这里的规则，就是执行用户明确给出的操作指令。既然用户提供了所有必填参数，我应该直接调用 save_draft 工具，将这些参数原样传递进去。\n\n这个动作应该是一次纯粹的提议，目的是保存草稿。提交后，系统会返回执行结果，我就可以根据结果来确认这个动作是否成功，以及看看返回了哪些状态信息。\n\n好的，思路清晰了，我现在就按照用户给的参数去执行这个 save_draft 调用。"
+        }
+      ]
+    }
+  ],
+  "text": "我将根据您提供的参数提议保存草稿。\n\n<｜DSML｜tool_calls>\n<｜DSML｜invoke name=\"save_draft\">\n<｜DSML｜parameter name=\"workId\" string=\"true\">qinglan</｜DSML｜parameter>\n<｜DSML｜parameter name=\"chapterNumber\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedWorkRevision\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedChapterRevision\" string=\"false\">0</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedPreviousRevisions\" string=\"false\">[]</｜DSML｜parameter>\n<｜DSML｜parameter name=\"title\" string=\"true\">两枚铜钱</｜DSML｜parameter>\n<｜DSML｜parameter name=\"body\" string=\"true\">林青向执事说明来意，获准进入藏书阁西侧，取出适合炼气三层的《行气小录》。书中旁注所指的页码发生变化，他把书交给执事核对。执事将书平放在案上，拿两枚铜钱压住书角。两人没有解释异常的原因，东侧封条仍然完好。</｜DSML｜parameter>\n</｜DSML｜invoke>\n</｜DSML｜tool_calls>",
+  "finishReason": "stop",
+  "rawFinishReason": "stop",
+  "usage": {
+    "inputTokens": 1112,
+    "inputTokenDetails": {
+      "noCacheTokens": 1112,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 427,
+    "outputTokenDetails": {
+      "textTokens": 238,
+      "reasoningTokens": 189
+    },
+    "totalTokens": 1539
+  },
+  "steps": [
+    {
+      "step": 0,
+      "content": [
+        {
+          "type": "text",
+          "text": "我将根据您提供的参数提议保存草稿。\n\n<｜DSML｜tool_calls>\n<｜DSML｜invoke name=\"save_draft\">\n<｜DSML｜parameter name=\"workId\" string=\"true\">qinglan</｜DSML｜parameter>\n<｜DSML｜parameter name=\"chapterNumber\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedWorkRevision\" string=\"false\">1</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedChapterRevision\" string=\"false\">0</｜DSML｜parameter>\n<｜DSML｜parameter name=\"expectedPreviousRevisions\" string=\"false\">[]</｜DSML｜parameter>\n<｜DSML｜parameter name=\"title\" string=\"true\">两枚铜钱</｜DSML｜parameter>\n<｜DSML｜parameter name=\"body\" string=\"true\">林青向执事说明来意，获准进入藏书阁西侧，取出适合炼气三层的《行气小录》。书中旁注所指的页码发生变化，他把书交给执事核对。执事将书平放在案上，拿两枚铜钱压住书角。两人没有解释异常的原因，东侧封条仍然完好。</｜DSML｜parameter>\n</｜DSML｜invoke>\n</｜DSML｜tool_calls>"
+        },
+        {
+          "type": "reasoning",
+          "text": "好的，用户这次直接给出了新的、完整的 save_draft 动作参数，要求我严格按照给定参数提议此动作，不能改写正文或省略修订依据。这需要等待针对该动作的人工批准。\n\n我检查了参数，比较关键的一点是，正文内容提到了“两枚铜钱”，与之前用户提到的“一枚铜钱”版本都不同。但根据教学指令，我必须完全按照给定的正文来提议，不能自行修改。\n\n我明白这里的规则，就是执行用户明确给出的操作指令。既然用户提供了所有必填参数，我应该直接调用 save_draft 工具，将这些参数原样传递进去。\n\n这个动作应该是一次纯粹的提议，目的是保存草稿。提交后，系统会返回执行结果，我就可以根据结果来确认这个动作是否成功，以及看看返回了哪些状态信息。\n\n好的，思路清晰了，我现在就按照用户给的参数去执行这个 save_draft 调用。"
+        }
+      ],
+      "toolCalls": [],
+      "toolResults": []
+    }
+  ]
+}

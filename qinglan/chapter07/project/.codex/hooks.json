@@ -1,0 +1,40 @@
+{
+  "description": "保存草稿后的编辑占位符检查，以及未匹配与缺失脚本的教学对照。",
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "^mcp__novel_lab__save_draft$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/check-draft-placeholder.mjs correct",
+            "timeout": 10,
+            "statusMessage": "读取真实保存返回，检查编辑占位符"
+          }
+        ]
+      },
+      {
+        "matcher": "^save_draft$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/check-draft-placeholder.mjs wrong-matcher",
+            "timeout": 10,
+            "statusMessage": "未包含宿主命名空间的匹配条件"
+          }
+        ]
+      },
+      {
+        "matcher": "^mcp__novel_lab__save_draft$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node scripts/missing-hook-script.mjs",
+            "timeout": 10,
+            "statusMessage": "调用确实缺失的检查脚本并保留失败"
+          }
+        ]
+      }
+    ]
+  }
+}

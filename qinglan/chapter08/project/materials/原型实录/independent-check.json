@@ -1,0 +1,37 @@
+{
+  "codeVersion": "2715a3c95ebe5f31e508b9f2b8d44f766bd3fdca",
+  "uiRunId": "555bdd98-a124-4862-8b0a-3dfeeab8684d",
+  "checks": [
+    {
+      "variant": "original",
+      "initialR1Draft": true,
+      "cliWholeObjectEqual": true,
+      "mcpReadbackEqualAndUnchanged": true,
+      "waitingInputBlocked": true,
+      "revisionAfterSave": 2,
+      "chapter3BasisCurrent": false,
+      "initialViewport": "runs\\prototype-ui-555bdd98-a124-4862-8b0a-3dfeeab8684d\\original\\initial-viewport.png"
+    },
+    {
+      "variant": "desk",
+      "initialR1Draft": true,
+      "cliWholeObjectEqual": true,
+      "mcpReadbackEqualAndUnchanged": true,
+      "waitingInputBlocked": true,
+      "revisionAfterSave": 2,
+      "chapter3BasisCurrent": false,
+      "initialViewport": "runs\\prototype-ui-555bdd98-a124-4862-8b0a-3dfeeab8684d\\desk\\initial-viewport.png"
+    },
+    {
+      "variant": "notes",
+      "initialR1Draft": true,
+      "cliWholeObjectEqual": true,
+      "mcpReadbackEqualAndUnchanged": true,
+      "waitingInputBlocked": true,
+      "revisionAfterSave": 2,
+      "chapter3BasisCurrent": false,
+      "initialViewport": "runs\\prototype-ui-555bdd98-a124-4862-8b0a-3dfeeab8684d\\notes\\initial-viewport.png"
+    }
+  ],
+  "modelTasks": 0
+}

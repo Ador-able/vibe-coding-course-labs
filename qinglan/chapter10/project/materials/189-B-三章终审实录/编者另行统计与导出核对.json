@@ -1,0 +1,34 @@
+{
+  "checkedBy": "编者在模型终审结束后另行执行",
+  "checkedAt": "2026-10-12T23:55:07.615Z",
+  "sourceRun": "a229c2ed-8b09-44ca-b4eb-992d8b2ef732",
+  "scope": "读取原事件的三份完整read_chapter返回；按Unicode Script=Han计正文汉字。将本轮before完整快照装入临时内存Store，使用既有exportWork核对原export_work完整对象及文本；不改两部作品数据库。",
+  "modelEvidenceLimit": "原10条command没有执行汉字计数或导出重组。item12只读初始化脚本，item16/17执行来源、对象及四业务表比较。保留模型最终回答原文，但不将其中计数和重组自述视为已执行证据。",
+  "chapters": [
+    {
+      "number": 1,
+      "toolItemId": "item_7",
+      "hanCount": 710,
+      "bodySha256": "4c1682252977671db7bcad5a5203c47eb1388104b74eb3276dc619c9236d73f8"
+    },
+    {
+      "number": 2,
+      "toolItemId": "item_8",
+      "hanCount": 709,
+      "bodySha256": "8b6c1b3883465384c36b749eafd8bab4a8aeac286982cdcb2c40f5fa2457ee5a"
+    },
+    {
+      "number": 3,
+      "toolItemId": "item_9",
+      "hanCount": 786,
+      "bodySha256": "04b0e01abf962a252fee4942c278c043c2c04117299165b77785a25ddd22c74c"
+    }
+  ],
+  "export": {
+    "toolItemId": "item_10",
+    "fullObjectEqual": true,
+    "fullTextEqual": true,
+    "utf8Bytes": 8501,
+    "sha256": "193dcd18efda6ef117694593364bf5ecbb252496326f2d0c86c8e14b826bf712"
+  }
+}

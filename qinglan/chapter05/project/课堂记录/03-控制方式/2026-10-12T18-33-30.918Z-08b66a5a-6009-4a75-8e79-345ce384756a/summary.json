@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "existing",
+    "mode": "mixed",
+    "sdkState": "completed",
+    "materials": {
+      "ready": true,
+      "state": "ready",
+      "workRead": true,
+      "chapterRead": true,
+      "chapterStatus": "existing"
+    },
+    "appReadCalls": 1,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 78756,
+      "cached_input_tokens": 51200,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 761,
+      "reasoning_output_tokens": 157
+    },
+    "elapsedMs": 39472.2,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\ch05-agent-lab\\runs\\control\\2026-10-12T18-33-30.918Z-08b66a5a-6009-4a75-8e79-345ce384756a\\existing-mixed"
+  }
+]

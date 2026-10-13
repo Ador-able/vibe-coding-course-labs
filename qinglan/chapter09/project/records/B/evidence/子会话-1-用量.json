@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-10-12T21:54:48.072Z",
+  "ordinal": 36,
+  "info": {
+    "total_token_usage": {
+      "input_tokens": 62745,
+      "cached_input_tokens": 34944,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4786,
+      "reasoning_output_tokens": 601,
+      "total_tokens": 67531
+    },
+    "last_token_usage": {
+      "input_tokens": 27411,
+      "cached_input_tokens": 21120,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 4129,
+      "reasoning_output_tokens": 473,
+      "total_tokens": 31540
+    },
+    "model_context_window": 258400
+  },
+  "scope": "仅本会话累计用量及末次模型请求用量；不等于上下文占用，不包含其他会话。"
+}

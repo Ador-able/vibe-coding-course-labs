@@ -1,0 +1,31 @@
+{
+  "name": "qinglan-continuous-agent-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "青岚修仙录：基于成熟 Harness 的连续 Agent 综合练习",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lab": "node scripts/current-lab.mjs",
+    "mcp": "node dist/mcp.js",
+    "prototype": "node scripts/start-prototype.mjs",
+    "practice:restore": "node scripts/restore-practice.mjs",
+    "practice:snapshot": "node scripts/savepoint.mjs",
+    "host:check": "node scripts/prepare-host.mjs",
+    "agent": "node scripts/run-task.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.31.0",
+    "@openai/codex-sdk": "0.160.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  }
+}

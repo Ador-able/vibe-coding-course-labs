@@ -1,0 +1,27 @@
+{
+  "build": "f9b814614e5bae95b8769fe94872d2d15b641713b3fc7cb6880079f0226d528e",
+  "checks": {
+    "explicitConditionRequired": true,
+    "preparesOnlySelectedCondition": true,
+    "duplicatePreparationPreservesDatabase": true,
+    "ACMaterialsIdentical": true,
+    "BDirectionPending": true,
+    "COnlyHasWriteFailureTrigger": true,
+    "realMcpSaveFailure": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"code\":\"STORE_ERROR\",\"message\":\"课堂写入故障：章节写入暂不可用；本轮条件保持不变。\"}"
+        }
+      ],
+      "isError": true
+    },
+    "independentChapterRead": null,
+    "taskUpdatesStillPersist": true
+  },
+  "limits": [
+    "失败保存参数为明确人工测试文字；没有运行模型，也不作为作者模型样本。"
+  ],
+  "modelCalls": 0,
+  "mainDatabasesCreated": false
+}

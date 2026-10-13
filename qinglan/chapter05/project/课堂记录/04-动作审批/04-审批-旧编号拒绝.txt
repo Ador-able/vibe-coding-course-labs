@@ -1,0 +1,4 @@
+$ node scripts/run-lab.mjs . dist/approval-cli.js "resume" "68f8b8ec-fa78-4743-b7d3-6c85e4444e7a" "--approval-id" "aitxt-bXPWemAbbfkIKwr8FheJ5bD1"
+(node:105668) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+{"code":"APPROVAL_NOT_CURRENT","message":"这项批准不对应当前待决动作，请读取当前动作后重新判断。"}

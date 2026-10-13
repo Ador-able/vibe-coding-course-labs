@@ -1,0 +1,35 @@
+import {mkdir,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {randomUUID} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import assert from 'node:assert/strict';
+import {localScenes,localWork} from './course-materials.mjs';
+
+const out=resolve('runs',`objects-${randomUUID()}`);
+await mkdir(out,{recursive:true});
+const save=(name,value)=>writeFile(resolve(out,name),JSON.stringify(value,null,2)+'\n');
+await save('作品.json',localWork);
+const proposal={workId:localWork.id,chapterNumber:1,expectedWorkRevision:1,expectedChapterRevision:0,expectedPreviousRevisions:[],...localScenes.objectProbe};
+await save('人工观察文本.json',proposal);
+const operations=[];
+const run=async(database,args)=>{
+  const argv=['dist/cli.js',...args,'--db',database,'--work',localWork.id];
+  const stdout=execFileSync(process.execPath,argv,{encoding:'utf8',windowsHide:true});
+  const result=JSON.parse(stdout);operations.push({argv,stdout,result});
+  await save('完整CLI调用.json',operations);return result;
+};
+const databaseA=resolve(out,'A.sqlite'),databaseB=resolve(out,'B.sqlite');
+await run(databaseA,['init',resolve(out,'作品.json')]);
+const emptyA=await run(databaseA,['chapter','1']);
+const savedA=await run(databaseA,['save',resolve(out,'人工观察文本.json')]);
+const readA=await run(databaseA,['chapter','1']);
+const stateA=await run(databaseA,['show']);
+await run(databaseB,['init',resolve(out,'作品.json')]);
+const readB=await run(databaseB,['chapter','1']);
+const stateB=await run(databaseB,['show']);
+assert.equal(emptyA,null);assert.equal(readB,null);assert.equal(stateB.chapters.length,0);
+assert.deepEqual(savedA,readA);assert.equal(readA.body,proposal.body);
+assert.equal(readA.revision,1);assert.equal(readA.status,'draft');assert.equal(readA.origin,'human');
+assert.deepEqual(stateA.work,stateB.work);assert.equal(stateA.chapters.length,1);
+const report={out,databaseA,databaseB,workId:localWork.id,modelCalls:0,passed:true,savedA,readA,stateA,readB,stateB,limits:'同一作品标识在两个独立库中；人工CLI写入A并另进程读回，B仍为空。不证明插件或模型已使用这些材料。'};
+await save('report.json',report);console.log(JSON.stringify({out,passed:true,modelCalls:0}));

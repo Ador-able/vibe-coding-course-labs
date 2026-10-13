@@ -1,0 +1,26 @@
+{
+  "id": "2-conflict",
+  "condition": "conflict",
+  "state": "completed",
+  "startedAt": "2026-10-12T17:34:16.736Z",
+  "endedAt": "2026-10-12T17:35:34.172Z",
+  "elapsedMs": 77436.6515,
+  "threadId": "01a1312d-f0e2-7663-81b0-d714512ba96d",
+  "promptSha256": "cad85701e4e42be3d23e72235126458792bcc5fd53f5369de77ba19f37c423da",
+  "outputSha256": "b8e0b304f2fc555d9dc531244b35efa2121e7498ea4da018f0a56e01808ba587",
+  "outputUtf16": 1264,
+  "usageEvents": [
+    {
+      "input_tokens": 25386,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1254,
+      "reasoning_output_tokens": 167
+    }
+  ],
+  "toolEvents": [],
+  "failure": null,
+  "scriptRetries": 0,
+  "internalRetryCount": null,
+  "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+}

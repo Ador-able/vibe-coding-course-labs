@@ -1,0 +1,33 @@
+{
+  "workId": "qinglan",
+  "workRevision": 2,
+  "expectedChapters": 2,
+  "savedChapters": 2,
+  "allOutlineChaptersSaved": true,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 3,
+      "status": "draft",
+      "workRevision": 1,
+      "previousRevisions": [],
+      "reviewNote": null,
+      "basisCurrent": false
+    },
+    {
+      "number": 2,
+      "revision": 1,
+      "status": "draft",
+      "workRevision": 2,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        }
+      ],
+      "reviewNote": null,
+      "basisCurrent": true
+    }
+  ],
+  "path": "D:\\Projects\\Knowledge\\.coursebook-work\\小说实验统一-20261013\\chapter10\\project\\runs\\2f33a3ac-2ff4-443d-bf58-a22b81bbc60c\\人工入口规范导出.md"
+}
