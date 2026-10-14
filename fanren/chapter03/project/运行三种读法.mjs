@@ -19,6 +19,9 @@ const cliPackagePath=sdkRequire.resolve('@openai/codex/package.json');
 const cliPackage=JSON.parse(await readFile(cliPackagePath,'utf8'));
 const cliVersion=execFileSync(process.execPath,[join(dirname(cliPackagePath),'bin/codex.js'),'--version'],{encoding:'utf8'}).trim();
 const {Codex}=await import(pathToFileURL(sdkEntry).href);
+const filesystemEntry=fileURLToPath(import.meta.resolve('@modelcontextprotocol/server-filesystem/dist/index.js'));
+const readTools=['read_text_file','read_multiple_files','list_directory'];
+const codexConfig={features:{shell_tool:false},mcp_servers:{novel_files:{command:process.execPath,args:[filesystemEntry,join(root,'材料包')],enabled_tools:readTools,required:true}}};
 const manifest=JSON.parse(await readFile(join(root,'固定资料清单.json'),'utf8'));
 
 async function hashes(){
@@ -51,7 +54,7 @@ await mkdir(runDir,{recursive:true});
 const before=await hashes();
 const executionGitHead=execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim();
 const sourceSha256=createHash('sha256').update(await readFile(fileURLToPath(import.meta.url))).digest('hex');
-const report={runId,executionGitHead,sourceSha256,startedAt:new Date().toISOString(),sdkVersion:sdkPackage.version,cliPackageVersion:cliPackage.version,cliVersion,nodeVersion:process.version,model:'沿用现有默认，未在 SDK 设置 model',sdkEntry,sandboxMode:'read-only',webSearchMode:'disabled',inputFiles:before,conditions:[]};
+const report={runId,executionGitHead,sourceSha256,startedAt:new Date().toISOString(),sdkVersion:sdkPackage.version,cliPackageVersion:cliPackage.version,cliVersion,nodeVersion:process.version,model:'沿用现有默认，未在 SDK 设置 model',sdkEntry,sandboxMode:'read-only',webSearchMode:'disabled',fileTools:readTools,inputFiles:before,conditions:[]};
 console.log(JSON.stringify({runId,runDir,sdkVersion:sdkPackage.version,cliVersion}));
 
 // 摘要问答只使用同一次运行刚生成的摘要，三个问答各开新会话。
@@ -66,9 +69,9 @@ for(const condition of conditions){
   await writeFile(join(dir,'prompt.txt'),prompt,'utf8');
   await writeFile(join(dir,'input.json'),JSON.stringify({condition,prompt,workingDirectory:join(root,'材料包'),sandboxMode:'read-only',webSearchMode:'disabled',model:null,inputFiles:before},null,2));
   // 各条件启动新 thread，记录使用公开事件，而非代理自报的读取情况。
-  const thread=new Codex().startThread({workingDirectory:join(root,'材料包'),skipGitRepoCheck:true,sandboxMode:'read-only',approvalPolicy:'never',webSearchMode:'disabled'});
+  const thread=new Codex({config:codexConfig}).startThread({workingDirectory:join(root,'材料包'),skipGitRepoCheck:true,sandboxMode:'read-only',approvalPolicy:'never',webSearchMode:'disabled'});
   let completed=false,error=null,usage=null,finalResponse='';
-  const commands=[];
+  const commands=[],reads=[];
   console.log(JSON.stringify({condition,state:'running'}));
   try{
     const {events}=await thread.runStreamed(prompt);
@@ -79,11 +82,12 @@ for(const condition of conditions){
       if(event.type==='error')error=event.message;
       if(event.type==='item.completed'&&event.item.type==='agent_message')finalResponse=event.item.text;
       if(event.type==='item.completed'&&event.item.type==='command_execution')commands.push(event.item);
+      if(event.type==='item.completed'&&event.item.type==='mcp_tool_call')reads.push(event.item);
       if(event.type==='item.completed'||event.type==='turn.completed'||event.type==='turn.failed')console.log(JSON.stringify({condition,event:event.type,itemType:event.item?.type}));
     }
   }catch(cause){error=cause instanceof Error?cause.message:String(cause);}
   if(completed&&!finalResponse&&!error)error='没有收到可用正文，本次不能作为完成。';
-  const result={condition,threadId:thread.id,state:error?'failed':completed?'completed':'interrupted',error,usage,commands,finalResponse};
+  const result={condition,threadId:thread.id,state:error?'failed':completed?'completed':'interrupted',error,usage,commands,reads,finalResponse};
   await writeFile(join(dir,'output.txt'),finalResponse,'utf8');
   await writeFile(join(dir,'report.json'),JSON.stringify(result,null,2));
   report.conditions.push(result);

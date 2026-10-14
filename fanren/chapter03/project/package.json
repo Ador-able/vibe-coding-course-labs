@@ -10,6 +10,7 @@
     "experiment": "node 运行三种读法.mjs"
   },
   "dependencies": {
+    "@modelcontextprotocol/server-filesystem": "1.0.0",
     "@openai/codex-sdk": "0.160.0"
   }
 }
