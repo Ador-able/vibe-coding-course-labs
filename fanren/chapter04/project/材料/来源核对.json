@@ -1,0 +1,33 @@
+{
+  "tasks": [
+    {
+      "task": "S1",
+      "sourceIds": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "sha256": "861a0e00e941fbef5652750fd49f85f6e3f2ae7cec49acc0ac9baae3bd873962"
+    },
+    {
+      "task": "S2",
+      "sourceIds": [
+        "C03",
+        "C04"
+      ],
+      "sha256": "844b9176ebfc8e2c50041462ddc6c5c9b124adb2591069c0c7a99bf1a1ade29f"
+    },
+    {
+      "task": "S3",
+      "sourceIds": [
+        "C04",
+        "C05"
+      ],
+      "sha256": "cf8e5b962ab0003fe900c9ea32798a195aa82a3d2b37d329464ca521b33d06b8"
+    }
+  ],
+  "outlineSha256": "bc7ab740ec15c03593ec3c839ed0ce1212e3b79ba1ec1364060dcad07d25e0dd",
+  "settingsSha256": "d56f1bb829d1ac16faaa9329560e4b76c9594a109b23cf6788e6775eb6fd4a19",
+  "sampleSource": "C03 第四章，岳堂主宣布规则的段落",
+  "sampleDifference": "冲突条件仅将正午替换为日落；是受控练习输入，不是原著事实或模型实测错误"
+}

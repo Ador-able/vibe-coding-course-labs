@@ -5,6 +5,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { performance } from 'node:perf_hooks';
+import { execFileSync } from 'node:child_process';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const hash = text => createHash('sha256').update(text).digest('hex');
@@ -38,6 +39,8 @@ const calls = order.map((condition, index) => {
 });
 const frozen = {
   createdAt: new Date().toISOString(),
+  executionGitHead: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(),
+  runnerSha256: hash(await readFile(fileURLToPath(import.meta.url))),
   purpose: '同一小说任务，只改变写法样例；结果为未采用教学草稿。',
   settings,
   configuredModel: null,
@@ -47,8 +50,8 @@ const frozen = {
   files: materialFiles.map(name => ({ name, sha256: hash(materials[name]) })),
   calls,
   criteria: [
-    '逐份阅读完整章稿，核对人物、境界、入阁条件、消息时间与书架状态。',
-    '核对目的、行动中的阻碍、章末具体未解异常和完整交付。',
+    '逐份阅读完整章稿，对照凡人原文核对人物、候选身份、考核规则、正午截止和保护关系。',
+    '核对参加选拔的目的、攀爬中的阻碍、停在规定事件范围和完整交付。',
     '正文 800—1200 汉字，不含标题、标点和非汉字；计数不代表内容合格。',
     '未直接交代、直接矛盾、目标缺口与表达偏好分别记录。',
   ],
@@ -78,9 +81,10 @@ const sdkRequire = createRequire(pathToFileURL(sdkEntry));
 const cliPackagePath = sdkRequire.resolve('@openai/codex/package.json');
 const cliPackage = JSON.parse(await readFile(cliPackagePath, 'utf8'));
 const { Codex } = await import(pathToFileURL(sdkEntry).href);
-const codex = new Codex();
+const codexConfig = { features: { shell_tool: false }, memories: { use_memories: false, generate_memories: false } };
+const codex = new Codex({ config: codexConfig });
 const dependencies = { sdkVersion: sdkPackage.version, cliPackageVersion: cliPackage.version, nodeVersion: process.version };
-await writeFile(join(runDir, 'config.json'), JSON.stringify({ ...dependencies, settings, configuredModel: null, maxCallMs: frozen.maxCallMs }, null, 2));
+await writeFile(join(runDir, 'config.json'), JSON.stringify({ ...dependencies, settings, codexConfig, configuredModel: null, maxCallMs: frozen.maxCallMs }, null, 2));
 const reports = [];
 for (const call of calls) {
   const dir = join(runDir, call.id);
