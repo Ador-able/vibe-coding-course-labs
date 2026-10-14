@@ -1,0 +1,203 @@
+{
+  "说明": "编者为同一青岚宗世界编写的九份课堂资料、六道题、候选顺序与相关性等级。林青是炼气三层外门弟子；这是独立的藏卷楼支线算术材料，不映射小说工作台的真实章稿或采用记录，不调用检索服务或模型。",
+  "k": 3,
+  "relevantGradeThreshold": 1,
+  "corpus": [
+    {
+      "id": "A1",
+      "docId": "setting",
+      "version": "v2",
+      "active": true,
+      "text": "林青没有藏卷楼钥匙；进入藏卷楼需要陆师兄开门。"
+    },
+    {
+      "id": "A2",
+      "docId": "chapter-one",
+      "version": "v2",
+      "active": true,
+      "text": "陆师兄用藏卷楼门钥匙打开门，让林青进入楼内。"
+    },
+    {
+      "id": "A3",
+      "docId": "chapter-three",
+      "version": "v4",
+      "active": true,
+      "text": "玄七柜格登记十二枚借卷木牌，实物十一枚，领出栏空白。林青分别记下三项观察，没有认定门边那枚就是缺少的一枚。"
+    },
+    {
+      "id": "A4",
+      "docId": "chapter-two",
+      "version": "v1",
+      "active": true,
+      "text": "藏卷楼上层为何封闭尚未解释，姜执事本章没有到场。"
+    },
+    {
+      "id": "A5",
+      "docId": "setting",
+      "version": "v1",
+      "active": false,
+      "text": "旧草案设定林青携带藏卷楼钥匙；此版已停用。"
+    },
+    {
+      "id": "A6",
+      "docId": "adoption-note",
+      "version": "v1",
+      "active": true,
+      "text": "这组支线前三章仍是待人审阅的草稿，尚未决定采用。"
+    },
+    {
+      "id": "A7",
+      "docId": "scene-note",
+      "version": "v1",
+      "active": true,
+      "text": "楼顶能看见药田，东窗朝向石阶。"
+    },
+    {
+      "id": "A8",
+      "docId": "key-note",
+      "version": "v1",
+      "active": true,
+      "text": "本组资料中的钥匙是藏卷楼门钥匙，不是药匣钥匙。"
+    },
+    {
+      "id": "A9",
+      "docId": "guard-note",
+      "version": "v1",
+      "active": true,
+      "text": "陆师兄离开楼门后，把开门用的钥匙收回腰间。"
+    }
+  ],
+  "queries": [
+    {
+      "id": "Q1",
+      "type": "直接问题",
+      "question": "藏卷楼钥匙由谁使用，谁为林青开门？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "grades": {
+        "A1": 3,
+        "A2": 2,
+        "A8": 1,
+        "A9": 1
+      },
+      "ranking": [
+        "A2",
+        "A7",
+        "A8"
+      ]
+    },
+    {
+      "id": "Q2",
+      "type": "具体编号",
+      "question": "玄七柜格的数量异常是什么？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "grades": {
+        "A3": 3
+      },
+      "ranking": [
+        "A7",
+        "A3",
+        "A4"
+      ]
+    },
+    {
+      "id": "Q3",
+      "type": "多对象",
+      "question": "玄七柜格留下什么异常，这组支线前三章是否已经采用？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "grades": {
+        "A3": 3,
+        "A6": 3
+      },
+      "requiredEvidence": [
+        "A3",
+        "A6"
+      ],
+      "ranking": [
+        "A3",
+        "A7",
+        "A4"
+      ]
+    },
+    {
+      "id": "Q4",
+      "type": "旧版干扰",
+      "question": "按当前资料，藏卷楼钥匙由谁使用？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "grades": {
+        "A1": 3,
+        "A2": 2,
+        "A8": 1,
+        "A9": 1
+      },
+      "ranking": [
+        "A5",
+        "A7"
+      ]
+    },
+    {
+      "id": "Q5",
+      "type": "没有已确认的答案",
+      "question": "谁造成了藏卷楼上层封闭？",
+      "requestStatus": "ok",
+      "answerable": false,
+      "grades": {},
+      "ranking": [
+        "A4",
+        "A7"
+      ],
+      "expectedDisposition": "说明这些课堂资料没有已确认的原因，不把尚未解释改成不存在原因，也不自行指定人物。"
+    },
+    {
+      "id": "Q6",
+      "type": "请求失败",
+      "question": "藏卷楼钥匙由谁使用，谁为林青开门？",
+      "requestStatus": "failed",
+      "answerable": true,
+      "grades": {
+        "A1": 3,
+        "A2": 2,
+        "A8": 1,
+        "A9": 1
+      },
+      "ranking": [],
+      "error": "课堂模拟：请求没有取得响应；不是实际网络错误。"
+    }
+  ],
+  "fusion": {
+    "k": 60,
+    "rankStartsAt": 1,
+    "routes": [
+      {
+        "name": "关键词",
+        "ranking": [
+          "A1",
+          "A2",
+          "A7"
+        ],
+        "rawScores": {
+          "A1": 9,
+          "A2": 4,
+          "A7": 0
+        }
+      },
+      {
+        "name": "向量",
+        "ranking": [
+          "A2",
+          "A1",
+          "A3"
+        ],
+        "rawScores": {
+          "A2": 0.82,
+          "A1": 0.78,
+          "A3": 0.71
+        }
+      }
+    ],
+    "tiePolicy": "分数相同时按资料编号字典序；只是本练习的明确选择。"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "description": "编者为同一青岚宗世界编写的九份课堂资料、六道题、候选顺序与相关性等级。林青是炼气三层外门弟子；这是独立的藏卷楼支线算术材料，不映射小说工作台的真实章稿或采用记录，不调用检索服务或模型。",
+  "k": 3,
+  "input": {
+    "bytes": 4940,
+    "sha256": "b3af7f79eebae414914cb6c1484d4b4bc4011aaf46eda3511f680c8e4bba17a3"
+  },
+  "rules": {
+    "binaryRelevance": "人工等级≥1；等级1只辅助回查，不能自动当完整答案",
+    "precisionAtK": "分母固定k；短列表空位按0",
+    "ndcg": "gain=2^grade−1；discount=log2(rank+1)；IDCG使用完整已标注池的理想前k项；IDCG=0记null",
+    "failure": "请求失败的条件检索指标记null；端到端答得出问题的MRR纳入该题并给0",
+    "noAnswer": "没有已确认答案的题不加入本练习答得出问题的MRR，另核是否保留未知"
+  },
+  "rows": [
+    {
+      "id": "Q1",
+      "type": "直接问题",
+      "question": "藏卷楼钥匙由谁使用，谁为林青开门？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "ranking": [
+        "A2",
+        "A7",
+        "A8"
+      ],
+      "top": [
+        "A2",
+        "A7",
+        "A8"
+      ],
+      "grades": [
+        2,
+        0,
+        1
+      ],
+      "relevantInJudgedPool": 4,
+      "hitsAtK": 2,
+      "returnedPrecision": 0.6666666666666666,
+      "precisionAtK": 0.6666666666666666,
+      "recallAtK": 0.5,
+      "reciprocalRank": 1,
+      "dcgAtK": 3.5,
+      "idcgAtK": 9.392789260714373,
+      "ndcgAtK": 0.3726262671130988,
+      "evidenceCoverage": null
+    },
+    {
+      "id": "Q2",
+      "type": "具体编号",
+      "question": "玄七柜格的数量异常是什么？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "ranking": [
+        "A7",
+        "A3",
+        "A4"
+      ],
+      "top": [
+        "A7",
+        "A3",
+        "A4"
+      ],
+      "grades": [
+        0,
+        3,
+        0
+      ],
+      "relevantInJudgedPool": 1,
+      "hitsAtK": 1,
+      "returnedPrecision": 0.3333333333333333,
+      "precisionAtK": 0.3333333333333333,
+      "recallAtK": 1,
+      "reciprocalRank": 0.5,
+      "dcgAtK": 4.4165082750002025,
+      "idcgAtK": 7,
+      "ndcgAtK": 0.6309297535714575,
+      "evidenceCoverage": null
+    },
+    {
+      "id": "Q3",
+      "type": "多对象",
+      "question": "玄七柜格留下什么异常，这组支线前三章是否已经采用？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "ranking": [
+        "A3",
+        "A7",
+        "A4"
+      ],
+      "top": [
+        "A3",
+        "A7",
+        "A4"
+      ],
+      "grades": [
+        3,
+        0,
+        0
+      ],
+      "relevantInJudgedPool": 2,
+      "hitsAtK": 1,
+      "returnedPrecision": 0.3333333333333333,
+      "precisionAtK": 0.3333333333333333,
+      "recallAtK": 0.5,
+      "reciprocalRank": 1,
+      "dcgAtK": 7,
+      "idcgAtK": 11.416508275000202,
+      "ndcgAtK": 0.6131471927654584,
+      "evidenceCoverage": 0.5
+    },
+    {
+      "id": "Q4",
+      "type": "旧版干扰",
+      "question": "按当前资料，藏卷楼钥匙由谁使用？",
+      "requestStatus": "ok",
+      "answerable": true,
+      "ranking": [
+        "A5",
+        "A7"
+      ],
+      "top": [
+        "A5",
+        "A7"
+      ],
+      "grades": [
+        0,
+        0
+      ],
+      "relevantInJudgedPool": 4,
+      "hitsAtK": 0,
+      "returnedPrecision": 0,
+      "precisionAtK": 0,
+      "recallAtK": 0,
+      "reciprocalRank": 0,
+      "dcgAtK": 0,
+      "idcgAtK": 9.392789260714373,
+      "ndcgAtK": 0,
+      "evidenceCoverage": null
+    },
+    {
+      "id": "Q5",
+      "type": "没有已确认的答案",
+      "question": "谁造成了藏卷楼上层封闭？",
+      "requestStatus": "ok",
+      "answerable": false,
+      "ranking": [
+        "A4",
+        "A7"
+      ],
+      "top": [
+        "A4",
+        "A7"
+      ],
+      "grades": [
+        0,
+        0
+      ],
+      "relevantInJudgedPool": 0,
+      "hitsAtK": 0,
+      "returnedPrecision": 0,
+      "precisionAtK": 0,
+      "recallAtK": null,
+      "reciprocalRank": null,
+      "dcgAtK": 0,
+      "idcgAtK": 0,
+      "ndcgAtK": null,
+      "evidenceCoverage": null
+    },
+    {
+      "id": "Q6",
+      "type": "请求失败",
+      "question": "藏卷楼钥匙由谁使用，谁为林青开门？",
+      "requestStatus": "failed",
+      "answerable": true,
+      "ranking": [],
+      "returnedPrecision": null,
+      "precisionAtK": null,
+      "recallAtK": null,
+      "reciprocalRank": null,
+      "dcgAtK": null,
+      "idcgAtK": null,
+      "ndcgAtK": null,
+      "evidenceCoverage": null
+    }
+  ],
+  "fusion": [
+    {
+      "id": "A1",
+      "contributions": [
+        {
+          "route": "关键词",
+          "rank": 1,
+          "rawScore": 9,
+          "contribution": 0.01639344262295082
+        },
+        {
+          "route": "向量",
+          "rank": 2,
+          "rawScore": 0.78,
+          "contribution": 0.016129032258064516
+        }
+      ],
+      "score": 0.03252247488101534
+    },
+    {
+      "id": "A2",
+      "contributions": [
+        {
+          "route": "关键词",
+          "rank": 2,
+          "rawScore": 4,
+          "contribution": 0.016129032258064516
+        },
+        {
+          "route": "向量",
+          "rank": 1,
+          "rawScore": 0.82,
+          "contribution": 0.01639344262295082
+        }
+      ],
+      "score": 0.03252247488101534
+    },
+    {
+      "id": "A3",
+      "contributions": [
+        {
+          "route": "向量",
+          "rank": 3,
+          "rawScore": 0.71,
+          "contribution": 0.015873015873015872
+        }
+      ],
+      "score": 0.015873015873015872
+    },
+    {
+      "id": "A7",
+      "contributions": [
+        {
+          "route": "关键词",
+          "rank": 3,
+          "rawScore": 0,
+          "contribution": 0.015873015873015872
+        }
+      ],
+      "score": 0.015873015873015872
+    }
+  ],
+  "aggregate": {
+    "allRequests": 6,
+    "successfulRequests": 5,
+    "answerableQueries": 5,
+    "successfulAnswerableQueries": 4,
+    "conditionalMrr": 0.625,
+    "endToEndMrr": 0.5
+  },
+  "limits": "人工编写的完整小样本和算术，不是检索器、嵌入、重排器或生成答案的实测。不能据此比较真实模型能力或作品品质。"
+}
