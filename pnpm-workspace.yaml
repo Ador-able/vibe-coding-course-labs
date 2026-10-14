@@ -1,5 +1,5 @@
 packages:
-  - qinglan/*/project
+  - fanren/*/project
 sharedWorkspaceLockfile: false
 allowBuilds:
   opencode-ai: true

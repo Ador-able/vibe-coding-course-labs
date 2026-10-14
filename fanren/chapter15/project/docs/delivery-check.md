@@ -6,7 +6,7 @@
 
 ## 运行入口
 
-沿用课程仓库的一次安装与构建准备。进入`qinglan/chapter15/project`后运行：
+沿用课程仓库的一次安装与构建准备。进入`fanren/chapter15/project`后运行：
 
 ```sh
 pnpm run check:delivery
@@ -17,7 +17,7 @@ pnpm run check:delivery
 默认使用Playwright Chromium。在课程根准备浏览器一次：
 
 ```sh
-pnpm --dir qinglan/chapter15/project exec playwright install --with-deps chromium
+pnpm --dir fanren/chapter15/project exec playwright install --with-deps chromium
 ```
 
 Windows已有Edge时，可以明确选用它：

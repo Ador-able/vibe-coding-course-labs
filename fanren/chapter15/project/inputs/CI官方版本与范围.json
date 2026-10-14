@@ -8,12 +8,12 @@
   ],
   "scope": {
     "event": "pull_request",
-    "paths": ["qinglan/chapter15/project/**", ".github/workflows/chapter15-delivery.yml", ".githooks/pre-commit", "package.json", "pnpm-workspace.yaml"],
+    "paths": ["fanren/chapter15/project/**", ".github/workflows/chapter15-delivery.yml", ".githooks/pre-commit", "package.json", "pnpm-workspace.yaml"],
     "permissions": {"contents": "read"},
     "install": "pnpm install --frozen-lockfile --filter qinglan-existing-project-lab",
-    "browser": "pnpm --dir qinglan/chapter15/project exec playwright install --with-deps chromium",
-    "check": "pnpm --dir qinglan/chapter15/project run check:delivery",
-    "artifact": "qinglan/chapter15/project/runs/delivery-saving-*",
+    "browser": "pnpm --dir fanren/chapter15/project exec playwright install --with-deps chromium",
+    "check": "pnpm --dir fanren/chapter15/project run check:delivery",
+    "artifact": "fanren/chapter15/project/runs/delivery-saving-*",
     "versionsToRecord": ["event", "PR head", "PR base", "event SHA", "git rev-parse HEAD"]
   },
   "remoteRun": null,

@@ -1,9 +1,9 @@
 {
-  "sourceSha256": "c87d92a4cab7c649d76402253b47f2334f6e2fc2e96e199488a9b05268ad1158",
-  "sourceVersion": "c87d92a4cab7c649d76402253b47f2334f6e2fc2e96e199488a9b05268ad1158",
-  "preparedFromGit": "f71cee739bd8be4ad908044d5bc02aec0f08ff49",
+  "sourceSha256": "9330c44f2cacee3515f9502d496c82258bab16ec24e0671b13fd5fe8d4857c1a",
+  "sourceVersion": "9330c44f2cacee3515f9502d496c82258bab16ec24e0671b13fd5fe8d4857c1a",
+  "preparedFromGit": "a002c2ec7bb56fde6acc2bb7b39763693a09abe7",
   "practiceTag": "qinglan-ch15-practice-start",
-  "inputRegistrySha256": "52b2e421f375226ef08b5ae4383053cf09b0ffcd4e9e548e40b8c9d1d37fb912",
+  "inputRegistrySha256": "bdd88e092aa1e1688566397fdd0c3d5adb67c6e43b7b09cfc92681ba520a2a2b",
   "files": [
     {
       "path": ".gitattributes",
@@ -22,8 +22,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4524,
-      "sha256": "6eca1bc460f1c78bd1971c6df80aa06a8daf9c438ed8ce113ecd6bbeb639ce23"
+      "bytes": 4523,
+      "sha256": "caf77f426a535f2c225235cc3fd086566701ec2685fb9c293b27519a05721de0"
     },
     {
       "path": "config/固定实验参数.json",
@@ -32,8 +32,8 @@
     },
     {
       "path": "docs/delivery-check.md",
-      "bytes": 4373,
-      "sha256": "948ab3cd9ba1b5708c175667b716f748a97db6835699e96a8044142783a86d82"
+      "bytes": 4371,
+      "sha256": "f1c8d16e34e2ef6f5ebd9133fc7e20f0cd48aed3e3df0dcb9baa9cc3062c7d94"
     },
     {
       "path": "docs/save-review.md",
@@ -89,6 +89,11 @@
       "path": "materials/viewer.js",
       "bytes": 3317,
       "sha256": "7abfccc60b0c728c9042d4dc6fc02c4bad3729685bbd483697a80707c6e1de98"
+    },
+    {
+      "path": "materials/提交检查实录页-高清原像素.png",
+      "bytes": 404801,
+      "sha256": "56d8c56a505635a6b5e04beae5b02546338dc52433f3df58e1062dba33e718ee"
     },
     {
       "path": "package.json",

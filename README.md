@@ -1,8 +1,8 @@
 # 进阶 Vibe Coding 课程实验
 
-本仓库提供课程的代码练习和完整课堂材料。[青岚修仙录实验](qinglan/README.md)按课程章节给出源码、材料与实录入口，只需克隆一次，后续沿用同一仓库。每课有可切换的起点与完成点；节点名称和入口见 `github-nodes.json`。两套观察页分别从[请求观察室](https://github.com/Ador-able/vibe-coding-ai-request-lab)和[模型机制观察室](https://github.com/Ador-able/vibe-coding-model-mechanics-lab)取得。
+本仓库提供课程的代码练习和完整课堂材料。[课程实验与凡人原文资料](fanren/README.md)按课程章节给出源码、材料与实录入口，只需克隆一次，后续沿用同一仓库。每课有可切换的起点与完成点；节点名称和入口见 `github-nodes.json`。两套观察页分别从[请求观察室](https://github.com/Ador-able/vibe-coding-ai-request-lab)和[模型机制观察室](https://github.com/Ador-able/vibe-coding-model-mechanics-lab)取得。
 
-[第十三章小说整理工作台](qinglan/chapter13/project/README.md)提供五个入口：长文、反馈分类、核查日志抽取、逐项状态、模板核对，沿用仓库首次安装与构建。
+[第十三章小说整理工作台](fanren/chapter13/project/README.md)提供五个入口：长文、反馈分类、核查日志抽取、逐项状态、模板核对，沿用仓库首次安装与构建。
 
 ## 开始一课
 

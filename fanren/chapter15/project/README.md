@@ -1,6 +1,6 @@
 # 青岚修仙录：保存调查
 
-沿用已经克隆的课程仓库与本章准备，进入`qinglan/chapter15/project`。单独从本章开始时，在仓库根一次运行`pnpm install --frozen-lockfile --filter qinglan-existing-project-lab`，再在本章项目目录运行`pnpm build`。资料与完整实录随Git保存，已有登录继续沿用。
+沿用已经克隆的课程仓库与本章准备，进入`fanren/chapter15/project`。单独从本章开始时，在仓库根一次运行`pnpm install --frozen-lockfile --filter qinglan-existing-project-lab`，再在本章项目目录运行`pnpm build`。资料与完整实录随Git保存，已有登录继续沿用。
 
 运行`pnpm lab`，打开`http://127.0.0.1:4364`。选择当前任务并点“查看结果”，先读结论和必要对照，再按需展开完整原答与过程。五节共用本地课堂记录，查看不调用模型；没有保存实录时会显示空状态。
 

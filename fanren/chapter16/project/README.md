@@ -8,7 +8,7 @@
 
 复用第十章已有的Store、MCP、Skill和成熟Harness。完成第十章的一次准备后，在本目录运行 `pnpm run practice:prepare`，新建独立SQLite并将第十章工作台切到本作品；原练习库与入口记录继续保留。
 
-之后在 `qinglan/chapter10/project` 操作：
+之后在 `fanren/chapter10/project` 操作：
 
 1. 运行 `pnpm run prototype --port 4368` 打开工作台。运行 `pnpm run agent --prompt ../../chapter16/project/inputs/A-首章任务.txt --chapter 1 --stop-after-save`。停止后读实际首章；使用命令返回的自己的运行目录。
 2. 将 `inputs/B-变化后的完整要求.json` 保存为当前作品要求：`pnpm run lab update ../../chapter16/project/inputs/B-变化后的完整要求.json --expected-revision 1`。若资料已有修改，先读取它，不能直接套课堂修订。

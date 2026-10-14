@@ -3,7 +3,7 @@ name: Chapter 15 delivery
 on:
   pull_request:
     paths:
-      - 'qinglan/chapter15/project/**'
+      - 'fanren/chapter15/project/**'
       - '.github/workflows/chapter15-delivery.yml'
       - '.githooks/pre-commit'
       - 'package.json'
@@ -41,16 +41,16 @@ jobs:
       - name: Install existing locked dependencies
         run: pnpm install --frozen-lockfile --filter qinglan-existing-project-lab
       - name: Prepare Chromium
-        run: pnpm --dir qinglan/chapter15/project exec playwright install --with-deps chromium
+        run: pnpm --dir fanren/chapter15/project exec playwright install --with-deps chromium
       - name: Check chapter saving delivery
         env:
           DELIVERY_PR_HEAD: ${{ github.event.pull_request.head.sha }}
           DELIVERY_PR_BASE: ${{ github.event.pull_request.base.sha }}
-        run: pnpm --dir qinglan/chapter15/project run check:delivery
+        run: pnpm --dir fanren/chapter15/project run check:delivery
       - name: Preserve actual delivery evidence
         if: always()
         uses: actions/upload-artifact@v7
         with:
           name: chapter15-saving-${{ github.run_id }}-${{ github.run_attempt }}
-          path: qinglan/chapter15/project/runs/delivery-saving-*
+          path: fanren/chapter15/project/runs/delivery-saving-*
           if-no-files-found: warn
