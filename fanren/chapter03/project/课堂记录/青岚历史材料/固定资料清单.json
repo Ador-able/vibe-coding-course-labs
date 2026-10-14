@@ -1,0 +1,53 @@
+{
+  "name": "《青岚修仙录》逐层读取教学资料",
+  "date": "2026-10-13",
+  "fixture": "人工编写的虚构教学材料",
+  "summary": "人工编写的有意省略摘要，不是模型实测摘要",
+  "files": [
+    {
+      "path": "对照摘要.md",
+      "bytes": 618,
+      "sha256": "27a1b827e0b42cbcaba850d7fa4886364b0ece89da74c0b01a0bb0f26512f1ca"
+    },
+    {
+      "path": "材料包/入口.md",
+      "bytes": 1246,
+      "sha256": "1fad1c8452737efcd70482489dab18fb319e1d960be91f6c77f9d0ef597d5e8d"
+    },
+    {
+      "path": "材料包/规则/用料规则.md",
+      "bytes": 1115,
+      "sha256": "a6f70bcdcd0601b3165feb1c2fd71a21eb33028f7dd459687159c731bdb6f2ec"
+    },
+    {
+      "path": "材料包/资料/备选/第4章试写.md",
+      "bytes": 218,
+      "sha256": "ce74c39116deadd2bb66c5cd04b30e056b526519fea215c2bf16704fb8d8e1c8"
+    },
+    {
+      "path": "材料包/资料/备选/第5章方向.md",
+      "bytes": 278,
+      "sha256": "8f578191a9c06dae5ddfedec5bba3508416401b6d6731c81187bb98e77073a99"
+    },
+    {
+      "path": "材料包/资料/正式/人物卡.md",
+      "bytes": 641,
+      "sha256": "532ad5ba78a486b700a2092edd15f0ba5931ed055e0528816166926c8e0b22ee"
+    },
+    {
+      "path": "材料包/资料/正式/第3章.md",
+      "bytes": 641,
+      "sha256": "2af343073a306ad7cc197fd94c272c08d397af5606178977f9b0306db61755c6"
+    },
+    {
+      "path": "材料包/资料/索引.md",
+      "bytes": 1098,
+      "sha256": "bb9f10d44387298089fb8d9f997ca7352618067a52b5804715dbd8b67e7acf42"
+    },
+    {
+      "path": "材料包/资料/背景/药圃.md",
+      "bytes": 307,
+      "sha256": "eeeb52fd59844402e49b6fda833475e606f95cf0794fcefc34fa5d685d086d43"
+    }
+  ]
+}
