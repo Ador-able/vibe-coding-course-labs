@@ -1,0 +1,37 @@
+{
+  "baseRun": "2026-10-14T15-20-14.560Z-3c93c3e7-67c8-41eb-9c15-efee56794121",
+  "tieredRun": "2026-10-14T15-28-39.829Z-6eb033cd-d3ce-4816-9337-1a5ba1c8c2a9",
+  "sourceRevisions": [
+    "60a812a4b43aedf22cd0caa2aa2965c4e8d28b4d",
+    "e2c05eef8d72e5dbda68134db7819a86796e7170"
+  ],
+  "summarySha256": "dfb10ef14b6d6cfb9fe698bec4fba5b842985942f73872796f964b6bce30257e",
+  "inputFilesUnchanged": true,
+  "trace": [
+    {
+      "file": "入口.md",
+      "characters": 154,
+      "tool": "read_text_file"
+    },
+    {
+      "file": "规则/引用规则.md",
+      "characters": 118,
+      "tool": "read_text_file"
+    },
+    {
+      "file": "目录.md",
+      "characters": 2038,
+      "tool": "read_text_file"
+    },
+    {
+      "file": "原文/C01.md",
+      "characters": 2369,
+      "tool": "read_text_file"
+    },
+    {
+      "file": "原文/C02.md",
+      "characters": 2459,
+      "tool": "read_text_file"
+    }
+  ]
+}
