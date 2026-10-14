@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "lesson": "A",
+    "title": "首章已保存，执行随后停止",
+    "summary": "完整首章进入工作台后，宿主在教学停止点取消本轮；第二章尚未生成。",
+    "comparison": {
+      "columns": [
+        "对象",
+        "实际结果"
+      ],
+      "rows": [
+        [
+          "首章",
+          "r1 · 草稿，完整正文保留"
+        ],
+        [
+          "本轮执行",
+          "cancelled，没有正常收尾"
+        ],
+        [
+          "后续工作",
+          "第二章与人的采用尚未发生"
+        ]
+      ]
+    },
+    "files": [
+      {
+        "title": "完整任务与宿主条件",
+        "path": "records/A/input.json"
+      },
+      {
+        "title": "完整工具事件",
+        "path": "records/A/events.jsonl"
+      },
+      {
+        "title": "保存后停止的独立读回",
+        "path": "records/A/stop-proof.json"
+      },
+      {
+        "title": "取消前完整模型消息",
+        "path": "records/A/all-agent-messages.txt"
+      },
+      {
+        "title": "执行前后完整业务对象",
+        "path": "records/A/after.json"
+      },
+      {
+        "title": "实际任务报告",
+        "path": "records/A/report.json"
+      }
+    ]
+  }
+]
