@@ -1,0 +1,10 @@
+{
+  "originalRun": "30562cc5-bea8-47dd-81c4-60ed6b63628c",
+  "originalThread": "01a1380f-1287-7110-ac23-0de00614484a",
+  "businessUnchanged": true,
+  "missingCustomOutputTimestamp": "2026-10-14T01:39:54.151Z",
+  "callName": "exec",
+  "callId": "call_3bb129561ba64bf4aec0265e685fd845",
+  "visibleEvidence": "保存后的custom_tool_call已记录，但没有同callId的custom_tool_call_output；本轮恢复多次报告缺少这条输出。不会编辑原会话日志或补造工具结果。",
+  "next": "新会话重新读取同一业务对象，有限手工恢复一次；不用原会话里未取得的结论。"
+}

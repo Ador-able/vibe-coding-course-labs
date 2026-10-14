@@ -1,0 +1,42 @@
+{
+  "runId": "8b441255-9c48-4976-8508-bd414e8ed792",
+  "sourceVersion": "af27d924a6d737f2b49bdbb803b9f754c51da9c0",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter10\\project\\data\\chapter16-a29a0e22-8838-46a3-a7a9-cfc836214954.sqlite",
+  "workId": "qinglan-mist-medicine",
+  "chapterNumber": 2,
+  "threadId": "01a1381d-c7b6-7223-97b8-25794917ba5c",
+  "state": "completed",
+  "completed": true,
+  "error": null,
+  "usage": {
+    "input_tokens": 308278,
+    "cached_input_tokens": 263552,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 9986,
+    "reasoning_output_tokens": 5629
+  },
+  "timeoutReached": false,
+  "eventCount": 27,
+  "task": {
+    "id": "8b441255-9c48-4976-8508-bd414e8ed792",
+    "workId": "qinglan-mist-medicine",
+    "chapterNumber": 2,
+    "codeVersion": "af27d924a6d737f2b49bdbb803b9f754c51da9c0",
+    "threadId": "01a1381d-c7b6-7223-97b8-25794917ba5c",
+    "state": "completed",
+    "createdAt": "2026-10-14T02:10:05.025Z",
+    "updatedAt": "2026-10-14T02:14:15.405Z",
+    "error": null,
+    "usage": {
+      "input_tokens": 308278,
+      "cached_input_tokens": 263552,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9986,
+      "reasoning_output_tokens": 5629
+    }
+  },
+  "stopProof": null,
+  "readOnly": false,
+  "businessUnchanged": false,
+  "scope": "Harness运行、业务保存与人工采用分别核对。只读任务仍记录本轮Task；不会把历史恢复当作新模型运行。"
+}

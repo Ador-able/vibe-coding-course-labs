@@ -1,0 +1,33 @@
+{
+  "workId": "qinglan-mist-medicine",
+  "workRevision": 3,
+  "expectedChapters": 2,
+  "savedChapters": 2,
+  "allOutlineChaptersSaved": true,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 3,
+      "status": "adopted",
+      "workRevision": 3,
+      "previousRevisions": [],
+      "reviewNote": "课堂编者阅读后采用：保留木符刻号与登记形貌的核实条件、封口药匣和当面交付；保留首章全部原文及归程渡牌这一段补写，让继续等待有自己的功课与留宿代价。此状态用于课堂接续，不代表用户的文学采用。",
+      "basisCurrent": true
+    },
+    {
+      "number": 2,
+      "revision": 2,
+      "status": "adopted",
+      "workRevision": 3,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        }
+      ],
+      "reviewNote": "课堂编者全文阅读两章后采用：首章的木符与领药簿办法在本章逐项执行，核姓名、刻号、登记形貌后才当面交出封口药匣；暮钟前一刻仍未返回，半刻后取符归来，核验与一刻路程使错过唯一渡舟成立。人的渡牌和功课补写被接续，候舍薄被、湿鞋、延期归程与次日补课让个人代价可见，没有代领、石台自取、追加渡舟、临时授权或突破修为。刻号、浅疤、痣是虚构正文的创作细节。核验段偏逐步，文学节奏仍可另作取舍；此次采用是编者课堂决定，不代表用户已认可作品或其他任务已经可靠。",
+      "basisCurrent": true
+    }
+  ],
+  "path": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter16\\project\\records\\D\\青岚修仙录-雾里的药符.md"
+}

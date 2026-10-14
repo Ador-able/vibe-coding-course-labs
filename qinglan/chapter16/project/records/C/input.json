@@ -1,0 +1,46 @@
+{
+  "runId": "8b441255-9c48-4976-8508-bd414e8ed792",
+  "sourceVersion": "af27d924a6d737f2b49bdbb803b9f754c51da9c0",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter10\\project\\data\\chapter16-a29a0e22-8838-46a3-a7a9-cfc836214954.sqlite",
+  "workId": "qinglan-mist-medicine",
+  "chapterNumber": 2,
+  "promptFile": "../../chapter16/project/inputs/C-接续任务.txt",
+  "prompt": "继续作品 qinglan-mist-medicine，只完成并保存第 2 章完整草稿。\n\n先选择小说章节任务 Skill 并读取必要参考，再用小说工作台 MCP 读取当前作品、真实目录、第 1 章全部正文和第 2 章当前状态。不要从旧对话补造资料或仅凭目录续写。\n\n本轮课堂决定已经进入当前作品要求：核实后当面交药优先，撤回强制按时离堂和石台自取的新增要求。首章经过工作台补写并采用，写入了林青自己的归程渡牌和当天收息功课。以刚读到的实际内容和修订接续，完整保留第一章。\n\n第 2 章正文 650—900 个汉字，让叶衡取回木符并亲自回来，按首章已经建立的方法核对姓名、木符刻号和登记形貌，再将封口完好的宁神散药匣当面交到本人手中。时间按当前事实推进：取符来回至少一刻，去渡口一刻，没有已经保证的提前返回；不能用瞬间核验、季伯代领、姜执事新授权、无人石台自取、新渡舟、法术抄近路或突破修为来消除代价。\n\n让林青错过自己的渡舟、候舍留宿和次日归程在正文中具体发生，承接首章补写的个人愿望。保持炼气三层与青岚宗设定，不把正文写成规则清单。保存完整标题和正文为 draft，按真实资料、第 2 章及全部前章修订填写基线；保存后读回逐字核对，并查询真实目录。不要采用、发布或代人导出，不改第一章。最后说明实际保存对象、修订和仍待人判断的内容。\n",
+  "readOnly": false,
+  "resumeThreadId": "01a1381d-c7b6-7223-97b8-25794917ba5c",
+  "stopAfterSave": false,
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter10\\project\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter10\\project\\data\\chapter16-a29a0e22-8838-46a3-a7a9-cfc836214954.sqlite",
+    "taskId": "8b441255-9c48-4976-8508-bd414e8ed792",
+    "excerpt": null
+  },
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\c15-impl\\\\qinglan\\\\chapter10\\\\project\"={trust_level=\"trusted\"}}",
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\c15-impl\\\\qinglan\\\\chapter10\\\\project\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"save_draft\",\"export_work\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "skills.config=[]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter10\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "hostCheck": "D:\\Projects\\Knowledge\\.coursebook-work\\c15-impl\\qinglan\\chapter10\\project\\runs\\host-prepare-366674a6-ea7e-4fc6-8532-c7a8cf55c2e6"
+}
