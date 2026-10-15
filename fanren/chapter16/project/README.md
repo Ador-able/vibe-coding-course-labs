@@ -12,7 +12,7 @@
 
 1. **A：保存第一段后停止。** 运行 `pnpm run agent --prompt ../../chapter16/project/inputs/A-首章任务.txt --chapter 1 --stop-after-save`。这是教师设置的停止点：只有保存成功且宿主独立读回一致，才取消本轮。读取实际第1段，检查正文是否完整；取消状态不能代替正文核对。
 2. **B：检查新增要求。** 用 `pnpm run lab update ../../chapter16/project/inputs/B-变化后的完整要求.json --expected-revision 当前作品修订` 保存新要求。然后运行 `pnpm run agent --prompt ../../chapter16/project/inputs/B-条件检查任务.txt --chapter 1 --read-only --resume-run 自己的A运行目录`。新增的“结尾宣布通过并收徒”是教师刻意改变的条件；检查它能否与保持C07原文同时满足。若真实接续失败，保留失败并先核当前对象，不把检查写成已完成，也不自动重跑。
-3. **H：人的决定与实际改稿。** 阅读B的实际结论和C07原文，再决定取舍。课堂输入 `inputs/人的当前要求.json` 撤回补写结尾的条件，并允许单列编者注。用现有 `pnpm run lab update` 保存自己的当前决定；运行 `pnpm run prototype --port 4368`，打开 <http://127.0.0.1:4368>，在第1段正文前插入 `inputs/人的首段编者注.txt`，完整保留其后的C06原文，保存并读回。若旧工作台进程仍在运行，应先关闭，再从当前练习库启动。完整阅读后，使用 `pnpm run lab adopt 1 --expected-revision 当前章稿修订 --note "具体阅读理由"` 决定采用。人的取舍和保存记录分别核对，不把文件存在当作已采用。
+3. **H：人的决定与实际改稿。** 阅读B的实际结论和C07原文，再决定取舍。课堂输入 `../../chapter16/project/inputs/人的当前要求.json` 撤回补写结尾的条件，并允许单列编者注。用现有 `pnpm run lab update` 保存自己的当前决定；运行 `pnpm run prototype --port 4368`，打开 <http://127.0.0.1:4368>，在第1段正文前插入 `../../chapter16/project/inputs/人的首段编者注.txt`，完整保留其后的C06原文，保存并读回。若旧工作台进程仍在运行，应先关闭，再从当前练习库启动。完整阅读后，使用 `pnpm run lab adopt 1 --expected-revision 当前章稿修订 --note "具体阅读理由"` 决定采用。人的取舍和保存记录分别核对，不把文件存在当作已采用。
 4. **C：接入第二段并交付。** 运行 `pnpm run agent --prompt ../../chapter16/project/inputs/C-接续任务.txt --chapter 2 --resume-run 自己已成功完成的B运行目录`。检查它重新取得当前要求、第1段完整人工改稿和实际基线，再把C07原样保存到第2段。完整阅读后决定是否采用第2段，再使用 `pnpm run lab export 自己的交付.md` 导出。打开实际文件核两段全文、编者注、章序和采用说明。
 
 现有 `pnpm run lab show`、`pnpm run lab chapter 1` 会读取当前练习库，命令中不用反复填写数据库和作品参数。写要求、改正文、采用和导出均使用现有业务入口，不直接修改SQLite。
