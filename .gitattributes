@@ -3,6 +3,7 @@
 *.ts text eol=lf
 fanren/**/materials/** -text
 fanren/**/records/** -text
+fanren/**/runs/** -text
 fanren/**/课堂记录/** -text
 fanren/**/运行记录/** -text
 fanren/**/*.json -text

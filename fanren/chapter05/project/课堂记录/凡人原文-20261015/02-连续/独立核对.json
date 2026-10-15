@@ -1,0 +1,162 @@
+{
+  "cases": [
+    {
+      "taskId": "999f5f3f-cb89-4ca5-9bf3-e21be9a512f4",
+      "chapter": 1,
+      "base": 1,
+      "workBase": 1,
+      "previous": [],
+      "savedRevision": 2,
+      "bodyHan": 915
+    },
+    {
+      "taskId": "445f3105-626a-4b01-80af-fedc73c720a9",
+      "chapter": 2,
+      "base": 0,
+      "workBase": 1,
+      "previous": [
+        {
+          "number": 1,
+          "revision": 2
+        }
+      ],
+      "savedRevision": 1,
+      "bodyHan": 918
+    },
+    {
+      "taskId": "1e67e668-da06-45a9-a56f-aaf340ae483e",
+      "chapter": 3,
+      "base": 0,
+      "workBase": 1,
+      "previous": [
+        {
+          "number": 1,
+          "revision": 2
+        },
+        {
+          "number": 2,
+          "revision": 1
+        }
+      ],
+      "savedRevision": 1,
+      "bodyHan": 911
+    }
+  ],
+  "initialReadStartIds": [
+    "item_1",
+    "item_2",
+    "item_3",
+    "item_4"
+  ],
+  "initialReadCompletionIds": [
+    "item_1",
+    "item_2",
+    "item_4",
+    "item_3"
+  ],
+  "initialReads": [
+    {
+      "id": "item_1",
+      "tool": "read_work",
+      "arguments": {
+        "workId": "fanren"
+      },
+      "completionOrder": 1,
+      "summary": "当前要求、大纲、设定；要求修订1"
+    },
+    {
+      "id": "item_2",
+      "tool": "list_chapters",
+      "arguments": {
+        "workId": "fanren"
+      },
+      "completionOrder": 2,
+      "summary": "第一章目录项：修订2、draft"
+    },
+    {
+      "id": "item_3",
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "fanren",
+        "chapterNumber": 1
+      },
+      "completionOrder": 4,
+      "summary": "第1章完整正文：修订2、draft"
+    },
+    {
+      "id": "item_4",
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "fanren",
+        "chapterNumber": 2
+      },
+      "completionOrder": 3,
+      "summary": "第2章尚未保存：null"
+    }
+  ],
+  "secondChapterSaveBases": {
+    "workId": "fanren",
+    "chapterNumber": 2,
+    "expectedWorkRevision": 1,
+    "expectedChapterRevision": 0,
+    "expectedPreviousRevisions": [
+      {
+        "number": 1,
+        "revision": 2
+      }
+    ]
+  },
+  "startTargetEvent": {
+    "type": "item.started",
+    "item": {
+      "id": "item_4",
+      "type": "mcp_tool_call",
+      "server": "novel_lab",
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "fanren",
+        "chapterNumber": 2
+      },
+      "result": null,
+      "error": null,
+      "status": "in_progress"
+    }
+  },
+  "completedTargetEvent": {
+    "type": "item.completed",
+    "item": {
+      "id": "item_4",
+      "type": "mcp_tool_call",
+      "server": "novel_lab",
+      "tool": "read_chapter",
+      "arguments": {
+        "workId": "fanren",
+        "chapterNumber": 2
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"result\":null}"
+          }
+        ],
+        "structured_content": {
+          "result": null
+        }
+      },
+      "error": null,
+      "status": "completed"
+    }
+  },
+  "staleControlledCli": {
+    "exitCode": 1,
+    "error": {
+      "code": "STALE_CHAPTER",
+      "message": "正文已是 r2，请重读后合并。"
+    },
+    "fullFirstChapterObjectUnchanged": true,
+    "currentRevision": 2,
+    "status": "draft"
+  },
+  "limits": "受控CLI编辑使用C03原文末段，草稿均未采用；已有稿重写与连续生成使用独立数据库。三次真实Agent结果均独立读回，文学品质与人的采用未验证。"
+}
