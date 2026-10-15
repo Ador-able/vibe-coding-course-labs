@@ -1,0 +1,157 @@
+{
+  "kind": "actual-first-request-ledger-not-future-budget",
+  "recordedAt": "2026-10-15T10:04:03.453Z",
+  "businessWebhookPosts": 7,
+  "modelRequests": 0,
+  "googleRequests": 0,
+  "notifications": 0,
+  "invitations": 0,
+  "recipientCardExecuted": false,
+  "posts": [
+    {
+      "id": "P01",
+      "responsePath": "records/feedback/unpublished-probe/response.json",
+      "responseBytes": 1759,
+      "responseFileSha256": "5b2848b94bcfff9b4ea5a0d57bc48f7b65107d3db3209f6062afe47ca17966e0",
+      "status": 404,
+      "startedAt": "2026-10-15T09:50:42.244Z",
+      "finishedAt": "2026-10-15T09:50:42.552Z",
+      "inputSha256": "73f5e9ed97e94eaa08fff839179b0ce346209796c115c36a422267545de31b06",
+      "method": "POST",
+      "url": "http://localhost:5689/webhook/fanren-ch14-feedback"
+    },
+    {
+      "id": "P02",
+      "responsePath": "records/feedback/test-E01/response.json",
+      "responseBytes": 1322,
+      "responseFileSha256": "b043a7539bc36070d809c90cd898f9c693b50ad70a9830b553219b6a0aecc1b5",
+      "status": 202,
+      "startedAt": "2026-10-15T09:53:06.423Z",
+      "finishedAt": "2026-10-15T09:53:06.904Z",
+      "inputSha256": "70e044b6cdc44d1fa75bac7f1723f1fd5a554e80d760f088bf18843d3a67bea0",
+      "method": "POST",
+      "url": "http://localhost:5689/webhook-test/fanren-ch14-feedback"
+    },
+    {
+      "id": "P03",
+      "responsePath": "records/feedback/production-E01/response.json",
+      "responseBytes": 1317,
+      "responseFileSha256": "19890fe32633abc44b5bc313b6d3227a72f32c2a226fd572c8144785557b5f41",
+      "status": 202,
+      "startedAt": "2026-10-15T09:56:45.463Z",
+      "finishedAt": "2026-10-15T09:56:45.814Z",
+      "inputSha256": "73f5e9ed97e94eaa08fff839179b0ce346209796c115c36a422267545de31b06",
+      "method": "POST",
+      "url": "http://localhost:5689/webhook/fanren-ch14-feedback"
+    },
+    {
+      "id": "P04",
+      "responsePath": "records/feedback/duplicate-E01/response.json",
+      "responseBytes": 1360,
+      "responseFileSha256": "53aeb873198b17d80c51db96bc490664b881a728fbf5c8dc6d33dcf6f87dea36",
+      "status": 200,
+      "startedAt": "2026-10-15T09:57:06.102Z",
+      "finishedAt": "2026-10-15T09:57:06.168Z",
+      "inputSha256": "73f5e9ed97e94eaa08fff839179b0ce346209796c115c36a422267545de31b06",
+      "method": "POST",
+      "url": "http://localhost:5689/webhook/fanren-ch14-feedback"
+    },
+    {
+      "id": "P05",
+      "responsePath": "records/feedback/production-E02/response.json",
+      "responseBytes": 1310,
+      "responseFileSha256": "187012e7829f9fce8c6affdd12971c9489f63733dd28a18fa319897ed350c6ac",
+      "status": 202,
+      "startedAt": "2026-10-15T09:57:23.729Z",
+      "finishedAt": "2026-10-15T09:57:24.074Z",
+      "inputSha256": "e47e2fb97915863746085918967fa925fa0c55d802b48ac83f99655afacfdb09",
+      "method": "POST",
+      "url": "http://localhost:5689/webhook/fanren-ch14-feedback"
+    },
+    {
+      "id": "P06",
+      "responsePath": "records/files/files-01/response.json",
+      "responseBytes": 98313,
+      "responseFileSha256": "12df90c73aedf9afe310ece03f7de3226fe28a749a28175c1a0eef66b474611d",
+      "status": 200,
+      "startedAt": "2026-10-15T09:58:06.554Z",
+      "finishedAt": "2026-10-15T09:58:17.177Z",
+      "inputSha256": "7d5b5070434e7394c891ceddd21b3da60f7a008cbf2505d5f9020f97e39f1ec2",
+      "method": "POST",
+      "url": "http://localhost:5689/webhook/fanren-ch14-files"
+    },
+    {
+      "id": "P07",
+      "responsePath": "records/branch/batch-01/response.json",
+      "responseBytes": 85204,
+      "responseFileSha256": "8da9aa3d9b46f08a0c1b8ad101199e2d0aa1e11b5793161d072eccf06c1b7b64",
+      "status": 200,
+      "startedAt": "2026-10-15T09:59:23.616Z",
+      "finishedAt": "2026-10-15T09:59:24.118Z",
+      "inputSha256": "2524fc69a7481a8140fbbcb70957f6dddd15135d22676f43bf8238fd17739018",
+      "method": "POST",
+      "url": "http://localhost:5689/webhook/fanren-ch14-batch"
+    }
+  ],
+  "actualExecutions": [
+    {
+      "id": "7",
+      "workflowId": "wLL4OnFnSnynDpbR",
+      "mode": "integrated",
+      "status": "success",
+      "startedAt": "2026-10-15T09:59:24.002Z",
+      "stoppedAt": "2026-10-15T09:59:24.097Z"
+    },
+    {
+      "id": "6",
+      "workflowId": "YmX4Ws8TrRBKXTzE",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:59:23.922Z",
+      "stoppedAt": "2026-10-15T09:59:24.112Z"
+    },
+    {
+      "id": "5",
+      "workflowId": "24vfEZtIR8158W9b",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:58:06.856Z",
+      "stoppedAt": "2026-10-15T09:58:17.169Z"
+    },
+    {
+      "id": "4",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "webhook",
+      "status": "error",
+      "startedAt": "2026-10-15T09:57:24.026Z",
+      "stoppedAt": "2026-10-15T09:57:29.105Z"
+    },
+    {
+      "id": "3",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:57:06.116Z",
+      "stoppedAt": "2026-10-15T09:57:06.168Z"
+    },
+    {
+      "id": "2",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:56:45.765Z",
+      "stoppedAt": "2026-10-15T09:56:50.850Z"
+    },
+    {
+      "id": "1",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "manual",
+      "status": "success",
+      "startedAt": "2026-10-15T09:53:06.733Z",
+      "stoppedAt": "2026-10-15T09:53:11.941Z"
+    }
+  ],
+  "sourceGetCount": 2,
+  "executionSourceSha256": "5800dc9d0721f63e37cb5059e2e029f3593caf0abfc9a160cee666358a154b5f",
+  "currentDisplaySourceSha256": "c49ba5b218c3154a06b56f400c4f2d606cdb7e67697bf231dd20d55b11f23563"
+}

@@ -1,0 +1,1769 @@
+{
+  "id": "5",
+  "workflowId": "24vfEZtIR8158W9b",
+  "workflowVersionId": "4491c8e2-715e-4ac5-b055-178342d247b9",
+  "mode": "webhook",
+  "status": "success",
+  "finished": true,
+  "startedAt": "2026-10-15T09:58:06.856Z",
+  "stoppedAt": "2026-10-15T09:58:17.169Z",
+  "waitTill": null,
+  "retryOf": null,
+  "retrySuccessId": null,
+  "data": {
+    "version": 1,
+    "startData": {},
+    "resultData": {
+      "runData": {
+        "接收两份目录": [
+          {
+            "startTime": 1792058286865,
+            "executionIndex": 0,
+            "source": [],
+            "hints": [],
+            "executionTime": 0,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "params": {},
+                      "query": {},
+                      "body": {
+                        "requestId": "fanren-ch14-files-01",
+                        "documents": [
+                          {
+                            "sourceId": "fanren-C05-pdf",
+                            "fileName": "凡人C05原文片段.pdf",
+                            "expectedMimeType": "application/pdf",
+                            "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf"
+                          },
+                          {
+                            "sourceId": "fanren-C05-txt",
+                            "fileName": "凡人C05完整原文.txt",
+                            "expectedMimeType": "text/plain",
+                            "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt"
+                          }
+                        ]
+                      },
+                      "webhookUrl": "http://localhost:5689/webhook/fanren-ch14-files",
+                      "executionMode": "production"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "文件目录": [
+          {
+            "startTime": 1792058286865,
+            "executionIndex": 1,
+            "source": [
+              {
+                "previousNode": "接收两份目录",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 5,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "requestId": "fanren-ch14-files-01",
+                      "documents": [
+                        {
+                          "sourceId": "fanren-C05-pdf",
+                          "fileName": "凡人C05原文片段.pdf",
+                          "expectedMimeType": "application/pdf",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf"
+                        },
+                        {
+                          "sourceId": "fanren-C05-txt",
+                          "fileName": "凡人C05完整原文.txt",
+                          "expectedMimeType": "text/plain",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt"
+                        }
+                      ]
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "逐项资料": [
+          {
+            "startTime": 1792058286870,
+            "executionIndex": 2,
+            "source": [
+              {
+                "previousNode": "文件目录",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 1,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "requestId": "fanren-ch14-files-01",
+                      "document": {
+                        "sourceId": "fanren-C05-pdf",
+                        "fileName": "凡人C05原文片段.pdf",
+                        "expectedMimeType": "application/pdf",
+                        "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  },
+                  {
+                    "json": {
+                      "requestId": "fanren-ch14-files-01",
+                      "document": {
+                        "sourceId": "fanren-C05-txt",
+                        "fileName": "凡人C05完整原文.txt",
+                        "expectedMimeType": "text/plain",
+                        "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt"
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "下载完整文件": [
+          {
+            "startTime": 1792058286871,
+            "executionIndex": 3,
+            "source": [
+              {
+                "previousNode": "逐项资料",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 29,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "headers": {
+                        "content-type": "application/pdf",
+                        "content-length": "68513",
+                        "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                        "cache-control": "no-store",
+                        "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                        "connection": "close"
+                      },
+                      "statusCode": 200,
+                      "statusMessage": "OK"
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "application/pdf",
+                        "fileType": "pdf",
+                        "fileExtension": "pdf",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.pdf",
+                        "fileName": "fanren-C05.pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  },
+                  {
+                    "json": {
+                      "headers": {
+                        "content-type": "text/plain; charset=utf-8",
+                        "content-length": "7348",
+                        "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                        "cache-control": "no-store",
+                        "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                        "connection": "close"
+                      },
+                      "statusCode": 200,
+                      "statusMessage": "OK"
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "text/plain",
+                        "fileType": "text",
+                        "fileExtension": "txt",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.txt",
+                        "fileName": "fanren-C05.txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 1
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "保留本项身份与下载": [
+          {
+            "startTime": 1792058286900,
+            "executionIndex": 4,
+            "source": [
+              {
+                "previousNode": "下载完整文件",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 14,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-pdf",
+                      "fileName": "凡人C05原文片段.pdf",
+                      "expectedMimeType": "application/pdf",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                      "actualMimeType": "application/pdf",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.pdf",
+                        "mimeType": "application/pdf",
+                        "fileExtension": "pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "application/pdf",
+                          "content-length": "68513",
+                          "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "application/pdf",
+                        "fileType": "pdf",
+                        "fileExtension": "pdf",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.pdf",
+                        "fileName": "fanren-C05.pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      }
+                    }
+                  },
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-txt",
+                      "fileName": "凡人C05完整原文.txt",
+                      "expectedMimeType": "text/plain",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                      "actualMimeType": "text/plain",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.txt",
+                        "mimeType": "text/plain",
+                        "fileExtension": "txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "text/plain; charset=utf-8",
+                          "content-length": "7348",
+                          "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 1
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "text/plain",
+                        "fileType": "text",
+                        "fileExtension": "txt",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.txt",
+                        "fileName": "fanren-C05.txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "按实际MIME选择": [
+          {
+            "startTime": 1792058286914,
+            "executionIndex": 5,
+            "source": [
+              {
+                "previousNode": "保留本项身份与下载",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 7,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-pdf",
+                      "fileName": "凡人C05原文片段.pdf",
+                      "expectedMimeType": "application/pdf",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                      "actualMimeType": "application/pdf",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.pdf",
+                        "mimeType": "application/pdf",
+                        "fileExtension": "pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "application/pdf",
+                          "content-length": "68513",
+                          "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "application/pdf",
+                        "fileType": "pdf",
+                        "fileExtension": "pdf",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.pdf",
+                        "fileName": "fanren-C05.pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      }
+                    }
+                  }
+                ],
+                [
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-txt",
+                      "fileName": "凡人C05完整原文.txt",
+                      "expectedMimeType": "text/plain",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                      "actualMimeType": "text/plain",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.txt",
+                        "mimeType": "text/plain",
+                        "fileExtension": "txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "text/plain; charset=utf-8",
+                          "content-length": "7348",
+                          "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      }
+                    },
+                    "pairedItem": {
+                      "item": 1
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "text/plain",
+                        "fileType": "text",
+                        "fileExtension": "txt",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.txt",
+                        "fileName": "fanren-C05.txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      }
+                    }
+                  }
+                ],
+                []
+              ]
+            }
+          }
+        ],
+        "提取PDF三页": [
+          {
+            "startTime": 1792058286921,
+            "executionIndex": 6,
+            "source": [
+              {
+                "previousNode": "按实际MIME选择",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 10188,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-pdf",
+                      "fileName": "凡人C05原文片段.pdf",
+                      "expectedMimeType": "application/pdf",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                      "actualMimeType": "application/pdf",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.pdf",
+                        "mimeType": "application/pdf",
+                        "fileExtension": "pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "application/pdf",
+                          "content-length": "68513",
+                          "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      },
+                      "numpages": 3,
+                      "numrender": 3,
+                      "info": {
+                        "PDFFormatVersion": "1.7",
+                        "Language": null,
+                        "EncryptFilterName": null,
+                        "IsLinearized": false,
+                        "IsAcroFormPresent": false,
+                        "IsXFAPresent": false,
+                        "IsCollectionPresent": false,
+                        "IsSignaturesPresent": false,
+                        "Title": "凡人修仙传-C05-墨大夫与神手谷",
+                        "Author": "忘语（课堂分页）"
+                      },
+                      "text": [
+                        "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页",
+                        "凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页",
+                        "凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页"
+                      ],
+                      "version": "5.4.296"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "application/pdf",
+                        "fileType": "pdf",
+                        "fileExtension": "pdf",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.pdf",
+                        "fileName": "fanren-C05.pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "解码UTF8文本": [
+          {
+            "startTime": 1792058297109,
+            "executionIndex": 7,
+            "source": [
+              {
+                "previousNode": "按实际MIME选择",
+                "previousNodeOutput": 1,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 16,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-txt",
+                      "fileName": "凡人C05完整原文.txt",
+                      "expectedMimeType": "text/plain",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                      "actualMimeType": "text/plain",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.txt",
+                        "mimeType": "text/plain",
+                        "fileExtension": "txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "text/plain; charset=utf-8",
+                          "content-length": "7348",
+                          "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      },
+                      "text": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "text/plain",
+                        "fileType": "text",
+                        "fileExtension": "txt",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.txt",
+                        "fileName": "fanren-C05.txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "合回两份解析资料": [
+          {
+            "startTime": 1792058297125,
+            "executionIndex": 8,
+            "source": [
+              {
+                "previousNode": "提取PDF三页",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              },
+              {
+                "previousNode": "解码UTF8文本",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 11,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-pdf",
+                      "fileName": "凡人C05原文片段.pdf",
+                      "expectedMimeType": "application/pdf",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                      "actualMimeType": "application/pdf",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.pdf",
+                        "mimeType": "application/pdf",
+                        "fileExtension": "pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "application/pdf",
+                          "content-length": "68513",
+                          "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      },
+                      "numpages": 3,
+                      "numrender": 3,
+                      "info": {
+                        "PDFFormatVersion": "1.7",
+                        "Language": null,
+                        "EncryptFilterName": null,
+                        "IsLinearized": false,
+                        "IsAcroFormPresent": false,
+                        "IsXFAPresent": false,
+                        "IsCollectionPresent": false,
+                        "IsSignaturesPresent": false,
+                        "Title": "凡人修仙传-C05-墨大夫与神手谷",
+                        "Author": "忘语（课堂分页）"
+                      },
+                      "text": [
+                        "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页",
+                        "凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页",
+                        "凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页"
+                      ],
+                      "version": "5.4.296"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "application/pdf",
+                        "fileType": "pdf",
+                        "fileExtension": "pdf",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.pdf",
+                        "fileName": "fanren-C05.pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      }
+                    }
+                  },
+                  {
+                    "json": {
+                      "statusCode": 200,
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-txt",
+                      "fileName": "凡人C05完整原文.txt",
+                      "expectedMimeType": "text/plain",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                      "actualMimeType": "text/plain",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.txt",
+                        "mimeType": "text/plain",
+                        "fileExtension": "txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "text/plain; charset=utf-8",
+                          "content-length": "7348",
+                          "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      },
+                      "text": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n"
+                    },
+                    "pairedItem": {
+                      "item": 0,
+                      "input": 1
+                    },
+                    "binary": {
+                      "sourceFile": {
+                        "mimeType": "text/plain",
+                        "fileType": "text",
+                        "fileExtension": "txt",
+                        "directory": "http://host.docker.internal:4361/fanren-C05.txt",
+                        "fileName": "fanren-C05.txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      }
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "准备本项完整文字": [
+          {
+            "startTime": 1792058297136,
+            "executionIndex": 9,
+            "source": [
+              {
+                "previousNode": "合回两份解析资料",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 20,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-pdf",
+                      "fileName": "凡人C05原文片段.pdf",
+                      "expectedMimeType": "application/pdf",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                      "actualMimeType": "application/pdf",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.pdf",
+                        "mimeType": "application/pdf",
+                        "fileExtension": "pdf",
+                        "fileSize": "68.5 kB",
+                        "bytes": 68513
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "application/pdf",
+                          "content-length": "68513",
+                          "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      },
+                      "parser": "Extract From File: PDF",
+                      "rawParsedText": [
+                        "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页",
+                        "凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页",
+                        "凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页"
+                      ],
+                      "parsedPageCount": 3,
+                      "pdfMetadata": {
+                        "numpages": 3,
+                        "numrender": 3,
+                        "info": {
+                          "PDFFormatVersion": "1.7",
+                          "Language": null,
+                          "EncryptFilterName": null,
+                          "IsLinearized": false,
+                          "IsAcroFormPresent": false,
+                          "IsXFAPresent": false,
+                          "IsCollectionPresent": false,
+                          "IsSignaturesPresent": false,
+                          "Title": "凡人修仙传-C05-墨大夫与神手谷",
+                          "Author": "忘语（课堂分页）"
+                        },
+                        "version": "5.4.296"
+                      },
+                      "preparedText": "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                      "materialStatus": "text_available",
+                      "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-pdf\n文件名：凡人C05原文片段.pdf\n完整提取文字：\n凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                      "stage": "prepared_not_sent"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  },
+                  {
+                    "json": {
+                      "requestId": "fanren-ch14-files-01",
+                      "sourceId": "fanren-C05-txt",
+                      "fileName": "凡人C05完整原文.txt",
+                      "expectedMimeType": "text/plain",
+                      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                      "actualMimeType": "text/plain",
+                      "binaryField": "sourceFile",
+                      "binaryMetadata": {
+                        "fileName": "fanren-C05.txt",
+                        "mimeType": "text/plain",
+                        "fileExtension": "txt",
+                        "fileSize": "7.35 kB",
+                        "bytes": 7348
+                      },
+                      "downloadResponse": {
+                        "statusCode": 200,
+                        "statusMessage": "OK",
+                        "headers": {
+                          "content-type": "text/plain; charset=utf-8",
+                          "content-length": "7348",
+                          "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                          "cache-control": "no-store",
+                          "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                          "connection": "close"
+                        }
+                      },
+                      "parser": "Extract From File: Text",
+                      "rawParsedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                      "parsedPageCount": null,
+                      "pdfMetadata": null,
+                      "preparedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                      "materialStatus": "text_available",
+                      "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-txt\n文件名：凡人C05完整原文.txt\n完整提取文字：\n　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                      "stage": "prepared_not_sent"
+                    },
+                    "pairedItem": {
+                      "item": 1
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "汇集完整两项": [
+          {
+            "startTime": 1792058297156,
+            "executionIndex": 10,
+            "source": [
+              {
+                "previousNode": "准备本项完整文字",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 1,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "documents": [
+                        {
+                          "requestId": "fanren-ch14-files-01",
+                          "sourceId": "fanren-C05-pdf",
+                          "fileName": "凡人C05原文片段.pdf",
+                          "expectedMimeType": "application/pdf",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                          "actualMimeType": "application/pdf",
+                          "binaryField": "sourceFile",
+                          "binaryMetadata": {
+                            "fileName": "fanren-C05.pdf",
+                            "mimeType": "application/pdf",
+                            "fileExtension": "pdf",
+                            "fileSize": "68.5 kB",
+                            "bytes": 68513
+                          },
+                          "downloadResponse": {
+                            "statusCode": 200,
+                            "statusMessage": "OK",
+                            "headers": {
+                              "content-type": "application/pdf",
+                              "content-length": "68513",
+                              "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                              "cache-control": "no-store",
+                              "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                              "connection": "close"
+                            }
+                          },
+                          "parser": "Extract From File: PDF",
+                          "rawParsedText": [
+                            "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页",
+                            "凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页",
+                            "凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页"
+                          ],
+                          "parsedPageCount": 3,
+                          "pdfMetadata": {
+                            "numpages": 3,
+                            "numrender": 3,
+                            "info": {
+                              "PDFFormatVersion": "1.7",
+                              "Language": null,
+                              "EncryptFilterName": null,
+                              "IsLinearized": false,
+                              "IsAcroFormPresent": false,
+                              "IsXFAPresent": false,
+                              "IsCollectionPresent": false,
+                              "IsSignaturesPresent": false,
+                              "Title": "凡人修仙传-C05-墨大夫与神手谷",
+                              "Author": "忘语（课堂分页）"
+                            },
+                            "version": "5.4.296"
+                          },
+                          "preparedText": "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                          "materialStatus": "text_available",
+                          "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-pdf\n文件名：凡人C05原文片段.pdf\n完整提取文字：\n凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                          "stage": "prepared_not_sent"
+                        },
+                        {
+                          "requestId": "fanren-ch14-files-01",
+                          "sourceId": "fanren-C05-txt",
+                          "fileName": "凡人C05完整原文.txt",
+                          "expectedMimeType": "text/plain",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                          "actualMimeType": "text/plain",
+                          "binaryField": "sourceFile",
+                          "binaryMetadata": {
+                            "fileName": "fanren-C05.txt",
+                            "mimeType": "text/plain",
+                            "fileExtension": "txt",
+                            "fileSize": "7.35 kB",
+                            "bytes": 7348
+                          },
+                          "downloadResponse": {
+                            "statusCode": 200,
+                            "statusMessage": "OK",
+                            "headers": {
+                              "content-type": "text/plain; charset=utf-8",
+                              "content-length": "7348",
+                              "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                              "cache-control": "no-store",
+                              "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                              "connection": "close"
+                            }
+                          },
+                          "parser": "Extract From File: Text",
+                          "rawParsedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "parsedPageCount": null,
+                          "pdfMetadata": null,
+                          "preparedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "materialStatus": "text_available",
+                          "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-txt\n文件名：凡人C05完整原文.txt\n完整提取文字：\n　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "stage": "prepared_not_sent"
+                        }
+                      ]
+                    },
+                    "pairedItem": [
+                      {
+                        "item": 0
+                      },
+                      {
+                        "item": 1
+                      }
+                    ]
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "标记材料准备状态": [
+          {
+            "startTime": 1792058297157,
+            "executionIndex": 11,
+            "source": [
+              {
+                "previousNode": "汇集完整两项",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 7,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "requestId": "fanren-ch14-files-01",
+                      "stage": "prepared_not_sent",
+                      "documentCount": 2,
+                      "documents": [
+                        {
+                          "requestId": "fanren-ch14-files-01",
+                          "sourceId": "fanren-C05-pdf",
+                          "fileName": "凡人C05原文片段.pdf",
+                          "expectedMimeType": "application/pdf",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                          "actualMimeType": "application/pdf",
+                          "binaryField": "sourceFile",
+                          "binaryMetadata": {
+                            "fileName": "fanren-C05.pdf",
+                            "mimeType": "application/pdf",
+                            "fileExtension": "pdf",
+                            "fileSize": "68.5 kB",
+                            "bytes": 68513
+                          },
+                          "downloadResponse": {
+                            "statusCode": 200,
+                            "statusMessage": "OK",
+                            "headers": {
+                              "content-type": "application/pdf",
+                              "content-length": "68513",
+                              "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                              "cache-control": "no-store",
+                              "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                              "connection": "close"
+                            }
+                          },
+                          "parser": "Extract From File: PDF",
+                          "rawParsedText": [
+                            "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页",
+                            "凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页",
+                            "凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页"
+                          ],
+                          "parsedPageCount": 3,
+                          "pdfMetadata": {
+                            "numpages": 3,
+                            "numrender": 3,
+                            "info": {
+                              "PDFFormatVersion": "1.7",
+                              "Language": null,
+                              "EncryptFilterName": null,
+                              "IsLinearized": false,
+                              "IsAcroFormPresent": false,
+                              "IsXFAPresent": false,
+                              "IsCollectionPresent": false,
+                              "IsSignaturesPresent": false,
+                              "Title": "凡人修仙传-C05-墨大夫与神手谷",
+                              "Author": "忘语（课堂分页）"
+                            },
+                            "version": "5.4.296"
+                          },
+                          "preparedText": "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                          "materialStatus": "text_available",
+                          "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-pdf\n文件名：凡人C05原文片段.pdf\n完整提取文字：\n凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                          "stage": "prepared_not_sent"
+                        },
+                        {
+                          "requestId": "fanren-ch14-files-01",
+                          "sourceId": "fanren-C05-txt",
+                          "fileName": "凡人C05完整原文.txt",
+                          "expectedMimeType": "text/plain",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                          "actualMimeType": "text/plain",
+                          "binaryField": "sourceFile",
+                          "binaryMetadata": {
+                            "fileName": "fanren-C05.txt",
+                            "mimeType": "text/plain",
+                            "fileExtension": "txt",
+                            "fileSize": "7.35 kB",
+                            "bytes": 7348
+                          },
+                          "downloadResponse": {
+                            "statusCode": 200,
+                            "statusMessage": "OK",
+                            "headers": {
+                              "content-type": "text/plain; charset=utf-8",
+                              "content-length": "7348",
+                              "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                              "cache-control": "no-store",
+                              "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                              "connection": "close"
+                            }
+                          },
+                          "parser": "Extract From File: Text",
+                          "rawParsedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "parsedPageCount": null,
+                          "pdfMetadata": null,
+                          "preparedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "materialStatus": "text_available",
+                          "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-txt\n文件名：凡人C05完整原文.txt\n完整提取文字：\n　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "stage": "prepared_not_sent"
+                        }
+                      ],
+                      "modelRequestCount": 0,
+                      "notificationStatus": "not_sent"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ],
+        "返回完整待发送材料": [
+          {
+            "startTime": 1792058297164,
+            "executionIndex": 12,
+            "source": [
+              {
+                "previousNode": "标记材料准备状态",
+                "previousNodeOutput": 0,
+                "previousNodeRun": 0
+              }
+            ],
+            "hints": [],
+            "executionTime": 5,
+            "executionStatus": "success",
+            "data": {
+              "main": [
+                [
+                  {
+                    "json": {
+                      "requestId": "fanren-ch14-files-01",
+                      "stage": "prepared_not_sent",
+                      "documentCount": 2,
+                      "documents": [
+                        {
+                          "requestId": "fanren-ch14-files-01",
+                          "sourceId": "fanren-C05-pdf",
+                          "fileName": "凡人C05原文片段.pdf",
+                          "expectedMimeType": "application/pdf",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf",
+                          "actualMimeType": "application/pdf",
+                          "binaryField": "sourceFile",
+                          "binaryMetadata": {
+                            "fileName": "fanren-C05.pdf",
+                            "mimeType": "application/pdf",
+                            "fileExtension": "pdf",
+                            "fileSize": "68.5 kB",
+                            "bytes": 68513
+                          },
+                          "downloadResponse": {
+                            "statusCode": 200,
+                            "statusMessage": "OK",
+                            "headers": {
+                              "content-type": "application/pdf",
+                              "content-length": "68513",
+                              "content-disposition": "inline; filename=\"fanren-C05.pdf\"",
+                              "cache-control": "no-store",
+                              "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                              "connection": "close"
+                            }
+                          },
+                          "parser": "Extract From File: PDF",
+                          "rawParsedText": [
+                            "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页",
+                            "凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页",
+                            "凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页"
+                          ],
+                          "parsedPageCount": 3,
+                          "pdfMetadata": {
+                            "numpages": 3,
+                            "numrender": 3,
+                            "info": {
+                              "PDFFormatVersion": "1.7",
+                              "Language": null,
+                              "EncryptFilterName": null,
+                              "IsLinearized": false,
+                              "IsAcroFormPresent": false,
+                              "IsXFAPresent": false,
+                              "IsCollectionPresent": false,
+                              "IsSignaturesPresent": false,
+                              "Title": "凡人修仙传-C05-墨大夫与神手谷",
+                              "Author": "忘语（课堂分页）"
+                            },
+                            "version": "5.4.296"
+                          },
+                          "preparedText": "凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                          "materialStatus": "text_available",
+                          "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-pdf\n文件名：凡人C05原文片段.pdf\n完整提取文字：\n凡人修仙传-C05-墨大夫与神手谷\n“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的\n师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名\n瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的\n羡慕和嫉妒。\n“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！\n年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往\n上冒。\n“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔\n过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有\n其他外人，这才松了一口气。\n冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫\n张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而\n是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只\n是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和\n在家中一些不一样的地方。\n在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄\n，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他\n随时都有倒下的可能，令人十分担心。\n张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼\n。\n“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，\n对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n第1页\n\n凡人修仙传-C05-墨大夫与神手谷\n“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，\n正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是\n能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞\n甚至大拍这位老者的马屁。\n韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁\n葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧\n有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的\n出口了。\n“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一\n间屋子。\n“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡\n了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n第六章 无名口诀\n“起来了！起来了！起来了！……”\n一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，\n韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n第2页\n\n凡人修仙传-C05-墨大夫与神手谷\n“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没\n吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出\n。\n“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有\n什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些\n磕磕巴巴。\n韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头\n便被彻底的消灭掉了。\n“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉\n得该去见墨大夫了。\n张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n“墨老！”\n“墨老！”\n墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，\n也没听到二人的招呼声。\n韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干\n等着。\n直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷\n地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名\n弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”\n墨大夫面无表情，把手里的茶又放了下来。\n编纂便签：本件完整保存C05原文；当前范围止于墨大夫说明不教武功，不补后文。\n第3页",
+                          "stage": "prepared_not_sent"
+                        },
+                        {
+                          "requestId": "fanren-ch14-files-01",
+                          "sourceId": "fanren-C05-txt",
+                          "fileName": "凡人C05完整原文.txt",
+                          "expectedMimeType": "text/plain",
+                          "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt",
+                          "actualMimeType": "text/plain",
+                          "binaryField": "sourceFile",
+                          "binaryMetadata": {
+                            "fileName": "fanren-C05.txt",
+                            "mimeType": "text/plain",
+                            "fileExtension": "txt",
+                            "fileSize": "7.35 kB",
+                            "bytes": 7348
+                          },
+                          "downloadResponse": {
+                            "statusCode": 200,
+                            "statusMessage": "OK",
+                            "headers": {
+                              "content-type": "text/plain; charset=utf-8",
+                              "content-length": "7348",
+                              "content-disposition": "inline; filename=\"fanren-C05.txt\"",
+                              "cache-control": "no-store",
+                              "date": "Thu, 15 Oct 2026 09:58:06 GMT",
+                              "connection": "close"
+                            }
+                          },
+                          "parser": "Extract From File: Text",
+                          "rawParsedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "parsedPageCount": null,
+                          "pdfMetadata": null,
+                          "preparedText": "　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "materialStatus": "text_available",
+                          "preparedPrompt": "请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\n\n材料来源：fanren-C05-txt\n文件名：凡人C05完整原文.txt\n完整提取文字：\n　　“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\n",
+                          "stage": "prepared_not_sent"
+                        }
+                      ],
+                      "modelRequestCount": 0,
+                      "notificationStatus": "not_sent"
+                    },
+                    "pairedItem": {
+                      "item": 0
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      "lastNodeExecuted": "返回完整待发送材料"
+    },
+    "executionData": {
+      "contextData": {},
+      "nodeExecutionStack": [],
+      "metadata": {},
+      "waitingExecution": {},
+      "waitingExecutionSource": {},
+      "runtimeData": {
+        "version": 1,
+        "establishedAt": 1792058286838,
+        "source": "webhook",
+        "triggerNode": {
+          "name": "接收两份目录",
+          "type": "n8n-nodes-base.webhook"
+        },
+        "redaction": {
+          "version": 2,
+          "production": false,
+          "manual": false
+        }
+      }
+    },
+    "resumeToken": "0b321e9d27e2554f9a082b3afd26d357a6664b7efa513dfa2920d69db82388b4"
+  },
+  "workflowData": {
+    "id": "24vfEZtIR8158W9b",
+    "name": "凡人修仙传 · 完整章节资料",
+    "nodes": [
+      {
+        "id": "aa7a7738-4821-4ae4-afe6-75d204a35025",
+        "name": "接收两份目录",
+        "webhookId": "1350e374-7f87-4340-a47f-2cb11989a5da",
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2.1,
+        "position": [
+          -1080,
+          120
+        ],
+        "parameters": {
+          "multipleMethods": false,
+          "httpMethod": "POST",
+          "path": "fanren-ch14-files",
+          "authentication": "none",
+          "responseMode": "responseNode",
+          "webhookNotice": "",
+          "options": {}
+        }
+      },
+      {
+        "id": "7eae7d93-5216-44f0-9b7b-22dab56f46b9",
+        "name": "文件目录",
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.5,
+        "position": [
+          -860,
+          120
+        ],
+        "parameters": {
+          "mode": "raw",
+          "duplicateItem": false,
+          "jsonOutput": "={{ JSON.stringify($json.body) }}",
+          "includeOtherFields": false,
+          "options": {}
+        }
+      },
+      {
+        "id": "fbc363cc-85d7-4102-b75a-04a5a3eff6f3",
+        "name": "逐项资料",
+        "type": "n8n-nodes-base.splitOut",
+        "typeVersion": 1,
+        "position": [
+          -640,
+          120
+        ],
+        "parameters": {
+          "fieldToSplitOut": "documents",
+          "include": "allOtherFields",
+          "options": {
+            "destinationFieldName": "document"
+          }
+        }
+      },
+      {
+        "id": "3556108d-05d6-4a02-959e-79f4d1a320fb",
+        "name": "下载完整文件",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.5,
+        "retryOnFail": false,
+        "position": [
+          -420,
+          120
+        ],
+        "parameters": {
+          "curlImport": "",
+          "method": "GET",
+          "url": "={{ $json.document.downloadUrl }}",
+          "authentication": "none",
+          "provideSslCertificates": false,
+          "sendQuery": false,
+          "sendHeaders": false,
+          "sendBody": false,
+          "options": {
+            "response": {
+              "response": {
+                "fullResponse": true,
+                "neverError": false,
+                "responseFormat": "file",
+                "outputPropertyName": "sourceFile"
+              }
+            },
+            "timeout": 30000
+          },
+          "infoMessage": ""
+        }
+      },
+      {
+        "id": "3fe9f1cd-829f-4764-92da-bdddf28018cb",
+        "name": "保留本项身份与下载",
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.5,
+        "position": [
+          -200,
+          120
+        ],
+        "parameters": {
+          "mode": "raw",
+          "duplicateItem": false,
+          "jsonOutput": "={{ JSON.stringify({\n  requestId: $('逐项资料').item.json.requestId,\n  sourceId: $('逐项资料').item.json.document.sourceId,\n  fileName: $('逐项资料').item.json.document.fileName,\n  expectedMimeType: $('逐项资料').item.json.document.expectedMimeType,\n  downloadUrl: $('逐项资料').item.json.document.downloadUrl,\n  actualMimeType: $binary.sourceFile.mimeType,\n  binaryField: 'sourceFile',\n  binaryMetadata: {\n    fileName: $binary.sourceFile.fileName,\n    mimeType: $binary.sourceFile.mimeType,\n    fileExtension: $binary.sourceFile.fileExtension,\n    fileSize: $binary.sourceFile.fileSize,\n    bytes: $binary.sourceFile.bytes\n  },\n  downloadResponse: {\n    statusCode: $json.statusCode,\n    statusMessage: $json.statusMessage,\n    headers: $json.headers\n  }\n}) }}",
+          "includeOtherFields": true,
+          "include": "selected",
+          "includeFields": "statusCode",
+          "options": {
+            "stripBinary": false
+          }
+        }
+      },
+      {
+        "id": "45d75439-7f85-458f-bf88-10b804eb2a98",
+        "name": "按实际MIME选择",
+        "type": "n8n-nodes-base.switch",
+        "typeVersion": 3.4,
+        "position": [
+          20,
+          120
+        ],
+        "parameters": {
+          "mode": "rules",
+          "rules": {
+            "values": [
+              {
+                "conditions": {
+                  "options": {
+                    "caseSensitive": true,
+                    "leftValue": "",
+                    "typeValidation": "strict",
+                    "version": 3
+                  },
+                  "conditions": [
+                    {
+                      "id": "516bfe68-1606-4941-a59b-f4d7921757f4",
+                      "leftValue": "={{ $json.actualMimeType }}",
+                      "rightValue": "application/pdf",
+                      "operator": {
+                        "type": "string",
+                        "operation": "equals"
+                      }
+                    }
+                  ],
+                  "combinator": "and"
+                },
+                "renameOutput": true,
+                "outputKey": "PDF"
+              },
+              {
+                "conditions": {
+                  "options": {
+                    "caseSensitive": true,
+                    "leftValue": "",
+                    "typeValidation": "strict",
+                    "version": 3
+                  },
+                  "conditions": [
+                    {
+                      "id": "9aff6125-e804-4548-94d4-c6cdddf837b1",
+                      "leftValue": "={{ $json.actualMimeType }}",
+                      "rightValue": "text/plain",
+                      "operator": {
+                        "type": "string",
+                        "operation": "equals"
+                      }
+                    }
+                  ],
+                  "combinator": "and"
+                },
+                "renameOutput": true,
+                "outputKey": "TXT"
+              }
+            ]
+          },
+          "looseTypeValidation": false,
+          "options": {
+            "fallbackOutput": "extra",
+            "renameFallbackOutput": "未支持类型",
+            "allMatchingOutputs": false
+          }
+        }
+      },
+      {
+        "id": "678e2dd7-d366-4108-bc8b-4b672493389c",
+        "name": "提取PDF三页",
+        "type": "n8n-nodes-base.extractFromFile",
+        "typeVersion": 1.1,
+        "position": [
+          240,
+          -60
+        ],
+        "parameters": {
+          "operation": "pdf",
+          "binaryPropertyName": "sourceFile",
+          "options": {
+            "joinPages": false,
+            "keepSource": "both",
+            "maxPages": 3
+          }
+        }
+      },
+      {
+        "id": "3bd9f626-81c6-4ac6-b26b-94e982d6703d",
+        "name": "解码UTF8文本",
+        "type": "n8n-nodes-base.extractFromFile",
+        "typeVersion": 1.1,
+        "position": [
+          240,
+          180
+        ],
+        "parameters": {
+          "operation": "text",
+          "binaryPropertyName": "sourceFile",
+          "destinationKey": "text",
+          "options": {
+            "encoding": "utf8",
+            "stripBOM": true,
+            "keepSource": "both"
+          }
+        }
+      },
+      {
+        "id": "60d1586f-1827-42e0-ae03-f17840fe806e",
+        "name": "未支持类型停止",
+        "type": "n8n-nodes-base.stopAndError",
+        "typeVersion": 1,
+        "position": [
+          240,
+          420
+        ],
+        "parameters": {
+          "errorType": "errorMessage",
+          "errorMessage": "={{ \"未支持本项实际 MIME：\" + $json.actualMimeType + \"；sourceId=\" + $json.sourceId }}"
+        }
+      },
+      {
+        "id": "8221fe46-baa3-4260-bddb-f8f753e135a3",
+        "name": "合回两份解析资料",
+        "type": "n8n-nodes-base.merge",
+        "typeVersion": 3.2,
+        "position": [
+          460,
+          60
+        ],
+        "parameters": {
+          "mode": "append",
+          "numberInputs": 2
+        }
+      },
+      {
+        "id": "b9557e8c-116e-4e7b-85b9-1a3ca7874a71",
+        "name": "准备本项完整文字",
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.5,
+        "position": [
+          680,
+          60
+        ],
+        "parameters": {
+          "mode": "raw",
+          "duplicateItem": false,
+          "jsonOutput": "={{ JSON.stringify({\n  requestId: $json.requestId,\n  sourceId: $json.sourceId,\n  fileName: $json.fileName,\n  expectedMimeType: $json.expectedMimeType,\n  downloadUrl: $json.downloadUrl,\n  actualMimeType: $json.actualMimeType,\n  binaryField: $json.binaryField,\n  binaryMetadata: $json.binaryMetadata,\n  downloadResponse: $json.downloadResponse,\n  parser: $json.actualMimeType === 'application/pdf' ? 'Extract From File: PDF' : 'Extract From File: Text',\n  rawParsedText: $json.text,\n  parsedPageCount: Array.isArray($json.text) ? $json.text.length : null,\n  pdfMetadata: $json.actualMimeType === 'application/pdf' ? {\n    numpages: $json.numpages,\n    numrender: $json.numrender,\n    info: $json.info,\n    metadata: $json.metadata,\n    version: $json.version\n  } : null,\n  preparedText: (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text),\n  materialStatus: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'text_available' : 'text_empty',\n  preparedPrompt: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? \"请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\\n\\n材料来源：\" + $json.sourceId + \"\\n文件名：\" + $json.fileName + \"\\n完整提取文字：\\n\" + (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) : null,\n  stage: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'prepared_not_sent' : 'material_incomplete'\n}) }}",
+          "includeOtherFields": false,
+          "options": {}
+        }
+      },
+      {
+        "id": "5db7d6b3-7473-43d8-87e0-2876abc129aa",
+        "name": "汇集完整两项",
+        "type": "n8n-nodes-base.aggregate",
+        "typeVersion": 1,
+        "position": [
+          900,
+          60
+        ],
+        "parameters": {
+          "aggregate": "aggregateAllItemData",
+          "destinationFieldName": "documents",
+          "include": "allFields",
+          "options": {
+            "includeBinaries": false
+          }
+        }
+      },
+      {
+        "id": "ac57de15-5e4b-4e92-b888-3f5a71108be8",
+        "name": "标记材料准备状态",
+        "type": "n8n-nodes-base.set",
+        "typeVersion": 3.5,
+        "position": [
+          1120,
+          60
+        ],
+        "parameters": {
+          "mode": "raw",
+          "duplicateItem": false,
+          "jsonOutput": "={{ JSON.stringify({\n  requestId: $('文件目录').first().json.requestId,\n  stage: $json.documents.length === 2 && $json.documents.every(d => d.materialStatus === 'text_available') ? 'prepared_not_sent' : 'material_incomplete',\n  documentCount: $json.documents.length,\n  documents: $json.documents,\n  modelRequestCount: 0,\n  notificationStatus: 'not_sent'\n}) }}",
+          "includeOtherFields": false,
+          "options": {}
+        }
+      },
+      {
+        "id": "91f02f39-e8ce-491f-a538-2ad216604b67",
+        "name": "返回完整待发送材料",
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.5,
+        "position": [
+          1340,
+          60
+        ],
+        "parameters": {
+          "enableResponseOutput": false,
+          "generalNotice": "",
+          "respondWith": "json",
+          "webhookNotice": "",
+          "responseBody": "={{ $json }}",
+          "options": {
+            "responseCode": 200,
+            "enableStreaming": false
+          }
+        }
+      }
+    ],
+    "connections": {
+      "接收两份目录": {
+        "main": [
+          [
+            {
+              "node": "文件目录",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "文件目录": {
+        "main": [
+          [
+            {
+              "node": "逐项资料",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "逐项资料": {
+        "main": [
+          [
+            {
+              "node": "下载完整文件",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "下载完整文件": {
+        "main": [
+          [
+            {
+              "node": "保留本项身份与下载",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "保留本项身份与下载": {
+        "main": [
+          [
+            {
+              "node": "按实际MIME选择",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "合回两份解析资料": {
+        "main": [
+          [
+            {
+              "node": "准备本项完整文字",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "准备本项完整文字": {
+        "main": [
+          [
+            {
+              "node": "汇集完整两项",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "汇集完整两项": {
+        "main": [
+          [
+            {
+              "node": "标记材料准备状态",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "标记材料准备状态": {
+        "main": [
+          [
+            {
+              "node": "返回完整待发送材料",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "按实际MIME选择": {
+        "main": [
+          [
+            {
+              "node": "提取PDF三页",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "解码UTF8文本",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "未支持类型停止",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "提取PDF三页": {
+        "main": [
+          [
+            {
+              "node": "合回两份解析资料",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "解码UTF8文本": {
+        "main": [
+          [
+            {
+              "node": "合回两份解析资料",
+              "type": "main",
+              "index": 1
+            }
+          ]
+        ]
+      }
+    },
+    "settings": {
+      "saveManualExecutions": true,
+      "saveDataErrorExecution": "all",
+      "saveDataSuccessExecution": "all",
+      "timezone": "Asia/Shanghai",
+      "executionOrder": "v1"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "readonly-isolated-container-native-binary-storage-check",
+  "readAt": "2026-10-15T10:21:45.161Z",
+  "executionId": "5",
+  "businessPosts": 0,
+  "modelRequests": 0,
+  "records": [
+    {
+      "file": "fanren-C05.pdf",
+      "nativeBinaryId": "filesystem-v2:workflows/24vfEZtIR8158W9b/executions/5/binary_data/1cc15af2-2b60-414c-93ba-b6b1a67370df",
+      "storagePath": "/home/node/.n8n/storage/workflows/24vfEZtIR8158W9b/executions/5/binary_data/1cc15af2-2b60-414c-93ba-b6b1a67370df",
+      "actual": {
+        "bytes": 68513,
+        "sha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
+      },
+      "original": {
+        "bytes": 68513,
+        "sha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
+      },
+      "equal": true
+    },
+    {
+      "file": "fanren-C05.txt",
+      "nativeBinaryId": "filesystem-v2:workflows/24vfEZtIR8158W9b/executions/5/binary_data/6a9d0b83-c626-4553-accb-3b6c8c0020ba",
+      "storagePath": "/home/node/.n8n/storage/workflows/24vfEZtIR8158W9b/executions/5/binary_data/6a9d0b83-c626-4553-accb-3b6c8c0020ba",
+      "actual": {
+        "bytes": 7348,
+        "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
+      },
+      "original": {
+        "bytes": 7348,
+        "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
+      },
+      "equal": true
+    }
+  ]
+}

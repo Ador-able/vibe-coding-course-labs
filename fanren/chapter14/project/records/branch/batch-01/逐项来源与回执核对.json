@@ -1,0 +1,63 @@
+{
+  "kind": "actual-parent-child-receipt-input-correspondence",
+  "parentExecutionId": "6",
+  "childExecutionId": "7",
+  "inputOrder": [
+    "fanren-batch-E02",
+    "fanren-batch-E01",
+    "fanren-batch-E03"
+  ],
+  "returnedOrder": [
+    "fanren-batch-E01",
+    "fanren-batch-E02",
+    "fanren-batch-E03"
+  ],
+  "subExecutionsCount": 1,
+  "checks": [
+    {
+      "eventId": "fanren-batch-E01",
+      "routeStatus": "recorded",
+      "id": 1,
+      "originalFullTaskUnchanged": true,
+      "entireChildInputUnchanged": true,
+      "sourceSegmentId": "C04",
+      "completeOriginalChars": 2331,
+      "failTaskType": "boolean",
+      "notificationStatus": "not_sent",
+      "actualParentPairedItem": {
+        "item": 1
+      }
+    },
+    {
+      "eventId": "fanren-batch-E02",
+      "routeStatus": "classroom_failed",
+      "id": 2,
+      "originalFullTaskUnchanged": true,
+      "entireChildInputUnchanged": true,
+      "sourceSegmentId": "C05",
+      "completeOriginalChars": 2465,
+      "failTaskType": "boolean",
+      "notificationStatus": "not_sent",
+      "actualParentPairedItem": {
+        "item": 1
+      }
+    },
+    {
+      "eventId": "fanren-batch-E03",
+      "routeStatus": "needs_review",
+      "id": 3,
+      "originalFullTaskUnchanged": true,
+      "entireChildInputUnchanged": true,
+      "sourceSegmentId": "C03",
+      "completeOriginalChars": 2372,
+      "failTaskType": "string",
+      "notificationStatus": "not_sent",
+      "actualParentPairedItem": {
+        "item": 2
+      }
+    }
+  ],
+  "businessPosts": 0,
+  "modelRequests": 0,
+  "note": "按稳定eventId匹配原业务；本轮父回传pairedItem.item实际为1、1、2，不能用它单独断言与原输入位置一致。"
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "actual-n8n-field-projection",
+  "sourcePrivatePath": ".local/raw-api/eff08688-955b-4d58-8559-64a8bd1debbf.json",
+  "sourcePrivateSha256": "3590eae63e01d3cef178dd9bf635448b4d2bbde9226ddc50b5d88965678dbf04",
+  "publicPath": "records/feedback/production-E01/task-final.json",
+  "publicSha256": "0b50a73c7ed0e0a6a4188e4737d120a88a4c9f5bf63a9637ab1c55b18c890e9d",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:5689/api/v1/data-tables/LIwspkiHey1MgnvF/rows?limit=100",
+    "bodySha256": null
+  },
+  "startedAt": "2026-10-15T09:56:51.115Z",
+  "finishedAt": "2026-10-15T09:56:51.123Z",
+  "status": 200,
+  "excluded": [
+    "认证请求头从未写入采集原件",
+    "账户/权限关系字段不进入 workflow/execution 投影",
+    "Webhook 节点 headers",
+    "二进制存储 data/id；公开原件与实际下载元信息另存"
+  ],
+  "completeBusinessTextPreserved": true
+}

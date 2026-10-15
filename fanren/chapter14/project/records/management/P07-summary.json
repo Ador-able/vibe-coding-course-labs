@@ -1,0 +1,171 @@
+{
+  "phase": "P07",
+  "http": 200,
+  "parent": {
+    "id": "6",
+    "status": "success",
+    "nodes": {
+      "接收本轮完整批次": [
+        {
+          "outputItems": [
+            1
+          ],
+          "error": null
+        }
+      ],
+      "保留本轮名单与材料": [
+        {
+          "outputItems": [
+            1
+          ],
+          "error": null
+        }
+      ],
+      "拆开本轮三个任务": [
+        {
+          "outputItems": [
+            3
+          ],
+          "error": null
+        }
+      ],
+      "同一次子执行传入全部任务": [
+        {
+          "outputItems": [
+            3
+          ],
+          "error": null
+        }
+      ],
+      "返回完整本轮回执": [
+        {
+          "outputItems": [
+            3
+          ],
+          "error": null
+        }
+      ]
+    }
+  },
+  "child": {
+    "id": "7",
+    "status": "success",
+    "nodes": {
+      "接收本轮五项实际输入": [
+        {
+          "outputItems": [
+            3
+          ],
+          "error": null
+        }
+      ],
+      "按原始布尔值分路": [
+        {
+          "outputItems": [
+            1,
+            1,
+            1
+          ],
+          "error": null
+        }
+      ],
+      "保留完整正常回执": [
+        {
+          "outputItems": [
+            1
+          ],
+          "error": null
+        }
+      ],
+      "保留课堂未完成回执": [
+        {
+          "outputItems": [
+            1
+          ],
+          "error": null
+        }
+      ],
+      "保留类型待核回执": [
+        {
+          "outputItems": [
+            1
+          ],
+          "error": null
+        }
+      ],
+      "合并三份完整回执": [
+        {
+          "outputItems": [
+            3
+          ],
+          "error": null
+        }
+      ],
+      "保存本轮完整回执": [
+        {
+          "outputItems": [
+            3
+          ],
+          "error": null
+        }
+      ]
+    }
+  },
+  "inputOrder": [
+    "fanren-batch-E02",
+    "fanren-batch-E01",
+    "fanren-batch-E03"
+  ],
+  "responseOrder": [
+    "fanren-batch-E01",
+    "fanren-batch-E02",
+    "fanren-batch-E03"
+  ],
+  "receiptChecks": [
+    {
+      "eventId": "fanren-batch-E01",
+      "id": 1,
+      "routeStatus": "recorded",
+      "notificationStatus": "not_sent",
+      "originalFailValue": false,
+      "originalFailType": "boolean",
+      "allTaskFieldsSame": true,
+      "selectedOrderSame": true,
+      "sourceSegmentId": "C04",
+      "sourceCharacters": 2331,
+      "outlineAndSettingsPresent": true,
+      "parentExecutionId": "6",
+      "childExecutionId": "7"
+    },
+    {
+      "eventId": "fanren-batch-E02",
+      "id": 2,
+      "routeStatus": "classroom_failed",
+      "notificationStatus": "not_sent",
+      "originalFailValue": true,
+      "originalFailType": "boolean",
+      "allTaskFieldsSame": true,
+      "selectedOrderSame": true,
+      "sourceSegmentId": "C05",
+      "sourceCharacters": 2465,
+      "outlineAndSettingsPresent": true,
+      "parentExecutionId": "6",
+      "childExecutionId": "7"
+    },
+    {
+      "eventId": "fanren-batch-E03",
+      "id": 3,
+      "routeStatus": "needs_review",
+      "notificationStatus": "not_sent",
+      "originalFailValue": "false",
+      "originalFailType": "string",
+      "allTaskFieldsSame": true,
+      "selectedOrderSame": true,
+      "sourceSegmentId": "C03",
+      "sourceCharacters": 2372,
+      "outlineAndSettingsPresent": true,
+      "parentExecutionId": "6",
+      "childExecutionId": "7"
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "kind": "actual-parser-readback-compared-with-frozen-original",
+  "pdf": {
+    "arrayPages": 3,
+    "paragraphs": [
+      {
+        "sourceId": "C05P01",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P02",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P03",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P04",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P05",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P06",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P07",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P08",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P09",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P10",
+        "physicalPage": 1,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P11",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P12",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P13",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P14",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P15",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P16",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P17",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P18",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P19",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P20",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P21",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P22",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P23",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P24",
+        "physicalPage": 2,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P25",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P26",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P27",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P28",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P29",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P30",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P31",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P32",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P33",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P34",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P35",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P36",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P37",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      },
+      {
+        "sourceId": "C05P38",
+        "physicalPage": 3,
+        "inActualPdfPage": true
+      }
+    ],
+    "allOriginalUnitsFound": true,
+    "promptContainsCompleteParsedText": true,
+    "note": "PDF提取含页眉页码和排版空白；核原文单元时只忽略空白，不删除或改写原字。"
+  },
+  "txt": {
+    "bytesSame": true,
+    "promptContainsCompleteParsedText": true
+  },
+  "modelRequests": 0
+}

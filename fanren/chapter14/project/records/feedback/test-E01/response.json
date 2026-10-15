@@ -1,0 +1,27 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://localhost:5689/webhook-test/fanren-ch14-feedback",
+    "bodyText": "{\n  \"eventId\": \"fanren-test-E01\",\n  \"feedbackId\": \"FRFB-test-E01\",\n  \"workId\": \"fanren-xiuxianzhuan\",\n  \"chapterNumber\": 5,\n  \"readerId\": \"classroom-reader-01\",\n  \"feedback\": \"第五章岳堂主让韩立、张铁先打根基，半年后再考核，合格才正式成为内门弟子。整理大纲时请保留这个条件，不要写成两人已经正式通过。\",\n  \"failTask\": false\n}\n",
+    "bodyBytes": 387,
+    "bodySha256": "70e044b6cdc44d1fa75bac7f1723f1fd5a554e80d760f088bf18843d3a67bea0"
+  },
+  "startedAt": "2026-10-15T09:53:06.423Z",
+  "finishedAt": "2026-10-15T09:53:06.904Z",
+  "elapsedMs": 480,
+  "status": 202,
+  "responseHeaders": {
+    "contentType": "application/json; charset=utf-8"
+  },
+  "bodyText": "{\"eventId\":\"fanren-test-E01\",\"taskRowId\":1,\"duplicate\":false,\"status\":\"received\",\"notificationStatus\":\"not_sent\",\"executionId\":\"1\"}",
+  "body": {
+    "eventId": "fanren-test-E01",
+    "taskRowId": 1,
+    "duplicate": false,
+    "status": "received",
+    "notificationStatus": "not_sent",
+    "executionId": "1"
+  },
+  "bodyBytes": 131,
+  "bodySha256": "07eb0f1031c2d799fa6c5f37c8678cebf918f10025f7e01804c6b3e217c228f1"
+}

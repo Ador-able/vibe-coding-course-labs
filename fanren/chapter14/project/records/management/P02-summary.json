@@ -1,0 +1,140 @@
+{
+  "phase": "P02",
+  "http": 202,
+  "body": {
+    "eventId": "fanren-test-E01",
+    "taskRowId": 1,
+    "duplicate": false,
+    "status": "received",
+    "notificationStatus": "not_sent",
+    "executionId": "1"
+  },
+  "executionId": "1",
+  "status": "success",
+  "firstTaskRows": [
+    {
+      "eventId": "fanren-test-E01",
+      "feedbackId": "FRFB-test-E01",
+      "workId": "fanren-xiuxianzhuan",
+      "chapterNumber": 5,
+      "readerId": "classroom-reader-01",
+      "feedback": "第五章岳堂主让韩立、张铁先打根基，半年后再考核，合格才正式成为内门弟子。整理大纲时请保留这个条件，不要写成两人已经正式通过。",
+      "failTask": false,
+      "status": "received",
+      "notificationStatus": "not_sent",
+      "executionId": "1",
+      "feedbackRowId": null,
+      "id": 1,
+      "createdAt": "2026-10-15T09:53:06.890Z",
+      "updatedAt": "2026-10-15T09:53:06.890Z"
+    }
+  ],
+  "finalTaskRows": [
+    {
+      "eventId": "fanren-test-E01",
+      "feedbackId": "FRFB-test-E01",
+      "workId": "fanren-xiuxianzhuan",
+      "chapterNumber": 5,
+      "readerId": "classroom-reader-01",
+      "feedback": "第五章岳堂主让韩立、张铁先打根基，半年后再考核，合格才正式成为内门弟子。整理大纲时请保留这个条件，不要写成两人已经正式通过。",
+      "failTask": false,
+      "status": "completed",
+      "notificationStatus": "not_sent",
+      "executionId": "1",
+      "feedbackRowId": 1,
+      "id": 1,
+      "createdAt": "2026-10-15T09:53:06.890Z",
+      "updatedAt": "2026-10-15T09:53:11.937Z"
+    }
+  ],
+  "feedbackRows": [
+    {
+      "eventId": "fanren-test-E01",
+      "feedbackId": "FRFB-test-E01",
+      "workId": "fanren-xiuxianzhuan",
+      "chapterNumber": 5,
+      "readerId": "classroom-reader-01",
+      "feedback": "第五章岳堂主让韩立、张铁先打根基，半年后再考核，合格才正式成为内门弟子。整理大纲时请保留这个条件，不要写成两人已经正式通过。",
+      "taskRowId": 1,
+      "id": 1,
+      "createdAt": "2026-10-15T09:53:11.916Z",
+      "updatedAt": "2026-10-15T09:53:11.916Z"
+    }
+  ],
+  "nodes": {
+    "接收完整反馈": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "按事件读取已有任务": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "已有任务吗": [
+      {
+        "outputItems": [
+          0,
+          1
+        ],
+        "error": null
+      }
+    ],
+    "登记收到": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "返回202收到": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "保留五秒观察窗口": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "课堂失败条件吗": [
+      {
+        "outputItems": [
+          0,
+          1
+        ],
+        "error": null
+      }
+    ],
+    "写入完整读者反馈": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "登记completed": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ]
+  }
+}

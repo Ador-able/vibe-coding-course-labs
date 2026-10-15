@@ -60,7 +60,7 @@ async function show() {
         if(value==='fanren-C05-pdf')originalPage();return;
       }
       const result=response.body.documents.find(d=>d.sourceId===value); if(!result)throw new Error('当前资料没有对应的实际返回。');
-      $('#work').append(el('h2',result.fileName),origin('实际下载与原生提取结果 · 完整提示尚未发送模型'),table([['实际下载名',result.binaryMetadata?.fileName],['实际类型',result.actualMimeType],['提取状态',result.materialStatus==='text_available'?'已提取文字':'文字为空'],['实际 PDF 页数',result.pdfMetadata?.numpages ?? '不适用']]),prose(result.preparedText||'本轮实际提取文字为空。'),detail('完整待发送提示',raw(result.preparedPrompt)),detail('身份、下载、解析原件',raw(result)));
+      $('#work').append(el('h2',result.fileName),origin('实际下载与原生提取结果 · 完整提示尚未发送模型'),table([['实际下载名',result.binaryMetadata?.fileName],['实际类型',result.actualMimeType],['提取状态',result.materialStatus==='text_available'?'已提取文字':'文字为空'],['实际 PDF 页数',result.pdfMetadata?.numpages ?? '不适用'],['提取形态',Array.isArray(result.rawParsedText)?result.rawParsedText.length+'页数组':typeof result.rawParsedText==='string'?'字符串':'未取得文字'],['文字长度',typeof result.preparedText==='string'?result.preparedText.length+'个UTF-16码元':'未取得文字']]),prose(result.preparedText||'本轮实际提取文字为空。'),detail('完整待发送提示',raw(result.preparedPrompt)),detail('身份、下载、解析原件',raw(result)));
       if(value==='fanren-C05-pdf')originalPage();else $('#source').append(el('h2','TXT 原件回查'),detail('完整 TXT 原文字节内容',prose(await load('files/fanren-C05.txt'))));
     }else if(page==='branch'){
       const manifest=await load('records/index.json');if(!manifest.branch){empty();return;}

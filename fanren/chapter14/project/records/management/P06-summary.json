@@ -1,0 +1,167 @@
+{
+  "phase": "P06",
+  "http": 200,
+  "executionId": "5",
+  "status": "success",
+  "documents": [
+    {
+      "sourceId": "fanren-C05-pdf",
+      "fileName": "凡人C05原文片段.pdf",
+      "downloadName": "fanren-C05.pdf",
+      "mime": "application/pdf",
+      "stage": "prepared_not_sent",
+      "materialStatus": "text_available",
+      "pdfPages": 3,
+      "textArrayPages": 3,
+      "chars": 2531,
+      "textSha256": "293f8209f0d56ff6d5e895ff136a28438617f27362abcc53858f7dd8fde3ec78",
+      "rawTextType": "array",
+      "promptChars": 2681
+    },
+    {
+      "sourceId": "fanren-C05-txt",
+      "fileName": "凡人C05完整原文.txt",
+      "downloadName": "fanren-C05.txt",
+      "mime": "text/plain",
+      "stage": "prepared_not_sent",
+      "materialStatus": "text_available",
+      "textArrayPages": null,
+      "chars": 2500,
+      "textSha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3",
+      "rawTextType": "string",
+      "promptChars": 2650
+    }
+  ],
+  "actualFileReads": [
+    {
+      "requestedAt": "2026-10-15T09:58:06.883Z",
+      "method": "GET",
+      "path": "/fanren-C05.pdf",
+      "fileName": "fanren-C05.pdf",
+      "mimeType": "application/pdf",
+      "bytes": 68513,
+      "sha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d",
+      "userAgent": "n8n",
+      "status": 200
+    },
+    {
+      "requestedAt": "2026-10-15T09:58:06.889Z",
+      "method": "GET",
+      "path": "/fanren-C05.txt",
+      "fileName": "fanren-C05.txt",
+      "mimeType": "text/plain",
+      "bytes": 7348,
+      "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3",
+      "userAgent": "n8n",
+      "status": 200
+    }
+  ],
+  "nodes": {
+    "接收两份目录": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "文件目录": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "逐项资料": [
+      {
+        "outputItems": [
+          2
+        ],
+        "error": null
+      }
+    ],
+    "下载完整文件": [
+      {
+        "outputItems": [
+          2
+        ],
+        "error": null
+      }
+    ],
+    "保留本项身份与下载": [
+      {
+        "outputItems": [
+          2
+        ],
+        "error": null
+      }
+    ],
+    "按实际MIME选择": [
+      {
+        "outputItems": [
+          1,
+          1,
+          0
+        ],
+        "error": null
+      }
+    ],
+    "提取PDF三页": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "解码UTF8文本": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "合回两份解析资料": [
+      {
+        "outputItems": [
+          2
+        ],
+        "error": null
+      }
+    ],
+    "准备本项完整文字": [
+      {
+        "outputItems": [
+          2
+        ],
+        "error": null
+      }
+    ],
+    "汇集完整两项": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "标记材料准备状态": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ],
+    "返回完整待发送材料": [
+      {
+        "outputItems": [
+          1
+        ],
+        "error": null
+      }
+    ]
+  }
+}

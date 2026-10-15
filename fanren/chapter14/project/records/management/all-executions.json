@@ -1,0 +1,61 @@
+{
+  "data": [
+    {
+      "id": "7",
+      "workflowId": "wLL4OnFnSnynDpbR",
+      "mode": "integrated",
+      "status": "success",
+      "startedAt": "2026-10-15T09:59:24.002Z",
+      "stoppedAt": "2026-10-15T09:59:24.097Z"
+    },
+    {
+      "id": "6",
+      "workflowId": "YmX4Ws8TrRBKXTzE",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:59:23.922Z",
+      "stoppedAt": "2026-10-15T09:59:24.112Z"
+    },
+    {
+      "id": "5",
+      "workflowId": "24vfEZtIR8158W9b",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:58:06.856Z",
+      "stoppedAt": "2026-10-15T09:58:17.169Z"
+    },
+    {
+      "id": "4",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "webhook",
+      "status": "error",
+      "startedAt": "2026-10-15T09:57:24.026Z",
+      "stoppedAt": "2026-10-15T09:57:29.105Z"
+    },
+    {
+      "id": "3",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:57:06.116Z",
+      "stoppedAt": "2026-10-15T09:57:06.168Z"
+    },
+    {
+      "id": "2",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "webhook",
+      "status": "success",
+      "startedAt": "2026-10-15T09:56:45.765Z",
+      "stoppedAt": "2026-10-15T09:56:50.850Z"
+    },
+    {
+      "id": "1",
+      "workflowId": "lVRkiIkm1getumx8",
+      "mode": "manual",
+      "status": "success",
+      "startedAt": "2026-10-15T09:53:06.733Z",
+      "stoppedAt": "2026-10-15T09:53:11.941Z"
+    }
+  ],
+  "nextCursor": null
+}

@@ -1,0 +1,696 @@
+{
+  "id": "lVRkiIkm1getumx8",
+  "name": "凡人修仙传 · 反馈收到与完成",
+  "active": true,
+  "versionId": "b5ed9e44-6aa2-4c5d-88e7-85812505ca7c",
+  "activeVersionId": "b5ed9e44-6aa2-4c5d-88e7-85812505ca7c",
+  "nodes": [
+    {
+      "id": "a044db30-b6f0-4022-8fc0-ca7bf9784b1a",
+      "name": "接收完整反馈",
+      "webhookId": "0633c09b-2833-4f19-90bd-a8653c3cad87",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -920,
+        180
+      ],
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "fanren-ch14-feedback",
+        "authentication": "none",
+        "responseMode": "responseNode",
+        "options": {}
+      }
+    },
+    {
+      "id": "589e8dad-c0e1-4b20-b710-d8a945402f02",
+      "name": "按事件读取已有任务",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "alwaysOutputData": true,
+      "position": [
+        -680,
+        180
+      ],
+      "parameters": {
+        "resource": "row",
+        "operation": "get",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "LIwspkiHey1MgnvF"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "eventId",
+              "condition": "eq",
+              "keyValue": "={{ $('接收完整反馈').first().json.body.eventId }}"
+            }
+          ]
+        },
+        "returnAll": false,
+        "limit": 1,
+        "orderBy": false
+      }
+    },
+    {
+      "id": "791122b2-b1ec-497a-94b6-b9ebe65ce00c",
+      "name": "已有任务吗",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -440,
+        180
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "6d45e115-eb1c-49b2-9098-f2ef2a963a7a",
+              "leftValue": "={{ $json.id !== undefined && $json.id !== null }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": false,
+        "options": {}
+      }
+    },
+    {
+      "id": "ceb08bec-b942-48ae-81d6-25ad6679f435",
+      "name": "返回已有实际状态",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -200,
+        -40
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ ({ eventId: $json.eventId, taskRowId: $json.id, duplicate: true, status: $json.status, notificationStatus: $json.notificationStatus, executionId: $json.executionId, feedbackRowId: $json.feedbackRowId }) }}",
+        "options": {
+          "responseCode": 200,
+          "enableStreaming": false
+        }
+      }
+    },
+    {
+      "id": "44648f66-86a4-4690-bca7-8547d2620b37",
+      "name": "登记收到",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        -200,
+        340
+      ],
+      "parameters": {
+        "resource": "row",
+        "operation": "insert",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "LIwspkiHey1MgnvF"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "eventId": "={{ $('接收完整反馈').first().json.body.eventId }}",
+            "feedbackId": "={{ $('接收完整反馈').first().json.body.feedbackId }}",
+            "workId": "={{ $('接收完整反馈').first().json.body.workId }}",
+            "chapterNumber": "={{ $('接收完整反馈').first().json.body.chapterNumber }}",
+            "readerId": "={{ $('接收完整反馈').first().json.body.readerId }}",
+            "feedback": "={{ $('接收完整反馈').first().json.body.feedback }}",
+            "failTask": "={{ $('接收完整反馈').first().json.body.failTask }}",
+            "status": "received",
+            "notificationStatus": "not_sent",
+            "executionId": "={{ $execution.id }}",
+            "feedbackRowId": null
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "eventId",
+              "displayName": "eventId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "feedbackId",
+              "displayName": "feedbackId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "workId",
+              "displayName": "workId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "chapterNumber",
+              "displayName": "chapterNumber",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "readerId",
+              "displayName": "readerId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "feedback",
+              "displayName": "feedback",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "failTask",
+              "displayName": "failTask",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "boolean",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "notificationStatus",
+              "displayName": "notificationStatus",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "executionId",
+              "displayName": "executionId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "feedbackRowId",
+              "displayName": "feedbackRowId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "optimizeBulk": false
+        }
+      }
+    },
+    {
+      "id": "9b21ab5d-2018-4139-923a-4d215b90604b",
+      "name": "返回202收到",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        40,
+        340
+      ],
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ ({ eventId: $json.eventId, taskRowId: $json.id, duplicate: false, status: $json.status, notificationStatus: $json.notificationStatus, executionId: $json.executionId }) }}",
+        "options": {
+          "responseCode": 202,
+          "enableStreaming": false
+        }
+      }
+    },
+    {
+      "id": "5ae58bd6-acad-4ef6-b85f-0ea623deb110",
+      "name": "保留五秒观察窗口",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        280,
+        340
+      ],
+      "parameters": {
+        "resume": "timeInterval",
+        "amount": 5,
+        "unit": "seconds"
+      },
+      "webhookId": "bbb8fb88-6432-4018-8391-354c5b1ed072"
+    },
+    {
+      "id": "68951b39-fe23-4e39-9144-19f7f6d28338",
+      "name": "课堂失败条件吗",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        520,
+        340
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "9ed5b992-eae0-45fb-a4e4-da733c2276c0",
+              "leftValue": "={{ $('接收完整反馈').first().json.body.failTask }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "looseTypeValidation": false,
+        "options": {}
+      }
+    },
+    {
+      "id": "133aa513-8756-4030-817e-9b0f65cc987e",
+      "name": "登记failed",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        760,
+        100
+      ],
+      "parameters": {
+        "resource": "row",
+        "operation": "update",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "LIwspkiHey1MgnvF"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "id",
+              "condition": "eq",
+              "keyValue": "={{ $('登记收到').first().json.id }}"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "status": "failed",
+            "notificationStatus": "not_sent"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "notificationStatus",
+              "displayName": "notificationStatus",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "dryRun": false
+        }
+      }
+    },
+    {
+      "id": "5054ec6b-2454-43c4-bbf0-4c21403f3d32",
+      "name": "课堂条件实际失败",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        1000,
+        100
+      ],
+      "parameters": {
+        "errorType": "errorMessage",
+        "errorMessage": "={{ '课堂指定 failTask=true：' + $json.eventId + '；任务已登记 failed，未写入成功反馈，未发送通知。' }}"
+      }
+    },
+    {
+      "id": "d382dddf-8917-4a63-aec7-36e5fb8ab17d",
+      "name": "写入完整读者反馈",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        760,
+        540
+      ],
+      "parameters": {
+        "resource": "row",
+        "operation": "insert",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "PaZ7cN1QKrACK9B7"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "eventId": "={{ $('接收完整反馈').first().json.body.eventId }}",
+            "feedbackId": "={{ $('接收完整反馈').first().json.body.feedbackId }}",
+            "workId": "={{ $('接收完整反馈').first().json.body.workId }}",
+            "chapterNumber": "={{ $('接收完整反馈').first().json.body.chapterNumber }}",
+            "readerId": "={{ $('接收完整反馈').first().json.body.readerId }}",
+            "feedback": "={{ $('接收完整反馈').first().json.body.feedback }}",
+            "taskRowId": "={{ $('登记收到').first().json.id }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "eventId",
+              "displayName": "eventId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "feedbackId",
+              "displayName": "feedbackId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "workId",
+              "displayName": "workId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "chapterNumber",
+              "displayName": "chapterNumber",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "readerId",
+              "displayName": "readerId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "feedback",
+              "displayName": "feedback",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "taskRowId",
+              "displayName": "taskRowId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "optimizeBulk": false
+        }
+      }
+    },
+    {
+      "id": "10815c10-25db-47a5-994e-a2d193a81eda",
+      "name": "登记completed",
+      "type": "n8n-nodes-base.dataTable",
+      "typeVersion": 1.1,
+      "position": [
+        1000,
+        540
+      ],
+      "parameters": {
+        "resource": "row",
+        "operation": "update",
+        "dataTableId": {
+          "__rl": true,
+          "mode": "id",
+          "value": "LIwspkiHey1MgnvF"
+        },
+        "matchType": "allConditions",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "id",
+              "condition": "eq",
+              "keyValue": "={{ $('登记收到').first().json.id }}"
+            }
+          ]
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "status": "completed",
+            "notificationStatus": "not_sent",
+            "feedbackRowId": "={{ $json.id }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "status",
+              "displayName": "status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "notificationStatus",
+              "displayName": "notificationStatus",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "feedbackRowId",
+              "displayName": "feedbackRowId",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "dryRun": false
+        }
+      }
+    }
+  ],
+  "connections": {
+    "接收完整反馈": {
+      "main": [
+        [
+          {
+            "node": "按事件读取已有任务",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "按事件读取已有任务": {
+      "main": [
+        [
+          {
+            "node": "已有任务吗",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "已有任务吗": {
+      "main": [
+        [
+          {
+            "node": "返回已有实际状态",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "登记收到",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "登记收到": {
+      "main": [
+        [
+          {
+            "node": "返回202收到",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "返回202收到": {
+      "main": [
+        [
+          {
+            "node": "保留五秒观察窗口",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "保留五秒观察窗口": {
+      "main": [
+        [
+          {
+            "node": "课堂失败条件吗",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "课堂失败条件吗": {
+      "main": [
+        [
+          {
+            "node": "登记failed",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "写入完整读者反馈",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "登记failed": {
+      "main": [
+        [
+          {
+            "node": "课堂条件实际失败",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "写入完整读者反馈": {
+      "main": [
+        [
+          {
+            "node": "登记completed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "saveManualExecutions": true,
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "timezone": "Asia/Shanghai",
+    "executionOrder": "v1"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "kind": "actual-executable-source-and-complete-inputs",
-  "sourceSha256": "5800dc9d0721f63e37cb5059e2e029f3593caf0abfc9a160cee666358a154b5f",
+  "sourceSha256": "c49ba5b218c3154a06b56f400c4f2d606cdb7e67697bf231dd20d55b11f23563",
   "frozenInputSha256": "f85a40d44ec2f4014b7af8a955da825e9c7dc19bd5b36f6d5581adc4b24d76b3",
   "files": [
     {
@@ -195,13 +195,13 @@
     },
     {
       "path": "public/app.css",
-      "bytes": 2701,
-      "sha256": "b17e9bfa0e88da933f6769b140487de4cc3a38c0f69b3f30ade724090a098678"
+      "bytes": 2860,
+      "sha256": "9a008b9fc82adb2a6ee70a515d2e4e366eb7561ac80adbdc740bf1d09007f741"
     },
     {
       "path": "public/app.js",
-      "bytes": 11410,
-      "sha256": "6c60f518f96b5c82bf01a1adfa3d42aa769437d716d17a423730034a064d7053"
+      "bytes": 11690,
+      "sha256": "325a1cfc11f01417e7a02ad907a59178efc2dd3b3f62797715a9222afcbadc32"
     },
     {
       "path": "public/authorization.html",

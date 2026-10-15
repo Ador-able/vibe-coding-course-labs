@@ -1,0 +1,194 @@
+{
+  "kind": "native-browser-capture-no-resize-no-business-reexecution",
+  "browser": "Edge",
+  "method": "Page.bringToFront → Page.captureScreenshot fromSurface=true captureBeyondViewport=true；浏览器原生DPR渲染，无事后放大",
+  "executionSourceSha256": "5800dc9d0721f63e37cb5059e2e029f3593caf0abfc9a160cee666358a154b5f",
+  "displaySourceSha256": "c49ba5b218c3154a06b56f400c4f2d606cdb7e67697bf231dd20d55b11f23563",
+  "businessPostsDuringCapture": 0,
+  "modelRequests": 0,
+  "afterCapture": "临时Emulation视口均已清除",
+  "images": [
+    {
+      "path": "194-收到以后实际失败-2560.png",
+      "width": 2560,
+      "height": 2000,
+      "bytes": 486208,
+      "sha256": "b9e53e1a2da0340695ed49d14d2424a86da72814b93b1a7865250723661443f9",
+      "url": "http://127.0.0.1:4360/webhook.html",
+      "selection": "production-E02",
+      "actions": "选择课堂失败第六章E02，查看结果；C05正文滚到2901.7末尾",
+      "viewport": {
+        "width": 1280,
+        "height": 1100,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 90,
+        "width": 1280,
+        "height": 1000
+      }
+    },
+    {
+      "path": "196-固定日期提案与IANA换算-2560.png",
+      "width": 2560,
+      "height": 1880,
+      "bytes": 399042,
+      "sha256": "ab34914bad3e5798589b715769c573d8cd8dd4d9e1237c141df3f6d21a61aee4",
+      "url": "http://127.0.0.1:4360/calendar.html",
+      "actions": "查看提案；只展示已有固定教师提案和本地IANA计算；未操作任何日历",
+      "viewport": {
+        "width": 1280,
+        "height": 1050,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 90,
+        "width": 1280,
+        "height": 940
+      }
+    },
+    {
+      "path": "198-正式反馈与考核原句-2560.png",
+      "width": 2560,
+      "height": 1840,
+      "bytes": 436753,
+      "sha256": "325af4aad407f6f971eb08ff25951249cace4b23069755bba89585db5f549a8d",
+      "url": "http://127.0.0.1:4360/flow.html",
+      "selection": "production-E01",
+      "actions": "选择正式第五章E01，查看结果；C04正文滚到2736末尾",
+      "viewport": {
+        "width": 1280,
+        "height": 1050,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 90,
+        "width": 1280,
+        "height": 920
+      }
+    },
+    {
+      "path": "203-字符串false保留待核-2560.png",
+      "width": 2560,
+      "height": 1880,
+      "bytes": 447900,
+      "sha256": "9bf9b9db6836a2836cae32bc2eecca8097844505dda4713aaadb01414664abab",
+      "url": "http://127.0.0.1:4360/branch.html",
+      "selection": "E03",
+      "actions": "选择E03，查看结果；C03正文实际滚动1995.4286显示第四章规则",
+      "viewport": {
+        "width": 1280,
+        "height": 1050,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 90,
+        "width": 1280,
+        "height": 940
+      }
+    },
+    {
+      "path": "204-真实两表引用与空查询-2560.png",
+      "width": 2560,
+      "height": 1730,
+      "bytes": 457661,
+      "sha256": "0d20bd6d907454ddfd8e93ee9748da875b3651ee54e393df1da2bca5d0020d69",
+      "url": "http://127.0.0.1:4360/ids.html",
+      "selection": "production-E01",
+      "actions": "查看结果；展开错用执行ID实际查询；C04正文滚到2736末尾",
+      "viewport": {
+        "width": 1280,
+        "height": 1240,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 300,
+        "width": 1280,
+        "height": 865
+      }
+    },
+    {
+      "path": "205-接收者验收仍未检查-2560.png",
+      "width": 2560,
+      "height": 2080,
+      "bytes": 605524,
+      "sha256": "4249f2834a789ae40777f84d16616017736f192a19edeb095a12685641865326",
+      "url": "http://127.0.0.1:4360/acceptance.html",
+      "actions": "查看验收卡；C04正文滚到2736末尾；四项均未检查，未提交业务",
+      "viewport": {
+        "width": 1280,
+        "height": 1150,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 90,
+        "width": 1280,
+        "height": 1040
+      }
+    },
+    {
+      "path": "206-PDF三页数组与原页-2560.png",
+      "width": 2560,
+      "height": 1840,
+      "bytes": 608619,
+      "sha256": "273ee8a7a572c03b6fe05a9d7a0d0afd82745a21012cfe5933e31c3c6996ba01",
+      "url": "http://127.0.0.1:4360/files.html",
+      "selection": "fanren-C05-pdf",
+      "actions": "查看PDF；原页选择第3页；提取正文滚到3827.4末尾",
+      "viewport": {
+        "width": 1280,
+        "height": 1240,
+        "deviceScaleFactor": 2
+      },
+      "clip": {
+        "x": 0,
+        "y": 300,
+        "width": 1280,
+        "height": 920
+      }
+    },
+    {
+      "path": "206-TXT字符串真实形态-2560.png",
+      "width": 2560,
+      "height": 1680,
+      "bytes": 164607,
+      "sha256": "c7fcf86c3ce7b2204b71ebab192b124496c8816ee5a05375356166f6c5823d03",
+      "url": "http://127.0.0.1:4360/files.html",
+      "selection": "fanren-C05-txt",
+      "actions": "查看TXT；仅捕获实际形态和长度表",
+      "viewport": {
+        "width": 1280,
+        "height": 1240,
+        "deviceScaleFactor": 4
+      },
+      "clip": {
+        "x": 30,
+        "y": 300,
+        "width": 640,
+        "height": 420
+      }
+    },
+    {
+      "path": "P02-原生测试监听-2560.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 183979,
+      "sha256": "e990ff1af532a51be8602af36e77307934ffd7a5115b69966c6a9809189e2169",
+      "kind": "原生n8n编辑器归档；不作为测试监听文字完整入图的证明"
+    },
+    {
+      "path": "正式反馈-原生发布版本-2560.png",
+      "width": 2560,
+      "height": 1600,
+      "bytes": 245866,
+      "sha256": "9305f83bb775c542ba26ed4439d2a3230d9a5abc4defa8e594a6741d554e22b1",
+      "kind": "原生n8n编辑器归档；不作为测试监听文字完整入图的证明"
+    }
+  ]
+}
