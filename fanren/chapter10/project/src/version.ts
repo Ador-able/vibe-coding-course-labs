@@ -1,6 +1,6 @@
-import {readFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
 
-// 交付包自带固定源码版本，运行实验不依赖 Git 仓库。
+// 课堂记录对应读者克隆仓库中的实际提交。
 export function getCodeVersion():string{
-  return JSON.parse(readFileSync(new URL('../source-version.json',import.meta.url),'utf8')).sourceVersion;
+  return execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).trim();
 }

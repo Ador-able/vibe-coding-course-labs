@@ -1,0 +1,46 @@
+{
+  "sourceName": "《凡人修仙传》（校对版全本+番外）作者：忘语 (1).txt",
+  "sourceEncoding": "gb18030",
+  "sourceBytes": 15079878,
+  "sourceSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "normalizedSource": "仅将CRLF换为LF以核对正文位置；未校正任何字句。",
+  "items": [
+    {
+      "path": "materials/凡人原文/第一章.md",
+      "title": "C03 原文：七玄门与炼骨崖",
+      "sha256": "a226ff465d4214e0deba51f2f89dde362fbc738c978fa10289924070d5603cde",
+      "bodySha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349",
+      "bodyCodePoints": 2371,
+      "hanCharacters": 2036,
+      "normalizedSourceStart": 5303,
+      "normalizedSourceEnd": 7674,
+      "sourceBodyExact": true,
+      "bodyBoundary": "首行教学标题与其后一行空白不入正文；仅移除文件尾换行，保留其余全部字符。"
+    },
+    {
+      "path": "materials/凡人原文/第二章.md",
+      "title": "C04 原文：攀岩与考核结果",
+      "sha256": "7fa5cbd063a028c04574a54f64d4648a784092237c3bdc8628e6730ff4382199",
+      "bodySha256": "5aa9c4b11cca0c11232895a702d91fb74e3f5a5d9f5d5921edacecb5d3c265f8",
+      "bodyCodePoints": 2330,
+      "hanCharacters": 2015,
+      "normalizedSourceStart": 7675,
+      "normalizedSourceEnd": 10005,
+      "sourceBodyExact": true,
+      "bodyBoundary": "首行教学标题与其后一行空白不入正文；仅移除文件尾换行，保留其余全部字符。"
+    },
+    {
+      "path": "materials/凡人原文/第三章.md",
+      "title": "C05 原文：墨大夫与神手谷",
+      "sha256": "1d07ed4d64281424e741c9d479559f4e72abd3dde5ecf0b4d70537406dfc1c56",
+      "bodySha256": "0dd7418a8d8c49a706f632522bd09757e3c1e2d84bdc48ef6fba2325b67fbc3e",
+      "bodyCodePoints": 2464,
+      "hanCharacters": 2088,
+      "normalizedSourceStart": 10006,
+      "normalizedSourceEnd": 12470,
+      "sourceBodyExact": true,
+      "bodyBoundary": "首行教学标题与其后一行空白不入正文；仅移除文件尾换行，保留其余全部字符。"
+    }
+  ],
+  "teachingScope": "C03/C04/C05完整原文与相应完整片段大纲、人物及规则；不声称是全书大纲。"
+}

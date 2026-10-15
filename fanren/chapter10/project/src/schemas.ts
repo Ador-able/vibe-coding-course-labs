@@ -17,7 +17,7 @@ export const draftInput=z.object({
   expectedChapterRevision:z.number().int().nonnegative(),
   expectedPreviousRevisions:z.array(z.object({number:chapterNumber,revision:z.number().int().positive()})),
   title:z.string().trim().min(1),
-  body:z.string().trim().min(1),
+  body:z.string().regex(/\S/u,'正文不能为空'),
 });
 export const approvedExcerpt=z.strictObject({
   workId,

@@ -1,9 +1,9 @@
 {
-  "name": "qinglan-continuous-agent-lab",
+  "name": "fanren-continuous-agent-lab",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "青岚修仙录：基于成熟 Harness 的连续 Agent 综合练习",
+  "description": "凡人修仙传：基于成熟 Harness 的连续 Agent 综合练习",
   "packageManager": "pnpm@11.20.0",
   "engines": {
     "node": ">=24.12.0"
@@ -14,6 +14,7 @@
     "mcp": "node dist/mcp.js",
     "prototype": "node scripts/start-prototype.mjs",
     "practice:restore": "node scripts/restore-practice.mjs",
+    "practice:new": "node scripts/prepare-fanren.mjs",
     "practice:snapshot": "node scripts/savepoint.mjs",
     "host:check": "node scripts/prepare-host.mjs",
     "agent": "node scripts/run-task.mjs"
