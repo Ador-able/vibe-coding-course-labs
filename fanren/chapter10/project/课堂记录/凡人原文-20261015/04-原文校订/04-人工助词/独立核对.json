@@ -1,0 +1,47 @@
+{
+  "database": "data/practice-cd15599b-ce72-4a86-8e2b-73c46f76ffd9.sqlite",
+  "beforeRevision": 3,
+  "afterRevision": 4,
+  "origin": "human",
+  "workRevision": 4,
+  "status": "draft",
+  "differences": [
+    {
+      "codePointIndex": 1232,
+      "before": "的",
+      "after": "地"
+    }
+  ],
+  "exactlyOneCodePointChanged": true,
+  "allOtherTextAndTitleUnchanged": true,
+  "otherChapterWorkHistoryAndTasksUnchanged": true,
+  "beforeBodySha256": "3b076927bbd8cb99cf251556a358c653a6589bc592c63299b3c31c89e0d10cb1",
+  "afterBodySha256": "63ead73bbb6b6b479eecb3c4af088abc3e5a4033f23a2346695c58b36fbf1f8d",
+  "domBodySha256": "63ead73bbb6b6b479eecb3c4af088abc3e5a4033f23a2346695c58b36fbf1f8d",
+  "httpReadback": [
+    {
+      "url": "http://127.0.0.1:4465/api/draft",
+      "status": 200,
+      "sequence": 49
+    },
+    {
+      "url": "http://127.0.0.1:4465/api/work?work=fanren",
+      "status": 200,
+      "sequence": 55
+    }
+  ],
+  "screenshot": {
+    "file": "167-人工r4规范助词-原生2K.png",
+    "width": 2560,
+    "height": 1440,
+    "sha256": "839ba4b8d00241367b82f35df06be46ace67530185c7aa8bc97fec7d1aa64a66",
+    "viewportCss": {
+      "width": 1280,
+      "height": 720
+    },
+    "deviceScaleFactor": 2,
+    "upscaled": false,
+    "editedPixels": false,
+    "overrideCleared": true
+  }
+}
