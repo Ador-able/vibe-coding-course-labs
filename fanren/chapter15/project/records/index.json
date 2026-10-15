@@ -1,1 +1,105 @@
-[]
+[
+  {
+    "lesson": 162,
+    "title": "完整凡人原文的只读调查",
+    "summary": "一次自然任务正常结束；实际读完整源码、初始化GET与五表实录，源码和业务保持。没有把既有GET冒充模型实时请求。",
+    "finalResponse": "records/凡人原文-20261015/01-只读调查/investigation/final-response.txt",
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/01-只读调查/report.json",
+        "title": "真实任务与前后范围"
+      },
+      {
+        "path": "records/凡人原文-20261015/01-只读调查/investigation/protocol.jsonl",
+        "title": "完整宿主协议"
+      }
+    ]
+  },
+  {
+    "lesson": 164,
+    "title": "规则来源与一次实际调查",
+    "summary": "三份空会话只核来源，不发模型任务；随后一个自然任务在prototype目录读取两份规则与完整业务材料。",
+    "comparison": {
+      "columns": [
+        "条件",
+        "规则来源",
+        "自然任务"
+      ],
+      "rows": [
+        [
+          "项目根/32768",
+          "项目AGENTS.md",
+          "0"
+        ],
+        [
+          "prototype/32768",
+          "项目与prototype两份AGENTS.md",
+          "0"
+        ],
+        [
+          "prototype/0",
+          "[]",
+          "0"
+        ],
+        [
+          "prototype实际调查",
+          "两份来源且确实打开规则/参考",
+          "1"
+        ]
+      ]
+    },
+    "finalResponse": "records/凡人原文-20261015/02-规则来源/实际规则调查/rules/final-response.txt",
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/02-规则来源/来源目录/report.json",
+        "title": "三份空会话真实记录"
+      },
+      {
+        "path": "records/凡人原文-20261015/02-规则来源/实际规则调查/report.json",
+        "title": "唯一自然规则任务"
+      }
+    ]
+  },
+  {
+    "lesson": 165,
+    "title": "同一完整原文输入的历史与正确行为",
+    "summary": "沿成熟测试执行四个首次独立用例，无云端模型。历史副本正常保存暴露等待输入被覆盖，正确实现暂停编辑；两版服务前中断均保留本地稿。",
+    "comparison": {
+      "columns": [
+        "实现",
+        "正常保存",
+        "服务前中断"
+      ],
+      "rows": [
+        [
+          "历史两行为恢复",
+          "FAIL：POST/GET等待输入被接受，读回覆盖",
+          "PASS：服务POST=0，五表不变"
+        ],
+        [
+          "当前正确实现",
+          "PASS：等待禁用，读回后恢复",
+          "PASS：服务POST=0，五表不变"
+        ]
+      ]
+    },
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/03-保存等待红绿/正确实现-abort/record.json",
+        "title": "正确实现-abort完整原始记录"
+      },
+      {
+        "path": "records/凡人原文-20261015/03-保存等待红绿/历史恢复-normal/record.json",
+        "title": "历史恢复-normal完整原始记录"
+      },
+      {
+        "path": "records/凡人原文-20261015/03-保存等待红绿/历史恢复-abort/record.json",
+        "title": "历史恢复-abort完整原始记录"
+      },
+      {
+        "path": "records/凡人原文-20261015/03-保存等待红绿/正确实现-normal/record.json",
+        "title": "正确实现-normal完整原始记录"
+      }
+    ]
+  }
+]

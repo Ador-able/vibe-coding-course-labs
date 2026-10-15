@@ -1,0 +1,51 @@
+**不能仅凭“保存返回 200、读回正文相同”，就认定保存提示、远端对照和重新编辑入口已经足够清楚。**这能支持一次保存与读回的功能判断；人能否辨认稿件状态、理解下一步操作，仍需观察实际页面。现有材料也不足以判定页面存在故障。[save-review.md 第9行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/docs/save-review.md:9)明确区分了这两层判断。
+
+仓库已核实，结束前再次核对结果一致：
+
+- 真实 Git 根：`D:\Projects\Knowledge\.coursebook-work\fanren-ch15-experiments`
+- HEAD：`85a4de5c545a5ffa43cd44330d9ff24bc75fa109`
+- 分支：`codex/fanren-ch15-experiments`
+- cwd：该根下的 `fanren\chapter15\project\prototype`
+- 工作区干净；未跟踪文件列表为空。
+
+**功能方面，已知的是源码行为和初始化快照，运行中的保存结果仍待核。**
+
+完整章稿由 `/api/work` 经 Store 读取，页面为每章保留完整章名、正文、读入章节修订、作品修订及全部前文章节修订；保存请求同时发送这些内容与基线。对应位置是 [prototype-http.ts 第18—24行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/prototype-http.ts:18)、[app.js 第15、18行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:15)及 [schemas.ts 第13—20行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/schemas.ts:13)。标题会去除首尾空白；正文只检查非空，不作同样裁剪。
+
+Store 在同一事务内检查作品、本章及前文章节修订，然后写当前章和历史版本。HTTP 在保存返回后才发送 200；随后 GET 取得读取时的当前作品。页面等待两步完成后才清除本地修改。**前端没有额外执行“提交正文与读回正文逐字相等”的断言**，这需要独立证据。[store.ts 第26、80、91行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/store.ts:91)、[prototype-http.ts 第24行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/prototype-http.ts:24)、[app.js 第18行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:18)。
+
+已完整读到的 [162-准备完整当前对象.json](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/inputs/162-准备完整当前对象.json:3)记录时间为 `2026-10-15T10:04:50.042Z`；第4行明确说明它是**教师初始化后的实际 GET 与五表快照**，不能冒称本轮实时 HTTP：
+
+| 快照内容 | 实际记录位置 |
+|---|---|
+| `/api/work` 状态200，作品r1；三章均为human/draft r1、`basisCurrent=true`，任务及线程引用为空 | 第17、56、59、75、96行起 |
+| 三章完整正文 | 第64、80、101行 |
+| `works`、`work_versions`各1行 | 第129、136行 |
+| `chapters`、`chapter_versions`各3行 | 第144／150／156、164／170／176行 |
+| `tasks`为空；三章`exactBody=true` | 第179、181行起 |
+
+这不是保存课堂标记后的r2实录。[独立业务预期.json 第23行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/inputs/独立业务预期.json:23)中的完整A及第27行起的结果属于**预期**；第35—40行限定了服务收到POST前abort，并明确未覆盖提交后GET失败、未知终态、并发和审美。本轮没有执行这些场景。
+
+**信息辨认方面，入口和状态文字已经存在，是否容易理解仍待实际观察。**
+
+| 要观察的具体状态 | 源码已知行为，以及人需要辨认的内容 |
+|---|---|
+| 本地尚未保存 | 显示“有未保存修改”；需看人能否分清编辑区内容与已保存版本。[app.js 第10—11行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:10) |
+| POST等待、POST已完成但GET仍等待 | 两阶段均暂停编辑，提示持续为“正在保存草稿。”；需观察人是否理解此时仍在等待确认。[app.js 第12、18行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:12) |
+| 两步成功，随后再次输入 | 显示“已保存 r…”，恢复编辑；新输入应再次成为未保存修改。需看成功提示与新修改状态能否被同时正确理解。[app.js 第11、18行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:18) |
+| 409冲突 | 本次旧基线被拒，本地编辑保留并提示读取当前稿；需看人能否理解其他入口已保存的新稿与自己的本地稿。[app.js 第7行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:7)、[prototype-http.ts 第31行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/prototype-http.ts:31) |
+| 冲突后读回并对照 | 上方保留本地稿，下方显示远端修订号和只读正文；**没有单列远端章名**。需观察长正文下对照区是否容易发现、两份稿件是否容易分清。[app.js 第16行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:16)、[index.html 第18行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/index.html:18) |
+| 点击“以当前稿重新编辑” | 删除该章旧编辑缓冲，按读回快照重建章名、正文和基线；不会自动合并，也不会保存。需观察人是否理解上方本地字句将被替换，并自行决定迁回哪些内容。[app.js 第15、20行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:20) |
+| 连接中断、结果未确认 | 保留本地修改，并对网络未确认／内部错误阻止继续保存，先读当前稿；不能由没有响应推断未写入。[app.js 第7—8、18行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:7)、[workbench-boundaries.md 第7行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/docs/workbench-boundaries.md:7) |
+
+还有两个功能边界会影响人的理解：有本地修改时，**读回对照不会更新该编辑缓冲的旧保存基线**；409本身也没有强制锁住再次保存，旧基线重试仍会被Store拒绝。“保留本地”指当前页面的`edits Map`，离页只有提醒，并非本地落盘备份。[app.js 第4、16、18、21行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:16)。
+
+程序可以检查修订、拒绝过期写入、保存和读回数据；**哪些字句要合并、入口是否清楚、内容是否正式采用，由人决定**。`human`是保存来源字段，保存状态仍为`draft`；采用是另一项操作。[store.ts 第107、119行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/store.ts:107)。第二章变动后，第三章即使正文不变，也可能因前文修订改变而`basisCurrent=false`，这不是文学品质结论。[store.ts 第134—137行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/store.ts:134)。
+
+**审美方面，已知的是样式定义，实际观感待核。**源码定义了暖色背景、宋体正文、留白、唯一`.primary`保存按钮、折叠资料和错误详情，以及窄屏样式；见 [index.html 第8—18行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/index.html:8)、[app.css 第1—11行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.css:1)。本轮没有浏览器渲染观察，因此长文阅读舒适度、提示显著程度、对照区滚动距离、窄屏布局及整体美感均未验证，也没有据此调整界面。
+
+来源边界保持不变：[完整教师初始化.json 第3—14行](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/inputs/完整教师初始化.json:3)记载原作作者忘语、来源路径和哈希；第54／62／70行起分别是教学第1—3章对应C03／C04／C05。完整正文在第56／64／72行，保留了正午期限、记名例外、半年后复试“合格入内门／不合格入外门”以及医术“也许”的限定。课堂标记不是小说情节，本轮没有新增后文事实。
+
+实际读取范围为当前project内的16份文件：指定的七份完整文件；根目录与prototype两份`AGENTS.md`；两份保存参考文档；`index.html`、`app.css`；`162-完整调查任务.txt`、`164-完整规则调查任务.txt`和`输入冻结清单.json`。其中当前对象210行已全部读取，包括全部正文和五表内容。规则与参考文档是本轮实际打开读取的；文件存在不能证明过去已阅读或遵循。未打开实际数据库、历史副本正文或来源字段指向的共享原文文件。
+
+全程未安装、build/test、启动服务、联网、保存／采用、修改或提交文件。两次读取进程创建失败后均已重试成功；首次Git提示全局ignore访问被拒、未取得内容，随后禁用全局配置与全局ignore完成仓库核对。

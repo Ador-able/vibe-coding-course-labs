@@ -1,0 +1,10 @@
+{
+  "label": "fixed",
+  "command": "node --test scripts/test-saving.mjs",
+  "channel": "msedge",
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project",
+  "code": 0,
+  "signal": null,
+  "stdout": "(node:60248) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnormal: PASS；完整记录：D:\\Projects\\Knowledge\\.coursebook-work\\fanren-ch15-experiments\\fanren\\chapter15\\project\\runs\\regression-d087ab24-474b-40c6-b24d-5c5214ba0f69\\record.json\n✔ 正常保存：完整A、POST等待、GET读回等待、恢复编辑及刷新历史 (2313.6635ms)\nabort: PASS；完整记录：D:\\Projects\\Knowledge\\.coursebook-work\\fanren-ch15-experiments\\fanren\\chapter15\\project\\runs\\regression-29c28205-869c-4a50-980f-1b3171eb96f4\\record.json\n✔ 服务收到POST前abort：无服务POST/新增修订，保留A并先读当前稿 (1409.0124ms)\nℹ tests 2\nℹ suites 0\nℹ pass 2\nℹ fail 0\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 3775.1918\n",
+  "stderr": ""
+}

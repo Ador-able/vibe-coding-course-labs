@@ -1,0 +1,110 @@
+已完成指定源码和完整冻结对象的只读调查。**保存成功、读回成功、来源标记和文学采用是四件不同的事；一次 200 加正文相同，不能证明保存反馈与冲突对照已经足够清楚。**
+
+实际环境核对如下：
+
+| 项目 | 结果 |
+|---|---|
+| Git 根 | `D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments` |
+| 当前目录 | `D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project` |
+| HEAD | `85a4de5c545a5ffa43cd44330d9ff24bc75fa109` |
+| 分支 | `codex/fanren-ch15-experiments` |
+| 工作区 | 调查前后均干净 |
+| 未跟踪文件 | 按正常忽略规则检查，未发现 |
+
+1. **完整章稿的来源和读取路径**
+
+   原作署忘语。教学第1、2、3章分别完整导入 C03、C04、C05，并非原书章号，也不是本轮模型创作。
+
+   [seed.mjs](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/scripts/seed.mjs:12) 第12行读取教师初始化文件，第13行初始化作品，第14行逐章把完整标题、正文交给 `Store.saveDraft`；来源、输入哈希和五表快照保留在返回报告中。
+
+   工作台启动链是 `scripts/start-workbench.mjs:6` 读取 `practice.json`，再启动 `src/prototype-server.ts`，由其第6行打开指定数据库。
+
+   页面读取链是：
+
+   `prototype/app.js:22` → `GET /api/work` → [prototype-http.ts](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/prototype-http.ts:18) 第18—21行 → `Store.getChapter` → `chapters.content` 中的完整 JSON。
+
+   `listChapters` 本身去掉正文，但 HTTP 随后逐章调用 `getChapter` 补回全文；编辑器没有拿章节摘要代替正文。
+
+   准备实录记录于 `2026-10-15T10:04:50.042Z`，其中 config、work GET 均为 200。完整对象逐项比对结果为：
+
+   | 教学章 | 原文段 | 正文字数 | 保存时前文修订 |
+   |---|---|---:|---|
+   | 1 | C03 | 2372 | `[]` |
+   | 2 | C04 | 2331 | 第1章 r1 |
+   | 3 | C05 | 2465 | 第1、2章均 r1 |
+
+   三章均为 `human/draft r1`、`workRevision=1`、`basisCurrent=true`，`taskId/threadId/reviewNote` 均为空。五表行数依次为 `1、1、3、3、0`。原文、教师输入、实录 GET、章节当前表及历史表的完整标题和正文一致；GET 中全部持久化章节字段也与表内对象一致。**这是既有实录及文件内容核对，不是本轮实时访问数据库或 HTTP。**
+
+   业务事实仍受三段原文限制：C03止于竹林继续赶路；正午前到顶是正式入门条件，过时但表现可圈可点者可收为记名弟子。C04保留韩立正午被抱上崖、六人入百锻堂、舞岩保送七绝堂，以及韩立和张铁半年后复试——合格成为内门弟子，未合格转外门。C05区分现场宣布、师兄议论与韩立“隐隐约约”的理解，止于墨大夫说明采药炼药常识、**也许**教医术、明确不教武功。没有补入后续结果。
+
+2. **本地稿和请求各持有什么基线**
+
+   [app.js](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/app.js:15) 第15行首次建立某章的本地编辑对象，保存：
+
+   - `base`：读入章节的完整副本，包括本章修订、原标题和原正文；
+   - `workRevision`：读入时作品资料的修订；
+   - `previous`：读入时全部前文章节的修订；
+   - 可修改的 `title/body`。
+
+   第10行通过标题、正文与 `base` 比较判断是否有修改。第18行提交**完整标题和正文**，并分别发送 `expectedWorkRevision`、`expectedChapterRevision`、`expectedPreviousRevisions`。
+
+   [schemas.ts](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/schemas.ts:13) 第13行起校验请求；标题会去首尾空白，正文只检查去空白后是否非空，实际正文字符串不被裁剪。
+
+   当前第12行 `setBusy` 与第15行 `render` 均按 `busy` 禁用编辑框，保存后的 GET 等待期也保持禁用。**历史等待期继续输入的问题不能算作当前仍存在的缺陷。**
+
+3. **POST 与后续 GET 分别保证什么**
+
+   [store.ts](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/src/store.ts:91) 第91行起在 `BEGIN IMMEDIATE` 事务内核对作品、本章、全部前文修订及大纲范围；第80行起同时更新 `chapters` 并追加 `chapter_versions`。事务提交后 HTTP 才返回 POST 200。
+
+   因此，POST 200表示该请求通过当时的修订检查并完成一次草稿事务：本章修订加一，状态为 `draft`。它不表示页面已经读回，也不表示文学采用。
+
+   随后 GET 返回读取时 Store 可见的作品、完整章节及计算出的 `basisCurrent`。页面只有在两次请求都成功后才删除本地编辑对象、重新显示读回稿。
+
+   这里有明确边界：第18行成功文案使用 POST 的 `saved.revision`，编辑器使用 GET 的 `incoming`；代码没有核对两者标题、正文或修订是否一致。若两次请求之间另一个入口再次保存，显示稿和提示修订可能不同；本轮未实际制造此情形。
+
+   POST 已提交但 GET 失败时，本地对象仍保留，不能反推“服务器一定没保存”。对 `NETWORK_UNCONFIRMED`、`INTERNAL_ERROR`，页面还会设置 `uncertain`，要求先读当前稿。业务预期中的 abort 只针对**服务收到 POST 前**的受控时点。
+
+   第2章修订变化也会令第3章 `basisCurrent=false`，即使第3章正文、修订和历史完全没变。这是前文依据变化，不等于第3章被改写或质量不合格。
+
+4. **`human` 不表示已经采用**
+
+   HTTP 保存入口固定传入 `human`，初始化导入也使用它。它表示保存入口的来源枚举，既不证明身份，也不改变忘语的原作署名。
+
+   `saveDraft` 明确写入 `status:'draft'`、`reviewNote:null`。采用由 `Store.adopt` 第119行起的独立事务执行，另核本章修订并增加修订、写入 `adopted` 和采用说明。任务完成状态则由独立的 `tasks` 表管理。现有初始化记录没有模型任务或采用记录，本轮也没有执行采用。
+
+5. **另一个入口先改本章后，409怎样处理**
+
+   假设本地基于 r1，另一入口先保存到 r2：`saveDraft` 第97行抛出 `STALE_CHAPTER`，HTTP 第31行映射为 409；这次旧基线保存回滚，不新增章节修订。
+
+   页面第7、18行保留 `edits` 中的完整本地标题、正文和旧基线，提示读取当前稿。普通 409不会设置 `uncertain`，所以未经重建基线直接重试仍可能再次409。
+
+   第16行“读取当前稿”在本地仍有修改时：
+
+   - 更新远端 `snapshot`，把当前章放入 `pendingRemote`；
+   - 保留上方本地字句及其旧基线；
+   - 下方显示远端修订号和只读正文。对照区没有单独显示远端章名。
+
+   [index.html](D:/Projects/Knowledge/.coursebook-work/fanren-ch15-experiments/fanren/chapter15/project/prototype/index.html:18) 第18行提供“以当前稿重新编辑”；其处理在 `app.js:20`，会删除本地编辑对象，再从已读回的 `snapshot` 建立新稿和三类新基线。**它会替换本地标题、正文，没有自动合并，也没有另存被替换本地稿。**需要保留的本地字句应先复制保留，再以当前稿手工合并。
+
+   这些本地字句只保存在页面内存 Map 中；第21行离页提醒不等于持久化备份。
+
+6. **反馈是否清楚，以及一处建议**
+
+   一次200和正文一致，只能支持那次请求及所比较正文的有限结论，不能覆盖标题、等待反馈、POST与GET修订对应、冲突对照、替换本地稿的理解，更不能代替人的内容判断。
+
+   仅建议一处具体改动：把“以当前稿重新编辑”改成 **“放弃本地修改，使用当前已保存稿”**，使文案明确对应现有删除本地对象的行为。本轮没有修改。
+
+   必要验证是：出现409后，读当前稿仍保留完整本地标题和正文；明确点击该按钮才替换本地稿，并取得新的作品、本章、前文基线；随后手工合并不会沿用旧基线。实际文案是否合适、章稿是否采用，仍由人决定。
+
+实际完整读过的24份文件，均位于当前 project：
+
+- 规则说明：`README.md`、`AGENTS.md`、`prototype/AGENTS.md`、`docs/workbench-boundaries.md`、`docs/save-review.md`。
+- 调用源码：`prototype/index.html`、`prototype/app.js`、`src/prototype-http.ts`、`src/prototype-server.ts`、`src/store.ts`、`src/schemas.ts`、`scripts/seed.mjs`、`scripts/start-workbench.mjs`。
+- 完整输入及定位：`inputs/完整教师初始化.json`、`inputs/独立业务预期.json`、`inputs/162-准备完整当前对象.json`、`inputs/凡人修仙传-三段原文.json`、`inputs/162-完整调查任务.txt`、`practice.json`。
+- 冻结及准备材料：`source-version.json`、`inputs/输入冻结清单.json`、`materials/historical/保存等待历史行为.json`、`records/凡人原文-20261015/准备/前置准备说明.json`、同目录的 `初始化命令回执.json`。
+
+指定8份源码/说明文件及4份业务输入的 SHA-256 均与相应冻结清单一致。未读取清单所指的项目外原始文件，项目外来源哈希未独立核验。
+
+本轮没有安装、build/test、启动服务、联网、打开业务库、保存、采用或提交推送。浏览器实际表现、并发冲突、提交后读回失败及页面辨认效果均未运行验证；业务预期文件本身不算执行通过证据。
+
+命令异常已如实处理：首次 Git 状态检查出现全局 ignore 路径权限警告，使用 `NUL` 覆盖配置的尝试失败，随后以空配置复核成功；一次合批输出被截断，已分段重读至文件末尾。准备说明中另有既往构建、初始化和预检失败及后续处理记录，它们没有被当成本轮执行结果。
