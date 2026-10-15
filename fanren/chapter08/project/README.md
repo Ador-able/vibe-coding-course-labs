@@ -36,7 +36,7 @@ pnpm cross:b
 可直接使用本目录真实 B 实录，不必先调用模型重做 A/B。下列命令新建独立库；档案中的编号与路径只用于追溯。若尚未检查宿主，先执行一次 `pnpm host:check`。
 
 ```powershell
-pnpm replan:prepare --from materials/跨会话实录
+pnpm replan:prepare --from 课堂记录/凡人原文-20261015/03-跨会话
 $exercise = Get-Content -LiteralPath 'replan/task.json' -Raw | ConvertFrom-Json
 pnpm lab save replan/第二章-人工修改完整输入.json --db $exercise.db --work fanren
 pnpm lab chapter 2 --db $exercise.db --work fanren
@@ -45,7 +45,7 @@ pnpm replan:run
 
 若要使用自己刚完成的 A/B 结果，将准备命令改为 `pnpm replan:prepare --from task-state`；已经存在的 `replan/` 不会被覆盖。
 
-人工保存将第二章改为准备材料中的完整新结尾。第三章保留原文；模型实际读完前后文与旧交付后，只更新 `replan/调整后的计划.md` 和 `replan/当前进度.md`。新计划中的工作尚未执行，旧导出也不会自动更新。
+人工保存将第二章改为明确标注的删段练习，省去考核结果；完整原文仍单独保留。第三章保留原文；模型实际读完前后文与旧交付后，只更新 `replan/调整后的计划.md` 和 `replan/当前进度.md`。新计划中的工作尚未执行，旧导出也不会自动更新。
 
 ## 现有能力与证据
 

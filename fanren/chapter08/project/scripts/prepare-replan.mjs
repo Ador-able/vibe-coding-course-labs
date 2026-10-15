@@ -8,8 +8,8 @@ import {seedPrototype} from './prototype-seed.mjs';
 import {Store} from '../dist/store.js';
 import {getCodeVersion} from '../dist/version.js';
 
-const {values}=parseArgs({options:{folder:{type:'string',default:'replan'},from:{type:'string',default:'task-state'}}});
-const id='qinglan',runId=randomUUID(),folder=values.folder,db=`data/replan-${runId}.sqlite`;
+const {values}=parseArgs({options:{folder:{type:'string',default:'replan'},from:{type:'string',default:'课堂记录/凡人原文-20261015/03-跨会话'}}});
+const id='fanren',runId=randomUUID(),folder=values.folder,db=`data/fanren/replan-${runId}.sqlite`;
 for(const target of [folder,db]){try{await access(target);throw new Error(`目标已存在，请另取材料目录：${target}`);}catch(error){if(error.code!=='ENOENT')throw error;}}
 // 使用所选跨会话实录的完整结果；档案不代表读者已执行任务。
 const previous=JSON.parse(await readFile(`${values.from}/task.json`,'utf8'));
