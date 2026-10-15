@@ -1,0 +1,35 @@
+{
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\reading.sqlite",
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\reading.sqlite"
+  },
+  "codeVersion": "86fa062098085a2f202d4625b4b0a4c30485c51d",
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\"={trust_level=\"trusted\"}}",
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "skills.config=[{path=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.agents\\\\skills\\\\novel-chapter-review\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.agents\\\\skills\\\\novel-feedback-task\\\\SKILL.md\",enabled=false}]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "prompt": "请使用 $novel-workbench-course:novel-chapter-review 检查作品fanren的三章原文阅读材料。读取方法及本任务需要的参考；通过插件取得当前大纲、人物设定、要求、目录和三章完整正文。区分教学章号与原书章号，核对C03正午规则、C04韩立与张铁的处理、C05墨大夫教与不教的范围，并指出人工改题索引和实际保存状态。这是只读检查，不修改、保存或采用；业务材料只通过本插件取得。"
+}

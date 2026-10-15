@@ -1,0 +1,91 @@
+{
+  "codeCommit": "86fa062098085a2f202d4625b4b0a4c30485c51d",
+  "pluginThreadId": "01a13d82-1d8e-79d1-90bd-6e3b08a2475b",
+  "freshModelTasks": 1,
+  "mcpReadCalls": 5,
+  "fullMethodReads": [
+    {
+      "file": "SKILL.md",
+      "fullTextSeen": true,
+      "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973"
+    },
+    {
+      "file": "references/basis-and-status.md",
+      "fullTextSeen": true,
+      "sha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030"
+    }
+  ],
+  "returnedObjectsEqualIndependentBusinessState": true,
+  "fiveTablesUnchanged": true,
+  "businessTableCounts": {
+    "works": 1,
+    "work_versions": 2,
+    "chapters": 3,
+    "chapter_versions": 5,
+    "tasks": 0
+  },
+  "chapters": [
+    {
+      "number": 1,
+      "sourceId": "C03",
+      "title": "C03 原文：七玄门与炼骨崖",
+      "revision": 3,
+      "status": "adopted",
+      "hanCount": 2036,
+      "bodyMatchesOriginalExceptTrailingLF": true
+    },
+    {
+      "number": 2,
+      "sourceId": "C04",
+      "title": "C04 原文：攀岩与考核结果",
+      "revision": 1,
+      "status": "draft",
+      "hanCount": 2015,
+      "bodyMatchesOriginalExceptTrailingLF": true
+    },
+    {
+      "number": 3,
+      "sourceId": "C05",
+      "title": "C05 原文：墨大夫与神手谷",
+      "revision": 1,
+      "status": "draft",
+      "hanCount": 2088,
+      "bodyMatchesOriginalExceptTrailingLF": true
+    }
+  ],
+  "workOutlineActuallyRead": [
+    {
+      "number": 1,
+      "titleHint": "C03 七玄门与炼骨崖",
+      "goal": "完整读取舞岩与孩童、七玄门考核规则、竹林喘息与前行。"
+    },
+    {
+      "number": 2,
+      "titleHint": "C04 攀岩与考核结果",
+      "goal": "完整读取攀岩困难、坚持与不同录取结果，按正午规则核对。"
+    },
+    {
+      "number": 3,
+      "titleHint": "C05 墨大夫与神手谷",
+      "goal": "完整读取师兄的说明、墨大夫带走两人及采药医术的范围。"
+    }
+  ],
+  "objectsModelCalls": 0,
+  "objectA": {
+    "workId": "fanren",
+    "body": "这样坚持了好长时间，韩立实在累得够呛，只好随便找个土堆一屁股做了下来，然后不停地喘息着。",
+    "revision": 1,
+    "status": "draft",
+    "origin": "human"
+  },
+  "objectB": null,
+  "independentlyReopenedBothDatabases": true,
+  "globalConfigUnchanged": true,
+  "hostPreflight": {
+    "isolated": true,
+    "skillsIsolated": true,
+    "memoryIsolated": true,
+    "bindingMatches": true
+  },
+  "limits": "教学章号对应原文片段而非原书章号。第1章教学采用不表示读者文学认可；方法与业务读取成功不等于稳定准确率。A/B对象对照与插件读取使用不同独立数据。"
+}

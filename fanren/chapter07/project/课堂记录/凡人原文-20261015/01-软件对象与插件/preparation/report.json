@@ -1,0 +1,27 @@
+{
+  "scenario": "reading",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\reading.sqlite",
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\prepare-reading",
+  "existing": false,
+  "modelCalls": 0,
+  "currentWorkRevision": 2,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 3,
+      "status": "adopted"
+    },
+    {
+      "number": 2,
+      "revision": 1,
+      "status": "draft"
+    },
+    {
+      "number": 3,
+      "revision": 1,
+      "status": "draft"
+    }
+  ],
+  "hookDefinitionSha256": null,
+  "limits": "新库导入人工材料，已有库保持实际内容，只切换当前练习入口。当前项目的Hook定义只在准备相应练习时切换；任务运行中不要切换。"
+}
