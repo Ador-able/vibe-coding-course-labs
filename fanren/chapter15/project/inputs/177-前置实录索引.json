@@ -1,5 +1,41 @@
 {
-  "state": "not_ready",
-  "files": [],
-  "scope": "等待本轮实际检查和评审，不预填通过。"
+  "state": "ready",
+  "scope": "这里是实际前置原件，供读者可选任务读取；本次课堂未执行177自然模型任务，复用成熟检查的三次本地运行另有真实记录。",
+  "files": [
+    {
+      "path": "records/凡人原文-20261015/01-只读调查/report.json",
+      "bytes": 339518,
+      "sha256": "f1b560af9101c49cb32812cd415fe2f682a6b17a3ecb8e036cf6bf780cab040b"
+    },
+    {
+      "path": "records/凡人原文-20261015/02-规则来源/来源目录/report.json",
+      "bytes": 3125,
+      "sha256": "03479af7f0952914569feacd55dded91cd8b7c7414628cb0aad85d243f136998"
+    },
+    {
+      "path": "records/凡人原文-20261015/02-规则来源/实际规则调查/report.json",
+      "bytes": 197745,
+      "sha256": "c1c5307583a1075699c48de55ce5289dcf69ac5065aa0c113862515d675f9bf3"
+    },
+    {
+      "path": "records/凡人原文-20261015/03-保存等待红绿/独立完整原件核对.json",
+      "bytes": 3998,
+      "sha256": "30327b9f2e4d063d3393fdb4cb0e5f23d5fa69bd3314d0e289bd2e352fbdd522"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/01-实际原生review/report.json",
+      "bytes": 470551,
+      "sha256": "55606cc6dbad2a96eef66f062ca87698b118b125c95f560ad9c5a93ac1cd1187"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/01-实际原生review/review/final-response.txt",
+      "bytes": 1947,
+      "sha256": "cc751e84e9138ece398b3aa96caf8d1b63c8ba11629354375e4c146dcb400915"
+    },
+    {
+      "path": "records/凡人原文-20261015/05-真实交付检查/独立提交与完整原件核对.json",
+      "bytes": 2871,
+      "sha256": "09d77ccead9552523f36b145875a4e9f1f815da219cd9f233dcd77a7ba99021a"
+    }
+  ]
 }

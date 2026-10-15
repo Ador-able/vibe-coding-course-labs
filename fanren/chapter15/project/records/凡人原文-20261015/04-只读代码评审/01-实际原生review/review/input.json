@@ -1,0 +1,303 @@
+{
+  "version": "codex-cli 0.160.0",
+  "nodeVersion": "v24.12.0",
+  "gitHead": "8642b7a5961f015fbdbe80f2a2ab6dffaf55f67c",
+  "source": {
+    "sourceSha256": "7c6123cf742e2568c57bd1c073cf53d808b7aaf7aa155b77abac44d34c0c19ff",
+    "sourceVersion": "7c6123cf742e2568c57bd1c073cf53d808b7aaf7aa155b77abac44d34c0c19ff",
+    "preparedFromGit": "85a4de5c545a5ffa43cd44330d9ff24bc75fa109",
+    "practiceTag": "fanren-ch15-practice-start",
+    "inputRegistrySha256": "a511b86bb5c4beff8669c2970ca1c200e7baa6e576d9d7943348c455d750439e",
+    "files": [
+      {
+        "path": ".gitattributes",
+        "bytes": 8,
+        "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+      },
+      {
+        "path": ".gitignore",
+        "bytes": 46,
+        "sha256": "e0480ea74e4aa0fad04cd653f3ad5666c37c339f54c438e345f1df17ba2ab8a3"
+      },
+      {
+        "path": "AGENTS.md",
+        "bytes": 646,
+        "sha256": "bbf43bcea5dc136a89a06896db0ab3689eb33fff85a29475f9a2f67d91f3658b"
+      },
+      {
+        "path": "README.md",
+        "bytes": 1627,
+        "sha256": "738e1c45b1507527c76f373bf822055a9b2bc939dcc359d161fd6603a1248155"
+      },
+      {
+        "path": "config/固定实验参数.json",
+        "bytes": 789,
+        "sha256": "e7fa0ed44047f01ab29916a443e55d4904e7fb4578fa58dc1828d39b6a9409bd"
+      },
+      {
+        "path": "docs/delivery-check.md",
+        "bytes": 4361,
+        "sha256": "d5027ff6270681295e30a1b401319af991eaf2c1731e984a225a92a61fc57f93"
+      },
+      {
+        "path": "docs/save-review.md",
+        "bytes": 900,
+        "sha256": "e4fba210fbcf3ff93da21a06c19cca7db8c3caadae97ee67923f15bdb2293c82"
+      },
+      {
+        "path": "docs/workbench-boundaries.md",
+        "bytes": 726,
+        "sha256": "34b61318c2373df6ae2e320050ae50b3867ca374ac1ff2823f884575260ed9a0"
+      },
+      {
+        "path": "materials/historical/2c1到19f-历史真实Git差异.patch",
+        "bytes": 6670,
+        "sha256": "a39b3fbee5a87d207e1bed1c627a922c0f0486769eaa28b6f0a016772d0150a1"
+      },
+      {
+        "path": "materials/historical/保存等待历史行为.json",
+        "bytes": 1548,
+        "sha256": "0a05740ecd9e43cc3bd5d5751283d0362082d55804fb97439b86a79d5fceb2c6"
+      },
+      {
+        "path": "materials/historical/保存等待旧缺陷差异.patch",
+        "bytes": 800,
+        "sha256": "15a0414856ad66d92820afcae310313079b4ede4a5e4a80d98e09bfd06a0d733"
+      },
+      {
+        "path": "materials/historical/历史真实Git差异来源.json",
+        "bytes": 1315,
+        "sha256": "3be0e91a52e3e1c57934829521e50725e3173a5dc15a14b09091f1db6910ba14"
+      },
+      {
+        "path": "materials/historical/原始旧app.js.txt",
+        "bytes": 7442,
+        "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d"
+      },
+      {
+        "path": "materials/screenshots/提交检查实录页-高清原像素.png",
+        "bytes": 404801,
+        "sha256": "56d8c56a505635a6b5e04beae5b02546338dc52433f3df58e1062dba33e718ee"
+      },
+      {
+        "path": "materials/viewer.css",
+        "bytes": 1443,
+        "sha256": "b81af6f958a9b4555fe1b82778890fa04aead88a331e2ae76dfaf48f0a8e6568"
+      },
+      {
+        "path": "materials/viewer.html",
+        "bytes": 911,
+        "sha256": "5534f325802feb3364b90320e870d1a7e2b6a46b8b9a5f8651b67c0531b7a932"
+      },
+      {
+        "path": "materials/viewer.js",
+        "bytes": 3307,
+        "sha256": "fc39e9b39b7bf317d9c165b1cc01f1967252289496c518b9c33e44add89cb1fa"
+      },
+      {
+        "path": "materials/提交检查实录页-高清原像素.png",
+        "bytes": 404801,
+        "sha256": "56d8c56a505635a6b5e04beae5b02546338dc52433f3df58e1062dba33e718ee"
+      },
+      {
+        "path": "package.json",
+        "bytes": 1020,
+        "sha256": "9ba5184e993ce9e56a75b8e7843572a56315fe18bbc68c60c2a59ae209dec601"
+      },
+      {
+        "path": "pnpm-lock.yaml",
+        "bytes": 11803,
+        "sha256": "de3f9ad9a418477fdcc58866755b6a80daf948e147da75d7a10273ae63ca842c"
+      },
+      {
+        "path": "prototype/AGENTS.md",
+        "bytes": 327,
+        "sha256": "7e9059087edc967ec754976fe8382b2c63071edcb22b467e7f9d6aa1013a0aa3"
+      },
+      {
+        "path": "prototype/app.css",
+        "bytes": 3528,
+        "sha256": "982f4af19c54d185042ab3978e82812ac60d31bac643d3aeda65a40973d7a416"
+      },
+      {
+        "path": "prototype/app.js",
+        "bytes": 6818,
+        "sha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63"
+      },
+      {
+        "path": "prototype/index.html",
+        "bytes": 1996,
+        "sha256": "b8326f50774696ee4d5f74df05fab8a937cbb5ebb6ef20e4ac29d13f209077f8"
+      },
+      {
+        "path": "scripts/check-saving-delivery.mjs",
+        "bytes": 45018,
+        "sha256": "a433a7df2310cfa29738f3fd4f07d066f8b544fb15c3c35140ab7bc50274fa12"
+      },
+      {
+        "path": "scripts/check-source.mjs",
+        "bytes": 791,
+        "sha256": "75dbbdc169fa80db7519c54814f71ccc036206762a0a4ba57f1ebe0261a368c0"
+      },
+      {
+        "path": "scripts/codex-environment.mjs",
+        "bytes": 1311,
+        "sha256": "52bd168f399bf254eadb4b681483c3c5c159bab8259b64a78fb53826e378edc6"
+      },
+      {
+        "path": "scripts/codex-local.mjs",
+        "bytes": 549,
+        "sha256": "9504313e2e552cbe5f94d95b95bfff73ce1ba486b68e061cce011a854a65ea7f"
+      },
+      {
+        "path": "scripts/freeze-inputs.mjs",
+        "bytes": 652,
+        "sha256": "c36fe50a0a330a975b3749baba3b18170538c99e0f00c12772f175feec6f8019"
+      },
+      {
+        "path": "scripts/freeze-source.mjs",
+        "bytes": 673,
+        "sha256": "caab4f2b8eb71ea3c7a7ebc0f45138f1ec950d7f3e33b3e59290bb79a507ac2c"
+      },
+      {
+        "path": "scripts/host.mjs",
+        "bytes": 4286,
+        "sha256": "8e7dfce7e5ec8a45255b3233289d6e0a9f1a1cf0cc0ed509b24bef8cfb8fac4e"
+      },
+      {
+        "path": "scripts/observe.mjs",
+        "bytes": 11248,
+        "sha256": "823bfff55c4fa7c5ed2e7991bd9aae9f2b8d24009c9ba6d816bf639641eafec8"
+      },
+      {
+        "path": "scripts/prepare-history.mjs",
+        "bytes": 2393,
+        "sha256": "5b5759ec96984a953d40030f64547dc351a2dacec6211a8be876717d17cc3014"
+      },
+      {
+        "path": "scripts/restore-historical-bug.mjs",
+        "bytes": 925,
+        "sha256": "9707cce86dfb0e668736410712d89ffa3d4e79bd96a305b0a7b52acd60611d81"
+      },
+      {
+        "path": "scripts/seed.mjs",
+        "bytes": 2347,
+        "sha256": "75733066e52ab8ead8b68b67027c7c9bcec96f78b5ff5b5dac38598b1648731f"
+      },
+      {
+        "path": "scripts/source-files.mjs",
+        "bytes": 813,
+        "sha256": "b502e734085234c38182d4d07dca307f74ce2dbeac9ced7425c1efcfc2e567f4"
+      },
+      {
+        "path": "scripts/start-workbench.mjs",
+        "bytes": 563,
+        "sha256": "b06838edbef4e2c425fb01eb972267bdfa1c37f304d6e916afa68b57f9fa0f46"
+      },
+      {
+        "path": "scripts/test-saving.mjs",
+        "bytes": 44421,
+        "sha256": "d20d4d0f7301176c07106688c7329f2bd2d8b58e46678de8fae2a99f6ff28032"
+      },
+      {
+        "path": "scripts/viewer.mjs",
+        "bytes": 1490,
+        "sha256": "97ee42521c27a3d0bf824b4bdcbd37385fb070578dd29ff977f216c10e538718"
+      },
+      {
+        "path": "src/prototype-http.ts",
+        "bytes": 2879,
+        "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7"
+      },
+      {
+        "path": "src/prototype-server.ts",
+        "bytes": 799,
+        "sha256": "fd87aad5d0ea024f17ec6fed884e4f125d65dbc7790b3de72f81259bbf9d6047"
+      },
+      {
+        "path": "src/schemas.ts",
+        "bytes": 2232,
+        "sha256": "abfb2ad2d21ceae2e515a5500119a95d032311189f59695a630806352f01dd1a"
+      },
+      {
+        "path": "src/store.ts",
+        "bytes": 12129,
+        "sha256": "2c2142a774d777eb9d22d5a649eaed5d75df3097068d715d3019b91d34bc1dcf"
+      },
+      {
+        "path": "tsconfig.json",
+        "bytes": 286,
+        "sha256": "fbc452b9b5e2b481e0da3768692bdfd9cf813ac2beb7b9f828b4f696d15926b4"
+      }
+    ]
+  },
+  "parameters": {
+    "threadId": "01a13f1c-ce37-7292-afbe-63b7a57f3019",
+    "target": {
+      "type": "custom",
+      "instructions": "你在《凡人修仙传》小说工作台的独立练习项目中。教学第一至三章分别完整导入C03、C04、C05原文片段，不是原书章号，也不是本轮模型创作。作品大纲与设定限于三段原文；原作出自忘语。保留正午期限、记名例外、半年后复试条件与医术“也许”的限定，不增加后文事实。\n\n先确认真实Git根、HEAD、分支、工作区、未跟踪文件与当前目录。读取范围限于当前实验project与本节公开材料；不要读全局私密规则、Memory、凭据或原始宿主系统/开发者指令。保留完整输入、真实来源和未完成条件。\n\n请只读评审本次已冻结保存等待改动。先阅读inputs/170-评审对象.json所列的实际Git HEAD、红例工作区恢复范围、两份完整app.js与完整差异、正常保存与服务前abort的四例实录、独立业务预期和测试源码，再读prototype/app.js、src/prototype-http.ts、src/store.ts、src/schemas.ts。四例均在同一HEAD：红例只在工作区恢复两处历史等待行为，绿例回到当前app.js原字节，不能冒称在两个历史提交直接运行。每例完整业务核心保留输入、完整章名正文、HTTP及五表；重复DOM/HTML与逐按键页面仍在列出的原始record.json。\n\n业务决定是POST及随后GET全部完成前暂停章名、正文与覆盖编辑动作，结束或失败后恢复；本地完整A和真实修订必须对应。历史旧点只是教师恢复副本；正确点沿用已有修复，不宣称本轮新改小说。\n\n只报告材料支持的高置信度正确性问题。对每项标明准确文件/行、触发条件、影响、实际已测与未测范围；没有阻断问题可如实给出零项。测试记录不足、弱断言、源码改动和产品取舍应分别说明。不要为了完成评审强找缺陷，不把200/JSON/构建通过当作完整保存或文学采用。\n\n只读评审，不安装、不build/test、不启动服务或浏览器、不写源码/数据库、不保存/采用、不提交/推送、不联网。给出完整可见评审报告；内部结构化对象未取得时不要补写。服务提交后GET失败、真实并发与视觉审美如未运行就保留未知。\n"
+    },
+    "delivery": "inline"
+  },
+  "prompt": "你在《凡人修仙传》小说工作台的独立练习项目中。教学第一至三章分别完整导入C03、C04、C05原文片段，不是原书章号，也不是本轮模型创作。作品大纲与设定限于三段原文；原作出自忘语。保留正午期限、记名例外、半年后复试条件与医术“也许”的限定，不增加后文事实。\n\n先确认真实Git根、HEAD、分支、工作区、未跟踪文件与当前目录。读取范围限于当前实验project与本节公开材料；不要读全局私密规则、Memory、凭据或原始宿主系统/开发者指令。保留完整输入、真实来源和未完成条件。\n\n请只读评审本次已冻结保存等待改动。先阅读inputs/170-评审对象.json所列的实际Git HEAD、红例工作区恢复范围、两份完整app.js与完整差异、正常保存与服务前abort的四例实录、独立业务预期和测试源码，再读prototype/app.js、src/prototype-http.ts、src/store.ts、src/schemas.ts。四例均在同一HEAD：红例只在工作区恢复两处历史等待行为，绿例回到当前app.js原字节，不能冒称在两个历史提交直接运行。每例完整业务核心保留输入、完整章名正文、HTTP及五表；重复DOM/HTML与逐按键页面仍在列出的原始record.json。\n\n业务决定是POST及随后GET全部完成前暂停章名、正文与覆盖编辑动作，结束或失败后恢复；本地完整A和真实修订必须对应。历史旧点只是教师恢复副本；正确点沿用已有修复，不宣称本轮新改小说。\n\n只报告材料支持的高置信度正确性问题。对每项标明准确文件/行、触发条件、影响、实际已测与未测范围；没有阻断问题可如实给出零项。测试记录不足、弱断言、源码改动和产品取舍应分别说明。不要为了完成评审强找缺陷，不把200/JSON/构建通过当作完整保存或文学采用。\n\n只读评审，不安装、不build/test、不启动服务或浏览器、不写源码/数据库、不保存/采用、不提交/推送、不联网。给出完整可见评审报告；内部结构化对象未取得时不要补写。服务提交后GET失败、真实并发与视觉审美如未运行就保留未知。\n",
+  "promptSha256": "fe4683b4f0dab8b8df4a97e1b78f754fb046d1c158bf5707c0632ff5189914e3",
+  "configuration": {
+    "model": "gpt-6.1-sol",
+    "review_model": null,
+    "features": {
+      "network_proxy": null,
+      "apps": false,
+      "hooks": false,
+      "memories": false,
+      "shell_tool": true,
+      "api_key_model_discovery": false,
+      "auth_elicitation": true,
+      "background_paginated_rollout_migration": false,
+      "codex_apps_mcp_2026_07_28": false,
+      "mcp_2026_07_28": false,
+      "mentions_v2": true,
+      "remote_control": false,
+      "remote_plugin": true,
+      "tool_suggest": true,
+      "windows_sandbox_service": false
+    },
+    "memories": {
+      "version": null,
+      "dual_write": null,
+      "disable_on_external_context": null,
+      "generate_memories": false,
+      "use_memories": false,
+      "dedicated_tools": null,
+      "max_raw_memories_for_consolidation": null,
+      "max_unused_days": null,
+      "max_rollout_age_days": null,
+      "max_rollouts_per_startup": null,
+      "min_rollout_idle_hours": null,
+      "min_rate_limit_remaining_percent": null,
+      "extract_model": null,
+      "consolidation_model": null
+    },
+    "web_search": "disabled",
+    "project_doc_max_bytes": 32768,
+    "sandbox_mode": "read-only",
+    "approval_policy": "never",
+    "developerInstructionsPresent": false,
+    "mcpEntries": [],
+    "pluginEntries": []
+  },
+  "configOverrides": [
+    "model=\"gpt-6.1-sol\"",
+    "features.apps=false",
+    "features.shell_tool=true",
+    "features.hooks=false",
+    "features.memories=false",
+    "memories.use_memories=false",
+    "memories.generate_memories=false",
+    "skills.bundled.enabled=false",
+    "web_search=\"disabled\"",
+    "developer_instructions=\"\"",
+    "project_doc_max_bytes=32768",
+    "sandbox_mode=\"read-only\"",
+    "approval_policy=\"never\""
+  ]
+}

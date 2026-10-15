@@ -1,0 +1,22 @@
+{
+  "phase": "negative",
+  "args": [
+    "-c",
+    "user.name=课程实验",
+    "-c",
+    "user.email=classroom@example.invalid",
+    "commit",
+    "--allow-empty",
+    "-m",
+    "验证历史等待行为被本地Hook拒绝"
+  ],
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-c15-hook-20261015",
+  "sourceHead": "8642b7a5961f015fbdbe80f2a2ab6dffaf55f67c",
+  "setupBase": "2ecb9888d9d5fe1ffde05112272e151e2dce011e",
+  "startedAt": "2026-10-15T10:35:59.048Z",
+  "finishedAt": "2026-10-15T10:36:02.648Z",
+  "code": 1,
+  "signal": null,
+  "stdout": "",
+  "stderr": "$ pnpm run build && pnpm run test:delivery\n$ tsc\n$ node --test scripts/check-saving-delivery.mjs\n(node:79084) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\ndelivery-saving: FAIL；完整记录：D:\\Projects\\Knowledge\\.coursebook-work\\fanren-c15-hook-20261015\\fanren\\chapter15\\project\\runs\\delivery-saving-9d743b3c-7c43-42e9-99ae-73cf73d31b62\\record.json\n✖ 正常保存交付：完整A、两门、键盘、真实读回、刷新和五表历史 (2040.455ms)\nℹ tests 1\nℹ suites 0\nℹ pass 0\nℹ fail 1\nℹ cancelled 0\nℹ skipped 0\nℹ todo 0\nℹ duration_ms 2096.6337\n\n✖ failing tests:\n\ntest at scripts\\check-saving-delivery.mjs:738:7\n✖ 正常保存交付：完整A、两门、键盘、真实读回、刷新和五表历史 (2040.455ms)\n  AssertionError [ERR_ASSERTION]: 保存交付检查失败：post等待/title禁用且不可编辑; post等待/title不能取得焦点且完整A未变; post等待/body禁用且不可编辑; post等待/body不能取得焦点且完整A未变; post等待覆盖、导航、保存和读取暂停，门恰命中一次; get等待/title禁用且不可编辑; get等待/title不能取得焦点且完整A未变; get等待/body禁用且不可编辑; get等待/body不能取得焦点且完整A未变; get等待覆盖、导航、保存和读取暂停，门恰命中一次；完整记录：D:\\Projects\\Knowledge\\.coursebook-work\\fanren-c15-hook-20261015\\fanren\\chapter15\\project\\runs\\delivery-saving-9d743b3c-7c43-42e9-99ae-73cf73d31b62\\record.json\n  \n  false !== true\n  \n      at TestContext.runDelivery (file:///D:/Projects/Knowledge/.coursebook-work/fanren-c15-hook-20261015/fanren/chapter15/project/scripts/check-saving-delivery.mjs:735:10)\n      at process.processTicksAndRejections (node:internal/process/task_queues:103:5)\n      at async Test.run (node:internal/test_runner/test:1113:7)\n      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:358:3)\n      at async file:///D:/Projects/Knowledge/.coursebook-work/fanren-c15-hook-20261015/fanren/chapter15/project/scripts/check-saving-delivery.mjs:738:1 {\n    generatedMessage: false,\n    code: 'ERR_ASSERTION',\n    actual: false,\n    expected: true,\n    operator: 'strictEqual',\n    diff: 'simple'\n  }\n[ELIFECYCLE] Command failed with exit code 1.\n[ELIFECYCLE] Command failed with exit code 1.\n"
+}

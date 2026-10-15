@@ -1,0 +1,22 @@
+{
+  "phase": "negative",
+  "args": [
+    "-c",
+    "user.name=课程实验",
+    "-c",
+    "user.email=classroom@example.invalid",
+    "commit",
+    "--allow-empty",
+    "-m",
+    "验证历史等待行为被本地Hook拒绝"
+  ],
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-c15-hook-20261015",
+  "sourceHead": "8642b7a5961f015fbdbe80f2a2ab6dffaf55f67c",
+  "setupBase": "2ecb9888d9d5fe1ffde05112272e151e2dce011e",
+  "startedAt": "2026-10-15T10:34:59.719Z",
+  "finishedAt": "2026-10-15T10:35:00.651Z",
+  "code": 1,
+  "signal": null,
+  "stdout": "",
+  "stderr": "Scope: all 2 workspace projects\nundefined\n[ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY] Aborted removal of modules directory due to no TTY\n\nIf you are running pnpm in CI, set the CI environment variable to \"true\", or set \"confirmModulesPurge\" to \"false\".\n[ERROR] Command failed with exit code 1: \"C:\\Program Files\\nodejs\\node.exe\" \"D:\\Dev\\PackageData\\npm-global\\node_modules\\pnpm\\bin\\pnpm.mjs\" install\n\npnpm: Command failed with exit code 1: \"C:\\Program Files\\nodejs\\node.exe\" \"D:\\Dev\\PackageData\\npm-global\\node_modules\\pnpm\\bin\\pnpm.mjs\" install\n    at getFinalError (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:89001:14)\n    at makeError (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:91308:21)\n    at getSyncResult (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:93152:10)\n    at spawnSubprocessSync (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:93112:14)\n    at execaCoreSync (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:93042:23)\n    at callBoundExeca (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:95570:23)\n    at boundExeca (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:95547:49)\n    at sync2 (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:95706:10)\n    at runPnpmCli (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:252536:5)\n    at runDepsStatusCheck (file:///D:/Dev/PackageData/npm-global/node_modules/pnpm/dist/pnpm.mjs:254302:7)\n"
+}
