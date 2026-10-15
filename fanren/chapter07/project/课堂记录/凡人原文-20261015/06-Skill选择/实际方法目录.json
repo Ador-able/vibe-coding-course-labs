@@ -1,0 +1,30 @@
+{
+  "root": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project",
+  "catalog": {
+    "data": [
+      {
+        "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project",
+        "skills": [
+          {
+            "name": "novel-chapter-review",
+            "description": "检查小说工作台中已保存章节的设定一致性、前文衔接、资料修订和采用状态。用于指定作品与章节的只读核查；单句润色、泛泛创作建议和未保存的独立片段不适用。",
+            "path": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.agents\\skills\\novel-chapter-review\\SKILL.md",
+            "scope": "repo",
+            "enabled": true,
+            "pluginId": null
+          },
+          {
+            "name": "novel-feedback-task",
+            "description": "依据具体反馈修改已经保存的小说局部草稿，核对反馈对应的版本、当前事实、修改范围和实际保存结果。用于有明确纠正目标的修订；不用于从零创作、仅做评审、扩写后续章节或替作者采用稿件。",
+            "path": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.agents\\skills\\novel-feedback-task\\SKILL.md",
+            "scope": "repo",
+            "enabled": false,
+            "pluginId": null
+          }
+        ],
+        "errors": []
+      }
+    ]
+  },
+  "error": null
+}

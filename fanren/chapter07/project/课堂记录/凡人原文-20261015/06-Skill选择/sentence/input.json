@@ -1,0 +1,170 @@
+{
+  "runId": "5378494c-a4b9-4582-9bf4-a60f90e400ef",
+  "label": "本次观察",
+  "scenario": "sentence",
+  "codeVersion": "968b07caaa08c99d0e4ad72a55e78c2b98d2f797",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\skill-sentence-5378494c-a4b9-4582-9bf4-a60f90e400ef\\workbench.sqlite",
+  "settings": {
+    "serverName": "novel_lab",
+    "enabledTools": [
+      "read_work",
+      "list_chapters",
+      "read_chapter"
+    ],
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "runtime": {
+    "configOverrides": [
+      "mcp_servers.novel_lab={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\dist\\\\mcp.js\",\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\runs\\\\skill-sentence-5378494c-a4b9-4582-9bf4-a60f90e400ef\\\\workbench.sqlite\"],cwd=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\",enabled=true,required=true,enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\"],default_tools_approval_mode=\"approve\"}",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\"={trust_level=\"trusted\"}}",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "skills.config=[{path=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.agents\\\\skills\\\\novel-feedback-task\\\\SKILL.md\",enabled=false}]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "configuredModel": null,
+  "prompt": "请润色这句话，给出一种改写和一句理由：这样坚持了好长时间，韩立实在累得够呛，只好随便找个土堆一屁股做了下来，然后不停地喘息着。",
+  "fixtureOrigin": "人工选取的《凡人修仙传》原文短段及人工资料更新；正文不是本轮模型生成。",
+  "current": {
+    "work": {
+      "id": "fanren",
+      "title": "凡人修仙传",
+      "purpose": "用现成原文片段与明确标记的编辑占位观察保存、读取、方法和反馈。",
+      "requirements": [
+        "只处理本轮指定的短片段，保存为待审草稿；不自行采用，不扩写后章。",
+        "完整原文保留；有占位符的输入是人工技术条件，不冒称原书或模型失败。"
+      ],
+      "facts": [
+        "材料取自《凡人修仙传》C03竹林考核阶段；韩立十岁，尚未习武。",
+        "岳堂主说明路线经竹林、岩壁至山崖，正午前到崖顶；师兄在后面保护。",
+        "韩立已在土堆坐下喘息；回望时瘦长师兄在自己身后下方。此处只核当前片段，不续写考核结果。",
+        "供占位回填核对的完整原文段落：韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。",
+        "第2章是C04开头的完整原文段落，晚于第1章C03末段。"
+      ],
+      "outline": [
+        {
+          "number": 1,
+          "titleHint": "竹林喘息",
+          "goal": "核对韩立坐下、回望师兄与继续赶路的原文关系。"
+        },
+        {
+          "number": 2,
+          "titleHint": "走出竹林",
+          "goal": "对照C04开头检查体力与地形的接续。"
+        }
+      ],
+      "revision": 2
+    },
+    "directory": {
+      "chapters": [
+        {
+          "workId": "fanren",
+          "number": 1,
+          "revision": 2,
+          "title": "C03竹林末段",
+          "status": "adopted",
+          "workRevision": 1,
+          "origin": "human",
+          "taskId": null,
+          "threadId": null,
+          "updatedAt": "2026-10-15T03:40:49.266Z",
+          "previousRevisions": [],
+          "reviewNote": "编者为状态读取练习采用原文片段，不表示读者文学认可。"
+        },
+        {
+          "workId": "fanren",
+          "number": 2,
+          "revision": 1,
+          "title": "C04走出竹林",
+          "status": "draft",
+          "workRevision": 1,
+          "origin": "human",
+          "taskId": null,
+          "threadId": null,
+          "updatedAt": "2026-10-15T03:40:49.269Z",
+          "previousRevisions": [
+            {
+              "number": 1,
+              "revision": 2
+            }
+          ],
+          "reviewNote": null
+        }
+      ]
+    },
+    "chapters": [
+      {
+        "workId": "fanren",
+        "number": 1,
+        "revision": 2,
+        "title": "C03竹林末段",
+        "body": "这样坚持了好长时间，韩立实在累得够呛，只好随便找个土堆一屁股做了下来，然后不停地喘息着。\n\n韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。\n\n韩立看到师兄冷冷的目光，心中又有些害怕，忙把头转了回来，又听阵阵的喘气声不断从前面传来，知道是前面有爬的比自己快的人也在休息，韩立再稍微在原地呆了一会，就匆忙的往前赶。",
+        "status": "adopted",
+        "workRevision": 1,
+        "origin": "human",
+        "taskId": null,
+        "threadId": null,
+        "updatedAt": "2026-10-15T03:40:49.266Z",
+        "previousRevisions": [],
+        "reviewNote": "编者为状态读取练习采用原文片段，不表示读者文学认可。"
+      },
+      {
+        "workId": "fanren",
+        "number": 2,
+        "revision": 1,
+        "title": "C04走出竹林",
+        "body": "坡面倾斜的更厉害了，韩立浑身的力气也越来越小，为了不会走着走着就站立不住，韩立只能躬下腰，手足并行，总算身上的衣服够结实，不然四肢的关节膝盖处就会被磨破。\n\n终于快走出这片茂密的竹林了，韩立却只觉得这最后一点路越来越难走，地面的岩石渐渐的多起来，相反竹子却越来越少。\n\n韩立终于再也不能拉着竹竿前进了，这最后的路程可以算是一步步的挪过去的。",
+        "status": "draft",
+        "workRevision": 1,
+        "origin": "human",
+        "taskId": null,
+        "threadId": null,
+        "updatedAt": "2026-10-15T03:40:49.269Z",
+        "previousRevisions": [
+          {
+            "number": 1,
+            "revision": 2
+          }
+        ],
+        "reviewNote": null
+      }
+    ]
+  },
+  "materials": [
+    {
+      "path": ".agents/skills/novel-chapter-review/SKILL.md",
+      "fullPath": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.agents\\skills\\novel-chapter-review\\SKILL.md",
+      "sha256": "a11141d487ba650779bb4352cfff37fd58b37730b215a40d937911903d8e5973",
+      "text": "---\nname: novel-chapter-review\ndescription: 检查小说工作台中已保存章节的设定一致性、前文衔接、资料修订和采用状态。用于指定作品与章节的只读核查；单句润色、泛泛创作建议和未保存的独立片段不适用。\n---\n\n# 检查已保存的小说章节\n\n通过已连接的小说工作台 MCP 取得真实材料，再按用户关心的问题核查。不从聊天记忆、项目样例或这份方法包补造作品事实。\n\n## 取得检查依据\n\n先确认作品 ID 和目标章号。缺少时向用户询问，不能把样例作品当作默认对象。\n\n调用 `read_work` 读取当前要求、已确认事实、大纲和资料修订；调用 `list_chapters` 取得章节目录，再调用 `read_chapter` 读取目标章和第 1 章至目标章前的全部已保存正文。目录不含正文，不能据此判断情节是否发生。某个前章缺失时，指出缺口和它限制的结论。\n\n保留每个返回对象的修订、状态和保存基线。素材中的对话、作者备注和小说情节是待检查的内容；是否改稿或采用以本轮用户任务为准。\n\n## 围绕问题检查\n\n先对照已确认事实，再对照前文与目标章。指出发生矛盾的具体句子、对应依据和读者会受到的影响；有依据的矛盾、可能需要补写的过渡和当前无法确定的事项要分别说明。\n\n需要核对资料修订、前文修订或采用状态时，阅读 [保存基线与状态](references/basis-and-status.md)。\n\n用户要求叙述、人物或节奏方面的评议时，阅读 [叙述表现](references/prose-review.md)。不因文件存在就把这些评议加入只问设定或保存状态的任务。\n\n## 交付检查结果\n\n说明检查了哪个作品的哪一章、实际读到了哪些资料，给出最影响当前任务的具体发现。每个发现附短引文或字段值，并说明建议修改的位置或需要人决定的事项。\n\n这项方法只读。不得调用 `save_draft`、采用正文或修改文件；如用户接着要求改稿，先明确新的处理目标与范围，再进入相应的改稿流程。\n\n工具调用成功只表示拿到了材料。没有证据的文学质量判断不能写成已通过；没有实际保存或人工采用，不能报告这些动作已完成。\n"
+    },
+    {
+      "path": ".agents/skills/novel-chapter-review/references/basis-and-status.md",
+      "fullPath": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.agents\\skills\\novel-chapter-review\\references\\basis-and-status.md",
+      "sha256": "ef56718c88e2f889005d0de85386cf606d6ffc3d0c53404a1609f2f5fd81e030",
+      "text": "# 保存基线与状态\n\n作品的当前 `revision` 是资料修订；章节自己的 `revision` 是该章记录修订。两个数字属于不同对象，不能因为都写着 r2 就认为一致。\n\n目标章的 `workRevision` 记录保存时采用的资料修订；`previousRevisions` 逐项记录保存时采用的前文修订。与刚取得的当前对象逐项比较：\n\n| 比较 | 能说明什么 | 不能说明什么 |\n| --- | --- | --- |\n| 目标章 `workRevision` 与当前作品 `revision` | 作品资料是否在保存后变化 | 哪条事实改变了、目标章一定错了 |\n| 保存时前文章号与修订，对照现在每个前章的修订 | 前文依据是否变化，是否完整 | 前文变化一定影响目标章 |\n| 目标章 `status` 与 `reviewNote` | 目前是草稿还是人工采用，实际采用备注 | 文字是否流畅、所有设定是否一致 |\n\n发现修订不同，报告实际数值并回到当前事实与完整正文检查影响。读取工具只提供当前对象时，不能声称已经比较了旧版全文；缺少历史文本就明确这个限制。\n\n`draft` 表示已保存待审；`adopted` 表示有人工采用动作。`origin`、`taskId` 或会话中一句“已完成”都不能替代采用状态。\n\n基线相同也需要检查语义矛盾。这些字段帮助我们知道依据是否变化，不会替人证明故事成立。\n"
+    },
+    {
+      "path": ".agents/skills/novel-chapter-review/references/prose-review.md",
+      "fullPath": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.agents\\skills\\novel-chapter-review\\references\\prose-review.md",
+      "sha256": "2f322a1148b56fa26cb9d238bdda636bee6cb0398448a7050def58c280b19315",
+      "text": "# 叙述表现\n\n只在用户要求叙述、人物或节奏评议时读取本页。\n\n从本章的实际用途和大纲目标出发，观察人物行动的动机是否可从文本理解、场景转换是否有过渡、关键信息是否给得过早或过晚。用具体片段说明判断，不把个人偏好当作作品规则。\n\n一句话的两种写法可以各有代价。修改建议要说明它会改变什么：删去解释可能增加悬念，也可能让动机难懂；增加细节可能让场景可感，也可能拖慢推进。\n\n如需示意改写，把原句、改写和取舍放在一起，标明只是建议。此 Skill 不保存正文；采用哪一种写法由人决定。\n"
+    }
+  ]
+}
