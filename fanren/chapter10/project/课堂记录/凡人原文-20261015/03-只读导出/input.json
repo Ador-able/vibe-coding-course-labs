@@ -1,0 +1,46 @@
+{
+  "runId": "5f627bcc-229a-431e-b497-811a15827a60",
+  "sourceVersion": "14a23fe3c430c374e849c3c56192aa59ebe8442f",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\practice-00b09f7e-70e5-43f8-ac74-1012571c8728.sqlite",
+  "workId": "fanren",
+  "chapterNumber": 2,
+  "promptFile": "inputs/163-凡人只读导出.txt",
+  "prompt": "请为作品 fanren《凡人修仙传》做一次只读核对，取得当前前两章完整待审 Markdown，供我们接着阅读讨论。\n\n按目标选择已有的适用工作方法，读到需要的方法正文与参考。通过工作台取得当前完整作品资料、大纲、设定、真实目录，以及第二章和全部前文。以本轮返回确定对象、修订、保存基线与状态，不用旧会话、摘要或来源文件替代当前正文。\n\n核对第二章是否已保存、是否已采用，以及它保存时引用的作品资料与前文修订是否仍对应当前对象。第一章与第二章的修订分别属于各自对象；资料版本不同不能直接判剧情错误，版本相同也不能证明语义或文学合格。若没有取得旧版资料，就说明这一边界。\n\n使用工作台现有的只读导出入口取得完整 Markdown，原样交回其中的章名、正文、顺序、修订和状态，再给出简短核对说明。按实际返回解释大纲预期章数、已存章数和 allOutlineChaptersSaved；本次只交已有两章，不为凑齐大纲生成第三章。业务 text 取得成功不表示已经写入文件。\n\n不修改正文、资料、文件或数据库，不采用、发布，不调用子代理或其他模型。两章原文来自忘语，origin:agent/human只说明保存入口与修订，不能改称本轮创作。必要材料或业务导出缺失时，说明已取得什么、还缺什么，不修改代码补接口，不编造成功。\n",
+  "readOnly": true,
+  "resumeThreadId": null,
+  "stopAfterSave": false,
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\practice-00b09f7e-70e5-43f8-ac74-1012571c8728.sqlite",
+    "taskId": "5f627bcc-229a-431e-b497-811a15827a60",
+    "excerpt": null
+  },
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"={trust_level=\"trusted\"}}",
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"export_work\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "skills.config=[]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "hostCheck": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\runs\\host-prepare-c81310ee-f043-47b0-bb35-353157dd084e"
+}

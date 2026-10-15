@@ -1,0 +1,33 @@
+{
+  "workId": "fanren",
+  "workRevision": 2,
+  "expectedChapters": 3,
+  "savedChapters": 2,
+  "allOutlineChaptersSaved": false,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 2,
+      "status": "draft",
+      "workRevision": 1,
+      "previousRevisions": [],
+      "reviewNote": null,
+      "basisCurrent": false
+    },
+    {
+      "number": 2,
+      "revision": 1,
+      "status": "draft",
+      "workRevision": 2,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 2
+        }
+      ],
+      "reviewNote": null,
+      "basisCurrent": true
+    }
+  ],
+  "path": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\课堂记录\\凡人原文-20261015\\03-只读导出\\编者独立CLI导出.md"
+}

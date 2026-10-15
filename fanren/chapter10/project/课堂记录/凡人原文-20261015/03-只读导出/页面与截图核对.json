@@ -1,0 +1,25 @@
+{
+  "page": "实录阅读页.html",
+  "url": "http://127.0.0.1:4463/实录阅读页.html",
+  "source": "原始SDK事件、完整业务导出、完整末条回答与独立核对",
+  "domExportBytes": 14411,
+  "domExportSha256": "e59614e9e9fab9146f38105818278da27b755ccf136032139122d98fe5d63ebe",
+  "domFinalBytes": 16627,
+  "domFinalSha256": "4a9791d338ed62da3549cd0f5e83fe0825a7f0543dc83e41518aca0fa89cb61e",
+  "screenshot": {
+    "file": "163-只读导出完整交付-原生2K.png",
+    "assetId": 767,
+    "width": 2560,
+    "height": 1880,
+    "sha256": "1ae2e82a7a2ef6802d1bb3a604475d155eb1a515778d4a4186420cbe88be825a",
+    "viewportCss": {
+      "width": 1280,
+      "height": 940
+    },
+    "deviceScaleFactor": 2,
+    "upscaled": false,
+    "editedPixels": false,
+    "overrideCleared": true
+  },
+  "scope": "原生截图取自静态课堂实录阅读页。页面折叠区逐字保留完整导出与完整最终返回，DOM散列与原始记录相同；取证过程没有重跑模型或保存正文。"
+}
