@@ -1,0 +1,78 @@
+{
+  "condition": "missing-work",
+  "mode": "agent",
+  "threadId": "01a13d24-d4e3-7ad3-8d64-fbe721cf3086",
+  "sdkState": "completed",
+  "materials": {
+    "ready": false,
+    "state": "unavailable",
+    "workRead": false,
+    "chapterRead": false,
+    "chapterStatus": "unknown",
+    "reads": [
+      {
+        "origin": "sdk-tool",
+        "tool": "read_work",
+        "ok": false,
+        "error": {
+          "content": [
+            {
+              "type": "text",
+              "text": "{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"
+            }
+          ],
+          "structured_content": null
+        }
+      }
+    ]
+  },
+  "applicationRoute": null,
+  "appReadCalls": 0,
+  "modelToolCalls": 1,
+  "sdkTurns": 1,
+  "usage": {
+    "input_tokens": 56205,
+    "cached_input_tokens": 41856,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 233,
+    "reasoning_output_tokens": 22
+  },
+  "elapsedMs": 21820.2,
+  "unchanged": true,
+  "error": null,
+  "appReads": [],
+  "modelItems": [
+    {
+      "id": "item_0",
+      "type": "agent_message",
+      "text": "我会先读取作品材料和第 1 章，依据实际返回的信息判断状态与下一步。"
+    },
+    {
+      "id": "item_1",
+      "type": "mcp_tool_call",
+      "server": "novel_lab",
+      "tool": "read_work",
+      "arguments": {
+        "workId": "absent-work"
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"
+          }
+        ],
+        "structured_content": null
+      },
+      "error": null,
+      "status": "failed"
+    },
+    {
+      "id": "item_2",
+      "type": "agent_message",
+      "text": "实际状态：读取作品 `absent-work` 失败，错误码 `WORK_NOT_FOUND`，原文：“没有作品 absent-work，先初始化。”\n\n未取得作品的已确认事实、本章目标或第 1 章正文，因此无法核对，也不能将此错误判定为“没有章稿”。\n\n下一步：请人工核实作品 ID 是否正确、作品是否已初始化，再继续只读检查。本轮未保存、未采用、未修改任何文件。"
+    }
+  ],
+  "finalResponse": "实际状态：读取作品 `absent-work` 失败，错误码 `WORK_NOT_FOUND`，原文：“没有作品 absent-work，先初始化。”\n\n未取得作品的已确认事实、本章目标或第 1 章正文，因此无法核对，也不能将此错误判定为“没有章稿”。\n\n下一步：请人工核实作品 ID 是否正确、作品是否已初始化，再继续只读检查。本轮未保存、未采用、未修改任何文件。",
+  "limits": "sdkState 仅表示会话运行状态；materials 依据实际读取结果，不证明内容判断正确。时间含宿主启动、正常宿主配置与工具往返；usage 为 SDK 整轮汇总。公开事件不是底层模型请求数量或内部推理，不能据单次记录比较稳定性能。"
+}

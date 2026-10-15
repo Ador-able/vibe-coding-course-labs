@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "missing-work",
+    "mode": "agent",
+    "sdkState": "completed",
+    "materials": {
+      "ready": false,
+      "state": "unavailable",
+      "workRead": false,
+      "chapterRead": false,
+      "chapterStatus": "unknown"
+    },
+    "appReadCalls": 0,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 56205,
+      "cached_input_tokens": 41856,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 233,
+      "reasoning_output_tokens": 22
+    },
+    "elapsedMs": 21820.2,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter05\\project\\runs\\control\\2026-10-15T01-19-46.258Z-3bfc34ee-b9ac-46fd-9f44-bb5672a50361\\missing-work-agent"
+  }
+]

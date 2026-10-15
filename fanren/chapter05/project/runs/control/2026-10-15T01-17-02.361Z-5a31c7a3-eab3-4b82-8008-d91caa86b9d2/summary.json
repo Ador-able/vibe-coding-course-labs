@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "existing",
+    "mode": "agent",
+    "sdkState": "completed",
+    "materials": {
+      "ready": true,
+      "state": "ready",
+      "workRead": true,
+      "chapterRead": true,
+      "chapterStatus": "existing"
+    },
+    "appReadCalls": 0,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 61380,
+      "cached_input_tokens": 41856,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 554,
+      "reasoning_output_tokens": 0
+    },
+    "elapsedMs": 27378.6,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter05\\project\\runs\\control\\2026-10-15T01-17-02.361Z-5a31c7a3-eab3-4b82-8008-d91caa86b9d2\\existing-agent"
+  }
+]

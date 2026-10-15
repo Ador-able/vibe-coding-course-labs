@@ -1,0 +1,27 @@
+[
+  {
+    "condition": "existing",
+    "mode": "routed",
+    "sdkState": "completed",
+    "materials": {
+      "ready": true,
+      "state": "ready",
+      "workRead": true,
+      "chapterRead": true,
+      "chapterStatus": "existing"
+    },
+    "appReadCalls": 2,
+    "sdkTurns": 1,
+    "usage": {
+      "input_tokens": 20822,
+      "cached_input_tokens": 4992,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 589,
+      "reasoning_output_tokens": 159
+    },
+    "elapsedMs": 32753.1,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter05\\project\\runs\\control\\2026-10-15T01-19-46.249Z-e419399a-2aae-4cf0-92fc-bc8f40b184e3\\existing-routed"
+  }
+]

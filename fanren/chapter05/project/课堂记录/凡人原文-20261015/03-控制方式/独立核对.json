@@ -1,0 +1,336 @@
+{
+  "cases": [
+    {
+      "condition": "existing",
+      "mode": "serial",
+      "directory": "runs/control/2026-10-15T01-17-02.360Z-555ab648-1ba6-434d-83ce-f596b3c42349/existing-serial",
+      "sdkState": "completed",
+      "sdkTurns": 1,
+      "materialState": "ready",
+      "chapterStatus": "existing",
+      "appTools": [
+        "read_work",
+        "read_chapter"
+      ],
+      "modelTools": [],
+      "usage": {
+        "input_tokens": 20805,
+        "cached_input_tokens": 4992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 509,
+        "reasoning_output_tokens": 87
+      },
+      "elapsedMs": 25028.5,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "**实际状态**：已通读所附第1章《选拔开端》全文。读取成功，当前为第1版草稿（`draft`），来源标记为人工（`human`），无历史修订及审阅备注；当前状态不是已采用。本次未调用工具，未保存、采用或修改任何内容。\n\n**核对结果**：与所附已确认事实和本章目标相符，未发现明确冲突。\n\n- 动机与人物状态：“自己若也能挣钱，家里吃饭时便能少皱几次眉”“他才十岁”，并明确“平日在村里跑腿、拾柴算不得学过武”。没有提前获得功法或使用法术。\n- 职责与规则：“王护法领他们来到一片竹林前”，由岳堂主宣布路线及“正午之前到达崖顶，才算满足正式弟子的时间条件”，也交代稍晚且表现突出者可能成为记名弟子，人物职责没有互换。\n- 保护与阻碍：“身后的师兄停了停，见他站稳，才继续跟来”；“每次吸气都不够用”“膝头便软了一下”，通过具体行动呈现保护和体力困难。\n- 收束位置：结尾为“他扶开挡在眼前的竹枝，继续向前走去”，停在竹林前行，没有宣布登顶或考核结果。\n\n**不足与下一步**：目前没有必须返修的情节问题。所附材料不含C01—C03原文，因此以上只能确认与提供的事实、大纲一致；正文是否满足800—1200个汉字，本次未精确计数。建议先核验字数，再由人判断叙述节奏、措辞及是否采用；采用后，第2章应依据实际采用正文接续。",
+      "appTrace": [
+        {
+          "phase": "started",
+          "tool": "read_work"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_work"
+        },
+        {
+          "phase": "started",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_chapter"
+        }
+      ],
+      "modelTrace": []
+    },
+    {
+      "condition": "existing",
+      "mode": "agent",
+      "directory": "runs/control/2026-10-15T01-17-02.361Z-5a31c7a3-eab3-4b82-8008-d91caa86b9d2/existing-agent",
+      "sdkState": "completed",
+      "sdkTurns": 1,
+      "materialState": "ready",
+      "chapterStatus": "existing",
+      "appTools": [],
+      "modelTools": [
+        "read_chapter",
+        "read_work"
+      ],
+      "usage": {
+        "input_tokens": 61380,
+        "cached_input_tokens": 41856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 554,
+        "reasoning_output_tokens": 0
+      },
+      "elapsedMs": 27378.6,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "已读取作品要求修订 1，以及第 1 章《选拔开端》的完整正文。章稿为修订 1、人工来源，状态是 **draft（未采用）**，对应作品要求修订 1；无历史修订、无评审备注。\n\n对照已确认事实与本章目标，未发现明确冲突：\n\n- 动机与身份相符：“自己若也能挣钱，家里吃饭时便能少皱几次眉。”正文也明确“他才十岁”，并说明未学过武。\n- 人物职责正确：“次日，王护法领他们来到一片竹林前。”路线由岳堂主说明，未互换职责。\n- 考核规则准确：“正午之前到达崖顶，才算满足正式弟子的时间条件。”也保留稍晚但表现突出者可能成为记名弟子的条件。\n- 保护与体力阻碍落实为行动：“身后的师兄停了停，见他站稳，才继续跟来。”“他想追，才迈大一步，膝头便软了一下。”\n- 结尾“他扶开挡在眼前的竹枝，继续向前走去。”停在竹林前行，未提前写登顶、考核结果或修仙能力。\n\n下一步宜先由人审阅这份草稿，决定是否采用、是否调整措辞与细节；目前没有必须改写的事实问题。正文是否满足 **800—1200 个汉字**，本轮未做精确计数，仍需核验。之后再依据实际确认的第 1 章推进第 2 章。\n\n本轮未保存、未采用，也未修改任何文件。",
+      "appTrace": [],
+      "modelTrace": [
+        {
+          "phase": "item.started",
+          "id": "item_1",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "item.started",
+          "id": "item_2",
+          "tool": "read_work"
+        },
+        {
+          "phase": "item.completed",
+          "id": "item_1",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "item.completed",
+          "id": "item_2",
+          "tool": "read_work"
+        }
+      ]
+    },
+    {
+      "condition": "existing",
+      "mode": "routed",
+      "directory": "runs/control/2026-10-15T01-19-46.249Z-e419399a-2aae-4cf0-92fc-bc8f40b184e3/existing-routed",
+      "sdkState": "completed",
+      "sdkTurns": 1,
+      "materialState": "ready",
+      "chapterStatus": "existing",
+      "appTools": [
+        "read_chapter",
+        "read_work"
+      ],
+      "modelTools": [],
+      "usage": {
+        "input_tokens": 20822,
+        "cached_input_tokens": 4992,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 589,
+        "reasoning_output_tokens": 159
+      },
+      "elapsedMs": 32753.1,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "实际状态：第1章《选拔开端》已有完整正文，章稿与作品均为修订1；状态为 `draft`，来源为人工，无历史修订、无评审备注。本次读取成功，已核对所附全文；草稿状态不代表已被采用。\n\n事实与章目标基本相符：\n\n- 年龄、家境与参加动机一致：“他才十岁”“自己若也能挣钱，家里吃饭时便能少皱几次眉。”三叔举荐、父亲因收入同意、大哥每月三十个铜板也与材料一致。\n- 人物职责未混淆：“王护法领他们来到一片竹林前”；岳堂主说明“先穿竹林，再攀岩壁，最后登上山崖”。\n- 考核规则准确：“正午之前到达崖顶，才算满足正式弟子的时间条件”；稍晚且表现突出者“也可能收作记名弟子”。正文也明确交代青年师兄在后保护。\n- 体力阻碍通过行动呈现：“才迈大一步，膝头便软了一下。”结尾“他扶开挡在眼前的竹枝，继续向前走去”符合竹林内继续前行的停点，未宣布考核结果，也未提前引入法术或功法。\n\n不足与下一步：未发现明确的事实冲突或章目标偏离；本次未精确统计规定口径下的汉字数，不能确认800—1200字要求已达标。挣钱动机充分，“学本事”的期待相对含蓄，是否加强、父亲整理衣领等相容细节是否保留，仍由人判断。建议先核准字数并完成人工审阅；确定采用正文后，再据实际正文推进第2章。本次未保存、未采用、未修改任何文件。",
+      "appTrace": [
+        {
+          "phase": "started",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "started",
+          "tool": "read_work"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_work"
+        }
+      ],
+      "modelTrace": []
+    },
+    {
+      "condition": "existing",
+      "mode": "concurrent",
+      "directory": "runs/control/2026-10-15T01-19-46.247Z-73c908fd-b9d0-4fa0-af51-b4a7af79cddf/existing-concurrent",
+      "sdkState": "completed",
+      "sdkTurns": 1,
+      "materialState": "ready",
+      "chapterStatus": "existing",
+      "appTools": [
+        "read_work",
+        "read_chapter"
+      ],
+      "modelTools": [],
+      "usage": {
+        "input_tokens": 20805,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 562,
+        "reasoning_output_tokens": 107
+      },
+      "elapsedMs": 24042.8,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "已读完所附第1章《选拔开端》全文及作品要求、已确认事实和大纲。当前为第1版草稿（`draft`），来源标记为人工（`human`），对应作品第1版；无历史修订、无评审备注，尚未采用。本次未调用工具，也未保存或修改任何内容。\n\n正文与事实、本章目标基本一致：\n\n- **参选动机与人物状态**：“自己若也能挣钱，家里吃饭时便能少皱几次眉”，呈现了帮补家用的目的；“他才十岁”“平日在村里跑腿、拾柴算不得学过武”，符合年龄及未习武状态。全文未出现提前获得功法或使用法术。\n- **人员职责与规则**：“次日，王护法领他们来到一片竹林前”，随后由岳堂主宣布路线，职责没有互换。“正午之前到达崖顶，才算满足正式弟子的时间条件”“稍晚些的，若表现突出，也可能收作记名弟子”，保留了截止时间及记名可能性。\n- **保护、阻碍与结束位置**：“身后的师兄停了停，见他站稳，才继续跟来”，具体呈现保护；“每次吸气都不够用”“膝头便软了一下”，呈现体力阻碍。结尾“他扶开挡在眼前的竹枝，继续向前走去”，停在竹林前行，没有提前写考核结果。\n\n未发现明确的事实冲突或越过本章终点的问题。精确汉字数尚未核算，不能据此确认满足800—1200字的硬性要求；父亲整理衣领等相容细节及整体文风，仍由人判断是否保留。下一步宜先由人工审阅本稿、核实字数并决定修改或采用；续写第2章时，应依据届时实际正文及修订衔接。",
+      "appTrace": [
+        {
+          "phase": "started",
+          "tool": "read_work"
+        },
+        {
+          "phase": "started",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_work"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_chapter"
+        }
+      ],
+      "modelTrace": []
+    },
+    {
+      "condition": "existing",
+      "mode": "mixed",
+      "directory": "runs/control/2026-10-15T01-19-46.247Z-9c6f5f1e-4946-4baf-9e5f-bc105d393cc9/existing-mixed",
+      "sdkState": "completed",
+      "sdkTurns": 1,
+      "materialState": "ready",
+      "chapterStatus": "existing",
+      "appTools": [
+        "read_work"
+      ],
+      "modelTools": [
+        "read_chapter"
+      ],
+      "usage": {
+        "input_tokens": 61037,
+        "cached_input_tokens": 39424,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 576,
+        "reasoning_output_tokens": 93
+      },
+      "elapsedMs": 29612.3,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "已读取第 1 章《选拔开端》全文：修订 1，状态为草稿（draft），来源标记为人工（human），对应作品修订 1；尚未采用，审阅备注为空。本轮未保存、采用或修改任何内容。\n\n正文与已确认事实、本章目标基本一致：\n\n- 参加选拔的动机明确：“自己若也能挣钱，家里吃饭时便能少皱几次眉。”\n- 人物职责正确：“王护法领他们来到一片竹林前”，由岳堂主宣布路线与规则。\n- 时间条件准确：“正午之前到达崖顶，才算满足正式弟子的时间条件。”也保留了稍晚但表现突出者可能成为记名弟子的规则。\n- 保护与体力阻碍有具体呈现：“身后的师兄停了停，见他站稳，才继续跟来。”“他想追，才迈大一步，膝头便软了一下。”\n- 结尾“他扶开挡在眼前的竹枝，继续向前走去。”停在竹林前行，未提前写考核结果，也未出现法术或已得修仙功法。\n\n未发现明确的事实冲突或章目标越界。仍需人工判断叙述节奏、对话及相容细节是否采用；本轮未精确统计汉字数，800—1200 字要求尚待核实。下一步宜先完成人工审阅，决定修订或采用，再依据实际正文衔接第 2 章。",
+      "appTrace": [
+        {
+          "phase": "started",
+          "tool": "read_work"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_work"
+        }
+      ],
+      "modelTrace": [
+        {
+          "phase": "item.started",
+          "id": "item_1",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "item.completed",
+          "id": "item_1",
+          "tool": "read_chapter"
+        }
+      ]
+    },
+    {
+      "condition": "empty",
+      "mode": "routed",
+      "directory": "runs/control/2026-10-15T01-19-46.259Z-825e9ca9-bda1-4956-a068-1e8595dbfd1b/empty-routed",
+      "sdkState": "completed",
+      "sdkTurns": 1,
+      "materialState": "ready",
+      "chapterStatus": "empty",
+      "appTools": [
+        "read_chapter",
+        "read_work"
+      ],
+      "modelTools": [],
+      "usage": {
+        "input_tokens": 19777,
+        "cached_input_tokens": 0,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 235,
+        "reasoning_output_tokens": 0
+      },
+      "elapsedMs": 21086.9,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "- **实际状态**：`read_chapter` 读取成功，结果为 `null`，第1章当前没有章稿；作品材料读取成功，版本为 `revision: 1`。因此没有正文可供逐句核对。\n- **准备方向**：围绕韩立因家境贫困、家人期待而参加选拔展开，用具体行动呈现挣钱帮家的目的与体力阻碍。注意职责原句：“王护法接送孩子并领到竹林；岳堂主宣布路线和考核规则。”本章目标明确要求：“止于竹林继续前行，不写考核结果。”\n- **不足与下一步**：尚无正文，无法判断事实落实、叙事连贯性及字数是否达标。具体标题、开篇位置、叙述顺序和相容细节仍需人判断；可先确定这些选择，再按本章目标准备草稿，不提前引入登顶结果、法术或修仙功法。本次未调用工具、保存、采用或修改文件。",
+      "appTrace": [
+        {
+          "phase": "started",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "started",
+          "tool": "read_work"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_work"
+        }
+      ],
+      "modelTrace": []
+    },
+    {
+      "condition": "missing-work",
+      "mode": "routed",
+      "directory": "runs/control/2026-10-15T01-17-02.360Z-835ccac3-e4cd-461b-b657-ef258d50cbb4/missing-work-routed",
+      "sdkState": "not-started",
+      "sdkTurns": 0,
+      "materialState": "unavailable",
+      "chapterStatus": "unknown",
+      "appTools": [
+        "read_chapter"
+      ],
+      "modelTools": [],
+      "usage": null,
+      "elapsedMs": 200,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "业务读取失败：[{\"tool\":\"read_chapter\",\"error\":{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}}]。未取得完整资料，停止本轮核对；需要核实作品 absent-work 的标识或初始化状态后再推进。",
+      "appTrace": [
+        {
+          "phase": "started",
+          "tool": "read_chapter"
+        },
+        {
+          "phase": "finished",
+          "tool": "read_chapter"
+        }
+      ],
+      "modelTrace": []
+    },
+    {
+      "condition": "missing-work",
+      "mode": "agent",
+      "directory": "runs/control/2026-10-15T01-19-46.258Z-3bfc34ee-b9ac-46fd-9f44-bb5672a50361/missing-work-agent",
+      "sdkState": "completed",
+      "sdkTurns": 1,
+      "materialState": "unavailable",
+      "chapterStatus": "unknown",
+      "appTools": [],
+      "modelTools": [
+        "read_work"
+      ],
+      "usage": {
+        "input_tokens": 56205,
+        "cached_input_tokens": 41856,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 233,
+        "reasoning_output_tokens": 22
+      },
+      "elapsedMs": 21820.2,
+      "fullObjectsUnchanged": true,
+      "finalResponse": "实际状态：读取作品 `absent-work` 失败，错误码 `WORK_NOT_FOUND`，原文：“没有作品 absent-work，先初始化。”\n\n未取得作品的已确认事实、本章目标或第 1 章正文，因此无法核对，也不能将此错误判定为“没有章稿”。\n\n下一步：请人工核实作品 ID 是否正确、作品是否已初始化，再继续只读检查。本轮未保存、未采用、未修改任何文件。",
+      "appTrace": [],
+      "modelTrace": [
+        {
+          "phase": "item.started",
+          "id": "item_1",
+          "tool": "read_work"
+        },
+        {
+          "phase": "item.completed",
+          "id": "item_1",
+          "tool": "read_work"
+        }
+      ]
+    }
+  ],
+  "fixtureHan": 917,
+  "limits": "八组各一次，无补跑；部分独立条件并发采集，不排速度和品质。公开SDK事件不等于底层模型请求数；型号、推理档位生效值和账单未知。"
+}

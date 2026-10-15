@@ -1,0 +1,18 @@
+{
+  "日期": "2026-10-15",
+  "目标": "只读核对当前第一章状态，不生成、不保存、不采用",
+  "已有稿": "第一节真实选拔开端，917汉字；各组人工载入同一副本",
+  "fixtureSha256": "ad35149743ab3c9009008041839483f94158b4b3598173bbb1b9c52284180e8f",
+  "构建": "05bcd2ae89cfd1ee393fe15ed2181058075dcbeece159525eecea3f796182f1b",
+  "条件": [
+    {"case": "existing", "mode": "serial"},
+    {"case": "existing", "mode": "agent"},
+    {"case": "existing", "mode": "routed"},
+    {"case": "existing", "mode": "concurrent"},
+    {"case": "existing", "mode": "mixed"},
+    {"case": "empty", "mode": "routed"},
+    {"case": "missing-work", "mode": "routed"},
+    {"case": "missing-work", "mode": "agent"}
+  ],
+  "规则": "独立数据库与新会话，不补跑；各组状态和全部返回保留。部分独立条件并发采集，耗时不作排名；真实型号和计费未知。读者主线只做已有稿serial/agent，其余可直接查看实录。"
+}

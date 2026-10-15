@@ -1,0 +1,21 @@
+[
+  {
+    "condition": "missing-work",
+    "mode": "routed",
+    "sdkState": "not-started",
+    "materials": {
+      "ready": false,
+      "state": "unavailable",
+      "workRead": false,
+      "chapterRead": false,
+      "chapterStatus": "unknown"
+    },
+    "appReadCalls": 1,
+    "sdkTurns": 0,
+    "usage": null,
+    "elapsedMs": 200,
+    "unchanged": true,
+    "error": null,
+    "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter05\\project\\runs\\control\\2026-10-15T01-17-02.360Z-835ccac3-e4cd-461b-b657-ef258d50cbb4\\missing-work-routed"
+  }
+]
