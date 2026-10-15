@@ -1,0 +1,26 @@
+{
+  "id": "4-consistent",
+  "condition": "consistent",
+  "state": "completed",
+  "startedAt": "2026-10-14T16:03:06.894Z",
+  "endedAt": "2026-10-14T16:04:08.892Z",
+  "elapsedMs": 61997.5374,
+  "threadId": "01a13b27-3253-7ce1-98e8-ef403b3457f4",
+  "promptSha256": "164af5b259589045323bb01ae4e18ae87ae26994be72cf34b3e92c6817170b0a",
+  "outputSha256": "0274c4ba0bb034ca92f77aac6d42fa9510de8a13a54a4b6d72fb10ebc5279913",
+  "outputUtf16": 1259,
+  "usageEvents": [
+    {
+      "input_tokens": 25834,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1138,
+      "reasoning_output_tokens": 24
+    }
+  ],
+  "toolEvents": [],
+  "failure": null,
+  "scriptRetries": 0,
+  "internalRetryCount": null,
+  "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+}

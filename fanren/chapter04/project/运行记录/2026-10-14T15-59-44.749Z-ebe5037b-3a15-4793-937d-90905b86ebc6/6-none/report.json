@@ -1,0 +1,21 @@
+{
+  "id": "6-none",
+  "condition": "none",
+  "state": "failed",
+  "startedAt": "2026-10-14T16:05:14.371Z",
+  "endedAt": "2026-10-14T16:05:14.431Z",
+  "elapsedMs": 59.99869999999646,
+  "threadId": null,
+  "promptSha256": "c34076d6530878ae9bffc758e656efac6491c7efab1cc26fad19169375fd1473",
+  "outputSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "outputUtf16": 0,
+  "usageEvents": [],
+  "toolEvents": [],
+  "failure": {
+    "name": "Error",
+    "message": "Codex Exec exited with code 3221226091: "
+  },
+  "scriptRetries": 0,
+  "internalRetryCount": null,
+  "limits": "完成仅指公开调用结束并取得文字；工具事件、事实关系与完整交付仍需核对。内部重试、实际金额、真人工时和生效型号未测得。"
+}
