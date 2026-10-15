@@ -1,0 +1,23 @@
+{
+  "kind": "真实原生浏览器截图",
+  "assetId": 800,
+  "file": "界面/162-蓝色原文草稿-Edge原生2K.png",
+  "width": 2560,
+  "height": 1680,
+  "bytes": 458752,
+  "sha256": "1703107e657d941ba84df04bd227a8e34455d818ad4bf0c5f468572ce9319599",
+  "viewport": {
+    "width": 1280,
+    "height": 840,
+    "deviceScaleFactor": 2
+  },
+  "actions": [
+    "打开独立工作台 http://127.0.0.1:4485/",
+    "只点第二章C04，未编辑、未保存",
+    "聚焦章节与草稿区，原生截图后清除Emulation"
+  ],
+  "method": "Edge扩展绑定tab的CDP Page.captureScreenshot；无放大、拼接或图片编辑",
+  "displaySourceSha256": "7c6123cf742e2568c57bd1c073cf53d808b7aaf7aa155b77abac44d34c0c19ff",
+  "experimentGitHead": "85a4de5c545a5ffa43cd44330d9ff24bc75fa109",
+  "limits": "只观察完整原文r1草稿；原图由主编采集阶段委托本代理操作，业务无写入。"
+}

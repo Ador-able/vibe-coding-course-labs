@@ -1,0 +1,24 @@
+{
+  "kind": "真实原生浏览器截图",
+  "assetId": 802,
+  "file": "02-规则来源/164-来源对照-Edge原生2K.png",
+  "width": 2560,
+  "height": 1640,
+  "bytes": 155799,
+  "sha256": "37557866dd212fae11f2b3fedecd7fb568ba7dd910ee01930ea6ce1a06da6556",
+  "viewport": {
+    "width": 1280,
+    "height": 820,
+    "deviceScaleFactor": 2
+  },
+  "actions": [
+    "启动既有只读实录viewer：node scripts/viewer.mjs --port 4364（0模型/0业务写入）",
+    "Edge打开http://127.0.0.1:4364/，选择项目规则与条件参考",
+    "点击查看结果，核来源表和0/1自然任务数",
+    "Page.bringToFront后fromSurface原生截图，captureBeyondViewport=true；清除Emulation"
+  ],
+  "method": "Edge扩展绑定tab的CDP Page.captureScreenshot；无放大、拼接或图片编辑",
+  "displaySourceSha256": "7c6123cf742e2568c57bd1c073cf53d808b7aaf7aa155b77abac44d34c0c19ff",
+  "experimentGitHead": "85a4de5c545a5ffa43cd44330d9ff24bc75fa109",
+  "limits": "实录读回页，不重新执行三份来源探针或自然模型任务。"
+}
