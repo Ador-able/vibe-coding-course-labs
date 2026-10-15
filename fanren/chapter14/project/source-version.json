@@ -1,7 +1,7 @@
 {
   "kind": "actual-executable-source-and-complete-inputs",
-  "sourceSha256": "e4111d0a3e40df67294b81d5315226eb7978a95395e3c8f2c29868c63a977817",
-  "frozenInputSha256": "5d18a243580bab289ef34ff92558a02417b7895d6095415dcab2ff7d5dbe6075",
+  "sourceSha256": "5800dc9d0721f63e37cb5059e2e029f3593caf0abfc9a160cee666358a154b5f",
+  "frozenInputSha256": "f85a40d44ec2f4014b7af8a955da825e9c7dc19bd5b36f6d5581adc4b24d76b3",
   "files": [
     {
       "path": ".gitattributes",
@@ -15,163 +15,173 @@
     },
     {
       "path": "README.md",
-      "bytes": 4527,
-      "sha256": "fee716328103c91968f17c38e5a4c1799f5156069393ebfc0fb756f39a00b2c7"
+      "bytes": 4946,
+      "sha256": "3b5f0d86602109a85b9a077825997f62179199226192b529a03ff61d37ab9056"
     },
     {
-      "path": "files/chapter-three.pdf",
-      "bytes": 83234,
-      "sha256": "b76de601551821bbc8f902476332182d39014133f011e538666c04386b9fd6cc"
+      "path": "files/fanren-C05.pdf",
+      "bytes": 68513,
+      "sha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
     },
     {
-      "path": "files/chapter-three.txt",
-      "bytes": 3245,
-      "sha256": "363b32b0054129db8b916db8453d885513ac0ad35206a9b5aba57a6282200834"
+      "path": "files/fanren-C05.txt",
+      "bytes": 7348,
+      "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
     },
     {
-      "path": "files/pages/chapter-three-1.png",
-      "bytes": 688704,
-      "sha256": "ac706b6cb0768dfa032241d91f54b381125faec64ee9c6208acf034bf3b334e6"
+      "path": "files/pages/fanren-C05-1.png",
+      "bytes": 619399,
+      "sha256": "3db24c699b4dd2f1cbb24e352a2d1c994f540362477be0d8c777391681a8a4e5"
     },
     {
-      "path": "files/pages/chapter-three-2.png",
-      "bytes": 586411,
-      "sha256": "49443126d5ed3d533035eb96dda955fc5dc5a6df5b8263db3478f56ca3036a96"
+      "path": "files/pages/fanren-C05-2.png",
+      "bytes": 563409,
+      "sha256": "ef8cd01780f7cfffd421b916143810b0a5aaafa7cfa9381b47bb6a5205a02a8f"
     },
     {
-      "path": "files/pages/chapter-three-3.png",
-      "bytes": 542468,
-      "sha256": "372414094f358be363a7f35c304a87a5a538dc3753c0c5d5e3a7bd1ce8588c14"
+      "path": "files/pages/fanren-C05-3.png",
+      "bytes": 546826,
+      "sha256": "533773ca0c31a72668ae789345704b5ded0b7ee215742e613fef75344addbcaa"
     },
     {
       "path": "inputs/PDF三页正文定位.json",
-      "bytes": 531,
-      "sha256": "e88e8835ad8d1eb21009467e13e0498c476a302874bba588eaec36ee4a36a291"
+      "bytes": 651,
+      "sha256": "23fe49c0fd7483e797bf897bc0273177c55b610c6598f90956b345905a8e5ce1"
     },
     {
       "path": "inputs/feedback-E01.json",
-      "bytes": 339,
-      "sha256": "f325172ecd986d9539afb2e0fe5d21f042a5eae7952daa0ea66a5443074f5e28"
+      "bytes": 387,
+      "sha256": "73f5e9ed97e94eaa08fff839179b0ce346209796c115c36a422267545de31b06"
     },
     {
       "path": "inputs/feedback-E02.json",
-      "bytes": 332,
-      "sha256": "db33f53535c45c57d1fdec21a11622ca790020383c24173c2672c4ed8ee50a9b"
+      "bytes": 380,
+      "sha256": "e47e2fb97915863746085918967fa925fa0c55d802b48ac83f99655afacfdb09"
     },
     {
       "path": "inputs/feedback-test-E01.json",
-      "bytes": 349,
-      "sha256": "90dde7a2decda68184479e5b09b910a882cb32ea9fdadf1ac7d4e61fd2689853"
+      "bytes": 387,
+      "sha256": "70e044b6cdc44d1fa75bac7f1723f1fd5a554e80d760f088bf18843d3a67bea0"
     },
     {
       "path": "inputs/五份建表参数.json",
       "bytes": 4665,
-      "sha256": "f3e0c80f32f6b8a9dfad8b5a44ab2a642a289982a575191ad2fa25b5e5a903a4"
+      "sha256": "335cd9a53b813f9e2f6305b744c9a62d4e7676d5806a827fbb4e038f6533a477"
+    },
+    {
+      "path": "inputs/凡人原文片段与段落定位.json",
+      "bytes": 57223,
+      "sha256": "376a593d3833b71a284fe8b9f70fab869e2e5b5630af4b7177ea4dd1425302d5"
+    },
+    {
+      "path": "inputs/凡人选拔与授课大纲.json",
+      "bytes": 1638,
+      "sha256": "1b6f998eacc2896ff64a98e8f2d67f598acd992717cbabf9a4f758e250892dc6"
+    },
+    {
+      "path": "inputs/凡人选拔与授课设定.json",
+      "bytes": 1407,
+      "sha256": "c05b18664d5a3a0596a5c57cf4fc60141457e09c436cfc0147d9e7f6d0ba9689"
     },
     {
       "path": "inputs/完整两项目录输入.json",
-      "bytes": 495,
-      "sha256": "636e26a7579e2b74a7883f8a472489231139a822c44a56bb9c4401fee61fd6c6"
+      "bytes": 482,
+      "sha256": "7d5b5070434e7394c891ceddd21b3da60f7a008cbf2505d5f9020f97e39f1ec2"
     },
     {
       "path": "inputs/完整提示模板.txt",
-      "bytes": 392,
-      "sha256": "3207bc8017d0f233331836e14f9aecae84bd30a36d522ec51016b07639e8c5f9"
+      "bytes": 404,
+      "sha256": "7ef009f1579063c0cd187e0d0ee7945872e8c1db51ed93b8b4565639cac9a342"
     },
     {
       "path": "inputs/完整教师反馈目录.json",
-      "bytes": 1862,
-      "sha256": "f8205b3280936873de146a916005d10481a28f7a6cb4fda2a1a6c8c882079bd3"
+      "bytes": 26642,
+      "sha256": "558b7438942119c869b3a3374e71566312001c81e791f9d5ed67196a0cacffd0"
+    },
+    {
+      "path": "inputs/执行请求清单.json",
+      "bytes": 4767,
+      "sha256": "90eae1f34449edd7bef957ef6e7086676bae7d44f2b9d09c5e04f5596cb49c0c"
     },
     {
       "path": "inputs/批次完整输入.json",
-      "bytes": 1345,
-      "sha256": "29b76f6cce537080140bd7fade94d4344f2c790b6aef30fc5ff69706bf9ec982"
+      "bytes": 26227,
+      "sha256": "2524fc69a7481a8140fbbcb70957f6dddd15135d22676f43bf8238fd17739018"
     },
     {
       "path": "inputs/授权案例完整材料.json",
-      "bytes": 2176,
-      "sha256": "5c2d0b82e6a10c6c2a602a463b0992cd7e17c4d4312752a06b511754b6d4a2a5"
+      "bytes": 2177,
+      "sha256": "9e25b7bec590f94b70cea739e286e8328269f378844565b0e81d4df4b98fdb63"
     },
     {
       "path": "inputs/接收者验收卡.json",
-      "bytes": 4359,
-      "sha256": "3e880686d29d48c22f24e7822ba68795221d35c5e5811b7d4b4f802207d8d386"
+      "bytes": 4274,
+      "sha256": "d0be5b22bfaafeb8729aa71d86ad44a65c2624d51c78629d5f4184980ae1e8fd"
     },
     {
       "path": "inputs/教师反馈来源与边界.json",
-      "bytes": 1193,
-      "sha256": "c0bac67df4b898d31aecbb8033fffd3a7faef43860ebf8f21fa92a2c99b9972b"
+      "bytes": 1993,
+      "sha256": "2b7525398163931b42f17fae8e88b9a6f4904f5518e50034077155e35016c5db"
     },
     {
       "path": "inputs/日历完整待执行忙闲提案.json",
       "bytes": 170,
-      "sha256": "2ca77a7e7d321f2a4d81f8ce1318ae00a2556f106e6eb475674f904b3e163ffb"
+      "sha256": "bf43dc85e7ad4d9829fe7f13f678188a6e207049e58b01122059117cbc90ca4c"
     },
     {
       "path": "inputs/日历完整待执行提案.json",
-      "bytes": 1065,
-      "sha256": "b766fcab11b6f01d99cd0a4b2fe77e02ff515eeae677ff64b9604353b14de03a"
+      "bytes": 1068,
+      "sha256": "e05ed003ead446e782d7588ab93452bf2bcc401c2d2bcfa7d6770a74d902fd45"
     },
     {
       "path": "inputs/日历完整教师请求.txt",
-      "bytes": 1089,
-      "sha256": "bb031e7e0130fb45bb6ddd168c656f484dd9a3994f10dce096bf8613b26ba278"
+      "bytes": 1090,
+      "sha256": "048fcaf61fcd958edf530e470eceadae850be8355be68e5d4117fd5978c138e6"
     },
     {
       "path": "inputs/输入冻结清单.json",
-      "bytes": 6784,
-      "sha256": "5d18a243580bab289ef34ff92558a02417b7895d6095415dcab2ff7d5dbe6075"
-    },
-    {
-      "path": "inputs/长文-完整三章与段落定位.json",
-      "bytes": 27459,
-      "sha256": "1c8d71fdb81e09d34cb89982e39b8546975e9cb63d26cf474badc398d0374170"
-    },
-    {
-      "path": "inputs/青岚修仙录-三章原始课堂存档.md",
-      "bytes": 10231,
-      "sha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf"
+      "bytes": 6889,
+      "sha256": "f85a40d44ec2f4014b7af8a955da825e9c7dc19bd5b36f6d5581adc4b24d76b3"
     },
     {
       "path": "inputs/非敏感固定设置.json",
-      "bytes": 2264,
-      "sha256": "e96f000fb64fb16d91299be2d6d520a1fa7b7275450782d69f970d1d4b22f0cc"
+      "bytes": 2329,
+      "sha256": "dce2505d113f353c1f880b5c4854707c965c62e365f242ae7c25c009ca597a9d"
+    },
+    {
+      "path": "materials/历史原件搬移核对.json",
+      "bytes": 90040,
+      "sha256": "8043eea21b997eb54d2a469138b019431f6f546396efcc7bcc60395593f9f52b"
     },
     {
       "path": "materials/原件清单.json",
-      "bytes": 1474,
-      "sha256": "1a0d48f95eb42b06a3ad123af592ac9fd3a084ffce8996d9b328f9cfedc7e323"
-    },
-    {
-      "path": "materials/原件生成与本机文本层读回.json",
-      "bytes": 8852,
-      "sha256": "22aef7c1aad63009cab6512f969471425053976ca949aeb7cca0c54291851ecf"
+      "bytes": 1349,
+      "sha256": "242ce642c0230429b4dd7207665acb97b9c80fd83763653cd4b7dde66ef292b2"
     },
     {
       "path": "materials/原生模板来源.json",
-      "bytes": 2987,
-      "sha256": "4ac849406084e45677d51433f5e9b86a6f83495e2e32ba9810c7bc326dd0edc8"
+      "bytes": 4967,
+      "sha256": "8237f482431a88705aeeda9b4e39819fac2a4febfb3f774b4d11a29e9cce5cd8"
     },
     {
       "path": "materials/日历Node独立IANA计算.json",
       "bytes": 811,
-      "sha256": "af56ac436300398a2dee762b5fdafd41183e8b5e8db887d8b058573da2048100"
+      "sha256": "055eab51f3be3d079fc43ee19f595af85989dda2cdfe5542d886cbdd522e96ea"
     },
     {
-      "path": "materials/日历固定案例-IANA实际计算.json",
-      "bytes": 791,
-      "sha256": "e272ec9b4be729d38fad2ff7fdc51f7c7e4aab1766b164ca23061638c74f6d1b"
+      "path": "materials/用户原书与凡人片段核对.json",
+      "bytes": 995,
+      "sha256": "2c91f704369c3807ee0d81de38abaa3796fa8097f4e474a5fcef5cfbe80c894a"
     },
     {
       "path": "materials/课堂记录说明.md",
-      "bytes": 689,
-      "sha256": "8d74178d8b042499470f3484cc8bdecb77a59ee4b7a51c8c4d2bb053cd229721"
+      "bytes": 777,
+      "sha256": "f011ffd7a0b2847dfcc2ee615dd52b03b433db5d7740be26ab5d29440070ec37"
     },
     {
       "path": "package.json",
-      "bytes": 548,
-      "sha256": "e2cdc43db66d8f48235c6f117931b9ac83518d200d65a1c287d59628c0c1891e"
+      "bytes": 547,
+      "sha256": "8f814c943f7cc9c256f51e33c8d2e9905411b453b6fe969b41365748787b2b7a"
     },
     {
       "path": "pnpm-lock.yaml",
@@ -181,62 +191,62 @@
     {
       "path": "public/acceptance.html",
       "bytes": 917,
-      "sha256": "946dd4af2c660f47e34a1665e2fa54dccfd338c234780f7e013424bf76bf7800"
+      "sha256": "5201eb3c81e1d023c9954fa4e8ebf153b983b55068afb97de7ad8791062962c0"
     },
     {
       "path": "public/app.css",
       "bytes": 2701,
-      "sha256": "ef7b880525ed357f545a12fbd6071db5502e48f644ff10a7f0173cc6c91d4479"
+      "sha256": "b17e9bfa0e88da933f6769b140487de4cc3a38c0f69b3f30ade724090a098678"
     },
     {
       "path": "public/app.js",
-      "bytes": 11250,
-      "sha256": "f2f1d6101d5f6a60a07667a64fd9c354080e59563f3f5554eaef9eb2091c5e42"
+      "bytes": 11410,
+      "sha256": "6c60f518f96b5c82bf01a1adfa3d42aa769437d716d17a423730034a064d7053"
     },
     {
       "path": "public/authorization.html",
       "bytes": 926,
-      "sha256": "c748f472eb572fdf74272cbaba0687cb742eb8d317ab75da8d69cf47d36008b6"
+      "sha256": "8b31645d78470df422080c048ddada629d6ecba275689c2f7d4708d72b64eb39"
     },
     {
       "path": "public/branch.html",
       "bytes": 913,
-      "sha256": "97cf20ea7880d0b4f2cb815fece0c5b069e664d76030aa24717ee5f340596e53"
+      "sha256": "8668c522aff08a6cab00df184b6a3c75f3d05b83ab30e0137fea1bfd5d419ab1"
     },
     {
       "path": "public/calendar.html",
       "bytes": 927,
-      "sha256": "466363d8c351ca2defc9a2fa862b89b32a0d46580db1a13d405988e60ded2ef5"
+      "sha256": "d4b2cf82132d92bac3fbf96b7e40b8cbf976a352201bd9e442c472d8e78a6dda"
     },
     {
       "path": "public/files.html",
       "bytes": 930,
-      "sha256": "a1917fe81b84997178eda0b71a77ae13d573fb3ca580801d568b81cadd24da68"
+      "sha256": "ca630fc384b77fcbe664efd2d8d77ae4ddecae5b7dd945dc2bc4467d9315dd05"
     },
     {
       "path": "public/flow.html",
       "bytes": 911,
-      "sha256": "56730f752a67b70872543f692d1325e4d59d11b7ab5dced6ce6f23f3ddef5c2f"
+      "sha256": "63417acab79da0683765be1df0cfea1860a87f573211304a81afffb6c1fff6a0"
     },
     {
       "path": "public/ids.html",
       "bytes": 910,
-      "sha256": "04699e160400efe03ad9b1c4890f836ce150e5ae7c44cce784862289d517c98e"
+      "sha256": "2226f14f7d0f09c493b7f4d80363137617d946b2583940385b92772dd1d66800"
     },
     {
       "path": "public/webhook.html",
       "bytes": 932,
-      "sha256": "b20b548e46b328bb528013c45edd6ead677872bf69965e08bea6ebbc44fc58ee"
+      "sha256": "3be504c9e8a82b64de368a12de2eda77621c8abf56c1dde43ff4782c8275aec5"
     },
     {
       "path": "scripts/calendar.mjs",
       "bytes": 1982,
-      "sha256": "bc2edfa007bbf531ee1f966453f0fb8230f41362a8862e254e251b0cc7a80348"
+      "sha256": "f44a57b4a721fe69d7c3277fc30d6c8ec37cc2292925fd23b7cb69b527179559"
     },
     {
       "path": "scripts/check-inputs.mjs",
-      "bytes": 5109,
-      "sha256": "bf1d7b1f3ca2b443f64efdb8850104de53bceae74ef0c8dd6e6d29093e0d7e1e"
+      "bytes": 7259,
+      "sha256": "b4ffe648b041496956d099530d2ecce194597b515e894972836b9c245cc7bd73"
     },
     {
       "path": "scripts/check-source.mjs",
@@ -245,28 +255,28 @@
     },
     {
       "path": "scripts/freeze-source.mjs",
-      "bytes": 1208,
-      "sha256": "b20701d4b44e0137e182f245a6bde608429e5f72e6fe3a0b53ba14d31599a76a"
+      "bytes": 1150,
+      "sha256": "0ae8999078d4e06f1c7323793e92a2ce696d5a9abc12a0de702710ed6515a030"
     },
     {
       "path": "scripts/n8n.mjs",
-      "bytes": 12183,
-      "sha256": "f019e4f84fdb40f529a83cea6007dd73e1133534349793b693ddba0bbf5637c3"
+      "bytes": 12179,
+      "sha256": "be1ee166663495a9b4b27dea2632f2e0f66d460ff3c2140d406748252cc2d374"
     },
     {
       "path": "scripts/setup-classroom.mjs",
-      "bytes": 2768,
-      "sha256": "ddfd08097e86acaff62719cd4ab7af2bf77c753559ecca5078fd27a667d2a27d"
+      "bytes": 2773,
+      "sha256": "e785248a05a8a16027059c72f5ccd012ba1768ccdf33eedc7cbcd20a35d2deb1"
     },
     {
       "path": "server.mjs",
-      "bytes": 4181,
-      "sha256": "cf0c918141e8e0e2439d9a95d369bd57575366301fdbca0404320ee31507e6ae"
+      "bytes": 4169,
+      "sha256": "5e0c184133743473198f1a386215c1fc571dfd3e02f303363d37325f641ac6f7"
     },
     {
       "path": "src/native-rest.mjs",
-      "bytes": 5047,
-      "sha256": "71b31388db2a5c5bd03b77f9fc1b1a1b21c6aeddb0f781d937201e6236b4c583"
+      "bytes": 5054,
+      "sha256": "c5efa1b430936ae8dc55a0abc4a22030ff9e6206e3f8c1ff13af8b5d4222d4c6"
     },
     {
       "path": "src/source.mjs",
@@ -275,8 +285,8 @@
     },
     {
       "path": "test/projection.test.mjs",
-      "bytes": 1896,
-      "sha256": "a92b14ad9bc121e8b3ed3a321906dd4409811a0126f1dbc6d74405e50265334b"
+      "bytes": 1892,
+      "sha256": "ab10a2f5d820615ce27437b3edc52aec40b8042555fab96909710ffeea2c2146"
     },
     {
       "path": "workflows/branch/bind-branch.mjs",
@@ -286,17 +296,17 @@
     {
       "path": "workflows/branch/child.template.json",
       "bytes": 15792,
-      "sha256": "b21102f6f48b1ce21068fad2039ea8ec966297acd56e8402a6d7874d72fb754d"
+      "sha256": "6139f645422392bb2d9218d64812993a5a00c84cdb46c1327766408e420f6e29"
     },
     {
       "path": "workflows/branch/parent.template.json",
-      "bytes": 6345,
-      "sha256": "4e16dc29c47674971d3ffb9f4f39e14dd05e1fdfb810cf26510563ebbe19a2b0"
+      "bytes": 6344,
+      "sha256": "e9bdcb57cbaf7c8da48a18c56f1f4732f3749486a9879ebba24f31bad7c56320"
     },
     {
       "path": "workflows/branch/receipt-table.json",
       "bytes": 979,
-      "sha256": "1721837e87e32412e68c6dbca9074b464a58ff1ef682b4b73ede88e814b94fe7"
+      "sha256": "7985209107818e16e0bdbd40a7cc8ec0eaf371558372b41386f3a1c6e1918079"
     },
     {
       "path": "workflows/feedback/bind.mjs",
@@ -306,22 +316,22 @@
     {
       "path": "workflows/feedback/tables/feedback-table.json",
       "bytes": 499,
-      "sha256": "6e2143287a5fcdc453bd4a423998f41dfa1efb05e0c5707319d57fc722ae4fae"
+      "sha256": "beef74e6d4d6e1a3a0c699f33772e574bae174c402c1393b3c19a4667bc39016"
     },
     {
       "path": "workflows/feedback/tables/task-table.json",
       "bytes": 763,
-      "sha256": "6b22e38b9d5a8785227b55774353dee35a472fe3238946f330561093b8e54cd1"
+      "sha256": "05b1637f0a98da28b3377ff8a1899cd9affa86035dba0b0d5b3a4ed22a202bc3"
     },
     {
       "path": "workflows/feedback/workflow.template.json",
-      "bytes": 19059,
-      "sha256": "88378f56ff5f617f5a62f2487734034baa7db53615f6b7f125c2cec4e5e5464e"
+      "bytes": 19058,
+      "sha256": "f1eeb7993c17b00b407089414519d8af1ad9ab244eb714984c2b8c6dbe7ca2b7"
     },
     {
       "path": "workflows/files/workflow.json",
-      "bytes": 13979,
-      "sha256": "a70b06e425fde5cf0adc28fa401407e0e4774225d22fa11de43fe45572eedddc"
+      "bytes": 13990,
+      "sha256": "dee119ef36f134e04b1cddc883b17a514382bdb9a246f243ace8ac8e168d1621"
     },
     {
       "path": "启动实验.cmd",
@@ -329,5 +339,5 @@
       "sha256": "0e6f33dfc8cca04ad8db9112af179d2e7d9ffb087f888afbed7ed60e09b2f657"
     }
   ],
-  "gitStart": "以 qinglan-ch14-practice-start 标签及各实际采集 source.json 的 gitCommit 回查；不在源码中自引用提交 SHA。"
+  "gitStart": "按各实际采集source.json的gitCommit与本清单逐项SHA回查。"
 }

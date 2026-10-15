@@ -1,5 +1,5 @@
 {
-  "name": "青岚修仙录 · 反馈收到与完成",
+  "name": "凡人修仙传 · 反馈收到与完成",
   "active": false,
   "nodes": [
     {
@@ -13,7 +13,7 @@
       ],
       "parameters": {
         "httpMethod": "POST",
-        "path": "qinglan-ch14-feedback",
+        "path": "fanren-ch14-feedback",
         "authentication": "none",
         "responseMode": "responseNode",
         "options": {}

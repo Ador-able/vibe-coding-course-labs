@@ -1,5 +1,5 @@
 {
-  "name": "青岚修仙录 · 完整章节资料",
+  "name": "凡人修仙传 · 完整章节资料",
   "active": false,
   "nodes": [
     {
@@ -13,7 +13,7 @@
       ],
       "parameters": {
         "httpMethod": "POST",
-        "path": "qinglan-ch14-files",
+        "path": "fanren-ch14-files",
         "authentication": "none",
         "responseMode": "responseNode",
         "options": {}
@@ -248,7 +248,7 @@
       ],
       "parameters": {
         "mode": "raw",
-        "jsonOutput": "={{ JSON.stringify({\n  requestId: $json.requestId,\n  sourceId: $json.sourceId,\n  fileName: $json.fileName,\n  expectedMimeType: $json.expectedMimeType,\n  downloadUrl: $json.downloadUrl,\n  actualMimeType: $json.actualMimeType,\n  binaryField: $json.binaryField,\n  binaryMetadata: $json.binaryMetadata,\n  downloadResponse: $json.downloadResponse,\n  parser: $json.actualMimeType === 'application/pdf' ? 'Extract From File: PDF' : 'Extract From File: Text',\n  rawParsedText: $json.text,\n  parsedPageCount: Array.isArray($json.text) ? $json.text.length : null,\n  pdfMetadata: $json.actualMimeType === 'application/pdf' ? {\n    numpages: $json.numpages,\n    numrender: $json.numrender,\n    info: $json.info,\n    metadata: $json.metadata,\n    version: $json.version\n  } : null,\n  preparedText: (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text),\n  materialStatus: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'text_available' : 'text_empty',\n  preparedPrompt: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? \"请只依据下面提供的完整章节文字，说明林青已经直接观察到什么、哪些原因仍不知道。分别列出已观察事实和待查问题，每项附一段来自本材料的原文。不要根据文件编号、文件名或故事常识补出原因，不续写故事。\\n\\n材料来源：\" + $json.sourceId + \"\\n文件名：\" + $json.fileName + \"\\n完整提取文字：\\n\" + (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) : null,\n  stage: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'prepared_not_sent' : 'material_incomplete'\n}) }}",
+        "jsonOutput": "={{ JSON.stringify({\n  requestId: $json.requestId,\n  sourceId: $json.sourceId,\n  fileName: $json.fileName,\n  expectedMimeType: $json.expectedMimeType,\n  downloadUrl: $json.downloadUrl,\n  actualMimeType: $json.actualMimeType,\n  binaryField: $json.binaryField,\n  binaryMetadata: $json.binaryMetadata,\n  downloadResponse: $json.downloadResponse,\n  parser: $json.actualMimeType === 'application/pdf' ? 'Extract From File: PDF' : 'Extract From File: Text',\n  rawParsedText: $json.text,\n  parsedPageCount: Array.isArray($json.text) ? $json.text.length : null,\n  pdfMetadata: $json.actualMimeType === 'application/pdf' ? {\n    numpages: $json.numpages,\n    numrender: $json.numrender,\n    info: $json.info,\n    metadata: $json.metadata,\n    version: $json.version\n  } : null,\n  preparedText: (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text),\n  materialStatus: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'text_available' : 'text_empty',\n  preparedPrompt: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? \"请只依据下面提供的完整C05原文，核对韩立和张铁被带到哪里、墨大夫答应教什么，以及哪些仍是条件或未来承诺。逐项保留医术的“也许”、不教武功及未写学习成果；每项附本材料原句。不用小说后文补答案，不续写原著。\\n\\n材料来源：\" + $json.sourceId + \"\\n文件名：\" + $json.fileName + \"\\n完整提取文字：\\n\" + (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) : null,\n  stage: typeof (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text) === 'string' && (Array.isArray($json.text) ? $json.text.join('\\n\\n') : $json.text).trim().length > 0 ? 'prepared_not_sent' : 'material_incomplete'\n}) }}",
         "includeOtherFields": false,
         "options": {}
       }

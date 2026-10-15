@@ -1,0 +1,28 @@
+{
+  "kind": "actual-readback-against-user-provided-txt",
+  "sourceName": "《凡人修仙传》（校对版全本+番外）作者：忘语 (1).txt",
+  "originalEncoding": "gb18030",
+  "originalBytes": 15079878,
+  "originalSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "comparison": "统一CRLF和段落空行后查连续原文，未改其他字符。活动JSON body另与共用原文片段逐字一致。",
+  "segments": [
+    {
+      "id": "C03",
+      "chars": 2372,
+      "originalBodySha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "inUserOriginal": true
+    },
+    {
+      "id": "C04",
+      "chars": 2331,
+      "originalBodySha256": "b5c3463f322bab6993a8dc78dda81bee0e24dfd9b20497c12e860aa35bd73f9c",
+      "inUserOriginal": true
+    },
+    {
+      "id": "C05",
+      "chars": 2465,
+      "originalBodySha256": "b8f8242a70c30aaa325549e4dff4e4d5fc7345efac5551eeecd7d01607ba7290",
+      "inUserOriginal": true
+    }
+  ]
+}

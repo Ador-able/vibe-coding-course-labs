@@ -1,0 +1,47 @@
+[
+  {
+    "path": "branch/bind-branch.mjs",
+    "bytes": 1773,
+    "sha256": "b17142d36e1e826ecf7a8a4192cd90155de3fc9cd69a3e86f95a8d4396426828"
+  },
+  {
+    "path": "branch/child.template.json",
+    "bytes": 15792,
+    "sha256": "b21102f6f48b1ce21068fad2039ea8ec966297acd56e8402a6d7874d72fb754d"
+  },
+  {
+    "path": "branch/parent.template.json",
+    "bytes": 6345,
+    "sha256": "4e16dc29c47674971d3ffb9f4f39e14dd05e1fdfb810cf26510563ebbe19a2b0"
+  },
+  {
+    "path": "branch/receipt-table.json",
+    "bytes": 979,
+    "sha256": "1721837e87e32412e68c6dbca9074b464a58ff1ef682b4b73ede88e814b94fe7"
+  },
+  {
+    "path": "feedback/bind.mjs",
+    "bytes": 1534,
+    "sha256": "7005939f5d917686bc11b8b077ed5f2d5c1a7b141fce259af28246b1c744a3ba"
+  },
+  {
+    "path": "feedback/tables/feedback-table.json",
+    "bytes": 499,
+    "sha256": "6e2143287a5fcdc453bd4a423998f41dfa1efb05e0c5707319d57fc722ae4fae"
+  },
+  {
+    "path": "feedback/tables/task-table.json",
+    "bytes": 763,
+    "sha256": "6b22e38b9d5a8785227b55774353dee35a472fe3238946f330561093b8e54cd1"
+  },
+  {
+    "path": "feedback/workflow.template.json",
+    "bytes": 19059,
+    "sha256": "88378f56ff5f617f5a62f2487734034baa7db53615f6b7f125c2cec4e5e5464e"
+  },
+  {
+    "path": "files/workflow.json",
+    "bytes": 13979,
+    "sha256": "a70b06e425fde5cf0adc28fa401407e0e4774225d22fa11de43fe45572eedddc"
+  }
+]

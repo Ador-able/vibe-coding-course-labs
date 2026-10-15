@@ -1,70 +1,108 @@
 {
-  "baseGit": "491d1130f808b43e066ac61ec6ac5d701a4b2a3f",
-  "repository": "https://github.com/Ador-able/vibe-coding-course-labs",
-  "templates": [
+  "kind": "native-template-provenance-not-new-execution",
+  "previousTemplateSource": {
+    "baseGit": "491d1130f808b43e066ac61ec6ac5d701a4b2a3f",
+    "repository": "https://github.com/Ador-able/vibe-coding-course-labs",
+    "templates": [
+      {
+        "tag": "vcm-11-01-end",
+        "sourcePath": "project/workflow.template.json",
+        "sourceBytes": 19058,
+        "sourceSha256": "c164dbaf95c6b4ba08e50b032a04794dfe88b2ee1e0b8de69b7ff4c70cca61d0",
+        "path": "workflows/feedback/workflow.template.json",
+        "bytes": 19059,
+        "sha256": "88378f56ff5f617f5a62f2487734034baa7db53615f6b7f125c2cec4e5e5464e"
+      },
+      {
+        "tag": "vcm-11-01-end",
+        "sourcePath": "project/tables/task-table.json",
+        "sourceBytes": 764,
+        "sourceSha256": "e480fe5f562bc0dd58a6510bf02aa6ccd4169453ec334fb875366bbc0054b1c9",
+        "path": "workflows/feedback/tables/task-table.json",
+        "bytes": 763,
+        "sha256": "6b22e38b9d5a8785227b55774353dee35a472fe3238946f330561093b8e54cd1"
+      },
+      {
+        "tag": "vcm-11-01-end",
+        "sourcePath": "project/tables/feedback-table.json",
+        "sourceBytes": 501,
+        "sourceSha256": "f3367194ab347c00fe90100f87668d4142fca9c6271530dae35520d73b2ea0b0",
+        "path": "workflows/feedback/tables/feedback-table.json",
+        "bytes": 499,
+        "sha256": "6e2143287a5fcdc453bd4a423998f41dfa1efb05e0c5707319d57fc722ae4fae"
+      },
+      {
+        "tag": "vcm-11-03-end",
+        "sourcePath": "project/workflow.json",
+        "sourceBytes": 13984,
+        "sourceSha256": "e537400dfa6064212923fd54d658f17cd56fe4aef495187de2cf82bd215ac04b",
+        "path": "workflows/files/workflow.json",
+        "bytes": 13979,
+        "sha256": "a70b06e425fde5cf0adc28fa401407e0e4774225d22fa11de43fe45572eedddc"
+      },
+      {
+        "tag": "vcm-11-07-end",
+        "sourcePath": "project/parent.template.json",
+        "sourceBytes": 6347,
+        "sourceSha256": "b767c73ab22dcbbacb8f320e0dbb1b618ecdc536f7deb6bb11b606a514dbcc6c",
+        "path": "workflows/branch/parent.template.json",
+        "bytes": 6345,
+        "sha256": "4e16dc29c47674971d3ffb9f4f39e14dd05e1fdfb810cf26510563ebbe19a2b0"
+      },
+      {
+        "tag": "vcm-11-07-end",
+        "sourcePath": "project/child.template.json",
+        "sourceBytes": 15790,
+        "sourceSha256": "36556da6d63833cc991dc8857afaa95fafaecc6a4119ddb0a91f5b3490d657e2",
+        "path": "workflows/branch/child.template.json",
+        "bytes": 15792,
+        "sha256": "b21102f6f48b1ce21068fad2039ea8ec966297acd56e8402a6d7874d72fb754d"
+      },
+      {
+        "tag": "vcm-11-07-end",
+        "sourcePath": "project/receipt-table.json",
+        "sourceBytes": 978,
+        "sourceSha256": "5a49c0f94f8bec53503bbedcafdbd13d8e33f0c148c3cc99c672f4b94fd979ac",
+        "path": "workflows/branch/receipt-table.json",
+        "bytes": 979,
+        "sha256": "1721837e87e32412e68c6dbca9074b464a58ff1ef682b4b73ede88e814b94fe7"
+      }
+    ],
+    "preserved": "节点 ID、节点类型、版本、连接、表达式和业务算法保持原模板；仅作品命名、隔离 Webhook 路径及文件提示中的人物名调整。历史原件与实录继续由原标签回查。"
+  },
+  "adaptation": "复用原生节点、版本、ID、连接、表绑定及严格布尔类型路由；只改作品/路径命名及文件资料提示。完整凡人原文、大纲、设定放入三个任务的referenceMaterials，随task对象原值进入同一次子执行并写入originalInputJson。未请求模型评价文学内容。",
+  "workflows": [
     {
-      "tag": "vcm-11-01-end",
-      "sourcePath": "project/workflow.template.json",
-      "sourceBytes": 19058,
-      "sourceSha256": "c164dbaf95c6b4ba08e50b032a04794dfe88b2ee1e0b8de69b7ff4c70cca61d0",
       "path": "workflows/feedback/workflow.template.json",
-      "bytes": 19059,
-      "sha256": "88378f56ff5f617f5a62f2487734034baa7db53615f6b7f125c2cec4e5e5464e"
+      "nativeNodeCount": 12,
+      "nodeIdentitiesUnchanged": true,
+      "connectionsUnchanged": true,
+      "beforeSha256": "88378f56ff5f617f5a62f2487734034baa7db53615f6b7f125c2cec4e5e5464e",
+      "afterSha256": "f1eeb7993c17b00b407089414519d8af1ad9ab244eb714984c2b8c6dbe7ca2b7"
     },
     {
-      "tag": "vcm-11-01-end",
-      "sourcePath": "project/tables/task-table.json",
-      "sourceBytes": 764,
-      "sourceSha256": "e480fe5f562bc0dd58a6510bf02aa6ccd4169453ec334fb875366bbc0054b1c9",
-      "path": "workflows/feedback/tables/task-table.json",
-      "bytes": 763,
-      "sha256": "6b22e38b9d5a8785227b55774353dee35a472fe3238946f330561093b8e54cd1"
-    },
-    {
-      "tag": "vcm-11-01-end",
-      "sourcePath": "project/tables/feedback-table.json",
-      "sourceBytes": 501,
-      "sourceSha256": "f3367194ab347c00fe90100f87668d4142fca9c6271530dae35520d73b2ea0b0",
-      "path": "workflows/feedback/tables/feedback-table.json",
-      "bytes": 499,
-      "sha256": "6e2143287a5fcdc453bd4a423998f41dfa1efb05e0c5707319d57fc722ae4fae"
-    },
-    {
-      "tag": "vcm-11-03-end",
-      "sourcePath": "project/workflow.json",
-      "sourceBytes": 13984,
-      "sourceSha256": "e537400dfa6064212923fd54d658f17cd56fe4aef495187de2cf82bd215ac04b",
       "path": "workflows/files/workflow.json",
-      "bytes": 13979,
-      "sha256": "a70b06e425fde5cf0adc28fa401407e0e4774225d22fa11de43fe45572eedddc"
+      "nativeNodeCount": 14,
+      "nodeIdentitiesUnchanged": true,
+      "connectionsUnchanged": true,
+      "beforeSha256": "a70b06e425fde5cf0adc28fa401407e0e4774225d22fa11de43fe45572eedddc",
+      "afterSha256": "dee119ef36f134e04b1cddc883b17a514382bdb9a246f243ace8ac8e168d1621"
     },
     {
-      "tag": "vcm-11-07-end",
-      "sourcePath": "project/parent.template.json",
-      "sourceBytes": 6347,
-      "sourceSha256": "b767c73ab22dcbbacb8f320e0dbb1b618ecdc536f7deb6bb11b606a514dbcc6c",
       "path": "workflows/branch/parent.template.json",
-      "bytes": 6345,
-      "sha256": "4e16dc29c47674971d3ffb9f4f39e14dd05e1fdfb810cf26510563ebbe19a2b0"
+      "nativeNodeCount": 5,
+      "nodeIdentitiesUnchanged": true,
+      "connectionsUnchanged": true,
+      "beforeSha256": "4e16dc29c47674971d3ffb9f4f39e14dd05e1fdfb810cf26510563ebbe19a2b0",
+      "afterSha256": "e9bdcb57cbaf7c8da48a18c56f1f4732f3749486a9879ebba24f31bad7c56320"
     },
     {
-      "tag": "vcm-11-07-end",
-      "sourcePath": "project/child.template.json",
-      "sourceBytes": 15790,
-      "sourceSha256": "36556da6d63833cc991dc8857afaa95fafaecc6a4119ddb0a91f5b3490d657e2",
       "path": "workflows/branch/child.template.json",
-      "bytes": 15792,
-      "sha256": "b21102f6f48b1ce21068fad2039ea8ec966297acd56e8402a6d7874d72fb754d"
-    },
-    {
-      "tag": "vcm-11-07-end",
-      "sourcePath": "project/receipt-table.json",
-      "sourceBytes": 978,
-      "sourceSha256": "5a49c0f94f8bec53503bbedcafdbd13d8e33f0c148c3cc99c672f4b94fd979ac",
-      "path": "workflows/branch/receipt-table.json",
-      "bytes": 979,
-      "sha256": "1721837e87e32412e68c6dbca9074b464a58ff1ef682b4b73ede88e814b94fe7"
+      "nativeNodeCount": 7,
+      "nodeIdentitiesUnchanged": true,
+      "connectionsUnchanged": true,
+      "beforeSha256": "b21102f6f48b1ce21068fad2039ea8ec966297acd56e8402a6d7874d72fb754d",
+      "afterSha256": "6139f645422392bb2d9218d64812993a5a00c84cdb46c1327766408e420f6e29"
     }
-  ],
-  "preserved": "节点 ID、节点类型、版本、连接、表达式和业务算法保持原模板；仅作品命名、隔离 Webhook 路径及文件提示中的人物名调整。历史原件与实录继续由原标签回查。"
+  ]
 }

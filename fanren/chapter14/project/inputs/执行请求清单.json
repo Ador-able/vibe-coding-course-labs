@@ -1,0 +1,105 @@
+{
+  "kind": "frozen-request-plan-not-execution-results",
+  "maximumWebhookHttpPosts": 7,
+  "webhookPosts": [
+    {
+      "id": "P01",
+      "command": "probe",
+      "inputPath": "inputs/feedback-E01.json",
+      "route": "/webhook/fanren-ch14-feedback",
+      "purpose": "未发布的正式入口探测",
+      "webhookItems": 1,
+      "splitItems": 1,
+      "designedBoundary": "未发布时入口应不可触发；以实际返回和执行列表为准。",
+      "inputBytes": 387,
+      "inputSha256": "73f5e9ed97e94eaa08fff839179b0ce346209796c115c36a422267545de31b06"
+    },
+    {
+      "id": "P02",
+      "command": "feedback test-E01",
+      "inputPath": "inputs/feedback-test-E01.json",
+      "route": "/webhook-test/fanren-ch14-feedback",
+      "purpose": "浏览器开始测试监听后的一次测试反馈",
+      "webhookItems": 1,
+      "splitItems": 1,
+      "designedBoundary": "测试空表，与正式表分开。",
+      "inputBytes": 387,
+      "inputSha256": "70e044b6cdc44d1fa75bac7f1723f1fd5a554e80d760f088bf18843d3a67bea0"
+    },
+    {
+      "id": "P03",
+      "command": "feedback production-E01",
+      "inputPath": "inputs/feedback-E01.json",
+      "route": "/webhook/fanren-ch14-feedback",
+      "purpose": "发布并重绑定正式空表后登记第五章反馈",
+      "webhookItems": 1,
+      "splitItems": 1,
+      "designedBoundary": "入口收到与任务终态分别读回。",
+      "inputBytes": 387,
+      "inputSha256": "73f5e9ed97e94eaa08fff839179b0ce346209796c115c36a422267545de31b06"
+    },
+    {
+      "id": "P04",
+      "command": "feedback duplicate-E01",
+      "inputPath": "inputs/feedback-E01.json",
+      "route": "/webhook/fanren-ch14-feedback",
+      "purpose": "P03结束后的完全相同串行重复",
+      "webhookItems": 1,
+      "splitItems": 1,
+      "designedBoundary": "不据此宣称并发幂等或完整并发保护。",
+      "inputBytes": 387,
+      "inputSha256": "73f5e9ed97e94eaa08fff839179b0ce346209796c115c36a422267545de31b06"
+    },
+    {
+      "id": "P05",
+      "command": "feedback production-E02",
+      "inputPath": "inputs/feedback-E02.json",
+      "route": "/webhook/fanren-ch14-feedback",
+      "purpose": "保留第六章完整反馈，failTask=true触发教师故障分支",
+      "webhookItems": 1,
+      "splitItems": 1,
+      "designedBoundary": "人为构造的流程失败条件，不是模型失败或原文错误。",
+      "inputBytes": 380,
+      "inputSha256": "e47e2fb97915863746085918967fa925fa0c55d802b48ac83f99655afacfdb09"
+    },
+    {
+      "id": "P06",
+      "command": "files",
+      "inputPath": "inputs/完整两项目录输入.json",
+      "route": "/webhook/fanren-ch14-files",
+      "purpose": "一个请求对象带documents数组的PDF、TXT两项",
+      "webhookItems": 1,
+      "splitItems": 2,
+      "sourceGetMaximum": 2,
+      "designedNodeItemFlow": "Webhook 1 → SplitOut 2 → 各取原件并提取文字 → Merge 2 → Aggregate 1。实际节点items另按执行原件核对。",
+      "designedBoundary": "原生提取并准备完整提示，不调用模型。",
+      "inputBytes": 482,
+      "inputSha256": "7d5b5070434e7394c891ceddd21b3da60f7a008cbf2505d5f9020f97e39f1ec2"
+    },
+    {
+      "id": "P07",
+      "command": "branch",
+      "inputPath": "inputs/批次完整输入.json",
+      "route": "/webhook/fanren-ch14-batch",
+      "purpose": "一个请求对象带tasks数组的E02、E01、E03三项",
+      "webhookItems": 1,
+      "splitItems": 3,
+      "designedNodeItemFlow": "Webhook 1 → SplitOut 3 → Execute Sub-workflow once，将全部3项交给同一次子执行 → 各项原文/大纲/设定随task保留。实际回执与节点items另核。",
+      "designedBoundary": "true、false、字符串false分别保留原值，不能把流程回执当作文学意见通过。",
+      "inputBytes": 26227,
+      "inputSha256": "2524fc69a7481a8140fbbcb70957f6dddd15135d22676f43bf8238fd17739018"
+    }
+  ],
+  "administrationSeparate": "隔离账户初始化、5表创建、4原生workflow导入/绑定/发布及只读状态查询属于本地环境准备/回查API，不计作Webhook业务输入。保留实际管理原件。",
+  "sourceReadSeparate": "文件流程最多2次公开PDF/TXT的HTTP GET；正文读取不计入7次Webhook POST。其余只读轮询有脚本内30秒/10秒界限，不重新POST。",
+  "failurePolicy": "每项POST最多一次，没有自动业务重试。失败保留输入、HTTP原件和真实对象；未取得证据的后续项保持未执行，不为了凑齐7次重发。",
+  "externalBudgets": {
+    "model": 0,
+    "google": 0,
+    "calendarWrites": 0,
+    "email": 0,
+    "invitations": 0,
+    "recipientAcceptance": 0
+  },
+  "executionState": "尚未执行，冻结提交后按顺序运行。"
+}

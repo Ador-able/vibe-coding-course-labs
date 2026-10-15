@@ -1,0 +1,85 @@
+{
+  "kind": "pre-execution-settings-not-results",
+  "workId": "qinglan-xiuxianlu",
+  "title": "青岚修仙录",
+  "classroomDate": "2026-10-05",
+  "readerPort": 4360,
+  "filePort": 4361,
+  "n8nPort": 5689,
+  "n8n": {
+    "version": "2.41.6",
+    "image": "docker.n8n.io/n8nio/n8n:2.41.6",
+    "imageDigest": "sha256:87e0bab2c93192e8dd885ff7b0697c22a1bd97489568a8c67cc140fd7dbb342d",
+    "containerName": "qinglan-ch14-classroom",
+    "volumeName": "qinglan-ch14-classroom-20261013",
+    "timezone": "Asia/Shanghai",
+    "webhookAuthentication": "none",
+    "waitSeconds": 5,
+    "saveDataSuccessExecution": "all",
+    "saveDataErrorExecution": "all",
+    "saveManualExecutions": true,
+    "binaryModeForFiles": "separate"
+  },
+  "objects": {
+    "tableCount": 5,
+    "tables": [
+      "测试任务表",
+      "测试反馈表",
+      "正式任务表",
+      "正式反馈表",
+      "独立批次回执表"
+    ],
+    "workflowCount": 4,
+    "workflows": [
+      "反馈流程（测试后重绑定同一流程到正式空表再发布）",
+      "完整文件资料流程",
+      "完整批次父流程",
+      "完整材料子流程"
+    ]
+  },
+  "feedback": {
+    "testInput": "feedback-test-E01.json",
+    "productionInputs": [
+      "feedback-E01.json",
+      "feedback-E01.json",
+      "feedback-E02.json"
+    ],
+    "serialDuplicateOnly": true,
+    "notificationStatus": "not_sent",
+    "literaryAdoption": false
+  },
+  "files": {
+    "input": "完整两项目录输入.json",
+    "formatCount": 2,
+    "pdfPhysicalPages": 3,
+    "parserMaxPages": 3,
+    "parserJoinPages": false,
+    "encoding": "utf8",
+    "retryOnFail": false,
+    "expectedStageIsNotResult": "以本轮真实解析为准，不预设空文字或 text_available。"
+  },
+  "batch": {
+    "input": "批次完整输入.json",
+    "count": 3,
+    "selectedOrder": [
+      "E02",
+      "E01",
+      "E03"
+    ],
+    "originalFailTaskTypes": [
+      "boolean",
+      "boolean",
+      "string"
+    ],
+    "mode": "once",
+    "waitForSubWorkflow": true,
+    "attemptToConvertTypes": false,
+    "notificationStatus": "not_sent",
+    "literaryAdoption": false
+  },
+  "modelRequestBudget": 0,
+  "googleRequestBudget": 0,
+  "invitationBudget": 0,
+  "emailBudget": 0,
+  "receiptCardExecutions": 0
+}

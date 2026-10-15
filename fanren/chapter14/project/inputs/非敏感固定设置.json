@@ -1,8 +1,8 @@
 {
   "kind": "pre-execution-settings-not-results",
-  "workId": "qinglan-xiuxianlu",
-  "title": "青岚修仙录",
-  "classroomDate": "2026-10-05",
+  "workId": "fanren-xiuxianzhuan",
+  "title": "凡人修仙传",
+  "classroomDate": "2026-10-15",
   "readerPort": 4360,
   "filePort": 4361,
   "n8nPort": 5689,
@@ -10,8 +10,8 @@
     "version": "2.41.6",
     "image": "docker.n8n.io/n8nio/n8n:2.41.6",
     "imageDigest": "sha256:87e0bab2c93192e8dd885ff7b0697c22a1bd97489568a8c67cc140fd7dbb342d",
-    "containerName": "qinglan-ch14-classroom",
-    "volumeName": "qinglan-ch14-classroom-20261013",
+    "containerName": "fanren-ch14-classroom-20261015",
+    "volumeName": "fanren-ch14-classroom-20261015",
     "timezone": "Asia/Shanghai",
     "webhookAuthentication": "none",
     "waitSeconds": 5,
@@ -56,7 +56,8 @@
     "parserJoinPages": false,
     "encoding": "utf8",
     "retryOnFail": false,
-    "expectedStageIsNotResult": "以本轮真实解析为准，不预设空文字或 text_available。"
+    "expectedStageIsNotResult": "以本轮真实解析为准，不预设空文字或 text_available。",
+    "sourceSegmentId": "C05"
   },
   "batch": {
     "input": "批次完整输入.json",
@@ -81,5 +82,6 @@
   "googleRequestBudget": 0,
   "invitationBudget": 0,
   "emailBudget": 0,
-  "receiptCardExecutions": 0
+  "receiptCardExecutions": 0,
+  "webhookPostBudget": 7
 }

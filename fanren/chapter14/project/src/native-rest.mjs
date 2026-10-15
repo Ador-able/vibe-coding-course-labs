@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 import { createHash, randomUUID } from 'node:crypto';
 
 export const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-export const configPath = process.env.N8N_LAB_CONFIG || path.join(os.homedir(), '.vibe-coding-labs/n8n-ch14.json');
+export const configPath = process.env.N8N_LAB_CONFIG || path.join(os.homedir(), '.vibe-coding-labs/fanren-n8n-ch14.json');
 export const sha = raw => createHash('sha256').update(raw).digest('hex');
 export const load = async name => JSON.parse(await fs.readFile(path.join(root, name), 'utf8'));
 export async function save(name, value) { const filename = path.join(root, name); await fs.mkdir(path.dirname(filename), { recursive: true }); await fs.writeFile(filename, JSON.stringify(value, null, 2) + '\n'); return filename; }

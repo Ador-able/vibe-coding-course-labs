@@ -13,7 +13,7 @@ assert.equal(new Intl.DateTimeFormat('en-US', { timeZone: proposal.start.timeZon
 const result = {
   kind: 'actual-local-iana-calculation-no-calendar-request',
   engine: { node: process.version, icu: process.versions.icu, tz: process.versions.tz },
-  classroomDate: '2026-10-05',
+  classroomDate: '2026-10-15',
   startUtc: start.toISOString(), endUtc: end.toISOString(), durationMinutes: 30,
   organizer: { timeZone: proposal.start.timeZone, start: local(proposal.start.dateTime, proposal.start.timeZone), end: local(proposal.end.dateTime, proposal.end.timeZone) },
   contact: { timeZone: proposal.contact.timeZone, start: local(proposal.start.dateTime, proposal.contact.timeZone), end: local(proposal.end.dateTime, proposal.contact.timeZone) },

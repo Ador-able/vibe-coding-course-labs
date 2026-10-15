@@ -1,0 +1,33 @@
+{
+  "kind": "classroom-proposal-not-executed",
+  "workId": "qinglan-xiuxianlu",
+  "chapterNumber": 1,
+  "topic": "讨论《青岚修仙录》第一章",
+  "contact": {
+    "personId": "classroom-person-01",
+    "name": "李晨",
+    "relationship": "该作品编辑",
+    "email": "editor@example.com",
+    "timeZone": "America/Los_Angeles"
+  },
+  "calendar": {
+    "account": "执行时选定的实际授权账户",
+    "calendarId": "primary",
+    "meaning": "该授权用户自己的主日历"
+  },
+  "start": {
+    "dateTime": "2026-10-12T09:00:00+08:00",
+    "timeZone": "Asia/Shanghai"
+  },
+  "end": {
+    "dateTime": "2026-10-12T09:30:00+08:00",
+    "timeZone": "Asia/Shanghai"
+  },
+  "recipientLocalTime": "2026年10月11日18:00—18:30，America/Los_Angeles",
+  "durationMinutes": 30,
+  "busyCheck": "尚未执行；需核对目标日历返回及错误",
+  "sendInvitation": "需人明确确认并替换为自己的实际测试邮箱",
+  "attachment": null,
+  "meetingLink": null,
+  "allowedActionNow": "只整理并核对提案；不创建、不发送"
+}

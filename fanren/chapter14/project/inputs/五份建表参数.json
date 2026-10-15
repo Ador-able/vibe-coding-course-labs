@@ -2,7 +2,7 @@
   {
     "key": "testTask",
     "request": {
-      "name": "青岚课堂测试反馈任务",
+      "name": "凡人课堂测试反馈任务",
       "columns": [
         {
           "name": "eventId",
@@ -54,7 +54,7 @@
   {
     "key": "testFeedback",
     "request": {
-      "name": "青岚课堂测试读者反馈",
+      "name": "凡人课堂测试读者反馈",
       "columns": [
         {
           "name": "eventId",
@@ -90,7 +90,7 @@
   {
     "key": "productionTask",
     "request": {
-      "name": "青岚课堂正式反馈任务",
+      "name": "凡人课堂正式反馈任务",
       "columns": [
         {
           "name": "eventId",
@@ -142,7 +142,7 @@
   {
     "key": "productionFeedback",
     "request": {
-      "name": "青岚课堂正式读者反馈",
+      "name": "凡人课堂正式读者反馈",
       "columns": [
         {
           "name": "eventId",
@@ -178,7 +178,7 @@
   {
     "key": "receipts",
     "request": {
-      "name": "青岚课堂完整批次回执",
+      "name": "凡人课堂完整批次回执",
       "columns": [
         {
           "name": "batchId",

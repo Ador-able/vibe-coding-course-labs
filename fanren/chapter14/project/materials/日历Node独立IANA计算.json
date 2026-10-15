@@ -5,19 +5,19 @@
     "icu": "77.1",
     "tz": "2025b"
   },
-  "classroomDate": "2026-10-05",
-  "startUtc": "2026-10-12T01:00:00.000Z",
-  "endUtc": "2026-10-12T01:30:00.000Z",
+  "classroomDate": "2026-10-15",
+  "startUtc": "2026-10-19T01:00:00.000Z",
+  "endUtc": "2026-10-19T01:30:00.000Z",
   "durationMinutes": 30,
   "organizer": {
     "timeZone": "Asia/Shanghai",
-    "start": "2026/10/12 09:00",
-    "end": "2026/10/12 09:30"
+    "start": "2026/10/19 09:00",
+    "end": "2026/10/19 09:30"
   },
   "contact": {
     "timeZone": "America/Los_Angeles",
-    "start": "2026/10/11 18:00",
-    "end": "2026/10/11 18:30"
+    "start": "2026/10/18 18:00",
+    "end": "2026/10/18 18:30"
   },
   "proposalKind": "classroom-proposal-not-executed",
   "busyCheck": "尚未执行；需核对目标日历返回及错误",

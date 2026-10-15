@@ -1,5 +1,5 @@
 {
-  "name": "青岚修仙录 · 本轮批次父流程",
+  "name": "凡人修仙传 · 本轮批次父流程",
   "nodes": [
     {
       "id": "270d5b0f-480e-5d6a-92d9-e2ab8d661efc",
@@ -12,7 +12,7 @@
       ],
       "parameters": {
         "httpMethod": "POST",
-        "path": "qinglan-ch14-batch",
+        "path": "fanren-ch14-batch",
         "responseMode": "responseNode",
         "options": {}
       }

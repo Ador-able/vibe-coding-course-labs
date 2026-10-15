@@ -27,8 +27,8 @@ const reader = http.createServer(async (request, response) => {
   } catch (error) { reply(response, ['ENOENT', 'EISDIR'].includes(error.code) ? 404 : 500, '这份材料未能读回。'); }
 });
 const originals = new Map([
-  ['/chapter-three.pdf', { file: 'chapter-three.pdf', type: 'application/pdf' }],
-  ['/chapter-three.txt', { file: 'chapter-three.txt', type: 'text/plain; charset=utf-8' }],
+  ['/fanren-C05.pdf', { file: 'fanren-C05.pdf', type: 'application/pdf' }],
+  ['/fanren-C05.txt', { file: 'fanren-C05.txt', type: 'text/plain; charset=utf-8' }],
 ]);
 const fileServer = http.createServer(async (request, response) => {
   if (!isRead(request, response)) return;
@@ -46,7 +46,7 @@ const fileServer = http.createServer(async (request, response) => {
 });
 const ports = [Number(process.env.LAB_PORT || 4360), Number(process.env.FILE_PORT || 4361)];
 for (const server of [reader, fileServer]) server.on('error', error => { console.error(error.code === 'EADDRINUSE' ? '实验端口已被占用，请指定新的 LAB_PORT 和 FILE_PORT。' : '实验服务启动失败。'); reader.close(); fileServer.close(); process.exitCode = 1; });
-reader.listen(ports[0], '127.0.0.1', () => console.log('青岚业务工作台：http://127.0.0.1:' + ports[0]));
+reader.listen(ports[0], '127.0.0.1', () => console.log('凡人业务工作台：http://127.0.0.1:' + ports[0]));
 fileServer.listen(ports[1], '0.0.0.0', () => console.log('课堂 PDF/TXT 服务：http://localhost:' + ports[1]));
 const close = () => { reader.close(); fileServer.close(); };
 process.on('SIGTERM', close); process.on('SIGINT', close);

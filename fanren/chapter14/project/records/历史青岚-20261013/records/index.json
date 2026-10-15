@@ -1,0 +1,71 @@
+{
+  "kind": "actual-classroom-record-index",
+  "feedback": [
+    {
+      "key": "test-E01",
+      "label": "测试 · 第一章E01",
+      "input": "records/feedback/test-E01/input.json",
+      "response": "records/feedback/test-E01/response.json",
+      "taskReceived": "records/feedback/test-E01/task-received.json",
+      "receivedReadAt": "2026-10-13T09:26:00.330Z",
+      "taskFinal": "records/feedback/test-E01/task-final.json",
+      "feedbackFinal": "records/feedback/test-E01/feedback-final.json",
+      "execution": "records/feedback/test-E01/execution.json",
+      "actualExecutionId": "1",
+      "actualExecutionStatus": "success"
+    },
+    {
+      "key": "production-E01",
+      "label": "正式 · 第一章E01",
+      "input": "records/feedback/production-E01/input.json",
+      "response": "records/feedback/production-E01/response.json",
+      "taskReceived": "records/feedback/production-E01/task-received.json",
+      "receivedReadAt": "2026-10-13T09:28:27.297Z",
+      "taskFinal": "records/feedback/production-E01/task-final.json",
+      "feedbackFinal": "records/feedback/production-E01/feedback-final.json",
+      "execution": "records/feedback/production-E01/execution.json",
+      "actualExecutionId": "2",
+      "actualExecutionStatus": "success",
+      "incorrectLookup": "records/feedback/production-E01/execution-id-as-task-id.json"
+    },
+    {
+      "key": "duplicate-E01",
+      "label": "串行重复 · 第一章E01",
+      "input": "records/feedback/duplicate-E01/input.json",
+      "response": "records/feedback/duplicate-E01/response.json",
+      "taskReceived": "records/feedback/duplicate-E01/task-received.json",
+      "receivedReadAt": "2026-10-13T09:28:34.998Z",
+      "taskFinal": "records/feedback/duplicate-E01/task-final.json",
+      "feedbackFinal": "records/feedback/duplicate-E01/feedback-final.json",
+      "execution": "records/feedback/duplicate-E01/execution.json",
+      "actualExecutionId": "3",
+      "actualExecutionStatus": "success"
+    },
+    {
+      "key": "production-E02",
+      "label": "课堂失败 · 第三章E02",
+      "input": "records/feedback/production-E02/input.json",
+      "response": "records/feedback/production-E02/response.json",
+      "taskReceived": "records/feedback/production-E02/task-received.json",
+      "receivedReadAt": "2026-10-13T09:28:37.479Z",
+      "taskFinal": "records/feedback/production-E02/task-final.json",
+      "feedbackFinal": "records/feedback/production-E02/feedback-final.json",
+      "execution": "records/feedback/production-E02/execution.json",
+      "actualExecutionId": "4",
+      "actualExecutionStatus": "error"
+    }
+  ],
+  "files": {
+    "input": "records/files/files-01/input.json",
+    "response": "records/files/files-01/response.json",
+    "execution": "records/files/files-01/execution.json",
+    "fileReads": "records/files/files-01/actual-file-reads.json"
+  },
+  "branch": {
+    "input": "records/branch/batch-01/input.json",
+    "response": "records/branch/batch-01/response.json",
+    "rows": "records/branch/batch-01/receipt-rows.json",
+    "parentExecution": "records/branch/batch-01/parent-execution.json",
+    "childExecution": "records/branch/batch-01/child-execution.json"
+  }
+}

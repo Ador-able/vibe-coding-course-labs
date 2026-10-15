@@ -1,17 +1,17 @@
 {
-  "requestId": "qinglan-ch14-files-01",
+  "requestId": "fanren-ch14-files-01",
   "documents": [
     {
-      "sourceId": "qinglan-C3-pdf",
-      "fileName": "青岚第三章资料.pdf",
+      "sourceId": "fanren-C05-pdf",
+      "fileName": "凡人C05原文片段.pdf",
       "expectedMimeType": "application/pdf",
-      "downloadUrl": "http://host.docker.internal:4361/chapter-three.pdf"
+      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.pdf"
     },
     {
-      "sourceId": "qinglan-C3-txt",
-      "fileName": "青岚第三章完整原文.txt",
+      "sourceId": "fanren-C05-txt",
+      "fileName": "凡人C05完整原文.txt",
       "expectedMimeType": "text/plain",
-      "downloadUrl": "http://host.docker.internal:4361/chapter-three.txt"
+      "downloadUrl": "http://host.docker.internal:4361/fanren-C05.txt"
     }
   ]
 }

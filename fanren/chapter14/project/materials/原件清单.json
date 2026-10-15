@@ -1,53 +1,41 @@
 {
-  "kind": "actual-local-originals-not-n8n-extraction",
+  "kind": "complete-user-original-excerpt-files-not-parser-results",
+  "sourceSegmentId": "C05",
+  "reusedFrom": "fanren/chapter12/project/public/files/v1/凡人C05原文.pdf及inputs/凡人C05-完整原文.txt",
+  "renderedPagesFrom": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/native-v1",
+  "pdfPhysicalPages": 3,
+  "bodySameExceptParagraphBlankLines": true,
   "files": [
     {
-      "path": "files/chapter-three.txt",
-      "bytes": 3245,
-      "sha256": "363b32b0054129db8b916db8453d885513ac0ad35206a9b5aba57a6282200834"
+      "path": "files/fanren-C05.pdf",
+      "bytes": 68513,
+      "sha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
     },
     {
-      "path": "files/chapter-three.pdf",
-      "bytes": 83234,
-      "sha256": "b76de601551821bbc8f902476332182d39014133f011e538666c04386b9fd6cc",
-      "physicalPages": 3
+      "path": "files/fanren-C05.txt",
+      "bytes": 7348,
+      "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
+    },
+    {
+      "path": "files/pages/fanren-C05-1.png",
+      "bytes": 619399,
+      "sha256": "3db24c699b4dd2f1cbb24e352a2d1c994f540362477be0d8c777391681a8a4e5",
+      "width": 2645,
+      "height": 3743
+    },
+    {
+      "path": "files/pages/fanren-C05-2.png",
+      "bytes": 563409,
+      "sha256": "ef8cd01780f7cfffd421b916143810b0a5aaafa7cfa9381b47bb6a5205a02a8f",
+      "width": 2645,
+      "height": 3743
+    },
+    {
+      "path": "files/pages/fanren-C05-3.png",
+      "bytes": 546826,
+      "sha256": "533773ca0c31a72668ae789345704b5ded0b7ee215742e613fef75344addbcaa",
+      "width": 2645,
+      "height": 3743
     }
-  ],
-  "pageImages": [
-    {
-      "path": "files/pages/chapter-three-1.png",
-      "bytes": 688704,
-      "sha256": "ac706b6cb0768dfa032241d91f54b381125faec64ee9c6208acf034bf3b334e6",
-      "width": 2382,
-      "height": 3368,
-      "dpi": 288,
-      "physicalPage": 1
-    },
-    {
-      "path": "files/pages/chapter-three-2.png",
-      "bytes": 586411,
-      "sha256": "49443126d5ed3d533035eb96dda955fc5dc5a6df5b8263db3478f56ca3036a96",
-      "width": 2382,
-      "height": 3368,
-      "dpi": 288,
-      "physicalPage": 2
-    },
-    {
-      "path": "files/pages/chapter-three-3.png",
-      "bytes": 542468,
-      "sha256": "372414094f358be363a7f35c304a87a5a538dc3753c0c5d5e3a7bd1ce8588c14",
-      "width": 2382,
-      "height": 3368,
-      "dpi": 288,
-      "physicalPage": 3
-    }
-  ],
-  "visualReviewed": [
-    1,
-    2,
-    3
-  ],
-  "review": "正常中文正文、段落、标题与页码均可读；未裁切、放大插值或构造扫描空页。PNG 为 Poppler 从原 PDF 以 288 DPI 原生渲染。",
-  "n8nParserExecutions": 0,
-  "modelRequests": 0
+  ]
 }

@@ -32,16 +32,16 @@ if(command==='prepare'){
   const parent=await load('workflows/branch/parent.template.json');parent.nodes.find(n=>n.name==='同一次子执行传入全部任务').parameters.workflowId.value=binding.workflows.child;const parentResult=await publicApi('/workflows','POST',createBody(parent));binding.workflows.branch=parentResult.record.body.id;await save(bindingPath,binding);await publicRecord('records/preparation/parent-workflow.json',parentResult,workflowProjection);
   await save('records/preparation/binding.json',{tables:binding.tables,workflows:binding.workflows,source});
 }else if(command==='probe'){
-  const folder='records/feedback/unpublished-probe';await ensureNew(folder);await postFrozen(folder,'inputs/feedback-E01.json','/webhook/qinglan-ch14-feedback');
+  const folder='records/feedback/unpublished-probe';await ensureNew(folder);await postFrozen(folder,'inputs/feedback-E01.json','/webhook/fanren-ch14-feedback');
 }else if(command==='publish'){
   try{await fs.access(path.join(root,'records/preparation/feedback-production-draft.json'));throw new Error('本轮发布原件已存在；先核真实版本，不覆盖原件。');}catch(error){if(error.code!=='ENOENT')throw error;}
   const changed=await publicApi('/workflows/'+binding.workflows.feedback,'PUT',createBody(await boundFeedback('production')));await publicRecord('records/preparation/feedback-production-draft.json',changed,workflowProjection);
   for(const [name,id] of Object.entries(binding.workflows)){const current=await publicApi('/workflows/'+id);const published=await publicApi('/workflows/'+id+'/publish','POST',{versionId:current.record.body.versionId});await publicRecord('records/preparation/'+name+'-publish.json',published,workflowProjection);const back=await publicApi('/workflows/'+id);await publicRecord('records/preparation/'+name+'-published-readback.json',back,workflowProjection);if(back.record.body.activeVersionId!==current.record.body.versionId)throw new Error('已发布版本未对应本次实际草稿：'+name);}
 }else if(command==='feedback'){
-  const cases={'test-E01':['test','inputs/feedback-test-E01.json','测试 · 第一章E01'],'production-E01':['production','inputs/feedback-E01.json','正式 · 第一章E01'],'duplicate-E01':['production','inputs/feedback-E01.json','串行重复 · 第一章E01'],'production-E02':['production','inputs/feedback-E02.json','课堂失败 · 第三章E02']};
+  const cases={'test-E01':['test','inputs/feedback-test-E01.json','测试 · 第五章E01'],'production-E01':['production','inputs/feedback-E01.json','正式 · 第五章E01'],'duplicate-E01':['production','inputs/feedback-E01.json','串行重复 · 第五章E01'],'production-E02':['production','inputs/feedback-E02.json','课堂失败 · 第六章E02']};
   const spec=cases[key];if(!spec)throw new Error('请选择固定反馈采集任务。');const [tables,inputName,label]=spec;const folder='records/feedback/'+key;await ensureNew(folder);
   const before=key==='duplicate-E01'?await publicApi('/executions?workflowId='+binding.workflows.feedback+'&limit=20'):null;
-  const response=await postFrozen(folder,inputName,(tables==='test'?'/webhook-test/':'/webhook/')+'qinglan-ch14-feedback');
+  const response=await postFrozen(folder,inputName,(tables==='test'?'/webhook-test/':'/webhook/')+'fanren-ch14-feedback');
   const entry={key,label,input:folder+'/input.json',response:folder+'/response.json',taskReceived:folder+'/task-received.json',receivedReadAt:new Date().toISOString(),taskFinal:folder+'/task-final.json',feedbackFinal:folder+'/feedback-final.json',execution:folder+'/execution.json'};
   await rowsSnapshot(entry.taskReceived,binding.tables[tables+'Task']);await rowsSnapshot(folder+'/feedback-received.json',binding.tables[tables+'Feedback']);
   entry.receivedReadAt=(await load(entry.taskReceived+'.source.json')).startedAt;
@@ -53,7 +53,7 @@ if(command==='prepare'){
   if(key==='production-E01'){const numericId=Number(response.body.executionId);if(Number.isFinite(numericId)){const filter=JSON.stringify({type:'and',filters:[{columnName:'id',condition:'eq',value:numericId}]});const wrong=await publicApi('/data-tables/'+binding.tables.productionTask+'/rows?filter='+encodeURIComponent(filter));entry.incorrectLookup=folder+'/execution-id-as-task-id.json';await publicRecord(entry.incorrectLookup,wrong);}}
   index.feedback.push(entry);await manifest();
 }else if(command==='files'){
-  const folder='records/files/files-01';await ensureNew(folder);const call=await postFrozen(folder,'inputs/完整两项目录输入.json','/webhook/qinglan-ch14-files');
+  const folder='records/files/files-01';await ensureNew(folder);const call=await postFrozen(folder,'inputs/完整两项目录输入.json','/webhook/fanren-ch14-files');
   // 执行索引可能晚于入口返回可见；以原生接收的完整输入匹配，不依赖两端时间。
   const input=JSON.parse(call.request.bodyText),inputSha256=sha(JSON.stringify(input));let current;
   const until=Date.now()+30000;
@@ -72,7 +72,7 @@ if(command==='prepare'){
   const reads=await fs.readFile(path.join(root,'.local/file-reads.jsonl'),'utf8');const actual=reads.trim().split('\n').filter(Boolean).map(JSON.parse).filter(r=>Date.parse(r.requestedAt)>=Date.parse(call.startedAt)&&Date.parse(r.requestedAt)<=Date.parse(call.finishedAt));await save(folder+'/actual-file-reads.json',actual);
   index.files={input:folder+'/input.json',response:folder+'/response.json',execution:folder+'/execution.json',fileReads:folder+'/actual-file-reads.json'};await manifest();
 }else if(command==='branch'){
-  const folder='records/branch/batch-01';await ensureNew(folder);const call=await postFrozen(folder,'inputs/批次完整输入.json','/webhook/qinglan-ch14-batch');
+  const folder='records/branch/batch-01';await ensureNew(folder);const call=await postFrozen(folder,'inputs/批次完整输入.json','/webhook/fanren-ch14-batch');
   const rows=call.body;if(!Array.isArray(rows)||rows.length!==3)throw new Error('父流程未返回实际三项回执，原件保留。');
   const parentIds=new Set(rows.map(r=>r.parentExecutionId)),childIds=new Set(rows.map(r=>r.childExecutionId));if(parentIds.size!==1||childIds.size!==1)throw new Error('实际父/子执行 ID 不是各一个，不能声称单次子执行。');
   await executionSnapshot(folder+'/parent-execution.json',[...parentIds][0]);await executionSnapshot(folder+'/child-execution.json',[...childIds][0]);await rowsSnapshot(folder+'/receipt-rows.json',binding.tables.receipts);

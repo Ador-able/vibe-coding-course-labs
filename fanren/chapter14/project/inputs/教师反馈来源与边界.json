@@ -1,18 +1,36 @@
 {
   "kind": "teacher-authored-feedback-not-real-reader-submission",
-  "workId": "qinglan-xiuxianlu",
-  "workTitle": "青岚修仙录",
-  "identity": "林青，青岚宗外门弟子，炼气三层，筑基是长远愿望。",
+  "workId": "fanren-xiuxianzhuan",
+  "workTitle": "凡人修仙传",
   "feedbackTexts": {
-    "E01": "林青退开半步才看见铜片上的手影，这个结尾让我想继续读。请暂时保留声源未明，也不要让他拿起铜片。",
-    "E02": "第三章在桌边记下“闻声后见手影张开”，并没有确定声响触发手影。请保留“中间没看着”的限制。",
-    "E03": "林青借阅登记已经完成，却仍抱书站在阅书桌前。后续请从这个位置接续，不要直接写成已经离阁或突破筑基。"
+    "E01": "第五章岳堂主让韩立、张铁先打根基，半年后再考核，合格才正式成为内门弟子。整理大纲时请保留这个条件，不要写成两人已经正式通过。",
+    "E02": "第六章墨大夫答应教采药炼药常识，医术只是“也许”，武功明确不教。整理设定时请保留三种说法，也不要把未来承诺写成已经学会。",
+    "E03": "第四章的正午规则保留了表现突出者收为记名弟子的例外；师兄保护是防止攀爬出危险。请分别记录，不要把未按时登顶一律写成遣返，也不要把保护当成已经录取。"
+  },
+  "mapping": {
+    "E01": {
+      "bookChapter": 5,
+      "sourceSegmentId": "C04",
+      "evidence": "半年后再考核一下，合格则正式成为内门弟子"
+    },
+    "E02": {
+      "bookChapter": 6,
+      "sourceSegmentId": "C05",
+      "evidence": "我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功"
+    },
+    "E03": {
+      "bookChapter": 4,
+      "sourceSegmentId": "C03",
+      "evidence": "虽然不能成为正式弟子，但要是表现有可圈可点之处，可以收为记名弟子"
+    }
   },
   "source": {
-    "gitCommit": "491d1130f808b43e066ac61ec6ac5d701a4b2a3f",
-    "path": "qinglan/chapter13/project/inputs/长文-完整三章与段落定位.json",
-    "bytes": 27459,
-    "sha256": "1c8d71fdb81e09d34cb89982e39b8546975e9cb63d26cf474badc398d0374170"
+    "path": "inputs/凡人原文片段与段落定位.json",
+    "bodySha256BySegment": {
+      "C03": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "C04": "b5c3463f322bab6993a8dc78dda81bee0e24dfd9b20497c12e860aa35bd73f9c",
+      "C05": "b8f8242a70c30aaa325549e4dff4e4d5fc7345efac5551eeecd7d01607ba7290"
+    }
   },
-  "boundary": "三章仍是此前课堂 draft 存档。反馈登记和三种回执不代表章稿已采用、文学判断通过或通知已发送。readerId 是人工课堂标识，不是身份认证。"
+  "boundary": "反馈是教师针对真实原文编写的校对意见，不是真实读者提交，也不是模型输出。仅登记反馈与流程回执，不更改原著，不把回执当作文学采用或通知送达。readerId仅为课堂标识。"
 }

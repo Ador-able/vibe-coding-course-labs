@@ -1,0 +1,24 @@
+{
+  "kind": "teacher-pagination-not-parser-output",
+  "source": "inputs/长文-完整三章与段落定位.json",
+  "chapterId": "C3",
+  "title": "第三章　借书未出门",
+  "pageParagraphs": [
+    [
+      0,
+      8
+    ],
+    [
+      9,
+      19
+    ],
+    [
+      20,
+      28
+    ]
+  ],
+  "textPath": "files/chapter-three.txt",
+  "textBytes": 3245,
+  "textSha256": "363b32b0054129db8b916db8453d885513ac0ad35206a9b5aba57a6282200834",
+  "note": "仅为正常三页中文排版的原文分组；不是 n8n 提取结果。"
+}

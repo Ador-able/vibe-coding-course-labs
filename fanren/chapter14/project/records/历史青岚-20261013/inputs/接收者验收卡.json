@@ -1,0 +1,103 @@
+{
+  "kind": "teacher-acceptance-card-not-executed-by-recipient",
+  "workId": "qinglan-xiuxianlu",
+  "currentTask": "提交一条第一章读者反馈，并从 n8n 两张正式表独立读回原文与关联 ID。",
+  "input": {
+    "eventId": "qinglan-acceptance-E01",
+    "feedbackId": "QFB-acceptance-E01",
+    "workId": "qinglan-xiuxianlu",
+    "chapterNumber": 1,
+    "readerId": "classroom-reader-01",
+    "feedback": "林青退开半步才看见铜片上的手影，这个结尾让我想继续读。请暂时保留声源未明，也不要让他拿起铜片。",
+    "failTask": false
+  },
+  "completed": false,
+  "recipientAction": "未执行；本章预先准备的课堂实录不能代替接收者操作。",
+  "inspect": [
+    "正式 URL 与已发布工作流版本",
+    "Task 与 Feedback 的实际表 ID、行 ID、完整反馈原文",
+    "按关联 ID 独立读回两张表",
+    "通知字段与人工采用分别核对"
+  ],
+  "previousChapter": {
+    "extractionCsv": {
+      "path": "../../chapter13/project/records/extraction/extract-04/extract/csv/candidate.csv",
+      "kind": "actual-cloud-candidate-not-adopted",
+      "bytes": 647,
+      "sha256": "d94371aad66753e9245762debcf656c32c31a4580c16af304205c9fbf466f45a",
+      "rows": 8,
+      "columns": 11
+    },
+    "templates": "第十三章 V1/V2 两份实际返回都含 JSON 围栏，严格解析失败；四次 CSV 导出/读回失败，0 份 CSV。这里不把旧 CSV 成功示例当作本次结果。"
+  },
+  "externalActions": "未连接 Google、未创建事件、未发邀请或邮件。",
+  "prerequisites": {
+    "responsible": "维护者提供真实对象与回查入口；操作人核对自身账户范围后执行。",
+    "formalUrl": null,
+    "workflowId": null,
+    "publishedVersionId": null,
+    "taskTable": {
+      "id": null,
+      "viewEntry": null
+    },
+    "feedbackTable": {
+      "id": null,
+      "viewEntry": null
+    },
+    "accountScope": "待维护者填写实际课堂账户和可查看的两个正式表范围；不填写密码、API key 或 Cookie。",
+    "reopenEntry": null,
+    "maintainerContact": null,
+    "status": "待填；未满足前置时标为阻塞，不提交。"
+  },
+  "steps": [
+    {
+      "id": "S01",
+      "responsible": "维护者与操作人",
+      "task": "核对正式 URL、实际 workflow/发布 version、两表查看位置、账户范围、重开入口及维护者联系方式。",
+      "state": "未检查"
+    },
+    {
+      "id": "S02",
+      "responsible": "操作人",
+      "task": "用卡内完整输入提交一次，保存真实 HTTP 回答；不因 received 重复提交。",
+      "state": "未检查"
+    },
+    {
+      "id": "S03",
+      "responsible": "操作人",
+      "task": "从约定的两个正式表入口按 eventId 独立读回：Task 的七个原输入字段逐字/逐类型对应；Feedback 的六个原输入字段对应且 taskRowId 引用真实 Task.id。另核真实任务终态及通知字段。",
+      "taskInputFields": [
+        "eventId",
+        "feedbackId",
+        "workId",
+        "chapterNumber",
+        "readerId",
+        "feedback",
+        "failTask"
+      ],
+      "feedbackInputFields": [
+        "eventId",
+        "feedbackId",
+        "workId",
+        "chapterNumber",
+        "readerId",
+        "feedback"
+      ],
+      "relation": "Feedback.taskRowId = Task.id；Task.feedbackRowId = Feedback.id",
+      "state": "未检查"
+    },
+    {
+      "id": "S04",
+      "responsible": "操作人",
+      "task": "关闭记录页，再从约定入口重新打开同一 eventId；独立读回原文、两条记录及关联，保存这次读回证据。",
+      "state": "未检查"
+    }
+  ],
+  "criteria": {
+    "通过": "前置对象已核清；一次提交取得真实回执；两表原文、类型、关联与终态对应；关闭后重开仍读回同事件。通知和文学采用仍各自按实际状态记录。",
+    "未通过": "已经实际检查，但原文、类型、关联、终态或重开读回与约定不符；保存具体差异并交维护者。",
+    "阻塞": "缺少正式入口、发布版本、表权限/查看位置、账户范围或联系维护者等必要前置；不能把未执行写为通过。",
+    "未检查": "这项动作尚未实际进行；不把编者课堂实录当成接收者证据。"
+  },
+  "overallState": "未检查"
+}

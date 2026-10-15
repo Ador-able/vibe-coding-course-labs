@@ -1,0 +1,49 @@
+{
+  "name": "青岚课堂反馈任务",
+  "columns": [
+    {
+      "name": "eventId",
+      "type": "string"
+    },
+    {
+      "name": "feedbackId",
+      "type": "string"
+    },
+    {
+      "name": "workId",
+      "type": "string"
+    },
+    {
+      "name": "chapterNumber",
+      "type": "number"
+    },
+    {
+      "name": "readerId",
+      "type": "string"
+    },
+    {
+      "name": "feedback",
+      "type": "string"
+    },
+    {
+      "name": "failTask",
+      "type": "boolean"
+    },
+    {
+      "name": "status",
+      "type": "string"
+    },
+    {
+      "name": "notificationStatus",
+      "type": "string"
+    },
+    {
+      "name": "executionId",
+      "type": "string"
+    },
+    {
+      "name": "feedbackRowId",
+      "type": "number"
+    }
+  ]
+}
