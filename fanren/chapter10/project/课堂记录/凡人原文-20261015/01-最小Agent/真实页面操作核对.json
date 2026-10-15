@@ -1,0 +1,31 @@
+{
+  "kind": "真实工作台CUA操作摘录",
+  "url": "http://127.0.0.1:4459/",
+  "actions": [
+    "读取凡人第1章完整r1",
+    "通过正文编辑器仅把一屁股做了下来改为一屁股坐了下来",
+    "点击保存草稿",
+    "读取页面r2与完整正文"
+  ],
+  "visibleStatus": "读取 r2 · 草稿 · 依据当前",
+  "visibleReceipt": "已保存 r2。",
+  "bodyReadbackCodePoints": 2371,
+  "bodyReadbackExactWithProposedEdit": true,
+  "network": {
+    "hasMore": false,
+    "truncated": false,
+    "requests": [
+      {
+        "method": "POST",
+        "url": "/api/draft",
+        "status": 200
+      },
+      {
+        "method": "GET",
+        "url": "/api/work?work=fanren",
+        "status": 200
+      }
+    ]
+  },
+  "scope": "来自本轮CUA原生控件输入、点击和页面DOM及CDP网络观察；并非截图，未新增模型任务。"
+}

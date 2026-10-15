@@ -1,0 +1,40 @@
+{
+  "modelCalls": 0,
+  "restores": [
+    {
+      "id": "ecfba8dd-c743-4f62-afe2-78657b4cc44e",
+      "database": "data/practice-ecfba8dd-c743-4f62-afe2-78657b4cc44e.sqlite",
+      "workId": "fanren",
+      "restoredFrom": "课堂记录/凡人原文-20261015/01-最小Agent/158-模型完成.json",
+      "sourceSha256": "21d0532de83d65ab5bad6126fbacfb1d58ce6812a0fbecfb108c380d626e3d34",
+      "restoredAt": "2026-10-15T06:42:32.003Z",
+      "scope": "完整恢复所选实录快照；未调用模型，未覆盖其他练习库。",
+      "counts": {
+        "works": 1,
+        "work_versions": 1,
+        "chapters": 1,
+        "chapter_versions": 1,
+        "tasks": 1
+      },
+      "byteObjectsVerified": true
+    },
+    {
+      "id": "78d80793-6b10-47d6-874e-423752d2abd3",
+      "database": "data/practice-78d80793-6b10-47d6-874e-423752d2abd3.sqlite",
+      "workId": "fanren",
+      "restoredFrom": "课堂记录/凡人原文-20261015/01-最小Agent/158-人工完成.json",
+      "sourceSha256": "c5df16c3a897a24513b42838fdb530e386f4a3da7e24f60dfde6204d11b1c4a6",
+      "restoredAt": "2026-10-15T06:42:32.231Z",
+      "scope": "完整恢复所选实录快照；未调用模型，未覆盖其他练习库。",
+      "counts": {
+        "works": 1,
+        "work_versions": 1,
+        "chapters": 1,
+        "chapter_versions": 2,
+        "tasks": 1
+      },
+      "byteObjectsVerified": true
+    }
+  ],
+  "scope": "同一现有恢复入口在正确的第十章目录创建新库，并逐表核对快照相同；没有重跑模型或覆盖旧库。"
+}

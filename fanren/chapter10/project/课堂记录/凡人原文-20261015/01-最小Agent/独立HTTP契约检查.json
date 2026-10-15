@@ -1,0 +1,11 @@
+{
+  "kind": "编者独立HTTP契约检查",
+  "modelCalls": 0,
+  "sourceBodySha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349",
+  "firstStatus": 200,
+  "fullBodyExact": true,
+  "leadingFullwidthIndentPreserved": true,
+  "staleStatus": 409,
+  "blankStatus": 400,
+  "failedWritesLeaveRevision": 1
+}

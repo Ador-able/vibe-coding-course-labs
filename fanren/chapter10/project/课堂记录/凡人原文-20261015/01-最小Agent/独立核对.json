@@ -1,0 +1,47 @@
+{
+  "kind": "编者独立核对",
+  "sourceVersion": "18a701121c2d644aeccaa24484a3d1dba5b09c3a",
+  "runId": "5b786a65-1f15-4820-af2e-83defefe3efb",
+  "threadId": "01a13e3d-f03d-7fc0-a387-e4dac22f519b",
+  "modelState": "completed",
+  "sdkEvents": 26,
+  "completedCommands": 4,
+  "mcpTools": [
+    "read_work",
+    "list_chapters",
+    "read_chapter",
+    "save_draft",
+    "read_chapter",
+    "list_chapters"
+  ],
+  "sourceBodyCodePoints": 2371,
+  "sourceBodyHan": 2036,
+  "sourceBodySha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349",
+  "modelBodySha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349",
+  "humanBodySha256": "afcd5852a3e354158fbd9c70564de8bcd60f79e16dfb30893fb76fe61c63ca07",
+  "modelBodyExact": true,
+  "saveAndReadbackExactlyMatchDatabase": true,
+  "sourceFilesUnchanged": true,
+  "workMaterialsUnchanged": true,
+  "oldRevisionUnchanged": true,
+  "sourceNovelAuthorship": "忘语；origin为入口标记，不证明文字由模型创作",
+  "humanChange": {
+    "old": "一屁股做了下来",
+    "new": "一屁股坐了下来",
+    "changedCodePoints": 1,
+    "revisionBefore": 1,
+    "revisionAfter": 2,
+    "origin": "human",
+    "status": "draft",
+    "otherBodyUnchanged": true,
+    "taskRowsUnchanged": true
+  },
+  "usage": {
+    "input_tokens": 182565,
+    "cached_input_tokens": 146304,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4384,
+    "reasoning_output_tokens": 1952
+  },
+  "scope": "本轮无改写续写、无采用发布、无子代理；模型读回相同由编者独立逐字与摘要核对，不冒称模型用程序重算了读回哈希。"
+}

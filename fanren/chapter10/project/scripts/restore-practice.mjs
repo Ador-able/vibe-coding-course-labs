@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import {Store} from '../dist/store.js';
 import {tables,snapshotDatabase} from './practice-state.mjs';
 
-const {values}=parseArgs({options:{snapshot:{type:'string',default:'materials/起点/158-模型完成.json'}}});
+const {values}=parseArgs({options:{snapshot:{type:'string',default:'课堂记录/凡人原文-20261015/01-最小Agent/158-模型完成.json'}}});
 const bytes=readFileSync(values.snapshot),snapshot=JSON.parse(bytes),id=randomUUID(),database=`data/practice-${id}.sqlite`;
 const store=new Store(database);
 try{
