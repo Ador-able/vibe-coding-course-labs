@@ -1,4 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { appendFile, mkdir, readFile, realpath, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -9,11 +10,12 @@ const root = dirname(fileURLToPath(import.meta.url));
 const hash = text => createHash('sha256').update(text).digest('hex');
 const { values } = parseArgs({ options: { prepare: { type: 'boolean' }, 'sdk-dir': { type: 'string' } } });
 const inputDir = join(root, '输入');
-const sourceDir = resolve(root, '../project/运行记录/2026-10-12T17-33-04.755Z-42976b0b-04b4-4d6c-8b13-bfef42a8e443/1-none');
+const sourceDir = resolve(root, '../运行记录/2026-10-14T15-59-44.749Z-ebe5037b-3a15-4793-937d-90905b86ebc6/1-none');
 if (values.prepare) {
   const original = await readFile(join(sourceDir, 'output.txt'), 'utf8');
   const task = await readFile(join(sourceDir, 'prompt.txt'), 'utf8');
-  if (hash(original) !== 'f092f445594313477fc58a6ab3adc3151281f9ed16cc185f403f22f1cdd10ebd') throw new Error('原稿与已核对的首轮记录不一致。');
+  const sourceReport = JSON.parse(await readFile(join(sourceDir, 'report.json'), 'utf8'));
+  if (hash(original) !== sourceReport.outputSha256) throw new Error('原稿与首轮输出摘要不一致。');
   const instruction = await readFile(join(root, '反馈要求.txt'), 'utf8');
   const prompt = instruction + '\n<已确认任务>\n' + task + '\n</已确认任务>\n\n<待修改稿>\n' + original + '\n</待修改稿>';
   await mkdir(inputDir, { recursive: true });
@@ -22,7 +24,7 @@ if (values.prepare) {
   await writeFile(join(inputDir, 'input.json'), JSON.stringify({
     preparedAt: new Date().toISOString(), sourceDir,
     originalSha256: hash(original), taskSha256: hash(task), instructionSha256: hash(instruction), promptSha256: hash(prompt),
-    allowedChanges: [{ before: '说是子时已过', after: '说是正值子时' }, { before: '执事今早拉了封绳', after: '执事昨夜子时就拉了封绳' }],
+    allowedChanges: [{ before: '正午前到崖顶，才够成为正式弟子的时间条件。', after: '想当正式弟子，就得在正午前到崖顶。' }],
     boundary: '使用真实原稿，仅反馈指定短语，不预写或提供修改后的完整正文。'
   }, null, 2));
   console.log(JSON.stringify({ state: 'prepared', inputDir, originalSha256: hash(original), promptSha256: hash(prompt), plannedCalls: 1 }));
@@ -43,9 +45,9 @@ await mkdir(workspace, { recursive: true });
 await writeFile(join(runDir, 'prompt.txt'), prompt);
 await writeFile(join(runDir, 'original.txt'), original);
 const settings = { skipGitRepoCheck: true, sandboxMode: 'read-only', approvalPolicy: 'never', webSearchMode: 'disabled', modelReasoningEffort: 'low' };
-const config = { sdkVersion: sdkPackage.version, configuredModel: null, settings, maxCallMs: 180000, input };
+const config = { executionGitHead: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(), runnerSha256: hash(await readFile(fileURLToPath(import.meta.url), 'utf8')), sdkVersion: sdkPackage.version, configuredModel: null, settings, memoryUse: false, memoryGeneration: false, shellTool: false, maxCallMs: 180000, input };
 await writeFile(join(runDir, 'config.json'), JSON.stringify(config, null, 2));
-const thread = new Codex().startThread({ ...settings, workingDirectory: workspace });
+const thread = new Codex({ config: { features: { shell_tool: false }, memories: { use_memories: false, generate_memories: false } } }).startThread({ ...settings, workingDirectory: workspace });
 const startedAt = new Date().toISOString(), started = performance.now();
 let completed = false, failure = null, output = '';
 const usageEvents = [], toolEvents = [];
