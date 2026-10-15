@@ -1,0 +1,15 @@
+{
+  "projection": "仅摘录本实验两项方法的真实目录元信息，未纳入其他方法正文。",
+  "skills": [
+    {
+      "name": "novel-chapter-task",
+      "description": "依据小说工作台中的当前要求和前文，起草或修改指定章节，保存完整正文为待人工判断的草稿。用于明确要求保存章节的任务；只读检查应使用 novel-chapter-review，单句润色和未保存的独立片段不适用。",
+      "location": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\plugins\\novel-workbench-course\\skills\\novel-chapter-task\\SKILL.md"
+    },
+    {
+      "name": "novel-chapter-review",
+      "description": "检查小说工作台中已保存章节的设定一致性、前文衔接、资料修订和采用状态。用于指定作品与章节的只读核查；单句润色、泛泛创作建议和未保存的独立片段不适用。",
+      "location": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\plugins\\novel-workbench-course\\skills\\novel-chapter-review\\SKILL.md"
+    }
+  ]
+}

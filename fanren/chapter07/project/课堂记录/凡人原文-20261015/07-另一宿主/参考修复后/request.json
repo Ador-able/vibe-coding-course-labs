@@ -1,0 +1,9 @@
+{
+  "prompt": "请使用本插件的章节处理方法，为作品fanren写第1章完整草稿。先通过业务工具读取当前作品大纲、设定、要求和章稿状态，按第一段选拔与竹林范围组织800至1200个汉字，不预写考核结果。真实保存并读回，汇报修订与草稿状态，不自行采用。\n",
+  "model": "courseModel/ep-ymk08qa8",
+  "agent": "chapter-task",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\opencode-plus.sqlite",
+  "requestedSessionId": null,
+  "codeVersion": "b9c74f901009160278cd7d817ff60d28ab4a441a",
+  "limits": "使用原生 OpenCode 命令执行，不实现模型或工具循环；接续输入是后续人工反馈，不代替首次条件或失败。"
+}

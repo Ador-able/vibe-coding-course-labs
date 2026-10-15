@@ -1,0 +1,79 @@
+{
+  "cases": {
+    "启动失败": {
+      "codeVersion": "8121b9842d135ecb84b78c539237f4cef87709b8",
+      "userPromptEqualsCodex": true,
+      "fiveTablesUnchanged": true,
+      "noSavedChapter": true,
+      "modelTaskStarted": false,
+      "observedTerminalError": "spawn UNKNOWN；观察入口随后因stdout.txt不存在报ENOENT。",
+      "entryBeforeRepairBytes": 479,
+      "evidenceNote": "错误来自本轮终端反馈及独立依赖文件检查；该次没有生成原生会话日志，不把本说明冒充原始事件。"
+    },
+    "参考失败": {
+      "codeVersion": "306c086dc15b87cc5d4e74666693337435d98975",
+      "userPromptEqualsCodex": true,
+      "fiveTablesUnchanged": true,
+      "noSavedChapter": true,
+      "modelTaskStarted": true,
+      "sessionId": "ses_ec25095c4ffecHlsVjtLFQUCPx",
+      "model": "courseModel/ep-ymk08qa8",
+      "fullMethodRead": true,
+      "fullReferenceRead": false,
+      "businessCalls": 3,
+      "targetRead": true,
+      "lastStep": {
+        "reason": "length",
+        "tokens": {
+          "total": 10858,
+          "input": 2666,
+          "output": 0,
+          "reasoning": 4096,
+          "cache": {
+            "write": 0,
+            "read": 4096
+          }
+        }
+      },
+      "processExit": 0,
+      "texts": [
+        "我先加载章节写作技能，并同时读取作品要求。\n\n",
+        "已读取作品要求：目标是写第1章（大纲C03 七玄门与炼骨崖）的完整草稿，只覆盖竹林考核第一段。目录目前为空，第1章尚无草稿。我继续读取保存基线参考文件并确认第1章状态。\n\n",
+        "参考文件读取被权限规则拦下了，我再换一种路径格式尝试读取保存基线参考。\n\n"
+      ]
+    },
+    "参考修复后": {
+      "codeVersion": "b9c74f901009160278cd7d817ff60d28ab4a441a",
+      "userPromptEqualsCodex": true,
+      "fiveTablesUnchanged": true,
+      "noSavedChapter": true,
+      "modelTaskStarted": true,
+      "sessionId": "ses_ec24c9433ffet7lgoc11be6h63",
+      "model": "courseModel/ep-ymk08qa8",
+      "fullMethodRead": true,
+      "fullReferenceRead": true,
+      "businessCalls": 2,
+      "targetRead": false,
+      "lastStep": {
+        "reason": "length",
+        "tokens": {
+          "total": 8871,
+          "input": 2727,
+          "output": 0,
+          "reasoning": 4096,
+          "cache": {
+            "write": 0,
+            "read": 2048
+          }
+        }
+      },
+      "processExit": 0,
+      "texts": [
+        "按技能流程，先读取作品资料、章稿状态和保存基线说明。\n\n"
+      ]
+    }
+  },
+  "independentReadonlySQLiteEqualsAllSnapshots": true,
+  "conditions": "首次无模型启动；安装后与路径修复后是两个模型新会话。请求相同、配置型号与预算未改，路径权限配置已改变，不能合并成同条件首次运行，也不与Codex做能力排名。",
+  "officialReadImplementation": "https://github.com/anomalyco/opencode/blob/v1.18.34/packages/opencode/src/tool/read.ts#L235"
+}
