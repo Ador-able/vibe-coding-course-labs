@@ -1,0 +1,17 @@
+{
+  "modelCalls": 0,
+  "originalTextChanged": false,
+  "failedCheck": "原生文字版逐段回查到原文",
+  "observedDifferences": [
+    {
+      "pages": [
+        2,
+        3
+      ],
+      "expected": "… U+2026",
+      "actual": "⋯ U+22EF",
+      "source": "PyMuPDF内置china-s字体映射"
+    }
+  ],
+  "nextPreparation": "嵌入PyMuPDF内置Droid Sans Fallback字体后重新制作原件，不替换原文或提取结果中的字符。"
+}

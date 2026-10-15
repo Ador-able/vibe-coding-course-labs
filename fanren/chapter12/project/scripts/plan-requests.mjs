@@ -29,7 +29,7 @@ const rules = readJson(path.join(root, 'inputs/实验规则.json'));
 if (mode === 'initial') {
   const chunks = readJson(path.join(root, 'public/records/chunks.json'));
   for (const method of chunks.methods) {
-    const selected = method.retrievals.find(row => row.term === '卡住');
+    const selected = method.retrievals.find(row => row.term === rules.chunkTerm);
     await plannedAnswer(method.condition.id, { system: rules.chunkSystem, messages: [{ role: 'user', content: `资料：\n${selected.context}\n\n问题：\n${rules.chunkQuestion}` }] });
   }
   await plannedEmbedding('initial-corpus-and-queries', loadMaterials().values);

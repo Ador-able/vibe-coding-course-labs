@@ -1,29 +1,205 @@
 {
-  "runId": "7e57287a-144e-4e1f-aafc-a70b71b5ee10",
-  "startedAt": "2026-10-13T02:55:07.280Z",
-  "gitHead": "79e4d5ce77727d2f8e22784db82101de894934e5",
-  "sourceVersion": null,
-  "finishedAt": "2026-10-13T02:55:07.320Z",
+  "runId": "220f6e3e-0870-4b91-bb4b-7bd30d20a057",
+  "startedAt": "2026-10-15T07:01:13.851Z",
+  "gitHead": "e19b3aa35fe5cef3f91157db1a5961cf6344f770",
+  "sourceVersion": {
+    "sourceVersion": "sha256:b4d5d9580c458cf74588d8022496016d30c2c57f09371ace284777818e1e0944",
+    "gitHead": "e19b3aa35fe5cef3f91157db1a5961cf6344f770",
+    "frozenAt": "2026-10-15T07:00:53.474Z",
+    "files": [
+      {
+        "name": "启动实验.cmd",
+        "bytes": 78,
+        "sha256": "61edaef68d861b2dea0baa9608d293fdf8b7fb7bac7e5bc1ddfb20294d65eb7e"
+      },
+      {
+        "name": "package.json",
+        "bytes": 1142,
+        "sha256": "246c9b22c29ac1252f8bbecf661561923140107c039c5dcebd77d9d70827d2d4"
+      },
+      {
+        "name": "pnpm-lock.yaml",
+        "bytes": 7703,
+        "sha256": "214c96a786da372410177f3fa152f508dc0304ce906b190b859034704c09f5e2"
+      },
+      {
+        "name": "public/answers.html",
+        "bytes": 1622,
+        "sha256": "f1a5c8bb8b9c8401bade1159ff05e86500e585a6d2b8f1b059f2dba35cff893f"
+      },
+      {
+        "name": "public/app.css",
+        "bytes": 4917,
+        "sha256": "f313d51994c619fbe789f2cfc9725daead26dbd030aaeb06295c700e854b39cc"
+      },
+      {
+        "name": "public/app.js",
+        "bytes": 20374,
+        "sha256": "4350268a723c621b84d9a7240de9bdceb35ddc33cc978c725e01e84eb9b47214"
+      },
+      {
+        "name": "public/chunks.html",
+        "bytes": 1627,
+        "sha256": "5fafd85ef1f3f652dd06adee8bb3e4179f727b0cc4b35fdec1b97f51c0ad59e6"
+      },
+      {
+        "name": "public/evaluation.html",
+        "bytes": 1628,
+        "sha256": "c4d242e16c95055d3e2e6298d72c6bfb334200be748d466c1f85d107b785d68d"
+      },
+      {
+        "name": "public/index.html",
+        "bytes": 1616,
+        "sha256": "504a413535eef4177c4e3bd65e74dbd047a8c81c8a2b13e8eabdea66cf6eec34"
+      },
+      {
+        "name": "public/retrieval.html",
+        "bytes": 1621,
+        "sha256": "fd5a61df76c68e6f063a43f34b2df5f31e5121ef01bee0bd019bad6e102d65b0"
+      },
+      {
+        "name": "public/shared.js",
+        "bytes": 2922,
+        "sha256": "ee53ae573c5234049046aede4df72860fbc419d31ba66238fa63e8b2462c7d96"
+      },
+      {
+        "name": "requirements.txt",
+        "bytes": 18,
+        "sha256": "370a023f5374595edf76f25e9a5c46b70735b36b3d76e3d020bb1a3613439dd5"
+      },
+      {
+        "name": "scripts/build-inputs.py",
+        "bytes": 5671,
+        "sha256": "a821467e1fb4bd3038f4a34ca542fd19b746b2cf481e744b88336f752d77ece1"
+      },
+      {
+        "name": "scripts/check-source.mjs",
+        "bytes": 920,
+        "sha256": "ea7d90009721f7ba26b250466c01f8107614f4bc97bc4c83de5e440b96278639"
+      },
+      {
+        "name": "scripts/evaluate.mjs",
+        "bytes": 1522,
+        "sha256": "f541d8feca5956bb2e5e824813ff301cfbb6a8c5ca6d86b7ebf8ce3059e4619f"
+      },
+      {
+        "name": "scripts/freeze-source.mjs",
+        "bytes": 1453,
+        "sha256": "760e5b16d334ea89bdb4609fb3619f69c5356b6b1ba6a5c9898ee7b8e3dff26b"
+      },
+      {
+        "name": "scripts/observe-answers.mjs",
+        "bytes": 1713,
+        "sha256": "f6b90e419347731964f8ef1f1e7c71c12eb48677ce2b8a9e106278263fd97e20"
+      },
+      {
+        "name": "scripts/observe-chunks.mjs",
+        "bytes": 1796,
+        "sha256": "59c80ebdccb8f99db170041fc71d86d53e97f7e32a697f7a9fa6fe91adad2ed2"
+      },
+      {
+        "name": "scripts/observe-embeddings.mjs",
+        "bytes": 1369,
+        "sha256": "7776801413ae5160368ae2c01d09829ff33b35a283131d24ee47ad35968ca904"
+      },
+      {
+        "name": "scripts/observe-update.mjs",
+        "bytes": 4650,
+        "sha256": "405e0f76ed8097ebcbad254eaabf1004f2686195f7c42c255fb286b554f1d971"
+      },
+      {
+        "name": "scripts/plan-requests.mjs",
+        "bytes": 4275,
+        "sha256": "66d4142ba0d36894768c7b742d6f36d1c59e1b82823076d3fb7ef939c8112ace"
+      },
+      {
+        "name": "scripts/prepare-materials.mjs",
+        "bytes": 4589,
+        "sha256": "2fe459599ccd45e8a08fe77079450a354295bf3eca65288e0814fa06d7a9cc05"
+      },
+      {
+        "name": "scripts/prepare-update.mjs",
+        "bytes": 3073,
+        "sha256": "689a22b60bdd18bc6ede080483a64113217da388a829506d68e6f77a108efa21"
+      },
+      {
+        "name": "scripts/rank-retrieval.mjs",
+        "bytes": 1016,
+        "sha256": "e71fc9f6f6ff4cc6079f735cb2e0668136cad3869c68812050263ae010217a1c"
+      },
+      {
+        "name": "scripts/read-material.py",
+        "bytes": 6649,
+        "sha256": "39c930f18e7a6295685cc9fbf42ca8476fa2f598bfbb2652fee2c650533b00ca"
+      },
+      {
+        "name": "server.mjs",
+        "bytes": 2497,
+        "sha256": "2ed0d43cd71bcda9e5eb5d592bf77776261df1685448d02dd66474e74828d61e"
+      },
+      {
+        "name": "src/chunks.mjs",
+        "bytes": 2794,
+        "sha256": "cff986c64dac991f79c8e246639cea63c2277aee293a12b119a88ef353265c99"
+      },
+      {
+        "name": "src/config.mjs",
+        "bytes": 481,
+        "sha256": "040de57e36097f169fe5cc8b423d4110b5955ea78fcf08aa0b43e9d6c8f31c5e"
+      },
+      {
+        "name": "src/frozen.mjs",
+        "bytes": 865,
+        "sha256": "d30b6bb732a91671f2c19286b38a34e92811a0e032cb0e321d298c45303117e4"
+      },
+      {
+        "name": "src/materials.mjs",
+        "bytes": 3539,
+        "sha256": "24415d589c6f60f52a3eadb9d9a38cbe4a960ef3d5437576a1fa80a819081b5f"
+      },
+      {
+        "name": "src/model-records.mjs",
+        "bytes": 5298,
+        "sha256": "1d2e9d6600c51a18a3c1095cb43b117ae6ad2fcf0f6d6a1c127c3d2723b03d3f"
+      },
+      {
+        "name": "src/retrieval.mjs",
+        "bytes": 4022,
+        "sha256": "56904900f3b94c39cee2666c12fb8acb39741b407ac3d6e91c94dd149100f749"
+      },
+      {
+        "name": "src/update-index.mjs",
+        "bytes": 6542,
+        "sha256": "3c3533143797be800d8b1a756ce67910dbcb3e0326eb20613d0090bf205df684"
+      },
+      {
+        "name": "test/materials.test.mjs",
+        "bytes": 4316,
+        "sha256": "b9f66462dd78f82678dd145f96f0ef3563dae929125a5405885cc8e04167581a"
+      }
+    ]
+  },
+  "finishedAt": "2026-10-15T07:01:13.888Z",
   "components": {
     "textsplitters": "1.0.2",
     "core": "1.2.14"
   },
   "inputFiles": [
     {
-      "name": "井房里的铜杆-完整正文.txt",
-      "bytes": 3205,
-      "sha256": "36b11d583e9b73109e81ea8ee6b8fad5bda8aedb0b7c3b0ca9141090bd094d5a"
+      "name": "凡人C05-完整原文.txt",
+      "bytes": 7348,
+      "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
     },
     {
       "name": "完整资料与问题.json",
-      "bytes": 4182,
-      "sha256": "6655fc0fcaaef877e1f1f25be2109167d48f41d944886de65eacc1a93c4f8b21"
+      "bytes": 9026,
+      "sha256": "051db407affa8b6a3cf6c87e945d790a3913eecfb2a9907f1c9c203ba8198b35"
     }
   ],
-  "readingRunId": "d5b1051a-04fe-4157-a1a6-ab33bc386872",
-  "readingSha256": "980553be5af7612e3f3e1e8086075fb17acd5f3ad3f0525fbdfe8ac7c3060f53",
-  "bodySha256": "36b11d583e9b73109e81ea8ee6b8fad5bda8aedb0b7c3b0ca9141090bd094d5a",
-  "question": "林青是否已经确定铜杆卡住木闸、导致来水变浅？他已观察到什么，仍不知道什么？",
+  "readingRunId": "34cca317-d918-4ffd-8606-2c486a02e99d",
+  "readingSha256": "ec1446e9cc1cf5378397d4855704414a653cbc66c85597fd542a3ef54f6a0826",
+  "bodySha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3",
+  "question": "根据本轮资料，墨大夫答应教韩立和张铁哪些内容？医术和武功分别怎样说？能否说两人已经学会？",
   "conditionsScope": "80 UTF16码元仅为课堂对比；字面选取规则不评价语义排名或生产最佳参数。",
   "methods": [
     {
@@ -39,26 +215,26 @@
       },
       "chunks": [
         {
-          "chunkId": "8cb97e2fd9baaf85eacfad8352d4ae705b01fe45d50ae3c66865027387887ad4",
+          "chunkId": "398ad8e53068cf8e8508df57a6683f2e69b5c01c70d9fabf3eaf6864296d4dc2",
           "index": 0,
-          "text": "林青提着小油灯进井房时，东畦的量水纸还夹在值日册里。他是青岚宗外门弟子，眼下是炼气三层。筑基的愿望还远，今日先要把来水为何变浅查明白。叶师姐已带他看过外面的木闸",
-          "utf16Length": 80,
+          "text": "“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中",
+          "utf16Length": 78,
           "bodyRange": {
-            "start": 0,
+            "start": 2,
             "end": 80,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "8374c4cea508e9a3c0d8ef9afa8effc868ba94e53f2f6ff37dac2fe363688832",
+          "chunkId": "c0da53e8da8619306029fe6d394ecd0fd7c6b5cad93b632bfcb3d304292fa517",
           "index": 1,
-          "text": "和绳轮，眼前这道石墙后仍有轻响。\n\n墙内轻响了一下，系在细铜杆边的青丝带向旁边颤动，又垂回石壁的小点前。\n\n林青屏着气，等到下一声。丝带仍是这样。只看这根软带，",
+          "text": "一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子",
           "utf16Length": 80,
           "bodyRange": {
             "start": 80,
@@ -66,16 +242,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "5aea27f40f67821173c6a708fe64b8c673acf043f410a7b72ae8a9c69d6118e5",
+          "chunkId": "754e04b4524bb9dc63a21ed4687466388727121b4404d32297997448152ef790",
           "index": 2,
-          "text": "铜杆转动和井房轻震都可能使末端摇晃；他得在杆本身留一个记号。\n\n叶师姐看着他重新拿出墨笔：“没看清？”\n\n“看清带子动了。铜杆还没看清。”\n\n林青擦净铜杆朝外的",
+          "text": "，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还",
           "utf16Length": 80,
           "bodyRange": {
             "start": 160,
@@ -83,16 +259,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "d8bb4d8103e9149c10a2e01ddf4bb06ee17c424315b84196d716d2a3385c5c57",
+          "chunkId": "9a4bbf6fe3391c0e9776a6e5ff885446e493c1902d797fd7cc9608dd8d59f2ed",
           "index": 3,
-          "text": "一小块表面，在上面画了一道短线。他把洞壁的小点补深，让短线的下端正对小点。笔收回后，他没有再碰铜杆，也没去拨青丝带。\n\n他请叶师姐站到石缝旁，看青丝带投在石壁上",
+          "text": "不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一",
           "utf16Length": 80,
           "bodyRange": {
             "start": 240,
@@ -100,16 +276,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "2fc6ec88de5cf9f99a6c961183b396cff90d56c9e514c2a70fca7f28c8238d7a",
+          "chunkId": "75dce2ad93fd9f2007224facedc29e130e8fe46a274b6821946ef563570df149",
           "index": 4,
-          "text": "的影子；影尖擦过石缝便说一声。自己坐在矮凳上，扶住膝盖，眼睛对着洞口。油灯留在木台上，新画的短线清楚地横在铜杆暗亮的一面。\n\n“过了。”叶师姐说。\n\n齿轮声轻轻",
+          "text": "股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，",
           "utf16Length": 80,
           "bodyRange": {
             "start": 320,
@@ -117,16 +293,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "df3621651153b638e3f51f51bf3a1397f43daf1f2701801132541d9dec0ccd7b",
+          "chunkId": "f313e3a7a2b1f42d06ff584b42528d6edd63abd727ba1114502db56074452f73",
           "index": 5,
-          "text": "一响，短线向上挪了一点。\n\n林青等着它回来。青丝带的末端已经垂稳，铜杆上的短线却留在新的位置，和洞壁的小点错开了。\n\n第二声来了。短线又向上移，停住。\n\n林青的",
+          "text": "吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷",
           "utf16Length": 80,
           "bodyRange": {
             "start": 400,
@@ -134,52 +310,50 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1",
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            1,
-            2
+            1
           ]
         },
         {
-          "chunkId": "1a5de342db19b31b2fd108368c6ef03e484787c4b1325e40ef71243f27bdc37c",
+          "chunkId": "2578705c12a65f0ec35984a69c661b5d557a14da0971ad0b861a1b96dc134f1d",
           "index": 6,
-          "text": "膝盖渐渐发麻。他每听见叶师姐说一次“过了”，洞里便响一下，短线再挪一点。到第六次，记号靠近了铜杆的上沿，最初朝外的那一面慢慢转了过去。\n\n“师姐，您过来看。”林",
-          "utf16Length": 80,
+          "text": "冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。",
+          "utf16Length": 78,
           "bodyRange": {
             "start": 480,
-            "end": 560,
+            "end": 558,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "4399368d9648ad3d534e4e303ca66ae01b1f298396296ba2a16355c0295701a2",
+          "chunkId": "fd7086c70809529e9241cf49f6f62b81ee88aa4506ff920b82ed83c54b87da9d",
           "index": 7,
-          "text": "青起身让出矮凳。\n\n叶师姐坐下来，对准洞壁的小点。等齿轮声再次响起，她伸出手，指尖停在洞口外，没有碰进去。\n\n“又往上走了。”\n\n林青点头。他们看见的是同一件事",
-          "utf16Length": 80,
+          "text": "走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已",
+          "utf16Length": 78,
           "bodyRange": {
-            "start": 560,
+            "start": 562,
             "end": 640,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "3b6e38322914726b81a67aea34d6ccab80c0b250b47b2b730d7777ad3369a546",
+          "chunkId": "f4f783071ab1672554a2e89b0157ceda4b3e6615ef429efe2e12830b74665cca",
           "index": 8,
-          "text": "：铜杆每次转过一点，停在新位置，下一声再接着转。青丝带落回原处，杆上的记号却没有回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸",
+          "text": "隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的",
           "utf16Length": 80,
           "bodyRange": {
             "start": 640,
@@ -187,33 +361,33 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "7ec7f4065aaa410dcb37030c43602ed020df425e01e18c29533c3840185fc0d3",
+          "chunkId": "aefba1d09b4f44999a9f1b8a81abc34fb8fa02caf36f57fdc7512d266ecb5ce1",
           "index": 9,
-          "text": "柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。",
-          "utf16Length": 78,
+          "text": "白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走",
+          "utf16Length": 80,
           "bodyRange": {
             "start": 720,
-            "end": 798,
+            "end": 800,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "07dac945858a1e4ca3d02e99b221aaf0a9c5eacab18b37f4270b267822fc246a",
+          "chunkId": "5380f964fd7a9b14b17a5082a5105270e52f13585e133f6d5c4df84123f05391",
           "index": 10,
-          "text": "“还不知道。得请器坊的田执事来看它往哪里接。”\n\n叶师姐没有再追问，起身给他让路。\n\n林青翻开值日册，在洞口图旁画出短线先后停过的位置，记下叶师姐报出的次数，又",
+          "text": "上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、",
           "utf16Length": 80,
           "bodyRange": {
             "start": 800,
@@ -221,18 +395,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2",
-            "wellroom-page-3"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2,
-            3
+            1
           ]
         },
         {
-          "chunkId": "55532a657f215bb3ba672b143f4a0a7e0f5b3f982d31e0e60be7c2ee87a26897",
+          "chunkId": "c92898056b101ea8c959da71793aa6998a0f5920f96be428f65f2b827bec8b98",
           "index": 11,
-          "text": "写下丝带的影尖经过石缝时的轻响。原因一栏仍然空着，他没有急着填。\n\n今天还不能把铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事",
+          "text": "甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张",
           "utf16Length": 80,
           "bodyRange": {
             "start": 880,
@@ -240,16 +412,18 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-1",
+            "fanren-C05-page-2"
           ],
           "sourcePages": [
-            3
+            1,
+            2
           ]
         },
         {
-          "chunkId": "9e6164513df2870c4d5e69b570518dbc590062cfdfeb788a3c0240182d4a155f",
+          "chunkId": "39930504aca771256fff3335428995941a94b2fdf228a840fb989ac5b85555ff",
           "index": 12,
-          "text": "找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青",
+          "text": "均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容",
           "utf16Length": 80,
           "bodyRange": {
             "start": 960,
@@ -257,24 +431,332 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "18405bdc6b36fd115954f53f3fa3b985d27d12ebc61f8f05a71156da0e29afce",
+          "index": 13,
+          "text": "置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1040,
+            "end": 1120,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "a1d44372e384180798e62bfa3dfbd26562c6f8a61bc9106a1859b7cf8baa8f4b",
+          "index": 14,
+          "text": "位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1120,
+            "end": 1200,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "f3a36a41fabaad9a5e1a466735e201126a4681eb4964d427c4a4f2677a6f888c",
+          "index": 15,
+          "text": "老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1200,
+            "end": 1280,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "1edf00605ead4705838b18766029cbc549b3b5138d08dc2dcfbacd7bc13f2d7c",
+          "index": 16,
+          "text": "发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1280,
+            "end": 1360,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "04fcbe63e19c4aab59cdd94f7c7cc3cafe2a41878965f76e7f0a3ba9afb36262",
+          "index": 17,
+          "text": "。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1360,
+            "end": 1440,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "ec02d5e175aec01edd481bde174587cf29707b360340a7fd86f744e9b258110f",
+          "index": 18,
+          "text": "着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1440,
+            "end": 1520,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "d6e6aad3112194c27d6175ae5cbd0624b2001fc849efaf184714e71dd9918115",
+          "index": 19,
+          "text": "嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1520,
+            "end": 1600,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "54b24a3e387fffea8c7d8aa69df96297119349b260e8407245035a73e171f2b0",
+          "index": 20,
+          "text": "经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1600,
+            "end": 1680,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "8f0415f1326ba9965656e3ada0b9c9007fd8cbf6e25b25f29121aed4dab7daa5",
+          "index": 21,
+          "text": "大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1680,
+            "end": 1760,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2",
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            2,
+            3
+          ]
+        },
+        {
+          "chunkId": "5f7c8ebcbdd46b1cca1379136804f0af193d952644c81a72a0706e795152395e",
+          "index": 22,
+          "text": "把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1760,
+            "end": 1840,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
           ],
           "sourcePages": [
             3
           ]
         },
         {
-          "chunkId": "982ba2516444d7af4eeb27d6a61009a709e8b6c12bf0fb35c961c6a448eae0fe",
-          "index": 13,
-          "text": "将这页观察夹回值日册，与早巡的量水纸放在一起；明日辰时前带记录去核对开闸簿的安排仍在，井房里的连接和来水原因还得继续查。",
-          "utf16Length": 60,
+          "chunkId": "ca97be59fdb0114e2c639b80530053610dcc6047726842bdec1738a2d61163c5",
+          "index": 23,
+          "text": "了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张",
+          "utf16Length": 80,
           "bodyRange": {
-            "start": 1040,
-            "end": 1100,
+            "start": 1840,
+            "end": 1920,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "ea3fe716c30825402671ab84b40796e5f63e39fce062ffdacba9f3126d26b59a",
+          "index": 24,
+          "text": "哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1920,
+            "end": 2000,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "b49968b8a4c4540de55c745e8e24ab3a67af8cc263613aed74bcd4c3044b38a3",
+          "index": 25,
+          "text": "把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2000,
+            "end": 2080,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "01d6ee27e86ec81770609398366495d01a31349edb70f86257bfe27efcbaaf86",
+          "index": 26,
+          "text": "消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2080,
+            "end": 2160,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "9763fb6e151e150d5c44303734cfff1bd2ab24ecb293a7e0a743c8957263fb67",
+          "index": 27,
+          "text": "到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2160,
+            "end": 2240,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "ac7b6189aeaaca6d72ed46b33fab278ab27fab729385b4f691f8288342b466c5",
+          "index": 28,
+          "text": "背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2240,
+            "end": 2320,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "372b80a405f04bce79862aeb419ae369e8e869455160436e0146a392035cc016",
+          "index": 29,
+          "text": "知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2320,
+            "end": 2400,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "7c2029ed5e4a7360c7ccd44fecea2d44ed4ae07bc0da56b5dd7be1ab52c44183",
+          "index": 30,
+          "text": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2400,
+            "end": 2480,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "399078f59e11f884b578669fe55b55d61d60fdd5dd742152c475494d1b359fe9",
+          "index": 31,
+          "text": "墨大夫面无表情，把手里的茶又放了下来。",
+          "utf16Length": 19,
+          "bodyRange": {
+            "start": 2480,
+            "end": 2499,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
           ],
           "sourcePages": [
             3
@@ -283,57 +765,57 @@
       ],
       "retrievals": [
         {
-          "term": "卡住",
+          "term": "采药炼药",
           "selection": "按正文顺序取第一个字面命中；不按语义排名",
           "allHitIds": [
-            "7ec7f4065aaa410dcb37030c43602ed020df425e01e18c29533c3840185fc0d3"
+            "7c2029ed5e4a7360c7ccd44fecea2d44ed4ae07bc0da56b5dd7be1ab52c44183"
           ],
           "selectedChunk": {
-            "chunkId": "7ec7f4065aaa410dcb37030c43602ed020df425e01e18c29533c3840185fc0d3",
-            "index": 9,
-            "text": "柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。",
-            "utf16Length": 78,
-            "bodyRange": {
-              "start": 720,
-              "end": 798,
-              "positionUnit": "utf16"
-            },
-            "parentIds": [
-              "wellroom-page-2"
-            ],
-            "sourcePages": [
-              2
-            ]
-          },
-          "returnedParents": [],
-          "context": "柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。",
-          "contextUtf16Length": 78
-        },
-        {
-          "term": "保留",
-          "selection": "按正文顺序取第一个字面命中；不按语义排名",
-          "allHitIds": [
-            "9e6164513df2870c4d5e69b570518dbc590062cfdfeb788a3c0240182d4a155f"
-          ],
-          "selectedChunk": {
-            "chunkId": "9e6164513df2870c4d5e69b570518dbc590062cfdfeb788a3c0240182d4a155f",
-            "index": 12,
-            "text": "找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青",
+            "chunkId": "7c2029ed5e4a7360c7ccd44fecea2d44ed4ae07bc0da56b5dd7be1ab52c44183",
+            "index": 30,
+            "text": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
             "utf16Length": 80,
             "bodyRange": {
-              "start": 960,
-              "end": 1040,
+              "start": 2400,
+              "end": 2480,
               "positionUnit": "utf16"
             },
             "parentIds": [
-              "wellroom-page-3"
+              "fanren-C05-page-3"
             ],
             "sourcePages": [
               3
             ]
           },
           "returnedParents": [],
-          "context": "找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青",
+          "context": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
+          "contextUtf16Length": 80
+        },
+        {
+          "term": "神手谷",
+          "selection": "按正文顺序取第一个字面命中；不按语义排名",
+          "allHitIds": [
+            "04fcbe63e19c4aab59cdd94f7c7cc3cafe2a41878965f76e7f0a3ba9afb36262"
+          ],
+          "selectedChunk": {
+            "chunkId": "04fcbe63e19c4aab59cdd94f7c7cc3cafe2a41878965f76e7f0a3ba9afb36262",
+            "index": 17,
+            "text": "。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连",
+            "utf16Length": 80,
+            "bodyRange": {
+              "start": 1360,
+              "end": 1440,
+              "positionUnit": "utf16"
+            },
+            "parentIds": [
+              "fanren-C05-page-2"
+            ],
+            "sourcePages": [
+              2
+            ]
+          },
+          "returnedParents": [],
+          "context": "。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连",
           "contextUtf16Length": 80
         },
         {
@@ -346,7 +828,7 @@
           "contextUtf16Length": 0
         }
       ],
-      "totalChunkUtf16Length": 1098
+      "totalChunkUtf16Length": 2493
     },
     {
       "condition": {
@@ -368,327 +850,867 @@
       },
       "chunks": [
         {
-          "chunkId": "f1bb4cece2311e864fe4b139524bf5c2fac71ef16a06e8025ba0b1f956e940c1",
+          "chunkId": "53ede01b2996b3f43b9909b95f8cd9e849e400c64b0f850ccbbca746eeaa6227",
           "index": 0,
-          "text": "林青提着小油灯进井房时，东畦的量水纸还夹在值日册里。他是青岚宗外门弟子，眼下是炼气三层。筑基的愿望还远，今日先要把来水为何变浅查明白",
-          "utf16Length": 66,
+          "text": "“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”",
+          "utf16Length": 41,
           "bodyRange": {
-            "start": 0,
-            "end": 66,
+            "start": 2,
+            "end": 43,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "67a3e30e109db4d105f621e3dfcff5e5871eedbc26f7730f6c47901a7612c2d9",
+          "chunkId": "d61d4e01949a6a03c0c7b68c7dc1ad679b31738e0c1020b2af974489227fffd2",
           "index": 1,
-          "text": "。叶师姐已带他看过外面的木闸和绳轮，眼前这道石墙后仍有轻响。",
-          "utf16Length": 30,
+          "text": "又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄",
+          "utf16Length": 45,
           "bodyRange": {
-            "start": 66,
-            "end": 96,
+            "start": 47,
+            "end": 92,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "4a27c8c82cf1e1223605567fbf2580b39c01758c948d586c383530aff3a3db98",
+          "chunkId": "b3f259283ef59b498c0982f1a43eaa9d8dc1f3c8d6311b56fbc3306e2795ecb6",
           "index": 2,
-          "text": "墙内轻响了一下，系在细铜杆边的青丝带向旁边颤动，又垂回石壁的小点前。",
-          "utf16Length": 34,
+          "text": "。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。",
+          "utf16Length": 43,
           "bodyRange": {
-            "start": 98,
-            "end": 132,
+            "start": 92,
+            "end": 135,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "06586b506e3b36994f0ef1c862b5c7e6c46beea3430a5487b0c92d3b2c4c2179",
+          "chunkId": "aa7d2d934b067f12c4f3cd0187d9b92f1e8c2ea295d2514e917165cc31cd71a2",
           "index": 3,
-          "text": "林青屏着气，等到下一声。丝带仍是这样。只看这根软带，铜杆转动和井房轻震都可能使末端摇晃；他得在杆本身留一个记号。\n\n叶师姐看着他重新拿出墨笔：“没看清？”",
-          "utf16Length": 77,
+          "text": "“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份",
+          "utf16Length": 39,
           "bodyRange": {
-            "start": 134,
-            "end": 211,
+            "start": 139,
+            "end": 178,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "5a24c80b856c0ce33c615b05e655f1baa5bfe1ab21356560087280326dd54b9f",
+          "chunkId": "9ad7522575fb948771e73f625715c5dd4301e7f33d415a38e53620730e3bb906",
           "index": 4,
-          "text": "“看清带子动了。铜杆还没看清。”",
-          "utf16Length": 16,
+          "text": "。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。",
+          "utf16Length": 56,
           "bodyRange": {
-            "start": 213,
-            "end": 229,
+            "start": 178,
+            "end": 234,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "0a9e97add0a51fc4540658a9017588e286beb7c5bec7d99c9e969f6b460e8bb0",
+          "chunkId": "0657b6ce18d3870905bd9b09c92bec9670d1e30f5464ff2e8fb270e57f84997e",
           "index": 5,
-          "text": "林青擦净铜杆朝外的一小块表面，在上面画了一道短线。他把洞壁的小点补深，让短线的下端正对小点。笔收回后，他没有再碰铜杆，也没去拨青丝带。",
-          "utf16Length": 67,
+          "text": "“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他",
+          "utf16Length": 43,
           "bodyRange": {
-            "start": 231,
-            "end": 298,
+            "start": 238,
+            "end": 281,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "c12d318bd44118b8bd6817873f80a24558233df1ab2d95519f4b69237483b320",
+          "chunkId": "3f4db5175855916b705a8712f359a5b6d40d0869287c19a09ffd324de9157e5e",
           "index": 6,
-          "text": "他请叶师姐站到石缝旁，看青丝带投在石壁上的影子；影尖擦过石缝便说一声。自己坐在矮凳上，扶住膝盖，眼睛对着洞口",
-          "utf16Length": 54,
+          "text": "！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒",
+          "utf16Length": 49,
           "bodyRange": {
-            "start": 300,
-            "end": 354,
+            "start": 281,
+            "end": 330,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "732d60f7cf0f621ba936acd330a80bf995b59f0d9d58ea1890464337cc7536ab",
+          "chunkId": "9ff5e899b212107491350879d9bdfbeb6979acdcc1e41a36ca8a1f2a9bd9ef6d",
           "index": 7,
-          "text": "。油灯留在木台上，新画的短线清楚地横在铜杆暗亮的一面。",
-          "utf16Length": 27,
+          "text": "。",
+          "utf16Length": 1,
           "bodyRange": {
-            "start": 354,
-            "end": 381,
+            "start": 330,
+            "end": 331,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "f2b098c1fd35070a0f49ac58c7389a4a869a0e356197362711f7336f0ae71a71",
+          "chunkId": "bbde93d09c4c2220c84d16ee051a89eb57acf738701ef19e9a88357a7e7f49f3",
           "index": 8,
-          "text": "“过了。”叶师姐说。\n\n齿轮声轻轻一响，短线向上挪了一点。\n\n林青等着它回来。青丝带的末端已经垂稳，铜杆上的短线却留在新的位置，和洞壁的小点错开了。",
-          "utf16Length": 74,
+          "text": "“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒",
+          "utf16Length": 48,
+          "bodyRange": {
+            "start": 335,
+            "end": 383,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "62b792ca33d8676b9ec906a0c258d662b338dc289284dc3ff73aa587e1fc1389",
+          "index": 9,
+          "text": "！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气",
+          "utf16Length": 54,
           "bodyRange": {
             "start": 383,
-            "end": 457,
+            "end": 437,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1",
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            1,
-            2
+            1
           ]
         },
         {
-          "chunkId": "2e8545ecb938b030ff2a4d08eb96d058b5229bd1d25dae4df7c5eb7c65d94e92",
-          "index": 9,
-          "text": "第二声来了。短线又向上移，停住。",
-          "utf16Length": 16,
-          "bodyRange": {
-            "start": 459,
-            "end": 475,
-            "positionUnit": "utf16"
-          },
-          "parentIds": [
-            "wellroom-page-2"
-          ],
-          "sourcePages": [
-            2
-          ]
-        },
-        {
-          "chunkId": "c444010ed6141eea5a22bb4e8ec1717ae9a9acf913afd8d1a1ccd366d1b6edcc",
+          "chunkId": "5cd4b2943e5428f4039fa3b8e5185e78e9612b7fbff792ac4aa3d9e3711ecdd3",
           "index": 10,
-          "text": "林青的膝盖渐渐发麻。他每听见叶师姐说一次“过了”，洞里便响一下，短线再挪一点。到第六次，记号靠近了铜杆的上沿，最初朝外的那一面慢慢转了过去。",
-          "utf16Length": 70,
+          "text": "。",
+          "utf16Length": 1,
           "bodyRange": {
-            "start": 477,
-            "end": 547,
+            "start": 437,
+            "end": 438,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "45e543478d3a75d7f440ba978d03554ae6ff0ce9961aa8bfd4cae835f08fd137",
+          "chunkId": "1bf7ad1deaf92f9abf056560814bd7cbbb1ef89c5578ccd7df69188fcd2045ce",
           "index": 11,
-          "text": "“师姐，您过来看。”林青起身让出矮凳。\n\n叶师姐坐下来，对准洞壁的小点。等齿轮声再次响起，她伸出手，指尖停在洞口外，没有碰进去。\n\n“又往上走了。”",
-          "utf16Length": 74,
+          "text": "冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均",
+          "utf16Length": 45,
           "bodyRange": {
-            "start": 549,
-            "end": 623,
+            "start": 442,
+            "end": 487,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "c067ec5c6fdcfa39c66415d2a731a14f3384a5639a97cbb9f28072d0f89dd62e",
+          "chunkId": "507bea165337be6a16acb3a10093baec2912de3772141d2794a42875461016e7",
           "index": 12,
-          "text": "林青点头。他们看见的是同一件事：铜杆每次转过一点，停在新位置，下一声再接着转。青丝带落回原处，杆上的记号却没有回去。",
-          "utf16Length": 58,
-          "bodyRange": {
-            "start": 625,
-            "end": 683,
-            "positionUnit": "utf16"
-          },
-          "parentIds": [
-            "wellroom-page-2"
-          ],
-          "sourcePages": [
-            2
-          ]
-        },
-        {
-          "chunkId": "3dace4d334570c52e8356111ffb4fef11589e0f9587d4b8ca604744f7714a51b",
-          "index": 13,
-          "text": "林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。",
-          "utf16Length": 78,
-          "bodyRange": {
-            "start": 685,
-            "end": 763,
-            "positionUnit": "utf16"
-          },
-          "parentIds": [
-            "wellroom-page-2"
-          ],
-          "sourcePages": [
-            2
-          ]
-        },
-        {
-          "chunkId": "414d21ac76950dd81004badf143e8460a47f0ee76d48875163980befb57dc0eb",
-          "index": 14,
-          "text": "林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。\n\n“还不知道。得请器坊的田执事来看它往哪里接。”\n\n叶师姐没有再追问，起身给他让路。",
-          "utf16Length": 76,
-          "bodyRange": {
-            "start": 765,
-            "end": 841,
-            "positionUnit": "utf16"
-          },
-          "parentIds": [
-            "wellroom-page-2",
-            "wellroom-page-3"
-          ],
-          "sourcePages": [
-            2,
-            3
-          ]
-        },
-        {
-          "chunkId": "63051eecd6010ccc783c8858bdb1d78ed97947b94288fe2e00cfda2c81c374b7",
-          "index": 15,
-          "text": "林青翻开值日册，在洞口图旁画出短线先后停过的位置，记下叶师姐报出的次数，又写下丝带的影尖经过石缝时的轻响。原因一栏仍然空着，他没有急着填。",
-          "utf16Length": 69,
-          "bodyRange": {
-            "start": 843,
-            "end": 912,
-            "positionUnit": "utf16"
-          },
-          "parentIds": [
-            "wellroom-page-3"
-          ],
-          "sourcePages": [
-            3
-          ]
-        },
-        {
-          "chunkId": "628a4495d9ec27d4b43a1c842426d750c872dfe8a7e5ed3a246dd14482d8385a",
-          "index": 16,
-          "text": "今天还不能把铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事找到被横梁挡住的盖板。",
-          "utf16Length": 57,
-          "bodyRange": {
-            "start": 914,
-            "end": 971,
-            "positionUnit": "utf16"
-          },
-          "parentIds": [
-            "wellroom-page-3"
-          ],
-          "sourcePages": [
-            3
-          ]
-        },
-        {
-          "chunkId": "d0efebcf1c869a7ca94b7b5a1448297e72631cc8a25f1e48ecf4c8fc86fa5e76",
-          "index": 17,
-          "text": "他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。",
-          "utf16Length": 54,
-          "bodyRange": {
-            "start": 973,
-            "end": 1027,
-            "positionUnit": "utf16"
-          },
-          "parentIds": [
-            "wellroom-page-3"
-          ],
-          "sourcePages": [
-            3
-          ]
-        },
-        {
-          "chunkId": "20a8da290850c69b262dbaca5e53f4fced254d656b226a46a922e7134f37b274",
-          "index": 18,
-          "text": "井房门在身后锁上。林青将这页观察夹回值日册，与早巡的量水纸放在一起；明日辰时前带记录去核对开闸簿的安排仍在，井房里的连接和来水原因还得继续查。",
+          "text": "。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。",
           "utf16Length": 71,
           "bodyRange": {
-            "start": 1029,
-            "end": 1100,
+            "start": 487,
+            "end": 558,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "07ecce5f10c93fd5229ab5b9003bd0965ae89827e2a51c4614ae3fed0239e2e5",
+          "index": 13,
+          "text": "走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话",
+          "utf16Length": 69,
+          "bodyRange": {
+            "start": 562,
+            "end": 631,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "cb4924929b375d4099ba38561fda7fb43ee438a96c1cc23f268aeb69d41d1506",
+          "index": 14,
+          "text": "，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方",
+          "utf16Length": 30,
+          "bodyRange": {
+            "start": 631,
+            "end": 661,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "86eca9ea30fc33f057d14031a760b23363c373be513a3062eaefa31161f85215",
+          "index": 15,
+          "text": "。",
+          "utf16Length": 1,
+          "bodyRange": {
+            "start": 661,
+            "end": 662,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "f0ca1c90dc359d0239dc2fdb376a560f3ec818847b2c39b9ca4c0bae90e6d04c",
+          "index": 16,
+          "text": "在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽",
+          "utf16Length": 74,
+          "bodyRange": {
+            "start": 666,
+            "end": 740,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "479f4562961802468f335df892bdb98d53f016fbab82aa122b7f9c12070f990c",
+          "index": 17,
+          "text": "，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心",
+          "utf16Length": 30,
+          "bodyRange": {
+            "start": 740,
+            "end": 770,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "75799092f79c5b053a7198c4b93c312d7da0a41990f1adaff005af3c8332f053",
+          "index": 18,
+          "text": "。",
+          "utf16Length": 1,
+          "bodyRange": {
+            "start": 770,
+            "end": 771,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "b057b4b3102a67060697c037a14915e526ea30ccefd813e3164a947c747644b2",
+          "index": 19,
+          "text": "张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。",
+          "utf16Length": 44,
+          "bodyRange": {
+            "start": 775,
+            "end": 819,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "2aee49de8cb740e8bd2b1596926746deaff1cb86900eb7c62fbb3d50bb1c24aa",
+          "index": 20,
+          "text": "“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。",
+          "utf16Length": 68,
+          "bodyRange": {
+            "start": 823,
+            "end": 891,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-1"
+          ],
+          "sourcePages": [
+            1
+          ]
+        },
+        {
+          "chunkId": "e31c113818e82bd0d5393a44f3265d754c41b258c046485a46dc31a7c965106f",
+          "index": 21,
+          "text": "“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。",
+          "utf16Length": 73,
+          "bodyRange": {
+            "start": 895,
+            "end": 968,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "480321114ea65dc829b0b4c1ee00ce84fb4f12c4aa95f6c333dd1bf31cc2fe55",
+          "index": 22,
+          "text": "“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。",
+          "utf16Length": 74,
+          "bodyRange": {
+            "start": 972,
+            "end": 1046,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "5ad61d1be1c3c81e0c71bce682b31889ef046dc70bbe57960b57a613110b01ee",
+          "index": 23,
+          "text": "“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化",
+          "utf16Length": 67,
+          "bodyRange": {
+            "start": 1050,
+            "end": 1117,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "26aa4cecea3074e2860d08dd4c2727429f3994d48591a6316bd3edaf891429fe",
+          "index": 24,
+          "text": "！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁",
+          "utf16Length": 34,
+          "bodyRange": {
+            "start": 1117,
+            "end": 1151,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "49d4825addcab55d0dff4eb703162d09b4b823eeac81f4ef66e58fc8a103e5e6",
+          "index": 25,
+          "text": "。",
+          "utf16Length": 1,
+          "bodyRange": {
+            "start": 1151,
+            "end": 1152,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "61c0c8b037f78109d7ed071e35b937479f14e72c316fe3dd5cb749f86b77fa4d",
+          "index": 26,
+          "text": "韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。",
+          "utf16Length": 38,
+          "bodyRange": {
+            "start": 1156,
+            "end": 1194,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "6daa87ad843264f520a9421f82ee4aa1a40dad705a7509ad2329ba038ba6e13d",
+          "index": 27,
+          "text": "这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。",
+          "utf16Length": 67,
+          "bodyRange": {
+            "start": 1198,
+            "end": 1265,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "8eb98ba2b9e5a7ba52b3c4c89b2f624d13523f8c17f283e5f92c52f4e5cdc8a1",
+          "index": 28,
+          "text": "在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口",
+          "utf16Length": 73,
+          "bodyRange": {
+            "start": 1269,
+            "end": 1342,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "3dcb5bf329c6d71b190d5165d6aa79b520384251ff9b0bef186c32b2b9ae20c3",
+          "index": 29,
+          "text": "，看起来再也没有其它通到外边的出口了",
+          "utf16Length": 18,
+          "bodyRange": {
+            "start": 1342,
+            "end": 1360,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "ff5da22ef4c720d048d92e3d91ff3f297642ad407a48333e2710f07061f3cfd3",
+          "index": 30,
+          "text": "。",
+          "utf16Length": 1,
+          "bodyRange": {
+            "start": 1360,
+            "end": 1361,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "1b633a15763ecc929727aa0bd86199e3e208a1b2273ced155bd3f8d7c5ada09f",
+          "index": 31,
+          "text": "“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说",
+          "utf16Length": 65,
+          "bodyRange": {
+            "start": 1365,
+            "end": 1430,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "64e754e308b972b7674fa8955a7f42750ddade870e88cddbf3bcda5cdf37bcf6",
+          "index": 32,
+          "text": "。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。",
+          "utf16Length": 29,
+          "bodyRange": {
+            "start": 1430,
+            "end": 1459,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "dd41be2cda50ef1cb18f719659879d4a47424d5f01fbd61662be1ec462eb6a5a",
+          "index": 33,
+          "text": "“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。",
+          "utf16Length": 74,
+          "bodyRange": {
+            "start": 1463,
+            "end": 1537,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "49724520c54107fba9b9ae812f3a370b96a82cd2a9cd5d3ebcf06f72f3e78869",
+          "index": 34,
+          "text": "韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。",
+          "utf16Length": 73,
+          "bodyRange": {
+            "start": 1541,
+            "end": 1614,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "d256c90d983f42553c7c966338aaf7fe3950b66b3946e8aa6333c04a13229a06",
+          "index": 35,
+          "text": "第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”",
+          "utf16Length": 28,
+          "bodyRange": {
+            "start": 1616,
+            "end": 1644,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "7c723307bae3ddac853e7e4f052db55e03ec875f333750b3e1ac35296725cc5c",
+          "index": 36,
+          "text": "一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁",
+          "utf16Length": 60,
+          "bodyRange": {
+            "start": 1648,
+            "end": 1708,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "5db12c830f3c227f5df0b6499b12bcf8abb405323d1ad979993daa66be611a77",
+          "index": 37,
+          "text": "。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。",
+          "utf16Length": 27,
+          "bodyRange": {
+            "start": 1708,
+            "end": 1735,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "82e538fe8cdd4cedd8e71f0566a47fc3820feac54b48a0a33e14df2189d29b5a",
+          "index": 38,
+          "text": "“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。",
+          "utf16Length": 66,
+          "bodyRange": {
+            "start": 1739,
+            "end": 1805,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "6cbb97d70923d0a9add15e52bb2e4f1bff69b1a795d74a79f0c7d5e10565e50f",
+          "index": 39,
+          "text": "“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。",
+          "utf16Length": 70,
+          "bodyRange": {
+            "start": 1809,
+            "end": 1879,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "51b8c4a6412a9ad5ab3329d7bea88fc04206cdf39f16ff05404beb1f26b99263",
+          "index": 40,
+          "text": "“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。",
+          "utf16Length": 46,
+          "bodyRange": {
+            "start": 1883,
+            "end": 1929,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "c8ea09836e35690fd907de5e271bedb255e5b2a45054ce8d843903c6a22d1315",
+          "index": 41,
+          "text": "“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的",
+          "utf16Length": 69,
+          "bodyRange": {
+            "start": 1933,
+            "end": 2002,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "a08acb198fcc7b242f5916b9871892992827286f8bd5b2a48d36cd773a050e56",
+          "index": 42,
+          "text": "。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。",
+          "utf16Length": 26,
+          "bodyRange": {
+            "start": 2002,
+            "end": 2028,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "88f8e7a8ba4aaa719a86ca6463183edfb6b21fd7561be745dbf7bf0cf7643948",
+          "index": 43,
+          "text": "韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。",
+          "utf16Length": 53,
+          "bodyRange": {
+            "start": 2032,
+            "end": 2085,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "eabd707c00cfeb42d6e002e044b9b37f050124bdeeea81715f5b1f3b0d7f646b",
+          "index": 44,
+          "text": "“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。",
+          "utf16Length": 53,
+          "bodyRange": {
+            "start": 2089,
+            "end": 2142,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "a2b1999fcb81cf6d8648b701e51d95fae66a50430a6b0e8314096c309398ea47",
+          "index": 45,
+          "text": "张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。",
+          "utf16Length": 69,
+          "bodyRange": {
+            "start": 2146,
+            "end": 2215,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "f30a345df148a55417c872e349d8625a19697ddcf9ecc02e032389b5acedf040",
+          "index": 46,
+          "text": "“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。",
+          "utf16Length": 72,
+          "bodyRange": {
+            "start": 2219,
+            "end": 2291,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "4924f28db99a66378a7575528d24b4f512a9921af1d6a2cae8392f39e93d51fb",
+          "index": 47,
+          "text": "韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。",
+          "utf16Length": 46,
+          "bodyRange": {
+            "start": 2295,
+            "end": 2341,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "8edb239ca70b9640c01e6d2b99d16e36894442254737624c2b9d1382de3a727b",
+          "index": 48,
+          "text": "直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口",
+          "utf16Length": 65,
+          "bodyRange": {
+            "start": 2345,
+            "end": 2410,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "c158138f02e66f1ce37c1e380e638f0068a6bcb5fe0e9c1e6feaa371c9bd7cae",
+          "index": 49,
+          "text": "，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功",
+          "utf16Length": 68,
+          "bodyRange": {
+            "start": 2410,
+            "end": 2478,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "d2af03e9d2801bafb80bcb9c877f0dfaa4a633a4f56a701a31d126a906c7a13c",
+          "index": 50,
+          "text": "。”墨大夫面无表情，把手里的茶又放了下来。",
+          "utf16Length": 21,
+          "bodyRange": {
+            "start": 2478,
+            "end": 2499,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
           ],
           "sourcePages": [
             3
@@ -697,58 +1719,58 @@
       ],
       "retrievals": [
         {
-          "term": "卡住",
+          "term": "采药炼药",
           "selection": "按正文顺序取第一个字面命中；不按语义排名",
           "allHitIds": [
-            "3dace4d334570c52e8356111ffb4fef11589e0f9587d4b8ca604744f7714a51b"
+            "c158138f02e66f1ce37c1e380e638f0068a6bcb5fe0e9c1e6feaa371c9bd7cae"
           ],
           "selectedChunk": {
-            "chunkId": "3dace4d334570c52e8356111ffb4fef11589e0f9587d4b8ca604744f7714a51b",
-            "index": 13,
-            "text": "林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。",
-            "utf16Length": 78,
+            "chunkId": "c158138f02e66f1ce37c1e380e638f0068a6bcb5fe0e9c1e6feaa371c9bd7cae",
+            "index": 49,
+            "text": "，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功",
+            "utf16Length": 68,
             "bodyRange": {
-              "start": 685,
-              "end": 763,
+              "start": 2410,
+              "end": 2478,
               "positionUnit": "utf16"
             },
             "parentIds": [
-              "wellroom-page-2"
-            ],
-            "sourcePages": [
-              2
-            ]
-          },
-          "returnedParents": [],
-          "context": "林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。",
-          "contextUtf16Length": 78
-        },
-        {
-          "term": "保留",
-          "selection": "按正文顺序取第一个字面命中；不按语义排名",
-          "allHitIds": [
-            "d0efebcf1c869a7ca94b7b5a1448297e72631cc8a25f1e48ecf4c8fc86fa5e76"
-          ],
-          "selectedChunk": {
-            "chunkId": "d0efebcf1c869a7ca94b7b5a1448297e72631cc8a25f1e48ecf4c8fc86fa5e76",
-            "index": 17,
-            "text": "他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。",
-            "utf16Length": 54,
-            "bodyRange": {
-              "start": 973,
-              "end": 1027,
-              "positionUnit": "utf16"
-            },
-            "parentIds": [
-              "wellroom-page-3"
+              "fanren-C05-page-3"
             ],
             "sourcePages": [
               3
             ]
           },
           "returnedParents": [],
-          "context": "他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。",
-          "contextUtf16Length": 54
+          "context": "，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功",
+          "contextUtf16Length": 68
+        },
+        {
+          "term": "神手谷",
+          "selection": "按正文顺序取第一个字面命中；不按语义排名",
+          "allHitIds": [
+            "1b633a15763ecc929727aa0bd86199e3e208a1b2273ced155bd3f8d7c5ada09f"
+          ],
+          "selectedChunk": {
+            "chunkId": "1b633a15763ecc929727aa0bd86199e3e208a1b2273ced155bd3f8d7c5ada09f",
+            "index": 31,
+            "text": "“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说",
+            "utf16Length": 65,
+            "bodyRange": {
+              "start": 1365,
+              "end": 1430,
+              "positionUnit": "utf16"
+            },
+            "parentIds": [
+              "fanren-C05-page-2"
+            ],
+            "sourcePages": [
+              2
+            ]
+          },
+          "returnedParents": [],
+          "context": "“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说",
+          "contextUtf16Length": 65
         },
         {
           "term": "筑基功法",
@@ -760,7 +1782,7 @@
           "contextUtf16Length": 0
         }
       ],
-      "totalChunkUtf16Length": 1068
+      "totalChunkUtf16Length": 2379
     },
     {
       "condition": {
@@ -775,26 +1797,26 @@
       },
       "chunks": [
         {
-          "chunkId": "af9369d11e3c9319bfae212551cfefc29fda66aca227cf04b6854d423a16d5d1",
+          "chunkId": "af636c0008cd57c8db3eaac59431552325dde5b6809b1419f891311010e9e659",
           "index": 0,
-          "text": "林青提着小油灯进井房时，东畦的量水纸还夹在值日册里。他是青岚宗外门弟子，眼下是炼气三层。筑基的愿望还远，今日先要把来水为何变浅查明白。叶师姐已带他看过外面的木闸",
-          "utf16Length": 80,
+          "text": "“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中",
+          "utf16Length": 78,
           "bodyRange": {
-            "start": 0,
+            "start": 2,
             "end": 80,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "af14df96560ddeb57ea8fb5621397d1e7c4d453440c75782f80ef226ba42a3ee",
+          "chunkId": "b1023e1430b0460d3587b1dd305df04990491ad701e7be89abf71b645ce89d2e",
           "index": 1,
-          "text": "气三层。筑基的愿望还远，今日先要把来水为何变浅查明白。叶师姐已带他看过外面的木闸和绳轮，眼前这道石墙后仍有轻响。\n\n墙内轻响了一下，系在细铜杆边的青丝带向旁边颤",
+          "text": "习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍",
           "utf16Length": 80,
           "bodyRange": {
             "start": 40,
@@ -802,16 +1824,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "d76449f9c36a409cd5b7fda87723cf6b88be5da69cafc479082bce1e2cbb5dbf",
+          "chunkId": "d7ed9b2b4db7a222b90be3509d2108b4de4ab65756a09b8c1804c4aca22917bb",
           "index": 2,
-          "text": "和绳轮，眼前这道石墙后仍有轻响。\n\n墙内轻响了一下，系在细铜杆边的青丝带向旁边颤动，又垂回石壁的小点前。\n\n林青屏着气，等到下一声。丝带仍是这样。只看这根软带，",
+          "text": "一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子",
           "utf16Length": 80,
           "bodyRange": {
             "start": 80,
@@ -819,16 +1841,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "b99098c2342fa1998a9c47131d7b5292ee37ac4553d77d1f0912a7ec31bfe52b",
+          "chunkId": "da493ec5377bf22fd076dc26f498c80117a547d887da1322da0c5ec325558b8f",
           "index": 3,
-          "text": "动，又垂回石壁的小点前。\n\n林青屏着气，等到下一声。丝带仍是这样。只看这根软带，铜杆转动和井房轻震都可能使末端摇晃；他得在杆本身留一个记号。\n\n叶师姐看着他重新",
+          "text": "老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑",
           "utf16Length": 80,
           "bodyRange": {
             "start": 120,
@@ -836,16 +1858,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "ac0e9b0566731891419713d714bf00cd5f32b8ac960db5de1ec0393145cfc145",
+          "chunkId": "a5125026b715ac5d47d01cf83fbd47f70bd1e39004a9d0ed06359c09f2417ed8",
           "index": 4,
-          "text": "铜杆转动和井房轻震都可能使末端摇晃；他得在杆本身留一个记号。\n\n叶师姐看着他重新拿出墨笔：“没看清？”\n\n“看清带子动了。铜杆还没看清。”\n\n林青擦净铜杆朝外的",
+          "text": "，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还",
           "utf16Length": 80,
           "bodyRange": {
             "start": 160,
@@ -853,16 +1875,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "6f22cd48a07b2c1218d4742aa0b5c237c53a45319fe49ec59b326585cf05f861",
+          "chunkId": "65cbc12feb00de716318bc925b510fe3a483e3824d66e3fd46268f3a1a481a9f",
           "index": 5,
-          "text": "拿出墨笔：“没看清？”\n\n“看清带子动了。铜杆还没看清。”\n\n林青擦净铜杆朝外的一小块表面，在上面画了一道短线。他把洞壁的小点补深，让短线的下端正对小点。笔收回",
+          "text": "问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭",
           "utf16Length": 80,
           "bodyRange": {
             "start": 200,
@@ -870,16 +1892,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "0cc1195c68fa6cf74d9ab3ff2a271d176586d9353edb9a1c71986d2e99fb0bec",
+          "chunkId": "8e2057d47901c251f82ebee82fde436a93ae6fb66127a5726cc04a8a0dc2e9df",
           "index": 6,
-          "text": "一小块表面，在上面画了一道短线。他把洞壁的小点补深，让短线的下端正对小点。笔收回后，他没有再碰铜杆，也没去拨青丝带。\n\n他请叶师姐站到石缝旁，看青丝带投在石壁上",
+          "text": "不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一",
           "utf16Length": 80,
           "bodyRange": {
             "start": 240,
@@ -887,16 +1909,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "d6a222d38f5ce86b14d1865f6566468fd01c6681c9aa0b38214b511eae38299f",
+          "chunkId": "552591d62c87e19cd005acb722d71c4d3925489377a6564b8367f3f47efe7be5",
           "index": 7,
-          "text": "后，他没有再碰铜杆，也没去拨青丝带。\n\n他请叶师姐站到石缝旁，看青丝带投在石壁上的影子；影尖擦过石缝便说一声。自己坐在矮凳上，扶住膝盖，眼睛对着洞口。油灯留在木",
+          "text": "他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！",
           "utf16Length": 80,
           "bodyRange": {
             "start": 280,
@@ -904,16 +1926,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "4aa75712e9ecaa632ec09acda9ea4d2f6371b4fd9fff470908e5e8df9c99cdf3",
+          "chunkId": "f800e2e7211cbb665f246e6c081a4f14bda2a04e661e8b774939c48347fbb53a",
           "index": 8,
-          "text": "的影子；影尖擦过石缝便说一声。自己坐在矮凳上，扶住膝盖，眼睛对着洞口。油灯留在木台上，新画的短线清楚地横在铜杆暗亮的一面。\n\n“过了。”叶师姐说。\n\n齿轮声轻轻",
+          "text": "股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，",
           "utf16Length": 80,
           "bodyRange": {
             "start": 320,
@@ -921,35 +1943,33 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "5a7545fd74af01d511aeb77e2f15216fd432a52487ab5747eaa4a9af5b3a2f6c",
+          "chunkId": "e4633065dc7c7d9ad3656cd0642e15007ea8b94d5dca9623e8ae8763de630fbb",
           "index": 9,
-          "text": "台上，新画的短线清楚地横在铜杆暗亮的一面。\n\n“过了。”叶师姐说。\n\n齿轮声轻轻一响，短线向上挪了一点。\n\n林青等着它回来。青丝带的末端已经垂稳，铜杆上的短线却",
-          "utf16Length": 80,
+          "text": "要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。",
+          "utf16Length": 78,
           "bodyRange": {
             "start": 360,
-            "end": 440,
+            "end": 438,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1",
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            1,
-            2
+            1
           ]
         },
         {
-          "chunkId": "0f44e341218547869da7dc21837d4ce6913e08c8c51f3b832212cd7d6540c2d2",
+          "chunkId": "bd3171f93baa9fd895ca4e9e6bc7ef335c64eb9d8dd5d6888b3943be00ab182b",
           "index": 10,
-          "text": "一响，短线向上挪了一点。\n\n林青等着它回来。青丝带的末端已经垂稳，铜杆上的短线却留在新的位置，和洞壁的小点错开了。\n\n第二声来了。短线又向上移，停住。\n\n林青的",
+          "text": "吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷",
           "utf16Length": 80,
           "bodyRange": {
             "start": 400,
@@ -957,52 +1977,50 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1",
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            1,
-            2
+            1
           ]
         },
         {
-          "chunkId": "d3f57dec12552f8b316ecc18a4e3cda7e4dc8df72baec2bee06d543e7520b1e8",
+          "chunkId": "81c499b1535b313f7f0c41373bde230687bdedb9f599482e99450db49de75124",
           "index": 11,
-          "text": "留在新的位置，和洞壁的小点错开了。\n\n第二声来了。短线又向上移，停住。\n\n林青的膝盖渐渐发麻。他每听见叶师姐说一次“过了”，洞里便响一下，短线再挪一点。到第六次",
-          "utf16Length": 80,
+          "text": "冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实",
+          "utf16Length": 78,
           "bodyRange": {
-            "start": 440,
+            "start": 442,
             "end": 520,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "a9788d6701e6b695b99e2f8597d233248b2d998ec05e9de4768da274aaee19c9",
+          "chunkId": "cc394df2d3e3f2d3c145e624a580bc9764677ddadd666b679f4f07fc3011ab9f",
           "index": 12,
-          "text": "膝盖渐渐发麻。他每听见叶师姐说一次“过了”，洞里便响一下，短线再挪一点。到第六次，记号靠近了铜杆的上沿，最初朝外的那一面慢慢转了过去。\n\n“师姐，您过来看。”林",
-          "utf16Length": 80,
+          "text": "冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。",
+          "utf16Length": 78,
           "bodyRange": {
             "start": 480,
-            "end": 560,
+            "end": 558,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "0eaa51bbbb60230f8dda05a7d645295d3cba57903a80c6aecf7809b0767b28d5",
+          "chunkId": "ce984ad68d8ac303187b43eb25deff388ad38a7ca76679177fef9f383404cd04",
           "index": 13,
-          "text": "，记号靠近了铜杆的上沿，最初朝外的那一面慢慢转了过去。\n\n“师姐，您过来看。”林青起身让出矮凳。\n\n叶师姐坐下来，对准洞壁的小点。等齿轮声再次响起，她伸出手，指",
+          "text": "学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。\n\n　　走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开",
           "utf16Length": 80,
           "bodyRange": {
             "start": 520,
@@ -1010,33 +2028,33 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "15559c4078cec1458453e2f269c3db813cc637e86da4dc00c244a004f556e623",
+          "chunkId": "167e2c5506f696c34c2e9388e38109574432c2fadb9434f531fc1f2da6e85ad8",
           "index": 14,
-          "text": "青起身让出矮凳。\n\n叶师姐坐下来，对准洞壁的小点。等齿轮声再次响起，她伸出手，指尖停在洞口外，没有碰进去。\n\n“又往上走了。”\n\n林青点头。他们看见的是同一件事",
-          "utf16Length": 80,
+          "text": "走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已",
+          "utf16Length": 78,
           "bodyRange": {
-            "start": 560,
+            "start": 562,
             "end": 640,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "2d9be9c0aa9c38d4e5cc2c0853ab43de81f62062ecfc99ff7b818c2ab344ac56",
+          "chunkId": "76d61e2307dd4906960297def7b76ef9fc109494af869d578acf45968bcf7f13",
           "index": 15,
-          "text": "尖停在洞口外，没有碰进去。\n\n“又往上走了。”\n\n林青点头。他们看见的是同一件事：铜杆每次转过一点，停在新位置，下一声再接着转。青丝带落回原处，杆上的记号却没有",
+          "text": "口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林",
           "utf16Length": 80,
           "bodyRange": {
             "start": 600,
@@ -1044,16 +2062,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "9108241c7acb1c012a914261bca77a99cfa33e7d93fd1991fa8aeda6020f63e0",
+          "chunkId": "3b9456e023bb69187f4e881b4afe69b3224abecab0c8fb85f6edaba7913d189d",
           "index": 16,
-          "text": "：铜杆每次转过一点，停在新位置，下一声再接着转。青丝带落回原处，杆上的记号却没有回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸",
+          "text": "隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的",
           "utf16Length": 80,
           "bodyRange": {
             "start": 640,
@@ -1061,16 +2079,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "5aa35b273f526815a38741634806a76c01ac57db59863dd6fd5fb3f934604ddc",
+          "chunkId": "fbc9e4b3c1251ebbd3709937d5474926bfbcf5cb2d58eb96554dfe8f913644c3",
           "index": 17,
-          "text": "回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师",
+          "text": "子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下",
           "utf16Length": 80,
           "bodyRange": {
             "start": 680,
@@ -1078,33 +2096,33 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "59f56e32de973ebde489927911c80d401dc45057aa6ecac1536d735c5ca31816",
+          "chunkId": "044ea5e99832bb5bf17db8ae1e40fa35e733765af07fe699009f3f951a12517a",
           "index": 18,
-          "text": "柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。",
-          "utf16Length": 78,
+          "text": "白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走",
+          "utf16Length": 80,
           "bodyRange": {
             "start": 720,
-            "end": 798,
+            "end": 800,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "996a87a5aebc7d05cfe6410d7534d9aa4afc9bb33f5f7aec190b24baf3824a13",
+          "chunkId": "5223bd45d668ff34890e29b7483cf406ea86385d0a0edf394dbef32b57785198",
           "index": 19,
-          "text": "姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。\n\n“还不知道。得请器坊的田执事来看它往哪里接。”\n\n叶师姐没有再追问，起身给他让路",
+          "text": "的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩",
           "utf16Length": 80,
           "bodyRange": {
             "start": 760,
@@ -1112,18 +2130,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2",
-            "wellroom-page-3"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2,
-            3
+            1
           ]
         },
         {
-          "chunkId": "469adc438fb8d6c17b171bbf43fd9139b446cd7449fdeacff09367d0531f3a04",
+          "chunkId": "2741bfe626969a2e628c683338a87ce37b38a17d988ca3ff6c70a24690fe6830",
           "index": 20,
-          "text": "“还不知道。得请器坊的田执事来看它往哪里接。”\n\n叶师姐没有再追问，起身给他让路。\n\n林青翻开值日册，在洞口图旁画出短线先后停过的位置，记下叶师姐报出的次数，又",
+          "text": "上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、",
           "utf16Length": 80,
           "bodyRange": {
             "start": 800,
@@ -1131,18 +2147,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2",
-            "wellroom-page-3"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2,
-            3
+            1
           ]
         },
         {
-          "chunkId": "27d1c5bf2eda3cabb4fe69a73a420be53a0fd52d361c55911f1ec861ca52f8a3",
+          "chunkId": "8c62eb9c9c4296783ef9a6522fba2197cd5b133593c04bb4055f1bd56239947e",
           "index": 21,
-          "text": "。\n\n林青翻开值日册，在洞口图旁画出短线先后停过的位置，记下叶师姐报出的次数，又写下丝带的影尖经过石缝时的轻响。原因一栏仍然空着，他没有急着填。\n\n今天还不能把",
+          "text": "咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，",
           "utf16Length": 80,
           "bodyRange": {
             "start": 840,
@@ -1150,16 +2164,18 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-1",
+            "fanren-C05-page-2"
           ],
           "sourcePages": [
-            3
+            1,
+            2
           ]
         },
         {
-          "chunkId": "5ff69b5767b6b9c0d217563de692946851b04c2a1121a8a3ddd90c90af1517d3",
+          "chunkId": "99d3bf4c75fd345c91758ed7f463ba35d611804cfec13661763a0896847c663e",
           "index": 22,
-          "text": "写下丝带的影尖经过石缝时的轻响。原因一栏仍然空着，他没有急着填。\n\n今天还不能把铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事",
+          "text": "甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张",
           "utf16Length": 80,
           "bodyRange": {
             "start": 880,
@@ -1167,16 +2183,18 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-1",
+            "fanren-C05-page-2"
           ],
           "sourcePages": [
-            3
+            1,
+            2
           ]
         },
         {
-          "chunkId": "f4dd6167f65071e38313f4003c68767c55fe6f97753a1e00b02328e144407735",
+          "chunkId": "a016114e254c13f6f9ebaffd7f5729a2cf86eadf659b13f2be4346005d96fdf2",
           "index": 23,
-          "text": "铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事",
+          "text": "用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人",
           "utf16Length": 80,
           "bodyRange": {
             "start": 920,
@@ -1184,16 +2202,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-2"
           ],
           "sourcePages": [
-            3
+            2
           ]
         },
         {
-          "chunkId": "9ee4707d3b625e6cc9052dd952481d9c17fff776579fbb4a30b667cf247e14d0",
+          "chunkId": "5e313b67f6dac35485d433d860e0af511c6803de9b6f6a213b29219b03d09744",
           "index": 24,
-          "text": "找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青",
+          "text": "均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容",
           "utf16Length": 80,
           "bodyRange": {
             "start": 960,
@@ -1201,16 +2219,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-2"
           ],
           "sourcePages": [
-            3
+            2
           ]
         },
         {
-          "chunkId": "82f92e47e4d571d94fb0d560ff36310dbd7e01652d55d9b4fa6f7948d5d20012",
+          "chunkId": "e4940ee8cebd22ce97a3b4833ba1b619e36cedab2b1848522521eeae2edf489f",
           "index": 25,
-          "text": "来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青将这页观察夹回值日册，与早巡的量水纸放在一起；明日辰时前带记录去核对开闸簿的安排",
+          "text": "跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福",
           "utf16Length": 80,
           "bodyRange": {
             "start": 1000,
@@ -1218,24 +2236,623 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "c878356d0f0575f9df0e749b88b15d07cb63ebd9327c90c9b47a9cc4f9548b24",
+          "index": 26,
+          "text": "置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1040,
+            "end": 1120,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "0dbfac6220d2f9b099f1b86490b7e17ab633a06bb949a4027b6a747ac621cd11",
+          "index": 27,
+          "text": "气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1080,
+            "end": 1160,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "bb215f74d77b46e73bb56e468316dea33ed626ff4ba47e2c8673fcdeba44f170",
+          "index": 28,
+          "text": "位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1120,
+            "end": 1200,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "6a3f1560c770828d1a599736ad854bc28727a9295bafe96528767205620726fd",
+          "index": 29,
+          "text": "铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1160,
+            "end": 1240,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "b904e50fb98d119d2de3746b15f78bd9802ee00904e354b67d59452566d7c12b",
+          "index": 30,
+          "text": "老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1200,
+            "end": 1280,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "3d2b6b756d0841c7f9c684bdf5d6d48aae150aee9aee611ea7b4de560048360a",
+          "index": 31,
+          "text": "郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1240,
+            "end": 1320,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "4eb1071f5f0544bdb743cf4f9865a983e05a6e9421e2a62565018ac4d48a1cc6",
+          "index": 32,
+          "text": "发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1280,
+            "end": 1360,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "2c4742a4cb7bdf7484bbd8653cc038c82a2d535bef415450578f2aab7a191161",
+          "index": 33,
+          "text": "连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1320,
+            "end": 1400,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "72c2d88919ba2b69bc091dac3afe5a46515472249b489907b12b2b191c5abe3a",
+          "index": 34,
+          "text": "。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1360,
+            "end": 1440,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "0c9d4c2148ee0dfd379b8cc3feba5c8f2717fcb43262eabc9a706f7751e97689",
+          "index": 35,
+          "text": "就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1400,
+            "end": 1480,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "ba31f7d144c7586c53b9c74e556f9fe331d60fa95b4496f14fff3d906a8ea001",
+          "index": 36,
+          "text": "着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1440,
+            "end": 1520,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "af02a1f068f9d7167e0d103d8862d24de55acc01896f6cfcac693a71f4363676",
+          "index": 37,
+          "text": "停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1480,
+            "end": 1560,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "6def05fdf44e272b00ba4f31bf5d7fb15c01898fce41bacc8c0c4fc45db8fe9c",
+          "index": 38,
+          "text": "嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1520,
+            "end": 1600,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "38b128d5e79df9396e584f769f8bfedc9a75b4da6b024b6d08aedea8ada6554a",
+          "index": 39,
+          "text": "孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1560,
+            "end": 1640,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "e15a8ebeeb24a9ba2f65cfe38a8ca5a40de7c2d3ced89b56f1297431ec06288c",
+          "index": 40,
+          "text": "经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1600,
+            "end": 1680,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "9c553f5d81e77765f4859edf4543777cc343d210ef246258ad9b1740a21bd6a7",
+          "index": 41,
+          "text": "！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1640,
+            "end": 1720,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "efcf0ab56678a78bece6931f955641833c70ce846508ba32ef864bc137749c6e",
+          "index": 42,
+          "text": "大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1680,
+            "end": 1760,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2",
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            2,
+            3
+          ]
+        },
+        {
+          "chunkId": "65af25f61bec682e767f21292a5015f2ae0e98dd55a506b25bf9cb1c1365af2f",
+          "index": 43,
+          "text": "脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1720,
+            "end": 1800,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2",
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            2,
+            3
+          ]
+        },
+        {
+          "chunkId": "c0c20b5745cab49b0ca9327c3c6ff0c0c39ee06287773adb9356838260f90a30",
+          "index": 44,
+          "text": "把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1760,
+            "end": 1840,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
           ],
           "sourcePages": [
             3
           ]
         },
         {
-          "chunkId": "96840488070f02b57815bf40c660d29e04f621051d64118511f9af8621eaaf67",
-          "index": 26,
-          "text": "将这页观察夹回值日册，与早巡的量水纸放在一起；明日辰时前带记录去核对开闸簿的安排仍在，井房里的连接和来水原因还得继续查。",
-          "utf16Length": 60,
+          "chunkId": "119fde2bea5fc30227d3a2ffa0597f03c215c885bd69f5a8070e65a834cb913a",
+          "index": 45,
+          "text": "接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。",
+          "utf16Length": 79,
           "bodyRange": {
-            "start": 1040,
-            "end": 1100,
+            "start": 1800,
+            "end": 1879,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "5870e25d81f1040338134c30c7aba65116989130c66f0b0460d24c4b09c1274d",
+          "index": 46,
+          "text": "了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1840,
+            "end": 1920,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "b05364ce3fa3d208505c0785afdec92b034994b65d14296334430aae7fe016d8",
+          "index": 47,
+          "text": "“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总",
+          "utf16Length": 77,
+          "bodyRange": {
+            "start": 1883,
+            "end": 1960,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "f6cc523ab3afce99dd586f7eef4caf1170db55a336b5367a9da7607e37b908fc",
+          "index": 48,
+          "text": "哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1920,
+            "end": 2000,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "d8a0adc3b755496949872db6c0ec7bce8d38e01e3b7df417b13370f0bc291210",
+          "index": 49,
+          "text": "觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1960,
+            "end": 2040,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "77ae7def0a12ee037783b91b311677744632f3f0a746cbd7822d26e3ff0c2de2",
+          "index": 50,
+          "text": "把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2000,
+            "end": 2080,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "38c6842ad7b38ad17fb291544ab766d2211e0062850834486181dd5ce3f428b8",
+          "index": 51,
+          "text": "吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2040,
+            "end": 2120,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "b7c778c30266fd8316688d93fea20e9538d82318bbbc326dde3c678e5fcde6f7",
+          "index": 52,
+          "text": "消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2080,
+            "end": 2160,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "ad0b871210c0acf5e375e6a79023a1d34ee2139be20efb0dce2c10d15e06ad4f",
+          "index": 53,
+          "text": "落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2120,
+            "end": 2200,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "77656b83d2ad82253f02b81adb7e6d1ad3686e54338c2e416bd8a8b341a3e7f9",
+          "index": 54,
+          "text": "到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2160,
+            "end": 2240,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "8e23f0d0af6a5325881d29683211249f1dbe44c10fc1b16d76c37dff88ff2ef3",
+          "index": 55,
+          "text": "架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2200,
+            "end": 2280,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "1a1c640edf99c84497db69758f51b689bb3bdae597b123fda7378ee8b4f2a5c5",
+          "index": 56,
+          "text": "背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2240,
+            "end": 2320,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "aaf1dd114f0414e15e8dde784efbbef5d16da1f718be813a1bd9366234fc8098",
+          "index": 57,
+          "text": "也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2280,
+            "end": 2360,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "6111cc700dfd7911b707aa1b228701ce1be9351dfd250582ebce675cd0887b01",
+          "index": 58,
+          "text": "知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2320,
+            "end": 2400,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "f2f3f46bd67cda20b0c7c069bbf856f26d8314029381983647ac825e7dec062a",
+          "index": 59,
+          "text": "时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2360,
+            "end": 2440,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "9cc038dd8835effa13cb35c5f30139857630c2148d9d3eff6bdfb0a1adcb344c",
+          "index": 60,
+          "text": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2400,
+            "end": 2480,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "1460b0a771157d3709273d5e9f5ba2770b65bdb1e3f58c0416b383c4e8c48759",
+          "index": 61,
+          "text": "你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。",
+          "utf16Length": 59,
+          "bodyRange": {
+            "start": 2440,
+            "end": 2499,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
           ],
           "sourcePages": [
             3
@@ -1244,59 +2861,59 @@
       ],
       "retrievals": [
         {
-          "term": "卡住",
+          "term": "采药炼药",
           "selection": "按正文顺序取第一个字面命中；不按语义排名",
           "allHitIds": [
-            "5aa35b273f526815a38741634806a76c01ac57db59863dd6fd5fb3f934604ddc",
-            "59f56e32de973ebde489927911c80d401dc45057aa6ecac1536d735c5ca31816"
+            "9cc038dd8835effa13cb35c5f30139857630c2148d9d3eff6bdfb0a1adcb344c",
+            "1460b0a771157d3709273d5e9f5ba2770b65bdb1e3f58c0416b383c4e8c48759"
           ],
           "selectedChunk": {
-            "chunkId": "5aa35b273f526815a38741634806a76c01ac57db59863dd6fd5fb3f934604ddc",
-            "index": 17,
-            "text": "回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师",
+            "chunkId": "9cc038dd8835effa13cb35c5f30139857630c2148d9d3eff6bdfb0a1adcb344c",
+            "index": 60,
+            "text": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
             "utf16Length": 80,
             "bodyRange": {
-              "start": 680,
-              "end": 760,
+              "start": 2400,
+              "end": 2480,
               "positionUnit": "utf16"
             },
             "parentIds": [
-              "wellroom-page-2"
-            ],
-            "sourcePages": [
-              2
-            ]
-          },
-          "returnedParents": [],
-          "context": "回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师",
-          "contextUtf16Length": 80
-        },
-        {
-          "term": "保留",
-          "selection": "按正文顺序取第一个字面命中；不按语义排名",
-          "allHitIds": [
-            "f4dd6167f65071e38313f4003c68767c55fe6f97753a1e00b02328e144407735",
-            "9ee4707d3b625e6cc9052dd952481d9c17fff776579fbb4a30b667cf247e14d0"
-          ],
-          "selectedChunk": {
-            "chunkId": "f4dd6167f65071e38313f4003c68767c55fe6f97753a1e00b02328e144407735",
-            "index": 23,
-            "text": "铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事",
-            "utf16Length": 80,
-            "bodyRange": {
-              "start": 920,
-              "end": 1000,
-              "positionUnit": "utf16"
-            },
-            "parentIds": [
-              "wellroom-page-3"
+              "fanren-C05-page-3"
             ],
             "sourcePages": [
               3
             ]
           },
           "returnedParents": [],
-          "context": "铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事",
+          "context": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
+          "contextUtf16Length": 80
+        },
+        {
+          "term": "神手谷",
+          "selection": "按正文顺序取第一个字面命中；不按语义排名",
+          "allHitIds": [
+            "2c4742a4cb7bdf7484bbd8653cc038c82a2d535bef415450578f2aab7a191161",
+            "72c2d88919ba2b69bc091dac3afe5a46515472249b489907b12b2b191c5abe3a"
+          ],
+          "selectedChunk": {
+            "chunkId": "2c4742a4cb7bdf7484bbd8653cc038c82a2d535bef415450578f2aab7a191161",
+            "index": 33,
+            "text": "连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后",
+            "utf16Length": 80,
+            "bodyRange": {
+              "start": 1320,
+              "end": 1400,
+              "positionUnit": "utf16"
+            },
+            "parentIds": [
+              "fanren-C05-page-2"
+            ],
+            "sourcePages": [
+              2
+            ]
+          },
+          "returnedParents": [],
+          "context": "连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后",
           "contextUtf16Length": 80
         },
         {
@@ -1309,7 +2926,7 @@
           "contextUtf16Length": 0
         }
       ],
-      "totalChunkUtf16Length": 2138
+      "totalChunkUtf16Length": 4925
     },
     {
       "condition": {
@@ -1324,26 +2941,26 @@
       },
       "chunks": [
         {
-          "chunkId": "8cb97e2fd9baaf85eacfad8352d4ae705b01fe45d50ae3c66865027387887ad4",
+          "chunkId": "398ad8e53068cf8e8508df57a6683f2e69b5c01c70d9fabf3eaf6864296d4dc2",
           "index": 0,
-          "text": "林青提着小油灯进井房时，东畦的量水纸还夹在值日册里。他是青岚宗外门弟子，眼下是炼气三层。筑基的愿望还远，今日先要把来水为何变浅查明白。叶师姐已带他看过外面的木闸",
-          "utf16Length": 80,
+          "text": "“张均，吴铭瑞，你二人把这些过关之人带到本堂去，把他们分别交于顾副堂主和李教习。”\n\n　　又有两名青年领命走了出来，把韩立他们分成了两组，朝山崖下走去，其中",
+          "utf16Length": 78,
           "bodyRange": {
-            "start": 0,
+            "start": 2,
             "end": 80,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "8374c4cea508e9a3c0d8ef9afa8effc868ba94e53f2f6ff37dac2fe363688832",
+          "chunkId": "c0da53e8da8619306029fe6d394ecd0fd7c6b5cad93b632bfcb3d304292fa517",
           "index": 1,
-          "text": "和绳轮，眼前这道石墙后仍有轻响。\n\n墙内轻响了一下，系在细铜杆边的青丝带向旁边颤动，又垂回石壁的小点前。\n\n林青屏着气，等到下一声。丝带仍是这样。只看这根软带，",
+          "text": "一人正是那位冷冰冰的师兄。临下山崖时，韩立忍不住看了一眼舞岩，发现他仍和那位蓝袍老者说话，没有丝毫动身的样子。\n\n　　“他和你们不一样，是被送到七绝堂的核心弟子",
           "utf16Length": 80,
           "bodyRange": {
             "start": 80,
@@ -1351,16 +2968,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "5aea27f40f67821173c6a708fe64b8c673acf043f410a7b72ae8a9c69d6118e5",
+          "chunkId": "754e04b4524bb9dc63a21ed4687466388727121b4404d32297997448152ef790",
           "index": 2,
-          "text": "铜杆转动和井房轻震都可能使末端摇晃；他得在杆本身留一个记号。\n\n叶师姐看着他重新拿出墨笔：“没看清？”\n\n“看清带子动了。铜杆还没看清。”\n\n林青擦净铜杆朝外的",
+          "text": "，一旦学成出来，最起码也是个护法身份。”另一名瘦长脸的师兄似乎看出了韩立心中的疑问，主动进行了解惑，可在他的话语中，似乎带了一丝说不清的羡慕和嫉妒。\n\n　　“还",
           "utf16Length": 80,
           "bodyRange": {
             "start": 160,
@@ -1368,16 +2985,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "d8bb4d8103e9149c10a2e01ddf4bb06ee17c424315b84196d716d2a3385c5c57",
+          "chunkId": "9a4bbf6fe3391c0e9776a6e5ff885446e493c1902d797fd7cc9608dd8d59f2ed",
           "index": 3,
-          "text": "一小块表面，在上面画了一道短线。他把洞壁的小点补深，让短线的下端正对小点。笔收回后，他没有再碰铜杆，也没去拨青丝带。\n\n他请叶师姐站到石缝旁，看青丝带投在石壁上",
+          "text": "不是仗着有个当副门主的表姐夫，要不是他有个表姐嫁给了马副门主做了续弦夫人，不然凭他！年龄都超过了入门要求，还能进七绝堂？”冷冰冰的师兄说的话，让人都觉得背后有一",
           "utf16Length": 80,
           "bodyRange": {
             "start": 240,
@@ -1385,16 +3002,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "2fc6ec88de5cf9f99a6c961183b396cff90d56c9e514c2a70fca7f28c8238d7a",
+          "chunkId": "75dce2ad93fd9f2007224facedc29e130e8fe46a274b6821946ef563570df149",
           "index": 4,
-          "text": "的影子；影尖擦过石缝便说一声。自己坐在矮凳上，扶住膝盖，眼睛对着洞口。油灯留在木台上，新画的短线清楚地横在铜杆暗亮的一面。\n\n“过了。”叶师姐说。\n\n齿轮声轻轻",
+          "text": "股冷冷的凉气在往上冒。\n\n　　“张均，你不要命了，副门主也是我们能胡乱议论的人！要是被其他同门听到，你我都逃不了面壁悔过的惩戒！”瘦长脸的师兄听了冷冷师兄的话，",
           "utf16Length": 80,
           "bodyRange": {
             "start": 320,
@@ -1402,16 +3019,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
             1
           ]
         },
         {
-          "chunkId": "df3621651153b638e3f51f51bf3a1397f43daf1f2701801132541d9dec0ccd7b",
+          "chunkId": "f313e3a7a2b1f42d06ff584b42528d6edd63abd727ba1114502db56074452f73",
           "index": 5,
-          "text": "一响，短线向上挪了一点。\n\n林青等着它回来。青丝带的末端已经垂稳，铜杆上的短线却留在新的位置，和洞壁的小点错开了。\n\n第二声来了。短线又向上移，停住。\n\n林青的",
+          "text": "吃了一惊，慌忙四处察看一番，看到除了这几位小孩没有其他外人，这才松了一口气。\n\n　　冷冷的师兄冷哼了一声，似乎心里也有些顾忌，便不再言语了，韩立这时才知道这位冷",
           "utf16Length": 80,
           "bodyRange": {
             "start": 400,
@@ -1419,52 +3036,50 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-1",
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            1,
-            2
+            1
           ]
         },
         {
-          "chunkId": "1a5de342db19b31b2fd108368c6ef03e484787c4b1325e40ef71243f27bdc37c",
+          "chunkId": "2578705c12a65f0ec35984a69c661b5d557a14da0971ad0b861a1b96dc134f1d",
           "index": 6,
-          "text": "膝盖渐渐发麻。他每听见叶师姐说一次“过了”，洞里便响一下，短线再挪一点。到第六次，记号靠近了铜杆的上沿，最初朝外的那一面慢慢转了过去。\n\n“师姐，您过来看。”林",
-          "utf16Length": 80,
+          "text": "冷的师兄叫张均。对他们说的话韩立心里似懂非懂，但隐隐约约的知道，舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。",
+          "utf16Length": 78,
           "bodyRange": {
             "start": 480,
-            "end": 560,
+            "end": 558,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "4399368d9648ad3d534e4e303ca66ae01b1f298396296ba2a16355c0295701a2",
+          "chunkId": "fd7086c70809529e9241cf49f6f62b81ee88aa4506ff920b82ed83c54b87da9d",
           "index": 7,
-          "text": "青起身让出矮凳。\n\n叶师姐坐下来，对准洞壁的小点。等齿轮声再次响起，她伸出手，指尖停在洞口外，没有碰进去。\n\n“又往上走了。”\n\n林青点头。他们看见的是同一件事",
-          "utf16Length": 80,
+          "text": "走在山路上，这两位师兄心里都想起了门内令人感到沮丧的一些事情，再也没有心情开口说话，只是默默地领着他们往前走，而韩立等人更是不敢私下里说话，也许他们心里都已",
+          "utf16Length": 78,
           "bodyRange": {
-            "start": 560,
+            "start": 562,
             "end": 640,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "3b6e38322914726b81a67aea34d6ccab80c0b250b47b2b730d7777ad3369a546",
+          "chunkId": "f4f783071ab1672554a2e89b0157ceda4b3e6615ef429efe2e12830b74665cca",
           "index": 8,
-          "text": "：铜杆每次转过一点，停在新位置，下一声再接着转。青丝带落回原处，杆上的记号却没有回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸",
+          "text": "隐约的意识到七玄门和在家中一些不一样的地方。\n\n　　在经过一片茂密的树林时，从林子里缓缓走出一位老人，这人六十余岁，长的高高瘦瘦，面皮焦黄，却留有一头长到披肩的",
           "utf16Length": 80,
           "bodyRange": {
             "start": 640,
@@ -1472,33 +3087,33 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "7ec7f4065aaa410dcb37030c43602ed020df425e01e18c29533c3840185fc0d3",
+          "chunkId": "aefba1d09b4f44999a9f1b8a81abc34fb8fa02caf36f57fdc7512d266ecb5ce1",
           "index": 9,
-          "text": "柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。",
-          "utf16Length": 78,
+          "text": "白发，这老者一边走一边不停的弓着身子咳嗽，看他咳嗽的辛苦样子，似乎他随时都有倒下的可能，令人十分担心。\n\n　　张均二人一见此人，却没有一点担心的样子，反而急忙走",
+          "utf16Length": 80,
           "bodyRange": {
             "start": 720,
-            "end": 798,
+            "end": 800,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2
+            1
           ]
         },
         {
-          "chunkId": "07dac945858a1e4ca3d02e99b221aaf0a9c5eacab18b37f4270b267822fc246a",
+          "chunkId": "5380f964fd7a9b14b17a5082a5105270e52f13585e133f6d5c4df84123f05391",
           "index": 10,
-          "text": "“还不知道。得请器坊的田执事来看它往哪里接。”\n\n叶师姐没有再追问，起身给他让路。\n\n林青翻开值日册，在洞口图旁画出短线先后停过的位置，记下叶师姐报出的次数，又",
+          "text": "上前去，恭恭敬敬地对这名老者深施一礼。\n\n　　“墨大夫，您老人家好，有什么事要吩咐弟子做吗？”张均一反以往冷冷的神情，脸上充满了敬意，对他来说，这名老者比堂主、",
           "utf16Length": 80,
           "bodyRange": {
             "start": 800,
@@ -1506,18 +3121,16 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-2",
-            "wellroom-page-3"
+            "fanren-C05-page-1"
           ],
           "sourcePages": [
-            2,
-            3
+            1
           ]
         },
         {
-          "chunkId": "55532a657f215bb3ba672b143f4a0a7e0f5b3f982d31e0e60be7c2ee87a26897",
+          "chunkId": "c92898056b101ea8c959da71793aa6998a0f5920f96be428f65f2b827bec8b98",
           "index": 11,
-          "text": "写下丝带的影尖经过石缝时的轻响。原因一栏仍然空着，他没有急着填。\n\n今天还不能把铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事",
+          "text": "甚至副门主更值得尊敬。\n\n　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张",
           "utf16Length": 80,
           "bodyRange": {
             "start": 880,
@@ -1525,16 +3138,18 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-1",
+            "fanren-C05-page-2"
           ],
           "sourcePages": [
-            3
+            1,
+            2
           ]
         },
         {
-          "chunkId": "9e6164513df2870c4d5e69b570518dbc590062cfdfeb788a3c0240182d4a155f",
+          "chunkId": "39930504aca771256fff3335428995941a94b2fdf228a840fb989ac5b85555ff",
           "index": 12,
-          "text": "找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青",
+          "text": "均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容",
           "utf16Length": 80,
           "bodyRange": {
             "start": 960,
@@ -1542,24 +3157,332 @@
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "18405bdc6b36fd115954f53f3fa3b985d27d12ebc61f8f05a71156da0e29afce",
+          "index": 13,
+          "text": "置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1040,
+            "end": 1120,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "a1d44372e384180798e62bfa3dfbd26562c6f8a61bc9106a1859b7cf8baa8f4b",
+          "index": 14,
+          "text": "位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1120,
+            "end": 1200,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "f3a36a41fabaad9a5e1a466735e201126a4681eb4964d427c4a4f2677a6f888c",
+          "index": 15,
+          "text": "老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1200,
+            "end": 1280,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "1edf00605ead4705838b18766029cbc549b3b5138d08dc2dcfbacd7bc13f2d7c",
+          "index": 16,
+          "text": "发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1280,
+            "end": 1360,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "04fcbe63e19c4aab59cdd94f7c7cc3cafe2a41878965f76e7f0a3ba9afb36262",
+          "index": 17,
+          "text": "。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1360,
+            "end": 1440,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "ec02d5e175aec01edd481bde174587cf29707b360340a7fd86f744e9b258110f",
+          "index": 18,
+          "text": "着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1440,
+            "end": 1520,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "d6e6aad3112194c27d6175ae5cbd0624b2001fc849efaf184714e71dd9918115",
+          "index": 19,
+          "text": "嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1520,
+            "end": 1600,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "54b24a3e387fffea8c7d8aa69df96297119349b260e8407245035a73e171f2b0",
+          "index": 20,
+          "text": "经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1600,
+            "end": 1680,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2"
+          ],
+          "sourcePages": [
+            2
+          ]
+        },
+        {
+          "chunkId": "8f0415f1326ba9965656e3ada0b9c9007fd8cbf6e25b25f29121aed4dab7daa5",
+          "index": 21,
+          "text": "大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。\n\n　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1680,
+            "end": 1760,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-2",
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            2,
+            3
+          ]
+        },
+        {
+          "chunkId": "5f7c8ebcbdd46b1cca1379136804f0af193d952644c81a72a0706e795152395e",
+          "index": 22,
+          "text": "把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1760,
+            "end": 1840,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
           ],
           "sourcePages": [
             3
           ]
         },
         {
-          "chunkId": "982ba2516444d7af4eeb27d6a61009a709e8b6c12bf0fb35c961c6a448eae0fe",
-          "index": 13,
-          "text": "将这页观察夹回值日册，与早巡的量水纸放在一起；明日辰时前带记录去核对开闸簿的安排仍在，井房里的连接和来水原因还得继续查。",
-          "utf16Length": 60,
+          "chunkId": "ca97be59fdb0114e2c639b80530053610dcc6047726842bdec1738a2d61163c5",
+          "index": 23,
+          "text": "了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张",
+          "utf16Length": 80,
           "bodyRange": {
-            "start": 1040,
-            "end": 1100,
+            "start": 1840,
+            "end": 1920,
             "positionUnit": "utf16"
           },
           "parentIds": [
-            "wellroom-page-3"
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "ea3fe716c30825402671ab84b40796e5f63e39fce062ffdacba9f3126d26b59a",
+          "index": 24,
+          "text": "哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 1920,
+            "end": 2000,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "b49968b8a4c4540de55c745e8e24ab3a67af8cc263613aed74bcd4c3044b38a3",
+          "index": 25,
+          "text": "把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2000,
+            "end": 2080,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "01d6ee27e86ec81770609398366495d01a31349edb70f86257bfe27efcbaaf86",
+          "index": 26,
+          "text": "消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2080,
+            "end": 2160,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "9763fb6e151e150d5c44303734cfff1bd2ab24ecb293a7e0a743c8957263fb67",
+          "index": 27,
+          "text": "到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2160,
+            "end": 2240,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "ac7b6189aeaaca6d72ed46b33fab278ab27fab729385b4f691f8288342b466c5",
+          "index": 28,
+          "text": "背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2240,
+            "end": 2320,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "372b80a405f04bce79862aeb419ae369e8e869455160436e0146a392035cc016",
+          "index": 29,
+          "text": "知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2320,
+            "end": 2400,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "7c2029ed5e4a7360c7ccd44fecea2d44ed4ae07bc0da56b5dd7be1ab52c44183",
+          "index": 30,
+          "text": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
+          "utf16Length": 80,
+          "bodyRange": {
+            "start": 2400,
+            "end": 2480,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
+          ],
+          "sourcePages": [
+            3
+          ]
+        },
+        {
+          "chunkId": "399078f59e11f884b578669fe55b55d61d60fdd5dd742152c475494d1b359fe9",
+          "index": 31,
+          "text": "墨大夫面无表情，把手里的茶又放了下来。",
+          "utf16Length": 19,
+          "bodyRange": {
+            "start": 2480,
+            "end": 2499,
+            "positionUnit": "utf16"
+          },
+          "parentIds": [
+            "fanren-C05-page-3"
           ],
           "sourcePages": [
             3
@@ -1568,62 +3491,23 @@
       ],
       "retrievals": [
         {
-          "term": "卡住",
+          "term": "采药炼药",
           "selection": "按正文顺序取第一个字面命中；不按语义排名",
           "allHitIds": [
-            "7ec7f4065aaa410dcb37030c43602ed020df425e01e18c29533c3840185fc0d3"
+            "7c2029ed5e4a7360c7ccd44fecea2d44ed4ae07bc0da56b5dd7be1ab52c44183"
           ],
           "selectedChunk": {
-            "chunkId": "7ec7f4065aaa410dcb37030c43602ed020df425e01e18c29533c3840185fc0d3",
-            "index": 9,
-            "text": "柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。",
-            "utf16Length": 78,
-            "bodyRange": {
-              "start": 720,
-              "end": 798,
-              "positionUnit": "utf16"
-            },
-            "parentIds": [
-              "wellroom-page-2"
-            ],
-            "sourcePages": [
-              2
-            ]
-          },
-          "returnedParents": [
-            {
-              "parentId": "wellroom-page-2",
-              "physicalPage": 2,
-              "body": "林青等着它回来。青丝带的末端已经垂稳，铜杆上的短线却留在新的位置，和洞壁的小点错开了。\n\n第二声来了。短线又向上移，停住。\n\n林青的膝盖渐渐发麻。他每听见叶师姐说一次“过了”，洞里便响一下，短线再挪一点。到第六次，记号靠近了铜杆的上沿，最初朝外的那一面慢慢转了过去。\n\n“师姐，您过来看。”林青起身让出矮凳。\n\n叶师姐坐下来，对准洞壁的小点。等齿轮声再次响起，她伸出手，指尖停在洞口外，没有碰进去。\n\n“又往上走了。”\n\n林青点头。他们看见的是同一件事：铜杆每次转过一点，停在新位置，下一声再接着转。青丝带落回原处，杆上的记号却没有回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。\n\n“还不知道。得请器坊的田执事来看它往哪里接。”",
-              "bodyRange": {
-                "start": 414,
-                "end": 823,
-                "positionUnit": "utf16"
-              },
-              "fileSha256": "7fb8c6b80e1d815e48b4caa393d2f915e3f70a126f7bbfc2ee1ca7013ee6cc34"
-            }
-          ],
-          "context": "林青等着它回来。青丝带的末端已经垂稳，铜杆上的短线却留在新的位置，和洞壁的小点错开了。\n\n第二声来了。短线又向上移，停住。\n\n林青的膝盖渐渐发麻。他每听见叶师姐说一次“过了”，洞里便响一下，短线再挪一点。到第六次，记号靠近了铜杆的上沿，最初朝外的那一面慢慢转了过去。\n\n“师姐，您过来看。”林青起身让出矮凳。\n\n叶师姐坐下来，对准洞壁的小点。等齿轮声再次响起，她伸出手，指尖停在洞口外，没有碰进去。\n\n“又往上走了。”\n\n林青点头。他们看见的是同一件事：铜杆每次转过一点，停在新位置，下一声再接着转。青丝带落回原处，杆上的记号却没有回去。\n\n林青回到木闸前，从闸柄看到外面的绳轮。他们先前检查过的部件仍然静止，闸柄也留在原位。他至少知道，墙内这截铜杆还在转。\n\n“那就是它把木闸卡住了？”叶师姐问。\n\n林青望着窄洞。铜杆两端都藏在砌石后，怎样接到木闸上，眼下还看不见。\n\n“还不知道。得请器坊的田执事来看它往哪里接。”",
-          "contextUtf16Length": 409
-        },
-        {
-          "term": "保留",
-          "selection": "按正文顺序取第一个字面命中；不按语义排名",
-          "allHitIds": [
-            "9e6164513df2870c4d5e69b570518dbc590062cfdfeb788a3c0240182d4a155f"
-          ],
-          "selectedChunk": {
-            "chunkId": "9e6164513df2870c4d5e69b570518dbc590062cfdfeb788a3c0240182d4a155f",
-            "index": 12,
-            "text": "找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青",
+            "chunkId": "7c2029ed5e4a7360c7ccd44fecea2d44ed4ae07bc0da56b5dd7be1ab52c44183",
+            "index": 30,
+            "text": "了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”",
             "utf16Length": 80,
             "bodyRange": {
-              "start": 960,
-              "end": 1040,
+              "start": 2400,
+              "end": 2480,
               "positionUnit": "utf16"
             },
             "parentIds": [
-              "wellroom-page-3"
+              "fanren-C05-page-3"
             ],
             "sourcePages": [
               3
@@ -1631,19 +3515,58 @@
           },
           "returnedParents": [
             {
-              "parentId": "wellroom-page-3",
+              "parentId": "fanren-C05-page-3",
               "physicalPage": 3,
-              "body": "叶师姐没有再追问，起身给他让路。\n\n林青翻开值日册，在洞口图旁画出短线先后停过的位置，记下叶师姐报出的次数，又写下丝带的影尖经过石缝时的轻响。原因一栏仍然空着，他没有急着填。\n\n今天还不能把铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青将这页观察夹回值日册，与早巡的量水纸放在一起；明日辰时前带记录去核对开闸簿的安排仍在，井房里的连接和来水原因还得继续查。",
+              "body": "　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。",
               "bodyRange": {
-                "start": 825,
-                "end": 1100,
+                "start": 1737,
+                "end": 2499,
                 "positionUnit": "utf16"
               },
-              "fileSha256": "7fb8c6b80e1d815e48b4caa393d2f915e3f70a126f7bbfc2ee1ca7013ee6cc34"
+              "fileSha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
             }
           ],
-          "context": "叶师姐没有再追问，起身给他让路。\n\n林青翻开值日册，在洞口图旁画出短线先后停过的位置，记下叶师姐报出的次数，又写下丝带的影尖经过石缝时的轻响。原因一栏仍然空着，他没有急着填。\n\n今天还不能把铜杆写成来水变浅的原因。不过，林青已经能说清墙内有一截分段转动的杆，也能带田执事找到被横梁挡住的盖板。\n\n他合上盖板，装好木楔，请叶师姐保留洞壁的记号，等田执事来时再打开。两人往外走时，林青又听见身后传来一声轻响。\n\n井房门在身后锁上。林青将这页观察夹回值日册，与早巡的量水纸放在一起；明日辰时前带记录去核对开闸簿的安排仍在，井房里的连接和来水原因还得继续查。",
-          "contextUtf16Length": 275
+          "context": "　　“快吃点东西吧，吃完晚饭要去见墨老。”张铁把两个还冒着热气的馒头递给了韩立。\n\n　　“你从哪里找到吃的。”韩立愣了一下，才接过食物。\n\n　　“山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。”张铁憨厚的冲韩立笑了笑。\n\n　　“多谢你了，张哥。”韩立心里有几分感动，见张铁长得比自己老成得多，一声“张哥”不禁脱口而出。\n\n　　“没……没事的，我在家里做惯了的，一会儿不干点什么，总觉得心里有点……有点不自在，以后有什么要帮忙尽管开口说，我别的没有，力气还是有一把的。”张铁似乎有点不好意思了，说出的话也有些磕磕巴巴。\n\n　　韩立早饭午饭都没吃，也有些饿急了，三五口一个馒头就进了肚子，才一小会儿功夫，两个大馒头便被彻底的消灭掉了。\n\n　　“时间不早了，我们去见墨老吧。”韩立打了几个饱嗝，看了看窗外的落日，心里计算了下时间，觉得该去见墨大夫了。\n\n　　张铁没有一点意见，跟着韩立来到了墨大夫所在的房内。\n\n　　在墨大夫房内，四周墙壁边上，竖着一排排的书架，在书架上排满了密密麻麻的各类书籍。\n\n　　“墨老！”\n\n　　“墨老！”\n\n　　墨大夫背部紧挨着太师椅，手里拿着一本书正津津有味地看着，似乎完全没有注意到二人的到来，也没听到二人的招呼声。\n\n　　韩立两人毕竟都是小孩，见墨大夫不理会二人，便变得不知所措，不知如何是好，只好站在一边干等着。\n\n　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。",
+          "contextUtf16Length": 762
+        },
+        {
+          "term": "神手谷",
+          "selection": "按正文顺序取第一个字面命中；不按语义排名",
+          "allHitIds": [
+            "04fcbe63e19c4aab59cdd94f7c7cc3cafe2a41878965f76e7f0a3ba9afb36262"
+          ],
+          "selectedChunk": {
+            "chunkId": "04fcbe63e19c4aab59cdd94f7c7cc3cafe2a41878965f76e7f0a3ba9afb36262",
+            "index": 17,
+            "text": "。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连",
+            "utf16Length": 80,
+            "bodyRange": {
+              "start": 1360,
+              "end": 1440,
+              "positionUnit": "utf16"
+            },
+            "parentIds": [
+              "fanren-C05-page-2"
+            ],
+            "sourcePages": [
+              2
+            ]
+          },
+          "returnedParents": [
+            {
+              "parentId": "fanren-C05-page-2",
+              "physicalPage": 2,
+              "body": "　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。",
+              "bodyRange": {
+                "start": 893,
+                "end": 1735,
+                "positionUnit": "utf16"
+              },
+              "fileSha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
+            }
+          ],
+          "context": "　　“哦，这是刚上山的新来弟子吗？”老者终于止住咳嗽，用沙哑的声音缓缓问道。\n\n　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\n\n　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\n\n　　“遵命，这二人是记名弟子，能被墨大夫您老看中，是他们二人的福气，还不过来给墨老见礼，要是能学到他老人家一两手医术，是你们二人一生的造化！”两位师兄没有丝毫反对的意思，瘦长脸的吴铭瑞甚至大拍这位老者的马屁。\n\n　　韩立和张铁见两位师兄没有意见，自然也没有反对的权利，跟着这位老者走进了林子。\n\n　　这位老者带着二人，慢腾腾的沿着树林中的小路往前走，东一转西一转，眼前忽然一亮，一个郁郁葱葱、充满生气的翠绿色小山谷，出现在了几人眼前。\n\n　　在山谷的左侧是一大片散发着浓郁药香味的田园，园内种着许多韩立叫不上名字的药草，而在右侧有十几间大大小小连成一片的房屋，往四周看了下，除了进来的入口，看起来再也没有其它通到外边的出口了。\n\n　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去休息一下，晚上再来大堂见我，我有话对你们说。”老者站在几间紧连着的房子前，指了指其中较小的一间屋子。\n\n　　“你们以后可以叫我墨老，”老者说完停顿了一下又道：“叫我墨大夫也行。”\n\n　　说完话墨大夫便不理二人，一步一步地咳嗽着走进了另一间比较气派的大屋内。\n\n　　韩立早已疲惫不堪，也不管另一名叫张铁的孩子，自己一头栽进房内一张木床上，便昏昏沉沉地睡了过去，对他来说，不管怎样自己已经可以算是半个七玄门弟子了。\n\n第六章 无名口诀\n\n　　“起来了！起来了！起来了！……”\n\n　　一阵隐隐约约似乎从天边传来的叫声把韩立从酣睡中惊醒，一睁眼一张硕大的脸紧紧地凑在眼前，韩立吃了一惊，把身子往后缩了缩，铁。这才看清这张吓死了人的脸孔主人是另一名孩子——张铁。",
+          "contextUtf16Length": 842
         },
         {
           "term": "筑基功法",
@@ -1655,7 +3578,7 @@
           "contextUtf16Length": 0
         }
       ],
-      "totalChunkUtf16Length": 1098
+      "totalChunkUtf16Length": 2493
     }
   ],
   "newPdfReads": 0,

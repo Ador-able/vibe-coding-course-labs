@@ -1,52 +1,52 @@
 {
-  "generatedAt": "2026-10-13T02:54:27.607349+00:00",
+  "generatedAt": "2026-10-15T07:00:54.364314+00:00",
   "generator": "PyMuPDF 1.27.2.2",
-  "renderDpi": 288,
-  "provenance": "teacher-authored-teaching-fixture",
+  "renderDpi": 320,
+  "provenance": "user-provided-novel-original",
   "adopted": false,
   "sourceFile": {
-    "name": "井房里的铜杆-完整正文.txt",
-    "bytes": 3205,
-    "sha256": "36b11d583e9b73109e81ea8ee6b8fad5bda8aedb0b7c3b0ca9141090bd094d5a"
+    "name": "凡人C05-完整原文.txt",
+    "bytes": 7348,
+    "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
   },
   "fixtures": [
     {
       "key": "native-v1",
       "label": "完整文字版",
-      "path": "files/v1/井房里的铜杆.pdf",
-      "docId": "qinglan-wellroom",
+      "path": "files/v1/凡人C05原文.pdf",
+      "docId": "fanren-C05",
       "expectedPhysicalPages": 3,
-      "fileName": "井房里的铜杆.pdf",
-      "fileBytes": 5254,
-      "fileSha256": "7fb8c6b80e1d815e48b4caa393d2f915e3f70a126f7bbfc2ee1ca7013ee6cc34"
+      "fileName": "凡人C05原文.pdf",
+      "fileBytes": 68513,
+      "fileSha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
     },
     {
       "key": "scanned-v1",
       "label": "第二页为扫描图",
-      "path": "files/scanned/井房里的铜杆.pdf",
-      "docId": "qinglan-wellroom",
+      "path": "files/scanned/凡人C05原文.pdf",
+      "docId": "fanren-C05",
       "expectedPhysicalPages": 3,
-      "fileName": "井房里的铜杆.pdf",
-      "fileBytes": 276096,
-      "fileSha256": "2fb346723c149a298311acdc4fff8a09a3dfa43659f18d940a8d8b76ad3cd069"
+      "fileName": "凡人C05原文.pdf",
+      "fileBytes": 621425,
+      "fileSha256": "8f900b14cbe5d44f797e570aae28cff7b3fca839f941b4186c511d0b166d3fd3"
     },
     {
       "key": "native-v2",
       "label": "同名文件，便签更新",
-      "path": "files/v2/井房里的铜杆.pdf",
-      "docId": "qinglan-wellroom",
+      "path": "files/v2/凡人C05原文.pdf",
+      "docId": "fanren-C05",
       "expectedPhysicalPages": 3,
-      "fileName": "井房里的铜杆.pdf",
-      "fileBytes": 5275,
-      "fileSha256": "1ec29996a1f3e87afede618ea4029b7ef57a2aed7dc0e194e3bf57b9d8b5ceef"
+      "fileName": "凡人C05原文.pdf",
+      "fileBytes": 68412,
+      "fileSha256": "68afea91989bb41a51a53e59ed94a46d764cb3ccfe5949d8f1ce3c073edba162"
     },
     {
       "key": "broken",
       "label": "无法打开的文件",
-      "path": "files/broken/井房里的铜杆.pdf",
-      "docId": "qinglan-broken",
+      "path": "files/broken/凡人C05原文.pdf",
+      "docId": "fanren-broken",
       "expectedPhysicalPages": null,
-      "fileName": "井房里的铜杆.pdf",
+      "fileName": "凡人C05原文.pdf",
       "fileBytes": 40,
       "fileSha256": "6508275182d1f6c8b3db3b5644622e29241ed00030c53b461c5ea22924daa40a"
     }

@@ -1,0 +1,25 @@
+{
+  "recordedAt": "2026-10-15T06:59:19.036Z",
+  "modelCalls": 0,
+  "events": [
+    {
+      "command": "node scripts/observe-chunks.mjs fanren-chunks-20261015",
+      "status": "failed",
+      "error": {
+        "code": "ENOENT",
+        "path": "public/records/reading.json"
+      },
+      "cause": "PDF读取进程尚未结束，读取记录尚未产生。"
+    },
+    {
+      "command": "node scripts/prepare-materials.mjs",
+      "status": "failed",
+      "error": {
+        "code": "ENOENT",
+        "path": "public/records/chunks.json"
+      },
+      "cause": "前序切块未生成记录。"
+    }
+  ],
+  "subsequentPreparation": "读取进程实际完成后，再依次生成切块与检索输入；没有模型重试。"
+}

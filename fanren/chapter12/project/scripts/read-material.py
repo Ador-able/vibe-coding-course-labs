@@ -12,7 +12,7 @@ import pymupdf
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
-PROFILE = "PyMuPDF/1.27.2.2;text-sort=true;blocks-sort=true;visible-page;render-dpi=288"
+PROFILE = "PyMuPDF/1.27.2.2;text-sort=true;blocks-sort=true;visible-page;render-dpi=320"
 
 
 def sha256(value):
@@ -81,7 +81,7 @@ def read_one(fixture, destination):
                     page = document[index]
                     image_file = destination / fixture["key"] / f"page-{physical_page}.png"
                     image_file.parent.mkdir(parents=True, exist_ok=True)
-                    page.get_pixmap(dpi=288, alpha=False).save(image_file)
+                    page.get_pixmap(dpi=320, alpha=False).save(image_file)
                     record["imagePath"] = image_file.relative_to(PUBLIC).as_posix()
                 except Exception as error:
                     record["imageError"] = error_value(error)

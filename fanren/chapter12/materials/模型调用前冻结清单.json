@@ -1,0 +1,540 @@
+{
+  "frozenAt": "2026-10-15T07:02:33.477Z",
+  "scope": "模型调用前固定当前原文、题卡、源码、实际本地读取/切块与完整初始请求；不包含虚构模型输出。",
+  "sourceVersion": "sha256:b4d5d9580c458cf74588d8022496016d30c2c57f09371ace284777818e1e0944",
+  "preparedGitHead": "e19b3aa35fe5cef3f91157db1a5961cf6344f770",
+  "novel": "凡人修仙传",
+  "originalSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "sourceSegments": 30,
+  "minimumHan": 2000,
+  "originalCorpusJsonSha256": "156f75d420362190cdbe014c18112fa2a26da1a5029e699206d9e64b123e68c4",
+  "files": [
+    {
+      "path": "fanren/chapter12/project/README.md",
+      "bytes": 1808,
+      "sha256": "1ad973fed3e02ec7ae3675447c3e42c8eef440b488c7d2c11dae94088e96089f"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/request-preview-initial.json",
+      "bytes": 511646,
+      "sha256": "408b0a7b47ff118a36fd6ac8119642332df89ff7863f85e215cf05df7d9e25a9"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/retrieval/manifest.json",
+      "bytes": 1689,
+      "sha256": "4c096090b2724010b64f6132b2cf4442fa58a12bbe16527b14240d968ed9a521"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/retrieval/material.json",
+      "bytes": 1855233,
+      "sha256": "dd28317d1989b40ae5f205e13c10c8be41044c5091c9a6d74a48295dbe13cba3"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/update/draft.json",
+      "bytes": 15340,
+      "sha256": "8f18d18280d87f70dbba5e3f8397c3a89c1f4cc50d30576bc1de7d0122339a50"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/便签与检索问题.json",
+      "bytes": 25739,
+      "sha256": "4b6cf2d27f732825a726b0a9234731634e57e4a5f3d27702a1753670f663f089"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/冻结清单.json",
+      "bytes": 1389,
+      "sha256": "9ec2e00ef190ee7bf1a0654b0074515bcf88794ee4620a7a3f20bebf4c3ea3c1"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/凡人C05-完整原文.txt",
+      "bytes": 7348,
+      "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/原文片段.json",
+      "bytes": 217449,
+      "sha256": "156f75d420362190cdbe014c18112fa2a26da1a5029e699206d9e64b123e68c4"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/完整资料与问题.json",
+      "bytes": 9026,
+      "sha256": "051db407affa8b6a3cf6c87e945d790a3913eecfb2a9907f1c9c203ba8198b35"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/实验规则.json",
+      "bytes": 1302,
+      "sha256": "8856c13f93b158ec90206be91575ad9b00f3eb70283b3f6b781793ae07bd20b5"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/评估题卡与判据.json",
+      "bytes": 5353,
+      "sha256": "5343a68fc080132bbe6cb809d78ed5a6eee73c1dc87bf4fdd9fad80522a806f6"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/选拔与入谷大纲.md",
+      "bytes": 1502,
+      "sha256": "766137e792f91533aa7d035f706c87b94b3d5360a2b8a7645b8db2e9d7f1478c"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/选拔与入谷设定.md",
+      "bytes": 1652,
+      "sha256": "d5369cbdc18057361c495586f61ca54624c60941aad8dabbd2984f58ddb20fdb"
+    },
+    {
+      "path": "fanren/chapter12/project/package.json",
+      "bytes": 1142,
+      "sha256": "246c9b22c29ac1252f8bbecf661561923140107c039c5dcebd77d9d70827d2d4"
+    },
+    {
+      "path": "fanren/chapter12/project/pnpm-lock.yaml",
+      "bytes": 7703,
+      "sha256": "214c96a786da372410177f3fa152f508dc0304ce906b190b859034704c09f5e2"
+    },
+    {
+      "path": "fanren/chapter12/project/public/answers.html",
+      "bytes": 1622,
+      "sha256": "f1a5c8bb8b9c8401bade1159ff05e86500e585a6d2b8f1b059f2dba35cff893f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/app.css",
+      "bytes": 4917,
+      "sha256": "f313d51994c619fbe789f2cfc9725daead26dbd030aaeb06295c700e854b39cc"
+    },
+    {
+      "path": "fanren/chapter12/project/public/app.js",
+      "bytes": 20374,
+      "sha256": "4350268a723c621b84d9a7240de9bdceb35ddc33cc978c725e01e84eb9b47214"
+    },
+    {
+      "path": "fanren/chapter12/project/public/chunks.html",
+      "bytes": 1627,
+      "sha256": "5fafd85ef1f3f652dd06adee8bb3e4179f727b0cc4b35fdec1b97f51c0ad59e6"
+    },
+    {
+      "path": "fanren/chapter12/project/public/evaluation.html",
+      "bytes": 1628,
+      "sha256": "c4d242e16c95055d3e2e6298d72c6bfb334200be748d466c1f85d107b785d68d"
+    },
+    {
+      "path": "fanren/chapter12/project/public/files/broken/凡人C05原文.pdf",
+      "bytes": 40,
+      "sha256": "6508275182d1f6c8b3db3b5644622e29241ed00030c53b461c5ea22924daa40a"
+    },
+    {
+      "path": "fanren/chapter12/project/public/files/scanned/凡人C05原文.pdf",
+      "bytes": 621425,
+      "sha256": "8f900b14cbe5d44f797e570aae28cff7b3fca839f941b4186c511d0b166d3fd3"
+    },
+    {
+      "path": "fanren/chapter12/project/public/files/v1/凡人C05原文.pdf",
+      "bytes": 68513,
+      "sha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d"
+    },
+    {
+      "path": "fanren/chapter12/project/public/files/v2/凡人C05原文.pdf",
+      "bytes": 68412,
+      "sha256": "68afea91989bb41a51a53e59ed94a46d764cb3ccfe5949d8f1ce3c073edba162"
+    },
+    {
+      "path": "fanren/chapter12/project/public/fixtures.json",
+      "bytes": 1797,
+      "sha256": "c244ff949f88f7eeebca3af7f1742a9c2509414c32bd441a27d60b6a63d1a9d5"
+    },
+    {
+      "path": "fanren/chapter12/project/public/index.html",
+      "bytes": 1616,
+      "sha256": "504a413535eef4177c4e3bd65e74dbd047a8c81c8a2b13e8eabdea66cf6eec34"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/fanren-C03-assessment-v1.txt",
+      "bytes": 7042,
+      "sha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/fanren-C04-scope-v1.txt",
+      "bytes": 4867,
+      "sha256": "c79735d93ae2905f99088096c64d03e2d861a105852642c9c59adc3bfe48710f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/fanren-C04-scope-v2.txt",
+      "bytes": 6919,
+      "sha256": "b5c3463f322bab6993a8dc78dda81bee0e24dfd9b20497c12e860aa35bd73f9c"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/fanren-C05-teaching-v1.txt",
+      "bytes": 469,
+      "sha256": "34a766677a9fdee758b0b9f5d6a4ff8a02b33257489118673a8e47c337aa9c5f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/fanren-outline-setting-v1.txt",
+      "bytes": 3156,
+      "sha256": "b187dc4b763a99c496f64d3476b14a26e54bac4f44e97dd91e77bc9349d8ff0c"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C01-v1.txt",
+      "bytes": 6972,
+      "sha256": "269ac5f3c296698b46a1d3510770efe1fd1ec8dcfde94a6f793d2f9d039e8d77"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C02-v1.txt",
+      "bytes": 7196,
+      "sha256": "12174386d621aa56ab4ab8e4e6cbe762eb971bfbef6d1a47e47e9a1d2d328f05"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C03-v1.txt",
+      "bytes": 7042,
+      "sha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C04-v1.txt",
+      "bytes": 6919,
+      "sha256": "b5c3463f322bab6993a8dc78dda81bee0e24dfd9b20497c12e860aa35bd73f9c"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C05-v1.txt",
+      "bytes": 7313,
+      "sha256": "b8f8242a70c30aaa325549e4dff4e4d5fc7345efac5551eeecd7d01607ba7290"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C06-v1.txt",
+      "bytes": 6660,
+      "sha256": "85cc8f886b69e0edb7e2aaf0d19ead6f3292f0fc778f075c607ca9b17426f1ec"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C07-v1.txt",
+      "bytes": 7028,
+      "sha256": "d0cc91d274c020adb349836b19daf32c0af4a2a6bd0acba166a400bc3355402c"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C08-v1.txt",
+      "bytes": 6893,
+      "sha256": "4d02fca7b4396dc479b0c1d28e76a12a2544cfab541360b27d396ac72fabdc4d"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C09-v1.txt",
+      "bytes": 6940,
+      "sha256": "96c22e5288a529b754b913194fef7c70862b494261b744cbf56872f3d50e2e7b"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C10-v1.txt",
+      "bytes": 7015,
+      "sha256": "e9e4a39e9141271fa1353a71ac73997f9cfd396eadd66c82e21183ed28c22175"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C11-v1.txt",
+      "bytes": 7003,
+      "sha256": "e595596d33a61c6845d32f06bb750bff1a78c7795dbc80bb3e574b8e865d3246"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C12-v1.txt",
+      "bytes": 7043,
+      "sha256": "828fc6d985be60b51e4e8d777d812113e0b9c9e95667a584d45777b0c924c390"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C13-v1.txt",
+      "bytes": 6986,
+      "sha256": "ea82c2eb9383f904968016ee8557bbf3cc74361a0236564b7a3de061a1a4af8d"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C14-v1.txt",
+      "bytes": 7092,
+      "sha256": "1b0b842a8457126220153abfd5d5585b5c953efd787054d77dc828eca78a014f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C15-v1.txt",
+      "bytes": 7190,
+      "sha256": "61aa7b3218f45721a6e1ace2774884a0c21545cabcc7ac2e7452056387d21fdd"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C16-v1.txt",
+      "bytes": 7134,
+      "sha256": "07683d529e3c85487ea50d5db74a1d6477d9d829a992c0627a61ec0dbc65e959"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C17-v1.txt",
+      "bytes": 7087,
+      "sha256": "251c75657d64988044f8fdc6d0d28c6b87ce16be5e3090add9078030be80f788"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C18-v1.txt",
+      "bytes": 7159,
+      "sha256": "7caf68e68bb9af8643c0656b12629d8be7b3d1b671b66643f1c9190c2d07e54c"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C19-v1.txt",
+      "bytes": 6745,
+      "sha256": "1c70ece51d0438f9c2922f08d5b32b19f9506baed342243b2cd6e2ed96b51ea7"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C20-v1.txt",
+      "bytes": 6777,
+      "sha256": "1784b59478967dff5c523770984483bae7d82fb28e7cbffc366aa2baa455a577"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C21-v1.txt",
+      "bytes": 7049,
+      "sha256": "edfe3f7d17fe701a5e2567da29d6431643ee22ca4fd898bdb195229e63fdb094"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C22-v1.txt",
+      "bytes": 6935,
+      "sha256": "60df3d29d2690fd93d5e67d638fbbfb8d167b10648b85adc3e72dd647b1c54e9"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C23-v1.txt",
+      "bytes": 7005,
+      "sha256": "ce812613dd794e2f8dc1df8e28ce2968c6e4f64535dc6ec799c6d69f2412f662"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C24-v1.txt",
+      "bytes": 6820,
+      "sha256": "e4fb6211e545ec099bca4040300f4684cb291856cf81f60d178872c877211244"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C25-v1.txt",
+      "bytes": 6913,
+      "sha256": "2237139f23ee6ded035934dad40cf31a410f343c395da2976f19c466fb8fe5e8"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C26-v1.txt",
+      "bytes": 7322,
+      "sha256": "8259e44fc93540d0fe4e3977fbce738183ae28a680b64c911b6abb0dff515bff"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C27-v1.txt",
+      "bytes": 7054,
+      "sha256": "c9c39b520a771af5e6d58b0a218d483fa13dc76b8065057f957ef9145effae3d"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C28-v1.txt",
+      "bytes": 6992,
+      "sha256": "78550eb5306216b25b9b0bf2f66d7dad062e886804d39e817c8e94e32f572e3d"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C29-v1.txt",
+      "bytes": 7211,
+      "sha256": "57fe3b9176c592832c82d4cc058a7557aca811a0ddec1424f673038354956718"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/original-C30-v1.txt",
+      "bytes": 7012,
+      "sha256": "a6329cb2a18b437b5a70afd60ab08fd776a8222d83aa1f05866ec3a792dc842b"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/native-v1/page-1.png",
+      "bytes": 619399,
+      "sha256": "3db24c699b4dd2f1cbb24e352a2d1c994f540362477be0d8c777391681a8a4e5"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/native-v1/page-2.png",
+      "bytes": 563409,
+      "sha256": "ef8cd01780f7cfffd421b916143810b0a5aaafa7cfa9381b47bb6a5205a02a8f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/native-v1/page-3.png",
+      "bytes": 546826,
+      "sha256": "533773ca0c31a72668ae789345704b5ded0b7ee215742e613fef75344addbcaa"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/native-v2/page-1.png",
+      "bytes": 619399,
+      "sha256": "3db24c699b4dd2f1cbb24e352a2d1c994f540362477be0d8c777391681a8a4e5"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/native-v2/page-2.png",
+      "bytes": 563409,
+      "sha256": "ef8cd01780f7cfffd421b916143810b0a5aaafa7cfa9381b47bb6a5205a02a8f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/native-v2/page-3.png",
+      "bytes": 549300,
+      "sha256": "b8b3cb2205d51afcbf0bc8fdf2b91db0e23c627d5d5aca896dcf29d8f2d003b3"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/observation.json",
+      "bytes": 302248,
+      "sha256": "ec1446e9cc1cf5378397d4855704414a653cbc66c85597fd542a3ef54f6a0826"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/scanned-v1/page-1.png",
+      "bytes": 619399,
+      "sha256": "3db24c699b4dd2f1cbb24e352a2d1c994f540362477be0d8c777391681a8a4e5"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/scanned-v1/page-2.png",
+      "bytes": 563409,
+      "sha256": "ef8cd01780f7cfffd421b916143810b0a5aaafa7cfa9381b47bb6a5205a02a8f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/pages/34cca317-d918-4ffd-8606-2c486a02e99d/scanned-v1/page-3.png",
+      "bytes": 546826,
+      "sha256": "533773ca0c31a72668ae789345704b5ded0b7ee215742e613fef75344addbcaa"
+    },
+    {
+      "path": "fanren/chapter12/project/public/records/chunks.json",
+      "bytes": 143337,
+      "sha256": "864b097b895259c7a6a77598424002f9fb1e41793e180874962736d3c3536a5d"
+    },
+    {
+      "path": "fanren/chapter12/project/public/records/evaluation-cards.json",
+      "bytes": 5353,
+      "sha256": "5343a68fc080132bbe6cb809d78ed5a6eee73c1dc87bf4fdd9fad80522a806f6"
+    },
+    {
+      "path": "fanren/chapter12/project/public/records/reading.json",
+      "bytes": 302248,
+      "sha256": "ec1446e9cc1cf5378397d4855704414a653cbc66c85597fd542a3ef54f6a0826"
+    },
+    {
+      "path": "fanren/chapter12/project/public/retrieval.html",
+      "bytes": 1621,
+      "sha256": "fd5a61df76c68e6f063a43f34b2df5f31e5121ef01bee0bd019bad6e102d65b0"
+    },
+    {
+      "path": "fanren/chapter12/project/public/shared.js",
+      "bytes": 2922,
+      "sha256": "ee53ae573c5234049046aede4df72860fbc419d31ba66238fa63e8b2462c7d96"
+    },
+    {
+      "path": "fanren/chapter12/project/public/source-document.json",
+      "bytes": 8990,
+      "sha256": "5322110cf1e276f1326be57314aae2fdc81455520b1c32bfc3756a2ef8a48fed"
+    },
+    {
+      "path": "fanren/chapter12/project/requirements.txt",
+      "bytes": 18,
+      "sha256": "370a023f5374595edf76f25e9a5c46b70735b36b3d76e3d020bb1a3613439dd5"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/build-inputs.py",
+      "bytes": 5671,
+      "sha256": "a821467e1fb4bd3038f4a34ca542fd19b746b2cf481e744b88336f752d77ece1"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/check-source.mjs",
+      "bytes": 920,
+      "sha256": "ea7d90009721f7ba26b250466c01f8107614f4bc97bc4c83de5e440b96278639"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/evaluate.mjs",
+      "bytes": 1522,
+      "sha256": "f541d8feca5956bb2e5e824813ff301cfbb6a8c5ca6d86b7ebf8ce3059e4619f"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/freeze-source.mjs",
+      "bytes": 1453,
+      "sha256": "760e5b16d334ea89bdb4609fb3619f69c5356b6b1ba6a5c9898ee7b8e3dff26b"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/observe-answers.mjs",
+      "bytes": 1713,
+      "sha256": "f6b90e419347731964f8ef1f1e7c71c12eb48677ce2b8a9e106278263fd97e20"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/observe-chunks.mjs",
+      "bytes": 1796,
+      "sha256": "59c80ebdccb8f99db170041fc71d86d53e97f7e32a697f7a9fa6fe91adad2ed2"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/observe-embeddings.mjs",
+      "bytes": 1369,
+      "sha256": "7776801413ae5160368ae2c01d09829ff33b35a283131d24ee47ad35968ca904"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/observe-update.mjs",
+      "bytes": 4650,
+      "sha256": "405e0f76ed8097ebcbad254eaabf1004f2686195f7c42c255fb286b554f1d971"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/plan-requests.mjs",
+      "bytes": 4275,
+      "sha256": "66d4142ba0d36894768c7b742d6f36d1c59e1b82823076d3fb7ef939c8112ace"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/prepare-materials.mjs",
+      "bytes": 4589,
+      "sha256": "2fe459599ccd45e8a08fe77079450a354295bf3eca65288e0814fa06d7a9cc05"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/prepare-update.mjs",
+      "bytes": 3073,
+      "sha256": "689a22b60bdd18bc6ede080483a64113217da388a829506d68e6f77a108efa21"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/rank-retrieval.mjs",
+      "bytes": 1016,
+      "sha256": "e71fc9f6f6ff4cc6079f735cb2e0668136cad3869c68812050263ae010217a1c"
+    },
+    {
+      "path": "fanren/chapter12/project/scripts/read-material.py",
+      "bytes": 6649,
+      "sha256": "39c930f18e7a6295685cc9fbf42ca8476fa2f598bfbb2652fee2c650533b00ca"
+    },
+    {
+      "path": "fanren/chapter12/project/server.mjs",
+      "bytes": 2497,
+      "sha256": "2ed0d43cd71bcda9e5eb5d592bf77776261df1685448d02dd66474e74828d61e"
+    },
+    {
+      "path": "fanren/chapter12/project/source-version.json",
+      "bytes": 5476,
+      "sha256": "dedd12e89dab1cb405b16cf7ed25271e1789b553a0b12dc23b91b6f3787e4a85"
+    },
+    {
+      "path": "fanren/chapter12/project/src/chunks.mjs",
+      "bytes": 2794,
+      "sha256": "cff986c64dac991f79c8e246639cea63c2277aee293a12b119a88ef353265c99"
+    },
+    {
+      "path": "fanren/chapter12/project/src/config.mjs",
+      "bytes": 481,
+      "sha256": "040de57e36097f169fe5cc8b423d4110b5955ea78fcf08aa0b43e9d6c8f31c5e"
+    },
+    {
+      "path": "fanren/chapter12/project/src/frozen.mjs",
+      "bytes": 865,
+      "sha256": "d30b6bb732a91671f2c19286b38a34e92811a0e032cb0e321d298c45303117e4"
+    },
+    {
+      "path": "fanren/chapter12/project/src/materials.mjs",
+      "bytes": 3539,
+      "sha256": "24415d589c6f60f52a3eadb9d9a38cbe4a960ef3d5437576a1fa80a819081b5f"
+    },
+    {
+      "path": "fanren/chapter12/project/src/model-records.mjs",
+      "bytes": 5298,
+      "sha256": "1d2e9d6600c51a18a3c1095cb43b117ae6ad2fcf0f6d6a1c127c3d2723b03d3f"
+    },
+    {
+      "path": "fanren/chapter12/project/src/retrieval.mjs",
+      "bytes": 4022,
+      "sha256": "56904900f3b94c39cee2666c12fb8acb39741b407ac3d6e91c94dd149100f749"
+    },
+    {
+      "path": "fanren/chapter12/project/src/update-index.mjs",
+      "bytes": 6542,
+      "sha256": "3c3533143797be800d8b1a756ce67910dbcb3e0326eb20613d0090bf205df684"
+    },
+    {
+      "path": "fanren/chapter12/project/test/materials.test.mjs",
+      "bytes": 4316,
+      "sha256": "b9f66462dd78f82678dd145f96f0ef3563dae929125a5405885cc8e04167581a"
+    },
+    {
+      "path": "fanren/chapter12/project/启动实验.cmd",
+      "bytes": 78,
+      "sha256": "61edaef68d861b2dea0baa9608d293fdf8b7fb7bac7e5bc1ddfb20294d65eb7e"
+    }
+  ],
+  "calls": {
+    "chunkTextConditions": 4,
+    "embeddingInputs": 88,
+    "actualHttpRequests": 0,
+    "naturalSdkBatches": "以实际运行记录为准，不预设HTTP次数。",
+    "updateStage": "等待本轮实际向量/排名后，另行冻结C04补齐材料；A和B不预填结果。"
+  },
+  "plannedCommands": [
+    "node scripts/observe-answers.mjs fanren-chunk-answers-20261015",
+    "node scripts/observe-embeddings.mjs fanren-embeddings-20261015",
+    "node scripts/rank-retrieval.mjs fanren-retrieval-20261015"
+  ]
+}

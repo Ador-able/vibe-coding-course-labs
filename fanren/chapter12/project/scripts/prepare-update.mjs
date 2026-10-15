@@ -21,11 +21,11 @@ const update = { teachingFreeze, before: material.corpus, after, previousEmbeddi
   action: { oldBlock, replacement: draft.replacement, unchangedBlockIds: material.corpus.filter(row => row.id !== oldBlock.id).map(row => row.id),
     currentDocumentVersions: Object.fromEntries(after.map(row => [row.docId, row.version])) },
   query: { id: 'Q2-current', questionA: draft.questionA, followUp: draft.questionB, independentQuery: draft.standaloneQueryB,
-    queryAuthor: '教师冻结的独立查询，不是额外模型改写', keywords: 'JF-17 日期 费用' },
+    queryAuthor: '教师冻结的独立查询，不是额外模型改写', keywords: draft.keywords },
   prompts: { system: rules.ragSystem, sourcesA }, newValues,
   settings: { baseURL: embeddings.baseURL, model: embeddings.model, dimensions: embeddings.phase.dimensions,
-    retrievalAfter: { where: { collection: 'memo', projectCode: 'JF-17' }, lexical: material.settings.lexical, semantic: material.settings.semantic, fusion: material.settings.fusion } },
-  bAssembly: '首个用户问题 + 本轮A实际完整正文 + 教师追问及当前检索实际RRF前2来源的完整正文；不注入已删除旧费用或教师未命中资料。' };
+    retrievalAfter: { where: { collection: 'memo', projectCode: draft.projectCode }, lexical: material.settings.lexical, semantic: material.settings.semantic, fusion: material.settings.fusion } },
+  bAssembly: '首个用户问题 + 本轮A实际完整正文 + 教师追问及当前检索实际RRF前2来源的完整正文；不注入已删除旧范围或教师未命中资料。' };
 writeJson(path.join(root, 'inputs/update/material.json'), update);
 const bytes = Buffer.from(JSON.stringify(update, null, 2) + '\n');
 writeJson(path.join(root, 'inputs/update/manifest.json'), { frozen: true, teachingFreeze, files: [{ name: 'material.json', bytes: bytes.length, sha256: sha256(bytes) }] });

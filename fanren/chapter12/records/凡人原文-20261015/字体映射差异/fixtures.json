@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-10-15T06:57:44.457234+00:00",
+  "generator": "PyMuPDF 1.27.2.2",
+  "renderDpi": 320,
+  "provenance": "user-provided-novel-original",
+  "adopted": false,
+  "sourceFile": {
+    "name": "凡人C05-完整原文.txt",
+    "bytes": 7348,
+    "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
+  },
+  "fixtures": [
+    {
+      "key": "native-v1",
+      "label": "完整文字版",
+      "path": "files/v1/凡人C05原文.pdf",
+      "docId": "fanren-C05",
+      "expectedPhysicalPages": 3,
+      "fileName": "凡人C05原文.pdf",
+      "fileBytes": 7968,
+      "fileSha256": "8db7da8b6f09245343bfceca56fa71dea23d90797bba2d20ea28287027ef16ad"
+    },
+    {
+      "key": "scanned-v1",
+      "label": "第二页为扫描图",
+      "path": "files/scanned/凡人C05原文.pdf",
+      "docId": "fanren-C05",
+      "expectedPhysicalPages": 3,
+      "fileName": "凡人C05原文.pdf",
+      "fileBytes": 562751,
+      "fileSha256": "27d09ce866079e80adc82225ddc7bdf598b90a2bf38169c634fb328a82283b97"
+    },
+    {
+      "key": "native-v2",
+      "label": "同名文件，便签更新",
+      "path": "files/v2/凡人C05原文.pdf",
+      "docId": "fanren-C05",
+      "expectedPhysicalPages": 3,
+      "fileName": "凡人C05原文.pdf",
+      "fileBytes": 7983,
+      "fileSha256": "2456535f846cbeddff7c8a123503d287de1e813af17aae5b3d1b33f260b5f89f"
+    },
+    {
+      "key": "broken",
+      "label": "无法打开的文件",
+      "path": "files/broken/凡人C05原文.pdf",
+      "docId": "fanren-broken",
+      "expectedPhysicalPages": null,
+      "fileName": "凡人C05原文.pdf",
+      "fileBytes": 40,
+      "fileSha256": "6508275182d1f6c8b3db3b5644622e29241ed00030c53b461c5ea22924daa40a"
+    }
+  ]
+}

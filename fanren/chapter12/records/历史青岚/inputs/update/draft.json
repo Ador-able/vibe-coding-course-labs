@@ -1,0 +1,36 @@
+{
+  "replacement": {
+    "docId": "teacher-JF-17-fee",
+    "projectCode": "JF-17",
+    "version": "v2",
+    "title": "JF-17日期与费用",
+    "text": "创作便签｜委托编号：JF-17。\n便签记录日期：秋月十一。约定查看日期：秋月十四。\n查看费用：26块下品灵石，其中10块是预付份额，不是另加10块。\n这是尚待采用的情节安排，没有记录付款、到场或查看结果。",
+    "id": "teacher-JF-17-fee-v2",
+    "blockId": "teacher-JF-17-fee-v2",
+    "label": "FEE17-v2",
+    "collection": "memo",
+    "textSha256": "5fa17a7ad212c7fa6acb7edbc3731ed5202b01b1b19de28027ed341bdcb9e69f",
+    "source": {
+      "fileName": "teacher-JF-17-fee-v2.txt",
+      "bodyRange": {
+        "start": 0,
+        "end": 102,
+        "positionUnit": "utf16"
+      },
+      "lineRange": [
+        1,
+        4
+      ]
+    }
+  },
+  "questionA": "续写JF-17这条线时，约在哪天查看，要付多少灵石？8块是否另外相加？",
+  "questionB": "那现在呢，预付份额还需要另加吗？",
+  "standaloneQueryB": "续写JF-17这条线时，目前约在哪天查看，查看总费用多少，预付份额和总费用是什么关系？",
+  "noteV2": {
+    "docId": "teacher-JF-17-fee",
+    "projectCode": "JF-17",
+    "version": "v2",
+    "title": "JF-17日期与费用",
+    "text": "创作便签｜委托编号：JF-17。\n便签记录日期：秋月十一。约定查看日期：秋月十四。\n查看费用：26块下品灵石，其中10块是预付份额，不是另加10块。\n这是尚待采用的情节安排，没有记录付款、到场或查看结果。"
+  }
+}

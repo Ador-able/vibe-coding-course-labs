@@ -1,31 +1,46 @@
 {
-  "frozenAt": "2026-10-13T02:51:48.605Z",
-  "modelCallsBeforeFreeze": 0,
+  "frozen": true,
+  "source": "凡人原文、原文范围与教师题卡；模型调用前固定",
   "files": [
     {
-      "file": "井房里的铜杆-完整正文.txt",
-      "sha256": "36b11d583e9b73109e81ea8ee6b8fad5bda8aedb0b7c3b0ca9141090bd094d5a",
-      "bytes": 3205
+      "file": "凡人C05-完整原文.txt",
+      "bytes": 7348,
+      "sha256": "1ca507b94bffd6f3800955e74f501a209d6a4930bdb952f0146315a07ef255d3"
     },
     {
       "file": "完整资料与问题.json",
-      "sha256": "6655fc0fcaaef877e1f1f25be2109167d48f41d944886de65eacc1a93c4f8b21",
-      "bytes": 4182
-    },
-    {
-      "file": "便签与检索问题.json",
-      "sha256": "2d1fc749ac48a9192568f5cf3092e95c0f9389ad33c3c0cc2469dd4152b35e43",
-      "bytes": 3983
+      "bytes": 9026,
+      "sha256": "051db407affa8b6a3cf6c87e945d790a3913eecfb2a9907f1c9c203ba8198b35"
     },
     {
       "file": "实验规则.json",
-      "sha256": "561f1cc2791469902330249eb40f12cbc30b660c63d7c3780c94b7bcaecf61cb",
-      "bytes": 1559
+      "bytes": 1302,
+      "sha256": "8856c13f93b158ec90206be91575ad9b00f3eb70283b3f6b781793ae07bd20b5"
+    },
+    {
+      "file": "便签与检索问题.json",
+      "bytes": 25739,
+      "sha256": "4b6cf2d27f732825a726b0a9234731634e57e4a5f3d27702a1753670f663f089"
     },
     {
       "file": "评估题卡与判据.json",
-      "sha256": "7dd77753c7be8d23a100cc60b3bb615812e3d68135d22149c33224e324d7d623",
-      "bytes": 4917
+      "bytes": 5353,
+      "sha256": "5343a68fc080132bbe6cb809d78ed5a6eee73c1dc87bf4fdd9fad80522a806f6"
+    },
+    {
+      "file": "原文片段.json",
+      "bytes": 217449,
+      "sha256": "156f75d420362190cdbe014c18112fa2a26da1a5029e699206d9e64b123e68c4"
+    },
+    {
+      "file": "选拔与入谷大纲.md",
+      "bytes": 1502,
+      "sha256": "766137e792f91533aa7d035f706c87b94b3d5360a2b8a7645b8db2e9d7f1478c"
+    },
+    {
+      "file": "选拔与入谷设定.md",
+      "bytes": 1652,
+      "sha256": "d5369cbdc18057361c495586f61ca54624c60941aad8dabbd2984f58ddb20fdb"
     }
   ]
 }

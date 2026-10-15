@@ -10,11 +10,11 @@ for (const card of cards.cases.filter(card => card.conditions)) {
   for (const condition of card.conditions) {
     const selected = retrieval.cases.find(row => row.id === condition);
     const candidates = selected.fusion.top.slice(0, 2).map(row => ({ id: row.id, docId: row.document.docId }));
-    const relevant = new Set(card.relevantDocIds);
-    const correct = candidates.filter(row => relevant.has(row.docId));
-    const first = candidates.findIndex(row => relevant.has(row.docId));
-    metrics.push({ caseId: card.id, condition, candidates, relevantDocIds: card.relevantDocIds,
-      precisionAt2: correct.length / 2, recallAt2: new Set(correct.map(row => row.docId)).size / relevant.size, reciprocalRankAt2: first < 0 ? 0 : 1 / (first + 1) });
+    const relevant = new Set(card.relevantBlockIds);
+    const correct = candidates.filter(row => relevant.has(row.id));
+    const first = candidates.findIndex(row => relevant.has(row.id));
+    metrics.push({ caseId: card.id, condition, candidates, relevantBlockIds: card.relevantBlockIds,
+      precisionAt2: correct.length / 2, recallAt2: new Set(correct.map(row => row.id)).size / relevant.size, reciprocalRankAt2: first < 0 ? 0 : 1 / (first + 1) });
   }
 }
 const report = { calculatedAt: new Date().toISOString(), sourceRetrievalRunId: retrieval.runId, metrics, modelJudgeCalls: 0, newModelCalls: 0,

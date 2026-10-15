@@ -1,15 +1,24 @@
-# 青岚宗小说资料工作台
+# 凡人原文资料工作台
 
-同一份《井房里的铜杆》依次用于读取、切块、检索、资料更新和评估。先看课堂实录，再回查林青已经知道什么、哪些内容还不能写成续章事实。
+沿用仓库根已完成的一次安装与构建。进入本目录，双击启动实验.cmd，打开[工作台](http://127.0.0.1:4352/)。读取、切块、检索、更新和评估共用一个服务；默认只读取已保存实录，不会调用模型。端口被占用时，在本目录执行 `$env:LAB_PORT=4353; node server.mjs`。
 
-首次在仓库根执行一次 `pnpm install --frozen-lockfile` 和 `pnpm build`。之后进入本目录，双击 `启动实验.cmd`，打开 `http://127.0.0.1:4352/`。五个页面共用同一服务，切换、筛选和原文回查不会调用模型。原件、材料和完整记录都随 GitHub 仓库取得。
+完整C05原文用于PDF和切块；C01—C30每份至少2000汉字原文、选拔与入谷大纲和设定进入检索输入。大纲与设定标为编者归纳，不能替代原文。C04更新只是将阅读范围从前段补齐全文，不改原著。
 
-`inputs/` 保存完整冻结教师材料，`public/records/` 保存页面使用的完整课堂实录，`public/pages/` 保存288DPI原页。真实服务输出、教师题卡和人工判断分别标记来源。模型结束、来源支持和章稿采用分别判断。
+原件在public/files，完整读取与后续模型记录在public/records。原页以320DPI保留；未提取到文字的页保留位置和图像。本轮没有OCR。公开记录不会保存凭据。
 
-重新实验时沿用请求观察室保存在本机的共用模型设置。密钥不进入项目、记录或 Git；不需要新增 `.env`。实际向量服务和文字服务由共用配置中的模型标识决定，不据此推断底层模型。完整请求正文及返回进入 `runs/<本次记录名>/`，每次使用一个新记录名，不覆盖旧记录、不自动重试。
+## 可选：重新请求
 
-可选地重新生成和解析PDF时，先在自己的Python虚拟环境按 `requirements.txt` 安装PyMuPDF。普通页面查看不需要Python。生成使用完整冻结正文，读取保留扫描页缺口和打不开的文件；不运行OCR。`pnpm files:prepare`、`pnpm files:observe` 均为零模型调用；已有原件不会被生成脚本覆盖。
+沿用请求观察室已保存的本机共用文字与向量模型设置，不需新增.env或登录。每次使用新的记录名；下面各条件只请求一次，不自动重试。先核inputs中的完整输入与冻结清单，按顺序执行：
 
-重新请求前先执行 `pnpm source:freeze`、`node scripts/plan-requests.mjs initial`。后者通过SDK序列化完整输入并在fetch入口拦下，不发送网络请求，也不制造向量或回答。`inputs/request-preview-initial.json`保存四轮切块问答和整组向量的完整输入。更新轮先使用真实前轮向量与排名准备材料，再生成 `request-preview-update.json`；B的正文由A实际回答和当前实际检索装配，完整HTTP正文在发送前保存。
+```powershell
+node scripts/observe-answers.mjs my-chunk-answers
+node scripts/observe-embeddings.mjs my-embeddings
+node scripts/rank-retrieval.mjs my-retrieval
+node scripts/prepare-update.mjs
+node scripts/observe-update.mjs my-update
+node scripts/evaluate.mjs
+```
 
-默认端口被占用时，可在本目录执行 `$env:LAB_PORT=4353; node server.mjs`。服务只监听本机。读取失败就在当前页面提示；真实请求失败保留该轮完整输入、已返回部分和实际次数。
+回答和向量原样记录实际输入、返回、HTTP次数与模型结束原因。失败时先读本次记录，不覆盖或挑选另一次答案。新增向量须与前轮使用同一模型和服务；不满足时停止。
+
+PDF原件、页图与读取记录已经提供，学生无需安装Python或重新生成。维护者需要重新制作原件时，可按requirements.txt使用现成PyMuPDF；生成脚本拒绝覆盖已有原件。

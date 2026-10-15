@@ -22,7 +22,7 @@ async function showSource(document) {
         for (const page of pages) bar.append(button(`第${page.physicalPage}页`, () => renderOriginal(page)));
       }
       function renderOriginal(page) {
-        showPage(page, '井房里的铜杆');
+        showPage(page, '凡人C05原文');
         originalContent.replaceChildren(...$('source-content').childNodes);
         if (bar) originalContent.prepend(bar);
         summary.textContent = `第${page.physicalPage}页完整原页`;
@@ -34,7 +34,7 @@ async function showSource(document) {
       const complete = await text(`materials/${encodeURIComponent(document.source.fileName)}`); if (revision !== sourceRevision) return;
       if (complete !== document.text) throw new Error('完整便签与候选来源快照不同。');
       $('source-title').textContent = `${document.title} · ${document.version}`;
-      $('source-content').replaceChildren(element('p', '教师创作便签 · 尚待采用', 'meta'), element('div', complete, 'body-text'));
+      $('source-content').replaceChildren(element('p', document.originLabel || '凡人原文资料', 'meta'), element('div', complete, 'body-text'));
     }
   } catch (error) { if (revision === sourceRevision) $('source-content').replaceChildren(element('p', error.message, 'gap')); }
 }
@@ -44,7 +44,7 @@ async function readingPage() {
   let current, hits = [], highlighted;
   const fixture = select('资料版本', record.documents.map(row => [row.fixtureKey, row.label]), changeDocument);
   const pageSelect = select('原页', [], () => { hits = []; highlighted = undefined; renderPage(); });
-  const label = element('label', '需要回查的原句'); const query = element('input'); query.value = '还不知道'; label.append(query); $('controls').append(label);
+  const label = element('label', '需要回查的原句'); const query = element('input'); query.value = '神手谷'; label.append(query); $('controls').append(label);
   $('controls').append(button('定位原文', locate, true));
   function changeDocument() {
     sourceRevision++; current = record.documents.find(row => row.fixtureKey === fixture.value);
@@ -71,7 +71,7 @@ async function readingPage() {
       $('result').prepend(bar);
     }
     $('status').textContent = message || (page.textState === 'empty-text' ? `第${page.physicalPage}页保留文字缺口；完整文件仍有${current.pageCount}个物理页。` : `当前为第${page.physicalPage}页；完整文件有${current.pageCount}个物理页。`);
-    showPage(page, '井房里的铜杆', highlighted);
+    showPage(page, '凡人C05原文', highlighted);
     raw({ runId: record.runId, document: current, selectedPhysicalPage: page.physicalPage, highlighted: highlighted || null, literalHits: hits.map(hit => ({ physicalPage: hit.page.physicalPage, block: hit.block })) });
   }
   function locate() {
@@ -104,12 +104,12 @@ async function chunksPage() {
     $('result').append(element('div', selected.context || '本轮没有返回上下文。', selected.context ? 'body-text' : 'gap'));
     const answer = answers?.records.find(row => row.methodId === method.value && row.term === query.value);
     if (answer) $('result').append(section('这轮真实回答', answer.result?.text || '没有得到完整可用正文。'), element('p', `模型结束：${answer.result?.finishReason || '失败'}；内容仍需回查。`, 'meta'));
-    else if (query.value === '卡住') $('result').append(element('p', '这一切法的模型问答尚未保存。', 'muted'));
+    else if (query.value === '采药炼药') $('result').append(element('p', '这一切法的模型问答尚未保存。', 'muted'));
     const pages = selected.selectedChunk ? native.pages.filter(page => selected.selectedChunk.sourcePages.includes(page.physicalPage)) : [];
     if (pages.length) {
-      showPage(pages[0], '井房里的铜杆');
+      showPage(pages[0], '凡人C05原文');
       if (pages.length > 1) {
-        const bar = element('div', undefined, 'page-buttons'); for (const page of pages) bar.append(button(`第${page.physicalPage}页`, () => { showPage(page, '井房里的铜杆'); $('source-content').prepend(bar); }));
+        const bar = element('div', undefined, 'page-buttons'); for (const page of pages) bar.append(button(`第${page.physicalPage}页`, () => { showPage(page, '凡人C05原文'); $('source-content').prepend(bar); }));
         $('source-content').prepend(bar);
       }
     }
@@ -123,7 +123,7 @@ async function retrievalPage() {
   const ids = [...new Set(cases.map(row => row.queryId))]; $('origin').textContent = '课堂实录 · 两路检索';
   const query = select('问题', ids.map(id => [id, `${id} · ${cases.find(row => row.queryId === id).question}`]), () => { updateConditions(); render(); });
   const condition = select('资料范围', [], render); $('controls').append(button('查看候选', render, true));
-  function updateConditions() { condition.replaceChildren(...cases.filter(row => row.queryId === query.value).map(row => { const node = element('option', row.condition === 'base' ? '原始范围' : row.where.version === 'v9' ? '不存在的版本' : '完整编号 JF-17'); node.value = row.id; return node; })); }
+  function updateConditions() { condition.replaceChildren(...cases.filter(row => row.queryId === query.value).map(row => { const node = element('option', row.condition === 'base' ? '原始范围' : row.where.version === 'v9' ? '不存在的版本' : '限定原文范围'); node.value = row.id; return node; })); }
   function render() {
     sourceRevision++; resetSource(); const current = cases.find(row => row.id === condition.value);
     $('result').replaceChildren(element('h2', current.question)); $('status').textContent = `当前范围有${current.eligibleIds.length}条资料；排名仍需回查原文。`;
@@ -171,8 +171,8 @@ async function evaluationPage() {
   const question = select('题卡', cards.cases.map(card => [card.id, card.question]), render);
   const way = select('切分方式', [['fixed80', '固定长度'], ['structure80', '先段落，再标点'], ['overlap80x40', '重叠40'], ['parent80', '命中子块，返回所在页']], render);
   $('controls').append(button('查看证据', render, true));
-  const counter = element('details'); counter.append(element('summary', '教师构造反例'), element('div', cards.counterexample.text, 'body-text'), element('p', cards.counterexample.criteria, 'meta'));
-  const transfer = element('details'); transfer.append(element('summary', '药圃迁移题 · 尚未运行'), element('div', cards.transferMaterial.paragraphs.join('\n\n'), 'body-text'), element('p', cards.transferMaterial.question), element('p', cards.transferMaterial.execution, 'meta'));
+  const counter = element('details'); counter.append(element('summary', '待核读法 · 教师练习'), element('div', cards.counterexample.text, 'body-text'), element('p', cards.counterexample.criteria, 'meta'));
+  const transfer = element('details'); transfer.append(element('summary', '正午规则迁移题 · 尚未运行'), element('div', cards.transferMaterial.paragraphs.join('\n\n'), 'body-text'), element('p', cards.transferMaterial.question), element('p', cards.transferMaterial.execution, 'meta'));
   $('technical').before(counter, transfer);
 
   async function render() {
@@ -191,9 +191,9 @@ async function evaluationPage() {
         const record = await readingRecord(); if (current !== revision) return;
         const document = record.documents.find(row => row.fixtureKey === 'scanned-v1');
         const page = document.pages.find(page => page.physicalPage === 2);
-        const hitCount = page.blocks.filter(block => block.text.includes('还不知道')).length;
-        $('result').append(element('p', `保留${document.pageCount}个物理页。第2页${page.textState === 'empty-text' ? '文字为空' : '文字状态见完整记录'}，原页${page.imagePath ? '已保留' : '未能生成'}。`), element('p', `在这一页已提取文字中，“还不知道”字面命中${hitCount}处。`, 'gap'));
-        showPage(page, '井房里的铜杆'); evidence = { runId: record.runId, document, page };
+        const hitCount = page.blocks.filter(block => block.text.includes('神手谷')).length;
+        $('result').append(element('p', `保留${document.pageCount}个物理页。第2页${page.textState === 'empty-text' ? '文字为空' : '文字状态见完整记录'}，原页${page.imagePath ? '已保留' : '未能生成'}。`), element('p', `在这一页已提取文字中，“神手谷”字面命中${hitCount}处。`, 'gap'));
+        showPage(page, '凡人C05原文'); evidence = { runId: record.runId, document, page };
       } else if (card.id === 'E02-retrieval') {
         const [arithmetic, retrieval] = await Promise.all([load('evaluation'), load('retrieval')]); if (current !== revision) return;
         const table = element('table', undefined, 'metrics-table'); const header = element('tr');
@@ -202,7 +202,7 @@ async function evaluationPage() {
         let firstButton;
         for (const metric of arithmetic.metrics.filter(row => card.conditions.includes(row.condition))) {
           const selected = retrieval.cases.find(row => row.id === metric.condition); const row = element('tr');
-          row.append(element('th', metric.condition.endsWith('-base') ? '未限编号' : '限 JF-17')); const candidates = element('td');
+          row.append(element('th', metric.condition.endsWith('-base') ? '未限编号' : '限 C05')); const candidates = element('td');
           for (const [index, hit] of selected.fusion.top.slice(0, 2).entries()) {
             const candidate = button(`${index + 1}. ${hit.document.title}`, () => { table.querySelectorAll('button').forEach(node => node.setAttribute('aria-pressed', String(node === candidate))); showSource(hit.document); });
             candidate.className = 'candidate'; candidates.append(candidate); firstButton ||= candidate;
@@ -215,21 +215,21 @@ async function evaluationPage() {
         const record = await load('update'); if (current !== revision) return;
         const answer = record.phases.A;
         $('result').append(section('完整A原答', answer.result?.text || '本轮没有返回可用正文。'));
-        const source = answer.input.sources.find(source => source.docId === 'teacher-JF-17-fee' && source.version === 'v1');
+        const source = answer.input.sources.find(source => source.docId === 'fanren-C04-scope' && source.version === 'v1');
         if (source) showSource(source); evidence = answer;
       } else if (card.id === 'E04-answer') {
         const [record, chunks, source] = await Promise.all([load('chunk-answers'), load('chunks'), readingRecord()]); if (current !== revision) return;
         const answer = record.records.find(row => row.methodId === way.value);
         const method = chunks.methods.find(row => row.condition.id === way.value);
-        const selected = method.retrievals.find(row => row.term === '卡住');
+        const selected = method.retrievals.find(row => row.term === '采药炼药');
         $('result').append(section('本轮实际返回的材料', answer.input.context), section('完整模型原答', answer.result?.text || '本轮没有返回可用正文。'));
         const native = source.documents.find(row => row.fixtureKey === 'native-v1');
-        const page = native.pages.find(page => selected.selectedChunk.sourcePages.includes(page.physicalPage));
-        showPage(page, '井房里的铜杆'); evidence = { method: method.condition, selected, answer };
+        const page = selected.selectedChunk && native.pages.find(page => selected.selectedChunk.sourcePages.includes(page.physicalPage));
+        if (page) showPage(page, '凡人C05原文'); evidence = { method: method.condition, selected, answer };
       } else if (card.id === 'E05-no-record') {
-        $('result').append(section('完整教师便签', card.sources.join('\n\n'))); evidence = card.sources;
+        $('result').append(section('完整原文材料', card.sources.join('\n\n'))); evidence = card.sources;
       } else if (card.id === 'E06-conflict') {
-        for (const [index, source] of card.sources.entries()) $('result').append(section(index === 0 ? '创作便签甲' : '创作便签乙', source.text), element('p', source.priority, 'meta'));
+        for (const [index, source] of card.sources.entries()) $('result').append(section(index === 0 ? '原文材料甲' : '原文材料乙', source.text), element('p', source.priority, 'meta'));
         evidence = card.sources;
       }
       if (current !== revision) return;

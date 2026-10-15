@@ -1,7 +1,7 @@
 {
-  "sourceVersion": "sha256:42ed2f2b62899d286d2a69f343d4ecbf7735ff7bfd60d7e3863445a5fd2fa07d",
-  "gitHead": "79e4d5ce77727d2f8e22784db82101de894934e5",
-  "frozenAt": "2026-10-13T03:45:52.136Z",
+  "sourceVersion": "sha256:b4d5d9580c458cf74588d8022496016d30c2c57f09371ace284777818e1e0944",
+  "gitHead": "e19b3aa35fe5cef3f91157db1a5961cf6344f770",
+  "frozenAt": "2026-10-15T07:00:53.474Z",
   "files": [
     {
       "name": "启动实验.cmd",
@@ -10,8 +10,8 @@
     },
     {
       "name": "package.json",
-      "bytes": 1137,
-      "sha256": "ecbddfbd5d404a7aa19f52128ec6be58ae43166f8d8987952fdff57ac69be4d1"
+      "bytes": 1142,
+      "sha256": "246c9b22c29ac1252f8bbecf661561923140107c039c5dcebd77d9d70827d2d4"
     },
     {
       "name": "pnpm-lock.yaml",
@@ -20,38 +20,38 @@
     },
     {
       "name": "public/answers.html",
-      "bytes": 1613,
-      "sha256": "678ad25e9d2a8bca0ad4d723ddae6b16cbc1343c956eee43f1b9283cf7c8810d"
+      "bytes": 1622,
+      "sha256": "f1a5c8bb8b9c8401bade1159ff05e86500e585a6d2b8f1b059f2dba35cff893f"
     },
     {
       "name": "public/app.css",
       "bytes": 4917,
-      "sha256": "dcb92360bf7aea25d2bedb38304c1c19c5cffc1a388837f1d135b937a3360da9"
+      "sha256": "f313d51994c619fbe789f2cfc9725daead26dbd030aaeb06295c700e854b39cc"
     },
     {
       "name": "public/app.js",
-      "bytes": 20332,
-      "sha256": "b8c1e085ae256b2d8c7c0f141c38f8503bfba5d0e343746c38706de6d2d77884"
+      "bytes": 20374,
+      "sha256": "4350268a723c621b84d9a7240de9bdceb35ddc33cc978c725e01e84eb9b47214"
     },
     {
       "name": "public/chunks.html",
-      "bytes": 1621,
-      "sha256": "6afa3d8952dbb455431824c392262156db36d6b5c1ba345315177d6391412b19"
+      "bytes": 1627,
+      "sha256": "5fafd85ef1f3f652dd06adee8bb3e4179f727b0cc4b35fdec1b97f51c0ad59e6"
     },
     {
       "name": "public/evaluation.html",
-      "bytes": 1622,
-      "sha256": "9c03bae3e983ef72b476733841370be9e69440174b9c9f992a3078ea4a6a6134"
+      "bytes": 1628,
+      "sha256": "c4d242e16c95055d3e2e6298d72c6bfb334200be748d466c1f85d107b785d68d"
     },
     {
       "name": "public/index.html",
-      "bytes": 1622,
-      "sha256": "2931611990fe45c4c03f1d180141b902ecc410ea39d575fd70b77653d5aa122e"
+      "bytes": 1616,
+      "sha256": "504a413535eef4177c4e3bd65e74dbd047a8c81c8a2b13e8eabdea66cf6eec34"
     },
     {
       "name": "public/retrieval.html",
-      "bytes": 1615,
-      "sha256": "25e3c4a5f50be1bc99579a46699575dc3425377b911b4696149f4224221c149d"
+      "bytes": 1621,
+      "sha256": "fd5a61df76c68e6f063a43f34b2df5f31e5121ef01bee0bd019bad6e102d65b0"
     },
     {
       "name": "public/shared.js",
@@ -65,8 +65,8 @@
     },
     {
       "name": "scripts/build-inputs.py",
-      "bytes": 5474,
-      "sha256": "478e0f26a0b941c1f1dc9f80fb4d360dfa2c066ce5640962a70e90c2bed60ffd"
+      "bytes": 5671,
+      "sha256": "a821467e1fb4bd3038f4a34ca542fd19b746b2cf481e744b88336f752d77ece1"
     },
     {
       "name": "scripts/check-source.mjs",
@@ -75,8 +75,8 @@
     },
     {
       "name": "scripts/evaluate.mjs",
-      "bytes": 1525,
-      "sha256": "0f5240c04a167a2f6d20f64d3c4588451be249071aa9603221fef2548a1b1d69"
+      "bytes": 1522,
+      "sha256": "f541d8feca5956bb2e5e824813ff301cfbb6a8c5ca6d86b7ebf8ce3059e4619f"
     },
     {
       "name": "scripts/freeze-source.mjs",
@@ -85,13 +85,13 @@
     },
     {
       "name": "scripts/observe-answers.mjs",
-      "bytes": 1706,
-      "sha256": "a10f265f32adf64d8ef37b8c90278b1617b483838184526641195a791d227ff6"
+      "bytes": 1713,
+      "sha256": "f6b90e419347731964f8ef1f1e7c71c12eb48677ce2b8a9e106278263fd97e20"
     },
     {
       "name": "scripts/observe-chunks.mjs",
-      "bytes": 1814,
-      "sha256": "dcc763270987adfa4b5f7108a36fb409c9946f5ec31cebc63fb00b37408693fa"
+      "bytes": 1796,
+      "sha256": "59c80ebdccb8f99db170041fc71d86d53e97f7e32a697f7a9fa6fe91adad2ed2"
     },
     {
       "name": "scripts/observe-embeddings.mjs",
@@ -105,18 +105,18 @@
     },
     {
       "name": "scripts/plan-requests.mjs",
-      "bytes": 4268,
-      "sha256": "a65823bfb6cca5b3d7a3482c8b7dd0320454b7d46867308b8c7a042865c953c6"
+      "bytes": 4275,
+      "sha256": "66d4142ba0d36894768c7b742d6f36d1c59e1b82823076d3fb7ef939c8112ace"
     },
     {
       "name": "scripts/prepare-materials.mjs",
-      "bytes": 3956,
-      "sha256": "4847f78b7058f7f9138e1c81a777577045fb83b76819426bafe8b8d1fc48d018"
+      "bytes": 4589,
+      "sha256": "2fe459599ccd45e8a08fe77079450a354295bf3eca65288e0814fa06d7a9cc05"
     },
     {
       "name": "scripts/prepare-update.mjs",
-      "bytes": 3070,
-      "sha256": "02d96114c63ed61f54417d60eba8c7ed97dac6d53773b01ad62e850306510ac2"
+      "bytes": 3073,
+      "sha256": "689a22b60bdd18bc6ede080483a64113217da388a829506d68e6f77a108efa21"
     },
     {
       "name": "scripts/rank-retrieval.mjs",
@@ -126,7 +126,7 @@
     {
       "name": "scripts/read-material.py",
       "bytes": 6649,
-      "sha256": "f649da7fe39607e6115b98c3c9bbcf6eda6a4bb0d075cb58a30e49fa30644c4c"
+      "sha256": "39c930f18e7a6295685cc9fbf42ca8476fa2f598bfbb2652fee2c650533b00ca"
     },
     {
       "name": "server.mjs",
@@ -170,8 +170,8 @@
     },
     {
       "name": "test/materials.test.mjs",
-      "bytes": 4328,
-      "sha256": "7e2e6fba6608c654f873bc85efe5686533a0c7ba6d3f53c15f4f57b8272d1f1a"
+      "bytes": 4316,
+      "sha256": "b9f66462dd78f82678dd145f96f0ef3563dae929125a5405885cc8e04167581a"
     }
   ]
 }

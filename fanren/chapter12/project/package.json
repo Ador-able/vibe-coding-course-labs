@@ -1,10 +1,12 @@
 {
-  "name": "qinglan-materials-lab",
+  "name": "fanren-materials-lab",
   "private": true,
   "type": "module",
-  "description": "青岚宗小说资料：读取、切块、检索、更新与评估",
+  "description": "凡人修仙传原文：读取、切块、检索、更新与评估",
   "packageManager": "pnpm@11.20.0",
-  "engines": { "node": ">=24.12.0 <25" },
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
   "scripts": {
     "dev": "node server.mjs",
     "build": "node scripts/check-source.mjs",

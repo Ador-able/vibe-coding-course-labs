@@ -1,19 +1,19 @@
-:root { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; color: #213334; background: #f4f6f5; font-size: 16px; line-height: 1.75; }
+:root { font-family: "Microsoft YaHei", "PingFang SC", sans-serif; color: #1e344e; background: #f7f8fa; font-size: 16px; line-height: 1.75; }
 * { box-sizing: border-box; }
 body { margin: 0; }
-a { color: #316c70; text-decoration: none; }
+a { color: #315f91; text-decoration: none; }
 a:hover { text-decoration: underline; }
 button, input, select { font: inherit; color: inherit; }
 button, input, select { border: 1px solid #cdd8d6; background: white; border-radius: 6px; padding: .48rem .75rem; }
 button { cursor: pointer; }
-button.primary { background: #306b6d; border-color: #306b6d; color: white; }
+button.primary { background: #315f91; border-color: #315f91; color: white; }
 button:disabled { opacity: .5; cursor: default; }
-button:hover { border-color: #306b6d; }
+button:hover { border-color: #315f91; }
 .topbar { display: flex; align-items: center; gap: 36px; padding: 15px 30px; background: white; border-bottom: 1px solid #e2e8e6; }
-.brand { font-weight: 700; white-space: nowrap; color: #234b4f; }
+.brand { font-weight: 700; white-space: nowrap; color: #183f68; }
 nav { display: flex; gap: 25px; }
 nav a { color: #667571; padding: 3px 0; }
-nav a[aria-current] { color: #246569; border-bottom: 2px solid #246569; }
+nav a[aria-current] { color: #315f91; border-bottom: 2px solid #315f91; }
 .settings { margin-left: auto; font-size: .85rem; white-space: nowrap; color: #657873; }
 main { max-width: 1420px; padding: 36px 38px 50px; margin: auto; }
 .heading { margin-bottom: 24px; }
@@ -48,7 +48,7 @@ input { width: 260px; }
 .ranking { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
 .ranking h3 { color: #61756d; font-size: .86rem; }
 .candidate { display: block; width: 100%; text-align: left; margin-top: 8px; padding: 10px 11px; font-size: .8rem; line-height: 1.6; overflow-wrap: anywhere; }
-.candidate[aria-pressed="true"] { color: #225c60; border-color: #6d9695; background: #eff6f3; }
+.candidate[aria-pressed="true"] { color: #315f91; border-color: #8faecc; background: #edf4fb; }
 .candidate strong { display: block; font-weight: 600; }
 .candidate .meta { font-size: .76rem; margin-bottom: 0; }
 details { margin-top: 23px; }
