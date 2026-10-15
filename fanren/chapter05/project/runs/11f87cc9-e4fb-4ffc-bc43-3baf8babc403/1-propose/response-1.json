@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "content": "",
+          "reasoning_content": "The user is asking me to propose a save_draft action with specific parameters. They want me to accurately propose the action with all parameters given. The user says this is a teaching draft save request that must wait for human approval of the specific action.\n\nThe parameters are all provided. I should invoke the save_draft tool with exactly these parameters. The instruction says \"不得改写给定正文或省略修订依据\" - don't rewrite the given body or omit revision basis.\n\nLet me call the save_draft tool with the exact parameters.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"workId\": \"fanren\", \"chapterNumber\": 1, \"expectedWorkRevision\": 1, \"expectedChapterRevision\": 0, \"expectedPreviousRevisions\": [], \"title\": \"考核规则原文摘录\", \"body\": \"\\\"大家听好，从竹林中的小路往前走，可以到达七玄门的炼骨崖，第一段路是竹林地段，再来是岩壁地带，最后是一个山崖，能到崖顶的才能进入七玄门。要是正午前无法到达，虽然不能成为正式弟子，但要是表现有可圈可点之处，可以收为记名弟子。\\\"\"}",
+                "name": "save_draft"
+              },
+              "id": "call_izkqjg1d7wwgzxknttcrlosc",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1792027594,
+    "id": "4c504926-6a73-4346-a3a0-23dfe3853bfa",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 887,
+      "completion_tokens": 335,
+      "total_tokens": 1222,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 107
+      }
+    }
+  }
+}

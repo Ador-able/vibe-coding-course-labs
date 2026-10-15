@@ -1,0 +1,100 @@
+{
+  "url": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+  "body": {
+    "model": "ep-ymk08qa8",
+    "max_tokens": 2048,
+    "stream": false,
+    "parallel_tool_calls": false,
+    "messages": [
+      {
+        "role": "system",
+        "content": "这是人工动作审批教学实验。人拒绝或撤回保存时，不执行、不重试、不擅自提出替代保存；只如实说明当前状态。只有明确要求提议新动作时才提出新请求。不得采用、发送或发布。"
+      },
+      {
+        "role": "user",
+        "content": "请准确提议以下 save_draft 动作，全部参数如下。不得改写给定正文或省略修订依据；这是教学草稿的保存请求，必须等待针对具体动作的人工批准。\n{\n  \"workId\": \"fanren\",\n  \"chapterNumber\": 1,\n  \"expectedWorkRevision\": 1,\n  \"expectedChapterRevision\": 0,\n  \"expectedPreviousRevisions\": [],\n  \"title\": \"竹林原文摘录\",\n  \"body\": \"正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\"\n}"
+      }
+    ],
+    "tools": [
+      {
+        "type": "function",
+        "function": {
+          "name": "save_draft",
+          "description": "按当前作品、章稿与前文修订保存一份本地教学草稿。需要针对本次具体参数的人工批准，不采用或发布。",
+          "parameters": {
+            "$schema": "http://json-schema.org/draft-07/schema#",
+            "type": "object",
+            "properties": {
+              "workId": {
+                "type": "string",
+                "pattern": "^[a-z0-9-]+$"
+              },
+              "chapterNumber": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedWorkRevision": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedChapterRevision": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "expectedPreviousRevisions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "number": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    },
+                    "revision": {
+                      "type": "integer",
+                      "exclusiveMinimum": 0,
+                      "maximum": 9007199254740991
+                    }
+                  },
+                  "required": [
+                    "number",
+                    "revision"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "body": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "workId",
+              "chapterNumber",
+              "expectedWorkRevision",
+              "expectedChapterRevision",
+              "expectedPreviousRevisions",
+              "title",
+              "body"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    ],
+    "tool_choice": {
+      "type": "function",
+      "function": {
+        "name": "save_draft"
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "provider": {
+    "provider": "openai-compatible",
+    "baseUrl": "https://tokenhub.tencentmaas.com/v1",
+    "model": "ep-ymk08qa8"
+  },
+  "mode": "propose",
+  "content": [
+    {
+      "type": "reasoning",
+      "text": "The user is asking me to propose a save_draft action with exact parameters given. This is a teaching experiment about manual approval of actions. I need to invoke the save_draft tool with the exact parameters provided. The instructions say I must not rewrite the body or omit revision basis; this is a save request for a teaching draft that must wait for manual approval of the specific action.\n\nLet me invoke the tool with the exact parameters."
+    },
+    {
+      "type": "tool-call",
+      "toolCallId": "call_d6sex8d5zq6tgqpd8js6lus9",
+      "toolName": "save_draft",
+      "input": {
+        "workId": "fanren",
+        "chapterNumber": 1,
+        "expectedWorkRevision": 1,
+        "expectedChapterRevision": 0,
+        "expectedPreviousRevisions": [],
+        "title": "竹林原文摘录",
+        "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。"
+      }
+    },
+    {
+      "type": "tool-approval-request",
+      "approvalId": "aitxt-4oSJ76b8SJTMBmyoVujJXNym",
+      "toolCall": {
+        "type": "tool-call",
+        "toolCallId": "call_d6sex8d5zq6tgqpd8js6lus9",
+        "toolName": "save_draft",
+        "input": {
+          "workId": "fanren",
+          "chapterNumber": 1,
+          "expectedWorkRevision": 1,
+          "expectedChapterRevision": 0,
+          "expectedPreviousRevisions": [],
+          "title": "竹林原文摘录",
+          "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。"
+        }
+      },
+      "reason": "保存这份具体教学正文前，由人核对实际参数。"
+    }
+  ],
+  "responseMessages": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "reasoning",
+          "text": "The user is asking me to propose a save_draft action with exact parameters given. This is a teaching experiment about manual approval of actions. I need to invoke the save_draft tool with the exact parameters provided. The instructions say I must not rewrite the body or omit revision basis; this is a save request for a teaching draft that must wait for manual approval of the specific action.\n\nLet me invoke the tool with the exact parameters."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_d6sex8d5zq6tgqpd8js6lus9",
+          "toolName": "save_draft",
+          "input": {
+            "workId": "fanren",
+            "chapterNumber": 1,
+            "expectedWorkRevision": 1,
+            "expectedChapterRevision": 0,
+            "expectedPreviousRevisions": [],
+            "title": "竹林原文摘录",
+            "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。"
+          }
+        },
+        {
+          "type": "tool-approval-request",
+          "approvalId": "aitxt-4oSJ76b8SJTMBmyoVujJXNym",
+          "toolCallId": "call_d6sex8d5zq6tgqpd8js6lus9",
+          "reason": "保存这份具体教学正文前，由人核对实际参数。"
+        }
+      ]
+    }
+  ],
+  "text": "",
+  "finishReason": "tool-calls",
+  "rawFinishReason": "tool_calls",
+  "usage": {
+    "inputTokens": 831,
+    "inputTokenDetails": {
+      "noCacheTokens": 831,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 258,
+    "outputTokenDetails": {
+      "textTokens": 171,
+      "reasoningTokens": 87
+    },
+    "totalTokens": 1089
+  },
+  "steps": [
+    {
+      "step": 0,
+      "content": [
+        {
+          "type": "reasoning",
+          "text": "The user is asking me to propose a save_draft action with exact parameters given. This is a teaching experiment about manual approval of actions. I need to invoke the save_draft tool with the exact parameters provided. The instructions say I must not rewrite the body or omit revision basis; this is a save request for a teaching draft that must wait for manual approval of the specific action.\n\nLet me invoke the tool with the exact parameters."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_d6sex8d5zq6tgqpd8js6lus9",
+          "toolName": "save_draft",
+          "input": {
+            "workId": "fanren",
+            "chapterNumber": 1,
+            "expectedWorkRevision": 1,
+            "expectedChapterRevision": 0,
+            "expectedPreviousRevisions": [],
+            "title": "竹林原文摘录",
+            "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。"
+          }
+        },
+        {
+          "type": "tool-approval-request",
+          "approvalId": "aitxt-4oSJ76b8SJTMBmyoVujJXNym",
+          "toolCall": {
+            "type": "tool-call",
+            "toolCallId": "call_d6sex8d5zq6tgqpd8js6lus9",
+            "toolName": "save_draft",
+            "input": {
+              "workId": "fanren",
+              "chapterNumber": 1,
+              "expectedWorkRevision": 1,
+              "expectedChapterRevision": 0,
+              "expectedPreviousRevisions": [],
+              "title": "竹林原文摘录",
+              "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。"
+            }
+          },
+          "reason": "保存这份具体教学正文前，由人核对实际参数。"
+        }
+      ],
+      "toolCalls": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_d6sex8d5zq6tgqpd8js6lus9",
+          "toolName": "save_draft",
+          "input": {
+            "workId": "fanren",
+            "chapterNumber": 1,
+            "expectedWorkRevision": 1,
+            "expectedChapterRevision": 0,
+            "expectedPreviousRevisions": [],
+            "title": "竹林原文摘录",
+            "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。"
+          }
+        }
+      ],
+      "toolResults": []
+    }
+  ]
+}

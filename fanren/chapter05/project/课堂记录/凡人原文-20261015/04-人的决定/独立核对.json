@@ -1,0 +1,50 @@
+{
+  "tasks": [
+    "d67517f4-fbc4-4022-ac9e-34bcf297d461",
+    "69d249b9-c15a-49ba-9116-d380b5bde6f1",
+    "b907c13b-ba5f-489b-8fb4-eb33d6d46e7f"
+  ],
+  "threadId": "01a13d2a-6cc5-72d2-a11e-abe1accff7b9",
+  "firstNoSave": true,
+  "resumedFirstHan": 904,
+  "secondHan": 920,
+  "allSaveReturnReadbackBodiesExact": true,
+  "firstRevisions": [
+    [
+      2,
+      "draft"
+    ],
+    [
+      3,
+      "adopted"
+    ],
+    [
+      4,
+      "draft"
+    ],
+    [
+      5,
+      "adopted"
+    ]
+  ],
+  "oldAdoptionRejectedFullObjectUnchanged": true,
+  "secondPrevious": [
+    {
+      "number": 1,
+      "revision": 5
+    }
+  ],
+  "approvalTasks": [
+    "11f87cc9-e4fb-4ffc-bc43-3baf8babc403",
+    "af915e78-717f-4742-8da1-6ec55ba7fb5c",
+    "aaa1ad41-4d79-4e9a-8504-1445ebf078fa"
+  ],
+  "failedA": "ACTION_MISMATCH; no execution; chapter null",
+  "reopenFullPendingExact": true,
+  "deniedCExecutions": 0,
+  "oldCApprovalRejectedPendingUnchanged": true,
+  "approvedDExecutions": 1,
+  "savedDExact": true,
+  "approvalFinalActualText": "草稿已保存，当前状态为 `draft`。该动作已按给定参数提交，等待您的人工批准。若您需要继续修改、撤回或批准执行，请直接指示。",
+  "actor": "方向B、改稿、采用与审批决定为编者受控CLI教学操作，不表示用户已选择或认可；实际读者仍自行判断。"
+}

@@ -1,0 +1,94 @@
+{
+  "provider": {
+    "provider": "openai-compatible",
+    "baseUrl": "https://tokenhub.tencentmaas.com/v1",
+    "model": "ep-ymk08qa8"
+  },
+  "mode": "resume",
+  "content": [
+    {
+      "type": "text",
+      "text": "草稿已保存，当前状态为 `draft`。该动作已按给定参数提交，等待您的人工批准。若您需要继续修改、撤回或批准执行，请直接指示。"
+    },
+    {
+      "type": "reasoning",
+      "text": "系统刚返回了保存结果，draft 状态。按之前约定，我应等待人工批准后的具体指令，说明当前状态即可。以 tool_result 的用户消息呈现。"
+    }
+  ],
+  "responseMessages": [
+    {
+      "role": "tool",
+      "content": [
+        {
+          "type": "tool-result",
+          "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+          "toolName": "save_draft",
+          "output": {
+            "type": "json",
+            "value": {
+              "workId": "fanren",
+              "number": 1,
+              "revision": 1,
+              "title": "竹林原文摘录",
+              "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\n\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。",
+              "status": "draft",
+              "workRevision": 1,
+              "origin": "agent",
+              "taskId": null,
+              "threadId": null,
+              "updatedAt": "2026-10-15T01:30:33.410Z",
+              "previousRevisions": [],
+              "reviewNote": null
+            }
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "草稿已保存，当前状态为 `draft`。该动作已按给定参数提交，等待您的人工批准。若您需要继续修改、撤回或批准执行，请直接指示。"
+        },
+        {
+          "type": "reasoning",
+          "text": "系统刚返回了保存结果，draft 状态。按之前约定，我应等待人工批准后的具体指令，说明当前状态即可。以 tool_result 的用户消息呈现。"
+        }
+      ]
+    }
+  ],
+  "text": "草稿已保存，当前状态为 `draft`。该动作已按给定参数提交，等待您的人工批准。若您需要继续修改、撤回或批准执行，请直接指示。",
+  "finishReason": "stop",
+  "rawFinishReason": "stop",
+  "usage": {
+    "inputTokens": 1161,
+    "inputTokenDetails": {
+      "noCacheTokens": 1161,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 80,
+    "outputTokenDetails": {
+      "textTokens": 42,
+      "reasoningTokens": 38
+    },
+    "totalTokens": 1241
+  },
+  "steps": [
+    {
+      "step": 0,
+      "content": [
+        {
+          "type": "text",
+          "text": "草稿已保存，当前状态为 `draft`。该动作已按给定参数提交，等待您的人工批准。若您需要继续修改、撤回或批准执行，请直接指示。"
+        },
+        {
+          "type": "reasoning",
+          "text": "系统刚返回了保存结果，draft 状态。按之前约定，我应等待人工批准后的具体指令，说明当前状态即可。以 tool_result 的用户消息呈现。"
+        }
+      ],
+      "toolCalls": [],
+      "toolResults": []
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "草稿已保存，当前状态为 `draft`。该动作已按给定参数提交，等待您的人工批准。若您需要继续修改、撤回或批准执行，请直接指示。",
+          "reasoning_content": "系统刚返回了保存结果，draft 状态。按之前约定，我应等待人工批准后的具体指令，说明当前状态即可。以 tool_result 的用户消息呈现。",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792027839,
+    "id": "f81f01c8-56da-4f08-92b3-8e1a10918248",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 1161,
+      "completion_tokens": 80,
+      "total_tokens": 1241,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 38
+      }
+    }
+  }
+}

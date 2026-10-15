@@ -1,0 +1,155 @@
+{
+  "provider": {
+    "provider": "openai-compatible",
+    "baseUrl": "https://tokenhub.tencentmaas.com/v1",
+    "model": "ep-ymk08qa8"
+  },
+  "mode": "propose",
+  "content": [
+    {
+      "type": "reasoning",
+      "text": "The user now proposes a new save_draft action with different parameters (body includes an added C03 adjacent narrative segment). This is a new proposed action that must wait for manual approval. I should propose/execute the save_draft with exact parameters given, no rewriting."
+    },
+    {
+      "type": "tool-call",
+      "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+      "toolName": "save_draft",
+      "input": {
+        "workId": "fanren",
+        "chapterNumber": 1,
+        "expectedWorkRevision": 1,
+        "expectedChapterRevision": 0,
+        "expectedPreviousRevisions": [],
+        "title": "竹林原文摘录",
+        "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\n\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。"
+      }
+    },
+    {
+      "type": "tool-approval-request",
+      "approvalId": "aitxt-OEJmQfTKZ3zlRuGR6CP9FhJH",
+      "toolCall": {
+        "type": "tool-call",
+        "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+        "toolName": "save_draft",
+        "input": {
+          "workId": "fanren",
+          "chapterNumber": 1,
+          "expectedWorkRevision": 1,
+          "expectedChapterRevision": 0,
+          "expectedPreviousRevisions": [],
+          "title": "竹林原文摘录",
+          "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\n\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。"
+        }
+      },
+      "reason": "保存这份具体教学正文前，由人核对实际参数。"
+    }
+  ],
+  "responseMessages": [
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "reasoning",
+          "text": "The user now proposes a new save_draft action with different parameters (body includes an added C03 adjacent narrative segment). This is a new proposed action that must wait for manual approval. I should propose/execute the save_draft with exact parameters given, no rewriting."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+          "toolName": "save_draft",
+          "input": {
+            "workId": "fanren",
+            "chapterNumber": 1,
+            "expectedWorkRevision": 1,
+            "expectedChapterRevision": 0,
+            "expectedPreviousRevisions": [],
+            "title": "竹林原文摘录",
+            "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\n\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。"
+          }
+        },
+        {
+          "type": "tool-approval-request",
+          "approvalId": "aitxt-OEJmQfTKZ3zlRuGR6CP9FhJH",
+          "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+          "reason": "保存这份具体教学正文前，由人核对实际参数。"
+        }
+      ]
+    }
+  ],
+  "text": "",
+  "finishReason": "tool-calls",
+  "rawFinishReason": "tool_calls",
+  "usage": {
+    "inputTokens": 1711,
+    "inputTokenDetails": {
+      "noCacheTokens": 1711,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 290,
+    "outputTokenDetails": {
+      "textTokens": 236,
+      "reasoningTokens": 54
+    },
+    "totalTokens": 2001
+  },
+  "steps": [
+    {
+      "step": 0,
+      "content": [
+        {
+          "type": "reasoning",
+          "text": "The user now proposes a new save_draft action with different parameters (body includes an added C03 adjacent narrative segment). This is a new proposed action that must wait for manual approval. I should propose/execute the save_draft with exact parameters given, no rewriting."
+        },
+        {
+          "type": "tool-call",
+          "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+          "toolName": "save_draft",
+          "input": {
+            "workId": "fanren",
+            "chapterNumber": 1,
+            "expectedWorkRevision": 1,
+            "expectedChapterRevision": 0,
+            "expectedPreviousRevisions": [],
+            "title": "竹林原文摘录",
+            "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\n\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。"
+          }
+        },
+        {
+          "type": "tool-approval-request",
+          "approvalId": "aitxt-OEJmQfTKZ3zlRuGR6CP9FhJH",
+          "toolCall": {
+            "type": "tool-call",
+            "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+            "toolName": "save_draft",
+            "input": {
+              "workId": "fanren",
+              "chapterNumber": 1,
+              "expectedWorkRevision": 1,
+              "expectedChapterRevision": 0,
+              "expectedPreviousRevisions": [],
+              "title": "竹林原文摘录",
+              "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\n\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。"
+            }
+          },
+          "reason": "保存这份具体教学正文前，由人核对实际参数。"
+        }
+      ],
+      "toolCalls": [
+        {
+          "type": "tool-call",
+          "toolCallId": "call_pdhpd0t9uk83ar228hyvlajo",
+          "toolName": "save_draft",
+          "input": {
+            "workId": "fanren",
+            "chapterNumber": 1,
+            "expectedWorkRevision": 1,
+            "expectedChapterRevision": 0,
+            "expectedPreviousRevisions": [],
+            "title": "竹林原文摘录",
+            "body": "正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\n\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。"
+          }
+        }
+      ],
+      "toolResults": []
+    }
+  ]
+}

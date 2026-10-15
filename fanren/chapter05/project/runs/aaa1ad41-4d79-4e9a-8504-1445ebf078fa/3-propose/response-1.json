@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "content": "",
+          "reasoning_content": "The user now proposes a new save_draft action with different parameters (body includes an added C03 adjacent narrative segment). This is a new proposed action that must wait for manual approval. I should propose/execute the save_draft with exact parameters given, no rewriting.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"workId\": \"fanren\", \"chapterNumber\": 1, \"expectedWorkRevision\": 1, \"expectedChapterRevision\": 0, \"expectedPreviousRevisions\": [], \"title\": \"竹林原文摘录\", \"body\": \"正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\\n\\n竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。\"}",
+                "name": "save_draft"
+              },
+              "id": "call_pdhpd0t9uk83ar228hyvlajo",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1792027807,
+    "id": "93a4a3bf-e9f9-4548-95b4-2b62fd661fc3",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 1711,
+      "completion_tokens": 290,
+      "total_tokens": 2001,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 54
+      }
+    }
+  }
+}

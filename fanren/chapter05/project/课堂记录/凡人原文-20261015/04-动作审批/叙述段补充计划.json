@@ -1,0 +1,30 @@
+{
+  "reason": "首轮A模型更换中文引号导致ACTION_MISMATCH，无保存。保留原A/B和失败记录；另开独立库，用不含引号的原文相邻叙述段C/D观察同一审批协议，不改原文、不放宽参数相等要求。",
+  "actor": "编者通过CLI进行受控教学操作；不是用户实际选择或文学采用。",
+  "conditions": [
+    {
+      "action": "C",
+      "sourceId": "C03",
+      "sourceLines": [
+        30
+      ],
+      "bodySha256": "cbbde67d911f9ef6cc63888bf7787f060f95c78ee23d8e0cb0bb322bb27c7ac3"
+    },
+    {
+      "action": "D",
+      "sourceId": "C03",
+      "sourceLines": [
+        30,
+        31
+      ],
+      "bodySha256": "9687bb3ab65683febc83086b51ac23a35aa1d59eb72559a51771b285d2bc35f1"
+    }
+  ],
+  "steps": [
+    "提议C后独立读回待决和null，受控拒绝后接续",
+    "再次提议C，受控批准但不执行",
+    "撤回C改为D，旧编号拒绝",
+    "完整读回新D，受控批准后接续并独立核对实际执行"
+  ],
+  "rule": "每步各一次；不补跑到成功，失败保留并缩小已验证范围。"
+}

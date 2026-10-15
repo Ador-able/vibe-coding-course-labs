@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "tool_calls",
+        "index": 0,
+        "message": {
+          "content": "",
+          "reasoning_content": "The user wants me to propose a save_draft action with the given parameters exactly. Let me invoke the tool with the exact parameters provided.\n\nThe instruction says: \"请准确提议以下 save_draft 动作，全部参数如下。不得改写给定正文或省略修订依据；这是教学草稿的保存请求，必须等待针对具体动作的人工批准。\"\n\nSo I should invoke save_draft with exactly these parameters. Since it requires human approval, I just propose the action. Let me do that.",
+          "role": "assistant",
+          "tool_calls": [
+            {
+              "function": {
+                "arguments": "{\"workId\": \"fanren\", \"chapterNumber\": 1, \"expectedWorkRevision\": 1, \"expectedChapterRevision\": 0, \"expectedPreviousRevisions\": [], \"title\": \"竹林原文摘录\", \"body\": \"正在瞎琢磨之时，韩立发现，其余的孩童都已冲进了竹林，见此情景，他连忙紧跟而去。\"}",
+                "name": "save_draft"
+              },
+              "id": "call_emsbscsnry0qxpdnmevufcjr",
+              "index": 0,
+              "type": "function"
+            }
+          ]
+        }
+      }
+    ],
+    "created": 1792027698,
+    "id": "70251eff-8d44-4281-b69b-43e785345819",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 831,
+      "completion_tokens": 272,
+      "total_tokens": 1103,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 101
+      }
+    }
+  }
+}
