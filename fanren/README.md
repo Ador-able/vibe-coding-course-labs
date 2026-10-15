@@ -28,6 +28,8 @@ pnpm build
 | 第十二章：资料、检索与回答 | chapter12/project | 在同一工作台依次回查原页、切块、两路检索、资料更新和评估。 |
 | 第十三章：小说材料整理 | [chapter13/project](chapter13/project/README.md) | 一个工作台回查长文、反馈分类、日志抽取、逐项状态与模板核对；默认只读课堂实录。 |
 | 第十四章：小说业务流转 | [chapter14/project](chapter14/project/README.md) | 八个入口共用完整实录；核对反馈流转、文件读取、关联 ID、日历提案和批次回执。 |
+| 第十五章：修改已有项目 | [chapter15/project](chapter15/project/README.md) | 沿同一保存行为回查项目调查、规则来源、红绿测试、原生代码评审与 Git 交付检查。 |
+| 第十六章：迁移与验收 | [chapter16/project](chapter16/project/README.md) | 用 C06、C07 原文与大纲设定回查停止、条件核对、人工改稿、接续和完整导出。 |
 
 表中目录位于本仓库 fanren/ 下。仓库根的一次安装和构建覆盖表中所有项目，并沿用各项目锁定的版本。后续直接进入相应 project 使用本节入口。修改源码后重新构建即可，不用重做已有模型任务。
 
