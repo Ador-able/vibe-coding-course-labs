@@ -1,0 +1,12 @@
+{
+  "command": "node scripts/inspect-fanren-review.mjs",
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter10/project",
+  "sourceVersion": "0254a32a7d4a8d36ec9576c8fe7e65b8a4c61ba0",
+  "result": {
+    "chunk_id": "cecc6f",
+    "wall_time_seconds": 0.0000105,
+    "exit_code": 0,
+    "original_token_count": 124,
+    "output": "(node:67436) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\"path\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\\\\materials\\\\178-凡人只读审阅\\\\当前产物程序核对.json\",\"workRevision\":6,\"chapters\":[{\"number\":1,\"revision\":5,\"status\":\"draft\"},{\"number\":2,\"revision\":1,\"status\":\"draft\"}],\"fiveBusinessTablesUnchanged\":true}\n"
+  }
+}

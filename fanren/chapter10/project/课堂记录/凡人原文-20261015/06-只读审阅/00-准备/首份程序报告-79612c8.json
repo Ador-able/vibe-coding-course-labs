@@ -1,0 +1,186 @@
+{
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\practice-1d305d2f-c6d9-43fd-b35a-545b60e5534a.sqlite",
+  "workId": "fanren",
+  "workRevision": 6,
+  "scope": "程序只核当前对象、字符和字节，不判断情节、表达或采用；完整原作仍署忘语。",
+  "counting": "汉字仅统计正文Unicode Han字符；标题、标点、空格与换行不计入汉字列。UTF-16、码点、UTF-8字节另列，均不是token。",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "C03 原文：七玄门与炼骨崖",
+      "revision": 5,
+      "origin": "agent",
+      "status": "draft",
+      "workRevision": 5,
+      "previousRevisions": [],
+      "reviewNote": null,
+      "hanCharacters": 2036,
+      "utf16Length": 2371,
+      "codePoints": 2371,
+      "utf8Bytes": 7041,
+      "sha256": "abb37e4069f9edf8e466c55aa8f2492cbdfacf866773080ec6329b42a5342fe8",
+      "source": "materials/凡人原文/第一章.md",
+      "originalFileMatches": true,
+      "originalBodyBoundaryMatches": true,
+      "sourceDifference": {
+        "equalUtf16Length": true,
+        "changes": [
+          {
+            "codePointIndex": 342,
+            "before": "以",
+            "after": "已"
+          },
+          {
+            "codePointIndex": 1232,
+            "before": "的",
+            "after": "地"
+          },
+          {
+            "codePointIndex": 1248,
+            "before": "的",
+            "after": "得"
+          },
+          {
+            "codePointIndex": 2182,
+            "before": "做",
+            "after": "坐"
+          }
+        ]
+      }
+    },
+    {
+      "number": 2,
+      "title": "C04 原文：攀岩与考核结果",
+      "revision": 1,
+      "origin": "agent",
+      "status": "draft",
+      "workRevision": 2,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 2
+        }
+      ],
+      "reviewNote": null,
+      "hanCharacters": 2015,
+      "utf16Length": 2330,
+      "codePoints": 2330,
+      "utf8Bytes": 6918,
+      "sha256": "5aa9c4b11cca0c11232895a702d91fb74e3f5a5d9f5d5921edacecb5d3c265f8",
+      "source": "materials/凡人原文/第二章.md",
+      "originalFileMatches": true,
+      "originalBodyBoundaryMatches": true,
+      "sourceDifference": {
+        "equalUtf16Length": true,
+        "changes": []
+      }
+    }
+  ],
+  "histories": [
+    {
+      "number": 1,
+      "revision": 1,
+      "origin": "agent",
+      "status": "draft",
+      "hanCharacters": 2036,
+      "utf16Length": 2371,
+      "codePoints": 2371,
+      "utf8Bytes": 7041,
+      "sha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349"
+    },
+    {
+      "number": 1,
+      "revision": 2,
+      "origin": "human",
+      "status": "draft",
+      "hanCharacters": 2036,
+      "utf16Length": 2371,
+      "codePoints": 2371,
+      "utf8Bytes": 7041,
+      "sha256": "afcd5852a3e354158fbd9c70564de8bcd60f79e16dfb30893fb76fe61c63ca07"
+    },
+    {
+      "number": 1,
+      "revision": 3,
+      "origin": "agent",
+      "status": "draft",
+      "hanCharacters": 2036,
+      "utf16Length": 2371,
+      "codePoints": 2371,
+      "utf8Bytes": 7041,
+      "sha256": "3b076927bbd8cb99cf251556a358c653a6589bc592c63299b3c31c89e0d10cb1"
+    },
+    {
+      "number": 1,
+      "revision": 4,
+      "origin": "human",
+      "status": "draft",
+      "hanCharacters": 2036,
+      "utf16Length": 2371,
+      "codePoints": 2371,
+      "utf8Bytes": 7041,
+      "sha256": "63ead73bbb6b6b479eecb3c4af088abc3e5a4033f23a2346695c58b36fbf1f8d"
+    },
+    {
+      "number": 1,
+      "revision": 5,
+      "origin": "agent",
+      "status": "draft",
+      "hanCharacters": 2036,
+      "utf16Length": 2371,
+      "codePoints": 2371,
+      "utf8Bytes": 7041,
+      "sha256": "abb37e4069f9edf8e466c55aa8f2492cbdfacf866773080ec6329b42a5342fe8"
+    },
+    {
+      "number": 2,
+      "revision": 1,
+      "origin": "agent",
+      "status": "draft",
+      "hanCharacters": 2015,
+      "utf16Length": 2330,
+      "codePoints": 2330,
+      "utf8Bytes": 6918,
+      "sha256": "5aa9c4b11cca0c11232895a702d91fb74e3f5a5d9f5d5921edacecb5d3c265f8"
+    }
+  ],
+  "export": {
+    "workId": "fanren",
+    "workRevision": 6,
+    "expectedChapters": 3,
+    "savedChapters": 2,
+    "allOutlineChaptersSaved": false,
+    "chapters": [
+      {
+        "number": 1,
+        "revision": 5,
+        "status": "draft",
+        "workRevision": 5,
+        "previousRevisions": [],
+        "reviewNote": null,
+        "basisCurrent": false
+      },
+      {
+        "number": 2,
+        "revision": 1,
+        "status": "draft",
+        "workRevision": 2,
+        "previousRevisions": [
+          {
+            "number": 1,
+            "revision": 2
+          }
+        ],
+        "reviewNote": null,
+        "basisCurrent": false
+      }
+    ],
+    "hanCharacters": 4160,
+    "utf16Length": 4884,
+    "codePoints": 4884,
+    "utf8Bytes": 14398,
+    "sha256": "35e80121b389b5ef56d72a59e7c8359cdfb93bf05c8c6d88abf421a91527a460"
+  },
+  "existingTaskCount": 7,
+  "fiveBusinessTablesUnchanged": true
+}
