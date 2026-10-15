@@ -1,0 +1,11 @@
+{
+  "novel": "凡人修仙传",
+  "author": "忘语",
+  "sourceId": "C03",
+  "originalSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "corpusSourceSha256": "141138ca40a7ddbad62264d3f011ee4c1e01bc00c3900f5ff4b9016f25db9d34",
+  "excerptSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+  "selection": "完整原文片段C03，不续写、不手工压缩、不删细节以制造失败。",
+  "conditions": "四种任务各一次，原文相同，只改变任务缺口；全部输入输出保留，不补跑到预期结果。",
+  "method": "完整原文和当前任务直接进入每次模型请求，不声称模型调用了文件读取工具。"
+}
