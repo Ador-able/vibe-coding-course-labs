@@ -1,6 +1,6 @@
-import {spawn} from 'node:child_process';
+import {spawn,execFileSync} from 'node:child_process';
 import {readFile,mkdir,writeFile} from 'node:fs/promises';
-import {resolve} from 'node:path';
+import {resolve,relative} from 'node:path';
 import {parseArgs} from 'node:util';
 import {homedir} from 'node:os';
 
@@ -28,6 +28,9 @@ const apiKey=saved.apiKey;
 if(!apiKey||!saved.baseUrl||!saved.model)throw new Error('请求观察室的模型设置不完整。');
 env.API_KEY=apiKey;
 const config=JSON.parse(await readFile(resolve(cwd,'opencode.json'),'utf8'));
+// read 按 Git 工作树的相对路径判权限，方法目录则由宿主配置位置解析。
+const worktree=execFileSync('git',['rev-parse','--show-toplevel'],{cwd:root,encoding:'utf8'}).trim();
+config.permission.read={'*':'deny',...Object.fromEntries(config.skills.paths.map(path=>[relative(worktree,resolve(cwd,path,'*')),'allow']))};
 // 本轮设置共用课程页面保存的地址与型号；密钥仍使用环境变量占位符。
 config.provider.courseModel.options.baseURL=saved.baseUrl;
 const selected=saved.model,limits={context:32768,output:4096};
