@@ -1,0 +1,14 @@
+{
+  "name": "B",
+  "port": 4472,
+  "command": "$env:LESSON_RUN_ID = '凡人172-37111bfd-B'\nnode scripts/start-prototype.mjs --port 4472",
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter10/project",
+  "tty": true,
+  "result": {
+    "chunk_id": "436d57",
+    "wall_time_seconds": 10.0115124,
+    "session_id": 44249,
+    "original_token_count": 172,
+    "output": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H(node:72320) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\n\u001b]0;C:\\Program Files\\PowerShell\\7\\pwsh.exe\u0007\u001b[?25h(node:73304) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\n{\"url\":\"http://127.0.0.1:4472\",\"db\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\\\\data\\\\practice-37111bfd-7c23-4218-bfd9-c5c117d0eefb.sqlite\",\"workId\":\"fanren\",\"mode\":\"真实 Store；显示当前保存内容\"}\r\n"
+  }
+}

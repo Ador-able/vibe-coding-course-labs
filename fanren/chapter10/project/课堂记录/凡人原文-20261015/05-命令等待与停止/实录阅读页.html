@@ -1,0 +1,99 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>凡人修仙传·命令等待与停止</title><style>body{margin:0;background:#f7f8fa;color:#203c57;font:18px/1.8 "Microsoft YaHei",sans-serif}main{max-width:1100px;margin:auto;padding:24px 36px}h1{font-size:30px;margin:0 0 4px;color:#173e64}.meta{color:#637e98;font-size:15px}table{width:100%;border-collapse:collapse;background:white;margin:18px 0}th,td{padding:12px 16px;border-bottom:1px solid #cfdeea;text-align:left}th{background:#eaf0f6;color:#315f91}strong{color:#315f91}.proof{border-left:4px solid #315f91;background:white;padding:14px 22px;margin:18px 0}p{margin:8px 0}details{padding:12px 0;border-bottom:1px solid #cfdeea}summary{color:#315f91}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:white;padding:20px;font:16px/1.8 Consolas,monospace}</style><main><h1>停止A，文件保留，B仍能读同一份稿</h1><p class="meta">课堂实录阅读页 · 2026-10-15 · 教师直接执行命令，0次模型调用</p><table><thead><tr><th>实际动作</th><th>原动作回执</th><th>另行回查的结果</th></tr></thead><tbody><tr><td>等待stdin · session36963</td><td>serviceLoaded:false；Ctrl+C后退出1</td><td>PID73112消失，4473从未提供页面</td></tr><tr><td>有限导出两章</td><td>退出0，CLI交回目标路径</td><td>14,376字节，与Store完整文本相同</td></tr><tr><td>阅读服务A · session76548</td><td>4471已就绪；命令仍运行</td><td>实际页面读到C03r5，全文哈希相同</td></tr><tr><td>向A发送Ctrl+C</td><td>原write_stdin直接交回退出1</td><td>PID66256/71088与4471监听消失</td></tr><tr><td>停止A后核文件与B</td><td>A访问ECONNREFUSED</td><td>B的4472仍200，完整对象相同</td></tr><tr><td>再停止B · session44249</td><td>Ctrl+C后退出1</td><td>PID73304/72320与4472监听消失</td></tr></tbody></table><div class="proof"><p><strong>停止后，完整两章文件逐字节保持。</strong></p><p>作品、资料历史、两章正文、正文历史和7个既有Task，五张表前后完全相同。</p><p>停止的是确切进程；当前两章仍为draft，没有采用。</p></div><p class="meta">源码f8891d59633595dc2ef10713d927521f9a6d1b9f · 所有临时4471/4472/4473端口已关闭</p><details><summary>展开完整停止A回执</summary><pre>{
+  "beforeStop": {
+    "chunk_id": "eead5f",
+    "wall_time_seconds": 1.2320762,
+    "exit_code": 0,
+    "original_token_count": 113,
+    "output": "{\r\n  \"listening\": [\r\n    {\r\n      \"LocalPort\": 4472,\r\n      \"OwningProcess\": 73304\r\n    },\r\n    {\r\n      \"LocalPort\": 4471,\r\n      \"OwningProcess\": 66256\r\n    }\r\n  ],\r\n  \"processes\": [\r\n    {\r\n      \"Id\": 66256,\r\n      \"ProcessName\": \"node\"\r\n    },\r\n    {\r\n      \"Id\": 71088,\r\n      \"ProcessName\": \"node\"\r\n    },\r\n    {\r\n      \"Id\": 72320,\r\n      \"ProcessName\": \"node\"\r\n    },\r\n    {\r\n      \"Id\": 73304,\r\n      \"ProcessName\": \"node\"\r\n    }\r\n  ]\r\n}\r\n"
+  },
+  "stop": {
+    "session_id": 76548,
+    "chars": "\u0003",
+    "result": {
+      "chunk_id": "59895f",
+      "wall_time_seconds": 0.0000373,
+      "exit_code": 1,
+      "original_token_count": 4,
+      "output": "\u001b[?9001l\u001b[?1004l"
+    }
+  },
+  "afterStop": {
+    "chunk_id": "6072eb",
+    "wall_time_seconds": 2.5635362,
+    "exit_code": 0,
+    "original_token_count": 117,
+    "output": "{\r\n  \"processes\": [\r\n    {\r\n      \"pid\": 66256,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 71088,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 73304,\r\n      \"exists\": true\r\n    },\r\n    {\r\n      \"pid\": 72320,\r\n      \"exists\": true\r\n    }\r\n  ],\r\n  \"ports\": [\r\n    {\r\n      \"port\": 4471,\r\n      \"listening\": false\r\n    },\r\n    {\r\n      \"port\": 4472,\r\n      \"listening\": true\r\n    },\r\n    {\r\n      \"port\": 4473,\r\n      \"listening\": false\r\n    }\r\n  ]\r\n}\r\n"
+  }
+}
+</pre></details><details><summary>展开独立核对</summary><pre>{
+  "sourceVersion": "f8891d59633595dc2ef10713d927521f9a6d1b9f",
+  "database": "data/practice-37111bfd-7c23-4218-bfd9-c5c117d0eefb.sqlite",
+  "restoredStartFiveTablesExact": true,
+  "modelCalls": 0,
+  "newTaskRows": 0,
+  "beforeCounts": {
+    "works": 1,
+    "work_versions": 5,
+    "chapters": 2,
+    "chapter_versions": 6,
+    "tasks": 7
+  },
+  "afterCounts": {
+    "works": 1,
+    "work_versions": 5,
+    "chapters": 2,
+    "chapter_versions": 6,
+    "tasks": 7
+  },
+  "fiveTablesByteObjectsEqual": true,
+  "export": {
+    "bytes": 14376,
+    "sha256": "20a91d04d6dd252885d6f7160878dd40ee1e24d373088aa3e3a57d256600deff",
+    "storeTextByteExact": true
+  },
+  "fileAfterStopByteExact": true,
+  "bothServicesBeforeStopSameFullObject": true,
+  "serviceBAfterAStopFullObjectSame": true,
+  "waiting": {
+    "pid": 73112,
+    "session": 36963,
+    "port": 4473,
+    "serviceLoaded": false,
+    "exitCode": 1
+  },
+  "A": {
+    "session": 76548,
+    "wrapperPid": 71088,
+    "serverPid": 66256,
+    "port": 4471,
+    "exitCode": 1
+  },
+  "B": {
+    "session": 44249,
+    "wrapperPid": 72320,
+    "serverPid": 73304,
+    "port": 4472,
+    "exitCode": 1
+  },
+  "allTemporaryProcessesAndPortsClosed": true,
+  "accessAfterAllStops": [
+    {
+      "port": 4471,
+      "error": "fetch failed",
+      "code": "ECONNREFUSED"
+    },
+    {
+      "port": 4472,
+      "error": "fetch failed",
+      "code": "ECONNREFUSED"
+    },
+    {
+      "port": 4473,
+      "error": "fetch failed",
+      "code": "ECONNREFUSED"
+    }
+  ],
+  "uiBodySha256": "abb37e4069f9edf8e466c55aa8f2492cbdfacf866773080ec6329b42a5342fe8",
+  "uiBodyEqualsCurrentC03": true,
+  "scope": "发送Ctrl+C后，原动作回执直接返回exit_code=1；没有单独停止确认对象。读回五表和文件，停止未撤销保存。"
+}</pre></details></main></html>

@@ -1,0 +1,5 @@
+{
+  "entry": "node_repl直接导入项目Store",
+  "result": "Module not found: zod",
+  "followup": "使用项目本身Node入口读取既有Store，完整导出与CLI文件逐字节相同；未重跑导出命令或模型。"
+}

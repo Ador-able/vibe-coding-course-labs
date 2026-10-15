@@ -1,0 +1,28 @@
+[
+  {
+    "label": "01-普通管道",
+    "cmd": "$env:LESSON_RUN_ID = '凡人172-37111bfd'\nnode scripts/inspect-command-condition.mjs",
+    "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter10/project",
+    "tty": false,
+    "result": {
+      "chunk_id": "506376",
+      "wall_time_seconds": 0.1155872,
+      "exit_code": 0,
+      "original_token_count": 48,
+      "output": "{\"pid\":12528,\"cwd\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\",\"stdinIsTTY\":false,\"stdoutIsTTY\":false,\"lessonRun\":\"凡人172-37111bfd\"}\n"
+    }
+  },
+  {
+    "label": "02-PTY条件",
+    "cmd": "$env:LESSON_RUN_ID = '凡人172-37111bfd'\nnode scripts/inspect-command-condition.mjs",
+    "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter10/project",
+    "tty": true,
+    "result": {
+      "chunk_id": "6d7f21",
+      "wall_time_seconds": 0.1212429,
+      "exit_code": 0,
+      "original_token_count": 72,
+      "output": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H{\"pid\":27500,\"cwd\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\",\"stdinIsTTY\":true,\"stdoutIsTTY\":true,\"lessonRun\":\"凡人172-37111bfd\"}\r\n\u001b]0;C:\\Program Files\\PowerShell\\7\\pwsh.exe\u0007\u001b[?25h\u001b[?9001l\u001b[?1004l"
+    }
+  }
+]

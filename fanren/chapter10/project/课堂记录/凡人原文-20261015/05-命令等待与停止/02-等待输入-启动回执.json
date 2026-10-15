@@ -1,0 +1,12 @@
+{
+  "command": "$env:LESSON_RUN_ID = '凡人172-37111bfd'\nnode scripts/wait-before-service.mjs --port 4473",
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter10/project",
+  "tty": true,
+  "result": {
+    "chunk_id": "8efd84",
+    "wall_time_seconds": 10.0050103,
+    "session_id": 36963,
+    "original_token_count": 75,
+    "output": "\u001b[?9001h\u001b[?1004h\u001b[?25l\u001b[2J\u001b[m\u001b[H{\"state\":\"waiting-for-stdin-before-service\",\"pid\":73112,\"cwd\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\",\"lessonRun\":\"凡人172-37111bfd\",\"serviceLoaded\":false}\r\n\u001b]0;C:\\Program Files\\PowerShell\\7\\pwsh.exe\u0007\u001b[?25h"
+  }
+}

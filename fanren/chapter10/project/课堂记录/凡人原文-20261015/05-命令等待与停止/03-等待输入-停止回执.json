@@ -1,0 +1,20 @@
+{
+  "stop": {
+    "session_id": 36963,
+    "chars": "\u0003",
+    "result": {
+      "chunk_id": "e86cc4",
+      "wall_time_seconds": 0.0000319,
+      "exit_code": 1,
+      "original_token_count": 4,
+      "output": "\u001b[?9001l\u001b[?1004l"
+    }
+  },
+  "actualOS": {
+    "chunk_id": "a43917",
+    "wall_time_seconds": 1.0498846,
+    "exit_code": 0,
+    "original_token_count": 23,
+    "output": "{\r\n  \"pid\": 73112,\r\n  \"processExists\": false,\r\n  \"port\": 4473,\r\n  \"listening\": false\r\n}\r\n"
+  }
+}

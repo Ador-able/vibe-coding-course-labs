@@ -1,0 +1,27 @@
+{
+  "beforeStop": {
+    "chunk_id": "eead5f",
+    "wall_time_seconds": 1.2320762,
+    "exit_code": 0,
+    "original_token_count": 113,
+    "output": "{\r\n  \"listening\": [\r\n    {\r\n      \"LocalPort\": 4472,\r\n      \"OwningProcess\": 73304\r\n    },\r\n    {\r\n      \"LocalPort\": 4471,\r\n      \"OwningProcess\": 66256\r\n    }\r\n  ],\r\n  \"processes\": [\r\n    {\r\n      \"Id\": 66256,\r\n      \"ProcessName\": \"node\"\r\n    },\r\n    {\r\n      \"Id\": 71088,\r\n      \"ProcessName\": \"node\"\r\n    },\r\n    {\r\n      \"Id\": 72320,\r\n      \"ProcessName\": \"node\"\r\n    },\r\n    {\r\n      \"Id\": 73304,\r\n      \"ProcessName\": \"node\"\r\n    }\r\n  ]\r\n}\r\n"
+  },
+  "stop": {
+    "session_id": 76548,
+    "chars": "\u0003",
+    "result": {
+      "chunk_id": "59895f",
+      "wall_time_seconds": 0.0000373,
+      "exit_code": 1,
+      "original_token_count": 4,
+      "output": "\u001b[?9001l\u001b[?1004l"
+    }
+  },
+  "afterStop": {
+    "chunk_id": "6072eb",
+    "wall_time_seconds": 2.5635362,
+    "exit_code": 0,
+    "original_token_count": 117,
+    "output": "{\r\n  \"processes\": [\r\n    {\r\n      \"pid\": 66256,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 71088,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 73304,\r\n      \"exists\": true\r\n    },\r\n    {\r\n      \"pid\": 72320,\r\n      \"exists\": true\r\n    }\r\n  ],\r\n  \"ports\": [\r\n    {\r\n      \"port\": 4471,\r\n      \"listening\": false\r\n    },\r\n    {\r\n      \"port\": 4472,\r\n      \"listening\": true\r\n    },\r\n    {\r\n      \"port\": 4473,\r\n      \"listening\": false\r\n    }\r\n  ]\r\n}\r\n"
+  }
+}

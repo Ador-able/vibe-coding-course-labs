@@ -1,0 +1,11 @@
+{
+  "command": "node dist/cli.js export 课堂记录/凡人原文-20261015/05-命令等待与停止/完整两章待审.md --db data/practice-37111bfd-7c23-4218-bfd9-c5c117d0eefb.sqlite --work fanren",
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter10/project",
+  "result": {
+    "chunk_id": "3b950a",
+    "wall_time_seconds": 0.0000078,
+    "exit_code": 0,
+    "original_token_count": 241,
+    "output": "(node:71580) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\n  \"workId\": \"fanren\",\n  \"workRevision\": 5,\n  \"expectedChapters\": 3,\n  \"savedChapters\": 2,\n  \"allOutlineChaptersSaved\": false,\n  \"chapters\": [\n    {\n      \"number\": 1,\n      \"revision\": 5,\n      \"status\": \"draft\",\n      \"workRevision\": 5,\n      \"previousRevisions\": [],\n      \"reviewNote\": null,\n      \"basisCurrent\": true\n    },\n    {\n      \"number\": 2,\n      \"revision\": 1,\n      \"status\": \"draft\",\n      \"workRevision\": 2,\n      \"previousRevisions\": [\n        {\n          \"number\": 1,\n          \"revision\": 2\n        }\n      ],\n      \"reviewNote\": null,\n      \"basisCurrent\": false\n    }\n  ],\n  \"path\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\\\\课堂记录\\\\凡人原文-20261015\\\\05-命令等待与停止\\\\完整两章待审.md\"\n}\n"
+  }
+}

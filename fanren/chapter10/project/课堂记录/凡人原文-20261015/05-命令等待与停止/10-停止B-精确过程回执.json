@@ -1,0 +1,20 @@
+{
+  "stop": {
+    "session_id": 44249,
+    "chars": "\u0003",
+    "result": {
+      "chunk_id": "b1a21d",
+      "wall_time_seconds": 0.000016,
+      "exit_code": 1,
+      "original_token_count": 4,
+      "output": "\u001b[?9001l\u001b[?1004l"
+    }
+  },
+  "actualOS": {
+    "chunk_id": "597e91",
+    "wall_time_seconds": 2.7454101,
+    "exit_code": 0,
+    "original_token_count": 132,
+    "output": "{\r\n  \"processes\": [\r\n    {\r\n      \"pid\": 73112,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 66256,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 71088,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 73304,\r\n      \"exists\": false\r\n    },\r\n    {\r\n      \"pid\": 72320,\r\n      \"exists\": false\r\n    }\r\n  ],\r\n  \"ports\": [\r\n    {\r\n      \"port\": 4471,\r\n      \"listening\": false\r\n    },\r\n    {\r\n      \"port\": 4472,\r\n      \"listening\": false\r\n    },\r\n    {\r\n      \"port\": 4473,\r\n      \"listening\": false\r\n    }\r\n  ]\r\n}\r\n"
+  }
+}

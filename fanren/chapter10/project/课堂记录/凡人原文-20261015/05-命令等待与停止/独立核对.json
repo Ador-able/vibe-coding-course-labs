@@ -1,0 +1,72 @@
+{
+  "sourceVersion": "f8891d59633595dc2ef10713d927521f9a6d1b9f",
+  "database": "data/practice-37111bfd-7c23-4218-bfd9-c5c117d0eefb.sqlite",
+  "restoredStartFiveTablesExact": true,
+  "modelCalls": 0,
+  "newTaskRows": 0,
+  "beforeCounts": {
+    "works": 1,
+    "work_versions": 5,
+    "chapters": 2,
+    "chapter_versions": 6,
+    "tasks": 7
+  },
+  "afterCounts": {
+    "works": 1,
+    "work_versions": 5,
+    "chapters": 2,
+    "chapter_versions": 6,
+    "tasks": 7
+  },
+  "fiveTablesByteObjectsEqual": true,
+  "export": {
+    "bytes": 14376,
+    "sha256": "20a91d04d6dd252885d6f7160878dd40ee1e24d373088aa3e3a57d256600deff",
+    "storeTextByteExact": true
+  },
+  "fileAfterStopByteExact": true,
+  "bothServicesBeforeStopSameFullObject": true,
+  "serviceBAfterAStopFullObjectSame": true,
+  "waiting": {
+    "pid": 73112,
+    "session": 36963,
+    "port": 4473,
+    "serviceLoaded": false,
+    "exitCode": 1
+  },
+  "A": {
+    "session": 76548,
+    "wrapperPid": 71088,
+    "serverPid": 66256,
+    "port": 4471,
+    "exitCode": 1
+  },
+  "B": {
+    "session": 44249,
+    "wrapperPid": 72320,
+    "serverPid": 73304,
+    "port": 4472,
+    "exitCode": 1
+  },
+  "allTemporaryProcessesAndPortsClosed": true,
+  "accessAfterAllStops": [
+    {
+      "port": 4471,
+      "error": "fetch failed",
+      "code": "ECONNREFUSED"
+    },
+    {
+      "port": 4472,
+      "error": "fetch failed",
+      "code": "ECONNREFUSED"
+    },
+    {
+      "port": 4473,
+      "error": "fetch failed",
+      "code": "ECONNREFUSED"
+    }
+  ],
+  "uiBodySha256": "abb37e4069f9edf8e466c55aa8f2492cbdfacf866773080ec6329b42a5342fe8",
+  "uiBodyEqualsCurrentC03": true,
+  "scope": "发送Ctrl+C后，原动作回执直接返回exit_code=1；没有单独停止确认对象。读回五表和文件，停止未撤销保存。"
+}
