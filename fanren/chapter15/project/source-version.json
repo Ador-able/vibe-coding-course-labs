@@ -1,9 +1,9 @@
 {
-  "sourceSha256": "8fbad181e29409c398803bc15b278590d105afe8a2ecea80343e274cbb2cb364",
-  "sourceVersion": "8fbad181e29409c398803bc15b278590d105afe8a2ecea80343e274cbb2cb364",
-  "preparedFromGit": "79612c8beef955bd3e15def42baf11181c90c634",
+  "sourceSha256": "7c6123cf742e2568c57bd1c073cf53d808b7aaf7aa155b77abac44d34c0c19ff",
+  "sourceVersion": "7c6123cf742e2568c57bd1c073cf53d808b7aaf7aa155b77abac44d34c0c19ff",
+  "preparedFromGit": "85a4de5c545a5ffa43cd44330d9ff24bc75fa109",
   "practiceTag": "fanren-ch15-practice-start",
-  "inputRegistrySha256": "3fb6a3c18b5fdc78c73d1cbb6acee3f1b9bbf2018b991673c9aae044bb3e537c",
+  "inputRegistrySha256": "a511b86bb5c4beff8669c2970ca1c200e7baa6e576d9d7943348c455d750439e",
   "files": [
     {
       "path": ".gitattributes",
@@ -78,7 +78,7 @@
     {
       "path": "materials/viewer.css",
       "bytes": 1443,
-      "sha256": "831ec9c41eac63150183168594881959c93d2eee7c7c4774e37561e53f0b9ee7"
+      "sha256": "b81af6f958a9b4555fe1b82778890fa04aead88a331e2ae76dfaf48f0a8e6568"
     },
     {
       "path": "materials/viewer.html",
@@ -112,8 +112,8 @@
     },
     {
       "path": "prototype/app.css",
-      "bytes": 3539,
-      "sha256": "31e828f6ee09c434c1e1509c8cda642480f6b683de067d60d07342eb194e7872"
+      "bytes": 3528,
+      "sha256": "982f4af19c54d185042ab3978e82812ac60d31bac643d3aeda65a40973d7a416"
     },
     {
       "path": "prototype/app.js",

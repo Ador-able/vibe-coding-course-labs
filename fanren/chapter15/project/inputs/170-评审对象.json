@@ -1,5 +1,150 @@
 {
-  "state": "not_ready",
-  "files": [],
-  "scope": "等待凡人原文的真实红绿记录；不沿用旧青岚结果。"
+  "state": "ready",
+  "comparison": {
+    "testedGitHead": "85a4de5c545a5ffa43cd44330d9ff24bc75fa109",
+    "historicalRestoredWorkingTree": true,
+    "fixedWorkingTreeClean": true,
+    "restoredAppSha256": "34cf106aedbf9f594e8dcda725f1ce41f58d8bbf5bc06811f6223460bde0ef98",
+    "fixedAppSha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63",
+    "historyGitReference": {
+      "kind": "historical_git_original",
+      "baseGit": "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720",
+      "headGit": "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+      "oldApp": {
+        "blob": "6b9d7f045cb5afff6f7755f33a0080fad89def68",
+        "bytes": 7442,
+        "sha256": "2ac73213d1de84e094b309ff91a7264e4e5d058f1c544dfd361323252b27e91d"
+      },
+      "fixedApp": {
+        "blob": "26bf36b20687f77e2374cbb370e39c8f26e61d87",
+        "bytes": 7557,
+        "sha256": "9468234bc8decf413e8053ff645d2cbe7a5ed881765c2ee2cd31cacd814b1780"
+      },
+      "gitVersion": "git version 2.52.0.windows.1",
+      "command": [
+        "git",
+        "-c",
+        "core.quotepath=false",
+        "diff",
+        "--binary",
+        "--no-ext-diff",
+        "--no-textconv",
+        "--no-color",
+        "2c1f4e17c70377fc80e9f90d044e8e75ed3b5720",
+        "19f7f78bff6bf19a8ff5db47e0c95609524e3870",
+        "--",
+        "prototype/app.js"
+      ],
+      "files": [
+        {
+          "path": "2c1到19f-历史真实Git差异.patch",
+          "bytes": 6670,
+          "sha256": "a39b3fbee5a87d207e1bed1c627a922c0f0486769eaa28b6f0a016772d0150a1"
+        }
+      ],
+      "bundle": {
+        "bytes": 187792,
+        "sha256": "e620fb4bc0de3a97c56c7ef41f355e77c88426c539f1ae46919655898dc29a40"
+      },
+      "scope": "真实历史2c1→19f的Git输出原字节；另一个说明式差异文件为教师归纳。当前单工作台恢复副本不是历史2c1原提交。"
+    },
+    "scope": "四例实际HEAD均85a4；红例仅在工作区恢复两处历史等待行为，绿例恢复当前app.js原字节。不是在两个历史提交直接运行。当前配色后来统一蓝色，app.js及保存业务不变。"
+  },
+  "files": [
+    {
+      "path": "records/凡人原文-20261015/03-保存等待红绿/正确实现-abort/record.json",
+      "bytes": 2757962,
+      "sha256": "c80ae024caf2fc211938447273b0b58cd97a5c4387a901c925bfdea69a1d77bd"
+    },
+    {
+      "path": "records/凡人原文-20261015/03-保存等待红绿/历史恢复-normal/record.json",
+      "bytes": 4828925,
+      "sha256": "be21e1c04304c20031bf02c00d274945ee45085dc33e631f50a57d0b3548a827"
+    },
+    {
+      "path": "records/凡人原文-20261015/03-保存等待红绿/历史恢复-abort/record.json",
+      "bytes": 2757253,
+      "sha256": "db3f44f69b1ddbab035f7872a45dab1f283164bf83575ee2101e55cac0b56c5d"
+    },
+    {
+      "path": "records/凡人原文-20261015/03-保存等待红绿/正确实现-normal/record.json",
+      "bytes": 4851458,
+      "sha256": "722069ef8831d9a3a4e8d0fc3a2f29e41f7ff5a1b4920e49959d0f4fb30d1e43"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/00-输入/历史恢复-abort-完整业务核心.json",
+      "bytes": 1138720,
+      "sha256": "989b869d0891fea6a4f24cd6eddba67f77096d41f9b9e71894424973a8eb1129"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/00-输入/历史恢复-normal-完整业务核心.json",
+      "bytes": 2169046,
+      "sha256": "1ef1e1602ba1c5b90c5f42f3b907ee816bb5efe49ffb54a0fa7688094907072c"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/00-输入/历史恢复app.js",
+      "bytes": 6703,
+      "sha256": "34cf106aedbf9f594e8dcda725f1ce41f58d8bbf5bc06811f6223460bde0ef98"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/00-输入/本轮两处等待行为完整差异.patch",
+      "bytes": 7319,
+      "sha256": "f7636b2ae2c43a59937e481f8f7bbc2811418382daa77be6ae3841141b7c2455"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/00-输入/正确app.js",
+      "bytes": 6818,
+      "sha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/00-输入/正确实现-abort-完整业务核心.json",
+      "bytes": 1138895,
+      "sha256": "fdeddd3c757408429b89a2c9c3c529de4e6f3b76dd18a66943e3ad9a720ee5cd"
+    },
+    {
+      "path": "records/凡人原文-20261015/04-只读代码评审/00-输入/正确实现-normal-完整业务核心.json",
+      "bytes": 2059252,
+      "sha256": "0038f418b5ade64f182e58360f9fe6dc7ac3114410e3e53986880133c131d56b"
+    },
+    {
+      "path": "records/凡人原文-20261015/03-保存等待红绿/独立完整原件核对.json",
+      "bytes": 3998,
+      "sha256": "30327b9f2e4d063d3393fdb4cb0e5f23d5fa69bd3314d0e289bd2e352fbdd522"
+    },
+    {
+      "path": "inputs/独立业务预期.json",
+      "bytes": 8716,
+      "sha256": "5764a996a03db342f7b854abf85812fce3fc0a779d0249458feab278e28e9afd"
+    },
+    {
+      "path": "inputs/完整教师初始化.json",
+      "bytes": 25801,
+      "sha256": "c675e56f0d009037b6fd8b63d7c3d4b3039ea9e88d1063783f1f39834ea7766a"
+    },
+    {
+      "path": "scripts/test-saving.mjs",
+      "bytes": 44421,
+      "sha256": "d20d4d0f7301176c07106688c7329f2bd2d8b58e46678de8fae2a99f6ff28032"
+    },
+    {
+      "path": "prototype/app.js",
+      "bytes": 6818,
+      "sha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63"
+    },
+    {
+      "path": "src/prototype-http.ts",
+      "bytes": 2879,
+      "sha256": "d14a0a5ae416a53af87657308250c9337d29161e0278ec586f2f5622101cfaf7"
+    },
+    {
+      "path": "src/store.ts",
+      "bytes": 12129,
+      "sha256": "2c2142a774d777eb9d22d5a649eaed5d75df3097068d715d3019b91d34bc1dcf"
+    },
+    {
+      "path": "src/schemas.ts",
+      "bytes": 2232,
+      "sha256": "abfb2ad2d21ceae2e515a5500119a95d032311189f59695a630806352f01dd1a"
+    }
+  ]
 }

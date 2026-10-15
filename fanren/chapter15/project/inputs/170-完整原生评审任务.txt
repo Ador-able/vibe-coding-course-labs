@@ -2,7 +2,7 @@
 
 先确认真实Git根、HEAD、分支、工作区、未跟踪文件与当前目录。读取范围限于当前实验project与本节公开材料；不要读全局私密规则、Memory、凭据或原始宿主系统/开发者指令。保留完整输入、真实来源和未完成条件。
 
-请只读评审本次已冻结保存等待改动。先阅读inputs/170-评审对象.json所列的准确base/fixed Git SHA、完整差异、正常保存与服务前abort的四例实录、独立业务预期和测试源码，再读prototype/app.js、src/prototype-http.ts、src/store.ts、src/schemas.ts。
+请只读评审本次已冻结保存等待改动。先阅读inputs/170-评审对象.json所列的实际Git HEAD、红例工作区恢复范围、两份完整app.js与完整差异、正常保存与服务前abort的四例实录、独立业务预期和测试源码，再读prototype/app.js、src/prototype-http.ts、src/store.ts、src/schemas.ts。四例均在同一HEAD：红例只在工作区恢复两处历史等待行为，绿例回到当前app.js原字节，不能冒称在两个历史提交直接运行。每例完整业务核心保留输入、完整章名正文、HTTP及五表；重复DOM/HTML与逐按键页面仍在列出的原始record.json。
 
 业务决定是POST及随后GET全部完成前暂停章名、正文与覆盖编辑动作，结束或失败后恢复；本地完整A和真实修订必须对应。历史旧点只是教师恢复副本；正确点沿用已有修复，不宣称本轮新改小说。
 

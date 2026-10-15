@@ -1,0 +1,26 @@
+{
+  "label": "C-zero",
+  "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-ch15-experiments\\fanren\\chapter15\\project\\prototype",
+  "budget": 0,
+  "version": "codex-cli 0.160.0",
+  "model": "gpt-6.1-sol",
+  "modelProvider": "openai",
+  "instructionSources": [],
+  "threadId": "01a13f08-364f-71e3-8afa-ae0706c05b5b",
+  "turnId": null,
+  "turn": null,
+  "usage": null,
+  "error": null,
+  "interrupted": false,
+  "processExit": {
+    "code": 0,
+    "signal": null
+  },
+  "threadStarts": 1,
+  "ordinaryTurnStarts": 0,
+  "reviewStarts": 0,
+  "commands": [],
+  "fileChanges": [],
+  "scope": "空会话/目录查询，没有模型任务。",
+  "reviewVisibleText": null
+}
