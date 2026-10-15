@@ -18,7 +18,7 @@ test('两个 HTTP 编辑者不能用旧修订覆盖已保存正文，重读与 C
   const server=prototypeServer(store,id);server.listen(0,'127.0.0.1');await once(server,'listening');const address=server.address();assert(address&&typeof address!=='string');const base='http://127.0.0.1:'+address.port;
   try{
     const before=await(await fetch(base+'/api/work?work='+id)).json();assert.deepEqual(before.chapters.map((c:{body:string})=>c.body),archive.chapters.map((c:{body:string})=>c.body));
-    const input={workId:id,chapterNumber:2,expectedWorkRevision:1,expectedChapterRevision:1,expectedPreviousRevisions:[{number:1,revision:1}],title:chapters[1].title,body:chapters[1].body+'\n\n人工修改：林青停下来再看一次。'};
+    const input={workId:id,chapterNumber:2,expectedWorkRevision:1,expectedChapterRevision:1,expectedPreviousRevisions:[{number:1,revision:1}],title:chapters[1].title,body:chapters[1].body+'\n\n【编者注：本轮人工保存的校订备注。】'};
     const a=await fetch(base+'/api/draft',{method:'POST',body:JSON.stringify(input)});assert.equal(a.status,200);const saved=await a.json();assert.equal(saved.revision,2);assert.equal(saved.origin,'human');assert.equal(saved.taskId,null);
     const b=await fetch(base+'/api/draft',{method:'POST',body:JSON.stringify({...input,body:'旧窗口的修改不能覆盖'})});assert.equal(b.status,409);assert.equal((await b.json()).error.code,'STALE_CHAPTER');
     const after=await(await fetch(base+'/api/work?work='+id)).json();assert.equal(after.chapters[1].body,input.body);assert.equal(after.chapters[1].revision,2);assert.equal(after.chapters[2].basisCurrent,false);assert.deepEqual(store.getChapter(id,2),saved);

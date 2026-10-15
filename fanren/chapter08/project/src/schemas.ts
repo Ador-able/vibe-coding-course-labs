@@ -17,7 +17,8 @@ export const draftInput=z.object({
   expectedChapterRevision:z.number().int().nonnegative(),
   expectedPreviousRevisions:z.array(z.object({number:chapterNumber,revision:z.number().int().positive()})),
   title:z.string().trim().min(1),
-  body:z.string().trim().min(1),
+  // 正文保留原有缩进，只拒绝空白内容。
+  body:z.string().regex(/\S/u,'正文不能为空'),
 });
 export const workOutput=workInput.extend({revision:z.number().int().positive()});
 export const chapterOutput=z.object({

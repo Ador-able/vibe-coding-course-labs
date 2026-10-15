@@ -16,7 +16,7 @@ export async function readMaterials(){
   return {work,chapters};
 }
 
-export async function seedPrototype(db,id='qinglan'){
+export async function seedPrototype(db,id='fanren'){
   const archive=await readMaterials();
   const store=new Store(db);
   try{
@@ -24,7 +24,7 @@ export async function seedPrototype(db,id='qinglan'){
     const chapters=[];
     // 每个独立库只导入完整正文，不继承旧修订、采用或任务记录。
     for(const source of archive.chapters){chapters.push(store.saveDraft(draftInput.parse({workId:id,chapterNumber:source.number,expectedWorkRevision:work.revision,expectedChapterRevision:0,expectedPreviousRevisions:chapters.map(c=>({number:c.number,revision:c.revision})),title:source.title,body:source.body}),'human'));}
-    return {work,chapters,scope:'完整青岚教学材料人工导入；资料 r1、三章 r1/draft，没有模型生成或继承采用。'};
+    return {work,chapters,scope:'完整凡人原文片段人工导入；资料 r1、三章 r1/draft，没有模型生成或继承采用。'};
   }finally{store.close();}
 }
-if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){const {values}=parseArgs({options:{db:{type:'string',default:'data/prototype.sqlite'},id:{type:'string',default:'qinglan'}}});console.log(JSON.stringify(await seedPrototype(resolve(values.db),values.id)));}
+if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){const {values}=parseArgs({options:{db:{type:'string',default:'data/fanren/prototype.sqlite'},id:{type:'string',default:'fanren'}}});console.log(JSON.stringify(await seedPrototype(resolve(values.db),values.id)));}

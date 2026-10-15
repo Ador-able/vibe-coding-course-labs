@@ -1,9 +1,9 @@
 {
-  "name": "qinglan-prototype-lab",
+  "name": "fanren-prototype-lab",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "青岚修仙录：原型、跨会话与调整计划实验",
+  "description": "凡人修仙传：原型、跨会话与调整计划实验",
   "packageManager": "pnpm@11.20.0",
   "engines": {
     "node": ">=24.12.0"
