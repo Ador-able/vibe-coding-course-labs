@@ -1,0 +1,60 @@
+{
+  "sourceHead": "8642b7a5961f015fbdbe80f2a2ab6dffaf55f67c",
+  "isolatedGitRoot": "D:/Projects/Knowledge/.coursebook-work/fanren-c15-hook-20261015",
+  "base": "2ecb9888d9d5fe1ffde05112272e151e2dce011e",
+  "final": "f0ee97ac65689fab07bc18b358445a46abc305ba",
+  "hookMode": "100755 de360a820f0a5755e0c0ab05a574d21b9ac3bada 0\t.githooks/pre-commit",
+  "candidateFullyStagedAndWorkingBytesEqual": true,
+  "oldAppSha256": "34cf106aedbf9f594e8dcda725f1ce41f58d8bbf5bc06811f6223460bde0ef98",
+  "fixedAppSha256": "e638434f34b1783bb998b950f19e5ba8ebdd2e418cf4348616d3f8021f618b63",
+  "directAndHookReports": [
+    {
+      "label": "直接运行",
+      "path": "records/凡人原文-20261015/05-真实交付检查/直接运行/record.json",
+      "bytes": 4982495,
+      "sha256": "2375fdf646f7ffa3e5b1a68c82566d1ed09ca30dd84dd0426dc29ed5121108d1",
+      "passed": true,
+      "assertions": 26,
+      "failed": [],
+      "oneRealPostAndCompleteA": true
+    },
+    {
+      "label": "Hook历史拒绝",
+      "path": "records/凡人原文-20261015/05-真实交付检查/Hook历史拒绝/record.json",
+      "bytes": 4877043,
+      "sha256": "bd4b5c961cc11ca232d18bf9e5eb94742fb8a8a7f7e6809981457d90c7577647",
+      "passed": false,
+      "assertions": 26,
+      "failed": [
+        "post等待/title禁用且不可编辑",
+        "post等待/title不能取得焦点且完整A未变",
+        "post等待/body禁用且不可编辑",
+        "post等待/body不能取得焦点且完整A未变",
+        "post等待覆盖、导航、保存和读取暂停，门恰命中一次",
+        "get等待/title禁用且不可编辑",
+        "get等待/title不能取得焦点且完整A未变",
+        "get等待/body禁用且不可编辑",
+        "get等待/body不能取得焦点且完整A未变",
+        "get等待覆盖、导航、保存和读取暂停，门恰命中一次"
+      ],
+      "oneRealPostAndCompleteA": true
+    },
+    {
+      "label": "Hook修复提交",
+      "path": "records/凡人原文-20261015/05-真实交付检查/Hook修复提交/record.json",
+      "bytes": 4982326,
+      "sha256": "89accd73ee96f009b246560f2a218b4fabc66ad537f312f7391243ec7e150369",
+      "passed": true,
+      "assertions": 26,
+      "failed": [],
+      "oneRealPostAndCompleteA": true
+    }
+  ],
+  "environmentFailure": {
+    "receipt": "hook-negative-命令回执.json",
+    "stage": "pnpm11自动依赖预检在无TTY时停止，尚未执行构建/保存测试；原依赖保留。",
+    "resolvedBy": "pnpm_config_verify_deps_before_run=false，仅本次隔离Fixture子进程复用既有依赖，原始Hook文件未改。"
+  },
+  "remoteCI": "未执行，无远端PR或发布",
+  "scope": "本地独立教学Git起点恢复两个历史等待行为，负例为空提交门检查，成功例只提交完整app.js修复。不是原历史Git仓库，不将本地提交冒充GithubCI。"
+}

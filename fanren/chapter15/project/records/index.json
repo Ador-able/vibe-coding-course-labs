@@ -101,5 +101,92 @@
         "title": "正确实现-normal完整原始记录"
       }
     ]
+  },
+  {
+    "lesson": 170,
+    "title": "一次真实原生代码评审",
+    "summary": "唯一原生review/start，普通turn/start为0；完整可见评审未发现冻结等待差异引入的高置信度问题。它读取既有实测，没有重跑测试。",
+    "comparison": {
+      "columns": [
+        "已核事实",
+        "仍未验证"
+      ],
+      "rows": [
+        [
+          "历史正常59/79、正确正常79/79；两次服务前中断54/54",
+          "覆盖编辑按钮仅查disabled，未实际点击"
+        ],
+        [
+          "源码与业务前后保持；16条实际命令",
+          "服务提交后GET失败、真实并发与审美"
+        ]
+      ]
+    },
+    "finalResponse": "records/凡人原文-20261015/04-只读代码评审/01-实际原生review/review/final-response.txt",
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/04-只读代码评审/01-实际原生review/report.json",
+        "title": "原生review真实统计"
+      },
+      {
+        "path": "records/凡人原文-20261015/04-只读代码评审/01-实际原生review/review/protocol.jsonl",
+        "title": "完整原生协议"
+      },
+      {
+        "path": "inputs/170-评审对象.json",
+        "title": "冻结对象与完整原件SHA"
+      }
+    ]
+  },
+  {
+    "lesson": 177,
+    "title": "完整保存检查实际进入Git提交",
+    "summary": "复用已有检查直接运行，并在本地独立Git实验库通过真实pre-commit触发。未发起177自然模型任务，未执行远端CI。",
+    "comparison": {
+      "columns": [
+        "真实执行",
+        "结果",
+        "提交"
+      ],
+      "rows": [
+        [
+          "直接正常检查",
+          "26/26通过",
+          "未提交"
+        ],
+        [
+          "历史行为空提交门检查",
+          "16/26通过，10项等待失败",
+          "Git拒绝，HEAD保持"
+        ],
+        [
+          "完整暂存正确app.js后提交",
+          "26/26通过",
+          "实际提交f0ee97a"
+        ]
+      ]
+    },
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/05-真实交付检查/独立提交与完整原件核对.json",
+        "title": "独立Git起点/完成点、全部范围与前置环境失败"
+      },
+      {
+        "path": "records/凡人原文-20261015/05-真实交付检查/直接运行/record.json",
+        "title": "直接运行完整原始记录"
+      },
+      {
+        "path": "records/凡人原文-20261015/05-真实交付检查/Hook历史拒绝/record.json",
+        "title": "Hook历史拒绝完整原始记录"
+      },
+      {
+        "path": "records/凡人原文-20261015/05-真实交付检查/Hook修复提交/record.json",
+        "title": "Hook修复提交完整原始记录"
+      },
+      {
+        "path": "records/凡人原文-20261015/05-真实交付检查/隔离Git完整实际差异.patch",
+        "title": "实际提交完整差异"
+      }
+    ]
   }
 ]
