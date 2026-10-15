@@ -1,0 +1,28 @@
+{
+  "task": {
+    "id": "b539601e-49eb-4a32-bbc3-1701b4bad504",
+    "workId": "fanren",
+    "chapterNumber": 1,
+    "codeVersion": "05bcd2ae89cfd1ee393fe15ed2181058075dcbeece159525eecea3f796182f1b",
+    "threadId": "01a13d35-b632-76f3-9608-a9b5b84c4409",
+    "state": "cancelled",
+    "createdAt": "2026-10-15T01:38:12.560Z",
+    "updatedAt": "2026-10-15T01:38:17.597Z",
+    "error": "The operation was aborted",
+    "usage": null
+  },
+  "baselineRevision": 1,
+  "savedDuringTask": false,
+  "chapter": {
+    "number": 1,
+    "revision": 1,
+    "status": "draft",
+    "workRevision": 1,
+    "taskId": null,
+    "threadId": null,
+    "characters": 1064
+  },
+  "toolCalls": [],
+  "finalResponse": "",
+  "limits": "运行状态与保存结果分别记录；文学品质和设定语义仍需人读正文判断。"
+}

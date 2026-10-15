@@ -1,0 +1,60 @@
+{
+  "A": {
+    "taskId": "b90f159c-d9f9-4d93-9ac0-6c15856c11ef",
+    "reuse": "第一节真实保存记录",
+    "han": 917,
+    "state": "completed",
+    "savedDuringTask": true,
+    "saveCalls": 1
+  },
+  "B": {
+    "taskId": "d67517f4-fbc4-4022-ac9e-34bcf297d461",
+    "reuse": "第四节方向未决记录",
+    "state": "completed",
+    "saveCalls": 0,
+    "chapter": null
+  },
+  "C": {
+    "taskId": "dac44ee6-59c5-4087-975c-ebf9b8b9a0a0",
+    "new": true,
+    "state": "completed",
+    "savedDuringTask": false,
+    "saveCalls": 1,
+    "proposedHan": 893,
+    "saveStatus": "failed",
+    "toolError": {
+      "code": "STORE_ERROR",
+      "message": "课堂写入故障：章节写入暂不可用；本轮条件保持不变。"
+    },
+    "postSaveReads": [
+      [
+        "read_chapter",
+        null
+      ],
+      [
+        "list_chapters",
+        []
+      ]
+    ],
+    "independentChapter": null,
+    "independentDirectory": []
+  },
+  "cancel": {
+    "taskId": "b539601e-49eb-4a32-bbc3-1701b4bad504",
+    "new": true,
+    "state": "cancelled",
+    "savedDuringTask": false,
+    "events": [
+      "thread.started",
+      "turn.started"
+    ],
+    "modelTools": 0,
+    "usage": null,
+    "finalResponse": "",
+    "beforeAfterWholeChapterEqual": true,
+    "baselineRevision": 1,
+    "baselineOrigin": "human",
+    "baselineBodySha256": "d02e58973daa0f23b7baf81fdcb525004ec4a8974895dc5c4ea04eb0ecec27d8"
+  },
+  "limits": "A/B复用真实历史样本，仅新增C与取消各一次。C为受控教学故障；取消库人工载入A副本，不是假称新生成。没有可靠率或速度排名。"
+}
