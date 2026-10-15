@@ -1,0 +1,15 @@
+{
+  "codeVersion": "2add5c70795088183d2aa910a8a0abbfd9baf410",
+  "modelCalls": 0,
+  "savedEqualsIndependentCLI": true,
+  "finalEqualsIndependentSQLite": true,
+  "allThreeVersionsOnly": true,
+  "humanR3Preserved": true,
+  "noChapter2": true,
+  "threeClosePids": {
+    "正常连接": null,
+    "断连": null,
+    "调用者异常": null
+  },
+  "limits": "原文段落由人准备；origin agent来自保存入口。断连时无待执行写入，不证明在途写入撤回。"
+}
