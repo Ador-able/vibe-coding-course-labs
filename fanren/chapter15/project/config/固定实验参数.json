@@ -14,12 +14,12 @@
     "deliveryMs": 1200000,
     "interruptGraceMs": 60000
   },
-  "modelTasksPlanned": 5,
+  "modelTasksPlanned": 3,
   "emptySessionsPlanned": 3,
   "browserCasesPlanned": {
     "regression": 4,
     "deliveryDirect": 2,
     "deliveryGitHook": 2
   },
-  "scope": "5次自然客户端任务，不等于5次底层模型调用；保留实际模型、终态、完整命令和原答。未显式更改思考配置。"
+  "scope": "3次自然客户端任务：只读调查、规则调查、原生代码评审；不等于3次底层模型请求。测试和交付检查复用已有脚本，用本轮完整原文重新运行；没有新小说生成或文学采用。"
 }

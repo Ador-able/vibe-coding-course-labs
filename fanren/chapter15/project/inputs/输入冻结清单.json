@@ -2,43 +2,43 @@
   "files": [
     {
       "path": "162-准备完整当前对象.json",
-      "bytes": 52608,
-      "sha256": "e2f2a79afa009d9292c2f8b366fc1ddc9d5200972d275ded70cd7b7c3133dc6c"
+      "bytes": 78695,
+      "sha256": "9e65b3be3c15d048b51141d4e2cb57a006fce17e9e545a594b753fa6b53d1022"
     },
     {
       "path": "162-完整调查任务.txt",
-      "bytes": 2047,
-      "sha256": "872368bad8a0e3146075b9a055cd14ce545e738914daab33e6416736c849fdc2"
+      "bytes": 2125,
+      "sha256": "0dc26019b62c4dadc3ef3a98a383c7f617d75bfcf124b41ddb64b13533252ffc"
     },
     {
       "path": "164-完整规则调查任务.txt",
-      "bytes": 1685,
-      "sha256": "bcc18e8d136f43e0fc6f6a5c0494fdae09a393471061a8e8b6900aa50ec9ab29"
+      "bytes": 1763,
+      "sha256": "6066dacc05063fd0717c8fda254c388f4a186308489e1058e94e35a7b643d02c"
     },
     {
       "path": "165-完整测试任务.txt",
-      "bytes": 3330,
-      "sha256": "f0d71f2c502c6fba67013dea3b485a3a17a28effe264231ff5c372ce17529e45"
+      "bytes": 3408,
+      "sha256": "657157e5e60a2b7bfba7bc81c598b350da054fb038de8759b50661d33384d9cd"
     },
     {
       "path": "170-完整原生评审任务.txt",
-      "bytes": 1824,
-      "sha256": "08790fef3665f0c845893f6fbb2eba327d9177b5554d150d19f3ad1c1de60294"
+      "bytes": 1902,
+      "sha256": "8bdfa4a2606a528fed9df41c1e6f350499bab2a9d47766e70d7a9982a25139ca"
     },
     {
       "path": "170-评审对象.json",
-      "bytes": 13350,
-      "sha256": "97aa0df2f2c7023704ff8fee9d6c31e95f8d48808ff56e1506b9edc700491f6f"
+      "bytes": 126,
+      "sha256": "953730d931961cd1aa3465526bf8b1db70e056623876a016538872c587772bca"
     },
     {
       "path": "177-前置实录索引.json",
-      "bytes": 18423,
-      "sha256": "126a847ea32cb2777ff57ea68f207dfee775a903920c8a0b2998449a2cbedc27"
+      "bytes": 111,
+      "sha256": "9dd705b5dcac8300ea59ddd2eab3368b446f723b2fda805d94fd5fdf27ad9e3e"
     },
     {
       "path": "177-完整交付任务.txt",
-      "bytes": 3739,
-      "sha256": "87f110f8c4823afcb963e85148c425eb72e3faca32d8531493e195548337ee39"
+      "bytes": 3816,
+      "sha256": "1c86869bc5c0051a0ec5447fa4e248d4b39506819df565f121d827e4cd916d54"
     },
     {
       "path": "CI官方版本与范围.json",
@@ -47,28 +47,23 @@
     },
     {
       "path": "五节Git与实测计划.json",
-      "bytes": 2080,
-      "sha256": "56529c4484c65cd4aac1156f38775c80fdb00f3193f79bb4c58bc4f8948c2f00"
+      "bytes": 381,
+      "sha256": "9d43e918d50bd959a125a2015a4d88c8df3ee6da3116c6a584dcd426e1996755"
+    },
+    {
+      "path": "凡人修仙传-三段原文.json",
+      "bytes": 22073,
+      "sha256": "0a6d29fe3015880465482c777a3a252aa8a110ba8730b875ef3586ab88709585"
     },
     {
       "path": "完整教师初始化.json",
-      "bytes": 12147,
-      "sha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147"
+      "bytes": 25801,
+      "sha256": "c675e56f0d009037b6fd8b63d7c3d4b3039ea9e88d1063783f1f39834ea7766a"
     },
     {
       "path": "独立业务预期.json",
-      "bytes": 5127,
-      "sha256": "9b2080f4f9d3c0d4ba830dc5299d04ae538cc2b0237500f0b220b87fd6b4195e"
-    },
-    {
-      "path": "长文-完整三章与段落定位.json",
-      "bytes": 27459,
-      "sha256": "1c8d71fdb81e09d34cb89982e39b8546975e9cb63d26cf474badc398d0374170"
-    },
-    {
-      "path": "青岚修仙录-三章原始课堂存档.md",
-      "bytes": 10231,
-      "sha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf"
+      "bytes": 8716,
+      "sha256": "5764a996a03db342f7b854abf85812fce3fc0a779d0249458feab278e28e9afd"
     }
   ]
 }

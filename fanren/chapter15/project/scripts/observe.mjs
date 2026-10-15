@@ -56,7 +56,7 @@ async function observeCase({label,cwd,budget,readOnly,prompt=null,nativeReview=f
   };
   const directories={};
   try{
-    await h.request('initialize',{clientInfo:{name:'qinglan_ch15_observer',version:'1.0.0'},capabilities:{experimentalApi:true}});h.send({method:'initialized',params:{}});
+    await h.request('initialize',{clientInfo:{name:'fanren_ch15_observer',version:'1.0.0'},capabilities:{experimentalApi:true}});h.send({method:'initialized',params:{}});
     directories.configuration=configurationProjection(await h.request('config/read',{cwd,includeLayers:false}));
     directories.hooks=await h.request('hooks/list',{cwds:[cwd]});directories.skills=await h.request('skills/list',{cwds:[cwd],forceReload:true});
     if(directories.configuration.developerInstructionsPresent||directories.configuration.features?.apps!==false||directories.configuration.features?.hooks!==false||directories.configuration.web_search!=='disabled'||directories.skills.data.some(item=>item.skills.some(skill=>skill.enabled)||item.errors?.length)||directories.hooks.data.some(item=>item.hooks.length||item.errors.length))throw new Error('实际目录超出冻结范围；未调用模型。');

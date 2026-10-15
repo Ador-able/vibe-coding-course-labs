@@ -21,7 +21,7 @@ const sourcePaths = [
   'prototype/index.html', 'prototype/app.css', 'src/prototype-http.ts', 'src/store.ts', 'src/schemas.ts',
   'scripts/seed.mjs', 'scripts/test-saving.mjs', 'docs/workbench-boundaries.md',
   'docs/save-review.md', 'inputs/完整教师初始化.json', 'inputs/独立业务预期.json',
-  'inputs/输入冻结清单.json', 'inputs/青岚修仙录-三章原始课堂存档.md',
+  'inputs/输入冻结清单.json', 'inputs/凡人修仙传-三段原文.json',
   'materials/historical/保存等待旧缺陷差异.patch',
   'materials/historical/保存等待历史行为.json',
   'materials/historical/历史真实Git差异来源.json',
@@ -283,7 +283,7 @@ function assertBusiness(report, observed, input, expectation, A, finalDb) {
   equals('独立拼接A与预期全文一致', A, expectation?.expectedA);
   equals('完整输入章节顺序', input?.chapters?.map(c => c.number), [1, 2, 3]);
   equals('预期只编辑第二章', expectation?.chapterNumber, 2);
-  for (const path of ['完整教师初始化.json', '独立业务预期.json', '青岚修仙录-三章原始课堂存档.md']) {
+  for (const path of ['完整教师初始化.json', '独立业务预期.json', '凡人修仙传-三段原文.json']) {
     check(report, `冻结输入字节和SHA ${path}`, () => {
       const manifest = JSON.parse(report.sources['inputs/输入冻结清单.json'].utf8).files.find(item => item.path === path);
       const source = report.sources[`inputs/${path}`];
@@ -291,8 +291,8 @@ function assertBusiness(report, observed, input, expectation, A, finalDb) {
       assert.equal(source.bytes, manifest.bytes);
     });
   }
-  equals('课堂存档真实来源SHA', report.sources['inputs/青岚修仙录-三章原始课堂存档.md']?.sha256, input?.source?.sha256);
-  equals('课堂存档真实来源字节数', report.sources['inputs/青岚修仙录-三章原始课堂存档.md']?.bytes, input?.source?.bytes);
+  equals('课堂存档真实来源SHA', report.sources['inputs/凡人修仙传-三段原文.json']?.sha256, input?.source?.sha256);
+  equals('课堂存档真实来源字节数', report.sources['inputs/凡人修仙传-三段原文.json']?.bytes, input?.source?.bytes);
   equals('seed使用完整冻结输入', report.initialization?.inputSha256, report.sources['inputs/完整教师初始化.json']?.sha256);
   equals('seed保留真实存档来源和初始化范围', report.initialization &&
     {kind: report.initialization.kind, source: report.initialization.source, scope: report.initialization.scope},

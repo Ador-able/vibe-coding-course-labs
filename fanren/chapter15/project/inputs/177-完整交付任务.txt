@@ -1,4 +1,4 @@
-你在青岚修仙录小说工作台的独立练习项目中。完整三章来自既有课堂存档，不是本轮模型新写或新采用的小说。林青为青岚宗外门弟子、炼气三层，筑基是长远愿望。不要增加突破、拿起铜片或声音触发手影等事实。
+你在《凡人修仙传》小说工作台的独立练习项目中。教学第一至三章分别完整导入C03、C04、C05原文片段，不是原书章号，也不是本轮模型创作。作品大纲与设定限于三段原文；原作出自忘语。保留正午期限、记名例外、半年后复试条件与医术“也许”的限定，不增加后文事实。
 
 先确认真实Git根、HEAD、分支、工作区、未跟踪文件与当前目录。读取范围限于当前实验project与本节公开材料；不要读全局私密规则、Memory、凭据或原始宿主系统/开发者指令。保留完整输入、真实来源和未完成条件。
 
@@ -8,7 +8,7 @@
 
 新检查只跑一个正常保存实例，使用独立runs/delivery-saving-UUID/SQLite与同一完整预期；复用成熟Store/真实HTTP/seed/Playwright。两门、正常键盘、完整请求响应、读回刷新和五表历史按独立预期执行，观察完成后统一断言，环境/记录/清理失败分别保留，非零传播；不复制弱undefined断言。浏览器默认Chromium，Windows可用DELIVERY_BROWSER_CHANNEL=msedge明确选择，没有自动回退。
 
-package增加test:delivery=node --test scripts/check-saving-delivery.mjs、check:delivery=pnpm run build && pnpm run test:delivery。Git钩子位于课程Git根，通过pnpm --dir qinglan/chapter15/project run check:delivery调用本章入口，exec传播非零，不挂其他章节全套。使用LF/100755并写清core.hooksPath需在自己的clone显式启用，不改本轮仓库配置或Git暂存。普通钩子检查工作区；本次验证完整暂存且worktree/index逐项相同，不声称任意部分暂存已经被检查。
+package增加test:delivery=node --test scripts/check-saving-delivery.mjs、check:delivery=pnpm run build && pnpm run test:delivery。Git钩子位于课程Git根，通过pnpm --dir fanren/chapter15/project run check:delivery调用本章入口，exec传播非零，不挂其他章节全套。使用LF/100755并写清core.hooksPath需在自己的clone显式启用，不改本轮仓库配置或Git暂存。普通钩子检查工作区；本次验证完整暂存且worktree/index逐项相同，不声称任意部分暂存已经被检查。
 
 PR YAML只定义pull_request本章相关路径及同一必要检查，contents:read，既有Node24.12.0/pnpm11.20.0/锁依赖与Chromium前置；记录event、PR head/base、事件SHA与实际git rev-parse HEAD，保存真实runs/delivery-saving-*证据。Actions版本从inputs/CI官方版本与范围.json取得，该文件未核实前不能猜版本。只定义配置，不创建PR、不触发远端、不合并、不设置分支保护。
 

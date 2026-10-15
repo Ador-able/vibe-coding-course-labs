@@ -1,0 +1,26 @@
+{
+  "scope": "均发生在模型任务之前，不是模型或业务保存的失败；错误文字为节选。",
+  "events": [
+    {
+      "command": "pnpm run build",
+      "exitCode": 1,
+      "errorCode": "ERR_PNPM_ABORTED_REMOVE_MODULES_DIR_NO_TTY",
+      "excerpt": "Aborted removal of modules directory due to no TTY",
+      "followup": "已有依赖仍在；pnpm --config.verify-deps-before-run=false exec tsc -p tsconfig.json退出0。"
+    },
+    {
+      "command": "node scripts/seed.mjs",
+      "exitCode": 1,
+      "errorCode": "ERR_MODULE_NOT_FOUND",
+      "excerpt": "尚无dist/store.js",
+      "followup": "构建后按最终材料初始化独立库；三份原文完整保持。"
+    },
+    {
+      "command": "node scripts/observe.mjs preflight --record fanren-preflight-01",
+      "exitCode": 1,
+      "errorCode": "ENOBUFS",
+      "excerpt": "未提交的历史搬移使git diff --binary超过默认缓冲。宿主尚未启动，零线程、零模型任务。",
+      "followup": "先提交输入与源码，再核空会话目录。"
+    }
+  ]
+}

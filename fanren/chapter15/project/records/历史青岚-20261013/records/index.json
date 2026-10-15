@@ -1,0 +1,299 @@
+[
+  {
+    "lesson": 162,
+    "title": "完整草稿与保存链路",
+    "summary": "源码中的保存链路，从页面完整草稿进入事务，再读取当前作品。此次调查只读，没有执行保存。",
+    "finalResponse": "records/investigation-02/investigation/final-response.txt",
+    "files": [
+      {
+        "title": "实际调查完整报告",
+        "path": "records/investigation-02/report.json"
+      },
+      {
+        "title": "实际调查原协议",
+        "path": "records/investigation-02/investigation/protocol.jsonl"
+      },
+      {
+        "title": "开始与结束的完整业务对象",
+        "path": "records/investigation-02/before.json"
+      },
+      {
+        "title": "结束完整对象",
+        "path": "records/investigation-02/after.json"
+      },
+      {
+        "title": "前置目录失败原报告（0模型任务）",
+        "path": "records/investigation-01/report.json"
+      }
+    ],
+    "comparison": {
+      "columns": [
+        "环节",
+        "程序职责"
+      ],
+      "rows": [
+        [
+          "页面",
+          "保留完整章名、正文与保存依据"
+        ],
+        [
+          "POST /api/draft",
+          "Store事务保存本次草稿，再返回该修订"
+        ],
+        [
+          "随后GET",
+          "读取当前作品与三章，核对页面显示"
+        ],
+        [
+          "刷新与历史",
+          "从已保存对象继续核对完整正文"
+        ]
+      ]
+    }
+  },
+  {
+    "lesson": 164,
+    "title": "规则加载与参考读取",
+    "summary": "三份空会话返回不同规则来源；另一次保存调查实际读取了项目根的 docs/save-review.md。",
+    "finalResponse": "records/rules-01/rules/final-response.txt",
+    "files": [
+      {
+        "title": "三份空会话完整报告",
+        "path": "records/rules-sources-01/report.json"
+      },
+      {
+        "title": "实际规则任务完整报告",
+        "path": "records/rules-01/report.json"
+      },
+      {
+        "title": "规则任务完整原协议",
+        "path": "records/rules-01/rules/protocol.jsonl"
+      },
+      {
+        "title": "任务开始完整对象",
+        "path": "records/rules-01/before.json"
+      },
+      {
+        "title": "任务结束完整对象",
+        "path": "records/rules-01/after.json"
+      }
+    ],
+    "comparison": {
+      "columns": [
+        "会话条件",
+        "实际规则来源"
+      ],
+      "rows": [
+        [
+          "项目根目录",
+          "项目AGENTS.md"
+        ],
+        [
+          "prototype目录",
+          "项目AGENTS.md + 目录AGENTS.md"
+        ],
+        [
+          "关闭文件规则",
+          "空列表"
+        ]
+      ]
+    }
+  },
+  {
+    "lesson": 165,
+    "title": "保存等待的旧版与正确版",
+    "summary": "同一脚本在两个冻结副本各运行一次。旧副本在等待中仍可编辑，读回替换了这些等待输入；正确应用保持完整A。四个独立库均已完整读回。",
+    "files": [
+      {
+        "title": "历史恢复点 · 正常保存完整记录",
+        "path": "records/regression-old-normal/record.json"
+      },
+      {
+        "title": "历史恢复点 · 服务前abort完整记录",
+        "path": "records/regression-old-abort/record.json"
+      },
+      {
+        "title": "正确点 · 正常保存完整记录",
+        "path": "records/regression-fixed-normal/record.json"
+      },
+      {
+        "title": "正确点 · 服务前abort完整记录",
+        "path": "records/regression-fixed-abort/record.json"
+      },
+      {
+        "title": "中断生成完整原协议",
+        "path": "records/tests-01/tests/protocol.jsonl"
+      },
+      {
+        "title": "中断生成完整报告",
+        "path": "records/tests-01/report.json"
+      },
+      {
+        "title": "生成任务最后进度（非正式最终回答）",
+        "path": "records/tests-01/tests/final-response.txt"
+      },
+      {
+        "title": "四库独立完整读回",
+        "path": "records/regression/165-主编独立四库完整读回.json"
+      },
+      {
+        "title": "全部原件及字节清单",
+        "path": "records/regression/完整原件清单.json"
+      }
+    ],
+    "comparison": {
+      "columns": [
+        "应用",
+        "正常保存",
+        "服务前abort"
+      ],
+      "rows": [
+        [
+          "历史行为恢复副本",
+          "20项等待检查失败",
+          "通过"
+        ],
+        [
+          "正确应用",
+          "通过",
+          "通过"
+        ]
+      ]
+    }
+  },
+  {
+    "lesson": 170,
+    "title": "核实原生代码评审",
+    "summary": "原生评审未报告材料支持的新增正确性问题。完整报告与人工读回相互核对，结论保留实际覆盖范围。",
+    "finalResponse": "records/review-01/review/final-response.txt",
+    "files": [
+      {
+        "title": "原生评审完整报告",
+        "path": "records/review-01/report.json"
+      },
+      {
+        "title": "完整原协议",
+        "path": "records/review-01/review/protocol.jsonl"
+      },
+      {
+        "title": "普通回复单独原件",
+        "path": "records/review-01/review/agent-message.txt"
+      },
+      {
+        "title": "评审实际输入",
+        "path": "records/review-01/review/input.json"
+      },
+      {
+        "title": "评审开始完整对象",
+        "path": "records/review-01/before.json"
+      },
+      {
+        "title": "评审结束完整对象",
+        "path": "records/review-01/after.json"
+      },
+      {
+        "title": "四例实际进程退出回执",
+        "path": "records/regression/165-主编实际执行进程回执.json"
+      }
+    ],
+    "comparison": {
+      "columns": [
+        "核对对象",
+        "实际记录"
+      ],
+      "rows": [
+        [
+          "原生评审",
+          "已完成，完整可见报告保留"
+        ],
+        [
+          "人工独立读回",
+          "四库全列、完整A、修订与真实请求一致"
+        ],
+        [
+          "覆盖范围",
+          "服务提交后GET失败、真实并发、视觉审美未运行"
+        ]
+      ]
+    }
+  },
+  {
+    "lesson": 177,
+    "title": "把保存检查接入提交",
+    "summary": "同一检查直接运行，再由Git提交触发。旧版在保存等待中接纳输入，读回后文字消失；正确版暂停等待编辑并保存完整A。第二章是否正式采用仍待内容负责人决定，远端CI未运行。",
+    "finalResponse": "records/delivery-01/delivery/final-response.txt",
+    "files": [
+      {
+        "title": "旧版直接检查 · 完整记录",
+        "path": "records/delivery-old-direct/record.json"
+      },
+      {
+        "title": "正确版直接检查 · 完整记录",
+        "path": "records/delivery-fixed-direct/record.json"
+      },
+      {
+        "title": "旧版Git钩子检查 · 完整记录",
+        "path": "records/delivery-old-hook/record.json"
+      },
+      {
+        "title": "正确版Git钩子检查 · 完整记录",
+        "path": "records/delivery-fixed-hook/record.json"
+      },
+      {
+        "title": "完整原件及字节清单",
+        "path": "records/delivery/完整原件清单.json"
+      },
+      {
+        "title": "旧版Git触发与退出",
+        "path": "records/delivery/177-旧副本Hook-trace2.jsonl"
+      },
+      {
+        "title": "正确版Git触发与退出",
+        "path": "records/delivery/177-正确副本Hook-trace2.jsonl"
+      },
+      {
+        "title": "生成任务完整报告",
+        "path": "records/delivery-01/report.json"
+      },
+      {
+        "title": "完整原协议与过程",
+        "path": "records/delivery-01/delivery/protocol.jsonl"
+      },
+      {
+        "title": "原模型中文说明",
+        "path": "records/delivery-generated/qinglan/chapter15/project/docs/delivery-check.md"
+      },
+      {
+        "title": "原模型完整检查程序",
+        "path": "records/delivery-generated/qinglan/chapter15/project/scripts/check-saving-delivery.mjs"
+      },
+      {
+        "title": "任务开始完整对象",
+        "path": "records/delivery-01/before.json"
+      },
+      {
+        "title": "任务结束完整对象",
+        "path": "records/delivery-01/after.json"
+      }
+    ],
+    "comparison": {
+      "columns": [
+        "入口",
+        "旧等待行为",
+        "当前正确行为"
+      ],
+      "rows": [
+        [
+          "直接检查",
+          "等待编辑要求失败，退出1",
+          "26项通过，退出0"
+        ],
+        [
+          "Git提交触发",
+          "钩子阻止提交，HEAD不变",
+          "钩子通过，实际提交五项文件"
+        ]
+      ]
+    }
+  }
+]
