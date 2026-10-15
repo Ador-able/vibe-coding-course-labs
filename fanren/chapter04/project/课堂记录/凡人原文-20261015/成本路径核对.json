@@ -1,0 +1,144 @@
+{
+  "runId": "2026-10-15T00-43-25.231Z-225f2b89-a862-4244-ac6a-d14aebf9496b",
+  "cases": [
+    {
+      "pair": "P1",
+      "sample": "S2",
+      "draftBodyHan": 1054,
+      "reviewBodyHan": 973,
+      "exactlySame": false,
+      "draftExcerpt": "竹林已经落在身后，可两条腿还像走在那条没完没了的斜坡上，沉得抬不起来。他把右脚挪高一点，膝盖碰上尖石，破开的裤子里顿时一阵刺痛。他咬住嘴唇，没叫出声，只把脚重新放稳。",
+      "reviewExcerpt": "竹林已经落在身后，两条腿却沉得抬不起来。他把右脚挪高一点，膝盖碰上尖石，破开的裤子里顿时一阵刺痛。他咬住嘴唇，把脚重新放稳。",
+      "observation": "两稿事实与结束范围相容；第二稿压缩原有相容表达，未仅处理不符位置。"
+    },
+    {
+      "pair": "P2",
+      "sample": "S3",
+      "draftBodyHan": 1096,
+      "reviewBodyHan": 979,
+      "exactlySame": false,
+      "draftExcerpt": "韩立坐在地上，双腿还在发抖。他把手藏到膝间，不敢看站在前面的岳堂主。来时父亲和三叔的话还记得清楚，可他拼尽力气，到底没能按时爬完。",
+      "reviewExcerpt": "韩立坐在地上，双腿还在发抖。父亲和三叔的话他都记得，可拼尽力气，到底没能按时爬完。",
+      "observation": "两稿事实与结束范围相容；第二稿压缩原有相容表达，未仅处理不符位置。"
+    }
+  ],
+  "costs": {
+    "pairs": [
+      {
+        "pair": "P1",
+        "sample": "S2",
+        "A": {
+          "callIds": [
+            "P1-draft"
+          ],
+          "calls": 1,
+          "elapsedMs": 53975.5242,
+          "usage": {
+            "input_tokens": 23459,
+            "cached_input_tokens": 10112,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1206,
+            "reasoning_output_tokens": 39
+          }
+        },
+        "B": {
+          "callIds": [
+            "P1-draft",
+            "P1-review"
+          ],
+          "calls": 2,
+          "elapsedMs": 83269.3593,
+          "usage": {
+            "input_tokens": 48289,
+            "cached_input_tokens": 15104,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2389,
+            "reasoning_output_tokens": 141
+          }
+        },
+        "reviewState": "completed",
+        "qualifiedA": null,
+        "qualifiedB": null
+      },
+      {
+        "pair": "P2",
+        "sample": "S3",
+        "A": {
+          "callIds": [
+            "P2-draft"
+          ],
+          "calls": 1,
+          "elapsedMs": 40165.371399999975,
+          "usage": {
+            "input_tokens": 23586,
+            "cached_input_tokens": 0,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 1209,
+            "reasoning_output_tokens": 25
+          }
+        },
+        "B": {
+          "callIds": [
+            "P2-draft",
+            "P2-review"
+          ],
+          "calls": 2,
+          "elapsedMs": 68207.62629999997,
+          "usage": {
+            "input_tokens": 48560,
+            "cached_input_tokens": 4992,
+            "cache_write_input_tokens": 0,
+            "output_tokens": 2345,
+            "reasoning_output_tokens": 95
+          }
+        },
+        "reviewState": "completed",
+        "qualifiedA": null,
+        "qualifiedB": null
+      }
+    ],
+    "A": {
+      "callIds": [
+        "P1-draft",
+        "P2-draft"
+      ],
+      "calls": 2,
+      "elapsedMs": 94140.89559999997,
+      "usage": {
+        "input_tokens": 47045,
+        "cached_input_tokens": 10112,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2415,
+        "reasoning_output_tokens": 64
+      }
+    },
+    "B": {
+      "callIds": [
+        "P1-draft",
+        "P1-review",
+        "P2-draft",
+        "P2-review"
+      ],
+      "calls": 4,
+      "elapsedMs": 151476.98559999999,
+      "usage": {
+        "input_tokens": 96849,
+        "cached_input_tokens": 20096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4734,
+        "reasoning_output_tokens": 236
+      }
+    },
+    "recordedCalls": 4,
+    "newCalls": 2,
+    "skippedReviews": 0,
+    "unknowns": {
+      "money": null,
+      "humanTimeMs": null,
+      "effectiveModel": null,
+      "internalRetryCount": null
+    },
+    "boundary": "A与B共享同一初稿，实际调用数不能把A.calls和B.calls相加。B是完整路径，包含初稿和审稿；合格结论待阅读全文，不自动填入。"
+  },
+  "interpretation": "复用前节两次真实初稿，仅新增两次核对。两种路径各2/2满足六类章稿最低条件；两次核对均压缩相容内容，修改范围另记不满足。文学品质和采用未测，金额与真人工时未知。"
+}

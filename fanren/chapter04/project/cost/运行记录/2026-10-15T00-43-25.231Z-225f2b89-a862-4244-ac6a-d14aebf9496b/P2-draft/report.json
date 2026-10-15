@@ -1,0 +1,32 @@
+{
+  "id": "P2-draft",
+  "sample": "S3",
+  "method": "A",
+  "phase": "heldout",
+  "state": "completed",
+  "startedAt": "2026-10-15T00:37:24.678Z",
+  "endedAt": "2026-10-15T00:38:04.844Z",
+  "elapsedMs": 40165.371399999975,
+  "threadId": "01a13cfe-0c7f-7a70-b675-a75e59263156",
+  "promptSha256": "eb2576cbfeb65eca53f9a12a8213a34abbf803c13ed2eab51323da3467a311eb",
+  "outputSha256": "97e2e3dc74c44cac81fc2d723a48fe3f345e2090bbd413891a9e8a89d859d9a5",
+  "outputUtf16": 1348,
+  "usageEvents": [
+    {
+      "input_tokens": 23586,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1209,
+      "reasoning_output_tokens": 25
+    }
+  ],
+  "toolEvents": [],
+  "failure": null,
+  "scriptRetries": 0,
+  "internalRetryCount": null,
+  "limits": "公开调用完成不等于正文合格；按当前完整任务逐份核对。生效型号、内部重试、实际金额和真人工时未知。",
+  "pair": "P2",
+  "step": "draft",
+  "importedFrom": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter04\\project\\evaluation\\运行记录\\2026-10-15T00-34-23.662Z-cd7031af-81a6-4aa3-8e9f-71b5fa29d01e\\5-S3-A",
+  "newlyExecuted": false
+}

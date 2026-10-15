@@ -1,9 +1,9 @@
 * text=auto
 *.md text eol=lf
 *.ts text eol=lf
-qinglan/**/materials/** -text
-qinglan/**/records/** -text
-qinglan/**/课堂记录/** -text
-qinglan/**/运行记录/** -text
-qinglan/**/*.json -text
-qinglan/**/*.jsonl -text
+fanren/**/materials/** -text
+fanren/**/records/** -text
+fanren/**/课堂记录/** -text
+fanren/**/运行记录/** -text
+fanren/**/*.json -text
+fanren/**/*.jsonl -text

@@ -25,3 +25,20 @@ pnpm experiment
 每次运行独立保存到“运行记录”，包括固定输入、源码版本、完整提示、公开事件、输出、耗时、用量和错误。每次最多等待180秒，失败保留，不自动重试。沿用默认模型，关闭旧记忆使用和新记忆生成，不读取其他故事材料。
 
 按“材料/核对记录模板.md”读完整草稿，分别判断事实、完整交付与文学品质。生效型号、实际账单、人工审阅工时未取得时保留未知；单轮结果不作普遍结论。
+
+## 继续反馈与比较
+
+直接打开“局部反馈实录.html”“评估样本实录.html”，可回查完整输入与真实返回。自己观察时，使用各子目录“输入/prompt.txt”或“输入/任务-S2.txt”等完整材料，在现有工具中开启新会话即可。
+
+使用脚本重跑时，先准备本机输入，再调用同一目录下已安装的 SDK：
+
+```powershell
+node feedback/运行反馈.mjs --prepare
+node feedback/运行反馈.mjs --sdk-dir node_modules/@openai/codex-sdk
+node evaluation/运行评估.mjs --prepare
+node evaluation/运行评估.mjs --sdk-dir node_modules/@openai/codex-sdk
+node cost/运行成本比较.mjs --prepare
+node cost/运行成本比较.mjs --sdk-dir node_modules/@openai/codex-sdk
+```
+
+反馈做一次局部修改；评估按固定顺序做五次新生成。成本比较原样复用仓库内两份真实初稿及其等待、用量，再新增两次核对，不重复生成初稿。只准备材料或阅读实录不触发模型调用；各次失败单独保留，不补写返回。
