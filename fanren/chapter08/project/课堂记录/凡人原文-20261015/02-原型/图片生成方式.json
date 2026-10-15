@@ -1,0 +1,77 @@
+{
+  "生成": "浏览器页面或实录页原生矢量PDF直接渲染2560宽聚焦区域，未放大截图",
+  "images": [
+    {
+      "file": "原版.png",
+      "source": "original-controlled/00-当前页.pdf",
+      "width": 2560,
+      "height": 1445,
+      "pdfClipPoints": [
+        0,
+        0,
+        948.75,
+        535.5
+      ]
+    },
+    {
+      "file": "台面.png",
+      "source": "desk/00-当前页.pdf",
+      "width": 2560,
+      "height": 1445,
+      "pdfClipPoints": [
+        0,
+        0,
+        948.75,
+        535.5
+      ]
+    },
+    {
+      "file": "笔记页.png",
+      "source": "notes/00-当前页.pdf",
+      "width": 2560,
+      "height": 1445,
+      "pdfClipPoints": [
+        0,
+        0,
+        948.75,
+        535.5
+      ]
+    },
+    {
+      "file": "旧窗口与两份正文.png",
+      "source": "状态实录页原生导出.pdf",
+      "width": 2560,
+      "height": 1415,
+      "pdfClipPoints": [
+        0,
+        6,
+        864,
+        483.10546875
+      ]
+    },
+    {
+      "file": "保存等待与输入.png",
+      "source": "状态实录页原生导出.pdf",
+      "width": 2560,
+      "height": 1552,
+      "pdfClipPoints": [
+        0,
+        491.10546875,
+        864,
+        1014.85546875
+      ]
+    },
+    {
+      "file": "断网后继续编辑.png",
+      "source": "状态实录页原生导出.pdf",
+      "width": 2560,
+      "height": 1720,
+      "pdfClipPoints": [
+        0,
+        1022.85546875,
+        864,
+        1603.0869140625
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "firstViewportRequested": {
+    "width": 390,
+    "height": 844
+  },
+  "firstActual": {
+    "width": 1910,
+    "height": 1075,
+    "scrollWidth": 1888,
+    "cssZoom": 0.67
+  },
+  "conclusion": "browser viewport覆盖未作用于目标标签，不能据此认定390窄屏溢出。",
+  "correctedControl": "单标签Emulation.setDeviceMetricsOverride，mobile:true；以实际CSS尺寸校验。",
+  "verifiedNarrow": {
+    "width": 390,
+    "height": 844,
+    "scrollWidth": 390
+  },
+  "firstAttemptFolder": "original",
+  "controlledOriginalFolder": "original-controlled",
+  "port4403": "真实listen EACCES，未发UI操作；换4410启动同一未编辑新库。未确认EACCES原因。",
+  "intermediateFolder": "original-final",
+  "pointer": "仿真视口中指针操作未触发按钮；正式同尺寸核验采用页面DOM按钮事件，真实保存仍经页面HTTP与Store；常规视口另观察实际章节与资料入口。"
+}
