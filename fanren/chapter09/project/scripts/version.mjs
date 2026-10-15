@@ -1,4 +1,4 @@
-import {readFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
 
-// 固定版本随源码材料交付，不要求读者建立 Git 仓库。
-export function getCodeVersion(){return JSON.parse(readFileSync(new URL('../source-version.json',import.meta.url),'utf8')).sourceVersion;}
+// 实际运行记录对应当前克隆仓库的提交。
+export function getCodeVersion(){return execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8',windowsHide:true}).trim();}
