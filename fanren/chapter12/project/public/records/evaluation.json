@@ -1,0 +1,53 @@
+{
+  "calculatedAt": "2026-10-15T07:11:38.903Z",
+  "sourceRetrievalRunId": "0d9e1db8-3edd-4337-b14e-196caf6a7e9d",
+  "metrics": [
+    {
+      "caseId": "E02-retrieval",
+      "condition": "Q1-base",
+      "candidates": [
+        {
+          "id": "story-c158138f02e66f1ce37c1e380e638f0068a6bcb5fe0e9c1e6feaa371c9bd7cae",
+          "docId": "fanren-C05"
+        },
+        {
+          "id": "fanren-C05-teaching-v1",
+          "docId": "fanren-C05-teaching"
+        }
+      ],
+      "relevantBlockIds": [
+        "story-c158138f02e66f1ce37c1e380e638f0068a6bcb5fe0e9c1e6feaa371c9bd7cae",
+        "original-C05-v1",
+        "fanren-C05-teaching-v1"
+      ],
+      "precisionAt2": 1,
+      "recallAt2": 0.6666666666666666,
+      "reciprocalRankAt2": 1
+    },
+    {
+      "caseId": "E02-retrieval",
+      "condition": "Q1-filtered",
+      "candidates": [
+        {
+          "id": "story-c158138f02e66f1ce37c1e380e638f0068a6bcb5fe0e9c1e6feaa371c9bd7cae",
+          "docId": "fanren-C05"
+        },
+        {
+          "id": "fanren-C05-teaching-v1",
+          "docId": "fanren-C05-teaching"
+        }
+      ],
+      "relevantBlockIds": [
+        "story-c158138f02e66f1ce37c1e380e638f0068a6bcb5fe0e9c1e6feaa371c9bd7cae",
+        "original-C05-v1",
+        "fanren-C05-teaching-v1"
+      ],
+      "precisionAt2": 1,
+      "recallAt2": 0.6666666666666666,
+      "reciprocalRankAt2": 1
+    }
+  ],
+  "modelJudgeCalls": 0,
+  "newModelCalls": 0,
+  "scope": "仅对冻结相关资料ID和实际候选名次做本地算术；未运行教师迁移题，不自动判断回答事实支持。"
+}
