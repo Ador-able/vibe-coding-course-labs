@@ -1,0 +1,49 @@
+{
+  "url": "http://127.0.0.1:4461/",
+  "database": "data/practice-16613f56-963c-426c-bfcc-788e6d5e254a.sqlite",
+  "readOnlyUI": true,
+  "newHumanRevisions": 0,
+  "chapter1": {
+    "revision": 2,
+    "origin": "human",
+    "workRevision": 1,
+    "bodyCodePoints": 2371,
+    "domBodySha256": "afcd5852a3e354158fbd9c70564de8bcd60f79e16dfb30893fb76fe61c63ca07"
+  },
+  "chapter2": {
+    "revision": 1,
+    "origin": "agent",
+    "workRevision": 2,
+    "bodyCodePoints": 2330,
+    "domBodySha256": "5aa9c4b11cca0c11232895a702d91fb74e3f5a5d9f5d5921edacecb5d3c265f8"
+  },
+  "screenshots": [
+    {
+      "file": "161-C03当前稿的期限与例外-原生2K.png",
+      "assetId": 753,
+      "width": 2560,
+      "height": 2200,
+      "sha256": "8558ca6e03d46053633d001c093c1c1a285dc4f9972aaaac48cc7fb570a3d10c"
+    },
+    {
+      "file": "161-C04真实保存与考核决定-原生2K.png",
+      "assetId": 754,
+      "width": 2560,
+      "height": 2200,
+      "sha256": "3af04cb75dd1ce694b7a0250c0d9bb237e2bd8571b57205fb25d7f96b01b52cd"
+    }
+  ],
+  "capture": {
+    "method": "浏览器CDP Page.captureScreenshot PNG，原生视口取证",
+    "viewportCss": {
+      "width": 1280,
+      "height": 1100
+    },
+    "deviceScaleFactor": 2,
+    "upscaled": false,
+    "editedPixels": false,
+    "overrideCleared": true,
+    "temporaryDownloadAnchorsRemoved": true
+  },
+  "scope": "模型完成后只读回真实工作台，按当前正文滚动定位；无模型重跑、无正文保存。截图保留当前草稿及关键段落。"
+}

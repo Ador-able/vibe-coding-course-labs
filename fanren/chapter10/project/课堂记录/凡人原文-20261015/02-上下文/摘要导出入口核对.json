@@ -1,0 +1,22 @@
+{
+  "completedReadOnlyRun": {
+    "output": "materials/来稿/FN-CONTEXT-02-本轮摘要.md",
+    "runId": "5d324a52-ac44-4ee6-ae2c-bf8d82bb7f91",
+    "finalSha256": "b9c655f11f48e84fc0d96a881f800b3022827f5122b277575cddae947749d0d6"
+  },
+  "finalRawBytesPreserved": true,
+  "rejectedInputs": [
+    {
+      "state": "failed",
+      "rejected": true,
+      "fileUnchanged": true
+    },
+    {
+      "state": "running",
+      "rejected": true,
+      "fileUnchanged": true
+    }
+  ],
+  "frozenTeachingSummaryRestored": true,
+  "noNewModelCalls": true
+}
