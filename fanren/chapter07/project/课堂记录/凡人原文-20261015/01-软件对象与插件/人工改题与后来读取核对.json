@@ -1,0 +1,26 @@
+{
+  "firstChapterVersions": [
+    {
+      "revision": 1,
+      "title": "C03 原文片段",
+      "status": "draft",
+      "bodySha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349"
+    },
+    {
+      "revision": 2,
+      "title": "C03 原文：七玄门与炼骨崖",
+      "status": "draft",
+      "bodySha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349"
+    },
+    {
+      "revision": 3,
+      "title": "C03 原文：七玄门与炼骨崖",
+      "status": "adopted",
+      "bodySha256": "630a23f32ec768b2fe6b91e386a98626c32bd808e512613cf60f82c43d2d2349"
+    }
+  ],
+  "bodyUnchanged": true,
+  "replyContainsCurrentTitle": true,
+  "replyQuote": "当前资料明确记载：“编者已核对三章来源索引；第1章标题明确标为C03原文，正文逐字保持。”当前标题与此相符。但插件只返回当前记录，未提供改题前版本或外部原文，因此能确认当前索引及编者说明，不能独立证明历次改题过程或逐字未变。",
+  "note": "复用同一次只读插件任务；本图没有新增模型调用。"
+}
