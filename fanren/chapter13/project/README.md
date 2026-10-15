@@ -1,50 +1,53 @@
-# 青岚小说整理工作台
+# 凡人原文整理工作台
 
-沿用已克隆的 [课程仓库](https://github.com/Ador-able/vibe-coding-course-labs) 和仓库根的首次准备。进入本目录，双击 `启动实验.cmd`，打开 `http://127.0.0.1:4355`。也可运行 `node server.mjs`；需要独立端口时设置 `LAB_PORT`。
+沿用已克隆的[课程仓库](https://github.com/Ador-able/vibe-coding-course-labs)和根目录首次准备。进入本目录，双击“启动实验.cmd”，或运行 node server.mjs，打开 http://127.0.0.1:4355 。本章五节共用这一服务和请求观察室的模型设置，无需再次填写密钥。
 
-五个入口依次为[长文](http://127.0.0.1:4355/)、[反馈分类](http://127.0.0.1:4355/classification.html)、[核查日志抽取](http://127.0.0.1:4355/extraction.html)、[逐项状态](http://127.0.0.1:4355/batch.html)、[模板核对](http://127.0.0.1:4355/templates.html)。选择当前步骤或来源，点击“查看结果”。页面只读已保存材料，不调用模型。完整原文、原答和来源均可回查，字段以中文显示；请求正文、用量和专业检查按需展开。共用模型设置沿用请求观察室，不重复填写密钥。
+五个入口依次是[长文](http://127.0.0.1:4355/)、[原文分类](http://127.0.0.1:4355/classification.html)、[人数抽取](http://127.0.0.1:4355/extraction.html)、[逐项状态](http://127.0.0.1:4355/batch.html)和[模板核对](http://127.0.0.1:4355/templates.html)。页面只读已存实录，选择当前来源后点“查看结果”；完整输入、用量与检查按需展开，不请求模型。
 
-## 材料和实录
+## 材料和判断范围
 
-- `inputs/`：完整三章存档、教师反馈和核查日志、完整提示、独立参考与原字节清单。三章均为当时存档中的 draft；日志和错误候选是教师材料，不代表真实核查或作者采用。
-- `records/`：各轮完整发送体、返回体、原答、源码标识、检查、逐项状态与 CSV。每个新记录名独立，已有原件不覆盖。思考开关、输出预算和终态按各轮实际原件核对，不把不同条件合并为同条件重复。
-- `public/lab.json`：只读页面使用的展示数据，由原材料和实际记录生成；原请求及响应仍保留在 `records/`。
+长文直接使用仓库C03、C04、C05三段连续原文，从选拔到初见墨大夫；它们跨越原书章节边界，称“三段”而非“三章”。分类使用十二个连续原段，人数抽取使用十段原文，其中R06是R05同一段的重复导入。原文位置与SHA256见inputs/原文定位说明.json；任务口径与独立参考均在调用前冻结，参考不发送给模型。
 
-先读[课堂记录索引](records/README.md)，按条件找到完整请求、返回和未完成状态；[高清截图](materials/screenshots/)展示同一份记录的页面关键位置。
+人数字段只按本项人群和原段提取。三十余、五六不换成准确整数；未报告的正式人数为null，明确尚非正式才为0。将来缺的岗位、遣送指令与已发生或已宣布的身份分开。比例只问“下山同行的一组”：六名正式与两名记名，同组分子6、分母8，重复导入不再累计。不同场景可能是同一批人，不把所有行相加称独立人数，也不以这份比例推断全部考核者录取率。
 
-长文记录区分全文输入、map-reduce、refine 的各自墙钟时间。三个 map 同时发出，等各自终态以后才决定是否汇总；refine 依次使用上一份实际结果。独立方法失败保留，依赖失败不继续，不自动重试。
+records保存每轮完整发送体、返回体、原答、用量、实际执行Git提交号与逐项状态。已有原件不覆盖；页面只展示与当前冻结输入字节一致的记录。生成结束、程序检查、语义回查与内容采用分别判断。实录读回页截图只是已有记录的展示，不是重新生成。
 
-逐项页分别保留整批抽取真实原项、独立教师错误候选和本轮真实修复。教师候选不记为云模型失败，六项原记录不因修复两项而改写。正常返回、程序检查、语义判断和作者采用分别记录；这套实验没有中途崩溃恢复或通用缓存调度器。
+## 需要比较新条件时
 
-## 自己运行一轮
+默认直接阅读课堂实录。确有新的材料或提示要比较时，先固定输入和Git起点，用全新的记录名运行；单轮失败保留，不为得到课堂答案追跑。参数为temperature 0、maxRetries 0、显式关闭思考；长文与分类输出预算4096，抽取与模板8192，单项修复4096。
 
-默认课堂实录无需重跑。确有新的材料或提示需要比较时，先固定完整输入和真实 Git 起点，使用新的记录名。模型调用读取本机共用设置；长文与分类各 4096 输出预算，整批抽取和模板各 8192，逐项修复各 4096，temperature 0、maxRetries 0，按冻结设置显式发送 `thinking: {type: "disabled"}`。基本步骤共 17 次文本请求，教师候选修复另 2 次；实际失败保留，不为得到课堂答案追跑。
+基础范围最多17次文本请求：长文8次、分类6次、整批抽取1次、两模板各1次。最多额外2次只用于本轮真实存在、确需修复的未通过候选；原答全过则0次，不为凑步骤构造坏模型输出。教师边界候选只做本地检查，不进入云修复。
 
-修改材料后，先同步全部原件与独立参考，让编码助手按每份文件的实际字节重生成 `inputs/registry.json` 中的长度和 SHA256 清单；旧清单不会自动接受新材料。再运行 `pnpm source:freeze`、`pnpm build` 和必要检查，提交新的实际 Git 起点，然后用新记录名运行。`source:freeze` 只冻结源码，不更新输入清单。
+在本目录按需运行本节的一组命令，不必每次重做全章：
 
-在本目录依次运行：
-
-```powershell
+~~~powershell
 node scripts/observe-long.mjs my-long-01
 node scripts/observe-labels.mjs discovery my-discovery-01
 node scripts/observe-labels.mjs v1 my-v1-01
 node scripts/observe-labels.mjs v2 my-v2-01
 node scripts/observe-extract.mjs my-extract-01
+node scripts/check-records.mjs
 node scripts/register-batch.mjs my-batch-01
 node scripts/observe-repairs.mjs records/batch/my-batch-01
 node scripts/read-batch.mjs records/batch/my-batch-01 records/batch/my-batch-01/readback.json
 node scripts/observe-templates.mjs my-templates-01
 node scripts/check-records.mjs
 node scripts/prepare-page.mjs
-```
+~~~
 
-独立参考不发送给模型。`requests:preview` 只让 SDK 序列化请求正文，不进入 HTTP；reduce 和后两次 refine 的完整正文须等实际前序结果取得后构建。
+长文三个map并行，全部取得可用前序返回后才reduce；refine依次使用上一份实际输出。每种方法保留自己的墙钟时间与全部调用用量。依赖缺失就保留缺失范围，不假装已处理全文。
 
-CSV 使用 Python 标准库；只有主动重新导出才需要 Python。导出保留候选业务值，不修复其证据或汇总。另一个进程完整读回十一列，按约定恢复 null、零、逗号、双引号与嵌入换行。例如：
+逐项页从本轮整批原答注册各项状态，只对有可解析候选且程序未通过的项定点处理，按原ID顺序最多两项。原答无法解析时保留“未取得本项”，不凭空补造字段。其余项逐字节保留；本地没有测试崩溃自动恢复或通用缓存调度。修复两项不会自动更新整批汇总或证明模板已经通过回归。
 
-```powershell
-python -X utf8 scripts/csv-records.py export records/templates/my-templates-01/V1/output.txt records/templates/my-templates-01/V1/csv
-python -X utf8 scripts/csv-records.py readback records/templates/my-templates-01/V1/output.txt records/templates/my-templates-01/V1/csv
-```
+## CSV与输入维护
 
-对 V2 或整批抽取使用各自实际原答路径。CSV 字节读回相同不等于整份结果已正确；文中的虚构日志值也不证明文学品质、真实执行、去重人数或因果效果。用量按实际记录，未确认单价或账单时不计算真实费用。
+CSV只转换七个业务字段，不修复其中的语义。需要导出时，分别启动Python进程：
+
+~~~powershell
+python -X utf8 scripts/csv-records.py export records/extraction/my-extract-01/extract/output.txt records/extraction/my-extract-01/extract/csv
+python -X utf8 scripts/csv-records.py readback records/extraction/my-extract-01/extract/output.txt records/extraction/my-extract-01/extract/csv
+~~~
+
+对两版模板使用各自实际原答路径。空数值单元格和duplicateOf空值按约定恢复null，0原样保留；CSV标准库按逻辑记录处理文本。无法解析原答时，导出失败也保留，不去掉围栏后冒称原答已合格。
+
+原文更新或要调整教师口径时，先改scripts/prepare-inputs.mjs，再运行它生成完整inputs与字节清单。随后运行pnpm build、必要测试、pnpm source:freeze并提交实际源码与材料，才能运行新比较。requests:preview只采集SDK序列化正文，HTTP发送为0；依赖步骤等本轮真实前序结果取得后再构建。未确认账户单价和账单时只记录用量，不计算实际费用。

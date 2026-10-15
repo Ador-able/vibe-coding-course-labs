@@ -1,13 +1,13 @@
 const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
 const sameKeys = (value, keys) => object(value) && JSON.stringify(Object.keys(value).sort()) === JSON.stringify([...keys].sort());
-export const fieldNames = { sourceId: '来源', taskId: '整理任务', date: '日志日期', title: '标题', status: '日志工作状态', pendingAssertions: '清单总数', passedAssertions: '已核通过', problemEvents: '问题标注事件', actualMinutes: '实际分钟', budgetMinutes: '预留分钟', duplicateOf: '重复来源', uniqueObservedSourceIds: '去重后的实际日志', ratioSourceIds: '比率使用的日志', sumPassed: '同组已核通过合计', sumPending: '同组清单总数合计', passRatio: '同组通过比例', knownActualMinutes: '已知实际分钟', knownProblemEvents: '已知问题事件', knownProblemSourceIds: '问题事件已知的日志' };
+export const fieldNames = { sourceId: '来源', group: '本项人群', status: '当前或计划', totalCount: '准确总人数', formalCount: '本段明说的正式人数', probationaryCount: '本段明说的记名人数', duplicateOf: '同段重复来源', distinctSourceIds: '去重后的原段', ratioSourceIds: '比例来源', formalNumerator: '同行正式人数', groupDenominator: '同组总人数', formalRatio: '同组正式比例', unknownTotalSourceIds: '准确总数未知项', plannedSourceIds: '计划项' };
 export function parseCandidate(text) { try { return { value: JSON.parse(text), error: null }; } catch (error) { return { value: null, error: { name: error.name, message: error.message } }; } }
 export function checkExtraction(text, material, reference, scope) {
   const parsed = parseCandidate(text), ids = material.scope[scope], fields = reference.fields;
   const check = { parseError: parsed.error, formatIssues: [], coverageIssues: [], valueIssues: [], evidenceIssues: [], summaryIssues: [], semanticDecision: 'pending', wholeTaskAdopted: false };
   if (parsed.error) return { ...check, mechanicalState: 'failed' };
   const value = parsed.value;
-  if (!sameKeys(value, ['records', 'summary'])) check.formatIssues.push('顶层须为 records 和 summary。');
+  if (!sameKeys(value, ['records', 'summary'])) check.formatIssues.push('顶层须为records和summary。');
   const rows = value?.records;
   if (!Array.isArray(rows)) check.formatIssues.push('记录须为数组。');
   else {
@@ -15,27 +15,20 @@ export function checkExtraction(text, material, reference, scope) {
     if (actualIds.length !== ids.length || new Set(actualIds).size !== ids.length || ids.some(id => !actualIds.includes(id))) check.coverageIssues.push({ expected: ids, actual: actualIds });
     for (const row of rows) {
       const id = row?.sourceId, gold = reference.records.find(item => item.sourceId === id), source = material.records.find(item => item.id === id);
-      if (!sameKeys(row, [...fields, 'evidence']) || !sameKeys(row?.evidence, fields.slice(1))) check.formatIssues.push({ sourceId: id, message: '业务字段及全部证据字段须齐全。' });
+      if (!sameKeys(row, [...fields, 'evidence'])) check.formatIssues.push({ sourceId: id, message: '七个业务字段与evidence须齐全。' });
       if (!object(row)) continue;
       for (const field of fields) {
         const actual = row[field];
-        if (['pendingAssertions', 'passedAssertions', 'problemEvents', 'actualMinutes', 'budgetMinutes'].includes(field)) {
-          if (!(actual === null || (Number.isInteger(actual) && actual >= 0))) check.formatIssues.push({ sourceId: id, field, message: '应为非负整数或 null。' });
-        } else if (field === 'duplicateOf' ? actual !== null && typeof actual !== 'string' : typeof actual !== 'string') check.formatIssues.push({ sourceId: id, field, message: '字段类型不符。' });
-        if (gold) {
-          const acceptedTitles = reference.ambiguousTitleIds.includes(id) ? [gold.title, gold.title.replace(/。$/, '')] : [gold.title];
-          if (!(field === 'title' ? acceptedTitles.includes(actual) : actual === gold[field])) check.valueIssues.push({ sourceId: id, field, expected: field === 'title' ? acceptedTitles : gold[field], actual });
-        }
+        const valid = reference.numericFields.includes(field) ? actual === null || Number.isInteger(actual) && actual >= 0 : field === 'duplicateOf' ? actual === null || typeof actual === 'string' : typeof actual === 'string';
+        if (!valid) check.formatIssues.push({ sourceId: id, field, message: '字段类型不符。' });
+        if (gold && actual !== gold[field]) check.valueIssues.push({ sourceId: id, field, expected: gold[field], actual });
       }
-      if (!['observed', 'planned'].includes(row.status)) check.formatIssues.push({ sourceId: id, field: 'status', message: '工作状态超出约定。' });
-      for (const field of fields.slice(1)) {
-        const quote = row.evidence?.[field], allowedNull = ['budgetMinutes', 'duplicateOf'].includes(field) && row[field] === null && quote === null;
-        if (!(allowedNull || (source && typeof quote === 'string' && quote.length && source.text.includes(quote)))) check.evidenceIssues.push({ sourceId: id, field, quote: quote ?? null, message: '不是本项连续原句。' });
-      }
+      if (!['observed', 'planned'].includes(row.status)) check.formatIssues.push({ sourceId: id, field: 'status', message: '只用observed或planned。' });
+      if (!(source && typeof row.evidence === 'string' && row.evidence.length && source.text.includes(row.evidence))) check.evidenceIssues.push({ sourceId: id, message: '引文不是本项连续原句。' });
     }
   }
   const expected = reference.summaries[scope === 'extraction' || scope === 'batchBase' ? 'eight' : 'ten'];
-  if (!sameKeys(value?.summary, [...Object.keys(expected), 'limits'])) check.summaryIssues.push({ message: '汇总字段不完整或增加未知字段。' });
+  if (!sameKeys(value?.summary, [...Object.keys(expected), 'limits'])) check.summaryIssues.push({ message: '汇总字段不完整或有未知字段。' });
   for (const [field, gold] of Object.entries(expected)) {
     const actual = value?.summary?.[field];
     const equal = Array.isArray(gold) ? Array.isArray(actual) && new Set(actual).size === actual.length && actual.length === gold.length && gold.every(id => actual.includes(id)) : typeof actual === 'number' && Math.abs(actual - gold) < 1e-12;

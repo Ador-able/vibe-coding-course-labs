@@ -1,163 +1,116 @@
 {
-  "kind": "教师在新调用前独立计算的值与集合，未发给模型；不是修正后的模型回答。",
+  "kind": "调用前独立参考，不发送给模型。正式人数只收本段明确报告的数量，不把合格、保送等称呼自行归并。",
   "fields": [
     "sourceId",
-    "taskId",
-    "date",
-    "title",
+    "group",
     "status",
-    "pendingAssertions",
-    "passedAssertions",
-    "problemEvents",
-    "actualMinutes",
-    "budgetMinutes",
+    "totalCount",
+    "formalCount",
+    "probationaryCount",
     "duplicateOf"
+  ],
+  "numericFields": [
+    "totalCount",
+    "formalCount",
+    "probationaryCount"
   ],
   "records": [
     {
       "sourceId": "R01",
-      "taskId": "A01",
-      "date": "2026-10-05",
-      "title": "藏书阁核查, \"第一章\"\n进入条件",
+      "group": "进入竹林的孩童",
       "status": "observed",
-      "pendingAssertions": 20,
-      "passedAssertions": 18,
-      "problemEvents": 3,
-      "actualMinutes": 6,
-      "budgetMinutes": null,
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
       "duplicateOf": null
     },
     {
       "sourceId": "R02",
-      "taskId": "A01",
-      "date": "2026-10-05",
-      "title": "藏书阁核查, \"第一章\"\n进入条件",
+      "group": "岳堂主宣布的合格者",
       "status": "observed",
-      "pendingAssertions": 20,
-      "passedAssertions": 18,
-      "problemEvents": 3,
-      "actualMinutes": 6,
-      "budgetMinutes": null,
-      "duplicateOf": "R01"
+      "totalCount": 7,
+      "formalCount": 6,
+      "probationaryCount": null,
+      "duplicateOf": null
     },
     {
       "sourceId": "R03",
-      "taskId": "A02",
-      "date": "2026-10-06",
-      "title": "铜片上的手。",
+      "group": "保送七绝堂者",
       "status": "observed",
-      "pendingAssertions": 30,
-      "passedAssertions": 24,
-      "problemEvents": 4,
-      "actualMinutes": 12,
-      "budgetMinutes": null,
+      "totalCount": 1,
+      "formalCount": null,
+      "probationaryCount": null,
       "duplicateOf": null
     },
     {
       "sourceId": "R04",
-      "taskId": "A03",
-      "date": "2026-10-06",
-      "title": "借阅登记与离阁。",
+      "group": "韩立与张铁",
       "status": "observed",
-      "pendingAssertions": null,
-      "passedAssertions": 3,
-      "problemEvents": null,
-      "actualMinutes": 8,
-      "budgetMinutes": null,
+      "totalCount": 2,
+      "formalCount": 0,
+      "probationaryCount": null,
       "duplicateOf": null
     },
     {
       "sourceId": "R05",
-      "taskId": "A04",
-      "date": "2026-10-06",
-      "title": "封绳以内。",
+      "group": "下山同行的一组",
       "status": "observed",
-      "pendingAssertions": 0,
-      "passedAssertions": 0,
-      "problemEvents": 0,
-      "actualMinutes": 0,
-      "budgetMinutes": null,
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
       "duplicateOf": null
     },
     {
       "sourceId": "R06",
-      "taskId": "A05",
-      "date": "2026-10-07",
-      "title": "下一次桌边观察。",
-      "status": "planned",
-      "pendingAssertions": null,
-      "passedAssertions": null,
-      "problemEvents": null,
-      "actualMinutes": null,
-      "budgetMinutes": 10,
-      "duplicateOf": null
+      "group": "下山同行的一组",
+      "status": "observed",
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
+      "duplicateOf": "R05"
     },
     {
       "sourceId": "R07",
-      "taskId": "A06",
-      "date": "2026-10-06",
-      "title": "亮隙没有跟着走。",
-      "status": "observed",
-      "pendingAssertions": 10,
-      "passedAssertions": 8,
-      "problemEvents": 2,
-      "actualMinutes": 4,
-      "budgetMinutes": null,
+      "group": "墨大夫准备补充的岗位",
+      "status": "planned",
+      "totalCount": 2,
+      "formalCount": null,
+      "probationaryCount": null,
       "duplicateOf": null
     },
     {
       "sourceId": "R08",
-      "taskId": "A01",
-      "date": "2026-10-06",
-      "title": "第二天的入阁核对。",
+      "group": "墨大夫新收的两名记名弟子",
       "status": "observed",
-      "pendingAssertions": 16,
-      "passedAssertions": 15,
-      "problemEvents": 1,
-      "actualMinutes": 5,
-      "budgetMinutes": null,
+      "totalCount": 2,
+      "formalCount": 0,
+      "probationaryCount": 2,
       "duplicateOf": null
     },
     {
       "sourceId": "R09",
-      "taskId": "A07",
-      "date": "2026-10-08",
-      "title": "桌边的\"一声\", 与手影\n再核",
-      "status": "observed",
-      "pendingAssertions": null,
-      "passedAssertions": 7,
-      "problemEvents": null,
-      "actualMinutes": 0,
-      "budgetMinutes": null,
+      "group": "将遣送回家的其余孩童",
+      "status": "planned",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
       "duplicateOf": null
     },
     {
       "sourceId": "R10",
-      "taskId": "A07",
-      "date": "2026-10-09",
-      "title": "登记完成不等于离阁。",
-      "status": "planned",
-      "pendingAssertions": null,
-      "passedAssertions": null,
-      "problemEvents": null,
-      "actualMinutes": null,
-      "budgetMinutes": 0,
+      "group": "车内来自穷乡僻壤的孩子",
+      "status": "observed",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
       "duplicateOf": null
     }
   ],
-  "titleBoundaryPolicy": "R01/R02/R09/R10明确标题边界，字符与换行必须一致；R03—R08的句末句号是否属于标题原文未明确，程序预先接受保留/移除这一个句号两种值，人工判断仍保留边界缺口。不得补改其他文字。",
-  "ambiguousTitleIds": [
-    "R03",
-    "R04",
-    "R05",
-    "R06",
-    "R07",
-    "R08"
-  ],
   "summaries": {
     "eight": {
-      "uniqueObservedSourceIds": [
+      "distinctSourceIds": [
         "R01",
+        "R02",
         "R03",
         "R04",
         "R05",
@@ -165,75 +118,61 @@
         "R08"
       ],
       "ratioSourceIds": [
-        "R01",
-        "R03",
-        "R07",
-        "R08"
+        "R05"
       ],
-      "sumPassed": 65,
-      "sumPending": 76,
-      "passRatio": 0.8552631578947368,
-      "knownActualMinutes": 35,
-      "knownProblemEvents": 10,
-      "knownProblemSourceIds": [
-        "R01",
-        "R03",
-        "R05",
-        "R07",
-        "R08"
+      "formalNumerator": 6,
+      "groupDenominator": 8,
+      "formalRatio": 0.75,
+      "unknownTotalSourceIds": [
+        "R01"
+      ],
+      "plannedSourceIds": [
+        "R07"
       ]
     },
     "ten": {
-      "uniqueObservedSourceIds": [
+      "distinctSourceIds": [
         "R01",
+        "R02",
         "R03",
         "R04",
         "R05",
         "R07",
         "R08",
-        "R09"
+        "R09",
+        "R10"
       ],
       "ratioSourceIds": [
-        "R01",
-        "R03",
-        "R07",
-        "R08"
+        "R05"
       ],
-      "sumPassed": 65,
-      "sumPending": 76,
-      "passRatio": 0.8552631578947368,
-      "knownActualMinutes": 35,
-      "knownProblemEvents": 10,
-      "knownProblemSourceIds": [
+      "formalNumerator": 6,
+      "groupDenominator": 8,
+      "formalRatio": 0.75,
+      "unknownTotalSourceIds": [
         "R01",
-        "R03",
-        "R05",
+        "R09",
+        "R10"
+      ],
+      "plannedSourceIds": [
         "R07",
-        "R08"
+        "R09"
       ]
     }
   },
+  "limits": [
+    "只统计指定同行群体，不是全部考核者的录取率；约数不补为准确整数。",
+    "同一原段重复导入不重复累计；跨场景人群重叠，不把各行人数相加称独立人数。",
+    "计划需求、未来教学与已发生状态分开，不由此评价选拔公平或教学效果。"
+  ],
   "csv": {
     "columns": [
       "sourceId",
-      "taskId",
-      "date",
-      "title",
+      "group",
       "status",
-      "pendingAssertions",
-      "passedAssertions",
-      "problemEvents",
-      "actualMinutes",
-      "budgetMinutes",
+      "totalCount",
+      "formalCount",
+      "probationaryCount",
       "duplicateOf"
-    ],
-    "nullToken": "",
-    "restore": "按列契约恢复空数值为null、非空数值为整数；sourceId/taskId/date/title/status按字符串恢复，duplicateOf空值恢复null。标题不得为空，避免空串与null歧义。"
-  },
-  "limits": [
-    "有待核清单数量缺口，只能描述当前合格日志集合。",
-    "问题标注是事件次数；没有跨日志唯一断言/问题身份表。",
-    "日志值不证明文学品质、真实核查已经执行、作者采用或方法的因果效果。"
-  ],
-  "evidencePolicy": "自动检查连续子串和字段值，人工另读完整原文与证据语义。预测数字不是实际未知的充分依据。"
+    ]
+  }
 }

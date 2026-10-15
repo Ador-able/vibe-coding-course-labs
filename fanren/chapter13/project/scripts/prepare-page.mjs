@@ -9,6 +9,8 @@ const view = { ready: true, material: { long: material.long, labels: material.la
   codebooks: { v1: material.files['分类-口径-v1.json'], v2: material.files['分类-口径-v2.json'] }, files: material.files }, runs: {}, batch: null };
 for (const [group, reportPath] of Object.entries(index.groups)) {
   const report = readJson(path.join(root, reportPath)), directory = path.dirname(path.join(root, reportPath));
+  // 只展示或核查当前冻结输入对应的实录，历史原件不改写。
+  if (JSON.stringify(report.inputFiles) !== JSON.stringify(material.registry.files)) continue;
   if (group === 'batch') {
     const plan = readJson(path.join(directory, 'plan.json'));
     view.batch = { directory: path.relative(root, directory).replaceAll('\\', '/'), plan, items: plan.sourceIds.map(id => readJson(path.join(directory, 'items', `${id}.json`))), readback: fs.existsSync(path.join(directory, 'readback.json')) ? readJson(path.join(directory, 'readback.json')) : null };

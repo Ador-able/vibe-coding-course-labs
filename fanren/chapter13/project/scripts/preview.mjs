@@ -2,11 +2,13 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { root, sha256, writeNew } from '../src/files.mjs';
 import { teaching } from '../src/teaching.mjs';
+import { readSharedConfig } from '../src/config.mjs';
 import assert from 'node:assert/strict';
 import { generateText } from 'ai';
 import { createOpenAICompatible } from '@ai-sdk/openai-compatible';
 
-const material = teaching(), name = process.argv[2];
+const material = teaching(), name = process.argv[2], config = readSharedConfig();
+if (!config.baseUrl || !config.model) throw new Error('请先在共用设置选好模型与入口，预览不发送HTTP。');
 if (!/^[a-z0-9][a-z0-9-]{0,63}$/.test(name || '')) throw new Error('请提供新的预览记录名。');
 const directory = path.join(root, 'records/previews', name); fs.mkdirSync(path.dirname(directory), { recursive: true }); fs.mkdirSync(directory);
 const calls = [];
@@ -17,15 +19,14 @@ add('long/04-refine-1', material.longInput('refine-first', { materials: material
 for (const stage of ['discovery', 'v1', 'v2']) for (const n of [0, 1]) add(`classification-${stage}/batch-${n + 1}`, material.labelInput(stage, n), material.settings.maxOutputTokens.classification, material.labels.batches[n]);
 add('extraction/extract', material.extractionInput, material.settings.maxOutputTokens.extraction, material.logs.scope.extraction);
 for (const version of ['V1', 'V2']) add(`templates/${version}`, material.templateInput(version), material.settings.maxOutputTokens.templateComparison, material.logs.scope.templateComparison);
-for (const id of ['R01', 'R06']) add(`repairs/repair-${id}`, { instructions: material.files['抽取-共同规则.txt'], prompt: material.files[`逐项-完整任务-${id}.txt`] }, material.settings.maxOutputTokens.itemRepair, [id]);
 for (const call of calls) {
   let serialized = 0;
-  const provider = createOpenAICompatible({ name: 'compatible', baseURL: material.settings.providers.baseURL, apiKey: 'preview-only',
+  const provider = createOpenAICompatible({ name: 'compatible', baseURL: config.baseUrl, apiKey: 'preview-only',
     transformRequestBody: body => ({ ...body, thinking: call.thinking }), fetch: async (_url, init) => {
     serialized++; call.requestBody = String(init.body); call.requestSHA256 = sha256(call.requestBody);
     throw new Error('仅采集SDK序列化正文，未进入HTTP。');
   } });
-  try { await generateText({ model: provider.chatModel(material.settings.providers.textModelAlias), instructions: call.input.instructions, prompt: call.input.prompt,
+  try { await generateText({ model: provider.chatModel(config.model), instructions: call.input.instructions, prompt: call.input.prompt,
     temperature: 0, maxOutputTokens: call.maxOutputTokens, maxRetries: 0, telemetry: { isEnabled: false } }); }
   catch (error) { if (!call.requestBody) throw error; }
   assert.equal(serialized, 1); const request = JSON.parse(call.requestBody);
@@ -38,6 +39,6 @@ const dependencies = [
   { id: 'long/04-refine-2', requires: ['04-refine-1', 'C2'], template: material.files['长文-refine-next.txt'] },
   { id: 'long/04-refine-3', requires: ['04-refine-2', 'C3'], template: material.files['长文-refine-next.txt'] }
 ];
-writeNew(path.join(directory, 'preview.json'), { inputs: material.registry.files, fixedRequests: calls, deferredRequests: dependencies, totalPlannedTextRequests: calls.length + dependencies.length,
-  scope: '零调用预览。三个依赖请求必须取得本轮实际前序结果后逐字构建；不以占位文字冒充实际输入。SDK实际发送体在每次提供方请求前另存，不记录认证头。', modelCalls: 0 });
+writeNew(path.join(directory, 'preview.json'), { inputs: material.registry.files, fixedRequests: calls, deferredRequests: dependencies, totalPlannedTextRequests: calls.length + dependencies.length, conditionalRepairMaximum: material.settings.calls.itemRepairMaximum,
+  scope: '零调用预览。三个长文依赖请求必须取得本轮实际前序结果后逐字构建；逐项修复仅对实际未通过且确需处理的候选构建，最多两次，不预造修复输入；不以占位文字冒充实际输入。SDK实际发送体在每次提供方请求前另存，不记录认证头。', modelCalls: 0 });
 console.log(JSON.stringify({ directory: path.relative(root, directory), fixedRequests: calls.length, deferredRequests: dependencies.length, totalPlannedTextRequests: calls.length + dependencies.length, modelCalls: 0 }));

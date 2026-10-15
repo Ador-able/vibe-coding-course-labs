@@ -16,6 +16,8 @@ if (index.groups.batch) {
 }
 for (const reportPath of reportPaths) {
   const report = readJson(path.join(root, reportPath)), directory = path.dirname(path.join(root, reportPath));
+  // 只展示或核查当前冻结输入对应的实录，历史原件不改写。
+  if (JSON.stringify(report.inputFiles) !== JSON.stringify(material.registry.files)) continue;
   if (!['long-text', 'classification-discovery', 'classification-v1', 'classification-v2', 'extraction', 'templates', 'repairs'].includes(report.group)) continue;
   for (const call of report.calls) {
     const at = path.join(directory, call.id);

@@ -1,5 +1,5 @@
 {
-  "kind": "调用前的非敏感课堂条件，不含APIKey",
+  "kind": "非敏感课堂条件，不含密钥",
   "temperature": 0,
   "maxRetries": 0,
   "thinking": {
@@ -17,15 +17,12 @@
     "classification": 6,
     "extraction": 1,
     "templateComparison": 2,
-    "itemRepair": 2,
-    "totalPlanned": 19
+    "itemRepairMaximum": 2,
+    "baseTotal": 17,
+    "maximumTotal": 19
   },
-  "itemRepairOrigin": "195独立使用调用前冻结的R01/R06教师错误候选进行真实修复；187实际原答并列保留，不预设真实抽取失败。失败原件保留、不为得到理想结果重跑。",
+  "itemRepairOrigin": "仅对真实候选中确需修复的项执行，最多2次；原答均过则0次。教师边界输入只运行本地检查。",
   "mapConcurrency": 3,
   "repairConcurrency": 2,
-  "providers": {
-    "textModelAlias": "ep-ymk08qa8",
-    "baseURL": "https://tokenhub.tencentmaas.com/v1"
-  },
-  "prices": "本轮自定义别名无已确认公开单价，不套用旧qwen价格或将usage当账单。"
+  "prices": "用量来自实际返回，不据自定义模型别名猜单价或账单。"
 }

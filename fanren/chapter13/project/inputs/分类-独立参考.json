@@ -1,74 +1,76 @@
 {
-  "basis": "教师在调用前写定的作者侧反馈处理口径。框架不是发现阶段已获真实用户批准的结果；参考不发给模型，不是未知真实反馈的盲测。",
+  "kind": "调用前的人工作业口径，不进入模型输入；含义仍须完整原段独立核对",
   "v1": [
     [
       "F01",
       "classified",
       [
-        "FACT"
+        "IDENTITY",
+        "ARRANGEMENT"
       ]
     ],
     [
       "F02",
       "classified",
       [
-        "LINK"
+        "ARRANGEMENT"
       ]
     ],
     [
       "F03",
       "classified",
       [
-        "SAVE"
+        "ARRANGEMENT"
       ]
     ],
     [
       "F04",
       "classified",
       [
-        "SAVE"
+        "ARRANGEMENT"
       ]
     ],
     [
       "F05",
       "classified",
       [
-        "HUMAN"
+        "ARRANGEMENT"
       ]
     ],
     [
       "F06",
       "classified",
       [
-        "RUN"
+        "ARRANGEMENT"
       ]
     ],
     [
       "F07",
       "classified",
       [
-        "UI"
+        "ARRANGEMENT"
       ]
     ],
     [
       "F08",
       "classified",
       [
-        "FACT",
-        "UI"
+        "LIVING"
       ]
     ],
     [
       "F09",
       "classified",
       [
-        "CONTEXT"
+        "LIVING"
       ]
     ],
     [
       "F10",
-      "unknown",
-      []
+      "classified",
+      [
+        "ARRANGEMENT"
+      ]
     ],
     [
       "F11",
@@ -79,101 +81,39 @@
       "F12",
       "classified",
       [
-        "LINK",
-        "CONTEXT"
+        "IDENTITY"
       ]
     ]
   ],
   "v2Difference": {
+    "F01": [
+      "IDENTITY",
+      "PLACEMENT"
+    ],
+    "F02": [
+      "PLACEMENT"
+    ],
     "F03": [
-      "WRITE"
+      "PLACEMENT"
     ],
     "F04": [
-      "HISTORY"
+      "PLACEMENT",
+      "TEACHING"
+    ],
+    "F05": [
+      "PLACEMENT",
+      "TEACHING"
+    ],
+    "F06": [
+      "PLACEMENT",
+      "TEACHING"
+    ],
+    "F07": [
+      "PLACEMENT"
+    ],
+    "F10": [
+      "PLACEMENT",
+      "TEACHING"
     ]
-  },
-  "v2": [
-    [
-      "F01",
-      "classified",
-      [
-        "FACT"
-      ]
-    ],
-    [
-      "F02",
-      "classified",
-      [
-        "LINK"
-      ]
-    ],
-    [
-      "F03",
-      "classified",
-      [
-        "WRITE"
-      ]
-    ],
-    [
-      "F04",
-      "classified",
-      [
-        "HISTORY"
-      ]
-    ],
-    [
-      "F05",
-      "classified",
-      [
-        "HUMAN"
-      ]
-    ],
-    [
-      "F06",
-      "classified",
-      [
-        "RUN"
-      ]
-    ],
-    [
-      "F07",
-      "classified",
-      [
-        "UI"
-      ]
-    ],
-    [
-      "F08",
-      "classified",
-      [
-        "FACT",
-        "UI"
-      ]
-    ],
-    [
-      "F09",
-      "classified",
-      [
-        "CONTEXT"
-      ]
-    ],
-    [
-      "F10",
-      "unknown",
-      []
-    ],
-    [
-      "F11",
-      "other",
-      []
-    ],
-    [
-      "F12",
-      "classified",
-      [
-        "LINK",
-        "CONTEXT"
-      ]
-    ]
-  ]
+  }
 }

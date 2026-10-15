@@ -1,0 +1,9 @@
+{
+  "novel": "凡人修仙传",
+  "author": "忘语",
+  "originalSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "sourceSha256": "141138ca40a7ddbad62264d3f011ee4c1e01bc00c3900f5ff4b9016f25db9d34",
+  "source": "../../materials/凡人修仙传/原文片段.json",
+  "positionUnit": "utf16",
+  "rules": "start/end相对所引C号的text。十二分类、十抽取记录的text均为原文中的完整连续段落；R06是R05同一原段重复导入，不是新增故事事实。"
+}

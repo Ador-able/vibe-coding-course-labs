@@ -13,7 +13,7 @@ input_path = root / input_name
 output = root / output_name
 reference = json.loads((root / 'inputs/抽取-独立参考.json').read_text(encoding='utf-8'))
 columns = reference['csv']['columns']
-numbers = {'pendingAssertions', 'passedAssertions', 'problemEvents', 'actualMinutes', 'budgetMinutes'}
+numbers = set(reference['numericFields'])
 receipt = {'mode': mode, 'processId': os.getpid(), 'pythonVersion': sys.version.split()[0], 'modelCalls': 0,
            'source': str(input_path.relative_to(root)), 'scope': '候选业务字段完整往返，不修复证据、汇总或作采用决定'}
 
@@ -42,8 +42,8 @@ try:
                     raise ValueError('重复来源应为字符串或null')
             elif not isinstance(value, str):
                 raise ValueError(key + '应为字符串')
-        if not row['title']:
-            raise ValueError('标题不得为空')
+        if not row['group']:
+            raise ValueError('人群范围不得为空')
     wanted = [{key: row[key] for key in columns} for row in rows]
     if mode == 'export':
         output.mkdir(parents=True, exist_ok=True)

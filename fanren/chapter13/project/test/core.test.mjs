@@ -6,53 +6,55 @@ import { spawnSync } from 'node:child_process';
 import { teaching } from '../src/teaching.mjs';
 import { checkExtraction } from '../src/checks.mjs';
 import { root, json } from '../src/files.mjs';
-import { checkItem, registerBatch, preserveOtherItems, updateItem, repairItems } from '../src/batch.mjs';
+import { registerBatch, preserveOtherItems, repairItems } from '../src/batch.mjs';
 import { generateText } from 'ai';
 import { MockLanguageModelV4 } from 'ai/test';
 
 const material = teaching();
-const rows = material.reference.records.map(row => ({ ...row, evidence: Object.fromEntries(material.reference.fields.slice(1).map(field => [field, ['budgetMinutes', 'duplicateOf'].includes(field) && row[field] === null ? null : material.logs.records.find(item => item.id === row.sourceId).text])) }));
-test('统计资格保留实际未知、零和明确重复，不使用缺口日志补分子', () => {
-  const candidate = { records: rows.slice(0, 8), summary: { ...structuredClone(material.reference.summaries.eight), limits: material.reference.limits } };
+const rows = material.reference.records.map(row => ({ ...row, evidence: material.logs.records.find(source => source.id === row.sourceId).text }));
+const temporary = prefix => { fs.mkdirSync(path.join(root, '.tmp'), { recursive: true }); return fs.mkdtempSync(path.join(root, '.tmp', prefix)); };
+const extraction = candidate => ({ reportPath: 'official-mock-test-only', calls: [{ status: 'returned', result: { text: json({ records: candidate, summary: material.reference.summaries.eight }) } }] });
+test('约数与计划不变成实际；重复段落不扩充指定同行群体分母', () => {
+  const candidate = { records: structuredClone(rows.slice(0, 8)), summary: { ...structuredClone(material.reference.summaries.eight), limits: material.reference.limits } };
   assert.equal(checkExtraction(json(candidate), material.logs, material.reference, 'extraction').mechanicalState, 'passed');
-  candidate.summary.ratioSourceIds.push('R04'); candidate.summary.sumPassed += 3;
+  candidate.records[0].totalCount = 30;
+  candidate.records[6].status = 'observed';
+  candidate.summary.ratioSourceIds.push('R06'); candidate.summary.groupDenominator = 16;
   const check = checkExtraction(json(candidate), material.logs, material.reference, 'extraction');
-  assert.ok(check.summaryIssues.some(item => item.field === 'ratioSourceIds')); assert.ok(check.summaryIssues.some(item => item.field === 'sumPassed'));
-  const wrongIdentity = { ...rows[0], sourceId: 'R06' };
-  assert.equal(checkItem(json(wrongIdentity), 'R01', material).mechanicalState, 'failed');
+  assert.deepEqual(check.valueIssues.map(issue => issue.sourceId), ['R01', 'R07']);
+  assert.ok(check.summaryIssues.some(issue => issue.field === 'ratioSourceIds'));
+  assert.ok(check.summaryIssues.some(issue => issue.field === 'groupDenominator'));
 });
-test('教师候选与真实原项分别保存，修改两项不改变另外六项原字节', () => {
-  fs.mkdirSync(path.join(root, '.tmp'), { recursive: true }); const directory = fs.mkdtempSync(path.join(root, '.tmp/batch-'));
-  const run = { directory }, extraction = { reportPath: 'teacher-controlled-test-only', calls: [{ status: 'returned', result: { text: json({ records: rows.slice(0, 8), summary: material.reference.summaries.eight }) } }] };
-  const plan = registerBatch(run, extraction, material);
-  const item = JSON.parse(fs.readFileSync(path.join(directory, 'items/R01.json'), 'utf8'));
-  assert.deepEqual(item.attempts.map(attempt => attempt.kind), ['cloud', 'teacher_candidate']);
-  updateItem(directory, 'R01', item => item.attempts.push({ kind: 'teacher-controlled-test-only' })); preserveOtherItems(directory, plan);
-  fs.writeFileSync(path.join(directory, 'items/R03.json'), '{}'); assert.throws(() => preserveOtherItems(directory, plan));
+test('CSV独立进程保留全部业务值，区别0/null并正确处理文本换行', () => {
+  const directory = temporary('csv-'), input = path.join(directory, 'candidate.json'), output = path.join(directory, 'csv');
+  const sample = structuredClone(rows); sample[0].group = '仅测试CSV的, "引号"\n第二行';
+  fs.writeFileSync(input, json({ records: sample, summary: material.reference.summaries.ten }));
+  for (const mode of ['export', 'readback']) {
+    const result = spawnSync(process.env.LAB_PYTHON || 'python', ['-X', 'utf8', 'scripts/csv-records.py', mode, path.relative(root, input), path.relative(root, output)], { cwd: root, encoding: 'utf8', windowsHide: true });
+    assert.equal(result.status, 0, result.stderr || result.stdout);
+  }
+  const receipt = JSON.parse(fs.readFileSync(path.join(output, 'csv-readback.json'), 'utf8'));
+  assert.deepEqual(receipt.restoredRows, sample.map(row => Object.fromEntries(material.reference.fields.map(field => [field, row[field]]))));
+  assert.equal(receipt.restoredRows[0].totalCount, null); assert.equal(receipt.restoredRows[3].formalCount, 0);
 });
-test('CSV由独立Python进程完整往返引号、逗号、换行、零和null', () => {
-  fs.mkdirSync(path.join(root, '.tmp'), { recursive: true }); const directory = fs.mkdtempSync(path.join(root, '.tmp/csv-'));
-  const input = path.join(directory, 'candidate.json'), output = path.join(directory, 'csv'); fs.writeFileSync(input, json({ records: rows, summary: material.reference.summaries.ten }));
-  const python = process.env.LAB_PYTHON || 'python';
-  for (const mode of ['export', 'readback']) { const result = spawnSync(python, ['-X', 'utf8', 'scripts/csv-records.py', mode, path.relative(root, input), path.relative(root, output)], { cwd: root, encoding: 'utf8', windowsHide: true }); assert.equal(result.status, 0, result.stderr || result.stdout); }
-  const receipt = JSON.parse(fs.readFileSync(path.join(output, 'csv-readback.json'), 'utf8')); assert.equal(receipt.rows, 10); assert.equal(receipt.modelCalls, 0);
-  assert.equal(receipt.restoredRows[0].title, rows[0].title); assert.equal(receipt.restoredRows[4].actualMinutes, 0); assert.equal(receipt.restoredRows[5].actualMinutes, null);
-});
-test('官方Mock调用真实逐项函数：一项失败不丢另一项，六项原字节保留', async () => {
-  fs.mkdirSync(path.join(root, '.tmp'), { recursive: true }); const directory = fs.mkdtempSync(path.join(root, '.tmp/mock-'));
-  const run = { directory }, plan = registerBatch(run, { reportPath: 'official-mock-test-only', calls: [{ status: 'returned', result: { text: json({ records: rows.slice(0, 8), summary: material.reference.summaries.eight }) } }] }, material);
+test('合格原项不追加修复；真实未通过候选的受控测试保留局部失败及其他项字节', async () => {
+  const allGood = { directory: temporary('good-') }, goodPlan = registerBatch(allGood, extraction(rows.slice(0, 8)), material);
+  assert.deepEqual(goodPlan.repairIds, []);
+  const candidate = structuredClone(rows.slice(0, 8)); candidate[0].totalCount = 30; candidate[6].status = 'observed';
+  const run = { directory: temporary('partial-') }, plan = registerBatch(run, extraction(candidate), material);
+  assert.deepEqual(plan.repairIds, ['R01', 'R07']);
   const answer = async (id, input, maxOutputTokens) => {
     const model = new MockLanguageModelV4({ doGenerate: async () => {
-      if (id === 'repair-R01') throw new Error('官方Mock受控失败');
-      return { content: [{ type: 'text', text: json(rows[5]) }], finishReason: { unified: 'stop', raw: 'stop' }, usage: { inputTokens: { total: 1 }, outputTokens: { total: 1 } }, warnings: [] };
+      if (id === 'repair-R01') throw new Error('官方Mock受控失败，只用于本地测试');
+      return { content: [{ type: 'text', text: json(rows[6]) }], finishReason: { unified: 'stop', raw: 'stop' }, usage: { inputTokens: { total: 1 }, outputTokens: { total: 1 } }, warnings: [] };
     } });
     const result = await generateText({ model, instructions: input.instructions, prompt: input.prompt, temperature: 0, maxOutputTokens, maxRetries: 0 });
     return { result: { text: result.text } };
   };
   const outcomes = await repairItems(run, material, plan, answer);
-  assert.deepEqual(outcomes.map(result => result.status), ['rejected', 'fulfilled']); preserveOtherItems(directory, plan);
-  const r01 = JSON.parse(fs.readFileSync(path.join(directory, 'items/R01.json'), 'utf8'));
-  const r06 = JSON.parse(fs.readFileSync(path.join(directory, 'items/R06.json'), 'utf8'));
-  assert.equal(r01.attempts[2].generationState, 'failed'); assert.equal(r06.attempts[2].generationState, 'returned'); assert.equal(r06.attempts[2].checkState, 'passed');
-  assert.equal(r01.attempts[1].kind, 'teacher_candidate'); assert.equal(r06.attempts[0].kind, 'cloud');
+  assert.deepEqual(outcomes.map(outcome => outcome.status), ['rejected', 'fulfilled']); preserveOtherItems(run.directory, plan);
+  const failed = JSON.parse(fs.readFileSync(path.join(run.directory, 'items/R01.json'), 'utf8'));
+  const fixed = JSON.parse(fs.readFileSync(path.join(run.directory, 'items/R07.json'), 'utf8'));
+  assert.equal(failed.attempts[1].generationState, 'failed'); assert.equal(fixed.attempts[1].checkState, 'passed');
+  assert.equal(failed.attempts[0].record.totalCount, 30);
 });

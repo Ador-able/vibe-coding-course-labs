@@ -1,16 +1,7 @@
-请按本次完整标签口径，对下面每条反馈重新分类。不要沿用发现阶段的批次标签或上次分类结果。
-
-一条反馈可有多个主题，但每个主题须有单独支持的原句；否定和明确排除的内容不能当正向主题。status为classified、unknown或other：信息不足用unknown；意思清楚但当前标签均不覆盖用other。unknown/other的labels为空，reason说明缺口或清楚但未覆盖的主题；不要补造标签，不能把两状态并成一个“其他”。
-
-必须逐条返回当前批次的全部ID，既不漏项，也不新增ID。codebookVersion必须使用当前口径版本。quote必须是对应记录中逐字连续的原文，不使用摘要或当前口径的说明冒充反馈。reason解释选择，不自评准确率。
-
-只返回一个JSON对象：
-{"codebookVersion":"{version}","items":[{"id":"F01","status":"classified","labels":[{"code":"FACT","quote":"记录中的原句"}],"reason":"选择依据"}]}
-
+按本次完整口径重新读全部原段，不沿用旧标签或发现结果。允许多标签，每个标签引用对应原段的连续文字。status为classified/unknown/other；unknown和other的labels为空，reason分清信息不足与范围未覆盖。返回本批全部ID各一次，不新增ID。返回{"codebookVersion":"{version}","items":[{"id":"F01","status":"classified","labels":[{"code":"IDENTITY","quote":"原句"}],"reason":"按定义选择的依据"}]}。
 <codebook>
 {codebook}
 </codebook>
 <records>
 {records}
 </records>
-

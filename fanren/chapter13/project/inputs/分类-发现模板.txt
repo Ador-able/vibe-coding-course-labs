@@ -1,11 +1,4 @@
-为了组织后续人工处理，请读完下面这一批反馈，提出能解释它们差别的候选主题。
-
-此阶段没有统一标签清单。候选应有名称、简短含义、适用记录ID和可回到原文的依据；不要为每一条新建一个只含该记录的编号标签，不把信息不足硬解释为具体问题。候选允许重叠，仍只是待人确认的建议，不代表全部反馈已按同一口径分类。
-
-只返回一个JSON对象：
-{"candidates":[{"name":"候选主题","description":"含义","recordIds":["F01"],"evidence":[{"recordId":"F01","quote":"该记录中的逐字原句"}]}],"unresolved":[{"recordId":"F10","reason":"无法判断的具体缺口"}]}
-
+为组织小说阅读笔记，比较下面这一批原段，提出候选主题，不要为每条单建一个类别。此时尚无固定清单，不合并不同处理需要来强求互斥；保留无法归类的原因。返回{"candidates":[{"name":"主题","description":"边界","recordIds":["F01"],"evidence":[{"recordId":"F01","quote":"本段连续原句"}]}],"unresolved":[{"recordId":"F01","reason":"缺口或范围"}]}。
 <records>
 {records}
 </records>
-

@@ -1,194 +1,176 @@
 {
   "frozen": true,
-  "sourceKind": "主编冻结原件，字节与本轮教师清单一致；实际Git起点另记",
-  "synchronizedAt": "2026-10-13T05:24:31.188Z",
-  "teacherManifestSHA256": "8839868c38c51b08a8928da4eafaa6702dbadf2de7287196e8ad4bb323e97ea4",
+  "sourceKind": "由现成凡人原文及调用前教学口径生成，实际执行Git起点另记",
+  "originalSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "sourceSha256": "141138ca40a7ddbad62264d3f011ee4c1e01bc00c3900f5ff4b9016f25db9d34",
   "files": [
     {
       "key": "分类-共同规则.txt",
       "name": "分类-共同规则.txt",
-      "bytes": 391,
-      "sha256": "5c20609259c5c5ec7e4d90b751604bf2e450c63ea217da727a5562b0f9239a59"
+      "bytes": 299,
+      "sha256": "ae31894988c4813da51dd847b4ab9feacc1e8fb1125fe6a4788bc648cc4823d3"
     },
     {
-      "key": "分类-十二条完整反馈.json",
-      "name": "分类-十二条完整反馈.json",
-      "bytes": 2304,
-      "sha256": "fc28eafb3d23642d2c0bc9f7d30ddcd9e169373f4d8dc50d1ebb16432e4afea0"
+      "key": "分类-十二条原文.json",
+      "name": "分类-十二条原文.json",
+      "bytes": 5483,
+      "sha256": "a32aa33e4f8d8640e6e199f224d57fca78f43b5ff5ff3ac12c0493e2afb1c925"
     },
     {
       "key": "分类-发现模板.txt",
       "name": "分类-发现模板.txt",
-      "bytes": 730,
-      "sha256": "0b3855bedd1eac2d459292eb91ccd91ba75a0da25ee8b529c090052699934687"
+      "bytes": 458,
+      "sha256": "a9759be7d6d383b965aff9105bb03890d5da0a8321cadeed297f1d8ce29b9cc4"
     },
     {
       "key": "分类-口径-v1.json",
       "name": "分类-口径-v1.json",
-      "bytes": 3579,
-      "sha256": "7ee20519a5ed5695999a57065f3707dd94752636096858a00186c565d808dd7e"
+      "bytes": 1352,
+      "sha256": "17282661938ad59ad6a922b76dd34d441be452de1837f25e5e247889877609e0"
     },
     {
       "key": "分类-口径-v2.json",
       "name": "分类-口径-v2.json",
-      "bytes": 4069,
-      "sha256": "576065a918a1f8ea987b818e56f4cc0b1262da2bd7f05ba49b1de80a4f489dd1"
+      "bytes": 1796,
+      "sha256": "13f70acc77086ccf20942c9ac164e0ab51a7e657193372261269258019d35872"
     },
     {
       "key": "分类-独立参考.json",
       "name": "分类-独立参考.json",
-      "bytes": 2133,
-      "sha256": "a77f2f6a30c6b980ee7c0c9f196a8c0dc3ef7c80f636b67a07328a58f2039da2"
+      "bytes": 1523,
+      "sha256": "07fb42779d5781ef4dbed543e2a3a9183d07714cb378a3afb6ab969b4fad15fd"
     },
     {
       "key": "分类-重标模板.txt",
       "name": "分类-重标模板.txt",
-      "bytes": 1059,
-      "sha256": "abfba99f7dac12984ff885cddf5f68ef049cc90042b10ffaead7245a0306012a"
+      "bytes": 541,
+      "sha256": "e1fdfb40f479d01fd1fcd9684fc4cbcccd757ce91b3a82a7a6c8c6111fd30fbe"
+    },
+    {
+      "key": "原文定位说明.json",
+      "name": "原文定位说明.json",
+      "bytes": 510,
+      "sha256": "8b506e968721c4bcd4154521fb2eaea20a36a3facf4c1107e91a54c033529c0c"
     },
     {
       "key": "抽取-共同规则.txt",
       "name": "抽取-共同规则.txt",
-      "bytes": 273,
-      "sha256": "39b504f146458e8a24e123ecde81ac5fa3d2add639617e538006b2409724dca2"
+      "bytes": 319,
+      "sha256": "ae17333ebebae646984dd13b5fe629ad0d6e817b8eae38b580dc2237544636c3"
     },
     {
       "key": "抽取-字段与统计口径.txt",
       "name": "抽取-字段与统计口径.txt",
-      "bytes": 2813,
-      "sha256": "128c1651e263ea2a976cdf380898680ed9e0c0ee60a90eef84fe903844de71a2"
+      "bytes": 1587,
+      "sha256": "a7e7b10a1784ed1a38f413183678d72dfec6cc6f73c3212e51e9d283049b0487"
     },
     {
       "key": "抽取-完整八份任务.txt",
       "name": "抽取-完整八份任务.txt",
-      "bytes": 5542,
-      "sha256": "5504efed8aefbbd6ed937686c405ee11f1b84a2b8d2e3761fee1633fc9d220a8"
+      "bytes": 5478,
+      "sha256": "aa397f353f12234d34f47b2106e886c8201ff633ae0d858ffb2ae8353c7f12ab"
     },
     {
       "key": "抽取-独立参考.json",
       "name": "抽取-独立参考.json",
-      "bytes": 6070,
-      "sha256": "8463aa49181c037b71cd6142ed2d086d4a340d32805a7de5df509eac51d844bc"
+      "bytes": 4000,
+      "sha256": "f004ee184af88a22ff25a73746994df1a76f5f1aeb6864db3d596a6402531473"
     },
     {
-      "key": "抽取与批量-十份完整核查日志.json",
-      "name": "抽取与批量-十份完整核查日志.json",
-      "bytes": 4237,
-      "sha256": "e4803521b809130d95ee868f481986dee116d3906e71918bf3fab72b7a3eddea"
+      "key": "抽取与批量-十段原文.json",
+      "name": "抽取与批量-十段原文.json",
+      "bytes": 5563,
+      "sha256": "40962296104d958fc15920e87fdc4dbe762aa99ab7b6715f57a6c6edeae4f308"
     },
     {
       "key": "模板-V1完整任务.txt",
       "name": "模板-V1完整任务.txt",
-      "bytes": 6471,
-      "sha256": "9643f4ba663bdff16eddcb163f9309d683d4a6154986ee890f622df516f29a4e"
+      "bytes": 6408,
+      "sha256": "4fb6f5e761dab428a3716966ed8b3ff7da5c2d60653e838a20b87f18fd30b546"
     },
     {
       "key": "模板-V2唯一增加段.txt",
       "name": "模板-V2唯一增加段.txt",
-      "bytes": 762,
-      "sha256": "cf2cb2dea8fab1dfcf0458e1a208bcfcad3abb6fd9db0bad840fb49207c7318a"
+      "bytes": 445,
+      "sha256": "d37da97443209be2de1d27da9d1595ccf193b4b89efab1667a63a938ea54840a"
     },
     {
       "key": "模板-V2完整任务.txt",
       "name": "模板-V2完整任务.txt",
-      "bytes": 7234,
-      "sha256": "16afff1e08beda755dcff506047d5e5c01e61e6a32e02b3ca66d820ac99913da"
+      "bytes": 6854,
+      "sha256": "ce29308b75f38dacd90d4a8664d5340b70f6ca1085061cd0e8899a98af369e93"
     },
     {
-      "key": "逐项-完整任务-R01.txt",
-      "name": "逐项-完整任务-R01.txt",
-      "bytes": 3823,
-      "sha256": "17ce6473eb8009c57766209da11ff8e4fd9c7c4f3618c936ad7d45ed2cbfe9a3"
+      "key": "逐项-修复模板.txt",
+      "name": "逐项-修复模板.txt",
+      "bytes": 375,
+      "sha256": "8f94450cae0f81e2e77b5243f03464444ffdd20eb796fb305ea3187ff6ecf1be"
     },
     {
-      "key": "逐项-完整任务-R06.txt",
-      "name": "逐项-完整任务-R06.txt",
-      "bytes": 3643,
-      "sha256": "1f307273bcc65ff33bd6f9f1e47090f394d972ad31313b05c3ca9515d93f52c5"
-    },
-    {
-      "key": "逐项-完整反馈-R01.txt",
-      "name": "逐项-完整反馈-R01.txt",
-      "bytes": 359,
-      "sha256": "edd744eec5afd1eb575adb8938d1fd84c8be4db2d7c065a8b361d5fb031602da"
-    },
-    {
-      "key": "逐项-完整反馈-R06.txt",
-      "name": "逐项-完整反馈-R06.txt",
-      "bytes": 460,
-      "sha256": "e14b29d2bad2dea0a60b449a5977269118f9bac721faf91ee18c01c507982960"
-    },
-    {
-      "key": "逐项-教师错误候选.json",
-      "name": "逐项-教师错误候选.json",
-      "bytes": 1909,
-      "sha256": "a093ea74b3dc0d93f9864fc0c153c6a248395017c83c5cda27b79ebdb89fffe5"
+      "key": "逐项-本地边界候选.json",
+      "name": "逐项-本地边界候选.json",
+      "bytes": 1169,
+      "sha256": "5d9f2f6d615ebdbf3e9b6078c5f1126b436b7d7ee55702972e27e1ef62be3725"
     },
     {
       "key": "长文-goal.txt",
       "name": "长文-goal.txt",
-      "bytes": 843,
-      "sha256": "f11d1bdb11f9f0ce9f2b89085d7c4607841f326b79816ed83cef79525b32914e"
+      "bytes": 466,
+      "sha256": "4dd0c85445e2358916ed850df43c2a3f000f73b32c7cc9c9b4ceb3cec01c48c4"
     },
     {
       "key": "长文-instructions.txt",
       "name": "长文-instructions.txt",
-      "bytes": 458,
-      "sha256": "8c5e69f3f29676c34ff28067c390437cc827300059f445d700073dc969b621cc"
+      "bytes": 350,
+      "sha256": "f9bc95169920fc2bc6a643a229a3136a5c3b10db251672955d7bac2cb3f01ede"
     },
     {
       "key": "长文-map.txt",
       "name": "长文-map.txt",
-      "bytes": 843,
-      "sha256": "2a89f0e292e2c1d9550cbb4ca65803dedc0659e0c7a89d148d621e9d911eb118"
+      "bytes": 429,
+      "sha256": "a24a369383d0f4ef65e5c14a4d83257cbd38ffa322f91d6b9a900916437c9fec"
     },
     {
       "key": "长文-reduce.txt",
       "name": "长文-reduce.txt",
-      "bytes": 449,
-      "sha256": "5d41d857dbba5921f91e809b2c3223b62497acc14df572948ec44abbd4708387"
+      "bytes": 315,
+      "sha256": "8998dd1a242c5802e072489db08d2685224747346bcc9e15d5ee79cbed392d06"
     },
     {
       "key": "长文-refine-first.txt",
       "name": "长文-refine-first.txt",
-      "bytes": 317,
-      "sha256": "a40d166f87b04b8df60ba553ea5f581f568c1d4e88687fdb7babcb0768c42be7"
+      "bytes": 176,
+      "sha256": "5a3f21fdd896e30b0dd5d4026b50fbfbb27c34ac0b0a609036fd97931994dd36"
     },
     {
       "key": "长文-refine-next.txt",
       "name": "长文-refine-next.txt",
-      "bytes": 556,
-      "sha256": "c0f50dbd95a22668b8c8ea2c2b3029b6edc71673cfc054d7a16b87ad40cc8cb7"
+      "bytes": 360,
+      "sha256": "7148b7ddbd5e2f4913dfc30a7b9dd6e32176caa6a9ac7b1f1021c3760380b4d6"
     },
     {
       "key": "长文-whole.txt",
       "name": "长文-whole.txt",
-      "bytes": 204,
-      "sha256": "ccd2d1251130c87294e8c8cf02a35e99743cd27b9e089d56590dd6faa3b9ec19"
+      "bytes": 167,
+      "sha256": "67f024b525211cfd0f2f75e9e0cfdf6f611ecc8a26dfee63d8d07ace6327382c"
     },
     {
-      "key": "长文-完整三章与段落定位.json",
-      "name": "长文-完整三章与段落定位.json",
-      "bytes": 27459,
-      "sha256": "1c8d71fdb81e09d34cb89982e39b8546975e9cb63d26cf474badc398d0374170"
+      "key": "长文-完整三段与段落定位.json",
+      "name": "长文-完整三段与段落定位.json",
+      "bytes": 57688,
+      "sha256": "65101c23dd6414f3fe6f64a1062794ff4a27da55dffef7b9e9bc349843d14e0b"
     },
     {
       "key": "长文-独立核查参考.json",
       "name": "长文-独立核查参考.json",
-      "bytes": 1470,
-      "sha256": "e70c63433e5d6c6ee4ae29b880f135e91f677958d9f928192193d5fc20381bb7"
-    },
-    {
-      "key": "青岚修仙录-三章原始课堂存档.md",
-      "name": "青岚修仙录-三章原始课堂存档.md",
-      "bytes": 10231,
-      "sha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf"
+      "bytes": 1162,
+      "sha256": "54bae6d912dae451329322d753187a265480433113cd6fb3f09b1b432ec690bf"
     },
     {
       "key": "非敏感固定设置.json",
       "name": "非敏感固定设置.json",
-      "bytes": 950,
-      "sha256": "96b480cfaf79f53d827aa0975aa360ecb7da9716e068138cc83b35bb864fe5db"
+      "bytes": 768,
+      "sha256": "de6851e19b21f87788672fa2b40ec10e5622634fcad9fdb36352f6d95976a1cf"
     }
   ]
 }

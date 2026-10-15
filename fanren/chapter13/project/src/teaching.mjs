@@ -6,15 +6,15 @@ export const fill = (template, values) => template.replace(/\{(goal|metadata|mat
 });
 export function teaching(requireFrozen = true) {
   const { registry, files, texts } = readInputs(requireFrozen);
-  const long = files['长文-完整三章与段落定位.json'];
-  const labels = files['分类-十二条完整反馈.json'];
-  const logs = files['抽取与批量-十份完整核查日志.json'];
+  const long = files['长文-完整三段与段落定位.json'];
+  const labels = files['分类-十二条原文.json'];
+  const logs = files['抽取与批量-十段原文.json'];
   const reference = files['抽取-独立参考.json'];
   const settings = files['非敏感固定设置.json'];
   assert.equal(settings.temperature, 0); assert.equal(settings.maxRetries, 0);
   assert.equal(settings.mapConcurrency, 3); assert.equal(settings.repairConcurrency, 2);
   assert.equal(long.chapters.length, 3); assert.equal(labels.records.length, 12); assert.equal(logs.records.length, 10);
-  for (const chapter of long.chapters) assert.equal(chapter.paragraphs.map(p => p.text).join('\n\n'), chapter.body);
+  for (const chapter of long.chapters) assert.equal(chapter.paragraphs.map(p => p.text).join('\n'), chapter.body);
   assert.equal(files['模板-V2完整任务.txt'], files['模板-V1完整任务.txt'] + '\n' + files['模板-V2唯一增加段.txt']);
   const longChapter = n => long.chapters[n - 1].paragraphs.map(p => `[${p.sourceId}] ${p.text}`).join('\n\n');
   const longInput = (kind, values = {}) => ({ instructions: files['长文-instructions.txt'], prompt: fill(files[`长文-${kind}.txt`], { goal: files['长文-goal.txt'], metadata: long.metadata, ...values }) });
