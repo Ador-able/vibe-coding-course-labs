@@ -1,0 +1,54 @@
+{
+  "lesson": 189,
+  "startSnapshot": "课堂记录/凡人原文-20261015/07-会话接续/04-同会话只读接续/after.json",
+  "currentBeforeAdoption": [
+    {
+      "number": 1,
+      "title": "C03 原文：七玄门与炼骨崖",
+      "revision": 5,
+      "status": "draft",
+      "bodySha256": "abb37e4069f9edf8e466c55aa8f2492cbdfacf866773080ec6329b42a5342fe8"
+    },
+    {
+      "number": 2,
+      "title": "C04 原文：攀岩与考核结果",
+      "revision": 1,
+      "status": "draft",
+      "bodySha256": "5aa9c4b11cca0c11232895a702d91fb74e3f5a5d9f5d5921edacecb5d3c265f8"
+    },
+    {
+      "number": 3,
+      "title": "C05 原文：墨大夫与神手谷",
+      "revision": 2,
+      "status": "draft",
+      "bodySha256": "6e730dd195bff7a2d80c53305de9f694252174a3904daf1bfa2d151f7b28cbab"
+    }
+  ],
+  "sourceOriginalsUnchanged": true,
+  "teacherHasReadFullCurrentThreeChaptersAndActual183B": true,
+  "plannedSequence": [
+    "从183B完成快照恢复新独立库；不重跑旧模型。",
+    "经既有入口W8→W9，仅改当前目标与要求，保留三段大纲/设定原事实。",
+    "逐章按真实当前修订adopt并独立读回，标题/正文/保存基线不变。",
+    "唯一一次189只读Agent，保留完整真实返回、原始事件及独立五表核验。",
+    "既有CLI export写文件，与实际MCP返回/Store全字节比较。"
+  ],
+  "files": [
+    {
+      "path": "seed/凡人修仙传-189-课堂交付.json",
+      "utf8Bytes": 3685,
+      "sha256": "8bc3f969e7ab9278229f353f7da13b0fd0059035b6160a9284e784b878342b7d"
+    },
+    {
+      "path": "inputs/189-凡人采用稿只读核对.txt",
+      "utf8Bytes": 1753,
+      "sha256": "3709a8f503b403f90bc9677b9e3428bf6f2c64a787be06257ff00483e8df4c11"
+    },
+    {
+      "path": "materials/人工决定/FN-189-三章课堂采用.md",
+      "utf8Bytes": 2041,
+      "sha256": "7e4cb363a06b883b713dd4d8030ee5d730b1195d5bdfc54fad36247f62eb35f8"
+    }
+  ],
+  "scope": "以下是运行前计划；采用回执、当前修订和导出文件均在实际执行后另存，不冒称已完成。"
+}
