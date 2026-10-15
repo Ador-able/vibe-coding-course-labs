@@ -1,21 +1,24 @@
-# 青岚修仙录：新任务验收
+# 凡人修仙传：新任务验收
 
-本节在同一青岚宗世界中，用独立两章支线《雾里的药符》验收已有Agent。林青仍是炼气三层；铜片主线的章稿不导入此作品。
+用 C06、C07 两份连续原文验收现有 Agent：第一段保存后停止，检查要求变化，由人补充编者注并采用，再接入第二段并导出。这里整理原文，不续写小说；教学段号不是原书章号。
 
-沿用已克隆的课程仓库。在本目录运行 `pnpm run lab`，打开 `http://127.0.0.1:4367`，选择阶段并点“查看结果”。先读结论，再按需展开完整原答和过程；查看实录不调用模型。
+沿用已克隆的[课程仓库](https://github.com/Ador-able/vibe-coding-course-labs)。在本目录运行 `pnpm run lab`，打开 <http://127.0.0.1:4367> 查看已经保存的课堂实录。选择阶段、查看结果；完整原答、输入和事件按需展开。读回实录不调用模型；尚未保存的阶段会明确显示为空。
 
 ## 亲自实践
 
-复用第十章已有的Store、MCP、Skill和成熟Harness。完成第十章的一次准备后，在本目录运行 `pnpm run practice:prepare`，新建独立SQLite并将第十章工作台切到本作品；原练习库与入口记录继续保留。
+复用第十章已准备的 Store、MCP、Skill 和 Harness，不重复安装或配置登录。先在本目录运行 `pnpm run practice:prepare`，建立独立空章库；它会保留旧练习入口，并将第十章工作台指向新作品 `fanren-acceptance`。不要把课堂 Task 或会话当作自己的新运行。
 
-之后在 `fanren/chapter10/project` 操作：
+随后在 `fanren/chapter10/project` 操作。命令返回的运行目录、作品与章稿修订，以自己的实际记录为准。
 
-1. 运行 `pnpm run prototype --port 4368` 打开工作台。运行 `pnpm run agent --prompt ../../chapter16/project/inputs/A-首章任务.txt --chapter 1 --stop-after-save`。停止后读实际首章；使用命令返回的自己的运行目录。
-2. 将 `inputs/B-变化后的完整要求.json` 保存为当前作品要求：`pnpm run lab update ../../chapter16/project/inputs/B-变化后的完整要求.json --expected-revision 1`。若资料已有修改，先读取它，不能直接套课堂修订。
-3. 用 `inputs/B-条件检查任务.txt` 发起只读任务，`--resume-run` 指向自己的A目录。原会话若不能恢复，先确认真实对象，再用 `inputs/B-新会话恢复任务.txt` 新建只读会话。本次课堂保留了原会话失败与新会话恢复两份记录。
-4. 读完分析，作自己的取舍。课堂选择在 `inputs/人的当前要求.json`，用现有 `lab update` 保存；实际资料为r2时才使用 `--expected-revision 2`。在工作台的暮钟与行程说明之后插入 `inputs/课堂补写段落.txt`，保存完整首章并读回核对。
-5. 完整阅读后，自行决定是否采用首章：`pnpm run lab adopt 1 --expected-revision 当前章修订 --note "具体阅读理由"`。课堂采用备注记录课堂决定，不能代替你的选择。
-6. 用 `inputs/C-接续任务.txt` 完成第二章，`--chapter 2 --resume-run 自己已成功完成的B目录`。读当前完整要求和首章，以自己的实际基线保存，再核正文。缺失工具结果的会话须先处理，不能直接接续。
-7. 完整阅读两章后决定第二章的采用，再运行 `pnpm run lab export 自己的交付.md`。打开实际文件，核章序、全文、状态和理由。源码切换不会恢复自己的数据库与会话。
+1. **A：保存第一段后停止。** 运行 `pnpm run agent --prompt ../../chapter16/project/inputs/A-首章任务.txt --chapter 1 --stop-after-save`。这是教师设置的停止点：只有保存成功且宿主独立读回一致，才取消本轮。读取实际第1段，检查正文是否完整；取消状态不能代替正文核对。
+2. **B：检查新增要求。** 用 `pnpm run lab update ../../chapter16/project/inputs/B-变化后的完整要求.json --expected-revision 当前作品修订` 保存新要求。然后运行 `pnpm run agent --prompt ../../chapter16/project/inputs/B-条件检查任务.txt --chapter 1 --read-only --resume-run 自己的A运行目录`。新增的“结尾宣布通过并收徒”是教师刻意改变的条件；检查它能否与保持C07原文同时满足。若真实接续失败，保留失败并先核当前对象，不把检查写成已完成，也不自动重跑。
+3. **H：人的决定与实际改稿。** 阅读B的实际结论和C07原文，再决定取舍。课堂输入 `inputs/人的当前要求.json` 撤回补写结尾的条件，并允许单列编者注。用现有 `pnpm run lab update` 保存自己的当前决定；运行 `pnpm run prototype --port 4368`，打开 <http://127.0.0.1:4368>，在第1段正文前插入 `inputs/人的首段编者注.txt`，完整保留其后的C06原文，保存并读回。若旧工作台进程仍在运行，应先关闭，再从当前练习库启动。完整阅读后，使用 `pnpm run lab adopt 1 --expected-revision 当前章稿修订 --note "具体阅读理由"` 决定采用。人的取舍和保存记录分别核对，不把文件存在当作已采用。
+4. **C：接入第二段并交付。** 运行 `pnpm run agent --prompt ../../chapter16/project/inputs/C-接续任务.txt --chapter 2 --resume-run 自己已成功完成的B运行目录`。检查它重新取得当前要求、第1段完整人工改稿和实际基线，再把C07原样保存到第2段。完整阅读后决定是否采用第2段，再使用 `pnpm run lab export 自己的交付.md` 导出。打开实际文件核两段全文、编者注、章序和采用说明。
 
-课堂运行共四个模型Task：A保存后取消、B原会话恢复失败、B新会话只读完成、C接续完成。完整原件在 `records/`，6772字节的Markdown交付在 `records/D/青岚修仙录-雾里的药符.md`。模型结束、业务保存、编者课堂采用和文件交付分别核对；模型调用按需执行，没有自动重跑。
+现有 `pnpm run lab show`、`pnpm run lab chapter 1` 会读取当前练习库，命令中不用反复填写数据库和作品参数。写要求、改正文、采用和导出均使用现有业务入口，不直接修改SQLite。
+
+## 材料与判断范围
+
+原文由共享材料 `fanren/materials/凡人修仙传/原文片段.json` 的 C06/C07 原样提取。完整MD在 `materials/原文/`，来源范围、字数与哈希在同目录的 `来源说明.json`。每份MD首行是教学标题，首个空行之后是连续原文；导入只移除正文最后的换行符。编者注单列在原文之前，不是原作。
+
+计划使用A、B、C三次模型Task；H中的保存与采用、最终导出不调用模型。模型结果和真实运行状态以实录为准；本说明不预先规定它一定成功，也不为得到不同结论重复运行。文学品质与本次原文整理链路的验收范围不同，最终仍须人核对材料和交付。

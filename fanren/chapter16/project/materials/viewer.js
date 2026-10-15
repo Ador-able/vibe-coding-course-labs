@@ -1,4 +1,4 @@
-const $=id=>document.getElementById(id),prompts={A:'A-首章任务.txt',B:'B-条件检查任务.txt',H:'人的当前要求.json',C:'C-接续任务.txt',D:'交付记录.json'};
+const $=id=>document.getElementById(id),prompts={A:'A-首章任务.txt',B:'B-条件检查任务.txt',H:'人的当前要求.json',C:'C-接续任务.txt',D:'人的当前要求.json'};
 const element=(tag,text)=>{const item=document.createElement(tag);if(text!==undefined)item.textContent=text;return item;};
 async function json(path){const response=await fetch(path);if(!response.ok)throw new Error('没有读到这份课堂记录。');return response.json();}
 async function text(path){const response=await fetch(path);if(!response.ok)throw new Error('没有读到完整原件。');return response.text();}

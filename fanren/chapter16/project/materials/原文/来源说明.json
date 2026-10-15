@@ -1,0 +1,31 @@
+{
+  "novel": "凡人修仙传",
+  "author": "忘语",
+  "originalSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "sharedSource": "fanren/materials/凡人修仙传/原文片段.json",
+  "sharedSourceSha256": "141138ca40a7ddbad62264d3f011ee4c1e01bc00c3900f5ff4b9016f25db9d34",
+  "scope": "C06/C07两段连续原文；教学标题由编者添加，段号不是原书章号。",
+  "bodyPolicy": "MD首个空行之后取正文，仅移除末尾换行符；不改动其他字句、空白或原有章节标题。",
+  "sources": [
+    {
+      "id": "C06",
+      "originalTitle": "第六章 无名口诀—第七章 修炼难",
+      "start": 12471,
+      "end": 14707,
+      "hanCount": 2005,
+      "path": "C06.md",
+      "sharedTextSha256": "85cc8f886b69e0edb7e2aaf0d19ead6f3292f0fc778f075c607ca9b17426f1ec",
+      "importBodySha256": "edab6cb506a8de4007bd9264648d1b9c19570296c9a4a8b6d035d4a07b279d73"
+    },
+    {
+      "id": "C07",
+      "originalTitle": "第七章 修炼难—第八章 入门弟子",
+      "start": 14707,
+      "end": 17077,
+      "hanCount": 2040,
+      "path": "C07.md",
+      "sharedTextSha256": "d0cc91d274c020adb349836b19daf32c0af4a2a6bd0acba166a400bc3355402c",
+      "importBodySha256": "fe31452688994ac03378775e2cbb3c4fa6f9404eafd94e2c44f47a664b192448"
+    }
+  ]
+}
