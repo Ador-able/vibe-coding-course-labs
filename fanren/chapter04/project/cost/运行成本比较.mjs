@@ -1,4 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { appendFile, mkdir, readFile, realpath, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -16,7 +17,16 @@ if (values.prepare) {
   if (hash(sourceText) !== sourceHash) throw new Error('评估输入的冻结摘要不匹配。');
   const evaluation = JSON.parse(sourceText);
   const tasks = { S2: evaluation.tasks.S2, S3: evaluation.tasks.S3 };
-  const reviewInstruction = await readFile(resolve(root, '../project/材料/通用审稿要求.txt'), 'utf8');
+  const reviewInstruction = await readFile(resolve(root, '../材料/通用审稿要求.txt'), 'utf8');
+  const initialDirectory = resolve(root, '../evaluation/运行记录/2026-10-15T00-34-23.662Z-cd7031af-81a6-4aa3-8e9f-71b5fa29d01e');
+  const pairs = [{ id: 'P1', sample: 'S2', sourceId: '2-S2-A' }, { id: 'P2', sample: 'S3', sourceId: '5-S3-A' }];
+  const initialHashes = {};
+  for (const pair of pairs) {
+    const report = JSON.parse(await readFile(join(initialDirectory, pair.sourceId, 'report.json'), 'utf8'));
+    const output = await readFile(join(initialDirectory, pair.sourceId, 'output.txt'), 'utf8');
+    if (report.state !== 'completed' || hash(output) !== report.outputSha256 || report.promptSha256 !== hash(tasks[pair.sample])) throw new Error('原始初稿或任务与前节记录不一致。');
+    initialHashes[pair.id] = { promptSha256: report.promptSha256, outputSha256: report.outputSha256 };
+  }
   const frozen = {
     preparedAt: new Date().toISOString(), unitKey: 'vcm-09-04',
     purpose: '同一初稿成对比较：A直接保留，B再核对并修订；按完整任务判断结果与全链代价。',
@@ -24,15 +34,15 @@ if (values.prepare) {
     tasks, taskSha256: Object.fromEntries(Object.entries(tasks).map(([id, text]) => [id, hash(text)])),
     reviewInstruction, reviewInstructionSha256: hash(reviewInstruction),
     reviewTemplate: '通用核对要求 + <写作任务>完整原任务</写作任务> + <初稿>本对完整实际初稿</初稿>',
-    pairs: [{ id: 'P1', sample: 'S2' }, { id: 'P2', sample: 'S3' }, { id: 'P3', sample: 'S3' }, { id: 'P4', sample: 'S2' }],
+    pairs, initialDirectory, initialHashes,
     settings: { skipGitRepoCheck: true, sandboxMode: 'read-only', approvalPolicy: 'never', webSearchMode: 'disabled', modelReasoningEffort: 'low' },
     configuredModel: null, maxCallMs: 180000, scriptRetries: 0,
     passCriteria: [
-      { id: 'identity', criterion: '身份境界：林青仍是青岚宗外门弟子、炼气三层，长远目标筑基；无本章突破、身份晋升或取得筑基功法。' },
-      { id: 'time_and_entry', criterion: '时点与进入：S2首次来、无入阁令、执事放行，前天封架、昨天傍晚获知、今晨到阁；S3为较晚独立片段，上月来过且有有效入阁令，今晨按约前往，持令即可进入。' },
-      { id: 'shelf_state', criterion: '开放状态：S2东侧直到章末仍封着且林青不擅入，其余可查；S3从昨夜到章末各处正常开放，无封禁或封禁消息。' },
-      { id: 'purpose_and_obstacle', criterion: '目的与障碍：S2为借阅、S3为抄录适合当前境界的炼气法门；读者可理解目的，并从行动中看见具体阻碍。' },
-      { id: 'ending', criterion: '章末有由本章事件引出的、可继续追踪的具体未解异常；允许任务范围内的悬念，不以异常为由取消已确认事实。' },
+      { id: 'identity', criterion: '身份与所学按当前原文时点：不提前写为正式录取、使用法术或获得修仙功法。' },
+      { id: 'time_and_entry', criterion: 'S2正午截止、舞岩在前、师兄保护；S3未按时登顶、暂留半年复考、舞岩去七绝堂。' },
+      { id: 'learning', criterion: 'S3墨大夫带韩立张铁入神手谷，先教采药炼药和可能医术，不教武功。' },
+      { id: 'purpose_and_obstacle', criterion: '读者可理解当前目的和具体阻碍；相容细节允许不同写法。' },
+      { id: 'ending', criterion: 'S2结束在抓住麻绳，不宣布韩立考核结果；S3写到晚间交代学习安排，不展开以后修炼结果。' },
       { id: 'delivery', criterion: '完整交付与字数：标题和完整正文，正文800—1200汉字，排除标题、标点及非汉字；没有后续章节、大纲、说明或自评。' },
     ],
     judgment: '主流程逐份阅读完整任务与实际全文，记录原句依据。六类必要条件共同满足才记合格；未直接说明不等于相反，必要目标缺失与表达偏好分别记。文学品质及人的采用不由本口径证明。',
@@ -48,7 +58,7 @@ if (values.prepare) {
   await writeFile(join(inputDir, 'freeze.sha256'), hash(text) + '\n');
   for (const [id, task] of Object.entries(tasks)) await writeFile(join(inputDir, '任务-' + id + '.txt'), task);
   await writeFile(join(inputDir, '通用核对修订.txt'), reviewInstruction);
-  console.log(JSON.stringify({ state: 'prepared', inputDir, freezeSha256: hash(text), pairs: frozen.pairs, maximumCalls: 8 }));
+  console.log(JSON.stringify({ state: 'prepared', inputDir, freezeSha256: hash(text), pairs: frozen.pairs, importedDraftCalls: 2, maximumNewCalls: 2 }));
   process.exit(0);
 }
 const frozenText = await readFile(join(inputDir, 'freeze.json'), 'utf8');
@@ -63,9 +73,9 @@ const { Codex } = await import(pathToFileURL(join(sdkDir, 'dist/index.js')).href
 const runDir = join(root, '运行记录', new Date().toISOString().replaceAll(':', '-') + '-' + randomUUID());
 await mkdir(runDir, { recursive: true });
 await writeFile(join(runDir, 'freeze.json'), frozenText);
-await writeFile(join(runDir, 'config.json'), JSON.stringify({ sdkVersion: sdkPackage.version, nodeVersion: process.version, settings: frozen.settings, configuredModel: null, freezeSha256: frozenHash, maxCallMs: frozen.maxCallMs }, null, 2));
-const codex = new Codex(), reports = [];
-console.log(JSON.stringify({ state: 'starting', runDir, maximumCalls: 8 }));
+await writeFile(join(runDir, 'config.json'), JSON.stringify({ executionGitHead: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(), runnerSha256: hash(await readFile(fileURLToPath(import.meta.url), 'utf8')), sdkVersion: sdkPackage.version, nodeVersion: process.version, settings: frozen.settings, configuredModel: null, memoryUse: false, memoryGeneration: false, shellTool: false, freezeSha256: frozenHash, maxCallMs: frozen.maxCallMs }, null, 2));
+const codex = new Codex({ config: { features: { shell_tool: false }, memories: { use_memories: false, generate_memories: false } } }), reports = [];
+console.log(JSON.stringify({ state: 'starting', runDir, importedDraftCalls: 2, maximumNewCalls: 2 }));
 
 // 每对共享同一次初稿；审稿的新会话只收到固定要求、原任务和该初稿。
 async function runCall(pair, step, prompt) {
@@ -104,7 +114,17 @@ async function runCall(pair, step, prompt) {
 }
 for (const pair of frozen.pairs) {
   const task = frozen.tasks[pair.sample];
-  const draft = await runCall(pair, 'draft', task);
+  // 原样复用前节实际初稿，不重新生成来替换比较起点。
+  const sourceDir = join(frozen.initialDirectory, pair.sourceId), dir = join(runDir, pair.id + '-draft');
+  const originalReportText = await readFile(join(sourceDir, 'report.json'), 'utf8');
+  const originalReport = JSON.parse(originalReportText), output = await readFile(join(sourceDir, 'output.txt'), 'utf8');
+  if (hash(output) !== frozen.initialHashes[pair.id].outputSha256 || originalReport.promptSha256 !== frozen.initialHashes[pair.id].promptSha256) throw new Error('冻结后原始初稿发生变化。');
+  await mkdir(dir, { recursive: true });
+  for (const name of ['prompt.txt', 'output.txt', 'events.jsonl']) await writeFile(join(dir, name), await readFile(join(sourceDir, name)));
+  await writeFile(join(dir, 'original-report.json'), originalReportText);
+  const draft = { output, report: { ...originalReport, id: pair.id + '-draft', pair: pair.id, sample: pair.sample, step: 'draft', importedFrom: sourceDir, newlyExecuted: false } };
+  await writeFile(join(dir, 'report.json'), JSON.stringify(draft.report, null, 2));
+  reports.push(draft.report);
   if (draft.report.state !== 'completed') {
     reports.push({ id: pair.id + '-review', pair: pair.id, sample: pair.sample, step: 'review', state: 'not_run', reason: '初稿调用未完成或结果为空，保留已发生消耗，不另抽稿。' });
     await writeFile(join(runDir, 'reports.json'), JSON.stringify(reports, null, 2));
@@ -132,12 +152,13 @@ const costs = {
   }),
   A: cost(actual.filter(record => record.step === 'draft')),
   B: cost(actual),
-  actualCalls: actual.length,
+  recordedCalls: actual.length,
+  newCalls: actual.filter(record => record.newlyExecuted !== false).length,
   skippedReviews: reports.filter(record => record.state === 'not_run').length,
   unknowns: frozen.unknowns,
   boundary: 'A与B共享同一初稿，实际调用数不能把A.calls和B.calls相加。B是完整路径，包含初稿和审稿；合格结论待阅读全文，不自动填入。'
 };
 await writeFile(join(runDir, 'cost-paths.json'), JSON.stringify(costs, null, 2));
-console.log(JSON.stringify({ runDir, actualCalls: costs.actualCalls, skippedReviews: costs.skippedReviews, A: costs.A, B: costs.B }));
+console.log(JSON.stringify({ runDir, recordedCalls: costs.recordedCalls, newCalls: costs.newCalls, skippedReviews: costs.skippedReviews, A: costs.A, B: costs.B }));
 if (reports.some(item => item.state !== 'completed')) process.exitCode = 1;
 
