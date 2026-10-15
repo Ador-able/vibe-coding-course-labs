@@ -1,0 +1,20 @@
+{
+  "case": "c",
+  "state": "completed",
+  "requests": 1,
+  "finishReason": "stop",
+  "text": "好的。A案会把摘要重点放在韩立个人经历：他怎样进入竹林、途中疲惫休息，又因师兄注视而继续赶路；B案则会突出考核路线（竹林—岩壁—山崖）、正午前到达炼骨崖的时限，以及师兄在后面保护。请告诉我选A还是B。",
+  "usage": {
+    "inputTokens": 1800,
+    "inputTokenDetails": {
+      "noCacheTokens": 1800,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 268,
+    "outputTokenDetails": {
+      "textTokens": 69,
+      "reasoningTokens": 199
+    },
+    "totalTokens": 2068
+  }
+}

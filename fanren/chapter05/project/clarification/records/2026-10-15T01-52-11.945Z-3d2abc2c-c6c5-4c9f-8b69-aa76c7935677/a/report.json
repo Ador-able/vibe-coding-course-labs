@@ -1,0 +1,20 @@
+{
+  "case": "a",
+  "state": "completed",
+  "requests": 1,
+  "finishReason": "length",
+  "text": "",
+  "usage": {
+    "inputTokens": 1761,
+    "inputTokenDetails": {
+      "noCacheTokens": 1761,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 1400,
+    "outputTokenDetails": {
+      "textTokens": 0,
+      "reasoningTokens": 1400
+    },
+    "totalTokens": 3161
+  }
+}

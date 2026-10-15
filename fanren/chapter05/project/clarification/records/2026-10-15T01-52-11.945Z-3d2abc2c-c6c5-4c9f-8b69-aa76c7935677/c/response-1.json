@@ -1,0 +1,31 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "好的。A案会把摘要重点放在韩立个人经历：他怎样进入竹林、途中疲惫休息，又因师兄注视而继续赶路；B案则会突出考核路线（竹林—岩壁—山崖）、正午前到达炼骨崖的时限，以及师兄在后面保护。请告诉我选A还是B。",
+          "reasoning_content": "我们 need answer in Chinese. Need fulfill task. User says need 80-120字 class summary. Two emphases not selected: A process Han Li entering bamboo, rest, continue; B highlight assessment route, deadline, senior protection. User chooses emphasis. We must first explain how two cases change summary, wait for choice, not choose/merge, not write summary. Need provide short answer, not full. So respond accordingly. Need maybe \"好的。A案会把摘要重点放在韩立个人行动：他进入竹林、攀爬吃力、坐下休息、因害怕师兄目光又起身赶路；B案则重点放在考核规则：穿过竹林到炼骨崖、正午前到达才能入门，并有师兄在后方保护。请选择A或B。\" Need count? no summary. Need ensure no write summary. Also \"先说明两案会怎样改变摘要\" done. Wait for choice. Maybe mention \"不会代选或合并\". Should be concise.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792029137,
+    "id": "6827415e-9422-433d-8269-a59e4a00ad79",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 1800,
+      "completion_tokens": 268,
+      "total_tokens": 2068,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 199
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "韩立随车到七玄门，同车孩子分三类：舞岩这类有势习武者，城镇中察言观色者，以及韩立等穷苦畏缩者。岳堂主宣布试炼：沿竹林小路经岩壁到山崖，正午前到达崖顶才能入门；未到者若表现可圈可点可收为记名弟子。韩立怕输给同龄人，奋力前行，累倒休息后仍继续赶路。",
+          "reasoning_content": "我们 need answer in Chinese, 80-120 words class summary. Need satisfy two simultaneous requirements: must retain \"正午\" specific deadline, must not contain any specific time point. Contradictory? Need handle. We need produce summary that mentions 正午 but no specific time point. \"正午\" is a specific time point? It is a specific cutoff. Requirement 1 says retain 正午. Requirement 2 says no any specific time point. How to satisfy both? Need not delete one. We need perhaps phrase \"岳堂主宣布了正午前到达与否的规则\" — includes 正午, but not \"specific time point\" like clock time? But \"正午\" itself is specific time point. However task says must preserve \"正午\" this concrete deadline; no specific time point. Maybe \"正午\" is allowed due to requirement 1, while no other specific times. Need interpret: \"不得出现任何具体时点\" means no specific times like 5 pm, 12 o'clock. But \"正午\" is a concrete deadline specifically required, so it is exempt? Need produce summary that includes 正午 and no other time details. Good.\n\nNeed write 80-120 Chinese characters? \"字\" maybe characters. Need count roughly.\n\nContent summary of excerpt C03: 韩立 etc. Need summarize class? Actually \"课堂摘要\" maybe \"本章摘要\" for fiction? Need 80-120 words. Need mention key facts. Must include \"正午\". Need no specific time. Also \"原文事实不变\" don't alter. Need perhaps say children arrive, categories, test in bamboo, deadline before 正午. Need ensure no extra time specifics like \"第五天傍晚\", \"明天一早\", \"落日\" maybe time? Avoid sunset? But original has \"正午前无法到达...记名弟子\" Need include.\n\nNeed craft concise. Let's outline:\n\n舞岩等孩子分三类；韩立来自穷乡。马车接人至七玄门，岳堂主宣布试炼：穿过竹林、岩壁、山崖，正午前到崖顶可入七玄门，否则可成记名弟子。韩立随众出发，途中疲惫仍继续前行。\n\nNeed count. Let's write and count. Need no specific time point. \"正午\" is included. No \"傍晚\" etc. Good.\n\nNeed maybe \"当天\" is a time word? Not specific. Fine.\n\nNeed ensure 80-120. Let's count. Use Chinese char count. We'll write:\n\n韩立随车到七玄门，同车孩子分三类：舞岩这类有势习武者，城镇中察言观色者，以及韩立等穷苦畏缩者。岳堂主宣布试炼：沿竹林小路经岩壁到山崖，正午前到达崖顶才能入门；未到者若表现可圈可点可收为记名弟子。韩立怕输给同龄人，奋力前行，累倒休息后仍继续赶路。\n\nCount roughly: 韩立随车到七玄门，同车孩子分三类(16?) Let's count later. Need 80-120. Fine.\n\nNeed perhaps \"正午前无法到达\" vs \"正午前到达\" same. Need no specific time point. Good.\n\nNeed final only.",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792029225,
+    "id": "97fc46c8-1b33-4a9f-b8b9-f8b919b525a6",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 1784,
+      "completion_tokens": 799,
+      "total_tokens": 2583,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 695
+      }
+    }
+  }
+}

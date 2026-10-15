@@ -1,0 +1,160 @@
+{
+  "requests": [
+    {
+      "case": "a",
+      "run": "2026-10-15T01-52-11.945Z-3d2abc2c-c6c5-4c9f-8b69-aa76c7935677",
+      "sourceSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "taskSha256": "78ba36d1666fde65b3dc7194437b2b5b6a4d9d5785daaf605653200d91e6edfa",
+      "requestMaxTokens": 1400,
+      "finishReason": "length",
+      "finalTextEmpty": true,
+      "fullOriginalProvided": true,
+      "requestMatchesFrozenInput": true,
+      "usage": {
+        "inputTokens": 1761,
+        "inputTokenDetails": {
+          "noCacheTokens": 1761,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 1400,
+        "outputTokenDetails": {
+          "textTokens": 0,
+          "reasoningTokens": 1400
+        },
+        "totalTokens": 3161
+      }
+    },
+    {
+      "case": "b",
+      "run": "2026-10-15T01-52-11.945Z-3d2abc2c-c6c5-4c9f-8b69-aa76c7935677",
+      "sourceSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "taskSha256": "072ac551b4f5a8f9741da2f6f7700dd85256db0c19ea60a2f9660e63c02f8a7c",
+      "requestMaxTokens": 1400,
+      "finishReason": "stop",
+      "finalTextEmpty": false,
+      "fullOriginalProvided": true,
+      "requestMatchesFrozenInput": true,
+      "usage": {
+        "inputTokens": 1733,
+        "inputTokenDetails": {
+          "noCacheTokens": 1733,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 624,
+        "outputTokenDetails": {
+          "textTokens": 122,
+          "reasoningTokens": 502
+        },
+        "totalTokens": 2357
+      }
+    },
+    {
+      "case": "c",
+      "run": "2026-10-15T01-52-11.945Z-3d2abc2c-c6c5-4c9f-8b69-aa76c7935677",
+      "sourceSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "taskSha256": "dab37e461803347def4d20edb4e310a53966f57684d708fb37034783fd77492a",
+      "requestMaxTokens": 1400,
+      "finishReason": "stop",
+      "finalTextEmpty": false,
+      "fullOriginalProvided": true,
+      "requestMatchesFrozenInput": true,
+      "usage": {
+        "inputTokens": 1800,
+        "inputTokenDetails": {
+          "noCacheTokens": 1800,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 268,
+        "outputTokenDetails": {
+          "textTokens": 69,
+          "reasoningTokens": 199
+        },
+        "totalTokens": 2068
+      }
+    },
+    {
+      "case": "d",
+      "run": "2026-10-15T01-52-11.945Z-3d2abc2c-c6c5-4c9f-8b69-aa76c7935677",
+      "sourceSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "taskSha256": "243bbc66fe4f2703699cee1c4111b815aaffbcad1f294c06d262f512726cede3",
+      "requestMaxTokens": 1400,
+      "finishReason": "length",
+      "finalTextEmpty": true,
+      "fullOriginalProvided": true,
+      "requestMatchesFrozenInput": true,
+      "usage": {
+        "inputTokens": 1784,
+        "inputTokenDetails": {
+          "noCacheTokens": 1784,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 1400,
+        "outputTokenDetails": {
+          "textTokens": 0,
+          "reasoningTokens": 1400
+        },
+        "totalTokens": 3184
+      }
+    },
+    {
+      "case": "a",
+      "run": "2026-10-15T01-53-39.537Z-7bd0a8d8-6054-4deb-bd4f-913c2036443b",
+      "sourceSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "taskSha256": "78ba36d1666fde65b3dc7194437b2b5b6a4d9d5785daaf605653200d91e6edfa",
+      "requestMaxTokens": 8192,
+      "finishReason": "stop",
+      "finalTextEmpty": false,
+      "fullOriginalProvided": true,
+      "requestMatchesFrozenInput": true,
+      "usage": {
+        "inputTokens": 1761,
+        "inputTokenDetails": {
+          "noCacheTokens": 1761,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 158,
+        "outputTokenDetails": {
+          "textTokens": 38,
+          "reasoningTokens": 120
+        },
+        "totalTokens": 1919
+      }
+    },
+    {
+      "case": "d",
+      "run": "2026-10-15T01-53-39.538Z-b0d4ca96-991d-4ba6-9dec-47d606e220d5",
+      "sourceSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+      "taskSha256": "243bbc66fe4f2703699cee1c4111b815aaffbcad1f294c06d262f512726cede3",
+      "requestMaxTokens": 8192,
+      "finishReason": "stop",
+      "finalTextEmpty": false,
+      "fullOriginalProvided": true,
+      "requestMatchesFrozenInput": true,
+      "usage": {
+        "inputTokens": 1784,
+        "inputTokenDetails": {
+          "noCacheTokens": 1784,
+          "cacheReadTokens": 0
+        },
+        "outputTokens": 799,
+        "outputTokenDetails": {
+          "textTokens": 104,
+          "reasoningTokens": 695
+        },
+        "totalTokens": 2583
+      }
+    }
+  ],
+  "selectedResults": {
+    "b": "您好，我已看到这段《凡人修仙传》原文。不过“处理”具体指什么还不明确，请您确认一下。我可做的方向例如：\n\n1. 校对错别字（如“早以”应为“早已”、“畏手畏尾”常作“畏首畏尾”、“一屁股做了下来”的“做”应为“坐”等）；\n2. 摘录/概括段落内容；\n3. 分析写法、人物或情节；\n4. 基于此段作风格仿写或续写（需您明确同意）。\n\n您希望我先做哪一种？",
+    "c": "好的。A案会把摘要重点放在韩立个人经历：他怎样进入竹林、途中疲惫休息，又因师兄注视而继续赶路；B案则会突出考核路线（竹林—岩壁—山崖）、正午前到达炼骨崖的时限，以及师兄在后面保护。请告诉我选A还是B。",
+    "a": "韩立坐下喘息，回头望见瘦长师兄在身后下方静静盯着他，害怕地转回头，听到前方喘气声，稍歇后匆忙继续往前赶。",
+    "d": "韩立随车到七玄门，同车孩子分三类：舞岩这类有势习武者，城镇中察言观色者，以及韩立等穷苦畏缩者。岳堂主宣布试炼：沿竹林小路经岩壁到山崖，正午前到达崖顶才能入门；未到者若表现可圈可点可收为记名弟子。韩立怕输给同龄人，奋力前行，累倒休息后仍继续赶路。"
+  },
+  "aHan": 47,
+  "originalHan": 2036,
+  "dCurrentRequirementsSatisfied": false,
+  "dReason": "实际摘要包含正午，没有先指出两条同级要求冲突，违反不得出现任何具体时点。",
+  "cPrecisionNote": "回复把地点说成正午前到达炼骨崖；原文要求需核到崖顶，不能只把提出选择问题当作事实表述都准确。",
+  "limits": "首轮A/D为空全部保留；仅提高上限后各补一次，不把变化归因于唯一因素或比较稳定性能。原文直接进入请求，没有文件工具调用，没有保存章稿或用户采用。"
+}

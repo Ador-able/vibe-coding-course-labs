@@ -1,0 +1,20 @@
+{
+  "case": "a",
+  "state": "completed",
+  "requests": 1,
+  "finishReason": "stop",
+  "text": "韩立坐下喘息，回头望见瘦长师兄在身后下方静静盯着他，害怕地转回头，听到前方喘气声，稍歇后匆忙继续往前赶。",
+  "usage": {
+    "inputTokens": 1761,
+    "inputTokenDetails": {
+      "noCacheTokens": 1761,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 158,
+    "outputTokenDetails": {
+      "textTokens": 38,
+      "reasoningTokens": 120
+    },
+    "totalTokens": 1919
+  }
+}

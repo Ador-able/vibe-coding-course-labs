@@ -1,0 +1,20 @@
+{
+  "case": "d",
+  "state": "completed",
+  "requests": 1,
+  "finishReason": "stop",
+  "text": "韩立随车到七玄门，同车孩子分三类：舞岩这类有势习武者，城镇中察言观色者，以及韩立等穷苦畏缩者。岳堂主宣布试炼：沿竹林小路经岩壁到山崖，正午前到达崖顶才能入门；未到者若表现可圈可点可收为记名弟子。韩立怕输给同龄人，奋力前行，累倒休息后仍继续赶路。",
+  "usage": {
+    "inputTokens": 1784,
+    "inputTokenDetails": {
+      "noCacheTokens": 1784,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 799,
+    "outputTokenDetails": {
+      "textTokens": 104,
+      "reasoningTokens": 695
+    },
+    "totalTokens": 2583
+  }
+}

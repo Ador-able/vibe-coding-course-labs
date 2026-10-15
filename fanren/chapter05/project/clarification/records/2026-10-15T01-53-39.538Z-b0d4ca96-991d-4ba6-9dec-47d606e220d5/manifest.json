@@ -1,0 +1,18 @@
+{
+  "directory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter05\\project\\clarification\\records\\2026-10-15T01-53-39.538Z-b0d4ca96-991d-4ba6-9dec-47d606e220d5",
+  "codeCommit": "4e93031704377d91172fbd3502d5495743fd6c0c",
+  "sourceSha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a",
+  "conditions": [
+    {
+      "case": "d",
+      "taskSha256": "243bbc66fe4f2703699cee1c4111b815aaffbcad1f294c06d262f512726cede3"
+    }
+  ],
+  "instructions": "请处理本次任务。完整原文和当前任务已直接提供在这次输入中，先核对这些材料。已有事实不请人重抄；目标、偏好或同级冲突尚未决定时，不替人决定，提出会改变产物的具体问题。只交短答、所要求的摘要或必要澄清，不写完整续章，不声称保存、采用或发布。",
+  "maxOutputTokens": 8192,
+  "provider": {
+    "baseUrl": "https://tokenhub.tencentmaas.com/v1",
+    "model": "ep-ymk08qa8"
+  },
+  "notes": "独立无历史请求，各条件一次；原文与任务直接提供，不声称模型调用文件工具；不比较速度、可靠率或价格。"
+}

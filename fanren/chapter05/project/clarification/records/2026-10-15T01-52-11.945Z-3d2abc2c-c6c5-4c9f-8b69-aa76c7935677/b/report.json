@@ -1,0 +1,20 @@
+{
+  "case": "b",
+  "state": "completed",
+  "requests": 1,
+  "finishReason": "stop",
+  "text": "您好，我已看到这段《凡人修仙传》原文。不过“处理”具体指什么还不明确，请您确认一下。我可做的方向例如：\n\n1. 校对错别字（如“早以”应为“早已”、“畏手畏尾”常作“畏首畏尾”、“一屁股做了下来”的“做”应为“坐”等）；\n2. 摘录/概括段落内容；\n3. 分析写法、人物或情节；\n4. 基于此段作风格仿写或续写（需您明确同意）。\n\n您希望我先做哪一种？",
+  "usage": {
+    "inputTokens": 1733,
+    "inputTokenDetails": {
+      "noCacheTokens": 1733,
+      "cacheReadTokens": 0
+    },
+    "outputTokens": 624,
+    "outputTokenDetails": {
+      "textTokens": 122,
+      "reasoningTokens": 502
+    },
+    "totalTokens": 2357
+  }
+}

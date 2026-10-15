@@ -1,0 +1,31 @@
+{
+  "status": 200,
+  "body": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "message": {
+          "content": "韩立坐下喘息，回头望见瘦长师兄在身后下方静静盯着他，害怕地转回头，听到前方喘气声，稍歇后匆忙继续往前赶。",
+          "reasoning_content": "我们只需要概括原文片段末尾的动作链：韩立坐下休息后做了什么、谁在他后面。原文末尾：韩立抽空回头望瘦长师兄，师兄在下面不远处静静望着他。韩立看到师兄冷冷目光，害怕，忙转头回来，听到前面喘气声，知道有人也在休息，韩立再呆一会，匆忙往前赶。动作链：坐下喘息，回头望师兄，见其冷目，害怕转头，听到前方喘气，稍歇后匆忙往前赶。谁在他后面：瘦长师兄。限制80汉字。要简洁。",
+          "role": "assistant"
+        }
+      }
+    ],
+    "created": 1792029226,
+    "id": "87b72571-7363-4fed-b10e-af373490ef4f",
+    "model": "deepseek-v4-flash-0731",
+    "object": "chat.completion",
+    "usage": {
+      "prompt_tokens": 1761,
+      "completion_tokens": 158,
+      "total_tokens": 1919,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 120
+      }
+    }
+  }
+}

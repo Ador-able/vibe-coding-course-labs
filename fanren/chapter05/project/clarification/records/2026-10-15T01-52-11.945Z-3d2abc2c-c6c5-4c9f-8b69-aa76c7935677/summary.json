@@ -1,0 +1,82 @@
+[
+  {
+    "case": "a",
+    "state": "completed",
+    "requests": 1,
+    "finishReason": "length",
+    "text": "",
+    "usage": {
+      "inputTokens": 1761,
+      "inputTokenDetails": {
+        "noCacheTokens": 1761,
+        "cacheReadTokens": 0
+      },
+      "outputTokens": 1400,
+      "outputTokenDetails": {
+        "textTokens": 0,
+        "reasoningTokens": 1400
+      },
+      "totalTokens": 3161
+    }
+  },
+  {
+    "case": "b",
+    "state": "completed",
+    "requests": 1,
+    "finishReason": "stop",
+    "text": "您好，我已看到这段《凡人修仙传》原文。不过“处理”具体指什么还不明确，请您确认一下。我可做的方向例如：\n\n1. 校对错别字（如“早以”应为“早已”、“畏手畏尾”常作“畏首畏尾”、“一屁股做了下来”的“做”应为“坐”等）；\n2. 摘录/概括段落内容；\n3. 分析写法、人物或情节；\n4. 基于此段作风格仿写或续写（需您明确同意）。\n\n您希望我先做哪一种？",
+    "usage": {
+      "inputTokens": 1733,
+      "inputTokenDetails": {
+        "noCacheTokens": 1733,
+        "cacheReadTokens": 0
+      },
+      "outputTokens": 624,
+      "outputTokenDetails": {
+        "textTokens": 122,
+        "reasoningTokens": 502
+      },
+      "totalTokens": 2357
+    }
+  },
+  {
+    "case": "c",
+    "state": "completed",
+    "requests": 1,
+    "finishReason": "stop",
+    "text": "好的。A案会把摘要重点放在韩立个人经历：他怎样进入竹林、途中疲惫休息，又因师兄注视而继续赶路；B案则会突出考核路线（竹林—岩壁—山崖）、正午前到达炼骨崖的时限，以及师兄在后面保护。请告诉我选A还是B。",
+    "usage": {
+      "inputTokens": 1800,
+      "inputTokenDetails": {
+        "noCacheTokens": 1800,
+        "cacheReadTokens": 0
+      },
+      "outputTokens": 268,
+      "outputTokenDetails": {
+        "textTokens": 69,
+        "reasoningTokens": 199
+      },
+      "totalTokens": 2068
+    }
+  },
+  {
+    "case": "d",
+    "state": "completed",
+    "requests": 1,
+    "finishReason": "length",
+    "text": "",
+    "usage": {
+      "inputTokens": 1784,
+      "inputTokenDetails": {
+        "noCacheTokens": 1784,
+        "cacheReadTokens": 0
+      },
+      "outputTokens": 1400,
+      "outputTokenDetails": {
+        "textTokens": 0,
+        "reasoningTokens": 1400
+      },
+      "totalTokens": 3184
+    }
+  }
+]
