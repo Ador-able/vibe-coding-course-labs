@@ -1,0 +1,8 @@
+{
+  "来源": "编者依据首次pnpm prepare:hook真实终端输出与逐文件哈希核对整理；不是原始终端录音。",
+  "modelCalls": 0,
+  "error": "固定检查文件已改变：scripts/missing-hook-script.mjs",
+  "actualCRLFsha256": "687a4da16f78e074017dc2c75219e521f52d90720422940825fd2418e22b0f75",
+  "expectedLFsha256": "e7c29d6f9dc809f96d2c8accc167d191b18a97a0bf90023dbf3e6729c74cb362",
+  "修复": "核对源码后固定LF，字节恢复原已审核SHA；没有更新信任哈希掩盖变化。"
+}

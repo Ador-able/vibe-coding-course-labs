@@ -1,0 +1,6 @@
+{
+  "保留": "完整业务调用、保存全文、Hook事件、运行输入与前后业务快照。",
+  "移除": "account/*与remoteControl/*通知；config/read已由记录器过滤无关用户配置。",
+  "未改写": "工具或Hook内容不作改写；不称完整原始管道字节。",
+  "privateRun": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\hook-task-3acc0501-050c-45ea-b7db-9b6e6240d812"
+}

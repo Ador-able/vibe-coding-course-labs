@@ -1,0 +1,49 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\hook-task-3acc0501-050c-45ea-b7db-9b6e6240d812",
+  "threadId": "01a13dbf-18a0-77e0-9f90-5b8ec63647f2",
+  "turnId": "01a13dbf-1a96-7823-b3d2-6199e1256614",
+  "turnStatus": "completed",
+  "completed": true,
+  "error": null,
+  "archived": true,
+  "model": "gpt-6.1-sol",
+  "modelProvider": "openai",
+  "usage": {
+    "total": {
+      "totalTokens": 103997,
+      "inputTokens": 103122,
+      "cachedInputTokens": 93312,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 875,
+      "reasoningOutputTokens": 12
+    },
+    "last": {
+      "totalTokens": 17941,
+      "inputTokens": 17867,
+      "cachedInputTokens": 17024,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 74,
+      "reasoningOutputTokens": 0
+    },
+    "modelContextWindow": 475000
+  },
+  "cliExitCode": 0,
+  "globalConfigHashBefore": "247f5ae43fc2bcc7922cf4e6a934d367460fc702519321571a2315a671bbe683",
+  "globalConfigHashAfter": "247f5ae43fc2bcc7922cf4e6a934d367460fc702519321571a2315a671bbe683",
+  "globalConfigUnchanged": true,
+  "countsBefore": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 0,
+    "chapter_versions": 0,
+    "tasks": 0
+  },
+  "countsAfter": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 1,
+    "chapter_versions": 2,
+    "tasks": 0
+  },
+  "limits": "完整公开任务事件与实际业务结果需人工逐项核对；config/read 的无关用户配置已过滤，不声称全协议原字节公开。Hook 触发和标记检查不证明文学质量，也不证明 Hook 是修改的独立因果。"
+}

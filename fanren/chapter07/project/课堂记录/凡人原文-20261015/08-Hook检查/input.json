@@ -1,0 +1,84 @@
+{
+  "root": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project",
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\hook-task-3acc0501-050c-45ea-b7db-9b6e6240d812",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\hook.sqlite",
+  "codeVersion": "30e617fc62cb0d3a83c759662a9f8c598978025a",
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\"={trust_level=\"trusted\"}}",
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"save_draft\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "skills.config=[{path=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.agents\\\\skills\\\\novel-chapter-review\\\\SKILL.md\",enabled=false},{path=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.agents\\\\skills\\\\novel-feedback-task\\\\SKILL.md\",enabled=false}]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\"={trust_level=\"trusted\"}}",
+      "mcp_servers.novel_lab={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\dist\\\\mcp.js\",\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\data\\\\fanren\\\\hook.sqlite\"],cwd=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\",enabled=true,required=true,enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"save_draft\"],default_tools_approval_mode=\"approve\"}",
+      "features.hooks=true",
+      "features.shell_tool=false",
+      "web_search=\"disabled\"",
+      "hooks.state={\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:0:0\"={enabled=true,trusted_hash=\"sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9\"},\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:1:0\"={enabled=true,trusted_hash=\"sha256:47d05e00f646c060077a856b2d9b4c22541b549cf3b1a68ab43caa85ac180683\"},\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:2:0\"={enabled=true,trusted_hash=\"sha256:71eae1b9d91338a0d274e0fdcb29b9e054ce6b494d85327a568ca156e23861b4\"}}"
+    ]
+  },
+  "prompt": "请只处理作品fanren第1章的原文局部占位练习。先读当前作品与章稿，按资料所给带占位的人工输入原样保存。收到有效机械检查后，仅用资料中的原文段落回填占位，保留其他文字，保存新修订并读回。不添加剧情，不采用。\n\n这样坚持了好长时间，韩立实在累得够呛，只好随便找个土堆一屁股做了下来，然后不停地喘息着。\n\n【待补：回望师兄的原文段落】\n\n韩立看到师兄冷冷的目光，心中又有些害怕，忙把头转了回来，又听阵阵的喘气声不断从前面传来，知道是前面有爬的比自己快的人也在休息，韩立再稍微在原地呆了一会，就匆忙的往前赶。\n",
+  "review": {
+    "approvedBy": "root",
+    "definitionFiles": [
+      {
+        "path": "scripts/check-draft-placeholder.mjs",
+        "sha256": "a91808f018d43f6ea3afda1036237d16f11fb0724200e197dd463f876a63b069"
+      },
+      {
+        "path": "scripts/missing-hook-script.mjs",
+        "sha256": "e7c29d6f9dc809f96d2c8accc167d191b18a97a0bf90023dbf3e6729c74cb362"
+      },
+      {
+        "path": "config/hooks-对照.json",
+        "sha256": "6e4020cbd3c55ebb72178467841a5c31d83d3ee2de037cbc622e33340492cc60"
+      },
+      {
+        "path": "config/hooks-反馈.json",
+        "sha256": "162e00ddb3a1e6e6f308c637e533b829974b186d6b950f681302935b4503d3fd"
+      },
+      {
+        "path": ".codex/hooks.json",
+        "sha256": "6e4020cbd3c55ebb72178467841a5c31d83d3ee2de037cbc622e33340492cc60"
+      }
+    ],
+    "approvedHooks": [
+      {
+        "key": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.codex\\hooks.json:post_tool_use:0:0",
+        "currentHash": "sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9",
+        "matcher": "^mcp__novel_lab__save_draft$",
+        "command": "node scripts/check-draft-placeholder.mjs correct"
+      },
+      {
+        "key": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.codex\\hooks.json:post_tool_use:1:0",
+        "currentHash": "sha256:47d05e00f646c060077a856b2d9b4c22541b549cf3b1a68ab43caa85ac180683",
+        "matcher": "^save_draft$",
+        "command": "node scripts/check-draft-placeholder.mjs wrong-matcher"
+      },
+      {
+        "key": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.codex\\hooks.json:post_tool_use:2:0",
+        "currentHash": "sha256:71eae1b9d91338a0d274e0fdcb29b9e054ce6b494d85327a568ca156e23861b4",
+        "matcher": "^mcp__novel_lab__save_draft$",
+        "command": "node scripts/missing-hook-script.mjs"
+      }
+    ],
+    "overrides": [
+      "hooks.state={\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:0:0\"={enabled=true,trusted_hash=\"sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9\"},\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:1:0\"={enabled=true,trusted_hash=\"sha256:47d05e00f646c060077a856b2d9b4c22541b549cf3b1a68ab43caa85ac180683\"},\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:2:0\"={enabled=true,trusted_hash=\"sha256:71eae1b9d91338a0d274e0fdcb29b9e054ce6b494d85327a568ca156e23861b4\"}}"
+    ],
+    "scope": "固定脚本哈希与本次实际目录相符；信任仅传给当前宿主进程。"
+  },
+  "limits": "单条自然任务交给官方 app-server；此脚本只记录公开事件与只读结果，不决定工具调用、不执行模型循环。"
+}
