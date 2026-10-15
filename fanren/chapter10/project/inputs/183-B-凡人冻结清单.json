@@ -1,0 +1,34 @@
+{
+  "lesson": 183,
+  "stage": "B",
+  "files": [
+    {
+      "path": "seed/凡人修仙传-183-接续.json",
+      "bytes": 3861,
+      "sha256": "80277b0fa5df9b0864aade43690e25631928057217e08c51b3cbf76bf30bbfca"
+    },
+    {
+      "path": "inputs/183-B-凡人同会话只读接续.txt",
+      "bytes": 1707,
+      "sha256": "d9d3c3457ba8a210e13ff8e192ea832e17f0667f0bd9e9e878fde839269f9676"
+    },
+    {
+      "path": "materials/人工决定/FN-183-人改与接续.md",
+      "bytes": 1033,
+      "sha256": "81b0709a64ebc5d3cb05a16e9a9669d572e43be8140735a9f4e7da04b80fd804"
+    }
+  ],
+  "priorRunId": "62a34b90-587a-48e5-ac91-0ab89426c301",
+  "threadId": "01a13f0b-699a-7741-86a4-d9436824b742",
+  "database": "data/practice-0815b54f-7bfb-4150-b26a-8821ff25d266.sqlite",
+  "currentWorkRevisionBeforeUpdate": 7,
+  "nextWorkRevision": 8,
+  "currentChapterRevisions": [
+    5,
+    1,
+    2
+  ],
+  "entry": "pnpm agent --prompt inputs/183-B-凡人同会话只读接续.txt --chapter 3 --read-only --resume-run runs/62a34b90-587a-48e5-ac91-0ab89426c301",
+  "modelRuns": 1,
+  "scope": "先冻结真实A与人改记录和B输入，再W7→W8按既有入口只更新接续目标，然后唯一同会话只读B；A和人的旧历史不动。"
+}

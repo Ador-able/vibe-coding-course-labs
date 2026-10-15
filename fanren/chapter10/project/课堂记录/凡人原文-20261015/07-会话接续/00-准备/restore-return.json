@@ -1,0 +1,10 @@
+{
+  "command": "node scripts/restore-practice.mjs --snapshot 课堂记录/凡人原文-20261015/06-只读审阅/01-实际审阅/after.json",
+  "result": {
+    "chunk_id": "26f16c",
+    "wall_time_seconds": 0.0000072,
+    "exit_code": 0,
+    "original_token_count": 153,
+    "output": "(node:72076) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\"id\":\"0815b54f-7bfb-4150-b26a-8821ff25d266\",\"database\":\"data/practice-0815b54f-7bfb-4150-b26a-8821ff25d266.sqlite\",\"workId\":\"fanren\",\"restoredFrom\":\"课堂记录/凡人原文-20261015/06-只读审阅/01-实际审阅/after.json\",\"sourceSha256\":\"c13447672dfcef79c3a72af0647c789745232a59f4662a4231e6d4bb1f1efd40\",\"restoredAt\":\"2026-10-15T10:11:11.153Z\",\"scope\":\"完整恢复所选实录快照；未调用模型，未覆盖其他练习库。\"}\n"
+  }
+}

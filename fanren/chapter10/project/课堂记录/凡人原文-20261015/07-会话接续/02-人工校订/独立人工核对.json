@@ -1,0 +1,48 @@
+{
+  "fromRevision": 1,
+  "toRevision": 2,
+  "origin": "human",
+  "status": "draft",
+  "workRevision": 7,
+  "removed": {
+    "utf16Start": 1686,
+    "text": "铁。",
+    "codePoints": 2
+  },
+  "beforeExcerpt": "把身子往后缩了缩，铁。这才看清",
+  "afterExcerpt": "把身子往后缩了缩，这才看清",
+  "exactlyTwoCodePointsRemoved": true,
+  "titleAndAllOtherTextExact": true,
+  "oldDraftAndHistoryRetained": true,
+  "oldWorkAndOtherChaptersAndTasksUnchanged": true,
+  "currentBodySha256": "6e730dd195bff7a2d80c53305de9f694252174a3904daf1bfa2d151f7b28cbab",
+  "currentBodyCodePoints": 2462,
+  "currentBodyHanCharacters": 2087,
+  "currentBodyUtf8Bytes": 7306,
+  "DOMBodySha256": "6e730dd195bff7a2d80c53305de9f694252174a3904daf1bfa2d151f7b28cbab",
+  "DOMEqualsSQLite": true,
+  "networkResponses": [
+    {
+      "sequence": 49,
+      "url": "http://127.0.0.1:4477/api/draft",
+      "status": 200
+    },
+    {
+      "sequence": 55,
+      "url": "http://127.0.0.1:4477/api/work?work=fanren",
+      "status": 200
+    },
+    {
+      "sequence": 61,
+      "url": "http://127.0.0.1:4477/api/work?work=fanren",
+      "status": 200
+    }
+  ],
+  "image": {
+    "width": 2560,
+    "height": 1640,
+    "sha256": "d868179b50a5acbb74b7cb5052f71ab9995fe24cb7ad5b26afca831e5e655c28"
+  },
+  "temporaryViewportCleared": true,
+  "provenance": "冗片存在于提供的原文材料，A的导入r1原样保留；本次仅工作台课堂编辑稿删除，原始TXT和MD保持。"
+}
