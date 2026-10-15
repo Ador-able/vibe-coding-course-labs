@@ -1,0 +1,36 @@
+{
+  "codeVersion": "72056f7038693cfb655e39253be3da4e5fe32bd8",
+  "runId": "0ec066c6-54bc-4df2-9e4c-ec1431be0c33",
+  "threadId": "01a13e0e-7919-7020-b3e1-cff07fa39c0d",
+  "state": "completed",
+  "modelSessions": 1,
+  "usage": {
+    "input_tokens": 434863,
+    "cached_input_tokens": 345344,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 13883,
+    "reasoning_output_tokens": 146
+  },
+  "originalHan": 2015,
+  "revisedHan": 1431,
+  "removedCharacters": 694,
+  "onlyOneHumanChapterVersion": true,
+  "firstAndThirdUnchanged": true,
+  "revisedBodyExactlySaved": true,
+  "basisCurrent": [
+    true,
+    true,
+    false
+  ],
+  "oldDeliveryBytes": 21798,
+  "currentExportBytes": 19734,
+  "oldDeliveryFullBytesDifferent": true,
+  "oldDeliveryUnchanged": true,
+  "modelBusinessTablesUnchanged": true,
+  "planExists": true,
+  "progressUpdated": true,
+  "commandCount": 11,
+  "commandFailures": [],
+  "modelDidNotCallSaveOrExport": true,
+  "limits": "人工删去C04考核结果是明确教学控制，不是模型出错。原文完整保留；一个真实模型会话只核对并规划，没有改写小说、新交付或实际人的文学认可。公开SDK事件不等于供应商全部网络与宿主隐藏输入。"
+}

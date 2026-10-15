@@ -1,0 +1,101 @@
+{
+  "runId": "0ec066c6-54bc-4df2-9e4c-ec1431be0c33",
+  "codeVersion": "72056f7038693cfb655e39253be3da4e5fe32bd8",
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter08\\\\project\"={trust_level=\"trusted\"}}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}"
+    ]
+  },
+  "options": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter08\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "workspace-write",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "task": {
+    "id": "fanren",
+    "runId": "825d420e-0a6a-44b9-b7b1-a77f7faca591",
+    "db": "data/fanren/replan-825d420e-0a6a-44b9-b7b1-a77f7faca591.sqlite",
+    "folder": "replan",
+    "deliverable": "deliverables/replan-825d420e-0a6a-44b9-b7b1-a77f7faca591-旧三章待审.md",
+    "review": "replan/前置-完整材料核对.md",
+    "progress": "replan/当前进度.md",
+    "plan": "replan/调整后的计划.md",
+    "oldProgress": "replan/前置-最新进度.md",
+    "codeVersion": "72056f7038693cfb655e39253be3da4e5fe32bd8",
+    "previous": {
+      "id": "fanren",
+      "runId": "c7959656-69dd-4518-8ebb-5f1507a29fbc",
+      "db": "data/fanren/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc.sqlite",
+      "folder": "task-state",
+      "deliverable": "课堂记录/凡人原文-20261015/03-跨会话/deliverables/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc-三章待审.md",
+      "review": "课堂记录/凡人原文-20261015/03-跨会话/task-state/完整材料核对.md",
+      "progress": "课堂记录/凡人原文-20261015/03-跨会话/task-state/最新进度.md",
+      "codeVersion": "75e35f3bc32d52f468bd21394bddb7f199b9ccc3",
+      "materials": [
+        {
+          "path": "materials/作品.json",
+          "bytes": 1980,
+          "sha256": "ef9420b9753ec0c87a5e92b4df2b96cd260ded4ac25bac3f8b6551aa05445c95"
+        },
+        {
+          "path": "materials/第一章.md",
+          "bytes": 7080,
+          "sha256": "a226ff465d4214e0deba51f2f89dde362fbc738c978fa10289924070d5603cde"
+        },
+        {
+          "path": "materials/第二章.md",
+          "bytes": 6957,
+          "sha256": "7fa5cbd063a028c04574a54f64d4648a784092237c3bdc8628e6730ff4382199"
+        },
+        {
+          "path": "materials/第三章.md",
+          "bytes": 7351,
+          "sha256": "1d07ed4d64281424e741c9d479559f4e72abd3dde5ecf0b4d70537406dfc1c56"
+        },
+        {
+          "path": "materials/访谈-教学构造.md",
+          "bytes": 2247,
+          "sha256": "97a1c7fc3147bc408b25b781324899520608b2a8666ba745211ab07a68596013"
+        },
+        {
+          "path": "materials/PRD-人工示范.md",
+          "bytes": 5157,
+          "sha256": "234fd80b77b65ab39ef4e8177b717366ce98fdaffa10072eb90a57f6a2680212"
+        },
+        {
+          "path": "materials/阶段计划-人工示范.md",
+          "bytes": 7274,
+          "sha256": "0a09986c32b85f0dc70e3c062ee2741ff00c910fbab396053ceb50e0e704f901"
+        }
+      ],
+      "scope": "完整凡人原文片段人工导入；资料 r1、三章 r1/draft，没有模型生成或继承采用。"
+    },
+    "copied": [
+      {
+        "name": "前置-最新进度.md",
+        "from": "课堂记录/凡人原文-20261015/03-跨会话/task-state/最新进度.md",
+        "bytes": 3610,
+        "sha256": "c1fc2a3525e0513bd1dd64ffe0f5c531c244f79fc14ee2a4ddd951a232111b29"
+      },
+      {
+        "name": "前置-完整材料核对.md",
+        "from": "课堂记录/凡人原文-20261015/03-跨会话/task-state/完整材料核对.md",
+        "bytes": 15989,
+        "sha256": "3008d2491e83d55478312c80a0324ba8e0e05762aefe0a884c8dadca1825ad16"
+      }
+    ],
+    "scope": "同一套完整三章在独立新库人工初始化为 r1/draft；前置核对、进度及旧导出来自所选跨会话 B 的实际结果，不代表读者已执行。"
+  },
+  "prompt": "请依据这次人工变化调整计划，不执行小说改写或新导出。\n\n完整读取 materials/访谈-教学构造.md、materials/PRD-人工示范.md、materials/阶段计划-人工示范.md、README.md、materials/人工变化说明.md，以及 replan/task.json、任务说明.md、当前进度.md、前置-最新进度.md、前置-完整材料核对.md、第二章-改前全文.md、第二章-人工修改完整输入.json。后几个文件均在 replan 目录内。前置记录中的原任务路径和时间属于历史事实，不直接当作本库最新状态。\n\n通过 node dist/cli.js show 与 chapter 1、2、3 实际取得作品 fanren 在数据库 data/fanren/replan-825d420e-0a6a-44b9-b7b1-a77f7faca591.sqlite 的当前资料、目录、修订与三章完整正文。实际打开旧交付 deliverables/replan-825d420e-0a6a-44b9-b7b1-a77f7faca591-旧三章待审.md，用现有 Store.exportWork 的完整当前文本作逐字节比较，不调用 CLI export、不覆盖旧文件。不得以摘要、头几行、字符计数、关键词或 basisCurrent 代替完整语义核对。\n\n判断变化影响哪些已经完成的工作、哪些原结论仍可靠、哪些需要重新检查。引用实际前后原句并解释条件；未在正文中写出的事件不能当成已发生。不要预先假定第三章一定错误或一定可以照旧保留。涉及人的文学取舍时列出选择与各自依赖，不代替人决定。\n\n只保存 replan/调整后的计划.md 和 replan/当前进度.md。计划要保留可靠成果，明确先后依赖、下一步对象、证据和负责人；进度区分已有事实、计划中尚未执行的工作与待人的决定。不能把新计划当作第三章已修好、当前交付已更新或人已认可。最后完整读回这两份文件，按实际保存结果报告。不要读取其他项目、个人记忆、账户配置或私有宿主目录。\n",
+  "scope": "本次只核对实际材料并调整计划，不生成或改写小说；公共任务输入和 SDK 事件可回查，不声称包含宿主隐藏配置或供应商原始网络请求。"
+}
