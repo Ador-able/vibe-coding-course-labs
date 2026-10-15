@@ -1,0 +1,35 @@
+{
+  "sourceId": "R07",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+      "sourceId": "R07",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R07",
+        "group": "墨大夫准备补充的岗位",
+        "status": "planned",
+        "totalCount": 2,
+        "formalCount": null,
+        "probationaryCount": null,
+        "duplicateOf": null,
+        "evidence": "我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。"
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "checkState": "passed",
+      "contentDecision": "needs_human"
+    }
+  ],
+  "currentAttempt": 0
+}

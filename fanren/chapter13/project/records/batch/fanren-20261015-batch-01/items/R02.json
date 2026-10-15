@@ -1,0 +1,35 @@
+{
+  "sourceId": "R02",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+      "sourceId": "R02",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R02",
+        "group": "岳堂主宣布的合格者",
+        "status": "observed",
+        "totalCount": 7,
+        "formalCount": 6,
+        "probationaryCount": null,
+        "duplicateOf": null,
+        "evidence": "这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。"
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "checkState": "passed",
+      "contentDecision": "needs_human"
+    }
+  ],
+  "currentAttempt": 0
+}

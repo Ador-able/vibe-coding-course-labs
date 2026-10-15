@@ -1,0 +1,286 @@
+{
+  "group": "extraction",
+  "name": "fanren-20261015-extract-01",
+  "startedAt": "2026-10-15T09:52:07.357Z",
+  "executionGitHead": "79612c8beef955bd3e15def42baf11181c90c634",
+  "sourceVersion": "sha256:1af57b68f2d67caeb1faddf7a12d110a64f89beaeeb9df585e5e6b8af5d85945",
+  "inputFiles": [
+    {
+      "key": "分类-共同规则.txt",
+      "name": "分类-共同规则.txt",
+      "bytes": 299,
+      "sha256": "ae31894988c4813da51dd847b4ab9feacc1e8fb1125fe6a4788bc648cc4823d3"
+    },
+    {
+      "key": "分类-十二条原文.json",
+      "name": "分类-十二条原文.json",
+      "bytes": 5483,
+      "sha256": "a32aa33e4f8d8640e6e199f224d57fca78f43b5ff5ff3ac12c0493e2afb1c925"
+    },
+    {
+      "key": "分类-发现模板.txt",
+      "name": "分类-发现模板.txt",
+      "bytes": 458,
+      "sha256": "a9759be7d6d383b965aff9105bb03890d5da0a8321cadeed297f1d8ce29b9cc4"
+    },
+    {
+      "key": "分类-口径-v1.json",
+      "name": "分类-口径-v1.json",
+      "bytes": 1352,
+      "sha256": "17282661938ad59ad6a922b76dd34d441be452de1837f25e5e247889877609e0"
+    },
+    {
+      "key": "分类-口径-v2.json",
+      "name": "分类-口径-v2.json",
+      "bytes": 1796,
+      "sha256": "13f70acc77086ccf20942c9ac164e0ab51a7e657193372261269258019d35872"
+    },
+    {
+      "key": "分类-独立参考.json",
+      "name": "分类-独立参考.json",
+      "bytes": 1523,
+      "sha256": "07fb42779d5781ef4dbed543e2a3a9183d07714cb378a3afb6ab969b4fad15fd"
+    },
+    {
+      "key": "分类-重标模板.txt",
+      "name": "分类-重标模板.txt",
+      "bytes": 541,
+      "sha256": "e1fdfb40f479d01fd1fcd9684fc4cbcccd757ce91b3a82a7a6c8c6111fd30fbe"
+    },
+    {
+      "key": "原文定位说明.json",
+      "name": "原文定位说明.json",
+      "bytes": 510,
+      "sha256": "8b506e968721c4bcd4154521fb2eaea20a36a3facf4c1107e91a54c033529c0c"
+    },
+    {
+      "key": "抽取-共同规则.txt",
+      "name": "抽取-共同规则.txt",
+      "bytes": 319,
+      "sha256": "ae17333ebebae646984dd13b5fe629ad0d6e817b8eae38b580dc2237544636c3"
+    },
+    {
+      "key": "抽取-字段与统计口径.txt",
+      "name": "抽取-字段与统计口径.txt",
+      "bytes": 1587,
+      "sha256": "a7e7b10a1784ed1a38f413183678d72dfec6cc6f73c3212e51e9d283049b0487"
+    },
+    {
+      "key": "抽取-完整八份任务.txt",
+      "name": "抽取-完整八份任务.txt",
+      "bytes": 5478,
+      "sha256": "aa397f353f12234d34f47b2106e886c8201ff633ae0d858ffb2ae8353c7f12ab"
+    },
+    {
+      "key": "抽取-独立参考.json",
+      "name": "抽取-独立参考.json",
+      "bytes": 4000,
+      "sha256": "f004ee184af88a22ff25a73746994df1a76f5f1aeb6864db3d596a6402531473"
+    },
+    {
+      "key": "抽取与批量-十段原文.json",
+      "name": "抽取与批量-十段原文.json",
+      "bytes": 5563,
+      "sha256": "40962296104d958fc15920e87fdc4dbe762aa99ab7b6715f57a6c6edeae4f308"
+    },
+    {
+      "key": "模板-V1完整任务.txt",
+      "name": "模板-V1完整任务.txt",
+      "bytes": 6408,
+      "sha256": "4fb6f5e761dab428a3716966ed8b3ff7da5c2d60653e838a20b87f18fd30b546"
+    },
+    {
+      "key": "模板-V2唯一增加段.txt",
+      "name": "模板-V2唯一增加段.txt",
+      "bytes": 445,
+      "sha256": "d37da97443209be2de1d27da9d1595ccf193b4b89efab1667a63a938ea54840a"
+    },
+    {
+      "key": "模板-V2完整任务.txt",
+      "name": "模板-V2完整任务.txt",
+      "bytes": 6854,
+      "sha256": "ce29308b75f38dacd90d4a8664d5340b70f6ca1085061cd0e8899a98af369e93"
+    },
+    {
+      "key": "逐项-修复模板.txt",
+      "name": "逐项-修复模板.txt",
+      "bytes": 375,
+      "sha256": "8f94450cae0f81e2e77b5243f03464444ffdd20eb796fb305ea3187ff6ecf1be"
+    },
+    {
+      "key": "逐项-本地边界候选.json",
+      "name": "逐项-本地边界候选.json",
+      "bytes": 1169,
+      "sha256": "5d9f2f6d615ebdbf3e9b6078c5f1126b436b7d7ee55702972e27e1ef62be3725"
+    },
+    {
+      "key": "长文-goal.txt",
+      "name": "长文-goal.txt",
+      "bytes": 466,
+      "sha256": "4dd0c85445e2358916ed850df43c2a3f000f73b32c7cc9c9b4ceb3cec01c48c4"
+    },
+    {
+      "key": "长文-instructions.txt",
+      "name": "长文-instructions.txt",
+      "bytes": 350,
+      "sha256": "f9bc95169920fc2bc6a643a229a3136a5c3b10db251672955d7bac2cb3f01ede"
+    },
+    {
+      "key": "长文-map.txt",
+      "name": "长文-map.txt",
+      "bytes": 429,
+      "sha256": "a24a369383d0f4ef65e5c14a4d83257cbd38ffa322f91d6b9a900916437c9fec"
+    },
+    {
+      "key": "长文-reduce.txt",
+      "name": "长文-reduce.txt",
+      "bytes": 315,
+      "sha256": "8998dd1a242c5802e072489db08d2685224747346bcc9e15d5ee79cbed392d06"
+    },
+    {
+      "key": "长文-refine-first.txt",
+      "name": "长文-refine-first.txt",
+      "bytes": 176,
+      "sha256": "5a3f21fdd896e30b0dd5d4026b50fbfbb27c34ac0b0a609036fd97931994dd36"
+    },
+    {
+      "key": "长文-refine-next.txt",
+      "name": "长文-refine-next.txt",
+      "bytes": 360,
+      "sha256": "7148b7ddbd5e2f4913dfc30a7b9dd6e32176caa6a9ac7b1f1021c3760380b4d6"
+    },
+    {
+      "key": "长文-whole.txt",
+      "name": "长文-whole.txt",
+      "bytes": 167,
+      "sha256": "67f024b525211cfd0f2f75e9e0cfdf6f611ecc8a26dfee63d8d07ace6327382c"
+    },
+    {
+      "key": "长文-完整三段与段落定位.json",
+      "name": "长文-完整三段与段落定位.json",
+      "bytes": 57688,
+      "sha256": "65101c23dd6414f3fe6f64a1062794ff4a27da55dffef7b9e9bc349843d14e0b"
+    },
+    {
+      "key": "长文-独立核查参考.json",
+      "name": "长文-独立核查参考.json",
+      "bytes": 1162,
+      "sha256": "54bae6d912dae451329322d753187a265480433113cd6fb3f09b1b432ec690bf"
+    },
+    {
+      "key": "非敏感固定设置.json",
+      "name": "非敏感固定设置.json",
+      "bytes": 768,
+      "sha256": "de6851e19b21f87788672fa2b40ec10e5622634fcad9fdb36352f6d95976a1cf"
+    }
+  ],
+  "actualHttpRequests": 1,
+  "textTasks": 1,
+  "calls": [
+    {
+      "id": "extract",
+      "input": {
+        "instructions": "仅按每项完整小说原段和教师scope抽取，原文不改写。group与sourceId保留任务给出的身份，引用只能来自本项text。证据能定位不表示数量或时点已正确；按口径区分约数、未知、明确零与未来安排。只返回指定JSON，不用Markdown围栏，不自评分。",
+        "prompt": "每项业务字段固定sourceId/group/status/totalCount/formalCount/probationaryCount/duplicateOf，外加evidence字符串。sourceId必须是本项id（R01等），不能填originalSourceId中的C号；group照本项元信息。status为observed（当前已发生或已宣布身份/去向）或planned（本任务统计的还缺岗位、将来遣送指令）。totalCount为该任务范围准确人数，正式与记名人数只收本段明确报告的数量；明确本组两人尚非正式时formalCount为0，未报告的量为null，约数不任选整数；R07的2是计划需求人数，不能当现有员工。R05可将6名正式与2名记名相加得到8，R06同原段重复导入保留行但duplicateOf为R05。不能从相邻记录或未来结果反填本段未提供的量。evidence用本段一个连续原句，支持本项数值和时点，不用教师scope冒充小说原句。\n\n顶层为records与summary。summary为distinctSourceIds（按原文originalSourceId/start/end去重后保留的首次记录ID）、ratioSourceIds、formalNumerator、groupDenominator、formalRatio、unknownTotalSourceIds、plannedSourceIds、limits。比例只问“下山同行的一组”中明确报告的正式人数占本组人数：分子和分母取同一组，重复导入只用首次记录，不加别的时点、计划需求、其他群体或约数。比例用0到1的小数，不统计全部考核者的录取率。unknownTotalSourceIds列准确总数未知项；plannedSourceIds列计划项。limits说明资料支持范围、约数、重叠与未来条件。不要输出CSV。\n\n<records>\n[\n  {\n    \"id\": \"R01\",\n    \"originalSourceId\": \"C03\",\n    \"start\": 1974,\n    \"end\": 2078,\n    \"text\": \"　　竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。\",\n    \"group\": \"进入竹林的孩童\",\n    \"scope\": \"只收本段人数，不把三十余写成准确30或31\"\n  },\n  {\n    \"id\": \"R02\",\n    \"originalSourceId\": \"C04\",\n    \"start\": 1946,\n    \"end\": 1989,\n    \"text\": \"　　“这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。”他缓缓的说道。\",\n    \"group\": \"岳堂主宣布的合格者\",\n    \"scope\": \"只收本段明说数量，不从下一段补其他称呼\"\n  },\n  {\n    \"id\": \"R03\",\n    \"originalSourceId\": \"C04\",\n    \"start\": 1990,\n    \"end\": 2062,\n    \"text\": \"　　“另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。”岳堂主回头望了一眼穿员外袍的老者，老者手捻胡须，满意的冲他点了下头。\",\n    \"group\": \"保送七绝堂者\",\n    \"scope\": \"另一人表示1人；不把保送换算为已学成或护法\"\n  },\n  {\n    \"id\": \"R04\",\n    \"originalSourceId\": \"C04\",\n    \"start\": 2063,\n    \"end\": 2202,\n    \"text\": \"　　“至于其他人……”岳堂主打量了几下其余孩子，用右手轻轻地摸了摸自己的下巴，稍微沉吟了一会儿便道：“张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。”\",\n    \"group\": \"韩立与张铁\",\n    \"scope\": \"仅这两人，目前还需半年后考核，未正式成为内门弟子\"\n  },\n  {\n    \"id\": \"R05\",\n    \"originalSourceId\": \"C05\",\n    \"start\": 922,\n    \"end\": 957,\n    \"text\": \"　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\",\n    \"group\": \"下山同行的一组\",\n    \"scope\": \"这里明确报告六名正式与两名记名，允许相加得本组8人\"\n  },\n  {\n    \"id\": \"R06\",\n    \"originalSourceId\": \"C05\",\n    \"start\": 922,\n    \"end\": 957,\n    \"text\": \"　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\",\n    \"group\": \"下山同行的一组\",\n    \"scope\": \"同一原段被重复导入，身份定位与R05完全一致\",\n    \"duplicateOf\": \"R05\"\n  },\n  {\n    \"id\": \"R07\",\n    \"originalSourceId\": \"C05\",\n    \"start\": 958,\n    \"end\": 1034,\n    \"text\": \"　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\",\n    \"group\": \"墨大夫准备补充的岗位\",\n    \"scope\": \"统计还缺的岗位人数，属于计划需求，不是实际已有员工数\"\n  },\n  {\n    \"id\": \"R08\",\n    \"originalSourceId\": \"C05\",\n    \"start\": 2308,\n    \"end\": 2464,\n    \"text\": \"　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\",\n    \"group\": \"墨大夫新收的两名记名弟子\",\n    \"scope\": \"从即日起是当前身份；会教和也许还教是未来安排，不是已学成\"\n  }\n]\n</records>"
+      },
+      "materialScope": [
+        "R01",
+        "R02",
+        "R03",
+        "R04",
+        "R05",
+        "R06",
+        "R07",
+        "R08"
+      ],
+      "settings": {
+        "modelId": "ep-ymk08qa8",
+        "baseURL": "https://tokenhub.tencentmaas.com/v1",
+        "temperature": 0,
+        "maxOutputTokens": 8192,
+        "maxRetries": 0,
+        "thinking": {
+          "type": "disabled"
+        }
+      },
+      "inputSHA256": "a598654f0f3ffc24bf7044d525f4c76e6712a80d5365d7cb8b0dbdd864566261",
+      "startedAt": "2026-10-15T09:52:07.360Z",
+      "actualHttpRequests": 1,
+      "http": [
+        {
+          "url": "https://tokenhub.tencentmaas.com/v1/chat/completions",
+          "method": "POST",
+          "requestBody": "{\"model\":\"ep-ymk08qa8\",\"max_tokens\":8192,\"temperature\":0,\"messages\":[{\"role\":\"system\",\"content\":\"仅按每项完整小说原段和教师scope抽取，原文不改写。group与sourceId保留任务给出的身份，引用只能来自本项text。证据能定位不表示数量或时点已正确；按口径区分约数、未知、明确零与未来安排。只返回指定JSON，不用Markdown围栏，不自评分。\"},{\"role\":\"user\",\"content\":\"每项业务字段固定sourceId/group/status/totalCount/formalCount/probationaryCount/duplicateOf，外加evidence字符串。sourceId必须是本项id（R01等），不能填originalSourceId中的C号；group照本项元信息。status为observed（当前已发生或已宣布身份/去向）或planned（本任务统计的还缺岗位、将来遣送指令）。totalCount为该任务范围准确人数，正式与记名人数只收本段明确报告的数量；明确本组两人尚非正式时formalCount为0，未报告的量为null，约数不任选整数；R07的2是计划需求人数，不能当现有员工。R05可将6名正式与2名记名相加得到8，R06同原段重复导入保留行但duplicateOf为R05。不能从相邻记录或未来结果反填本段未提供的量。evidence用本段一个连续原句，支持本项数值和时点，不用教师scope冒充小说原句。\\n\\n顶层为records与summary。summary为distinctSourceIds（按原文originalSourceId/start/end去重后保留的首次记录ID）、ratioSourceIds、formalNumerator、groupDenominator、formalRatio、unknownTotalSourceIds、plannedSourceIds、limits。比例只问“下山同行的一组”中明确报告的正式人数占本组人数：分子和分母取同一组，重复导入只用首次记录，不加别的时点、计划需求、其他群体或约数。比例用0到1的小数，不统计全部考核者的录取率。unknownTotalSourceIds列准确总数未知项；plannedSourceIds列计划项。limits说明资料支持范围、约数、重叠与未来条件。不要输出CSV。\\n\\n<records>\\n[\\n  {\\n    \\\"id\\\": \\\"R01\\\",\\n    \\\"originalSourceId\\\": \\\"C03\\\",\\n    \\\"start\\\": 1974,\\n    \\\"end\\\": 2078,\\n    \\\"text\\\": \\\"　　竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。\\\",\\n    \\\"group\\\": \\\"进入竹林的孩童\\\",\\n    \\\"scope\\\": \\\"只收本段人数，不把三十余写成准确30或31\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"R02\\\",\\n    \\\"originalSourceId\\\": \\\"C04\\\",\\n    \\\"start\\\": 1946,\\n    \\\"end\\\": 1989,\\n    \\\"text\\\": \\\"　　“这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。”他缓缓的说道。\\\",\\n    \\\"group\\\": \\\"岳堂主宣布的合格者\\\",\\n    \\\"scope\\\": \\\"只收本段明说数量，不从下一段补其他称呼\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"R03\\\",\\n    \\\"originalSourceId\\\": \\\"C04\\\",\\n    \\\"start\\\": 1990,\\n    \\\"end\\\": 2062,\\n    \\\"text\\\": \\\"　　“另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。”岳堂主回头望了一眼穿员外袍的老者，老者手捻胡须，满意的冲他点了下头。\\\",\\n    \\\"group\\\": \\\"保送七绝堂者\\\",\\n    \\\"scope\\\": \\\"另一人表示1人；不把保送换算为已学成或护法\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"R04\\\",\\n    \\\"originalSourceId\\\": \\\"C04\\\",\\n    \\\"start\\\": 2063,\\n    \\\"end\\\": 2202,\\n    \\\"text\\\": \\\"　　“至于其他人……”岳堂主打量了几下其余孩子，用右手轻轻地摸了摸自己的下巴，稍微沉吟了一会儿便道：“张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。”\\\",\\n    \\\"group\\\": \\\"韩立与张铁\\\",\\n    \\\"scope\\\": \\\"仅这两人，目前还需半年后考核，未正式成为内门弟子\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"R05\\\",\\n    \\\"originalSourceId\\\": \\\"C05\\\",\\n    \\\"start\\\": 922,\\n    \\\"end\\\": 957,\\n    \\\"text\\\": \\\"　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\\\",\\n    \\\"group\\\": \\\"下山同行的一组\\\",\\n    \\\"scope\\\": \\\"这里明确报告六名正式与两名记名，允许相加得本组8人\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"R06\\\",\\n    \\\"originalSourceId\\\": \\\"C05\\\",\\n    \\\"start\\\": 922,\\n    \\\"end\\\": 957,\\n    \\\"text\\\": \\\"　　“是的。这些人中有六名正式弟子，两名记名弟子。”张均仔细的回答道。\\\",\\n    \\\"group\\\": \\\"下山同行的一组\\\",\\n    \\\"scope\\\": \\\"同一原段被重复导入，身份定位与R05完全一致\\\",\\n    \\\"duplicateOf\\\": \\\"R05\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"R07\\\",\\n    \\\"originalSourceId\\\": \\\"C05\\\",\\n    \\\"start\\\": 958,\\n    \\\"end\\\": 1034,\\n    \\\"text\\\": \\\"　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。\\\",\\n    \\\"group\\\": \\\"墨大夫准备补充的岗位\\\",\\n    \\\"scope\\\": \\\"统计还缺的岗位人数，属于计划需求，不是实际已有员工数\\\"\\n  },\\n  {\\n    \\\"id\\\": \\\"R08\\\",\\n    \\\"originalSourceId\\\": \\\"C05\\\",\\n    \\\"start\\\": 2308,\\n    \\\"end\\\": 2464,\\n    \\\"text\\\": \\\"　　直到韩立在一边站得脚都有点麻的时候，墨大夫才不慌不忙的把手里的书放到旁边的书桌上，冷冷地打量了两人一番，又端起了一杯茶，喝了几小口，才慢吞吞地开口道：“你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。”墨大夫面无表情，把手里的茶又放了下来。\\\",\\n    \\\"group\\\": \\\"墨大夫新收的两名记名弟子\\\",\\n    \\\"scope\\\": \\\"从即日起是当前身份；会教和也许还教是未来安排，不是已学成\\\"\\n  }\\n]\\n</records>\"}],\"thinking\":{\"type\":\"disabled\"}}",
+          "requestSHA256": "c5a46b993068c287a195f79b08b994cf685da4c64ed44a3560555f422a337dd2",
+          "startedAt": "2026-10-15T09:52:07.374Z",
+          "status": 200,
+          "responseBody": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\n  \\\"records\\\": [\\n    {\\n      \\\"sourceId\\\": \\\"R01\\\",\\n      \\\"group\\\": \\\"进入竹林的孩童\\\",\\n      \\\"status\\\": \\\"observed\\\",\\n      \\\"totalCount\\\": null,\\n      \\\"formalCount\\\": null,\\n      \\\"probationaryCount\\\": null,\\n      \\\"duplicateOf\\\": null,\\n      \\\"evidence\\\": \\\"三十余名孩童，一冲进竹林就立即散了开来。\\\"\\n    },\\n    {\\n      \\\"sourceId\\\": \\\"R02\\\",\\n      \\\"group\\\": \\\"岳堂主宣布的合格者\\\",\\n      \\\"status\\\": \\\"observed\\\",\\n      \\\"totalCount\\\": 7,\\n      \\\"formalCount\\\": 6,\\n      \\\"probationaryCount\\\": null,\\n      \\\"duplicateOf\\\": null,\\n      \\\"evidence\\\": \\\"这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。\\\"\\n    },\\n    {\\n      \\\"sourceId\\\": \\\"R03\\\",\\n      \\\"group\\\": \\\"保送七绝堂者\\\",\\n      \\\"status\\\": \\\"observed\\\",\\n      \\\"totalCount\\\": 1,\\n      \\\"formalCount\\\": null,\\n      \\\"probationaryCount\\\": null,\\n      \\\"duplicateOf\\\": null,\\n      \\\"evidence\\\": \\\"另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。\\\"\\n    },\\n    {\\n      \\\"sourceId\\\": \\\"R04\\\",\\n      \\\"group\\\": \\\"韩立与张铁\\\",\\n      \\\"status\\\": \\\"observed\\\",\\n      \\\"totalCount\\\": 2,\\n      \\\"formalCount\\\": 0,\\n      \\\"probationaryCount\\\": null,\\n      \\\"duplicateOf\\\": null,\\n      \\\"evidence\\\": \\\"张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。\\\"\\n    },\\n    {\\n      \\\"sourceId\\\": \\\"R05\\\",\\n      \\\"group\\\": \\\"下山同行的一组\\\",\\n      \\\"status\\\": \\\"observed\\\",\\n      \\\"totalCount\\\": 8,\\n      \\\"formalCount\\\": 6,\\n      \\\"probationaryCount\\\": 2,\\n      \\\"duplicateOf\\\": null,\\n      \\\"evidence\\\": \\\"这些人中有六名正式弟子，两名记名弟子。\\\"\\n    },\\n    {\\n      \\\"sourceId\\\": \\\"R06\\\",\\n      \\\"group\\\": \\\"下山同行的一组\\\",\\n      \\\"status\\\": \\\"observed\\\",\\n      \\\"totalCount\\\": 8,\\n      \\\"formalCount\\\": 6,\\n      \\\"probationaryCount\\\": 2,\\n      \\\"duplicateOf\\\": \\\"R05\\\",\\n      \\\"evidence\\\": \\\"这些人中有六名正式弟子，两名记名弟子。\\\"\\n    },\\n    {\\n      \\\"sourceId\\\": \\\"R07\\\",\\n      \\\"group\\\": \\\"墨大夫准备补充的岗位\\\",\\n      \\\"status\\\": \\\"planned\\\",\\n      \\\"totalCount\\\": 2,\\n      \\\"formalCount\\\": null,\\n      \\\"probationaryCount\\\": null,\\n      \\\"duplicateOf\\\": null,\\n      \\\"evidence\\\": \\\"我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。\\\"\\n    },\\n    {\\n      \\\"sourceId\\\": \\\"R08\\\",\\n      \\\"group\\\": \\\"墨大夫新收的两名记名弟子\\\",\\n      \\\"status\\\": \\\"observed\\\",\\n      \\\"totalCount\\\": 2,\\n      \\\"formalCount\\\": 0,\\n      \\\"probationaryCount\\\": 2,\\n      \\\"duplicateOf\\\": null,\\n      \\\"evidence\\\": \\\"你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。\\\"\\n    }\\n  ],\\n  \\\"summary\\\": {\\n    \\\"distinctSourceIds\\\": [\\\"R01\\\", \\\"R02\\\", \\\"R03\\\", \\\"R04\\\", \\\"R05\\\", \\\"R07\\\", \\\"R08\\\"],\\n    \\\"ratioSourceIds\\\": [\\\"R05\\\"],\\n    \\\"formalNumerator\\\": 6,\\n    \\\"groupDenominator\\\": 8,\\n    \\\"formalRatio\\\": 0.75,\\n    \\\"unknownTotalSourceIds\\\": [\\\"R01\\\"],\\n    \\\"plannedSourceIds\\\": [\\\"R07\\\"],\\n    \\\"limits\\\": \\\"资料支持范围：R01为约数三十余名，未提供准确总数；R02、R03、R04、R05、R07、R08为明确数量。R06为R05的重复导入，保留行但duplicateOf标记为R05，不参与去重统计。R07为计划需求人数，非现有员工。R08中两人从即日起为记名弟子，正式弟子数为0。比例计算仅基于R05下山同行的一组，分子为6名正式弟子，分母为8人，比例为0.75。\\\"\\n  }\\n}\",\"role\":\"assistant\"}}],\"created\":1792057935,\"id\":\"8169d9d0-882a-4e5b-86a6-0b8e0f298188\",\"model\":\"deepseek-v4-flash-0731\",\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":1521,\"completion_tokens\":1006,\"total_tokens\":2527,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":0}}}",
+          "responseSHA256": "c194b6ee1e52b400cbbb5904d55f371b55d67039635a509cc98e1759dc1f8f62",
+          "finishedAt": "2026-10-15T09:52:17.047Z"
+        }
+      ],
+      "status": "returned",
+      "result": {
+        "text": "{\n  \"records\": [\n    {\n      \"sourceId\": \"R01\",\n      \"group\": \"进入竹林的孩童\",\n      \"status\": \"observed\",\n      \"totalCount\": null,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"三十余名孩童，一冲进竹林就立即散了开来。\"\n    },\n    {\n      \"sourceId\": \"R02\",\n      \"group\": \"岳堂主宣布的合格者\",\n      \"status\": \"observed\",\n      \"totalCount\": 7,\n      \"formalCount\": 6,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。\"\n    },\n    {\n      \"sourceId\": \"R03\",\n      \"group\": \"保送七绝堂者\",\n      \"status\": \"observed\",\n      \"totalCount\": 1,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。\"\n    },\n    {\n      \"sourceId\": \"R04\",\n      \"group\": \"韩立与张铁\",\n      \"status\": \"observed\",\n      \"totalCount\": 2,\n      \"formalCount\": 0,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。\"\n    },\n    {\n      \"sourceId\": \"R05\",\n      \"group\": \"下山同行的一组\",\n      \"status\": \"observed\",\n      \"totalCount\": 8,\n      \"formalCount\": 6,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": null,\n      \"evidence\": \"这些人中有六名正式弟子，两名记名弟子。\"\n    },\n    {\n      \"sourceId\": \"R06\",\n      \"group\": \"下山同行的一组\",\n      \"status\": \"observed\",\n      \"totalCount\": 8,\n      \"formalCount\": 6,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": \"R05\",\n      \"evidence\": \"这些人中有六名正式弟子，两名记名弟子。\"\n    },\n    {\n      \"sourceId\": \"R07\",\n      \"group\": \"墨大夫准备补充的岗位\",\n      \"status\": \"planned\",\n      \"totalCount\": 2,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。\"\n    },\n    {\n      \"sourceId\": \"R08\",\n      \"group\": \"墨大夫新收的两名记名弟子\",\n      \"status\": \"observed\",\n      \"totalCount\": 2,\n      \"formalCount\": 0,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": null,\n      \"evidence\": \"你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。\"\n    }\n  ],\n  \"summary\": {\n    \"distinctSourceIds\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R07\", \"R08\"],\n    \"ratioSourceIds\": [\"R05\"],\n    \"formalNumerator\": 6,\n    \"groupDenominator\": 8,\n    \"formalRatio\": 0.75,\n    \"unknownTotalSourceIds\": [\"R01\"],\n    \"plannedSourceIds\": [\"R07\"],\n    \"limits\": \"资料支持范围：R01为约数三十余名，未提供准确总数；R02、R03、R04、R05、R07、R08为明确数量。R06为R05的重复导入，保留行但duplicateOf标记为R05，不参与去重统计。R07为计划需求人数，非现有员工。R08中两人从即日起为记名弟子，正式弟子数为0。比例计算仅基于R05下山同行的一组，分子为6名正式弟子，分母为8人，比例为0.75。\"\n  }\n}",
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"records\": [\n    {\n      \"sourceId\": \"R01\",\n      \"group\": \"进入竹林的孩童\",\n      \"status\": \"observed\",\n      \"totalCount\": null,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"三十余名孩童，一冲进竹林就立即散了开来。\"\n    },\n    {\n      \"sourceId\": \"R02\",\n      \"group\": \"岳堂主宣布的合格者\",\n      \"status\": \"observed\",\n      \"totalCount\": 7,\n      \"formalCount\": 6,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。\"\n    },\n    {\n      \"sourceId\": \"R03\",\n      \"group\": \"保送七绝堂者\",\n      \"status\": \"observed\",\n      \"totalCount\": 1,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。\"\n    },\n    {\n      \"sourceId\": \"R04\",\n      \"group\": \"韩立与张铁\",\n      \"status\": \"observed\",\n      \"totalCount\": 2,\n      \"formalCount\": 0,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。\"\n    },\n    {\n      \"sourceId\": \"R05\",\n      \"group\": \"下山同行的一组\",\n      \"status\": \"observed\",\n      \"totalCount\": 8,\n      \"formalCount\": 6,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": null,\n      \"evidence\": \"这些人中有六名正式弟子，两名记名弟子。\"\n    },\n    {\n      \"sourceId\": \"R06\",\n      \"group\": \"下山同行的一组\",\n      \"status\": \"observed\",\n      \"totalCount\": 8,\n      \"formalCount\": 6,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": \"R05\",\n      \"evidence\": \"这些人中有六名正式弟子，两名记名弟子。\"\n    },\n    {\n      \"sourceId\": \"R07\",\n      \"group\": \"墨大夫准备补充的岗位\",\n      \"status\": \"planned\",\n      \"totalCount\": 2,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。\"\n    },\n    {\n      \"sourceId\": \"R08\",\n      \"group\": \"墨大夫新收的两名记名弟子\",\n      \"status\": \"observed\",\n      \"totalCount\": 2,\n      \"formalCount\": 0,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": null,\n      \"evidence\": \"你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。\"\n    }\n  ],\n  \"summary\": {\n    \"distinctSourceIds\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R07\", \"R08\"],\n    \"ratioSourceIds\": [\"R05\"],\n    \"formalNumerator\": 6,\n    \"groupDenominator\": 8,\n    \"formalRatio\": 0.75,\n    \"unknownTotalSourceIds\": [\"R01\"],\n    \"plannedSourceIds\": [\"R07\"],\n    \"limits\": \"资料支持范围：R01为约数三十余名，未提供准确总数；R02、R03、R04、R05、R07、R08为明确数量。R06为R05的重复导入，保留行但duplicateOf标记为R05，不参与去重统计。R07为计划需求人数，非现有员工。R08中两人从即日起为记名弟子，正式弟子数为0。比例计算仅基于R05下山同行的一组，分子为6名正式弟子，分母为8人，比例为0.75。\"\n  }\n}"
+          }
+        ],
+        "finishReason": "stop",
+        "rawFinishReason": "stop",
+        "usage": {
+          "inputTokens": 1521,
+          "inputTokenDetails": {
+            "noCacheTokens": 1521,
+            "cacheReadTokens": 0
+          },
+          "outputTokens": 1006,
+          "outputTokenDetails": {
+            "textTokens": 1006,
+            "reasoningTokens": 0
+          },
+          "totalTokens": 2527
+        },
+        "totalUsage": {
+          "inputTokens": 1521,
+          "inputTokenDetails": {
+            "noCacheTokens": 1521,
+            "cacheReadTokens": 0
+          },
+          "outputTokens": 1006,
+          "outputTokenDetails": {
+            "textTokens": 1006,
+            "reasoningTokens": 0
+          },
+          "totalTokens": 2527
+        },
+        "warnings": [],
+        "providerMetadata": {
+          "compatible": {}
+        },
+        "responseMessages": [
+          {
+            "role": "assistant",
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"records\": [\n    {\n      \"sourceId\": \"R01\",\n      \"group\": \"进入竹林的孩童\",\n      \"status\": \"observed\",\n      \"totalCount\": null,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"三十余名孩童，一冲进竹林就立即散了开来。\"\n    },\n    {\n      \"sourceId\": \"R02\",\n      \"group\": \"岳堂主宣布的合格者\",\n      \"status\": \"observed\",\n      \"totalCount\": 7,\n      \"formalCount\": 6,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。\"\n    },\n    {\n      \"sourceId\": \"R03\",\n      \"group\": \"保送七绝堂者\",\n      \"status\": \"observed\",\n      \"totalCount\": 1,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。\"\n    },\n    {\n      \"sourceId\": \"R04\",\n      \"group\": \"韩立与张铁\",\n      \"status\": \"observed\",\n      \"totalCount\": 2,\n      \"formalCount\": 0,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。\"\n    },\n    {\n      \"sourceId\": \"R05\",\n      \"group\": \"下山同行的一组\",\n      \"status\": \"observed\",\n      \"totalCount\": 8,\n      \"formalCount\": 6,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": null,\n      \"evidence\": \"这些人中有六名正式弟子，两名记名弟子。\"\n    },\n    {\n      \"sourceId\": \"R06\",\n      \"group\": \"下山同行的一组\",\n      \"status\": \"observed\",\n      \"totalCount\": 8,\n      \"formalCount\": 6,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": \"R05\",\n      \"evidence\": \"这些人中有六名正式弟子，两名记名弟子。\"\n    },\n    {\n      \"sourceId\": \"R07\",\n      \"group\": \"墨大夫准备补充的岗位\",\n      \"status\": \"planned\",\n      \"totalCount\": 2,\n      \"formalCount\": null,\n      \"probationaryCount\": null,\n      \"duplicateOf\": null,\n      \"evidence\": \"我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。\"\n    },\n    {\n      \"sourceId\": \"R08\",\n      \"group\": \"墨大夫新收的两名记名弟子\",\n      \"status\": \"observed\",\n      \"totalCount\": 2,\n      \"formalCount\": 0,\n      \"probationaryCount\": 2,\n      \"duplicateOf\": null,\n      \"evidence\": \"你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。\"\n    }\n  ],\n  \"summary\": {\n    \"distinctSourceIds\": [\"R01\", \"R02\", \"R03\", \"R04\", \"R05\", \"R07\", \"R08\"],\n    \"ratioSourceIds\": [\"R05\"],\n    \"formalNumerator\": 6,\n    \"groupDenominator\": 8,\n    \"formalRatio\": 0.75,\n    \"unknownTotalSourceIds\": [\"R01\"],\n    \"plannedSourceIds\": [\"R07\"],\n    \"limits\": \"资料支持范围：R01为约数三十余名，未提供准确总数；R02、R03、R04、R05、R07、R08为明确数量。R06为R05的重复导入，保留行但duplicateOf标记为R05，不参与去重统计。R07为计划需求人数，非现有员工。R08中两人从即日起为记名弟子，正式弟子数为0。比例计算仅基于R05下山同行的一组，分子为6名正式弟子，分母为8人，比例为0.75。\"\n  }\n}"
+              }
+            ]
+          }
+        ],
+        "response": {
+          "id": "8169d9d0-882a-4e5b-86a6-0b8e0f298188",
+          "modelId": "deepseek-v4-flash-0731",
+          "timestamp": "2026-10-15T09:52:15.000Z"
+        }
+      },
+      "finishedAt": "2026-10-15T09:52:17.051Z",
+      "elapsedMs": 9691.470000000001
+    }
+  ],
+  "outcome": "returned",
+  "finishedAt": "2026-10-15T09:52:17.053Z"
+}

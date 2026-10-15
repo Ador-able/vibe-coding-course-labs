@@ -1,0 +1,21 @@
+{
+  "mode": "export",
+  "processId": 73604,
+  "pythonVersion": "3.13.11",
+  "modelCalls": 0,
+  "source": "records\\templates\\fanren-20261015-templates-01\\V2\\output.txt",
+  "scope": "候选业务字段完整往返，不修复证据、汇总或作采用决定",
+  "state": "exported",
+  "rows": 10,
+  "columns": [
+    "sourceId",
+    "group",
+    "status",
+    "totalCount",
+    "formalCount",
+    "probationaryCount",
+    "duplicateOf"
+  ],
+  "bytes": 522,
+  "sha256": "3f72e4288c0ecf6bf48810a6e055176e4fa90e7e2f8f85b778ac819d4f44cdf2"
+}

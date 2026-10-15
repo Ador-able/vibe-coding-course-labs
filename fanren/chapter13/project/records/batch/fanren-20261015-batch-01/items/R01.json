@@ -1,0 +1,35 @@
+{
+  "sourceId": "R01",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+      "sourceId": "R01",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R01",
+        "group": "进入竹林的孩童",
+        "status": "observed",
+        "totalCount": null,
+        "formalCount": null,
+        "probationaryCount": null,
+        "duplicateOf": null,
+        "evidence": "三十余名孩童，一冲进竹林就立即散了开来。"
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "checkState": "passed",
+      "contentDecision": "needs_human"
+    }
+  ],
+  "currentAttempt": 0
+}

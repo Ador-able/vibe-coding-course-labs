@@ -1,0 +1,35 @@
+{
+  "sourceId": "R08",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+      "sourceId": "R08",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R08",
+        "group": "墨大夫新收的两名记名弟子",
+        "status": "observed",
+        "totalCount": 2,
+        "formalCount": 0,
+        "probationaryCount": 2,
+        "duplicateOf": null,
+        "evidence": "你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。"
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "checkState": "passed",
+      "contentDecision": "needs_human"
+    }
+  ],
+  "currentAttempt": 0
+}

@@ -1,0 +1,98 @@
+{
+  "parseError": null,
+  "issues": [],
+  "rows": [
+    {
+      "id": "F07",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子"
+        }
+      ],
+      "reason": "墨大夫指定韩立等两名记名弟子为炼药弟子和采药弟子，属于分配岗位，符合PLACEMENT定义。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F08",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了"
+        },
+        {
+          "code": "LIVING",
+          "quote": "你二人以后就住在这里了，先去休息一下"
+        }
+      ],
+      "reason": "老者告知二人以后住在神手谷，既是分配居住地点（PLACEMENT），也包含住宿安排（LIVING）。",
+      "issues": [],
+      "referenceMatches": false
+    },
+    {
+      "id": "F09",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "LIVING",
+          "quote": "山谷附近有个大厨房，我看见所有的人都在那领吃的东西，便也去领了一份，吃完后才发现你还没吃过，又帮你领了两个馒头。"
+        }
+      ],
+      "reason": "描述在厨房领取食物，属于日常饮食安排，符合LIVING定义。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F10",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "你二人从即日起便是我的记名弟子"
+        },
+        {
+          "code": "TEACHING",
+          "quote": "我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。"
+        }
+      ],
+      "reason": "明确宣布成为记名弟子（PLACEMENT），并说明将教采药炼药常识和医术但不教武功（TEACHING）。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F11",
+      "status": "other",
+      "labels": [],
+      "reason": "内容为彩霞山名称由来及被七玄门占有的背景，属于景物介绍，不在当前标签清单覆盖范围内。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F12",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "IDENTITY",
+          "quote": "韩立这时才知道这位冷冷的师兄叫张均。"
+        },
+        {
+          "code": "IDENTITY",
+          "quote": "舞岩并非靠真才实学进的那个七绝堂，而是因为门内有个副门主的亲戚做靠山，才能毫不费力得以进入。"
+        }
+      ],
+      "reason": "记录了张均的名字和舞岩进入七绝堂的背景，属于人物背景信息，符合IDENTITY定义。",
+      "issues": [
+        "主题代码不合法或重复。"
+      ],
+      "referenceMatches": false
+    }
+  ],
+  "semanticDecision": "pending",
+  "wholeTaskAdopted": false,
+  "usableRecords": 5,
+  "submittedRecords": 6,
+  "mechanicalState": "failed"
+}

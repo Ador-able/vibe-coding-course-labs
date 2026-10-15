@@ -1,0 +1,114 @@
+{
+  "records": [
+    {
+      "sourceId": "R01",
+      "group": "进入竹林的孩童",
+      "status": "observed",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null,
+      "evidence": "三十余名孩童，一冲进竹林就立即散了开来。"
+    },
+    {
+      "sourceId": "R02",
+      "group": "岳堂主宣布的合格者",
+      "status": "observed",
+      "totalCount": 7,
+      "formalCount": 6,
+      "probationaryCount": null,
+      "duplicateOf": null,
+      "evidence": "这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。"
+    },
+    {
+      "sourceId": "R03",
+      "group": "保送七绝堂者",
+      "status": "observed",
+      "totalCount": 1,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null,
+      "evidence": "另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。"
+    },
+    {
+      "sourceId": "R04",
+      "group": "韩立与张铁",
+      "status": "observed",
+      "totalCount": 2,
+      "formalCount": 0,
+      "probationaryCount": null,
+      "duplicateOf": null,
+      "evidence": "张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。"
+    },
+    {
+      "sourceId": "R05",
+      "group": "下山同行的一组",
+      "status": "observed",
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
+      "duplicateOf": null,
+      "evidence": "这些人中有六名正式弟子，两名记名弟子。"
+    },
+    {
+      "sourceId": "R06",
+      "group": "下山同行的一组",
+      "status": "observed",
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
+      "duplicateOf": "R05",
+      "evidence": "这些人中有六名正式弟子，两名记名弟子。"
+    },
+    {
+      "sourceId": "R07",
+      "group": "墨大夫准备补充的岗位",
+      "status": "planned",
+      "totalCount": 2,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null,
+      "evidence": "我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。"
+    },
+    {
+      "sourceId": "R08",
+      "group": "墨大夫新收的两名记名弟子",
+      "status": "observed",
+      "totalCount": 2,
+      "formalCount": null,
+      "probationaryCount": 2,
+      "duplicateOf": null,
+      "evidence": "你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。"
+    },
+    {
+      "sourceId": "R09",
+      "group": "将遣送回家的其余孩童",
+      "status": "planned",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null,
+      "evidence": "剩下之人每人领些银子，全都遣送回家。"
+    },
+    {
+      "sourceId": "R10",
+      "group": "车内来自穷乡僻壤的孩子",
+      "status": "observed",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null,
+      "evidence": "这类人在车里是最少的了，只有五六人，神态多半畏手畏尾不敢大声言语，只是看着别人放声说笑，和不时大声喧闹的那部分孩子形成了鲜明的对比。"
+    }
+  ],
+  "summary": {
+    "distinctSourceIds": ["R01", "R02", "R03", "R04", "R05", "R07", "R08", "R09", "R10"],
+    "ratioSourceIds": ["R05"],
+    "formalNumerator": 6,
+    "groupDenominator": 8,
+    "formalRatio": 0.75,
+    "unknownTotalSourceIds": ["R01", "R09", "R10"],
+    "plannedSourceIds": ["R07", "R09"],
+    "limits": "资料支持范围：仅依据各段原文明确报告的数量；约数（如三十余、五六人）不换算为准确数；R07为计划需求人数，非现有员工；R09为遣送指令，未明确人数且未完成；R06为重复导入，保留但标记duplicateOf；比例仅基于R05下山同行的一组，分子6正式弟子，分母8人（6正式+2记名），重复导入不计入；未来条件（如R04半年后考核、R08会教医术）不影响当前身份统计。"
+  }
+}

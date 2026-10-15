@@ -1,0 +1,11 @@
+sourceId,group,status,totalCount,formalCount,probationaryCount,duplicateOf
+R01,进入竹林的孩童,observed,,,,
+R02,岳堂主宣布的合格者,observed,7,6,,
+R03,保送七绝堂者,observed,1,,,
+R04,韩立与张铁,observed,2,0,,
+R05,下山同行的一组,observed,8,6,2,
+R06,下山同行的一组,observed,8,6,2,R05
+R07,墨大夫准备补充的岗位,planned,2,,,
+R08,墨大夫新收的两名记名弟子,observed,2,,2,
+R09,将遣送回家的其余孩童,planned,,,,
+R10,车内来自穷乡僻壤的孩子,observed,,,,

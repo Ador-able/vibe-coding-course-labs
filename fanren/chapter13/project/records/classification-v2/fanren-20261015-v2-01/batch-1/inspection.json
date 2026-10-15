@@ -1,0 +1,97 @@
+{
+  "parseError": null,
+  "issues": [],
+  "rows": [
+    {
+      "id": "F01",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "IDENTITY",
+          "quote": "那名少年叫舞岩，今年十三岁，是车内年龄最大的一个。本来年龄已超过了规定，但其有一表姐嫁给七玄门内的一名掌权人物，年龄问题自然也就不成问题了。舞岩家开了一间武馆，家中颇为富裕，还自小练了一些拳脚功夫"
+        }
+      ],
+      "reason": "原段明确写出舞岩的年龄、家庭关系（表姐嫁与掌权人物）、家庭背景（开武馆、富裕）及自小练武的经历，符合人物背景与理解的定义。",
+      "issues": [],
+      "referenceMatches": false
+    },
+    {
+      "id": "F02",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "能到崖顶的才能进入七玄门。要是正午前无法到达，虽然不能成为正式弟子，但要是表现有可圈可点之处，可以收为记名弟子。"
+        }
+      ],
+      "reason": "原段说明进入七玄门的考核条件（到达崖顶）以及未达标时的记名弟子身份，属于选拔与身份去向。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F03",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "其中六人进入本门百锻堂，正式成为本门内门弟子。"
+        }
+      ],
+      "reason": "原段明确宣布六人进入百锻堂并成为内门弟子，属于分堂和正式身份。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F04",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。"
+        }
+      ],
+      "reason": "原段宣布舞岩保送到七绝堂，属于分堂去向；其中“学习本门绝技”是教学安排，但此处主要动作为保送分堂，故归入PLACEMENT。",
+      "issues": [],
+      "referenceMatches": false
+    },
+    {
+      "id": "F05",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。"
+        },
+        {
+          "code": "TEACHING",
+          "quote": "你们二人先在本门跟几名教习打下根基"
+        }
+      ],
+      "reason": "原段既包含半年后考核及内门/外门身份安排（PLACEMENT），也包含先跟教习打下根基的教学内容（TEACHING），两者同时出现。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F06",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "PLACEMENT",
+          "quote": "他和你们不一样，是被送到七绝堂的核心弟子"
+        },
+        {
+          "code": "TEACHING",
+          "quote": "一旦学成出来，最起码也是个护法身份。"
+        }
+      ],
+      "reason": "原段明确舞岩被送到七绝堂为核心弟子（PLACEMENT），并说明学成后的护法身份结果（TEACHING），两者均符合定义。",
+      "issues": [],
+      "referenceMatches": true
+    }
+  ],
+  "semanticDecision": "pending",
+  "wholeTaskAdopted": false,
+  "usableRecords": 6,
+  "submittedRecords": 6,
+  "mechanicalState": "passed"
+}

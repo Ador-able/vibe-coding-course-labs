@@ -1,0 +1,51 @@
+{
+  "sourceIds": [
+    "R01",
+    "R02",
+    "R03",
+    "R04",
+    "R05",
+    "R06",
+    "R07",
+    "R08"
+  ],
+  "failedIds": [],
+  "repairIds": [],
+  "initialItemSHA256": {
+    "R01": "6f8fc7918d4eb3768bd948138a3ee43817a1479c12cb53384aaa12be61652813",
+    "R02": "6edef632c7ad786973584302f83302293a9055ede90bf0fc7e40122b3d691ec1",
+    "R03": "ce86513e1f2ff5aab2d05f3f3b2cb5201dc3f32f51490cd0d5f3eced03020b64",
+    "R04": "1b62956592d35b777984ee5aaae3cb39543ec1901f4c7b623007763a2778aa28",
+    "R05": "b10f25b00993e318a91a6c02c91947246e406537816af931651571ac031d30e3",
+    "R06": "d658e2fe1c1a38d2aba599e90548b9baf0d3e1e4ddc983ef5a340f15e95b626b",
+    "R07": "1e5462bfcb5547d6207869b39924c89f06b2860d5cd812ae5a2f53f0ae86d03d",
+    "R08": "706c1d99fd4c1e019f3f69522b147f5be513296991e1c18d79e755bc01c5ea46"
+  },
+  "extractionReportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+  "summary": {
+    "distinctSourceIds": [
+      "R01",
+      "R02",
+      "R03",
+      "R04",
+      "R05",
+      "R07",
+      "R08"
+    ],
+    "ratioSourceIds": [
+      "R05"
+    ],
+    "formalNumerator": 6,
+    "groupDenominator": 8,
+    "formalRatio": 0.75,
+    "unknownTotalSourceIds": [
+      "R01"
+    ],
+    "plannedSourceIds": [
+      "R07"
+    ],
+    "limits": "资料支持范围：R01为约数三十余名，未提供准确总数；R02、R03、R04、R05、R07、R08为明确数量。R06为R05的重复导入，保留行但duplicateOf标记为R05，不参与去重统计。R07为计划需求人数，非现有员工。R08中两人从即日起为记名弟子，正式弟子数为0。比例计算仅基于R05下山同行的一组，分子为6名正式弟子，分母为8人，比例为0.75。"
+  },
+  "summaryAdopted": false,
+  "scope": "全部原项保留；仅真实字段候选未通过时定点修复，原汇总不自动重算或采用。"
+}

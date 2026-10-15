@@ -1,0 +1,18 @@
+{
+  "parseError": null,
+  "formatIssues": [],
+  "coverageIssues": [],
+  "valueIssues": [
+    {
+      "sourceId": "R08",
+      "field": "formalCount",
+      "expected": 0,
+      "actual": null
+    }
+  ],
+  "evidenceIssues": [],
+  "summaryIssues": [],
+  "semanticDecision": "pending",
+  "wholeTaskAdopted": false,
+  "mechanicalState": "failed"
+}

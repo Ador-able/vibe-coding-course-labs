@@ -1,0 +1,35 @@
+{
+  "sourceId": "R04",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+      "sourceId": "R04",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R04",
+        "group": "韩立与张铁",
+        "status": "observed",
+        "totalCount": 2,
+        "formalCount": 0,
+        "probationaryCount": null,
+        "duplicateOf": null,
+        "evidence": "张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。"
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "checkState": "passed",
+      "contentDecision": "needs_human"
+    }
+  ],
+  "currentAttempt": 0
+}

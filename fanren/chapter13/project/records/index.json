@@ -1,12 +1,12 @@
 {
   "groups": {
-    "long-text": "records/long-text/long-03/report.json",
-    "classification-discovery": "records/classification-discovery/discovery-03/report.json",
-    "classification-v1": "records/classification-v1/v1-03/report.json",
-    "classification-v2": "records/classification-v2/v2-03/report.json",
-    "extraction": "records/extraction/extract-04/report.json",
-    "batch": "records/batch/batch-03/report.json",
-    "templates": "records/templates/templates-03/report.json"
+    "long-text": "records/long-text/fanren-20261015-long-01/report.json",
+    "classification-discovery": "records/classification-discovery/fanren-20261015-discovery-01/report.json",
+    "classification-v1": "records/classification-v1/fanren-20261015-v1-01/report.json",
+    "classification-v2": "records/classification-v2/fanren-20261015-v2-01/report.json",
+    "extraction": "records/extraction/fanren-20261015-extract-01/report.json",
+    "batch": "records/batch/fanren-20261015-batch-01/report.json",
+    "templates": "records/templates/fanren-20261015-templates-01/report.json"
   },
   "history": [
     "records/long-text/long-01/report.json",
@@ -17,6 +17,13 @@
     "records/extraction/extract-03/report.json",
     "records/extraction/extract-04/report.json",
     "records/batch/batch-03/report.json",
-    "records/templates/templates-03/report.json"
+    "records/templates/templates-03/report.json",
+    "records/long-text/fanren-20261015-long-01/report.json",
+    "records/classification-discovery/fanren-20261015-discovery-01/report.json",
+    "records/classification-v1/fanren-20261015-v1-01/report.json",
+    "records/classification-v2/fanren-20261015-v2-01/report.json",
+    "records/extraction/fanren-20261015-extract-01/report.json",
+    "records/batch/fanren-20261015-batch-01/report.json",
+    "records/templates/fanren-20261015-templates-01/report.json"
   ]
 }

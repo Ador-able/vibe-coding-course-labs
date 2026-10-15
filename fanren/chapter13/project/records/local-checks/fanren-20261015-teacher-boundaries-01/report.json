@@ -1,0 +1,73 @@
+{
+  "kind": "教师明确构造的本地边界检查，0模型，不是真实模型回答或失败；不进入云修复",
+  "sourceKind": "teacher_local_boundaries",
+  "processId": 76496,
+  "observedAt": "2026-10-15T10:10:23.992Z",
+  "actualCloudRequests": 0,
+  "inputPath": "inputs/逐项-本地边界候选.json",
+  "inputSHA256": "5d9f2f6d615ebdbf3e9b6078c5f1126b436b7d7ee55702972e27e1ef62be3725",
+  "checkFunction": "src/batch.mjs#checkItem",
+  "rows": [
+    {
+      "sourceId": "R01",
+      "candidate": {
+        "sourceId": "R01",
+        "group": "进入竹林的孩童",
+        "status": "observed",
+        "totalCount": 30,
+        "formalCount": null,
+        "probationaryCount": null,
+        "duplicateOf": null,
+        "evidence": "　　竹林应该非常宽广，三十余名孩童，一冲进竹林就立即散了开来。韩立的身后紧随着一位瘦长的师兄，这人冷着脸孔，一言不发的紧随他身后。韩立有点害怕，不敢与其说话，只是抬起脚步，低着身子，慢慢的沿着斜坡，向前迈进。"
+      },
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [
+          {
+            "sourceId": "R01",
+            "field": "totalCount",
+            "expected": null,
+            "actual": 30
+          }
+        ],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "failed"
+      }
+    },
+    {
+      "sourceId": "R07",
+      "candidate": {
+        "sourceId": "R07",
+        "group": "墨大夫准备补充的岗位",
+        "status": "observed",
+        "totalCount": 2,
+        "formalCount": null,
+        "probationaryCount": null,
+        "duplicateOf": null,
+        "evidence": "　　“我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。”这名墨大夫随手一指，正好指向韩立等两名记名弟子，话语中充满了令人不容置疑的语气。"
+      },
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [
+          {
+            "sourceId": "R07",
+            "field": "status",
+            "expected": "planned",
+            "actual": "observed"
+          }
+        ],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "failed"
+      }
+    }
+  ],
+  "scope": "本地既有检查函数实测；教师构造字段不是模型原答，不进入真实云修复计划。"
+}

@@ -1,0 +1,95 @@
+{
+  "mode": "readback",
+  "processId": 66864,
+  "pythonVersion": "3.13.11",
+  "modelCalls": 0,
+  "source": "records\\extraction\\fanren-20261015-extract-01\\extract\\output.txt",
+  "scope": "候选业务字段完整往返，不修复证据、汇总或作采用决定",
+  "state": "passed",
+  "rows": 8,
+  "columns": [
+    "sourceId",
+    "group",
+    "status",
+    "totalCount",
+    "formalCount",
+    "probationaryCount",
+    "duplicateOf"
+  ],
+  "restoredRows": [
+    {
+      "sourceId": "R01",
+      "group": "进入竹林的孩童",
+      "status": "observed",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R02",
+      "group": "岳堂主宣布的合格者",
+      "status": "observed",
+      "totalCount": 7,
+      "formalCount": 6,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R03",
+      "group": "保送七绝堂者",
+      "status": "observed",
+      "totalCount": 1,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R04",
+      "group": "韩立与张铁",
+      "status": "observed",
+      "totalCount": 2,
+      "formalCount": 0,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R05",
+      "group": "下山同行的一组",
+      "status": "observed",
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R06",
+      "group": "下山同行的一组",
+      "status": "observed",
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
+      "duplicateOf": "R05"
+    },
+    {
+      "sourceId": "R07",
+      "group": "墨大夫准备补充的岗位",
+      "status": "planned",
+      "totalCount": 2,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R08",
+      "group": "墨大夫新收的两名记名弟子",
+      "status": "observed",
+      "totalCount": 2,
+      "formalCount": 0,
+      "probationaryCount": 2,
+      "duplicateOf": null
+    }
+  ],
+  "bytes": 425,
+  "sha256": "7e88d3123f0e3d505f97cdb9fc2b8617a39c2f1750195a4f45cba5d3347883d8"
+}

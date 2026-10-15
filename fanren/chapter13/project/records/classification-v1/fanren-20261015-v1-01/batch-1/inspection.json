@@ -1,0 +1,89 @@
+{
+  "parseError": null,
+  "issues": [],
+  "rows": [
+    {
+      "id": "F01",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "IDENTITY",
+          "quote": "那名少年叫舞岩，今年十三岁，是车内年龄最大的一个。本来年龄已超过了规定，但其有一表姐嫁给七玄门内的一名掌权人物，年龄问题自然也就不成问题了。舞岩家开了一间武馆，家中颇为富裕，还自小练了一些拳脚功夫"
+        }
+      ],
+      "reason": "原段明确写出舞岩的年龄、家庭关系（表姐嫁入七玄门）、家庭背景（开武馆、富裕）及习武经历，符合IDENTITY定义。",
+      "issues": [],
+      "referenceMatches": false
+    },
+    {
+      "id": "F02",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "ARRANGEMENT",
+          "quote": "从竹林中的小路往前走，可以到达七玄门的炼骨崖，第一段路是竹林地段，再来是岩壁地带，最后是一个山崖，能到崖顶的才能进入七玄门。要是正午前无法到达，虽然不能成为正式弟子，但要是表现有可圈可点之处，可以收为记名弟子。"
+        }
+      ],
+      "reason": "原段说明选拔资格（到达崖顶）及未达标时的记名弟子去向，属于门内安排。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F03",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "ARRANGEMENT",
+          "quote": "这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。"
+        }
+      ],
+      "reason": "原段明确合格者的身份去向（进入百锻堂成为内门弟子），属于门内安排。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F04",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "ARRANGEMENT",
+          "quote": "另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。"
+        }
+      ],
+      "reason": "原段说明舞岩被保送到七绝堂学习绝技，属于身份与去向安排。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F05",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "ARRANGEMENT",
+          "quote": "你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。"
+        }
+      ],
+      "reason": "原段说明张铁和韩立的临时安排、未来考核及合格与否的去向，属于门内安排。",
+      "issues": [],
+      "referenceMatches": true
+    },
+    {
+      "id": "F06",
+      "status": "classified",
+      "labels": [
+        {
+          "code": "ARRANGEMENT",
+          "quote": "他和你们不一样，是被送到七绝堂的核心弟子，一旦学成出来，最起码也是个护法身份。"
+        }
+      ],
+      "reason": "原段说明舞岩作为核心弟子的身份及学成后的结果（护法身份），属于门内安排。",
+      "issues": [],
+      "referenceMatches": true
+    }
+  ],
+  "semanticDecision": "pending",
+  "wholeTaskAdopted": false,
+  "usableRecords": 6,
+  "submittedRecords": 6,
+  "mechanicalState": "passed"
+}

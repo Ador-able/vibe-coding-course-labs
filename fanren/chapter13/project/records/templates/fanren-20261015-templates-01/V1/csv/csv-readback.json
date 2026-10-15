@@ -1,0 +1,113 @@
+{
+  "mode": "readback",
+  "processId": 73116,
+  "pythonVersion": "3.13.11",
+  "modelCalls": 0,
+  "source": "records\\templates\\fanren-20261015-templates-01\\V1\\output.txt",
+  "scope": "候选业务字段完整往返，不修复证据、汇总或作采用决定",
+  "state": "passed",
+  "rows": 10,
+  "columns": [
+    "sourceId",
+    "group",
+    "status",
+    "totalCount",
+    "formalCount",
+    "probationaryCount",
+    "duplicateOf"
+  ],
+  "restoredRows": [
+    {
+      "sourceId": "R01",
+      "group": "进入竹林的孩童",
+      "status": "observed",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R02",
+      "group": "岳堂主宣布的合格者",
+      "status": "observed",
+      "totalCount": 7,
+      "formalCount": 6,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R03",
+      "group": "保送七绝堂者",
+      "status": "observed",
+      "totalCount": 1,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R04",
+      "group": "韩立与张铁",
+      "status": "observed",
+      "totalCount": 2,
+      "formalCount": 0,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R05",
+      "group": "下山同行的一组",
+      "status": "observed",
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R06",
+      "group": "下山同行的一组",
+      "status": "observed",
+      "totalCount": 8,
+      "formalCount": 6,
+      "probationaryCount": 2,
+      "duplicateOf": "R05"
+    },
+    {
+      "sourceId": "R07",
+      "group": "墨大夫准备补充的岗位",
+      "status": "planned",
+      "totalCount": 2,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R08",
+      "group": "墨大夫新收的两名记名弟子",
+      "status": "observed",
+      "totalCount": 2,
+      "formalCount": null,
+      "probationaryCount": 2,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R09",
+      "group": "将遣送回家的其余孩童",
+      "status": "planned",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    },
+    {
+      "sourceId": "R10",
+      "group": "车内来自穷乡僻壤的孩子",
+      "status": "observed",
+      "totalCount": null,
+      "formalCount": null,
+      "probationaryCount": null,
+      "duplicateOf": null
+    }
+  ],
+  "bytes": 522,
+  "sha256": "3f72e4288c0ecf6bf48810a6e055176e4fa90e7e2f8f85b778ac819d4f44cdf2"
+}

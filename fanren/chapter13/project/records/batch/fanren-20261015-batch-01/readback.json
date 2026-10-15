@@ -1,0 +1,330 @@
+{
+  "processId": 27516,
+  "readAt": "2026-10-15T09:52:55.002Z",
+  "modelCalls": 0,
+  "items": [
+    {
+      "sourceId": "R01",
+      "bytes": 954,
+      "sha256": "6f8fc7918d4eb3768bd948138a3ee43817a1479c12cb53384aaa12be61652813",
+      "item": {
+        "sourceId": "R01",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R01",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R01",
+              "group": "进入竹林的孩童",
+              "status": "observed",
+              "totalCount": null,
+              "formalCount": null,
+              "probationaryCount": null,
+              "duplicateOf": null,
+              "evidence": "三十余名孩童，一冲进竹林就立即散了开来。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R02",
+      "bytes": 990,
+      "sha256": "6edef632c7ad786973584302f83302293a9055ede90bf0fc7e40122b3d691ec1",
+      "item": {
+        "sourceId": "R02",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R02",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R02",
+              "group": "岳堂主宣布的合格者",
+              "status": "observed",
+              "totalCount": 7,
+              "formalCount": 6,
+              "probationaryCount": null,
+              "duplicateOf": null,
+              "evidence": "这次合格者共七人，其中六人进入本门百锻堂，正式成为本门内门弟子。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R03",
+      "bytes": 990,
+      "sha256": "ce86513e1f2ff5aab2d05f3f3b2cb5201dc3f32f51490cd0d5f3eced03020b64",
+      "item": {
+        "sourceId": "R03",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R03",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R03",
+              "group": "保送七绝堂者",
+              "status": "observed",
+              "totalCount": 1,
+              "formalCount": null,
+              "probationaryCount": null,
+              "duplicateOf": null,
+              "evidence": "另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R04",
+      "bytes": 1143,
+      "sha256": "1b62956592d35b777984ee5aaae3cb39543ec1901f4c7b623007763a2778aa28",
+      "item": {
+        "sourceId": "R04",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R04",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R04",
+              "group": "韩立与张铁",
+              "status": "observed",
+              "totalCount": 2,
+              "formalCount": 0,
+              "probationaryCount": null,
+              "duplicateOf": null,
+              "evidence": "张铁，韩立，两人虽然未按时到达崖顶，但表现突出，看来能吃得习武之苦，你们二人先在本门跟几名教习打下根基，半年后再考核一下，合格则正式成为内门弟子，未合格则送到外门当外门弟子。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R05",
+      "bytes": 942,
+      "sha256": "b10f25b00993e318a91a6c02c91947246e406537816af931651571ac031d30e3",
+      "item": {
+        "sourceId": "R05",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R05",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R05",
+              "group": "下山同行的一组",
+              "status": "observed",
+              "totalCount": 8,
+              "formalCount": 6,
+              "probationaryCount": 2,
+              "duplicateOf": null,
+              "evidence": "这些人中有六名正式弟子，两名记名弟子。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R06",
+      "bytes": 943,
+      "sha256": "d658e2fe1c1a38d2aba599e90548b9baf0d3e1e4ddc983ef5a340f15e95b626b",
+      "item": {
+        "sourceId": "R06",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R06",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R06",
+              "group": "下山同行的一组",
+              "status": "observed",
+              "totalCount": 8,
+              "formalCount": 6,
+              "probationaryCount": 2,
+              "duplicateOf": "R05",
+              "evidence": "这些人中有六名正式弟子，两名记名弟子。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R07",
+      "bytes": 995,
+      "sha256": "1e5462bfcb5547d6207869b39924c89f06b2860d5cd812ae5a2f53f0ae86d03d",
+      "item": {
+        "sourceId": "R07",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R07",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R07",
+              "group": "墨大夫准备补充的岗位",
+              "status": "planned",
+              "totalCount": 2,
+              "formalCount": null,
+              "probationaryCount": null,
+              "duplicateOf": null,
+              "evidence": "我现在人手不够，还缺一名炼药弟子和一名采药弟子，这两人跟我走吧。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    },
+    {
+      "sourceId": "R08",
+      "bytes": 1074,
+      "sha256": "706c1d99fd4c1e019f3f69522b147f5be513296991e1c18d79e755bc01c5ea46",
+      "item": {
+        "sourceId": "R08",
+        "attempts": [
+          {
+            "kind": "cloud",
+            "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+            "sourceId": "R08",
+            "generationState": "returned",
+            "record": {
+              "sourceId": "R08",
+              "group": "墨大夫新收的两名记名弟子",
+              "status": "observed",
+              "totalCount": 2,
+              "formalCount": 0,
+              "probationaryCount": 2,
+              "duplicateOf": null,
+              "evidence": "你二人从即日起便是我的记名弟子，我会教你们一些采药炼药的常识，也许还会教你们一些救人医人的医术，但决不会教你们武功。"
+            },
+            "missingRecord": false,
+            "check": {
+              "parseError": null,
+              "formatIssues": [],
+              "coverageIssues": [],
+              "valueIssues": [],
+              "evidenceIssues": [],
+              "semanticDecision": "pending",
+              "wholeTaskAdopted": false,
+              "mechanicalState": "passed"
+            },
+            "checkState": "passed",
+            "contentDecision": "needs_human"
+          }
+        ],
+        "currentAttempt": 0
+      }
+    }
+  ],
+  "otherItemsUnchanged": true,
+  "summaryAdopted": false,
+  "scope": "新的只读进程取得完整逐项状态；没有测试中途崩溃或自动恢复。"
+}

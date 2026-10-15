@@ -1,0 +1,35 @@
+{
+  "sourceId": "R05",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+      "sourceId": "R05",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R05",
+        "group": "下山同行的一组",
+        "status": "observed",
+        "totalCount": 8,
+        "formalCount": 6,
+        "probationaryCount": 2,
+        "duplicateOf": null,
+        "evidence": "这些人中有六名正式弟子，两名记名弟子。"
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "checkState": "passed",
+      "contentDecision": "needs_human"
+    }
+  ],
+  "currentAttempt": 0
+}

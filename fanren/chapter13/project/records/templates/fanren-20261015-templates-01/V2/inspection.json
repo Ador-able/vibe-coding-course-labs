@@ -1,0 +1,23 @@
+{
+  "parseError": null,
+  "formatIssues": [],
+  "coverageIssues": [],
+  "valueIssues": [
+    {
+      "sourceId": "R08",
+      "field": "formalCount",
+      "expected": 0,
+      "actual": null
+    }
+  ],
+  "evidenceIssues": [
+    {
+      "sourceId": "R10",
+      "message": "引文不是本项连续原句。"
+    }
+  ],
+  "summaryIssues": [],
+  "semanticDecision": "pending",
+  "wholeTaskAdopted": false,
+  "mechanicalState": "failed"
+}

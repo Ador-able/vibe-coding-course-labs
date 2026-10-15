@@ -1,0 +1,21 @@
+{
+  "mode": "export",
+  "processId": 69468,
+  "pythonVersion": "3.13.11",
+  "modelCalls": 0,
+  "source": "records\\extraction\\fanren-20261015-extract-01\\extract\\output.txt",
+  "scope": "候选业务字段完整往返，不修复证据、汇总或作采用决定",
+  "state": "exported",
+  "rows": 8,
+  "columns": [
+    "sourceId",
+    "group",
+    "status",
+    "totalCount",
+    "formalCount",
+    "probationaryCount",
+    "duplicateOf"
+  ],
+  "bytes": 425,
+  "sha256": "7e88d3123f0e3d505f97cdb9fc2b8617a39c2f1750195a4f45cba5d3347883d8"
+}

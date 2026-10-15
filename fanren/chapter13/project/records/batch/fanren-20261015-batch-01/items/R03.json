@@ -1,0 +1,35 @@
+{
+  "sourceId": "R03",
+  "attempts": [
+    {
+      "kind": "cloud",
+      "reportPath": "records/extraction/fanren-20261015-extract-01/report.json",
+      "sourceId": "R03",
+      "generationState": "returned",
+      "record": {
+        "sourceId": "R03",
+        "group": "保送七绝堂者",
+        "status": "observed",
+        "totalCount": 1,
+        "formalCount": null,
+        "probationaryCount": null,
+        "duplicateOf": null,
+        "evidence": "另一人舞岩，第一个到达山崖，表现杰出，直接保送到七绝堂学习本门绝技。"
+      },
+      "missingRecord": false,
+      "check": {
+        "parseError": null,
+        "formatIssues": [],
+        "coverageIssues": [],
+        "valueIssues": [],
+        "evidenceIssues": [],
+        "semanticDecision": "pending",
+        "wholeTaskAdopted": false,
+        "mechanicalState": "passed"
+      },
+      "checkState": "passed",
+      "contentDecision": "needs_human"
+    }
+  ],
+  "currentAttempt": 0
+}
