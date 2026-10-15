@@ -1,0 +1,59 @@
+[
+  {
+    "chapter": 1,
+    "adoptCommand": "node scripts/current-lab.mjs adopt 1 --expected-revision 5 --note '已完整阅读C03r5及前后衔接，保留四处单字校订，采用为本次三段原文课堂编辑稿；原作忘语。' --output '课堂记录/凡人原文-20261015/08-课堂采用与交付/01-课堂采用/C03-adopt-return.json'",
+    "adopt": {
+      "chunk_id": "2c6c81",
+      "wall_time_seconds": 0.2354747,
+      "exit_code": 0,
+      "original_token_count": 85,
+      "output": "(node:49796) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:68812) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    "readbackCommand": "node scripts/current-lab.mjs chapter 1 --output '课堂记录/凡人原文-20261015/08-课堂采用与交付/01-课堂采用/C03-independent-readback.json'",
+    "readback": {
+      "chunk_id": "86b41c",
+      "wall_time_seconds": 0.2230291,
+      "exit_code": 0,
+      "original_token_count": 85,
+      "output": "(node:77820) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:66624) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  },
+  {
+    "chapter": 2,
+    "adoptCommand": "node scripts/current-lab.mjs adopt 2 --expected-revision 1 --note '已完整阅读C04r1与C03/C05，保留来源全文及原有用字，采用为本次三段原文课堂编辑稿；原作忘语。' --output '课堂记录/凡人原文-20261015/08-课堂采用与交付/01-课堂采用/C04-adopt-return.json'",
+    "adopt": {
+      "chunk_id": "7f1c35",
+      "wall_time_seconds": 0.2397369,
+      "exit_code": 0,
+      "original_token_count": 85,
+      "output": "(node:72956) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:70684) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    "readbackCommand": "node scripts/current-lab.mjs chapter 2 --output '课堂记录/凡人原文-20261015/08-课堂采用与交付/01-课堂采用/C04-independent-readback.json'",
+    "readback": {
+      "chunk_id": "2904d4",
+      "wall_time_seconds": 0.2266156,
+      "exit_code": 0,
+      "original_token_count": 85,
+      "output": "(node:78044) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:78704) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  },
+  {
+    "chapter": 3,
+    "adoptCommand": "node scripts/current-lab.mjs adopt 3 --expected-revision 2 --note '已完整阅读C05human r2，保留删除原材料冗片铁。两字后的全文，采用为本次三段原文课堂编辑稿；原作忘语。' --output '课堂记录/凡人原文-20261015/08-课堂采用与交付/01-课堂采用/C05-adopt-return.json'",
+    "adopt": {
+      "chunk_id": "bdba48",
+      "wall_time_seconds": 0.2273686,
+      "exit_code": 0,
+      "original_token_count": 85,
+      "output": "(node:78888) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:25144) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    },
+    "readbackCommand": "node scripts/current-lab.mjs chapter 3 --output '课堂记录/凡人原文-20261015/08-课堂采用与交付/01-课堂采用/C05-independent-readback.json'",
+    "readback": {
+      "chunk_id": "92b55d",
+      "wall_time_seconds": 0.2211255,
+      "exit_code": 0,
+      "original_token_count": 85,
+      "output": "(node:50952) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:77976) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+    }
+  }
+]

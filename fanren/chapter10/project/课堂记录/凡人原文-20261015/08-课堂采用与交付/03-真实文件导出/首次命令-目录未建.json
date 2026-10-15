@@ -1,0 +1,8 @@
+{
+  "cmd": "node scripts/current-lab.mjs export '课堂记录/凡人原文-20261015/08-课堂采用与交付/03-真实文件导出/凡人修仙传-三段课堂采用.md' --output '课堂记录/凡人原文-20261015/08-课堂采用与交付/03-真实文件导出/CLI-export-return.json'",
+  "chunk_id": "80ce89",
+  "wall_time_seconds": 0.2112084,
+  "exit_code": 1,
+  "original_token_count": 159,
+  "output": "(node:46116) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:73360) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\"code\":\"INPUT_ERROR\",\"message\":\"ENOENT: no such file or directory, open 'D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\\\\课堂记录\\\\凡人原文-20261015\\\\08-课堂采用与交付\\\\03-真实文件导出\\\\凡人修仙传-三段课堂采用.md'\"}\n"
+}

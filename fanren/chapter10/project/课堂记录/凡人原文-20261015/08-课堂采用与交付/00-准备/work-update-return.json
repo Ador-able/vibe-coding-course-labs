@@ -1,0 +1,7 @@
+{
+  "chunk_id": "0f3448",
+  "wall_time_seconds": 0.2345338,
+  "exit_code": 0,
+  "original_token_count": 1010,
+  "output": "Warning: truncated output (original token count: 1010)\nTotal output lines: 46\n\n(node:5036) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n(node:73160) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\n  \"id\": \"fanren\",\n  \"title\": \"凡人修仙传\",\n  \"purpose\": \"将编者实际读过的三段凡人课堂编辑稿登记为课堂采用，核对当前采用对象，并从既有CLI生成与完整Store导出一致的文件。\",\n  \"requirements\": [\n    \"材料限于C03/C04/C05完整原文及这三段大纲、设定，教学章号不是原书章号，原作署忘语。\",\n    \"编者已读三章全文与183B实际意见；保留C03四处单字校订、C04原文、C05删除原材料冗片铁。两字的现稿，不新增剧情和润色。\",\n    \"人的完整决定在materials/人工决定/FN-189-三章课堂采用.md。课堂采用由编者通过既有入口…510 tokens truncated…和张铁被墨大夫带入神手谷，晚间见墨大夫。墨大夫将教采药炼药常识，也许教医术，明确不教武功；材料结束于此，不补后续修炼结果。\"\n  ],\n  \"outline\": [\n    {\n      \"number\": 1,\n      \"titleHint\": \"C03 原文：七玄门与炼骨崖\",\n      \"goal\": \"按完整原文顺序保留车内人物差别、抵达彩霞山、休息、岳堂主宣布规则、进入竹林、喘息和继续赶路；结尾仍在竹林阶段。\"\n    },\n    {\n      \"number\": 2,\n      \"titleHint\": \"C04 原文：攀岩与考核结果\",\n      \"goal\": \"保留走出竹林、石壁伤痛、攀绳、师兄正午送上崖顶及现场录取结果；这是后续材料，不并入教学第1章。\"\n    },\n    {\n      \"number\": 3,\n      \"titleHint\": \"C05 原文：墨大夫与神手谷\",\n      \"goal\": \"保留师兄议论与韩立视角、墨大夫领走两人、神手谷住处、张铁送馒头、晚间拜师及教学范围；不扩写无名口诀。\"\n    }\n  ],\n  \"revision\": 9\n}\n"
+}

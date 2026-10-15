@@ -1,0 +1,44 @@
+{
+  "chapters": [
+    {
+      "number": 1,
+      "fromRevision": 5,
+      "toRevision": 6,
+      "status": "adopted",
+      "origin": "human",
+      "titleBodyAndSavedBasesUnchanged": true,
+      "oldHistoryRetained": true,
+      "bodySha256": "abb37e4069f9edf8e466c55aa8f2492cbdfacf866773080ec6329b42a5342fe8",
+      "adoptReturnAndIndependentCLIAndSQLiteExact": true,
+      "reviewNote": "已完整阅读C03r5及前后衔接，保留四处单字校订，采用为本次三段原文课堂编辑稿；原作忘语。"
+    },
+    {
+      "number": 2,
+      "fromRevision": 1,
+      "toRevision": 2,
+      "status": "adopted",
+      "origin": "human",
+      "titleBodyAndSavedBasesUnchanged": true,
+      "oldHistoryRetained": true,
+      "bodySha256": "5aa9c4b11cca0c11232895a702d91fb74e3f5a5d9f5d5921edacecb5d3c265f8",
+      "adoptReturnAndIndependentCLIAndSQLiteExact": true,
+      "reviewNote": "已完整阅读C04r1与C03/C05，保留来源全文及原有用字，采用为本次三段原文课堂编辑稿；原作忘语。"
+    },
+    {
+      "number": 3,
+      "fromRevision": 2,
+      "toRevision": 3,
+      "status": "adopted",
+      "origin": "human",
+      "titleBodyAndSavedBasesUnchanged": true,
+      "oldHistoryRetained": true,
+      "bodySha256": "6e730dd195bff7a2d80c53305de9f694252174a3904daf1bfa2d151f7b28cbab",
+      "adoptReturnAndIndependentCLIAndSQLiteExact": true,
+      "reviewNote": "已完整阅读C05human r2，保留删除原材料冗片铁。两字后的全文，采用为本次三段原文课堂编辑稿；原作忘语。"
+    }
+  ],
+  "currentWorkRevision": 9,
+  "worksAndWorkVersionsAndTasksUnchanged": true,
+  "newChapterHistoryRows": 3,
+  "scope": "教师课堂采用，原作忘语；未改正文，未重设保存基线，非用户认可或发布。"
+}

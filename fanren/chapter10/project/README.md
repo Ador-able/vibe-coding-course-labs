@@ -88,3 +88,11 @@ pnpm agent --prompt inputs/161-凡人原文接续.txt --chapter 2
 打开 `课堂记录/凡人原文-20261015/07-会话接续/实录阅读页.html`，比较A实际保存、教师停止、人工r2与B只读接续。A没有正常结束，但C05全文已保存；B沿同一SDK会话重新取得当前三章，A旧Task保持cancelled。
 
 可选亲做先恢复 `07-会话接续/00-准备/after-work-update.json`，执行 `pnpm agent --prompt inputs/183-A-凡人第三段原文导入.txt --chapter 3 --stop-after-save`。完整读稿后在工作台作出自己的实际编辑并保存、重新读取，再更新人工决定文件和B请求；用 `pnpm lab update seed/凡人修仙传-183-接续.json --expected-revision 7` 交代接续目标。当前修订不同则先读资料、据实际内容调整输入。最后执行 `pnpm agent --prompt inputs/183-B-凡人同会话只读接续.txt --chapter 3 --read-only --resume-run runs/本轮A编号`。两次agent命令调用模型；恢复、人工操作和资料更新不调用模型。公开快照不包含私有SDK会话，要用本次实际A目录，不能用教材旧thread。
+
+### 课堂采用与真实交付
+
+打开 `课堂记录/凡人原文-20261015/08-课堂采用与交付/实录阅读页.html`。编者完整读过前三章，保留已有校订，登记课堂采用；唯一只读Agent重新取得当前采用稿，CLI随后写出真实Markdown。三方完整文本均为22263字节，SHA相同，原作署忘语。
+
+可选亲做先恢复本目录 `00-准备/before-work-update.json`，读完整当前三章与自己的采用决定，再执行 `pnpm lab update seed/凡人修仙传-189-课堂交付.json --expected-revision 8`。对照 `materials/人工决定/FN-189-三章课堂采用.md` 写自己的真实选择，经 `pnpm lab adopt 章号 --expected-revision 当前修订 --note 实际理由` 分别登记；课堂起点三章修订为5、1、2。每次先读当前章，采用后重新读回，不只换数字重交。
+
+随后执行 `pnpm agent --prompt inputs/189-凡人采用稿只读核对.txt --chapter 3 --read-only`，这一步调用模型。完成后先建 `deliverables` 目录，再用 `pnpm lab export deliverables/凡人修仙传-三段课堂采用.md` 写实际文件，读取文件全文与当前Store导出比较。采用只登记选择，不改正文或旧保存依据；失败时保留当前对象与原返回，不为流程完整而重新生成小说。

@@ -1,0 +1,33 @@
+{
+  "url": "http://127.0.0.1:4483/",
+  "database": "data/practice-0c580809-2199-4dfa-82e5-9eb42180bfe5.sqlite",
+  "selectedChapter": 3,
+  "currentRevision": 3,
+  "currentStatus": "adopted",
+  "allThreeAdopted": true,
+  "DOMBodySha256": "6e730dd195bff7a2d80c53305de9f694252174a3904daf1bfa2d151f7b28cbab",
+  "DOMBodyMatchesSQLite": true,
+  "image": {
+    "path": "189-三章已采用与C05当前全文-原生2K.png",
+    "width": 2560,
+    "height": 1440,
+    "sha256": "26f7f99fc61609822e0203937b49c57c0bd4b96e3339dc47632b519e64113b69",
+    "assetId": 798
+  },
+  "temporaryViewportCleared": true,
+  "scope": "只读选择与截图，无额外页面保存。",
+  "recordPage": {
+    "url": "http://127.0.0.1:4484/实录阅读页.html",
+    "image": {
+      "path": "189-课堂采用与真实文件全文核对-原生2K.png",
+      "width": 2560,
+      "height": 1600,
+      "sha256": "9aca16943086ff1a0144d7a7197d5e9572a590945ba3afd9ea191d7f24c86ec4",
+      "assetId": 799
+    },
+    "finalDOMSha256": "d1ae0523a3107ccf0e6aa45d347604373a35c5ba92ecc45da899a1b71eda79c7",
+    "fileDOMSha256": "47c6ebb8764cfe16874ea1a1cab2d50a66672ec916bbbeceaa5151d44debcf69",
+    "completeDOMFinalAndFileByteExact": true,
+    "type": "静态实录阅读页原生截图，非模型供应商界面"
+  }
+}
