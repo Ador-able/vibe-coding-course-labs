@@ -33,5 +33,5 @@ async function view(){
     }
   }catch(error){result.append(element('p',error.message+' 请重新查看。'));}finally{$('view').disabled=false;$('lesson').disabled=false;}
 }
-function inputs(){const panel=$('inputs');panel.replaceChildren(link('inputs/'+prompts[$('lesson').value],'当前完整任务'),link('inputs/完整教师初始化.json','完整作品与三章初始化'),link('inputs/青岚修仙录-三章原始课堂存档.md','原始三章课堂存档'),link('inputs/独立业务预期.json','完整保存输入与独立预期'));}
+function inputs(){const panel=$('inputs');panel.replaceChildren(link('inputs/'+prompts[$('lesson').value],'当前完整任务'),link('inputs/完整教师初始化.json','完整作品与三章初始化'),link('inputs/凡人修仙传-三段原文.json','凡人三段完整原文'),link('inputs/独立业务预期.json','完整保存输入与独立预期'));}
 $('view').addEventListener('click',view);$('lesson').addEventListener('change',()=>{$('result').replaceChildren();inputs();});inputs();

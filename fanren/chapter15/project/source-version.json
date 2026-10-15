@@ -1,9 +1,9 @@
 {
-  "sourceSha256": "9330c44f2cacee3515f9502d496c82258bab16ec24e0671b13fd5fe8d4857c1a",
-  "sourceVersion": "9330c44f2cacee3515f9502d496c82258bab16ec24e0671b13fd5fe8d4857c1a",
-  "preparedFromGit": "a002c2ec7bb56fde6acc2bb7b39763693a09abe7",
-  "practiceTag": "qinglan-ch15-practice-start",
-  "inputRegistrySha256": "bdd88e092aa1e1688566397fdd0c3d5adb67c6e43b7b09cfc92681ba520a2a2b",
+  "sourceSha256": "8fbad181e29409c398803bc15b278590d105afe8a2ecea80343e274cbb2cb364",
+  "sourceVersion": "8fbad181e29409c398803bc15b278590d105afe8a2ecea80343e274cbb2cb364",
+  "preparedFromGit": "79612c8beef955bd3e15def42baf11181c90c634",
+  "practiceTag": "fanren-ch15-practice-start",
+  "inputRegistrySha256": "3fb6a3c18b5fdc78c73d1cbb6acee3f1b9bbf2018b991673c9aae044bb3e537c",
   "files": [
     {
       "path": ".gitattributes",
@@ -22,18 +22,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 4523,
-      "sha256": "caf77f426a535f2c225235cc3fd086566701ec2685fb9c293b27519a05721de0"
+      "bytes": 1627,
+      "sha256": "738e1c45b1507527c76f373bf822055a9b2bc939dcc359d161fd6603a1248155"
     },
     {
       "path": "config/固定实验参数.json",
-      "bytes": 705,
-      "sha256": "e894bbe9562e099aaab5e1220d270de280b8a69697ee9ae326406a0305b289b2"
+      "bytes": 789,
+      "sha256": "e7fa0ed44047f01ab29916a443e55d4904e7fb4578fa58dc1828d39b6a9409bd"
     },
     {
       "path": "docs/delivery-check.md",
-      "bytes": 4371,
-      "sha256": "f1c8d16e34e2ef6f5ebd9133fc7e20f0cd48aed3e3df0dcb9baa9cc3062c7d94"
+      "bytes": 4361,
+      "sha256": "d5027ff6270681295e30a1b401319af991eaf2c1731e984a225a92a61fc57f93"
     },
     {
       "path": "docs/save-review.md",
@@ -83,12 +83,12 @@
     {
       "path": "materials/viewer.html",
       "bytes": 911,
-      "sha256": "8303a65de756a9d7018fa4d4a9f698d24bdbfbbcb5520d0a145188d1927f7a1f"
+      "sha256": "5534f325802feb3364b90320e870d1a7e2b6a46b8b9a5f8651b67c0531b7a932"
     },
     {
       "path": "materials/viewer.js",
-      "bytes": 3317,
-      "sha256": "7abfccc60b0c728c9042d4dc6fc02c4bad3729685bbd483697a80707c6e1de98"
+      "bytes": 3307,
+      "sha256": "fc39e9b39b7bf317d9c165b1cc01f1967252289496c518b9c33e44add89cb1fa"
     },
     {
       "path": "materials/提交检查实录页-高清原像素.png",
@@ -97,8 +97,8 @@
     },
     {
       "path": "package.json",
-      "bytes": 985,
-      "sha256": "2f0ea93b096b9c92ba021cb568eb08e7cd2a08062d064f970dfd6e9795913ed8"
+      "bytes": 1020,
+      "sha256": "9ba5184e993ce9e56a75b8e7843572a56315fe18bbc68c60c2a59ae209dec601"
     },
     {
       "path": "pnpm-lock.yaml",
@@ -127,8 +127,8 @@
     },
     {
       "path": "scripts/check-saving-delivery.mjs",
-      "bytes": 45058,
-      "sha256": "b8d0d282d548a40bb8aca59bd1b0a837c17484909597f4ea09d932ccdade6585"
+      "bytes": 45018,
+      "sha256": "a433a7df2310cfa29738f3fd4f07d066f8b544fb15c3c35140ab7bc50274fa12"
     },
     {
       "path": "scripts/check-source.mjs",
@@ -152,8 +152,8 @@
     },
     {
       "path": "scripts/freeze-source.mjs",
-      "bytes": 674,
-      "sha256": "656e50f77cc892b4ce3b369d24f3cca845845d9dc175fbe963d8962dc5303196"
+      "bytes": 673,
+      "sha256": "caab4f2b8eb71ea3c7a7ebc0f45138f1ec950d7f3e33b3e59290bb79a507ac2c"
     },
     {
       "path": "scripts/host.mjs",
@@ -162,8 +162,8 @@
     },
     {
       "path": "scripts/observe.mjs",
-      "bytes": 11249,
-      "sha256": "3cddf8e2d661de6ffba68d3bfc41565f94b61cb3681a3ae7b3d5919f52c0c540"
+      "bytes": 11248,
+      "sha256": "823bfff55c4fa7c5ed2e7991bd9aae9f2b8d24009c9ba6d816bf639641eafec8"
     },
     {
       "path": "scripts/prepare-history.mjs",
@@ -192,8 +192,8 @@
     },
     {
       "path": "scripts/test-saving.mjs",
-      "bytes": 44461,
-      "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49"
+      "bytes": 44421,
+      "sha256": "d20d4d0f7301176c07106688c7329f2bd2d8b58e46678de8fae2a99f6ff28032"
     },
     {
       "path": "scripts/viewer.mjs",
@@ -212,8 +212,8 @@
     },
     {
       "path": "src/schemas.ts",
-      "bytes": 2185,
-      "sha256": "8e2a62f49627a90af374652beefb323d642d0e727387ef0f2d022d9bb51f319f"
+      "bytes": 2232,
+      "sha256": "abfb2ad2d21ceae2e515a5500119a95d032311189f59695a630806352f01dd1a"
     },
     {
       "path": "src/store.ts",

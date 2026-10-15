@@ -1,10 +1,12 @@
 {
-  "name": "qinglan-existing-project-lab",
+  "name": "fanren-existing-project-lab",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@11.20.0",
-  "engines": {"node": ">=24.12.0 <25"},
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
   "scripts": {
     "build": "tsc",
     "test:delivery": "node --test scripts/check-saving-delivery.mjs",
@@ -19,6 +21,13 @@
     "task": "node scripts/observe.mjs task",
     "review": "node scripts/observe.mjs review"
   },
-  "dependencies": {"@openai/codex-sdk": "0.160.0", "zod": "4.6.5"},
-  "devDependencies": {"@playwright/test": "1.63.0", "@types/node": "24.19.1", "typescript": "7.0.2"}
+  "dependencies": {
+    "@openai/codex-sdk": "0.160.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.19.1",
+    "typescript": "7.0.2"
+  }
 }

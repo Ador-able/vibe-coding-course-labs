@@ -1,0 +1,983 @@
+{
+  "allSame": true,
+  "files": [
+    {
+      "path": "fanren/chapter15/project/inputs/162-准备完整当前对象.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/162-准备完整当前对象.json",
+      "bytes": 52608,
+      "sha256": "e2f2a79afa009d9292c2f8b366fc1ddc9d5200972d275ded70cd7b7c3133dc6c"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/162-完整调查任务.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/162-完整调查任务.txt",
+      "bytes": 2047,
+      "sha256": "872368bad8a0e3146075b9a055cd14ce545e738914daab33e6416736c849fdc2"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/164-完整规则调查任务.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/164-完整规则调查任务.txt",
+      "bytes": 1685,
+      "sha256": "bcc18e8d136f43e0fc6f6a5c0494fdae09a393471061a8e8b6900aa50ec9ab29"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/165-完整测试任务.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/165-完整测试任务.txt",
+      "bytes": 3330,
+      "sha256": "f0d71f2c502c6fba67013dea3b485a3a17a28effe264231ff5c372ce17529e45"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/170-完整原生评审任务.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/170-完整原生评审任务.txt",
+      "bytes": 1824,
+      "sha256": "08790fef3665f0c845893f6fbb2eba327d9177b5554d150d19f3ad1c1de60294"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/170-评审对象.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/170-评审对象.json",
+      "bytes": 13350,
+      "sha256": "97aa0df2f2c7023704ff8fee9d6c31e95f8d48808ff56e1506b9edc700491f6f"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/177-前置实录索引.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/177-前置实录索引.json",
+      "bytes": 18423,
+      "sha256": "126a847ea32cb2777ff57ea68f207dfee775a903920c8a0b2998449a2cbedc27"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/177-完整交付任务.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/177-完整交付任务.txt",
+      "bytes": 3739,
+      "sha256": "87f110f8c4823afcb963e85148c425eb72e3faca32d8531493e195548337ee39"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/CI官方版本与范围.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/CI官方版本与范围.json",
+      "bytes": 1504,
+      "sha256": "4f12a16a1eb89b6916ba4c03c5cfaec016c15de4897f530b971ea8e83ceb68fb"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/五节Git与实测计划.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/五节Git与实测计划.json",
+      "bytes": 2080,
+      "sha256": "56529c4484c65cd4aac1156f38775c80fdb00f3193f79bb4c58bc4f8948c2f00"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/完整教师初始化.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/完整教师初始化.json",
+      "bytes": 12147,
+      "sha256": "2891722ee03b122b321885a2984647786def73b78e12b6c633fab8eaf2d11147"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/独立业务预期.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/独立业务预期.json",
+      "bytes": 5127,
+      "sha256": "9b2080f4f9d3c0d4ba830dc5299d04ae538cc2b0237500f0b220b87fd6b4195e"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/输入冻结清单.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/输入冻结清单.json",
+      "bytes": 2327,
+      "sha256": "bdd88e092aa1e1688566397fdd0c3d5adb67c6e43b7b09cfc92681ba520a2a2b"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/长文-完整三章与段落定位.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/长文-完整三章与段落定位.json",
+      "bytes": 27459,
+      "sha256": "1c8d71fdb81e09d34cb89982e39b8546975e9cb63d26cf474badc398d0374170"
+    },
+    {
+      "path": "fanren/chapter15/project/inputs/青岚修仙录-三章原始课堂存档.md",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/inputs/青岚修仙录-三章原始课堂存档.md",
+      "bytes": 10231,
+      "sha256": "655ff9b25e25b44023a22fad199e658876e2245e1d6914600338ba93ae454ecf"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/after.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/after.json",
+      "bytes": 26589,
+      "sha256": "57ba49a8710d0fca736080797344da8d00bcdd530f0b1d84284a2e73e55e0591"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/before.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/before.json",
+      "bytes": 25729,
+      "sha256": "772be71e30f829f25e2eb001d54611856f58e5c1d3aac1952e27d4651af8f3e9"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/directories.json",
+      "bytes": 1799,
+      "sha256": "cadfb9ffb89ec355c014f077e878ee82bce3c5300542de481aa972f1bf8e1020"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/final-response.txt",
+      "bytes": 1770,
+      "sha256": "725df0cfaa4dba6f3d0ae2f2275eb51a3f8d2546182e122976fad0aefe3267aa"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/input.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/input.json",
+      "bytes": 17115,
+      "sha256": "745dba192412bd66d61dedd10a6442ba02d4dfa51ed0292b90db4a2be5315e0a"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/protocol.jsonl",
+      "bytes": 4398126,
+      "sha256": "9b3990b5226dc81b970fe128fe60dda263b0261923eaa0a6ae185a949ff8d0ef"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/report.json",
+      "bytes": 699822,
+      "sha256": "7ee314fc5c66e7f2ce68cf271cd08c69dc63188ae9321810a6473aef69025c71"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/stderr.txt",
+      "bytes": 3304,
+      "sha256": "772855f6fc9f74a68658473c577c9550530092593033f865bef8d1ba75d9d217"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/submitted.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/submitted.json",
+      "bytes": 235,
+      "sha256": "6280a6f208349c41e2e2b1580184ae320dc5a2f7446b7ce2a296a2a0b5e7cf52"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/delivery/thread.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/delivery/thread.json",
+      "bytes": 718732,
+      "sha256": "19290a6fbada2f2b967ced57d7a86e19963a6dc24b0e3b8f732721d0bd4b45fe"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-01/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-01/report.json",
+      "bytes": 702847,
+      "sha256": "d919a7f59fdedcabb19848ae8fa58ee51da8e39baaa8ea83bbebb8dfdd181f3f"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-fixed-direct/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-fixed-direct/practice.sqlite",
+      "bytes": 73728,
+      "sha256": "9d58e0c3b4093ccbcd2db4f1898af9cc9842f1ed5b2ec6a37b0ef200841c8c02"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-fixed-direct/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-fixed-direct/record.json",
+      "bytes": 3112411,
+      "sha256": "ee91b9aa7e46ae859b707da4e5a5292147f5c4539e7fb8f3dcf21198ef355557"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-fixed-hook/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-fixed-hook/practice.sqlite",
+      "bytes": 73728,
+      "sha256": "a015333d0baacbf80356e18ea237b953c41ed333bb1266be6ecf64ad487c3f49"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-fixed-hook/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-fixed-hook/record.json",
+      "bytes": 3112215,
+      "sha256": "b582767b41cdf3b273a77cc7ee359df5c15fa4657850655d181543ad7a9af505"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-generated/.githooks/pre-commit",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-generated/.githooks/pre-commit",
+      "bytes": 234,
+      "sha256": "def58b0cbd9feb6f2917bbf610b7fea6a09443065b153b3aeba198648ca93ca0"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-generated/.github/workflows/chapter15-delivery.yml",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-generated/.github/workflows/chapter15-delivery.yml",
+      "bytes": 2094,
+      "sha256": "a95add4419d5303d779185b87bee1c78cd85e190ac2261d3330b6cb6b487cf45"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-generated/qinglan/chapter15/project/docs/delivery-check.md",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-generated/qinglan/chapter15/project/docs/delivery-check.md",
+      "bytes": 12949,
+      "sha256": "9785d68abd11547dbe3dc7cc7f618ab3f0ac720f85b038ef3eb574ab312d8a61"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-generated/qinglan/chapter15/project/package.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-generated/qinglan/chapter15/project/package.json",
+      "bytes": 985,
+      "sha256": "2f0ea93b096b9c92ba021cb568eb08e7cd2a08062d064f970dfd6e9795913ed8"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-generated/qinglan/chapter15/project/scripts/check-saving-delivery.mjs",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-generated/qinglan/chapter15/project/scripts/check-saving-delivery.mjs",
+      "bytes": 45058,
+      "sha256": "b8d0d282d548a40bb8aca59bd1b0a837c17484909597f4ea09d932ccdade6585"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-old-direct/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-old-direct/practice.sqlite",
+      "bytes": 73728,
+      "sha256": "1c994914387ab29ddb5fd29d75ad38b1376884d8e3f20ed46b405d4bd8ecafb2"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-old-direct/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-old-direct/record.json",
+      "bytes": 3040115,
+      "sha256": "2b839fdf4e4612a0536d5003ef96c37039f48ab7e88689da785469453bd13a6a"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-old-hook/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-old-hook/practice.sqlite",
+      "bytes": 73728,
+      "sha256": "790d394d8a3bfa61d21aeafd382c61156290f4b385c85aa2fca49ad818ea822b"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-old-hook/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-old-hook/record.json",
+      "bytes": 3039919,
+      "sha256": "63ed536470819c4d07b88fe118fdeb731a534342be84d1df3cbed5ec9e44f43a"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-prior/root-package.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-prior/root-package.json",
+      "bytes": 220,
+      "sha256": "f19d8fc2fa6aa7aac07a7388e18a3f4a270c5a39f30b8605c9d50f721c387753"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery-prior/root-pnpm-workspace.yaml",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery-prior/root-pnpm-workspace.yaml",
+      "bytes": 351,
+      "sha256": "dd8ea94fd7a864c8c073c6d4bf3b811619587216dc6c8b49b637f3b5b0c0ffd3"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-两次直接检查进程回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-两次直接检查进程回执.json",
+      "bytes": 4073,
+      "sha256": "11e5e9b382d784a0d1e4f88ceec7d8cf4111c6130d84d872b13c13366202f888"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-主编实际执行冻结与完整暂存回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-主编实际执行冻结与完整暂存回执.json",
+      "bytes": 20764,
+      "sha256": "74ba8d8a7d686907346869870e033bf9efb222ddc493c5cdef8d1c2ba505256d"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-接手Hook前冻结核对.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-接手Hook前冻结核对.json",
+      "bytes": 6649,
+      "sha256": "2e29f29262a34801feab0813fcdd58c71204a524ed1d7da4bd1100dce853dba0"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-旧副本Hook-trace2.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-旧副本Hook-trace2.jsonl",
+      "bytes": 76730,
+      "sha256": "1d750960f96d271e015a1600a5abffaba8809ad2187cfde76df2eb649014d29b"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-旧副本Hook-完整终端.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-旧副本Hook-完整终端.txt",
+      "bytes": 2435,
+      "sha256": "14db0703f884b18616df4f9ca032c21c474d03ca1d3eced8c3781c93a60fd6a8"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-旧副本Hook-进程回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-旧副本Hook-进程回执.json",
+      "bytes": 151,
+      "sha256": "be5e11177a5500bee7f97c91455bd6529dc2ce1db5d5b53c9bde677c4afe7f9f"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-旧副本直接检查-完整终端.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-旧副本直接检查-完整终端.txt",
+      "bytes": 2435,
+      "sha256": "7d7329f79a9925cb5820db348baa45f79653fa8007aed515df33b2417a7acbc7"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-正确副本Hook-trace2.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-正确副本Hook-trace2.jsonl",
+      "bytes": 85585,
+      "sha256": "3a384a77a5cc5bac7c2f05f0909db6171fa5b90df583f53b93d7ac58aa1e39f1"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-正确副本Hook-完整终端.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-正确副本Hook-完整终端.txt",
+      "bytes": 1067,
+      "sha256": "5744af1846f0a8e4091d1cc64e18fbcbfc214cd6b995da6a116b4d1a5ec30ecf"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-正确副本Hook-进程回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-正确副本Hook-进程回执.json",
+      "bytes": 153,
+      "sha256": "b3380ae020c9fccbfd8b8e6116acf5669b6d0be5d29d8ce15cac024ea2a96742"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/177-正确副本直接检查-完整终端.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/177-正确副本直接检查-完整终端.txt",
+      "bytes": 695,
+      "sha256": "3f09eaca20e8ae75ffcbecfb01e4e2fad7ada2fdf6d10f885f716252c19b9dcc"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/四例独立核对.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/四例独立核对.json",
+      "bytes": 153350,
+      "sha256": "4d04e094c392e4f5871595ec4631069301086a352ffe2a90b7784c280913cdf6"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/完整原件清单.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/完整原件清单.json",
+      "bytes": 3849,
+      "sha256": "73ab4015fb85d896c33d9878501541705767b5fbe8fb5dc7834ade2197efa000"
+    },
+    {
+      "path": "fanren/chapter15/project/records/delivery/查看页验收.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/delivery/查看页验收.json",
+      "bytes": 7132,
+      "sha256": "3114a65a317f2412ffcddc2876b31abc231105768c6ef1f76747fb02c1b679c4"
+    },
+    {
+      "path": "fanren/chapter15/project/records/index.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/index.json",
+      "bytes": 8723,
+      "sha256": "e650de8b25497b7726990fd057b749667617fa355127f80396ac5e562cd7fe99"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/after.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/after.json",
+      "bytes": 25729,
+      "sha256": "4ee83ddc2cdd6207b6a1cfe1dbf15f89992aeafa021801a745c4f05f2a5520c7"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/before.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/before.json",
+      "bytes": 25729,
+      "sha256": "4ee83ddc2cdd6207b6a1cfe1dbf15f89992aeafa021801a745c4f05f2a5520c7"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/investigation/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/investigation/directories.json",
+      "bytes": 2078563,
+      "sha256": "00bf99de72f89ff85af1870b49556883378f8d48bdfe0367e97cc09de2bae91d"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/investigation/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/investigation/final-response.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/investigation/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/investigation/protocol.jsonl",
+      "bytes": 1088100,
+      "sha256": "52bf8e6272a684e146227f3c77a98f8fb74386a3eb07632eb0e991d25f602c07"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/investigation/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/investigation/report.json",
+      "bytes": 748,
+      "sha256": "83722e081873d7aa86d169808a303db0849dca13ac266ec6fb967e552a171dae"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/investigation/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/investigation/stderr.txt",
+      "bytes": 605,
+      "sha256": "d93f9cb7eefe262cf072daee40aeb5724c7a5fabc5676d7b2bf1008cb992f84e"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-01/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-01/report.json",
+      "bytes": 1306,
+      "sha256": "504b343ded8171272bdc1a1d70fed0391cebde334b28f3d0df49350c0df30acb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/after.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/after.json",
+      "bytes": 25729,
+      "sha256": "47959b1aa24d5b78f92994c036fc0c1ccf38aac462a30ff7a374de8dc2088d44"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/before.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/before.json",
+      "bytes": 25729,
+      "sha256": "47959b1aa24d5b78f92994c036fc0c1ccf38aac462a30ff7a374de8dc2088d44"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/directories.json",
+      "bytes": 1789,
+      "sha256": "5f965b10c1af2100c0c145b7945e3e03ea35456ce824f47427da9d52c7325353"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/final-response.txt",
+      "bytes": 9887,
+      "sha256": "1ac601387c223580c67d936d4cc1ad79fe82472773123969bed0f32c5db87287"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/input.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/input.json",
+      "bytes": 13366,
+      "sha256": "eb823130f2ba1bc1966383f6a97f2a8acebf2f4c5d7cf84122098f59e419da2d"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/protocol.jsonl",
+      "bytes": 3445727,
+      "sha256": "273cc5df7bca4b2ecafe5852ece59f72f3fa99500b6fa13c53e89eb4bee8c6c1"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/report.json",
+      "bytes": 554968,
+      "sha256": "d6402e4c69fb1c155429fab548c9723dbd5eed9a00ef3dbb34d77bb790b92e41"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/stderr.txt",
+      "bytes": 2170,
+      "sha256": "399f2ef2ad88be58b1efbfd580682446fef7ce399130f777d15c572f8634a76a"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/submitted.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/submitted.json",
+      "bytes": 235,
+      "sha256": "8f55928f5117d7eb8022ee28cda6d264b50540005f404fa535438847d00f4406"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/investigation/thread.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/investigation/thread.json",
+      "bytes": 568542,
+      "sha256": "db0f75654f4ed6016d2f7829e3ad02fb2def1c4c76695d6d3236d2faef0792ca"
+    },
+    {
+      "path": "fanren/chapter15/project/records/investigation-02/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/investigation-02/report.json",
+      "bytes": 557438,
+      "sha256": "37ac89ee3d6e3fa45da371784f5b7ebf76137f5a5d5a6e7e7295316536292038"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-abort/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-abort/practice.sqlite",
+      "bytes": 69632,
+      "sha256": "59421a111717dcb1caaec0236ab8e4b8429cbea278e670d960e74f0395b6193a"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-abort/practice.sqlite-shm",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-abort/practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-abort/practice.sqlite-wal",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-abort/practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-abort/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-abort/record.json",
+      "bytes": 1673629,
+      "sha256": "74ed6d6d356fcd97a1ae6fad4937e099fbc9c8140f39982cd0a55dc746b653cb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-normal/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-normal/practice.sqlite",
+      "bytes": 73728,
+      "sha256": "b99cf176639d65ba6b660625e745d1c48a345060c8905ab92f4e51bfafc7928e"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-normal/practice.sqlite-shm",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-normal/practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-normal/practice.sqlite-wal",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-normal/practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-fixed-normal/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-fixed-normal/record.json",
+      "bytes": 2894273,
+      "sha256": "07382d69e26c582aac4947f8c0b84ea57703c9affc63453c7fe63aff8413bcc6"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-abort/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-abort/practice.sqlite",
+      "bytes": 69632,
+      "sha256": "d78849780d12e8ace1f0e0e4730886cb0b6507f130ce6ca0f7705d7503b01bd9"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-abort/practice.sqlite-shm",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-abort/practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-abort/practice.sqlite-wal",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-abort/practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-abort/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-abort/record.json",
+      "bytes": 1672795,
+      "sha256": "27a5af7bfd5c46a0940fc58bbf8972bd3d886118e4ad2e20abd36a0c19bd44c9"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-normal/practice.sqlite",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-normal/practice.sqlite",
+      "bytes": 73728,
+      "sha256": "0c0157567e3c26b237bb2d9050db41e7aa5f66366fe06ca89cb7c7ecd18b47c9"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-normal/practice.sqlite-shm",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-normal/practice.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-normal/practice.sqlite-wal",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-normal/practice.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression-old-normal/record.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression-old-normal/record.json",
+      "bytes": 2870057,
+      "sha256": "87bda1e0535e2bc9460c8da629cbd47ea6da4e147c806f04717368a945aae36c"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-中文采用派生-真实文件差异.patch",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-中文采用派生-真实文件差异.patch",
+      "bytes": 12508,
+      "sha256": "463de4198542fe0e87c44c7e35bcd9b73fcba63523811019e56b5c0ed3dd26bd"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-中文采用派生与AST核验.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-中文采用派生与AST核验.json",
+      "bytes": 12679,
+      "sha256": "598a72c873a43e9e32286b6a8d001319ee1072a1fbf85d19ad5bf6d2024523cb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-中断候选完整交接回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-中断候选完整交接回执.json",
+      "bytes": 1858,
+      "sha256": "d6319b62ca9c1776272be885473d6d96c77dca342bdc27e9afd81754b26f86c9"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-主编实际执行进程回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-主编实际执行进程回执.json",
+      "bytes": 1905,
+      "sha256": "c77051192a2742000e77a82bc6c3301a98cedb4f53b2b26a934be6be02b5c8f4"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-主编独立四库完整读回-首次跨运行域数组原型检查.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-主编独立四库完整读回-首次跨运行域数组原型检查.json",
+      "bytes": 5218,
+      "sha256": "d5b0bc7f5631ccfc62b49833b402e2f99a9a25cb88c9e9a678edf3c416525a88"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-主编独立四库完整读回.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-主编独立四库完整读回.json",
+      "bytes": 5963,
+      "sha256": "e48fdc1320a667b05cf963a69a80fdac4c361645c4d3c76600334fed422293b3"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-四例执行冻结起点回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-四例执行冻结起点回执.json",
+      "bytes": 8989,
+      "sha256": "7805de6fbc49e1dff3213758e3f135656868e3ab3af0d88ff9c1f7867fca89a0"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-旧恢复实际执行-完整终端.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-旧恢复实际执行-完整终端.txt",
+      "bytes": 2498,
+      "sha256": "e6e3ba9bc7be1cecd1baaaa6d3f7424fc860ac81586365f01fd13b3151f7f5c4"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-本轮单界面历史行为恢复-真实Git差异.patch",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-本轮单界面历史行为恢复-真实Git差异.patch",
+      "bytes": 6279,
+      "sha256": "a016280e48f06a7d0e8fcac806d038a0292fd9ad1e5109f576d3e119df46bffd"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-本轮历史恢复准备回执.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-本轮历史恢复准备回执.json",
+      "bytes": 1178,
+      "sha256": "8a7a06cdc691f32c95bf6aa83b4893ec841221467b4d5f70afcf721d13514c70"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-模型生成候选-20分钟中断.mjs",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-模型生成候选-20分钟中断.mjs",
+      "bytes": 44667,
+      "sha256": "deb57d007fb3a5cb0c20b709e4d6ca527191a2aa9141d90236644769751ae1e0"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-模型生成候选-实际新增文件Git差异.patch",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-模型生成候选-实际新增文件Git差异.patch",
+      "bytes": 45958,
+      "sha256": "d7fbde52eef030b97a86de18addb1f27617f23dee7573394d399280f3781367f"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-正确实现实际执行-完整终端.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-正确实现实际执行-完整终端.txt",
+      "bytes": 835,
+      "sha256": "c542a4664cb8dbc37650cc8b7df37d23d18c88702acb22abc61ea5aae84a0802"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/165-采用测试脚本-中文说明.mjs",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/165-采用测试脚本-中文说明.mjs",
+      "bytes": 44461,
+      "sha256": "d96e056e2a0ff134bfb0b17d1f5f4d08785b6312e12c0c625a80262c1a8def49"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/fixed-source-version.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/fixed-source-version.json",
+      "bytes": 6726,
+      "sha256": "c20ac28438f9c1664997867a20f9e1face4cc9bb2f9379eb76759a25a37e0a61"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/generation-source-version.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/generation-source-version.json",
+      "bytes": 6567,
+      "sha256": "03e8f3de0b09ede35f7656faa8f957a38b04b86103eb4b5e84a9720cc57a5b21"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/old-source-version.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/old-source-version.json",
+      "bytes": 6726,
+      "sha256": "f0ae457877b35fe50fda6d3d6ee5b96c3aabf04f4c1557c16f6ca627beae25ab"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/历史恢复点到正确点-完整Git差异.patch",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/历史恢复点到正确点-完整Git差异.patch",
+      "bytes": 7514,
+      "sha256": "624ba772381541ab11f44a40379d8419102166f8dd45bcb891a8e02fa84c21dd"
+    },
+    {
+      "path": "fanren/chapter15/project/records/regression/完整原件清单.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/regression/完整原件清单.json",
+      "bytes": 22535,
+      "sha256": "636c106ae782cffeec0047ccd160d348525f38af6016e0336f5efae76c209063"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/after.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/after.json",
+      "bytes": 25729,
+      "sha256": "2fc0285729200652ba5a00c15612ca73ffb38dbfddcae77fa785bfb7cf563a2b"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/before.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/before.json",
+      "bytes": 25729,
+      "sha256": "2fc0285729200652ba5a00c15612ca73ffb38dbfddcae77fa785bfb7cf563a2b"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/report.json",
+      "bytes": 438223,
+      "sha256": "9587622f6b240a72888f575c7204d5da60a1bb933769e456c8fdb36e6e3ec166"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/agent-message.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/agent-message.txt",
+      "bytes": 315,
+      "sha256": "7af51ca368d4811c7c257161714b8283082ab7d5769b65d80c15d6673b86adff"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/directories.json",
+      "bytes": 1793,
+      "sha256": "fee813a68cab18e4815113335225e252f4cafa42276f85a9f938ba16b8f05f42"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/final-response.txt",
+      "bytes": 315,
+      "sha256": "7af51ca368d4811c7c257161714b8283082ab7d5769b65d80c15d6673b86adff"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/input.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/input.json",
+      "bytes": 12998,
+      "sha256": "a4415fa1a2ae01936a495c2c859acd6b2b41ecadb98629e4075ee37df6e0baf1"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/protocol.jsonl",
+      "bytes": 1990646,
+      "sha256": "93d78d6490cf29fe81e9691983f08b478514c5f69e9613053cf2652460ea05b9"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/report.json",
+      "bytes": 436706,
+      "sha256": "dd377420cc5cffbf55b9db5468514763ac2dd8928ca5eed8537082e018412826"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/stderr.txt",
+      "bytes": 6670,
+      "sha256": "9c6f2e3b120e78143cb97e24d8ddd6976e4977f50af95e593cdf1b14888f90cb"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/submitted.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/submitted.json",
+      "bytes": 2399,
+      "sha256": "c241ef707d53b94ce5cb9b5295855173fb6f85b8b9c55da98be40e9921d51bea"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/review/thread.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/review/thread.json",
+      "bytes": 448253,
+      "sha256": "9afedcb0c4a0856cae1ae43d256ba377e299678e8f286972e103fec249ee7d70"
+    },
+    {
+      "path": "fanren/chapter15/project/records/review-01/完整原件审计.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/review-01/完整原件审计.json",
+      "bytes": 40243,
+      "sha256": "593e48b9361a34ffdab3b175d2eab8e180778ff2427a9013d4a42641118b33a2"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/after.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/after.json",
+      "bytes": 25729,
+      "sha256": "47959b1aa24d5b78f92994c036fc0c1ccf38aac462a30ff7a374de8dc2088d44"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/before.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/before.json",
+      "bytes": 25729,
+      "sha256": "47959b1aa24d5b78f92994c036fc0c1ccf38aac462a30ff7a374de8dc2088d44"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/report.json",
+      "bytes": 243667,
+      "sha256": "9e4bb76194364d2299656b58f59cc8b007477a6d0b70039b4c988dd3780f7342"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/directories.json",
+      "bytes": 1815,
+      "sha256": "136fe198a2641e8f5143332c51b0a7134a4de864baec1d979784211a481f38f2"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/final-response.txt",
+      "bytes": 9021,
+      "sha256": "5b5f55ae0c36463988cd655e91c553127daf846f79937886f62d778e7a669e2a"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/input.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/input.json",
+      "bytes": 12646,
+      "sha256": "b66298f7221a4344a5fa349c81f567778c019c85a8bb68395a291028f741af20"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/protocol.jsonl",
+      "bytes": 2415671,
+      "sha256": "f754741e8a9642e4141a9d34b334437f251689885fe8b82be02d0ae99ce5833d"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/report.json",
+      "bytes": 240881,
+      "sha256": "022158025888dc272bd93def06d91b8aaea4140bb1c52190da33d5600b1fdd2c"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/stderr.txt",
+      "bytes": 1241,
+      "sha256": "37d3fd4f56d3dae6eb5a972454d8728ef0d53b7ec44ebafd5ea10ecb4df85774"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/submitted.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/submitted.json",
+      "bytes": 235,
+      "sha256": "9c026d4b05b5ceb8a236f351e584debccb29213bedf1ba17bb90cf3c83b16c31"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-01/rules/thread.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-01/rules/thread.json",
+      "bytes": 253880,
+      "sha256": "2e3a9a2cd14f76e2d5a401bbcdf0da69734b6966b4c323bedb4d05b4cb952989"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/A-root/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/A-root/directories.json",
+      "bytes": 1793,
+      "sha256": "fee813a68cab18e4815113335225e252f4cafa42276f85a9f938ba16b8f05f42"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/A-root/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/A-root/final-response.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/A-root/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/A-root/protocol.jsonl",
+      "bytes": 7846,
+      "sha256": "717586bd7447e76ea91b4719096235e5a43356a4bc2a34ec71891ea5e7b29268"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/A-root/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/A-root/report.json",
+      "bytes": 756,
+      "sha256": "dea10e8f5d4b62ddcc8c606e99e244749988c301c80fa8466687fab102f312ca"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/A-root/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/A-root/stderr.txt",
+      "bytes": 605,
+      "sha256": "b26786338c18b9185504e7655ba290722f6c87e8aae1d9d1de7821b5f3dd7954"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/B-prototype/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/B-prototype/directories.json",
+      "bytes": 1815,
+      "sha256": "136fe198a2641e8f5143332c51b0a7134a4de864baec1d979784211a481f38f2"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/B-prototype/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/B-prototype/final-response.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/B-prototype/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/B-prototype/protocol.jsonl",
+      "bytes": 7864,
+      "sha256": "48f2c2c0a9e97cafa60052a1e2f9cff54c27fe4dafdaa757f246d4ca9ecda523"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/B-prototype/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/B-prototype/report.json",
+      "bytes": 882,
+      "sha256": "750dd513686c8dfe7149457d99fe91243b2d5b46d9107efeaa4da89cd4fe3299"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/B-prototype/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/B-prototype/stderr.txt",
+      "bytes": 605,
+      "sha256": "933b5c6db64f925557922a4f2f655d59ca0e1b73b927f5d9f7a9535d30251618"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/C-zero/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/C-zero/directories.json",
+      "bytes": 1811,
+      "sha256": "d34368498ee5e42d822a79ff031f911a9acbd98dd04ca59169848fff9ab06732"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/C-zero/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/C-zero/final-response.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/C-zero/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/C-zero/protocol.jsonl",
+      "bytes": 7662,
+      "sha256": "08cf29776f1891fdf122e83c681eca3715549fa8179185600fe4b2529dd49755"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/C-zero/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/C-zero/report.json",
+      "bytes": 662,
+      "sha256": "ce52d46ce686b13307d4eb4b84c54a3421a7116bfa7e6f4c4bf6c63c160b984f"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/C-zero/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/C-zero/stderr.txt",
+      "bytes": 605,
+      "sha256": "44b82b33f9a91c230a898dedf3c35ba116486458ed364cd8e0117c601b09b931"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/after.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/after.json",
+      "bytes": 25729,
+      "sha256": "47959b1aa24d5b78f92994c036fc0c1ccf38aac462a30ff7a374de8dc2088d44"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/before.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/before.json",
+      "bytes": 25729,
+      "sha256": "47959b1aa24d5b78f92994c036fc0c1ccf38aac462a30ff7a374de8dc2088d44"
+    },
+    {
+      "path": "fanren/chapter15/project/records/rules-sources-01/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/rules-sources-01/report.json",
+      "bytes": 3020,
+      "sha256": "0ba9328cc70068488d245bbc01bac668eb0b4becb833f62f368959481ad07d0c"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/after.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/after.json",
+      "bytes": 276,
+      "sha256": "3b1b8748ed6c8ba052cdbf9dee41132fe9f01e37d82620a0420e23e96802e652"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/before.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/before.json",
+      "bytes": 222,
+      "sha256": "156a32c1b3aedf5939c2716f073bc63117c47f51be0da47a5829627a22bd3130"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/report.json",
+      "bytes": 279579,
+      "sha256": "74f96c376725f4ac028fa88be22143b55c7986c31c6a876c5132f66bd940913f"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/directories.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/directories.json",
+      "bytes": 1811,
+      "sha256": "805221c89cb4cbe1d13e28791200e2be3bc6a99d90a8a2c2841fc30d955ea290"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/final-response.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/final-response.txt",
+      "bytes": 352,
+      "sha256": "f3d9c8f552e90967abd721232717c0427f4019e5cd9e7b1ecc4acfbc5cd26089"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/input.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/input.json",
+      "bytes": 16167,
+      "sha256": "41d504a327baac27221481504b50940155115cdc2d7cc64a79d7d81d2b231ec1"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/protocol.jsonl",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/protocol.jsonl",
+      "bytes": 2015026,
+      "sha256": "475f3072ecd37b3e71a7d8d77c7c7bd00f29d094694e3f02edb5a9df6eede41f"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/report.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/report.json",
+      "bytes": 276954,
+      "sha256": "f5f664f1c2cc2ca5a6d26d886418495a381086dee1309ac39be814f259f515cf"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/stderr.txt",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/stderr.txt",
+      "bytes": 1773,
+      "sha256": "f5eed4bdee1047a4bbd4fb01215dd30f83e17dad7847b071b8bce1b06b5c2878"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/submitted.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/submitted.json",
+      "bytes": 235,
+      "sha256": "6cd83d62b85b9348c33529ca090c6941d09c8bca1607e75d906f5be85cc0920b"
+    },
+    {
+      "path": "fanren/chapter15/project/records/tests-01/tests/thread.json",
+      "archivedPath": "fanren/chapter15/project/records/历史青岚-20261013/records/tests-01/tests/thread.json",
+      "bytes": 297633,
+      "sha256": "202c0c5658db919f3d4c66ecfdb5e951cbdc56801567a0f374de35bca244f771"
+    }
+  ]
+}

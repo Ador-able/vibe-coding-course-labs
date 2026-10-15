@@ -20,7 +20,7 @@ const sourcePaths = [
   'scripts/seed.mjs', 'scripts/test-saving.mjs', 'scripts/check-saving-delivery.mjs',
   'docs/workbench-boundaries.md', 'docs/save-review.md', 'docs/delivery-check.md',
   'inputs/完整教师初始化.json', 'inputs/独立业务预期.json',
-  'inputs/输入冻结清单.json', 'inputs/青岚修仙录-三章原始课堂存档.md',
+  'inputs/输入冻结清单.json', 'inputs/凡人修仙传-三段原文.json',
   'inputs/177-完整交付任务.txt', 'inputs/177-前置实录索引.json', 'inputs/CI官方版本与范围.json',
   '../../../package.json', '../../../pnpm-workspace.yaml',
   '../../../.githooks/pre-commit', '../../../.github/workflows/chapter15-delivery.yml',
@@ -392,15 +392,15 @@ function collectAssertions(report, observed, input, expectation, A, finalDb) {
     required(expectation.expectedA, '冻结完整预期A');
     assert.deepStrictEqual(A, expectation.expectedA);
     const manifest = JSON.parse(report.sources['inputs/输入冻结清单.json'].utf8);
-    for (const path of ['完整教师初始化.json', '独立业务预期.json', '青岚修仙录-三章原始课堂存档.md']) {
+    for (const path of ['完整教师初始化.json', '独立业务预期.json', '凡人修仙传-三段原文.json']) {
       const frozen = one(manifest.files, item => item.path === path, `冻结清单/${path}`);
       const source = required(report.sources[`inputs/${path}`], path);
       assert.match(source.sha256, /^[0-9a-f]{64}$/);
       assert.equal(source.sha256, frozen.sha256); assert.equal(source.bytes, frozen.bytes);
       assert.equal(sha256(Buffer.from(source.base64, 'base64')), frozen.sha256);
     }
-    assert.equal(report.sources['inputs/青岚修仙录-三章原始课堂存档.md'].sha256, input.source.sha256);
-    assert.equal(report.sources['inputs/青岚修仙录-三章原始课堂存档.md'].bytes, input.source.bytes);
+    assert.equal(report.sources['inputs/凡人修仙传-三段原文.json'].sha256, input.source.sha256);
+    assert.equal(report.sources['inputs/凡人修仙传-三段原文.json'].bytes, input.source.bytes);
     const seeded = required(report.initialization, '真实seed结果');
     assert.equal(seeded.inputSha256, report.sources['inputs/完整教师初始化.json'].sha256);
     assert.deepStrictEqual({kind: seeded.kind, source: seeded.source, scope: seeded.scope},

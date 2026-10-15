@@ -1,0 +1,21 @@
+{
+  "checkedAt": "2026-10-13",
+  "status": "configuration_verified_not_run",
+  "actions": [
+    {"uses": "actions/checkout@v7", "source": "https://github.com/actions/checkout", "observation": "官方README当前示例使用v7；默认PR检出可为模拟合并点，须读真实git HEAD。"},
+    {"uses": "pnpm/setup@v3", "source": "https://github.com/pnpm/setup", "observation": "当前输入为runtime: node@24.12.0、install:false；packageManager取已有pnpm11.20.0。不使用旧node-version字段。"},
+    {"uses": "actions/upload-artifact@v7", "source": "https://github.com/actions/upload-artifact", "observation": "官方当前示例使用v7；if:always保留实际记录，文件不存在时只如实告警。"}
+  ],
+  "scope": {
+    "event": "pull_request",
+    "paths": ["fanren/chapter15/project/**", ".github/workflows/chapter15-delivery.yml", ".githooks/pre-commit", "package.json", "pnpm-workspace.yaml"],
+    "permissions": {"contents": "read"},
+    "install": "pnpm install --frozen-lockfile --filter qinglan-existing-project-lab",
+    "browser": "pnpm --dir fanren/chapter15/project exec playwright install --with-deps chromium",
+    "check": "pnpm --dir fanren/chapter15/project run check:delivery",
+    "artifact": "fanren/chapter15/project/runs/delivery-saving-*",
+    "versionsToRecord": ["event", "PR head", "PR base", "event SHA", "git rev-parse HEAD"]
+  },
+  "remoteRun": null,
+  "limits": "这里只核配置依据，尚未执行PR、远端CI、artifact上传或合并。"
+}
