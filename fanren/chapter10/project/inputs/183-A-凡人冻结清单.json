@@ -1,0 +1,22 @@
+{
+  "lesson": 183,
+  "stage": "A",
+  "files": [
+    {
+      "path": "seed/凡人修仙传-183-导入.json",
+      "bytes": 3970,
+      "sha256": "2ea91f339a1ded02c07c18efea006204526575572109d7c7cdff14f43e9660e8"
+    },
+    {
+      "path": "inputs/183-A-凡人第三段原文导入.txt",
+      "bytes": 1853,
+      "sha256": "5feaf1ec5bc565664df30915be1e8d193f01ca84b543dbb5b138688e0d1c2f57"
+    }
+  ],
+  "original": "materials/凡人原文/第三章.md",
+  "bodySha256": "0dd7418a8d8c49a706f632522bd09757e3c1e2d84bdc48ef6fba2325b67fbc3e",
+  "preparation": "178真实只读完成后独立恢复其after，W6→W7仅更换导入任务；旧资料/两章及历史保持。",
+  "entry": "pnpm agent --prompt inputs/183-A-凡人第三段原文导入.txt --chapter 3 --stop-after-save",
+  "stop": "教师配置保存后停止点，绝不伪称环境故障；保存返回须与真实Store独立读回相同。",
+  "humanAndResume": "等A真实返回后完整读稿再决定人的具体修改；B输入与人的实际决定随后再冻结，不预填。"
+}
