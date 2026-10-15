@@ -40,7 +40,7 @@ if(!isDeepStrictEqual(runtime.configOverrides.slice(1),preflight.overrides))thro
 const prompt=scenario==='chapter'?fixture.chapterRequest:fixture.sentenceRequest;
 const materialPaths=['.agents/skills/novel-chapter-review/SKILL.md','.agents/skills/novel-chapter-review/references/basis-and-status.md','.agents/skills/novel-chapter-review/references/prose-review.md'];
 const materials=await Promise.all(materialPaths.map(async path=>{const text=await readFile(path,'utf8');return {path,fullPath:resolve(path),sha256:createHash('sha256').update(text).digest('hex'),text};}));
-await writeFile(resolve(runDir,'input.json'),JSON.stringify({runId,label:values['run-label'],scenario,codeVersion,database,settings,runtime,threadOptions,configuredModel:null,prompt,fixtureOrigin:'人工编写的短片段与人为更新，用于方法检查；不是本轮模型生成小说。',current,materials},null,2));
+await writeFile(resolve(runDir,'input.json'),JSON.stringify({runId,label:values['run-label'],scenario,codeVersion,database,settings,runtime,threadOptions,configuredModel:null,prompt,fixtureOrigin:'人工选取的《凡人修仙传》原文短段及人工资料更新；正文不是本轮模型生成。',current,materials},null,2));
 await writeFile(resolve(runDir,'before-five-tables.json'),JSON.stringify(before,null,2));
 console.log(JSON.stringify({runId,scenario,runDir,state:'running'}));
 let threadId=null,completed=false,error=null,usage=null,finalResponse='';
