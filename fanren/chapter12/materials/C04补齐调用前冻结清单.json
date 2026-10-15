@@ -1,0 +1,88 @@
+{
+  "frozenAt": "2026-10-15T07:09:10.721Z",
+  "actualHttpRequests": 0,
+  "sourceVersion": "sha256:b4d5d9580c458cf74588d8022496016d30c2c57f09371ace284777818e1e0944",
+  "initialModelGitHead": "04d8b3591a61a2de5ac088acf164e85e3f27208d",
+  "sourceAIds": [
+    "fanren-C04-scope-v1"
+  ],
+  "old": {
+    "id": "fanren-C04-scope-v1",
+    "title": "C04原文前段：不含考核宣布",
+    "utf16Length": 1637,
+    "han": 1431
+  },
+  "replacement": {
+    "id": "fanren-C04-scope-v2",
+    "title": "C04完整原文：攀岩与考核结果",
+    "utf16Length": 2331,
+    "han": 2015,
+    "fullOriginalIdentical": true
+  },
+  "calls": {
+    "answerA": 1,
+    "embeddingTasks": 1,
+    "embeddingValues": 2,
+    "answerBMaximum": 1,
+    "maxRetries": 0
+  },
+  "notYetKnown": "A实际回答和新增向量排名尚未产生，B只按冻结装配规则使用该实际结果，不预填占位答案。",
+  "files": [
+    {
+      "path": "fanren/chapter12/project/inputs/update/material.json",
+      "bytes": 31783162,
+      "sha256": "6ed488bef428002b1478cdba019b7ad8a0b90825058773920937026dce6af836"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/update/manifest.json",
+      "bytes": 1690,
+      "sha256": "59d9b19b17b76f3132c358eb3daf48d7406d853fb1452bbfb063309f938a8494"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/update/draft.json",
+      "bytes": 15340,
+      "sha256": "8f18d18280d87f70dbba5e3f8397c3a89c1f4cc50d30576bc1de7d0122339a50"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/request-preview-update.json",
+      "bytes": 36172,
+      "sha256": "f2e89384314b977ebc752043884547bcbb4adcd056e58eae0239919d1f44fee3"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/实验规则.json",
+      "bytes": 1302,
+      "sha256": "8856c13f93b158ec90206be91575ad9b00f3eb70283b3f6b781793ae07bd20b5"
+    },
+    {
+      "path": "fanren/chapter12/project/inputs/冻结清单.json",
+      "bytes": 1389,
+      "sha256": "9ec2e00ef190ee7bf1a0654b0074515bcf88794ee4620a7a3f20bebf4c3ea3c1"
+    },
+    {
+      "path": "fanren/chapter12/project/source-version.json",
+      "bytes": 5476,
+      "sha256": "dedd12e89dab1cb405b16cf7ed25271e1789b553a0b12dc23b91b6f3787e4a85"
+    },
+    {
+      "path": "fanren/chapter12/project/public/records/embeddings.json",
+      "bytes": 26740486,
+      "sha256": "5c1a8c37b58cc36825465dc292b28a5ea4290ac3adc5a75df351468c56bdfece"
+    },
+    {
+      "path": "fanren/chapter12/project/public/records/retrieval.json",
+      "bytes": 17286674,
+      "sha256": "71860d03cabfc78342f60015234f05a4c1294f95ae1d99635b49df5e4088ae58"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/fanren-C04-scope-v1.txt",
+      "bytes": 4867,
+      "sha256": "c79735d93ae2905f99088096c64d03e2d861a105852642c9c59adc3bfe48710f"
+    },
+    {
+      "path": "fanren/chapter12/project/public/materials/fanren-C04-scope-v2.txt",
+      "bytes": 6919,
+      "sha256": "b5c3463f322bab6993a8dc78dda81bee0e24dfd9b20497c12e860aa35bd73f9c"
+    }
+  ],
+  "command": "node scripts/observe-update.mjs fanren-update-20261015"
+}
