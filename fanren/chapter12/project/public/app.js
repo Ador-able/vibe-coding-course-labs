@@ -196,8 +196,9 @@ async function evaluationPage() {
         showPage(page, '凡人C05原文'); evidence = { runId: record.runId, document, page };
       } else if (card.id === 'E02-retrieval') {
         const [arithmetic, retrieval] = await Promise.all([load('evaluation'), load('retrieval')]); if (current !== revision) return;
+        $('result').append(element('p', '以下覆盖率只比较预先标注的3个ID；大纲也含同类授课信息，完整资料库的召回率未评价。', 'meta'));
         const table = element('table', undefined, 'metrics-table'); const header = element('tr');
-        for (const name of ['资料范围', '实际前2候选', '相关占比 P@2', '相关覆盖 R@2', '首条命中 RR@2']) header.append(element('th', name));
+        for (const name of ['资料范围', '实际前2候选', '相关占比 P@2', '标注集覆盖 R@2', '首条命中 RR@2']) header.append(element('th', name));
         const head = element('thead'); head.append(header); table.append(head); const body = element('tbody');
         let firstButton;
         for (const metric of arithmetic.metrics.filter(row => card.conditions.includes(row.condition))) {

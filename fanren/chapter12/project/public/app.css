@@ -36,6 +36,7 @@ input { width: 260px; }
 .source-heading a { font-size: .8rem; white-space: nowrap; }
 .muted, .meta { color: #718078; font-size: .85rem; }
 .body-text { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.9; }
+body[data-stage="answers"] #source-content > .body-text { max-height: 30rem; overflow-y: auto; padding-right: .65rem; }
 .page, .section { border-top: 1px solid #e1e8e4; padding-top: 18px; margin-top: 22px; }
 .page-heading { display: flex; justify-content: space-between; align-items: start; gap: 12px; }
 .page-heading button { font-size: .8rem; padding: 3px 10px; }

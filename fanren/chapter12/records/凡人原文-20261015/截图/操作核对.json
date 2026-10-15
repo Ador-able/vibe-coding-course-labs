@@ -1,0 +1,47 @@
+{
+  "browser": "Edge",
+  "origin": "http://127.0.0.1:4352",
+  "sourceCommit": "04d8b3591a61a2de5ac088acf164e85e3f27208d",
+  "readingRunId": "34cca317-d918-4ffd-8606-2c486a02e99d",
+  "modelCallsByPageActions": 0,
+  "query": "你二人以后就住在这里了",
+  "nativeHits": [
+    {
+      "physicalPage": 2,
+      "anchorId": "2c615ed806b99bd79992f8e60c57f79612b2b615a72ba30410c712b27f1bbfc1",
+      "locator": {
+        "docId": "fanren-C05",
+        "fileSha256": "d7e31d46622b40c5d431600c2c7f1e569a258ff5e1b8181d31bb3bd14c72755d",
+        "parseProfile": "PyMuPDF/1.27.2.2;text-sort=true;blocks-sort=true;visible-page;render-dpi=320",
+        "physicalPage": 2,
+        "blockNo": 14
+      },
+      "bbox": [
+        48,
+        408.7176818847656,
+        546.9929809570312,
+        423.0946960449219
+      ],
+      "text": "　　“这是神手谷，除了谷内弟子，外人除了生病受伤一般不会来此地，你二人以后就住在这里了，先去\n",
+      "textSha256": "3effce8cb694ae0937d4b11ae8bf232d0f7ff51507dd65c404a5a379d0939516"
+    }
+  ],
+  "scannedHits": 0,
+  "nativeScreenshot": {
+    "file": "文字版-第二页-2560原生.png",
+    "width": 2560,
+    "height": 1720,
+    "mechanism": "CDP原生渲染，CSS视口1280×1000、deviceScaleFactor=2，clip 1280×860；无后期放大。"
+  },
+  "scannedScreenshot": {
+    "file": "扫描版-第二页-2560原生.png",
+    "width": 2560,
+    "height": 1720,
+    "mechanism": "同一原生渲染及裁切范围。"
+  },
+  "temporaryDeviceMetricsCleared": true,
+  "otherObservedActions": [
+    "改便签版定位“请同时核对”，实际第3页命中1处",
+    "错误文件实际显示打开失败、未知页数，查询保留且旧命中清空"
+  ]
+}

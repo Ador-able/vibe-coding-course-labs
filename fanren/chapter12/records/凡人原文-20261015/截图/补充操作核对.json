@@ -1,0 +1,61 @@
+{
+  "kind": "actual-browser-actions-not-model-rerun",
+  "currentImages": [
+    {
+      "assetId": 771,
+      "file": "193-A-前段结尾-2560.png",
+      "action": "answers.html选A，来源正文自身滚到连续前段末尾"
+    },
+    {
+      "assetId": 772,
+      "file": "193-B-考核宣布-2560.png",
+      "action": "选B，来源正文自身滚到岳堂主完整考核宣布"
+    },
+    {
+      "assetId": 774,
+      "file": "197-预先标注集覆盖-2560.png",
+      "action": "evaluation.html选E02，直接查看原候选和有限标注集指标"
+    }
+  ],
+  "files": [
+    {
+      "path": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter12/records/凡人原文-20261015/截图/193-A-前段依据-2560原生.png",
+      "gitPath": "fanren/chapter12/records/凡人原文-20261015/截图/193-A-前段依据-2560原生.png",
+      "bytes": 460959,
+      "sha256": "1d9b3cf01cad16554e59aa061fe8f552ab3749539c3bbe05b2fd515fe8b229ae",
+      "width": 2560,
+      "height": 1600
+    },
+    {
+      "path": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter12/records/凡人原文-20261015/截图/193-A-前段结尾-2560.png",
+      "gitPath": "fanren/chapter12/records/凡人原文-20261015/截图/193-A-前段结尾-2560.png",
+      "bytes": 518559,
+      "sha256": "7e63cae8a22bfd6787a4ece914dc2bbeccbfc02e47ad431744de1aa93a4235ad",
+      "width": 2560,
+      "height": 1760
+    },
+    {
+      "path": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter12/records/凡人原文-20261015/截图/193-B-考核宣布-2560.png",
+      "gitPath": "fanren/chapter12/records/凡人原文-20261015/截图/193-B-考核宣布-2560.png",
+      "bytes": 584899,
+      "sha256": "0d9545dfd528dc3703602b48d4d7ae034525b12012537aa36044e4915441587e",
+      "width": 2560,
+      "height": 1900
+    },
+    {
+      "path": "D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter12/records/凡人原文-20261015/截图/197-预先标注集覆盖-2560.png",
+      "gitPath": "fanren/chapter12/records/凡人原文-20261015/截图/197-预先标注集覆盖-2560.png",
+      "bytes": 274416,
+      "sha256": "9bd6a5f34bf5ceef6f31657c1e6316d59e10ab552e723b7d4415facd2cca1b5a",
+      "width": 2560,
+      "height": 1600
+    }
+  ],
+  "uiChanges": {
+    "cssSha256": "3c8cf936f48bd392a7900a9e1ab4b08521ab81dfc80b5a5bf80e87ddcca5cf82",
+    "jsSha256": "c9606c7abfa42041c71a1b15fe39752b9aa8d46149aa1bc1723b576f6ddb3627"
+  },
+  "originalOperationRecordUnchanged": true,
+  "modelCalls": 0,
+  "businessPosts": 0
+}

@@ -1,7 +1,7 @@
 {
-  "sourceVersion": "sha256:b4d5d9580c458cf74588d8022496016d30c2c57f09371ace284777818e1e0944",
-  "gitHead": "e19b3aa35fe5cef3f91157db1a5961cf6344f770",
-  "frozenAt": "2026-10-15T07:00:53.474Z",
+  "sourceVersion": "sha256:058729e2c600ed63c4bac30d7722d1fabbd3732294a563c31afa3de474de6a52",
+  "gitHead": "6ce151c8c623036ca2bb37d688de4a96d411d6c3",
+  "frozenAt": "2026-10-15T09:37:55.091Z",
   "files": [
     {
       "name": "启动实验.cmd",
@@ -25,13 +25,13 @@
     },
     {
       "name": "public/app.css",
-      "bytes": 4917,
-      "sha256": "f313d51994c619fbe789f2cfc9725daead26dbd030aaeb06295c700e854b39cc"
+      "bytes": 5037,
+      "sha256": "3c8cf936f48bd392a7900a9e1ab4b08521ab81dfc80b5a5bf80e87ddcca5cf82"
     },
     {
       "name": "public/app.js",
-      "bytes": 20374,
-      "sha256": "4350268a723c621b84d9a7240de9bdceb35ddc33cc978c725e01e84eb9b47214"
+      "bytes": 20551,
+      "sha256": "c9606c7abfa42041c71a1b15fe39752b9aa8d46149aa1bc1723b576f6ddb3627"
     },
     {
       "name": "public/chunks.html",
