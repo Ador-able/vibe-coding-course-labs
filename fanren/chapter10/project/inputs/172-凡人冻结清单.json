@@ -1,0 +1,33 @@
+{
+  "lesson": 172,
+  "source": "《凡人修仙传》原文导入与真实校订后的两章",
+  "modelCalls": 0,
+  "input": {
+    "path": "inputs/172-凡人教师命令观察.md",
+    "bytes": 3688,
+    "sha256": "7d86d0ada9fe2b2950eb4e2953a9ff34766da5214a2d86e564c393ad9bd176b9"
+  },
+  "snapshot": {
+    "path": "课堂记录/凡人原文-20261015/04-原文校订/06-绑定校订/after.json",
+    "sha256": "300882aca50f3b7f09e0b38df591426d2abe9676bdd50a35bf021d1a765f098d"
+  },
+  "expectedStart": {
+    "workRevision": 5,
+    "chapters": [
+      {
+        "number": 1,
+        "revision": 5,
+        "origin": "agent",
+        "status": "draft"
+      },
+      {
+        "number": 2,
+        "revision": 1,
+        "origin": "agent",
+        "status": "draft"
+      }
+    ]
+  },
+  "entry": "既有inspect-command-condition、wait-before-service、CLI export与prototype；成熟exec_command/write_stdin",
+  "scope": "只读导出与进程观察，所有五张表保持；独立库明确选择，不读取个人记忆、不改原文。"
+}
