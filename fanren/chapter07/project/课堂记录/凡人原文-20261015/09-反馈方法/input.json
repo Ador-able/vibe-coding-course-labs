@@ -1,0 +1,81 @@
+{
+  "root": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project",
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\feedback-task-88fdcd50-8c2d-4c23-88bd-1030250b1125",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\feedback.sqlite",
+  "codeVersion": "d30cbddd28405adcea1ecd5d137c18f30cf96885",
+  "runtime": {
+    "configOverrides": [
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\"={trust_level=\"trusted\"}}",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "mcp_servers.novel_lab={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\dist\\\\mcp.js\",\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\data\\\\fanren\\\\feedback.sqlite\"],cwd=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\",enabled=true,required=true,enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"save_draft\"],default_tools_approval_mode=\"approve\"}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "skills.config=[{path=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.agents\\\\skills\\\\novel-chapter-review\\\\SKILL.md\",enabled=false}]",
+      "features.shell_tool=true",
+      "web_search=\"disabled\"",
+      "features.hooks=true",
+      "hooks.state={\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:0:0\"={enabled=true,trusted_hash=\"sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9\"}}"
+    ]
+  },
+  "settings": {
+    "serverName": "novel_lab",
+    "enabledTools": [
+      "read_work",
+      "list_chapters",
+      "read_chapter",
+      "save_draft"
+    ],
+    "skillName": "novel-feedback-task",
+    "skillPath": ".agents/skills/novel-feedback-task/SKILL.md",
+    "workId": "fanren",
+    "database": "data/fanren/feedback.sqlite",
+    "maxNewDraftsInstruction": 2,
+    "turnTimeoutMs": 300000,
+    "interruptGraceMs": 45000
+  },
+  "prompt": "请使用 $novel-feedback-task，处理作品 fanren 第1章的当前局部草稿。本轮反馈在 feedback/本轮反馈-r2.md，feedback/旧反馈-r1.md 是此前的意见，请结合当前材料处理仍成立的问题。\n\n实际保存完整待审稿并读回，告诉我本轮处理了什么、哪条旧意见不再适用，哪些地方仍需我阅读判断。本轮最多新增两份草稿修订；没有进展或反馈无法判断时停下，保留现有成果和具体缺口。不要采用，不扩写后续内容。\n",
+  "review": {
+    "approvedBy": "root",
+    "definitionFiles": [
+      {
+        "path": "scripts/check-draft-placeholder.mjs",
+        "sha256": "a91808f018d43f6ea3afda1036237d16f11fb0724200e197dd463f876a63b069"
+      },
+      {
+        "path": "scripts/missing-hook-script.mjs",
+        "sha256": "e7c29d6f9dc809f96d2c8accc167d191b18a97a0bf90023dbf3e6729c74cb362"
+      },
+      {
+        "path": "config/hooks-对照.json",
+        "sha256": "6e4020cbd3c55ebb72178467841a5c31d83d3ee2de037cbc622e33340492cc60"
+      },
+      {
+        "path": "config/hooks-反馈.json",
+        "sha256": "162e00ddb3a1e6e6f308c637e533b829974b186d6b950f681302935b4503d3fd"
+      },
+      {
+        "path": ".codex/hooks.json",
+        "sha256": "162e00ddb3a1e6e6f308c637e533b829974b186d6b950f681302935b4503d3fd"
+      }
+    ],
+    "approvedHooks": [
+      {
+        "key": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\.codex\\hooks.json:post_tool_use:0:0",
+        "currentHash": "sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9",
+        "matcher": "^mcp__novel_lab__save_draft$",
+        "command": "node scripts/check-draft-placeholder.mjs correct"
+      }
+    ],
+    "overrides": [
+      "hooks.state={\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter07\\\\project\\\\.codex\\\\hooks.json:post_tool_use:0:0\"={enabled=true,trusted_hash=\"sha256:cfaf74051d06842bad9debda7cdb319e2cd6be5d76d6dfb37e2969148f4ec4e9\"}}"
+    ],
+    "scope": "固定脚本哈希与本次实际目录相符；信任仅传给当前宿主进程。"
+  },
+  "scope": "一条官方自然任务；新增保存次数为给模型的软限制。观察器不决定业务动作、不手工保存、不自动续发。"
+}

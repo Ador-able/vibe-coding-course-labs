@@ -1,0 +1,39 @@
+{
+  "codeVersion": "d30cbddd28405adcea1ecd5d137c18f30cf96885",
+  "threadId": "01a13dc4-fcab-7581-b745-f4bfa477ebed",
+  "modelTasks": 1,
+  "commandCalls": 3,
+  "toolCalls": 5,
+  "newDrafts": 1,
+  "durationMs": 29038,
+  "methodReferenceBothFeedbackAndProjectNotesActuallyRead": true,
+  "correctedLastParagraphPreserved": true,
+  "r3OnlyReplacesMarkerWithOriginalParagraph": true,
+  "savedReadBackCLIAndIndependentSQLiteEqual": true,
+  "manualHistoryUnchanged": true,
+  "workUnchanged": true,
+  "finalRevision": 3,
+  "status": "draft",
+  "oneHookCompleted": true,
+  "globalConfigUnchanged": true,
+  "usage": {
+    "total": {
+      "totalTokens": 83026,
+      "inputTokens": 82027,
+      "cachedInputTokens": 55040,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 999,
+      "reasoningOutputTokens": 17
+    },
+    "last": {
+      "totalTokens": 19360,
+      "inputTokens": 19136,
+      "cachedInputTokens": 18176,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 224,
+      "reasoningOutputTokens": 0
+    },
+    "modelContextWindow": 475000
+  },
+  "limits": "人工r1/r2为教学输入，不是模型两次失败；没有无Skill对照，未实测超时、连续失败等停止分支；原文与人工语法校订分别保留。"
+}

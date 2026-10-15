@@ -1,0 +1,57 @@
+{
+  "out": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\feedback-task-88fdcd50-8c2d-4c23-88bd-1030250b1125",
+  "threadId": "01a13dc4-fcab-7581-b745-f4bfa477ebed",
+  "turnId": "01a13dc4-fe86-7903-837e-84fd337bbcca",
+  "turnStatus": "completed",
+  "terminalConfirmed": true,
+  "completed": true,
+  "error": null,
+  "archived": true,
+  "model": "gpt-6.1-sol",
+  "modelProvider": "openai",
+  "usage": {
+    "total": {
+      "totalTokens": 83026,
+      "inputTokens": 82027,
+      "cachedInputTokens": 55040,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 999,
+      "reasoningOutputTokens": 17
+    },
+    "last": {
+      "totalTokens": 19360,
+      "inputTokens": 19136,
+      "cachedInputTokens": 18176,
+      "cacheWriteInputTokens": 0,
+      "outputTokens": 224,
+      "reasoningOutputTokens": 0
+    },
+    "modelContextWindow": 475000
+  },
+  "interruptRequested": false,
+  "interruptResult": null,
+  "hostExitCode": 0,
+  "hostSignalCode": null,
+  "timeoutAnchor": "从turn/start返回真实turnId后计时；5分钟请求中断，另等最多45秒真实终态，不等于费用硬上限。",
+  "cliExitCode": 0,
+  "newDrafts": 1,
+  "saveInstructionLimitExceeded": false,
+  "countsBefore": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 1,
+    "chapter_versions": 2,
+    "tasks": 0
+  },
+  "countsAfter": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 1,
+    "chapter_versions": 3,
+    "tasks": 0
+  },
+  "globalConfigHashBefore": "247f5ae43fc2bcc7922cf4e6a934d367460fc702519321571a2315a671bbe683",
+  "globalConfigHashAfter": "247f5ae43fc2bcc7922cf4e6a934d367460fc702519321571a2315a671bbe683",
+  "globalConfigUnchanged": true,
+  "limits": "事件、全文与范围需独立人工核对。记录不收录宿主system/developer、身份或记忆受保护正文；本实验Hook反馈、教师输入与真实业务结果单独保存。机械通过不证明场景或文学品质；单次复用不证明因果收益。"
+}

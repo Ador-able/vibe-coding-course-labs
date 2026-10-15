@@ -1,0 +1,23 @@
+{
+  "root": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\feedback.sqlite",
+  "codeVersion": "d30cbddd28405adcea1ecd5d137c18f30cf96885",
+  "counts": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 1,
+    "chapter_versions": 2,
+    "tasks": 0
+  },
+  "workRevision": 1,
+  "currentChapterRevision": 2,
+  "origin": "human",
+  "revisions": [
+    1,
+    2
+  ],
+  "databaseSha256": "789bbdbdaf6836b5bd0746ab69c939d64af76885611a353ae829afbf9dae08a5",
+  "modelCalls": 0,
+  "hookCalls": 0,
+  "limits": "人工CLI真实保存两版并完整读回；未通过Agent工具调用，不触发Agent PostToolUse，不证明AI已采用反馈方法。"
+}

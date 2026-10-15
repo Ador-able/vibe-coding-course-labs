@@ -1,0 +1,71 @@
+[
+  {
+    "label": "初始化",
+    "argv": [
+      "dist/cli.js",
+      "init",
+      "seed/新作品.json",
+      "--db",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\feedback.sqlite",
+      "--work",
+      "fanren"
+    ],
+    "status": 0,
+    "error": null
+  },
+  {
+    "label": "人工r1",
+    "argv": [
+      "dist/cli.js",
+      "save",
+      "seed/人工草稿-r1.json",
+      "--db",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\feedback.sqlite",
+      "--work",
+      "fanren"
+    ],
+    "status": 0,
+    "error": null
+  },
+  {
+    "label": "人工r2",
+    "argv": [
+      "dist/cli.js",
+      "save",
+      "seed/人工草稿-r2.json",
+      "--db",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\feedback.sqlite",
+      "--work",
+      "fanren"
+    ],
+    "status": 0,
+    "error": null
+  },
+  {
+    "label": "完整当前对象",
+    "argv": [
+      "dist/cli.js",
+      "show",
+      "--db",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\feedback.sqlite",
+      "--work",
+      "fanren"
+    ],
+    "status": 0,
+    "error": null
+  },
+  {
+    "label": "完整当前章节",
+    "argv": [
+      "dist/cli.js",
+      "chapter",
+      "1",
+      "--db",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\data\\fanren\\feedback.sqlite",
+      "--work",
+      "fanren"
+    ],
+    "status": 0,
+    "error": null
+  }
+]
