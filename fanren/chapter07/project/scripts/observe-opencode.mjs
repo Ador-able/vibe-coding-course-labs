@@ -8,7 +8,7 @@ import {parseArgs} from 'node:util';
 import {homedir} from 'node:os';
 
 const saved=JSON.parse(await readFile(resolve(homedir(),'.vibe-coding-labs/model.json'),'utf8'));
-const {values}=parseArgs({options:{db:{type:'string',default:'data/opencode-plus.sqlite'},'prompt-file':{type:'string',default:'seed/插件任务.txt'},session:{type:'string'}}});
+const {values}=parseArgs({options:{db:{type:'string',default:'data/fanren/opencode-plus.sqlite'},'prompt-file':{type:'string',default:'seed/插件任务.txt'},session:{type:'string'}}});
 const model='courseModel/'+saved.model;
 const root=process.cwd(),database=resolve(values.db),out=resolve('runs',`opencode-${randomUUID()}`);
 const snapshot=()=>{const db=new DatabaseSync(database,{readOnly:true});try{return Object.fromEntries(['works','work_versions','chapters','chapter_versions','tasks'].map(table=>[table,db.prepare(`SELECT * FROM ${table} ORDER BY 1,2`).all()]));}finally{db.close();}};

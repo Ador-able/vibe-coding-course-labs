@@ -1,0 +1,30 @@
+{
+  "novel": "凡人修仙传",
+  "author": "忘语",
+  "originalSha256": "2fc1698410418bf136448807335c6359bf515b75e6f9c1e1d1f443a1c928e6cc",
+  "corpusSha256": "141138ca40a7ddbad62264d3f011ee4c1e01bc00c3900f5ff4b9016f25db9d34",
+  "readingChapters": [
+    {
+      "number": 1,
+      "sourceId": "C03",
+      "sourceTitle": "第三章 七玄门—第四章 炼骨崖",
+      "hanCount": 2036,
+      "sha256": "1db13c62a03f00754c4e53cff3297e602ba939b5484402b89f7380b79170d91a"
+    },
+    {
+      "number": 2,
+      "sourceId": "C04",
+      "sourceTitle": "第四章 炼骨崖—第五章 墨大夫",
+      "hanCount": 2015,
+      "sha256": "b5c3463f322bab6993a8dc78dda81bee0e24dfd9b20497c12e860aa35bd73f9c"
+    },
+    {
+      "number": 3,
+      "sourceId": "C05",
+      "sourceTitle": "第五章 墨大夫—第六章 无名口诀",
+      "hanCount": 2088,
+      "sha256": "b8f8242a70c30aaa325549e4dff4e4d5fc7345efac5551eeecd7d01607ba7290"
+    }
+  ],
+  "localExcerptSource": "C03末三段，C04开头；完整原文未改，编辑占位与的/地校订有独立标记。"
+}

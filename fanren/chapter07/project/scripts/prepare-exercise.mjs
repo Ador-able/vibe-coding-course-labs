@@ -7,7 +7,7 @@ import {workInput} from '../dist/schemas.js';
 
 const scenario=process.argv[2];
 if(!['reading','plugin','hook','feedback'].includes(scenario))throw new Error('请选择 reading、plugin、hook 或 feedback。');
-const database=resolve('data',`${scenario}.sqlite`),out=resolve('runs',`prepare-${scenario}`);
+const database=resolve('data/fanren',`${scenario}.sqlite`),out=resolve('runs',`prepare-${scenario}`);
 const existing=existsSync(database);
 mkdirSync(out,{recursive:true});
 const read=path=>readFileSync(path,'utf8');
@@ -39,7 +39,7 @@ if(!existing&&scenario==='feedback'){
       draft('materials/第二章-教学候选.md',2,0);
       draft('materials/第三章-教学候选.md',3,0);
     }else{
-      const path=scenario==='plugin'?'materials/插件起草-作品.json':'seed/门外局部检查.json';
+      const path=scenario==='plugin'?'materials/插件起草-作品.json':'seed/竹林局部检查.json';
       const work=workInput.parse(json(path));
       record('init',{source:path,...work},store.init(work));
     }
@@ -49,7 +49,7 @@ if(['hook','feedback'].includes(scenario))writeFileSync('.codex/hooks.json',read
 // 关闭准备连接后独立打开业务库，保存真实全文与修订。
 const reopened=new Store(database);
 let current;
-try{current={work:reopened.getWork('qinglan'),chapters:reopened.listChapters('qinglan').map(chapter=>reopened.getChapter('qinglan',chapter.number))};}
+try{current={work:reopened.getWork('fanren'),chapters:reopened.listChapters('fanren').map(chapter=>reopened.getChapter('fanren',chapter.number))};}
 finally{reopened.close();}
 save('完整当前对象.json',current);
 if(['reading','plugin'].includes(scenario))execFileSync(process.execPath,['scripts/prepare-plugin.mjs','--db',database],{stdio:'inherit',windowsHide:true});

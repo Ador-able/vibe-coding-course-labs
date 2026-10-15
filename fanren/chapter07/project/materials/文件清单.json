@@ -1,67 +1,73 @@
 {
-  "firstChapterSource": "../chapter06/materials/第一章.md",
-  "firstChapterPreservedExactly": true,
-  "addedParagraph": "他们随后又看见右页翘起两次，每次翘起时，笔架旁的四折纸都跟着轻轻抖动。纸并未展开。",
+  "source": "原文来源.json",
+  "firstChapterBodyPreserved": true,
+  "firstChapterChange": "仅标题来源索引",
   "entries": [
     {
       "name": "作品-r1.json",
-      "bytes": 2534,
-      "sha256": "490eb0b3481e9d5df7ce0a66e29f48f585a466f744deda022c1f4ecc6878b15f",
-      "hanCount": 639
+      "bytes": 1741,
+      "sha256": "6cf247b102cb1c395053afe3dab3d143bfd433f5e7b853f5cd8e023ab42cc97a",
+      "hanCount": 383
     },
     {
       "name": "作品-r2.json",
-      "bytes": 2731,
-      "sha256": "5bcf0da2463d8eb83b2c3495e4f1368434b556da183f872d4e8859723bb88fbf",
-      "hanCount": 696
+      "bytes": 1903,
+      "sha256": "66376a2780781ef59b1e9193b4c6639815d5fc4be3a75ad957330b7ef7d3a0ed",
+      "hanCount": 425
+    },
+    {
+      "name": "原文来源.json",
+      "bytes": 1071,
+      "sha256": "ffb081540a0cad88ed88ca942ea4a8ccbc1f470d30136bf8e32a8990b437123c",
+      "hanCount": 69
     },
     {
       "name": "局部练习.json",
-      "bytes": 5785,
-      "sha256": "8ee2ab56c300db232f01e83f6b85f356556400d88e753a187d84334579f31905",
-      "hanCount": 1462
+      "bytes": 6898,
+      "sha256": "66bdf8cc33ac81a3ef29a1f4b29915f8a14af15cc26c4ccdcb47593fd76caba7",
+      "hanCount": 1816
     },
     {
       "name": "插件起草-任务.txt",
-      "bytes": 948,
-      "sha256": "eb5ff7bc0113324b61c28ae9813b60b6e774d18d692ea47f1eee47b382650229",
-      "hanCount": 283
+      "bytes": 321,
+      "sha256": "60e6c1420111e8832f95b67ee1c9ace3c1c7023dfd43ef72b1375a50d2a57983",
+      "hanCount": 92
     },
     {
       "name": "插件起草-作品.json",
-      "bytes": 1860,
-      "sha256": "b5bc941f93757087000105d66a1f2fed024cae772e81971c452e8ecd4fb4800c",
-      "hanCount": 482
+      "bytes": 2018,
+      "sha256": "8e32d31fdde1c46c57f50fafb70c01f4033564c7411361a71e326bc8790c723b",
+      "hanCount": 511
     },
     {
       "name": "材料说明.md",
-      "bytes": 2255,
-      "sha256": "baf945d404807e69ad4541bc4eab068a9afec5c704f562d47345094d85ca22ef",
-      "hanCount": 622
+      "bytes": 746,
+      "sha256": "d08d20625bf743218a4efafdba2480599b18fd697a45686db7229f503ab799d2",
+      "hanCount": 208
     },
     {
       "name": "第一章-r1.md",
-      "bytes": 3352,
-      "sha256": "91c1a557b9ebb1389ac27c9987c2cb0c58d244c4247154fc2a14f0702c967098",
-      "hanCount": 955
+      "bytes": 7062,
+      "sha256": "d8dc3c78211c9e685e2cec8d375b09e7609f41a8d35541b9235a1ab49b51a613",
+      "hanCount": 2040
     },
     {
       "name": "第一章-r2.md",
-      "bytes": 3477,
-      "sha256": "9a4b74348d82429be40d2ec4bcc47146fe9ce59f41b6d9c4076bb7b3f5512392",
-      "hanCount": 992
+      "bytes": 7080,
+      "sha256": "a226ff465d4214e0deba51f2f89dde362fbc738c978fa10289924070d5603cde",
+      "hanCount": 2045
     },
     {
       "name": "第三章-教学候选.md",
-      "bytes": 3154,
-      "sha256": "55ca684792cffe5824c643ff1d39868b07cf2ad6e73d16eb7bfd81f27f34e3e9",
-      "hanCount": 900
+      "bytes": 7351,
+      "sha256": "1d07ed4d64281424e741c9d479559f4e72abd3dde5ecf0b4d70537406dfc1c56",
+      "hanCount": 2097
     },
     {
       "name": "第二章-教学候选.md",
-      "bytes": 3274,
-      "sha256": "32918e036f71b2ff6c1df7edcd7fce74baad33eb0b5ba691656d10f3a7b38e73",
-      "hanCount": 933
+      "bytes": 6957,
+      "sha256": "7fa5cbd063a028c04574a54f64d4648a784092237c3bdc8628e6730ff4382199",
+      "hanCount": 2024
     }
   ]
 }

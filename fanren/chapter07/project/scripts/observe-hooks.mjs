@@ -24,7 +24,7 @@ const snapshot=()=>{
  finally{db.close();}
 };
 const before=snapshot();
-if(before.works.length!==1||before.works[0].id!=='qinglan'||before.chapters.length||before.chapter_versions.length||before.tasks.length)throw new Error('本实验需要已初始化但尚无章节的新作品；不会自动清库或重试。');
+if(before.works.length!==1||before.works[0].id!=='fanren'||before.chapters.length||before.chapter_versions.length||before.tasks.length)throw new Error('本实验需要已初始化但尚无章节的新作品；不会自动清库或重试。');
 const configFile=resolve(process.env.USERPROFILE,'.codex/config.toml');
 const configHashBefore=sha(await readFile(configFile));
 await mkdir(out,{recursive:true});
@@ -105,7 +105,7 @@ finally{
  clearTimeout(stopping);lines.close();await writes;
 }
 const after=snapshot(),configHashAfter=sha(await readFile(configFile));
-const cli=spawnSync(process.execPath,['dist/cli.js','chapter','1','--db',database,'--work','qinglan'],{cwd:root,encoding:'utf8',windowsHide:true});
+const cli=spawnSync(process.execPath,['dist/cli.js','chapter','1','--db',database,'--work','fanren'],{cwd:root,encoding:'utf8',windowsHide:true});
 await writeFile(resolve(out,'人工入口完整章节.json'),cli.stdout);
 await writeFile(resolve(out,'人工入口stderr.txt'),cli.stderr);
 for(const [name,value]of Object.entries({after,hooks,'mcp-status':status,skills,thread,notifications}))await writeFile(resolve(out,name+'.json'),JSON.stringify(value,null,2));

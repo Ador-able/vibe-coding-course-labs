@@ -1,11 +1,10 @@
 import {readFileSync} from 'node:fs';
 import {workInput} from '../dist/schemas.js';
-
 export const localScenes=JSON.parse(readFileSync(new URL('../materials/局部练习.json',import.meta.url),'utf8'));
-// 局部练习使用独立数据库，不继承完整章节的篇幅与后续情节。
+// 原文局部练习与完整三章阅读分别准备。
 export const localWork=workInput.parse({
-  id:localScenes.workId,title:'青岚修仙录',purpose:'用人工短片段观察工具、方法与反馈怎样作用于实际保存对象。',
-  requirements:['只处理本轮指定的局部场景，保存为待审草稿；不采用，不扩写后章。'],
+  id:localScenes.workId,title:'凡人修仙传',purpose:'用原文片段与明确标记的编辑占位观察保存、读取、方法和反馈。',
+  requirements:['只处理本轮指定的短片段，保存为待审草稿；不自行采用，不扩写后章。','完整原文保留；占位符是人工技术条件。'],
   facts:localScenes.sharedFacts,
-  outline:[{number:1,titleHint:'阁门前',goal:'说明来意，等待执事核对身份并放行。'},{number:2,titleHint:'再到阁前',goal:'按当前事实接续；只在本轮明确要求时保存。'}],
+  outline:[{number:1,titleHint:'竹林喘息',goal:'核对坐下、回望师兄与继续赶路的原文关系。'},{number:2,titleHint:'走出竹林',goal:'对照C04开头检查体力与地形的接续。'}],
 });

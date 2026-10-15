@@ -8,7 +8,7 @@ import {execFileSync} from 'node:child_process';
 import {Store} from './store.js';
 import {workId,chapterNumber} from './schemas.js';
 
-const {values}=parseArgs({options:{db:{type:'string',default:'data/novel.sqlite'},work:{type:'string',default:'qinglan'},chapter:{type:'string',default:'1'},'resume-task':{type:'string'},'cancel-after-ms':{type:'string'}}});
+const {values}=parseArgs({options:{db:{type:'string',default:'data/fanren/novel.sqlite'},work:{type:'string',default:'fanren'},chapter:{type:'string',default:'1'},'resume-task':{type:'string'},'cancel-after-ms':{type:'string'}}});
 const root=process.cwd(),db=resolve(values.db!);
 const store=new Store(db);
 const id=workId.parse(values.work),number=chapterNumber.parse(Number(values.chapter));

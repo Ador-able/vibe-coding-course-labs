@@ -3,7 +3,7 @@ import {resolve} from 'node:path';
 import {access,writeFile} from 'node:fs/promises';
 import {Store} from '../dist/store.js';
 
-const {values}=parseArgs({options:{db:{type:'string',default:'data/novel.sqlite'}}});
+const {values}=parseArgs({options:{db:{type:'string',default:'data/fanren/novel.sqlite'}}});
 const entry=resolve('dist/mcp.js'),database=resolve(values.db);
 await access(entry);
 await access(database);

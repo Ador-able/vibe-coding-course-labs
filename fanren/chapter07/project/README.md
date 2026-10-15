@@ -1,4 +1,4 @@
-# 青岚修仙录：插件、MCP、Skill 与 Hook
+# 凡人修仙传：插件、MCP、Skill 与 Hook
 
 沿用仓库根的统一安装和构建，在本目录使用本节入口。模型练习沿用本机 Codex 登录和模型选择。
 
@@ -22,7 +22,7 @@
 | --- | --- | --- |
 | 插件只读检查三章 | `pnpm prepare:reading` | `pnpm plugin:check` |
 | Skill 选择与不适用任务对照 | `pnpm prepare:skill` | 分别运行下方两条命令 |
-| 插件写入一份开篇草稿 | `pnpm prepare:plugin` | `pnpm plugin:observe --db data/plugin.sqlite --prompt seed/插件任务.txt` |
+| 插件写入一份开篇草稿 | `pnpm prepare:plugin` | `pnpm plugin:observe --db data/fanren/plugin.sqlite --prompt seed/插件任务.txt` |
 | 保存后触发三种 Hook 对照 | `pnpm prepare:hook` | `pnpm hook:observe` |
 | 复核旧反馈并修改当前局部草稿 | `pnpm prepare:feedback` | `pnpm feedback:observe` |
 
@@ -36,7 +36,7 @@ pnpm skill:observe --scenario sentence
 需要比较另一个宿主时，可以选做 OpenCode 对照。它复用请求观察室已保存的模型设置，使用独立新库：
 
 ```powershell
-pnpm lab init materials/插件起草-作品.json --db data/opencode-plus.sqlite
+pnpm lab init materials/插件起草-作品.json --db data/fanren/opencode-plus.sqlite
 pnpm host:observe
 ```
 
@@ -51,10 +51,10 @@ pnpm host:observe
 命令结束后打开本轮 `report.json`、`final-response.txt` 和完整事件记录。通过人工入口读回实际保存内容，例如：
 
 ```powershell
-pnpm lab chapter 1 --db data/plugin.sqlite
-pnpm lab chapter 1 --db data/feedback.sqlite
+pnpm lab chapter 1 --db data/fanren/plugin.sqlite
+pnpm lab chapter 1 --db data/fanren/feedback.sqlite
 ```
 
 `materials/材料说明.md` 区分完整三章阅读材料、人工局部片段和插件起草要求。材料文件存在不等于模型已经使用或保存。人工教学采用也不表示读者认可文学质量。
 
-本章宿主数据位于 `runs/private-codex-home/`，复用登录但隔离插件缓存与配置；不要分享这个目录。交付包不包含登录、个人配置、生成数据库或私人目录预检。需要保留的实验结果按课程提供的记录单独查看。
+本章宿主数据位于 `runs/private-codex-home/`，复用登录但隔离插件缓存与配置；不要分享这个目录。Git仓库不包含登录、个人配置、生成数据库或私人目录预检。需要保留的实验结果按课程提供的记录单独查看。

@@ -6,7 +6,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {createHash} from 'node:crypto';
 import assert from 'node:assert/strict';
 
-const root=process.cwd(),database=resolve('data/feedback.sqlite'),out=resolve('runs/人工准备');
+const root=process.cwd(),database=resolve('data/fanren/feedback.sqlite'),out=resolve('runs/人工准备');
 try{await access(database);throw new Error('本节数据库已存在，不自动清库或重复保存。');}
 catch(error){if(error.code!=='ENOENT')throw error;}
 await mkdir(out,{recursive:true});
@@ -19,7 +19,7 @@ const steps=[
 ];
 const results=[];
 for(const [label,args]of steps){
- const argv=['dist/cli.js',...args,'--db',database,'--work','qinglan'];
+ const argv=['dist/cli.js',...args,'--db',database,'--work','fanren'];
  const result=spawnSync(process.execPath,argv,{cwd:root,encoding:'utf8',windowsHide:true});
  await writeFile(resolve(out,label+'.stdout.json'),result.stdout??'');
  await writeFile(resolve(out,label+'.stderr.txt'),result.stderr??'');

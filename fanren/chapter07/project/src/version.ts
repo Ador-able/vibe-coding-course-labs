@@ -1,6 +1,7 @@
-import {readFileSync} from 'node:fs';
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
 
-// 交付包自带固定源码版本，运行实验不依赖 Git 仓库。
+// Git提交标识本轮实验源码。
 export function getCodeVersion():string{
-  return JSON.parse(readFileSync(new URL('../source-version.json',import.meta.url),'utf8')).sourceVersion;
+  return execFileSync('git',['rev-parse','HEAD'],{cwd:fileURLToPath(new URL('../',import.meta.url)),encoding:'utf8',windowsHide:true}).trim();
 }

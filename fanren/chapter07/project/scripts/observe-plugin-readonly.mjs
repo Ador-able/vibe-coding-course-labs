@@ -12,7 +12,7 @@ import {archivePluginSession} from './archive-plugin-session.mjs';
 
 const root=process.cwd(),out=resolve('runs',`plugin-readonly-${randomUUID()}`);
 const binding=JSON.parse(await readFile('plugins/novel-workbench-course/binding.json','utf8'));
-const database=resolve('data/reading.sqlite');
+const database=resolve('data/fanren/reading.sqlite');
 if(resolve(binding.database)!==database)throw new Error('当前插件没有绑定本节三章阅读库，请先准备阅读练习并刷新插件。');
 const preflight=JSON.parse(await readFile('runs/plugin-readonly-preflight.json','utf8'));
 if(!preflight.isolated||!preflight.skillsIsolated||!preflight.memoryIsolated||!preflight.bindingMatches)throw new Error('先完成插件只读目录和当前数据库绑定检查。');
@@ -21,10 +21,10 @@ if(!isDeepStrictEqual(runtime,preflight.runtime))throw new Error('当前临时�
 const snapshot=()=>{const db=new DatabaseSync(database,{readOnly:true});try{return Object.fromEntries(['works','work_versions','chapters','chapter_versions','tasks'].map(table=>[table,db.prepare(`SELECT * FROM ${table} ORDER BY 1,2`).all()]));}finally{db.close();}};
 const store=new Store(database);
 let current;
-try{current={work:store.getWork('qinglan'),directory:{chapters:store.listChapters('qinglan')},chapters:store.listChapters('qinglan').map(item=>store.getChapter('qinglan',item.number))};}
+try{current={work:store.getWork('fanren'),directory:{chapters:store.listChapters('fanren')},chapters:store.listChapters('fanren').map(item=>store.getChapter('fanren',item.number))};}
 finally{store.close();}
 const before=snapshot();
-const prompt='请使用 $novel-workbench-course:novel-chapter-review 检查作品 qinglan 的三章保存材料。阅读该方法及本任务需要的参考；通过插件取得当前作品要求、章节目录和三章完整正文。指出第一章的人工作品要求与正文修改、三章实际采用状态；对纸、书页和风的关系说明已有证据与不能确定的部分。这是只读检查，不修改、保存或采用。业务材料只通过本插件取得。';
+const prompt='请使用 $novel-workbench-course:novel-chapter-review 检查作品fanren的三章原文阅读材料。读取方法及本任务需要的参考；通过插件取得当前大纲、人物设定、要求、目录和三章完整正文。区分教学章号与原书章号，核对C03正午规则、C04韩立与张铁的处理、C05墨大夫教与不教的范围，并指出人工改题索引和实际保存状态。这是只读检查，不修改、保存或采用；业务材料只通过本插件取得。';
 await mkdir(out,{recursive:true});
 const save=(name,value)=>writeFile(resolve(out,name),JSON.stringify(value,null,2));
 await save('input.json',{database,binding,codeVersion:getCodeVersion(),runtime,threadOptions,prompt});
@@ -51,7 +51,7 @@ try{
 const after=snapshot(),unchanged=isDeepStrictEqual(before,after);
 const toolChecks=toolCalls.map(call=>{
   let expected;
-  if(call.arguments?.workId==='qinglan'){
+  if(call.arguments?.workId==='fanren'){
     if(call.tool==='read_work')expected=current.work;
     if(call.tool==='list_chapters')expected=current.directory;
     if(call.tool==='read_chapter')expected=current.chapters.find(item=>item.number===call.arguments.chapterNumber)??null;

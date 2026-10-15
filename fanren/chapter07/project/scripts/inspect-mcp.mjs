@@ -5,7 +5,7 @@ import {Client} from '@modelcontextprotocol/sdk/client/index.js';
 import {StdioClientTransport} from '@modelcontextprotocol/sdk/client/stdio.js';
 import {workId,chapterNumber} from '../dist/schemas.js';
 
-const {values}=parseArgs({options:{db:{type:'string',default:'data/novel.sqlite'},work:{type:'string',default:'qinglan'},chapter:{type:'string',default:'1'},output:{type:'string'}}});
+const {values}=parseArgs({options:{db:{type:'string',default:'data/fanren/novel.sqlite'},work:{type:'string',default:'fanren'},chapter:{type:'string',default:'1'},output:{type:'string'}}});
 const id=workId.parse(values.work),number=chapterNumber.parse(Number(values.chapter));
 const client=new Client({name:'novel-lab-catalog-check',version:'0.1.0'});
 const transport=new StdioClientTransport({command:process.execPath,args:[resolve('dist/mcp.js'),resolve(values.db)],stderr:'pipe'});

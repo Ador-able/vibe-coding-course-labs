@@ -8,8 +8,8 @@
   ],
   "skillName": "novel-feedback-task",
   "skillPath": ".agents/skills/novel-feedback-task/SKILL.md",
-  "workId": "qinglan",
-  "database": "data/feedback.sqlite",
+  "workId": "fanren",
+  "database": "data/fanren/feedback.sqlite",
   "maxNewDraftsInstruction": 2,
   "turnTimeoutMs": 300000,
   "interruptGraceMs": 45000

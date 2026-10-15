@@ -4,7 +4,7 @@ import {pluginRuntime} from './plugin-runtime.mjs';
 
 export async function hookRuntime(root,{executeHooks=false}={}){
  const {runtime,settings}=await pluginRuntime(root);
- const quote=value=>JSON.stringify(value),database=resolve(root,'data/hook.sqlite');
+ const quote=value=>JSON.stringify(value),database=resolve(root,'data/fanren/hook.sqlite');
  const overrides=[...runtime.configOverrides,
   `plugins.${settings.pluginId}.enabled=false`,
   `projects={${quote(process.platform==='win32'?root.toLowerCase():root)}={trust_level="trusted"}}`,

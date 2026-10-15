@@ -7,8 +7,8 @@ import {workInput,LabError} from '../schemas.js';
 test('三章按真实前文修订推进，改稿令旧引用失效，导出保留准确状态与正文',async()=>{
   const store=new Store(':memory:');
   try{
-    const first=workInput.parse(JSON.parse(await readFile('seed/青岚修仙录.json','utf8')));
-    const three=workInput.parse(JSON.parse(await readFile('seed/青岚修仙录三章.json','utf8')));
+    const first=workInput.parse(JSON.parse(await readFile('seed/凡人修仙传.json','utf8')));
+    const three=workInput.parse(JSON.parse(await readFile('seed/凡人修仙传三章.json','utf8')));
     store.init(first);
     const base={workId:first.id,chapterNumber:1,expectedWorkRevision:1,expectedChapterRevision:0,expectedPreviousRevisions:[],title:'测试第一章',body:'人工测试初稿。'};
     store.saveDraft(base,'agent');

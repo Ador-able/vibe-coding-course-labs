@@ -4,7 +4,7 @@ import {resolve} from 'node:path';
 import {parseArgs} from 'node:util';
 import {homedir} from 'node:os';
 
-const {values,positionals}=parseArgs({options:{out:{type:'string',default:'runs/opencode-command'},db:{type:'string',default:'data/plugin.sqlite'},'prompt-file':{type:'string'}},allowPositionals:true});
+const {values,positionals}=parseArgs({options:{out:{type:'string',default:'runs/opencode-command'},db:{type:'string',default:'data/fanren/plugin.sqlite'},'prompt-file':{type:'string'}},allowPositionals:true});
 if(!positionals.length)throw new Error('需要原生 OpenCode 命令。');
 const root=resolve(import.meta.dirname,'..'),cwd=resolve(root,'hosts/opencode');
 const profile=resolve(root,'runs/opencode-profile'),out=resolve(root,values.out);

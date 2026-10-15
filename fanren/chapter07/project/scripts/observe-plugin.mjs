@@ -9,7 +9,7 @@ import {DatabaseSync} from 'node:sqlite';
 import {pluginRuntime} from './plugin-runtime.mjs';
 import {archivePluginSession} from './archive-plugin-session.mjs';
 
-const {values}=parseArgs({options:{db:{type:'string',default:'data/plugin.sqlite'},work:{type:'string',default:'qinglan'},chapter:{type:'string',default:'1'},prompt:{type:'string'}}});
+const {values}=parseArgs({options:{db:{type:'string',default:'data/fanren/plugin.sqlite'},work:{type:'string',default:'fanren'},chapter:{type:'string',default:'1'},prompt:{type:'string'}}});
 if(!values.prompt)throw new Error('需要保存了完整请求的提示文件。');
 const root=process.cwd(),database=resolve(values.db),out=resolve('runs',randomUUID());
 const preflight=JSON.parse(await readFile('runs/plugin-preflight.json','utf8'));
