@@ -1,0 +1,23 @@
+{
+  "runId": "358c3d30-7ee7-4883-b1bc-7d9162b8abed",
+  "directory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\mcp-connection\\358c3d30-7ee7-4883-b1bc-7d9162b8abed",
+  "connected": true,
+  "serverPid": 64160,
+  "protocolVersion": "2025-11-25",
+  "declaredTools": [
+    "read_work",
+    "list_chapters",
+    "read_chapter",
+    "save_draft"
+  ],
+  "callCount": 5,
+  "failure": null,
+  "verification": {
+    "passed": true,
+    "businessUnchanged": true,
+    "chapterMatched": true,
+    "unsavedChapter": "result:null",
+    "missingWork": "isError:true / WORK_NOT_FOUND"
+  },
+  "limits": "仅验证官方 Client 的连接、发现、五次读取与此次正常关闭；不验证模型使用、远程 HTTP、超时、用户取消或子进程崩溃。业务状态比较不等于数据库文件字节不变。"
+}
