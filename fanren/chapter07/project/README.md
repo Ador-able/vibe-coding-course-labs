@@ -40,6 +40,8 @@ pnpm lab init materials/插件起草-作品.json --db data/fanren/opencode-plus.
 pnpm host:observe
 ```
 
+若启动时返回 `spawn UNKNOWN`，先在本目录运行 `pnpm rebuild opencode-ai` 完成依赖的原生程序安装，再用 `pnpm exec opencode --version` 检查。保留失败目录，恢复环境后另开运行。
+
 退出成功不等于草稿已保存；按本轮工具返回和数据库结果判断。
 
 准备命令会导入人工材料、检查实际工具与方法目录，并绑定当前练习的数据库。已有数据库保持原样；再次准备不会清空或重新生成。模型任务不自动重试，失败记录仍保留。

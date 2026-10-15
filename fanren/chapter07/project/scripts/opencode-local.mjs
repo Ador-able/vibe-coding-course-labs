@@ -38,12 +38,19 @@ env.OPENCODE_CONFIG_CONTENT=JSON.stringify(config);
 const entry=resolve(root,'node_modules/opencode-ai/bin/opencode.exe');
 const prompt=values['prompt-file']?await readFile(resolve(root,values['prompt-file']),'utf8'):null;
 await writeFile(resolve(out,'input.json'),JSON.stringify({entry,cwd,args:positionals,profile,config,prompt,credentialSource:'课程页面已保存设置；密钥只注入当前子进程',environmentOverrides:{...environmentOverrides,OPENCODE_CONFIG_CONTENT:'已完整记录于 config 字段'}},null,2));
-const child=spawn(entry,positionals,{cwd,env,windowsHide:true,stdio:['pipe','pipe','pipe']});
-child.stdin.end(prompt??undefined);
 const stdout=[],stderr=[];
-child.stdout.on('data',chunk=>stdout.push(chunk));
-child.stderr.on('data',chunk=>stderr.push(chunk));
-const exitCode=await new Promise((resolve,reject)=>{child.on('error',reject);child.on('exit',resolve);});
+let exitCode;
+try{
+  const child=spawn(entry,positionals,{cwd,env,windowsHide:true,stdio:['pipe','pipe','pipe']});
+  child.stdin.end(prompt??undefined);
+  child.stdout.on('data',chunk=>stdout.push(chunk));
+  child.stderr.on('data',chunk=>stderr.push(chunk));
+  exitCode=await new Promise((resolve,reject)=>{child.on('error',reject);child.on('exit',resolve);});
+}catch(error){
+  // 启动失败也保存原始原因，供观察入口读取，而非再报日志文件缺失。
+  exitCode=1;
+  stderr.push(Buffer.from(`OpenCode启动失败：${error.code??'ERROR'}: ${error.message}\n`));
+}
 let redactions=0;
 const publicOutput=chunks=>{
   const raw=Buffer.concat(chunks).toString('utf8');
