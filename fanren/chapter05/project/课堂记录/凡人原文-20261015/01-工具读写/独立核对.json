@@ -1,0 +1,47 @@
+{
+  "taskId": "b90f159c-d9f9-4d93-9ac0-6c15856c11ef",
+  "threadId": "01a13d0c-6aa2-7e80-bdee-42b6942eef31",
+  "executionBuild": "842cbcd02480d9b6a5f0021608f371281dec458c111862465d65893a0724990d",
+  "toolCompletions": [
+    {
+      "id": "item_2",
+      "tool": "list_chapters",
+      "workId": "fanren"
+    },
+    {
+      "id": "item_1",
+      "tool": "read_work",
+      "workId": "fanren"
+    },
+    {
+      "id": "item_3",
+      "tool": "read_chapter",
+      "workId": "fanren"
+    },
+    {
+      "id": "item_4",
+      "tool": "save_draft",
+      "workId": "fanren"
+    },
+    {
+      "id": "item_5",
+      "tool": "read_chapter",
+      "workId": "fanren"
+    },
+    {
+      "id": "item_6",
+      "tool": "list_chapters",
+      "workId": "fanren"
+    }
+  ],
+  "workResultMatchesParsedSeed": true,
+  "saveReadIndependentBodiesEqual": true,
+  "bodyHan": 917,
+  "state": "completed",
+  "chapterRevision": 1,
+  "status": "draft",
+  "sourceFactsExcerpt": "- 韩立：十岁，来自贫困山村。因三叔举荐参加七玄门考试，希望学本事并挣钱帮家里。选拔时从未习武，不使用法术，没有已得修仙功法。依据：C01—C04。\n- 王护法与岳堂主：王护法接送孩子并领到竹林；岳堂主宣布路线和考核规则。两人的动作不能互换。依据：C02—C03。\n- 考核规则：竹林、岩壁、山崖，正午前到达崖顶才满足正式弟子的时间条件；稍晚但表现突出者可能收作记名弟子。青年师兄在后保护。依据：C03。",
+  "ruleExcerpt": "“正午之前到达崖顶，才算满足正式弟子的时间条件。”岳堂主的声音传过来，四下渐渐静了，“稍晚些的，若表现突出，也可能收作记名弟子。”",
+  "endingExcerpt": "韩立咽了口唾沫，想起父亲数铜板时低着的头。他没有再抬脚猛赶，只挑稳当的地方落足，走过一根竹子，再走向下一根。汗水沿着下巴滴进衣领，林间仍是一层层青影。他扶开挡在眼前的竹枝，继续向前走去。",
+  "limits": "真实工具读写与独立读回已验证；文学品质与人的采用未验证。"
+}

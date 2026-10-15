@@ -1,6 +1,13 @@
 {
   "file": "第一章真实稿.json",
-  "sha256": "06367ef06433455dfece73f501126e6a82fcffa5ffe6b873b840a497a376ec80",
-  "sourceRun": "fanren/chapter04/project/运行记录/2026-10-14T15-59-44.749Z-ebe5037b-3a15-4793-937d-90905b86ebc6/1-none",
-  "note": "前节真实模型正文，用于独立练习人工载入；没有声称此前保存过业务章稿。"
+  "sha256": "ad35149743ab3c9009008041839483f94158b4b3598173bbb1b9c52284180e8f",
+  "sourceRun": "runs/b90f159c-d9f9-4d93-9ac0-6c15856c11ef/chapter.json",
+  "taskId": "b90f159c-d9f9-4d93-9ac0-6c15856c11ef",
+  "threadId": "01a13d0c-6aa2-7e80-bdee-42b6942eef31",
+  "sourceRevision": 1,
+  "sourceStatus": "draft",
+  "sourceOrigin": "agent",
+  "sourceUpdatedAt": "2026-10-15T00:53:47.027Z",
+  "sourceBuild": "842cbcd02480d9b6a5f0021608f371281dec458c111862465d65893a0724990d",
+  "note": "实际Agent保存并独立读回的第一章。独立练习由人工载入此真实稿作为起点；载入不是再次模型生成。"
 }

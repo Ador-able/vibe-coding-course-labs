@@ -1,0 +1,18 @@
+{
+  "id": "b90f159c-d9f9-4d93-9ac0-6c15856c11ef",
+  "workId": "fanren",
+  "chapterNumber": 1,
+  "codeVersion": "842cbcd02480d9b6a5f0021608f371281dec458c111862465d65893a0724990d",
+  "threadId": "01a13d0c-6aa2-7e80-bdee-42b6942eef31",
+  "state": "completed",
+  "createdAt": "2026-10-15T00:53:06.256Z",
+  "updatedAt": "2026-10-15T00:53:58.237Z",
+  "error": null,
+  "usage": {
+    "input_tokens": 117483,
+    "cached_input_tokens": 87552,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1363,
+    "reasoning_output_tokens": 0
+  }
+}
