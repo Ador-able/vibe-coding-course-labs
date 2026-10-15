@@ -9,7 +9,7 @@ import {workInput,LabError} from '../schemas.js';
 test('真实保存可重开读取；人的修改令旧提议失效',async()=>{
   const directory=await mkdtemp(resolve(tmpdir(),'agent-lab-state-'));
   const db=resolve(directory,'novel.sqlite');
-  const seed=workInput.parse(JSON.parse(await readFile('seed/青岚修仙录.json','utf8')));
+  const seed=workInput.parse(JSON.parse(await readFile('seed/凡人修仙传.json','utf8')));
   const store=new Store(db);
   store.init(seed);
   const input={workId:seed.id,chapterNumber:1,expectedWorkRevision:1,expectedChapterRevision:0,expectedPreviousRevisions:[],title:'人工测试章节',body:'这段人工文字仅用于验证存储，不是模型生成。'};

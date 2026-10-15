@@ -6,7 +6,7 @@ import {resolve} from 'node:path';
 import {Store} from './store.js';
 import {workId,chapterNumber} from './schemas.js';
 
-const {values}=parseArgs({options:{db:{type:'string',default:'data/01/novel.sqlite'},work:{type:'string',default:'qinglan'},chapter:{type:'string',default:'1'},'resume-task':{type:'string'},'cancel-after-ms':{type:'string'}}});
+const {values}=parseArgs({options:{db:{type:'string',default:'data/01/novel.sqlite'},work:{type:'string',default:'fanren'},chapter:{type:'string',default:'1'},'resume-task':{type:'string'},'cancel-after-ms':{type:'string'}}});
 const root=process.cwd(),db=resolve(values.db!);
 const store=new Store(db);
 const id=workId.parse(values.work),number=chapterNumber.parse(Number(values.chapter));
@@ -36,8 +36,8 @@ const toolCalls:unknown[]=[];
 store.updateTask(taskId,{state:'running'});
 console.log(JSON.stringify({taskId,state:'running',runDir}));
 try{
-  const codex=new Codex({codexPathOverride:config.codexPathOverride,config:{mcp_servers:{novel_lab:{command:process.execPath,args:[resolve('dist/mcp.js'),db,taskId],cwd:root,required:true,enabled:true,default_tools_approval_mode:'approve'}}}});
-  const options={workingDirectory:root,skipGitRepoCheck:true,sandboxMode:'read-only' as const,approvalPolicy:'never' as const,webSearchMode:'disabled' as const,model:config.model};
+  const codex=new Codex({codexPathOverride:config.codexPathOverride,config:{features:{shell_tool:false},memories:{use_memories:false,generate_memories:false},mcp_servers:{novel_lab:{command:process.execPath,args:[resolve('dist/mcp.js'),db,taskId],cwd:root,required:true,enabled:true,default_tools_approval_mode:'approve'}}}});
+  const options={workingDirectory:root,skipGitRepoCheck:true,sandboxMode:'read-only' as const,approvalPolicy:'never' as const,webSearchMode:'disabled' as const,modelReasoningEffort:'low' as const,model:config.model};
   const thread=previousTask?.threadId?codex.resumeThread(previousTask.threadId,options):codex.startThread(options);
   const {events}=await thread.runStreamed(prompt,{signal:controller.signal});
   for await(const event of events){

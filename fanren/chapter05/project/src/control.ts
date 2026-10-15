@@ -26,7 +26,7 @@ try{labConfig=JSON.parse(await readFile('lab.config.json','utf8'));}catch(error)
 const experimentId=new Date().toISOString().replaceAll(':','-')+'-'+randomUUID();
 const directory=resolve('runs','control',experimentId);
 await mkdir(directory,{recursive:true});
-const seed=workInput.parse(JSON.parse(await readFile('seed/青岚修仙录.json','utf8')));
+const seed=workInput.parse(JSON.parse(await readFile('seed/凡人修仙传.json','utf8')));
 const fixtureText=await readFile('materials/第一章真实稿.json','utf8');
 const fixture=JSON.parse(fixtureText) as {title:string;body:string;status:string;origin:string;updatedAt:string;taskId:string;threadId:string};
 await writeFile(resolve(directory,'conditions.json'),JSON.stringify({experimentId,codeVersion,node:process.version,configuredModel:labConfig.model??null,codexPathOverride:labConfig.codexPathOverride??null,cancelAfterMs,modes:selectedModes,cases:selectedCases,fixture:{file:'materials/第一章真实稿.json',sha256:createHash('sha256').update(fixtureText).digest('hex'),originalOrigin:fixture.origin,originalStatus:fixture.status,originalUpdatedAt:fixture.updatedAt},notes:'每组独立数据库和新线程；已有稿由人工载入历史真实草稿。本实验不保存、不采用新章稿；不以单次时间排名。'},null,2));
@@ -71,7 +71,7 @@ async function run(condition:Case,mode:Mode){
     finalResponse=`业务读取失败：${JSON.stringify(prepared!.reads.filter(r=>!r.ok).map(r=>({tool:r.tool,error:r.error})))}。未取得完整资料，停止本轮核对；需要核实作品 ${workId} 的标识或初始化状态后再推进。`;
   }else{
     const config:CodexOptions['config']=dynamic?{mcp_servers:{novel_lab:{command:process.execPath,args:[resolve('dist/mcp.js'),db],cwd:root,enabled:true,required:true,enabled_tools:['read_work','read_chapter','list_chapters'],default_tools_approval_mode:'approve'}}}:{};
-    const codex=new Codex({config,codexPathOverride:labConfig.codexPathOverride});
+    const codex=new Codex({config:{...config,features:{shell_tool:false},memories:{use_memories:false,generate_memories:false}},codexPathOverride:labConfig.codexPathOverride});
     const thread=codex.startThread({workingDirectory:root,skipGitRepoCheck:true,sandboxMode:'read-only',approvalPolicy:'never',webSearchMode:'disabled',model:labConfig.model});
     const controller=new AbortController(),stop=()=>{stopRequested=true;controller.abort();};process.once('SIGINT',stop);sdkTurns=1;
     const timer=cancelAfterMs===null?undefined:setTimeout(stop,cancelAfterMs);

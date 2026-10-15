@@ -1,9 +1,9 @@
 {
-  "name": "qinglan-agent-lab",
+  "name": "fanren-agent-lab",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "通过青岚修仙录练习工具读写、Agent 与人工决定",
+  "description": "通过凡人修仙传练习工具读写、Agent与人工决定",
   "packageManager": "pnpm@11.20.0",
   "engines": {
     "node": ">=24.12.0 <25"

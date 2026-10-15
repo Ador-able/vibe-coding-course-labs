@@ -12,7 +12,7 @@ test('独立 MCP 客户端按实际目录读取、保存、读回，并报告旧
   const directory=await mkdtemp(resolve(tmpdir(),'agent-lab-mcp-'));
   const db=resolve(directory,'novel.sqlite');
   const store=new Store(db);
-  const seed=workInput.parse(JSON.parse(await readFile('seed/青岚修仙录.json','utf8')));
+  const seed=workInput.parse(JSON.parse(await readFile('seed/凡人修仙传.json','utf8')));
   store.init(seed);store.close();
   const client=new Client({name:'agent-lab-check',version:'0.1.0'});
   const transport=new StdioClientTransport({command:process.execPath,args:[resolve('dist/mcp.js'),db],stderr:'pipe'});
