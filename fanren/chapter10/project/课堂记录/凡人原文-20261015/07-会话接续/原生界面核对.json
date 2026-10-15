@@ -1,0 +1,29 @@
+{
+  "images": [
+    {
+      "assetId": 795,
+      "path": "02-人工校订/183-人工校订后读回C05r2-原生2K.png",
+      "width": 2560,
+      "height": 1640,
+      "sha256": "d868179b50a5acbb74b7cb5052f71ab9995fe24cb7ad5b26afca831e5e655c28",
+      "kind": "真实工作台原生截图",
+      "currentBodySha256": "6e730dd195bff7a2d80c53305de9f694252174a3904daf1bfa2d151f7b28cbab"
+    },
+    {
+      "assetId": 797,
+      "path": "183-同会话接续与当前稿-原生2K.png",
+      "width": 2560,
+      "height": 1680,
+      "sha256": "a4863e241a2809608e187f62c705186bb744070302fc9ff9fcd4d904e99ab08a",
+      "kind": "静态实录阅读页原生截图，非模型供应商界面"
+    }
+  ],
+  "recordPage": {
+    "url": "http://127.0.0.1:4482/实录阅读页.html",
+    "finalDOMSha256": "1079bbd8fc4b748545167dbed3f5b9c2e0dba65b43e60708fdfef798d5149d9e",
+    "exportDOMSha256": "6f901ba640e3d83e5131d5a8a2ce4f3d81aedddfa69c72329e3ae1a8b8358247",
+    "bothDOMTextsEqualRawFiles": true
+  },
+  "temporaryDeviceOverrideCleared": true,
+  "download": "CDP原生PNG经临时下载链接保存；未缩放、重绘或拼接。"
+}

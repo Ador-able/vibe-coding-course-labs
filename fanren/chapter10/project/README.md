@@ -82,3 +82,9 @@ pnpm agent --prompt inputs/161-凡人原文接续.txt --chapter 2
 ### 读原句，比较审阅与取舍
 
 打开 `课堂记录/凡人原文-20261015/06-只读审阅/实录阅读页.html`，对照规则、实际决定、完整审阅和编者取舍。要重做，恢复该目录 `01-实际审阅/before.json`，运行 `node scripts/inspect-fanren-review.mjs` 生成自己的当前报告，再执行 `pnpm agent --prompt inputs/178-凡人只读审阅.txt --chapter 2 --read-only`；最后一步调用模型。本轮没有要求为了审阅而必须找出缺陷或保存新稿。
+
+### 同会话接续与当前稿
+
+打开 `课堂记录/凡人原文-20261015/07-会话接续/实录阅读页.html`，比较A实际保存、教师停止、人工r2与B只读接续。A没有正常结束，但C05全文已保存；B沿同一SDK会话重新取得当前三章，A旧Task保持cancelled。
+
+可选亲做先恢复 `07-会话接续/00-准备/after-work-update.json`，执行 `pnpm agent --prompt inputs/183-A-凡人第三段原文导入.txt --chapter 3 --stop-after-save`。完整读稿后在工作台作出自己的实际编辑并保存、重新读取，再更新人工决定文件和B请求；用 `pnpm lab update seed/凡人修仙传-183-接续.json --expected-revision 7` 交代接续目标。当前修订不同则先读资料、据实际内容调整输入。最后执行 `pnpm agent --prompt inputs/183-B-凡人同会话只读接续.txt --chapter 3 --read-only --resume-run runs/本轮A编号`。两次agent命令调用模型；恢复、人工操作和资料更新不调用模型。公开快照不包含私有SDK会话，要用本次实际A目录，不能用教材旧thread。
