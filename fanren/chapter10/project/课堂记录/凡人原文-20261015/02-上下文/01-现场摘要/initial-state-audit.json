@@ -1,0 +1,13 @@
+{
+  "database": "data/practice-16613f56-963c-426c-bfcc-788e6d5e254a.sqlite",
+  "workRevisionBefore": 1,
+  "workRevisionAfter": 2,
+  "chapter1Revision": 2,
+  "chapter2": null,
+  "oldWorkVersionUnchanged": true,
+  "chaptersAndHistoryAndTasksUnchanged": true,
+  "allOriginalFilesUnchanged": true,
+  "comparison": "逐行序列化内容相同；SQLite无原型行对象与JSON对象的原型差异不属于业务变化",
+  "seedSha256": "d03e78eec15f5d102b7213f415d163b7b51c11252873557e33ad907fa6cad35d",
+  "modelTasks": 0
+}

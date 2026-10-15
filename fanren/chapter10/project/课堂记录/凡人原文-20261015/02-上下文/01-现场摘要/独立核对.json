@@ -1,0 +1,39 @@
+{
+  "runId": "5d324a52-ac44-4ee6-ae2c-bf8d82bb7f91",
+  "sourceVersion": "04d8b3591a61a2de5ac088acf164e85e3f27208d",
+  "state": "completed",
+  "sdkEvents": 13,
+  "mcpTools": [
+    "list_chapters",
+    "read_work",
+    "read_chapter"
+  ],
+  "commands": [
+    {
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"Get-Content -LiteralPath 'D:/Projects/Knowledge/.coursebook-work/fanren-course-labs-ready/fanren/chapter10/project/runs/private-codex-home/plugins/cache/novel-workbench-course-lab/novel-workbench-course/0.1.0/skills/novel-chapter-review/SKILL.md' -Raw\"",
+      "exitCode": 0
+    }
+  ],
+  "workRevision": 2,
+  "chapterRevision": 2,
+  "chapterWorkRevision": 1,
+  "businessFourTablesUnchanged": true,
+  "oldTasksUnchanged": true,
+  "newTaskRows": 1,
+  "fullFinalPreserved": true,
+  "fullFinalSha256": "b9c655f11f48e84fc0d96a881f800b3022827f5122b277575cddae947749d0d6",
+  "summaryFile": "materials/来稿/FN-CONTEXT-02-本轮摘要.md",
+  "summaryFileSha256": "06395b80cc3fb1294e0a79071d65c0f470a94765e4da3d524730edbf2ac68b07",
+  "summaryCodePoints": 100,
+  "summaryHanCharacters": 89,
+  "deadlineAndExceptionRetained": true,
+  "usage": {
+    "input_tokens": 60771,
+    "cached_input_tokens": 41600,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1671,
+    "reasoning_output_tokens": 1080
+  },
+  "scope": "摘要真实保留正午规则和记名例外，不把压缩写成漏错；正文和资料未写回。",
+  "modelFinalEmbeddedByteEqual": true
+}

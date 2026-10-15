@@ -1,0 +1,46 @@
+{
+  "runId": "5d324a52-ac44-4ee6-ae2c-bf8d82bb7f91",
+  "sourceVersion": "04d8b3591a61a2de5ac088acf164e85e3f27208d",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\practice-16613f56-963c-426c-bfcc-788e6d5e254a.sqlite",
+  "workId": "fanren",
+  "chapterNumber": 1,
+  "promptFile": "inputs/161-凡人现场摘要.txt",
+  "prompt": "请为作品 fanren《凡人修仙传》当前教学第 1 章整理一段约 100 个汉字的故事摘要，作为下一次任务的参考材料。\r\n\r\n先通过小说工作台工具读取当前完整作品资料、目录和教学第 1 章当前完整正文，按实际返回确定来源与修订。这一章是从 C03 原文导入后由人校订一字的待审稿，不能从旧会话、源文件或样例猜测当前工作稿。\r\n\r\n摘要根据实际读到的故事自然取舍，写成连贯的一段。摘要后单列实际作品 ID、章号、标题、正文修订、资料修订与状态，便于以后回查。本次只整理摘要，不审稿、不保存章节、不修改资料、不采用或发布，不调用子代理或其他模型。来源缺失或读取失败时说明实际缺口，不编造。\r\n",
+  "readOnly": true,
+  "resumeThreadId": null,
+  "stopAfterSave": false,
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\practice-16613f56-963c-426c-bfcc-788e6d5e254a.sqlite",
+    "taskId": "5d324a52-ac44-4ee6-ae2c-bf8d82bb7f91",
+    "excerpt": null
+  },
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"={trust_level=\"trusted\"}}",
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"export_work\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "skills.config=[]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "hostCheck": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\runs\\host-prepare-bb253c23-f224-4bb8-9c33-99c1f0a55dd4"
+}
