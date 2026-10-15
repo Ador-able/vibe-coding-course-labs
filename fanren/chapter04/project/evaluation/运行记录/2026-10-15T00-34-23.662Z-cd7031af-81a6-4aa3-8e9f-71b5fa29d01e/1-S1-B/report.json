@@ -1,0 +1,28 @@
+{
+  "id": "1-S1-B",
+  "sample": "S1",
+  "method": "B",
+  "phase": "development",
+  "state": "completed",
+  "startedAt": "2026-10-15T00:34:23.689Z",
+  "endedAt": "2026-10-15T00:35:07.274Z",
+  "elapsedMs": 43585.015499999994,
+  "threadId": "01a13cfb-498d-75e2-9565-a6ba3282676e",
+  "promptSha256": "24c62a74da4d37d99a711f6005fed6dc9e59dcb5b84f1a7b2552eb2ad2d0e523",
+  "outputSha256": "dd29726d1cebc16063b690793d1752b8268e4d36ef7f24a647693fe4d725b7c2",
+  "outputUtf16": 1242,
+  "usageEvents": [
+    {
+      "input_tokens": 25690,
+      "cached_input_tokens": 4992,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 1177,
+      "reasoning_output_tokens": 52
+    }
+  ],
+  "toolEvents": [],
+  "failure": null,
+  "scriptRetries": 0,
+  "internalRetryCount": null,
+  "limits": "公开调用完成不等于正文合格；按当前完整任务逐份核对。生效型号、内部重试、实际金额和真人工时未知。"
+}
