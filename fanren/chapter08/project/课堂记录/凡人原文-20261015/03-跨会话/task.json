@@ -1,0 +1,48 @@
+{
+  "id": "fanren",
+  "runId": "c7959656-69dd-4518-8ebb-5f1507a29fbc",
+  "db": "data/fanren/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc.sqlite",
+  "folder": "task-state",
+  "deliverable": "课堂记录/凡人原文-20261015/03-跨会话/deliverables/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc-三章待审.md",
+  "review": "课堂记录/凡人原文-20261015/03-跨会话/task-state/完整材料核对.md",
+  "progress": "课堂记录/凡人原文-20261015/03-跨会话/task-state/最新进度.md",
+  "codeVersion": "75e35f3bc32d52f468bd21394bddb7f199b9ccc3",
+  "materials": [
+    {
+      "path": "materials/作品.json",
+      "bytes": 1980,
+      "sha256": "ef9420b9753ec0c87a5e92b4df2b96cd260ded4ac25bac3f8b6551aa05445c95"
+    },
+    {
+      "path": "materials/第一章.md",
+      "bytes": 7080,
+      "sha256": "a226ff465d4214e0deba51f2f89dde362fbc738c978fa10289924070d5603cde"
+    },
+    {
+      "path": "materials/第二章.md",
+      "bytes": 6957,
+      "sha256": "7fa5cbd063a028c04574a54f64d4648a784092237c3bdc8628e6730ff4382199"
+    },
+    {
+      "path": "materials/第三章.md",
+      "bytes": 7351,
+      "sha256": "1d07ed4d64281424e741c9d479559f4e72abd3dde5ecf0b4d70537406dfc1c56"
+    },
+    {
+      "path": "materials/访谈-教学构造.md",
+      "bytes": 2247,
+      "sha256": "97a1c7fc3147bc408b25b781324899520608b2a8666ba745211ab07a68596013"
+    },
+    {
+      "path": "materials/PRD-人工示范.md",
+      "bytes": 5157,
+      "sha256": "234fd80b77b65ab39ef4e8177b717366ce98fdaffa10072eb90a57f6a2680212"
+    },
+    {
+      "path": "materials/阶段计划-人工示范.md",
+      "bytes": 7274,
+      "sha256": "0a09986c32b85f0dc70e3c062ee2741ff00c910fbab396053ceb50e0e704f901"
+    }
+  ],
+  "scope": "完整凡人原文片段人工导入；资料 r1、三章 r1/draft，没有模型生成或继承采用。"
+}

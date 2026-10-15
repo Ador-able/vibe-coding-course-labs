@@ -1,0 +1,52 @@
+{
+  "codeVersion": "75e35f3bc32d52f468bd21394bddb7f199b9ccc3",
+  "modelSessions": 2,
+  "sessionIds": [
+    "01a13e04-d3a1-7d62-b5ae-791c3c4114a9",
+    "01a13e05-bfc5-7ff1-a543-2f92573beec0"
+  ],
+  "differentNewSessions": true,
+  "states": [
+    "cancelled",
+    "completed"
+  ],
+  "usage": [
+    null,
+    {
+      "input_tokens": 606976,
+      "cached_input_tokens": 532224,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8889,
+      "reasoning_output_tokens": 205
+    }
+  ],
+  "aCommands": 4,
+  "bCommands": 28,
+  "aCancelledAfterActualExport": true,
+  "aOldProgressUnchanged": true,
+  "aReviewMissing": true,
+  "deliveryBytes": 21798,
+  "deliverySHA256": "7b06e92f796ac905708f60e6415fbd072df654494db8ed42213f6c3f5c38d07e",
+  "deliveryAndMtimeUnchanged": true,
+  "deliveryFullBytesEqualStore": true,
+  "bDidNotCallExport": true,
+  "allBusinessTablesUnchanged": true,
+  "chapterHanCounts": [
+    2036,
+    2015,
+    2088
+  ],
+  "bReviewExists": true,
+  "bProgressUpdated": true,
+  "commandFailures": [
+    [],
+    [
+      {
+        "id": "item_26",
+        "exit_code": 1,
+        "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command \"\n@'\nimport {Store} from './dist/store.js';\nimport {DatabaseSync} from 'node:sqlite';\nimport {readFileSync} from 'node:fs';\nconst s=Object.create(Store.prototype);s.db=new DatabaseSync('data/fanren/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc.sqlite',{readOnly:true});\ntry{console.log(JSON.stringify([1,2,3].map((n)=>{const c=s.getChapter('fanren',n);const raw=readFileSync(['materials/第一章.md','materials/第二章.md','materials/第三章.md'][n-1],'utf8');return {number:n,sourceEqualsHeadingPlusBodyPlusFinalLF:raw==='# '+c.title+'\\\\n\\\\n'+c.body+'\\\\n'};})),null,2));}finally{s.close();}\n'@ | node --input-type=module\n\""
+      }
+    ]
+  ],
+  "limits": "两次真实整理会话，不是两次小说生成；Store.tasks仍为0。无人工改前改后历史，不认定C3人工改稿分支通过。公开SDK命令与返回可回查，不声称供应商原始网络或宿主全部隐藏输入。"
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-10-15T05:25:06.276Z",
+  "event": {
+    "type": "item.completed",
+    "item": {
+      "id": "item_4",
+      "type": "command_execution",
+      "command": "\"C:\\\\Program Files\\\\PowerShell\\\\7\\\\pwsh.exe\" -Command 'node dist/cli.js export deliverables/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc-三章待审.md --db data/fanren/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc.sqlite --work fanren'",
+      "aggregated_output": "(node:67260) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n{\n  \"workId\": \"fanren\",\n  \"workRevision\": 1,\n  \"expectedChapters\": 3,\n  \"savedChapters\": 3,\n  \"allOutlineChaptersSaved\": true,\n  \"chapters\": [\n    {\n      \"number\": 1,\n      \"revision\": 1,\n      \"status\": \"draft\",\n      \"workRevision\": 1,\n      \"previousRevisions\": [],\n      \"reviewNote\": null,\n      \"basisCurrent\": true\n    },\n    {\n      \"number\": 2,\n      \"revision\": 1,\n      \"status\": \"draft\",\n      \"workRevision\": 1,\n      \"previousRevisions\": [\n        {\n          \"number\": 1,\n          \"revision\": 1\n        }\n      ],\n      \"reviewNote\": null,\n      \"basisCurrent\": true\n    },\n    {\n      \"number\": 3,\n      \"revision\": 1,\n      \"status\": \"draft\",\n      \"workRevision\": 1,\n      \"previousRevisions\": [\n        {\n          \"number\": 1,\n          \"revision\": 1\n        },\n        {\n          \"number\": 2,\n          \"revision\": 1\n        }\n      ],\n      \"reviewNote\": null,\n      \"basisCurrent\": true\n    }\n  ],\n  \"path\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter08\\\\project\\\\deliverables\\\\cross-c7959656-69dd-4518-8ebb-5f1507a29fbc-三章待审.md\"\n}\n",
+      "exit_code": 0,
+      "status": "completed"
+    }
+  },
+  "threadId": "01a13e04-d3a1-7d62-b5ae-791c3c4114a9",
+  "deliverable": "deliverables/cross-c7959656-69dd-4518-8ebb-5f1507a29fbc-三章待审.md",
+  "bytes": 21798,
+  "sha256": "7b06e92f796ac905708f60e6415fbd072df654494db8ed42213f6c3f5c38d07e",
+  "wholeExportByteEqual": true,
+  "scope": "文件已完整保存；这时发送取消。取消是否赶在下一步前生效按后续公开事件与实际文件记录。"
+}
