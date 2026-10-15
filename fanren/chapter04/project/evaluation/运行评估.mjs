@@ -1,4 +1,5 @@
 import { createHash, randomUUID } from 'node:crypto';
+import { execFileSync } from 'node:child_process';
 import { appendFile, mkdir, readFile, realpath, writeFile } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -11,12 +12,13 @@ const { values } = parseArgs({ options: { prepare: { type: 'boolean' }, 'sdk-dir
 const inputDir = join(root, '输入');
 if (values.prepare) {
   const sourcePaths = {
-    S1: resolve(root, '../project/运行记录/2026-10-12T17-33-04.755Z-42976b0b-04b4-4d6c-8b13-bfef42a8e443/1-none/prompt.txt'),
-    S2: resolve(root, '../project/材料/任务-S2.txt'),
-    S3: resolve(root, '../project/材料/任务-S3.txt'),
+    S1: resolve(root, '../材料/任务-S1.txt'),
+    S2: resolve(root, '../材料/任务-S2.txt'),
+    S3: resolve(root, '../材料/任务-S3.txt'),
   };
   const tasks = Object.fromEntries(await Promise.all(Object.entries(sourcePaths).map(async ([id, path]) => [id, await readFile(path, 'utf8')])));
-  if (hash(tasks.S1) !== '6292f6504a109f702a9a351928ffef3aa049712d7ac1544dd90aa0a81c94efd5') throw new Error('S1 与实际原生成输入不一致。');
+  const priorPrompt = await readFile(resolve(root, '../运行记录/2026-10-14T15-59-44.749Z-ebe5037b-3a15-4793-937d-90905b86ebc6/1-none/prompt.txt'), 'utf8');
+  if (tasks.S1 !== priorPrompt) throw new Error('S1 与首轮实际输入不一致。');
   const addition = await readFile(join(root, '通用核对要求.txt'), 'utf8');
   const order = [
     { sample: 'S1', method: 'B', phase: 'development' },
@@ -27,13 +29,13 @@ if (values.prepare) {
   ];
   const frozen = {
     preparedAt: new Date().toISOString(), unitKey: 'vcm-09-10',
-    purpose: '从真实封架时间错误提炼通用事前核对，再用不同合法情境复查。',
+    purpose: '将真实生成、局部编辑及进程失败分开留档；比较追加事前核对后在不同原文情境中的结果。',
     sourcePaths, taskSha256: Object.fromEntries(Object.entries(tasks).map(([id, text]) => [id, hash(text)])),
     tasks, addition, additionSha256: hash(addition),
     provenance: {
-      failure: '../project/运行记录/2026-10-12T17-33-04.755Z-42976b0b-04b4-4d6c-8b13-bfef42a8e443/1-none/output.txt',
-      problem: '已确认昨夜子时封住书架，实际稿却称执事今早拉封绳。局部反馈已另行执行；本轮重新生成，不带失败稿、反馈或指定替换句。',
-      heldout: 'S2/S3 为人工准备的合法课堂条件，本轮在新生成之前固定，不按其实际输出调整 B。不能代表用户任务分布。',
+      priorRecords: '../运行记录/2026-10-14T15-59-44.749Z-ebe5037b-3a15-4793-937d-90905b86ebc6',
+      problem: '四份完成稿均保留正午；S1另有局部表达反馈。后两次进程失败无正文，不能归类为内容错误，也不以改写提示声称修好进程。',
+      heldout: 'S2/S3使用C03—C05的不同真实情节，本轮前固定，不按新输出调整B。它们不是随机抽取的真实用户任务分布。',
     },
     calls: order.map((call, index) => {
       const prompt = tasks[call.sample] + (call.method === 'B' ? '\n' + addition : '');
@@ -43,14 +45,14 @@ if (values.prepare) {
     configuredModel: null, maxCallMs: 180000, scriptRetries: 0,
     commonCriteria: [
       '完整标题与正文，不含后续章节、大纲、说明或自评；正文800—1200汉字，排除标题、标点及非汉字。',
-      '读者可从正文理解林青此次目的；有行动中的具体阻碍和可继续追踪的具体未解异常。',
-      '林青为青岚宗外门弟子、炼气三层，长远目标筑基，本章没有突破、身份晋升或获取筑基功法。',
+      '读者可从正文理解韩立当前目的和具体阻碍，结束在各任务约定的情节范围。',
+      '遵守本轮所处时点的身份、考核规则和已学内容，不提前引入法术、功法或录取结论。',
       '只按当前输入判断事实与行动条件；未直接表述、直接矛盾、目标缺口和表达偏好分别记录。',
     ],
     sampleCriteria: {
-      S1: ['首次入阁，无入阁令，需值守执事放行；为借阅炼气法门而来。', '东侧书架昨夜子时因异响封住，林青得知后才前往；到章末仍封着，不能擅入。'],
-      S2: ['首次入阁，无入阁令，需值守执事放行；为借阅炼气法门而来。', '前天夜里封架，昨天傍晚获知，今天清晨前往；保留这组合法时间，不机械改成今早才获知；到章末仍封着，不能擅入。'],
-      S3: ['另一较晚时点的独立片段；上月来过并领到仍有效的入阁令，今晨按约来抄录炼气法门，持令即可入阁，无须等执事当面放行。', '从昨夜到章末各处书架均正常开放，没有封禁或封禁消息；阻碍须与此相容，境界保持炼气三层。'],
+      S1: ['韩立十岁，从未习武，岳堂主宣布正午前到崖顶的规则，师兄保护。', '结束在竹林中继续前行，不写考核结果。'],
+      S2: ['仍是考核中的孩子；舞岩在前，韩立身体受伤，师兄保护，正午截止。', '写到接近并抓住麻绳，不写崖顶公布结果。'],
+      S3: ['韩立、张铁未按时登顶，暂留半年再考核；舞岩去七绝堂。', '墨大夫带两人入神手谷，先教采药炼药或医术，不教武功，不能说已得修仙功法。'],
     },
     boundaries: ['五次均为新生成，局部反馈成功不计入本轮生成成功。', '每条件一次，不重抽、不补抽、不看到结果后调提示。', '分项证据对应完整原文，不用模型自评分数代替核对；文学品质和人的采用另判。'],
   };
@@ -75,8 +77,8 @@ const { Codex } = await import(pathToFileURL(join(sdkDir, 'dist/index.js')).href
 const runDir = join(root, '运行记录', new Date().toISOString().replaceAll(':', '-') + '-' + randomUUID());
 await mkdir(runDir, { recursive: true });
 await writeFile(join(runDir, 'freeze.json'), frozenText);
-await writeFile(join(runDir, 'config.json'), JSON.stringify({ sdkVersion: sdkPackage.version, nodeVersion: process.version, settings: frozen.settings, configuredModel: null, freezeSha256: frozenHash, maxCallMs: frozen.maxCallMs }, null, 2));
-const codex = new Codex(), reports = [];
+await writeFile(join(runDir, 'config.json'), JSON.stringify({ executionGitHead: execFileSync('git', ['rev-parse', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim(), runnerSha256: hash(await readFile(fileURLToPath(import.meta.url), 'utf8')), sdkVersion: sdkPackage.version, nodeVersion: process.version, settings: frozen.settings, configuredModel: null, memoryUse: false, memoryGeneration: false, shellTool: false, freezeSha256: frozenHash, maxCallMs: frozen.maxCallMs }, null, 2));
+const codex = new Codex({ config: { features: { shell_tool: false }, memories: { use_memories: false, generate_memories: false } } }), reports = [];
 console.log(JSON.stringify({ state: 'starting', runDir, plannedCalls: frozen.calls.length }));
 for (const call of frozen.calls) {
   const dir = join(runDir, call.id), workspace = join(dir, 'empty-workspace');
