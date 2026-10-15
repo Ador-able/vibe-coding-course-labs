@@ -1,0 +1,23 @@
+{
+  "lesson": 178,
+  "files": [
+    {
+      "path": "inputs/178-凡人只读审阅.txt",
+      "bytes": 2270,
+      "sha256": "e6ebed0d4eec966666c167a9b6ebef7cec007e223f0850059efd515ad4a56933"
+    },
+    {
+      "path": "seed/凡人修仙传-178-审阅.json",
+      "bytes": 3924,
+      "sha256": "ff3fd5e18c36ca84fba7ebc8623804aba982ca318fb9b05bad100927eb653c0c"
+    },
+    {
+      "path": "scripts/inspect-fanren-review.mjs",
+      "bytes": 3385,
+      "sha256": "0ff40ee5b9e0574bc7eacd4cbbff619ee565caf2db9fff06068feb294bc4b2a1"
+    }
+  ],
+  "start": "172结束后独立恢复167C实际after，五表相同；再以原W5为expectedRevision保存审阅目标W6，原事实/旧历史保持。",
+  "sequence": "先冻结代码与输入，生成真实当前报告并发主编核对冻结，再单次只读模型。",
+  "modelRuns": 1
+}
