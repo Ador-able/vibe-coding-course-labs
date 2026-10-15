@@ -1,0 +1,96 @@
+{
+  "work": {
+    "id": "fanren",
+    "title": "凡人修仙传",
+    "purpose": "用凡人修仙传连续原文片段和对应大纲、设定，练习跨会话核对、人工校订与待审交付。",
+    "requirements": [
+      "教学章1/2/3分别存完整原文片段C03/C04/C05，不是原书的第一二三章，也不是本轮AI生成稿。",
+      "保留来源原文；人工校订、删段或备注须与原文分别保存，并只按本次指定范围处理，不添加新剧情作为已知事实。",
+      "本轮新库从人工导入三份draft开始；保存与人工采用分开，文学判断交给使用者。"
+    ],
+    "facts": [
+      "【人物设定/C01】韩立十岁，家中排行老四，想进城挣钱改善家境。",
+      "【C03】韩立尚未习武；舞岩已有拳脚基础。七玄门是江湖门派。",
+      "【C03大纲】岳堂主宣布经竹林、岩壁至山崖，正午前到崖顶，师兄在后保护；韩立在竹林疲惫休息后继续赶路。",
+      "【C04大纲】韩立攀岩受伤，坚持抓住麻绳；韩立、张铁未按时登顶，获准先随教习打根基，半年后再考核。",
+      "【C05大纲】舞岩进七绝堂；韩立和张铁随墨大夫入神手谷。墨大夫说会教采药炼药及可能的医术，不教武功。",
+      "编者已核对三章来源索引；第1章标题明确标为C03原文，正文逐字保持。C05只读到“不教武功”，不补后续修炼结果。"
+    ],
+    "outline": [
+      {
+        "number": 1,
+        "titleHint": "C03 七玄门与炼骨崖",
+        "goal": "完整读取舞岩与孩童、七玄门考核规则、竹林喘息与前行。"
+      },
+      {
+        "number": 2,
+        "titleHint": "C04 攀岩与考核结果",
+        "goal": "完整读取攀岩困难、坚持与不同录取结果，按正午规则核对。"
+      },
+      {
+        "number": 3,
+        "titleHint": "C05 墨大夫与神手谷",
+        "goal": "完整读取师兄的说明、墨大夫带走两人及采药医术的范围。"
+      }
+    ],
+    "revision": 1
+  },
+  "chapters": [
+    {
+      "workId": "fanren",
+      "number": 1,
+      "revision": 1,
+      "title": "C03 原文：七玄门与炼骨崖",
+      "status": "draft",
+      "workRevision": 1,
+      "origin": "human",
+      "taskId": null,
+      "threadId": null,
+      "updatedAt": "2026-10-15T04:31:18.110Z",
+      "previousRevisions": [],
+      "reviewNote": null
+    },
+    {
+      "workId": "fanren",
+      "number": 2,
+      "revision": 1,
+      "title": "C04 原文：攀岩与考核结果",
+      "status": "draft",
+      "workRevision": 1,
+      "origin": "human",
+      "taskId": null,
+      "threadId": null,
+      "updatedAt": "2026-10-15T04:31:18.112Z",
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 1
+        }
+      ],
+      "reviewNote": null
+    },
+    {
+      "workId": "fanren",
+      "number": 3,
+      "revision": 1,
+      "title": "C05 原文：墨大夫与神手谷",
+      "status": "draft",
+      "workRevision": 1,
+      "origin": "human",
+      "taskId": null,
+      "threadId": null,
+      "updatedAt": "2026-10-15T04:31:18.114Z",
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 1
+        },
+        {
+          "number": 2,
+          "revision": 1
+        }
+      ],
+      "reviewNote": null
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "codeVersion": "9d5bc5c5ea013c981a21b7af7e5f920b0d14ba1e",
+  "modelCalls": 0,
+  "workRevision": 1,
+  "chapterHanCounts": [
+    2036,
+    2015,
+    2088
+  ],
+  "allThreeCurrent": true,
+  "allHumanR1Draft": true,
+  "noAdoption": true,
+  "fullBodiesEqualMaterialFiles": true,
+  "fullExportBytesEqualStoreText": true,
+  "fullCurrentEqualsIndependentSQLite": true,
+  "businessTableCounts": {
+    "works": 1,
+    "work_versions": 1,
+    "chapters": 3,
+    "chapter_versions": 3,
+    "tasks": 0
+  },
+  "limits": "人工导入三份完整现成原文，不能称本轮模型写成三章；没有实际用户连续阅读或文学认可，不证明所有人工改稿分支。"
+}

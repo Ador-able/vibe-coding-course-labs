@@ -1,0 +1,50 @@
+{
+  "workId": "fanren",
+  "workRevision": 1,
+  "expectedChapters": 3,
+  "savedChapters": 3,
+  "allOutlineChaptersSaved": true,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 1,
+      "status": "draft",
+      "workRevision": 1,
+      "previousRevisions": [],
+      "reviewNote": null,
+      "basisCurrent": true
+    },
+    {
+      "number": 2,
+      "revision": 1,
+      "status": "draft",
+      "workRevision": 1,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 1
+        }
+      ],
+      "reviewNote": null,
+      "basisCurrent": true
+    },
+    {
+      "number": 3,
+      "revision": 1,
+      "status": "draft",
+      "workRevision": 1,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 1
+        },
+        {
+          "number": 2,
+          "revision": 1
+        }
+      ],
+      "reviewNote": null,
+      "basisCurrent": true
+    }
+  ]
+}
