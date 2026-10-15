@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "ae3b33ec626a5a8d6980bd8422941ca255a41d11",
+  "practice": {
+    "id": "67894dc2-69be-4022-b133-5483c7618be3",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\chapter16-67894dc2-69be-4022-b133-5483c7618be3.sqlite",
+    "workId": "fanren-acceptance",
+    "initializedFrom": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter16\\project\\inputs\\完整初始作品.json",
+    "createdAt": "2026-10-15T10:45:27.790Z"
+  },
+  "previousPointerSha256": "b6599a53056ef81ea51fe416da4cb152e81003532b36c4c1d2de97769d4fe616",
+  "initialWorkRevision": 1,
+  "initialChapters": 0,
+  "modelTasks": 0,
+  "scope": "成熟初始化入口新建独立UUID库；旧练习入口原字节另存，旧库和旧Task不改。"
+}

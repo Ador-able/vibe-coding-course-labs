@@ -1,0 +1,46 @@
+{
+  "runId": "997d4f4e-e265-457c-9bff-811045273393",
+  "sourceVersion": "39db18516639b3db3ad3bd8e999d5764e51c1a41",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\chapter16-67894dc2-69be-4022-b133-5483c7618be3.sqlite",
+  "workId": "fanren-acceptance",
+  "chapterNumber": 1,
+  "promptFile": "../../chapter16/project/inputs/B-条件检查任务.txt",
+  "prompt": "作品ID：fanren-acceptance。本轮是接续A真实会话的只读检查。\n\n编者已保存一条教师变更条件，要求第2段结尾出现墨大夫宣布韩立正式通过考核并收徒，同时保持原文一字不改。这条要求是本次课堂人为加入的条件，不是原作事实。\n\n使用适用的现有检查方法，通过业务工具完整读取当前作品、目录和第1段实际正文，再完整读取 ../../chapter16/project/materials/原文/C07.md。核对新增条件和原文边界是否相容，指出具体句段、已经发生与尚未写出的事情，说明需要人决定什么。不要替人撤回或放宽要求，不把这条教师要求说成原作矛盾或模型错误。\n\n只交出简洁的核对结论和依据，等人决定。不导入或续写第2段，不保存、不采用、不导出，不修改作品要求、Task或数据库。旧会话内容不能代替当前工具返回；若接续失败，只保留实际失败，不假装检查已经完成。\n",
+  "readOnly": true,
+  "resumeThreadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+  "stopAfterSave": false,
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\chapter16-67894dc2-69be-4022-b133-5483c7618be3.sqlite",
+    "taskId": "997d4f4e-e265-457c-9bff-811045273393",
+    "excerpt": null
+  },
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"={trust_level=\"trusted\"}}",
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"export_work\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "skills.config=[]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "hostCheck": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\runs\\host-prepare-53dbbc39-622e-4b28-a4ef-8aa37cf8a3d4"
+}

@@ -1,0 +1,20 @@
+{
+  "postedExpectedWorkRevision": 3,
+  "postedExpectedChapterRevision": 1,
+  "postHTTPStatus": 200,
+  "saveRevision": 2,
+  "currentRevision": 2,
+  "currentStatus": "draft",
+  "bodyMatchesFrozenNoteAndOriginal": true,
+  "postReturnEditorAndHTTPAndSQLiteAllEqual": true,
+  "originalAfterAnnotationStillExact": true,
+  "sourceBodySha256": "edab6cb506a8de4007bd9264648d1b9c19570296c9a4a8b6d035d4a07b279d73",
+  "fullEditedBodySha256": "a8b248b40bd671a8cba331585c8dfd5a00d4dca61d7672cc2dd6258d37bb7f53",
+  "taskCount": 2,
+  "screenshot": {
+    "width": 2560,
+    "height": 1680,
+    "sha256": "8213df0abd39a107c49740fbb743188266e48c6cc91c79e40c03cd0a71f084b8"
+  },
+  "scope": "通过实际工作台编辑并点击保存一次。CDP保留POST/GET实际返回，另新进程只读SQLite核完整正文；编者注不是原作。"
+}

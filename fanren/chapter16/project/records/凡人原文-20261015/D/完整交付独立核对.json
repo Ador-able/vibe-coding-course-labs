@@ -1,0 +1,61 @@
+{
+  "workId": "fanren-acceptance",
+  "workRevision": 3,
+  "modelTasks": 3,
+  "taskStates": [
+    {
+      "runId": "5e31481f-4129-40c7-bfdd-160d0aa86a3c",
+      "state": "completed",
+      "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0"
+    },
+    {
+      "runId": "74b109d2-b3a0-42d6-8d13-43ab710cf409",
+      "state": "cancelled",
+      "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0"
+    },
+    {
+      "runId": "997d4f4e-e265-457c-9bff-811045273393",
+      "state": "completed",
+      "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0"
+    }
+  ],
+  "savedChapters": 2,
+  "allOutlineChaptersSaved": true,
+  "chapter1": {
+    "number": 1,
+    "revision": 3,
+    "status": "adopted",
+    "workRevision": 3,
+    "previousRevisions": [],
+    "reviewNote": "课堂编者完整核对后采用：C06正文与来源逐字一致，前置编者注明确教学段号与原书章号的区别；片段仍停在韩立自行摸索修炼。",
+    "basisCurrent": true
+  },
+  "chapter2": {
+    "number": 2,
+    "revision": 2,
+    "status": "adopted",
+    "workRevision": 3,
+    "previousRevisions": [
+      {
+        "number": 1,
+        "revision": 3
+      }
+    ],
+    "reviewNote": "课堂编者全文核对后采用：C07与来源逐字一致，结尾仍停在墨大夫大笑、抓肩及韩立害怕；第1段实际人工编者注与C06全文保持。",
+    "basisCurrent": true
+  },
+  "chapter1StillExactHumanBody": true,
+  "chapter2StillExactC07": true,
+  "adoptionDidNotChangeSecondBody": true,
+  "httpStatus": 200,
+  "httpChaptersExactlyMatchSQLite": true,
+  "markdown": {
+    "path": "records/凡人原文-20261015/D/凡人修仙传-口诀修炼原文选读.md",
+    "bytes": 14766,
+    "sha256": "b02f1b6bf71edcde2446a15cf17a4ce0a8d733bd1dcf0fdda8d13a722c2d461c",
+    "hasExactFirstCompleteBody": true,
+    "hasExactSecondCompleteBody": true,
+    "correctOrder": true
+  },
+  "scope": "三次真实模型Task共用一个线程。H与D由课堂编者实际保存/采用/导出，0模型；独立SQLite和HTTP读取核完整正文与最终采用状态。没有额外新会话或为得不同答案重跑。"
+}

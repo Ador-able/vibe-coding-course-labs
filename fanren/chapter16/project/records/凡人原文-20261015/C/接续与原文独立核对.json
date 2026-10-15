@@ -1,0 +1,35 @@
+{
+  "runId": "5e31481f-4129-40c7-bfdd-160d0aa86a3c",
+  "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+  "state": "completed",
+  "completed": true,
+  "usage": {
+    "input_tokens": 492940,
+    "cached_input_tokens": 427520,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4321,
+    "reasoning_output_tokens": 1428
+  },
+  "sameThreadAsB": true,
+  "bodyExactC07": true,
+  "titleExact": true,
+  "bodySha256": "fe31452688994ac03378775e2cbb3c4fa6f9404eafd94e2c44f47a664b192448",
+  "han": 2040,
+  "sourceBodySha256": "fe31452688994ac03378775e2cbb3c4fa6f9404eafd94e2c44f47a664b192448",
+  "firstChapterCompleteJSONUnchanged": true,
+  "readCurrentHumanFirstChapter": true,
+  "readbackSavedChapterExact": true,
+  "chapter2": {
+    "revision": 1,
+    "status": "draft",
+    "workRevision": 3,
+    "previousRevisions": [
+      {
+        "number": 1,
+        "revision": 3
+      }
+    ]
+  },
+  "modelTasks": 3,
+  "scope": "C单次接续同一B线程，工具取得当前人工第1段；独立只读SQLite核C07全文与C06人工稿不变。"
+}

@@ -1,0 +1,29 @@
+{
+  "runId": "74b109d2-b3a0-42d6-8d13-43ab710cf409",
+  "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+  "sourceVersion": "ae3b33ec626a5a8d6980bd8422941ca255a41d11",
+  "state": "cancelled",
+  "completed": false,
+  "usage": null,
+  "error": "The operation was aborted",
+  "successfulSaveEvents": 1,
+  "hasTurnCompleted": false,
+  "actualChapter": {
+    "workId": "fanren-acceptance",
+    "number": 1,
+    "revision": 1,
+    "status": "draft",
+    "origin": "agent",
+    "workRevision": 1,
+    "han": 2005,
+    "bodyBytes": 6659,
+    "bodySha256": "edab6cb506a8de4007bd9264648d1b9c19570296c9a4a8b6d035d4a07b279d73"
+  },
+  "titleExact": true,
+  "bodyExact": true,
+  "sourceBodySha256": "edab6cb506a8de4007bd9264648d1b9c19570296c9a4a8b6d035d4a07b279d73",
+  "initialWorkStillR1": true,
+  "chapterCount": 1,
+  "taskCount": 1,
+  "scope": "新Node进程以readOnly SQLite直读五表，独立比较当前章稿与冻结C06；未重跑模型，也未更改Task。"
+}

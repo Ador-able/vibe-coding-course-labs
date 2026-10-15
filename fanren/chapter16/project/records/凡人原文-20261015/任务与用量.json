@@ -1,0 +1,54 @@
+{
+  "sourceFreeze": "ae3b33ec626a5a8d6980bd8422941ca255a41d11",
+  "modelTasks": 3,
+  "newThreads": 1,
+  "conditionalRecoveryTasks": 0,
+  "scope": "任务耗时含宿主目录准备与执行；usage为SDK任务收尾取得的累计统计，含同一自然任务内部多次模型请求。A教学取消未取得收尾统计，不能记为0或以事件数推底层请求次数。cached_input_tokens属于input_tokens范围，不重复相加；不是单个上下文窗口大小。",
+  "tasks": [
+    {
+      "stage": "A",
+      "runId": "74b109d2-b3a0-42d6-8d13-43ab710cf409",
+      "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+      "state": "cancelled",
+      "eventCount": 20,
+      "taskCreatedAt": "2026-10-15T10:45:35.650Z",
+      "taskUpdatedAt": "2026-10-15T10:46:32.581Z",
+      "taskWallTimeMs": 56931,
+      "usage": null
+    },
+    {
+      "stage": "B",
+      "runId": "997d4f4e-e265-457c-9bff-811045273393",
+      "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+      "state": "completed",
+      "eventCount": 17,
+      "taskCreatedAt": "2026-10-15T10:47:41.918Z",
+      "taskUpdatedAt": "2026-10-15T10:48:37.181Z",
+      "taskWallTimeMs": 55263,
+      "usage": {
+        "input_tokens": 195972,
+        "cached_input_tokens": 148096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 2529,
+        "reasoning_output_tokens": 903
+      }
+    },
+    {
+      "stage": "C",
+      "runId": "5e31481f-4129-40c7-bfdd-160d0aa86a3c",
+      "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+      "state": "completed",
+      "eventCount": 22,
+      "taskCreatedAt": "2026-10-15T10:53:10.727Z",
+      "taskUpdatedAt": "2026-10-15T10:54:11.192Z",
+      "taskWallTimeMs": 60465,
+      "usage": {
+        "input_tokens": 492940,
+        "cached_input_tokens": 427520,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 4321,
+        "reasoning_output_tokens": 1428
+      }
+    }
+  ]
+}

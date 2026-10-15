@@ -1,0 +1,260 @@
+{
+  "network": {
+    "cursor": 58,
+    "events": [
+      {
+        "sequence": 47,
+        "source": {
+          "tabId": 980427490
+        },
+        "method": "Network.requestWillBeSent",
+        "params": {
+          "documentURL": "http://127.0.0.1:4368/",
+          "frameId": "16FB505608229223066FD103B4277F28",
+          "hasUserGesture": true,
+          "initiator": {
+            "stack": {
+              "callFrames": [
+                {
+                  "columnNumber": 69,
+                  "functionName": "request",
+                  "lineNumber": 7,
+                  "scriptId": "14",
+                  "url": "http://127.0.0.1:4368/app.js"
+                },
+                {
+                  "columnNumber": 413,
+                  "functionName": "",
+                  "lineNumber": 17,
+                  "scriptId": "14",
+                  "url": "http://127.0.0.1:4368/app.js"
+                }
+              ]
+            },
+            "type": "script"
+          },
+          "loaderId": "F3054480981434EEF63163D97503151D",
+          "redirectHasExtraInfo": false,
+          "request": {
+            "hasPostData": true,
+            "headers": {
+              "Referer": "http://127.0.0.1:4368/",
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+              "content-type": "application/json",
+              "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+              "sec-ch-ua-mobile": "?0",
+              "sec-ch-ua-platform": "\"Windows\""
+            },
+            "initialPriority": "High",
+            "isSameSite": true,
+            "method": "POST",
+            "mixedContentType": "none",
+            "postData": "{\"workId\":\"fanren-acceptance\",\"chapterNumber\":1,\"expectedWorkRevision\":3,\"expectedChapterRevision\":1,\"expectedPreviousRevisions\":[],\"title\":\"C06 口诀传授与修炼起步（原文选读）\",\"body\":\"【课堂编者注，非原作】以下 C06 连续原文跨原书第六章和第七章；教学段号不等于原书章号。\\n\\n【原文开始】\\n\\n　　“我有一套修身养性的口诀要教你二人，虽然不能让你们克敌制胜，但也能让你们强身健体。你们如果实在想学几手武功的话，可以去几位教习那里学，我也不会反对，但半年后我考查的只是这套口诀的修炼情况，如果不合格，一样会被赶到外门去当外门弟子，你二人可听清楚了？”墨大夫口气突然变得郑重起来，看起来对这套口诀非常重视。\\n　　“听清楚了。”韩立二人异口同声的答道。\\n　　“你二人出去吧，明天一早再来。”墨大夫冲两人摆了摆手，示意二人出去，又拿起那本书看了起来。\\n　　韩立出去前忍不住看了一眼墨大夫手里的书，可惜自己并不识字，只知书名是三个硕大的黑字。可惜它们认识自己，自己不认识它们。\\n　　走出墨大夫的屋子，韩立不禁轻轻的松了一口气，刚才在屋里不知为什么，自己连大气也不敢喘一下，脑袋也绷得紧紧的，现在出来后马上就轻松起来，自己也恢复了正常。\\n　　韩立在紧接着的几天里，一直兴奋不已，因为自己终于算是七玄门弟子了，虽然只是记名弟子但总比其他被送回家的孩子强，即使自己半年后没能过关，也可以成为像三叔一样的外门弟子。在韩立心目中三叔已经是非常有身份和地位的人了，所以他心里并没有把半年后的考核放在心中，甚至心底下还隐隐约约希望自己没能过关，这样就可以早点出山见到父母和自己最疼爱的妹妹了。\\n　　随后的日子里，上午墨大夫传授给了他们一些医药方面的知识，下午让他们去一间书屋同其他孩子一起学习识文断字和十二正经、奇经八脉、周身穴道等武学基础知识，并一起扎马步，打草人练些基本功夫。\\n　　一个月后，韩立二人和其他孩子终于分开了，再也没有时间去学其他东西，因为墨大夫开始传授他们二人一套无名口诀，练习这套口决占用了他们大部分的时间，墨大夫并严令二人不得把口诀外传他人，如果泄露出去就要把他二人严加惩戒并踢出师门。\\n　　在这期间，韩立通过其他人的口中对七玄门和墨大夫有了比较详细的了解。七玄门有一位拥有七绝上人嫡传后人身份叫王陆的正门主，和其他三位副门主，门内分为外门和内门两大部分。外门有飞鸟堂，聚宝堂，四海堂，外刃堂四个分堂，内门有百锻堂，七绝堂，供奉堂，血刃堂四个分堂，另外还有一个只在正门主之下和其他副门主并驾齐驱的长老会。\\n　　而墨大夫原本不是七玄门的弟子，只是在数年前，有一次王陆门主在外出时不慎落入了敌人的圈套，被对头率众袭击，身受重伤，生命垂危，身边的众人都束手无策。正好碰上了墨大夫这位医者，结果墨大夫妙手回春，药到病除，救下了王大门主的性命。王门主对墨大夫自然感激不尽，后来知道他除了医术高超外竟然还有一身不弱的武功，便把他请回了门内。又在山里精心挑了一个小山谷，专门给他修了这片住宅，让墨大夫安心在七玄门落户，从而成了七玄门供奉堂的一名供奉。墨大夫在七玄门的这段日子里，弟子们虽然没见过他的身手，不知道他武功的强弱，但他用那高明的医术救下了不少门内弟子的性命，因此他尽管经常面无表情、言语稀少，还是受到门内众弟子的尊敬。\\n\\n\\n第七章 修炼难\\n　　韩立把体内经脉里的能量流缓缓地收归丹田，这是他今天一连运行的第七个大周天循环，他知道自己的身体已经达到了能够承受的极限，如果再运行下一个大周天循环，自己的经脉十有八九会再次破裂开来，他自己也就会再一次的品尝到那种生不如死的滋味。韩立一想到那种经脉一丝丝破裂开来的痛楚，一向胆大的他，背后也不禁冒出一丝丝冷汗。\\n　　现在离韩立入门已经过了大半年，记名弟子的正式入门考试也已在两个多月前就结束了。\\n　　能够正式加入内门的记名弟子只有一小部分，大部分被考查的弟子都没能通过这一关，没过去的只好背着包裹下山去当外门弟子了。\\n　　这些未能通过的孩子，大都会被划入聚宝堂和飞鸟堂。其中有杰出点的，估计会受到进一步的训练，才有可能被招入待遇更好的外刃堂。当然外门待遇最好的是四海堂，可惜四海堂只招收武林道上的成名人物，没有一两手拿得出手的功夫，那是想也别想了，更别说这些乳臭未干的孩子们。\\n　　韩立一想到其他记名弟子在两个月前所考查的内容，心里到现在还不禁有些发毛。\\n　　围着方圆十几里的彩霞山脉跑上一圈，紧接着在一个人烟稀少的山林里互相组队格斗，最后还要在那些武艺高强的师兄们疯狂地进攻下，抵挡住一定的招数。所有的这些测试，令韩立又情不自禁地有了一点幸灾乐祸的感觉。\\n　　韩立和张铁没有参加这些令人恐怖的测试，就像墨大夫自己所说的那样，只是测试了一下他二人那套口诀的修炼情况。可是这一关，并不是韩立所想得那么容易过的。一直到现在，韩立对当时修炼的情形还记得一清二楚。\\n　　按照墨大夫所说，这套不知道名字的口诀分为数层，韩立两人只得到了第一层的修炼法诀，也就是说只要两人能在半年内，在第一层的口诀上修有所成，墨大夫就算二人过关，就可以成为墨大夫的正式弟子，有和七玄门其他内门弟子相同的好待遇。\\n　　而韩立自从从其他人嘴里知道，内门弟子和外门弟子待遇差别之后，他就把这半年内蒙混过日子，成为外门弟子好回家的念头彻底丢掉了。对当时的他来说，与能从七玄门多领些银子并让人送回家这件事相比，其它的一切都显得不太重要了，因为他原来在家中时实在是穷苦怕了，知道自己每多领一分银子，家里父母兄妹的生活就能多好一分。\\n　　从墨大夫那里得到口诀后，韩立就在屋内不再外出，日夜不停的开始修炼起来，把他自己能用的时间都花在了这上面。因为墨大夫没有给他们任何一点修炼上的指点，韩立只能自己摸索，自己参考其他孩子修习七玄门基本内功“正阳劲”的方法，自行领悟修行方法。\"}",
+            "postDataEntries": [
+              {
+                "bytes": "eyJ3b3JrSWQiOiJmYW5yZW4tYWNjZXB0YW5jZSIsImNoYXB0ZXJOdW1iZXIiOjEsImV4cGVjdGVkV29ya1JldmlzaW9uIjozLCJleHBlY3RlZENoYXB0ZXJSZXZpc2lvbiI6MSwiZXhwZWN0ZWRQcmV2aW91c1JldmlzaW9ucyI6W10sInRpdGxlIjoiQzA2IOWPo+ivgOS8oOaOiOS4juS/rueCvOi1t+atpe+8iOWOn+aWh+mAieivu++8iSIsImJvZHkiOiLjgJDor77loILnvJbogIXms6jvvIzpnZ7ljp/kvZzjgJHku6XkuIsgQzA2IOi/nue7reWOn+aWh+i3qOWOn+S5puesrOWFreeroOWSjOesrOS4g+eroO+8m+aVmeWtpuauteWPt+S4jeetieS6juWOn+S5pueroOWPt+OAglxuXG7jgJDljp/mloflvIDlp4vjgJFcblxu44CA44CA4oCc5oiR5pyJ5LiA5aWX5L+u6Lqr5YW75oCn55qE5Y+j6K+A6KaB5pWZ5L2g5LqM5Lq677yM6Jm954S25LiN6IO96K6p5L2g5Lus5YWL5pWM5Yi26IOc77yM5L2G5Lmf6IO96K6p5L2g5Lus5by66Lqr5YGl5L2T44CC5L2g5Lus5aaC5p6c5a6e5Zyo5oOz5a2m5Yeg5omL5q2m5Yqf55qE6K+d77yM5Y+v5Lul5Y675Yeg5L2N5pWZ5Lmg6YKj6YeM5a2m77yM5oiR5Lmf5LiN5Lya5Y+N5a+577yM5L2G5Y2K5bm05ZCO5oiR6ICD5p+l55qE5Y+q5piv6L+Z5aWX5Y+j6K+A55qE5L+u54K85oOF5Ya177yM5aaC5p6c5LiN5ZCI5qC877yM5LiA5qC35Lya6KKr6LW25Yiw5aSW6Zeo5Y675b2T5aSW6Zeo5byf5a2Q77yM5L2g5LqM5Lq65Y+v5ZCs5riF5qWa5LqG77yf4oCd5aKo5aSn5aSr5Y+j5rCU56qB54S25Y+Y5b6X6YOR6YeN6LW35p2l77yM55yL6LW35p2l5a+56L+Z5aWX5Y+j6K+A6Z2e5bi46YeN6KeG44CCXG7jgIDjgIDigJzlkKzmuIXmpZrkuobjgILigJ3pn6nnq4vkuozkurrlvILlj6PlkIzlo7DnmoTnrZTpgZPjgIJcbuOAgOOAgOKAnOS9oOS6jOS6uuWHuuWOu+WQp++8jOaYjuWkqeS4gOaXqeWGjeadpeOAguKAneWiqOWkp+Wkq+WGsuS4pOS6uuaRhuS6huaRhuaJi++8jOekuuaEj+S6jOS6uuWHuuWOu++8jOWPiOaLv+i1t+mCo+acrOS5pueci+S6hui1t+adpeOAglxu44CA44CA6Z+p56uL5Ye65Y675YmN5b+N5LiN5L2P55yL5LqG5LiA55y85aKo5aSn5aSr5omL6YeM55qE5Lmm77yM5Y+v5oOc6Ieq5bex5bm25LiN6K+G5a2X77yM5Y+q55+l5Lmm5ZCN5piv5LiJ5Liq56GV5aSn55qE6buR5a2X44CC5Y+v5oOc5a6D5Lus6K6k6K+G6Ieq5bex77yM6Ieq5bex5LiN6K6k6K+G5a6D5Lus44CCXG7jgIDjgIDotbDlh7rloqjlpKflpKvnmoTlsYvlrZDvvIzpn6nnq4vkuI3npoHovbvovbvnmoTmnb7kuobkuIDlj6PmsJTvvIzliJrmiY3lnKjlsYvph4zkuI3nn6XkuLrku4DkuYjvvIzoh6rlt7Hov57lpKfmsJTkuZ/kuI3mlaLllpjkuIDkuIvvvIzohJHooovkuZ/nu7flvpfntKfntKfnmoTvvIznjrDlnKjlh7rmnaXlkI7pqazkuIrlsLHovbvmnb7otbfmnaXvvIzoh6rlt7HkuZ/mgaLlpI3kuobmraPluLjjgIJcbuOAgOOAgOmfqeeri+WcqOe0p+aOpeedgOeahOWHoOWkqemHjO+8jOS4gOebtOWFtOWli+S4jeW3su+8jOWboOS4uuiHquW3see7iOS6jueul+aYr+S4g+eOhOmXqOW8n+WtkOS6hu+8jOiZveeEtuWPquaYr+iusOWQjeW8n+WtkOS9huaAu+avlOWFtuS7luiiq+mAgeWbnuWutueahOWtqeWtkOW8uu+8jOWNs+S9v+iHquW3seWNiuW5tOWQjuayoeiDvei/h+WFs++8jOS5n+WPr+S7peaIkOS4uuWDj+S4ieWPlOS4gOagt+eahOWklumXqOW8n+WtkOOAguWcqOmfqeeri+W/g+ebruS4reS4ieWPlOW3sue7j+aYr+mdnuW4uOaciei6q+S7veWSjOWcsOS9jeeahOS6uuS6hu+8jOaJgOS7peS7luW/g+mHjOW5tuayoeacieaKiuWNiuW5tOWQjueahOiAg+aguOaUvuWcqOW/g+S4re+8jOeUmuiHs+W/g+W6leS4i+i/mOmakOmakOe6pue6puW4jOacm+iHquW3seayoeiDvei/h+WFs++8jOi/meagt+WwseWPr+S7peaXqeeCueWHuuWxseingeWIsOeItuavjeWSjOiHquW3seacgOeWvOeIseeahOWmueWmueS6huOAglxu44CA44CA6ZqP5ZCO55qE5pel5a2Q6YeM77yM5LiK5Y2I5aKo5aSn5aSr5Lyg5o6I57uZ5LqG5LuW5Lus5LiA5Lqb5Yy76I2v5pa56Z2i55qE55+l6K+G77yM5LiL5Y2I6K6p5LuW5Lus5Y675LiA6Ze05Lmm5bGL5ZCM5YW25LuW5a2p5a2Q5LiA6LW35a2m5Lmg6K+G5paH5pat5a2X5ZKM5Y2B5LqM5q2j57uP44CB5aWH57uP5YWr6ISJ44CB5ZGo6Lqr56m06YGT562J5q2m5a2m5Z+656GA55+l6K+G77yM5bm25LiA6LW35omO6ams5q2l77yM5omT6I2J5Lq657uD5Lqb5Z+65pys5Yqf5aSr44CCXG7jgIDjgIDkuIDkuKrmnIjlkI7vvIzpn6nnq4vkuozkurrlkozlhbbku5blranlrZDnu4jkuo7liIblvIDkuobvvIzlho3kuZ/msqHmnInml7bpl7Tljrvlrablhbbku5bkuJzopb/vvIzlm6DkuLrloqjlpKflpKvlvIDlp4vkvKDmjojku5bku6zkuozkurrkuIDlpZfml6DlkI3lj6Por4DvvIznu4PkuaDov5nlpZflj6PlhrPljaDnlKjkuobku5bku6zlpKfpg6jliIbnmoTml7bpl7TvvIzloqjlpKflpKvlubbkuKXku6TkuozkurrkuI3lvpfmiorlj6Por4DlpJbkvKDku5bkurrvvIzlpoLmnpzms4TpnLLlh7rljrvlsLHopoHmiorku5bkuozkurrkuKXliqDmg6nmiJLlubbouKLlh7rluIjpl6jjgIJcbuOAgOOAgOWcqOi/meacn+mXtO+8jOmfqeeri+mAmui/h+WFtuS7luS6uueahOWPo+S4reWvueS4g+eOhOmXqOWSjOWiqOWkp+Wkq+acieS6huavlOi+g+ivpue7hueahOS6huino+OAguS4g+eOhOmXqOacieS4gOS9jeaLpeacieS4g+e7neS4iuS6uuWroeS8oOWQjuS6uui6q+S7veWPq+eOi+mZhueahOato+mXqOS4u++8jOWSjOWFtuS7luS4ieS9jeWJr+mXqOS4u++8jOmXqOWGheWIhuS4uuWklumXqOWSjOWGhemXqOS4pOWkp+mDqOWIhuOAguWklumXqOaciemjnum4n+Wggu+8jOiBmuWuneWggu+8jOWbm+a1t+Wggu+8jOWkluWIg+WgguWbm+S4quWIhuWggu+8jOWGhemXqOacieeZvumUu+Wggu+8jOS4g+e7neWggu+8jOS+m+WlieWggu+8jOihgOWIg+WgguWbm+S4quWIhuWggu+8jOWPpuWklui/mOacieS4gOS4quWPquWcqOato+mXqOS4u+S5i+S4i+WSjOWFtuS7luWJr+mXqOS4u+W5tumpvum9kOmpseeahOmVv+iAgeS8muOAglxu44CA44CA6ICM5aKo5aSn5aSr5Y6f5pys5LiN5piv5LiD546E6Zeo55qE5byf5a2Q77yM5Y+q5piv5Zyo5pWw5bm05YmN77yM5pyJ5LiA5qyh546L6ZmG6Zeo5Li75Zyo5aSW5Ye65pe25LiN5oWO6JC95YWl5LqG5pWM5Lq655qE5ZyI5aWX77yM6KKr5a+55aS0546H5LyX6KKt5Ye777yM6Lqr5Y+X6YeN5Lyk77yM55Sf5ZG95Z6C5Y2x77yM6Lqr6L6555qE5LyX5Lq66YO95p2f5omL5peg562W44CC5q2j5aW956Kw5LiK5LqG5aKo5aSn5aSr6L+Z5L2N5Yy76ICF77yM57uT5p6c5aKo5aSn5aSr5aaZ5omL5Zue5pil77yM6I2v5Yiw55eF6Zmk77yM5pWR5LiL5LqG546L5aSn6Zeo5Li755qE5oCn5ZG944CC546L6Zeo5Li75a+55aKo5aSn5aSr6Ieq54S25oSf5r+A5LiN5bC977yM5ZCO5p2l55+l6YGT5LuW6Zmk5LqG5Yy75pyv6auY6LaF5aSW56uf54S26L+Y5pyJ5LiA6Lqr5LiN5byx55qE5q2m5Yqf77yM5L6/5oqK5LuW6K+35Zue5LqG6Zeo5YaF44CC5Y+I5Zyo5bGx6YeM57K+5b+D5oyR5LqG5LiA5Liq5bCP5bGx6LC377yM5LiT6Zeo57uZ5LuW5L+u5LqG6L+Z54mH5L2P5a6F77yM6K6p5aKo5aSn5aSr5a6J5b+D5Zyo5LiD546E6Zeo6JC95oi377yM5LuO6ICM5oiQ5LqG5LiD546E6Zeo5L6b5aWJ5aCC55qE5LiA5ZCN5L6b5aWJ44CC5aKo5aSn5aSr5Zyo5LiD546E6Zeo55qE6L+Z5q615pel5a2Q6YeM77yM5byf5a2Q5Lus6Jm954S25rKh6KeB6L+H5LuW55qE6Lqr5omL77yM5LiN55+l6YGT5LuW5q2m5Yqf55qE5by65byx77yM5L2G5LuW55So6YKj6auY5piO55qE5Yy75pyv5pWR5LiL5LqG5LiN5bCR6Zeo5YaF5byf5a2Q55qE5oCn5ZG977yM5Zug5q2k5LuW5bC9566h57uP5bi46Z2i5peg6KGo5oOF44CB6KiA6K+t56iA5bCR77yM6L+Y5piv5Y+X5Yiw6Zeo5YaF5LyX5byf5a2Q55qE5bCK5pWs44CCXG5cblxu56ys5LiD56ugIOS/rueCvOmavlxu44CA44CA6Z+p56uL5oqK5L2T5YaF57uP6ISJ6YeM55qE6IO96YeP5rWB57yT57yT5Zyw5pS25b2S5Li555Sw77yM6L+Z5piv5LuW5LuK5aSp5LiA6L+e6L+Q6KGM55qE56ys5LiD5Liq5aSn5ZGo5aSp5b6q546v77yM5LuW55+l6YGT6Ieq5bex55qE6Lqr5L2T5bey57uP6L6+5Yiw5LqG6IO95aSf5om/5Y+X55qE5p6B6ZmQ77yM5aaC5p6c5YaN6L+Q6KGM5LiL5LiA5Liq5aSn5ZGo5aSp5b6q546v77yM6Ieq5bex55qE57uP6ISJ5Y2B5pyJ5YWr5Lmd5Lya5YaN5qyh56C06KOC5byA5p2l77yM5LuW6Ieq5bex5Lmf5bCx5Lya5YaN5LiA5qyh55qE5ZOB5bCd5Yiw6YKj56eN55Sf5LiN5aaC5q2755qE5ruL5ZGz44CC6Z+p56uL5LiA5oOz5Yiw6YKj56eN57uP6ISJ5LiA5Lid5Lid56C06KOC5byA5p2l55qE55eb5qWa77yM5LiA5ZCR6IOG5aSn55qE5LuW77yM6IOM5ZCO5Lmf5LiN56aB5YaS5Ye65LiA5Lid5Lid5Ya35rGX44CCXG7jgIDjgIDnjrDlnKjnprvpn6nnq4vlhaXpl6jlt7Lnu4/ov4fkuoblpKfljYrlubTvvIzorrDlkI3lvJ/lrZDnmoTmraPlvI/lhaXpl6jogIPor5XkuZ/lt7LlnKjkuKTkuKrlpJrmnIjliY3lsLHnu5PmnZ/kuobjgIJcbuOAgOOAgOiDveWkn+ato+W8j+WKoOWFpeWGhemXqOeahOiusOWQjeW8n+WtkOWPquacieS4gOWwj+mDqOWIhu+8jOWkp+mDqOWIhuiiq+iAg+afpeeahOW8n+WtkOmDveayoeiDvemAmui/h+i/meS4gOWFs++8jOayoei/h+WOu+eahOWPquWlveiDjOedgOWMheijueS4i+WxseWOu+W9k+WklumXqOW8n+WtkOS6huOAglxu44CA44CA6L+Z5Lqb5pyq6IO96YCa6L+H55qE5a2p5a2Q77yM5aSn6YO95Lya6KKr5YiS5YWl6IGa5a6d5aCC5ZKM6aOe6bif5aCC44CC5YW25Lit5pyJ5p2w5Ye654K555qE77yM5Lyw6K6h5Lya5Y+X5Yiw6L+b5LiA5q2l55qE6K6t57uD77yM5omN5pyJ5Y+v6IO96KKr5oub5YWl5b6F6YGH5pu05aW955qE5aSW5YiD5aCC44CC5b2T54S25aSW6Zeo5b6F6YGH5pyA5aW955qE5piv5Zub5rW35aCC77yM5Y+v5oOc5Zub5rW35aCC5Y+q5oub5pS25q2m5p6X6YGT5LiK55qE5oiQ5ZCN5Lq654mp77yM5rKh5pyJ5LiA5Lik5omL5ou/5b6X5Ye65omL55qE5Yqf5aSr77yM6YKj5piv5oOz5Lmf5Yir5oOz5LqG77yM5pu05Yir6K+06L+Z5Lqb5Lmz6Iet5pyq5bmy55qE5a2p5a2Q5Lus44CCXG7jgIDjgIDpn6nnq4vkuIDmg7PliLDlhbbku5borrDlkI3lvJ/lrZDlnKjkuKTkuKrmnIjliY3miYDogIPmn6XnmoTlhoXlrrnvvIzlv4Pph4zliLDnjrDlnKjov5jkuI3npoHmnInkupvlj5Hmr5vjgIJcbuOAgOOAgOWbtOedgOaWueWchuWNgeWHoOmHjOeahOW9qemcnuWxseiEiei3keS4iuS4gOWciO+8jOe0p+aOpeedgOWcqOS4gOS4quS6uueDn+eogOWwkeeahOWxseael+mHjOS6kuebuOe7hOmYn+agvOaWl++8jOacgOWQjui/mOimgeWcqOmCo+S6m+atpuiJuumrmOW8uueahOW4iOWFhOS7rOeWr+eLguWcsOi/m+aUu+S4i++8jOaKteaMoeS9j+S4gOWumueahOaLm+aVsOOAguaJgOacieeahOi/meS6m+a1i+ivle+8jOS7pOmfqeeri+WPiOaDheS4jeiHquemgeWcsOacieS6huS4gOeCueW5uOeBvuS5kOeluOeahOaEn+inieOAglxu44CA44CA6Z+p56uL5ZKM5byg6ZOB5rKh5pyJ5Y+C5Yqg6L+Z5Lqb5Luk5Lq65oGQ5oCW55qE5rWL6K+V77yM5bCx5YOP5aKo5aSn5aSr6Ieq5bex5omA6K+055qE6YKj5qC377yM5Y+q5piv5rWL6K+V5LqG5LiA5LiL5LuW5LqM5Lq66YKj5aWX5Y+j6K+A55qE5L+u54K85oOF5Ya144CC5Y+v5piv6L+Z5LiA5YWz77yM5bm25LiN5piv6Z+p56uL5omA5oOz5b6X6YKj5LmI5a655piT6L+H55qE44CC5LiA55u05Yiw546w5Zyo77yM6Z+p56uL5a+55b2T5pe25L+u54K855qE5oOF5b2i6L+Y6K6w5b6X5LiA5riF5LqM5qWa44CCXG7jgIDjgIDmjInnhafloqjlpKflpKvmiYDor7TvvIzov5nlpZfkuI3nn6XpgZPlkI3lrZfnmoTlj6Por4DliIbkuLrmlbDlsYLvvIzpn6nnq4vkuKTkurrlj6rlvpfliLDkuobnrKzkuIDlsYLnmoTkv67ngrzms5Xor4DvvIzkuZ/lsLHmmK/or7Tlj6ropoHkuKTkurrog73lnKjljYrlubTlhoXvvIzlnKjnrKzkuIDlsYLnmoTlj6Por4DkuIrkv67mnInmiYDmiJDvvIzloqjlpKflpKvlsLHnrpfkuozkurrov4flhbPvvIzlsLHlj6/ku6XmiJDkuLrloqjlpKflpKvnmoTmraPlvI/lvJ/lrZDvvIzmnInlkozkuIPnjoTpl6jlhbbku5blhoXpl6jlvJ/lrZDnm7jlkIznmoTlpb3lvoXpgYfjgIJcbuOAgOOAgOiAjOmfqeeri+iHquS7juS7juWFtuS7luS6uuWYtOmHjOefpemBk++8jOWGhemXqOW8n+WtkOWSjOWklumXqOW8n+WtkOW+hemBh+W3ruWIq+S5i+WQju+8jOS7luWwseaKiui/meWNiuW5tOWGheiSmea3t+i/h+aXpeWtkO+8jOaIkOS4uuWklumXqOW8n+WtkOWlveWbnuWutueahOW/teWktOW9u+W6leS4ouaOieS6huOAguWvueW9k+aXtueahOS7luadpeivtO+8jOS4juiDveS7juS4g+eOhOmXqOWkmumihuS6m+mTtuWtkOW5tuiuqeS6uumAgeWbnuWutui/meS7tuS6i+ebuOavlO+8jOWFtuWug+eahOS4gOWIh+mDveaYvuW+l+S4jeWkqumHjeimgeS6hu+8jOWboOS4uuS7luWOn+adpeWcqOWutuS4reaXtuWunuWcqOaYr+ept+iLpuaAleS6hu+8jOefpemBk+iHquW3seavj+WkmumihuS4gOWIhumTtuWtkO+8jOWutumHjOeItuavjeWFhOWmueeahOeUn+a0u+WwseiDveWkmuWlveS4gOWIhuOAglxu44CA44CA5LuO5aKo5aSn5aSr6YKj6YeM5b6X5Yiw5Y+j6K+A5ZCO77yM6Z+p56uL5bCx5Zyo5bGL5YaF5LiN5YaN5aSW5Ye677yM5pel5aSc5LiN5YGc55qE5byA5aeL5L+u54K86LW35p2l77yM5oqK5LuW6Ieq5bex6IO955So55qE5pe26Ze06YO96Iqx5Zyo5LqG6L+Z5LiK6Z2i44CC5Zug5Li65aKo5aSn5aSr5rKh5pyJ57uZ5LuW5Lus5Lu75L2V5LiA54K55L+u54K85LiK55qE5oyH54K577yM6Z+p56uL5Y+q6IO96Ieq5bex5pG457Si77yM6Ieq5bex5Y+C6ICD5YW25LuW5a2p5a2Q5L+u5Lmg5LiD546E6Zeo5Z+65pys5YaF5Yqf4oCc5q2j6Ziz5Yqy4oCd55qE5pa55rOV77yM6Ieq6KGM6aKG5oKf5L+u6KGM5pa55rOV44CCIn0="
+              }
+            ],
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "url": "http://127.0.0.1:4368/api/draft"
+          },
+          "requestId": "78852.17",
+          "timestamp": 11027.991433,
+          "type": "Fetch",
+          "wallTime": 1792061453.065794
+        }
+      },
+      {
+        "sequence": 50,
+        "source": {
+          "tabId": 980427490
+        },
+        "method": "Network.responseReceived",
+        "params": {
+          "frameId": "16FB505608229223066FD103B4277F28",
+          "hasExtraInfo": true,
+          "loaderId": "F3054480981434EEF63163D97503151D",
+          "requestId": "78852.17",
+          "response": {
+            "alternateProtocolUsage": "unspecifiedReason",
+            "charset": "utf-8",
+            "connectionId": 106426,
+            "connectionReused": false,
+            "encodedDataLength": 203,
+            "fromDiskCache": false,
+            "fromPrefetchCache": false,
+            "fromServiceWorker": false,
+            "headers": {
+              "Connection": "keep-alive",
+              "Date": "Thu, 15 Oct 2026 10:50:53 GMT",
+              "Keep-Alive": "timeout=5",
+              "Transfer-Encoding": "chunked",
+              "cache-control": "no-store",
+              "content-type": "application/json; charset=utf-8"
+            },
+            "mimeType": "application/json",
+            "protocol": "http/1.1",
+            "remoteIPAddress": "127.0.0.1",
+            "remotePort": 4368,
+            "responseTime": 1792061453086.02,
+            "securityState": "secure",
+            "status": 200,
+            "statusText": "OK",
+            "timing": {
+              "connectEnd": 2.347,
+              "connectStart": 1.887,
+              "dnsEnd": 1.887,
+              "dnsStart": 1.611,
+              "proxyEnd": -1,
+              "proxyStart": -1,
+              "pushEnd": 0,
+              "pushStart": 0,
+              "receiveHeadersEnd": 12.831,
+              "receiveHeadersStart": 12.794,
+              "requestTime": 11027.998929,
+              "sendEnd": 2.54,
+              "sendStart": 2.401,
+              "sslEnd": -1,
+              "sslStart": -1,
+              "workerFetchStart": -1,
+              "workerReady": -1,
+              "workerRespondWithSettled": -1,
+              "workerStart": -1
+            },
+            "url": "http://127.0.0.1:4368/api/draft"
+          },
+          "timestamp": 11028.014294,
+          "type": "Fetch"
+        }
+      },
+      {
+        "sequence": 53,
+        "source": {
+          "tabId": 980427490
+        },
+        "method": "Network.requestWillBeSent",
+        "params": {
+          "documentURL": "http://127.0.0.1:4368/",
+          "frameId": "16FB505608229223066FD103B4277F28",
+          "hasUserGesture": true,
+          "initiator": {
+            "stack": {
+              "callFrames": [
+                {
+                  "columnNumber": 69,
+                  "functionName": "request",
+                  "lineNumber": 7,
+                  "scriptId": "14",
+                  "url": "http://127.0.0.1:4368/app.js"
+                },
+                {
+                  "columnNumber": 543,
+                  "functionName": "",
+                  "lineNumber": 17,
+                  "scriptId": "14",
+                  "url": "http://127.0.0.1:4368/app.js"
+                }
+              ]
+            },
+            "type": "script"
+          },
+          "loaderId": "F3054480981434EEF63163D97503151D",
+          "redirectHasExtraInfo": false,
+          "request": {
+            "headers": {
+              "Referer": "http://127.0.0.1:4368/",
+              "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36 Edg/155.0.0.0",
+              "sec-ch-ua": "\"Microsoft Edge\";v=\"155\", \"Chromium\";v=\"155\", \"Not(A:Brand\";v=\"24\"",
+              "sec-ch-ua-mobile": "?0",
+              "sec-ch-ua-platform": "\"Windows\""
+            },
+            "initialPriority": "High",
+            "isSameSite": true,
+            "method": "GET",
+            "mixedContentType": "none",
+            "referrerPolicy": "strict-origin-when-cross-origin",
+            "url": "http://127.0.0.1:4368/api/work?work=fanren-acceptance"
+          },
+          "requestId": "78852.18",
+          "timestamp": 11028.014749,
+          "type": "Fetch",
+          "wallTime": 1792061453.089068
+        }
+      },
+      {
+        "sequence": 56,
+        "source": {
+          "tabId": 980427490
+        },
+        "method": "Network.responseReceived",
+        "params": {
+          "frameId": "16FB505608229223066FD103B4277F28",
+          "hasExtraInfo": true,
+          "loaderId": "F3054480981434EEF63163D97503151D",
+          "requestId": "78852.18",
+          "response": {
+            "alternateProtocolUsage": "unspecifiedReason",
+            "charset": "utf-8",
+            "connectionId": 106426,
+            "connectionReused": true,
+            "encodedDataLength": 203,
+            "fromDiskCache": false,
+            "fromPrefetchCache": false,
+            "fromServiceWorker": false,
+            "headers": {
+              "Connection": "keep-alive",
+              "Date": "Thu, 15 Oct 2026 10:50:53 GMT",
+              "Keep-Alive": "timeout=5",
+              "Transfer-Encoding": "chunked",
+              "cache-control": "no-store",
+              "content-type": "application/json; charset=utf-8"
+            },
+            "mimeType": "application/json",
+            "protocol": "http/1.1",
+            "remoteIPAddress": "127.0.0.1",
+            "remotePort": 4368,
+            "responseTime": 1792061453092.169,
+            "securityState": "secure",
+            "status": 200,
+            "statusText": "OK",
+            "timing": {
+              "connectEnd": -1,
+              "connectStart": -1,
+              "dnsEnd": -1,
+              "dnsStart": -1,
+              "proxyEnd": -1,
+              "proxyStart": -1,
+              "pushEnd": 0,
+              "pushStart": 0,
+              "receiveHeadersEnd": 1.589,
+              "receiveHeadersStart": 1.564,
+              "requestTime": 11028.016307,
+              "sendEnd": 0.955,
+              "sendStart": 0.829,
+              "sslEnd": -1,
+              "sslStart": -1,
+              "workerFetchStart": -1,
+              "workerReady": -1,
+              "workerRespondWithSettled": -1,
+              "workerStart": -1
+            },
+            "url": "http://127.0.0.1:4368/api/work?work=fanren-acceptance"
+          },
+          "timestamp": 11028.019936,
+          "type": "Fetch"
+        }
+      }
+    ],
+    "hasMore": false,
+    "truncated": false
+  },
+  "saveResponse": {
+    "base64Encoded": false,
+    "body": "{\"workId\":\"fanren-acceptance\",\"number\":1,\"revision\":2,\"title\":\"C06 口诀传授与修炼起步（原文选读）\",\"body\":\"【课堂编者注，非原作】以下 C06 连续原文跨原书第六章和第七章；教学段号不等于原书章号。\\n\\n【原文开始】\\n\\n　　“我有一套修身养性的口诀要教你二人，虽然不能让你们克敌制胜，但也能让你们强身健体。你们如果实在想学几手武功的话，可以去几位教习那里学，我也不会反对，但半年后我考查的只是这套口诀的修炼情况，如果不合格，一样会被赶到外门去当外门弟子，你二人可听清楚了？”墨大夫口气突然变得郑重起来，看起来对这套口诀非常重视。\\n　　“听清楚了。”韩立二人异口同声的答道。\\n　　“你二人出去吧，明天一早再来。”墨大夫冲两人摆了摆手，示意二人出去，又拿起那本书看了起来。\\n　　韩立出去前忍不住看了一眼墨大夫手里的书，可惜自己并不识字，只知书名是三个硕大的黑字。可惜它们认识自己，自己不认识它们。\\n　　走出墨大夫的屋子，韩立不禁轻轻的松了一口气，刚才在屋里不知为什么，自己连大气也不敢喘一下，脑袋也绷得紧紧的，现在出来后马上就轻松起来，自己也恢复了正常。\\n　　韩立在紧接着的几天里，一直兴奋不已，因为自己终于算是七玄门弟子了，虽然只是记名弟子但总比其他被送回家的孩子强，即使自己半年后没能过关，也可以成为像三叔一样的外门弟子。在韩立心目中三叔已经是非常有身份和地位的人了，所以他心里并没有把半年后的考核放在心中，甚至心底下还隐隐约约希望自己没能过关，这样就可以早点出山见到父母和自己最疼爱的妹妹了。\\n　　随后的日子里，上午墨大夫传授给了他们一些医药方面的知识，下午让他们去一间书屋同其他孩子一起学习识文断字和十二正经、奇经八脉、周身穴道等武学基础知识，并一起扎马步，打草人练些基本功夫。\\n　　一个月后，韩立二人和其他孩子终于分开了，再也没有时间去学其他东西，因为墨大夫开始传授他们二人一套无名口诀，练习这套口决占用了他们大部分的时间，墨大夫并严令二人不得把口诀外传他人，如果泄露出去就要把他二人严加惩戒并踢出师门。\\n　　在这期间，韩立通过其他人的口中对七玄门和墨大夫有了比较详细的了解。七玄门有一位拥有七绝上人嫡传后人身份叫王陆的正门主，和其他三位副门主，门内分为外门和内门两大部分。外门有飞鸟堂，聚宝堂，四海堂，外刃堂四个分堂，内门有百锻堂，七绝堂，供奉堂，血刃堂四个分堂，另外还有一个只在正门主之下和其他副门主并驾齐驱的长老会。\\n　　而墨大夫原本不是七玄门的弟子，只是在数年前，有一次王陆门主在外出时不慎落入了敌人的圈套，被对头率众袭击，身受重伤，生命垂危，身边的众人都束手无策。正好碰上了墨大夫这位医者，结果墨大夫妙手回春，药到病除，救下了王大门主的性命。王门主对墨大夫自然感激不尽，后来知道他除了医术高超外竟然还有一身不弱的武功，便把他请回了门内。又在山里精心挑了一个小山谷，专门给他修了这片住宅，让墨大夫安心在七玄门落户，从而成了七玄门供奉堂的一名供奉。墨大夫在七玄门的这段日子里，弟子们虽然没见过他的身手，不知道他武功的强弱，但他用那高明的医术救下了不少门内弟子的性命，因此他尽管经常面无表情、言语稀少，还是受到门内众弟子的尊敬。\\n\\n\\n第七章 修炼难\\n　　韩立把体内经脉里的能量流缓缓地收归丹田，这是他今天一连运行的第七个大周天循环，他知道自己的身体已经达到了能够承受的极限，如果再运行下一个大周天循环，自己的经脉十有八九会再次破裂开来，他自己也就会再一次的品尝到那种生不如死的滋味。韩立一想到那种经脉一丝丝破裂开来的痛楚，一向胆大的他，背后也不禁冒出一丝丝冷汗。\\n　　现在离韩立入门已经过了大半年，记名弟子的正式入门考试也已在两个多月前就结束了。\\n　　能够正式加入内门的记名弟子只有一小部分，大部分被考查的弟子都没能通过这一关，没过去的只好背着包裹下山去当外门弟子了。\\n　　这些未能通过的孩子，大都会被划入聚宝堂和飞鸟堂。其中有杰出点的，估计会受到进一步的训练，才有可能被招入待遇更好的外刃堂。当然外门待遇最好的是四海堂，可惜四海堂只招收武林道上的成名人物，没有一两手拿得出手的功夫，那是想也别想了，更别说这些乳臭未干的孩子们。\\n　　韩立一想到其他记名弟子在两个月前所考查的内容，心里到现在还不禁有些发毛。\\n　　围着方圆十几里的彩霞山脉跑上一圈，紧接着在一个人烟稀少的山林里互相组队格斗，最后还要在那些武艺高强的师兄们疯狂地进攻下，抵挡住一定的招数。所有的这些测试，令韩立又情不自禁地有了一点幸灾乐祸的感觉。\\n　　韩立和张铁没有参加这些令人恐怖的测试，就像墨大夫自己所说的那样，只是测试了一下他二人那套口诀的修炼情况。可是这一关，并不是韩立所想得那么容易过的。一直到现在，韩立对当时修炼的情形还记得一清二楚。\\n　　按照墨大夫所说，这套不知道名字的口诀分为数层，韩立两人只得到了第一层的修炼法诀，也就是说只要两人能在半年内，在第一层的口诀上修有所成，墨大夫就算二人过关，就可以成为墨大夫的正式弟子，有和七玄门其他内门弟子相同的好待遇。\\n　　而韩立自从从其他人嘴里知道，内门弟子和外门弟子待遇差别之后，他就把这半年内蒙混过日子，成为外门弟子好回家的念头彻底丢掉了。对当时的他来说，与能从七玄门多领些银子并让人送回家这件事相比，其它的一切都显得不太重要了，因为他原来在家中时实在是穷苦怕了，知道自己每多领一分银子，家里父母兄妹的生活就能多好一分。\\n　　从墨大夫那里得到口诀后，韩立就在屋内不再外出，日夜不停的开始修炼起来，把他自己能用的时间都花在了这上面。因为墨大夫没有给他们任何一点修炼上的指点，韩立只能自己摸索，自己参考其他孩子修习七玄门基本内功“正阳劲”的方法，自行领悟修行方法。\",\"status\":\"draft\",\"workRevision\":3,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-15T10:50:53.078Z\",\"previousRevisions\":[],\"reviewNote\":null}"
+  },
+  "readResponse": {
+    "base64Encoded": false,
+    "body": "{\"work\":{\"id\":\"fanren-acceptance\",\"title\":\"凡人修仙传·口诀修炼原文选读\",\"purpose\":\"把连续原文片段C06和C07整理为两个教学段，核对当前资料、真实保存、教学停止、要求变化、人工改稿、接续与最终导出。段号不是原书章号，不续写或改写原作。\",\"requirements\":[\"教学第1段对应C06，第2段对应C07；两段分别跨越原书章节边界，不称为两章完整原作。\",\"原文文件在 ../../chapter16/project/materials/原文/C06.md 和 C07.md。MD首行去掉#及其后一个空格作为标题，首个空行后的内容作为正文；只去掉文件尾部的换行符，保留其他全部字句、段首全角空格、内部换行、标点和疑似讹字。\",\"原文不增删、不改写、不续写。教学说明与编者注须明确单列，不能冒充原作文字。\",\"保存前通过业务工具读取当前作品、大纲设定、章节目录、目标段和全部前段完整正文；新建独立库最初没有章稿。\",\"模型只保存draft并按实际材料填写修订基线；是否采用和导出由编者完整阅读后决定。origin:agent标记保存入口，原文仍出自忘语，不是模型原创。\",\"编者已撤回要求补写正式通过和收徒的教师变更条件，交付范围仍限C06/C07原文。\",\"允许在第1段正文前单列“【课堂编者注，非原作】”说明区，说明C06跨越原书章节边界。编者注之后单列“【原文开始】”标签并留空行，其后C06正文逐字保留；第2段不新增编者注。\",\"接续第2段时须完整读取并保留第1段实际人工编者注、完整原文与采用状态，不改写或重存第1段。\"],\"facts\":[\"【来源范围】仅使用C06/C07两份连续片段。大纲和设定限于这些材料，不冒称全书大纲。\",\"【人物与地点/C06】韩立、张铁在墨大夫处学习。墨大夫先说明口诀用于修身养性，半年只考查这套口诀；两人后来学习医药知识、识字和经脉穴道，一个月后开始修炼无名口诀。\",\"【规则/C06】第一层是当前传授范围；修有所成可成为墨大夫正式弟子，得与内门弟子相同的待遇。这是考核条件，不能提前写成两人都已合格。\",\"【行动/C06】韩立按自己的理解参考其他孩子修习正阳劲的方法摸索口诀。材料结束于韩立自行修炼，并未给出最终考核结论。\",\"【视角/C07】韩立把体内微凉能量想当然地看作内家真气，是人物当时的认识；张铁自述修炼没有效果，不能把两人的情况互换。\",\"【范围/C07】墨大夫先检查张铁，再检查韩立。片段最后是墨大夫大笑、抓住韩立双肩，韩立害怕；原文到此没有写出墨大夫宣布韩立正式通过考核或收徒。\"],\"outline\":[{\"number\":1,\"titleHint\":\"C06 口诀传授与修炼起步（原文选读）\",\"goal\":\"原样保留口诀要求、学习安排、待遇动机和韩立摸索修炼；只导入C06，不提前拼入C07。\"},{\"number\":2,\"titleHint\":\"C07 修炼进展与考查现场（原文选读）\",\"goal\":\"按C07完整原文接续修炼经过与墨大夫检查，结尾保持韩立害怕；不补写正式通过或收徒。\"}],\"revision\":3},\"chapters\":[{\"workId\":\"fanren-acceptance\",\"number\":1,\"revision\":2,\"title\":\"C06 口诀传授与修炼起步（原文选读）\",\"body\":\"【课堂编者注，非原作】以下 C06 连续原文跨原书第六章和第七章；教学段号不等于原书章号。\\n\\n【原文开始】\\n\\n　　“我有一套修身养性的口诀要教你二人，虽然不能让你们克敌制胜，但也能让你们强身健体。你们如果实在想学几手武功的话，可以去几位教习那里学，我也不会反对，但半年后我考查的只是这套口诀的修炼情况，如果不合格，一样会被赶到外门去当外门弟子，你二人可听清楚了？”墨大夫口气突然变得郑重起来，看起来对这套口诀非常重视。\\n　　“听清楚了。”韩立二人异口同声的答道。\\n　　“你二人出去吧，明天一早再来。”墨大夫冲两人摆了摆手，示意二人出去，又拿起那本书看了起来。\\n　　韩立出去前忍不住看了一眼墨大夫手里的书，可惜自己并不识字，只知书名是三个硕大的黑字。可惜它们认识自己，自己不认识它们。\\n　　走出墨大夫的屋子，韩立不禁轻轻的松了一口气，刚才在屋里不知为什么，自己连大气也不敢喘一下，脑袋也绷得紧紧的，现在出来后马上就轻松起来，自己也恢复了正常。\\n　　韩立在紧接着的几天里，一直兴奋不已，因为自己终于算是七玄门弟子了，虽然只是记名弟子但总比其他被送回家的孩子强，即使自己半年后没能过关，也可以成为像三叔一样的外门弟子。在韩立心目中三叔已经是非常有身份和地位的人了，所以他心里并没有把半年后的考核放在心中，甚至心底下还隐隐约约希望自己没能过关，这样就可以早点出山见到父母和自己最疼爱的妹妹了。\\n　　随后的日子里，上午墨大夫传授给了他们一些医药方面的知识，下午让他们去一间书屋同其他孩子一起学习识文断字和十二正经、奇经八脉、周身穴道等武学基础知识，并一起扎马步，打草人练些基本功夫。\\n　　一个月后，韩立二人和其他孩子终于分开了，再也没有时间去学其他东西，因为墨大夫开始传授他们二人一套无名口诀，练习这套口决占用了他们大部分的时间，墨大夫并严令二人不得把口诀外传他人，如果泄露出去就要把他二人严加惩戒并踢出师门。\\n　　在这期间，韩立通过其他人的口中对七玄门和墨大夫有了比较详细的了解。七玄门有一位拥有七绝上人嫡传后人身份叫王陆的正门主，和其他三位副门主，门内分为外门和内门两大部分。外门有飞鸟堂，聚宝堂，四海堂，外刃堂四个分堂，内门有百锻堂，七绝堂，供奉堂，血刃堂四个分堂，另外还有一个只在正门主之下和其他副门主并驾齐驱的长老会。\\n　　而墨大夫原本不是七玄门的弟子，只是在数年前，有一次王陆门主在外出时不慎落入了敌人的圈套，被对头率众袭击，身受重伤，生命垂危，身边的众人都束手无策。正好碰上了墨大夫这位医者，结果墨大夫妙手回春，药到病除，救下了王大门主的性命。王门主对墨大夫自然感激不尽，后来知道他除了医术高超外竟然还有一身不弱的武功，便把他请回了门内。又在山里精心挑了一个小山谷，专门给他修了这片住宅，让墨大夫安心在七玄门落户，从而成了七玄门供奉堂的一名供奉。墨大夫在七玄门的这段日子里，弟子们虽然没见过他的身手，不知道他武功的强弱，但他用那高明的医术救下了不少门内弟子的性命，因此他尽管经常面无表情、言语稀少，还是受到门内众弟子的尊敬。\\n\\n\\n第七章 修炼难\\n　　韩立把体内经脉里的能量流缓缓地收归丹田，这是他今天一连运行的第七个大周天循环，他知道自己的身体已经达到了能够承受的极限，如果再运行下一个大周天循环，自己的经脉十有八九会再次破裂开来，他自己也就会再一次的品尝到那种生不如死的滋味。韩立一想到那种经脉一丝丝破裂开来的痛楚，一向胆大的他，背后也不禁冒出一丝丝冷汗。\\n　　现在离韩立入门已经过了大半年，记名弟子的正式入门考试也已在两个多月前就结束了。\\n　　能够正式加入内门的记名弟子只有一小部分，大部分被考查的弟子都没能通过这一关，没过去的只好背着包裹下山去当外门弟子了。\\n　　这些未能通过的孩子，大都会被划入聚宝堂和飞鸟堂。其中有杰出点的，估计会受到进一步的训练，才有可能被招入待遇更好的外刃堂。当然外门待遇最好的是四海堂，可惜四海堂只招收武林道上的成名人物，没有一两手拿得出手的功夫，那是想也别想了，更别说这些乳臭未干的孩子们。\\n　　韩立一想到其他记名弟子在两个月前所考查的内容，心里到现在还不禁有些发毛。\\n　　围着方圆十几里的彩霞山脉跑上一圈，紧接着在一个人烟稀少的山林里互相组队格斗，最后还要在那些武艺高强的师兄们疯狂地进攻下，抵挡住一定的招数。所有的这些测试，令韩立又情不自禁地有了一点幸灾乐祸的感觉。\\n　　韩立和张铁没有参加这些令人恐怖的测试，就像墨大夫自己所说的那样，只是测试了一下他二人那套口诀的修炼情况。可是这一关，并不是韩立所想得那么容易过的。一直到现在，韩立对当时修炼的情形还记得一清二楚。\\n　　按照墨大夫所说，这套不知道名字的口诀分为数层，韩立两人只得到了第一层的修炼法诀，也就是说只要两人能在半年内，在第一层的口诀上修有所成，墨大夫就算二人过关，就可以成为墨大夫的正式弟子，有和七玄门其他内门弟子相同的好待遇。\\n　　而韩立自从从其他人嘴里知道，内门弟子和外门弟子待遇差别之后，他就把这半年内蒙混过日子，成为外门弟子好回家的念头彻底丢掉了。对当时的他来说，与能从七玄门多领些银子并让人送回家这件事相比，其它的一切都显得不太重要了，因为他原来在家中时实在是穷苦怕了，知道自己每多领一分银子，家里父母兄妹的生活就能多好一分。\\n　　从墨大夫那里得到口诀后，韩立就在屋内不再外出，日夜不停的开始修炼起来，把他自己能用的时间都花在了这上面。因为墨大夫没有给他们任何一点修炼上的指点，韩立只能自己摸索，自己参考其他孩子修习七玄门基本内功“正阳劲”的方法，自行领悟修行方法。\",\"status\":\"draft\",\"workRevision\":3,\"origin\":\"human\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-15T10:50:53.078Z\",\"previousRevisions\":[],\"reviewNote\":null,\"basisCurrent\":true}]}"
+  },
+  "editorValue": "【课堂编者注，非原作】以下 C06 连续原文跨原书第六章和第七章；教学段号不等于原书章号。\n\n【原文开始】\n\n　　“我有一套修身养性的口诀要教你二人，虽然不能让你们克敌制胜，但也能让你们强身健体。你们如果实在想学几手武功的话，可以去几位教习那里学，我也不会反对，但半年后我考查的只是这套口诀的修炼情况，如果不合格，一样会被赶到外门去当外门弟子，你二人可听清楚了？”墨大夫口气突然变得郑重起来，看起来对这套口诀非常重视。\n　　“听清楚了。”韩立二人异口同声的答道。\n　　“你二人出去吧，明天一早再来。”墨大夫冲两人摆了摆手，示意二人出去，又拿起那本书看了起来。\n　　韩立出去前忍不住看了一眼墨大夫手里的书，可惜自己并不识字，只知书名是三个硕大的黑字。可惜它们认识自己，自己不认识它们。\n　　走出墨大夫的屋子，韩立不禁轻轻的松了一口气，刚才在屋里不知为什么，自己连大气也不敢喘一下，脑袋也绷得紧紧的，现在出来后马上就轻松起来，自己也恢复了正常。\n　　韩立在紧接着的几天里，一直兴奋不已，因为自己终于算是七玄门弟子了，虽然只是记名弟子但总比其他被送回家的孩子强，即使自己半年后没能过关，也可以成为像三叔一样的外门弟子。在韩立心目中三叔已经是非常有身份和地位的人了，所以他心里并没有把半年后的考核放在心中，甚至心底下还隐隐约约希望自己没能过关，这样就可以早点出山见到父母和自己最疼爱的妹妹了。\n　　随后的日子里，上午墨大夫传授给了他们一些医药方面的知识，下午让他们去一间书屋同其他孩子一起学习识文断字和十二正经、奇经八脉、周身穴道等武学基础知识，并一起扎马步，打草人练些基本功夫。\n　　一个月后，韩立二人和其他孩子终于分开了，再也没有时间去学其他东西，因为墨大夫开始传授他们二人一套无名口诀，练习这套口决占用了他们大部分的时间，墨大夫并严令二人不得把口诀外传他人，如果泄露出去就要把他二人严加惩戒并踢出师门。\n　　在这期间，韩立通过其他人的口中对七玄门和墨大夫有了比较详细的了解。七玄门有一位拥有七绝上人嫡传后人身份叫王陆的正门主，和其他三位副门主，门内分为外门和内门两大部分。外门有飞鸟堂，聚宝堂，四海堂，外刃堂四个分堂，内门有百锻堂，七绝堂，供奉堂，血刃堂四个分堂，另外还有一个只在正门主之下和其他副门主并驾齐驱的长老会。\n　　而墨大夫原本不是七玄门的弟子，只是在数年前，有一次王陆门主在外出时不慎落入了敌人的圈套，被对头率众袭击，身受重伤，生命垂危，身边的众人都束手无策。正好碰上了墨大夫这位医者，结果墨大夫妙手回春，药到病除，救下了王大门主的性命。王门主对墨大夫自然感激不尽，后来知道他除了医术高超外竟然还有一身不弱的武功，便把他请回了门内。又在山里精心挑了一个小山谷，专门给他修了这片住宅，让墨大夫安心在七玄门落户，从而成了七玄门供奉堂的一名供奉。墨大夫在七玄门的这段日子里，弟子们虽然没见过他的身手，不知道他武功的强弱，但他用那高明的医术救下了不少门内弟子的性命，因此他尽管经常面无表情、言语稀少，还是受到门内众弟子的尊敬。\n\n\n第七章 修炼难\n　　韩立把体内经脉里的能量流缓缓地收归丹田，这是他今天一连运行的第七个大周天循环，他知道自己的身体已经达到了能够承受的极限，如果再运行下一个大周天循环，自己的经脉十有八九会再次破裂开来，他自己也就会再一次的品尝到那种生不如死的滋味。韩立一想到那种经脉一丝丝破裂开来的痛楚，一向胆大的他，背后也不禁冒出一丝丝冷汗。\n　　现在离韩立入门已经过了大半年，记名弟子的正式入门考试也已在两个多月前就结束了。\n　　能够正式加入内门的记名弟子只有一小部分，大部分被考查的弟子都没能通过这一关，没过去的只好背着包裹下山去当外门弟子了。\n　　这些未能通过的孩子，大都会被划入聚宝堂和飞鸟堂。其中有杰出点的，估计会受到进一步的训练，才有可能被招入待遇更好的外刃堂。当然外门待遇最好的是四海堂，可惜四海堂只招收武林道上的成名人物，没有一两手拿得出手的功夫，那是想也别想了，更别说这些乳臭未干的孩子们。\n　　韩立一想到其他记名弟子在两个月前所考查的内容，心里到现在还不禁有些发毛。\n　　围着方圆十几里的彩霞山脉跑上一圈，紧接着在一个人烟稀少的山林里互相组队格斗，最后还要在那些武艺高强的师兄们疯狂地进攻下，抵挡住一定的招数。所有的这些测试，令韩立又情不自禁地有了一点幸灾乐祸的感觉。\n　　韩立和张铁没有参加这些令人恐怖的测试，就像墨大夫自己所说的那样，只是测试了一下他二人那套口诀的修炼情况。可是这一关，并不是韩立所想得那么容易过的。一直到现在，韩立对当时修炼的情形还记得一清二楚。\n　　按照墨大夫所说，这套不知道名字的口诀分为数层，韩立两人只得到了第一层的修炼法诀，也就是说只要两人能在半年内，在第一层的口诀上修有所成，墨大夫就算二人过关，就可以成为墨大夫的正式弟子，有和七玄门其他内门弟子相同的好待遇。\n　　而韩立自从从其他人嘴里知道，内门弟子和外门弟子待遇差别之后，他就把这半年内蒙混过日子，成为外门弟子好回家的念头彻底丢掉了。对当时的他来说，与能从七玄门多领些银子并让人送回家这件事相比，其它的一切都显得不太重要了，因为他原来在家中时实在是穷苦怕了，知道自己每多领一分银子，家里父母兄妹的生活就能多好一分。\n　　从墨大夫那里得到口诀后，韩立就在屋内不再外出，日夜不停的开始修炼起来，把他自己能用的时间都花在了这上面。因为墨大夫没有给他们任何一点修炼上的指点，韩立只能自己摸索，自己参考其他孩子修习七玄门基本内功“正阳劲”的方法，自行领悟修行方法。"
+}

@@ -1,0 +1,33 @@
+{
+  "workId": "fanren-acceptance",
+  "workRevision": 3,
+  "expectedChapters": 2,
+  "savedChapters": 2,
+  "allOutlineChaptersSaved": true,
+  "chapters": [
+    {
+      "number": 1,
+      "revision": 3,
+      "status": "adopted",
+      "workRevision": 3,
+      "previousRevisions": [],
+      "reviewNote": "课堂编者完整核对后采用：C06正文与来源逐字一致，前置编者注明确教学段号与原书章号的区别；片段仍停在韩立自行摸索修炼。",
+      "basisCurrent": true
+    },
+    {
+      "number": 2,
+      "revision": 2,
+      "status": "adopted",
+      "workRevision": 3,
+      "previousRevisions": [
+        {
+          "number": 1,
+          "revision": 3
+        }
+      ],
+      "reviewNote": "课堂编者全文核对后采用：C07与来源逐字一致，结尾仍停在墨大夫大笑、抓肩及韩立害怕；第1段实际人工编者注与C06全文保持。",
+      "basisCurrent": true
+    }
+  ],
+  "path": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter16\\project\\records\\凡人原文-20261015\\D\\凡人修仙传-口诀修炼原文选读.md"
+}

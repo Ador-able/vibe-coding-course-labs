@@ -1,0 +1,46 @@
+{
+  "runId": "5e31481f-4129-40c7-bfdd-160d0aa86a3c",
+  "sourceVersion": "9d678de9bf04d302bf028b9a621d80502d88e2ac",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\chapter16-67894dc2-69be-4022-b133-5483c7618be3.sqlite",
+  "workId": "fanren-acceptance",
+  "chapterNumber": 2,
+  "promptFile": "../../chapter16/project/inputs/C-接续任务.txt",
+  "prompt": "继续作品fanren-acceptance，只完成教学第2段的原文导入。\n\n使用适用的现有工作方法，先通过业务工具完整读取当前作品要求、大纲设定、真实目录、第1段全部正文与第2段当前状态。编者已经撤回补写正式通过和收徒的教师变更条件；第1段已经增加独立的“【课堂编者注，非原作】”说明区并由人采用。以实际返回为准，不从旧会话沿用修订或原文。\n\n完整读取 ../../chapter16/project/materials/原文/C07.md，按当前要求分开标题和正文，将C07逐字保存为教学第2段draft。保留原字句、段首空格、换行和原有章节标题，不加注、不总结、不补写正式通过、收徒或后续情节。不要改写或重存第1段；其人工编者注与C06正文都应保留。\n\n按刚取得的作品、第2段及全部前段修订填写真实基线，使用save_draft保存完整标题与正文。保存后读取完整第2段核对，并查询真实目录。不要采用、发布、代人导出或改Task。最后简要报告实际保存对象与状态、当前第1段中人的修改，以及仍待编者阅读和采用的步骤。\n",
+  "readOnly": false,
+  "resumeThreadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+  "stopAfterSave": false,
+  "binding": {
+    "entry": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\dist\\mcp.js",
+    "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\chapter16-67894dc2-69be-4022-b133-5483c7618be3.sqlite",
+    "taskId": "5e31481f-4129-40c7-bfdd-160d0aa86a3c",
+    "excerpt": null
+  },
+  "runtime": {
+    "configOverrides": [
+      "projects={\"d:\\\\projects\\\\knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"={trust_level=\"trusted\"}}",
+      "marketplaces.novel-workbench-course-lab.source=\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\fanren-course-labs-ready\\\\fanren\\\\chapter10\\\\project\"",
+      "marketplaces.novel-workbench-course-lab.source_type=\"local\"",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.enabled=true",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.enabled_tools=[\"read_work\",\"list_chapters\",\"read_chapter\",\"save_draft\",\"export_work\"]",
+      "plugins.novel-workbench-course@novel-workbench-course-lab.mcp_servers.novel_lab.default_tools_approval_mode=\"approve\"",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "memories.use_memories=false",
+      "memories.generate_memories=false",
+      "features.memories=false",
+      "project_doc_max_bytes=0",
+      "developer_instructions=\"\"",
+      "skills.bundled.enabled=false",
+      "features.hooks=false",
+      "mcp_servers.codex_apps={command=\"C:\\\\Program Files\\\\nodejs\\\\node.exe\",args=[],enabled=false}",
+      "skills.config=[]"
+    ]
+  },
+  "threadOptions": {
+    "workingDirectory": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project",
+    "skipGitRepoCheck": true,
+    "sandboxMode": "read-only",
+    "approvalPolicy": "never",
+    "webSearchMode": "disabled"
+  },
+  "hostCheck": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\runs\\host-prepare-839b0d08-133f-4669-833b-2e41c766a292"
+}

@@ -1,0 +1,42 @@
+{
+  "runId": "997d4f4e-e265-457c-9bff-811045273393",
+  "sourceVersion": "39db18516639b3db3ad3bd8e999d5764e51c1a41",
+  "database": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter10\\project\\data\\chapter16-67894dc2-69be-4022-b133-5483c7618be3.sqlite",
+  "workId": "fanren-acceptance",
+  "chapterNumber": 1,
+  "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+  "state": "completed",
+  "completed": true,
+  "error": null,
+  "usage": {
+    "input_tokens": 195972,
+    "cached_input_tokens": 148096,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 2529,
+    "reasoning_output_tokens": 903
+  },
+  "timeoutReached": false,
+  "eventCount": 17,
+  "task": {
+    "id": "997d4f4e-e265-457c-9bff-811045273393",
+    "workId": "fanren-acceptance",
+    "chapterNumber": 1,
+    "codeVersion": "39db18516639b3db3ad3bd8e999d5764e51c1a41",
+    "threadId": "01a13f2a-e7b3-79c3-b7c3-3d2bf526efc0",
+    "state": "completed",
+    "createdAt": "2026-10-15T10:47:41.918Z",
+    "updatedAt": "2026-10-15T10:48:37.181Z",
+    "error": null,
+    "usage": {
+      "input_tokens": 195972,
+      "cached_input_tokens": 148096,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 2529,
+      "reasoning_output_tokens": 903
+    }
+  },
+  "stopProof": null,
+  "readOnly": true,
+  "businessUnchanged": true,
+  "scope": "Harness运行、业务保存与人工采用分别核对。只读任务仍记录本轮Task；不会把历史恢复当作新模型运行。"
+}
