@@ -1,0 +1,29 @@
+{
+  "codeVersion": "2add5c70795088183d2aa910a8a0abbfd9baf410",
+  "threadId": "01a13d9b-c284-78e3-ad4c-986695ad37e8",
+  "modelTasks": 1,
+  "toolCalls": 6,
+  "saveCalls": 1,
+  "fullMethodAndReferenceRead": true,
+  "workOutlineActuallyRead": [
+    {
+      "number": 1,
+      "titleHint": "C03 七玄门与炼骨崖",
+      "goal": "完整读取舞岩与孩童、七玄门考核规则、竹林喘息与前行。"
+    }
+  ],
+  "factsActuallyRead": [
+    "【人物设定/C01】韩立十岁，家中排行老四，想进城挣钱改善家境。",
+    "【C03】韩立尚未习武；舞岩已有拳脚基础。七玄门是江湖门派。",
+    "【C03大纲】岳堂主宣布经竹林、岩壁至山崖，正午前到崖顶，师兄在后保护；韩立在竹林疲惫休息后继续赶路。",
+    "【范围】C04/C05属于后续计划，本次未发生；本次瘦长师兄不提前点出后文才告知的名字。",
+    "【原文动作依据】这样坚持了好长时间，韩立实在累得够呛，只好随便找个土堆一屁股做了下来，然后不停地喘息着。\n韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。\n韩立看到师兄冷冷的目光，心中又有些害怕，忙把头转了回来，又听阵阵的喘气声不断从前面传来，知道是前面有爬的比自己快的人也在休息，韩立再稍微在原地呆了一会，就匆忙的往前赶。"
+  ],
+  "savedAndReadBackAndCLIAndSQLiteEqual": true,
+  "hanCount": 925,
+  "finalRevision": 1,
+  "finalStatus": "draft",
+  "workUnchanged": true,
+  "globalConfigUnchanged": true,
+  "limits": "依据现成原文大纲与设定的改写草稿，不冒称原书文字；任务台账为空，不证明长期任务跟踪；未人工采用或证明文学质量。"
+}

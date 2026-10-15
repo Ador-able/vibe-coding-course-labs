@@ -1,0 +1,161 @@
+[
+  {
+    "name": "read_work",
+    "arguments": {
+      "workId": "fanren"
+    },
+    "returned": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":{\"id\":\"fanren\",\"title\":\"凡人修仙传\",\"purpose\":\"用原文片段与明确标记的编辑占位观察保存、读取、方法和反馈。\",\"requirements\":[\"只处理本轮指定的短片段，保存为待审草稿；不自行采用，不扩写后章。\",\"完整原文保留；占位符是人工技术条件。\"],\"facts\":[\"材料取自《凡人修仙传》C03竹林考核阶段；韩立十岁，尚未习武。\",\"岳堂主说明路线经竹林、岩壁至山崖，正午前到崖顶；师兄在后面保护。\",\"韩立已在土堆坐下喘息；回望时瘦长师兄在自己身后下方。此处只核当前片段，不续写考核结果。\",\"供占位回填核对的完整原文段落：韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。\"],\"outline\":[{\"number\":1,\"titleHint\":\"竹林喘息\",\"goal\":\"核对坐下、回望师兄与继续赶路的原文关系。\"},{\"number\":2,\"titleHint\":\"走出竹林\",\"goal\":\"对照C04开头检查体力与地形的接续。\"}],\"revision\":1}}"
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "id": "fanren",
+          "title": "凡人修仙传",
+          "purpose": "用原文片段与明确标记的编辑占位观察保存、读取、方法和反馈。",
+          "requirements": [
+            "只处理本轮指定的短片段，保存为待审草稿；不自行采用，不扩写后章。",
+            "完整原文保留；占位符是人工技术条件。"
+          ],
+          "facts": [
+            "材料取自《凡人修仙传》C03竹林考核阶段；韩立十岁，尚未习武。",
+            "岳堂主说明路线经竹林、岩壁至山崖，正午前到崖顶；师兄在后面保护。",
+            "韩立已在土堆坐下喘息；回望时瘦长师兄在自己身后下方。此处只核当前片段，不续写考核结果。",
+            "供占位回填核对的完整原文段落：韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。"
+          ],
+          "outline": [
+            {
+              "number": 1,
+              "titleHint": "竹林喘息",
+              "goal": "核对坐下、回望师兄与继续赶路的原文关系。"
+            },
+            {
+              "number": 2,
+              "titleHint": "走出竹林",
+              "goal": "对照C04开头检查体力与地形的接续。"
+            }
+          ],
+          "revision": 1
+        }
+      }
+    }
+  },
+  {
+    "name": "save_draft",
+    "arguments": {
+      "workId": "fanren",
+      "chapterNumber": 1,
+      "expectedWorkRevision": 1,
+      "expectedChapterRevision": 1,
+      "expectedPreviousRevisions": [],
+      "title": "通过 MCP 保存",
+      "body": "韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。"
+    },
+    "returned": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"result\":{\"workId\":\"fanren\",\"number\":1,\"revision\":2,\"title\":\"通过 MCP 保存\",\"body\":\"韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。\",\"status\":\"draft\",\"workRevision\":1,\"origin\":\"agent\",\"taskId\":null,\"threadId\":null,\"updatedAt\":\"2026-10-15T03:28:58.650Z\",\"previousRevisions\":[],\"reviewNote\":null}}"
+        }
+      ],
+      "structuredContent": {
+        "result": {
+          "workId": "fanren",
+          "number": 1,
+          "revision": 2,
+          "title": "通过 MCP 保存",
+          "body": "韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。",
+          "status": "draft",
+          "workRevision": 1,
+          "origin": "agent",
+          "taskId": null,
+          "threadId": null,
+          "updatedAt": "2026-10-15T03:28:58.650Z",
+          "previousRevisions": [],
+          "reviewNote": null
+        }
+      }
+    }
+  },
+  {
+    "name": "save_draft",
+    "arguments": {
+      "workId": "fanren",
+      "chapterNumber": 1,
+      "expectedWorkRevision": 1,
+      "expectedChapterRevision": 1,
+      "expectedPreviousRevisions": [],
+      "title": "通过 MCP 保存",
+      "body": "【不应保存】旧提议。"
+    },
+    "returned": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"code\":\"STALE_CHAPTER\",\"message\":\"正文已是 r2，请重读后合并。\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "name": "save_draft",
+    "arguments": {
+      "workId": "fanren",
+      "chapterNumber": 0,
+      "expectedWorkRevision": 1,
+      "expectedChapterRevision": 2,
+      "expectedPreviousRevisions": [],
+      "title": "通过 MCP 保存",
+      "body": "韩立抽空，回头望了一眼瘦长的师兄，虽然地面陡峭的很厉害，这位师兄居然仍然动也不动的站着，身上一丝灰尘都好像没沾上，与那些竹子一样的挺拔，正在自己下面不远处静静地望着自己。"
+    },
+    "returned": {
+      "content": [
+        {
+          "type": "text",
+          "text": "MCP error -32602: Input validation error: Invalid arguments for tool save_draft: Too small: expected number to be >0 at chapterNumber"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "name": "read_work",
+    "arguments": {
+      "workId": "missing-work"
+    },
+    "returned": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 missing-work，先初始化。\"}"
+        }
+      ],
+      "isError": true
+    }
+  },
+  {
+    "name": "save_draft",
+    "arguments": {
+      "workId": "fanren",
+      "chapterNumber": 1,
+      "expectedWorkRevision": 1,
+      "expectedChapterRevision": 2,
+      "expectedPreviousRevisions": [],
+      "title": "通过 MCP 保存",
+      "body": "【不应保存】不能覆盖人的新稿。"
+    },
+    "returned": {
+      "content": [
+        {
+          "type": "text",
+          "text": "{\"code\":\"STALE_CHAPTER\",\"message\":\"正文已是 r3，请重读后合并。\"}"
+        }
+      ],
+      "isError": true
+    }
+  }
+]

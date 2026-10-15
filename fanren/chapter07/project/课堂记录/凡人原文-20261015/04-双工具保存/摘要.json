@@ -1,0 +1,26 @@
+{
+  "runId": "0e37264b-5a24-453c-a0fd-83016bf0e35a",
+  "runDir": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\mcp-two-0e37264b-5a24-453c-a0fd-83016bf0e35a",
+  "dbPath": "D:\\Projects\\Knowledge\\.coursebook-work\\fanren-course-labs-ready\\fanren\\chapter07\\project\\runs\\mcp-two-0e37264b-5a24-453c-a0fd-83016bf0e35a\\novel.sqlite",
+  "codeVersion": "2add5c70795088183d2aa910a8a0abbfd9baf410",
+  "modelCalled": false,
+  "declaredTools": [
+    "read_work",
+    "save_draft"
+  ],
+  "actualSavedRevision": 2,
+  "humanFinalRevision": 3,
+  "humanFinalStatus": "draft",
+  "secondChapter": null,
+  "disconnectedError": {
+    "name": "Error",
+    "message": "Not connected",
+    "code": null
+  },
+  "callerError": "【人工实验】读取后让调用者退出，检查 finally。",
+  "limits": [
+    "断连实验没有待执行写入，不证明中途断连可以撤销写入。",
+    "本节两个工具的参数由人填写；真实模型调用另看已有四工具 Agent 的独立存档。",
+    "没有实跑远程 HTTP、网络超时或 ChatCut。"
+  ]
+}
