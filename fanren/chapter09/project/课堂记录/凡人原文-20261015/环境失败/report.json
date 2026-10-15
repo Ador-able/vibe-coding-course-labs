@@ -1,0 +1,79 @@
+{
+  "condition": "A",
+  "runId": "8fed8131-9601-4003-a5ae-78bb1bd7c29b",
+  "codeVersion": "a980d746dd94131ab90d5e722b1cdc64563e2b4f",
+  "threadId": "01a13e1e-4f42-7c32-b1be-2de3164763c6",
+  "startedAt": "2026-10-15T05:52:16.056Z",
+  "endedAt": "2026-10-15T05:52:31.908Z",
+  "elapsedMs": 15850.7224,
+  "state": "failed",
+  "turnCompleted": false,
+  "usage": null,
+  "error": "Codex Exec exited with code 1: Reading prompt from stdin...\n2026-10-15T05:52:16.193671Z  WARN codex_core_plugins::manager: failed to refresh remote installed plugins cache error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/installed?limit=200: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/installed?limit=200) materialized_remote_plugin_count=0\n2026-10-15T05:52:16.193671Z  WARN codex_core_plugins::manager: failed to warm featured plugin ids cache error=failed to send remote featured plugin request to https://chatgpt.com/backend-api/plugins/featured?platform=codex: error sending request for url (https://chatgpt.com/backend-api/plugins/featured?platform=codex)\n2026-10-15T05:52:16.193750Z  WARN codex_core_plugins::manager: failed to load recommended plugins error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL)\n2026-10-15T05:52:16.194003Z  WARN codex_core_plugins::manager: remote installed plugin bundle sync failed error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/installed?limit=200&includeDownloadUrls=true: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/installed?limit=200&includeDownloadUrls=true)\n2026-10-15T05:52:16.194003Z  WARN codex_core_plugins::manager: failed to refresh cached remote plugin catalog error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/list?scope=GLOBAL&limit=200: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/list?scope=GLOBAL&limit=200) scope=Global\n2026-10-15T05:52:16.194353Z  WARN codex_core_plugins::manager: failed to refresh remote installed plugins cache error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/installed?limit=200: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/installed?limit=200) materialized_remote_plugin_count=0\n2026-10-15T05:52:19.178215Z ERROR codex_models_manager::manager: failed to refresh available models: Connection failed: error sending request\n2026-10-15T05:52:19.318199Z ERROR codex_models_manager::manager: failed to refresh available models: Connection failed: error sending request\n2026-10-15T05:52:19.326558Z  WARN codex_core_plugins::manager: failed to load recommended plugins error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL)\n2026-10-15T05:52:19.411265Z  WARN codex_core::shell_snapshot: Failed to create shell snapshot for powershell: Shell snapshot not supported yet for PowerShell\n2026-10-15T05:52:19.481305Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)\n2026-10-15T05:52:19.485563Z  WARN codex_core_plugins::manager: failed to load recommended plugins error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL)\n2026-10-15T05:52:19.599486Z  WARN codex_core::session::startup_prewarm: startup websocket prewarm setup failed: workspace routing discovery failed\n2026-10-15T05:52:19.602223Z  WARN codex_core_plugins::manager: failed to load recommended plugins error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL)\n2026-10-15T05:52:19.607100Z  WARN codex_core_plugins::manager: failed to load recommended plugins error=failed to send remote plugin catalog request to https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL: error sending request for url (https://chatgpt.com/backend-api/ps/plugins/suggested/codex?scope=GLOBAL)\n2026-10-15T05:52:19.656407Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 198ms)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=1 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:19.870166Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (2/5 in 436ms)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=2 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:20.318936Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (3/5 in 860ms)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=3 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:21.188747Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (4/5 in 1.628s)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=4 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:22.834789Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (5/5 in 2.931s)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=5 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:25.782899Z  WARN codex_core::client: falling back to HTTP\n2026-10-15T05:52:25.791668Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (1/5 in 202ms)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=1 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:26.015981Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (2/5 in 411ms)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=2 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:26.449539Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (3/5 in 729ms)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=3 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:27.191766Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (4/5 in 1.5s)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=4 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:28.708731Z  WARN codex_core::responses_retry: stream disconnected - retrying sampling request (5/5 in 3.153s)... turn_id=01a13e1e-5c16-71c3-aef1-b361d5cd9ad0 retries=5 max_retries=5 sampling_error=workspace routing discovery failed\n2026-10-15T05:52:31.887279Z  WARN codex_analytics::client: failed to send events request: error sending request for url (https://chatgpt.com/backend-api/codex/analytics-events/events)\n2026-10-15T05:52:31.890821Z  WARN codex_core::tasks: failed to flush rollout after emitting terminal turn event: thread 01a13e1e-4f42-7c32-b1be-2de3164763c6 not found\n",
+  "materialBefore": [
+    {
+      "file": "三章完整待审稿.md",
+      "bytes": 21442,
+      "sha256": "35787fce35e41e41adcb8364b30e04c41466b3c1736442e6830e6997a526c294"
+    },
+    {
+      "file": "作品.json",
+      "bytes": 1980,
+      "sha256": "ef9420b9753ec0c87a5e92b4df2b96cd260ded4ac25bac3f8b6551aa05445c95"
+    },
+    {
+      "file": "材料说明.md",
+      "bytes": 383,
+      "sha256": "4bf4d2cbdb13f029c6c4b9dbf3d103c4a5f6c8a598aaf2382ddc1110286afaa7"
+    },
+    {
+      "file": "第一章.md",
+      "bytes": 7080,
+      "sha256": "a226ff465d4214e0deba51f2f89dde362fbc738c978fa10289924070d5603cde"
+    },
+    {
+      "file": "第三章.md",
+      "bytes": 7351,
+      "sha256": "1d07ed4d64281424e741c9d479559f4e72abd3dde5ecf0b4d70537406dfc1c56"
+    },
+    {
+      "file": "第二章.md",
+      "bytes": 6957,
+      "sha256": "7fa5cbd063a028c04574a54f64d4648a784092237c3bdc8628e6730ff4382199"
+    }
+  ],
+  "materialAfter": [
+    {
+      "file": "三章完整待审稿.md",
+      "bytes": 21442,
+      "sha256": "35787fce35e41e41adcb8364b30e04c41466b3c1736442e6830e6997a526c294"
+    },
+    {
+      "file": "作品.json",
+      "bytes": 1980,
+      "sha256": "ef9420b9753ec0c87a5e92b4df2b96cd260ded4ac25bac3f8b6551aa05445c95"
+    },
+    {
+      "file": "材料说明.md",
+      "bytes": 383,
+      "sha256": "4bf4d2cbdb13f029c6c4b9dbf3d103c4a5f6c8a598aaf2382ddc1110286afaa7"
+    },
+    {
+      "file": "第一章.md",
+      "bytes": 7080,
+      "sha256": "a226ff465d4214e0deba51f2f89dde362fbc738c978fa10289924070d5603cde"
+    },
+    {
+      "file": "第三章.md",
+      "bytes": 7351,
+      "sha256": "1d07ed4d64281424e741c9d479559f4e72abd3dde5ecf0b4d70537406dfc1c56"
+    },
+    {
+      "file": "第二章.md",
+      "bytes": 6957,
+      "sha256": "7fa5cbd063a028c04574a54f64d4648a784092237c3bdc8628e6730ff4382199"
+    }
+  ],
+  "materialByteIdentical": true,
+  "scope": "主会话全部公开 SDK 事件；子会话原始工具和任务需要据真实 receiver_thread_ids 另行读取，不能把本报告的 usage 当整个团队用量。"
+}

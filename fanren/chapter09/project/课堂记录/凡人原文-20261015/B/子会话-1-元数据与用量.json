@@ -1,0 +1,27 @@
+{
+  "threadId": "01a13e23-1b34-73d2-8ce7-8ab2612eba56",
+  "parentThreadId": "01a13e22-e86d-7d12-85ec-d70d057b167d",
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "xhigh",
+  "cliVersion": "0.160.0",
+  "source": {
+    "subAgent": {
+      "thread_spawn": {
+        "parent_thread_id": "01a13e22-e86d-7d12-85ec-d70d057b167d",
+        "depth": 1,
+        "agent_path": "/root/readonly_investigation",
+        "agent_nickname": "Dalton",
+        "agent_role": null
+      }
+    }
+  },
+  "usage": {
+    "input_tokens": 159104,
+    "cached_input_tokens": 115968,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 4995,
+    "reasoning_output_tokens": 2216,
+    "total_tokens": 164099
+  },
+  "usageTimestamp": "2026-10-15T05:59:25.906Z"
+}

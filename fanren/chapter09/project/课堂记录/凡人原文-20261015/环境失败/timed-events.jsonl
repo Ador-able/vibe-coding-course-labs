@@ -1,0 +1,14 @@
+{"at":"2026-10-15T05:52:19.477Z","elapsedMs":3420.4388,"event":{"type":"thread.started","thread_id":"01a13e1e-4f42-7c32-b1be-2de3164763c6"}}
+{"at":"2026-10-15T05:52:19.599Z","elapsedMs":3542.3401,"event":{"type":"turn.started"}}
+{"at":"2026-10-15T05:52:19.870Z","elapsedMs":3812.5978,"event":{"type":"error","message":"Reconnecting... 2/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:20.318Z","elapsedMs":4261.343400000001,"event":{"type":"error","message":"Reconnecting... 3/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:21.188Z","elapsedMs":5131.1535,"event":{"type":"error","message":"Reconnecting... 4/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:22.834Z","elapsedMs":6777.2068,"event":{"type":"error","message":"Reconnecting... 5/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:25.783Z","elapsedMs":9725.5195,"event":{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Falling back from WebSockets to HTTPS transport. workspace routing discovery failed"}}}
+{"at":"2026-10-15T05:52:25.791Z","elapsedMs":9734.0699,"event":{"type":"error","message":"Reconnecting... 1/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:26.015Z","elapsedMs":9958.400300000001,"event":{"type":"error","message":"Reconnecting... 2/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:26.449Z","elapsedMs":10391.931700000001,"event":{"type":"error","message":"Reconnecting... 3/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:27.191Z","elapsedMs":11134.1517,"event":{"type":"error","message":"Reconnecting... 4/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:28.708Z","elapsedMs":12651.0952,"event":{"type":"error","message":"Reconnecting... 5/5 (workspace routing discovery failed)"}}
+{"at":"2026-10-15T05:52:31.876Z","elapsedMs":15818.6253,"event":{"type":"error","message":"workspace routing discovery failed"}}
+{"at":"2026-10-15T05:52:31.888Z","elapsedMs":15831.0121,"event":{"type":"turn.failed","error":{"message":"workspace routing discovery failed"}}}

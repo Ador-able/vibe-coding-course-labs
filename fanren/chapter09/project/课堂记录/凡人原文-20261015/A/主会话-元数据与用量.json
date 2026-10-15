@@ -1,0 +1,17 @@
+{
+  "threadId": "01a13e1f-35ad-7141-98db-6baaecc9e3de",
+  "parentThreadId": null,
+  "model": "gpt-6.1-sol",
+  "reasoningEffort": "xhigh",
+  "cliVersion": "0.160.0",
+  "source": "exec",
+  "usage": {
+    "input_tokens": 175786,
+    "cached_input_tokens": 133760,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 9096,
+    "reasoning_output_tokens": 5172,
+    "total_tokens": 184882
+  },
+  "usageTimestamp": "2026-10-15T05:56:35.156Z"
+}
