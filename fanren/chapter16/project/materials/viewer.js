@@ -33,5 +33,5 @@ async function view(){
     }
   }catch(error){result.append(element('p',error.message+' 请重新查看。'));}finally{$('view').disabled=false;$('lesson').disabled=false;}
 }
-function inputs(){const panel=$('inputs');panel.replaceChildren(link('inputs/'+prompts[$('lesson').value],'当前完整任务'),link('inputs/完整初始作品.json','完整初始作品要求'));}
+function inputs(){const panel=$('inputs');panel.replaceChildren(link('inputs/'+prompts[$('lesson').value],'本阶段完整材料'),link('inputs/完整初始作品.json','完整初始作品要求'));}
 $('view').addEventListener('click',view);$('lesson').addEventListener('change',()=>{$('result').replaceChildren();inputs();});inputs();

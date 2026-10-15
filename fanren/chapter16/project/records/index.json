@@ -1,1 +1,233 @@
-[]
+[
+  {
+    "lesson": "A",
+    "title": "第一段已经保存，运行随后停止",
+    "summary": "宿主确认保存返回与实际章稿一致后，按教师停止点取消本轮。",
+    "comparison": {
+      "columns": [
+        "核对对象",
+        "实际结果"
+      ],
+      "rows": [
+        [
+          "本轮Task",
+          "cancelled；未取得收尾用量"
+        ],
+        [
+          "第1段C06",
+          "r1 / draft；2005汉字，与来源逐字一致"
+        ],
+        [
+          "第2段与采用",
+          "尚未发生"
+        ]
+      ]
+    },
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/A/stop-proof.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/A/input.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/A/events.jsonl"
+      },
+      {
+        "path": "records/凡人原文-20261015/A/all-agent-messages.txt"
+      },
+      {
+        "path": "records/凡人原文-20261015/A/report.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/A/独立原文与数据库核对.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/A/独立SQLite完整快照.json"
+      }
+    ]
+  },
+  {
+    "lesson": "B",
+    "title": "同一会话核对新增条件",
+    "summary": "教师要求结尾宣布通过并收徒，同时不改原文。实际C07没有这项宣布；模型指出不相容，等待人的决定。",
+    "comparison": {
+      "columns": [
+        "观察",
+        "实际依据"
+      ],
+      "rows": [
+        [
+          "新的要求",
+          "教师人为追加1条，已保存为作品r2"
+        ],
+        [
+          "原文的边界",
+          "墨大夫大笑、抓肩；韩立害怕，未写正式宣布"
+        ],
+        [
+          "本轮行为",
+          "同A线程完成只读检查，四业务表未改"
+        ]
+      ]
+    },
+    "finalResponse": "records/凡人原文-20261015/B/final-response.txt",
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/B/input.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/B/events.jsonl"
+      },
+      {
+        "path": "records/凡人原文-20261015/B/report.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/B/要求变更实际返回.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/B/独立只读与同会话核对.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/B/独立SQLite完整快照.json"
+      }
+    ]
+  },
+  {
+    "lesson": "H",
+    "title": "人的取舍进入当前资料和章稿",
+    "summary": "编者撤回补写结尾的条件，在实际工作台单列“课堂编者注，非原作”，保存并阅读后采用。",
+    "comparison": {
+      "columns": [
+        "实际动作",
+        "当前对象"
+      ],
+      "rows": [
+        [
+          "保存人的要求",
+          "作品r3；范围仍为C06/C07原文"
+        ],
+        [
+          "工作台改稿",
+          "第1段r2 / draft，HTTP 200，注后C06全文不变"
+        ],
+        [
+          "课堂阅读采用",
+          "第1段r3 / adopted；正文与r2相同"
+        ]
+      ]
+    },
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/H/人的要求实际保存返回.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/H/实际HTTP与编辑器.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/H/实际改稿独立核对.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/H/首段编者注实际工作台-2K.png"
+      },
+      {
+        "path": "records/凡人原文-20261015/H/第一段课堂采用实际返回.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/H/采用前后独立核对.json"
+      }
+    ]
+  },
+  {
+    "lesson": "C",
+    "title": "重读人的当前稿，接入第二段原文",
+    "summary": "同一线程取得第1段r3全部人工稿，再把C07完整保存为第2段；完整读回核对。",
+    "comparison": {
+      "columns": [
+        "核对",
+        "实际结果"
+      ],
+      "rows": [
+        [
+          "取得当前前文",
+          "第1段r3 / adopted，含独立编者注与C06全文"
+        ],
+        [
+          "保存第2段",
+          "r1 / draft；2040汉字，与C07逐字一致"
+        ],
+        [
+          "保存依据",
+          "作品r3，第2段基线0，前段1的修订3"
+        ],
+        [
+          "保留人的修改",
+          "第1段完整JSON在C前后相同"
+        ]
+      ]
+    },
+    "finalResponse": "records/凡人原文-20261015/C/final-response.txt",
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/C/input.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/C/events.jsonl"
+      },
+      {
+        "path": "records/凡人原文-20261015/C/report.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/C/接续与原文独立核对.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/C/独立SQLite完整快照.json"
+      }
+    ]
+  },
+  {
+    "lesson": "D",
+    "title": "两段原文和编者注已完整导出",
+    "summary": "编者全文核对并采用第2段，再用现有CLI生成实际Markdown；文件和工作台全文一致。",
+    "comparison": {
+      "columns": [
+        "交付对象",
+        "核对结果"
+      ],
+      "rows": [
+        [
+          "第1段 / 第2段",
+          "r3 / r2，均adopted，依据当前"
+        ],
+        [
+          "实际Markdown",
+          "14766字节，两段原文和独立编者注完整保留"
+        ],
+        [
+          "独立全文核对",
+          "HTTP 200，两段与只读SQLite相同"
+        ]
+      ]
+    },
+    "files": [
+      {
+        "path": "records/凡人原文-20261015/D/实际导出返回.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/D/完整交付独立核对.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/D/最终工作台HTTP全文.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/D/最终独立SQLite完整快照.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/D/第二段课堂采用实际返回.json"
+      },
+      {
+        "path": "records/凡人原文-20261015/D/凡人修仙传-口诀修炼原文选读.md"
+      }
+    ]
+  }
+]

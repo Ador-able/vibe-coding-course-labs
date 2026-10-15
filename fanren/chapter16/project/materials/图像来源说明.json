@@ -1,0 +1,19 @@
+{
+  "conceptDiagram": {
+    "svg": "materials/目标与真实交付.svg",
+    "png": "materials/目标与真实交付.png",
+    "width": 3200,
+    "height": 1320,
+    "kind": "概念关系示意图，不是实测截图",
+    "renderer": "作者工作环境既有sharp 0.35.5，把同目录SVG按声明尺寸输出PNG；读者查看无需安装渲染依赖。",
+    "scope": "保留原图关系结构和通用原理，仅替换3处当前实验文字并改为课程蓝色。"
+  },
+  "actualUI": {
+    "path": "records/凡人原文-20261015/H/首段编者注实际工作台-2K.png",
+    "width": 2560,
+    "height": 1680,
+    "kind": "真实工作台原生截图",
+    "evidence": "records/凡人原文-20261015/H/实际HTTP与编辑器.json",
+    "scope": "原生CDP截图，未放大、未重排或拼接。"
+  }
+}
