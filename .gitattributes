@@ -1,6 +1,8 @@
 * text=auto
 *.md text eol=lf
 *.ts text eol=lf
+fanren/chapter07/project/scripts/*hook*.mjs text eol=lf
+fanren/chapter07/project/scripts/check-draft-placeholder.mjs text eol=lf
 fanren/**/materials/** -text
 fanren/**/records/** -text
 fanren/**/runs/** -text
