@@ -2,6 +2,8 @@ packages:
   - lessons/*/project
   - labs/*
 sharedWorkspaceLockfile: false
+# 顺序安装各实验，避免 Windows 并发替换相同依赖目录。
+workspaceConcurrency: 1
 # Windows 跨盘安装直接复制依赖，避免硬链接替换失败。
 packageImportMethod: copy
 allowBuilds:
