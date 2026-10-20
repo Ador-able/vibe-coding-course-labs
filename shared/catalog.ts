@@ -6,7 +6,7 @@ export const groups = [
   { title: '请求与上下文', items: [
     ['/requests/ask/', '独立提问'], ['/requests/context/', '上下文对照'], ['/requests/quality/', '材料对照'],
     ['/requests/latency/', '等待与用量'], ['/requests/memory/', '按需读取与记忆'],
-    ['/requests/disclosure/', '渐进式披露'],
+    ['/requests/disclosure/', '渐进式信息披露'],
     ['/requests/decisions/', '阅读方案'], ['/requests/collaboration/', '笔记共写'], ['/requests/feedback/', '人物指代'],
     ['/requests/structured/', '结构化输出'], ['/requests/streaming/', '流式消息'],
     ['/requests/message-history/', '消息记录'], ['/requests/requests/', '请求状态'],
@@ -18,5 +18,9 @@ export const groups = [
     ['/lessons/chapter10/', '连续 Agent'], ['/lessons/chapter12/', '资料与检索'],
     ['/lessons/chapter13/', '小说材料整理'], ['/lessons/chapter14/', '业务流转'],
     ['/lessons/chapter15/', '修改已有项目'], ['/lessons/chapter16/', '迁移与验收'],
+  ] },
+  { title: '参考练习', items: [
+    ['/references/typescript/', 'TypeScript 与项目运行'],
+    ['/references/recovery/', '代码、会话与数据恢复'],
   ] },
 ];

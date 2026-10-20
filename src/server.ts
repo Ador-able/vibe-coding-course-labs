@@ -11,9 +11,13 @@ import { createLessonRuns } from './lesson-runs.ts';
 
 const root = resolve(import.meta.dirname, '..');
 
+function guidePage(title: string, content: string) {
+  return `<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><link rel="stylesheet" href="/layout.css"><link rel="stylesheet" href="/course.css"><script src="/navigation.js" defer></script></head><body><main>${content}</main></body></html>`;
+}
+
 export async function createCourseApp(configPath?: string, dataDirectory = join(root, '.data')) {
   const disclosureProject = join(root, 'lessons/chapter03/project');
-  const app = createApp(undefined, console.log, configPath, { projectDirectory: disclosureProject, recordDirectory: join(dataDirectory, 'disclosure') });
+  const app = createApp(undefined, console.log, configPath, { projectDirectory: disclosureProject, recordDirectory: join(dataDirectory, 'disclosure/novel') });
   const messages = await createMessageHistoryRouter(dataDirectory);
   const requests = await createRequestsRouter(join(dataDirectory, 'requests'));
   const lessons = createLessonRuns(root);
@@ -28,9 +32,10 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
     if (req.params.file !== '课堂实录.html') { next(); return; }
     res.sendFile('课堂实录.html', { root: disclosureProject });
   });
-  for (const directory of ['运行记录', '课堂记录']) app.use(`/requests/disclosure/history/${directory}`, express.static(join(disclosureProject, directory)));
+  for (const directory of ['运行记录', '课堂记录']) app.use(encodeURI(`/requests/disclosure/history/${directory}`), express.static(join(disclosureProject, directory)));
+  app.use('/requests/memory/maintenance', express.static(join(disclosureProject, '自动记忆练习')));
 
-  // 各章只读工作台共用当前服务，实验程序仍在各章目录执行。
+  // 各章工作台与资料共用服务。
   for (const [url, title] of groups[2].items) {
     const chapter = url.split('/')[2];
     const project = join(root, 'lessons', chapter, 'project');
@@ -38,11 +43,11 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
       if (chapter === 'chapter14') app.get(url, (_req, res) => res.redirect(`${url}flow.html`));
       app.use(url, express.static(join(project, 'public')));
       for (const directory of ['records', 'inputs', 'materials', 'files', 'workflows']) {
-        app.use(`${url}${directory}`, express.static(join(project, directory)));
+        app.use(encodeURI(`${url}${directory}`), express.static(join(project, directory)));
       }
     } else if (['chapter15', 'chapter16'].includes(chapter)) {
       app.get(url, (_req, res) => res.redirect(`${url}materials/viewer.html`));
-      for (const directory of ['records', 'inputs', 'materials']) app.use(`${url}${directory}`, express.static(join(project, directory)));
+      for (const directory of ['records', 'inputs', 'materials']) app.use(encodeURI(`${url}${directory}`), express.static(join(project, directory)));
     } else {
       app.get(url, async (_req, res, next) => {
         try {
@@ -54,7 +59,7 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
           });
           const html = links(await marked.parse(markdown));
           const introduction = links(await marked.parse(markdown.split(/\r?\n\s*\r?\n/)[1] || ''));
-          res.type('html').send(`<!doctype html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${title}</title><link rel="stylesheet" href="/layout.css"><link rel="stylesheet" href="/course.css"><script src="/navigation.js" defer></script></head><body><main><h1>${title}</h1>${introduction}<details class="lesson-code"><summary>代码与操作说明</summary>${html}</details></main></body></html>`);
+          res.type('html').send(guidePage(title, `<h1>${title}</h1>${introduction}<details class="lesson-code"><summary>代码与操作说明</summary>${html}</details>`));
         } catch (error) { next(error); }
       });
       app.get(`${url}:file`, (req, res, next) => {
@@ -62,10 +67,19 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
         res.sendFile(req.params.file, { root: project });
       });
       for (const directory of ['materials', '课堂记录', '运行记录', '自动记忆练习', 'evaluation', 'cost', 'clarification', 'handoff']) {
-        app.use(`${url}${directory}`, express.static(join(project, directory)));
+        app.use(encodeURI(`${url}${directory}`), express.static(join(project, directory)));
       }
     }
   }
+  for (const [name, title] of [['typescript', 'TypeScript 与项目运行'], ['recovery', '代码、会话与数据恢复']]) {
+    const directory = join(root, 'lessons/references', name);
+    app.get(`/references/${name}/`, async (_req, res, next) => {
+      try { res.type('html').send(guidePage(title, await marked.parse(await readFile(join(directory, 'README.md'), 'utf8')))); }
+      catch (error) { next(error); }
+    });
+    app.use(`/references/${name}`, express.static(directory));
+  }
+  app.use('/references/delivery', express.static(join(root, 'lessons/references/delivery')));
   // 原件读取仍记录实际字节与哈希，和课堂实录分开保存。
   const originals = express.Router();
   originals.get('/:file', async (req, res, next) => {

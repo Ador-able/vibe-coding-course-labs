@@ -1,0 +1,3 @@
+$ node dist/cli.js "save" "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\第二章人工编辑完整输入.json" "--db" "data/recovery.sqlite" "--work" "recovery-3007716d-3a6c-40b1-9477-f191d4c6b4c0" "--output" "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\实际保存第二章完整返回.json"
+(node:24884) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)

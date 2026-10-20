@@ -1,0 +1,7 @@
+{
+  "databaseWasCreated": false,
+  "entryExitCode": 0,
+  "reason": "已有初始化脚本使用URL.pathname比较Windows入口路径；中文路径仍为百分号转义，条件未进入，未执行初始化。后续直接调用同一已有导出API，不改应用源码或重复安装构建。",
+  "workId": "recovery-3007716d-3a6c-40b1-9477-f191d4c6b4c0",
+  "checkedAtUtc": "2026-10-03T05:10:37.208Z"
+}

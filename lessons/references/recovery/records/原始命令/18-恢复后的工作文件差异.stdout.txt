@@ -1,0 +1,13 @@
+diff --git a/package.json b/package.json
+index 61b9e18..b6c5613 100644
+--- a/package.json
++++ b/package.json
+@@ -3,7 +3,7 @@
+   "version": "0.1.0",
+   "private": true,
+   "type": "module",
+-  "description": "本人的恢复范围练习",
++  "description": "使用成熟 Codex Harness 的 AI 任务教学实验",
+   "packageManager": "pnpm@11.20.0",
+   "engines": {
+     "node": ">=24.12.0"

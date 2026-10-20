@@ -32,8 +32,9 @@ test('同一服务打开全部实验与各章工作台，资源可读且共用�
     assert.equal((await fetch(origin + '/requests/records/凡人修仙传-quality.json')).status, 200);
     assert.equal((await fetch(origin + '/originals/fanren-C05.pdf')).headers.get('content-type'), 'application/pdf');
     assert.equal((await fetch(origin + '/missing-experiment')).status, 404);
-    for (const path of ['/requests/disclosure/history/课堂实录.html', '/lessons/chapter05/人的决定实录.html', '/lessons/materials/凡人修仙传/来源说明.md', '/theme.css']) assert.equal((await fetch(origin + path)).status, 200, path);
+    for (const path of ['/requests/disclosure/history/课堂实录.html', '/requests/memory/maintenance/课堂实录.html', '/lessons/chapter05/人的决定实录.html', '/lessons/materials/凡人修仙传/来源说明.md', '/theme.css']) assert.equal((await fetch(origin + path)).status, 200, path);
     assert.equal((await fetch(origin + '/lessons/chapter03/')).status, 404);
+    assert.equal((await fetch(origin + '/lessons/chapter10/课堂记录/凡人原文-20261015/03-只读导出/实录阅读页.html')).status, 200);
     assert.equal((await fetch(origin + '/api/lesson-runs', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chapter: '__proto__', action: 'anything' }) })).status, 400);
     // 从页面所用接口执行真正的本地观察，并独立读回本轮产生的业务结果。
     const started = await fetch(origin + '/api/lesson-runs', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chapter: 'chapter07', action: 'objects' }) });

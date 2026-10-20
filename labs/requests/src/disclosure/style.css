@@ -7,5 +7,23 @@ main summary { color: var(--lab-accent); cursor: pointer; font-size: 14px; paddi
 #result { margin-top: 28px; }
 #result h2 { margin-top: 24px; }
 #requests pre { max-height: 440px; overflow: auto; font-size: 13px; padding: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
-#material-text { margin-top: 16px; }
 #history { max-width: 100%; }
+.material-browser { display: grid; grid-template-columns: 240px minmax(0, 1fr); height: min(72vh, 820px); min-height: 420px; border: 1px solid var(--lab-border); border-radius: var(--lab-radius); overflow: hidden; }
+.material-tree { min-width: 0; overflow: auto; padding: 12px; background: var(--lab-surface); border-right: 1px solid var(--lab-border); scrollbar-gutter: stable; }
+.material-tree ul { list-style: none; margin: 0; padding: 0; }
+.material-tree ul ul { margin-left: 14px; }
+.material-tree details { margin: 0; padding: 0; border: 0; }
+.material-tree summary { list-style-position: inside; min-height: 36px; padding: 7px 4px; color: var(--lab-text); font-size: 13px; line-height: 1.5; overflow-wrap: anywhere; }
+.material-tree button { display: block; width: 100%; min-height: 36px; padding: 7px 9px; border-radius: 4px; text-align: left; background: transparent; color: var(--lab-text); font-size: 13px; line-height: 1.5; font-weight: 400; overflow-wrap: anywhere; }
+.material-tree button:hover { background: var(--lab-secondary-hover); }
+.material-tree button[aria-current=page] { color: var(--lab-accent); background: var(--lab-secondary-hover); }
+.material-document { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+.material-path { padding: 12px 20px; margin: 0; border-bottom: 1px solid var(--lab-border); color: var(--lab-muted); font-size: 12px; overflow-wrap: anywhere; }
+.material-document-body { flex: 1; min-height: 0; padding: 20px; overflow: auto; scrollbar-gutter: stable; }
+.material-document-body [role=status] { color: var(--lab-muted); font-size: 13px; }
+@media (max-width: 760px) {
+  .material-browser { grid-template-columns: minmax(0, 1fr); height: auto; min-height: 0; }
+  .material-tree { max-height: 220px; border-right: 0; border-bottom: 1px solid var(--lab-border); }
+  .material-tree button, .material-tree summary { min-height: 44px; }
+  .material-document-body { max-height: 65vh; min-height: 240px; padding: 16px; }
+}

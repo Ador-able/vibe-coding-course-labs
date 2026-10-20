@@ -1,0 +1,374 @@
+[
+  {
+    "label": "克隆固定应用",
+    "executable": "git",
+    "args": [
+      "clone",
+      "D:/Projects/Knowledge/.coursebook-work/09f-5969d3b2/下载包/fixtures/应用固定存档.bundle",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382",
+    "startedAtUtc": "2026-10-03T04:59:50.886Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T04:59:51.067Z"
+  },
+  {
+    "label": "建立个人练习分支",
+    "executable": "git",
+    "args": [
+      "switch",
+      "-c",
+      "codex/vcr02-recovery",
+      "course-test-saving-fixed"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T04:59:51.067Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T04:59:51.143Z"
+  },
+  {
+    "label": "核固定起点",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T04:59:51.143Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T04:59:51.177Z"
+  },
+  {
+    "label": "核独立Git根",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "--show-toplevel"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T04:59:51.177Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T04:59:51.211Z"
+  },
+  {
+    "label": "完整跟踪路径",
+    "executable": "git",
+    "args": [
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T04:59:51.211Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T04:59:51.249Z"
+  },
+  {
+    "label": "继续核完整跟踪路径",
+    "executable": "git",
+    "args": [
+      "ls-files",
+      "-z"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:08:25.083Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:08:25.122Z"
+  },
+  {
+    "label": "按锁安装",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+      "install",
+      "--frozen-lockfile"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:08:29.441Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:08:30.856Z"
+  },
+  {
+    "label": "构建既有应用",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+      "run",
+      "build"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:08:30.856Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:08:31.402Z"
+  },
+  {
+    "label": "完整三章人工初始化",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "scripts/prototype-seed.mjs",
+      "--db",
+      "data/recovery.sqlite",
+      "--id",
+      "recovery-3007716d-3a6c-40b1-9477-f191d4c6b4c0"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:08:31.402Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:08:31.782Z"
+  },
+  {
+    "label": "通过现有初始化API建立完整三章",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\现有初始化API.mjs",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目\\data\\recovery.sqlite",
+      "recovery-3007716d-3a6c-40b1-9477-f191d4c6b4c0"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:37.216Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:37.356Z"
+  },
+  {
+    "label": "核本次代码变化",
+    "executable": "git",
+    "args": [
+      "diff",
+      "--",
+      "package.json"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:37.359Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:37.396Z"
+  },
+  {
+    "label": "暂存个人尝试",
+    "executable": "git",
+    "args": [
+      "add",
+      "--",
+      "package.json"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:37.397Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:37.442Z"
+  },
+  {
+    "label": "保存个人尝试",
+    "executable": "git",
+    "args": [
+      "-c",
+      "user.name=课程实验",
+      "-c",
+      "user.email=course@example.invalid",
+      "commit",
+      "-m",
+      "保存个人练习标题"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:37.442Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:37.533Z"
+  },
+  {
+    "label": "核个人提交",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:37.533Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:37.567Z"
+  },
+  {
+    "label": "按当前依据保存第二章",
+    "executable": "C:\\Program Files\\nodejs\\node.exe",
+    "args": [
+      "D:/Dev/PackageData/npm-global/node_modules/pnpm/bin/pnpm.mjs",
+      "lab",
+      "save",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\第二章人工编辑完整输入.json",
+      "--db",
+      "data/recovery.sqlite",
+      "--work",
+      "recovery-3007716d-3a6c-40b1-9477-f191d4c6b4c0",
+      "--output",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\实际保存第二章完整返回.json"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:37.568Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:37.975Z"
+  },
+  {
+    "label": "仅恢复课程中的一个文件",
+    "executable": "git",
+    "args": [
+      "restore",
+      "--source=course-test-saving-fixed",
+      "--",
+      "package.json"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:37.977Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.018Z"
+  },
+  {
+    "label": "恢复后核HEAD",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.018Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.052Z"
+  },
+  {
+    "label": "恢复后的工作文件差异",
+    "executable": "git",
+    "args": [
+      "diff",
+      "--",
+      "package.json"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.056Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.088Z"
+  },
+  {
+    "label": "恢复后的暂存差异",
+    "executable": "git",
+    "args": [
+      "diff",
+      "--cached"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.088Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.124Z"
+  },
+  {
+    "label": "保存工作文件差异到默认stash",
+    "executable": "git",
+    "args": [
+      "stash",
+      "push",
+      "-m",
+      "临时保留课程文件恢复结果"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.125Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.238Z"
+  },
+  {
+    "label": "核实际stash",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "refs/stash"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.249Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.289Z"
+  },
+  {
+    "label": "应用同一stash且保留条目",
+    "executable": "git",
+    "args": [
+      "stash",
+      "apply",
+      "stash@{0}"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.289Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.362Z"
+  },
+  {
+    "label": "apply后条目仍在",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "refs/stash"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.362Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.399Z"
+  },
+  {
+    "label": "核未跟踪笔记",
+    "executable": "git",
+    "args": [
+      "status",
+      "--porcelain=v1",
+      "--untracked-files=all"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.403Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.438Z"
+  },
+  {
+    "label": "核数据库被忽略",
+    "executable": "git",
+    "args": [
+      "check-ignore",
+      "data/recovery.sqlite"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.438Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.473Z"
+  },
+  {
+    "label": "从同一起点增加worktree",
+    "executable": "git",
+    "args": [
+      "worktree",
+      "add",
+      "-b",
+      "codex/vcr02-separate",
+      "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\同一起点",
+      "course-test-saving-fixed"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\练习项目",
+    "startedAtUtc": "2026-10-03T05:10:38.473Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.581Z"
+  },
+  {
+    "label": "核另一工作目录HEAD",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "HEAD"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\同一起点",
+    "startedAtUtc": "2026-10-03T05:10:38.581Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.614Z"
+  },
+  {
+    "label": "核另一Git工作根",
+    "executable": "git",
+    "args": [
+      "rev-parse",
+      "--show-toplevel"
+    ],
+    "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\r02-b60a4382\\同一起点",
+    "startedAtUtc": "2026-10-03T05:10:38.615Z",
+    "exitCode": 0,
+    "finishedAtUtc": "2026-10-03T05:10:38.645Z"
+  }
+]

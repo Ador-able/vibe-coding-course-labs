@@ -1,0 +1,17 @@
+{
+  "name": "ai-runtime-reference",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.20.0",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "input": "node src/input.ts",
+    "save": "node src/save.ts",
+    "environment": "node src/environment.ts",
+    "encoding": "node src/encoding.ts",
+    "observe": "node scripts/observe.mjs"
+  },
+  "dependencies": { "zod": "4.6.5" },
+  "devDependencies": { "@types/node": "24.19.1", "typescript": "7.0.2" }
+}

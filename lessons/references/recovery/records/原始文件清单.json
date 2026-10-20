@@ -1,0 +1,385 @@
+{
+  "scope": "完整公开载荷；应用代码及当前stash对象由明确bundle引用携带，业务状态另备份。",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2844,
+      "sha256": "362c48c68b32bff4696aa224abbfdf7ddb47c45e044d5d6359d33ab598e94245"
+    },
+    {
+      "path": "fixtures/恢复范围代码.bundle",
+      "bytes": 187589,
+      "sha256": "ef00adab16c32b2dbe8e900c455056bf0771155517d9308bda7db67e68e07622"
+    },
+    {
+      "path": "fixtures/最终业务一致备份.sqlite",
+      "bytes": 73728,
+      "sha256": "ace8ed6b6e62ccfb002d9c5501e8d4133a3074455501fb44246ee5b3baa0c784"
+    },
+    {
+      "path": "fixtures/最终业务一致备份.sqlite-shm",
+      "bytes": 32768,
+      "sha256": "fd4c9fda9cd3f9ae7c962b0ddf37232294d55580e1aa165aa06129b8549389eb"
+    },
+    {
+      "path": "fixtures/最终业务一致备份.sqlite-wal",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "fixtures/本次观察.md",
+      "bytes": 135,
+      "sha256": "937d5c1cd99988106a3bd3314877fa1661b8dd468211a5101b420c20e8416dee"
+    },
+    {
+      "path": "records/apply后完整五表.json",
+      "bytes": 29833,
+      "sha256": "019961a2507bf3067a5be6047a95ce15188d9dfc57001fa716a3b5504de9eca9"
+    },
+    {
+      "path": "records/仅恢复文件后完整五表.json",
+      "bytes": 29833,
+      "sha256": "019961a2507bf3067a5be6047a95ce15188d9dfc57001fa716a3b5504de9eca9"
+    },
+    {
+      "path": "records/初始化完整返回.json",
+      "bytes": 12943,
+      "sha256": "6ea7bd09a39e7147171c2841b79c7ca67c8f46b055529f1075c4e98d622eecfc"
+    },
+    {
+      "path": "records/初始完整五表.json",
+      "bytes": 25883,
+      "sha256": "2fcb91fc4e5c9b32c0a75b629e3dbb0b8e9378fc068a8c9af5e90fb57743053c"
+    },
+    {
+      "path": "records/原始命令/1-克隆固定应用.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/10-通过现有初始化API建立完整三章.stderr.txt",
+      "bytes": 169,
+      "sha256": "4e7c3b5e6034f191a003c3aa4ca80f326d77124ad70f087aab179fbe87110369"
+    },
+    {
+      "path": "records/原始命令/10-通过现有初始化API建立完整三章.stdout.txt",
+      "bytes": 12204,
+      "sha256": "996de68cf0fd246f54d933c1ed2c483544edabc301a903b4f2940a33e031b91e"
+    },
+    {
+      "path": "records/原始命令/11-核本次代码变化.stderr.txt",
+      "bytes": 105,
+      "sha256": "c56aded0b1d33f54936875c6f5a3b81a610d330cc73d12377af1ced6e45d9b35"
+    },
+    {
+      "path": "records/原始命令/11-核本次代码变化.stdout.txt",
+      "bytes": 390,
+      "sha256": "12fbdebf17f0c6c46822980e4a6e54844f008c729e1434db77995371cc1554dd"
+    },
+    {
+      "path": "records/原始命令/12-暂存个人尝试.stderr.txt",
+      "bytes": 105,
+      "sha256": "c56aded0b1d33f54936875c6f5a3b81a610d330cc73d12377af1ced6e45d9b35"
+    },
+    {
+      "path": "records/原始命令/12-暂存个人尝试.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/13-保存个人尝试.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/13-保存个人尝试.stdout.txt",
+      "bytes": 103,
+      "sha256": "2a2e58856275c63333e27d8572930ebf53978445630ee23c636acf7134717e66"
+    },
+    {
+      "path": "records/原始命令/14-核个人提交.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/14-核个人提交.stdout.txt",
+      "bytes": 41,
+      "sha256": "4aad246406b0a780ebbd8b18400f2ee2c147fd3feca3fa0297c63fb5d681d665"
+    },
+    {
+      "path": "records/原始命令/15-按当前依据保存第二章.stderr.txt",
+      "bytes": 489,
+      "sha256": "4f76035ba2b170cf710267532b023e36bbea0bf789a16b32ccff01e3300eb075"
+    },
+    {
+      "path": "records/原始命令/15-按当前依据保存第二章.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/16-仅恢复课程中的一个文件.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/16-仅恢复课程中的一个文件.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/17-恢复后核HEAD.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/17-恢复后核HEAD.stdout.txt",
+      "bytes": 41,
+      "sha256": "4aad246406b0a780ebbd8b18400f2ee2c147fd3feca3fa0297c63fb5d681d665"
+    },
+    {
+      "path": "records/原始命令/18-恢复后的工作文件差异.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/18-恢复后的工作文件差异.stdout.txt",
+      "bytes": 390,
+      "sha256": "5ccedc8216bd51e14f3954d3f8850a354e58a1cfcf0272a659e9673b2a9e2a14"
+    },
+    {
+      "path": "records/原始命令/19-恢复后的暂存差异.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/19-恢复后的暂存差异.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/2-建立个人练习分支.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/20-保存工作文件差异到默认stash.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/20-保存工作文件差异到默认stash.stdout.txt",
+      "bytes": 102,
+      "sha256": "6d509bcd6f0add5a7632f00092c550485b1b18cd9ac54cb9c4a4c8bb401a0b9b"
+    },
+    {
+      "path": "records/原始命令/21-核实际stash.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/21-核实际stash.stdout.txt",
+      "bytes": 41,
+      "sha256": "15ef21e85461807e0a0b7ea136e81095d1703e7bd649207b674d488250f90767"
+    },
+    {
+      "path": "records/原始命令/22-应用同一stash且保留条目.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/22-应用同一stash且保留条目.stdout.txt",
+      "bytes": 379,
+      "sha256": "e727ec8bd0270cbcaa4de75196276872cfc7b0604729267ee6c43ec43f69a7ea"
+    },
+    {
+      "path": "records/原始命令/23-apply后条目仍在.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/23-apply后条目仍在.stdout.txt",
+      "bytes": 41,
+      "sha256": "15ef21e85461807e0a0b7ea136e81095d1703e7bd649207b674d488250f90767"
+    },
+    {
+      "path": "records/原始命令/24-核未跟踪笔记.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/24-核未跟踪笔记.stdout.txt",
+      "bytes": 79,
+      "sha256": "151d2554c221b92ef348fa429b13671275a8dd89f952c73571194c2397ec09f7"
+    },
+    {
+      "path": "records/原始命令/25-核数据库被忽略.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/25-核数据库被忽略.stdout.txt",
+      "bytes": 21,
+      "sha256": "69bda1747b050b6c9e564b7034487cbfca4c14da1ac188ad0b9eb30b0c3a5da4"
+    },
+    {
+      "path": "records/原始命令/26-从同一起点增加worktree.stderr.txt",
+      "bytes": 55,
+      "sha256": "2a74ba899bbced5e40e66ac6b5c4bfa79f13311adee7721f15b2704dc402c3de"
+    },
+    {
+      "path": "records/原始命令/26-从同一起点增加worktree.stdout.txt",
+      "bytes": 66,
+      "sha256": "1c89fbb9cbafc326b4e0afd89d27b7f26826cba6605303127830812a797e97e1"
+    },
+    {
+      "path": "records/原始命令/27-核另一工作目录HEAD.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/27-核另一工作目录HEAD.stdout.txt",
+      "bytes": 41,
+      "sha256": "82db2edbe396ed293462404629e836754de3e13f4b604b1d39b741bb59af136d"
+    },
+    {
+      "path": "records/原始命令/28-核另一Git工作根.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/28-核另一Git工作根.stdout.txt",
+      "bytes": 65,
+      "sha256": "280a445b74d7a9d620ffc9ccaab85a7e5b6632f272ea22b38f1cf79227cfb940"
+    },
+    {
+      "path": "records/原始命令/3-核固定起点.stdout.txt",
+      "bytes": 41,
+      "sha256": "82db2edbe396ed293462404629e836754de3e13f4b604b1d39b741bb59af136d"
+    },
+    {
+      "path": "records/原始命令/4-核独立Git根.stdout.txt",
+      "bytes": 65,
+      "sha256": "306782b6816a761c8c8b1fb25af69c766e481be7bef4b7d88a25e4c8cccaffdc"
+    },
+    {
+      "path": "records/原始命令/5-完整跟踪路径.stdout.txt",
+      "bytes": 8661,
+      "sha256": "442688f5dc191614a7b9a3eb2743aec5b6e2d221168a88fb321c75d4a0f38113"
+    },
+    {
+      "path": "records/原始命令/6-继续核完整跟踪路径.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/6-继续核完整跟踪路径.stdout.txt",
+      "bytes": 8661,
+      "sha256": "442688f5dc191614a7b9a3eb2743aec5b6e2d221168a88fb321c75d4a0f38113"
+    },
+    {
+      "path": "records/原始命令/7-按锁安装.stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/7-按锁安装.stdout.txt",
+      "bytes": 741,
+      "sha256": "d77b2c4eeab3581067532052cf3a1de5e10055a2c33680cce4f897d2a0cfdf6e"
+    },
+    {
+      "path": "records/原始命令/8-构建既有应用.stderr.txt",
+      "bytes": 23,
+      "sha256": "29c5ee0f6b0b20dbb259b99d01276198c3d28190090706394608d4deda6d2c0b"
+    },
+    {
+      "path": "records/原始命令/8-构建既有应用.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/原始命令/9-完整三章人工初始化.stderr.txt",
+      "bytes": 169,
+      "sha256": "c6edaa232e9bb801a2a8eb89c3c3cd9807ddfec71603218302a838c00b63891f"
+    },
+    {
+      "path": "records/原始命令/9-完整三章人工初始化.stdout.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "records/完整164源码核对.json",
+      "bytes": 80324,
+      "sha256": "450642cfd1e6bde489186357eba18631f24b6780d9e526bd75aafba2bd98ecdd"
+    },
+    {
+      "path": "records/完整实际结果.json",
+      "bytes": 5242,
+      "sha256": "0d324c7911bfec14f96f007acf5c9ab6bc1b590571ddf4e0eae523adb6830075"
+    },
+    {
+      "path": "records/实际保存第二章完整返回.json",
+      "bytes": 3726,
+      "sha256": "ff68aca78a1fa68c685ce62b64d2da0e93fc4ef68365893afd1cf96436a35b5c"
+    },
+    {
+      "path": "records/实际命令.json",
+      "bytes": 10999,
+      "sha256": "092a9ee6b97cccfb7bf597dc162962498a035219d45743fe19b97a5ce92a163e"
+    },
+    {
+      "path": "records/实际失败.json",
+      "bytes": 35789,
+      "sha256": "e8053d1a370c8a76724de9841ec9153ad6cb14918e25743fd8b920c378ee4df1"
+    },
+    {
+      "path": "records/恢复实验身份.json",
+      "bytes": 565,
+      "sha256": "64454a3c88722c4a76c32c25492465b0b4561d9051b3eec96b36fe79e2e3f912"
+    },
+    {
+      "path": "records/现有初始化API.mjs",
+      "bytes": 386,
+      "sha256": "c4289331b6e2b794bed84a8db9bc1a6dea28af921ab32e0bc704f9cff7857dd5"
+    },
+    {
+      "path": "records/第二章人工编辑完整输入.json",
+      "bytes": 3619,
+      "sha256": "4e2b0f0d911d8c9e7cc8be796e312ac5c6f323e9730d3cc1d58506dbb81d54ef"
+    },
+    {
+      "path": "records/继续执行实际失败.json",
+      "bytes": 702,
+      "sha256": "291ae729f4319be1a66cb24ff5dabd674376f6a1494c759df597d69f3e535745"
+    },
+    {
+      "path": "records/编辑后完整五表.json",
+      "bytes": 29833,
+      "sha256": "019961a2507bf3067a5be6047a95ce15188d9dfc57001fa716a3b5504de9eca9"
+    },
+    {
+      "path": "records/零输出入口核清.json",
+      "bytes": 405,
+      "sha256": "4b1a753eb0b5453c555d5f34433fdbf816bcc244c54b517eedbd71c566c669cd"
+    },
+    {
+      "path": "records/默认stash后完整五表.json",
+      "bytes": 29833,
+      "sha256": "019961a2507bf3067a5be6047a95ce15188d9dfc57001fa716a3b5504de9eca9"
+    },
+    {
+      "path": "固定记录.json",
+      "bytes": 729,
+      "sha256": "f0a9b564214a1742a7466748fc75c9d930a8d5476e7bb05cf753106da679beb4"
+    },
+    {
+      "path": "恢复本次练习.mjs",
+      "bytes": 4586,
+      "sha256": "c197892bd2f80d34556c98a79843f84205e40bd017a243d6df83c086b46597f3"
+    },
+    {
+      "path": "选择要恢复的对象.png",
+      "bytes": 1078420,
+      "sha256": "ba5df896648adb389ea8d1acd118f6ca4a935e4a5c13aa40817711742cc73b5f"
+    }
+  ]
+}

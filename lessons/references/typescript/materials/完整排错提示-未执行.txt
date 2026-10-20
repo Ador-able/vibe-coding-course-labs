@@ -1,0 +1,38 @@
+请先调查这份运行练习里的输入错误，暂时不要修改代码、输入、依赖或锁文件。
+
+我在从教学记录.bundle克隆得到的ai-runtime-reference项目根执行pnpm check，退出0；随后执行node src/input.ts inputs/错误类型.json，退出1、stdout为空。当前实际环境为Windows、Node24.12.0、pnpm11.20.0，TypeScript7.0.2、Zod4.6.5。项目当前Git完成点为ce16cfe937ab20d0b0a15f697c3ee8cb5057b99d；请先核你的实际cwd、包名和版本，不假定我的绝对路径就是你的路径。
+
+完整人工错误输入如下；它是故意用于观察拒绝的样本，不是需要你修成新小说的任务。
+{
+  "chapter": "1",
+  "title": "停钟（教学错误输入）",
+  "text": null,
+  "status": "draft"
+}
+
+实际完整stderr如下：
+[
+  {
+    "expected": "number",
+    "code": "invalid_type",
+    "path": [
+      "chapter"
+    ],
+    "message": "Invalid input: expected number, received string"
+  },
+  {
+    "expected": "string",
+    "code": "invalid_type",
+    "path": [
+      "text"
+    ],
+    "message": "Invalid input: expected string, received null"
+  }
+]
+
+
+输入契约与完整解析入口在src/draft.ts，调用方在src/input.ts。请连续读取这两份实际文件、package.json和tsconfig.json；核对类型检查、JSON解析、schema解析各做了什么。不要把as Draft、any或重装依赖当作默认修复，也不要使用摘要代替我提供的输入和错误。
+
+交回一份有文件依据的简短说明：当前错误在哪一步发生；为什么类型检查通过仍可能拒绝输入；这个受控错误是否有必要修改；若迁移到真实外部输入，还缺哪项来源或转换约定。需要验证时先说明最小命令与要区分的两种可能；不要保存段落、连接其他业务库、调用模型服务或写新的Agent循环。
+
+本提示是教师构造的排错提案，尚未执行新的模型任务。

@@ -1,23 +1,25 @@
 import '../lab.css';
 import './style.css';
 import { markdown } from '../../../../shared/markdown.ts';
-import { CONDITIONS, QUESTION, type DisclosureRun, type Material } from './contract.ts';
+import { CONDITIONS, QUESTION, type DisclosureRun } from './contract.ts';
+import { createMaterialBrowser } from './material-browser.ts';
 
 document.querySelector('#app')!.innerHTML = `
-  <header><h1>渐进式披露</h1><p>先提供入口，再按当前问题取得目录和原文。</p></header>
+  <header><h1>渐进式信息披露</h1><p>围绕当前续写任务，按需展开人物、场景与原文依据。</p></header>
   <div id="question"></div>
   <div class="disclosure-controls"><label>实验条件 <select id="condition"></select></label><button id="run">运行实验</button><button id="classroom" class="secondary">查看课堂实录</button><button id="stop" class="secondary" hidden>停止</button></div>
   <p class="note">沿用顶部的共用模型设置，会产生实际用量。</p><p id="status" role="status"></p>
   <section id="result" hidden></section>
-  <details><summary>预览现有资料</summary><div class="disclosure-controls"><label>资料 <select id="material"></select></label><button id="preview" class="secondary">查看</button></div><div id="material-text"></div></details>
+  <details id="materials"><summary>预览创作资料</summary><div id="material-browser"></div></details>
   <details id="records"><summary>运行记录</summary><label>查看运行记录 <select id="history"><option value="">请选择</option></select></label><div id="requests"></div><a id="download" hidden>下载本次记录</a></details>
   <p class="note"><a href="./history/课堂实录.html">查看历史课堂实录</a></p>`;
 const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
-const condition = el<HTMLSelectElement>('condition'), history = el<HTMLSelectElement>('history'), material = el<HTMLSelectElement>('material');
+const condition = el<HTMLSelectElement>('condition'), history = el<HTMLSelectElement>('history');
 const start = el<HTMLButtonElement>('run'), stop = el<HTMLButtonElement>('stop'), status = el('status');
-el('question').append(markdown(QUESTION.split('\n\n')[0]));
+el('question').append(markdown(QUESTION));
 Object.entries(CONDITIONS).forEach(([id, name]) => condition.add(new Option(name, id)));
 let controller: AbortController | undefined;
+let materials: ReturnType<typeof createMaterialBrowser> | undefined;
 function detail(title: string, content: HTMLElement) {
   const box = document.createElement('details'), label = document.createElement('summary'); label.textContent = title; box.append(label, content); return box;
 }
@@ -29,7 +31,7 @@ function show(run: DisclosureRun, recordUrl = `/api/disclosure/runs/${run.id}`) 
     const heading = document.createElement('h2'); heading.textContent = '实际披露过程'; result.append(heading);
     for (const entry of run.supplied) result.append(detail(`首次提供：${entry.path}`, markdown(entry.text)));
     for (const read of run.reads) result.append(detail(`第 ${read.request} 次请求后读取：${read.path}`, markdown(read.text)));
-    if (!run.reads.length) { const p = document.createElement('p'); p.textContent = '本次没有发生后续读取；回答正确也不能证明原文已进入上下文。'; result.append(p); }
+    if (!run.reads.length) { const p = document.createElement('p'); p.textContent = '本次没有发生后续读取；写出草稿也不能证明相关档案已进入上下文。'; result.append(p); }
     if (run.answer) result.append(detail('实际回答', markdown(run.answer)));
   } else if (run.answer) { const h = document.createElement('h2'); h.textContent = '实际回答'; result.append(h, markdown(run.answer)); }
   if (run.summary !== undefined) result.append(detail('本次生成的摘要', markdown(run.summary)));
@@ -38,7 +40,7 @@ function show(run: DisclosureRun, recordUrl = `/api/disclosure/runs/${run.id}`) 
     const body = document.createElement('div'); body.append(detail('实际发送的输入', raw(JSON.parse(request.requestBody))), detail('模型返回与用量', raw(request)));
     records.append(detail(`第 ${index + 1} 次请求：${request.step}`, body));
   });
-  const download = el<HTMLAnchorElement>('download'); download.hidden = false; download.href = recordUrl; download.download = `渐进式披露-${run.id}.json`;
+  const download = el<HTMLAnchorElement>('download'); download.hidden = false; download.href = recordUrl; download.download = `渐进式信息披露-${run.id}.json`;
 }
 async function loadRuns(selected?: string) {
   const response = await fetch('/api/disclosure/runs'); if (!response.ok) throw new Error('运行记录无法读回。');
@@ -57,7 +59,7 @@ start.addEventListener('click', async () => {
 stop.addEventListener('click', () => controller?.abort());
 el('classroom').addEventListener('click', async () => {
   try {
-    const url = `/requests/records/disclosure/${condition.value}.json`; const response = await fetch(url);
+    const url = `/requests/records/disclosure/novel/${condition.value}.json`; const response = await fetch(url);
     if (!response.ok) throw new Error('课堂实录无法读回。'); show(await response.json(), url);
   } catch (error) { status.textContent = (error as Error).message; }
 });
@@ -69,15 +71,19 @@ history.addEventListener('change', async () => {
   try { const response = await fetch(`/api/disclosure/runs/${history.value}`); if (!response.ok) throw new Error('该记录无法读回。'); show(await response.json()); }
   catch (error) { status.textContent = (error as Error).message; }
 });
-el('preview').addEventListener('click', async () => {
-  try {
-    const response = await fetch(`/api/disclosure/materials?path=${encodeURIComponent(material.value)}`); if (!response.ok) throw new Error('资料无法读回。');
-    const source = await response.json() as Material; el('material-text').replaceChildren(markdown(source.text));
-  } catch (error) { status.textContent = (error as Error).message; }
-});
 void (async () => {
   try {
     const response = await fetch('/api/disclosure/materials'); if (!response.ok) throw new Error('资料目录无法读回。');
-    const data = await response.json() as { paths: string[] }; data.paths.forEach(path => material.add(new Option(path, path))); material.value = '入口.md'; await loadRuns();
+    const data = await response.json() as { paths: string[] }; materials = createMaterialBrowser(el('material-browser'), data.paths);
+    void materials.select('全书入口.md'); await loadRuns();
   } catch (error) { status.textContent = (error as Error).message; start.disabled = true; }
 })();
+
+// 资料链接复用预览入口，按资料库路径读取，不跳转到不存在的网页。
+el('app').addEventListener('click', event => {
+  const link = (event.target as Element).closest('a');
+  const href = link?.getAttribute('href');
+  const path = href ? materials?.resolve(href) : undefined;
+  if (!path || !materials) return;
+  event.preventDefault(); el<HTMLDetailsElement>('materials').open = true; void materials.select(path);
+});

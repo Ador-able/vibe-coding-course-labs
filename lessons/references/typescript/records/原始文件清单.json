@@ -1,0 +1,135 @@
+{
+  "unitKey": "vcr-01",
+  "packageName": "ai-runtime-reference",
+  "start": "669c580d9d78cfc407ca04a8453f2b4e8cf4825a",
+  "end": "ce16cfe937ab20d0b0a15f697c3ee8cb5057b99d",
+  "sourceFiles": 16,
+  "modelCalls": 0,
+  "members": [
+    {
+      "path": "README.md",
+      "bytes": 2784,
+      "sha256": "af197ea7a933f528d2c7623c8f399c6220f74378e88103c0853ea81d18fc32a6"
+    },
+    {
+      "path": "原始观察/完整观察.json",
+      "bytes": 10999,
+      "sha256": "39f636951ce2716447fbf8056e84710b6c05a946ec263472763552ad3e0900e1"
+    },
+    {
+      "path": "原始观察/完整输入输出核对.json",
+      "bytes": 11828,
+      "sha256": "c693423bc3e4c718f08c0107df0a54e6495d9ca25302e5160de3a4fe09f42841"
+    },
+    {
+      "path": "原始观察/实际保存草稿.json",
+      "bytes": 287,
+      "sha256": "cff01d758a44efbb547ff51bc47bd95dfc46930a25a4495ace4ee4797bd26077"
+    },
+    {
+      "path": "原始观察/恢复安装错误片段.json",
+      "bytes": 1880,
+      "sha256": "e70e5f43fc6c4a35cc6b2a22a2a47ea48dc3ea6fb07654963f37ed8e56806883"
+    },
+    {
+      "path": "教学材料/完整排错提示-未执行.txt",
+      "bytes": 1929,
+      "sha256": "628c3f06707f19319bee871ae81a953de6f290ba731684acdc0d7c231d073da8"
+    },
+    {
+      "path": "教学材料/带逗号与换行的CSV示意.csv",
+      "bytes": 88,
+      "sha256": "037b1ed69d10a98523de480d3226c9ca46abaec1ad168f8bfdd5994152e08167"
+    },
+    {
+      "path": "教学材料/联合状态示意.ts",
+      "bytes": 277,
+      "sha256": "0899fed52662ef71791ffb7eb816da8455149fbb24af4d6d198c5ce0f300d17c"
+    },
+    {
+      "path": "教学记录.bundle",
+      "bytes": 10468,
+      "sha256": "5988a83f675904cb985a71efa1618f1a7ab8ad61334787040b9cf88ea3db543e"
+    },
+    {
+      "path": "项目源码/.gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": "项目源码/.gitignore",
+      "bytes": 28,
+      "sha256": "e336568328202eb78e48692bf2858698a97b22a7591553ffc80db880e7770fc0"
+    },
+    {
+      "path": "项目源码/README.md",
+      "bytes": 3441,
+      "sha256": "139d817a3dd92a30e0083877d117f02e711a845568bc0ae7e5f258a6cda06ea5"
+    },
+    {
+      "path": "项目源码/inputs/有效草稿.json",
+      "bytes": 279,
+      "sha256": "bc45fc4a2644dca30c1ceb26cc7120609117a9c665716a25c4a8102ef4e39227"
+    },
+    {
+      "path": "项目源码/inputs/演示环境.env",
+      "bytes": 29,
+      "sha256": "f337afd5694edf75b9d85ddb8936db077dd9be8828b3032792ca6835dcbc68d1"
+    },
+    {
+      "path": "项目源码/inputs/错误类型.json",
+      "bytes": 103,
+      "sha256": "e3efa1931eb2f041eeab40e6e2b685da646ab6bd85fecca4617594e5fadf90fd"
+    },
+    {
+      "path": "项目源码/package.json",
+      "bytes": 489,
+      "sha256": "6a55b09ef36e7612f74767e266dbfac69c91538bd0b283ce9220b49fa55ac837"
+    },
+    {
+      "path": "项目源码/pnpm-lock.yaml",
+      "bytes": 8252,
+      "sha256": "02d1c9830f3e6af87042dd374e34bbf358dc4b01754ddd169e88aae2135c2c4b"
+    },
+    {
+      "path": "项目源码/pnpm-workspace.yaml",
+      "bytes": 68,
+      "sha256": "78f23b64562475936021c61a8f7dd72278bcd94f3b18a648b154eb259bc3262d"
+    },
+    {
+      "path": "项目源码/scripts/observe.mjs",
+      "bytes": 2631,
+      "sha256": "e45af4d96d33935b9284144d8d7c4c5c077a63d21fde126feb9fc82d35441d8d"
+    },
+    {
+      "path": "项目源码/src/draft.ts",
+      "bytes": 595,
+      "sha256": "b797d984f172806344eabf9b4a8f6e0f79d831feb5748e4f0526c5f8816d918a"
+    },
+    {
+      "path": "项目源码/src/encoding.ts",
+      "bytes": 584,
+      "sha256": "ce616dc62321a752e61b07706f363a274e08249a91f6736e2a8d2d116bbc9a03"
+    },
+    {
+      "path": "项目源码/src/environment.ts",
+      "bytes": 763,
+      "sha256": "6b4f04913ee836962fa3ccadf4ad08ada92f89eb3810f64f4230b4a87defd30a"
+    },
+    {
+      "path": "项目源码/src/input.ts",
+      "bytes": 629,
+      "sha256": "f8b677aa56afaec040c957a276882ddc030e8c6c11c42908ad263cb309395899"
+    },
+    {
+      "path": "项目源码/src/save.ts",
+      "bytes": 1548,
+      "sha256": "9383fd2d4db9ac2fdfbf94dc9ab1e6351aabbc68bd0aaacee1b5a0ed786d5547"
+    },
+    {
+      "path": "项目源码/tsconfig.json",
+      "bytes": 305,
+      "sha256": "3a0b8d8868f3f78afcdcbe4dcfcfc9980c270ef84fc6a0b38c83545187985683"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "node": "v24.12.0",
+  "modelCalls": 0,
+  "scope": "独立CLI教学输入；没有模型、界面、生产数据库或交互终端。",
+  "records": [
+    {
+      "label": "有效外部输入",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "src/input.ts"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": null,
+      "status": 0,
+      "stdout": "{\n  \"status\": \"parsed\",\n  \"description\": \"1 / 停钟（教学局部样本） / 1条说明\",\n  \"draft\": {\n    \"chapter\": 1,\n    \"title\": \"停钟（教学局部样本）\",\n    \"text\": \"林澈在钟楼门外停下脚步。他没有钥匙，先敲了两下门。\\n\\n门里有人问：来做什么？\",\n    \"status\": \"draft\",\n    \"notes\": [\n      \"这是人工教学输入，不是新模型输出。\"\n    ]\n  }\n}\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "label": "教学错误类型",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "src/input.ts",
+        "inputs/错误类型.json"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": null,
+      "status": 1,
+      "stdout": "",
+      "stderr": "[\n  {\n    \"expected\": \"number\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"chapter\"\n    ],\n    \"message\": \"Invalid input: expected number, received string\"\n  },\n  {\n    \"expected\": \"string\",\n    \"code\": \"invalid_type\",\n    \"path\": [\n      \"text\"\n    ],\n    \"message\": \"Invalid input: expected string, received null\"\n  }\n]\n",
+      "error": null
+    },
+    {
+      "label": "真实异步保存与完整读回",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "src/save.ts"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": null,
+      "status": 0,
+      "stdout": "{\"observation\":\"调用后立即观察\",\"returnedPromise\":true,\"steps\":[\"函数已经开始\"]}\n{\"observation\":\"等待后观察\",\"steps\":[\"函数已经开始\",\"写入已返回\",\"全文已读回\"],\"saved\":{\"status\":\"saved\",\"file\":\"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\output\\\\草稿.json\",\"draft\":{\"chapter\":1,\"title\":\"停钟（教学局部样本）\",\"text\":\"林澈在钟楼门外停下脚步。他没有钥匙，先敲了两下门。\\n\\n门里有人问：来做什么？\",\"status\":\"draft\",\"notes\":[\"这是人工教学输入，不是新模型输出。\"]},\"completeFile\":\"{\\n  \\\"chapter\\\": 1,\\n  \\\"title\\\": \\\"停钟（教学局部样本）\\\",\\n  \\\"text\\\": \\\"林澈在钟楼门外停下脚步。他没有钥匙，先敲了两下门。\\\\n\\\\n门里有人问：来做什么？\\\",\\n  \\\"status\\\": \\\"draft\\\",\\n  \\\"notes\\\": [\\n    \\\"这是人工教学输入，不是新模型输出。\\\"\\n  ]\\n}\\n\"}}\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "label": "教学写入失败",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "src/save.ts",
+        "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\output\\草稿.json\\失败草稿.json"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": null,
+      "status": 1,
+      "stdout": "{\"observation\":\"调用后立即观察\",\"returnedPromise\":true,\"steps\":[\"函数已经开始\"]}\n",
+      "stderr": "ENOENT: no such file or directory, open 'D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\output\\草稿.json\\失败草稿.json'\n",
+      "error": null
+    },
+    {
+      "label": "项目根与未加载env文件",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "src/environment.ts"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": null,
+      "status": 0,
+      "stdout": "{\n  \"node\": \"v24.12.0\",\n  \"platform\": \"win32\",\n  \"cwd\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\",\n  \"moduleDirectory\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\src\\\\\",\n  \"cwdInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\有效草稿.json\",\n    \"exists\": true\n  },\n  \"moduleInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\有效草稿.json\",\n    \"exists\": true\n  },\n  \"demoMessage\": \"未设置\"\n}\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "label": "不同cwd",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\src\\environment.ts"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\inputs",
+      "demoOverride": null,
+      "status": 0,
+      "stdout": "{\n  \"node\": \"v24.12.0\",\n  \"platform\": \"win32\",\n  \"cwd\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\",\n  \"moduleDirectory\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\src\\\\\",\n  \"cwdInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\inputs\\\\有效草稿.json\",\n    \"exists\": false\n  },\n  \"moduleInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\有效草稿.json\",\n    \"exists\": true\n  },\n  \"demoMessage\": \"未设置\"\n}\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "label": "显式env文件",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--env-file=inputs/演示环境.env",
+        "src/environment.ts"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": null,
+      "status": 0,
+      "stdout": "{\n  \"node\": \"v24.12.0\",\n  \"platform\": \"win32\",\n  \"cwd\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\",\n  \"moduleDirectory\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\src\\\\\",\n  \"cwdInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\有效草稿.json\",\n    \"exists\": true\n  },\n  \"moduleInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\有效草稿.json\",\n    \"exists\": true\n  },\n  \"demoMessage\": \"from-file\"\n}\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "label": "现有进程变量优先",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "--env-file=inputs/演示环境.env",
+        "src/environment.ts"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": "from-process",
+      "status": 0,
+      "stdout": "{\n  \"node\": \"v24.12.0\",\n  \"platform\": \"win32\",\n  \"cwd\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\",\n  \"moduleDirectory\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\src\\\\\",\n  \"cwdInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\有效草稿.json\",\n    \"exists\": true\n  },\n  \"moduleInput\": {\n    \"file\": \"D:\\\\Projects\\\\Knowledge\\\\.coursebook-work\\\\localhost-9dfdb2d9c020\\\\2\\\\runs\\\\authoring-20261002\\\\vcr-01\\\\lab\\\\inputs\\\\有效草稿.json\",\n    \"exists\": true\n  },\n  \"demoMessage\": \"from-process\"\n}\n",
+      "stderr": "",
+      "error": null
+    },
+    {
+      "label": "真实UTF8分块",
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "src/encoding.ts"
+      ],
+      "cwd": "D:\\Projects\\Knowledge\\.coursebook-work\\localhost-9dfdb2d9c020\\2\\runs\\authoring-20261002\\vcr-01\\lab\\",
+      "demoOverride": null,
+      "status": 0,
+      "stdout": "{\n  \"original\": \"林澈\",\n  \"utf8Bytes\": [\n    230,\n    158,\n    151,\n    230,\n    190,\n    136\n  ],\n  \"firstChunk\": [\n    230\n  ],\n  \"restChunk\": [\n    158,\n    151,\n    230,\n    190,\n    136\n  ],\n  \"independent\": \"���澈\",\n  \"complete\": \"林澈\",\n  \"tokenizationPerformed\": false\n}\n",
+      "stderr": "",
+      "error": null
+    }
+  ],
+  "completeSavedBeforeFailure": "{\n  \"chapter\": 1,\n  \"title\": \"停钟（教学局部样本）\",\n  \"text\": \"林澈在钟楼门外停下脚步。他没有钥匙，先敲了两下门。\\n\\n门里有人问：来做什么？\",\n  \"status\": \"draft\",\n  \"notes\": [\n    \"这是人工教学输入，不是新模型输出。\"\n  ]\n}\n",
+  "completeSavedAfterFailure": "{\n  \"chapter\": 1,\n  \"title\": \"停钟（教学局部样本）\",\n  \"text\": \"林澈在钟楼门外停下脚步。他没有钥匙，先敲了两下门。\\n\\n门里有人问：来做什么？\",\n  \"status\": \"draft\",\n  \"notes\": [\n    \"这是人工教学输入，不是新模型输出。\"\n  ]\n}\n",
+  "beforeSha256": "cff01d758a44efbb547ff51bc47bd95dfc46930a25a4495ace4ee4797bd26077",
+  "afterSha256": "cff01d758a44efbb547ff51bc47bd95dfc46930a25a4495ace4ee4797bd26077",
+  "previousFileUnchanged": true
+}

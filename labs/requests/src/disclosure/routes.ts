@@ -41,7 +41,7 @@ export function createDisclosureRouter(env: NodeJS.ProcessEnv, projectDirectory:
     res.on('close', cancel);
     try {
       const materials = await openMaterials(projectDirectory);
-      await runDisclosure(readConfig(env), materials, run, AbortSignal.any([controller.signal, AbortSignal.timeout(180_000)]));
+      await runDisclosure(readConfig(env), materials, run, AbortSignal.any([controller.signal, AbortSignal.timeout(600_000)]));
       run.state = 'completed';
     } catch (error) {
       run.state = 'failed'; run.error = error instanceof Error ? error.message : '实验未能完成。';

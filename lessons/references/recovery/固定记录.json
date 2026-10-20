@@ -1,0 +1,12 @@
+{
+  "unitKey": "vcr-02",
+  "fixedStart": "c3805c360551c10fedfd9b5473e569cfd7666dc0",
+  "personalCommit": "1c36e9aec07234a250e7f2c7af6d59f533f48bb3",
+  "stashCommit": "e65a837ccecee6233fa265c7597c8182064108f1",
+  "workId": "recovery-3007716d-3a6c-40b1-9477-f191d4c6b4c0",
+  "modelCalls": 0,
+  "httpStarts": 0,
+  "browserRuns": 0,
+  "scope": "只核实际Git文件、提交、stash、worktree与业务数据范围；未模拟会话或撤销外部动作，不据此推论文学质量或所有恢复模式。",
+  "entryBoundary": "本次中文项目路径下，原prototype-seed CLI退出0但入口条件未进入；随后通过同一已有seedPrototype导出API初始化，完整调用及输入在records，未改应用源码。"
+}

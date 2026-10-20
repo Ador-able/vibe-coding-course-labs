@@ -1,0 +1,24 @@
+{
+  "scope": "两次恢复安装的实际失败条件和完整错误行；不是完整进度日志，原因尚未确认",
+  "cwd": "D:/Projects/Knowledge/.coursebook-work/r01-pkg-20261003/运行练习",
+  "gitEnd": "ce16cfe937ab20d0b0a15f697c3ee8cb5057b99d",
+  "package": "ai-runtime-reference",
+  "pnpm": "11.20.0",
+  "attempts": [
+    {
+      "args": ["install", "--frozen-lockfile"],
+      "exitCode": 1,
+      "error": "[ERR_PNPM_EPERM] [importPackage D:\\Projects\\Knowledge\\.coursebook-work\\r01-pkg-20261003\\运行练习\\node_modules\\.pnpm\\zod@4.6.5\\node_modules\\zod] EPERM: operation not permitted, rename 'D:\\Projects\\Knowledge\\.coursebook-work\\r01-pkg-20261003\\运行练习\\node_modules\\.pnpm\\zod@4.6.5\\node_modules\\zod_tmp_39636_3' -> 'D:\\Projects\\Knowledge\\.coursebook-work\\r01-pkg-20261003\\运行练习\\node_modules\\.pnpm\\zod@4.6.5\\node_modules\\zod'"
+    },
+    {
+      "args": ["install", "--frozen-lockfile", "--package-import-method=copy"],
+      "exitCode": 1,
+      "error": "[ERR_PNPM_EPERM] [importPackage D:\\Projects\\Knowledge\\.coursebook-work\\r01-pkg-20261003\\运行练习\\node_modules\\.pnpm\\undici-types@7.24.6\\node_modules\\undici-types] EPERM: operation not permitted, rename 'D:\\Projects\\Knowledge\\.coursebook-work\\r01-pkg-20261003\\运行练习\\node_modules\\.pnpm\\undici-types@7.24.6\\node_modules\\undici-types_tmp_33512_6' -> 'D:\\Projects\\Knowledge\\.coursebook-work\\r01-pkg-20261003\\运行练习\\node_modules\\.pnpm\\undici-types@7.24.6\\node_modules\\undici-types'"
+    }
+  ],
+  "sourceOrLockfileChanged": false,
+  "globalConfigurationChanged": false,
+  "modelCalls": 0,
+  "failureWasNotApplicationRun": true,
+  "diagnosis": "仅确认包导入阶段重命名失败。不能由这两次记录断定中文目录、硬链接、防病毒软件或具体依赖代码是原因。原失败目录保留。"
+}

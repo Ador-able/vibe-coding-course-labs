@@ -1,5 +1,6 @@
 packages:
   - lessons/*/project
+  - lessons/references/typescript/project
   - labs/*
 sharedWorkspaceLockfile: false
 # 各章使用独立锁文件，统一准备时依次安装。
