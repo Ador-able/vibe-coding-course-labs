@@ -3,11 +3,6 @@ const action = (id: string, label: string, runtime: Action['runtime'], entry: st
 
 // 页面只提供课程中已有的实验入口，不接收自由命令。
 export const lessonActions: Record<string, Action[]> = {
-  chapter03: [
-    action('tiered', '按需读取', 'codex', '运行三种读法.mjs', ['--condition', 'tiered'], '运行记录'),
-    action('full', '提供全文', 'codex', '运行三种读法.mjs', ['--condition', 'full'], '运行记录'),
-    action('summary', '只提供本次摘要', 'codex', '运行三种读法.mjs', ['--condition', 'summary'], '运行记录'),
-  ],
   chapter04: ['none', 'conflict', 'consistent'].map((id, n) => action(id, ['不提供样例', '提供冲突样例', '提供相容样例'][n], 'codex', '运行实验.mjs', ['--condition', id], '运行记录')),
   chapter05: ['serial', 'agent'].map((id, n) => action(id, ['应用安排读取', 'Agent 安排读取'][n], 'codex', 'dist/control.js', ['--case', 'existing', '--mode', id, '--cancel-after-ms', '180000'], 'runs/control')),
   chapter07: [

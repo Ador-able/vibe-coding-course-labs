@@ -6,7 +6,7 @@ import { isObject as object, sendRecordedRequest } from '../recorded-model.ts';
 type ToolChoice = 'none' | { type: 'function'; function: { name: 'get_novel_excerpt' } };
 type AssistantMessage = Message & { role: 'assistant' };
 
-function parseMessage(value: unknown): AssistantMessage {
+export function parseMessage(value: unknown): AssistantMessage {
   if (!object(value) || value.role !== 'assistant' || (value.content !== null && typeof value.content !== 'string')) {
     throw new ModelError('MODEL_RESPONSE_INVALID', '模型没有返回可识别的助手消息。');
   }

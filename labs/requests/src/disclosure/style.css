@@ -1,0 +1,11 @@
+.disclosure-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin: 20px 0 10px; }
+.disclosure-controls label, #history { font-size: 14px; }
+.disclosure-controls label { display: flex; align-items: center; gap: 10px; }
+main details { border-top: 1px solid var(--lab-border); margin-top: 18px; padding-top: 12px; }
+main summary { color: var(--lab-accent); cursor: pointer; font-size: 14px; padding: 4px 0; }
+#question { margin: 24px 0; }
+#result { margin-top: 28px; }
+#result h2 { margin-top: 24px; }
+#requests pre { max-height: 440px; overflow: auto; font-size: 13px; padding: 14px; white-space: pre-wrap; overflow-wrap: anywhere; }
+#material-text { margin-top: 16px; }
+#history { max-width: 100%; }

@@ -12,7 +12,8 @@ import { createLessonRuns } from './lesson-runs.ts';
 const root = resolve(import.meta.dirname, '..');
 
 export async function createCourseApp(configPath?: string, dataDirectory = join(root, '.data')) {
-  const app = createApp(undefined, console.log, configPath);
+  const disclosureProject = join(root, 'lessons/chapter03/project');
+  const app = createApp(undefined, console.log, configPath, { projectDirectory: disclosureProject, recordDirectory: join(dataDirectory, 'disclosure') });
   const messages = await createMessageHistoryRouter(dataDirectory);
   const requests = await createRequestsRouter(join(dataDirectory, 'requests'));
   const lessons = createLessonRuns(root);
@@ -22,6 +23,12 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
   app.use('/mechanics', express.static(join(root, 'labs/mechanics/dist')));
   app.use('/requests', express.static(join(root, 'labs/requests/dist')));
   app.use('/lessons/materials', express.static(join(root, 'lessons/materials')));
+  // 历史课堂页及其相对链接原样读取，新接口记录另存。
+  app.get('/requests/disclosure/history/:file', (req, res, next) => {
+    if (req.params.file !== '课堂实录.html') { next(); return; }
+    res.sendFile('课堂实录.html', { root: disclosureProject });
+  });
+  for (const directory of ['运行记录', '课堂记录']) app.use(`/requests/disclosure/history/${directory}`, express.static(join(disclosureProject, directory)));
 
   // 各章只读工作台共用当前服务，实验程序仍在各章目录执行。
   for (const [url, title] of groups[2].items) {
