@@ -6,11 +6,11 @@ import { createMaterialBrowser } from './material-browser.ts';
 
 document.querySelector('#app')!.innerHTML = `
   <header><h1>渐进式信息披露</h1><p>围绕当前续写任务，按需展开人物、场景与原文依据。</p></header>
+  <details id="materials"><summary>预览创作资料</summary><div id="material-browser"></div></details>
   <div id="question"></div>
   <div class="disclosure-controls"><label>实验条件 <select id="condition"></select></label><button id="run">运行实验</button><button id="classroom" class="secondary">查看课堂实录</button><button id="stop" class="secondary" hidden>停止</button></div>
   <p class="note">沿用顶部的共用模型设置，会产生实际用量。</p><p id="status" role="status"></p>
   <section id="result" hidden></section>
-  <details id="materials"><summary>预览创作资料</summary><div id="material-browser"></div></details>
   <details id="records"><summary>运行记录</summary><label>查看运行记录 <select id="history"><option value="">请选择</option></select></label><div id="requests"></div><a id="download" hidden>下载本次记录</a></details>
   <p class="note"><a href="./history/课堂实录.html">查看历史课堂实录</a></p>`;
 const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
