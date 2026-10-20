@@ -1,7 +1,7 @@
 import './style.css';
 import { QUESTION } from './novel-materials.ts';
 import './lab.css';
-import { renderMarkdown } from './markdown.ts';
+import { renderMarkdown } from '../../../shared/markdown.ts';
 import type { AskResult, RequestTrace } from './contract.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `

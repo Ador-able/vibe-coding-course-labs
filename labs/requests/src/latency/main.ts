@@ -1,6 +1,6 @@
 import './style.css';
 import '../lab.css';
-import { markdown, renderMarkdown } from '../markdown.ts';
+import { markdown, renderMarkdown } from '../../../../shared/markdown.ts';
 import { CONDITIONS, QUESTION, type Condition } from './materials.ts';
 import { usageOf, type ClientEvent, type StreamRecord } from './contract.ts';
 import { readEvents } from './sse.ts';

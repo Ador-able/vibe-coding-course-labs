@@ -1,4 +1,5 @@
 import { lessonActions } from './lesson-actions.ts';
+import { renderMarkdown } from './markdown.ts';
 
 const chapter = location.pathname.split('/')[2], actions = lessonActions[chapter];
 if (location.pathname.startsWith('/lessons/') && actions) {
@@ -25,8 +26,9 @@ if (location.pathname.startsWith('/lessons/') && actions) {
     const answers = run.files.filter(file => /(?:output|final-response|all-agent-messages|answer)\.(?:txt|md)$/.test(file.name));
     for (const file of answers) {
       const response = await fetch(file.url); if (!response.ok) throw new Error('回答未能读回，请展开运行记录。');
-      const heading = document.createElement('h3'); heading.textContent = file.name.split('/').slice(-2).join(' / ');
-      const text = document.createElement('pre'); text.className = 'lesson-run-answer'; text.textContent = await response.text(); results.append(heading, text);
+      const names: Record<string, string> = { tiered: '按需读取', full: '提供全文', compress: '本次生成的摘要', summary: '只提供本次摘要' };
+      const heading = document.createElement('h3'); heading.textContent = names[file.name.split('/').at(-2)!] || '实际回答';
+      const text = document.createElement('div'); text.className = 'lesson-run-answer'; renderMarkdown(text, await response.text()); results.append(heading, text);
     }
     if (!answers.length) {
       for (const file of run.files.filter(file => /(?:^|\/)report\.json$/.test(file.name))) {
@@ -34,7 +36,7 @@ if (location.pathname.startsWith('/lessons/') && actions) {
         const report = await response.json();
         if (report.passed === true) { const p = document.createElement('p'); p.textContent = `本次核对通过${report.modelCalls === 0 ? '，未调用模型' : ''}。`; results.append(p); }
         for (const [index, record] of (report.records || []).entries()) {
-          if (typeof record.result?.text === 'string') { const h = document.createElement('h3'); h.textContent = `回答 ${index + 1}`; const p = document.createElement('pre'); p.className = 'lesson-run-answer'; p.textContent = record.result.text; results.append(h, p); }
+          if (typeof record.result?.text === 'string') { const h = document.createElement('h3'); h.textContent = `回答 ${index + 1}`; const p = document.createElement('div'); p.className = 'lesson-run-answer'; renderMarkdown(p, record.result.text); results.append(h, p); }
         }
       }
     }

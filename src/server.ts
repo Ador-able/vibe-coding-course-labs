@@ -73,8 +73,6 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
   });
   app.use('/originals', originals);
   app.get('/course.css', (_req, res) => res.sendFile('style.css', { root: join(root, 'web') }));
-  app.get('/layout.css', (_req, res) => res.sendFile('layout.css', { root: join(root, 'shared') }));
-  app.get('/theme.css', (_req, res) => res.sendFile('theme.css', { root: join(root, 'shared') }));
   app.use(express.static(join(root, 'dist/home')));
   app.use((_req, res) => res.status(404).type('text').send('没有找到这个实验入口。'));
   app.use((error: NodeJS.ErrnoException, _req: express.Request, res: express.Response, _next: express.NextFunction) => {

@@ -1,6 +1,6 @@
 import './style.css';
 import '../lab.css';
-import { markdown } from '../markdown.ts';
+import { markdown } from '../../../../shared/markdown.ts';
 import { BACKGROUND, PREVIOUS_CHAPTER, INITIAL_TASK } from './scenario.ts';
 import { acceptTurn, type Turn, type CollaborationResponse, type CollaborationResult } from './contract.ts';
 

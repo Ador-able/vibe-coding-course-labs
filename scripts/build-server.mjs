@@ -1,4 +1,7 @@
 import { build } from 'esbuild';
+import { copyFile } from 'node:fs/promises';
+
+for (const name of ['layout.css', 'theme.css', 'markdown.css']) await copyFile(`shared/${name}`, `dist/home/${name}`);
 
 await build({
   entryPoints: ['shared/lab-shell.ts'], outfile: 'dist/home/navigation.js', bundle: true,

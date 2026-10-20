@@ -1,5 +1,5 @@
 import './style.css';
-import { markdown } from '../markdown.ts';
+import { markdown } from '../../../../shared/markdown.ts';
 import { MATERIAL } from './material.ts';
 import { DefaultChatTransport, readUIMessageStream } from 'ai';
 import type { AssistantMessage, Chunk, RunRecord, State } from './contract.ts';

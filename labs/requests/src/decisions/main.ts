@@ -1,6 +1,6 @@
 import './style.css';
 import '../lab.css';
-import { markdown, renderMarkdown } from '../markdown.ts';
+import { markdown, renderMarkdown } from '../../../../shared/markdown.ts';
 import { BACKGROUND, PREVIOUS_CHAPTER, GOAL } from './scenario.ts';
 import { chooseOption, clearSelection, editDraft, emptyDecision, type Decision, type DecisionRun, type DecisionResponse, type OptionIndex } from './contract.ts';
 

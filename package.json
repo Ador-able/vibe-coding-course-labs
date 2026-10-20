@@ -14,9 +14,17 @@
     "check": "tsc --noEmit && pnpm --filter model-mechanics-lab --filter ai-request-lab -r check",
     "test": "node --import tsx --test test/*.test.ts"
   },
-  "dependencies": { "express": "5.2.1", "marked": "18.0.13" },
+  "dependencies": {
+    "dompurify": "3.4.16",
+    "express": "5.2.1",
+    "marked": "18.0.13"
+  },
   "devDependencies": {
-    "@types/express": "5.0.6", "@types/node": "24.19.1", "esbuild": "0.28.2",
-    "tsx": "4.23.15", "typescript": "5.9.3", "vite": "8.3.1"
+    "@types/express": "5.0.6",
+    "@types/node": "24.19.1",
+    "esbuild": "0.28.2",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vite": "8.3.1"
   }
 }
