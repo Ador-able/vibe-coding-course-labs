@@ -1,0 +1,65 @@
+{
+  "downloadedAt": "2026-09-28T15:34:40.211Z",
+  "models": [
+    {
+      "key": "qwen3",
+      "name": "Qwen3-0.6B",
+      "repository": "Qwen/Qwen3-0.6B",
+      "revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+      "license": "Apache-2.0",
+      "files": [
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/Qwen/Qwen3-0.6B/resolve/c1899de289a04d12100db370d81485cdf75e47ca/tokenizer.json",
+          "bytes": 11422654,
+          "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/Qwen/Qwen3-0.6B/resolve/c1899de289a04d12100db370d81485cdf75e47ca/tokenizer_config.json",
+          "bytes": 9732,
+          "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+        },
+        {
+          "name": "LICENSE",
+          "url": "https://huggingface.co/Qwen/Qwen3-0.6B/resolve/c1899de289a04d12100db370d81485cdf75e47ca/LICENSE",
+          "bytes": 11343,
+          "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+        }
+      ]
+    },
+    {
+      "key": "deepseek-v3",
+      "name": "DeepSeek-V3",
+      "repository": "deepseek-ai/DeepSeek-V3",
+      "revision": "e815299b0bcbac849fa540c768ef21845365c9eb",
+      "license": "DeepSeek Model License；代码许可为 MIT",
+      "files": [
+        {
+          "name": "tokenizer.json",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/tokenizer.json",
+          "bytes": 7847652,
+          "sha256": "621ac2e32d0dba658404412318818aaa8ce8cda492e59830109d8da6b517fb41"
+        },
+        {
+          "name": "tokenizer_config.json",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/tokenizer_config.json",
+          "bytes": 3128,
+          "sha256": "637bcd1a08cf7c772ce6a383196b22930921c79c3c73223c5afc0c7f41545546"
+        },
+        {
+          "name": "LICENSE-MODEL",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/LICENSE-MODEL",
+          "bytes": 13759,
+          "sha256": "ccfee4895df06bcab524151c278e8dde88bbe76165a24ecbcbcf9fafd71fd2b3"
+        },
+        {
+          "name": "LICENSE-CODE",
+          "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3/resolve/e815299b0bcbac849fa540c768ef21845365c9eb/LICENSE-CODE",
+          "bytes": 1064,
+          "sha256": "1c8f573e830ca9b3ebfeb7ace1823146e22b66f99ee223840e7637c9e745e1c7"
+        }
+      ]
+    }
+  ]
+}

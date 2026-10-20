@@ -1,0 +1,369 @@
+{
+  "engine": "Python tokenizers 0.22.2（Rust 核心）",
+  "cases": [
+    {
+      "model": "qwen3",
+      "text": "你好，世界！",
+      "ids": [
+        108386,
+        3837,
+        99489,
+        6313
+      ],
+      "tokens": [
+        "ä½łå¥½",
+        "ï¼Į",
+        "ä¸ĸçķĮ",
+        "ï¼ģ"
+      ],
+      "decoded": "你好，世界！"
+    },
+    {
+      "model": "qwen3",
+      "text": "Hello, world!",
+      "ids": [
+        9707,
+        11,
+        1879,
+        0
+      ],
+      "tokens": [
+        "Hello",
+        ",",
+        "Ġworld",
+        "!"
+      ],
+      "decoded": "Hello, world!"
+    },
+    {
+      "model": "qwen3",
+      "text": "1234567890",
+      "ids": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        15
+      ],
+      "tokens": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0"
+      ],
+      "decoded": "1234567890"
+    },
+    {
+      "model": "qwen3",
+      "text": "const total = price * 2;",
+      "ids": [
+        1024,
+        2790,
+        284,
+        3349,
+        353,
+        220,
+        17,
+        26
+      ],
+      "tokens": [
+        "const",
+        "Ġtotal",
+        "Ġ=",
+        "Ġprice",
+        "Ġ*",
+        "Ġ",
+        "2",
+        ";"
+      ],
+      "decoded": "const total = price * 2;"
+    },
+    {
+      "model": "qwen3",
+      "text": "龘🙂",
+      "ids": [
+        82912,
+        246,
+        145080
+      ],
+      "tokens": [
+        "é¾",
+        "ĺ",
+        "ðŁĻĤ"
+      ],
+      "decoded": "龘🙂"
+    },
+    {
+      "model": "qwen3",
+      "text": "Hello\n  world\t!",
+      "ids": [
+        9707,
+        198,
+        220,
+        1879,
+        197,
+        0
+      ],
+      "tokens": [
+        "Hello",
+        "Ċ",
+        "Ġ",
+        "Ġworld",
+        "ĉ",
+        "!"
+      ],
+      "decoded": "Hello\n  world\t!"
+    },
+    {
+      "model": "qwen3",
+      "text": "café",
+      "ids": [
+        924,
+        58858
+      ],
+      "tokens": [
+        "ca",
+        "fÃ©"
+      ],
+      "decoded": "café"
+    },
+    {
+      "model": "qwen3",
+      "text": "<|endoftext|>你好",
+      "ids": [
+        151643,
+        108386
+      ],
+      "tokens": [
+        "<|endoftext|>",
+        "ä½łå¥½"
+      ],
+      "decoded": "<|endoftext|>你好"
+    },
+    {
+      "model": "qwen3",
+      "text": "<｜end▁of▁sentence｜>你好",
+      "ids": [
+        27,
+        130957,
+        408,
+        10417,
+        223,
+        1055,
+        10417,
+        223,
+        51889,
+        130957,
+        29,
+        108386
+      ],
+      "tokens": [
+        "<",
+        "ï½ľ",
+        "end",
+        "âĸ",
+        "ģ",
+        "of",
+        "âĸ",
+        "ģ",
+        "sentence",
+        "ï½ľ",
+        ">",
+        "ä½łå¥½"
+      ],
+      "decoded": "<｜end▁of▁sentence｜>你好"
+    },
+    {
+      "model": "qwen3",
+      "text": "",
+      "ids": [],
+      "tokens": [],
+      "decoded": ""
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "你好，世界！",
+      "ids": [
+        30594,
+        303,
+        3427,
+        1175
+      ],
+      "tokens": [
+        "ä½łå¥½",
+        "ï¼Į",
+        "ä¸ĸçķĮ",
+        "ï¼ģ"
+      ],
+      "decoded": "你好，世界！"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "Hello, world!",
+      "ids": [
+        19923,
+        14,
+        2058,
+        3
+      ],
+      "tokens": [
+        "Hello",
+        ",",
+        "Ġworld",
+        "!"
+      ],
+      "decoded": "Hello, world!"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "1234567890",
+      "ids": [
+        6895,
+        18009,
+        25744,
+        18
+      ],
+      "tokens": [
+        "123",
+        "456",
+        "789",
+        "0"
+      ],
+      "decoded": "1234567890"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "const total = price * 2;",
+      "ids": [
+        3949,
+        3452,
+        438,
+        5220,
+        982,
+        223,
+        20,
+        29
+      ],
+      "tokens": [
+        "const",
+        "Ġtotal",
+        "Ġ=",
+        "Ġprice",
+        "Ġ*",
+        "Ġ",
+        "2",
+        ";"
+      ],
+      "decoded": "const total = price * 2;"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "龘🙂",
+      "ids": [
+        2715,
+        249,
+        80300,
+        227
+      ],
+      "tokens": [
+        "é¾",
+        "ĺ",
+        "ðŁĻ",
+        "Ĥ"
+      ],
+      "decoded": "龘🙂"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "Hello\n  world\t!",
+      "ids": [
+        19923,
+        201,
+        223,
+        2058,
+        200,
+        3
+      ],
+      "tokens": [
+        "Hello",
+        "Ċ",
+        "Ġ",
+        "Ġworld",
+        "ĉ",
+        "!"
+      ],
+      "decoded": "Hello\n  world\t!"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "café",
+      "ids": [
+        69,
+        15702,
+        17793
+      ],
+      "tokens": [
+        "c",
+        "afe",
+        "Ìģ"
+      ],
+      "decoded": "café"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "<|endoftext|>你好",
+      "ids": [
+        30,
+        94,
+        523,
+        2154,
+        2067,
+        94,
+        32,
+        30594
+      ],
+      "tokens": [
+        "<",
+        "|",
+        "end",
+        "of",
+        "text",
+        "|",
+        ">",
+        "ä½łå¥½"
+      ],
+      "decoded": "<|endoftext|>你好"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "<｜end▁of▁sentence｜>你好",
+      "ids": [
+        1,
+        30594
+      ],
+      "tokens": [
+        "<｜end▁of▁sentence｜>",
+        "ä½łå¥½"
+      ],
+      "decoded": "<｜end▁of▁sentence｜>你好"
+    },
+    {
+      "model": "deepseek-v3",
+      "text": "",
+      "ids": [],
+      "tokens": [],
+      "decoded": ""
+    }
+  ]
+}

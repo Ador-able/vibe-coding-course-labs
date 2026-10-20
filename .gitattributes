@@ -1,12 +1,17 @@
-* text=auto
+* text=auto eol=lf
 *.md text eol=lf
 *.ts text eol=lf
-fanren/chapter07/project/scripts/*hook*.mjs text eol=lf
-fanren/chapter07/project/scripts/check-draft-placeholder.mjs text eol=lf
-fanren/**/materials/** -text
-fanren/**/records/** -text
-fanren/**/runs/** -text
-fanren/**/课堂记录/** -text
-fanren/**/运行记录/** -text
-fanren/**/*.json -text
-fanren/**/*.jsonl -text
+*.cmd text eol=crlf
+*.json -text
+*.jsonl -text
+lessons/**/materials/** -text
+lessons/**/records/** -text
+lessons/**/runs/** -text
+lessons/**/课堂记录/** -text
+lessons/**/运行记录/** -text
+lessons/**/inputs/** -text
+lessons/**/project/*实录*.html -text
+labs/**/materials/** -text
+labs/**/records/** -text
+labs/**/evidence/** -text
+labs/**/public/records/** -text

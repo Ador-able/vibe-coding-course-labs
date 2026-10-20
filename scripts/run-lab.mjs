@@ -13,7 +13,7 @@ try {
   settings = JSON.parse(readFileSync(join(homedir(), '.vibe-coding-labs', 'model.json'), 'utf8'));
   if (!settings.baseUrl || !settings.apiKey || !settings.model) throw new Error();
 } catch {
-  console.error('请先启动请求观察室，在 http://127.0.0.1:4318 的“模型设置”中保存配置。');
+  console.error('请先启动课程实验，在 http://127.0.0.1:4318 的“模型设置”中保存配置。');
   process.exit(1);
 }
 const cwd = resolve(project);

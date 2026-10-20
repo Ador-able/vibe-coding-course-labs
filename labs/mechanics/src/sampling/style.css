@@ -1,0 +1,70 @@
+
+.eyebrow { color: var(--lab-muted); font-size: 13px; letter-spacing: .06em; }
+header p { color: var(--lab-muted); font-size: 14px; line-height: 1.8; margin: 8px 0; }
+header .scope { color: #83622e; font-size: 13px; }
+.scope strong { background: #efe6d5; border-radius: 4px; padding: 4px 8px; margin-right: 10px; font-weight: 500; }
+.input-summary { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; padding-top: 7px; }
+.input-summary b { font-weight: 500; color: #276a72; margin-right: 15px; }
+.input-summary span { font-size: 13px; color: var(--lab-muted); }
+section { background: white; border: 1px solid #d7e4e8; border-radius: 11px; padding: 23px 25px; margin-top: 21px; }
+.section-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 13px; margin-bottom: 20px; }
+h2 { font-size: 18px; margin: 0; font-weight: 600; }
+h2 > span { color: #7895a0; font: 13px Consolas, monospace; margin-right: 13px; }
+label { color: var(--lab-muted); font-size: 13px; }
+.temperature-comparison { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.temperature-column { border: 1px solid #e1e9ec; border-radius: 7px; padding: 15px 16px 17px; }
+.selected-temperature { border-color: #83b5b8; background: #f6fbfa; }
+h3 { display: flex; justify-content: space-between; align-items: center; margin: 0 0 16px; color: #315f6c; font: 18px Consolas, monospace; }
+h3 span { font: 13px 'Microsoft YaHei', sans-serif; color: #337b7b; }
+.probability-row { display: grid; grid-template-columns: 29px 1fr 64px; align-items: center; gap: 9px; margin-top: 13px; font-size: 13px; }
+.probability-row b { font: 14px Consolas, monospace; text-align: right; }
+.probability-track { height: 10px; border-radius: 3px; overflow: hidden; background: #e9eff1; }
+.probability-track > div { height: 100%; border-radius: 3px; }
+.note { color: var(--lab-muted); font-size: 13px; line-height: 1.8; margin: 16px 0 0; }
+#nucleus-source { margin-top: 0; }
+#cumulative-plot { position: relative; padding-top: 31px; margin: 17px 0 19px; }
+.cumulative-label { position: absolute; top: 0; color: #375f6b; font-size: 13px; white-space: nowrap; }
+.cumulative-track { display: flex; height: 28px; position: relative; border-radius: 4px; }
+.cumulative-track > div:not(.threshold) { height: 100%; }
+.cumulative-track > div:first-child { border-radius: 4px 0 0 4px; }
+.threshold { position: absolute; top: -7px; bottom: -6px; border-left: 2px dashed #294e5c; }
+.scale { display: flex; justify-content: space-between; margin-top: 10px; color: var(--lab-muted); font: 13px Consolas, 'Microsoft YaHei', monospace; }
+.table-scroll { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; color: var(--lab-muted); font-size: 13px; }
+th, td { border-bottom: 1px solid #dce8eb; padding: 12px 10px; text-align: right; white-space: nowrap; }
+th { font-weight: 500; }
+thead th { color: var(--lab-muted); background: #eef4f6; white-space: nowrap; }
+th:first-child { text-align: left; }
+tbody td { font-family: Consolas, 'Microsoft YaHei', monospace; font-size: 14px; }
+.color-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 8px; }
+.sampling-probability { color: #23716c; font-weight: 600; }
+.excluded { background: #f4f6f7; color: #566d77; }
+.excluded .sampling-probability { color: #566d77; font-weight: 400; }
+.observation { font-size: 13px; line-height: 1.8; color: #315e6a; margin: 16px 0 0; }
+.run-row { display: flex; flex-wrap: wrap; align-items: center; gap: 18px; margin-top: 17px; }
+#sample-parameters { color: var(--lab-muted); font: 13px Consolas, 'Microsoft YaHei', monospace; margin: 0; }
+.empty { color: var(--lab-muted); font-size: 13px; padding-top: 8px; margin-bottom: 0; }
+.sample-table { margin-top: 19px; }
+.sample-table th:last-child { width: 43%; }
+.frequency-cell { display: flex; align-items: center; gap: 16px; }
+.frequency-cell b { flex: 0 0 70px; font-weight: 400; }
+.frequency-track { flex: 1; height: 12px; background: #edf2f3; position: relative; border-radius: 3px; }
+.frequency-track > div { height: 100%; border-radius: 3px; }
+.frequency-track i { position: absolute; border-left: 2px solid #284958; top: -4px; bottom: -4px; }
+.inspection { margin: 23px 8px 0; }
+summary { font-size: 13px; color: var(--lab-muted); cursor: pointer; }
+.inspection p { font-size: 13px; line-height: 1.9; color: var(--lab-muted); }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: white; padding: 17px; font: 13px/1.7 Consolas, monospace; color: var(--lab-muted); border-radius: 6px; }
+@media (max-width: 900px) {
+  section { padding: 21px 18px; }
+  .temperature-comparison { gap: 9px; }
+  .temperature-column { padding: 13px 10px; }
+  .probability-row { grid-template-columns: 27px 1fr 54px; gap: 5px; }
+  .probability-row b { font-size: 13px; }
+}
+@media (max-width: 660px) {
+  .temperature-comparison { grid-template-columns: 1fr; }
+  h2 { font-size: 16px; }
+  .probability-row { grid-template-columns: 35px 1fr 68px; }
+  .sample-table { min-width: 520px; }
+}

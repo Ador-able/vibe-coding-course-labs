@@ -1,9 +1,18 @@
 packages:
-  - fanren/*/project
+  - lessons/*/project
+  - labs/*
 sharedWorkspaceLockfile: false
+# Windows 跨盘安装直接复制依赖，避免硬链接替换失败。
+packageImportMethod: copy
 allowBuilds:
   opencode-ai: true
+  esbuild: true
 minimumReleaseAgeExclude:
   - '@openai/codex-sdk@0.160.0'
   - '@openai/codex@0.160.0-darwin-arm64 || 0.160.0-darwin-x64 || 0.160.0-linux-arm64 || 0.160.0-linux-x64 || 0.160.0-win32-arm64 || 0.160.0-win32-x64 || 0.160.0'
   - '@types/node@24.19.1'
+  - '@ai-sdk/gateway@4.0.100'
+  - '@ai-sdk/provider-utils@5.0.51'
+  - '@ai-sdk/provider@4.0.19'
+  - ai@7.0.122
+  - '@ai-sdk/openai-compatible@3.0.59'

@@ -1,0 +1,75 @@
+import styles from './lab-shell.css';
+import { groups } from './catalog.ts';
+import './lesson-runner.ts';
+
+type Settings = { baseUrl: string; model: string; structuredModel: string; embeddingModel: string; hasKey: boolean };
+const bar = document.createElement('nav'); bar.className = 'lab-nav'; bar.setAttribute('aria-label', '实验导航');
+bar.innerHTML = `<div><label for="lab-page">实验</label><select id="lab-page"></select></div><button id="model-settings-open" type="button">模型设置</button>`;
+const dialog = document.createElement('dialog'); dialog.className = 'model-settings';
+dialog.setAttribute('aria-labelledby', 'model-settings-title');
+dialog.innerHTML = `<form id="model-settings-form"><h2 id="model-settings-title">模型设置</h2>
+  <p>本机实验共用，保存后立即生效。</p>
+  <label for="model-base-url">OpenAI 兼容接口地址<input id="model-base-url" type="url" required></label>
+  <label for="model-api-key">API Key<input id="model-api-key" type="password" autocomplete="off"></label>
+  <label for="model-name">模型<input id="model-name" required></label>
+  <details><summary>其他实验模型（可选）</summary><label for="structured-model-name">结构化输出模型<input id="structured-model-name" placeholder="留空沿用上面的模型"></label><label for="embedding-model-name">向量模型<input id="embedding-model-name" placeholder="进行向量实验时填写"></label></details>
+  <p id="model-settings-status" role="status"></p>
+  <div class="model-settings-actions"><button type="button" id="model-settings-close">取消</button><button type="submit" id="model-settings-save">保存</button></div>
+</form>`;
+// 隔离页面的全局样式，导航与设置在各实验中保持一致。
+const host = document.createElement('course-navigation');
+const shell = host.attachShadow({ mode: 'open' });
+const style = document.createElement('style'); style.textContent = styles;
+shell.append(style, bar, dialog); document.body.prepend(host);
+const get = <T extends HTMLElement>(id: string) => shell.getElementById(id) as T;
+const navigation = get<HTMLSelectElement>('lab-page');
+navigation.add(new Option('课程实验', '/'));
+groups.forEach(group => {
+  const options = document.createElement('optgroup'); options.label = group.title;
+  group.items.forEach(([path, label]) => options.append(new Option(label, path)));
+  navigation.append(options);
+});
+navigation.value = ['/', ...groups.flatMap(group => group.items.map(([path]) => path))]
+  .find(path => path === '/' ? location.pathname === '/' : location.pathname.startsWith(path)) || '/';
+navigation.addEventListener('change', () => { location.href = navigation.value; });
+const status = get('model-settings-status');
+let current: Settings | undefined;
+function display(settings: Settings) {
+  current = settings;
+  get<HTMLButtonElement>('model-settings-open').textContent = settings.hasKey
+    ? '模型设置' : '设置模型';
+  get<HTMLInputElement>('model-base-url').value = settings.baseUrl;
+  get<HTMLInputElement>('model-name').value = settings.model;
+  get<HTMLInputElement>('structured-model-name').value = settings.structuredModel;
+  get<HTMLInputElement>('embedding-model-name').value = settings.embeddingModel;
+  const key = get<HTMLInputElement>('model-api-key'); key.value = ''; key.required = !settings.hasKey;
+  key.placeholder = settings.hasKey ? '••••••••（已保存，留空保留）' : '填写 API Key';
+}
+get('model-settings-open').addEventListener('click', () => {
+  if (current) display(current);
+  status.textContent = ''; dialog.showModal();
+});
+get('model-settings-close').addEventListener('click', () => { get<HTMLInputElement>('model-api-key').value = ''; dialog.close(); });
+dialog.addEventListener('cancel', () => { get<HTMLInputElement>('model-api-key').value = ''; });
+get<HTMLFormElement>('model-settings-form').addEventListener('submit', async (event) => {
+  event.preventDefault();
+  const save = get<HTMLButtonElement>('model-settings-save'); save.disabled = true; status.textContent = '';
+  try {
+    const response = await fetch('/api/config', { method: 'PUT', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ baseUrl: get<HTMLInputElement>('model-base-url').value,
+        apiKey: get<HTMLInputElement>('model-api-key').value, model: get<HTMLInputElement>('model-name').value,
+        structuredModel: get<HTMLInputElement>('structured-model-name').value,
+        embeddingModel: get<HTMLInputElement>('embedding-model-name').value }) });
+    const data = await response.json() as Settings & { error?: string };
+    if (!response.ok) throw new Error(data.error || '模型配置没有保存，请重试。');
+    display(data); dialog.close();
+    // 更新页面上的型号说明，不刷新或丢掉已有实验结果。
+    window.dispatchEvent(new Event('model-settings-changed'));
+  } catch (error) { status.textContent = error instanceof Error ? error.message : '无法连接本机服务，请确认服务仍在运行。'; }
+  finally { save.disabled = false; }
+});
+void fetch('/api/config').then(async (response) => {
+  if (!response.ok) throw new Error();
+  const settings = await response.json() as Settings; display(settings);
+  if (location.hash === '#model-settings') dialog.showModal();
+}).catch(() => { status.textContent = '模型设置不可用，请确认本机服务仍在运行。'; });

@@ -1,11 +1,22 @@
 {
   "name": "vibe-coding-course-labs",
   "private": true,
+  "type": "module",
   "packageManager": "pnpm@11.20.0",
   "engines": {
     "node": ">=24.12.0 <25"
   },
   "scripts": {
-    "build": "pnpm -r --if-present run build"
+    "postinstall": "pnpm build",
+    "build": "pnpm -r --if-present run build && vite build && node scripts/build-server.mjs",
+    "start": "node dist/server.mjs",
+    "lab": "node scripts/lab.mjs",
+    "check": "tsc --noEmit && pnpm --filter model-mechanics-lab --filter ai-request-lab -r check",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": { "express": "5.2.1", "marked": "18.0.13" },
+  "devDependencies": {
+    "@types/express": "5.0.6", "@types/node": "24.19.1", "esbuild": "0.28.2",
+    "tsx": "4.23.15", "typescript": "5.9.3", "vite": "8.3.1"
   }
 }

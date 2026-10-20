@@ -1,0 +1,239 @@
+{
+  "scope": "人工词表、候选得分和转移规则；未运行模型推理。softmax 概率由项目实际计算。",
+  "initialContext": "早餐喝",
+  "maxOutputTokens": 6,
+  "firstStep": [
+    {
+      "token": "豆浆",
+      "logit": 2,
+      "probability": 0.6652409557748218
+    },
+    {
+      "token": "咖啡",
+      "logit": 1,
+      "probability": 0.24472847105479764
+    },
+    {
+      "token": "茶",
+      "logit": 0,
+      "probability": 0.09003057317038046
+    }
+  ],
+  "afterDrink": [
+    {
+      "context": "早餐喝豆浆",
+      "candidates": [
+        {
+          "token": "，",
+          "logit": 1,
+          "probability": 0.2689414213699951
+        },
+        {
+          "token": "。",
+          "logit": 2,
+          "probability": 0.7310585786300049
+        }
+      ]
+    },
+    {
+      "context": "早餐喝咖啡",
+      "candidates": [
+        {
+          "token": "，",
+          "logit": 2,
+          "probability": 0.7310585786300049
+        },
+        {
+          "token": "。",
+          "logit": 1,
+          "probability": 0.2689414213699951
+        }
+      ]
+    },
+    {
+      "context": "早餐喝茶",
+      "candidates": [
+        {
+          "token": "，",
+          "logit": 1,
+          "probability": 0.5
+        },
+        {
+          "token": "。",
+          "logit": 1,
+          "probability": 0.5
+        }
+      ]
+    }
+  ],
+  "highestRoute": {
+    "records": [
+      {
+        "context": "早餐喝",
+        "candidates": [
+          {
+            "token": "豆浆",
+            "logit": 2,
+            "probability": 0.6652409557748218
+          },
+          {
+            "token": "咖啡",
+            "logit": 1,
+            "probability": 0.24472847105479764
+          },
+          {
+            "token": "茶",
+            "logit": 0,
+            "probability": 0.09003057317038046
+          }
+        ],
+        "selected": "豆浆",
+        "mode": "highest"
+      },
+      {
+        "context": "早餐喝豆浆",
+        "candidates": [
+          {
+            "token": "，",
+            "logit": 1,
+            "probability": 0.2689414213699951
+          },
+          {
+            "token": "。",
+            "logit": 2,
+            "probability": 0.7310585786300049
+          }
+        ],
+        "selected": "。",
+        "mode": "highest"
+      },
+      {
+        "context": "早餐喝豆浆。",
+        "candidates": [
+          {
+            "token": "<EOS>",
+            "logit": 0,
+            "probability": 1
+          }
+        ],
+        "selected": "<EOS>",
+        "mode": "highest"
+      }
+    ],
+    "stopReason": "eos",
+    "text": "早餐喝豆浆。"
+  },
+  "lengthRoute": {
+    "records": [
+      {
+        "context": "早餐喝",
+        "candidates": [
+          {
+            "token": "豆浆",
+            "logit": 2,
+            "probability": 0.6652409557748218
+          },
+          {
+            "token": "咖啡",
+            "logit": 1,
+            "probability": 0.24472847105479764
+          },
+          {
+            "token": "茶",
+            "logit": 0,
+            "probability": 0.09003057317038046
+          }
+        ],
+        "selected": "咖啡",
+        "mode": "manual"
+      },
+      {
+        "context": "早餐喝咖啡",
+        "candidates": [
+          {
+            "token": "，",
+            "logit": 2,
+            "probability": 0.7310585786300049
+          },
+          {
+            "token": "。",
+            "logit": 1,
+            "probability": 0.2689414213699951
+          }
+        ],
+        "selected": "，",
+        "mode": "manual"
+      },
+      {
+        "context": "早餐喝咖啡，",
+        "candidates": [
+          {
+            "token": "配包子",
+            "logit": 1,
+            "probability": 0.2689414213699951
+          },
+          {
+            "token": "配面包",
+            "logit": 2,
+            "probability": 0.7310585786300049
+          }
+        ],
+        "selected": "配面包",
+        "mode": "manual"
+      },
+      {
+        "context": "早餐喝咖啡，配面包",
+        "candidates": [
+          {
+            "token": "，",
+            "logit": 0,
+            "probability": 0.11920292202211755
+          },
+          {
+            "token": "。",
+            "logit": 2,
+            "probability": 0.8807970779778823
+          }
+        ],
+        "selected": "，",
+        "mode": "manual"
+      },
+      {
+        "context": "早餐喝咖啡，配面包，",
+        "candidates": [
+          {
+            "token": "配包子",
+            "logit": 1,
+            "probability": 0.2689414213699951
+          },
+          {
+            "token": "配面包",
+            "logit": 2,
+            "probability": 0.7310585786300049
+          }
+        ],
+        "selected": "配包子",
+        "mode": "manual"
+      },
+      {
+        "context": "早餐喝咖啡，配面包，配包子",
+        "candidates": [
+          {
+            "token": "，",
+            "logit": 0,
+            "probability": 0.11920292202211755
+          },
+          {
+            "token": "。",
+            "logit": 2,
+            "probability": 0.8807970779778823
+          }
+        ],
+        "selected": "，",
+        "mode": "manual"
+      }
+    ],
+    "stopReason": "limit",
+    "text": "早餐喝咖啡，配面包，配包子，"
+  }
+}

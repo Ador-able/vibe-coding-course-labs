@@ -1,0 +1,17 @@
+{
+  "name": "fanren-chapter14-business-workflows",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
+  "scripts": {
+    "build": "node scripts/check-inputs.mjs",
+    "check": "node scripts/check-inputs.mjs",
+    "calendar": "node scripts/calendar.mjs",
+    "source:freeze": "node scripts/freeze-source.mjs",
+    "source:check": "node scripts/check-source.mjs",
+    "test": "node --test test/projection.test.mjs",
+    "classroom:setup": "node scripts/setup-classroom.mjs create"
+  }
+}

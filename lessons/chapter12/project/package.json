@@ -1,0 +1,31 @@
+{
+  "name": "fanren-materials-lab",
+  "private": true,
+  "type": "module",
+  "description": "凡人修仙传原文：读取、切块、检索、更新与评估",
+  "packageManager": "pnpm@11.20.0",
+  "engines": {
+    "node": ">=24.12.0 <25"
+  },
+  "scripts": {
+    "build": "node scripts/check-source.mjs",
+    "test": "node --test test/*.test.mjs",
+    "files:prepare": "python -X utf8 scripts/build-inputs.py",
+    "files:observe": "python -X utf8 scripts/read-material.py",
+    "chunks:observe": "node scripts/observe-chunks.mjs",
+    "embeddings:observe": "node scripts/observe-embeddings.mjs",
+    "retrieval:rank": "node scripts/rank-retrieval.mjs",
+    "answers:observe": "node scripts/observe-answers.mjs",
+    "update:observe": "node scripts/observe-update.mjs",
+    "evaluation:check": "node scripts/evaluate.mjs",
+    "source:freeze": "node scripts/freeze-source.mjs"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "3.0.59",
+    "@langchain/core": "1.2.14",
+    "@langchain/textsplitters": "1.0.2",
+    "@orama/orama": "3.1.18",
+    "@orama/tokenizers": "3.1.18",
+    "ai": "7.0.122"
+  }
+}

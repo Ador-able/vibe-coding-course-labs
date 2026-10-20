@@ -1,0 +1,28 @@
+{
+  "name": "ai-request-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "3.0.59",
+    "ai": "7.0.122",
+    "dompurify": "^3.4.16",
+    "eventsource-parser": "4.1.1",
+    "express": "^5.2.1",
+    "marked": "18.0.13",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.13.6",
+    "esbuild": "0.28.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1"
+  }
+}

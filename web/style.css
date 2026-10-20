@@ -1,0 +1,9 @@
+h1 + p { color: #617080; margin-top: 0; }
+#experiments { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; margin-top: 2.5rem; }
+h2 { font-size: 1.1rem; border-bottom: 1px solid var(--lab-border); padding-bottom: .6rem; }
+ul { list-style: none; padding: 0; }
+li { margin: .6rem 0; }
+a { color: #315f8b; text-underline-offset: .2em; }
+pre { overflow-x: auto; padding: 1rem; background: #edf1f5; }
+code { font-family: Consolas, monospace; }
+@media (max-width: 720px) { #experiments { grid-template-columns: 1fr; gap: 1rem; } }
