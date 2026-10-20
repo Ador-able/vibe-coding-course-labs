@@ -20,7 +20,7 @@ if(!cases.includes(values.case as Case))throw new Error(`条件应为 ${cases.jo
 const selectedModes=[values.mode as Mode],selectedCases=[values.case as Case];
 const cancelAfterMs=values['cancel-after-ms']===undefined?null:Number(values['cancel-after-ms']);
 if(cancelAfterMs!==null&&(!Number.isFinite(cancelAfterMs)||cancelAfterMs<=0))throw new Error('取消延迟必须为正数。');
-const root=process.cwd(),codeVersion=(JSON.parse(await readFile('构建版本.json','utf8')) as {sha256:string}).sha256;
+const root=process.cwd(),codeVersion=(JSON.parse(await readFile('dist/build-version.json','utf8')) as {sha256:string}).sha256;
 let labConfig:{model?:string;codexPathOverride?:string}={};
 try{labConfig=JSON.parse(await readFile('lab.config.json','utf8'));}catch(error){if((error as NodeJS.ErrnoException).code!=='ENOENT')throw error;}
 const experimentId=new Date().toISOString().replaceAll(':','-')+'-'+randomUUID();
