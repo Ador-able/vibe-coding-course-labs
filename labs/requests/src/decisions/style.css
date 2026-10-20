@@ -32,7 +32,7 @@ header { margin-bottom: 20px; }
 
 .common { border: 0; border-left: 2px solid #cfd8e2; background: transparent; padding: 0 18px; }
 .common li, .common p { font-size: 14px; line-height: 1.75; }
-.option { background: white; border-color: var(--lab-border); border-radius: 8px; box-shadow: none; }
+.option { background: white; border-color: var(--lab-border); border-radius: 8px;  }
 .option .copy { font-size: 16px; line-height: 1.8; }
 .option h3 { color: var(--lab-accent); }
 #editor { background: white; border-color: var(--lab-border); border-radius: 8px; }

@@ -15,11 +15,21 @@ export const lessonActions: Record<string, Action[]> = {
     action('connection', '连接并读取 MCP 工具', 'local', 'scripts/observe-connection.mjs'),
     action('entries', '读取工具、资源与提示模板', 'local', 'scripts/observe-entries.mjs'),
     action('tools', '通过工具保存并读回', 'local', 'scripts/exercise-two-tools.mjs'),
+    { id: 'reading', label: '让插件检查已有三章', runtime: 'codex', records: 'runs', steps: [['scripts/prepare-exercise.mjs', 'reading'], ['scripts/observe-plugin-readonly.mjs']] },
+    ...['chapter', 'sentence'].map(scenario => ({ id: `skill-${scenario}`, label: scenario === 'chapter' ? '用 Skill 检查章节' : '观察单句任务的方法选择', runtime: 'codex' as const, records: 'runs', steps: [['scripts/prepare-host.mjs', 'skill'], ['scripts/observe-skill.mjs', '--scenario', scenario]] })),
   ],
-  chapter08: [action('reminder', '检查提醒规则', 'local', 'scripts/observe-reminder.mjs')],
+  chapter08: [
+    action('reminder', '检查提醒规则', 'local', 'scripts/observe-reminder.mjs'),
+    { id: 'prepare', label: '准备跨会话练习', runtime: 'local', records: 'runs', steps: [['scripts/task-preflight.mjs'], ['scripts/prepare-stage.mjs']] },
+    ...['A', 'B'].map(mode => action(mode, `运行跨会话练习 ${mode}`, 'codex', 'scripts/task-session.mjs', ['--mode', mode])),
+  ],
   chapter09: ['A', 'B'].map(id => action(id, `会话 ${id}`, 'codex', 'scripts/observe.mjs', ['--condition', id])),
   chapter10: [{ id: 'import', label: '导入第一段原文并读回', runtime: 'codex', records: 'runs', steps: [['scripts/prepare-fanren.mjs'], ['scripts/prepare-host.mjs'], ['scripts/run-task.mjs', '--prompt', 'inputs/158-凡人原文导入.txt', '--chapter', '1']] }],
-  chapter12: [action('answers', '比较切块后的回答', 'model', 'scripts/observe-answers.mjs', ['$run'])],
+  chapter12: [
+    action('answers', '比较切块后的回答', 'model', 'scripts/observe-answers.mjs', ['$run']),
+    action('embeddings', '生成本次检索向量', 'model', 'scripts/observe-embeddings.mjs', ['$run']),
+    action('ranking', '用当前向量结果排序', 'local', 'scripts/rank-retrieval.mjs', ['$run']),
+  ],
   chapter13: [
     action('long', '比较三种长文整理方法', 'model', 'scripts/observe-long.mjs', ['$run'], 'records/long-text'),
     action('labels-v1', '按第一版口径分类', 'model', 'scripts/observe-labels.mjs', ['v1', '$run'], 'records/classification-v1'),

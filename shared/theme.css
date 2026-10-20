@@ -8,25 +8,39 @@
   --lab-surface: #f5f7f9;
   --lab-border: #dce3eb;
   --lab-selected: #f2f6fb;
+  --lab-control-border: #c9d3de;
+  --lab-focus: #638eba;
+  --lab-secondary: #edf1f5;
+  --lab-secondary-hover: #e2e8ef;
+  --lab-secondary-text: #4c6073;
+  --lab-font: 'Microsoft YaHei', system-ui, sans-serif;
+  --lab-page-width: 1120px;
+  --lab-gutter: 32px;
+  --lab-radius: 8px;
+  --lab-control-radius: 6px;
   color: var(--lab-text);
   background: var(--lab-background);
-  font-family: 'Microsoft YaHei', system-ui, sans-serif;
+  font: 16px/1.65 var(--lab-font);
   font-synthesis: none;
 }
 body { margin: 0; min-width: 320px; }
 *, *::before, *::after { box-sizing: border-box; }
-main { max-width: 1120px; margin: auto; padding: 28px 32px 56px; }
-h1 { font-size: 25px; line-height: 1.4; letter-spacing: 0; margin: 10px 0 7px; }
+main { max-width: var(--lab-page-width); margin: auto; padding: 28px var(--lab-gutter) 56px; }
+h1 { font-size: 24px; line-height: 1.4; letter-spacing: 0; margin: 10px 0 8px; }
 button, input, select, textarea { font: inherit; }
-button, .primary { cursor: pointer; flex-shrink: 0; border: 0; border-radius: 6px; padding: 10px 16px; font-size: 14px; font-weight: 600; background: var(--lab-accent); color: #fff; }
+button, .primary { cursor: pointer; flex-shrink: 0; border: 0; border-radius: var(--lab-control-radius); min-height: 40px; padding: 8px 16px; font-size: 14px; font-weight: 600; background: var(--lab-accent); color: #fff; }
 button:hover, .primary:hover { background: var(--lab-accent-hover); }
 button:disabled, .primary:disabled { opacity: .55; cursor: wait; }
-button.secondary { background: #edf1f5; color: #4c6073; font-weight: 400; }
-button.secondary:hover { background: #e2e8ef; }
+button.secondary { background: var(--lab-secondary); color: var(--lab-secondary-text); font-weight: 400; }
+button.secondary:hover { background: var(--lab-secondary-hover); }
 button.link-button, button.source-link { background: transparent; color: var(--lab-accent); padding: 0; }
-select { max-width: 100%; min-width: 0; border: 1px solid var(--lab-border); border-radius: 6px; padding: 8px; font: inherit; font-size: 14px; color: inherit; background: #fff; }
+select { max-width: 100%; min-width: 0; min-height: 40px; border: 1px solid var(--lab-control-border); border-radius: var(--lab-control-radius); padding: 8px; font: inherit; font-size: 14px; color: inherit; background: #fff; }
 textarea { display: block; resize: vertical; width: 100%; border: 1px solid var(--lab-border); border-radius: 6px; padding: 12px 14px; color: inherit; font: 15px/1.7 'Microsoft YaHei', system-ui, sans-serif; background: #fff; }
-:is(button, input, select, textarea, summary):focus-visible { outline: 2px solid #638eba; outline-offset: 3px; }
+:is(button, input, select, textarea, summary, a):focus-visible { outline: 2px solid var(--lab-focus); outline-offset: 3px; }
+:is(button, input, select, textarea, a) { transition: background-color 120ms ease-out, border-color 120ms ease-out, color 120ms ease-out; }
+button[aria-pressed] { color: var(--lab-text); background: var(--lab-surface); border: 1px solid var(--lab-border); font-weight: 400; }
+button[aria-pressed=true] { color: var(--lab-accent); border-color: var(--lab-accent); background: var(--lab-selected); }
+table { font-variant-numeric: tabular-nums; }
 a { color: var(--lab-accent); }
 .lesson-runner { border: 1px solid var(--lab-border); border-radius: 8px; padding: 20px; margin: 24px 0; background: #fff; }
 .lesson-run-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
@@ -39,4 +53,5 @@ a { color: var(--lab-accent); }
 .lesson-runner .lesson-run-answer { color: var(--lab-text); background: transparent; padding: 0; font: 15px/1.8 'Microsoft YaHei', system-ui, sans-serif; }
 .lesson-runner li { font-size: 13px; }
 .lesson-runner [hidden] { display: none; }
-@media (max-width: 700px) { main { padding: 20px 16px 40px; } h1 { font-size: 22px; } }
+@media (max-width: 700px) { :root { --lab-gutter: 16px; } main { padding: 20px var(--lab-gutter) 40px; } h1 { font-size: 22px; } button, select { min-height: 44px; } textarea, input:not([type=range]):not([type=checkbox]):not([type=radio]) { font-size: 16px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; } }

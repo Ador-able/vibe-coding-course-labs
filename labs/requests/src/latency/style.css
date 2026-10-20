@@ -18,7 +18,7 @@ td button { font-size: 13px; padding: 9px 12px; }
 .badge { font-size: 13px; }
 @media (max-width: 760px) { .experiment { padding: 18px; } .download-bar { align-items: flex-start; flex-direction: column; gap: 8px; } }
 
-.experiment { background: white; border-color: var(--lab-border); box-shadow: none; border-radius: 8px; }
-#comparison-body small { font-size: 12px; color: #71808d; }
+.experiment { background: white; border-color: var(--lab-border);  border-radius: 8px; }
+#comparison-body small { font-size: 12px; color: var(--lab-muted); }
 
 .run-controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 14px; }

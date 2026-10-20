@@ -1,16 +1,16 @@
 
-.eyebrow { font-size: 12px; color: #6a8a97; font-weight: 600; letter-spacing: .08em; }
-header p { font-size: 15px; color: #6d8792; margin: 8px 0; line-height: 1.7; }
+
+header p { font-size: 15px; color: var(--lab-muted); margin: 8px 0; line-height: 1.7; }
 header .scope { font-size: 12px; color: #8b734c; margin-bottom: 23px; }
 .scope strong { font-size: 11px; font-weight: 500; padding: 4px 7px; border-radius: 4px; background: #efe7d7; margin-right: 10px; }
 .experiment { border: 1px solid #d8e5e8; border-radius: 12px; padding: 22px 24px; background: #fff; }
 .controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 17px; }
 .query-control { display: flex; align-items: center; gap: 20px; }
 #query-label { font: 20px Consolas, monospace; color: #386b79; }
-.value-control { display: flex; align-items: center; gap: 7px; font-size: 12px; color: #7a8e97; cursor: pointer; }
+.value-control { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--lab-muted); cursor: pointer; }
 input { accent-color: #a67730; width: 15px; height: 15px; }
-.formula { color: #78939d; background: var(--lab-surface); padding: 13px 17px; margin: 22px 0 13px; border-radius: 6px; text-align: center; font: 14px/1.8 Consolas, 'Microsoft YaHei', monospace; }
-.formula span { color: #aec1c8; padding: 0 18px; }
+.formula { color: var(--lab-muted); background: var(--lab-surface); padding: 13px 17px; margin: 22px 0 13px; border-radius: 6px; text-align: center; font: 14px/1.8 Consolas, 'Microsoft YaHei', monospace; }
+.formula span { color: var(--lab-muted); padding: 0 18px; }
 .diagram-scroll { overflow-x: auto; }
 #attention-diagram { display: block; width: 100%; min-width: 760px; }
 .column-heading { font: 15px 'Microsoft YaHei', sans-serif; fill: #8196a0; }
@@ -23,19 +23,19 @@ input { accent-color: #a67730; width: 15px; height: 15px; }
 .sum-box { fill: #edf5f5; stroke: #c9e1e1; }
 .sum-label { font: 13px 'Microsoft YaHei', sans-serif; fill: #779499; }
 .sum-value { font: 18px Consolas, monospace; fill: #2f7376; }
-.legend { text-align: center; font-size: 11px; color: #8c9fa7; line-height: 1.8; margin: 1px 0 19px; }
+.legend { text-align: center; font-size: 11px; color: var(--lab-muted); line-height: 1.8; margin: 1px 0 19px; }
 #observation { border-top: 1px solid #e2ecee; padding-top: 15px; min-height: 73px; }
-#observation p { color: #78939d; font-size: 13px; line-height: 1.8; margin: 0; }
+#observation p { color: var(--lab-muted); font-size: 13px; line-height: 1.8; margin: 0; }
 #observation strong { font-weight: 500; color: #427a80; }
 #observation .output-change { display: flex; flex-wrap: wrap; gap: 17px; margin-top: 8px; color: #927139; font: 14px/1.8 Consolas, 'Microsoft YaHei', monospace; }
-.output-change b { font-weight: 400; color: #a2b8bc; }
-.calculation { margin: 22px 8px 0; color: #7e96a1; }
+.output-change b { font-weight: 400; color: var(--lab-muted); }
+.calculation { margin: 22px 8px 0; color: var(--lab-muted); }
 summary { font-size: 13px; cursor: pointer; }
 .table-scroll { overflow-x: auto; margin-top: 14px; }
 table { border-collapse: collapse; text-align: left; font-size: 13px; width: 100%; background: #fff; }
 th, td { padding: 11px 13px; border-bottom: 1px solid #e1eaee; white-space: nowrap; }
 th { font-weight: 500; }
-thead { color: #6b8794; font-size: 11px; background: #eaf1f4; }
+thead { color: var(--lab-muted); font-size: 11px; background: #eaf1f4; }
 tbody td, tfoot td { font-family: Consolas, monospace; }
 tfoot { color: #437b82; }
 .calculation > p { font-size: 11px; line-height: 1.8; }

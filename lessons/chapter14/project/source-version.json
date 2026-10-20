@@ -1,6 +1,6 @@
 {
   "kind": "actual-executable-source-and-complete-inputs",
-  "sourceSha256": "3f89271f3525b5e4ffc5b18a36b4c6526e2a9b4c0a29aed3365a5b8d88a286d7",
+  "sourceSha256": "ee7cdb1476380109e388bce27e5f957234a46e4ce9d210efbff82e5b3d292da5",
   "frozenInputSha256": "f85a40d44ec2f4014b7af8a955da825e9c7dc19bd5b36f6d5581adc4b24d76b3",
   "files": [
     {
@@ -195,8 +195,8 @@
     },
     {
       "path": "public/app.css",
-      "bytes": 2722,
-      "sha256": "e2bc6a5a4ecd7d93a6bc814d926e74d8f9873c0ecc3ef9c9a73237fcdd73c417"
+      "bytes": 2737,
+      "sha256": "40a5f3b937536a734fbf905c9130019115ee955fb2df9fe3a032cb172a562170"
     },
     {
       "path": "public/app.js",

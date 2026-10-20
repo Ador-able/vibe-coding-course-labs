@@ -21,7 +21,7 @@ header p { margin: 0; color: var(--lab-muted); font-size: 15px; }
 .error, #status.error { color: #9b3c24; }
 fieldset { border: none; padding: 0; margin: 18px 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; min-width: 0; }
 .condition { display: flex; align-items: flex-start; gap: 9px; padding: 16px 12px; border: 1px solid #cadcde; border-radius: 8px; cursor: pointer; }
-.condition:has(input:checked) { border-color: var(--lab-accent); box-shadow: inset 0 0 0 1px var(--lab-accent); background: var(--lab-selected); }
+.condition:has(input:checked) { border-color: var(--lab-accent);  background: var(--lab-selected); }
 input[type=radio] { accent-color: var(--lab-accent); margin: 3px 0 0; flex-shrink: 0; }
 .condition strong { font-size: 15px; }
 .condition small { display: block; font-size: 13px; color: var(--lab-muted); line-height: 1.65; margin-top: 8px; }
@@ -54,7 +54,7 @@ dt { font-weight: 600; } dd { margin: 0; color: var(--lab-muted); }
 @media (max-width: 440px) { .setup-actions, .follow-actions { flex-direction: column; align-items: stretch; gap: 12px; } .badge { font-size: 11px; } dl { grid-template-columns: 1fr; gap: 4px; } dd { margin-bottom: 12px; } }
 
 /* 先操作，再对照结果；记录留在折叠内。 */
-.setup, #follow-section { padding: 22px; border-color: var(--lab-border); box-shadow: none; border-radius: 8px; }
+.setup, #follow-section { padding: 22px; border-color: var(--lab-border);  border-radius: 8px; }
 .setup-actions, .follow-actions { justify-content: flex-start; gap: 14px; }
 .question { line-height: 1.65; }
 .question-label { color: #6b7885; font-size: 13px; margin-right: 12px; }
@@ -67,5 +67,5 @@ main > #setup > summary { padding: 13px 20px; font-size: 14px; font-weight: 400;
 #comparison h3 { font-size: 17px; color: #263d50; }
 .answer-cell { width: 60%; font-size: 16px; }
 .condition { padding: 13px; border-color: var(--lab-border); }
-.condition:has(input:checked) { background: var(--lab-selected); border-color: #638eba; box-shadow: none; }
+.condition:has(input:checked) { background: var(--lab-selected); border-color: #638eba;  }
 input[type=radio] { accent-color: var(--lab-accent); }

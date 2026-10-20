@@ -9,7 +9,7 @@ const colors = ['#32877d', '#527fae', '#b08037'];
 
 document.querySelector<HTMLElement>('#app')!.innerHTML = `
   <header>
-    <span class="eyebrow">模型机制实验</span>
+
     <h1>注意力让模型结合相关内容</h1>
     <p>用 Q 与各位置的 K 算出权重，再按这些权重汇总 V。</p>
     <p class="scope"><strong>人工数值</strong>A、B、C 是三个示例位置，不对应词语；不是模型实测，向量维度没有固定语义。</p>

@@ -4,7 +4,7 @@ import './lesson-runner.ts';
 
 type Settings = { baseUrl: string; model: string; structuredModel: string; embeddingModel: string; hasKey: boolean };
 const bar = document.createElement('nav'); bar.className = 'lab-nav'; bar.setAttribute('aria-label', '实验导航');
-bar.innerHTML = `<div><label for="lab-page">实验</label><select id="lab-page"></select></div><button id="model-settings-open" type="button">模型设置</button>`;
+bar.innerHTML = `<div><a class="course-brand" href="/">课程实验</a><label class="sr-only" for="lab-page">实验</label><select id="lab-page"></select></div><button id="model-settings-open" type="button">模型设置</button>`;
 const dialog = document.createElement('dialog'); dialog.className = 'model-settings';
 dialog.setAttribute('aria-labelledby', 'model-settings-title');
 dialog.innerHTML = `<form id="model-settings-form"><h2 id="model-settings-title">模型设置</h2>

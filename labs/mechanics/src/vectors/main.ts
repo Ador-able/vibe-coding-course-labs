@@ -13,14 +13,14 @@ const presets = [
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <header>
-    <span class="eyebrow">模型机制实验</span>
+
     <h1>向量用一组数字表示信息</h1>
     <p>先按 token ID 取出一行数字，再观察向量的方向和长度。</p>
     <p class="scope">本页所有向量均为人工示例，不是模型的真实向量，也不代表词语含义。</p>
   </header>
 
   <section aria-labelledby="lookup-title">
-    <div class="section-title"><span>01</span><h2 id="lookup-title">按编号查表，得到向量</h2></div>
+    <div class="section-title"><h2 id="lookup-title">按编号查表，得到向量</h2></div>
     <div class="lookup-layout">
       <div>
         <p class="label">人工 embedding 表 · 每行 3 个数字</p>
@@ -39,7 +39,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </section>
 
   <section aria-labelledby="geometry-title">
-    <div class="section-title"><span>02</span><h2 id="geometry-title">方向相同，长度也可以不同</h2></div>
+    <div class="section-title"><h2 id="geometry-title">方向相同，长度也可以不同</h2></div>
     <p class="intro">换成便于画图的二维人工向量。固定 <strong class="a-color">A = (1, 1)</strong>，改变 <strong class="b-color">B</strong> 的两个坐标。</p>
     <div class="presets">${presets.map((preset, index) => `<button type="button" data-preset="${index}">${preset.label}</button>`).join('')}</div>
     <div class="geometry-layout">

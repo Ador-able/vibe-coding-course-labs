@@ -1,5 +1,5 @@
 
-.eyebrow { color: var(--lab-muted); font-size: 13px; letter-spacing: .06em; }
+
 header p { color: var(--lab-muted); font-size: 14px; line-height: 1.8; margin: 8px 0; }
 header .scope { color: #83622e; font-size: 13px; }
 .scope strong { background: #efe6d5; border-radius: 4px; padding: 4px 8px; margin-right: 10px; font-weight: 500; }
@@ -9,7 +9,7 @@ header .scope { color: #83622e; font-size: 13px; }
 section { background: white; border: 1px solid #d7e4e8; border-radius: 11px; padding: 23px 25px; margin-top: 21px; }
 .section-heading { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 13px; margin-bottom: 20px; }
 h2 { font-size: 18px; margin: 0; font-weight: 600; }
-h2 > span { color: #7895a0; font: 13px Consolas, monospace; margin-right: 13px; }
+h2 > span { color: var(--lab-muted); font: 13px Consolas, monospace; margin-right: 13px; }
 label { color: var(--lab-muted); font-size: 13px; }
 .temperature-comparison { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
 .temperature-column { border: 1px solid #e1e9ec; border-radius: 7px; padding: 15px 16px 17px; }

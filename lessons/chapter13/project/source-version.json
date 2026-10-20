@@ -1,7 +1,7 @@
 {
-  "sourceVersion": "sha256:d9c74748e425aaeb271410104cbb93534d954ca4996a68ddb74e2a12b4a13bc3",
-  "gitBase": "41a67d415f9c6947159956b3f22b7838d29f0aaa",
-  "frozenAt": "2026-10-20T07:17:26.532Z",
+  "sourceVersion": "sha256:4f64504392170e71862166c1a5d827c83fb7c069d02084428bbb6161ff01d7e7",
+  "gitBase": "2b0942b11895d10541ecbc470a090c78f96b6fc7",
+  "frozenAt": "2026-10-20T07:34:18.784Z",
   "files": [
     {
       "name": "package.json",
@@ -15,8 +15,8 @@
     },
     {
       "name": "public/app.css",
-      "bytes": 3415,
-      "sha256": "6e5b9efe80b11ce5cd7c512d6536d531a40767c44903a45df597abd876cbe69c"
+      "bytes": 3420,
+      "sha256": "8085a4358ff251b022f909c7ae375ff1e81ea34a3a380d678eaaf769875d36ab"
     },
     {
       "name": "public/app.js",

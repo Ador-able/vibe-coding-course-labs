@@ -15,10 +15,10 @@ h3 { margin: 0 0 8px; font-size: 14px; font-weight: 600; }
 #assistant { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; margin: 18px 0 12px; padding: 0; border: 0; background: transparent; }
 #assistant section { min-width: 0; }
 #assistant p.answer { margin: 0; }
-.part-state, .record-identity, .quiet { color: #647c83; font-size: 13px; line-height: 1.75; }
+.part-state, .record-identity, .quiet { color: var(--lab-muted); font-size: 13px; line-height: 1.75; }
 .part-state { margin-bottom: 0; }
 .state-label { color: #315d69; font-size: 13px; line-height: 1.7; }
-.empty { color: #718991; font-size: 15px; line-height: 1.8; grid-column: 1 / -1; margin: 0; }
+.empty { color: var(--lab-muted); font-size: 15px; line-height: 1.8; grid-column: 1 / -1; margin: 0; }
 .record-identity { white-space: pre-wrap; overflow-wrap: anywhere; margin: 14px 0; }
 #review label { font-size: 14px; font-weight: 400; margin: 14px 0 9px; }
 .actions { display: flex; justify-content: flex-start; gap: 12px; }

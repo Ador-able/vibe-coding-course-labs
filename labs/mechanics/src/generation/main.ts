@@ -9,7 +9,7 @@ const modeName = (mode: ChoiceMode) => mode === 'highest' ? '选最高概率' : 
 
 app.innerHTML = `
   <header>
-    <span class="eyebrow">模型机制实验</span>
+
     <h1>生成回答是在逐步选择下一个 token</h1>
     <p class="scope"><strong>人工演示</strong>词表与得分由人预设，不是真实模型的内部记录，也没有运行模型推理。</p>
   </header>

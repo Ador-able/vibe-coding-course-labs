@@ -7,7 +7,7 @@ const colors = ['#287f76', '#416fa3', '#a6782c'];
 
 document.querySelector<HTMLElement>('#app')!.innerHTML = `
   <header>
-    <span class="eyebrow">模型机制实验</span>
+
     <h1>生成参数怎样影响回答</h1>
     <p>固定同一个前缀和候选得分，依次观察温度、top-p 与抽样频率。</p>
     <p class="scope"><strong>人工分布</strong>得分由人预设，未经训练，不调用模型 API；候选概率不是任务正确率。</p>

@@ -17,5 +17,5 @@ td { line-height: 1.7; }
 @media (max-width: 600px) { .run-panel { padding: 18px; flex-direction: column; align-items: stretch; } #observations { padding: 16px; } }
 
 .run-panel { background: white; border: 1px solid var(--lab-border); border-radius: 8px; padding: 20px; }
-.run-panel p { font-size: 12px; color: #71808d; }
-#observations { border-color: var(--lab-border); box-shadow: none; }
+.run-panel p { font-size: 12px; color: var(--lab-muted); }
+#observations { border-color: var(--lab-border);  }

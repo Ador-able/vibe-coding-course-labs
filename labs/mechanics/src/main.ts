@@ -3,7 +3,7 @@ import { analyze, loadTokenizer, models, presets } from './tokenization.ts';
 import { renderResult } from './render.ts';
 
 document.querySelector<HTMLElement>('#app')!.innerHTML = `
-  <header><span class="eyebrow">模型的工作方式</span><h1>文本怎样变成 token</h1><p>输入同一段文本，看看两种分词规则怎样拆分，以及它们使用的 token 编号。</p></header>
+  <header><h1>文本怎样变成 token</h1><p>输入同一段文本，看看两种分词规则怎样拆分，以及它们使用的 token 编号。</p></header>
   <form id="lab-form">
     <label for="input">输入文本</label>
     <textarea id="input" rows="2" maxlength="2000"></textarea>
