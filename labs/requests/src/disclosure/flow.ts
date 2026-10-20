@@ -58,12 +58,14 @@ export async function runDisclosure(config: ModelConfig, materials: Materials, r
     throw new ModelError('MODEL_RESPONSE_INCOMPLETE', '已达到本次读取轮数上限，仍未结束。已有记录保留，不将它记为完成。');
   }
 
-  const supplied = await Promise.all(materials.paths.map(path => materials.read(path)));
+  // 摘要从小说原文生成，不混入为逐层读取整理的工作卡和设定档案。
+  const paths = run.condition === 'summary' ? materials.paths.filter(path => path.startsWith('原文/')) : materials.paths;
+  const supplied = await Promise.all(paths.map(path => materials.read(path)));
   run.supplied.push(...supplied);
   const text = supplied.map(item => `## ${item.path}\n${item.text}`).join('\n\n');
   if (run.condition === 'summary') {
     // 摘要是通用交接信息，不提前指定本轮续写目标；写作阶段不继承原始材料。
-    const compressed = await call([{ role: 'system', content: '把以下创作资料与原文整理成约300字的写作交接摘要。以当前工作页的时点为准，保留此时有效的人物、关系、地点、未完成事项与出处，不把原文库的后续情节当作当前进度。只输出摘要。' }, { role: 'user', content: text }], '现场生成摘要');
+    const compressed = await call([{ role: 'system', content: '把以下小说原文整理成约300字的剧情摘要。只总结到第二十七章“配灵药”开头、韩立准备按稀有配方催药的时点，不纳入后续情节。保留此时有效的人物、关系、地点、物品使用条件、未完成事项与原文编号。只输出摘要。' }, { role: 'user', content: text }], '从原文生成摘要');
     run.summary = compressed.content!;
   }
   const material = run.summary === undefined ? text : `本次生成的摘要：\n${run.summary}`;

@@ -12,7 +12,7 @@ document.querySelector('#app')!.innerHTML = `
   <p class="note">沿用顶部的共用模型设置，会产生实际用量。</p><p id="status" role="status"></p>
   <section id="result" hidden></section>
   <details id="records"><summary>运行记录</summary><label>查看运行记录 <select id="history"><option value="">请选择</option></select></label><div id="requests"></div><a id="download" hidden>下载本次记录</a></details>
-  <p class="note"><a href="./history/课堂实录.html">查看历史课堂实录</a></p>`;
+  `;
 const el = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const condition = el<HTMLSelectElement>('condition'), history = el<HTMLSelectElement>('history');
 const start = el<HTMLButtonElement>('run'), stop = el<HTMLButtonElement>('stop'), status = el('status');

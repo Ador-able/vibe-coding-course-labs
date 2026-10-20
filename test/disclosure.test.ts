@@ -53,7 +53,10 @@ test('逐层输入遵从模型的真实返回顺序，完整请求与读取结�
     mode = 'incomplete'; const failed = await run('tiered'); assert.equal(failed.status, 502); assert.equal(failed.run.state, 'failed'); assert.equal(failed.run.reads.length, 0); assert.equal(failed.run.requests[0].finishReason, 'length');
     mode = 'summary'; const summary = await run('summary'); assert.equal(summary.status, 200);
     assert.equal(summary.run.requests.length, 2); const compress = JSON.parse(summary.run.requests[0].requestBody), answer = JSON.parse(summary.run.requests[1].requestBody);
+    assert.equal(summary.run.supplied.length, 30); assert(summary.run.supplied.every(row => /^原文\/C\d{2}\.md$/.test(row.path)));
+    assert(summary.run.supplied.every(row => compress.messages[1].content.includes(`## ${row.path}\n${row.text}`)));
+    assert(!compress.messages[1].content.includes('## 人物/')); assert(!compress.messages[1].content.includes('## 场景、物品与规则/'));
     assert(!JSON.stringify(compress.messages).includes('请围绕当前工作页续写韩立安排下一轮催药的一场戏'));
-    assert(JSON.stringify(answer.messages).includes(summary.run.summary!)); assert(!JSON.stringify(answer.messages).includes('一个月还有三十个铜板拿'));
+    assert(JSON.stringify(answer.messages).includes(summary.run.summary!)); assert(!JSON.stringify(answer.messages).includes('一个月还有三十个铜板拿')); assert.equal(answer.messages.length, 2); assert.equal(answer.tools, undefined);
   } finally { await close(server); await close(upstream); course.close(); await rm(directory, { recursive: true, force: true }); }
 });
