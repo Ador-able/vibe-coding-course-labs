@@ -6,7 +6,7 @@
   "description": "通过凡人修仙传练习工具读写、Agent与人工决定",
   "packageManager": "pnpm@11.20.0",
   "engines": {
-    "node": ">=24.12.0 <25"
+    "node": ">=24.13.1 <25"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json && node scripts/记录构建.mjs",

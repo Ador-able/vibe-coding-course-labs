@@ -6,7 +6,7 @@
   "description": "凡人修仙传：基于成熟 Harness 的连续 Agent 综合练习",
   "packageManager": "pnpm@11.20.0",
   "engines": {
-    "node": ">=24.12.0"
+    "node": ">=24.13.1 <25"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",

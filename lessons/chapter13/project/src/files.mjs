@@ -52,7 +52,7 @@ export function createRun(group, name) {
   save(); return { directory, report, save, inputs };
 }
 export function requireGitStart() {
-  const watched = ['src', 'scripts', 'test', 'public/*.html', 'public/*.js', 'public/*.css', 'inputs', 'package.json', 'pnpm-lock.yaml'];
+  const watched = ['src', 'scripts', 'test', 'public/*.html', 'public/*.js', 'public/*.css', 'inputs', 'package.json', '../../../pnpm-lock.yaml'];
   assert.equal(git(['status', '--porcelain', '--', ...watched]), '', '请先冻结并提交本次实际执行源码与完整输入。');
   return git(['rev-parse', 'HEAD']);
 }

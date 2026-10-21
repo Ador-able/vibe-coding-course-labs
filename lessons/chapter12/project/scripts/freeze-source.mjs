@@ -11,7 +11,7 @@ function collect(directory) {
   }
 }
 for (const directory of ['src', 'scripts', 'test']) collect(directory);
-for (const name of ['package.json', 'pnpm-lock.yaml', 'requirements.txt', ]) {
+for (const name of ['package.json', '../../../pnpm-lock.yaml', 'requirements.txt', ]) {
   const bytes = fs.readFileSync(path.join(root, name)); files.push({ name, bytes: bytes.length, sha256: sha256(bytes) });
 }
 for (const entry of fs.readdirSync(path.join(root, 'public'))) {

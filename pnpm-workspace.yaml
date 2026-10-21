@@ -2,11 +2,7 @@ packages:
   - lessons/*/project
   - lessons/references/typescript/project
   - labs/*
-sharedWorkspaceLockfile: false
-# 各章使用独立锁文件，统一准备时依次安装。
-workspaceConcurrency: 1
-# Windows 跨盘安装直接复制依赖，避免硬链接替换失败。
-packageImportMethod: copy
+engineStrict: true
 allowBuilds:
   opencode-ai: true
   esbuild: true

@@ -89,7 +89,7 @@ function readSources(report) {
       report.environmentErrors.push({path, error: errorRecord(error)});
     }
   }
-  const lock = readFileSync(resolve(project, 'pnpm-lock.yaml'));
+  const lock = readFileSync(resolve(project, '../../../pnpm-lock.yaml'));
   report.environment.lock = {bytes: lock.length, sha256: sha256(lock)};
 }
 function instrumentServer(server, report) {
@@ -571,9 +571,9 @@ async function runScenario(scenario) {
     persist('seed');
     const channel = report.environment.deliveryBrowserChannel;
     if (!channel || !channel.trim()) throw new Error('必须用 DELIVERY_BROWSER_CHANNEL 明确指定浏览器通道，不使用替代通道。');
-    const [nodeMajor, nodeMinor] = process.versions.node.split('.').map(Number);
-    if (nodeMajor !== 24 || nodeMinor < 12) {
-      throw new Error(`package.json 要求 Node >=24.12.0 <25，实际为 ${process.version}`);
+    const [nodeMajor, nodeMinor, nodePatch] = process.versions.node.split('.').map(Number);
+    if (nodeMajor !== 24 || nodeMinor < 13 || (nodeMinor === 13 && nodePatch < 1)) {
+      throw new Error(`package.json 要求 Node >=24.13.1 <25，实际为 ${process.version}`);
     }
     const {chromium} = await import('@playwright/test');
     report.environment.playwright = JSON.parse(readFileSync(resolve(project, 'node_modules/@playwright/test/package.json'), 'utf8')).version;

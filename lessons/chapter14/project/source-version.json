@@ -1,8 +1,13 @@
 {
   "kind": "actual-executable-source-and-complete-inputs",
-  "sourceSha256": "ee7cdb1476380109e388bce27e5f957234a46e4ce9d210efbff82e5b3d292da5",
+  "sourceSha256": "4211ed3793a3a07e8a7445ec2e3b93abc078f17ba3fbb2dcf45f2c2fd2c47182",
   "frozenInputSha256": "f85a40d44ec2f4014b7af8a955da825e9c7dc19bd5b36f6d5581adc4b24d76b3",
   "files": [
+    {
+      "path": "../../../pnpm-lock.yaml",
+      "bytes": 82516,
+      "sha256": "0fc0628f667596a2eb614342b424a2d837c4f85e9c0c74e9ffac6c5c8e35ebcd"
+    },
     {
       "path": ".gitattributes",
       "bytes": 39,
@@ -181,12 +186,7 @@
     {
       "path": "package.json",
       "bytes": 521,
-      "sha256": "abd49d499e605575e42e1ff43746125436ceb0d29956def61c892c5e127d7b41"
-    },
-    {
-      "path": "pnpm-lock.yaml",
-      "bytes": 114,
-      "sha256": "17c814b167307942d3609c7b9d916ceddb85839573ab39baa114e30edb132a1a"
+      "sha256": "6ae25ad5ad7b759dd63e871194069a547c47ed44a7a19bf036640be820d1cdb0"
     },
     {
       "path": "public/acceptance.html",
@@ -255,8 +255,8 @@
     },
     {
       "path": "scripts/freeze-source.mjs",
-      "bytes": 1118,
-      "sha256": "591064fee0486df3154f8c88d6a5e577d575fe57a446f09814a9122d7e3b3b2e"
+      "bytes": 1127,
+      "sha256": "337d6f6b96d77e37a9e20e71aa141544e2066e0fc658f47453152850f8866863"
     },
     {
       "path": "scripts/n8n.mjs",

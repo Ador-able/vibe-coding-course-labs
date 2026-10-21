@@ -7,6 +7,7 @@ on:
       - '.github/workflows/chapter15-delivery.yml'
       - '.githooks/pre-commit'
       - 'package.json'
+      - 'pnpm-lock.yaml'
       - 'pnpm-workspace.yaml'
 
 permissions:
@@ -32,7 +33,7 @@ jobs:
           printf 'actual git HEAD=%s\n' "$(git rev-parse HEAD)"
       - uses: pnpm/setup@v3
         with:
-          runtime: node@24.12.0
+          runtime: node@24.19.0
           install: false
       - name: Record tool versions
         run: |

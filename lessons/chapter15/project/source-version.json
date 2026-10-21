@@ -1,10 +1,15 @@
 {
-  "sourceSha256": "4496d41d77bf344fab226bb530df08991da6254da132073cd1ce592887e13c5d",
-  "sourceVersion": "4496d41d77bf344fab226bb530df08991da6254da132073cd1ce592887e13c5d",
-  "preparedFromGit": "41a67d415f9c6947159956b3f22b7838d29f0aaa",
+  "sourceSha256": "7deef8ee31cbe48218f04dc2fa66f8343842a15ebb4225eb38ecdb1be61fd772",
+  "sourceVersion": "7deef8ee31cbe48218f04dc2fa66f8343842a15ebb4225eb38ecdb1be61fd772",
+  "preparedFromGit": "8febbd07a856f8c47830b15941126b97b04d405e",
   "practiceTag": "fanren-ch15-practice-start",
   "inputRegistrySha256": "e4fbc325729c6356109563478db3316353ede7e245c2ad00882d57af35baa296",
   "files": [
+    {
+      "path": "../../../pnpm-lock.yaml",
+      "bytes": 82516,
+      "sha256": "0fc0628f667596a2eb614342b424a2d837c4f85e9c0c74e9ffac6c5c8e35ebcd"
+    },
     {
       "path": ".gitattributes",
       "bytes": 8,
@@ -98,12 +103,7 @@
     {
       "path": "package.json",
       "bytes": 982,
-      "sha256": "cc2007a1e2af86569f16474f714c7993ef9172789795365b8ca8ee9c2117ac04"
-    },
-    {
-      "path": "pnpm-lock.yaml",
-      "bytes": 11803,
-      "sha256": "de3f9ad9a418477fdcc58866755b6a80daf948e147da75d7a10273ae63ca842c"
+      "sha256": "f3e8c55c5fe1219db94ba04621173f6ca871eb0f6a515ee24000d3f11f0d7eb0"
     },
     {
       "path": "prototype/AGENTS.md",
@@ -127,8 +127,8 @@
     },
     {
       "path": "scripts/check-saving-delivery.mjs",
-      "bytes": 45018,
-      "sha256": "a433a7df2310cfa29738f3fd4f07d066f8b544fb15c3c35140ab7bc50274fa12"
+      "bytes": 45039,
+      "sha256": "b8f5be4e714905ec806575aad865c9c4a3fc0a8d59e2a460e6895761b4f6c0f2"
     },
     {
       "path": "scripts/check-source.mjs",
@@ -182,8 +182,8 @@
     },
     {
       "path": "scripts/source-files.mjs",
-      "bytes": 813,
-      "sha256": "b502e734085234c38182d4d07dca307f74ce2dbeac9ced7425c1efcfc2e567f4"
+      "bytes": 822,
+      "sha256": "ba8ab3b2db231f8660c1f21cc64050de89e16dad68a129cf819e1107e7e975d5"
     },
     {
       "path": "scripts/start-workbench.mjs",
@@ -192,8 +192,8 @@
     },
     {
       "path": "scripts/test-saving.mjs",
-      "bytes": 44421,
-      "sha256": "d20d4d0f7301176c07106688c7329f2bd2d8b58e46678de8fae2a99f6ff28032"
+      "bytes": 44480,
+      "sha256": "f62d6a4ae9a4de72923aa2d65483e61600f36cf194d1697cce0512c0c9b27ae2"
     },
     {
       "path": "src/prototype-http.ts",

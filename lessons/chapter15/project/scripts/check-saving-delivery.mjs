@@ -14,7 +14,7 @@ const STEP_LIMIT = 30_000;
 const OBSERVATION_LIMIT = 120_000;
 const TEST_LIMIT = 420_000; // 另留时间完成清理和记录。
 const sourcePaths = [
-  'package.json', 'pnpm-lock.yaml', 'AGENTS.md', 'prototype/AGENTS.md',
+  'package.json', '../../../pnpm-lock.yaml', 'AGENTS.md', 'prototype/AGENTS.md',
   'prototype/app.js', 'prototype/index.html', 'prototype/app.css',
   'src/prototype-http.ts', 'src/store.ts', 'src/schemas.ts',
   'scripts/seed.mjs', 'scripts/test-saving.mjs', 'scripts/check-saving-delivery.mjs',
@@ -89,7 +89,7 @@ function readSources(report) {
       report.environmentErrors.push({path, error: errorRecord(error)});
     }
   }
-  const lock = readFileSync(resolve(project, 'pnpm-lock.yaml'));
+  const lock = readFileSync(resolve(project, '../../../pnpm-lock.yaml'));
   report.environment.lock = {bytes: lock.length, sha256: sha256(lock)};
 }
 function instrumentServer(server, report) {
@@ -603,7 +603,7 @@ async function runDelivery() {
     A = plus(pairChapter(original), expectation.edits.before);
     report.independentExpectedA = A; persist('inputs');
     const [major, minor, patch] = process.versions.node.split('.').map(Number);
-    if (major !== 24 || minor < 12 || !Number.isInteger(patch)) throw new Error(`需要 Node >=24.12.0 <25，实际 ${process.version}`);
+    if (major !== 24 || minor < 13 || (minor === 13 && patch < 1)) throw new Error(`需要 Node >=24.13.1 <25，实际 ${process.version}`);
     const channel = report.environment.deliveryBrowserChannel;
     if (channel !== null && (!channel.trim() || channel !== channel.trim())) throw new Error('DELIVERY_BROWSER_CHANNEL 必须是明确非空通道；没有自动回退。');
     const {Store} = await bounded(import('../dist/store.js'), 'Store import');

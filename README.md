@@ -2,9 +2,11 @@
 
 模型机制、请求观察与各章代码实践共用这个仓库。
 
+所有实验共用根目录的 `pnpm-lock.yaml`，依赖只在根目录安装一次。
+
 ## 首次准备
 
-安装 Node.js 24.12 或更高的 24 版本和 pnpm 11.20 后：
+安装 Node.js 24.13.1 或更高的 24 版本和 pnpm 11.20 后：
 
 ```powershell
 git clone https://github.com/Ador-able/vibe-coding-course-labs.git
