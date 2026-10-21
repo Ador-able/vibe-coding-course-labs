@@ -12,9 +12,10 @@ import { createStructuredRouter } from './structured/routes.ts';
 import { createStreamingRouter } from './streaming/routes.ts';
 import { createModelSettings } from './model-settings.ts';
 import { createDisclosureRouter } from './disclosure/routes.ts';
+import { createTasksRouter } from './tasks/routes.ts';
 import type { AskPayload, AskResult, RequestTrace, Stage } from './contract.ts';
 
-export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath?: string, disclosure?: { projectDirectory: string; recordDirectory: string }) {
+export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath?: string, experiments?: { disclosure: { projectDirectory: string; recordDirectory: string }; tasks: { projectDirectory: string; recordDirectory: string } }) {
   const app = express();
   const settings = env ? undefined : createModelSettings(configPath);
   env ??= settings!.env;
@@ -24,7 +25,10 @@ export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath
   app.use('/api/streaming', createStreamingRouter(env));
   app.use(express.json({ limit: '16kb' }));
   if (settings) app.use('/api/config', settings.router);
-  if (disclosure) app.use('/api/disclosure', createDisclosureRouter(env, disclosure.projectDirectory, disclosure.recordDirectory));
+  if (experiments) {
+    app.use('/api/disclosure', createDisclosureRouter(env, experiments.disclosure.projectDirectory, experiments.disclosure.recordDirectory));
+    app.use('/api/tasks', createTasksRouter(env, experiments.tasks.projectDirectory, experiments.tasks.recordDirectory));
+  }
   app.use('/api/context', createContextRouter(env));
   app.use('/api/quality', createQualityRouter(env));
   app.use('/api/memory', createMemoryRouter(env));

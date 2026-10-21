@@ -17,7 +17,11 @@ function guidePage(title: string, content: string) {
 
 export async function createCourseApp(configPath?: string, dataDirectory = join(root, '.data')) {
   const disclosureProject = join(root, 'lessons/chapter03/project');
-  const app = createApp(undefined, console.log, configPath, { projectDirectory: disclosureProject, recordDirectory: join(dataDirectory, 'disclosure/novel') });
+  const taskProject = join(root, 'lessons/chapter04/project');
+  const app = createApp(undefined, console.log, configPath, {
+    disclosure: { projectDirectory: disclosureProject, recordDirectory: join(dataDirectory, 'disclosure/novel') },
+    tasks: { projectDirectory: taskProject, recordDirectory: join(dataDirectory, 'tasks') },
+  });
   const messages = await createMessageHistoryRouter(dataDirectory);
   const requests = await createRequestsRouter(join(dataDirectory, 'requests'));
   const lessons = createLessonRuns(root);
@@ -26,6 +30,7 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
   app.use('/api/requests', requests.router);
   app.use('/mechanics', express.static(join(root, 'labs/mechanics/dist')));
   app.use('/requests', express.static(join(root, 'labs/requests/dist')));
+  app.use('/requests/tasks/classroom', express.static(taskProject));
   app.use('/lessons/materials', express.static(join(root, 'lessons/materials')));
   app.use('/requests/memory/maintenance', express.static(join(disclosureProject, '自动记忆练习')));
 

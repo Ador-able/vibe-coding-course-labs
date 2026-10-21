@@ -5,7 +5,7 @@ import type { Message } from './context/contract.ts';
 
 // 课程内部已有的请求材料；真正发出的正文由provider取证钩子保存。
 export type RequestInput = {
-  model: string; messages: Message[]; max_tokens: number; temperature?: number;
+  model: string; messages: Message[]; max_tokens: number; temperature?: number; reasoning_effort?: 'low' | 'high' | 'max';
   response_format?: Record<string, JSONValue>; parallel_tool_calls?: boolean;
   tools?: { type: 'function'; function: { name: string; description: string; parameters: JSONSchema7 } }[];
   tool_choice?: 'none' | { type: 'function'; function: { name: string } };
@@ -42,6 +42,6 @@ export function modelOptions(input: RequestInput) {
   return {
     instructions: input.messages.filter((message) => message.role === 'system').map((message) => message.content).join('\n\n'),
     messages, tools, toolChoice, maxOutputTokens: input.max_tokens, temperature: input.temperature,
-    providerOptions: { compatible: extra }, maxRetries: 0,
+    providerOptions: { compatible: { ...extra, ...(input.reasoning_effort ? { reasoningEffort: input.reasoning_effort } : {}) } }, maxRetries: 0,
   };
 }

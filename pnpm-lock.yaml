@@ -108,12 +108,6 @@ importers:
         specifier: 0.160.0
         version: 0.160.0
 
-  lessons/chapter04/project:
-    dependencies:
-      '@openai/codex-sdk':
-        specifier: 0.160.0
-        version: 0.160.0
-
   lessons/chapter05/project:
     dependencies:
       '@ai-sdk/openai-compatible':

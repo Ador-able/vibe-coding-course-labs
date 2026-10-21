@@ -3,7 +3,6 @@ const action = (id: string, label: string, runtime: Action['runtime'], entry: st
 
 // 页面只提供课程中已有的实验入口，不接收自由命令。
 export const lessonActions: Record<string, Action[]> = {
-  chapter04: ['none', 'conflict', 'consistent'].map((id, n) => action(id, ['不提供样例', '提供冲突样例', '提供相容样例'][n], 'codex', '运行实验.mjs', ['--condition', id], '运行记录')),
   chapter05: ['serial', 'agent'].map((id, n) => action(id, ['应用安排读取', 'Agent 安排读取'][n], 'codex', 'dist/control.js', ['--case', 'existing', '--mode', id, '--cancel-after-ms', '180000'], 'runs/control')),
   chapter07: [
     action('objects', '比较两个数据库里的同一作品', 'local', 'scripts/observe-objects.mjs'),

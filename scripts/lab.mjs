@@ -4,7 +4,7 @@ import { resolve, join } from 'node:path';
 import { homedir } from 'node:os';
 
 const [chapter, script = 'lab', ...args] = process.argv.slice(2);
-if (!/^chapter(?:03|04|05|07|08|09|10|12|13|14|15|16)$/.test(chapter || '')) {
+if (!/^chapter(?:03|05|07|08|09|10|12|13|14|15|16)$/.test(chapter || '')) {
   console.error('用法：pnpm lab chapter05 [本章命令] [参数...]。本章命令见实验页面。');
   process.exit(1);
 }

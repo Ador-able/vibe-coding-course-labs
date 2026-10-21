@@ -1,0 +1,16 @@
+.task-controls, .record-bar { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin: 22px 0 12px; }
+.task-controls a { font-size: 13px; }
+.record-bar { justify-content: space-between; }
+.record-bar label, .task-record-picker { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.task-answer { margin-top: 20px; max-height: 360px; overflow: auto; padding: 20px 24px; border: 1px solid var(--lab-border); border-radius: var(--lab-radius); }
+#results details, #material-body details { border-top: 1px solid var(--lab-border); margin-top: 20px; padding-top: 14px; }
+summary { cursor: pointer; color: var(--lab-accent); font-size: 13px; }
+pre { padding: 20px; max-height: 480px; overflow: auto; white-space: pre-wrap; overflow-wrap: anywhere; font: 13px/1.8 Consolas, monospace; }
+.table-scroll { overflow-x: auto; margin-bottom: 20px; }
+table { width: 100%; border-collapse: collapse; }
+td, th { padding: 12px 10px; border-bottom: 1px solid var(--lab-border); text-align: left; }
+#review-form { padding: 16px 0; }
+#review-form label { display: grid; grid-template-columns: 1fr 110px; gap: 10px 16px; align-items: start; margin-bottom: 24px; font-size: 14px; }
+#review-form textarea { grid-column: 1 / -1; }
+[hidden] { display: none !important; }
+@media(max-width: 700px) { .task-answer { padding: 16px; } .task-record-picker { flex-wrap: wrap; } #review-form label { grid-template-columns: 1fr; } td, th { min-width: 90px; } }
