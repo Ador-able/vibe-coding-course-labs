@@ -30,7 +30,6 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
   app.use('/api/requests', requests.router);
   app.use('/mechanics', express.static(join(root, 'labs/mechanics/dist')));
   app.use('/requests', express.static(join(root, 'labs/requests/dist')));
-  app.use('/requests/tasks/classroom', express.static(taskProject));
   app.use('/lessons/materials', express.static(join(root, 'lessons/materials')));
   app.use('/requests/memory/maintenance', express.static(join(disclosureProject, '自动记忆练习')));
 

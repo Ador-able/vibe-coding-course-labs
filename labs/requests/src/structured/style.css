@@ -32,7 +32,7 @@ label { display: block; font-size: 14px; font-weight: 400; margin: 14px 0 8px; }
 .checks > .check.pass { border-left-color: #74918a; }
 .checks > .check.fail { border-left-color: #ba6c50; }
 .checks > .check > summary { padding: 10px 12px; font-size: 13px; color: #4d626c; border: 0; }
-.checks > .check > p { padding: 0 12px 12px; margin: 0; font-size: 12px; }
+.checks > .check > p { padding: 0 12px 12px; margin: 0; font-size: 13px; }
 .comparison pre { border: 0; border-left: 2px solid #ccd7e4; background: #f6f8fb; }
 .task h4 { font-size: 17px; }
 .task .meta { font-size: 14px; color: #405467; }

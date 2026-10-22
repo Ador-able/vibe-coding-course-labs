@@ -10,7 +10,7 @@ export const LESSONS = {
 export type Lesson = keyof typeof LESSONS;
 export type CaseId = 'S1' | 'S2' | 'S3';
 export type Method = 'none' | 'conflict' | 'consistent' | 'A' | 'B';
-export type RunInput = { lesson: Lesson; caseId: CaseId; method: Method; batchId: string; parentId?: string; effort?: 'low' | 'high' | 'max' };
+export type RunInput = { lesson: Lesson; caseId: CaseId; method: Method; batchId: string; parentId?: string };
 export type Criterion = { id: string; text: string };
 export const EDIT = { before: '正午前到崖顶，才够成为正式弟子的时间条件。', after: '想当正式弟子，就得在正午前到崖顶。' };
 export type Judgment = { decision: 'pass' | 'fail' | 'pending'; evidence: string };
@@ -20,6 +20,7 @@ export type TaskRun = RunInput & {
   request: RequestRecord; error?: string;
   checks: { hanCount: number; lengthPass: boolean; exactEdit?: boolean };
   judgments: Record<string, Judgment>;
+  archive?: { path: string; report: Record<string, unknown>; assessment: unknown };
 };
 export const PLAN: Record<Lesson, { caseId: CaseId; method: Method }[]> = {
   goals: [{ caseId: 'S1', method: 'none' }],

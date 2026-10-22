@@ -15,7 +15,9 @@ main { max-width: 980px; }
 #input-label { display: block; font-size: 14px; font-weight: 400; margin-bottom: 10px; }
 .compose-actions, .record-bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
 .compose-actions { margin-top: 12px; }
-.record-bar { justify-content: flex-start; }
+.record-bar { justify-content: flex-start; flex-wrap: wrap; margin-bottom: 16px; }
+#record-choice-wrap { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 14px; }
+#record-choice { max-width: 100%; }
 .json pre { max-height: 460px; overflow: auto; }
 @media (max-width: 620px) { .facts, #compose, .latest-turn { padding: 18px; } .compose-actions, .record-bar { flex-direction: column; align-items: stretch; gap: 8px; } }
 

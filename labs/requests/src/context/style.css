@@ -15,7 +15,9 @@ header p { margin: 0; color: var(--lab-muted); font-size: 15px; }
 .setup-actions p, .follow-actions p { margin: 0; font-size: 13px; color: var(--lab-muted); }
 #first-answer-wrap { border-top: 1px solid #d9e7e8; margin-top: 20px; padding-top: 16px; }
 .small-label, .note { color: var(--lab-muted); font-size: 13px; }
-.answer { margin: 8px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.answer { margin: 8px 0; white-space: normal; overflow-wrap: anywhere; max-height: 28rem; overflow: auto; }
+.classroom-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin: 18px 0; }
+.classroom-actions .meta { margin: 0; }
 .note { margin: 10px 0; }
 #status { color: var(--lab-muted); font-size: 14px; min-height: 24px; margin: 14px 2px; }
 .error, #status.error { color: #9b3c24; }
@@ -33,7 +35,8 @@ table { border-collapse: collapse; width: 100%; font-size: 14px; min-width: 610p
 th, td { text-align: left; padding: 12px 10px; border-bottom: 1px solid #dbe6e8; vertical-align: top; }
 th { color: var(--lab-muted); font-weight: 500; font-size: 13px; background: var(--lab-surface); white-space: nowrap; }
 td { white-space: nowrap; }
-.answer-cell { white-space: pre-wrap; overflow-wrap: anywhere; min-width: 210px; width: 52%; line-height: 1.65; }
+.answer-cell { white-space: normal; overflow-wrap: anywhere; min-width: 210px; width: 52%; line-height: 1.65; }
+.answer-content { max-height: 28rem; overflow: auto; }
 .link-button { background: none; color: var(--lab-accent); padding: 0; font-weight: 500; }
 .link-button:hover { background: none; text-decoration: underline; }
 details { margin-top: 18px; background: white; border: 1px solid var(--lab-border); border-radius: 9px; }
@@ -45,7 +48,8 @@ details[open] > summary { border-bottom: 1px solid #dbe6e8; }
 .meta { font-size: 13px; color: var(--lab-muted); overflow-wrap: anywhere; margin: 10px 0; }
 .json { border-color: #d9e4e6; margin-top: 12px; }
 .json summary { padding: 12px 14px; }
-pre { font: 13px/1.7 ui-monospace, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--lab-surface); color: #234b59; padding: 16px; margin: 0; }
+pre { font: 13px/1.7 ui-monospace, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--lab-surface); color: #234b59; padding: 16px; margin: 0; max-height: 28rem; overflow: auto; }
+.message-text { padding: 16px; max-height: 28rem; overflow: auto; }
 dl { display: grid; grid-template-columns: 130px 1fr; margin: 0; font-size: 14px; gap: 14px; line-height: 1.7; }
 dt { font-weight: 600; } dd { margin: 0; color: var(--lab-muted); }
 .guide-body > p { color: var(--lab-muted); font-size: 13px; margin: 20px 0 0; }

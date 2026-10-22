@@ -13,7 +13,7 @@ td button { font-size: 13px; padding: 9px 12px; }
 .answer-area .note { margin: 0; }
 #answer { margin: 0; font-size: 16px; min-height: 38px; line-height: 1.8; }
 .download-bar { display: flex; align-items: center; gap: 18px; margin: 20px 0; }
-.json pre, #materials-content { max-height: 420px; overflow: auto; }
+.json pre, .json .message-text, #materials-content, #answer { max-height: 28rem; overflow: auto; }
 .guide-body > p { font-size: 14px; color: #355864; }
 .badge { font-size: 13px; }
 @media (max-width: 760px) { .experiment { padding: 18px; } .download-bar { align-items: flex-start; flex-direction: column; gap: 8px; } }
@@ -22,3 +22,6 @@ td button { font-size: 13px; padding: 9px 12px; }
 #comparison-body small { font-size: 12px; color: var(--lab-muted); }
 
 .run-controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 14px; }
+.record-controls, #record-choice-wrap { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; font-size: 14px; }
+.record-controls { margin-top: 18px; }
+#condition, #record-choice { max-width: 100%; }

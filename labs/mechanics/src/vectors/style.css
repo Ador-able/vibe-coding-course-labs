@@ -1,29 +1,29 @@
 
 
 header p { color: var(--lab-muted); font-size: 14px; line-height: 1.7; margin: 7px 0; }
-header .scope { font-size: 12px; color: #88703e; margin-bottom: 22px; }
+header .scope { font-size: 13px; color: #88703e; margin-bottom: 22px; }
 section { background: white; border: 1px solid var(--lab-border); border-radius: 12px; padding: 23px 25px; margin-top: 18px; }
 .section-title { display: flex; align-items: center; gap: 12px; margin-bottom: 17px; }
-.section-title > span { color: var(--lab-muted); font: 12px Consolas, monospace; }
+.section-title > span { color: var(--lab-muted); font: 13px Consolas, monospace; }
 h2 { font-size: 18px; margin: 0; }
 .lookup-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; }
-.label { display: block; font-size: 12px; color: var(--lab-muted); margin: 0 0 10px; }
+.label { display: block; font-size: 13px; color: var(--lab-muted); margin: 0 0 10px; }
 table { border-collapse: collapse; width: 100%; font-size: 13px; text-align: right; }
 th, td { padding: 11px 10px; border-bottom: 1px solid #e5ecee; }
 th { font-weight: 500; }
-thead th { font-size: 11px; color: var(--lab-muted); background: #f5f8f9; }
+thead th { font-size: 13px; color: var(--lab-muted); background: #f5f8f9; }
 th:first-child { text-align: left; }
 tbody { font-family: Consolas, monospace; }
 .id-0 { background: #eaf4f1; color: #326d64; }
 .id-1 { background: #edf1f8; color: #4a6891; }
 .id-2 { background: #f7f0e3; color: #866726; }
-.lookup-row { display: flex; align-items: center; gap: 9px; margin-top: 10px; font-size: 12px; }
-.position { color: var(--lab-muted); font-size: 11px; white-space: nowrap; }
-.id-chip { font: 12px Consolas, monospace; padding: 4px 7px; border-radius: 4px; white-space: nowrap; }
+.lookup-row { display: flex; flex-wrap: wrap; align-items: center; gap: 9px; margin-top: 10px; font-size: 13px; }
+.position { color: var(--lab-muted); font-size: 13px; white-space: nowrap; }
+.id-chip { font: 13px Consolas, monospace; padding: 4px 7px; border-radius: 4px; white-space: nowrap; }
 .lookup-arrow { color: var(--lab-muted); }
 code { font: 13px Consolas, monospace; white-space: nowrap; }
-.note { color: var(--lab-muted); font-size: 11px; line-height: 1.8; margin: 16px 0 0; }
-.intro { color: var(--lab-muted); font-size: 12px; line-height: 1.7; margin: 0 0 13px; }
+.note { color: var(--lab-muted); font-size: 13px; line-height: 1.8; margin: 16px 0 0; }
+.intro { color: var(--lab-muted); font-size: 13px; line-height: 1.7; margin: 0 0 13px; }
 .a-color { color: #217a78; }
 .b-color { color: #ad6815; }
 .presets { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -33,7 +33,7 @@ button[aria-pressed="true"] { border-color: var(--lab-accent); background: var(-
 #plot { width: 100%; display: block; background: #fcfdfd; border-radius: 8px; }
 .grid-line { stroke: #eaf0f1; stroke-width: 1; fill: none; }
 .axis { stroke: #c0cdd1; stroke-width: 1.2; fill: none; }
-.tick, .axis-label { fill: #8a9ea6; font: 11px Consolas, monospace; }
+.tick, .axis-label { fill: #8a9ea6; font: 12px Consolas, monospace; }
 .axis-label { font-size: 13px; }
 .distance-line { stroke: #6e8290; stroke-width: 1.5; stroke-dasharray: 4 4; fill: none; }
 .vector-a { stroke: #217a78; stroke-width: 3; fill: none; }
@@ -43,26 +43,26 @@ button[aria-pressed="true"] { border-color: var(--lab-accent); background: var(-
 .label-a, .label-b { font: 600 15px Consolas, monospace; }
 .label-a { fill: #217a78; }
 .label-b { fill: #ad6815; }
-.plot-caption { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; color: var(--lab-muted); font-size: 11px; margin: 10px 0 0; }
+.plot-caption { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; color: var(--lab-muted); font-size: 13px; margin: 10px 0 0; }
 h3 { margin: 0 0 15px; font-size: 15px; font-family: Consolas, 'Microsoft YaHei', monospace; color: #94621f; }
-.coordinates label { display: flex; justify-content: space-between; font-size: 11px; color: var(--lab-muted); }
+.coordinates label { display: flex; justify-content: space-between; font-size: 13px; color: var(--lab-muted); }
 .coordinates output { color: #996b2e; font: 13px Consolas, monospace; }
 input[type="range"] { accent-color: #a87834; width: 100%; margin: 7px 0 12px; cursor: pointer; }
-.lengths { color: var(--lab-muted); font: 11px/1.7 Consolas, 'Microsoft YaHei', monospace; margin: 10px 0 12px; }
+.lengths { color: var(--lab-muted); font: 13px/1.7 Consolas, 'Microsoft YaHei', monospace; margin: 10px 0 12px; }
 .lengths span { margin-left: 10px; }
 .metric-list { margin: 0; }
 .metric-list > div { display: flex; align-items: center; justify-content: space-between; border-top: 1px solid #e6edef; padding: 12px 0; }
 .metric-list dt { font-size: 13px; }
-.metric-list small { display: block; color: var(--lab-muted); font-size: 11px; margin-top: 4px; }
+.metric-list small { display: block; color: var(--lab-muted); font-size: 13px; margin-top: 4px; }
 .metric-list dd { margin: 0; color: #286d75; font: 23px Consolas, monospace; }
 .undefined { font: 15px 'Microsoft YaHei', sans-serif; color: #947348; }
-.observation { color: var(--lab-muted); background: #f1f7f8; font-size: 11px; line-height: 1.8; border-radius: 5px; padding: 9px 11px; margin: 6px 0 0; min-height: 38px; }
-details { border-top: 1px solid #e4ecee; margin-top: 20px; padding-top: 14px; font-size: 12px; }
+.observation { color: var(--lab-muted); background: #f1f7f8; font-size: 13px; line-height: 1.8; border-radius: 5px; padding: 9px 11px; margin: 6px 0 0; min-height: 38px; }
+details { border-top: 1px solid #e4ecee; margin-top: 20px; padding-top: 14px; font-size: 13px; }
 summary { cursor: pointer; color: var(--lab-muted); }
 .formulas { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-.formulas dt { color: var(--lab-muted); font-size: 11px; margin-bottom: 6px; }
+.formulas dt { color: var(--lab-muted); font-size: 13px; margin-bottom: 6px; }
 .formulas dd { margin: 0; font: 13px/1.7 Consolas, monospace; }
-details p { color: var(--lab-muted); font-size: 11px; line-height: 1.8; margin-bottom: 0; }
+details p { color: var(--lab-muted); font-size: 13px; line-height: 1.8; margin-bottom: 0; }
 @media (max-width: 800px) {
   section { padding: 21px 20px; }
   .lookup-layout { gap: 20px; }

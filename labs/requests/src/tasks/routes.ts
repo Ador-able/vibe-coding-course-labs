@@ -7,6 +7,7 @@ import { sendRecordedRequest, isObject } from '../recorded-model.ts';
 import { LESSONS, PLAN, type RunInput, type TaskRun } from './contract.ts';
 import { loadMaterials, buildPrompt, criteria } from './materials.ts';
 import { checkOutput } from './checks.ts';
+import { loadClassroom } from './classroom.ts';
 
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 export function createTasksRouter(env: NodeJS.ProcessEnv, project: string, directory: string) {
@@ -14,6 +15,11 @@ export function createTasksRouter(env: NodeJS.ProcessEnv, project: string, direc
   const materials = () => loadMaterials(project);
   const save = async (run: TaskRun) => { await mkdir(directory, { recursive: true }); await writeFile(join(directory, `${run.id}.json`), JSON.stringify(run, null, 2)); };
   const read = async (id: string) => JSON.parse(await readFile(join(directory, `${id}.json`), 'utf8')) as TaskRun;
+  router.get('/classroom/:lesson', async (req, res, next) => {
+    if (!Object.hasOwn(LESSONS, req.params.lesson)) { res.status(400).json({ error: '请选择本节实验。' }); return; }
+    try { res.json(await loadClassroom(project, req.params.lesson as RunInput['lesson'])); }
+    catch (error) { next(error); }
+  });
   router.get('/materials', async (_req, res, next) => {
     try { res.json({ ...await materials(), criteria: Object.fromEntries(['S1', 'S2', 'S3'].map(id => [id, criteria(id as TaskRun['caseId'])])) }); }
     catch (error) { next(error); }
@@ -40,7 +46,7 @@ export function createTasksRouter(env: NodeJS.ProcessEnv, project: string, direc
   });
   router.post('/run', async (req, res, next) => {
     const input = req.body as RunInput;
-    if (!input || !Object.hasOwn(LESSONS, input.lesson) || !uuid.test(input.batchId ?? '') || !PLAN[input.lesson].some(item => item.caseId === input.caseId && item.method === input.method) || input.parentId !== undefined && !uuid.test(input.parentId) || input.effort !== undefined && !['low', 'high', 'max'].includes(input.effort)) {
+    if (!input || !Object.hasOwn(LESSONS, input.lesson) || !uuid.test(input.batchId ?? '') || !PLAN[input.lesson].some(item => item.caseId === input.caseId && item.method === input.method) || input.parentId !== undefined && !uuid.test(input.parentId)) {
       res.status(400).json({ error: '实验条件不正确，请重新选择实验。' }); return;
     }
     let run: TaskRun | undefined;
@@ -56,13 +62,13 @@ export function createTasksRouter(env: NodeJS.ProcessEnv, project: string, direc
         }
       }
       const config = readConfig(env), loaded = await materials();
-      if (parent && (parent.configuredModel !== config.model || parent.baseUrl !== config.baseUrl || parent.effort !== input.effort)) {
+      if (parent && (parent.configuredModel !== config.model || parent.baseUrl !== config.baseUrl)) {
         res.status(400).json({ error: '这一对的模型配置已变化，请重新生成初稿再比较。' }); return;
       }
       const startedAt = new Date().toISOString();
-      run = { lesson: input.lesson, caseId: input.caseId, method: input.method, batchId: input.batchId, ...(input.effort ? { effort: input.effort } : {}), ...(parent ? { parentId: parent.id } : {}), id: randomUUID(), startedAt, configuredModel: config.model, baseUrl: config.baseUrl,
+      run = { lesson: input.lesson, caseId: input.caseId, method: input.method, batchId: input.batchId, ...(parent ? { parentId: parent.id } : {}), id: randomUUID(), startedAt, configuredModel: config.model, baseUrl: config.baseUrl,
         state: 'running', output: '', checks: checkOutput(''), judgments: {},
-        request: { step: `${input.caseId} / ${input.method}`, startedAt, requestBody: JSON.stringify({ model: config.model, max_tokens: 16384, ...(input.effort ? { reasoning_effort: input.effort } : {}), messages: [{ role: 'user', content: buildPrompt(input, loaded, parent) }] }) } };
+        request: { step: `${input.caseId} / ${input.method}`, startedAt, requestBody: JSON.stringify({ model: config.model, max_tokens: 16384, messages: [{ role: 'user', content: buildPrompt(input, loaded, parent) }] }) } };
       await save(run);
       try {
         const message = await sendRecordedRequest(config, run.request, AbortSignal.any([controller.signal, AbortSignal.timeout(180_000)]));

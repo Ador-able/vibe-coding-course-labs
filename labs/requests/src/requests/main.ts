@@ -16,30 +16,34 @@ type Attempt = {
 };
 type CompletedView = { requestId: string; fixtureKey: FixtureKey; input: string; message: Message; endedAt: string | null };
 type LiveCatalog = Catalog & { serviceId: string; sourceVersion: string };
+type ClassroomCase = { input: { id: string; fixtureKey: FixtureKey; scenario: Scenario; messages: Message[] }; condition: Scenario | 'manual-stop'; finalMessage: Message | null; events: { at: string; event: UIMessageChunk }[]; error: { name: string; message: string } | null; record: RequestRecord; [key: string]: unknown };
+type ClassroomRecord = { cases: ClassroomCase[]; http: { path: string; output: unknown; [key: string]: unknown }[]; [key: string]: unknown };
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <header class="page-heading"><div><p class="eyebrow">AI 请求观察 · 受控演练</p><h1>小说资料整理</h1>
+  <header class="page-heading"><div><h1>小说资料整理</h1>
     <p class="intro">《凡人修仙传》原文回显 · 受控演练 · 不调用云模型</p></div></header>
   <main>
     <div class="workspace">
-      <section class="input-panel panel"><h2>准备这次工作</h2>
-        <details class="material-panel"><summary>查看完整材料</summary><label for="material" class="sr-only">完整输入</label><textarea id="material" rows="8" spellcheck="false"></textarea></details>
-        <details class="settings"><summary>选择下次演练</summary><div class="choices">
+      <section class="input-panel panel"><h2 id="input-heading">准备这次工作</h2>
+        <details id="material-panel" class="material-panel"><summary>查看完整材料</summary><label for="material" class="sr-only">完整输入</label><textarea id="material" rows="8" spellcheck="false"></textarea></details>
+        <details id="local-settings" class="settings"><summary>选择下次演练</summary><div class="choices">
           <label>下次材料<select id="fixture"><option value="A">A · 第一条原文</option><option value="B">B · 第二条原文</option></select></label>
           <label>下次条件<select id="scenario"></select></label>
         </div><p class="quiet">本页只使用两份固定全文。模拟文字不理解自行改动。</p></details>
-        <div class="actions"><button id="run">开始演练</button><button id="stop" hidden>停止本次</button><button id="inspect" class="secondary" hidden>核查本次记录</button></div>
+        <label id="classroom-choice" class="classroom-choice" hidden>课堂记录<select id="classroom-case"></select></label>
+        <div class="actions"><button id="run">开始演练</button><button id="stop" hidden>停止本次</button><button id="inspect" class="secondary" hidden>核查本次记录</button><button id="classroom" class="secondary">查看课堂实录</button><button id="local" class="secondary" hidden>返回本机演练</button></div>
         <p id="status" role="status" aria-live="polite"></p>
       </section>
-      <section class="current-panel panel"><p class="section-label">当前任务</p><h2 id="current-title">还没有提交</h2>
+      <section class="current-panel panel"><p id="result-source" class="section-label">当前任务</p><h2 id="current-title">还没有提交</h2>
         <p id="current-context" class="quiet"></p><div id="answer" class="answer empty">收到的文字会在这里显示。</div><p id="current-boundary" class="boundary"></p></section>
       <details class="previous-panel panel" id="previous-panel" hidden><summary>上次完整结果</summary><h2 id="previous-title"></h2>
         <p id="previous-context" class="quiet"></p><div id="previous-answer" class="answer"></div><p class="boundary">内容仍需回原文核对。</p></details>
     </div>
     <section class="evidence-panel"><details id="evidence"><summary>查看完整输入、事件与两端记录</summary>
       <p class="quiet">原始客户端异常与模拟服务原因保留在记录中；没有自动再次提交。</p>
-      <h3>页面收到的消息与动作</h3><pre id="client-record"></pre>
-      <h3>人工核查的服务端对象</h3><pre id="server-record"></pre>
+      <h3 id="client-heading">页面收到的消息与动作</h3><pre id="client-record"></pre>
+      <h3 id="server-heading">人工核查的服务端对象</h3><pre id="server-record"></pre>
+      <details id="classroom-receipts" hidden><summary>课堂同编号核查与取消回执</summary><pre id="classroom-http"></pre></details>
       <button id="download" class="secondary">下载本页完整记录</button>
     </details></section>
   </main>`;
@@ -49,6 +53,7 @@ const fixtureChoice = get<HTMLSelectElement>('fixture');
 const scenarioChoice = get<HTMLSelectElement>('scenario');
 let catalog: LiveCatalog | null = null, current: Attempt | null = null, previous: CompletedView | null = null;
 let busy = false, reading = false, loading = true, loadError: unknown = null;
+let classroomRecord: ClassroomRecord | null = null, showingClassroom = false, loadingClassroom = false, classroomCurrent = 0, classroomError = '';
 const attempts: Attempt[] = [];
 const text = (message: Message | null) => message?.parts.filter(part => part.type === 'text').map(part => part.text).join('') ?? '';
 const stamp = (attempt: Attempt, value: unknown): Timed<unknown> => ({ at: new Date().toISOString(), elapsedMs: Math.round((performance.now() - attempt.startClock) * 10) / 10, value });
@@ -76,33 +81,65 @@ const stateText = (attempt: Attempt) => {
   if (attempt.rejectedBeforeModel) return '输入尚未进入模型演练，请保留草稿并载入固定全文。';
   return '本次完成情况尚未确认。先核查这个编号，保留输入和收到的片段。';
 };
+const conditionLabel = (item: ClassroomCase, info: LiveCatalog) => item.condition === 'manual-stop' ? '正常慢流后手动停止'
+  : info.scenarios.find(scenario => scenario.key === item.condition)!.label;
 
 function render() {
+  const classroom = showingClassroom ? classroomRecord!.cases[classroomCurrent] : null;
+  const info = showingClassroom ? classroomRecord!.http.find(item => item.path === '/api/requests/catalog')!.output as LiveCatalog : catalog;
+  const requestId = classroom?.input.id ?? current?.requestId;
+  const fixtureKey = classroom?.input.fixtureKey ?? current?.fixtureKey;
+  const message = classroom ? classroom.finalMessage : current?.message ?? null;
+  const unavailable = loading || busy || loadingClassroom;
   const pending = current !== null && needsConfirmation(current);
-  get<HTMLButtonElement>('run').disabled = loading || busy;
+  get('input-heading').textContent = showingClassroom ? '查看课堂记录' : '准备这次工作';
+  get('material-panel').hidden = showingClassroom; get('local-settings').hidden = showingClassroom;
+  get('classroom-choice').hidden = !showingClassroom;
+  get<HTMLSelectElement>('classroom-case').disabled = unavailable;
+  get<HTMLButtonElement>('classroom').disabled = unavailable;
+  get('local').hidden = !showingClassroom; get<HTMLButtonElement>('local').disabled = unavailable;
+  get<HTMLButtonElement>('download').disabled = unavailable;
+  get('run').hidden = showingClassroom; get<HTMLButtonElement>('run').disabled = unavailable;
   get('run').textContent = !catalog ? '重新读取材料' : pending ? '核查本次记录' : current ? '再次演练' : '开始演练';
-  get('stop').hidden = !busy || reading;
+  get('stop').hidden = showingClassroom || loadingClassroom || !busy || reading;
   get<HTMLButtonElement>('stop').disabled = current?.stopRequestedAt !== null;
-  get('inspect').hidden = !current || busy || pending;
-  textarea.disabled = loading || busy; fixtureChoice.disabled = loading || busy; scenarioChoice.disabled = loading || busy;
-  get('status').textContent = loading ? '正在读取两份完整材料。' : !catalog ? '材料未能载入，请检查本地服务后重新读取。'
-    : current ? stateText(current) : '输入已准备，可开始本次演练。';
-  get('status').className = current && (needsConfirmation(current) || ['failed', 'timed-out'].includes(knownState(current) ?? '')) ? 'error' : '';
-  get('current-title').textContent = current && catalog ? `${current.fixtureKey} · ${catalog.fixtures[current.fixtureKey].title}` : '还没有提交';
-  get('current-context').textContent = current && catalog ? catalog.scenarios.find(item => item.key === current!.scenario)!.label : '';
-  const answer = text(current?.message ?? null);
-  get('answer').textContent = answer || (current ? '本次还没有收到文字。' : '收到的文字会在这里显示。');
+  get('inspect').hidden = showingClassroom || !current || busy || pending;
+  get<HTMLButtonElement>('inspect').disabled = unavailable;
+  textarea.disabled = unavailable || showingClassroom; fixtureChoice.disabled = unavailable || showingClassroom; scenarioChoice.disabled = unavailable || showingClassroom;
+  get('status').textContent = classroomError || (loadingClassroom ? '正在读取课堂实录。' : classroom
+    ? `页面消息状态 ${classroom.finalMessage?.metadata?.state ?? '未收到'} · 服务端读回 ${classroom.record.state}${classroom.record.cause ? `（${classroom.record.cause}）` : ''}${classroom.error ? `；客户端异常 ${classroom.error.name}：${classroom.error.message}` : ''}`
+    : loading ? '正在读取两份完整材料。' : !catalog ? '材料未能载入，请检查本地服务后重新读取。' : current ? stateText(current) : '');
+  get('status').className = classroomError || (classroom ? classroom.error || ['failed', 'timed-out'].includes(classroom.record.state)
+    : current && (needsConfirmation(current) || ['failed', 'timed-out'].includes(knownState(current) ?? ''))) ? 'error' : '';
+  get('result-source').textContent = showingClassroom ? '课堂实录 · 当前任务' : '本机演练 · 当前任务';
+  get('current-title').textContent = fixtureKey && info ? `${fixtureKey} · ${info.fixtures[fixtureKey].title}` : '还没有提交';
+  get('current-context').textContent = classroom && info ? conditionLabel(classroom, info) : current && info ? info.scenarios.find(item => item.key === current!.scenario)!.label : '';
+  const answer = text(message);
+  get('answer').textContent = answer || (requestId ? '本次还没有收到文字。' : '收到的文字会在这里显示。');
   get('answer').className = answer ? 'answer' : 'answer empty';
-  get('current-boundary').textContent = current ? `编号 ${current.requestId.slice(0, 8)} · ${current.clientState === 'completed' ? '技术完整，未认证内容' : '只显示本次实际收到的文字'}` : '';
-  const showPrevious = previous && previous.requestId !== current?.requestId;
+  get('current-boundary').textContent = classroom ? `编号 ${classroom.input.id.slice(0, 8)} · 客户端 ${classroom.events.length} 个事件 · 服务端 ${classroom.record.uiEvents.length} 个事件`
+    : current ? `编号 ${current.requestId.slice(0, 8)} · ${current.clientState === 'completed' ? '技术完整，未认证内容' : '只显示本次实际收到的文字'}` : '';
+  const priorCase = classroom && classroomRecord!.cases.slice(0, classroomCurrent + 1).reverse().find(item => item.finalMessage?.metadata?.state === 'completed' && item.events.some(({ event }) => event.type === 'finish'));
+  const prior = showingClassroom ? priorCase && { requestId: priorCase.input.id, fixtureKey: priorCase.input.fixtureKey, message: priorCase.finalMessage! } : previous;
+  const showPrevious = prior && prior.requestId !== requestId;
   get('previous-panel').hidden = !showPrevious;
-  if (previous && catalog) {
-    get('previous-title').textContent = `${previous.fixtureKey} · ${catalog.fixtures[previous.fixtureKey].title}`;
-    get('previous-context').textContent = `编号 ${previous.requestId.slice(0, 8)} · 完成于 ${previous.endedAt ?? '未知'}`;
-    get('previous-answer').textContent = text(previous.message);
+  if (prior && info) {
+    get('previous-title').textContent = `${prior.fixtureKey} · ${info.fixtures[prior.fixtureKey].title}`;
+    get('previous-context').textContent = `编号 ${prior.requestId.slice(0, 8)}`;
+    get('previous-answer').textContent = text(prior.message);
   }
-  get('client-record').textContent = JSON.stringify(current ? publicAttempt(current) : { catalogLoaded: catalog !== null, loadError }, null, 2);
-  get('server-record').textContent = current?.serverRecord ? JSON.stringify(current.serverRecord, null, 2) : '尚未人工读取本次服务端记录。';
+  get('client-heading').textContent = showingClassroom ? '课堂客户端原始消息与异常' : '页面收到的消息与动作';
+  get('server-heading').textContent = showingClassroom ? '课堂随后核查的服务端对象' : '人工核查的服务端对象';
+  get('classroom-receipts').hidden = !showingClassroom;
+  if (classroom) {
+    const { record: _record, ...client } = classroom;
+    get('client-record').textContent = JSON.stringify(client, null, 2);
+    get('server-record').textContent = JSON.stringify(classroom.record, null, 2);
+    get('classroom-http').textContent = JSON.stringify(classroomRecord!.http.filter(item => item.path === `/api/requests/${classroom.input.id}` || item.path === `/api/requests/${classroom.input.id}/cancel`), null, 2);
+  } else {
+    get('client-record').textContent = JSON.stringify(current ? publicAttempt(current) : { catalogLoaded: catalog !== null, loadError }, null, 2);
+    get('server-record').textContent = current?.serverRecord ? JSON.stringify(current.serverRecord, null, 2) : '尚未人工读取本次服务端记录。';
+  }
 }
 
 async function load() {
@@ -119,7 +156,8 @@ async function load() {
 }
 
 async function run() {
-  if (!catalog || busy || current && needsConfirmation(current)) return;
+  if (showingClassroom || loadingClassroom || !catalog || busy || current && needsConfirmation(current)) return;
+  classroomError = '';
   const fixtureKey = fixtureChoice.value as FixtureKey;
   const attempt: Attempt = { requestId: crypto.randomUUID(), fixtureKey, scenario: scenarioChoice.value as Scenario,
     input: textarea.value, instructions: catalog.fixtures[fixtureKey].instructions,
@@ -167,7 +205,7 @@ async function run() {
 
 async function stop() {
   const attempt = current;
-  if (!attempt || !busy || reading || attempt.stopRequestedAt) return;
+  if (showingClassroom || loadingClassroom || !attempt || !busy || reading || attempt.stopRequestedAt) return;
   attempt.stopRequestedAt = new Date().toISOString();
   attempt.actions.push(stamp(attempt, { kind: 'user-stop' })); render();
   try {
@@ -184,7 +222,8 @@ async function stop() {
 
 async function inspect() {
   const attempt = current;
-  if (!attempt || busy) return;
+  if (showingClassroom || loadingClassroom || !attempt || busy) return;
+  classroomError = '';
   busy = true; reading = true; attempt.actions.push(stamp(attempt, { kind: 'user-read-same-request' })); render();
   try {
     const response = await fetch(`/api/requests/${attempt.requestId}`);
@@ -197,15 +236,34 @@ async function inspect() {
   finally { if (current === attempt) { busy = false; reading = false; render(); } }
 }
 
-get('run').addEventListener('click', () => { if (!catalog) void load(); else if (current && needsConfirmation(current)) void inspect(); else void run(); });
+get('run').addEventListener('click', () => { if (showingClassroom || loadingClassroom || busy || loading) return; classroomError = ''; if (!catalog) void load(); else if (current && needsConfirmation(current)) void inspect(); else void run(); });
 get('stop').addEventListener('click', () => { void stop(); });
 get('inspect').addEventListener('click', () => { void inspect(); });
-fixtureChoice.addEventListener('change', () => { if (catalog && !busy) textarea.value = catalog.fixtures[fixtureChoice.value as FixtureKey].input; });
+fixtureChoice.addEventListener('change', () => { if (catalog && !busy && !loadingClassroom && !showingClassroom) textarea.value = catalog.fixtures[fixtureChoice.value as FixtureKey].input; });
+get('classroom').addEventListener('click', async () => {
+  if (busy || loading || loadingClassroom) return;
+  loadingClassroom = true; classroomError = ''; render();
+  try {
+    if (!classroomRecord) {
+      const response = await fetch('/requests/records/requests/classroom.json');
+      if (!response.ok) throw new Error();
+      classroomRecord = await response.json() as ClassroomRecord;
+      const info = classroomRecord.http.find(item => item.path === '/api/requests/catalog')!.output as LiveCatalog;
+      get<HTMLSelectElement>('classroom-case').replaceChildren(...classroomRecord.cases.map((item, i) => new Option(`第 ${i + 1} 次 · ${item.input.fixtureKey} · ${conditionLabel(item, info)}`, String(i))));
+    }
+    classroomCurrent = classroomRecord.cases.findIndex(item => item.condition === 'disconnect');
+    get<HTMLSelectElement>('classroom-case').value = String(classroomCurrent); showingClassroom = true;
+  } catch { classroomError = '课堂实录读取失败，请重试。'; }
+  finally { loadingClassroom = false; render(); }
+});
+get('local').addEventListener('click', () => { if (busy || loading || loadingClassroom) return; showingClassroom = false; classroomError = ''; render(); });
+get('classroom-case').addEventListener('change', () => { if (busy || loadingClassroom) return; classroomCurrent = Number(get<HTMLSelectElement>('classroom-case').value); render(); });
 get('download').addEventListener('click', () => {
-  const body = { origin: '当前受控页面的真实HTTP消费与手工动作记录，未运行新云模型', serviceId: catalog?.serviceId, sourceVersion: catalog?.sourceVersion,
+  if (busy || loading || loadingClassroom) return;
+  const body = showingClassroom ? classroomRecord : { origin: '当前受控页面的真实HTTP消费与手工动作记录，未运行新云模型', serviceId: catalog?.serviceId, sourceVersion: catalog?.sourceVersion,
     currentRequestId: current?.requestId ?? null,
     inputDraft: textarea.value, previous, attempts: attempts.map(publicAttempt) };
   const url = URL.createObjectURL(new Blob([JSON.stringify(body, null, 2)], { type: 'application/json' }));
-  const link = document.createElement('a'); link.href = url; link.download = `受控请求页面-${current?.requestId ?? '未提交'}.json`; link.click(); URL.revokeObjectURL(url);
+  const link = document.createElement('a'); link.href = url; link.download = showingClassroom ? '请求状态-课堂实录.json' : `受控请求页面-${current?.requestId ?? '未提交'}.json`; link.click(); URL.revokeObjectURL(url);
 });
 void load();

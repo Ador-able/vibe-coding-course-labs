@@ -12,7 +12,7 @@ document.querySelector<HTMLElement>('#app')!.innerHTML = `
   </form>
   <p id="status" role="status"></p>
   <section id="results" aria-live="polite"></section>
-  <footer>仅分词，不运行模型。使用官方公开配置；未套用聊天模板，也未自动添加特殊 token。结果不等于在线服务的账单用量。</footer>`;
+  <footer><details><summary>实验说明</summary><p>仅分词，不运行模型。使用官方公开配置；未套用聊天模板，也未自动添加特殊 token。结果不等于在线服务的账单用量。</p></details></footer>`;
 
 const form = document.querySelector<HTMLFormElement>('#lab-form')!;
 const input = document.querySelector<HTMLTextAreaElement>('#input')!;

@@ -2,6 +2,8 @@ import './style.css';
 import type { Catalog, CompletionState, Conversation, ConversationView, FixtureKey, Message, PreparedInput } from './contract.ts';
 
 type Phase = 'user' | 'snapshotEarly' | 'snapshotLater' | 'final';
+type ClassroomCase = { fixtureKey: FixtureKey; reads: { phase: Exclude<Phase, 'user'>; view: ConversationView }[]; feedbackReadback: ConversationView; prepared: PreparedInput; [key: string]: unknown };
+type ClassroomRecord = { cases: ClassroomCase[]; http: unknown[]; [key: string]: unknown };
 type ApiReceipt = { at: string; url: string; method: string; requestBody: unknown;
   status: number | null; responseBody: unknown; error?: string };
 class ApiError extends Error {
@@ -28,6 +30,25 @@ let dirty = false;
 let readRequired = false;
 let statusText = '正在读取导入材料。';
 let statusError = false;
+let classroomRecord: ClassroomRecord | undefined;
+let showingClassroom = false;
+let classroomStatus = '';
+let classroomError = false;
+const classroomCaseSelect = element<HTMLSelectElement>('classroom-case');
+const classroomPhaseSelect = element<HTMLSelectElement>('classroom-phase');
+
+function selectedClassroom(): ClassroomCase | undefined {
+  return classroomRecord?.cases.find(item => item.fixtureKey === classroomCaseSelect.value);
+}
+function updateClassroomPhases(): void {
+  const item = selectedClassroom();
+  if (!item) return;
+  classroomPhaseSelect.replaceChildren(...item.reads.map(({ phase, view }) => {
+    const label = { snapshotEarly: '较早快照', snapshotLater: '后续快照', final: '完整回显消息' }[phase];
+    return new Option(`${label} · ${textOf(view.messages.find(message => message.role === 'assistant')).length}字`, phase);
+  }), new Option('人工校正读回与准备的输入 P2', 'feedback'));
+  classroomPhaseSelect.value = 'feedback';
+}
 
 function observation() {
   return { nextFixture: fixtureSelect.value, nextPhase: phaseSelect.value,
@@ -64,11 +85,11 @@ function reviewText(message?: Message): string | undefined {
   const part = message?.parts.find(item => item.type === 'data-review-note');
   return part?.type === 'data-review-note' ? part.data.text : undefined;
 }
-function savedReview(): string | undefined {
-  return reviewText(current?.messages.find(message => message.parts.some(part => part.type === 'data-review-note')));
+function savedReview(view = current): string | undefined {
+  return reviewText(view?.messages.find(message => message.parts.some(part => part.type === 'data-review-note')));
 }
-function sourceUser(): Message | undefined {
-  return current?.messages.find(message => message.role === 'user') ?? activeFixture()?.userMessage;
+function sourceUser(view = current): Message | undefined {
+  return view?.messages.find(message => message.role === 'user') ?? activeFixture()?.userMessage;
 }
 function textOf(message?: Message): string {
   return message?.parts.filter(part => part.type === 'text').map(part => part.text).join('\n\n') ?? '';
@@ -105,12 +126,12 @@ function addText(parent: HTMLElement, className: string, text: string, tag = 'p'
   parent.append(node);
   return node;
 }
-function renderAssistant(): void {
-  const message = current?.messages.find(item => item.role === 'assistant');
+function renderAssistant(view: ConversationView | undefined): void {
+  const message = view?.messages.find(item => item.role === 'assistant');
   const parent = element('assistant');
   parent.replaceChildren();
-  const entry = current?.entries.find(item => item.messageId === message?.id);
-  element('completion').textContent = !current ? '尚未保存' : message ? stateName(entry?.completionState) : '用户材料已保存';
+  const entry = view?.entries.find(item => item.messageId === message?.id);
+  element('completion').textContent = !view ? '尚未保存' : message ? stateName(entry?.completionState) : '用户材料已保存';
   element('historical-progress').textContent = '';
   if (!message) {
     addText(parent, 'empty', '先保存用户材料，再导入同一助手消息的快照或完整原件。');
@@ -127,15 +148,15 @@ function renderAssistant(): void {
     parent.append(section);
   }
 }
-function renderPrepared(): void {
-  element('prepared').hidden = !prepared;
+function renderPrepared(input: PreparedInput | undefined): void {
+  element('prepared').hidden = !input;
   const parent = element('input-readable');
   parent.replaceChildren();
-  if (!prepared) return;
+  if (!input) return;
   addText(parent, 'input-role', '本轮规则', 'h3');
-  addText(parent, 'prose', prepared.nextInput.system);
-  if (prepared.excluded.length) addText(parent, 'quiet', `本轮未选入${prepared.excluded.length}条未完成助手消息。原件仍保存在库中，身份和理由见完整对象。`);
-  for (const [index, message] of prepared.nextInput.messages.entries()) {
+  addText(parent, 'prose', input.nextInput.system);
+  if (input.excluded.length) addText(parent, 'quiet', `本轮未选入${input.excluded.length}条未完成助手消息。原件仍保存在库中，身份和理由见完整对象。`);
+  for (const [index, message] of input.nextInput.messages.entries()) {
     const section = document.createElement('section');
     addText(section, 'input-role', `${index + 1} · ${message.role}`, 'h3');
     if (typeof message.content === 'string') addText(section, 'prose', message.content);
@@ -148,14 +169,28 @@ function renderPrepared(): void {
 }
 
 function render(): void {
+  const classroom = selectedClassroom();
+  const feedbackPhase = classroomPhaseSelect.value === 'feedback';
+  const view = showingClassroom ? feedbackPhase ? classroom?.feedbackReadback : classroom?.reads.find(item => item.phase === classroomPhaseSelect.value)?.view : current;
+  const input = showingClassroom ? feedbackPhase ? classroom?.prepared : undefined : prepared;
   const fixture = activeFixture();
-  element('source-heading').textContent = current ? '已保存的用户材料' : '导入用材料（未保存）';
-  element('user-task').textContent = textOf(sourceUser());
-  element('history-heading').textContent = current?.messages.some(message => message.role === 'assistant') ? '已保存的助手消息' : '当前记录';
-  renderAssistant();
-  element('record-identity').textContent = current ? `${current.messages.length}条已保存消息 · 会话 ${current.conversation.id.slice(0, 8)}` : '';
-  element('review-state').textContent = readRequired ? '保存待确认' : dirty ? '未保存' : savedReview() === undefined ? '未保存' : '已保存并读回';
-  if (noteInput.value !== draft) noteInput.value = draft;
+  element('local-source-controls').hidden = showingClassroom;
+  element('classroom-controls').hidden = !showingClassroom;
+  importButton.hidden = showingClassroom;
+  element('local').hidden = !showingClassroom;
+  element<HTMLButtonElement>('local').disabled = busy;
+  element<HTMLButtonElement>('classroom').disabled = busy;
+  classroomCaseSelect.disabled = busy; classroomPhaseSelect.disabled = busy;
+  element('result-source').textContent = showingClassroom ? '课堂实录 · 只读' : '本机记录';
+  element('source-heading').textContent = view ? '已保存的用户材料' : '导入用材料（未保存）';
+  element('user-task').textContent = textOf(sourceUser(view));
+  element('history-heading').textContent = view?.messages.some(message => message.role === 'assistant') ? '已保存的助手消息' : '当前记录';
+  renderAssistant(view);
+  element('record-identity').textContent = view ? `${view.messages.length}条已保存消息 · 会话 ${view.conversation.id.slice(0, 8)}` : '';
+  element('review-state').textContent = showingClassroom ? savedReview(view) === undefined ? '未保存' : '已保存并读回' : readRequired ? '保存待确认' : dirty ? '未保存' : savedReview() === undefined ? '未保存' : '已保存并读回';
+  const visibleNote = showingClassroom ? savedReview(view) ?? '' : draft;
+  if (noteInput.value !== visibleNote) noteInput.value = visibleNote;
+  noteInput.readOnly = showingClassroom;
   const assistant = current?.messages.find(message => message.role === 'assistant');
   const currentKeyMatches = fixture?.key === fixtureSelect.value;
   const creating = phaseSelect.value === 'user';
@@ -166,26 +201,31 @@ function render(): void {
   const reviewing = !!assistant && currentKeyMatches && finalAlreadySaved;
   importButton.classList.toggle('secondary', reviewing);
   saveButton.classList.toggle('secondary', !reviewing);
-  saveButton.disabled = busy || readRequired || !assistant || !dirty || !draft.trim();
-  noteInput.disabled = busy || !assistant;
-  prepareButton.disabled = busy || readRequired || !assistant || dirty || savedReview() === undefined || !!prepared;
-  reloadButton.disabled = busy || !current;
-  fixtureSelect.disabled = busy;
-  phaseSelect.disabled = busy;
-  savedSelect.disabled = busy;
-  openButton.disabled = busy || !savedSelect.value;
-  element('status').textContent = statusText;
-  element('status').classList.toggle('error', statusError);
-  element('raw-view').textContent = current ? JSON.stringify(current, null, 2) : '尚未保存记录。';
-  element('raw-prepared').textContent = prepared ? JSON.stringify(prepared, null, 2) : '尚未准备输入。';
-  element('raw-requests').textContent = JSON.stringify(receipts, null, 2);
-  element('raw-catalog').textContent = JSON.stringify(catalog ?? {}, null, 2);
-  renderPrepared();
+  saveButton.disabled = busy || showingClassroom || readRequired || !assistant || !dirty || !draft.trim();
+  noteInput.disabled = busy || !view?.messages.some(message => message.role === 'assistant');
+  prepareButton.disabled = busy || showingClassroom || readRequired || !assistant || dirty || savedReview() === undefined || !!prepared;
+  saveButton.hidden = showingClassroom; prepareButton.hidden = showingClassroom;
+  reloadButton.hidden = showingClassroom; reloadButton.disabled = busy || showingClassroom || !current;
+  fixtureSelect.disabled = busy || showingClassroom;
+  phaseSelect.disabled = busy || showingClassroom;
+  savedSelect.disabled = busy || showingClassroom;
+  element('saved-choice').hidden = showingClassroom; openButton.hidden = showingClassroom;
+  openButton.disabled = busy || showingClassroom || !savedSelect.value;
+  element<HTMLButtonElement>('download').disabled = busy;
+  element('status').textContent = showingClassroom || classroomStatus ? classroomStatus : statusText;
+  element('status').classList.toggle('error', showingClassroom || classroomStatus ? classroomError : statusError);
+  element('raw-view').textContent = view ? JSON.stringify(view, null, 2) : '尚未保存记录。';
+  element('raw-prepared').textContent = input ? JSON.stringify(input, null, 2) : '尚未准备输入。';
+  element('requests-heading').textContent = showingClassroom ? '课堂历史的完整请求与返回' : '本标签的完整请求与返回';
+  element('raw-requests').textContent = JSON.stringify(showingClassroom ? classroomRecord!.http : receipts, null, 2);
+  element('catalog-heading').textContent = showingClassroom ? '本例各阶段与保存读回原件' : '固定输入字节及 SDK 版本';
+  element('raw-catalog').textContent = JSON.stringify(showingClassroom ? classroom : catalog ?? {}, null, 2);
+  renderPrepared(input);
 }
 
 async function operation(action: () => Promise<void>): Promise<void> {
-  if (busy) return;
-  busy = true;
+  if (busy || showingClassroom) return;
+  busy = true; classroomStatus = ''; classroomError = false;
   render();
   try { await action(); }
   catch (error) { setStatus(error instanceof ApiError ? error.message : '连接未能确认，请重新读取记录。输入仍保留。', true); }
@@ -255,6 +295,7 @@ prepareButton.addEventListener('click', () => void operation(async () => {
 }));
 
 noteInput.addEventListener('input', () => {
+  if (busy || showingClassroom) return;
   draft = noteInput.value;
   dirty = draft !== savedReview();
   prepared = undefined;
@@ -267,13 +308,31 @@ openButton.addEventListener('click', () => void operation(async () => {
   chooseCurrent(await api<ConversationView>(`/api/messages/conversations/${savedSelect.value}`), true);
   fixtureSelect.value = activeFixture()!.key;
   updatePhases(fixtureSelect.value as FixtureKey, 'final');
-  setStatus('已读取选中记录；没有运行模型。');
+  setStatus('');
 }));
+element('classroom').addEventListener('click', async () => {
+  if (busy) return;
+  busy = true; classroomStatus = '正在读取课堂实录。'; classroomError = false; render();
+  try {
+    if (!classroomRecord) {
+      const response = await fetch('/requests/records/message-history/classroom.json');
+      if (!response.ok) throw new Error();
+      classroomRecord = await response.json() as ClassroomRecord;
+    }
+    classroomCaseSelect.value = 'normal'; updateClassroomPhases();
+    showingClassroom = true; classroomStatus = '';
+  } catch { classroomStatus = '课堂实录读取失败，请重试。'; classroomError = true; }
+  finally { busy = false; render(); }
+});
+element('local').addEventListener('click', () => { if (busy) return; showingClassroom = false; classroomStatus = ''; classroomError = false; render(); });
+classroomCaseSelect.addEventListener('change', () => { if (busy) return; updateClassroomPhases(); render(); });
+classroomPhaseSelect.addEventListener('change', render);
 element('download').addEventListener('click', () => {
-  const url = URL.createObjectURL(new Blob([JSON.stringify(observation(), null, 2)], { type: 'application/json' }));
+  if (busy) return;
+  const url = URL.createObjectURL(new Blob([JSON.stringify(showingClassroom ? classroomRecord : observation(), null, 2)], { type: 'application/json' }));
   const link = document.createElement('a');
   link.href = url;
-  link.download = `消息观察-${current?.conversation.id ?? '未保存'}.json`;
+  link.download = showingClassroom ? '消息记录-课堂实录.json' : `消息观察-${current?.conversation.id ?? '未保存'}.json`;
   link.click();
   setTimeout(() => URL.revokeObjectURL(url), 0);
 });
@@ -286,7 +345,7 @@ void operation(async () => {
     chooseCurrent(await api<ConversationView>(`/api/messages/conversations/${encodeURIComponent(id)}`), true);
     fixtureSelect.value = activeFixture()!.key;
     updatePhases(fixtureSelect.value as FixtureKey, 'final');
-    setStatus('已从数据库读取完整记录，没有运行模型。');
-  } else setStatus('材料尚未保存。先装入用户材料。');
+  }
+  setStatus('');
   await updateList();
 });

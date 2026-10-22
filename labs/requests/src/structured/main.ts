@@ -4,17 +4,16 @@ import { MATERIALS } from './materials.ts';
 import { MODES, type Mode, type StructuredResponse, type StructuredRun } from './contract.ts';
 import { COUNTEREXAMPLE, COUNTEREXAMPLE_CHECK } from './counterexample.ts';
 
-document.querySelector<HTMLElement>('#app')!.innerHTML = `<header><span class="eyebrow">凡人修仙传 · 原文</span>
-  <h1>待办提取对照</h1><p>用三种输出方式提取同一份资料，对照原文核查任务、负责人和日期。</p></header>
-  <div class="input-controls"><label for="material">示例材料<select id="material"></select></label><label for="mode">输出方式<select id="mode"></select></label></div>
+document.querySelector<HTMLElement>('#app')!.innerHTML = `<header><h1>待办提取对照</h1><p>用三种输出方式提取同一份资料，对照原文核查任务、负责人和日期。</p></header>
+  <div class="input-controls"><label for="mode">输出方式<select id="mode"></select></label></div>
   <details><summary>查看或修改小说资料</summary><label for="minutes" class="sr-only">小说资料，可直接修改</label><textarea id="minutes" rows="7" maxlength="5000"></textarea></details>
-  <div class="action-bar"><button id="extract" disabled>提取待办</button><span class="note">提取一次调用模型 1 次</span></div>
+  <div class="action-bar"><button id="extract" disabled>提取待办</button><button id="classroom" class="secondary">查看课堂实录</button><button id="local" class="secondary" hidden>返回本机结果</button><span class="note">提取一次调用模型 1 次</span></div>
   <p id="status" role="status" aria-live="polite"></p>
-  <section id="result" hidden><div class="section-heading"><h2>提取结果</h2><div class="record-tools"><label for="record-choice" class="sr-only">查看记录</label><select id="record-choice"></select><button id="download" class="secondary">下载全部记录</button></div></div>
+  <section id="result" hidden><div class="section-heading"><h2>提取结果</h2><div class="record-tools"><span id="result-source" class="meta"></span><label for="record-choice" class="sr-only">查看记录</label><select id="record-choice"></select></div></div>
     <div id="checks" class="checks"></div><p class="note">字段合格和原句存在都不能代替语义核查；也不能证明没有漏提。</p>
     <div class="comparison"><section><h3>本次输入原文</h3><pre id="source"></pre></section><section><h3>解析后的待办</h3><div id="items"></div></section></div>
     <details><summary>模型原始正文</summary><pre id="raw-answer"></pre></details>
-    <details><summary>实际请求、原始响应与用量</summary><div id="inspector" class="inspector-body"></div></details>
+    <details><summary>实际请求、原始响应与用量</summary><div class="inspector-body"><button id="download" class="secondary">下载全部记录</button><div id="inspector"></div></div></details>
   </section>
   <details id="schema-panel"><summary>型号与 JSON Schema</summary><div class="inspector-body"><p id="model" class="note">正在读取型号…</p><p class="note">JSON Schema 描述字段结构，程序据此检查返回值。owner、dueText必须有字段，未知时为null；items允许为空。</p><pre id="schema"></pre></div></details>
   <details id="counterexample"><summary>人工反例：字段合格，也可能填错负责人</summary><div class="inspector-body"><p class="note">以下由人构造，没有调用模型，不计入实际请求记录。</p>
@@ -22,7 +21,6 @@ document.querySelector<HTMLElement>('#app')!.innerHTML = `<header><span class="e
 
 const get = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const paragraph = (text: string, className = '') => { const p = document.createElement('p'); p.textContent = text; p.className = className; return p; };
-MATERIALS.forEach((item) => get<HTMLSelectElement>('material').add(new Option(item.label, item.id)));
 Object.entries(MODES).forEach(([value, label]) => get<HTMLSelectElement>('mode').add(new Option(label, value)));
 get<HTMLTextAreaElement>('minutes').value = MATERIALS[0].text;
 get('counter-source').textContent = COUNTEREXAMPLE.material;
@@ -30,24 +28,35 @@ get('counter-output').textContent = JSON.stringify(COUNTEREXAMPLE.output, null, 
 get('counter-check').textContent = `字段结构：${COUNTEREXAMPLE_CHECK.data ? '符合约定' : '未符合'}；原句定位：${COUNTEREXAMPLE_CHECK.evidence?.[0].found ? '原句存在' : '未定位'}。`;
 type Attempt = { label: string; mode: Mode; material: string; run: StructuredRun | null; transportError: string | null };
 const attempts: Attempt[] = [];
+let classroomRecord: { model: string; attempts: Attempt[] } | undefined;
+let classroomView = false, classroomCurrent = -1;
 let current = -1;
 let busy = false;
 let configured = false;
 let model = '';
 
+function setBusy(value: boolean) {
+  busy = value;
+  get<HTMLButtonElement>('extract').disabled = value || !configured;
+  for (const id of ['minutes', 'mode', 'record-choice']) get<HTMLTextAreaElement | HTMLSelectElement>(id).disabled = value;
+  for (const id of ['classroom', 'local', 'download']) get<HTMLButtonElement>(id).disabled = value;
+}
+
 function render() {
-  const attempt = attempts[current]; const run = attempt?.run;
+  const records = classroomView ? classroomRecord?.attempts ?? [] : attempts;
+  const selected = classroomView ? classroomCurrent : current;
+  const attempt = records[selected]; const run = attempt?.run;
   const error = attempt?.transportError || run?.error?.message;
-  get('status').textContent = busy ? '正在提取，保留本次原始响应…' : error || (run?.inspection ? '检查已完成。请结合原文判断提取内容。' : '');
+  if (!busy) get('status').textContent = error || '';
   get('status').className = error && !busy ? 'error' : '';
-  get<HTMLButtonElement>('extract').disabled = busy || !configured;
-  for (const id of ['minutes', 'material', 'mode', 'record-choice']) get<HTMLTextAreaElement | HTMLSelectElement>(id).disabled = busy;
-  get<HTMLButtonElement>('download').disabled = busy;
+  setBusy(busy);
+  get('local').hidden = !classroomView;
   get('result').hidden = !attempt;
-  const select = get<HTMLSelectElement>('record-choice'); select.replaceChildren(...attempts.map((item, i) => new Option(`${i + 1} · ${item.label} · ${MODES[item.mode]}`, String(i)))); select.value = String(current);
+  const select = get<HTMLSelectElement>('record-choice'); select.replaceChildren(...records.map((item, i) => new Option(`${i + 1} · ${item.label} · ${MODES[item.mode]}`, String(i)))); select.value = String(selected); select.hidden = records.length < 2;
+  get('result-source').textContent = `${classroomView ? '课堂实录' : '本机运行'}${attempt && records.length === 1 ? ' · ' + MODES[attempt.mode] : ''}`;
   if (!attempt) return;
   get('source').textContent = attempt.material;
-  get('raw-answer').textContent = run?.rawAnswer ?? (busy ? '等待返回…' : '没有取得模型正文。拒绝信息与其他字段可在原始响应中查看。');
+  get('raw-answer').textContent = run?.rawAnswer === '' ? '（正文为空）' : run?.rawAnswer ?? (busy ? '等待返回…' : '没有取得模型正文。拒绝信息与其他字段可在原始响应中查看。');
   const checks = get('checks'); checks.replaceChildren();
   for (const check of run?.inspection?.checks ?? []) {
     const row = document.createElement('details'); row.className = `check ${check.status}`;
@@ -76,25 +85,46 @@ function render() {
   } else inspector.append(paragraph(error || '尚无请求记录。'));
 }
 
-get('material').addEventListener('change', () => { get<HTMLTextAreaElement>('minutes').value = MATERIALS.find((item) => item.id === get<HTMLSelectElement>('material').value)!.text; });
-get('record-choice').addEventListener('change', () => { current = Number(get<HTMLSelectElement>('record-choice').value); render(); });
+get('record-choice').addEventListener('change', () => {
+  if (busy) return;
+  const selected = Number(get<HTMLSelectElement>('record-choice').value);
+  if (classroomView) classroomCurrent = selected; else current = selected;
+  render();
+});
 get('extract').addEventListener('click', async () => {
   if (busy || !configured) return;
   const material = get<HTMLTextAreaElement>('minutes').value;
   if (!material.trim()) { get('status').textContent = '请先输入小说资料。'; get('status').className = 'error'; return; }
-  const selected = MATERIALS.find((item) => item.id === get<HTMLSelectElement>('material').value)!;
+  const selected = MATERIALS[0];
   const attempt: Attempt = { label: selected.label + (material === selected.text ? '' : '（已编辑）'), mode: get<HTMLSelectElement>('mode').value as Mode, material, run: null, transportError: null };
-  attempts.push(attempt); current = attempts.length - 1; busy = true; render();
+  attempts.push(attempt); current = attempts.length - 1; classroomView = false; setBusy(true);
+  get('status').textContent = '正在提取，保留本次原始响应…'; render();
   try {
     const response = await fetch('/api/structured/extract', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ material, mode: attempt.mode }) });
     const data = await response.json() as StructuredResponse & { error?: string };
     if (!data.run) throw new Error(data.error || '没有收到实验记录。');
     attempt.run = data.run;
   } catch (error) { attempt.transportError = error instanceof Error ? error.message : '本机连接中断，没有自动重试。'; }
-  finally { busy = false; render(); }
+  finally { setBusy(false); render(); }
 });
+get('classroom').addEventListener('click', async () => {
+  if (busy) return;
+  setBusy(true); get('status').className = ''; get('status').textContent = '正在读取课堂实录……';
+  try {
+    if (!classroomRecord) {
+      const response = await fetch('/requests/records/structured/classroom.json');
+      if (!response.ok) throw new Error('classroom-unavailable');
+      classroomRecord = await response.json() as { model: string; attempts: Attempt[] };
+      classroomCurrent = classroomRecord.attempts.findIndex(attempt => attempt.mode === 'strict');
+    }
+    classroomView = true; render(); get('status').textContent = '';
+  } catch { get('status').textContent = '课堂实录读取失败，请重试。'; get('status').className = 'error'; }
+  finally { setBusy(false); }
+});
+get('local').addEventListener('click', () => { if (busy) return; classroomView = false; render(); });
 get('download').addEventListener('click', () => {
-  const url = URL.createObjectURL(new Blob([JSON.stringify({ model, attempts }, null, 2)], { type: 'application/json' }));
+  const payload = classroomView ? classroomRecord! : { model, attempts };
+  const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
   const a = document.createElement('a'); a.href = url; a.download = '结构化提取-实际请求记录.json'; a.click(); URL.revokeObjectURL(url);
 });
 async function loadInfo() {

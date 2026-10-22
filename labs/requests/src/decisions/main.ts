@@ -5,12 +5,11 @@ import { BACKGROUND, PREVIOUS_CHAPTER, GOAL } from './scenario.ts';
 import { chooseOption, clearSelection, editDraft, emptyDecision, type Decision, type DecisionRun, type DecisionResponse, type OptionIndex } from './contract.ts';
 
 const app = document.querySelector<HTMLElement>('#app')!;
-app.innerHTML = `<header><span class="eyebrow">凡人修仙传 · 人的判断</span>
-  <h1>选择摘要重点</h1><p>同一段原文，两份短摘要。先比较事情经过与考核条件，再选择和修改。</p></header>
-  <div class="generate-bar"><button id="generate">生成两份阅读方案</button><p class="note">调用模型 1 次。</p></div>
+app.innerHTML = `<header><h1>选择摘要重点</h1><p>同一段原文，两份短摘要。先比较事情经过与考核条件，再选择和修改。</p></header>
+  <div class="generate-bar"><button id="generate">生成两份阅读方案</button><button id="classroom" class="secondary">查看课堂实录</button><p class="note">调用模型 1 次。</p></div>
   <details><summary>完整前文与本轮任务</summary><section class="common"><div><h2>背景与边界</h2><div id="background"></div></div><div><h2>本轮任务</h2><p id="goal"></p></div></section><div id="previous-chapter" class="previous-chapter"></div></details>
   <p id="status" role="status" aria-live="polite"></p>
-  <div id="run-picker" hidden><label for="run-choice">查看本页记录 </label><select id="run-choice"></select></div>
+  <div id="run-picker" hidden><span id="record-source"></span><label id="run-choice-wrap" for="run-choice">查看本页记录 <select id="run-choice"></select></label></div>
   <section id="comparison" hidden><div class="section-heading"><h2>两份完整方案</h2><button id="reject" class="secondary">两份都不采用</button></div>
     <p class="note">理由、取舍和待确认项均为模型建议，需自行核对。</p><div id="options" class="options"></div>
     <p id="decision-state" class="decision-state" role="status"></p>
@@ -20,18 +19,26 @@ app.innerHTML = `<header><span class="eyebrow">凡人修仙传 · 人的判断</
     <label for="draft-title">标题</label><input id="draft-title" type="text" />
     <label for="draft-text">完整阅读方案</label><textarea id="draft-text" rows="12"></textarea>
   </section>
-  <div class="export-bar"><button id="download" class="secondary" disabled>导出本次判断记录</button><span class="note">刷新前导出，保留尝试、选择和编辑稿。</span></div>
-  <details id="inspector"><summary>请求明细与用量</summary><div id="request-content" class="inspector-body"><p class="note">尚未调用模型。</p></div></details>`;
+  <details id="inspector" hidden><summary>请求明细与用量</summary><div class="inspector-body"><div class="export-bar"><button id="download" class="secondary" disabled>导出本次判断记录</button><span class="note">刷新前导出，保留尝试、选择和编辑稿。</span></div><div id="request-content"></div></div></details>`;
 
 const get = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 renderMarkdown(get('background'), BACKGROUND);
 renderMarkdown(get('previous-chapter'), PREVIOUS_CHAPTER);
 get('goal').textContent = GOAL;
-type Work = { run: DecisionRun | null; transportError: string | null; decision: Decision };
+type Work = { source: 'local' | 'classroom'; run: DecisionRun | null; transportError: string | null; decision: Decision };
 const works: Work[] = [];
 let current = -1;
 let busy = false;
 const paragraph = (text: string, className = '') => { const p = document.createElement('p'); p.textContent = text; p.className = className; return p; };
+
+function setBusy(value: boolean) {
+  busy = value;
+  for (const id of ['generate', 'classroom', 'reject', 'clear']) get<HTMLButtonElement>(id).disabled = value;
+  get<HTMLSelectElement>('run-choice').disabled = value;
+  get<HTMLButtonElement>('download').disabled = value || !works.length;
+  get<HTMLInputElement>('draft-title').disabled = value; get<HTMLTextAreaElement>('draft-text').disabled = value;
+  get('options').querySelectorAll<HTMLButtonElement>('button').forEach(button => { button.disabled = value; });
+}
 
 function renderDecision() {
   const decision = works[current]?.decision;
@@ -52,11 +59,14 @@ function render() {
   const error = work?.transportError || work?.run?.error?.message;
   const status = get('status');
   status.className = !busy && error ? 'error' : '';
-  status.textContent = busy ? '正在根据完整前文生成两份阅读方案…' : error
-    || (work?.run?.options ? '两份方案已生成。先核对前文与未知事项，再选择和编辑。' : '');
-  get('run-picker').hidden = works.length < 2;
-  const select = get<HTMLSelectElement>('run-choice'); select.replaceChildren(...works.map((item, index) => new Option(`第${index + 1}次生成${item.run?.error || item.transportError ? ' · 未完成' : ''}`, String(index))));
+  if (!busy) status.textContent = error || '';
+  get('run-picker').hidden = !works.length;
+  const sourceLabel = (item: Work, index: number) => item.source === 'classroom' ? '课堂实录' : `本机运行 ${works.slice(0, index + 1).filter(item => item.source === 'local').length}`;
+  const select = get<HTMLSelectElement>('run-choice'); select.replaceChildren(...works.map((item, index) => new Option(`${sourceLabel(item, index)}${item.run?.error || item.transportError ? ' · 未完成' : ''}`, String(index))));
   select.value = String(current); select.disabled = busy;
+  get('run-choice-wrap').hidden = works.length < 2; get('record-source').hidden = works.length > 1;
+  get('record-source').textContent = work ? sourceLabel(work, current) : '';
+  get('inspector').hidden = !work;
   get('comparison').hidden = !work?.run?.options; get('editor').hidden = true;
   const options = get('options'); options.replaceChildren();
   if (work?.run?.options) {
@@ -69,7 +79,7 @@ function render() {
         const term = document.createElement('dt'); term.textContent = label;
         const description = document.createElement('dd'); renderMarkdown(description, text); list.append(term, description);
       }
-      const button = document.createElement('button'); button.textContent = '以这版为基础'; button.dataset.option = String(index);
+      const button = document.createElement('button'); button.textContent = '以这版为基础'; button.dataset.option = String(index); button.disabled = busy;
       section.append(list, button); options.append(section);
     }
     renderDecision();
@@ -90,8 +100,8 @@ function render() {
 
 get('generate').addEventListener('click', async () => {
   if (busy) return;
-  busy = true; const work: Work = { run: null, transportError: null, decision: emptyDecision() }; works.push(work); current = works.length - 1;
-  get<HTMLButtonElement>('generate').disabled = true;
+  setBusy(true); const work: Work = { source: 'local', run: null, transportError: null, decision: emptyDecision() }; works.push(work); current = works.length - 1;
+  get('status').textContent = '正在根据完整前文生成两份阅读方案…';
   render();
   try {
     const response = await fetch('/api/decisions/generate', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
@@ -101,24 +111,41 @@ get('generate').addEventListener('click', async () => {
   } catch (error) {
     work.transportError = error instanceof Error ? error.message : '本机连接中断，没有自动重试。';
   } finally {
-    busy = false; get<HTMLButtonElement>('generate').disabled = false; get('generate').textContent = '再生成两份方案'; get('generate').className = 'secondary';
-    get<HTMLButtonElement>('download').disabled = false; render();
+    setBusy(false); get('generate').textContent = '再生成两份方案'; get('generate').className = 'secondary'; render();
   }
 });
+get('classroom').addEventListener('click', async () => {
+  if (busy) return;
+  setBusy(true); const status = get('status'); status.className = ''; status.textContent = '正在读取课堂实录……';
+  try {
+    let index = works.findIndex(work => work.source === 'classroom');
+    if (index < 0) {
+      const response = await fetch('/requests/records/decisions/classroom.json');
+      if (!response.ok) throw new Error('课堂实录读取失败，请重试。');
+      const record = await response.json() as { runs: Omit<Work, 'source'>[] };
+      const item = record.runs[0]; index = works.length;
+      works.push({ source: 'classroom', run: item.run, transportError: item.transportError, decision: item.decision });
+    }
+    current = index; render(); status.textContent = '';
+  } catch { status.textContent = '课堂实录读取失败，请重试。'; status.className = 'error'; }
+  finally { setBusy(false); }
+});
 get('options').addEventListener('click', (event) => {
+  if (busy) return;
   const button = (event.target as HTMLElement).closest<HTMLButtonElement>('button[data-option]');
   const work = works[current]; if (!button || !work?.run?.options) return;
   work.decision = chooseOption(work.decision, work.run.options, Number(button.dataset.option) as OptionIndex); renderDecision();
 });
-get('reject').addEventListener('click', () => { const work = works[current]; work.decision = clearSelection(work.decision, true); renderDecision(); });
-get('clear').addEventListener('click', () => { const work = works[current]; work.decision = clearSelection(work.decision, false); renderDecision(); });
+get('reject').addEventListener('click', () => { if (busy) return; const work = works[current]; work.decision = clearSelection(work.decision, true); renderDecision(); });
+get('clear').addEventListener('click', () => { if (busy) return; const work = works[current]; work.decision = clearSelection(work.decision, false); renderDecision(); });
 for (const [id, field] of [['draft-title', 'title'], ['draft-text', 'text']] as const) get(id).addEventListener('input', () => {
+  if (busy) return;
   const work = works[current]; work.decision = editDraft(work.decision, field, get<HTMLInputElement | HTMLTextAreaElement>(id).value);
 });
-get('run-choice').addEventListener('change', () => { current = Number(get<HTMLSelectElement>('run-choice').value); render(); });
+get('run-choice').addEventListener('change', () => { if (busy) return; current = Number(get<HTMLSelectElement>('run-choice').value); render(); });
 get('download').addEventListener('click', () => {
-  const payload = { background: BACKGROUND, previousChapter: PREVIOUS_CHAPTER, goal: GOAL, currentRun: current, runs: works.map((work) => ({ ...work,
-    currentDraft: work.decision.selected === null ? null : work.decision.drafts[work.decision.selected] })) };
+  const payload = { background: BACKGROUND, previousChapter: PREVIOUS_CHAPTER, goal: GOAL, currentRun: current, runs: works.map(({ run, transportError, decision }) => ({ run, transportError, decision,
+    currentDraft: decision.selected === null ? null : decision.drafts[decision.selected] })) };
   const url = URL.createObjectURL(new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }));
   const link = document.createElement('a'); link.href = url; link.download = '阅读方案-实际请求与编辑记录.json'; link.click(); URL.revokeObjectURL(url);
 });

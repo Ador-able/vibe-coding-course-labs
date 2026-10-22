@@ -1,7 +1,7 @@
 @import '../streaming/style.css';
 
 body { min-height: 100vh; }
-.heading-top, .message-heading, .record-tools { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+.message-heading, .record-tools { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
 .workspace { display: grid; grid-template-columns: 1fr; gap: 0; overflow: visible; }
 .workspace > section { padding: 24px; min-width: 0; }
 h2 { margin: 0; font-size: 17px; color: #315c68; }

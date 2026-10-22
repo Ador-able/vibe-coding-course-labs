@@ -1,13 +1,13 @@
 
 
 header p { font-size: 15px; color: var(--lab-muted); margin: 8px 0; line-height: 1.7; }
-header .scope { font-size: 12px; color: #8b734c; margin-bottom: 23px; }
-.scope strong { font-size: 11px; font-weight: 500; padding: 4px 7px; border-radius: 4px; background: #efe7d7; margin-right: 10px; }
+header .scope { font-size: 13px; color: #8b734c; margin-bottom: 23px; }
+.scope strong { font-size: 13px; font-weight: 500; padding: 4px 7px; border-radius: 4px; background: #efe7d7; margin-right: 10px; }
 .experiment { border: 1px solid #d8e5e8; border-radius: 12px; padding: 22px 24px; background: #fff; }
 .controls { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 17px; }
-.query-control { display: flex; align-items: center; gap: 20px; }
+.query-control { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
 #query-label { font: 20px Consolas, monospace; color: #386b79; }
-.value-control { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--lab-muted); cursor: pointer; }
+.value-control { display: flex; align-items: center; gap: 7px; font-size: 13px; color: var(--lab-muted); cursor: pointer; }
 input { accent-color: #a67730; width: 15px; height: 15px; }
 .formula { color: var(--lab-muted); background: var(--lab-surface); padding: 13px 17px; margin: 22px 0 13px; border-radius: 6px; text-align: center; font: 14px/1.8 Consolas, 'Microsoft YaHei', monospace; }
 .formula span { color: var(--lab-muted); padding: 0 18px; }
@@ -23,7 +23,7 @@ input { accent-color: #a67730; width: 15px; height: 15px; }
 .sum-box { fill: #edf5f5; stroke: #c9e1e1; }
 .sum-label { font: 13px 'Microsoft YaHei', sans-serif; fill: #779499; }
 .sum-value { font: 18px Consolas, monospace; fill: #2f7376; }
-.legend { text-align: center; font-size: 11px; color: var(--lab-muted); line-height: 1.8; margin: 1px 0 19px; }
+.legend { text-align: center; font-size: 13px; color: var(--lab-muted); line-height: 1.8; margin: 1px 0 19px; }
 #observation { border-top: 1px solid #e2ecee; padding-top: 15px; min-height: 73px; }
 #observation p { color: var(--lab-muted); font-size: 13px; line-height: 1.8; margin: 0; }
 #observation strong { font-weight: 500; color: #427a80; }
@@ -35,13 +35,13 @@ summary { font-size: 13px; cursor: pointer; }
 table { border-collapse: collapse; text-align: left; font-size: 13px; width: 100%; background: #fff; }
 th, td { padding: 11px 13px; border-bottom: 1px solid #e1eaee; white-space: nowrap; }
 th { font-weight: 500; }
-thead { color: var(--lab-muted); font-size: 11px; background: #eaf1f4; }
+thead { color: var(--lab-muted); font-size: 13px; background: #eaf1f4; }
 tbody td, tfoot td { font-family: Consolas, monospace; }
 tfoot { color: #437b82; }
-.calculation > p { font-size: 11px; line-height: 1.8; }
+.calculation > p { font-size: 13px; line-height: 1.8; }
 @media (max-width: 800px) {
   .experiment { padding: 20px 17px; }
-  .formula { font-size: 12px; padding-left: 8px; padding-right: 8px; }
+  .formula { font-size: 13px; padding-left: 8px; padding-right: 8px; }
   .formula span { padding: 0 8px; }
   .query-control { gap: 12px; }
 }

@@ -11,7 +11,7 @@ const SYSTEM = `${STRUCTURED_RULE}\n输出遵守以下JSON Schema：\n${JSON.str
 
 export function buildStructuredBody(model: string, mode: Mode, material: string): string {
   return JSON.stringify({ model, messages: [{ role: 'system', content: SYSTEM }, { role: 'user', content: material }],
-    stream: false, temperature: 0, max_tokens: 4096,
+    stream: false, temperature: 0,
     ...(mode === 'object' ? { response_format: { type: 'json_object' } }
       : mode === 'strict' ? { response_format: { type: 'json_schema', json_schema: { name: 'story_tasks', strict: true, schema: JSON_SCHEMA } } } : {}),
   });

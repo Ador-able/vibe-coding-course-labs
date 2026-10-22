@@ -72,6 +72,7 @@ test('三种方式实际发送体与检查器一致，只改变输出格式参�
       assert.equal(data.run.rawAnswer, '{"items":[]}'); assert.deepEqual(data.run.inspection?.data, { items: [] });
       assert(!JSON.stringify(data).includes('test-secret')); assert(!JSON.stringify(data).includes(base));
       bodies.push(JSON.parse(received.at(-1)!));
+      assert.equal(Object.hasOwn(bodies.at(-1)!, 'max_tokens'), false);
     }
     assert.equal(bodies[0].model, 'structured-test'); assert(!('response_format' in bodies[0]));
     assert.deepEqual(bodies[1].response_format, { type: 'json_object' });

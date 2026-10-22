@@ -1,0 +1,36 @@
+{
+  "question": "第一章《山边小村》中，韩立的大哥当铁匠学徒时，一个月能拿多少铜板？",
+  "httpStatus": 200,
+  "result": {
+    "ok": true,
+    "answer": "三十个铜板。",
+    "trace": {
+      "requestId": "8bc2ddc1-d118-4317-9283-6e83e4c79a42",
+      "model": "ep-78jeijoz",
+      "stages": [
+        {
+          "name": "收到请求",
+          "elapsedMs": 0,
+          "detail": "POST /api/ask"
+        },
+        {
+          "name": "请求模型",
+          "elapsedMs": 0,
+          "detail": "POST /chat/completions · ep-78jeijoz"
+        },
+        {
+          "name": "收到模型回复",
+          "elapsedMs": 3238,
+          "detail": "HTTP 200 · 文本已完整返回"
+        },
+        {
+          "name": "返回页面",
+          "elapsedMs": 3239,
+          "detail": "HTTP 200 · 携带回答"
+        }
+      ],
+      "modelDurationMs": 3238,
+      "modelHttpStatus": 200
+    }
+  }
+}

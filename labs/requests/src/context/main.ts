@@ -1,5 +1,6 @@
 import './style.css';
 import '../lab.css';
+import { renderMarkdown } from '../../../../shared/markdown.ts';
 import { CONDITIONS, FIRST_QUESTION, FOLLOW_UP, type Condition, type ContextResponse, type ExperimentRun, type Message, type RequestRecord } from './contract.ts';
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
@@ -11,15 +12,16 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <summary id="setup-title">首轮查询</summary><div class="setup-body">
     <p class="question" id="first-question"></p>
     <div class="setup-actions"><button id="start">查询年龄</button><span class="experiment-note">本实验教学资料 · 首轮调用模型 2 次</span></div>
-    <div id="first-answer-wrap" hidden><span class="small-label">首轮回答 · 原文</span><p id="first-answer" class="answer"></p><p class="note">三种追问条件共享这一次首轮历史。</p></div>
+    <div id="first-answer-wrap" hidden><span class="small-label">首轮回答 · 原文</span><div id="first-answer" class="answer"></div><p class="note">三种追问条件共享这一次首轮历史。</p></div>
   </div></details>
+  <div class="classroom-actions"><button id="classroom" class="secondary">查看课堂实录</button><span id="result-source" class="meta" hidden></span></div>
   <p id="status" role="status"></p>
   <section id="follow-section" hidden aria-labelledby="follow-question">
     <p class="question"><span class="question-label">追问</span><span id="follow-question"></span></p>
-    <fieldset id="conditions"><legend>携带的历史</legend>
+    <div id="follow-controls"><fieldset id="conditions"><legend>携带的历史</legend>
       ${Object.entries(CONDITIONS).map(([key, value], i) => `<label class="condition"><input type="radio" name="condition" value="${key}" ${i === 0 ? 'checked' : ''}><span><strong>${value.name}</strong><small>${value.description}</small></span></label>`).join('')}
     </fieldset>
-    <div class="follow-actions"><button id="follow">发送追问</button><span class="experiment-note">每次调用模型 1 次；不重新查询工具</span></div>
+    <div class="follow-actions"><button id="follow">发送追问</button><span class="experiment-note">每次调用模型 1 次；不重新查询工具</span></div></div>
     <section id="comparison" hidden aria-labelledby="comparison-title"><h3 id="comparison-title">实际返回的回答</h3>
       <div class="table-scroll"><table><thead><tr><th>保留范围</th><th>模型回答</th><th>输入 token</th><th>请求记录</th></tr></thead><tbody id="results"></tbody></table></div>
     </section>
@@ -40,6 +42,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 const element = <T extends HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
 const startButton = element<HTMLButtonElement>('#start');
 const followButton = element<HTMLButtonElement>('#follow');
+const classroomButton = element<HTMLButtonElement>('#classroom');
 const status = element<HTMLParagraphElement>('#status');
 const inspector = element<HTMLDetailsElement>('#inspector');
 const runSelector = element<HTMLSelectElement>('#run-selector');
@@ -56,6 +59,10 @@ function setBusy(value: boolean) {
   busy = value;
   startButton.disabled = value;
   followButton.disabled = value;
+  classroomButton.disabled = value;
+  runSelector.disabled = value;
+  element<HTMLButtonElement>('#download').disabled = value;
+  element('#comparison').querySelectorAll<HTMLButtonElement>('button').forEach(button => { button.disabled = value; });
   element<HTMLFieldSetElement>('#conditions').disabled = value;
 }
 
@@ -65,11 +72,12 @@ function paragraph(text: string, className = '') {
 
 function pretty(value: unknown) { return JSON.stringify(value, null, 2) ?? '未返回'; }
 
-function jsonDetail(title: string, value: string, open = false) {
-  const detail = document.createElement('details'); detail.className = 'json'; detail.open = open;
+function recordDetail(title: string, value: string, asMarkdown = false) {
+  const detail = document.createElement('details'); detail.className = 'json';
   const summary = document.createElement('summary'); summary.textContent = title;
-  const pre = document.createElement('pre'); pre.textContent = value;
-  detail.append(summary, pre); return detail;
+  const body = document.createElement(asMarkdown ? 'div' : 'pre');
+  if (asMarkdown) { body.className = 'message-text'; renderMarkdown(body, value); } else body.textContent = value;
+  detail.append(summary, body); return detail;
 }
 
 function parsedContent(value: string) {
@@ -87,17 +95,22 @@ function requestView(request: RequestRecord, index: number) {
     : '本次不提供可调用工具；历史中的工具消息只作为已有资料。', 'meta'));
   // 从实际请求体逐条展示；工具内容解析后易读，完整JSON保留原始结构。
   body.messages.forEach((message, i) => {
+    if (message.role === 'tool') {
+      const { text, ...source } = JSON.parse(message.content) as { source_id: string; title: string; text: string };
+      const detail = recordDetail(`${i + 1} ${names.tool}`, pretty({ tool_call_id: message.tool_call_id, content: source }));
+      detail.append(recordDetail('返回的原文', text, true));
+      section.append(detail); return;
+    }
     const calls = message.role === 'assistant' && message.tool_calls?.length ? message.tool_calls : undefined;
     const value = calls ? (message.content ? `${message.content}\n\n` : '') + pretty(calls.map(call => ({ name: call.function.name, id: call.id, arguments: parsedContent(call.function.arguments) })))
-      : message.role === 'tool' ? pretty({ tool_call_id: message.tool_call_id, content: parsedContent(message.content) })
       : message.content ?? '';
-    section.append(jsonDetail(`${i + 1} ${calls ? '助手工具调用' : names[message.role]}`, value));
+    section.append(recordDetail(`${i + 1} ${calls ? '助手工具调用' : names[message.role]}`, value, !calls));
   });
   // 排版只解析这个已发送字符串；下载文件保留 requestBody 的原始字节序列。
-  section.append(jsonDetail('完整请求 JSON', pretty(body)));
-  if (request.responseMessage !== undefined) section.append(jsonDetail('模型实际返回的消息', pretty(request.responseMessage)));
+  section.append(recordDetail('完整请求 JSON', pretty(body)));
+  if (request.responseMessage !== undefined) section.append(recordDetail('模型实际返回的消息', pretty(request.responseMessage)));
   section.append(paragraph(`finish_reason: ${request.finishReason ?? '未返回'}${request.responseModel ? ` · 返回型号：${request.responseModel}` : ''}`, 'meta'));
-  section.append(jsonDetail('模型实际返回的 usage', pretty(request.usage ?? null)));
+  section.append(recordDetail('模型实际返回的 usage', pretty(request.usage ?? null)));
   if (request.error) section.append(paragraph(request.error, 'error'));
   return section;
 }
@@ -117,11 +130,10 @@ function renderInspector(selectedId?: string) {
 function showRecord() {
   const selected = allRuns().find((item) => item.id === runSelector.value);
   records.replaceChildren(); if (!selected) return;
-  records.append(paragraph(`本机记录 ${selected.id} · ${selected.startedAt}`, 'meta'));
   if (selected.error) records.append(paragraph(selected.error.message, 'error'));
   if (!selected.requests.length) records.append(paragraph('本轮没有发起模型请求。', 'note'));
   records.append(...selected.requests.map(requestView));
-  if (selected.tools.length) records.append(jsonDetail('本机实际执行的工具及返回结果', pretty(selected.tools)));
+  if (selected.tools.length) records.append(recordDetail('本机实际执行的工具及返回结果', pretty(selected.tools)));
 }
 
 function renderResults() {
@@ -132,11 +144,27 @@ function renderResults() {
     const usage = request?.usage;
     const inputTokens = usage && typeof usage === 'object' && 'prompt_tokens' in usage && typeof usage.prompt_tokens === 'number' ? String(usage.prompt_tokens) : '未返回';
     const values = [run.label, run.error ? `未完成：${run.error.message}` : run.answer ?? '没有回答', inputTokens];
-    values.forEach((value, index) => { const cell = document.createElement('td'); cell.textContent = value; if (index === 1) cell.className = 'answer-cell'; row.append(cell); });
+    values.forEach((value, index) => {
+      const cell = document.createElement('td');
+      if (index === 1 && !run.error) {
+        cell.className = 'answer-cell'; const body = document.createElement('div'); body.className = 'answer-content'; renderMarkdown(body, value); cell.append(body);
+      } else { cell.textContent = value; if (index === 1) cell.className = 'answer-cell'; }
+      row.append(cell);
+    });
     const cell = document.createElement('td'); const button = document.createElement('button'); button.className = 'link-button'; button.textContent = '查看';
     button.addEventListener('click', () => { runSelector.value = run.id; showRecord(); inspector.open = true; inspector.scrollIntoView({ behavior: 'smooth', block: 'start' }); });
-    cell.append(button); row.append(cell); return row;
+    button.disabled = busy; cell.append(button); row.append(cell); return row;
   }));
+}
+
+function renderExperiment(source: '课堂实录' | '本次运行') {
+  const sourceLabel = element('#result-source'); sourceLabel.hidden = false; sourceLabel.textContent = source;
+  element('#first-answer-wrap').hidden = !firstRound?.answer;
+  if (firstRound?.answer) renderMarkdown(element('#first-answer'), firstRound.answer);
+  element('#follow-section').hidden = !firstRound?.answer && !runs.length;
+  // 课堂记录只回放原结果；追问必须使用本机刚建立的服务会话。
+  element('#follow-controls').hidden = !sessionId;
+  renderResults(); renderInspector();
 }
 
 async function send(path: string, body: unknown): Promise<ContextResponse> {
@@ -149,20 +177,33 @@ async function send(path: string, body: unknown): Promise<ContextResponse> {
 startButton.addEventListener('click', async () => {
   if (busy) return; setBusy(true);
   sessionId = undefined; firstRound = undefined; runs = [];
+  element('#result-source').hidden = false; element('#result-source').textContent = '本次运行';
   setup.open = true; element('#setup-title').textContent = '首轮查询';
   element('#follow-section').hidden = true; element('#first-answer-wrap').hidden = true;
   inspector.hidden = true; status.className = ''; status.textContent = '正在建立首轮：请求工具、执行查询，再请模型回答……';
   try {
     const result = await send('/api/context/start', {});
-    firstRound = result.run; renderInspector();
+    firstRound = result.run;
+    sessionId = result.ok ? result.sessionId : undefined; renderExperiment('本次运行');
     if (!result.ok) { status.textContent = result.run.error?.message ?? '首轮未能完成。'; status.className = 'error'; return; }
-    sessionId = result.sessionId;
-    element('#first-answer').textContent = result.run.answer;
-    element('#first-answer-wrap').hidden = false; element('#follow-section').hidden = false;
     setup.open = false; element('#setup-title').textContent = '首轮查询已完成 · 查看回答或重新查询';
-    startButton.textContent = '重新查询'; startButton.classList.add('secondary'); renderResults();
+    startButton.textContent = '重新查询'; startButton.classList.add('secondary');
     status.textContent = '';
   } catch { status.textContent = '没有收到本机服务的有效回复，请确认服务仍在运行。'; status.className = 'error'; }
+  finally { setBusy(false); }
+});
+
+classroomButton.addEventListener('click', async () => {
+  if (busy) return; setBusy(true); status.className = ''; status.textContent = '正在读取课堂实录……';
+  try {
+    const response = await fetch('/requests/records/context/classroom.json');
+    if (!response.ok) throw new Error('classroom-unavailable');
+    const record = await response.json() as { firstRound: ExperimentRun; runs: ExperimentRun[] };
+    sessionId = undefined; firstRound = record.firstRound; runs = record.runs;
+    renderExperiment('课堂实录');
+    setup.open = true; element('#setup-title').textContent = '首轮查询';
+    startButton.textContent = '重新查询'; startButton.classList.remove('secondary'); status.textContent = '';
+  } catch { status.textContent = '课堂实录无法读回，请重试。'; status.className = 'error'; }
   finally { setBusy(false); }
 });
 

@@ -1,18 +1,20 @@
 import './style.css';
 import '../lab.css';
+import { renderMarkdown } from '../../../../shared/markdown.ts';
 import { QUALITY_CONDITIONS, type Batch, type CaseResult, type QualityCase, type QualityCondition, type QualityResponse } from './contract.ts';
 
 document.querySelector('#app')!.innerHTML = `
   <header>
     <h1>材料对照</h1><p>查韩立的实际修为和墨大夫误认的药名，比较原文长短和位置。</p></header>
   <details class="guide"><summary>预览小说原文</summary><div class="guide-body"><label for="preview">选择材料</label><select id="preview"></select><div id="preview-content"></div></div></details>
-  <section class="run-panel"><div><p class="run-description">《凡人修仙传》· 事实核对</p><p>4 种条件 · 每种调用模型 1 次</p></div><button id="run" disabled>运行 4 个样例</button><button id="classroom" class="secondary">查看课堂实录</button></section>
+  <section class="run-panel"><div><p class="run-description">《凡人修仙传》· 事实核对</p><p>4 种条件 · 每种调用模型 1 次</p></div><div class="run-actions"><button id="run" disabled>运行 4 个样例</button><button id="classroom" class="secondary" disabled>查看课堂实录</button></div></section>
   <p id="status" role="status">正在读取小说原文……</p><progress id="progress" max="4" value="0" hidden></progress>
-  <section id="observations" hidden><div class="result-toolbar"><label for="batch">查看运行记录</label><select id="batch"></select><button id="download" class="secondary">下载这次运行</button></div>
+  <section id="observations" hidden><div class="result-toolbar"><span id="batch-source"></span><div id="batch-control" hidden><label for="batch">查看运行记录</label><select id="batch"></select></div></div>
     <p class="note">各条件使用同一份原文，仅改变长度或位置；输出未完成时不评价事实与引用。</p>
     <div class="table-scroll"><table><thead><tr><th>条件</th><th>实际输入 token</th><th>事实完整</th><th>引用正确</th><th>全部通过</th><th>逐例查看</th></tr></thead><tbody id="results"></tbody></table></div>
   </section>
   <details id="case-detail" hidden><summary id="case-title">查看一个样例</summary><div id="case-content" class="inspector-body"></div></details>
+  <details id="run-record" hidden><summary>完整运行记录</summary><div class="inspector-body"><button id="download" class="secondary">下载这次运行</button></div></details>
   <details class="guide"><summary>实验设置与判定口径</summary><div class="guide-body"><p>温度 0 · 输出上限 32768 token（含推理与正文） · 禁用工具。串行执行，不自动重试。事实和引用只核对完整的结构化回答；请求失败、输出截断和格式异常单独标明，不算通过。</p><dl>
     <dt>事实完整</dt><dd>状态、当时的实际修为和墨大夫误认的药名都符合资料。</dd>
     <dt>引用正确</dt><dd>记录编号必须完整、准确且没有多余或重复项。</dd>
@@ -22,20 +24,24 @@ document.querySelector('#app')!.innerHTML = `
 
 const el = <T extends HTMLElement>(selector: string) => document.querySelector<T>(selector)!;
 const button = el<HTMLButtonElement>('#run');
+const classroomButton = el<HTMLButtonElement>('#classroom');
 const status = el<HTMLParagraphElement>('#status');
 const batchSelect = el<HTMLSelectElement>('#batch');
 const previewSelect = el<HTMLSelectElement>('#preview');
 const progress = el<HTMLProgressElement>('#progress');
 let cases: QualityCase[] = [];
 const batches: Batch[] = [];
+let classroomBatch: Batch | undefined;
 let busy = false;
 
 const pretty = (value: unknown) => JSON.stringify(value, null, 2) ?? '未返回';
 function p(text: string, className = '') { const node = document.createElement('p'); node.textContent = text; node.className = className; return node; }
-function detail(title: string, value: string, open = false) {
+function detail(title: string, value: string, open = false, asMarkdown = false) {
   const node = document.createElement('details'); node.className = 'json'; node.open = open;
   const label = document.createElement('summary'); label.textContent = title;
-  const pre = document.createElement('pre'); pre.textContent = value; node.append(label, pre); return node;
+  const body = document.createElement(asMarkdown ? 'div' : 'pre');
+  if (asMarkdown) { body.className = 'message-text'; renderMarkdown(body, value); } else body.textContent = value;
+  node.append(label, body); return node;
 }
 function selectedBatch() { return batches.find((batch) => batch.id === batchSelect.value); }
 function name(item: QualityCase) { return `${QUALITY_CONDITIONS[item.condition]} · ${item.id}`; }
@@ -43,18 +49,33 @@ function tokenCount(result: CaseResult): number | undefined {
   const usage = result.request?.usage;
   return usage && typeof usage === 'object' && 'prompt_tokens' in usage && typeof usage.prompt_tokens === 'number' ? usage.prompt_tokens : undefined;
 }
+function setBusy(value: boolean) {
+  busy = value; button.disabled = value || !cases.length; classroomButton.disabled = value || !cases.length;
+  batchSelect.disabled = value; el<HTMLButtonElement>('#download').disabled = value;
+  el('#results').querySelectorAll<HTMLButtonElement>('button').forEach(link => { link.disabled = value; });
+}
+function resetDetails() {
+  const box = el<HTMLDetailsElement>('#case-detail'); box.hidden = true; box.open = false;
+  el('#case-content').replaceChildren(); progress.hidden = true; progress.value = 0;
+}
+function batchSource(batch: Batch) {
+  return batch === classroomBatch ? '课堂实录' : `本机运行 ${batches.filter(item => item !== classroomBatch).indexOf(batch) + 1}`;
+}
 function updateBatches(selectedId: string) {
-  batchSelect.replaceChildren(...batches.map((batch, index) => {
+  batchSelect.replaceChildren(...batches.map((batch) => {
     const option = document.createElement('option'); option.value = batch.id;
-    option.textContent = `运行 ${index + 1} · ${batch.state === 'complete' ? '已完成' : batch.state === 'failed' ? '遇到请求失败' : '进行中'}`;
+    option.textContent = `${batchSource(batch)}${batch.state === 'failed' ? ' · 遇到请求失败' : batch.state === 'running' ? ' · 进行中' : ''}`;
     return option;
   }));
   batchSelect.value = selectedId;
+  el('#batch-control').hidden = batches.length < 2;
+  el('#batch-source').hidden = batches.length > 1;
 }
 
 function renderTable() {
   const batch = selectedBatch(); if (!batch) return;
   el('#observations').hidden = false;
+  el('#run-record').hidden = false; el('#batch-source').textContent = batchSource(batch);
   el('#results').replaceChildren(...(Object.keys(QUALITY_CONDITIONS) as QualityCondition[]).map((condition) => {
     const row = document.createElement('tr');
     const results = batch.results.filter((result) => cases.find((item) => item.id === result.caseId)?.condition === condition);
@@ -69,6 +90,7 @@ function renderTable() {
     cases.filter((item) => item.condition === condition).forEach((item) => {
       const result = results.find((entry) => entry.caseId === item.id);
       const link = document.createElement('button'); link.className = 'link-button';
+      link.disabled = busy;
       link.textContent = `${item.id} · ${!result ? '未运行' : result.error ? '请求失败' : result.request?.finishReason === 'length' ? '输出截断' : !result.assessment?.valid ? '输出异常' : result.assessment.allCorrect ? '通过' : '有差异'}`;
       link.addEventListener('click', () => showCase(item, result)); links.append(link);
     });
@@ -80,6 +102,7 @@ function showCase(item: QualityCase, result?: CaseResult) {
   const box = el<HTMLDetailsElement>('#case-detail'); box.hidden = false; box.open = true;
   el('#case-title').textContent = name(item);
   const content = el('#case-content'); content.replaceChildren(p(item.question));
+  const expected = result?.expected ?? item.expected;
   if (!result) content.append(p('这个样例尚未运行；下面只有小说原文和期望值。', 'note'));
   if (result?.error) content.append(p(`请求失败：${result.error.message}。不计入效果判定。`, 'error'));
   if (result?.answer !== null && result?.answer !== undefined) content.append(detail('模型返回原文', result.answer));
@@ -93,59 +116,66 @@ function showCase(item: QualityCase, result?: CaseResult) {
   if (assessment?.parsed) {
     const answer = assessment.parsed;
     content.prepend(p(`实际结果：长春功第${answer.actual_level ?? '未知'}层，误认药名为${answer.mistaken_drug ?? '未知'}；依据 ${answer.source_ids.join('、') || '未提供'}。`));
+    content.append(p(`引用核对：应引 ${expected.source_ids.join('、') || '未提供'}；实际 ${answer.source_ids.join('、') || '未提供'}。`, assessment.sourcesCorrect ? 'passed' : 'error'));
   }
-  content.append(p(`原文核对：长春功第${item.expected.actual_level}层，误认药名为${item.expected.mistaken_drug}。`, 'note'));
-  content.append(detail('完整评分依据 · 不发给模型', pretty(item.expected)));
+  content.append(p(`原文核对：长春功第${expected.actual_level}层，误认药名为${expected.mistaken_drug}。`, 'note'));
+  content.append(detail('完整评分依据 · 不发给模型', pretty(expected)));
   if (result?.request) {
     const request = result.request;
     content.append(p(`HTTP ${request.httpStatus ?? '未返回'} · finish_reason: ${request.finishReason ?? '未返回'} · ${request.durationMs ?? '—'} ms`, 'meta'));
     content.append(detail('真正发送的请求体', pretty(JSON.parse(request.requestBody))));
     content.append(detail('API 返回的消息与用量', pretty({ message: request.responseMessage, usage: request.usage, responseModel: request.responseModel })));
   }
-  content.append(detail(`全部资料 · ${item.documents.length} 条`, item.documents.map((document) => `[${document.id}] ${document.text}`).join('\n\n')));
+  content.append(detail(`全部资料 · ${item.documents.length} 条`, item.documents.map((document) => `[${document.id}] ${document.text}`).join('\n\n'), false, true));
   box.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 function preview() {
   const item = cases.find((entry) => entry.id === previewSelect.value); if (!item) return;
-  el('#preview-content').replaceChildren(p(`${item.question} 共 ${item.documents.length} 条原文片段。`, 'note'), detail('预览资料全文', item.documents.map((document) => `[${document.id}] ${document.text}`).join('\n\n'), true));
+  el('#preview-content').replaceChildren(p(`${item.question} 共 ${item.documents.length} 条原文片段。`, 'note'), detail('预览资料全文', item.documents.map((document) => `[${document.id}] ${document.text}`).join('\n\n'), true, true));
 }
 
 button.addEventListener('click', async () => {
   if (busy || !cases.length) return;
   const batch: Batch = { id: crypto.randomUUID(), startedAt: new Date().toISOString(), state: 'running', results: [] };
-  batches.push(batch); busy = true; button.disabled = true; batchSelect.disabled = true;
-  updateBatches(batch.id); renderTable(); el('#case-detail').hidden = true;
+  batches.push(batch); setBusy(true); resetDetails();
+  updateBatches(batch.id); renderTable();
   progress.hidden = false; progress.value = 0; status.className = '';
-  for (const [index, item] of cases.entries()) {
-    status.textContent = `正在请求 ${index + 1} / ${cases.length}：${name(item)}……`;
-    try {
-      const response = await fetch('/api/quality/case', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ caseId: item.id }) });
-      const data: QualityResponse = await response.json();
-      if (!data.result || data.result.caseId !== item.id) throw new Error('invalid-response');
-      batch.results.push(data.result); progress.value = index + 1; renderTable();
-      if (!data.ok || data.result.error) {
-        batch.state = 'failed'; status.textContent = `已停止在 ${name(item)}：${data.result.error?.message ?? '请求失败'}。已有结果保留，没有自动重试。`; status.className = 'error'; break;
-      }
-    } catch {
-      batch.results.push({ caseId: item.id, startedAt: new Date().toISOString(), answer: null, expected: item.expected, error: { code: 'LOCAL_REQUEST_FAILED', message: '没有收到本机服务的有效回复；模型是否完成本次请求未知。' } });
-      batch.state = 'failed'; status.textContent = `已停止在 ${name(item)}：本机回复无效，已有结果保留。`; status.className = 'error'; renderTable(); break;
-    }
-  }
-  if (batch.state === 'running') { batch.state = 'complete'; status.textContent = '4 个请求已结束。先查看输出是否完整，再比较事实与引用。'; }
-  busy = false; button.disabled = false; batchSelect.disabled = false; button.textContent = '新开始一次 · 4 个样例'; updateBatches(batch.id);
-});
-el('#classroom').addEventListener('click', async () => {
-  if (busy || !cases.length) return;
   try {
-    const response = await fetch('/requests/records/凡人修仙传-quality.json');
-    if (!response.ok) throw new Error();
-    const batch = await response.json() as Batch;
-    batches.push(batch); updateBatches(batch.id); renderTable();
-    status.textContent = '历史运行实录 · 查看记录不会调用模型。';
-  } catch { status.textContent = '课堂实录读取失败，请检查仓库文件。'; }
+    for (const [index, item] of cases.entries()) {
+      status.textContent = `正在请求 ${index + 1} / ${cases.length}：${name(item)}……`;
+      try {
+        const response = await fetch('/api/quality/case', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ caseId: item.id }) });
+        const data: QualityResponse = await response.json();
+        if (!data.result || data.result.caseId !== item.id) throw new Error('invalid-response');
+        batch.results.push(data.result); progress.value = index + 1; renderTable();
+        if (!data.ok || data.result.error) {
+          batch.state = 'failed'; status.textContent = `已停止在 ${name(item)}：${data.result.error?.message ?? '请求失败'}。已有结果保留，没有自动重试。`; status.className = 'error'; break;
+        }
+      } catch {
+        batch.results.push({ caseId: item.id, startedAt: new Date().toISOString(), answer: null, expected: item.expected, error: { code: 'LOCAL_REQUEST_FAILED', message: '没有收到本机服务的有效回复；模型是否完成本次请求未知。' } });
+        batch.state = 'failed'; status.textContent = `已停止在 ${name(item)}：本机回复无效，已有结果保留。`; status.className = 'error'; renderTable(); break;
+      }
+    }
+    if (batch.state === 'running') { batch.state = 'complete'; status.textContent = ''; }
+  } finally {
+    progress.hidden = true; setBusy(false); button.textContent = '新开始一次 · 4 个样例'; updateBatches(batch.id);
+  }
 });
-batchSelect.addEventListener('change', () => { renderTable(); el('#case-detail').hidden = true; });
+classroomButton.addEventListener('click', async () => {
+  if (busy || !cases.length) return;
+  setBusy(true); resetDetails(); status.className = ''; status.textContent = '正在读取课堂实录……';
+  try {
+    if (!classroomBatch) {
+      const response = await fetch('/requests/records/凡人修仙传-quality.json');
+      if (!response.ok) throw new Error();
+      classroomBatch = await response.json() as Batch; batches.push(classroomBatch);
+    }
+    updateBatches(classroomBatch.id); renderTable(); status.textContent = '';
+  } catch { status.textContent = '课堂实录读取失败，请重试。'; status.className = 'error'; }
+  finally { setBusy(false); }
+});
+batchSelect.addEventListener('change', () => { resetDetails(); status.textContent = ''; status.className = ''; renderTable(); });
 previewSelect.addEventListener('change', preview);
 el('#download').addEventListener('click', () => {
   const batch = selectedBatch(); if (!batch) return;
@@ -157,5 +187,5 @@ try {
   const response = await fetch('/api/quality/cases'); if (!response.ok) throw new Error('load-failed');
   cases = await response.json();
   previewSelect.replaceChildren(...cases.map((item) => { const option = document.createElement('option'); option.value = item.id; option.textContent = name(item); return option; }));
-  preview(); button.disabled = false; status.textContent = '';
+  preview(); setBusy(false); status.textContent = '';
 } catch { status.textContent = '小说原文读取失败，请确认本机服务已启动并刷新页面。'; status.className = 'error'; }

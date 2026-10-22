@@ -8,9 +8,6 @@
 <body>
   <main>
     <header>
-      <div class="heading-top">
-        <span class="eyebrow">消息记录练习</span>
-      </div>
       <h1>保存消息，再准备输入</h1>
       <p>《凡人修仙传》原文回显 · 人工控制接收 · 不调用模型</p>
     </header>
@@ -18,14 +15,19 @@
       <section id="source" aria-labelledby="source-heading">
         <h2 id="source-heading">导入用材料（未保存）</h2>
         <details><summary>查看完整用户材料</summary><p id="user-task" class="prose"></p></details>
-        <div class="source-controls">
+        <div id="local-source-controls" class="source-controls">
           <label>下次装入<select id="fixture"><option value="normal">完整回显记录</option><option value="stopped">受控停止接收（教师条件）</option></select></label>
           <label>保存哪一步<select id="phase"><option value="user">用户材料</option></select></label>
         </div>
-        <div class="actions"><button id="import">装入并保存</button></div>
+        <div id="classroom-controls" class="source-controls" hidden>
+          <label>课堂记录<select id="classroom-case"><option value="normal">完整回显记录</option><option value="stopped">受控停止接收（教师条件）</option></select></label>
+          <label>查看阶段<select id="classroom-phase"></select></label>
+        </div>
+        <div class="actions"><button id="import">装入并保存</button><button id="classroom" class="secondary">查看课堂实录</button><button id="local" class="secondary" hidden>返回本机记录</button></div>
       </section>
       <section id="history" aria-labelledby="history-heading">
         <div class="message-heading"><h2 id="history-heading">当前记录</h2><span id="completion" class="state-label">尚未保存</span></div>
+        <p id="result-source" class="quiet"></p>
         <p id="historical-progress" class="progress"></p>
         <div id="assistant"><p class="empty">先保存用户材料，再导入同一助手消息的快照或完整原件。</p></div>
         <div id="record-identity" class="record-identity"></div>
@@ -48,10 +50,10 @@
         <div class="inspector">
           <details><summary>完整数据库读回与原始 SQL 行</summary><pre id="raw-view">尚未保存记录。</pre></details>
           <details><summary>P0 / P1 / P2 的完整材料与下一轮规则</summary><pre id="raw-prepared">尚未准备输入。</pre></details>
-          <details><summary>本标签的完整请求与返回</summary><pre id="raw-requests">[]</pre></details>
-          <details><summary>固定输入字节及 SDK 版本</summary><pre id="raw-catalog"></pre></details>
+          <details><summary id="requests-heading">本标签的完整请求与返回</summary><pre id="raw-requests">[]</pre></details>
+          <details><summary id="catalog-heading">固定输入字节及 SDK 版本</summary><pre id="raw-catalog"></pre></details>
           <div class="record-tools"><button id="download" class="secondary">下载当前观察</button>
-            <label>重开已有记录<select id="saved-conversation"><option value="">选择记录</option></select></label><button id="open-record" class="secondary" disabled>读取选中记录</button>
+            <label id="saved-choice">重开已有记录<select id="saved-conversation"><option value="">选择记录</option></select></label><button id="open-record" class="secondary" disabled>读取选中记录</button>
           </div>
         </div>
       </details>
