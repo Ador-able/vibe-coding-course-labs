@@ -1,14 +1,14 @@
 {
-  "sourceSha256": "7deef8ee31cbe48218f04dc2fa66f8343842a15ebb4225eb38ecdb1be61fd772",
-  "sourceVersion": "7deef8ee31cbe48218f04dc2fa66f8343842a15ebb4225eb38ecdb1be61fd772",
-  "preparedFromGit": "8febbd07a856f8c47830b15941126b97b04d405e",
+  "sourceSha256": "18f8864a4bd3cde86e4c7149e8e48a3dfa5f6e46015d0569e1505d21af5b84a7",
+  "sourceVersion": "18f8864a4bd3cde86e4c7149e8e48a3dfa5f6e46015d0569e1505d21af5b84a7",
+  "preparedFromGit": "3e83252d18e2f4121fdcdac4d7661494ff7b95cb",
   "practiceTag": "fanren-ch15-practice-start",
   "inputRegistrySha256": "e4fbc325729c6356109563478db3316353ede7e245c2ad00882d57af35baa296",
   "files": [
     {
       "path": "../../../pnpm-lock.yaml",
-      "bytes": 82516,
-      "sha256": "0fc0628f667596a2eb614342b424a2d837c4f85e9c0c74e9ffac6c5c8e35ebcd"
+      "bytes": 79716,
+      "sha256": "11d615e7d291a62943512067906db192dc66fa773e075b76dc27f892540dc2e7"
     },
     {
       "path": ".gitattributes",
@@ -27,8 +27,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 1590,
-      "sha256": "68d3b6076cea1d30e8c31f4a5fd25657d3f6ddddc637b7e8aabc8a3fbdeca294"
+      "bytes": 1476,
+      "sha256": "80b02dc96d9c1c3eb8e47f992b6f913ca81bd49c59bc995e6c1cd10163d0bbf4"
     },
     {
       "path": "config/固定实验参数.json",

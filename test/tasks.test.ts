@@ -19,7 +19,7 @@ async function listen(server: Server) {
 async function close(server: Server) { server.closeAllConnections(); await new Promise<void>(done => server.close(() => done())); }
 
 test('样例只改变指定输入，成本核对复用同一初稿，失败与真实用量落盘', async () => {
-  const received: { messages: { role: string; content: string }[] }[] = [];
+  const received: { messages: { role: string; content: string }[]; max_tokens?: number }[] = [];
   let finish = 'stop';
   const upstream = express().use(express.json({ limit: '1mb' })).post('/chat/completions', (req, res) => {
     received.push(req.body);
@@ -41,6 +41,7 @@ test('样例只改变指定输入，成本核对复用同一初稿，失败与�
     const firstInput = received[0].messages.filter(item => item.role === 'user').map(item => item.content).join('\n');
     const secondInput = received[1].messages.filter(item => item.role === 'user').map(item => item.content).join('\n');
     assert.ok(secondInput.startsWith(firstInput)); assert.ok(!firstInput.includes('<写法样例>')); assert.match(secondInput, /<写法样例>/);
+    assert.ok(!Object.hasOwn(received[0], 'max_tokens')); assert.ok(!Object.hasOwn(received[1], 'max_tokens'));
     assert.equal(plain.run.request.responseModel, 'reported-model'); assert.equal(conflict.run.state, 'completed');
     assert.doesNotMatch(firstInput, /不使用工具|不调用其他\s*Agent/);
     assert.equal(plain.run.checks.hanCount, 810); assert.deepEqual(plain.run.judgments, {});
@@ -87,7 +88,7 @@ test('局部反馈检查全文，字数相同不能掩盖越界修改', () => {
   assert.equal(checkOutput(changed, original).exactEdit, false);
 });
 
-test('课堂实录读回原输入、正文与失败记录，成本两条路径复用原初稿，读取不产生本机运行', async () => {
+test('课堂实录保留实际输入、正文与人工核对，成本两条路径复用原初稿，读取不产生本机运行', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'tasks-classroom-'));
   const project = resolve('lessons/chapter04/project');
   // 不提供任何模型配置，历史阅读仍然可用。
@@ -100,22 +101,28 @@ test('课堂实录读回原输入、正文与失败记录，成本两条路径�
     }));
     assert.deepEqual(records.map(runs => runs.length), [1, 6, 1, 5, 4]);
     for (const runs of records) assert.equal(new Set(runs.map(run => run.batchId)).size, 1);
-    const reviews = JSON.parse(await readFile(join(project, '课堂记录/凡人原文-20261015/逐项核对.json'), 'utf8'));
-    for (const run of records.flat()) {
-      assert.equal(run.output, await readFile(join(project, run.archive!.path, 'output.txt'), 'utf8'));
-      assert.equal(run.request.requestBody, await readFile(join(project, run.archive!.path, 'prompt.txt'), 'utf8'));
+    for (const run of records.filter((_, index) => index !== 1).flat()) {
+      assert.ok(run.output); assert.ok(run.request.requestBody);
       if (run.state === 'completed') {
         assert.equal(assessRun(run, criteria(run.caseId)).label, '符合本轮章稿条件');
         for (const item of criteria(run.caseId)) {
           assert.equal(run.judgments[item.id].decision, 'pass');
           assert.match(run.judgments[item.id].evidence, /资料：[\s\S]+判断：/);
         }
-        for (const item of Object.values(reviews[String(run.archive!.report.id ?? 'feedback')]) as { quotes: string[] }[]) {
-          for (const quote of item.quotes) assert.ok(run.output.includes(quote), `课堂引用不在实际正文中：${quote}`);
+        for (const item of Object.values(run.judgments)) {
+          for (const quote of item.evidence.matchAll(/^“(.+)”$/gm)) assert.ok(run.output.includes(quote[1]), `课堂引用不在实际正文中：${quote[1]}`);
         }
       } else assert.deepEqual(run.judgments, {});
     }
-    assert.equal(records[1].filter(run => run.state === 'failed').length, 2);
+    const examples = JSON.parse(await readFile(join(project, '课堂记录/样例对照.json'), 'utf8')) as TaskRun[];
+    assert.equal(examples.length, 6);
+    for (const [index, run] of records[1].entries()) {
+      assert.equal(run.state, 'completed'); assert.equal(run.request.finishReason, 'stop');
+      assert.equal(run.output, examples[index].output);
+      assert.deepEqual(run.request, examples[index].request);
+      assert.deepEqual(run.judgments, examples[index].judgments);
+      assert.ok(!Object.hasOwn(JSON.parse(run.request.requestBody), 'max_tokens'));
+    }
     assert.equal(records[2][0].checks.exactEdit, true);
     const pair = records[4].filter(run => run.caseId === 'S2'), a = pair.find(run => run.method === 'A')!, b = pair.find(run => run.method === 'B')!;
     assert.equal(b.parentId, a.id); assert.equal(totals([a, a, b]).calls, 2);

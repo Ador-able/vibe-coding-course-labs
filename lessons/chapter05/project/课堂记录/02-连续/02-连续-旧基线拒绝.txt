@@ -1,4 +1,0 @@
-$ node dist/cli.js "save" "../小说实验统一-20261013/chapter05/02-连续-旧基线请求.json" "--db" "data/02-连续/novel.sqlite"
-(node:104572) ExperimentalWarning: SQLite is an experimental feature and might change at any time
-(Use `node --trace-warnings ...` to show where the warning was created)
-{"code":"STALE_CHAPTER","message":"正文已是 r3，请重读后合并。"}

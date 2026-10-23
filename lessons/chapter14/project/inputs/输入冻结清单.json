@@ -1,6 +1,6 @@
 {
   "kind": "complete-classroom-inputs-frozen-before-native-business-execution",
-  "frozenAt": "2026-10-15T09:44:08.520Z",
+  "frozenAt": "2026-10-23T08:19:55.624Z",
   "files": [
     {
       "path": "files/fanren-C05.pdf",
@@ -128,11 +128,6 @@
       "sha256": "dce2505d113f353c1f880b5c4854707c965c62e365f242ae7c25c009ca597a9d"
     },
     {
-      "path": "materials/历史原件搬移核对.json",
-      "bytes": 90040,
-      "sha256": "8043eea21b997eb54d2a469138b019431f6f546396efcc7bcc60395593f9f52b"
-    },
-    {
       "path": "materials/原件清单.json",
       "bytes": 1349,
       "sha256": "242ce642c0230429b4dd7207665acb97b9c80fd83763653cd4b7dde66ef292b2"
@@ -154,8 +149,8 @@
     },
     {
       "path": "materials/课堂记录说明.md",
-      "bytes": 777,
-      "sha256": "f011ffd7a0b2847dfcc2ee615dd52b03b433db5d7740be26ab5d29440070ec37"
+      "bytes": 553,
+      "sha256": "9583a716d2eccd975e26a274fe9aabb74b96363c68db48b2615a67f1ad191889"
     },
     {
       "path": "workflows/branch/bind-branch.mjs",

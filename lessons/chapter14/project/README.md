@@ -38,4 +38,4 @@ PDF与TXT复用第十二章完整C05的段落空行排版；三个原页为2645�
 
 pnpm check核输入原件、引文与原生表达式语法；pnpm test核完整业务投影；pnpm source:check核冻结源码。pnpm calendar只重算固定日期的IANA时区，不访问日历。更换自己的输入时，按实际字节更新输入清单，再冻结新的源码与Git起点，使用新的采集目录。
 
-教师隔离实测可用 node scripts/setup-classroom.mjs create调用该版本标准owner/setup、login、API key接口，创建本机合成账户，私密原件只存用户目录。既有其他课堂容器、卷和历史执行不作为本轮结果；历史材料保存在 records/历史青岚-20261013。
+教师隔离实测可用 node scripts/setup-classroom.mjs create调用该版本标准owner/setup、login、API key接口，创建本机合成账户，私密原件只存用户目录。既有其他课堂容器、卷和历史执行不作为本轮结果。

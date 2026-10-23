@@ -1,12 +1,12 @@
 {
   "kind": "actual-executable-source-and-complete-inputs",
-  "sourceSha256": "4211ed3793a3a07e8a7445ec2e3b93abc078f17ba3fbb2dcf45f2c2fd2c47182",
-  "frozenInputSha256": "f85a40d44ec2f4014b7af8a955da825e9c7dc19bd5b36f6d5581adc4b24d76b3",
+  "sourceSha256": "79284a8530696eeb5c87433757d7a4686aed0e598f7cbae567a5362b1e3ef516",
+  "frozenInputSha256": "34449b5f1fab2955a47691225db2e0eb216b196e6e723d0bf5da16a712399e78",
   "files": [
     {
       "path": "../../../pnpm-lock.yaml",
-      "bytes": 82516,
-      "sha256": "0fc0628f667596a2eb614342b424a2d837c4f85e9c0c74e9ffac6c5c8e35ebcd"
+      "bytes": 79716,
+      "sha256": "11d615e7d291a62943512067906db192dc66fa773e075b76dc27f892540dc2e7"
     },
     {
       "path": ".gitattributes",
@@ -20,8 +20,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4846,
-      "sha256": "3a5bebf882c0c0777cd4ca9dd646d90fdefe51a6942a3bbdb5927a1dcf8ad4e7"
+      "bytes": 4792,
+      "sha256": "90b4c6defbca3a2e9d7af931e086717367f6dea84a573c53ea91611af8449f86"
     },
     {
       "path": "files/fanren-C05.pdf",
@@ -145,18 +145,13 @@
     },
     {
       "path": "inputs/输入冻结清单.json",
-      "bytes": 6889,
-      "sha256": "f85a40d44ec2f4014b7af8a955da825e9c7dc19bd5b36f6d5581adc4b24d76b3"
+      "bytes": 6714,
+      "sha256": "34449b5f1fab2955a47691225db2e0eb216b196e6e723d0bf5da16a712399e78"
     },
     {
       "path": "inputs/非敏感固定设置.json",
       "bytes": 2329,
       "sha256": "dce2505d113f353c1f880b5c4854707c965c62e365f242ae7c25c009ca597a9d"
-    },
-    {
-      "path": "materials/历史原件搬移核对.json",
-      "bytes": 90040,
-      "sha256": "8043eea21b997eb54d2a469138b019431f6f546396efcc7bcc60395593f9f52b"
     },
     {
       "path": "materials/原件清单.json",
@@ -180,8 +175,8 @@
     },
     {
       "path": "materials/课堂记录说明.md",
-      "bytes": 777,
-      "sha256": "f011ffd7a0b2847dfcc2ee615dd52b03b433db5d7740be26ab5d29440070ec37"
+      "bytes": 553,
+      "sha256": "9583a716d2eccd975e26a274fe9aabb74b96363c68db48b2615a67f1ad191889"
     },
     {
       "path": "package.json",

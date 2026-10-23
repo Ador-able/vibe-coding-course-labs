@@ -1,4 +1,0 @@
-{"phase":"started","tool":"read_work","arguments":{"workId":"absent-work"},"atMs":346.0508}
-{"phase":"started","tool":"read_chapter","arguments":{"workId":"absent-work","chapterNumber":1},"atMs":346.1239}
-{"phase":"finished","tool":"read_work","arguments":{"workId":"absent-work"},"startedMs":346.0508,"finishedMs":349.2908,"ok":false,"error":{"code":"WORK_NOT_FOUND","message":"没有作品 absent-work，先初始化。"},"raw":{"content":[{"type":"text","text":"{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"}],"isError":true}}
-{"phase":"finished","tool":"read_chapter","arguments":{"workId":"absent-work","chapterNumber":1},"startedMs":346.1239,"finishedMs":349.5527,"ok":false,"error":{"code":"WORK_NOT_FOUND","message":"没有作品 absent-work，先初始化。"},"raw":{"content":[{"type":"text","text":"{\"code\":\"WORK_NOT_FOUND\",\"message\":\"没有作品 absent-work，先初始化。\"}"}],"isError":true}}
