@@ -9,7 +9,7 @@ import { join, resolve } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { createTasksRouter } from '../labs/requests/src/tasks/routes.ts';
 import { assessRun, checkOutput, totals } from '../labs/requests/src/tasks/checks.ts';
-import { EDIT, type RunInput, type TaskRun } from '../labs/requests/src/tasks/contract.ts';
+import { FEEDBACK_CRITERION, FEEDBACK_TARGET, type RunInput, type TaskRun } from '../labs/requests/src/tasks/contract.ts';
 import { criteria } from '../labs/requests/src/tasks/materials.ts';
 
 async function listen(server: Server) {
@@ -75,17 +75,34 @@ test('样例只改变指定输入，成本核对复用同一初稿，失败与�
     const revised = received.at(-1)!.messages.find(item => item.role === 'user')!.content;
     assert.ok(revised.startsWith(baseline)); assert.match(revised.slice(baseline.length), /写作前，先核对/);
     assert.match(baseline, /随墨大夫入谷/);
+    const feedback = (await post({ lesson: 'feedback', caseId: 'S1', method: 'none', batchId: randomUUID() })).run;
+    const feedbackInput = received.at(-1)!;
+    assert.ok(!Object.hasOwn(feedbackInput, 'max_tokens'));
+    const feedbackPrompt = feedbackInput.messages.find(item => item.role === 'user')!.content;
+    assert.match(feedbackPrompt, /我希望说得更直接/);
+    assert.doesNotMatch(feedbackPrompt, /替换为|想当正式弟子，就得在正午前到崖顶/);
+    const expression = { [FEEDBACK_CRITERION.id]: { decision: 'pass', evidence: '已对照规则段，表达效果由阅读判断。' } };
+    const expressionSaved = await fetch(origin + `/api/tasks/runs/${feedback.id}/judgments`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(expression) });
+    assert.equal(expressionSaved.status, 200);
+    assert.deepEqual((await expressionSaved.json()).judgments, expression);
   } finally {
     await close(server); await close(modelServer);
     assert.ok(resolve(directory).startsWith(resolve(tmpdir()))); await rm(directory, { recursive: true, force: true });
   }
 });
 
-test('局部反馈检查全文，字数相同不能掩盖越界修改', () => {
-  const original = '# 选拔开端\n\n' + EDIT.before + '\n他继续攀爬。';
-  assert.equal(checkOutput(original.replace(EDIT.before, EDIT.after), original).exactEdit, true);
-  const changed = original.replace(EDIT.before, EDIT.after).replace('继续', '停止');
-  assert.equal(checkOutput(changed, original).exactEdit, false);
+test('局部反馈不预设改写答案，范围内不同表达都可核对，越界与未改动分别显示', () => {
+  const original = '# 选拔开端\n\n岳堂主说：“' + FEEDBACK_TARGET + '”\n\n他继续攀爬。';
+  for (const wording of ['你们必须在正午前登上崖顶，才能成为正式弟子。', '正午前上崖顶！想成为正式弟子，就记住这个时限。']) {
+    const checks = checkOutput(original.replace(FEEDBACK_TARGET, wording), original);
+    assert.equal(checks.outsideTargetUnchanged, true); assert.equal(checks.targetChanged, true);
+  }
+  const changed = original.replace(FEEDBACK_TARGET, '正午前登上崖顶，才有资格成为正式弟子。').replace('继续', '停止');
+  assert.equal(checkOutput(changed, original).outsideTargetUnchanged, false);
+  assert.equal(checkOutput(original, original).outsideTargetUnchanged, true);
+  assert.equal(checkOutput(original, original).targetChanged, false);
+  const missing = checkOutput(original.replace(FEEDBACK_TARGET, ''), '# 其他原稿\n\n没有这段对白。');
+  assert.equal(missing.outsideTargetUnchanged, false);
 });
 
 test('课堂实录保留实际输入、正文与人工核对，成本两条路径复用原初稿，读取不产生本机运行', async () => {
@@ -104,8 +121,9 @@ test('课堂实录保留实际输入、正文与人工核对，成本两条路�
     for (const run of records.filter((_, index) => index !== 1).flat()) {
       assert.ok(run.output); assert.ok(run.request.requestBody);
       if (run.state === 'completed') {
-        assert.equal(assessRun(run, criteria(run.caseId)).label, '符合本轮章稿条件');
-        for (const item of criteria(run.caseId)) {
+        const required = [...criteria(run.caseId), ...(run.lesson === 'feedback' ? [FEEDBACK_CRITERION] : [])];
+        assert.equal(assessRun(run, required).label, '符合本轮章稿条件');
+        for (const item of required) {
           assert.equal(run.judgments[item.id].decision, 'pass');
           assert.match(run.judgments[item.id].evidence, /资料：[\s\S]+判断：/);
         }
@@ -123,7 +141,8 @@ test('课堂实录保留实际输入、正文与人工核对，成本两条路�
       assert.deepEqual(run.judgments, examples[index].judgments);
       assert.ok(!Object.hasOwn(JSON.parse(run.request.requestBody), 'max_tokens'));
     }
-    assert.equal(records[2][0].checks.exactEdit, true);
+    assert.equal(records[2][0].checks.outsideTargetUnchanged, true);
+    assert.equal(records[2][0].checks.targetChanged, true);
     const pair = records[4].filter(run => run.caseId === 'S2'), a = pair.find(run => run.method === 'A')!, b = pair.find(run => run.method === 'B')!;
     assert.equal(b.parentId, a.id); assert.equal(totals([a, a, b]).calls, 2);
     assert.equal(totals(pair).input, 48289); assert.equal(totals(pair).output, 2389);

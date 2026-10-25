@@ -1,7 +1,7 @@
 import '../lab.css';
 import './style.css';
 import { renderMarkdown } from '../../../../shared/markdown.ts';
-import { LESSONS, METHOD_NAMES, PLAN, type Lesson, type TaskRun, type Criterion, type Judgment } from './contract.ts';
+import { FEEDBACK_CRITERION, LESSONS, METHOD_NAMES, PLAN, type Lesson, type TaskRun, type Criterion, type Judgment } from './contract.ts';
 import { assessRun, totals } from './checks.ts';
 
 const lesson = location.pathname.split('/')[2].replace('task-', '') as Lesson;
@@ -23,7 +23,7 @@ const history = get<HTMLSelectElement>('history');
 let runs: TaskRun[] = [], batchId = '', controller: AbortController | undefined;
 let criteria: Record<string, Criterion[]>;
 const status = (text: string) => { get('status').textContent = text; };
-const conditionName = (method: TaskRun['method']) => lesson === 'feedback' ? '指定句反馈' : lesson === 'goals' ? '完整任务' : lesson === 'cost' ? method === 'A' ? '初稿' : '增加核对' : METHOD_NAMES[method];
+const conditionName = (method: TaskRun['method']) => lesson === 'feedback' ? '表达反馈' : lesson === 'goals' ? '完整任务' : lesson === 'cost' ? method === 'A' ? '初稿' : '增加核对' : METHOD_NAMES[method];
 async function json<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch('/api/tasks/' + path, init);
   const data = await response.json();
@@ -77,8 +77,9 @@ function showRun(run: TaskRun, section: HTMLElement) {
     <details><summary class="request-title">实际请求与返回</summary><pre class="request"></pre></details>`;
   const find = <T extends HTMLElement>(selector: string) => section.querySelector<T>(selector)!;
   renderMarkdown(find('.task-answer'), run.output || '本次没有取得正文。');
+  const requirements = [...criteria[run.caseId], ...(lesson === 'feedback' ? [FEEDBACK_CRITERION] : [])];
   const updateAssessment = (record: TaskRun) => {
-    const assessment = assessRun(record, criteria[record.caseId]);
+    const assessment = assessRun(record, requirements);
     find('.judgment-reason').textContent = `${assessment.label}：${assessment.reason}`;
     if (record.judgments.scope?.decision === 'fail') find('.judgment-reason').textContent += '\n核对范围不符合，具体改动见下方对应项。';
   };
@@ -87,7 +88,7 @@ function showRun(run: TaskRun, section: HTMLElement) {
   find('.request').textContent = JSON.stringify(run.archive ? { input: run.request.requestBody, output: run.output, judgments: run.judgments, ...run.archive } : run, null, 2);
   const form = find<HTMLFormElement>('.review-form'); form.hidden = run.state !== 'completed';
   if (form.hidden) return;
-  const items = [...criteria[run.caseId], ...(lesson === 'cost' && run.method === 'B' ? [{ id: 'scope', text: '核对步骤只修正不符之处，保留已经相容的描写与完整正文。' }] : [])];
+  const items = [...requirements, ...(lesson === 'cost' && run.method === 'B' ? [{ id: 'scope', text: '核对步骤只修正不符之处，保留已经相容的描写与完整正文。' }] : [])];
   const fields: { id: string; select: HTMLSelectElement; evidence: HTMLTextAreaElement }[] = [];
   for (const item of items) {
     const label = document.createElement('label'), text = document.createElement('span'), select = document.createElement('select');
@@ -167,7 +168,7 @@ void (async () => {
     if (lesson === 'feedback') { addMaterial('本轮反馈', materials.feedback); addMaterial('历史真实原稿', materials.original); }
     if (lesson === 'evaluation') addMaterial('B：追加的事前核对要求', materials.preflight);
     if (lesson === 'cost') addMaterial('B：追加的核对要求', materials.review);
-    addMaterial('人工判断条件', [...new Set(PLAN[lesson].map(item => item.caseId))].map(id => '### ' + id + '\n\n' + criteria[id].map(item => '- ' + item.text).join('\n')).join('\n\n'));
+    addMaterial('人工判断条件', [...new Set(PLAN[lesson].map(item => item.caseId))].map(id => '### ' + id + '\n\n' + [...criteria[id], ...(lesson === 'feedback' ? [FEEDBACK_CRITERION] : [])].map(item => '- ' + item.text).join('\n')).join('\n\n'));
     runs = (await json<TaskRun[]>('runs')).filter(run => run.lesson === lesson); renderHistory(); start.disabled = false; classroom.disabled = false;
   } catch (error) { status('实验资料未能载入：' + (error as Error).message); }
 })();

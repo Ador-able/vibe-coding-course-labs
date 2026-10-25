@@ -6,12 +6,12 @@
 | --- | --- | --- |
 | 用途、事实、写法与交付怎样变成判断依据 | [任务验收](http://127.0.0.1:4318/requests/task-goals/) | `labs/requests/src/tasks/materials.ts`、`checks.ts` |
 | 固定任务，单独改变样例 | [样例对照](http://127.0.0.1:4318/requests/task-examples/) | `materials.ts` 的样例分支 |
-| 指定改动与全文保留怎样一起核对 | [局部反馈](http://127.0.0.1:4318/requests/task-feedback/) | `materials.ts` 的反馈分支、`checks.ts` |
+| 表达反馈与全文保留怎样一起核对 | [局部反馈](http://127.0.0.1:4318/requests/task-feedback/) | `materials.ts` 的反馈分支、`checks.ts` |
 | 固定样本、方法与判断条件 | [评估样本](http://127.0.0.1:4318/requests/task-evaluation/) | `contract.ts` 的 `PLAN`、`materials.ts` 的 `criteria` |
 | 同一初稿的两条路径怎样统计消耗 | [合格率与总成本](http://127.0.0.1:4318/requests/task-cost/) | `checks.ts` 的 `totals`、`routes.ts` 的父记录关联 |
 
 1. 展开“本节输入与判断条件”，先看用途、完整任务和本轮改变的条件。
-2. 点击运行，得到真实模型返回；按原句与资料逐项填写判断。字数检查和局部替换对比由程序完成，情节与文学效果需要阅读。
+2. 点击运行，得到真实模型返回；按原句与资料逐项填写判断。字数和授权段落之外的全文对比由程序完成，表达效果与事实是否保留需要阅读。
 3. 展开“实际请求与返回”，回查实际发出的消息、返回、结束原因、等待与用量。失败保留，不自动重跑。
 
 ## 调用与记录
