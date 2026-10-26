@@ -1,23 +1,22 @@
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
-import type { CaseId, Criterion, RunInput, TaskRun } from './contract.ts';
+import type { CaseId, Criterion, RunInput } from './contract.ts';
 
 export async function loadMaterials(project: string) {
   const read = (path: string) => readFile(join(project, path), 'utf8');
-  const [S1, S2, S3, conflict, consistent, feedback, original, preflight, review] = await Promise.all([
+  const [S1, S2, S3, conflict, consistent, feedback, original, preflight] = await Promise.all([
     ...['S1', 'S2', 'S3'].map(id => read(`材料/任务-${id}.txt`)),
     read('材料/样例-冲突.txt'), read('材料/样例-相容.txt'), read('feedback/反馈要求.txt'),
-    read('feedback/输入/原稿.txt'), read('evaluation/通用核对要求.txt'), read('材料/通用审稿要求.txt'),
+    read('feedback/输入/原稿.txt'), read('evaluation/通用核对要求.txt'),
   ]);
-  return { tasks: { S1, S2, S3 }, conflict, consistent, feedback, original, preflight, review };
+  return { tasks: { S1, S2, S3 }, conflict, consistent, feedback, original, preflight };
 }
 export type Materials = Awaited<ReturnType<typeof loadMaterials>>;
 
 // 每节只改变要观察的那一项；完整任务沿用同一份资料。
-export function buildPrompt(input: RunInput, materials: Materials, parent?: TaskRun) {
+export function buildPrompt(input: RunInput, materials: Materials) {
   const task = materials.tasks[input.caseId];
   if (input.lesson === 'feedback') return `${materials.feedback}\n\n<写作任务>\n${task}\n</写作任务>\n\n<原稿>\n${materials.original}\n</原稿>`;
-  if (input.lesson === 'cost' && input.method === 'B') return `${materials.review}\n\n<写作任务>\n${task}\n</写作任务>\n\n<初稿>\n${parent!.output}\n</初稿>`;
   if (input.lesson === 'examples' && input.method !== 'none') return `${task}\n\n<写法样例>\n${materials[input.method as 'conflict' | 'consistent']}\n</写法样例>`;
   if (input.lesson === 'evaluation' && input.method === 'B') return `${task}\n\n${materials.preflight}`;
   return task;

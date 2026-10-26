@@ -2,7 +2,7 @@ import '../lab.css';
 import './style.css';
 import { renderMarkdown } from '../../../../shared/markdown.ts';
 import { FEEDBACK_CRITERION, LESSONS, METHOD_NAMES, PLAN, type Lesson, type TaskRun, type Criterion, type Judgment } from './contract.ts';
-import { assessRun, totals } from './checks.ts';
+import { assessRun } from './checks.ts';
 
 const lesson = location.pathname.split('/')[2].replace('task-', '') as Lesson;
 const definition = LESSONS[lesson];
@@ -12,7 +12,7 @@ app.innerHTML = `<header><h1></h1><p></p></header>
   <section class="task-controls"><button id="run" disabled></button><button id="stop" class="secondary" hidden>停止</button><button id="classroom" class="secondary" disabled>查看课堂实录</button><span class="note" id="call-count"></span></section>
   <p id="status" role="status" aria-live="polite"></p>
   <section id="results" hidden><div class="record-bar"><span id="record-source" hidden></span><label id="record-picker">查看记录 <select id="history"></select></label></div>
-  <div id="comparison" class="table-scroll"></div><div id="drafts"></div></section>`;
+  <div id="drafts"></div></section>`;
 const get = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 app.querySelector('h1')!.textContent = `${definition.name}实验`;
 app.querySelector('header p')!.textContent = definition.description;
@@ -23,7 +23,7 @@ const history = get<HTMLSelectElement>('history');
 let runs: TaskRun[] = [], batchId = '', controller: AbortController | undefined;
 let criteria: Record<string, Criterion[]>;
 const status = (text: string) => { get('status').textContent = text; };
-const conditionName = (method: TaskRun['method']) => lesson === 'feedback' ? '表达反馈' : lesson === 'goals' ? '完整任务' : lesson === 'cost' ? method === 'A' ? '初稿' : '增加核对' : METHOD_NAMES[method];
+const conditionName = (method: TaskRun['method']) => lesson === 'feedback' ? '表达反馈' : lesson === 'goals' ? '完整任务' : METHOD_NAMES[method];
 async function json<T>(path: string, init?: RequestInit): Promise<T> {
   const response = await fetch('/api/tasks/' + path, init);
   const data = await response.json();
@@ -35,31 +35,9 @@ function addMaterial(title: string, content: string) {
   summary.textContent = title; body.className = 'task-material'; renderMarkdown(body, content);
   detail.append(summary, body); get('material-body').append(detail);
 }
-function table(headers: string[], rows: string[][]) {
-  const el = document.createElement('table'), head = el.createTHead().insertRow();
-  headers.forEach(text => { const cell = document.createElement('th'); cell.textContent = text; head.append(cell); });
-  const body = el.createTBody(); rows.forEach(row => { const tr = body.insertRow(); row.forEach(text => { tr.insertCell().textContent = text; }); });
-  return el;
-}
-const number = (value: number | null) => value === null ? '未知' : value.toLocaleString('zh-CN');
 function renderBatch() {
   const current = runs.filter(run => run.batchId === batchId).sort((a, b) => a.startedAt.localeCompare(b.startedAt));
   get('results').hidden = !current.length;
-  const comparison = get('comparison'); comparison.replaceChildren(); comparison.hidden = lesson !== 'cost';
-  if (lesson === 'cost') {
-    const drafts = current.filter(run => run.method === 'A');
-    const rows = drafts.flatMap(a => {
-      const b = current.find(run => run.parentId === a.id);
-      const prefix = drafts.length > 1 ? a.caseId + ' · ' : '';
-      return [{ label: prefix + 'A：保留初稿', records: [a] }, ...(b ? [{ label: prefix + 'B：同一初稿 + 核对', records: [a, b] }] : [])];
-    }).map(path => {
-      const sum = totals(path.records);
-      return [path.label, String(sum.calls), sum.durationMs === null ? '未知' : (sum.durationMs / 1000).toFixed(2), number(sum.input), number(sum.output)];
-    });
-    comparison.append(table(['路径', '调用数', '累计秒', '输入 token', '输出 token'], rows));
-    for (const a of drafts.filter(a => !current.some(run => run.parentId === a.id))) { const pending = document.createElement('p'); pending.className = 'note'; pending.textContent = a.state === 'failed' ? '初稿调用失败，B 已跳过核对；这次初稿的等待和用量仍计入本轮。' : '这一对尚无核对结果，目前只记录了初稿阶段的消耗。'; comparison.append(pending); }
-    const note = document.createElement('p'); note.className = 'note'; note.textContent = 'B 包含 A 的同一次初稿。整轮实际调用按唯一编号计数；缓存和推理细分见原始用量。金额与人工工时未测。'; comparison.append(note);
-  }
   const drafts = get('drafts');
   // 保留已显示章稿的填写状态，新返回的对照结果依次追加。
   const existing = new Map([...drafts.querySelectorAll<HTMLElement>(':scope > section')].map(section => [section.dataset.runId, section]));
@@ -81,16 +59,14 @@ function showRun(run: TaskRun, section: HTMLElement) {
   const updateAssessment = (record: TaskRun) => {
     const assessment = assessRun(record, requirements);
     find('.judgment-reason').textContent = `${assessment.label}：${assessment.reason}`;
-    if (record.judgments.scope?.decision === 'fail') find('.judgment-reason').textContent += '\n核对范围不符合，具体改动见下方对应项。';
   };
   updateAssessment(run);
   find('.request-title').textContent = run.archive ? '实际输入与运行报告' : '实际请求与返回';
   find('.request').textContent = JSON.stringify(run.archive ? { input: run.request.requestBody, output: run.output, judgments: run.judgments, ...run.archive } : run, null, 2);
   const form = find<HTMLFormElement>('.review-form'); form.hidden = run.state !== 'completed';
   if (form.hidden) return;
-  const items = [...requirements, ...(lesson === 'cost' && run.method === 'B' ? [{ id: 'scope', text: '核对步骤只修正不符之处，保留已经相容的描写与完整正文。' }] : [])];
   const fields: { id: string; select: HTMLSelectElement; evidence: HTMLTextAreaElement }[] = [];
-  for (const item of items) {
+  for (const item of requirements) {
     const label = document.createElement('label'), text = document.createElement('span'), select = document.createElement('select');
     text.textContent = item.text;
     select.setAttribute('aria-label', item.text + ' 判断'); select.append(new Option('待核', 'pending'), new Option('符合', 'pass'), new Option('不符合', 'fail'));
@@ -141,18 +117,17 @@ classroom.onclick = async () => {
 };
 start.onclick = async () => {
   controller = new AbortController(); start.disabled = true; stop.hidden = false; history.disabled = true; classroom.disabled = true;
-  batchId = crypto.randomUUID(); let parent: TaskRun | undefined;
+  batchId = crypto.randomUUID();
   try {
     for (const [index, item] of PLAN[lesson].entries()) {
       if (controller.signal.aborted) break;
-      if (lesson === 'cost' && item.method === 'B' && parent?.state !== 'completed') { status('初稿未完成，已跳过核对；已发生的调用保留。'); break; }
       const beganAt = Date.now();
       const progress = () => status(`正在请求 ${index + 1}/${PLAN[lesson].length}：${item.caseId} / ${conditionName(item.method)}，已等待 ${Math.floor((Date.now() - beganAt) / 1000)} 秒…`);
       progress(); app.setAttribute('aria-busy', 'true'); const timer = window.setInterval(progress, 1000);
       let run: TaskRun;
-      try { run = await json<TaskRun>('run', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal, body: JSON.stringify({ lesson, ...item, batchId, ...(parent ? { parentId: parent.id } : {}) }) }); }
+      try { run = await json<TaskRun>('run', { method: 'POST', headers: { 'Content-Type': 'application/json' }, signal: controller.signal, body: JSON.stringify({ lesson, ...item, batchId }) }); }
       finally { clearInterval(timer); app.removeAttribute('aria-busy'); }
-      runs.unshift(run); if (lesson === 'cost' && item.method === 'A') parent = run;
+      runs.unshift(run);
       renderHistory();
       if (index === PLAN[lesson].length - 1) status(run.state === 'failed' ? run.error || '本次调用未完成。' : '');
     }
@@ -161,13 +136,12 @@ start.onclick = async () => {
 };
 void (async () => {
   try {
-    const materials = await json<{ tasks: Record<string, string>; conflict: string; consistent: string; feedback: string; original: string; preflight: string; review: string; criteria: Record<string, Criterion[]> }>('materials');
+    const materials = await json<{ tasks: Record<string, string>; conflict: string; consistent: string; feedback: string; original: string; preflight: string; criteria: Record<string, Criterion[]> }>('materials');
     criteria = materials.criteria;
     for (const id of [...new Set(PLAN[lesson].map(item => item.caseId))]) addMaterial(`完整任务 ${id}`, materials.tasks[id]);
     if (lesson === 'examples') { addMaterial('冲突样例', materials.conflict); addMaterial('相容样例', materials.consistent); }
     if (lesson === 'feedback') { addMaterial('本轮反馈', materials.feedback); addMaterial('历史真实原稿', materials.original); }
     if (lesson === 'evaluation') addMaterial('B：追加的事前核对要求', materials.preflight);
-    if (lesson === 'cost') addMaterial('B：追加的核对要求', materials.review);
     addMaterial('人工判断条件', [...new Set(PLAN[lesson].map(item => item.caseId))].map(id => '### ' + id + '\n\n' + [...criteria[id], ...(lesson === 'feedback' ? [FEEDBACK_CRITERION] : [])].map(item => '- ' + item.text).join('\n')).join('\n\n'));
     runs = (await json<TaskRun[]>('runs')).filter(run => run.lesson === lesson); renderHistory(); start.disabled = false; classroom.disabled = false;
   } catch (error) { status('实验资料未能载入：' + (error as Error).message); }

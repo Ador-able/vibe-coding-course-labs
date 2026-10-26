@@ -8,7 +8,7 @@ import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { randomUUID } from 'node:crypto';
 import { createTasksRouter } from '../labs/requests/src/tasks/routes.ts';
-import { assessRun, checkOutput, totals } from '../labs/requests/src/tasks/checks.ts';
+import { assessRun, checkOutput } from '../labs/requests/src/tasks/checks.ts';
 import { FEEDBACK_CRITERION, FEEDBACK_TARGET, type RunInput, type TaskRun } from '../labs/requests/src/tasks/contract.ts';
 import { criteria } from '../labs/requests/src/tasks/materials.ts';
 
@@ -18,7 +18,7 @@ async function listen(server: Server) {
 }
 async function close(server: Server) { server.closeAllConnections(); await new Promise<void>(done => server.close(() => done())); }
 
-test('样例只改变指定输入，成本核对复用同一初稿，失败与真实用量落盘', async () => {
+test('样例与评估只改变指定输入，失败与真实用量落盘，人工判断可保存', async () => {
   const received: { messages: { role: string; content: string }[]; max_tokens?: number }[] = [];
   let finish = 'stop';
   const upstream = express().use(express.json({ limit: '1mb' })).post('/chat/completions', (req, res) => {
@@ -48,25 +48,19 @@ test('样例只改变指定输入，成本核对复用同一初稿，失败与�
     assert.equal(assessRun(plain.run, [{ id: 'fact-1', text: '角色与身份' }]).label, '待核');
     const overlong = { ...plain.run, checks: checkOutput('# 标题\n' + '字'.repeat(1387)) };
     assert.match(assessRun(overlong, []).reason, /1387.*超过 1200/);
-    const costBatch = randomUUID();
-    const a = (await post({ lesson: 'cost', caseId: 'S2', method: 'A', batchId: costBatch })).run;
-    const invalid = await post({ lesson: 'cost', caseId: 'S2', method: 'B', batchId: randomUUID(), parentId: a.id });
-    assert.equal(invalid.response.status, 400); assert.equal(received.length, 3);
-    const b = (await post({ lesson: 'cost', caseId: 'S2', method: 'B', batchId: costBatch, parentId: a.id })).run;
-    assert.match(received.at(-1)!.messages.find(item => item.role === 'user')!.content, /<初稿>/);
-    assert.ok(b.request.requestBody.includes(a.output.replaceAll('\n', '\\n')));
-    assert.equal(totals([a, a, b]).calls, 2); assert.equal(totals([a, b]).input, 400); assert.equal(totals([a, b]).cached, 60); assert.equal(totals([a, b]).reasoning, null);
     finish = 'length';
     const failed = (await post({ lesson: 'evaluation', caseId: 'S3', method: 'A', batchId: randomUUID() })).run;
     assert.ok(!Object.hasOwn(received.at(-1)!, 'max_tokens'));
-    assert.equal(failed.state, 'failed'); assert.ok(failed.output.length > 0); assert.equal(totals([failed]).input, 200);
-    assert.equal(JSON.parse(await readFile(join(directory, `${failed.id}.json`), 'utf8')).state, 'failed');
+    assert.equal(failed.state, 'failed'); assert.ok(failed.output.length > 0);
+    assert.deepEqual(failed.request.usage, { prompt_tokens: 200, completion_tokens: 100, prompt_tokens_details: { cached_tokens: 30 } });
+    const savedFailure = JSON.parse(await readFile(join(directory, `${failed.id}.json`), 'utf8'));
+    assert.equal(savedFailure.state, 'failed'); assert.deepEqual(savedFailure.request.usage, failed.request.usage);
     const stored = await (await fetch(origin + '/api/tasks/runs')).text(); assert.ok(!stored.includes('test-secret')); assert.ok(stored.includes(failed.id));
-    const review = await fetch(origin + `/api/tasks/runs/${a.id}/judgments`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ 'fact-1': { decision: 'pass', evidence: '' } }) });
+    const review = await fetch(origin + `/api/tasks/runs/${plain.run.id}/judgments`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ 'fact-1': { decision: 'pass', evidence: '' } }) });
     assert.equal(review.status, 400);
-    const judged = await fetch(origin + `/api/tasks/runs/${a.id}/judgments`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ 'fact-1': { decision: 'fail', evidence: '全文仅有“攀爬”重复，没有交代角色与身份。' } }) });
+    const judged = await fetch(origin + `/api/tasks/runs/${plain.run.id}/judgments`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ 'fact-1': { decision: 'fail', evidence: '全文仅有“攀爬”重复，没有交代角色与身份。' } }) });
     assert.equal(judged.status, 200);
-    const judgedRun = JSON.parse(await readFile(join(directory, `${a.id}.json`), 'utf8'));
+    const judgedRun = JSON.parse(await readFile(join(directory, `${plain.run.id}.json`), 'utf8'));
     assert.equal(judgedRun.judgments['fact-1'].decision, 'fail');
     assert.match(assessRun(judgedRun, [{ id: 'fact-1', text: '角色与身份' }]).reason, /全文仅有“攀爬”重复/);
     finish = 'stop';
@@ -108,18 +102,18 @@ test('局部反馈不预设改写答案，范围内不同表达都可核对，�
   assert.equal(missing.outsideTargetUnchanged, false);
 });
 
-test('课堂实录保留实际输入、正文与人工核对，成本两条路径复用原初稿，读取不产生本机运行', async () => {
+test('课堂实录保留实际输入、正文与人工核对，读取不产生本机运行', async () => {
   const directory = await mkdtemp(join(tmpdir(), 'tasks-classroom-'));
   const project = resolve('lessons/chapter04/project');
   // 不提供任何模型配置，历史阅读仍然可用。
   const server = createServer(express().use(express.json()).use('/api/tasks', createTasksRouter({}, project, directory)));
   const origin = await listen(server);
   try {
-    const records = await Promise.all(['goals', 'examples', 'feedback', 'evaluation', 'cost'].map(async lesson => {
+    const records = await Promise.all(['goals', 'examples', 'feedback', 'evaluation'].map(async lesson => {
       const response = await fetch(`${origin}/api/tasks/classroom/${lesson}`);
       assert.equal(response.status, 200); return await response.json() as TaskRun[];
     }));
-    assert.deepEqual(records.map(runs => runs.length), [1, 6, 1, 5, 4]);
+    assert.deepEqual(records.map(runs => runs.length), [1, 6, 1, 5]);
     for (const runs of records) assert.equal(new Set(runs.map(run => run.batchId)).size, 1);
     for (const run of records.filter((_, index) => index !== 1).flat()) {
       assert.ok(run.output); assert.ok(run.request.requestBody);
@@ -146,13 +140,8 @@ test('课堂实录保留实际输入、正文与人工核对，成本两条路�
     }
     assert.equal(records[2][0].checks.outsideTargetUnchanged, true);
     assert.equal(records[2][0].checks.targetChanged, true);
-    const pair = records[4].filter(run => run.caseId === 'S2'), a = pair.find(run => run.method === 'A')!, b = pair.find(run => run.method === 'B')!;
-    assert.equal(b.parentId, a.id); assert.equal(totals([a, a, b]).calls, 2);
-    assert.equal(totals(pair).input, 48289); assert.equal(totals(pair).output, 2389);
-    assert.equal(b.judgments.scope.decision, 'fail');
-    assert.match(b.judgments.scope.evidence, /超出了仅修改不符之处的范围/);
     assert.deepEqual(await readdir(directory), []);
-    const edit = await fetch(`${origin}/api/tasks/runs/${a.id}/judgments`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+    const edit = await fetch(`${origin}/api/tasks/runs/${records[0][0].id}/judgments`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: '{}' });
     assert.equal(edit.status, 400);
     assert.equal((await fetch(`${origin}/api/tasks/classroom/unknown`)).status, 400);
   } finally {

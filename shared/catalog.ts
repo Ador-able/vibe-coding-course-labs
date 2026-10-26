@@ -8,7 +8,7 @@ export const groups = [
     ['/requests/latency/', '等待与用量'], ['/requests/memory/', '按需读取与记忆'],
     ['/requests/disclosure/', '渐进式信息披露'],
     ['/requests/task-goals/', '任务验收'], ['/requests/task-examples/', '样例对照'],
-    ['/requests/task-feedback/', '局部反馈'], ['/requests/task-evaluation/', '评估样本'], ['/requests/task-cost/', '合格率与总成本'],
+    ['/requests/task-feedback/', '局部反馈'], ['/requests/task-evaluation/', '评估样本'],
     ['/requests/decisions/', '阅读方案'], ['/requests/collaboration/', '笔记共写'], ['/requests/feedback/', '人物指代'],
     ['/requests/structured/', '结构化输出'], ['/requests/streaming/', '流式消息'],
     ['/requests/message-history/', '消息记录'], ['/requests/requests/', '请求状态'],

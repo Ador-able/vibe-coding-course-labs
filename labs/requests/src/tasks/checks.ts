@@ -31,15 +31,3 @@ export function assessRun(run: TaskRun, criteria: Criterion[]) {
   return factsChecked ? { label: '符合本轮章稿条件', reason: automated + (run.archive ? '以下保留课堂逐项核对的原句与资料依据。' : '各项人工判断已保存，可展开回查原句依据。') }
     : { label: '待核', reason: automated + '情节与交付条件尚未全部人工核对。' };
 }
-// 缺失用量保持未知；缓存输入和推理输出是细分，不再叠加。
-export function totals(runs: TaskRun[]) {
-  const unique = [...new Map(runs.map(run => [run.id, run])).values()];
-  const sum = (get: (run: TaskRun) => unknown) => {
-    const values = unique.map(get);
-    return values.every(value => typeof value === 'number' && Number.isFinite(value)) ? (values as number[]).reduce((a, b) => a + b, 0) : null;
-  };
-  const usage = (run: TaskRun) => run.request.usage as { prompt_tokens?: number; completion_tokens?: number; prompt_tokens_details?: { cached_tokens?: number }; completion_tokens_details?: { reasoning_tokens?: number } } | undefined;
-  return { calls: unique.length, durationMs: sum(run => run.request.durationMs),
-    input: sum(run => usage(run)?.prompt_tokens), output: sum(run => usage(run)?.completion_tokens),
-    cached: sum(run => usage(run)?.prompt_tokens_details?.cached_tokens), reasoning: sum(run => usage(run)?.completion_tokens_details?.reasoning_tokens) };
-}

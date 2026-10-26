@@ -36,7 +36,6 @@ export function createTasksRouter(env: NodeJS.ProcessEnv, project: string, direc
     try {
       const run = await read(req.params.id);
       const allowed = criteria(run.caseId).map(item => item.id);
-      if (run.lesson === 'cost') allowed.push('scope');
       if (run.lesson === 'feedback') allowed.push(FEEDBACK_CRITERION.id);
       const input: unknown = req.body;
       if (!isObject(input) || Object.entries(input).some(([key, value]) => !allowed.includes(key) || !isObject(value) || !['pass', 'fail', 'pending'].includes(String(value.decision)) || typeof value.evidence !== 'string' || value.evidence.length > 3000 || value.decision !== 'pending' && !value.evidence.trim())) {
@@ -47,29 +46,18 @@ export function createTasksRouter(env: NodeJS.ProcessEnv, project: string, direc
   });
   router.post('/run', async (req, res, next) => {
     const input = req.body as RunInput;
-    if (!input || !Object.hasOwn(LESSONS, input.lesson) || !uuid.test(input.batchId ?? '') || !PLAN[input.lesson].some(item => item.caseId === input.caseId && item.method === input.method) || input.parentId !== undefined && !uuid.test(input.parentId)) {
+    if (!input || !Object.hasOwn(LESSONS, input.lesson) || !uuid.test(input.batchId ?? '') || !PLAN[input.lesson].some(item => item.caseId === input.caseId && item.method === input.method)) {
       res.status(400).json({ error: '实验条件不正确，请重新选择实验。' }); return;
     }
     let run: TaskRun | undefined;
     const controller = new AbortController();
     const cancel = () => controller.abort(); res.on('close', cancel);
     try {
-      let parent: TaskRun | undefined;
-      if (input.lesson === 'cost' && input.method === 'B') {
-        if (!input.parentId) { res.status(400).json({ error: '请先生成这一对的真实初稿。' }); return; }
-        parent = await read(input.parentId);
-        if (parent.lesson !== 'cost' || parent.method !== 'A' || parent.batchId !== input.batchId || parent.caseId !== input.caseId || parent.state !== 'completed') {
-          res.status(400).json({ error: '核对必须使用同一对已完成的初稿。' }); return;
-        }
-      }
       const config = readConfig(env), loaded = await materials();
-      if (parent && (parent.configuredModel !== config.model || parent.baseUrl !== config.baseUrl)) {
-        res.status(400).json({ error: '这一对的模型配置已变化，请重新生成初稿再比较。' }); return;
-      }
       const startedAt = new Date().toISOString();
-      run = { lesson: input.lesson, caseId: input.caseId, method: input.method, batchId: input.batchId, ...(parent ? { parentId: parent.id } : {}), id: randomUUID(), startedAt, configuredModel: config.model, baseUrl: config.baseUrl,
+      run = { lesson: input.lesson, caseId: input.caseId, method: input.method, batchId: input.batchId, id: randomUUID(), startedAt, configuredModel: config.model, baseUrl: config.baseUrl,
         state: 'running', output: '', checks: checkOutput(''), judgments: {},
-        request: { step: `${input.caseId} / ${input.method}`, startedAt, requestBody: JSON.stringify({ model: config.model, ...(['examples', 'feedback', 'evaluation'].includes(input.lesson) ? {} : { max_tokens: 16384 }), messages: [{ role: 'user', content: buildPrompt(input, loaded, parent) }] }) } };
+        request: { step: `${input.caseId} / ${input.method}`, startedAt, requestBody: JSON.stringify({ model: config.model, ...(['examples', 'feedback', 'evaluation'].includes(input.lesson) ? {} : { max_tokens: 16384 }), messages: [{ role: 'user', content: buildPrompt(input, loaded) }] }) } };
       await save(run);
       try {
         const message = await sendRecordedRequest(config, run.request, AbortSignal.any([controller.signal, AbortSignal.timeout(['examples', 'feedback', 'evaluation'].includes(input.lesson) ? 600_000 : 180_000)]));

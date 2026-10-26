@@ -64,7 +64,7 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
         if (!/^[^/]+\.(html|md)$/.test(req.params.file)) { next(); return; }
         res.sendFile(req.params.file, { root: project });
       });
-      for (const directory of ['materials', '课堂记录', '运行记录', '自动记忆练习', 'evaluation', 'cost', 'clarification', 'handoff']) {
+      for (const directory of ['materials', '课堂记录', '运行记录', '自动记忆练习', 'evaluation', 'clarification', 'handoff']) {
         app.use(encodeURI(`${url}${directory}`), express.static(join(project, directory)));
       }
     }
