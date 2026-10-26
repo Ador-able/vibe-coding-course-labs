@@ -57,7 +57,8 @@ test('样例只改变指定输入，成本核对复用同一初稿，失败与�
     assert.ok(b.request.requestBody.includes(a.output.replaceAll('\n', '\\n')));
     assert.equal(totals([a, a, b]).calls, 2); assert.equal(totals([a, b]).input, 400); assert.equal(totals([a, b]).cached, 60); assert.equal(totals([a, b]).reasoning, null);
     finish = 'length';
-    const failed = (await post({ lesson: 'goals', caseId: 'S1', method: 'none', batchId: randomUUID() })).run;
+    const failed = (await post({ lesson: 'evaluation', caseId: 'S3', method: 'A', batchId: randomUUID() })).run;
+    assert.ok(!Object.hasOwn(received.at(-1)!, 'max_tokens'));
     assert.equal(failed.state, 'failed'); assert.ok(failed.output.length > 0); assert.equal(totals([failed]).input, 200);
     assert.equal(JSON.parse(await readFile(join(directory, `${failed.id}.json`), 'utf8')).state, 'failed');
     const stored = await (await fetch(origin + '/api/tasks/runs')).text(); assert.ok(!stored.includes('test-secret')); assert.ok(stored.includes(failed.id));
@@ -70,8 +71,10 @@ test('样例只改变指定输入，成本核对复用同一初稿，失败与�
     assert.match(assessRun(judgedRun, [{ id: 'fact-1', text: '角色与身份' }]).reason, /全文仅有“攀爬”重复/);
     finish = 'stop';
     await post({ lesson: 'evaluation', caseId: 'S3', method: 'A', batchId: randomUUID() });
+    assert.ok(!Object.hasOwn(received.at(-1)!, 'max_tokens'));
     const baseline = received.at(-1)!.messages.find(item => item.role === 'user')!.content;
     await post({ lesson: 'evaluation', caseId: 'S3', method: 'B', batchId: randomUUID() });
+    assert.ok(!Object.hasOwn(received.at(-1)!, 'max_tokens'));
     const revised = received.at(-1)!.messages.find(item => item.role === 'user')!.content;
     assert.ok(revised.startsWith(baseline)); assert.match(revised.slice(baseline.length), /写作前，先核对/);
     assert.match(baseline, /随墨大夫入谷/);

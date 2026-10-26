@@ -69,10 +69,10 @@ export function createTasksRouter(env: NodeJS.ProcessEnv, project: string, direc
       const startedAt = new Date().toISOString();
       run = { lesson: input.lesson, caseId: input.caseId, method: input.method, batchId: input.batchId, ...(parent ? { parentId: parent.id } : {}), id: randomUUID(), startedAt, configuredModel: config.model, baseUrl: config.baseUrl,
         state: 'running', output: '', checks: checkOutput(''), judgments: {},
-        request: { step: `${input.caseId} / ${input.method}`, startedAt, requestBody: JSON.stringify({ model: config.model, ...(['examples', 'feedback'].includes(input.lesson) ? {} : { max_tokens: 16384 }), messages: [{ role: 'user', content: buildPrompt(input, loaded, parent) }] }) } };
+        request: { step: `${input.caseId} / ${input.method}`, startedAt, requestBody: JSON.stringify({ model: config.model, ...(['examples', 'feedback', 'evaluation'].includes(input.lesson) ? {} : { max_tokens: 16384 }), messages: [{ role: 'user', content: buildPrompt(input, loaded, parent) }] }) } };
       await save(run);
       try {
-        const message = await sendRecordedRequest(config, run.request, AbortSignal.any([controller.signal, AbortSignal.timeout(['examples', 'feedback'].includes(input.lesson) ? 600_000 : 180_000)]));
+        const message = await sendRecordedRequest(config, run.request, AbortSignal.any([controller.signal, AbortSignal.timeout(['examples', 'feedback', 'evaluation'].includes(input.lesson) ? 600_000 : 180_000)]));
         run.output = isObject(message) && typeof message.content === 'string' ? message.content : '';
         if (!run.output.trim() || run.request.finishReason !== 'stop') throw new ModelError('MODEL_RESPONSE_INVALID', run.request.finishReason === 'length' ? '模型已用完本次输出额度，未正常结束；本次调用及用量已保留。' : '没有取得正常结束的完整章稿，请查看实际返回与结束原因。');
         run.state = 'completed';
