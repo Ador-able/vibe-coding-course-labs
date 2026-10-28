@@ -13,6 +13,7 @@ export const groups = [
     ['/requests/task-feedback/', '局部反馈'], ['/requests/task-evaluation/', '评估样本'],
   ] },
   { title: '05 理解工具、工作流与 Agent', items: [
+    ['/requests/tools/', '工具读写'],
     ['/lessons/chapter05/', '工具与人的决定'],
   ] },
   { title: '06 让人的判断进入 AI 的工作过程', items: [

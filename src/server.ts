@@ -21,6 +21,7 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
   const app = createApp(undefined, console.log, configPath, {
     disclosure: { projectDirectory: disclosureProject, recordDirectory: join(dataDirectory, 'disclosure/novel') },
     tasks: { projectDirectory: taskProject, recordDirectory: join(dataDirectory, 'tasks') },
+    tools: { projectDirectory: join(root, 'lessons/chapter05/tools'), recordDirectory: join(dataDirectory, 'tools') },
   });
   const messages = await createMessageHistoryRouter(dataDirectory);
   const requests = await createRequestsRouter(join(dataDirectory, 'requests'));
@@ -99,7 +100,7 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
   });
   // Docker 中的文件提取流程只访问公开原件，不暴露模型设置与其他接口。
   const fileApp = express().disable('x-powered-by').use(originals);
-  return { app, fileApp, close: () => { lessons.close(); requests.close(); messages.close(); } };
+  return { app, fileApp, close: async () => { lessons.close(); requests.close(); messages.close(); await app.closeTools(); } };
 }
 
 export async function startCourseServer() {
