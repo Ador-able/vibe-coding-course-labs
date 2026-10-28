@@ -64,7 +64,7 @@ function render() {
     if (!records.has(key as ToolSetName)) continue;
     const button = document.createElement('button'); button.className = 'secondary'; button.textContent = label; button.type = 'button';
     button.setAttribute('role', 'tab'); button.setAttribute('aria-selected', String(key === selected));
-    button.onclick = () => { selected = key as ToolSetName; render(); }; tabs.append(button);
+    button.onclick = () => { selected = key as ToolSetName; selection.value = key; render(); }; tabs.append(button);
   }
   tabs.hidden = records.size < 2;
   const opened = new Set([...container.querySelectorAll<HTMLDetailsElement>('details[open]')].map(item => item.dataset.key));
