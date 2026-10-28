@@ -34,7 +34,7 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
   app.use('/requests/memory/maintenance', express.static(join(disclosureProject, '自动记忆练习')));
 
   // 各章工作台与资料共用服务。
-  for (const [url, title] of groups[2].items) {
+  for (const [url, title] of groups.flatMap(group => group.items).filter(([url]) => /^\/lessons\/chapter\d{2}\/$/.test(url))) {
     const chapter = url.split('/')[2];
     const project = join(root, 'lessons', chapter, 'project');
     if (['chapter12', 'chapter13', 'chapter14'].includes(chapter)) {
