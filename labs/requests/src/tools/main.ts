@@ -2,21 +2,24 @@ import '../lab.css';
 import '../../../../shared/markdown.css';
 import './style.css';
 import { renderMarkdown } from '../../../../shared/markdown.ts';
-import { TOOL_SETS, type ToolsRun, type ToolSetName } from './contract.ts';
+import { TOOL_SETS, type ToolDefinition, type ToolsRun, type ToolSetName } from './contract.ts';
 
 const app = document.querySelector<HTMLElement>('#app')!;
 app.innerHTML = `<header><h1>工具读写实验</h1><p>让模型选择读取和保存的业务工具，再核对实际留下的草稿。</p></header>
+  <section class="tools-definitions" aria-labelledby="tools-definitions-title"><header><h2 id="tools-definitions-title">工具定义</h2>
+  <label for="tool-set">工具集 <select id="tool-set"><option value="separate">分散读取</option><option value="combined">组合读取</option></select></label></header><div id="definitions"></div></section>
   <label for="task">任务</label><textarea id="task" rows="4" maxlength="12000"></textarea>
-  <div class="tools-controls"><label for="tool-set">工具集 <select id="tool-set"><option value="separate">分散读取</option><option value="combined">组合读取</option></select></label>
+  <div class="tools-controls">
   <button id="run" disabled>运行任务</button><button id="stop" class="secondary" hidden>停止</button><button id="classroom" class="secondary" disabled>加载课堂实录</button></div>
   <p id="status" role="status" aria-live="polite"></p>
-  <details><summary>任务依据与工具</summary><div id="materials" class="guide-body"></div></details>
+  <details><summary>任务依据</summary><div id="materials" class="guide-body"></div></details>
   <section id="results" hidden><div class="tools-result-bar"><span id="source"></span><div id="conditions" role="tablist" aria-label="比较工具集"></div></div><div id="result"></div></section>`;
 const get = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const task = get<HTMLTextAreaElement>('task'), selection = get<HTMLSelectElement>('tool-set');
 const start = get<HTMLButtonElement>('run'), stop = get<HTMLButtonElement>('stop'), classroom = get<HTMLButtonElement>('classroom');
 const status = (text: string) => { get('status').textContent = text; };
 let records = new Map<ToolSetName, ToolsRun>(), selected: ToolSetName = 'separate', source = '本机运行', currentId: string | undefined;
+let definitions: Record<ToolSetName, ToolDefinition[]> = { separate: [], combined: [] }, definitionsKey = '';
 const number = (value: number | null) => value === null ? '未知' : value.toLocaleString('zh-CN');
 async function json<T>(path: string, init?: RequestInit) {
   const response = await fetch('/api/tools/' + path, init);
@@ -56,8 +59,23 @@ function readableResult(parent: HTMLElement, name: string, value: unknown) {
     const saved = document.createElement('p'); saved.textContent = `第 ${receipt.chapterNumber} 章 · 正文 r${receipt.revision} · 草稿`; parent.append(saved);
   }
 }
+function renderDefinitions(run: ToolsRun | undefined) {
+  // 有运行记录时，直接展示该轮真实请求中的定义。
+  const items: ToolDefinition[] = run?.requests[0]
+    ? JSON.parse(run.requests[0].body).tools.map((item: { function: ToolDefinition }) => item.function)
+    : definitions[selected];
+  const key = JSON.stringify(items); if (key === definitionsKey) return; definitionsKey = key;
+  const container = get('definitions'); container.replaceChildren();
+  for (const item of items) {
+    const detail = document.createElement('details'), summary = document.createElement('summary');
+    const name = document.createElement('code'), description = document.createElement('span');
+    name.textContent = item.name; description.textContent = item.description; summary.append(name, description); detail.append(summary);
+    const pre = document.createElement('pre'); pre.textContent = JSON.stringify(item, null, 2); detail.append(pre); container.append(detail);
+  }
+}
 function render() {
   const run = records.get(selected), container = get('result'); get('results').hidden = !records.size;
+  selection.value = selected; renderDefinitions(run);
   get('source').textContent = source;
   const tabs = get('conditions'); tabs.replaceChildren();
   for (const [key, label] of Object.entries(TOOL_SETS)) {
@@ -80,6 +98,7 @@ function render() {
     detail.append(summary);
     const id = document.createElement('p'); id.className = 'note'; id.textContent = `调用标识：${call.id}`; detail.append(id);
     if (call.state === 'completed') {
+      const label = document.createElement('p'); label.textContent = '返回结果：'; detail.append(label);
       const readable = document.createElement('div'); readable.className = 'tool-output'; readableResult(readable, call.name, call.output); detail.append(readable);
     }
     if (call.error) technical(detail, '执行反馈', call.error);
@@ -95,6 +114,7 @@ function render() {
   const raw = document.createElement('details'), summary = document.createElement('summary'); raw.dataset.key = 'raw'; summary.textContent = '实际请求与返回'; raw.append(summary);
   technical(raw, '本轮任务与记录', run); raw.open = opened.has('raw'); container.append(raw);
 }
+selection.onchange = () => { selected = selection.value as ToolSetName; render(); };
 function busy(value: boolean) {
   start.disabled = value; classroom.disabled = value; selection.disabled = value; task.disabled = value;
   stop.hidden = !value; stop.disabled = false; app.setAttribute('aria-busy', String(value));
@@ -137,10 +157,11 @@ classroom.onclick = async () => {
 };
 void (async () => {
   try {
-    const materials = await json<{ defaultTask: string; work: { title: string; purpose: string; requirements: string[]; facts: string[]; outline: unknown[] } }>('materials');
+    const materials = await json<{ defaultTask: string; definitions: Record<ToolSetName, ToolDefinition[]>; work: { title: string; purpose: string; requirements: string[]; facts: string[]; outline: unknown[] } }>('materials');
     task.value = materials.defaultTask;
+    definitions = materials.definitions;
     const work = materials.work;
-    renderMarkdown(get('materials'), `## ${work.title}\n\n${work.purpose}\n\n${work.requirements.map(item => '- ' + item).join('\n')}\n\n${work.facts.join('\n\n')}\n\n分散读取提供 read_work、list_chapters、read_chapter、save_draft；组合读取提供 get_writing_context、read_chapter、save_draft。两组使用相同初态与保存规则。`);
+    renderMarkdown(get('materials'), `## ${work.title}\n\n${work.purpose}\n\n${work.requirements.map(item => '- ' + item).join('\n')}\n\n${work.facts.join('\n\n')}`);
     const recent = await json<ToolsRun[]>('runs/latest'); records = new Map(recent.map(run => [run.toolSet, run]));
     selected = recent.at(-1)?.toolSet ?? 'separate'; render(); busy(false);
     const active = recent.find(run => run.state === 'running'); if (active) { selected = active.toolSet; await follow(active); }

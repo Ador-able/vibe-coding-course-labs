@@ -84,10 +84,12 @@ test('SDK 实际工具循环按调用标识回传，两条件使用同一初态�
   };
   try {
     assert.equal((await fetch(origin + '/api/tools/classroom')).status, 404);
+    const materials = await (await fetch(origin + '/api/tools/materials')).json();
     const records: ToolsRun[] = [];
     for (const toolSet of ['separate', 'combined'] as const) {
       const initial = await start(toolSet), run = await until(() => read(initial.id), run => run.state !== 'running');
       assert.equal(run.state, 'completed', run.error); assert.equal(run.requests.length, 4);
+      assert.deepEqual(materials.definitions[toolSet], JSON.parse(run.requests[0].body).tools.map((item: any) => item.function));
       assert.equal(run.readBack?.body, '韩立扶住竹子，沿竹林里的小路继续前行。');
       assert.deepEqual(run.usage, { input: 400, output: 120, cached: 40, reasoning: 20 });
       for (const entry of run.calls) {

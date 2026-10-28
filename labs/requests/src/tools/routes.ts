@@ -8,6 +8,7 @@ import { ModelError, readConfig } from '../model.ts';
 import { DEFAULT_TASK, TOOL_SETS, type ToolsRun } from './contract.ts';
 import { loadInitialWork } from './workspace.ts';
 import { executeRun } from './run.ts';
+import { toolDefinitions } from './definitions.ts';
 
 const idSchema = z.uuid();
 const runInput = z.object({ task: z.string().trim().min(1).max(12000), toolSet: z.enum(['separate', 'combined']) });
@@ -22,7 +23,8 @@ export function createToolsRouter(env: NodeJS.ProcessEnv, project: string, direc
     return JSON.parse(await readFile(recordPath(id), 'utf8')) as ToolsRun;
   };
   router.get('/materials', async (_req, res, next) => {
-    try { const initial = await loadInitialWork(project); res.json({ defaultTask: DEFAULT_TASK, toolSets: TOOL_SETS, work: initial.work, seedDigest: initial.digest }); }
+    try { const initial = await loadInitialWork(project); res.json({ defaultTask: DEFAULT_TASK, toolSets: TOOL_SETS,
+      definitions: { separate: toolDefinitions('separate'), combined: toolDefinitions('combined') }, work: initial.work, seedDigest: initial.digest }); }
     catch (error) { next(error); }
   });
   router.get('/classroom', async (_req, res, next) => {
