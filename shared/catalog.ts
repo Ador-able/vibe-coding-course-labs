@@ -15,6 +15,7 @@ export const groups = [
   { title: '05 理解工具、工作流与 Agent', items: [
     ['/requests/tools/', '工具读写'],
     ['/requests/tool-results/', '工具反馈'],
+    ['/requests/control/', '工作流与 Agent'],
     ['/lessons/chapter05/', '工具与人的决定'],
   ] },
   { title: '06 让人的判断进入 AI 的工作过程', items: [
