@@ -12,11 +12,12 @@ export type ModelRequest = {
   body: string; startedAt: string; durationMs?: number; httpStatus?: number;
   response?: unknown; error?: string;
 };
-export type ToolsRun = {
-  version: 1; source: 'model-api'; id: string; toolSet: ToolSetName; task: string;
+export type ToolRun = {
+  version: 1; source: 'model-api'; id: string; task: string;
   configuredModel: string; seedDigest: string; startedAt: string;
   state: 'running' | 'completed' | 'cancelled' | 'stopped' | 'failed'; stage: string;
   calls: ToolCall[]; requests: ModelRequest[]; report: string; readBack: Draft | null;
   usage: { input: number | null; output: number | null; cached: number | null; reasoning: number | null };
   durationMs?: number; finishReason?: string; error?: string;
 };
+export type ToolsRun = ToolRun & { toolSet: ToolSetName };

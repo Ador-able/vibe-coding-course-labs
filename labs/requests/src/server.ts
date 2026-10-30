@@ -14,9 +14,10 @@ import { createModelSettings } from './model-settings.ts';
 import { createDisclosureRouter } from './disclosure/routes.ts';
 import { createTasksRouter } from './tasks/routes.ts';
 import { createToolsRouter } from './tools/routes.ts';
+import { createToolResultsRouter } from './tool-results/routes.ts';
 import type { AskPayload, AskResult, RequestTrace, Stage } from './contract.ts';
 
-export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath?: string, experiments?: { disclosure: { projectDirectory: string; recordDirectory: string }; tasks: { projectDirectory: string; recordDirectory: string }; tools?: { projectDirectory: string; recordDirectory: string } }) {
+export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath?: string, experiments?: { disclosure: { projectDirectory: string; recordDirectory: string }; tasks: { projectDirectory: string; recordDirectory: string }; tools?: { projectDirectory: string; recordDirectory: string }; toolResults?: { projectDirectory: string; recordDirectory: string } }) {
   const app = express();
   const settings = env ? undefined : createModelSettings(configPath);
   env ??= settings!.env;
@@ -24,6 +25,8 @@ export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath
   app.use('/api/collaboration', createCollaborationRouter(env));
   app.use('/api/structured', createStructuredRouter(env));
   app.use('/api/streaming', createStreamingRouter(env));
+  const toolResults = experiments?.toolResults ? createToolResultsRouter(env, experiments.toolResults.projectDirectory, experiments.toolResults.recordDirectory) : undefined;
+  if (toolResults) app.use('/api/tool-results', express.json({ limit: '128kb' }), toolResults.router);
   app.use(express.json({ limit: '16kb' }));
   if (settings) app.use('/api/config', settings.router);
   const tools = experiments?.tools ? createToolsRouter(env, experiments.tools.projectDirectory, experiments.tools.recordDirectory) : undefined;
@@ -94,6 +97,6 @@ export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath
       trace: { requestId: randomUUID(), model: null, stages: [] },
     } satisfies AskResult);
   });
-  return Object.assign(app, { closeTools: () => tools?.close() ?? Promise.resolve() });
+  return Object.assign(app, { closeTools: async () => { await Promise.all([tools?.close(), toolResults?.close()]); } });
 }
 

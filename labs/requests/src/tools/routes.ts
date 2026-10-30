@@ -6,7 +6,7 @@ import { z } from 'zod';
 import { Store } from '../../../../lessons/chapter05/project/src/store.ts';
 import { ModelError, readConfig } from '../model.ts';
 import { DEFAULT_TASK, TOOL_SETS, type ToolsRun } from './contract.ts';
-import { loadInitialWork } from './workspace.ts';
+import { loadInitialWork, readBack, writingTools } from './workspace.ts';
 import { executeRun } from './run.ts';
 import { toolDefinitions } from './definitions.ts';
 
@@ -68,8 +68,9 @@ export function createToolsRouter(env: NodeJS.ProcessEnv, project: string, direc
         writes = nextWrite.catch(() => {}); return nextWrite;
       };
       await save(); const controller = new AbortController();
+      const runtime = new Store(database);
       res.status(202).json(run);
-      const done = executeRun(run, config, database, initial.work.id, controller.signal, save)
+      const done = executeRun(run, config, { tools: writingTools(runtime, initial.work.id, run.toolSet), close: () => runtime.close(), readBack: () => readBack(database, initial.work.id) }, controller.signal, save)
         .catch(() => { run.state = 'failed'; run.error = '运行记录未能完整保存，请检查本机磁盘。'; })
         .finally(() => { active.delete(id); });
       active.set(id, { controller, done, run });

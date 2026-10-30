@@ -1,0 +1,10 @@
+#basis { margin: 20px 0 28px; }
+#basis summary { cursor: pointer; color: var(--lab-accent); }
+#basis label { display: block; margin: 14px 0 6px; }
+#previous-title, #previous-body { width: 100%; box-sizing: border-box; }
+.feedback-round { margin: 16px 0; border-top: 1px solid var(--lab-border); padding: 16px 0; }
+.feedback-round > summary { font-weight: 600; }
+.feedback-round > h3 { margin-top: 24px; }
+.feedback-round details { margin: 14px 0 14px 24px; }
+.feedback-round details > div { max-height: 520px; overflow: auto; padding: 8px 0; }
+.feedback-round h4 { font-size: 16px; }
