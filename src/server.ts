@@ -24,6 +24,7 @@ export async function createCourseApp(configPath?: string, dataDirectory = join(
     tools: { projectDirectory: join(root, 'lessons/chapter05/tools'), recordDirectory: join(dataDirectory, 'tools') },
     toolResults: { projectDirectory: join(root, 'lessons/chapter05/tool-results'), recordDirectory: join(dataDirectory, 'tool-results') },
     control: { projectDirectory: join(root, 'lessons/chapter05/control'), recordDirectory: join(dataDirectory, 'control') },
+    humanDecisions: { projectDirectory: join(root, 'lessons/chapter05/human-decisions'), recordDirectory: join(dataDirectory, 'human-decisions') },
   });
   const messages = await createMessageHistoryRouter(dataDirectory);
   const requests = await createRequestsRouter(join(dataDirectory, 'requests'));
