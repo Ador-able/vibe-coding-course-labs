@@ -8,13 +8,13 @@ import { draftInput, LabError } from '../../../../lessons/chapter05/project/src/
 import type { ToolDefinition } from '../tools/contract.ts';
 import type { HumanRun, Materials } from './contract.ts';
 
-export const PENDING_DIRECTION = '叙事切入尚未决定：A 从来到竹林开始，再交代离家目的与规则；B 从竹林喘息开始，再回到规则与目的。先向人提出这两个选项，选择前不代选，不生成或保存正文。';
+export const PENDING_DIRECTION = '开篇叙事方式由作者决定。先依据已读资料拟定两种不同的开场方案，简述各自特点并请作者选择；选择前不代选，不生成或保存正文。';
 export const questionSchema = z.object({ question: z.string().trim().min(1), options: z.array(z.object({ id: z.enum(['A', 'B']), label: z.string().trim().min(1) })).length(2) });
 export const saveSchema = draftInput.extend({ chapterNumber: z.literal(1) });
 const definitions = {
   read_work: { description: '读取当前作品要求、原文依据及最新修订。', inputSchema: z.object({}) },
   read_chapter: { description: '读取当前第一章的实际正文、采用状态与修订；尚无正文时返回空结果。', inputSchema: z.object({}) },
-  ask_direction: { description: '向人提出叙事切入问题与A、B两个选项。应用展示问题并等待回答，收到回答后继续原任务。', inputSchema: questionSchema },
+  ask_direction: { description: '依据已读资料提出两种不同的开场方案，分别用A、B标识，并在每个选项中说明方案及叙事特点，请作者选择。应用展示实际问题与选项，收到回答后继续原任务。', inputSchema: questionSchema },
   save_draft: { description: '依据实际读取的修订保存本轮作品的第一章草稿，不代表内容已被采用。批准操作环节还需要对应本次具体参数的人工许可。', inputSchema: saveSchema },
 };
 export const toolDefinitions = (): ToolDefinition[] => Object.entries(definitions).map(([name, value]) => ({ name, description: value.description, parameters: z.toJSONSchema(value.inputSchema, { target: 'draft-7' }) }));

@@ -4,7 +4,7 @@ import type { DraftInput, WorkInput } from '../../../../lessons/chapter05/projec
 import type { ModelRequest } from '../tools/contract.ts';
 
 export const SECTIONS = { direction: '选择方向', adoption: '改稿与采用', approval: '批准操作' } as const;
-export const DEFAULT_TASK = '请依据当前作品要求完成第一章《选拔开端》。先读取当前要求和第一章状态，叙事切入尚未确定时，使用 ask_direction 提出具体问题，等待人的选择，不代选、不生成或保存正文。人的选择到达后，重新读取最新要求，再完成第一章，保存为草稿并读回。最后简要汇报实际完成情况。';
+export const DEFAULT_TASK = '请根据现有原文、大纲和设定，帮我写第一章《选拔开端》。开篇的叙事方式我还没有确定，请先读资料，提出两种不同的开场方案，简要说明各自的特点，让我选择后再写正文。收到我的选择后，重新读取当前要求，完成第一章，保存为草稿并读回，最后简要说明完成情况。';
 export type Phase = 'direction' | 'approval';
 export type Action = { approvalId: string; toolCallId: string; input: DraftInput };
 export type Question = { toolCallId: string; question: string; options: { id: 'A' | 'B'; label: string }[] };

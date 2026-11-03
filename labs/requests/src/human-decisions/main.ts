@@ -64,7 +64,7 @@ function events(parent:HTMLElement,opened:Set<string>) {
     if(section==='approval'&&event.kind==='checkpoint'&&(v.state==='completed'||v.state==='closed'))title='执行后的程序独立读回';
     if(!title)return; const node=detail(list,title,'event:'+index,opened);node.className='human-event';const body=document.createElement('div');node.append(body);
     if(event.kind==='direction-question')markdown(body,`**${v.question}**\n\n${v.options.map((option:any)=>`${option.id}：${option.label}`).join('\n\n')}`);
-    else if(event.kind==='direction-answer') { markdown(body,`选择 ${v.choice.id}：${v.choice.text}\n\n当前要求已更新为 r${v.work.revision}。`);const selected=v.work.requirements.find((item:string)=>item.startsWith('人的叙事切入决定：'));if(selected)markdown(body,selected); }
+    else if(event.kind==='direction-answer') { markdown(body,`选择 ${v.choice.id}。\n\n当前要求已更新为 r${v.work.revision}。`);const selected=v.work.requirements.find((item:string)=>item.startsWith('人的叙事切入决定：'));if(selected)markdown(body,selected); }
     else if(event.kind==='checkpoint') { if(v.state==='awaiting-direction')markdown(body,'待答问题已经保留，第一章尚未保存。');else {if(v.work)markdown(body,`当前作品要求 r${v.work.revision}`);if(section==='direction'&&v.readBack)markdown(body,v.readBack.body.trim().split(/\n\s*\n/)[0]);chapter(body,v.readBack,opened,'checkpoint:'+index);} }
     else if(event.kind==='human-edit'||event.kind==='human-adopt')chapter(body,v.saved,opened,'chapter-event:'+index);
     else if(event.kind.endsWith('-rejected')){markdown(body,v.message);chapter(body,v.readBack,opened,'rejected:'+index);}
