@@ -6,11 +6,11 @@ import { workInput } from './dist/schemas.js';
 
 const { values, positionals } = parseArgs({ allowPositionals: true, options: { db: { type: 'string' } } });
 const lesson = positionals[0];
-if (!['01', '02', '02-连续', '04', '04-审批', '05-A', '05-B', '05-C'].includes(lesson) || positionals.length !== 1) throw new Error('用法：node 准备实验.mjs 01|02|02-连续|04|04-审批|05-A|05-B|05-C [--db data/我的练习.sqlite]');
+if (!['01', '02', '02-连续', '04', '04-审批'].includes(lesson) || positionals.length !== 1) throw new Error('用法：node 准备实验.mjs 01|02|02-连续|04|04-审批 [--db data/我的练习.sqlite]');
 const db = resolve(values.db ?? `data/${lesson}/novel.sqlite`);
 if (existsSync(db)) throw new Error(`练习数据库已存在，不覆盖：${db}。可直接继续，或用 --db 指定新文件。`);
 let seed = workInput.parse(JSON.parse(readFileSync('seed/凡人修仙传.json', 'utf8')));
-if (lesson === '04' || lesson === '05-B') {
+if (lesson === '04') {
   const directions = JSON.parse(readFileSync('materials/第四节方向.json', 'utf8'));
   seed = { ...seed, requirements: [...seed.requirements, `第一章叙事切入尚未由人决定。备选 A：${directions.A}备选 B：${directions.B}先提出这个具体问题，等待人的选择；未确定前不代选、不合并两案，也不生成或保存代表已确定方向的正文。`] };
 }
@@ -20,8 +20,6 @@ if (lesson === '04-审批') {
 const store = new Store(db);
 try {
   store.init(seed);
-  // 只在选定的C练习库制造章节写入故障，任务记录仍可保存。
-  if (lesson === '05-C') store.db.exec("CREATE TRIGGER classroom_save_failure BEFORE INSERT ON chapters BEGIN SELECT RAISE(ABORT,'课堂写入故障：章节写入暂不可用；本轮条件保持不变。'); END;");
   if (lesson === '02' || lesson === '02-连续') {
     const first = JSON.parse(readFileSync('materials/第一章真实稿.json', 'utf8'));
     // 人工载入历史真实稿，当前库仍有自己的修订和来源。

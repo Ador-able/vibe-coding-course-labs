@@ -17,9 +17,10 @@ import { createToolsRouter } from './tools/routes.ts';
 import { createToolResultsRouter } from './tool-results/routes.ts';
 import { createControlRouter } from './control/routes.ts';
 import { createHumanDecisionsRouter } from './human-decisions/routes.ts';
+import { createAgentStoppingRouter } from './agent-stopping/routes.ts';
 import type { AskPayload, AskResult, RequestTrace, Stage } from './contract.ts';
 
-export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath?: string, experiments?: { disclosure: { projectDirectory: string; recordDirectory: string }; tasks: { projectDirectory: string; recordDirectory: string }; tools?: { projectDirectory: string; recordDirectory: string }; toolResults?: { projectDirectory: string; recordDirectory: string }; control?: { projectDirectory: string; recordDirectory: string }; humanDecisions?: { projectDirectory: string; recordDirectory: string } }) {
+export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath?: string, experiments?: { disclosure: { projectDirectory: string; recordDirectory: string }; tasks: { projectDirectory: string; recordDirectory: string }; tools?: { projectDirectory: string; recordDirectory: string }; toolResults?: { projectDirectory: string; recordDirectory: string }; control?: { projectDirectory: string; recordDirectory: string }; humanDecisions?: { projectDirectory: string; recordDirectory: string }; agentStopping?: { projectDirectory: string; recordDirectory: string } }) {
   const app = express();
   const settings = env ? undefined : createModelSettings(configPath);
   env ??= settings!.env;
@@ -33,6 +34,8 @@ export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath
   if (control) app.use('/api/control', express.json({ limit: '128kb' }), control.router);
   const humanDecisions = experiments?.humanDecisions ? createHumanDecisionsRouter(env, experiments.humanDecisions.projectDirectory, experiments.humanDecisions.recordDirectory) : undefined;
   if (humanDecisions) app.use('/api/human-decisions', express.json({ limit: '256kb' }), humanDecisions.router);
+  const agentStopping = experiments?.agentStopping ? createAgentStoppingRouter(env, experiments.agentStopping.projectDirectory, experiments.agentStopping.recordDirectory) : undefined;
+  if (agentStopping) app.use('/api/agent-stopping', express.json({ limit: '32kb' }), agentStopping.router);
   app.use(express.json({ limit: '16kb' }));
   if (settings) app.use('/api/config', settings.router);
   const tools = experiments?.tools ? createToolsRouter(env, experiments.tools.projectDirectory, experiments.tools.recordDirectory) : undefined;
@@ -103,6 +106,6 @@ export function createApp(env?: NodeJS.ProcessEnv, log = console.log, configPath
       trace: { requestId: randomUUID(), model: null, stages: [] },
     } satisfies AskResult);
   });
-  return Object.assign(app, { closeTools: async () => { await Promise.all([tools?.close(), toolResults?.close(), control?.close(), humanDecisions?.close()]); } });
+  return Object.assign(app, { closeTools: async () => { await Promise.all([tools?.close(), toolResults?.close(), control?.close(), humanDecisions?.close(), agentStopping?.close()]); } });
 }
 
